@@ -1,375 +1,487 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
-import ForceGraph2D, { type ForceGraphMethods, type LinkObject, type NodeObject } from "react-force-graph-2d";
-import { Globe2, Maximize2, Search, SlidersHorizontal, X } from "lucide-react";
-import { figures, groups, relationColors, relations, type Figure, type RelationType } from "../data/figures";
+import { Globe2, Minus, Plus, Scan, Search, X } from "lucide-react";
+import { figures, groups, relationColors, relations, type RelationType } from "../data/figures";
 import { countryByIso } from "../data/world";
 import { formatYear } from "../lib/format";
-import { useReveal } from "../lib/motion";
+import { gsap, prefersReducedMotion, useGSAP, useReveal } from "../lib/motion";
 
-type GNode = NodeObject<Figure & { color: string }>;
-type GLink = LinkObject<GNode, { type: RelationType; label: string }>;
+/*
+ * 人物關係圖
+ * - 總覽：九個時代群組如星座般由左（古代）到右（近代）沿弧線排列，群內以葉序（向日葵）排列
+ * - 聚焦：點選人物後轉為同心圓：本人在中央、直接關係人物環繞，連線上標示關係類型
+ */
 
-const groupColor = new Map(groups.map((g) => [g.id, g.color]));
-const relationTypes = Object.keys(relationColors) as RelationType[];
+type Pt = { x: number; y: number };
 const figureById = new Map(figures.map((f) => [f.id, f]));
+const groupById = new Map(groups.map((g) => [g.id, g]));
+const relationTypes = Object.keys(relationColors) as RelationType[];
 
-function endId(end: GLink["source"]): string {
-  return typeof end === "object" ? String((end as GNode).id) : String(end);
+const neighbors = (() => {
+  const m = new Map<string, { id: string; type: RelationType; label: string }[]>();
+  relations.forEach((r) => {
+    if (!m.has(r.source)) m.set(r.source, []);
+    if (!m.has(r.target)) m.set(r.target, []);
+    m.get(r.source)!.push({ id: r.target, type: r.type, label: r.label });
+    m.get(r.target)!.push({ id: r.source, type: r.type, label: r.label });
+  });
+  return m;
+})();
+
+// ---------- 總覽版面（固定座標系 1600 × 900） ----------
+const W = 1600;
+const H = 900;
+
+function medianBorn(gid: string) {
+  const ys = figures.filter((f) => f.group === gid).map((f) => f.born).sort((a, b) => a - b);
+  return ys[Math.floor(ys.length / 2)] ?? 0;
+}
+const groupOrder = [...groups].sort((a, b) => medianBorn(a.id) - medianBorn(b.id));
+const groupCenters = new Map<string, Pt>(
+  groupOrder.map((g, i) => {
+    const t = i / (groupOrder.length - 1);
+    return [g.id, { x: 400 + t * (W - 560), y: H / 2 - 20 + Math.sin(t * Math.PI * 2.1) * 165 }];
+  }),
+);
+const overview = new Map<string, Pt>();
+groupOrder.forEach((g) => {
+  const c = groupCenters.get(g.id)!;
+  figures
+    .filter((f) => f.group === g.id)
+    .sort((a, b) => a.born - b.born)
+    .forEach((f, k) => {
+      const r = 24 * Math.sqrt(k + 0.6);
+      const a = k * 2.39996;
+      overview.set(f.id, { x: c.x + r * Math.cos(a), y: c.y + r * Math.sin(a) });
+    });
+});
+
+const ring2Of = new Map<string, Set<string>>();
+
+function egoLayout(center: string): Map<string, Pt> {
+  const out = new Map<string, Pt>();
+  const cx = W / 2 - 40;
+  const cy = H / 2;
+  out.set(center, { x: cx, y: cy });
+  const ring1 = [...new Set((neighbors.get(center) ?? []).map((n) => n.id))];
+  ring1.forEach((id, i) => {
+    const a = -Math.PI / 2 + (i / ring1.length) * Math.PI * 2;
+    out.set(id, { x: cx + Math.cos(a) * 240, y: cy + Math.sin(a) * 240 });
+  });
+  const ring2: { id: string; a: number }[] = [];
+  ring1.forEach((id, i) => {
+    const a0 = -Math.PI / 2 + (i / ring1.length) * Math.PI * 2;
+    (neighbors.get(id) ?? []).forEach((n) => {
+      if (n.id === center || out.has(n.id) || ring2.some((r) => r.id === n.id)) return;
+      ring2.push({ id: n.id, a: a0 });
+    });
+  });
+  ring2Of.set(center, new Set(ring2.map((r) => r.id)));
+  ring2.forEach((r, k) => {
+    const spread = ((k % 5) - 2) * 0.1;
+    out.set(r.id, { x: cx + Math.cos(r.a + spread) * 400, y: cy + Math.sin(r.a + spread) * 380 });
+  });
+  figures.forEach((f) => {
+    if (out.has(f.id)) return;
+    const p = overview.get(f.id)!;
+    const dx = p.x - cx;
+    const dy = p.y - cy;
+    const d = Math.hypot(dx, dy) || 1;
+    out.set(f.id, { x: cx + (dx / d) * 1150, y: cy + (dy / d) * 750 });
+  });
+  return out;
+}
+
+function curve(a: Pt, b: Pt, bend = 0.16) {
+  const mx = (a.x + b.x) / 2;
+  const my = (a.y + b.y) / 2;
+  const dx = b.x - a.x;
+  const dy = b.y - a.y;
+  return {
+    d: `M${a.x},${a.y} Q${mx - dy * bend},${my + dx * bend} ${b.x},${b.y}`,
+    mid: { x: mx - dy * bend * 0.5, y: my + dx * bend * 0.5 },
+  };
 }
 
 export default function FiguresPage() {
   const [params, setParams] = useSearchParams();
   const focusId = params.get("focus");
-  const wrapRef = useRef<HTMLDivElement>(null);
-  const fgRef = useRef<ForceGraphMethods<GNode, GLink> | undefined>(undefined);
-  const [size, setSize] = useState({ w: 800, h: 600 });
-  const [activeGroups, setActiveGroups] = useState<Set<string>>(() => new Set(groups.map((g) => g.id)));
-  const [activeTypes, setActiveTypes] = useState<Set<RelationType>>(() => new Set(relationTypes));
-  const [hoverId, setHoverId] = useState<string | null>(null);
+  const focus = focusId ? figureById.get(focusId) ?? null : null;
+  const [hover, setHover] = useState<string | null>(null);
   const [query, setQuery] = useState("");
-  const [filtersOpen, setFiltersOpen] = useState(false);
-  const asideRef = useRef<HTMLElement>(null);
-  const detailRef = useRef<HTMLElement>(null);
-  const hitsRef = useRef<HTMLUListElement>(null);
-  const filtersRef = useRef<HTMLDivElement>(null);
+  const [types, setTypes] = useState<Set<RelationType>>(() => new Set(relationTypes));
 
-  // 若從其他頁面帶入人物，確保其群組顯示
-  useEffect(() => {
-    const f = focusId ? figureById.get(focusId) : null;
-    if (f && !activeGroups.has(f.group)) setActiveGroups((s) => new Set(s).add(f.group));
-  }, [focusId, activeGroups]);
+  // 版面切換：以 GSAP 補間每個節點的位置
+  const [pos, setPos] = useState<Map<string, Pt>>(overview);
+  const posRef = useRef(pos);
+  posRef.current = pos;
+  const target = useMemo(() => (focusId && figureById.has(focusId) ? egoLayout(focusId) : overview), [focusId]);
 
-  useEffect(() => {
-    const el = wrapRef.current;
-    if (!el) return;
-    const ro = new ResizeObserver(() => setSize({ w: el.clientWidth, h: el.clientHeight }));
-    ro.observe(el);
-    return () => ro.disconnect();
-  }, []);
-
-  const data = useMemo(() => {
-    const nodes: GNode[] = figures
-      .filter((f) => activeGroups.has(f.group))
-      .map((f) => ({ ...f, color: groupColor.get(f.group) ?? "#fff" }));
-    const ids = new Set(nodes.map((n) => n.id));
-    const links: GLink[] = relations
-      .filter((r) => activeTypes.has(r.type) && ids.has(r.source) && ids.has(r.target))
-      .map((r) => ({ ...r }));
-    return { nodes, links };
-  }, [activeGroups, activeTypes]);
-
-  const neighbors = useMemo(() => {
-    const m = new Map<string, Set<string>>();
-    relations.forEach((r) => {
-      if (!m.has(r.source)) m.set(r.source, new Set());
-      if (!m.has(r.target)) m.set(r.target, new Set());
-      m.get(r.source)!.add(r.target);
-      m.get(r.target)!.add(r.source);
-    });
-    return m;
-  }, []);
-
-  const highlightId = hoverId ?? focusId;
-  const isLit = useCallback(
-    (id: string) => !highlightId || id === highlightId || neighbors.get(highlightId)?.has(id),
-    [highlightId, neighbors],
-  );
-
-  const searchHits = useMemo(() => {
-    const q = query.trim().toLowerCase();
-    if (!q) return [];
-    return figures.filter((f) => `${f.name}${f.englishName}${f.role}`.toLowerCase().includes(q)).slice(0, 8);
-  }, [query]);
-
-  const focusNode = useCallback(
-    (id: string | null) => {
-      if (!id) {
-        setParams({}, { replace: true });
+  useGSAP(
+    () => {
+      const from = new Map(posRef.current);
+      if (prefersReducedMotion()) {
+        setPos(target);
         return;
       }
-      setParams({ focus: id }, { replace: true });
+      const st = { t: 0 };
+      gsap.to(st, {
+        t: 1,
+        duration: 1.1,
+        ease: "expo.inOut",
+        onUpdate: () => {
+          const m = new Map<string, Pt>();
+          target.forEach((p, id) => {
+            const f = from.get(id) ?? p;
+            m.set(id, { x: f.x + (p.x - f.x) * st.t, y: f.y + (p.y - f.y) * st.t });
+          });
+          setPos(m);
+        },
+      });
     },
-    [setParams],
+    { dependencies: [target] },
   );
 
-  // 聚焦時將鏡頭移到人物
+  // 平移與縮放
+  const svgRef = useRef<SVGSVGElement>(null);
+  const [view, setView] = useState({ x: 0, y: 0, k: 1 });
+  const viewRef = useRef(view);
+  viewRef.current = view;
+  const viewTo = useCallback((v: { x: number; y: number; k: number }) => {
+    const st = { ...viewRef.current };
+    gsap.to(st, { ...v, duration: 0.9, ease: "power3.inOut", onUpdate: () => setView({ ...st }) });
+  }, []);
   useEffect(() => {
-    if (!focusId) return;
-    const t = setTimeout(() => {
-      const n = data.nodes.find((x) => x.id === focusId);
-      if (n && n.x != null && n.y != null) {
-        fgRef.current?.centerAt(n.x, n.y, 800);
-        fgRef.current?.zoom(2.4, 800);
-      }
-    }, 350);
-    return () => clearTimeout(t);
-  }, [focusId, data]);
+    if (focusId) viewTo({ x: 0, y: 0, k: 1 });
+  }, [focusId, viewTo]);
+  const drag = useRef<{ x: number; y: number; vx: number; vy: number; moved: boolean } | null>(null);
 
-  useEffect(() => {
-    const fg = fgRef.current;
-    if (!fg) return;
-    fg.d3Force("charge")?.strength(-160);
-    (fg.d3Force("link") as unknown as { distance?: (d: number) => void })?.distance?.(55);
-  }, [data]);
+  const key = hover ?? focusId;
+  const lit = useMemo(() => (key ? new Set([key, ...(neighbors.get(key) ?? []).map((n) => n.id)]) : null), [key]);
 
-  const selected = focusId ? figureById.get(focusId) : null;
-  const selectedRelations = useMemo(
-    () => (focusId ? relations.filter((r) => r.source === focusId || r.target === focusId) : []),
-    [focusId],
-  );
+  const hits = useMemo(() => {
+    const s = query.trim().toLowerCase();
+    if (!s) return [];
+    return figures.filter((f) => `${f.name}${f.englishName}${f.role}`.toLowerCase().includes(s)).slice(0, 7);
+  }, [query]);
 
-  useReveal(asideRef, [], { stagger: ":scope > *, :scope section > div > *", y: 14, each: 0.025, duration: 0.5 });
-  useReveal(detailRef, [selected?.id], { stagger: ":scope > div > *, :scope li", x: 24, y: 0, each: 0.04, duration: 0.5 });
-  useReveal(hitsRef, [searchHits.length > 0], { y: -8, duration: 0.3 });
-  useReveal(filtersRef, [filtersOpen], { y: -12, duration: 0.35 });
+  const select = (id: string | null) => setParams(id ? { focus: id } : {}, { replace: true });
 
-  const toggle = <T,>(set: Set<T>, v: T) => {
-    const s = new Set(set);
-    if (s.has(v)) s.delete(v);
-    else s.add(v);
-    return s;
-  };
+  const asideRef = useRef<HTMLElement>(null);
+  const detailRef = useRef<HTMLElement>(null);
+  useReveal(asideRef, [], { stagger: "[data-reveal]", y: 12, each: 0.03, duration: 0.6 });
+  useReveal(detailRef, [focusId], { stagger: "[data-reveal]", x: 20, y: 0, each: 0.04, duration: 0.55 });
 
-  const filters = (
-    <>
-      <section>
-        <h3 className="eyebrow mb-2">時代群組</h3>
-        <div className="flex flex-wrap gap-1.5">
-          {groups.map((g) => (
-            <button
-              key={g.id}
-              className={`chip ${activeGroups.has(g.id) ? "chip-on" : "opacity-60"}`}
-              onClick={() => setActiveGroups((s) => toggle(s, g.id))}
-            >
-              <span className="size-2 rounded-full" style={{ background: g.color }} />
-              {g.name}
-            </button>
+  const egoMode = !!focus;
+  const ring2 = focusId ? ring2Of.get(focusId) : undefined;
+
+  return (
+    <div className="absolute inset-0 overflow-hidden">
+      <svg
+        ref={svgRef}
+        viewBox={`0 0 ${W} ${H}`}
+        preserveAspectRatio="xMidYMid meet"
+        className="absolute inset-0 size-full cursor-grab touch-none select-none active:cursor-grabbing"
+        onWheel={(e) => {
+          const k = Math.min(3, Math.max(0.6, view.k * (e.deltaY < 0 ? 1.1 : 0.9)));
+          setView((v) => ({ ...v, k }));
+        }}
+        onPointerDown={(e) => {
+          drag.current = { x: e.clientX, y: e.clientY, vx: view.x, vy: view.y, moved: false };
+        }}
+        onPointerMove={(e) => {
+          const d = drag.current;
+          if (!d || !svgRef.current) return;
+          const scale = W / svgRef.current.clientWidth;
+          if (Math.hypot(e.clientX - d.x, e.clientY - d.y) > 3) d.moved = true;
+          setView((v) => ({ ...v, x: d.vx + (e.clientX - d.x) * scale, y: d.vy + (e.clientY - d.y) * scale }));
+        }}
+        onPointerUp={(e) => {
+          const d = drag.current;
+          drag.current = null;
+          if (d && !d.moved && e.target === svgRef.current) select(null);
+        }}
+      >
+        <defs>
+          <radialGradient id="star-glow">
+            <stop offset="0%" stopColor="#ffffff" stopOpacity="0.9" />
+            <stop offset="45%" stopColor="#bfe9ff" stopOpacity="0.25" />
+            <stop offset="100%" stopColor="#bfe9ff" stopOpacity="0" />
+          </radialGradient>
+        </defs>
+        <g transform={`translate(${W / 2 + view.x} ${H / 2 + view.y}) scale(${view.k}) translate(${-W / 2} ${-H / 2})`}>
+          {/* 星座名稱與年代（總覽） */}
+          {!egoMode &&
+            groupOrder.map((g) => {
+              const c = groupCenters.get(g.id)!;
+              const members = figures.filter((f) => f.group === g.id);
+              const yrs = members.map((m) => m.born);
+              const faded = lit && !members.some((m) => lit.has(m.id));
+              return (
+                <g key={g.id} opacity={faded ? 0.3 : 1} className="transition-opacity duration-500">
+                  <circle cx={c.x} cy={c.y} r={110} fill="url(#star-glow)" opacity={0.18} />
+                  <text x={c.x} y={c.y + 122} textAnchor="middle" fill="#ffffff" fontSize={15} fontWeight={600} letterSpacing="0.02em">
+                    {g.name}
+                  </text>
+                  <text x={c.x} y={c.y + 141} textAnchor="middle" fill="rgba(255,255,255,0.5)" fontSize={11}>
+                    {formatYear(Math.min(...yrs))} – {formatYear(Math.max(...yrs))}
+                  </text>
+                </g>
+              );
+            })}
+
+          {/* 聚焦時的同心圓導引 */}
+          {egoMode && (
+            <g>
+              <circle cx={W / 2 - 40} cy={H / 2} r={240} fill="none" stroke="#fff" strokeOpacity={0.14} strokeDasharray="2 7" />
+              <circle cx={W / 2 - 40} cy={H / 2} r={392} fill="none" stroke="#fff" strokeOpacity={0.07} strokeDasharray="2 9" />
+            </g>
+          )}
+
+          {/* 關係連線（曲線） */}
+          {relations
+            .filter((r) => types.has(r.type))
+            .map((r) => {
+              const a = pos.get(r.source);
+              const b = pos.get(r.target);
+              if (!a || !b) return null;
+              const on = !!key && (r.source === key || r.target === key);
+              const { d, mid } = curve(a, b);
+              return (
+                <g key={`${r.source}-${r.target}`}>
+                  <path
+                    d={d}
+                    fill="none"
+                    stroke={on ? relationColors[r.type] : "#ffffff"}
+                    strokeOpacity={on ? 0.95 : key ? (egoMode && ring2 && ((ring2.has(r.source) && lit?.has(r.target)) || (ring2.has(r.target) && lit?.has(r.source))) ? 0.28 : 0.05) : 0.18}
+                    strokeWidth={on ? 2.2 : 1}
+                    strokeDasharray={r.type === "影響" ? "4 5" : undefined}
+                    strokeLinecap="round"
+                  />
+                  {egoMode && on && (
+                    <g transform={`translate(${mid.x} ${mid.y})`}>
+                      <rect x={-27} y={-14} width={54} height={28} rx={14} fill="#ffffff" />
+                      <circle cx={-13} cy={0} r={4.5} fill={relationColors[r.type]} />
+                      <text x={6} y={5} textAnchor="middle" fontSize={14} fontWeight={600} fill="#0d43ad">
+                        {r.type}
+                      </text>
+                    </g>
+                  )}
+                </g>
+              );
+            })}
+
+          {/* 人物（發光星點） */}
+          {figures.map((f) => {
+            const p = pos.get(f.id);
+            if (!p) return null;
+            const g = groupById.get(f.group)!;
+            const isFocus = f.id === focusId;
+            const inRing = egoMode && !!lit?.has(f.id);
+            const dim = lit && !lit.has(f.id);
+            const r = isFocus ? 36 : inRing ? 20 : 8;
+            const showName = isFocus || inRing || f.id === hover || (!!lit && lit.has(f.id)) || !!ring2?.has(f.id) || view.k > 1.4;
+            return (
+              <g
+                key={f.id}
+                transform={`translate(${p.x} ${p.y})`}
+                opacity={dim ? (egoMode ? (ring2?.has(f.id) ? 0.55 : 0) : 0.25) : 1}
+                className="cursor-pointer transition-opacity duration-300"
+                onPointerEnter={() => setHover(f.id)}
+                onPointerLeave={() => setHover(null)}
+                onPointerUp={(e) => {
+                  e.stopPropagation();
+                  if (!drag.current?.moved) select(f.id);
+                  drag.current = null;
+                }}
+              >
+                <circle r={r * 2.6} fill="url(#star-glow)" opacity={isFocus ? 0.55 : 0.35} />
+                <circle r={r} fill="#ffffff" stroke={g.color} strokeWidth={isFocus ? 4 : r > 10 ? 3 : 2.2} />
+                {r >= 20 && (
+                  <text textAnchor="middle" y={r * 0.35} fontWeight={600} fill="#0d43ad" fontSize={r * 0.95}>
+                    {f.name[0]}
+                  </text>
+                )}
+                {showName && (
+                  <text
+                    textAnchor="middle"
+                    y={r + (isFocus ? 26 : 19)}
+                    fill="#ffffff"
+                    fontSize={isFocus ? 21 : inRing ? 16 : 14}
+                    fontWeight={isFocus ? 600 : 500}
+                    style={{ paintOrder: "stroke", stroke: "rgba(11,58,150,0.9)", strokeWidth: 4, strokeLinejoin: "round" }}
+                  >
+                    {f.name}
+                  </text>
+                )}
+              </g>
+            );
+          })}
+        </g>
+      </svg>
+
+      {/* 左側：搜尋、時代星座、關係類型 */}
+      <aside ref={asideRef} className="glass scroll-thin absolute top-4 bottom-4 left-4 z-20 hidden w-64 overflow-y-auto rounded-[28px] p-6 lg:block">
+        <h1 data-reveal className="text-[26px] font-semibold tracking-tight">
+          人物關係
+        </h1>
+        <p data-reveal className="mt-1.5 text-[12.5px] leading-relaxed text-white/65">
+          {figures.length} 位人物・{relations.length} 條關係。點選人物，以他為中心展開關係網。
+        </p>
+        <label data-reveal className="glass-soft mt-5 flex h-9 items-center gap-2 rounded-full px-3.5">
+          <Search className="size-[15px] text-white/55" />
+          <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="搜尋人物" className="min-w-0 flex-1 bg-transparent text-[13px] outline-none placeholder:text-white/40" />
+        </label>
+        {hits.length > 0 && (
+          <ul className="mt-2 space-y-0.5">
+            {hits.map((f) => (
+              <li key={f.id}>
+                <button
+                  onClick={() => {
+                    select(f.id);
+                    setQuery("");
+                  }}
+                  className="flex w-full items-center gap-2 rounded-xl px-3 py-2 text-left text-[13px] hover:bg-white/10"
+                >
+                  <span className="size-2 rounded-full" style={{ background: groupById.get(f.group)?.color }} />
+                  {f.name}
+                  <span className="ml-auto truncate text-[11px] text-white/50">{f.role}</span>
+                </button>
+              </li>
+            ))}
+          </ul>
+        )}
+        <p data-reveal className="eyebrow mt-6 mb-2">
+          時代星座
+        </p>
+        <ul className="space-y-0.5">
+          {groupOrder.map((g) => (
+            <li key={g.id} data-reveal>
+              <button
+                onClick={() => {
+                  select(null);
+                  const c = groupCenters.get(g.id)!;
+                  viewTo({ x: (W / 2 - c.x) * 1.9, y: (H / 2 - c.y) * 1.9, k: 1.9 });
+                }}
+                className="flex w-full items-center gap-2.5 rounded-xl px-2.5 py-2 text-left text-[13px] transition hover:bg-white/10"
+              >
+                <span className="size-2.5 rounded-full ring-2 ring-white/30" style={{ background: g.color }} />
+                <span className="flex-1">{g.name}</span>
+                <span className="text-[11px] text-white/45 tabular-nums">{figures.filter((f) => f.group === g.id).length}</span>
+              </button>
+            </li>
           ))}
-        </div>
-        <div className="mt-2 flex gap-3 text-[11px]">
-          <button className="text-glow hover:underline" onClick={() => setActiveGroups(new Set(groups.map((g) => g.id)))}>
-            全選
-          </button>
-          <button className="text-mute hover:underline" onClick={() => setActiveGroups(new Set())}>
-            全不選
-          </button>
-        </div>
-      </section>
-      <section className="mt-5">
-        <h3 className="eyebrow mb-2">關係類型</h3>
-        <div className="flex flex-wrap gap-1.5">
+        </ul>
+        <p data-reveal className="eyebrow mt-6 mb-2">
+          關係類型
+        </p>
+        <div data-reveal className="flex flex-wrap gap-1.5">
           {relationTypes.map((t) => (
             <button
               key={t}
-              className={`chip ${activeTypes.has(t) ? "chip-on" : "opacity-60"}`}
-              onClick={() => setActiveTypes((s) => toggle(s, t))}
+              onClick={() =>
+                setTypes((s) => {
+                  const n = new Set(s);
+                  if (n.has(t)) n.delete(t);
+                  else n.add(t);
+                  return n;
+                })
+              }
+              className={`chip ${types.has(t) ? "chip-on" : ""}`}
             >
-              <span className="h-0.5 w-3 rounded" style={{ background: relationColors[t] }} />
+              <span className="size-2 rounded-full" style={{ background: relationColors[t] }} />
               {t}
             </button>
           ))}
         </div>
-      </section>
-    </>
-  );
-
-  return (
-    <div className="absolute inset-0 flex">
-      {/* 左側控制面板 */}
-      <aside ref={asideRef} className="glass scroll-thin absolute top-4 bottom-4 left-4 z-20 hidden w-72 overflow-y-auto rounded-[28px] p-6 lg:block">
-        <h1 className="text-2xl font-semibold tracking-tight">人物關係</h1>
-        <p className="mt-1 text-sm text-mute">
-          {figures.length} 位人物、{relations.length} 條關係。滑過人物可看到與其相連的人，點擊查看詳細介紹。
-        </p>
-        <div className="mt-5">{filters}</div>
       </aside>
 
-      <div ref={wrapRef} className="relative min-w-0 flex-1">
-        <ForceGraph2D<GNode, GLink>
-          ref={fgRef}
-          width={size.w}
-          height={size.h}
-          graphData={data}
-          backgroundColor="rgba(0,0,0,0)"
-          cooldownTicks={120}
-          onEngineStop={() => {
-            if (!focusId) fgRef.current?.zoomToFit(600, 60);
+      {/* 縮放控制 */}
+      <div className="absolute bottom-5 left-1/2 z-20 flex -translate-x-1/2 gap-2">
+        <button className="icon-btn" onClick={() => setView((v) => ({ ...v, k: Math.min(3, v.k * 1.25) }))} aria-label="放大">
+          <Plus className="size-4" />
+        </button>
+        <button className="icon-btn" onClick={() => setView((v) => ({ ...v, k: Math.max(0.6, v.k / 1.25) }))} aria-label="縮小">
+          <Minus className="size-4" />
+        </button>
+        <button
+          className="icon-btn"
+          onClick={() => {
+            select(null);
+            viewTo({ x: 0, y: 0, k: 1 });
           }}
-          nodeRelSize={6}
-          nodeLabel={(n) => `${n.name}（${n.role}）`}
-          onNodeHover={(n) => {
-            setHoverId(n ? String(n.id) : null);
-            if (wrapRef.current) wrapRef.current.style.cursor = n ? "pointer" : "grab";
-          }}
-          onNodeClick={(n) => focusNode(String(n.id))}
-          onBackgroundClick={() => focusNode(null)}
-          linkColor={(l) => {
-            const lit = !highlightId || endId(l.source) === highlightId || endId(l.target) === highlightId;
-            return lit ? relationColors[l.type] : "rgba(255,255,255,0.12)";
-          }}
-          linkWidth={(l) =>
-            highlightId && (endId(l.source) === highlightId || endId(l.target) === highlightId) ? 2.5 : 1.2
-          }
-          linkLineDash={(l) => (l.type === "影響" ? [3, 3] : null)}
-          linkDirectionalParticles={(l) => (l.type === "師徒" || l.type === "影響" ? 2 : 0)}
-          linkDirectionalParticleWidth={2}
-          linkDirectionalParticleColor={(l) => relationColors[l.type]}
-          nodeCanvasObject={(node, ctx, scale) => {
-            const id = String(node.id);
-            const lit = isLit(id);
-            const isFocus = id === highlightId;
-            const r = isFocus ? 9 : 7;
-            const x = node.x ?? 0;
-            const y = node.y ?? 0;
-            ctx.globalAlpha = lit ? 1 : 0.4;
-            if (isFocus) {
-              ctx.beginPath();
-              ctx.arc(x, y, r + 5, 0, 2 * Math.PI);
-              ctx.fillStyle = `${node.color}40`;
-              ctx.fill();
-            }
-            ctx.beginPath();
-            ctx.arc(x, y, r, 0, 2 * Math.PI);
-            ctx.fillStyle = "rgba(255,255,255,0.96)";
-            ctx.fill();
-            ctx.lineWidth = 2.2;
-            ctx.strokeStyle = node.color;
-            ctx.stroke();
-            ctx.fillStyle = "#0d43ad";
-            ctx.font = `bold ${r}px "Noto Serif TC", serif`;
-            ctx.textAlign = "center";
-            ctx.textBaseline = "middle";
-            ctx.fillText(node.name[0], x, y + 0.5);
-            if (scale > 1.1 || isFocus || (highlightId && lit)) {
-              const fs = Math.max(11 / scale, 3.2);
-              ctx.font = `500 ${fs}px "Noto Sans TC", sans-serif`;
-              ctx.fillStyle = "rgba(255,255,255,0.95)";
-              ctx.fillText(node.name, x, y + r + fs * 0.9);
-            }
-            ctx.globalAlpha = 1;
-          }}
-          nodePointerAreaPaint={(node, color, ctx) => {
-            ctx.fillStyle = color;
-            ctx.beginPath();
-            ctx.arc(node.x ?? 0, node.y ?? 0, 10, 0, 2 * Math.PI);
-            ctx.fill();
-          }}
-        />
-
-        {/* 搜尋 */}
-        <div className="absolute top-4 left-4 z-10 w-[min(280px,calc(100%-6rem))] lg:left-[320px]">
-          <label className="glass flex h-10 items-center gap-2 rounded-full px-3">
-            <Search className="size-4 text-mute" />
-            <input
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              placeholder="搜尋人物…"
-              className="min-w-0 flex-1 bg-transparent text-sm outline-none placeholder:text-mute/70"
-            />
-          </label>
-          {searchHits.length > 0 && (
-            <ul ref={hitsRef} className="glass mt-2 overflow-hidden rounded-2xl p-1">
-              {searchHits.map((f) => (
-                <li key={f.id}>
-                  <button
-                    className="flex w-full items-center gap-2 rounded-xl px-3 py-2 text-left text-sm hover:bg-white/10"
-                    onClick={() => {
-                      focusNode(f.id);
-                      setQuery("");
-                    }}
-                  >
-                    <span className="size-2 rounded-full" style={{ background: groupColor.get(f.group) }} />
-                    {f.name}
-                    <span className="ml-auto truncate text-xs text-mute">{f.role}</span>
-                  </button>
-                </li>
-              ))}
-            </ul>
-          )}
-        </div>
-
-        <div className="absolute top-4 left-[calc(min(280px,100%-6rem)+1.5rem)] z-10 flex gap-2 lg:left-[620px]">
-          <button className="icon-btn lg:hidden" onClick={() => setFiltersOpen((v) => !v)} aria-label="篩選">
-            <SlidersHorizontal className="size-4" />
-          </button>
-          <button className="icon-btn" onClick={() => fgRef.current?.zoomToFit(600, 60)} aria-label="顯示全部" title="顯示全部">
-            <Maximize2 className="size-4" />
-          </button>
-        </div>
-
-        {filtersOpen && (
-          <div ref={filtersRef} className="glass absolute inset-x-4 top-16 z-20 rounded-2xl p-4 lg:hidden">{filters}</div>
-        )}
-
-        {/* 人物詳細 */}
-        {selected && (
-          <aside
-            ref={detailRef}
-            className="glass absolute z-20 flex flex-col overflow-hidden rounded-[28px] max-md:inset-x-3 max-md:bottom-3 max-md:max-h-[55%] md:top-4 md:right-4 md:bottom-4 md:w-[340px]"
-          >
-            <div className="relative shrink-0 p-5 pb-3">
-              <button className="icon-btn absolute top-4 right-4 !size-8" onClick={() => focusNode(null)} aria-label="關閉">
-                <X className="size-4" />
-              </button>
-              <div className="flex items-center gap-3">
-                <span
-                  className="grid size-14 shrink-0 place-items-center rounded-full font-serif text-2xl font-bold text-deep-950"
-                  style={{ background: groupColor.get(selected.group) }}
-                >
-                  {selected.name[0]}
-                </span>
-                <div className="min-w-0 pr-8">
-                  <h2 className="text-xl font-semibold tracking-tight">{selected.name}</h2>
-                  <p className="truncate text-xs text-mute">{selected.englishName}</p>
-                </div>
-              </div>
-              <div className="mt-3 flex flex-wrap gap-1.5 text-xs">
-                <span className="chip !cursor-default">{selected.role}</span>
-                <span className="chip !cursor-default">
-                  {formatYear(selected.born)} – {formatYear(selected.died)}
-                </span>
-                <span className="chip !cursor-default">{groups.find((g) => g.id === selected.group)?.name}</span>
-              </div>
-              <p className="mt-3 text-sm leading-relaxed text-ink/85">{selected.bio}</p>
-              {countryByIso.has(selected.iso) && (
-                <Link to={`/?country=${selected.iso}`} className="mt-3 inline-flex items-center gap-1.5 text-sm text-glow hover:underline">
-                  <Globe2 className="size-4" />
-                  在地球上看{countryByIso.get(selected.iso)!.zh}的歷史
-                </Link>
-              )}
-            </div>
-            <div className="scroll-thin min-h-0 flex-1 overflow-y-auto border-t border-white/10 p-5 pt-3">
-              <h3 className="mb-2 text-xs tracking-widest text-mute">關係（{selectedRelations.length}）</h3>
-              <ul className="space-y-1.5">
-                {selectedRelations.map((r) => {
-                  const otherId = r.source === selected.id ? r.target : r.source;
-                  const other = figureById.get(otherId)!;
-                  return (
-                    <li key={`${r.source}-${r.target}`}>
-                      <button
-                        onClick={() => focusNode(otherId)}
-                        className="flex w-full items-start gap-3 rounded-xl px-2 py-2 text-left transition hover:bg-white/[0.06]"
-                      >
-                        <span
-                          className="mt-0.5 shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium text-deep-950"
-                          style={{ background: relationColors[r.type] }}
-                        >
-                          {r.type}
-                        </span>
-                        <span className="min-w-0">
-                          <span className="block text-sm text-white">{other.name}</span>
-                          <span className="block text-xs text-mute">{r.label}</span>
-                        </span>
-                      </button>
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-          </aside>
-        )}
+          aria-label="顯示全部"
+        >
+          <Scan className="size-4" />
+        </button>
       </div>
+
+      {/* 右側：人物詳細 */}
+      {focus && (
+        <aside
+          ref={detailRef}
+          className="glass absolute top-4 right-4 bottom-4 z-20 flex w-[340px] flex-col overflow-hidden rounded-[28px] max-md:inset-x-3 max-md:top-auto max-md:max-h-[55%] max-md:w-auto"
+        >
+          <div className="relative shrink-0 p-6 pb-4">
+            <button onClick={() => select(null)} className="glass-soft absolute top-5 right-5 grid size-9 place-items-center rounded-full text-white/80 hover:bg-white/20" aria-label="關閉">
+              <X className="size-4" />
+            </button>
+            <p data-reveal className="eyebrow">
+              {groupById.get(focus.group)?.name}
+            </p>
+            <h2 data-reveal className="mt-1 text-[28px] leading-tight font-semibold tracking-tight">
+              {focus.name}
+            </h2>
+            <p data-reveal className="text-[13px] text-white/55">
+              {focus.englishName}
+            </p>
+            <div data-reveal className="mt-3 flex flex-wrap gap-1.5">
+              <span className="chip">{focus.role}</span>
+              <span className="chip tabular-nums">
+                {formatYear(focus.born)} – {formatYear(focus.died)}
+              </span>
+            </div>
+            <p data-reveal className="mt-4 text-[13.5px] leading-relaxed text-white/85">
+              {focus.bio}
+            </p>
+            {countryByIso.has(focus.iso) && (
+              <Link data-reveal to={`/?country=${focus.iso}`} className="mt-3 inline-flex items-center gap-1.5 text-[13px] text-white/80 hover:text-white">
+                <Globe2 className="size-4" />
+                在地球上看{countryByIso.get(focus.iso)!.zh}的歷史
+              </Link>
+            )}
+          </div>
+          <div className="scroll-thin min-h-0 flex-1 overflow-y-auto border-t border-white/10 px-4 py-4">
+            <p data-reveal className="eyebrow mb-2 px-2">
+              關係（{(neighbors.get(focus.id) ?? []).length}）
+            </p>
+            <ul className="space-y-1">
+              {(neighbors.get(focus.id) ?? []).map((n) => {
+                const o = figureById.get(n.id)!;
+                return (
+                  <li key={n.id} data-reveal>
+                    <button
+                      onClick={() => select(n.id)}
+                      onPointerEnter={() => setHover(n.id)}
+                      onPointerLeave={() => setHover(null)}
+                      className="flex w-full items-start gap-3 rounded-2xl px-2 py-2.5 text-left transition hover:bg-white/10"
+                    >
+                      <span className="mt-0.5 inline-flex shrink-0 items-center gap-1 rounded-full bg-white px-2 py-0.5 text-[10.5px] font-semibold text-deep-800">
+                        <span className="size-1.5 rounded-full" style={{ background: relationColors[n.type] }} />
+                        {n.type}
+                      </span>
+                      <span className="min-w-0">
+                        <span className="block text-[14px] font-medium">{o.name}</span>
+                        <span className="block text-[12px] leading-snug text-white/60">{n.label}</span>
+                      </span>
+                    </button>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        </aside>
+      )}
     </div>
   );
 }
