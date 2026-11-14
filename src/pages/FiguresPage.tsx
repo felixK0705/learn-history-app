@@ -5,6 +5,7 @@ import { Globe2, Maximize2, Search, SlidersHorizontal, X } from "lucide-react";
 import { figures, groups, relationColors, relations, type Figure, type RelationType } from "../data/figures";
 import { countryByIso } from "../data/countries";
 import { formatYear } from "../lib/format";
+import { useReveal } from "../lib/motion";
 
 type GNode = NodeObject<Figure & { color: string }>;
 type GLink = LinkObject<GNode, { type: RelationType; label: string }>;
@@ -28,6 +29,10 @@ export default function FiguresPage() {
   const [hoverId, setHoverId] = useState<string | null>(null);
   const [query, setQuery] = useState("");
   const [filtersOpen, setFiltersOpen] = useState(false);
+  const asideRef = useRef<HTMLElement>(null);
+  const detailRef = useRef<HTMLElement>(null);
+  const hitsRef = useRef<HTMLUListElement>(null);
+  const filtersRef = useRef<HTMLDivElement>(null);
 
   // 若從其他頁面帶入人物，確保其群組顯示
   useEffect(() => {
@@ -114,6 +119,11 @@ export default function FiguresPage() {
     [focusId],
   );
 
+  useReveal(asideRef, [], { stagger: ":scope > *, :scope section > div > *", y: 14, each: 0.025, duration: 0.5 });
+  useReveal(detailRef, [selected?.id], { stagger: ":scope > div > *, :scope li", x: 24, y: 0, each: 0.04, duration: 0.5 });
+  useReveal(hitsRef, [searchHits.length > 0], { y: -8, duration: 0.3 });
+  useReveal(filtersRef, [filtersOpen], { y: -12, duration: 0.35 });
+
   const toggle = <T,>(set: Set<T>, v: T) => {
     const s = new Set(set);
     if (s.has(v)) s.delete(v);
@@ -167,7 +177,7 @@ export default function FiguresPage() {
   return (
     <div className="absolute inset-0 flex">
       {/* 左側控制面板 */}
-      <aside className="scroll-thin relative z-10 hidden w-72 shrink-0 overflow-y-auto border-r border-white/10 bg-deep-950/30 p-5 lg:block">
+      <aside ref={asideRef} className="scroll-thin relative z-10 hidden w-72 shrink-0 overflow-y-auto border-r border-white/10 bg-deep-950/30 p-5 lg:block">
         <h1 className="font-serif text-2xl font-bold">歷史人物關係圖</h1>
         <p className="mt-1 text-sm text-mute">
           {figures.length} 位人物、{relations.length} 條關係。滑過人物可看到與其相連的人，點擊查看詳細介紹。
@@ -259,7 +269,7 @@ export default function FiguresPage() {
             />
           </label>
           {searchHits.length > 0 && (
-            <ul className="glass mt-2 animate-fade-in overflow-hidden rounded-2xl p-1">
+            <ul ref={hitsRef} className="glass mt-2 overflow-hidden rounded-2xl p-1">
               {searchHits.map((f) => (
                 <li key={f.id}>
                   <button
@@ -289,14 +299,14 @@ export default function FiguresPage() {
         </div>
 
         {filtersOpen && (
-          <div className="glass absolute inset-x-4 top-16 z-20 animate-fade-in rounded-2xl p-4 lg:hidden">{filters}</div>
+          <div ref={filtersRef} className="glass absolute inset-x-4 top-16 z-20 rounded-2xl p-4 lg:hidden">{filters}</div>
         )}
 
         {/* 人物詳細 */}
         {selected && (
           <aside
-            key={selected.id}
-            className="glass absolute z-20 flex animate-slide-in flex-col rounded-3xl shadow-2xl max-md:inset-x-3 max-md:bottom-3 max-md:max-h-[55%] md:top-4 md:right-4 md:bottom-4 md:w-[340px]"
+            ref={detailRef}
+            className="glass absolute z-20 flex flex-col rounded-3xl shadow-2xl max-md:inset-x-3 max-md:bottom-3 max-md:max-h-[55%] md:top-4 md:right-4 md:bottom-4 md:w-[340px]"
           >
             <div className="relative shrink-0 p-5 pb-3">
               <button className="icon-btn absolute top-4 right-4 !size-8" onClick={() => focusNode(null)} aria-label="關閉">

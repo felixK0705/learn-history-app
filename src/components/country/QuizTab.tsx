@@ -1,4 +1,5 @@
-import { useMemo, useState } from "react";
+import { useMemo, useRef, useState } from "react";
+import { gsap, useGSAP, useReveal } from "../../lib/motion";
 import { Check, RefreshCw, X } from "lucide-react";
 import type { CountryInfo, TimelineEvent } from "../../data/types";
 import { countries as allCountries } from "../../data/countries";
@@ -72,6 +73,14 @@ export default function QuizTab({ country }: { country: CountryInfo }) {
   const [idx, setIdx] = useState(0);
   const [picked, setPicked] = useState<number | null>(null);
   const [score, setScore] = useState(0);
+  const qRef = useRef<HTMLDivElement>(null);
+  const explainRef = useRef<HTMLDivElement>(null);
+  const doneRef = useRef<HTMLDivElement>(null);
+  useReveal(qRef, [idx, seed], { stagger: "[data-anim]", y: 12, each: 0.07 });
+  useReveal(explainRef, [picked], { y: 10, duration: 0.4 });
+  useGSAP(() => {
+    if (doneRef.current) gsap.fromTo(doneRef.current.children, { autoAlpha: 0, y: 20, scale: 0.9 }, { autoAlpha: 1, y: 0, scale: 1, stagger: 0.1, ease: "back.out(1.7)" });
+  }, { dependencies: [idx >= quiz.length] });
 
   const restart = () => {
     setSeed((s) => s + 1);
@@ -83,7 +92,7 @@ export default function QuizTab({ country }: { country: CountryInfo }) {
   if (idx >= quiz.length) {
     const ratio = score / quiz.length;
     return (
-      <div className="py-8 text-center">
+      <div ref={doneRef} className="py-8 text-center">
         <div className="text-5xl">{ratio === 1 ? "🏆" : ratio >= 0.6 ? "🎉" : "📚"}</div>
         <p className="mt-4 text-lg text-white">
           答對 {score} / {quiz.length} 題
@@ -100,7 +109,7 @@ export default function QuizTab({ country }: { country: CountryInfo }) {
 
   const q = quiz[idx];
   return (
-    <div>
+    <div ref={qRef}>
       <div className="flex items-center justify-between text-xs text-mute">
         <span>
           第 {idx + 1} / {quiz.length} 題
@@ -110,12 +119,12 @@ export default function QuizTab({ country }: { country: CountryInfo }) {
       <div className="mt-2 h-1 overflow-hidden rounded-full bg-white/10">
         <div className="h-full bg-glow transition-[width]" style={{ width: `${(idx / quiz.length) * 100}%` }} />
       </div>
-      <h4 className="mt-5 text-base leading-relaxed font-medium text-white">{q.prompt}</h4>
+      <h4 data-anim className="mt-5 text-base leading-relaxed font-medium text-white">{q.prompt}</h4>
       <ul className="mt-4 space-y-2">
         {q.options.map((o, i) => {
           const state = picked === null ? "idle" : i === q.answer ? "right" : i === picked ? "wrong" : "dim";
           return (
-            <li key={i}>
+            <li key={i} data-anim>
               <button
                 disabled={picked !== null}
                 onClick={() => {
@@ -142,7 +151,7 @@ export default function QuizTab({ country }: { country: CountryInfo }) {
         })}
       </ul>
       {picked !== null && (
-        <div className="mt-4 animate-fade-in">
+        <div ref={explainRef} className="mt-4">
           <p className="rounded-xl bg-white/[0.05] p-3 text-sm leading-relaxed text-mute">💡 {q.explain}</p>
           <button
             onClick={() => {

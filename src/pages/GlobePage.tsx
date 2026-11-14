@@ -4,6 +4,7 @@ import { Box, Dices, Landmark, Minus, Pause, Play, Plus, RotateCcw, X } from "lu
 import GlobeView, { type GlobeHandle } from "../components/globe/GlobeView";
 import CountryPanel from "../components/country/CountryPanel";
 import StarField from "../components/StarField";
+import { gsap, prefersReducedMotion, useGSAP, useReveal } from "../lib/motion";
 import { countries, countryByIso } from "../data/countries";
 import { buildings, type Building } from "../data/buildings";
 import { figures } from "../data/figures";
@@ -26,6 +27,53 @@ export default function GlobePage() {
   const [notice, setNotice] = useState<string | null>(null);
   const [continent, setContinent] = useState<CountryInfo["continent"] | null>(null);
   const { visited, markVisited } = useVisited();
+
+  const shiftRef = useRef<HTMLDivElement>(null);
+  const glowRef = useRef<HTMLDivElement>(null);
+  const globeWrapRef = useRef<HTMLDivElement>(null);
+  const placeholderRef = useRef<HTMLDivElement>(null);
+  const heroRef = useRef<HTMLElement>(null);
+  const continentRef = useRef<HTMLDivElement>(null);
+  const buildingRef = useRef<HTMLDivElement>(null);
+  const noticeRef = useRef<HTMLDivElement>(null);
+  const controlsRef = useRef<HTMLDivElement>(null);
+
+  // 載入中的地球呼吸效果
+  useGSAP(() => {
+    if (!placeholderRef.current) return;
+    gsap.to(placeholderRef.current, { scale: 1.06, opacity: 0.5, duration: 1.2, repeat: -1, yoyo: true, ease: "sine.inOut" });
+  }, { dependencies: [ready] });
+
+  // 地球就緒時放大淡入、光暈綻放
+  useGSAP(() => {
+    if (!ready || prefersReducedMotion()) return;
+    const tl = gsap.timeline();
+    tl.fromTo(globeWrapRef.current, { scale: 0.75, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 1.4, ease: "expo.out" })
+      .fromTo(glowRef.current, { scale: 0.3, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 1.6, ease: "power2.out" }, 0)
+      .fromTo(
+        controlsRef.current?.children ?? [],
+        { x: 24, autoAlpha: 0 },
+        { x: 0, autoAlpha: 1, stagger: 0.06, duration: 0.5, clearProps: "transform" },
+        0.5,
+      );
+  }, { dependencies: [ready] });
+
+  // 選取國家時，地球讓位給資訊面板
+  useGSAP(() => {
+    const desktop = window.matchMedia("(min-width: 1024px)").matches;
+    gsap.to(shiftRef.current, {
+      x: selected && desktop ? -210 : 0,
+      yPercent: selected && !desktop ? -22 : 0,
+      duration: 1,
+      ease: "expo.out",
+      overwrite: true,
+    });
+  }, { dependencies: [!!selected] });
+
+  useReveal(heroRef, [!!selected], { stagger: ":scope > *", y: 24, each: 0.1, duration: 0.8, delay: 0.2 });
+  useReveal(continentRef, [continent], { stagger: ":scope > *", y: 8, scale: 0.9, each: 0.03, duration: 0.35 });
+  useReveal(buildingRef, [building?.id], { y: 24, duration: 0.5 });
+  useReveal(noticeRef, [notice], { y: -16, duration: 0.4 });
 
   const select = useCallback(
     (iso: string | null) => {
@@ -71,18 +119,10 @@ export default function GlobePage() {
   return (
     <div className="absolute inset-0 overflow-hidden">
       <StarField />
+      <div ref={shiftRef} className="absolute inset-0">
       {/* 地球後方光暈 */}
-      <div
-        className={`pointer-events-none absolute top-1/2 left-1/2 size-[70vmin] -translate-1/2 rounded-full bg-glow/25 blur-[90px] transition-transform duration-700 ${
-          selected ? "lg:-translate-x-[calc(50%+210px)]" : ""
-        }`}
-      />
-
-      <div
-        className={`absolute inset-0 transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] ${
-          selected ? "max-lg:-translate-y-[22%] lg:-translate-x-[210px]" : ""
-        }`}
-      >
+      <div ref={glowRef} className="pointer-events-none absolute top-1/2 left-1/2 size-[70vmin] -translate-1/2 rounded-full bg-glow/25 blur-[90px]" />
+      <div ref={globeWrapRef} className="absolute inset-0">
         <GlobeView
           ref={globe}
           selectedIso={selectedIso}
@@ -98,16 +138,17 @@ export default function GlobePage() {
           onReady={() => setReady(true)}
         />
       </div>
+      </div>
 
       {!ready && (
         <div className="pointer-events-none absolute inset-0 grid place-items-center">
-          <div className="size-[42vmin] animate-pulse rounded-full bg-gradient-to-br from-sky-300/30 to-deep-700/30" />
+          <div ref={placeholderRef} className="size-[42vmin] rounded-full bg-gradient-to-br from-sky-300/30 to-deep-700/30" />
         </div>
       )}
 
       {/* 左上：介紹與進度 */}
       {!selected && (
-        <section className="pointer-events-none absolute top-6 left-5 z-10 max-w-xs animate-fade-in md:top-10 md:left-10">
+        <section ref={heroRef} className="pointer-events-none absolute top-6 left-5 z-10 max-w-xs md:top-10 md:left-10">
           <p className="text-xs tracking-[0.4em] text-glow">EXPLORE WORLD HISTORY</p>
           <h1 className="mt-3 font-serif text-3xl leading-tight font-bold text-white drop-shadow md:text-5xl">
             轉動地球，
@@ -150,7 +191,7 @@ export default function GlobePage() {
       {!selected && (
         <div className="absolute bottom-5 left-5 z-10 max-w-[calc(100%-7rem)] md:left-10">
           {continent && (
-            <div className="glass mb-2 flex max-w-md animate-fade-in flex-wrap gap-1.5 rounded-2xl p-2">
+            <div ref={continentRef} className="glass mb-2 flex max-w-md flex-wrap gap-1.5 rounded-2xl p-2">
               {continentList.map((c) => (
                 <button key={c.iso} className="chip" onClick={() => select(c.iso)}>
                   <span>{c.flag}</span>
@@ -183,6 +224,7 @@ export default function GlobePage() {
 
       {/* 右下：地球控制 */}
       <div
+        ref={controlsRef}
         className={`absolute right-5 bottom-5 z-20 flex flex-col gap-2 transition-all duration-500 ${
           selected ? "lg:right-[452px] max-lg:opacity-0 max-lg:pointer-events-none" : ""
         }`}
@@ -227,7 +269,7 @@ export default function GlobePage() {
 
       {/* 地標資訊卡 */}
       {building && (
-        <div className="glass absolute bottom-20 left-1/2 z-30 w-[min(92%,360px)] -translate-x-1/2 animate-fade-in rounded-2xl p-4 shadow-2xl md:bottom-6">
+        <div ref={buildingRef} className="glass absolute bottom-20 left-1/2 z-30 w-[min(92%,360px)] -translate-x-1/2 rounded-2xl p-4 shadow-2xl md:bottom-6">
           <button className="absolute top-3 right-3 text-mute hover:text-ink" onClick={() => setBuilding(null)} aria-label="關閉">
             <X className="size-4" />
           </button>
@@ -246,7 +288,7 @@ export default function GlobePage() {
       )}
 
       {notice && (
-        <div className="glass absolute top-6 left-1/2 z-40 -translate-x-1/2 animate-fade-in rounded-full px-4 py-2 text-sm">
+        <div ref={noticeRef} className="glass absolute top-6 left-1/2 z-40 -translate-x-1/2 rounded-full px-4 py-2 text-sm">
           {notice}
         </div>
       )}

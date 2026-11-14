@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Globe2, Landmark, Search, User } from "lucide-react";
 import { countries } from "../data/countries";
+import { useReveal } from "../lib/motion";
 import { figures } from "../data/figures";
 import { buildings } from "../data/buildings";
 
@@ -51,6 +52,10 @@ export default function CommandPalette({ open, onClose }: { open: boolean; onClo
   const [q, setQ] = useState("");
   const [active, setActive] = useState(0);
   const inputRef = useRef<HTMLInputElement>(null);
+  const dialogRef = useRef<HTMLDivElement>(null);
+  const backdropRef = useRef<HTMLDivElement>(null);
+  useReveal(backdropRef, [open], { y: 0, duration: 0.25 });
+  useReveal(dialogRef, [open], { y: -12, scale: 0.97, duration: 0.4 });
   const navigate = useNavigate();
 
   const results = useMemo(() => {
@@ -77,11 +82,12 @@ export default function CommandPalette({ open, onClose }: { open: boolean; onClo
   };
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-start justify-center bg-deep-950/60 p-4 pt-[12vh] backdrop-blur-sm" onClick={onClose}>
+    <div ref={backdropRef} className="fixed inset-0 z-[100] flex items-start justify-center bg-deep-950/60 p-4 pt-[12vh] backdrop-blur-sm" onClick={onClose}>
       <div
+        ref={dialogRef}
         role="dialog"
         aria-label="搜尋"
-        className="glass w-full max-w-xl animate-fade-in overflow-hidden rounded-2xl shadow-2xl"
+        className="glass w-full max-w-xl overflow-hidden rounded-2xl shadow-2xl"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex items-center gap-3 border-b border-white/10 px-4">

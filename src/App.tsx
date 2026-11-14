@@ -1,4 +1,5 @@
-import { lazy, Suspense, useEffect, useState } from "react";
+import { lazy, Suspense, useEffect, useRef, useState } from "react";
+import { gsap, prefersReducedMotion, useGSAP } from "./lib/motion";
 import { NavLink, Route, Routes, useLocation } from "react-router-dom";
 import { Globe2, Landmark, Network, Search } from "lucide-react";
 import CommandPalette from "./components/CommandPalette";
@@ -15,10 +16,14 @@ const nav = [
 ];
 
 function Loading() {
+  const spinner = useRef<HTMLDivElement>(null);
+  useGSAP(() => {
+    gsap.to(spinner.current, { rotation: 360, duration: 0.9, repeat: -1, ease: "none" });
+  });
   return (
     <div className="grid h-full place-items-center">
       <div className="flex flex-col items-center gap-3 text-mute">
-        <div className="size-10 animate-spin rounded-full border-2 border-white/15 border-t-glow" />
+        <div ref={spinner} className="size-10 rounded-full border-2 border-white/15 border-t-glow" />
         <span className="text-sm">載入中…</span>
       </div>
     </div>
@@ -28,6 +33,38 @@ function Loading() {
 export default function App() {
   const [paletteOpen, setPaletteOpen] = useState(false);
   const location = useLocation();
+  const pageRef = useRef<HTMLDivElement>(null);
+  const shellRef = useRef<HTMLDivElement>(null);
+
+  // 首次進入：外框與導覽依序浮現
+  useGSAP(
+    () => {
+      if (prefersReducedMotion()) return;
+      gsap
+        .timeline()
+        .fromTo(
+          shellRef.current,
+          { y: 40, autoAlpha: 0, scale: 0.98 },
+          { y: 0, autoAlpha: 1, scale: 1, duration: 1, ease: "expo.out", clearProps: "transform" },
+        )
+        .fromTo(
+          "[data-intro]",
+          { y: -10, autoAlpha: 0 },
+          { y: 0, autoAlpha: 1, stagger: 0.06, duration: 0.5, clearProps: "transform" },
+          0.35,
+        );
+    },
+    { scope: shellRef },
+  );
+
+  // 換頁轉場
+  useGSAP(
+    () => {
+      if (prefersReducedMotion() || !pageRef.current) return;
+      gsap.fromTo(pageRef.current, { autoAlpha: 0, y: 14 }, { autoAlpha: 1, y: 0, duration: 0.6, ease: "power3.out" });
+    },
+    { dependencies: [location.pathname] },
+  );
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -43,7 +80,7 @@ export default function App() {
   return (
     <div className="h-full p-0 md:p-6 lg:p-8">
       {/* 主舞台：參考設計中帶陰影的圓角深藍卡片 */}
-      <div className="stage relative flex h-full overflow-hidden shadow-[0_40px_80px_-30px_rgba(6,40,120,0.65)] md:rounded-[28px]">
+      <div ref={shellRef} className="stage relative flex h-full overflow-hidden shadow-[0_40px_80px_-30px_rgba(6,40,120,0.65)] md:rounded-[28px]">
         {/* 左側細導覽列 */}
         <aside className="relative z-30 hidden w-16 shrink-0 flex-col items-center border-r border-white/10 bg-deep-950/35 py-5 md:flex">
           <Logo className="size-9" />
@@ -86,12 +123,12 @@ export default function App() {
         <div className="relative flex min-w-0 flex-1 flex-col">
           {/* 頂部列 */}
           <header className="relative z-30 flex h-16 shrink-0 items-center gap-3 border-b border-white/10 px-4 md:px-6">
-            <NavLink to="/" className="flex items-center gap-2.5">
+            <NavLink to="/" data-intro className="flex items-center gap-2.5">
               <Logo className="size-8 md:hidden" />
               <span className="text-lg font-bold tracking-[0.12em] uppercase">Timelore</span>
             </NavLink>
 
-            <nav className="ml-6 hidden items-center gap-1 lg:flex">
+            <nav data-intro className="ml-6 hidden items-center gap-1 lg:flex">
               {nav.map(({ to, label }) => (
                 <NavLink
                   key={to}
@@ -109,6 +146,7 @@ export default function App() {
             </nav>
 
             <button
+              data-intro
               onClick={() => setPaletteOpen(true)}
               className="ml-auto flex h-9 items-center gap-2 rounded-full border border-white/10 bg-white/5 pr-2 pl-3 text-sm text-mute transition hover:bg-white/10 hover:text-ink"
             >
@@ -119,7 +157,7 @@ export default function App() {
           </header>
 
           <main className="relative min-h-0 flex-1">
-            <div className="absolute inset-x-0 top-0 bottom-14 md:bottom-0">
+            <div ref={pageRef} className="absolute inset-x-0 top-0 bottom-14 md:bottom-0">
             <Suspense fallback={<Loading />}>
               <Routes location={location}>
                 <Route path="/" element={<GlobePage />} />

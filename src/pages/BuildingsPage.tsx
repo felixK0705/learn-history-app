@@ -1,4 +1,5 @@
-import { lazy, Suspense, useMemo, useState } from "react";
+import { lazy, Suspense, useMemo, useRef, useState } from "react";
+import { gsap, prefersReducedMotion, useGSAP, useReveal } from "../lib/motion";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { ChevronLeft, ChevronRight, Globe2, Info, Pause, Play, RotateCcw, Search } from "lucide-react";
 import { buildings } from "../data/buildings";
@@ -25,6 +26,19 @@ export default function BuildingsPage() {
   const [autoRotate, setAutoRotate] = useState(true);
   const [resetToken, setResetToken] = useState(0);
   const [infoOpen, setInfoOpen] = useState(true);
+  const titleRef = useRef<HTMLDivElement>(null);
+  const infoRef = useRef<HTMLDivElement>(null);
+  const listRef = useRef<HTMLUListElement>(null);
+  const stageRef = useRef<HTMLDivElement>(null);
+
+  useReveal(titleRef, [current.id], { stagger: ":scope > *", y: 20, each: 0.08, duration: 0.7 });
+  useReveal(infoRef, [current.id, infoOpen], { stagger: ":scope > *, :scope li", y: 12, each: 0.05, duration: 0.5, delay: 0.15 });
+  useReveal(listRef, [q], { stagger: ":scope > li", x: -16, y: 0, each: 0.02, duration: 0.4 });
+  // 切換建築時舞台微幅推近
+  useGSAP(() => {
+    if (prefersReducedMotion() || !stageRef.current) return;
+    gsap.fromTo(stageRef.current, { autoAlpha: 0, scale: 0.94 }, { autoAlpha: 1, scale: 1, duration: 0.9, ease: "expo.out" });
+  }, { dependencies: [current.id] });
 
   const list = useMemo(() => {
     const s = q.trim().toLowerCase();
@@ -53,7 +67,7 @@ export default function BuildingsPage() {
             />
           </label>
         </div>
-        <ul className="scroll-thin min-h-0 flex-1 overflow-y-auto px-3 pb-4">
+        <ul ref={listRef} className="scroll-thin min-h-0 flex-1 overflow-y-auto px-3 pb-4">
           {list.map((b, i) => {
             const showEra = i === 0 || eraLabel(list[i - 1].sortYear) !== eraLabel(b.sortYear);
             const active = b.id === current.id;
@@ -85,12 +99,14 @@ export default function BuildingsPage() {
       {/* 3D 舞台 */}
       <div className="relative min-w-0 flex-1">
         <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-deep-950/60 to-transparent" />
+        <div ref={stageRef} className="absolute inset-0">
         <Suspense fallback={null}>
           <ModelViewer url={`/models/${current.model}`} autoRotate={autoRotate} resetToken={resetToken} />
         </Suspense>
+        </div>
 
         {/* 標題 */}
-        <div className="pointer-events-none absolute top-5 left-5 right-24 animate-fade-in md:top-8 md:left-8" key={current.id}>
+        <div ref={titleRef} className="pointer-events-none absolute top-5 left-5 right-24 md:top-8 md:left-8">
           <p className="text-xs tracking-[0.3em] text-amber-200">
             {current.era}・{current.location}
           </p>
@@ -119,8 +135,8 @@ export default function BuildingsPage() {
         {/* 資訊卡 */}
         {infoOpen && (
           <div
-            key={`info-${current.id}`}
-            className="glass scroll-thin absolute bottom-20 left-4 z-10 max-h-[45%] w-[min(calc(100%-2rem),380px)] animate-fade-in overflow-y-auto rounded-2xl p-5 md:bottom-8 md:left-8"
+            ref={infoRef}
+            className="glass scroll-thin absolute bottom-20 left-4 z-10 max-h-[45%] w-[min(calc(100%-2rem),380px)] overflow-y-auto rounded-2xl p-5 md:bottom-8 md:left-8"
           >
             <div className="flex flex-wrap gap-1.5">
               <span className="chip !cursor-default">{current.style}</span>
