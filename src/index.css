@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Noto Sans TC", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Noto Serif TC", ui-serif, Georgia, serif;
+
+  --color-page: #bfe6fb;
+  --color-deep-950: #031033;
+  --color-deep-900: #061a4f;
+  --color-deep-800: #0a2a78;
+  --color-deep-700: #0f3fa6;
+  --color-deep-600: #1658d0;
+  --color-glow: #5cc8ff;
+  --color-ink: #e8f3ff;
+  --color-mute: #9cb8e6;
+
+  --animate-float: float 9s ease-in-out infinite;
+  --animate-fade-in: fade-in 0.35s ease-out both;
+  --animate-slide-in: slide-in 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+  --animate-twinkle: twinkle 4s ease-in-out infinite;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0) }
+    50% { transform: translateY(-14px) }
+  }
+  @keyframes fade-in {
+    from { opacity: 0; transform: translateY(6px) }
+    to { opacity: 1; transform: none }
+  }
+  @keyframes slide-in {
+    from { opacity: 0; transform: translateX(32px) }
+    to { opacity: 1; transform: none }
+  }
+  @keyframes twinkle {
+    0%, 100% { opacity: 0.25 }
+    50% { opacity: 1 }
+  }
+}
+
+@layer base {
+  html, body, #root { height: 100%; }
+  body {
+    @apply bg-page font-sans text-ink antialiased;
+    background-image: radial-gradient(1200px 600px at 50% -10%, #e6f6ff 0%, transparent 60%),
+      linear-gradient(180deg, #cdeeff 0%, #a9dcf7 100%);
+  }
+  ::selection { background: rgb(92 200 255 / 0.35); }
+}
+
+@layer components {
+  .stage {
+    background:
+      radial-gradient(60% 70% at 50% 45%, #1e78e6 0%, #0f4fc0 35%, #0a2f86 70%, #061a4f 100%);
+  }
+  .glass {
+    @apply border border-white/10 bg-deep-950/55 backdrop-blur-xl;
+  }
+  .scroll-thin { scrollbar-width: thin; scrollbar-color: rgb(255 255 255 / 0.2) transparent; }
+  .chip {
+    @apply inline-flex items-center gap-1 rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-xs text-mute transition hover:bg-white/10 hover:text-ink;
+  }
+  .chip-on { @apply border-glow/50 bg-glow/15 text-ink; }
+  .icon-btn {
+    @apply grid size-9 place-items-center rounded-full border border-white/10 bg-white/5 text-ink/80 transition hover:border-glow/40 hover:bg-white/10 hover:text-ink focus-visible:outline-2 focus-visible:outline-glow;
+  }
+}
+
+/* globe.gl 國家標籤 */
+.country-label {
+  @apply cursor-pointer select-none whitespace-nowrap rounded-full border border-white/25 bg-deep-950/60 px-2 py-0.5 text-[11px] font-medium tracking-wide text-white shadow-lg backdrop-blur-sm transition-[opacity,transform,background-color] duration-300;
+  transform: translate(-50%, -50%);
+  pointer-events: auto;
+}
+.country-label:hover, .country-label.is-active {
+  @apply border-glow bg-deep-600/90;
+  transform: translate(-50%, -50%) scale(1.12);
+}
+.country-label .dot {
+  @apply mr-1 inline-block size-1.5 rounded-full bg-glow align-middle;
+  box-shadow: 0 0 8px var(--color-glow);
+}
+.country-label.visited .dot { @apply bg-amber-300; box-shadow: 0 0 8px #fcd34d; }
+.landmark-pin {
+  @apply size-2.5 cursor-pointer rounded-full border border-white bg-amber-300;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 0 4px rgb(252 211 77 / 0.25), 0 0 14px #fcd34d;
+  pointer-events: auto;
+}
+.landmark-pin:hover { transform: translate(-50%, -50%) scale(1.5); }
