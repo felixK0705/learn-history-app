@@ -1,6 +1,6 @@
 import { forwardRef, useEffect, useImperativeHandle, useRef } from "react";
 import Globe, { type GlobeInstance } from "globe.gl";
-import { Color, Mesh, MeshPhongMaterial, SphereGeometry, TextureLoader } from "three";
+import { AdditiveBlending, Color, Mesh, MeshPhongMaterial, ShaderMaterial, SphereGeometry, TextureLoader } from "three";
 import { countries, countryByIso } from "../../data/world";
 import { buildings, type Building } from "../../data/buildings";
 
@@ -27,7 +27,7 @@ interface Props {
   onReady?: () => void;
 }
 
-const defaultAlt = () => (window.innerWidth < 640 ? 3.8 : window.innerWidth < 1024 ? 3.1 : 2.75);
+const defaultAlt = () => (window.innerWidth < 640 ? 3.6 : window.innerWidth < 1024 ? 2.9 : 2.45);
 
 /** 依鏡頭高度決定顯示多少國家標籤（依人口排序），避免畫面雜亂 */
 const labelLimit = (alt: number) => (alt > 2.2 ? 0 : alt > 1.6 ? 25 : alt > 1.2 ? 70 : alt > 0.9 ? 140 : 999);
@@ -80,7 +80,7 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
 
     const g = new Globe(el, { rendererConfig: { antialias: true, alpha: true } })
       .backgroundColor("rgba(0,0,0,0)")
-      .globeImageUrl("/textures/earth-vivid.jpg")
+      .globeImageUrl("/textures/earth-painted.jpg")
       .bumpImageUrl("/textures/earth-topology.png")
       .showAtmosphere(true)
       .atmosphereColor("#e2f8ff")
@@ -132,11 +132,11 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
       mat.needsUpdate = true;
     });
     let raf = 0;
-    loader.load("/textures/clouds.png", (tex) => {
+    loader.load("/textures/clouds-painted.png", (tex) => {
       if (disposed) return;
       const clouds = new Mesh(
         new SphereGeometry(g.getGlobeRadius() * 1.006, 96, 64),
-        new MeshPhongMaterial({ map: tex, transparent: true, opacity: 0.85, depthWrite: false }),
+        new MeshPhongMaterial({ map: tex, transparent: true, opacity: 0.72, depthWrite: false }),
       );
       g.scene().add(clouds);
       const spin = () => {
@@ -145,6 +145,32 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
       };
       spin();
     });
+
+    // 玻璃珠般的邊緣反光（菲涅耳效果），重現參考圖地球亮白的外緣
+    const rim = new Mesh(
+      new SphereGeometry(g.getGlobeRadius() * 1.012, 96, 64),
+      new ShaderMaterial({
+        transparent: true,
+        depthWrite: false,
+        blending: AdditiveBlending,
+        uniforms: { tint: { value: new Color("#bfeeff") } },
+        vertexShader: `
+          varying vec3 vN; varying vec3 vV;
+          void main() {
+            vec4 mv = modelViewMatrix * vec4(position, 1.0);
+            vN = normalize(normalMatrix * normal);
+            vV = normalize(-mv.xyz);
+            gl_Position = projectionMatrix * mv;
+          }`,
+        fragmentShader: `
+          uniform vec3 tint; varying vec3 vN; varying vec3 vV;
+          void main() {
+            float f = pow(1.0 - max(dot(vN, vV), 0.0), 3.2);
+            gl_FragColor = vec4(tint * f * 1.25, f);
+          }`,
+      }),
+    );
+    g.scene().add(rim);
 
     globeRef.current = g;
 

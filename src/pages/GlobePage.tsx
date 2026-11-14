@@ -155,13 +155,13 @@ export default function GlobePage() {
       <HeaderSlot slot="header-menu">
         <button
           onClick={() => setMenuOpen((v) => !v)}
-          className={`grid size-8 place-items-center rounded-full border transition ${
+          className={`grid size-[42px] place-items-center rounded-full border transition ${
             menuOpen ? "border-white bg-white text-deep-800" : "border-white/15 bg-[#0a2f7d]/55 text-white hover:bg-[#0a2f7d]/80"
           }`}
           aria-label="地球設定"
           aria-expanded={menuOpen}
         >
-          {menuOpen ? <X className="size-3.5" /> : <Menu className="size-3.5" />}
+          {menuOpen ? <X className="size-4" /> : <Menu className="size-4" />}
         </button>
       </HeaderSlot>
 

@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { ChevronDown, Landmark, Search, Volume2, X } from "lucide-react";
+import { Landmark, Search, Volume2, X } from "lucide-react";
 import { gsap, prefersReducedMotion, useGSAP, useReveal } from "../../lib/motion";
 import { flagOf, loadHistory, loadProfile, type CountryMeta, type CountryProfile, type HistoryEvent } from "../../data/world";
 import { buildings } from "../../data/buildings";
@@ -145,59 +145,101 @@ function Empty({ text }: { text: string }) {
   return <p className="py-10 text-center text-sm text-white/60">{text}</p>;
 }
 
+const ERA_ORDER = ["上古", "中世紀", "近世", "近代", "當代"];
+
 function HistoryTab({ events }: { events: HistoryEvent[] | null }) {
   const [era, setEra] = useState<string | null>(null);
   const [q, setQ] = useState("");
-  const [open, setOpen] = useState<number | null>(null);
-  const eras = useMemo(() => [...new Set((events ?? []).map((e) => e.era).filter(Boolean))], [events]);
-  const list = useMemo(() => {
+  const [open, setOpen] = useState<string | null>(null);
+
+  const counts = useMemo(() => {
+    const m = new Map<string, number>();
+    (events ?? []).forEach((e) => m.set(e.era, (m.get(e.era) ?? 0) + 1));
+    return ERA_ORDER.filter((e) => m.has(e)).map((e) => ({ era: e, n: m.get(e)! }));
+  }, [events]);
+  const total = counts.reduce((s, c) => s + c.n, 0) || 1;
+
+  const groups = useMemo(() => {
     const s = q.trim();
-    return (events ?? []).filter((e) => (!era || e.era === era) && (!s || e.title.includes(s) || e.description.includes(s) || e.year.includes(s)));
+    const list = (events ?? []).filter((e) => (!era || e.era === era) && (!s || e.title.includes(s) || e.description.includes(s) || e.year.includes(s)));
+    return ERA_ORDER.map((name) => ({ name, items: list.filter((e) => e.era === name) })).filter((g) => g.items.length);
   }, [events, era, q]);
 
   if (!events) return <Skeleton />;
   if (!events.length) return <Empty text="這個國家的歷史資料整理中。" />;
   return (
     <div>
-      <div data-reveal className="glass-soft flex h-10 items-center gap-2 rounded-full px-4">
-        <Search className="size-4 text-white/60" />
+      {/* 時代總覽：依事件數比例分段，點擊篩選 */}
+      <div data-reveal>
+        <div className="flex h-2 gap-[3px] overflow-hidden rounded-full">
+          {counts.map((c) => (
+            <button
+              key={c.era}
+              onClick={() => setEra(era === c.era ? null : c.era)}
+              style={{ flexGrow: c.n / total }}
+              className={`h-full rounded-full transition-colors ${era === null || era === c.era ? "bg-white/90" : "bg-white/25"}`}
+              aria-label={`${c.era}（${c.n} 則）`}
+            />
+          ))}
+        </div>
+        <div className="mt-2 flex gap-[3px]">
+          {counts.map((c) => (
+            <button
+              key={c.era}
+              onClick={() => setEra(era === c.era ? null : c.era)}
+              style={{ flexGrow: c.n / total, flexBasis: 0 }}
+              className={`min-w-0 truncate text-left text-[11px] transition-colors ${era === c.era ? "font-semibold text-white" : "text-white/55 hover:text-white"}`}
+            >
+              {c.era}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div data-reveal className="glass-soft mt-4 flex h-9 items-center gap-2 rounded-full px-3.5">
+        <Search className="size-[15px] text-white/55" />
         <input
           value={q}
           onChange={(e) => setQ(e.target.value)}
-          placeholder={`搜尋 ${events.length} 則歷史事件`}
-          className="min-w-0 flex-1 bg-transparent text-sm text-white outline-none placeholder:text-white/45"
+          placeholder={`搜尋 ${events.length} 則事件`}
+          className="min-w-0 flex-1 bg-transparent text-[13px] text-white outline-none placeholder:text-white/40"
         />
-      </div>
-      <div data-reveal className="scroll-thin -mx-1 mt-3 flex gap-1.5 overflow-x-auto px-1 pb-1">
-        <button className={`chip shrink-0 ${era === null ? "chip-on" : ""}`} onClick={() => setEra(null)}>
-          全部
-        </button>
-        {eras.map((e) => (
-          <button key={e} className={`chip shrink-0 ${era === e ? "chip-on" : ""}`} onClick={() => setEra(era === e ? null : e)}>
-            {e}
+        {(q || era) && (
+          <button onClick={() => { setQ(""); setEra(null); }} className="text-[11px] text-white/60 hover:text-white">
+            清除
           </button>
-        ))}
+        )}
       </div>
-      <ol className="mt-4">
-        {list.map((e, i) => {
-          const isOpen = open === i;
-          return (
-            <li key={`${e.year}-${e.title}`} data-reveal={i < 14 ? "" : undefined} className="border-b border-white/10 last:border-0">
-              <button className="flex w-full gap-4 py-3.5 text-left" onClick={() => setOpen(isOpen ? null : i)} aria-expanded={isOpen}>
-                <span className="w-[86px] shrink-0 pt-0.5 text-[12px] leading-snug font-medium text-white/60 tabular-nums">{e.year}</span>
-                <span className="min-w-0 flex-1">
-                  <span className="flex items-start justify-between gap-2">
-                    <span className="text-[14.5px] leading-snug font-medium">{e.title}</span>
-                    <ChevronDown className={`mt-0.5 size-4 shrink-0 text-white/50 transition-transform ${isOpen ? "rotate-180" : ""}`} />
-                  </span>
-                  <span className={`mt-1 block text-[13px] leading-relaxed text-white/72 ${isOpen ? "" : "line-clamp-2"}`}>{e.description}</span>
-                </span>
-              </button>
-            </li>
-          );
-        })}
-        {!list.length && <Empty text="找不到符合的事件" />}
-      </ol>
+
+      {groups.map((g) => (
+        <section key={g.name} className="mt-5">
+          <header className="sticky top-0 z-10 -mx-6 mb-1 flex items-baseline gap-2 bg-[linear-gradient(180deg,rgba(18,80,175,0.92),rgba(18,80,175,0.55)_75%,transparent)] px-6 pt-1 pb-3 backdrop-blur-sm">
+            <h3 className="text-[19px] font-semibold tracking-tight">{g.name}</h3>
+            <span className="text-[11.5px] text-white/55">
+              {g.items.length} 則・{g.items[0].year.replace(/年$/, "")} – {g.items[g.items.length - 1].year.replace(/年$/, "")}
+            </span>
+          </header>
+          <ol className="relative ml-[5px] border-l border-white/20">
+            {g.items.map((e, i) => {
+              const key = `${e.year}-${e.title}`;
+              const isOpen = open === key;
+              return (
+                <li key={key} data-reveal={i < 8 ? "" : undefined} className="relative pb-5 pl-5 last:pb-1">
+                  <span
+                    className={`absolute top-[5px] -left-[5px] size-[9px] rounded-full border-[1.5px] border-white transition-colors ${isOpen ? "bg-white" : "bg-[#1557c0]"}`}
+                  />
+                  <button className="block w-full text-left" onClick={() => setOpen(isOpen ? null : key)} aria-expanded={isOpen}>
+                    <span className="inline-block rounded-full bg-white/12 px-2 py-[1px] text-[11px] font-medium text-white/80 tabular-nums">{e.year}</span>
+                    <span className="mt-1.5 block text-[15px] leading-snug font-semibold">{e.title}</span>
+                    <span className={`mt-1 block text-[13px] leading-[1.7] text-white/72 ${isOpen ? "" : "line-clamp-2"}`}>{e.description}</span>
+                  </button>
+                </li>
+              );
+            })}
+          </ol>
+        </section>
+      ))}
+      {!groups.length && <Empty text="找不到符合的事件" />}
     </div>
   );
 }
