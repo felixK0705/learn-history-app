@@ -2,7 +2,7 @@ import { useMemo, useRef } from "react";
 import { gsap, prefersReducedMotion, useGSAP } from "../lib/motion";
 
 /** 背景漂浮光點（以 GSAP 製作閃爍與緩慢漂移） */
-export default function StarField({ count = 70 }: { count?: number }) {
+export default function StarField({ count = 45 }: { count?: number }) {
   const ref = useRef<HTMLDivElement>(null);
   const stars = useMemo(
     () =>
@@ -11,7 +11,7 @@ export default function StarField({ count = 70 }: { count?: number }) {
           const x = Math.sin(i * 9301 + n * 49297) * 233280;
           return x - Math.floor(x);
         };
-        const big = r(3) >= 0.9;
+        const big = r(3) >= 0.97;
         return { left: r(1) * 100, top: r(2) * 100, size: big ? 3 + r(4) * 4 : 1 + r(4) * 1.5, big };
       }),
     [count],

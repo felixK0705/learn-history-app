@@ -1,5 +1,6 @@
 import { forwardRef, useEffect, useImperativeHandle, useRef } from "react";
 import Globe, { type GlobeInstance } from "globe.gl";
+import { Color, Mesh, MeshPhongMaterial, SphereGeometry, TextureLoader } from "three";
 import { countries, countryByIso } from "../../data/world";
 import { buildings, type Building } from "../../data/buildings";
 
@@ -29,7 +30,7 @@ interface Props {
 const defaultAlt = () => (window.innerWidth < 640 ? 3.8 : window.innerWidth < 1024 ? 3.1 : 2.75);
 
 /** 依鏡頭高度決定顯示多少國家標籤（依人口排序），避免畫面雜亂 */
-const labelLimit = (alt: number) => (alt > 2.4 ? 28 : alt > 1.8 ? 60 : alt > 1.3 ? 110 : alt > 0.9 ? 170 : 999);
+const labelLimit = (alt: number) => (alt > 2.2 ? 0 : alt > 1.6 ? 25 : alt > 1.2 ? 70 : alt > 0.9 ? 140 : 999);
 
 const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
   { selectedIso, visited, autoRotate, showLandmarks, onSelectCountry, onHoverCountry, onSelectBuilding, onReady },
@@ -79,14 +80,15 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
 
     const g = new Globe(el, { rendererConfig: { antialias: true, alpha: true } })
       .backgroundColor("rgba(0,0,0,0)")
-      .globeImageUrl("/textures/earth_daymap.jpg")
+      .globeImageUrl("/textures/earth-vivid.jpg")
+      .bumpImageUrl("/textures/earth-topology.png")
       .showAtmosphere(true)
-      .atmosphereColor("#c4ecff")
-      .atmosphereAltitude(0.18)
+      .atmosphereColor("#e2f8ff")
+      .atmosphereAltitude(0.3)
       .polygonAltitude((f) => ((f as GeoFeature).properties.iso_a3 === selectedRef.current ? 0.018 : 0.005))
       .polygonCapColor(capColor)
-      .polygonSideColor(() => "rgba(255, 255, 255, 0.1)")
-      .polygonStrokeColor(() => "rgba(255, 255, 255, 0.22)")
+      .polygonSideColor(() => "rgba(255, 255, 255, 0.06)")
+      .polygonStrokeColor((f) => ((f as GeoFeature).properties.iso_a3 === selectedRef.current ? "rgba(255,255,255,0.7)" : "rgba(0,0,0,0)"))
       .polygonsTransitionDuration(250)
       .onPolygonHover((f) => {
         hoverRef.current = (f as GeoFeature) ?? null;
@@ -120,6 +122,30 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
       }
     });
 
+    // 海面反光（依海洋遮罩）與緩慢轉動的雲層，呈現參考圖中光滑明亮的地球
+    const loader = new TextureLoader();
+    const mat = g.globeMaterial() as MeshPhongMaterial;
+    loader.load("/textures/earth-water.png", (tex) => {
+      mat.specularMap = tex;
+      mat.specular = new Color("#a9d8ff");
+      mat.shininess = 18;
+      mat.needsUpdate = true;
+    });
+    let raf = 0;
+    loader.load("/textures/clouds.png", (tex) => {
+      if (disposed) return;
+      const clouds = new Mesh(
+        new SphereGeometry(g.getGlobeRadius() * 1.006, 96, 64),
+        new MeshPhongMaterial({ map: tex, transparent: true, opacity: 0.85, depthWrite: false }),
+      );
+      g.scene().add(clouds);
+      const spin = () => {
+        clouds.rotation.y += 0.00025;
+        raf = requestAnimationFrame(spin);
+      };
+      spin();
+    });
+
     globeRef.current = g;
 
     fetch("/data/countries.json")
@@ -137,6 +163,7 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
 
     return () => {
       disposed = true;
+      cancelAnimationFrame(raf);
       ro.disconnect();
       g._destructor?.();
       el.replaceChildren();
@@ -203,6 +230,7 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
     const g = globeRef.current;
     if (!g) return;
     g.polygonCapColor(g.polygonCapColor());
+    g.polygonStrokeColor(g.polygonStrokeColor());
     g.polygonAltitude(g.polygonAltitude());
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedIso]);

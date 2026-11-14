@@ -66,7 +66,7 @@
         "localName": "Cook-up rice",
         "description": "米飯與豆類、椰奶、肉類一鍋燉煮。",
         "history": "源自非裔奴隸利用剩餘食材的料理，常在週末與除夕食用。",
-        "wiki": "Cook-up rice"
+        "wiki": "Rice and peas"
       },
       {
         "name": "羅提餅",
@@ -76,18 +76,18 @@
         "wiki": "Roti"
       },
       {
-        "name": "椰奶根莖燉菜",
-        "localName": "Metemgee",
-        "description": "以椰奶燉煮木薯、山藥、芭蕉、麵糰子與鹹魚的濃稠燉菜。",
-        "history": "非裔社群的傳統料理，充分運用熱帶根莖作物。",
-        "wiki": "Metemgee"
+        "name": "炸豆球",
+        "localName": "Pholourie",
+        "description": "以黃豆仁粉麵糊炸成的小球，配酸辣醬食用。",
+        "history": "源自印度契約勞工的點心，是排燈節等節慶的常見小吃。",
+        "wiki": "Pholourie"
       },
       {
         "name": "豆餡烙餅",
         "localName": "Dhal puri",
         "description": "包入黃豆仁粉餡的薄餅，配咖哩食用。",
         "history": "源自印度比哈爾地區的麵餅，經契約勞工傳入加勒比海後發展出在地版本。",
-        "wiki": "Dhal puri"
+        "wiki": "Dal puri"
       }
     ]
   }

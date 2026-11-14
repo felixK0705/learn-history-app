@@ -83,18 +83,18 @@
         "wiki": "Hákarl"
       },
       {
-        "name": "冰島羊肉湯",
-        "localName": "Kjötsúpa",
-        "description": "以羊肉、根莖蔬菜與燕麥燉成的湯。",
-        "history": "冰島傳統冬季家常料理，體現當地以羊肉為主的畜牧文化。",
-        "wiki": "Kjötsúpa"
+        "name": "冰島扁麵包",
+        "localName": "Flatkaka",
+        "description": "以黑麥粉做成、在明火上烤出焦斑的扁圓薄餅，常配煙燻羊肉。",
+        "history": "冰島傳統麵包，適應過去缺乏烤爐的環境。",
+        "wiki": "Flatkaka"
       },
       {
         "name": "魚乾",
         "localName": "Harðfiskur",
         "description": "風乾的鱈魚或黑線鱈，常抹奶油當點心吃。",
         "history": "冰島人自中世紀起以風乾方式保存漁獲，是長期的主要蛋白質來源。",
-        "wiki": "Harðfiskur"
+        "wiki": "Stockfish"
       }
     ]
   }

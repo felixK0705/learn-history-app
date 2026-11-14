@@ -55,11 +55,11 @@
   "food": {
     "ranking": [
       {
-        "name": "米飯咖哩",
-        "localName": "Rice and curry",
-        "description": "白飯配上多種咖哩、扁豆、蔬菜與椰絲辣醬，是日常主食。",
-        "history": "斯里蘭卡最核心的飲食形式，菜色依地區與宗教而異。",
-        "wiki": "Rice and curry"
+        "name": "椰奶米糕",
+        "localName": "Kiribath",
+        "description": "以椰奶煮成的米飯壓成方塊，配辣椒洋蔥醬。",
+        "history": "在新年與重要節日的早晨食用，象徵吉祥。",
+        "wiki": "Kiribath"
       },
       {
         "name": "科圖烤餅",

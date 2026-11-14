@@ -30,6 +30,13 @@ export default function GlobePage() {
   const globeWrapRef = useRef<HTMLDivElement>(null);
   const placeholderRef = useRef<HTMLDivElement>(null);
   const menuRef = useRef<HTMLDivElement>(null);
+  const bokehRef = useRef<HTMLDivElement>(null);
+
+  // 柔光圓點緩慢漂浮
+  useGSAP(() => {
+    if (!bokehRef.current || prefersReducedMotion()) return;
+    gsap.to(bokehRef.current, { y: -14, x: 6, duration: 4.5, repeat: -1, yoyo: true, ease: "sine.inOut" });
+  }, { dependencies: [!!selected] });
   const buildingRef = useRef<HTMLDivElement>(null);
   const noticeRef = useRef<HTMLDivElement>(null);
 
@@ -105,8 +112,14 @@ export default function GlobePage() {
       <StarField />
       <div ref={shiftRef} className="absolute inset-0">
       {/* 地球後方光暈 */}
-      <div ref={glowRef} className="pointer-events-none absolute top-1/2 left-1/2 size-[62vmin] -translate-1/2 rounded-full bg-[#8fe0ff]/35 blur-[70px]" />
+      <div ref={glowRef} className="pointer-events-none absolute top-1/2 left-1/2 size-[64vmin] -translate-1/2 rounded-full bg-[radial-gradient(circle,rgba(170,230,255,0.55)_0%,rgba(110,200,255,0.25)_45%,transparent_70%)] blur-[30px]" />
       <div ref={globeWrapRef} className="absolute inset-0">
+        {/* 地球右上緣的光斑（參考圖） */}
+        <div
+          className={`pointer-events-none absolute top-[calc(50%-9vmin)] left-[calc(50%+22.5vmin)] z-10 size-[7vmin] -translate-1/2 rounded-full bg-[radial-gradient(circle,rgba(255,255,255,0.95)_0%,rgba(190,235,255,0.5)_25%,transparent_65%)] mix-blend-screen transition-opacity duration-500 ${
+            selected ? "opacity-0" : ""
+          }`}
+        />
         <GlobeView
           ref={globe}
           selectedIso={selectedIso}
@@ -130,6 +143,9 @@ export default function GlobePage() {
         </div>
       )}
 
+      {/* 左下柔光圓點（參考圖） */}
+      {!selected && <div ref={bokehRef} className="pointer-events-none absolute bottom-[12%] left-[15%] size-3.5 rounded-full bg-white/75 shadow-[0_0_14px_rgba(255,255,255,0.5)]" />}
+
       {/* 頂部列：探索進度文字與圓形選單（參考圖右上角） */}
       <HeaderSlot slot="header-meta">
         <span className="hidden sm:inline">
@@ -139,13 +155,13 @@ export default function GlobePage() {
       <HeaderSlot slot="header-menu">
         <button
           onClick={() => setMenuOpen((v) => !v)}
-          className={`grid size-9 place-items-center rounded-full border transition ${
-            menuOpen ? "border-white bg-white text-deep-800" : "border-white/25 bg-white/10 text-white hover:bg-white/20"
+          className={`grid size-8 place-items-center rounded-full border transition ${
+            menuOpen ? "border-white bg-white text-deep-800" : "border-white/15 bg-[#0a2f7d]/55 text-white hover:bg-[#0a2f7d]/80"
           }`}
           aria-label="地球設定"
           aria-expanded={menuOpen}
         >
-          {menuOpen ? <X className="size-4" /> : <Menu className="size-4" />}
+          {menuOpen ? <X className="size-3.5" /> : <Menu className="size-3.5" />}
         </button>
       </HeaderSlot>
 

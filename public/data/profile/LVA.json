@@ -55,18 +55,18 @@
   "food": {
     "ranking": [
       {
-        "name": "灰豌豆配培根",
-        "localName": "Pelēkie zirņi ar speķi",
-        "description": "煮熟的灰豌豆配上炒香的培根與洋蔥，常配酸奶喝。",
-        "history": "被視為拉脫維亞國菜，灰豌豆是本地傳統作物，耶誕節尤其常吃。",
-        "wiki": "Grey peas"
+        "name": "冷甜菜湯",
+        "localName": "Aukstā zupa",
+        "description": "以甜菜、克菲爾、黃瓜、蒔蘿與水煮蛋製成的粉紅色冷湯。",
+        "history": "波羅的海地區夏季常見的傳統冷湯。",
+        "wiki": "Cold beet soup"
       },
       {
         "name": "培根小餡餅",
         "localName": "Pīrāgi",
         "description": "新月形的小麵包，內包培根與洋蔥丁烘烤。",
         "history": "節慶與聚會時必備，在拉脫維亞民族史詩中也有出現。",
-        "wiki": "Pīrāgi"
+        "wiki": "Speķrauši"
       },
       {
         "name": "胡蘿蔔馬鈴薯塔",

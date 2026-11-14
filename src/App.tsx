@@ -78,53 +78,56 @@ export default function App() {
   }, []);
 
   return (
-    <div className="h-full p-0 md:p-6 lg:p-10">
-      {/* 主卡片：參考圖的圓角亮藍卡片與柔和投影 */}
+    <div className="h-full p-0 md:px-[4vw] md:py-[7vh]">
+      {/* 主卡片：參考圖的圓角亮藍卡片與下方柔和藍色投影 */}
       <div
         ref={shellRef}
-        className="stage relative flex h-full flex-col overflow-hidden shadow-[0_50px_90px_-40px_rgba(20,100,200,0.55)] md:rounded-[22px]"
+        className="stage relative flex h-full overflow-hidden shadow-[0_70px_80px_-45px_rgba(25,120,220,0.65)] md:rounded-[18px]"
       >
-        {/* 頂部列 */}
-        <header className="relative z-30 flex h-14 shrink-0 items-center border-b border-white/10 pr-4 md:pr-6">
-          <NavLink to="/" data-intro className="flex h-full items-center gap-2.5 pl-4 md:w-auto md:pl-3">
-            <Logo className="size-7" />
-            <span className="text-[15px] font-extrabold tracking-[0.08em] uppercase">Timelore</span>
+        {/* 左側深色細條：logo 在頂端、中段為圓點導覽 */}
+        <aside className="relative z-30 hidden w-11 shrink-0 flex-col items-center bg-[#082a72]/70 md:flex">
+          <NavLink to="/" data-intro className="grid h-14 w-full place-items-center" aria-label="Timelore 首頁">
+            <Logo className="size-6" />
           </NavLink>
-          <div data-intro id="header-meta" className="ml-auto flex items-center gap-6 text-[11px] font-medium tracking-[0.12em] text-white/80 uppercase" />
-          <button
-            data-intro
-            onClick={() => setPaletteOpen(true)}
-            className="ml-5 grid size-8 place-items-center rounded-full text-white/90 transition hover:bg-white/10"
-            aria-label="搜尋（Ctrl K）"
-            title="搜尋（Ctrl K）"
-          >
-            <Search className="size-[17px]" strokeWidth={2.4} />
-          </button>
-          <div data-intro id="header-menu" className="ml-3 flex items-center" />
-        </header>
+          <nav className="mt-[30vh] flex flex-col items-center gap-[18px]" aria-label="主要導覽">
+            {nav.map(({ to, label }) => (
+              <NavLink key={to} to={to} end={to === "/"} aria-label={label} className="group relative grid size-5 place-items-center">
+                {({ isActive }) => (
+                  <>
+                    <span
+                      className={`rounded-full transition-all duration-300 ${
+                        isActive ? "size-[11px] border border-white/90 bg-transparent" : "size-[4px] bg-white/75 group-hover:bg-white"
+                      }`}
+                    />
+                    <span className="pointer-events-none absolute left-7 rounded-full bg-white px-2.5 py-1 text-[11px] font-medium whitespace-nowrap text-deep-800 opacity-0 shadow-lg transition group-hover:opacity-100 group-focus-visible:opacity-100">
+                      {label}
+                    </span>
+                  </>
+                )}
+              </NavLink>
+            ))}
+          </nav>
+        </aside>
 
-        <div className="relative flex min-h-0 flex-1">
-          {/* 左側細條：參考圖的圓點導覽 */}
-          <aside className="relative z-30 hidden w-10 shrink-0 flex-col items-center justify-center bg-[#0a3591]/45 md:flex">
-            <nav className="flex flex-col items-center gap-5" aria-label="主要導覽">
-              {nav.map(({ to, label }) => (
-                <NavLink key={to} to={to} end={to === "/"} aria-label={label} className="group relative grid size-5 place-items-center">
-                  {({ isActive }) => (
-                    <>
-                      <span
-                        className={`rounded-full transition-all duration-300 ${
-                          isActive ? "size-3 border border-white bg-transparent" : "size-[5px] bg-white/70 group-hover:bg-white"
-                        }`}
-                      />
-                      <span className="pointer-events-none absolute left-7 rounded-md bg-white px-2 py-1 text-[11px] font-medium whitespace-nowrap text-deep-800 opacity-0 shadow-lg transition group-hover:opacity-100 group-focus-visible:opacity-100">
-                        {label}
-                      </span>
-                    </>
-                  )}
-                </NavLink>
-              ))}
-            </nav>
-          </aside>
+        <div className="relative flex min-w-0 flex-1 flex-col">
+          {/* 頂部列 */}
+          <header className="relative z-30 flex h-14 shrink-0 items-center border-b border-white/[0.08] pr-4 pl-4 md:pr-5 md:pl-5">
+            <NavLink to="/" data-intro className="flex items-center gap-2.5">
+              <Logo className="size-6 md:hidden" />
+              <span className="text-[15px] font-extrabold tracking-[0.04em] uppercase">Timelore</span>
+            </NavLink>
+            <div data-intro id="header-meta" className="ml-auto flex items-center gap-7 text-[10.5px] font-medium tracking-[0.08em] text-white/85 uppercase" />
+            <button
+              data-intro
+              onClick={() => setPaletteOpen(true)}
+              className="ml-6 grid size-8 place-items-center rounded-full text-white transition hover:bg-white/10"
+              aria-label="搜尋（Ctrl K）"
+              title="搜尋（Ctrl K）"
+            >
+              <Search className="size-[15px]" strokeWidth={2.6} />
+            </button>
+            <div data-intro id="header-menu" className="ml-3 flex items-center" />
+          </header>
 
           <main className="relative min-h-0 flex-1">
             <div ref={pageRef} className="absolute inset-x-0 top-0 bottom-14 md:bottom-0">

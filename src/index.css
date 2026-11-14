@@ -19,7 +19,7 @@
   html, body, #root { height: 100%; }
   body {
     @apply bg-page font-sans text-ink antialiased;
-    background: linear-gradient(180deg, #d8f2fd 0%, #b9e3f8 100%);
+    background: radial-gradient(120% 90% at 50% 40%, #cdf0fc 0%, #ace2f7 70%, #a2dcf5 100%);
     font-feature-settings: "ss01", "cv11";
     letter-spacing: -0.005em;
   }
@@ -27,10 +27,12 @@
 }
 
 @layer components {
+  /* 參考圖：中心偏青藍、外圍深藍的放射漸層＋左上暗角 */
   .stage {
     background:
-      radial-gradient(40% 55% at 55% 50%, rgb(120 205 255 / 0.55) 0%, transparent 70%),
-      radial-gradient(85% 95% at 55% 50%, #2386ec 0%, #1667d6 40%, #0e4bb5 74%, #0a3c9c 100%);
+      radial-gradient(34% 48% at 56% 52%, rgb(70 190 245 / 0.55) 0%, transparent 72%),
+      radial-gradient(70% 80% at 56% 54%, #1c8fde 0%, #1570d2 34%, #1052b8 62%, #0b3a92 86%, #0a307c 100%),
+      #0a307c;
   }
 
   /* 液態玻璃：多層漸層 + 背景模糊飽和 + 內外高光 */
@@ -48,6 +50,11 @@
       inset 1px 0 0 rgb(255 255 255 / 0.18),
       0 30px 60px -28px rgb(2 22 80 / 0.55),
       0 2px 8px -2px rgb(2 22 80 / 0.25);
+  }
+  /* Chromium：折射＋輕度模糊，玻璃更通透 */
+  .lg-refract .glass {
+    backdrop-filter: blur(10px) url(#lg-refract) saturate(185%) brightness(1.06);
+    -webkit-backdrop-filter: blur(10px) url(#lg-refract) saturate(185%) brightness(1.06);
   }
   /* 左上角的鏡面反光 */
   .glass::before {
@@ -105,9 +112,10 @@
 .country-label.visited .dot { @apply bg-glow; }
 .country-label.zoom-hidden { opacity: 0 !important; pointer-events: none !important; }
 .landmark-pin {
-  @apply size-2 cursor-pointer rounded-full bg-amber-200;
+  @apply size-[7px] cursor-pointer rounded-full;
+  background: #7fe6ff;
   transform: translate(-50%, -50%);
-  box-shadow: 0 0 0 3px rgb(253 230 138 / 0.3), 0 0 12px rgb(253 230 138 / 0.9);
+  box-shadow: 0 0 0 3px rgb(127 230 255 / 0.25), 0 0 10px rgb(127 230 255 / 0.9);
   pointer-events: auto;
 }
 .landmark-pin:hover { transform: translate(-50%, -50%) scale(1.6); }

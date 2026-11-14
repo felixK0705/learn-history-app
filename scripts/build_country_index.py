@@ -45,7 +45,10 @@ points = {
 }
 continent_zh = {"Asia": "亞洲", "Europe": "歐洲", "Africa": "非洲", "North_America": "北美洲", "Central_America_Caribbean": "北美洲",
                 "South_America": "南美洲", "Oceania": "大洋洲"}
-cat_zh = {"Ancient": "上古", "Classical": "古典", "Medieval": "中世紀", "Early Modern": "近世", "Modern": "近代", "Contemporary": "當代"}
+cat_zh = {"Ancient": "上古", "Classical": "古典", "Medieval": "中世紀", "Early Modern": "近世", "Modern": "近代", "Contemporary": "當代",
+          "Prehistoric": "上古", "Late Antiquity": "上古", "Colonial": "近世", "Independence": "近代", "Revolutionary": "近代",
+          "Post-Independence": "當代", "Authoritarian": "當代", "Military Coups": "當代", "Democratic Transition": "當代",
+          "Security Crisis": "當代", "Culture": "", "Science": "", "Religion": ""}
 
 
 def bbox_center(geom):
@@ -74,7 +77,13 @@ for path in sorted(glob.glob(os.path.join(SRC, "continents/**/*.json"), recursiv
     if pos is None:
         print("no position", en, iso)
         continue
-    out = [{"year": e["year"], "title": e["title"], "description": e["description"], "era": cat_zh.get(e.get("category"), e.get("category", ""))} for e in events]
+    out = []
+    last = "上古"
+    for e in events:
+        # 未對應的主題型分類（文化、科學、宗教）沿用前一則事件的時代
+        era = cat_zh.get(e.get("category"), "") or last
+        last = era
+        out.append({"year": e["year"], "title": e["title"], "description": e["description"], "era": era})
     json.dump({"iso": iso, "events": out}, open(os.path.join(ROOT, f"public/data/history/{iso}.json"), "w"), ensure_ascii=False)
     index.append({
         "iso": iso, "en": en.replace("_", " "), "zh": zh.get(iso, en), "continent": continent_zh[cont],

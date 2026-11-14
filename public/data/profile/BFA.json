@@ -71,25 +71,25 @@
         "wiki": "Jollof rice"
       },
       {
-        "name": "自行車雞",
-        "localName": "Poulet bicyclette",
-        "description": "以放養土雞炭烤或燉煮的料理。",
-        "history": "名稱源自商販以自行車載運雞隻到市場販售。",
-        "wiki": "Poulet bicyclette"
+        "name": "洛神花茶",
+        "localName": "Bissap / Zoom-koom",
+        "description": "以洛神花萼泡成的酸甜紅色飲品，常加薄荷或薑。",
+        "history": "西非普遍的傳統飲品，在炎熱的薩赫爾地區是街頭常見的消暑飲料。",
+        "wiki": "Hibiscus tea"
       },
       {
-        "name": "巴班達",
-        "localName": "Babenda",
-        "description": "以發酵的苦味葉菜、米或小米與花生、魚乾燉煮的料理。",
-        "history": "莫西人的傳統料理，過去被視為窮人食物，近年被重新推廣。",
-        "wiki": "Babenda"
+        "name": "秋葵醬",
+        "localName": "Sauce gombo",
+        "description": "以秋葵燉煮成的黏稠醬汁，常加魚乾或肉，用來配圖糊。",
+        "history": "薩赫爾地區最普遍的配醬之一，與圖糊構成日常餐食。",
+        "wiki": "Okra soup"
       },
       {
-        "name": "多洛小米酒",
+        "name": "多洛高粱酒",
         "localName": "Dolo",
-        "description": "以發芽的紅高粱或小米釀製的傳統啤酒。",
-        "history": "在莫西人與其他民族的社交、婚禮與祭祀中扮演重要角色。",
-        "wiki": "Dolo (beer)"
+        "description": "以發芽的紅高粱釀製的傳統啤酒。",
+        "history": "在莫西人等民族的社交、婚禮與祭祀中扮演重要角色。",
+        "wiki": "Sorghum"
       }
     ]
   }
