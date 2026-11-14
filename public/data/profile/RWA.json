@@ -1,94 +1,109 @@
 {
-  "iso": "RWA",
-  "capital": "吉佳利",
-  "summary": "位於東非大湖區的內陸國，有「千丘之國」之稱，1994年經歷種族滅絕慘劇後重建，以治安良好與經濟發展著稱。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "天主教",
-        "percent": 40,
-        "description": "殖民時期由白衣神父會傳入，曾長期是最大教派。"
-      },
-      {
-        "name": "五旬節派",
-        "percent": 21,
-        "description": "近數十年快速成長，尤其在1994年後。"
-      },
-      {
-        "name": "其他新教（聖公會、浸信會等）",
-        "percent": 15,
-        "description": "包含聖公會、長老會等。"
-      },
-      {
-        "name": "基督復臨安息日會",
-        "percent": 12,
-        "description": "自20世紀初德國傳教士時期即有發展。"
-      },
-      {
-        "name": "伊斯蘭教",
-        "percent": 2,
-        "description": "主要分布於城市地區。"
-      }
-    ],
-    "background": "20世紀初德國與比利時殖民時期，天主教白衣神父會與新教教會進入盧安達，國王於1940年代受洗後天主教快速普及。1994年種族滅絕中部分教會人士涉入，戰後許多人轉向五旬節派等新興教會。"
-  },
-  "language": {
-    "official": "官方語言為盧安達語、英語、法語與斯瓦希里語。",
-    "ranking": [
-      {
-        "name": "盧安達語（基尼亞盧安達語）",
-        "percent": 99,
-        "description": "全國幾乎所有人的母語，是國家團結的重要紐帶。",
-        "greeting": "Muraho",
-        "pronunciation": "mu-ra-ho"
-      },
-      {
-        "name": "英語",
-        "percent": 1,
-        "description": "2008年後成為主要教育語言，作為第二語言快速普及。",
-        "greeting": "Hello",
-        "pronunciation": "heh-loh"
-      }
-    ],
-    "history": "盧安達語是班圖語族語言，全國共用一種語言，在非洲國家中少見。比利時殖民時期法語成為行政語言；1994年後大量自烏干達、坦尚尼亞返國的難民使用英語，政府於2008年將教育語言改為英語，並加入東非共同體推廣斯瓦希里語。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "木薯葉燉菜",
-        "localName": "Isombe",
-        "description": "以搗碎的木薯葉與茄子、菠菜、花生醬或棕櫚油燉煮。",
-        "history": "盧安達與蒲隆地的傳統家常菜，常配米飯或芭蕉食用。",
-        "wiki": "Isombe"
-      },
-      {
-        "name": "烤肉串",
-        "localName": "Brochette",
-        "description": "以羊肉、牛肉或山羊肉串燒，配炸馬鈴薯或芭蕉。",
-        "history": "比利時殖民時期引入的名稱，現為酒吧與街頭最受歡迎的料理。",
-        "wiki": "Brochette"
-      },
-      {
-        "name": "煮綠香蕉",
-        "localName": "Matoke",
-        "description": "以綠色煮食香蕉蒸煮或燉煮，常配醬汁。",
-        "history": "大湖區的重要主食，盧安達西北部尤為普遍。",
-        "wiki": "Matoke"
-      },
-      {
-        "name": "烏布加利糊",
-        "localName": "Ubugari",
-        "description": "以木薯粉或玉米粉攪成的稠糊，搭配湯菜食用。",
-        "history": "與東非的烏咖哩（ugali）相同，是日常主食之一。",
-        "wiki": "Ugali"
-      },
-      {
-        "name": "曼達茲炸麵團",
-        "localName": "Mandazi",
-        "description": "微甜的炸麵團，常配奶茶作為早餐。",
-        "history": "源自東非斯瓦希里海岸，在盧安達是普遍的早餐與點心。",
-        "wiki": "Mandazi"
-      }
-    ]
-  }
+ "iso": "RWA",
+ "capital": "吉佳利",
+ "summary": "位於東非大湖區的內陸國，有「千丘之國」之稱，1994年經歷種族滅絕慘劇後重建，以治安良好與經濟發展著稱。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "天主教",
+    "percent": 40,
+    "description": "殖民時期由白衣神父會傳入，曾長期是最大教派。"
+   },
+   {
+    "name": "五旬節派",
+    "percent": 21,
+    "description": "近數十年快速成長，尤其在1994年後。"
+   },
+   {
+    "name": "其他新教（聖公會、浸信會等）",
+    "percent": 15,
+    "description": "包含聖公會、長老會等。"
+   },
+   {
+    "name": "基督復臨安息日會",
+    "percent": 12,
+    "description": "自20世紀初德國傳教士時期即有發展。"
+   },
+   {
+    "name": "伊斯蘭教",
+    "percent": 2,
+    "description": "主要分布於城市地區。"
+   }
+  ],
+  "background": "20世紀初德國與比利時殖民時期，天主教白衣神父會與新教教會進入盧安達，國王於1940年代受洗後天主教快速普及。1994年種族滅絕中部分教會人士涉入，戰後許多人轉向五旬節派等新興教會。"
+ },
+ "language": {
+  "official": "官方語言為盧安達語、英語、法語與斯瓦希里語。",
+  "ranking": [
+   {
+    "name": "盧安達語（基尼亞盧安達語）",
+    "percent": 99,
+    "description": "全國幾乎所有人的母語，是國家團結的重要紐帶。",
+    "greeting": "Muraho",
+    "pronunciation": "mu-ra-ho"
+   },
+   {
+    "name": "英語",
+    "percent": 1,
+    "description": "2008年後成為主要教育語言，作為第二語言快速普及。",
+    "greeting": "Hello",
+    "pronunciation": "heh-loh"
+   }
+  ],
+  "history": "盧安達語是班圖語族語言，全國共用一種語言，在非洲國家中少見。比利時殖民時期法語成為行政語言；1994年後大量自烏干達、坦尚尼亞返國的難民使用英語，政府於2008年將教育語言改為英語，並加入東非共同體推廣斯瓦希里語。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "木薯葉燉菜",
+    "localName": "Isombe",
+    "description": "以搗碎的木薯葉與茄子、菠菜、花生醬或棕櫚油燉煮。",
+    "history": "盧安達與蒲隆地的傳統家常菜，常配米飯或芭蕉食用。",
+    "wiki": "Isombe",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/ISOMBE.jpg/960px-ISOMBE.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:ISOMBE.jpg",
+    "imageCredit": "Mutiganda・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "烤肉串",
+    "localName": "Brochette",
+    "description": "以羊肉、牛肉或山羊肉串燒，配炸馬鈴薯或芭蕉。",
+    "history": "比利時殖民時期引入的名稱，現為酒吧與街頭最受歡迎的料理。",
+    "wiki": "Brochette",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Wooden_skewers.jpg/960px-Wooden_skewers.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Wooden_skewers.jpg",
+    "imageCredit": "Hans Braxmeier・CC0・Wikimedia Commons"
+   },
+   {
+    "name": "煮綠香蕉",
+    "localName": "Matoke",
+    "description": "以綠色煮食香蕉蒸煮或燉煮，常配醬汁。",
+    "history": "大湖區的重要主食，盧安達西北部尤為普遍。",
+    "wiki": "Matoke",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Matooke_to_the_market.jpg/960px-Matooke_to_the_market.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Matooke_to_the_market.jpg",
+    "imageCredit": "Sagiomhza・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "烏布加利糊",
+    "localName": "Ubugari",
+    "description": "以木薯粉或玉米粉攪成的稠糊，搭配湯菜食用。",
+    "history": "與東非的烏咖哩（ugali）相同，是日常主食之一。",
+    "wiki": "Ugali",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/48/Ugali_%26_Sukuma_Wiki.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Ugali_%26_Sukuma_Wiki.jpg",
+    "imageCredit": "Paresh Jai from Nairobi, Kenya・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "曼達茲炸麵團",
+    "localName": "Mandazi",
+    "description": "微甜的炸麵團，常配奶茶作為早餐。",
+    "history": "源自東非斯瓦希里海岸，在盧安達是普遍的早餐與點心。",
+    "wiki": "Mandazi",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/69/Bowl_of_mandazi.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Bowl_of_mandazi.jpg",
+    "imageCredit": "The original uploader was ChildofMidnight at English Wikiped・CC BY 2.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

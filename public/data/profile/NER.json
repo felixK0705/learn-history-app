@@ -1,91 +1,106 @@
 {
-  "iso": "NER",
-  "capital": "尼阿美",
-  "summary": "位於西非撒哈拉南緣的內陸國，國土大半為沙漠，尼日河流經西南部，1960年脫離法國獨立，鈾礦為重要出口品。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "伊斯蘭教（遜尼派）",
-        "percent": 99,
-        "description": "絕大多數居民信仰，以馬立基學派為主，蘇非教團影響深遠。"
-      },
-      {
-        "name": "基督教",
-        "percent": 1,
-        "description": "人數極少，主要分布於城市。"
-      },
-      {
-        "name": "傳統信仰",
-        "percent": 1,
-        "description": "部分豪薩人的傳統信仰（如Maguzawa）仍存。"
-      }
-    ],
-    "background": "伊斯蘭教自11世紀起經跨撒哈拉貿易傳入，透過桑海帝國、卡涅姆－博爾努帝國與豪薩城邦逐步擴散。19世紀索科托哈里發國的聖戰運動進一步鞏固了伊斯蘭教在豪薩地區的地位。"
-  },
-  "language": {
-    "official": "2025年過渡憲章將豪薩語定為國語，法語與英語改為工作語言。",
-    "ranking": [
-      {
-        "name": "豪薩語",
-        "percent": 53,
-        "description": "最大民族豪薩人的語言，也是全國主要通用語。",
-        "greeting": "Sannu",
-        "pronunciation": "san-nu"
-      },
-      {
-        "name": "哲爾馬－桑海語",
-        "percent": 21,
-        "description": "西部尼阿美一帶的主要語言。",
-        "greeting": "Fofo",
-        "pronunciation": "fo-fo"
-      },
-      {
-        "name": "富拉語",
-        "percent": 6,
-        "description": "富拉牧民使用。",
-        "greeting": "Jam waali",
-        "pronunciation": "jam waa-li"
-      }
-    ],
-    "history": "豪薩語隨豪薩城邦的貿易網絡成為西非重要通用語，西部則以桑海帝國留下的桑海語為主，北部沙漠則有圖瓦雷克人的塔馬舍克語。法國殖民後法語成為官方語言，2025年起豪薩語地位正式提升。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "基利希牛肉乾",
-        "localName": "Kilishi",
-        "description": "將薄牛肉片抹上花生與香料醬後曬乾、炙烤而成的肉乾。",
-        "history": "豪薩人的傳統肉乾，便於在炎熱氣候中保存。",
-        "wiki": "Kilishi"
-      },
-      {
-        "name": "米糰",
-        "localName": "Tuwo shinkafa",
-        "description": "以軟米煮爛後搗成的糰子，配秋葵或菠菜醬汁。",
-        "history": "豪薩地區常見主食，也可用小米或高粱製作。",
-        "wiki": "Tuwo shinkafa"
-      },
-      {
-        "name": "小米優格飲",
-        "localName": "Fura da nono",
-        "description": "以小米糰拌入發酵牛奶飲用的清涼飲品。",
-        "history": "富拉牧民與豪薩農民交流的產物，常在市集販售。",
-        "wiki": "Fura (food)"
-      },
-      {
-        "name": "烤肉串",
-        "localName": "Suya",
-        "description": "抹上花生香料粉的牛肉串炭烤。",
-        "history": "豪薩人的傳統街頭燒烤，在西非各地廣受歡迎。",
-        "wiki": "Suya"
-      },
-      {
-        "name": "番茄肉飯",
-        "localName": "Riz au gras",
-        "description": "以番茄、洋蔥與肉一起煮成的油亮米飯。",
-        "history": "屬於西非廣泛流傳的「喬洛夫飯」家族，常見於節慶。",
-        "wiki": "Jollof rice"
-      }
-    ]
-  }
+ "iso": "NER",
+ "capital": "尼阿美",
+ "summary": "位於西非撒哈拉南緣的內陸國，國土大半為沙漠，尼日河流經西南部，1960年脫離法國獨立，鈾礦為重要出口品。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "伊斯蘭教（遜尼派）",
+    "percent": 99,
+    "description": "絕大多數居民信仰，以馬立基學派為主，蘇非教團影響深遠。"
+   },
+   {
+    "name": "基督教",
+    "percent": 1,
+    "description": "人數極少，主要分布於城市。"
+   },
+   {
+    "name": "傳統信仰",
+    "percent": 1,
+    "description": "部分豪薩人的傳統信仰（如Maguzawa）仍存。"
+   }
+  ],
+  "background": "伊斯蘭教自11世紀起經跨撒哈拉貿易傳入，透過桑海帝國、卡涅姆－博爾努帝國與豪薩城邦逐步擴散。19世紀索科托哈里發國的聖戰運動進一步鞏固了伊斯蘭教在豪薩地區的地位。"
+ },
+ "language": {
+  "official": "2025年過渡憲章將豪薩語定為國語，法語與英語改為工作語言。",
+  "ranking": [
+   {
+    "name": "豪薩語",
+    "percent": 53,
+    "description": "最大民族豪薩人的語言，也是全國主要通用語。",
+    "greeting": "Sannu",
+    "pronunciation": "san-nu"
+   },
+   {
+    "name": "哲爾馬－桑海語",
+    "percent": 21,
+    "description": "西部尼阿美一帶的主要語言。",
+    "greeting": "Fofo",
+    "pronunciation": "fo-fo"
+   },
+   {
+    "name": "富拉語",
+    "percent": 6,
+    "description": "富拉牧民使用。",
+    "greeting": "Jam waali",
+    "pronunciation": "jam waa-li"
+   }
+  ],
+  "history": "豪薩語隨豪薩城邦的貿易網絡成為西非重要通用語，西部則以桑海帝國留下的桑海語為主，北部沙漠則有圖瓦雷克人的塔馬舍克語。法國殖民後法語成為官方語言，2025年起豪薩語地位正式提升。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "基利希牛肉乾",
+    "localName": "Kilishi",
+    "description": "將薄牛肉片抹上花生與香料醬後曬乾、炙烤而成的肉乾。",
+    "history": "豪薩人的傳統肉乾，便於在炎熱氣候中保存。",
+    "wiki": "Kilishi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/%22Kilishi%22.JPG/960px-%22Kilishi%22.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:%22Kilishi%22.JPG",
+    "imageCredit": "Abubakar M. Ahmad・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "米糰",
+    "localName": "Tuwo shinkafa",
+    "description": "以軟米煮爛後搗成的糰子，配秋葵或菠菜醬汁。",
+    "history": "豪薩地區常見主食，也可用小米或高粱製作。",
+    "wiki": "Tuwo shinkafa",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Tuwo_Shinkafa_with_garden_egg_Soup.jpg/960px-Tuwo_Shinkafa_with_garden_egg_Soup.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Tuwo_Shinkafa_with_garden_egg_Soup.jpg",
+    "imageCredit": "Bukky658・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "小米優格飲",
+    "localName": "Fura da nono",
+    "description": "以小米糰拌入發酵牛奶飲用的清涼飲品。",
+    "history": "富拉牧民與豪薩農民交流的產物，常在市集販售。",
+    "wiki": "Fura (food)",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Fura_da_nono.jpg/960px-Fura_da_nono.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Fura_da_nono.jpg",
+    "imageCredit": "Umaruyusuf・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "烤肉串",
+    "localName": "Suya",
+    "description": "抹上花生香料粉的牛肉串炭烤。",
+    "history": "豪薩人的傳統街頭燒烤，在西非各地廣受歡迎。",
+    "wiki": "Suya",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/SuyavarietiesTX.JPG/960px-SuyavarietiesTX.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:SuyavarietiesTX.JPG",
+    "imageCredit": "WhisperToMe・CC0・Wikimedia Commons"
+   },
+   {
+    "name": "番茄肉飯",
+    "localName": "Riz au gras",
+    "description": "以番茄、洋蔥與肉一起煮成的油亮米飯。",
+    "history": "屬於西非廣泛流傳的「喬洛夫飯」家族，常見於節慶。",
+    "wiki": "Jollof rice",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Jollof_Rice_with_Stew.jpg/960px-Jollof_Rice_with_Stew.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Jollof_Rice_with_Stew.jpg",
+    "imageCredit": "Noahalorwu・CC BY-SA 4.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

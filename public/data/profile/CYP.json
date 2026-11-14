@@ -1,103 +1,118 @@
 {
-  "iso": "CYP",
-  "capital": "尼古西亞",
-  "summary": "地中海東部的島國，曾受希臘、羅馬、拜占庭、威尼斯、鄂圖曼與英國統治，1974年後北部由土耳其裔控制、島嶼分治至今。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "希臘正教（塞浦路斯正教會）",
-        "percent": 89,
-        "description": "希臘裔塞浦路斯人的主要信仰，教會在歷史上具政治影響力。"
-      },
-      {
-        "name": "其他基督教（天主教、新教、亞美尼亞教會、馬龍派）",
-        "percent": 5,
-        "description": "包含馬龍派、亞美尼亞人與外籍居民。"
-      },
-      {
-        "name": "伊斯蘭教",
-        "percent": 2,
-        "description": "共和國控制區內的穆斯林（北部土耳其裔多為穆斯林，未計入）。"
-      },
-      {
-        "name": "無宗教",
-        "percent": 2,
-        "description": "比例較低。"
-      }
-    ],
-    "background": "使徒巴拿巴與保羅在1世紀到此傳教，塞浦路斯教會於431年獲得自主地位。鄂圖曼時期透過米勒特制度，正教會成為希臘裔社群代表；鄂圖曼移民則形成土耳其裔穆斯林社群。"
-  },
-  "language": {
-    "official": "官方語言為希臘語與土耳其語。",
-    "ranking": [
-      {
-        "name": "希臘語（塞浦路斯方言）",
-        "percent": 80,
-        "description": "多數居民使用，日常以塞浦路斯希臘語方言為主。",
-        "greeting": "Γεια σου",
-        "pronunciation": "ya su"
-      },
-      {
-        "name": "土耳其語",
-        "percent": 10,
-        "description": "土耳其裔塞浦路斯人使用，主要在北部。",
-        "greeting": "Merhaba",
-        "pronunciation": "mer-ha-ba"
-      },
-      {
-        "name": "俄語等其他語言",
-        "percent": 5,
-        "description": "外籍居民社群使用。",
-        "greeting": "Привет",
-        "pronunciation": "privet"
-      },
-      {
-        "name": "英語",
-        "percent": 4,
-        "description": "母語者不多，但作為英國殖民遺產，多數居民能流利使用。",
-        "greeting": "Hello",
-        "pronunciation": "heh-loh"
-      }
-    ],
-    "history": "希臘語自青銅時代晚期邁錫尼移民時期傳入。鄂圖曼於1571年征服後帶入土耳其語，1878–1960年英國統治使英語普及。兩大族群的語言分布在1974年後隨分治更加地理分隔。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "哈魯米起司",
-        "localName": "Χαλλούμι (Halloumi)",
-        "description": "以羊奶與山羊奶製成的半硬鹹起司，耐高溫，可直接煎烤。",
-        "history": "在塞浦路斯已有數百年歷史，2021年獲歐盟原產地名稱保護。",
-        "wiki": "Halloumi"
-      },
-      {
-        "name": "烤肉串",
-        "localName": "Σουβλάκι (Souvlaki)",
-        "description": "炭烤肉塊串，常包皮塔餅搭配生菜與優格醬。",
-        "history": "與希臘世界共享的燒烤傳統，是塞浦路斯最普遍的街頭美食。",
-        "wiki": "Souvlaki"
-      },
-      {
-        "name": "陶罐烤羊肉",
-        "localName": "Κλέφτικο (Kleftiko)",
-        "description": "以大蒜、檸檬與香草醃漬的羊肉，在密封土窯中長時間慢烤。",
-        "history": "名稱源自「盜匪」（klephts），相傳他們把肉埋在地洞中烤以免被發現。",
-        "wiki": "Kleftiko"
-      },
-      {
-        "name": "網油香腸",
-        "localName": "Σιεφταλιά (Sheftalia)",
-        "description": "以網油包裹絞肉、洋蔥與香芹炭烤成的小香腸。",
-        "history": "塞浦路斯特有的燒烤料理，常出現在烤肉拼盤中。",
-        "wiki": "Sheftalia"
-      },
-      {
-        "name": "梅澤小菜",
-        "localName": "Μεζές (Meze)",
-        "description": "由數十道小菜依序上桌組成的套餐，包括沾醬、燒烤與海鮮。",
-        "history": "中東與地中海共同的小菜文化，在塞浦路斯是社交聚餐的主要形式。",
-        "wiki": "Meze"
-      }
-    ]
-  }
+ "iso": "CYP",
+ "capital": "尼古西亞",
+ "summary": "地中海東部的島國，曾受希臘、羅馬、拜占庭、威尼斯、鄂圖曼與英國統治，1974年後北部由土耳其裔控制、島嶼分治至今。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "希臘正教（塞浦路斯正教會）",
+    "percent": 89,
+    "description": "希臘裔塞浦路斯人的主要信仰，教會在歷史上具政治影響力。"
+   },
+   {
+    "name": "其他基督教（天主教、新教、亞美尼亞教會、馬龍派）",
+    "percent": 5,
+    "description": "包含馬龍派、亞美尼亞人與外籍居民。"
+   },
+   {
+    "name": "伊斯蘭教",
+    "percent": 2,
+    "description": "共和國控制區內的穆斯林（北部土耳其裔多為穆斯林，未計入）。"
+   },
+   {
+    "name": "無宗教",
+    "percent": 2,
+    "description": "比例較低。"
+   }
+  ],
+  "background": "使徒巴拿巴與保羅在1世紀到此傳教，塞浦路斯教會於431年獲得自主地位。鄂圖曼時期透過米勒特制度，正教會成為希臘裔社群代表；鄂圖曼移民則形成土耳其裔穆斯林社群。"
+ },
+ "language": {
+  "official": "官方語言為希臘語與土耳其語。",
+  "ranking": [
+   {
+    "name": "希臘語（塞浦路斯方言）",
+    "percent": 80,
+    "description": "多數居民使用，日常以塞浦路斯希臘語方言為主。",
+    "greeting": "Γεια σου",
+    "pronunciation": "ya su"
+   },
+   {
+    "name": "土耳其語",
+    "percent": 10,
+    "description": "土耳其裔塞浦路斯人使用，主要在北部。",
+    "greeting": "Merhaba",
+    "pronunciation": "mer-ha-ba"
+   },
+   {
+    "name": "俄語等其他語言",
+    "percent": 5,
+    "description": "外籍居民社群使用。",
+    "greeting": "Привет",
+    "pronunciation": "privet"
+   },
+   {
+    "name": "英語",
+    "percent": 4,
+    "description": "母語者不多，但作為英國殖民遺產，多數居民能流利使用。",
+    "greeting": "Hello",
+    "pronunciation": "heh-loh"
+   }
+  ],
+  "history": "希臘語自青銅時代晚期邁錫尼移民時期傳入。鄂圖曼於1571年征服後帶入土耳其語，1878–1960年英國統治使英語普及。兩大族群的語言分布在1974年後隨分治更加地理分隔。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "哈魯米起司",
+    "localName": "Χαλλούμι (Halloumi)",
+    "description": "以羊奶與山羊奶製成的半硬鹹起司，耐高溫，可直接煎烤。",
+    "history": "在塞浦路斯已有數百年歷史，2021年獲歐盟原產地名稱保護。",
+    "wiki": "Halloumi",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/57/Halloumislice_zoom.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Halloumislice_zoom.jpg",
+    "imageCredit": "Halloumislicefresh.jpg: J.P.Lon\nderivative work: Zlerman (ta・Public domain・Wikimedia Commons"
+   },
+   {
+    "name": "烤肉串",
+    "localName": "Σουβλάκι (Souvlaki)",
+    "description": "炭烤肉塊串，常包皮塔餅搭配生菜與優格醬。",
+    "history": "與希臘世界共享的燒烤傳統，是塞浦路斯最普遍的街頭美食。",
+    "wiki": "Souvlaki",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/%CE%95%CE%BB%CE%BB%CE%B7%CE%BD%CE%B9%CE%BA%CF%8C_%CE%A3%CE%BF%CF%85%CE%B2%CE%BB%CE%AC%CE%BA%CE%B9_-_panoramio.jpg/960px-%CE%95%CE%BB%CE%BB%CE%B7%CE%BD%CE%B9%CE%BA%CF%8C_%CE%A3%CE%BF%CF%85%CE%B2%CE%BB%CE%AC%CE%BA%CE%B9_-_panoramio.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:%CE%95%CE%BB%CE%BB%CE%B7%CE%BD%CE%B9%CE%BA%CF%8C_%CE%A3%CE%BF%CF%85%CE%B2%CE%BB%CE%AC%CE%BA%CE%B9_-_panoramio.jpg",
+    "imageCredit": "EntaXoyas・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "陶罐烤羊肉",
+    "localName": "Κλέφτικο (Kleftiko)",
+    "description": "以大蒜、檸檬與香草醃漬的羊肉，在密封土窯中長時間慢烤。",
+    "history": "名稱源自「盜匪」（klephts），相傳他們把肉埋在地洞中烤以免被發現。",
+    "wiki": "Kleftiko",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Kleftiko.JPG/960px-Kleftiko.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Kleftiko.JPG",
+    "imageCredit": "Lord Mountbatten・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "網油香腸",
+    "localName": "Σιεφταλιά (Sheftalia)",
+    "description": "以網油包裹絞肉、洋蔥與香芹炭烤成的小香腸。",
+    "history": "塞浦路斯特有的燒烤料理，常出現在烤肉拼盤中。",
+    "wiki": "Sheftalia",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Typical_Greek_Cypriot_plate%2C_sheftalia_%28in_greek%3B_%CF%83%CE%B5%CF%86%CF%84%CE%B1%CE%BB%CE%B9%CE%AC%29.jpg/960px-Typical_Greek_Cypriot_plate%2C_sheftalia_%28in_greek%3B_%CF%83%CE%B5%CF%86%CF%84%CE%B1%CE%BB%CE%B9%CE%AC%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Typical_Greek_Cypriot_plate,_sheftalia_(in_greek;_%CF%83%CE%B5%CF%86%CF%84%CE%B1%CE%BB%CE%B9%CE%AC).jpg",
+    "imageCredit": "G-Lignum・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "梅澤小菜",
+    "localName": "Μεζές (Meze)",
+    "description": "由數十道小菜依序上桌組成的套餐，包括沾醬、燒烤與海鮮。",
+    "history": "中東與地中海共同的小菜文化，在塞浦路斯是社交聚餐的主要形式。",
+    "wiki": "Meze",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Petra_metzes.jpg/960px-Petra_metzes.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Petra_metzes.jpg",
+    "imageCredit": "Unai Guerra・CC BY-SA 2.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

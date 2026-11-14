@@ -1,115 +1,130 @@
 {
-  "iso": "CHE",
-  "capital": "伯恩（聯邦城市）",
-  "summary": "位於阿爾卑斯山區的中歐內陸國，以長期中立、直接民主、多語文化與鐘錶、金融業聞名。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "無宗教",
-        "percent": 34,
-        "description": "近年快速成長，已成為最大群體之一。"
-      },
-      {
-        "name": "天主教",
-        "percent": 32,
-        "description": "主要分布於中部與南部州，以及部分法語區。"
-      },
-      {
-        "name": "瑞士歸正會（新教）",
-        "percent": 21,
-        "description": "主要分布於蘇黎世、伯恩等州。"
-      },
-      {
-        "name": "伊斯蘭教",
-        "percent": 6,
-        "description": "主要來自巴爾幹半島與土耳其的移民。"
-      },
-      {
-        "name": "其他基督教",
-        "percent": 6,
-        "description": "包含東正教、福音派等。"
-      }
-    ],
-    "background": "16世紀慈運理在蘇黎世、喀爾文在日內瓦推動宗教改革，各州依自身選擇分屬新教或天主教，曾引發宗教戰爭，最終形成按州區分的信仰版圖。近數十年世俗化與移民使無宗教與伊斯蘭教比例上升。"
-  },
-  "language": {
-    "official": "官方語言為德語、法語、義大利語，羅曼什語為部分官方語言。",
-    "ranking": [
-      {
-        "name": "德語（瑞士德語）",
-        "percent": 62,
-        "description": "中部與東北部的主要語言，日常口語為各地瑞士德語方言。",
-        "greeting": "Grüezi",
-        "pronunciation": "grü-et-si"
-      },
-      {
-        "name": "法語",
-        "percent": 23,
-        "description": "西部羅曼蒂地區的主要語言。",
-        "greeting": "Bonjour",
-        "pronunciation": "bon-zhoor"
-      },
-      {
-        "name": "義大利語",
-        "percent": 8,
-        "description": "南部提契諾州與格勞賓登州南部使用。",
-        "greeting": "Ciao",
-        "pronunciation": "chow"
-      },
-      {
-        "name": "英語",
-        "percent": 6,
-        "description": "在國際城市與工作場合使用日益普遍。",
-        "greeting": "Hello",
-        "pronunciation": "heh-loh"
-      },
-      {
-        "name": "羅曼什語",
-        "percent": 1,
-        "description": "格勞賓登州部分山谷使用的羅曼語，人數極少但受憲法保障。",
-        "greeting": "Allegra",
-        "pronunciation": "a-leh-gra"
-      }
-    ],
-    "history": "羅馬時代本地以拉丁語為主，民族大遷徙時期阿勒曼尼人帶來日耳曼語，西部的勃艮第人則逐漸使用拉丁語演變的法語，阿爾卑斯山谷保留了羅曼什語。瑞士聯邦以邦聯形式整合各語區，1938年承認羅曼什語為國語。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "起司火鍋",
-        "localName": "Fondue",
-        "description": "將格呂耶爾等起司與白酒在鍋中融化，以長叉沾麵包食用。",
-        "history": "原為阿爾卑斯山區冬季的農家料理，1930年代被瑞士起司聯盟推廣為國菜。",
-        "wiki": "Fondue"
-      },
-      {
-        "name": "拉可雷特",
-        "localName": "Raclette",
-        "description": "將半輪起司加熱後刮下融化部分，淋在馬鈴薯上，配醃黃瓜與小洋蔥。",
-        "history": "源自瓦萊州牧人在火邊烤起司的習俗，名稱來自法文「刮」（racler）。",
-        "wiki": "Raclette"
-      },
-      {
-        "name": "瑞士薯餅",
-        "localName": "Rösti",
-        "description": "將馬鈴薯絲煎成金黃酥脆的圓餅。",
-        "history": "原為伯恩農民的早餐，如今是全國代表菜；德法語區的文化分界甚至被戲稱為「薯餅鴻溝」。",
-        "wiki": "Rösti"
-      },
-      {
-        "name": "蘇黎世式奶油小牛肉",
-        "localName": "Zürcher Geschnetzeltes",
-        "description": "小牛肉片與蘑菇以白酒奶油醬烹煮，常配薯餅。",
-        "history": "蘇黎世的傳統名菜，相關食譜見於20世紀初的料理書。",
-        "wiki": "Zürcher Geschnetzeltes"
-      },
-      {
-        "name": "瑞士麥片（燕麥穀片）",
-        "localName": "Birchermüesli",
-        "description": "燕麥浸泡後混合蘋果泥、堅果與優格或牛奶。",
-        "history": "約1900年由瑞士醫師畢爾謝－貝納（Bircher-Benner）為療養院病患設計，後普及全球。",
-        "wiki": "Muesli"
-      }
-    ]
-  }
+ "iso": "CHE",
+ "capital": "伯恩（聯邦城市）",
+ "summary": "位於阿爾卑斯山區的中歐內陸國，以長期中立、直接民主、多語文化與鐘錶、金融業聞名。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "無宗教",
+    "percent": 34,
+    "description": "近年快速成長，已成為最大群體之一。"
+   },
+   {
+    "name": "天主教",
+    "percent": 32,
+    "description": "主要分布於中部與南部州，以及部分法語區。"
+   },
+   {
+    "name": "瑞士歸正會（新教）",
+    "percent": 21,
+    "description": "主要分布於蘇黎世、伯恩等州。"
+   },
+   {
+    "name": "伊斯蘭教",
+    "percent": 6,
+    "description": "主要來自巴爾幹半島與土耳其的移民。"
+   },
+   {
+    "name": "其他基督教",
+    "percent": 6,
+    "description": "包含東正教、福音派等。"
+   }
+  ],
+  "background": "16世紀慈運理在蘇黎世、喀爾文在日內瓦推動宗教改革，各州依自身選擇分屬新教或天主教，曾引發宗教戰爭，最終形成按州區分的信仰版圖。近數十年世俗化與移民使無宗教與伊斯蘭教比例上升。"
+ },
+ "language": {
+  "official": "官方語言為德語、法語、義大利語，羅曼什語為部分官方語言。",
+  "ranking": [
+   {
+    "name": "德語（瑞士德語）",
+    "percent": 62,
+    "description": "中部與東北部的主要語言，日常口語為各地瑞士德語方言。",
+    "greeting": "Grüezi",
+    "pronunciation": "grü-et-si"
+   },
+   {
+    "name": "法語",
+    "percent": 23,
+    "description": "西部羅曼蒂地區的主要語言。",
+    "greeting": "Bonjour",
+    "pronunciation": "bon-zhoor"
+   },
+   {
+    "name": "義大利語",
+    "percent": 8,
+    "description": "南部提契諾州與格勞賓登州南部使用。",
+    "greeting": "Ciao",
+    "pronunciation": "chow"
+   },
+   {
+    "name": "英語",
+    "percent": 6,
+    "description": "在國際城市與工作場合使用日益普遍。",
+    "greeting": "Hello",
+    "pronunciation": "heh-loh"
+   },
+   {
+    "name": "羅曼什語",
+    "percent": 1,
+    "description": "格勞賓登州部分山谷使用的羅曼語，人數極少但受憲法保障。",
+    "greeting": "Allegra",
+    "pronunciation": "a-leh-gra"
+   }
+  ],
+  "history": "羅馬時代本地以拉丁語為主，民族大遷徙時期阿勒曼尼人帶來日耳曼語，西部的勃艮第人則逐漸使用拉丁語演變的法語，阿爾卑斯山谷保留了羅曼什語。瑞士聯邦以邦聯形式整合各語區，1938年承認羅曼什語為國語。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "起司火鍋",
+    "localName": "Fondue",
+    "description": "將格呂耶爾等起司與白酒在鍋中融化，以長叉沾麵包食用。",
+    "history": "原為阿爾卑斯山區冬季的農家料理，1930年代被瑞士起司聯盟推廣為國菜。",
+    "wiki": "Fondue",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Fondue_dish.jpg/960px-Fondue_dish.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Fondue_dish.jpg",
+    "imageCredit": "Juliano Mendes・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "拉可雷特",
+    "localName": "Raclette",
+    "description": "將半輪起司加熱後刮下融化部分，淋在馬鈴薯上，配醃黃瓜與小洋蔥。",
+    "history": "源自瓦萊州牧人在火邊烤起司的習俗，名稱來自法文「刮」（racler）。",
+    "wiki": "Raclette",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Raclette_20040817_140816.jpg/960px-Raclette_20040817_140816.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Raclette_20040817_140816.jpg",
+    "imageCredit": "Ka23 13・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "瑞士薯餅",
+    "localName": "Rösti",
+    "description": "將馬鈴薯絲煎成金黃酥脆的圓餅。",
+    "history": "原為伯恩農民的早餐，如今是全國代表菜；德法語區的文化分界甚至被戲稱為「薯餅鴻溝」。",
+    "wiki": "Rösti",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Roesti.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Roesti.jpg",
+    "imageCredit": "Benutzer:Mussklprozz・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "蘇黎世式奶油小牛肉",
+    "localName": "Zürcher Geschnetzeltes",
+    "description": "小牛肉片與蘑菇以白酒奶油醬烹煮，常配薯餅。",
+    "history": "蘇黎世的傳統名菜，相關食譜見於20世紀初的料理書。",
+    "wiki": "Zürcher Geschnetzeltes",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Z%C3%BCrcher_Geschnetzeltes_at_Zur_rote_Buech.jpg/960px-Z%C3%BCrcher_Geschnetzeltes_at_Zur_rote_Buech.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Z%C3%BCrcher_Geschnetzeltes_at_Zur_rote_Buech.jpg",
+    "imageCredit": "Jpatokal・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "瑞士麥片（燕麥穀片）",
+    "localName": "Birchermüesli",
+    "description": "燕麥浸泡後混合蘋果泥、堅果與優格或牛奶。",
+    "history": "約1900年由瑞士醫師畢爾謝－貝納（Bircher-Benner）為療養院病患設計，後普及全球。",
+    "wiki": "Muesli",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Dorset_Cereals_muesli.jpg/960px-Dorset_Cereals_muesli.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Dorset_Cereals_muesli.jpg",
+    "imageCredit": "Mx. Granger・CC0・Wikimedia Commons"
+   }
+  ]
+ }
 }

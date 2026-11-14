@@ -1,96 +1,111 @@
 {
-  "iso": "KAZ",
-  "capital": "阿斯塔納",
-  "summary": "位於中亞的世界最大內陸國，曾是游牧民族的大草原，1991年脫離蘇聯獨立，石油與礦產資源豐富。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "伊斯蘭教（遜尼派）",
-        "percent": 69,
-        "description": "哈薩克人、烏茲別克人等多數民族信仰，屬哈乃斐學派。"
-      },
-      {
-        "name": "俄羅斯正教",
-        "percent": 17,
-        "description": "主要為俄羅斯裔與烏克蘭裔居民。"
-      },
-      {
-        "name": "未表態",
-        "percent": 11,
-        "description": "2021年普查中未回答宗教的人口。"
-      },
-      {
-        "name": "無宗教",
-        "percent": 2,
-        "description": "蘇聯時期無神論政策的影響。"
-      }
-    ],
-    "background": "伊斯蘭教自8世紀阿拉伯人征服中亞後傳入南部綠洲，再經蘇非派與金帳汗國傳播至草原游牧民族，並融合傳統的騰格里信仰。19世紀俄帝國殖民與蘇聯時期大量斯拉夫人移入，帶來東正教。"
-  },
-  "language": {
-    "official": "官方語言為哈薩克語（國語），俄語在國家機構中與其並用。",
-    "ranking": [
-      {
-        "name": "哈薩克語",
-        "percent": 65,
-        "description": "突厥語族的語言，政府正推動由西里爾字母改為拉丁字母。",
-        "greeting": "Сәлеметсіз бе",
-        "pronunciation": "sä-le-met-siz be"
-      },
-      {
-        "name": "俄語",
-        "percent": 30,
-        "description": "在城市與跨族群交流中仍廣泛使用。",
-        "greeting": "Здравствуйте",
-        "pronunciation": "zdrast-vuy-tye"
-      },
-      {
-        "name": "烏茲別克語",
-        "percent": 3,
-        "description": "南部烏茲別克人使用。",
-        "greeting": "Salom",
-        "pronunciation": "sa-lom"
-      }
-    ],
-    "history": "哈薩克語為游牧突厥部族的語言，15世紀哈薩克汗國建立後逐步形成。俄帝國與蘇聯時期俄語成為主導語言，1940年改用西里爾字母。獨立後政府積極推廣哈薩克語，並計畫改用拉丁字母。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "別什巴爾馬克",
-        "localName": "Бешбармақ (Beshbarmak)",
-        "description": "水煮羊肉或馬肉鋪在寬麵片上，淋上肉湯與洋蔥，為國菜。",
-        "history": "名稱意為「五根手指」，因傳統上用手抓食，是招待貴客與節慶的游牧料理。",
-        "wiki": "Beshbarmak"
-      },
-      {
-        "name": "馬腸",
-        "localName": "Қазы (Kazy)",
-        "description": "以馬肋肉與馬油灌製的香腸，經風乾或煙燻。",
-        "history": "游牧民族保存肉類的傳統方法，是節慶宴席的重要菜色。",
-        "wiki": "Kazy"
-      },
-      {
-        "name": "包爾薩克炸麵",
-        "localName": "Бауырсақ (Baursak)",
-        "description": "圓形或方形的炸麵團，蓬鬆微甜，配茶吃。",
-        "history": "中亞突厥民族的傳統麵點，常在婚禮、節慶時大量製作。",
-        "wiki": "Baursak"
-      },
-      {
-        "name": "馬奶酒",
-        "localName": "Қымыз (Kumis)",
-        "description": "發酵馬奶製成的微酸低酒精飲品。",
-        "history": "草原游牧民族飲用已有數千年歷史，被視為營養與健康的飲料。",
-        "wiki": "Kumis"
-      },
-      {
-        "name": "中亞抓飯",
-        "localName": "Палау (Plov)",
-        "description": "以米、羊肉、胡蘿蔔與洋蔥在大鍋中燉煮而成。",
-        "history": "中亞共享的料理傳統，透過絲路城市傳入哈薩克南部。",
-        "wiki": "Pilaf"
-      }
-    ]
-  }
+ "iso": "KAZ",
+ "capital": "阿斯塔納",
+ "summary": "位於中亞的世界最大內陸國，曾是游牧民族的大草原，1991年脫離蘇聯獨立，石油與礦產資源豐富。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "伊斯蘭教（遜尼派）",
+    "percent": 69,
+    "description": "哈薩克人、烏茲別克人等多數民族信仰，屬哈乃斐學派。"
+   },
+   {
+    "name": "俄羅斯正教",
+    "percent": 17,
+    "description": "主要為俄羅斯裔與烏克蘭裔居民。"
+   },
+   {
+    "name": "未表態",
+    "percent": 11,
+    "description": "2021年普查中未回答宗教的人口。"
+   },
+   {
+    "name": "無宗教",
+    "percent": 2,
+    "description": "蘇聯時期無神論政策的影響。"
+   }
+  ],
+  "background": "伊斯蘭教自8世紀阿拉伯人征服中亞後傳入南部綠洲，再經蘇非派與金帳汗國傳播至草原游牧民族，並融合傳統的騰格里信仰。19世紀俄帝國殖民與蘇聯時期大量斯拉夫人移入，帶來東正教。"
+ },
+ "language": {
+  "official": "官方語言為哈薩克語（國語），俄語在國家機構中與其並用。",
+  "ranking": [
+   {
+    "name": "哈薩克語",
+    "percent": 65,
+    "description": "突厥語族的語言，政府正推動由西里爾字母改為拉丁字母。",
+    "greeting": "Сәлеметсіз бе",
+    "pronunciation": "sä-le-met-siz be"
+   },
+   {
+    "name": "俄語",
+    "percent": 30,
+    "description": "在城市與跨族群交流中仍廣泛使用。",
+    "greeting": "Здравствуйте",
+    "pronunciation": "zdrast-vuy-tye"
+   },
+   {
+    "name": "烏茲別克語",
+    "percent": 3,
+    "description": "南部烏茲別克人使用。",
+    "greeting": "Salom",
+    "pronunciation": "sa-lom"
+   }
+  ],
+  "history": "哈薩克語為游牧突厥部族的語言，15世紀哈薩克汗國建立後逐步形成。俄帝國與蘇聯時期俄語成為主導語言，1940年改用西里爾字母。獨立後政府積極推廣哈薩克語，並計畫改用拉丁字母。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "別什巴爾馬克",
+    "localName": "Бешбармақ (Beshbarmak)",
+    "description": "水煮羊肉或馬肉鋪在寬麵片上，淋上肉湯與洋蔥，為國菜。",
+    "history": "名稱意為「五根手指」，因傳統上用手抓食，是招待貴客與節慶的游牧料理。",
+    "wiki": "Beshbarmak",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/%D0%91%D0%B5%D1%88%D0%B1%D0%B0%D1%80%D0%BC%D0%B0%D0%BA_%D0%B8%D0%B7_%D0%B3%D0%BE%D0%B2%D1%8F%D0%B4%D0%B8%D0%BD%D1%8B_01.jpg/960px-%D0%91%D0%B5%D1%88%D0%B1%D0%B0%D1%80%D0%BC%D0%B0%D0%BA_%D0%B8%D0%B7_%D0%B3%D0%BE%D0%B2%D1%8F%D0%B4%D0%B8%D0%BD%D1%8B_01.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:%D0%91%D0%B5%D1%88%D0%B1%D0%B0%D1%80%D0%BC%D0%B0%D0%BA_%D0%B8%D0%B7_%D0%B3%D0%BE%D0%B2%D1%8F%D0%B4%D0%B8%D0%BD%D1%8B_01.jpg",
+    "imageCredit": "Pannet・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "馬腸",
+    "localName": "Қазы (Kazy)",
+    "description": "以馬肋肉與馬油灌製的香腸，經風乾或煙燻。",
+    "history": "游牧民族保存肉類的傳統方法，是節慶宴席的重要菜色。",
+    "wiki": "Kazy",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Kazy_2018-10-26-23_59_Sentinel-2_L2A.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Kazy_2018-10-26-23_59_Sentinel-2_L2A.jpg",
+    "imageCredit": "ESA・Attribution・Wikimedia Commons"
+   },
+   {
+    "name": "包爾薩克炸麵",
+    "localName": "Бауырсақ (Baursak)",
+    "description": "圓形或方形的炸麵團，蓬鬆微甜，配茶吃。",
+    "history": "中亞突厥民族的傳統麵點，常在婚禮、節慶時大量製作。",
+    "wiki": "Baursak",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Boortsog.JPG/960px-Boortsog.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Boortsog.JPG",
+    "imageCredit": "Vidor・Public domain・Wikimedia Commons"
+   },
+   {
+    "name": "馬奶酒",
+    "localName": "Қымыз (Kumis)",
+    "description": "發酵馬奶製成的微酸低酒精飲品。",
+    "history": "草原游牧民族飲用已有數千年歷史，被視為營養與健康的飲料。",
+    "wiki": "Kumis",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Kumys-bottle.jpg/960px-Kumys-bottle.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Kumys-bottle.jpg",
+    "imageCredit": "A.Savin・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "中亞抓飯",
+    "localName": "Палау (Plov)",
+    "description": "以米、羊肉、胡蘿蔔與洋蔥在大鍋中燉煮而成。",
+    "history": "中亞共享的料理傳統，透過絲路城市傳入哈薩克南部。",
+    "wiki": "Pilaf",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Afghan_Palo.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Afghan_Palo.jpg",
+    "imageCredit": "Jost Wagner・CC BY-SA 1.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

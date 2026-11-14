@@ -1,84 +1,99 @@
 {
-  "iso": "SOM",
-  "capital": "摩加迪休",
-  "summary": "索馬利亞位於非洲之角，擁有非洲大陸最長的海岸線，自1991年中央政府崩潰後長期處於內戰與重建之中。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "伊斯蘭教（遜尼派）",
-        "percent": 98,
-        "description": "幾乎全體國民信仰遜尼派伊斯蘭教，以沙斐儀學派為主。"
-      },
-      {
-        "name": "基督教",
-        "percent": 1,
-        "description": "規模極小的社群。"
-      },
-      {
-        "name": "其他",
-        "percent": 1,
-        "description": "其他信仰或無宗教者。"
-      }
-    ],
-    "background": "伊斯蘭教早在七世紀就經由紅海與印度洋貿易傳入索馬利沿岸，澤拉與摩加迪休等港口城市成為伊斯蘭教的早期傳播中心。蘇菲教團在內陸遊牧社會中推廣伊斯蘭教，使其成為索馬利認同的核心。"
-  },
-  "language": {
-    "official": "索馬利語與阿拉伯語是官方語言。",
-    "ranking": [
-      {
-        "name": "索馬利語",
-        "percent": 92,
-        "description": "全國通用語言，包括北部標準語與南部的馬伊語等變體。",
-        "greeting": "Is ka warran?",
-        "pronunciation": "is ka WAR-ran"
-      },
-      {
-        "name": "阿拉伯語",
-        "percent": 2,
-        "description": "官方語言，用於宗教與教育。",
-        "greeting": "السلام عليكم",
-        "pronunciation": "as-sa-LAA-mu a-LAI-kum"
-      }
-    ],
-    "history": "索馬利語屬庫希特語族，長期以口傳詩歌為主要文學形式。1972年政府正式採用拉丁字母書寫索馬利語，並大力推廣識字運動。殖民時期北部受英國、南部受義大利統治，因此英語與義大利語也曾有一定影響。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "坎傑洛薄餅",
-        "localName": "Canjeero",
-        "description": "以發酵麵糊煎成的薄餅，常配茶或燉菜。",
-        "history": "索馬利人最常見的早餐，與也門的拉霍薄餅相似。",
-        "wiki": "Lahoh"
-      },
-      {
-        "name": "索馬利香料飯",
-        "localName": "Bariis iskukaris",
-        "description": "以香料、葡萄乾與肉一同烹煮的香料飯。",
-        "history": "融合印度與阿拉伯香料傳統，常搭配羊肉或駱駝肉。",
-        "wiki": "Bariis iskukaris"
-      },
-      {
-        "name": "三角炸餃",
-        "localName": "Sambuus",
-        "description": "包入肉末與香料的三角形油炸麵點。",
-        "history": "在齋戒月開齋時特別常見。",
-        "wiki": "Samosa"
-      },
-      {
-        "name": "哈爾瓦甜糕",
-        "localName": "Xalwo",
-        "description": "以糖、奶油與小豆蔻熬製的Q軟甜點。",
-        "history": "婚禮與開齋節等節慶的傳統甜點。",
-        "wiki": "Halva"
-      },
-      {
-        "name": "索馬利奶茶",
-        "localName": "Shaah",
-        "description": "加入小豆蔻、肉桂、丁香等香料的甜奶茶。",
-        "history": "喝茶是索馬利社交生活的重要部分。",
-        "wiki": "Masala chai"
-      }
-    ]
-  }
+ "iso": "SOM",
+ "capital": "摩加迪休",
+ "summary": "索馬利亞位於非洲之角，擁有非洲大陸最長的海岸線，自1991年中央政府崩潰後長期處於內戰與重建之中。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "伊斯蘭教（遜尼派）",
+    "percent": 98,
+    "description": "幾乎全體國民信仰遜尼派伊斯蘭教，以沙斐儀學派為主。"
+   },
+   {
+    "name": "基督教",
+    "percent": 1,
+    "description": "規模極小的社群。"
+   },
+   {
+    "name": "其他",
+    "percent": 1,
+    "description": "其他信仰或無宗教者。"
+   }
+  ],
+  "background": "伊斯蘭教早在七世紀就經由紅海與印度洋貿易傳入索馬利沿岸，澤拉與摩加迪休等港口城市成為伊斯蘭教的早期傳播中心。蘇菲教團在內陸遊牧社會中推廣伊斯蘭教，使其成為索馬利認同的核心。"
+ },
+ "language": {
+  "official": "索馬利語與阿拉伯語是官方語言。",
+  "ranking": [
+   {
+    "name": "索馬利語",
+    "percent": 92,
+    "description": "全國通用語言，包括北部標準語與南部的馬伊語等變體。",
+    "greeting": "Is ka warran?",
+    "pronunciation": "is ka WAR-ran"
+   },
+   {
+    "name": "阿拉伯語",
+    "percent": 2,
+    "description": "官方語言，用於宗教與教育。",
+    "greeting": "السلام عليكم",
+    "pronunciation": "as-sa-LAA-mu a-LAI-kum"
+   }
+  ],
+  "history": "索馬利語屬庫希特語族，長期以口傳詩歌為主要文學形式。1972年政府正式採用拉丁字母書寫索馬利語，並大力推廣識字運動。殖民時期北部受英國、南部受義大利統治，因此英語與義大利語也曾有一定影響。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "坎傑洛薄餅",
+    "localName": "Canjeero",
+    "description": "以發酵麵糊煎成的薄餅，常配茶或燉菜。",
+    "history": "索馬利人最常見的早餐，與也門的拉霍薄餅相似。",
+    "wiki": "Lahoh",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/44/LahohS.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:LahohS.jpg",
+    "imageCredit": "Gilabrand (talk)・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "索馬利香料飯",
+    "localName": "Bariis iskukaris",
+    "description": "以香料、葡萄乾與肉一同烹煮的香料飯。",
+    "history": "融合印度與阿拉伯香料傳統，常搭配羊肉或駱駝肉。",
+    "wiki": "Bariis iskukaris",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Somalicamelmeat.jpg/960px-Somalicamelmeat.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Somalicamelmeat.jpg",
+    "imageCredit": "Richard Faulder・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "三角炸餃",
+    "localName": "Sambuus",
+    "description": "包入肉末與香料的三角形油炸麵點。",
+    "history": "在齋戒月開齋時特別常見。",
+    "wiki": "Samosa",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Samosas%2C_snack_food_at_Wikipedia%27s_16th_Birthday_celebration_in_Chittagong_%2801%29.jpg/960px-Samosas%2C_snack_food_at_Wikipedia%27s_16th_Birthday_celebration_in_Chittagong_%2801%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Samosas,_snack_food_at_Wikipedia%27s_16th_Birthday_celebration_in_Chittagong_(01).jpg",
+    "imageCredit": "Moheen Reeyad・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "哈爾瓦甜糕",
+    "localName": "Xalwo",
+    "description": "以糖、奶油與小豆蔻熬製的Q軟甜點。",
+    "history": "婚禮與開齋節等節慶的傳統甜點。",
+    "wiki": "Halva",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Orient_sweets_%28special_halva%29_Samarkand%2C_Siyab.jpg/960px-Orient_sweets_%28special_halva%29_Samarkand%2C_Siyab.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Orient_sweets_(special_halva)_Samarkand,_Siyab.jpg",
+    "imageCredit": "Shuhrenataxmedov・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "索馬利奶茶",
+    "localName": "Shaah",
+    "description": "加入小豆蔻、肉桂、丁香等香料的甜奶茶。",
+    "history": "喝茶是索馬利社交生活的重要部分。",
+    "wiki": "Masala chai",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/89/Chai_In_Sakora.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Chai_In_Sakora.jpg",
+    "imageCredit": "Dadhichbittu007・CC BY-SA 4.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

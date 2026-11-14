@@ -1,96 +1,111 @@
 {
-  "iso": "SWE",
-  "capital": "斯德哥爾摩",
-  "summary": "瑞典是北歐面積最大的國家，以高福利社會、設計品牌與諾貝爾獎聞名，2024年加入北約。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "路德宗（瑞典教會）",
-        "percent": 52,
-        "description": "2000年前為國教會，仍是最大的宗教團體。"
-      },
-      {
-        "name": "無宗教",
-        "percent": 33,
-        "description": "瑞典是世界上最世俗化的國家之一。"
-      },
-      {
-        "name": "伊斯蘭教",
-        "percent": 8,
-        "description": "主要為中東與巴爾幹等地移民及其後代。"
-      },
-      {
-        "name": "天主教",
-        "percent": 1,
-        "description": "主要為移民社群。"
-      }
-    ],
-    "background": "十一至十二世紀瑞典逐漸基督教化。1527年國王古斯塔夫·瓦薩推動宗教改革，路德宗成為國教，延續至2000年政教分離。二十世紀高度世俗化，近數十年移民帶來伊斯蘭教等宗教。"
-  },
-  "language": {
-    "official": "瑞典語是官方語言，另承認芬蘭語、薩米語等五種少數民族語言。",
-    "ranking": [
-      {
-        "name": "瑞典語",
-        "percent": 87,
-        "description": "屬北日耳曼語支，與挪威語、丹麥語可部分互通。",
-        "greeting": "Hej",
-        "pronunciation": "hay"
-      },
-      {
-        "name": "阿拉伯語",
-        "percent": 2,
-        "description": "近年人數最多的移民語言之一。",
-        "greeting": "مرحبا",
-        "pronunciation": "MAR-ha-ba"
-      },
-      {
-        "name": "芬蘭語",
-        "percent": 2,
-        "description": "芬蘭裔少數民族與移民使用。",
-        "greeting": "Hei",
-        "pronunciation": "hay"
-      }
-    ],
-    "history": "瑞典語源自維京時代的古諾斯語，中世紀吸收大量低地德語詞彙。1526年首部瑞典語新約聖經的出版對書面語影響深遠。瑞典統治芬蘭數百年，使瑞典語至今仍是芬蘭的官方語言之一。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "瑞典肉丸",
-        "localName": "Köttbullar",
-        "description": "小肉丸配奶油醬汁、越橘醬與馬鈴薯泥。",
-        "history": "瑞典最具代表性的家常菜，透過IKEA聞名全球。",
-        "wiki": "Swedish meatballs"
-      },
-      {
-        "name": "肉桂捲",
-        "localName": "Kanelbulle",
-        "description": "撒上珍珠糖的肉桂麵包捲。",
-        "history": "瑞典「Fika」咖啡時光的經典點心，10月4日是肉桂捲日。",
-        "wiki": "Cinnamon roll"
-      },
-      {
-        "name": "塞姆拉",
-        "localName": "Semla",
-        "description": "夾杏仁膏與鮮奶油的小圓麵包。",
-        "history": "傳統上在大齋期前的「懺悔星期二」食用。",
-        "wiki": "Semla"
-      },
-      {
-        "name": "鹽醃發酵鯡魚",
-        "localName": "Surströmming",
-        "description": "發酵的波羅的海鯡魚罐頭，以強烈氣味聞名。",
-        "history": "北部地區的傳統食物，傳統上自每年8月第三個星期四開始食用。",
-        "wiki": "Surströmming"
-      },
-      {
-        "name": "三明治蛋糕",
-        "localName": "Smörgåstårta",
-        "description": "以多層麵包夾海鮮、火腿等餡料，外觀如蛋糕的鹹點。",
-        "history": "1960年代流行起來，常見於畢業典禮等慶祝場合。",
-        "wiki": "Smörgåstårta"
-      }
-    ]
-  }
+ "iso": "SWE",
+ "capital": "斯德哥爾摩",
+ "summary": "瑞典是北歐面積最大的國家，以高福利社會、設計品牌與諾貝爾獎聞名，2024年加入北約。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "路德宗（瑞典教會）",
+    "percent": 52,
+    "description": "2000年前為國教會，仍是最大的宗教團體。"
+   },
+   {
+    "name": "無宗教",
+    "percent": 33,
+    "description": "瑞典是世界上最世俗化的國家之一。"
+   },
+   {
+    "name": "伊斯蘭教",
+    "percent": 8,
+    "description": "主要為中東與巴爾幹等地移民及其後代。"
+   },
+   {
+    "name": "天主教",
+    "percent": 1,
+    "description": "主要為移民社群。"
+   }
+  ],
+  "background": "十一至十二世紀瑞典逐漸基督教化。1527年國王古斯塔夫·瓦薩推動宗教改革，路德宗成為國教，延續至2000年政教分離。二十世紀高度世俗化，近數十年移民帶來伊斯蘭教等宗教。"
+ },
+ "language": {
+  "official": "瑞典語是官方語言，另承認芬蘭語、薩米語等五種少數民族語言。",
+  "ranking": [
+   {
+    "name": "瑞典語",
+    "percent": 87,
+    "description": "屬北日耳曼語支，與挪威語、丹麥語可部分互通。",
+    "greeting": "Hej",
+    "pronunciation": "hay"
+   },
+   {
+    "name": "阿拉伯語",
+    "percent": 2,
+    "description": "近年人數最多的移民語言之一。",
+    "greeting": "مرحبا",
+    "pronunciation": "MAR-ha-ba"
+   },
+   {
+    "name": "芬蘭語",
+    "percent": 2,
+    "description": "芬蘭裔少數民族與移民使用。",
+    "greeting": "Hei",
+    "pronunciation": "hay"
+   }
+  ],
+  "history": "瑞典語源自維京時代的古諾斯語，中世紀吸收大量低地德語詞彙。1526年首部瑞典語新約聖經的出版對書面語影響深遠。瑞典統治芬蘭數百年，使瑞典語至今仍是芬蘭的官方語言之一。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "瑞典肉丸",
+    "localName": "Köttbullar",
+    "description": "小肉丸配奶油醬汁、越橘醬與馬鈴薯泥。",
+    "history": "瑞典最具代表性的家常菜，透過IKEA聞名全球。",
+    "wiki": "Swedish meatballs",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Soup_with_meatballs-01.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Soup_with_meatballs-01.jpg",
+    "imageCredit": "ralphhogaboom・CC BY-SA 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "肉桂捲",
+    "localName": "Kanelbulle",
+    "description": "撒上珍珠糖的肉桂麵包捲。",
+    "history": "瑞典「Fika」咖啡時光的經典點心，10月4日是肉桂捲日。",
+    "wiki": "Cinnamon roll",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Cinnamon_roll_in_Stockholm.jpg/960px-Cinnamon_roll_in_Stockholm.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Cinnamon_roll_in_Stockholm.jpg",
+    "imageCredit": "Kritzolina・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "塞姆拉",
+    "localName": "Semla",
+    "description": "夾杏仁膏與鮮奶油的小圓麵包。",
+    "history": "傳統上在大齋期前的「懺悔星期二」食用。",
+    "wiki": "Semla",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/SemlaFlickr.jpg/960px-SemlaFlickr.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:SemlaFlickr.jpg",
+    "imageCredit": "Frugan・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "鹽醃發酵鯡魚",
+    "localName": "Surströmming",
+    "description": "發酵的波羅的海鯡魚罐頭，以強烈氣味聞名。",
+    "history": "北部地區的傳統食物，傳統上自每年8月第三個星期四開始食用。",
+    "wiki": "Surströmming",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Surstr%C3%B6mming.jpg/960px-Surstr%C3%B6mming.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Surstr%C3%B6mming.jpg",
+    "imageCredit": "Lapplaender・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "三明治蛋糕",
+    "localName": "Smörgåstårta",
+    "description": "以多層麵包夾海鮮、火腿等餡料，外觀如蛋糕的鹹點。",
+    "history": "1960年代流行起來，常見於畢業典禮等慶祝場合。",
+    "wiki": "Smörgåstårta",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Plate_of_sm%C3%B6rg%C3%A5st%C3%A5rta_%28cropped%29.jpg/960px-Plate_of_sm%C3%B6rg%C3%A5st%C3%A5rta_%28cropped%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Plate_of_sm%C3%B6rg%C3%A5st%C3%A5rta_(cropped).jpg",
+    "imageCredit": "Rose Abrams・CC BY 4.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

@@ -1,101 +1,116 @@
 {
-  "iso": "GBR",
-  "capital": "倫敦",
-  "summary": "英國由英格蘭、蘇格蘭、威爾斯與北愛爾蘭組成，曾是全球最大的殖民帝國，也是工業革命與議會民主的發源地。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "基督教",
-        "percent": 46,
-        "description": "以英格蘭聖公會、蘇格蘭教會與天主教為主。"
-      },
-      {
-        "name": "無宗教",
-        "percent": 38,
-        "description": "不認同任何宗教的人口快速增加。"
-      },
-      {
-        "name": "伊斯蘭教",
-        "percent": 6,
-        "description": "主要來自南亞與其他地區的移民及其後代。"
-      },
-      {
-        "name": "印度教",
-        "percent": 2,
-        "description": "多為印度裔社群。"
-      },
-      {
-        "name": "錫克教",
-        "percent": 1,
-        "description": "主要為旁遮普裔社群。"
-      }
-    ],
-    "background": "十六世紀亨利八世與羅馬教廷決裂，建立英格蘭聖公會，蘇格蘭則形成長老會傳統。二戰後來自前殖民地的移民帶來伊斯蘭教、印度教與錫克教，而近數十年世俗化使無宗教人口大幅成長。"
-  },
-  "language": {
-    "official": "英國沒有法定官方語言，英語為事實上的國家語言；威爾斯語在威爾斯具官方地位。",
-    "ranking": [
-      {
-        "name": "英語",
-        "percent": 92,
-        "description": "全國通用語言，也是世界上使用最廣的語言之一。",
-        "greeting": "Hello",
-        "pronunciation": "heh-LOH"
-      },
-      {
-        "name": "波蘭語",
-        "percent": 1,
-        "description": "2004年波蘭加入歐盟後大量移民帶來的語言。",
-        "greeting": "Cześć",
-        "pronunciation": "cheshch"
-      },
-      {
-        "name": "威爾斯語",
-        "percent": 1,
-        "description": "威爾斯的凱爾特語言，約五分之一威爾斯居民會說。",
-        "greeting": "Shwmae",
-        "pronunciation": "shoo-MY"
-      }
-    ],
-    "history": "英語源於五世紀移入的盎格魯—撒克遜人所說的日耳曼語，1066年諾曼征服後吸收大量法語詞彙。英國殖民擴張使英語傳播至全球；威爾斯語、蘇格蘭蓋爾語等凱爾特語言則一度式微，近年積極推動復振。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "炸魚薯條",
-        "localName": "Fish and chips",
-        "description": "酥炸裹粉鱈魚或黑線鱈，配粗薯條與醋。",
-        "history": "十九世紀中期隨工業城市興起而普及，是英國最具代表性的外食。",
-        "wiki": "Fish and chips"
-      },
-      {
-        "name": "全套英式早餐",
-        "localName": "Full breakfast",
-        "description": "包含培根、香腸、蛋、焗豆、蘑菇與番茄的豐盛早餐。",
-        "history": "源自鄉村仕紳的早餐傳統，維多利亞時代後普及至各階層。",
-        "wiki": "Full breakfast"
-      },
-      {
-        "name": "週日烤肉",
-        "localName": "Sunday roast",
-        "description": "烤牛肉等肉類搭配約克夏布丁、烤馬鈴薯與肉汁。",
-        "history": "傳統上在週日上教堂後全家一起享用。",
-        "wiki": "Sunday roast"
-      },
-      {
-        "name": "咖哩雞塊",
-        "localName": "Chicken tikka masala",
-        "description": "以番茄奶油咖哩醬烹調的烤雞塊。",
-        "history": "普遍認為在二十世紀於英國的南亞裔餐廳發展出來，象徵多元文化。",
-        "wiki": "Chicken tikka masala"
-      },
-      {
-        "name": "牧羊人派",
-        "localName": "Shepherd's pie",
-        "description": "以羊絞肉為餡、表面鋪上馬鈴薯泥烘烤的派。",
-        "history": "起源於利用剩餘烤肉的家常料理，用牛肉製作的版本稱為農舍派。",
-        "wiki": "Shepherd's pie"
-      }
-    ]
-  }
+ "iso": "GBR",
+ "capital": "倫敦",
+ "summary": "英國由英格蘭、蘇格蘭、威爾斯與北愛爾蘭組成，曾是全球最大的殖民帝國，也是工業革命與議會民主的發源地。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "基督教",
+    "percent": 46,
+    "description": "以英格蘭聖公會、蘇格蘭教會與天主教為主。"
+   },
+   {
+    "name": "無宗教",
+    "percent": 38,
+    "description": "不認同任何宗教的人口快速增加。"
+   },
+   {
+    "name": "伊斯蘭教",
+    "percent": 6,
+    "description": "主要來自南亞與其他地區的移民及其後代。"
+   },
+   {
+    "name": "印度教",
+    "percent": 2,
+    "description": "多為印度裔社群。"
+   },
+   {
+    "name": "錫克教",
+    "percent": 1,
+    "description": "主要為旁遮普裔社群。"
+   }
+  ],
+  "background": "十六世紀亨利八世與羅馬教廷決裂，建立英格蘭聖公會，蘇格蘭則形成長老會傳統。二戰後來自前殖民地的移民帶來伊斯蘭教、印度教與錫克教，而近數十年世俗化使無宗教人口大幅成長。"
+ },
+ "language": {
+  "official": "英國沒有法定官方語言，英語為事實上的國家語言；威爾斯語在威爾斯具官方地位。",
+  "ranking": [
+   {
+    "name": "英語",
+    "percent": 92,
+    "description": "全國通用語言，也是世界上使用最廣的語言之一。",
+    "greeting": "Hello",
+    "pronunciation": "heh-LOH"
+   },
+   {
+    "name": "波蘭語",
+    "percent": 1,
+    "description": "2004年波蘭加入歐盟後大量移民帶來的語言。",
+    "greeting": "Cześć",
+    "pronunciation": "cheshch"
+   },
+   {
+    "name": "威爾斯語",
+    "percent": 1,
+    "description": "威爾斯的凱爾特語言，約五分之一威爾斯居民會說。",
+    "greeting": "Shwmae",
+    "pronunciation": "shoo-MY"
+   }
+  ],
+  "history": "英語源於五世紀移入的盎格魯—撒克遜人所說的日耳曼語，1066年諾曼征服後吸收大量法語詞彙。英國殖民擴張使英語傳播至全球；威爾斯語、蘇格蘭蓋爾語等凱爾特語言則一度式微，近年積極推動復振。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "炸魚薯條",
+    "localName": "Fish and chips",
+    "description": "酥炸裹粉鱈魚或黑線鱈，配粗薯條與醋。",
+    "history": "十九世紀中期隨工業城市興起而普及，是英國最具代表性的外食。",
+    "wiki": "Fish and chips",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Fish_and_chips_blackpool.jpg/960px-Fish_and_chips_blackpool.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Fish_and_chips_blackpool.jpg",
+    "imageCredit": "Matthias Meckel・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "全套英式早餐",
+    "localName": "Full breakfast",
+    "description": "包含培根、香腸、蛋、焗豆、蘑菇與番茄的豐盛早餐。",
+    "history": "源自鄉村仕紳的早餐傳統，維多利亞時代後普及至各階層。",
+    "wiki": "Full breakfast",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Full_English_breakfast_%28cropped%29.jpg/960px-Full_English_breakfast_%28cropped%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Full_English_breakfast_(cropped).jpg",
+    "imageCredit": "Joadl・CC BY-SA 3.0 at・Wikimedia Commons"
+   },
+   {
+    "name": "週日烤肉",
+    "localName": "Sunday roast",
+    "description": "烤牛肉等肉類搭配約克夏布丁、烤馬鈴薯與肉汁。",
+    "history": "傳統上在週日上教堂後全家一起享用。",
+    "wiki": "Sunday roast",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Sunday_roast_lamb_Cock_Inn_Henham_Essex_England_01.jpg/960px-Sunday_roast_lamb_Cock_Inn_Henham_Essex_England_01.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Sunday_roast_lamb_Cock_Inn_Henham_Essex_England_01.jpg",
+    "imageCredit": "Acabashi・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "咖哩雞塊",
+    "localName": "Chicken tikka masala",
+    "description": "以番茄奶油咖哩醬烹調的烤雞塊。",
+    "history": "普遍認為在二十世紀於英國的南亞裔餐廳發展出來，象徵多元文化。",
+    "wiki": "Chicken tikka masala",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Chicken_tikka_masala_%28cropped%29.jpg/960px-Chicken_tikka_masala_%28cropped%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Chicken_tikka_masala_(cropped).jpg",
+    "imageCredit": "Michael Hays・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "牧羊人派",
+    "localName": "Shepherd's pie",
+    "description": "以羊絞肉為餡、表面鋪上馬鈴薯泥烘烤的派。",
+    "history": "起源於利用剩餘烤肉的家常料理，用牛肉製作的版本稱為農舍派。",
+    "wiki": "Shepherd's pie",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Homerton_College_-_Shepherd%27s_pie_%28cropped%29.jpg/960px-Homerton_College_-_Shepherd%27s_pie_%28cropped%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Homerton_College_-_Shepherd%27s_pie_(cropped).jpg",
+    "imageCredit": "Oxfordian Kissuth・CC BY-SA 3.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

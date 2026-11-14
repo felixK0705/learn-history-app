@@ -1,89 +1,104 @@
 {
-  "iso": "LAO",
-  "capital": "永珍",
-  "summary": "位於中南半島的內陸國，湄公河貫穿全境，曾是瀾滄王國所在地，1975年成立社會主義的寮人民民主共和國。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "上座部佛教",
-        "percent": 65,
-        "description": "多數寮族人信仰，寺廟是社區生活中心。"
-      },
-      {
-        "name": "民間信仰（萬物有靈論）",
-        "percent": 31,
-        "description": "山區少數民族崇拜神靈（phi）與祖先，寮族人也普遍參與。"
-      },
-      {
-        "name": "基督教",
-        "percent": 2,
-        "description": "包含天主教與新教。"
-      },
-      {
-        "name": "其他",
-        "percent": 1,
-        "description": "包含伊斯蘭教、巴哈伊教等。"
-      }
-    ],
-    "background": "14世紀法昂建立瀾滄王國，自高棉迎請上座部佛教並奉為國教。佛教與對神靈（phi）的信仰長期並存。法國殖民時期天主教傳入，1975年後政府一度限制宗教，後逐步放寬。"
-  },
-  "language": {
-    "official": "官方語言為寮語。",
-    "ranking": [
-      {
-        "name": "寮語",
-        "percent": 53,
-        "description": "屬壯侗語系，與泰語關係密切，以寮文字母書寫。",
-        "greeting": "ສະບາຍດີ",
-        "pronunciation": "sa-bai-dee"
-      },
-      {
-        "name": "赫蒙語（苗語）",
-        "percent": 9,
-        "description": "北部山區赫蒙族使用。",
-        "greeting": "Nyob zoo",
-        "pronunciation": "nyaw zhong"
-      }
-    ],
-    "history": "寮語隨傣－寮民族南遷而來，文字源自高棉文字系統。法國殖民時期法語為行政語言。寮國約有五十個民族，克木語、赫蒙語等少數民族語言在山區廣泛使用。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "拉普肉末沙拉",
-        "localName": "ລາບ (Larb)",
-        "description": "以剁碎的肉、魚露、萊姆汁、烤米粉與香草拌成的沙拉，被視為國菜。",
-        "history": "「拉普」在寮語中有「幸運」之意，常在節慶與重要場合食用。",
-        "wiki": "Larb"
-      },
-      {
-        "name": "糯米飯",
-        "localName": "ເຂົ້າໜຽວ (Khao niao)",
-        "description": "蒸熟的糯米裝在竹簍中，以手捏成團沾菜食用。",
-        "history": "寮國人均糯米消費量居世界之冠，寮族人甚至自稱「糯米之子」。",
-        "wiki": "Glutinous rice"
-      },
-      {
-        "name": "青木瓜沙拉",
-        "localName": "ຕຳໝາກຫຸ່ງ (Tam mak hoong)",
-        "description": "青木瓜絲加辣椒、萊姆、魚露與發酵魚醬搗拌而成。",
-        "history": "寮國與泰國東北部共享的料理，寮式版本常加入濃郁的發酵魚醬（padaek）。",
-        "wiki": "Green papaya salad"
-      },
-      {
-        "name": "寮式米苔目湯",
-        "localName": "ເຂົ້າປຽກເສັ້ນ (Khao piak sen)",
-        "description": "以米粉與木薯粉製成的Q彈粗麵，配雞湯與香草。",
-        "history": "寮國最受歡迎的早餐湯麵。",
-        "wiki": "Khao piak sen"
-      },
-      {
-        "name": "寮式燉菜",
-        "localName": "ເອາະຫລາມ (Or lam)",
-        "description": "以肉類、蔬菜、茄子與帶辣味的胡椒木燉煮。",
-        "history": "源自古都龍坡邦的傳統料理。",
-        "wiki": "Or lam"
-      }
-    ]
-  }
+ "iso": "LAO",
+ "capital": "永珍",
+ "summary": "位於中南半島的內陸國，湄公河貫穿全境，曾是瀾滄王國所在地，1975年成立社會主義的寮人民民主共和國。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "上座部佛教",
+    "percent": 65,
+    "description": "多數寮族人信仰，寺廟是社區生活中心。"
+   },
+   {
+    "name": "民間信仰（萬物有靈論）",
+    "percent": 31,
+    "description": "山區少數民族崇拜神靈（phi）與祖先，寮族人也普遍參與。"
+   },
+   {
+    "name": "基督教",
+    "percent": 2,
+    "description": "包含天主教與新教。"
+   },
+   {
+    "name": "其他",
+    "percent": 1,
+    "description": "包含伊斯蘭教、巴哈伊教等。"
+   }
+  ],
+  "background": "14世紀法昂建立瀾滄王國，自高棉迎請上座部佛教並奉為國教。佛教與對神靈（phi）的信仰長期並存。法國殖民時期天主教傳入，1975年後政府一度限制宗教，後逐步放寬。"
+ },
+ "language": {
+  "official": "官方語言為寮語。",
+  "ranking": [
+   {
+    "name": "寮語",
+    "percent": 53,
+    "description": "屬壯侗語系，與泰語關係密切，以寮文字母書寫。",
+    "greeting": "ສະບາຍດີ",
+    "pronunciation": "sa-bai-dee"
+   },
+   {
+    "name": "赫蒙語（苗語）",
+    "percent": 9,
+    "description": "北部山區赫蒙族使用。",
+    "greeting": "Nyob zoo",
+    "pronunciation": "nyaw zhong"
+   }
+  ],
+  "history": "寮語隨傣－寮民族南遷而來，文字源自高棉文字系統。法國殖民時期法語為行政語言。寮國約有五十個民族，克木語、赫蒙語等少數民族語言在山區廣泛使用。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "拉普肉末沙拉",
+    "localName": "ລາບ (Larb)",
+    "description": "以剁碎的肉、魚露、萊姆汁、烤米粉與香草拌成的沙拉，被視為國菜。",
+    "history": "「拉普」在寮語中有「幸運」之意，常在節慶與重要場合食用。",
+    "wiki": "Larb",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/LaoFood_LarbNeua.JPG/960px-LaoFood_LarbNeua.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:LaoFood_LarbNeua.JPG",
+    "imageCredit": "Jpatokal・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "糯米飯",
+    "localName": "ເຂົ້າໜຽວ (Khao niao)",
+    "description": "蒸熟的糯米裝在竹簍中，以手捏成團沾菜食用。",
+    "history": "寮國人均糯米消費量居世界之冠，寮族人甚至自稱「糯米之子」。",
+    "wiki": "Glutinous rice",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Chapssal_%28glutinous_rice%29.jpg/960px-Chapssal_%28glutinous_rice%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Chapssal_(glutinous_rice).jpg",
+    "imageCredit": "국립국어원・CC BY-SA 2.0 kr・Wikimedia Commons"
+   },
+   {
+    "name": "青木瓜沙拉",
+    "localName": "ຕຳໝາກຫຸ່ງ (Tam mak hoong)",
+    "description": "青木瓜絲加辣椒、萊姆、魚露與發酵魚醬搗拌而成。",
+    "history": "寮國與泰國東北部共享的料理，寮式版本常加入濃郁的發酵魚醬（padaek）。",
+    "wiki": "Green papaya salad",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/2013_Tam_Lao.jpg/960px-2013_Tam_Lao.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:2013_Tam_Lao.jpg",
+    "imageCredit": "Takeaway・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "寮式米苔目湯",
+    "localName": "ເຂົ້າປຽກເສັ້ນ (Khao piak sen)",
+    "description": "以米粉與木薯粉製成的Q彈粗麵，配雞湯與香草。",
+    "history": "寮國最受歡迎的早餐湯麵。",
+    "wiki": "Khao piak sen",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Khao_piak_sen.jpg/960px-Khao_piak_sen.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Khao_piak_sen.jpg",
+    "imageCredit": "Spencer・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "寮式燉菜",
+    "localName": "ເອາະຫລາມ (Or lam)",
+    "description": "以肉類、蔬菜、茄子與帶辣味的胡椒木燉煮。",
+    "history": "源自古都龍坡邦的傳統料理。",
+    "wiki": "Or lam",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/O-lam.png",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:O-lam.png",
+    "imageCredit": "Misterbenzen・CC BY-SA 4.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

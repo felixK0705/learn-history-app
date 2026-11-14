@@ -1,99 +1,114 @@
 {
-  "iso": "KNA",
-  "capital": "巴士地",
-  "summary": "聖克里斯多福及尼維斯是加勒比海東部的雙島國家，是西半球面積與人口最小的主權國家，1983年脫離英國獨立。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "聖公會",
-        "percent": 17,
-        "description": "英國殖民時期的主要教會。"
-      },
-      {
-        "name": "衛理宗",
-        "percent": 16,
-        "description": "十八世紀後在被奴役者中廣泛傳播。"
-      },
-      {
-        "name": "五旬節派",
-        "percent": 8,
-        "description": "近年快速成長的教會。"
-      },
-      {
-        "name": "復臨安息日會",
-        "percent": 7,
-        "description": "規模穩定成長的新教教會。"
-      },
-      {
-        "name": "天主教",
-        "percent": 6,
-        "description": "規模較小的天主教社群。"
-      },
-      {
-        "name": "摩拉維亞弟兄會",
-        "percent": 5,
-        "description": "十八世紀傳入的新教教會。"
-      }
-    ],
-    "background": "聖克里斯多福是英國在加勒比海最早的殖民地之一，聖公會隨殖民者傳入。十八世紀起衛理宗與摩拉維亞弟兄會傳教士在被奴役的非洲人中傳教，二十世紀後五旬節派等教會快速成長。"
-  },
-  "language": {
-    "official": "英語是官方語言。",
-    "ranking": [
-      {
-        "name": "聖克里斯多福克里奧爾英語",
-        "percent": 90,
-        "description": "以英語為基礎的克里奧爾語，是日常生活語言。",
-        "greeting": "Good mornin'",
-        "pronunciation": "gud MAW-nin"
-      },
-      {
-        "name": "英語",
-        "percent": 10,
-        "description": "官方語言，用於政府與教育。",
-        "greeting": "Hello",
-        "pronunciation": "heh-LOH"
-      }
-    ],
-    "history": "殖民時期非洲奴隸與英國殖民者之間形成以英語為基礎的克里奧爾語。聖克里斯多福曾由英法兩國分治，因此部分地名保留法語。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "鹹魚",
-        "localName": "Saltfish",
-        "description": "以鹽醃鱈魚泡水去鹽後與番茄、洋蔥燉煮。",
-        "history": "國菜「燉鹹魚配椰子餃子、香辣大蕉與麵包果」的核心食材。",
-        "wiki": "Salt cod"
-      },
-      {
-        "name": "麵包果",
-        "localName": "Breadfruit",
-        "description": "以調味烘烤或煮熟方式食用的麵包果。",
-        "history": "十八世紀末自太平洋引進，是國菜的組成部分之一。",
-        "wiki": "Breadfruit"
-      },
-      {
-        "name": "香辣大蕉",
-        "localName": "Spicy plantain",
-        "description": "以香料調味煎製的大蕉。",
-        "history": "國菜的配菜之一，大蕉是加勒比海的重要主食。",
-        "wiki": "Cooking banana"
-      },
-      {
-        "name": "山羊湯",
-        "localName": "Goat water",
-        "description": "以山羊肉、麵包果與香料熬煮的濃湯。",
-        "history": "被視為國民美食，常在節慶與聚會中供應。",
-        "wiki": "Goat water"
-      },
-      {
-        "name": "康基",
-        "localName": "Conkie",
-        "description": "以玉米粉、南瓜、地瓜與椰子拌勻後以香蕉葉包裹蒸熟。",
-        "history": "與西非的玉米糕有淵源，傳統上在解放日等節慶製作。",
-        "wiki": "Conkie"
-      }
-    ]
-  }
+ "iso": "KNA",
+ "capital": "巴士地",
+ "summary": "聖克里斯多福及尼維斯是加勒比海東部的雙島國家，是西半球面積與人口最小的主權國家，1983年脫離英國獨立。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "聖公會",
+    "percent": 17,
+    "description": "英國殖民時期的主要教會。"
+   },
+   {
+    "name": "衛理宗",
+    "percent": 16,
+    "description": "十八世紀後在被奴役者中廣泛傳播。"
+   },
+   {
+    "name": "五旬節派",
+    "percent": 8,
+    "description": "近年快速成長的教會。"
+   },
+   {
+    "name": "復臨安息日會",
+    "percent": 7,
+    "description": "規模穩定成長的新教教會。"
+   },
+   {
+    "name": "天主教",
+    "percent": 6,
+    "description": "規模較小的天主教社群。"
+   },
+   {
+    "name": "摩拉維亞弟兄會",
+    "percent": 5,
+    "description": "十八世紀傳入的新教教會。"
+   }
+  ],
+  "background": "聖克里斯多福是英國在加勒比海最早的殖民地之一，聖公會隨殖民者傳入。十八世紀起衛理宗與摩拉維亞弟兄會傳教士在被奴役的非洲人中傳教，二十世紀後五旬節派等教會快速成長。"
+ },
+ "language": {
+  "official": "英語是官方語言。",
+  "ranking": [
+   {
+    "name": "聖克里斯多福克里奧爾英語",
+    "percent": 90,
+    "description": "以英語為基礎的克里奧爾語，是日常生活語言。",
+    "greeting": "Good mornin'",
+    "pronunciation": "gud MAW-nin"
+   },
+   {
+    "name": "英語",
+    "percent": 10,
+    "description": "官方語言，用於政府與教育。",
+    "greeting": "Hello",
+    "pronunciation": "heh-LOH"
+   }
+  ],
+  "history": "殖民時期非洲奴隸與英國殖民者之間形成以英語為基礎的克里奧爾語。聖克里斯多福曾由英法兩國分治，因此部分地名保留法語。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "鹹魚",
+    "localName": "Saltfish",
+    "description": "以鹽醃鱈魚泡水去鹽後與番茄、洋蔥燉煮。",
+    "history": "國菜「燉鹹魚配椰子餃子、香辣大蕉與麵包果」的核心食材。",
+    "wiki": "Salt cod",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Bacalhau_%28Porto%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Bacalhau_(Porto).jpg",
+    "imageCredit": "Sitomon・CC BY-SA 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "麵包果",
+    "localName": "Breadfruit",
+    "description": "以調味烘烤或煮熟方式食用的麵包果。",
+    "history": "十八世紀末自太平洋引進，是國菜的組成部分之一。",
+    "wiki": "Breadfruit",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Artocarpus_altilis_%28fruit%29.jpg/960px-Artocarpus_altilis_%28fruit%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Artocarpus_altilis_(fruit).jpg",
+    "imageCredit": "Hans Hillewaert・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "香辣大蕉",
+    "localName": "Spicy plantain",
+    "description": "以香料調味煎製的大蕉。",
+    "history": "國菜的配菜之一，大蕉是加勒比海的重要主食。",
+    "wiki": "Cooking banana",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Mega_racimos_de_guineos.jpg/960px-Mega_racimos_de_guineos.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Mega_racimos_de_guineos.jpg",
+    "imageCredit": "J & E・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "山羊湯",
+    "localName": "Goat water",
+    "description": "以山羊肉、麵包果與香料熬煮的濃湯。",
+    "history": "被視為國民美食，常在節慶與聚會中供應。",
+    "wiki": "Goat water",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/35/Goat_Water.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Goat_Water.jpg",
+    "imageCredit": "Cbeanstudies・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "康基",
+    "localName": "Conkie",
+    "description": "以玉米粉、南瓜、地瓜與椰子拌勻後以香蕉葉包裹蒸熟。",
+    "history": "與西非的玉米糕有淵源，傳統上在解放日等節慶製作。",
+    "wiki": "Conkie",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Conkie.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Conkie.jpg",
+    "imageCredit": "Foodista・CC BY 2.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

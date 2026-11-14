@@ -1,84 +1,99 @@
 {
-  "iso": "LBY",
-  "capital": "的黎波里",
-  "summary": "利比亞位於北非地中海沿岸，國土大部分為撒哈拉沙漠，擁有非洲最大的石油儲量之一，2011年格達費政權倒台後長期處於分裂狀態。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "伊斯蘭教（遜尼派）",
-        "percent": 96,
-        "description": "以馬立克學派為主。"
-      },
-      {
-        "name": "伊斯蘭教（伊巴德派）",
-        "percent": 2,
-        "description": "主要為西北部納富薩山區的柏柏人。"
-      },
-      {
-        "name": "基督教",
-        "percent": 1,
-        "description": "主要為外籍勞工與科普特人。"
-      }
-    ],
-    "background": "七世紀阿拉伯人征服北非後伊斯蘭教逐漸普及。十九世紀賽努西教團在東部昔蘭尼加地區推廣伊斯蘭教，並領導抵抗義大利殖民，其領袖後來成為利比亞國王。"
-  },
-  "language": {
-    "official": "阿拉伯語是官方語言。",
-    "ranking": [
-      {
-        "name": "利比亞阿拉伯語",
-        "percent": 90,
-        "description": "全國主要語言，屬馬格里布阿拉伯語。",
-        "greeting": "السلام عليكم",
-        "pronunciation": "as-sa-LAA-mu a-LAI-kum"
-      },
-      {
-        "name": "柏柏語（阿馬齊格語）",
-        "percent": 8,
-        "description": "納富薩山區、祖瓦拉與南部圖阿雷格人等使用。",
-        "greeting": "Azul",
-        "pronunciation": "a-ZOOL"
-      }
-    ],
-    "history": "柏柏語是北非的原住民語言，阿拉伯人征服後阿拉伯語逐漸普及。義大利殖民時期（1911–1943）留下許多義大利語詞彙。格達費時期曾壓制柏柏語，2011年後柏柏文化與語言重獲重視。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "巴辛",
-        "localName": "بازين (Bazeen)",
-        "description": "以大麥粉製成的圓頂狀糰，周圍淋上番茄羊肉燉汁。",
-        "history": "利比亞的傳統料理，以手共食。",
-        "wiki": "Bazeen"
-      },
-      {
-        "name": "庫斯庫斯",
-        "localName": "كسكسي (Couscous)",
-        "description": "以粗粒小麥粉蒸成的小米粒狀主食，配羊肉與蔬菜。",
-        "history": "北非共同的傳統主食。",
-        "wiki": "Couscous"
-      },
-      {
-        "name": "阿西達",
-        "localName": "عصيدة (Asida)",
-        "description": "以小麥粉煮成的濃稠糊，淋上椰棗糖漿或奶油。",
-        "history": "在開齋節與先知誕辰節等場合食用。",
-        "wiki": "Asida"
-      },
-      {
-        "name": "利比亞湯",
-        "localName": "شربة ليبية (Sharba libiya)",
-        "description": "以羊肉、番茄、鷹嘴豆與細麵熬煮的香料湯。",
-        "history": "齋戒月開齋時必備的湯品。",
-        "wiki": "Shurpa"
-      },
-      {
-        "name": "烏斯班",
-        "localName": "عصبان (Usban)",
-        "description": "以香料米飯、香草與肉填入羊腸製成的香腸。",
-        "history": "宰牲節的傳統料理。",
-        "wiki": "Usban"
-      }
-    ]
-  }
+ "iso": "LBY",
+ "capital": "的黎波里",
+ "summary": "利比亞位於北非地中海沿岸，國土大部分為撒哈拉沙漠，擁有非洲最大的石油儲量之一，2011年格達費政權倒台後長期處於分裂狀態。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "伊斯蘭教（遜尼派）",
+    "percent": 96,
+    "description": "以馬立克學派為主。"
+   },
+   {
+    "name": "伊斯蘭教（伊巴德派）",
+    "percent": 2,
+    "description": "主要為西北部納富薩山區的柏柏人。"
+   },
+   {
+    "name": "基督教",
+    "percent": 1,
+    "description": "主要為外籍勞工與科普特人。"
+   }
+  ],
+  "background": "七世紀阿拉伯人征服北非後伊斯蘭教逐漸普及。十九世紀賽努西教團在東部昔蘭尼加地區推廣伊斯蘭教，並領導抵抗義大利殖民，其領袖後來成為利比亞國王。"
+ },
+ "language": {
+  "official": "阿拉伯語是官方語言。",
+  "ranking": [
+   {
+    "name": "利比亞阿拉伯語",
+    "percent": 90,
+    "description": "全國主要語言，屬馬格里布阿拉伯語。",
+    "greeting": "السلام عليكم",
+    "pronunciation": "as-sa-LAA-mu a-LAI-kum"
+   },
+   {
+    "name": "柏柏語（阿馬齊格語）",
+    "percent": 8,
+    "description": "納富薩山區、祖瓦拉與南部圖阿雷格人等使用。",
+    "greeting": "Azul",
+    "pronunciation": "a-ZOOL"
+   }
+  ],
+  "history": "柏柏語是北非的原住民語言，阿拉伯人征服後阿拉伯語逐漸普及。義大利殖民時期（1911–1943）留下許多義大利語詞彙。格達費時期曾壓制柏柏語，2011年後柏柏文化與語言重獲重視。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "巴辛",
+    "localName": "بازين (Bazeen)",
+    "description": "以大麥粉製成的圓頂狀糰，周圍淋上番茄羊肉燉汁。",
+    "history": "利比亞的傳統料理，以手共食。",
+    "wiki": "Bazeen",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Bazin.jpg/960px-Bazin.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Bazin.jpg",
+    "imageCredit": "Libiya11・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "庫斯庫斯",
+    "localName": "كسكسي (Couscous)",
+    "description": "以粗粒小麥粉蒸成的小米粒狀主食，配羊肉與蔬菜。",
+    "history": "北非共同的傳統主食。",
+    "wiki": "Couscous",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Moroccan_cuscus%2C_from_Casablanca%2C_September_2018.jpg/960px-Moroccan_cuscus%2C_from_Casablanca%2C_September_2018.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Moroccan_cuscus,_from_Casablanca,_September_2018.jpg",
+    "imageCredit": "Lmmima・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "阿西達",
+    "localName": "عصيدة (Asida)",
+    "description": "以小麥粉煮成的濃稠糊，淋上椰棗糖漿或奶油。",
+    "history": "在開齋節與先知誕辰節等場合食用。",
+    "wiki": "Asida",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/%D8%B9%D8%B5%D9%8A%D8%AF%D8%A9-%D9%82%D8%B7%D9%8A%D9%81%D9%8A%D8%A9.jpg/960px-%D8%B9%D8%B5%D9%8A%D8%AF%D8%A9-%D9%82%D8%B7%D9%8A%D9%81%D9%8A%D8%A9.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:%D8%B9%D8%B5%D9%8A%D8%AF%D8%A9-%D9%82%D8%B7%D9%8A%D9%81%D9%8A%D8%A9.jpg",
+    "imageCredit": "Mustafa Al-Elq・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "利比亞湯",
+    "localName": "شربة ليبية (Sharba libiya)",
+    "description": "以羊肉、番茄、鷹嘴豆與細麵熬煮的香料湯。",
+    "history": "齋戒月開齋時必備的湯品。",
+    "wiki": "Shurpa",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Bean_soup_with_tomatoes_and_red_peppers.jpeg/960px-Bean_soup_with_tomatoes_and_red_peppers.jpeg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Bean_soup_with_tomatoes_and_red_peppers.jpeg",
+    "imageCredit": "Gillgaramond・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "烏斯班",
+    "localName": "عصبان (Usban)",
+    "description": "以香料米飯、香草與肉填入羊腸製成的香腸。",
+    "history": "宰牲節的傳統料理。",
+    "wiki": "Usban",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Tunisian_Osban_couscous.JPG/960px-Tunisian_Osban_couscous.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Tunisian_Osban_couscous.JPG",
+    "imageCredit": "AmelGhouila・CC BY-SA 4.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

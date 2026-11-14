@@ -1,96 +1,111 @@
 {
-  "iso": "LTU",
-  "capital": "維爾紐斯",
-  "summary": "立陶宛是波羅的海三國中面積最大的國家，中世紀立陶宛大公國曾是歐洲疆域最廣的國家之一，1990年率先宣布脫離蘇聯獨立。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "天主教",
-        "percent": 74,
-        "description": "立陶宛民族認同的重要支柱。"
-      },
-      {
-        "name": "無宗教",
-        "percent": 6,
-        "description": "未認同任何宗教的人口。"
-      },
-      {
-        "name": "東正教",
-        "percent": 4,
-        "description": "主要為俄羅斯裔與白俄羅斯裔居民。"
-      },
-      {
-        "name": "舊禮儀派",
-        "percent": 1,
-        "description": "十七世紀自俄羅斯東正教分出的教派。"
-      }
-    ],
-    "background": "立陶宛是歐洲最晚接受基督教的國家，1387年大公約蓋拉為與波蘭聯姻而受洗，此前信仰波羅的多神教。天主教在沙俄與蘇聯統治時期成為抵抗外來壓迫的象徵。"
-  },
-  "language": {
-    "official": "立陶宛語是官方語言。",
-    "ranking": [
-      {
-        "name": "立陶宛語",
-        "percent": 85,
-        "description": "屬波羅的語族，被認為保留了許多古印歐語特徵。",
-        "greeting": "Labas",
-        "pronunciation": "LAH-bas"
-      },
-      {
-        "name": "俄語",
-        "percent": 7,
-        "description": "俄羅斯裔居民的語言，許多年長者也能說。",
-        "greeting": "Здравствуйте",
-        "pronunciation": "ZDRAST-vuy-tye"
-      },
-      {
-        "name": "波蘭語",
-        "percent": 5,
-        "description": "維爾紐斯周邊波蘭裔居民的語言。",
-        "greeting": "Cześć",
-        "pronunciation": "cheshch"
-      }
-    ],
-    "history": "立陶宛語是現存最古老的印歐語言之一。沙俄統治時期曾於1864至1904年禁止以拉丁字母出版立陶宛語書籍，人們冒險偷運書籍，形成著名的「書籍走私者」運動。獨立後立陶宛語成為唯一官方語言。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "齊柏林餃子",
-        "localName": "Cepelinai",
-        "description": "以馬鈴薯泥包裹肉餡的大型餃子，配酸奶油與培根。",
-        "history": "因形似齊柏林飛艇而得名，被視為立陶宛國菜。",
-        "wiki": "Cepelinai"
-      },
-      {
-        "name": "冷甜菜湯",
-        "localName": "Šaltibarščiai",
-        "description": "以甜菜根、克菲爾酸奶與黃瓜做成的粉紅色冷湯。",
-        "history": "立陶宛夏季最受歡迎的料理，維爾紐斯甚至有粉紅湯節。",
-        "wiki": "Šaltibarščiai"
-      },
-      {
-        "name": "基比奈",
-        "localName": "Kibinai",
-        "description": "包有羊肉或其他肉餡的半月形烤餡餅。",
-        "history": "源自特拉凱地區的卡拉伊姆人。",
-        "wiki": "Kibinai"
-      },
-      {
-        "name": "馬鈴薯布丁",
-        "localName": "Kugelis",
-        "description": "以馬鈴薯泥、培根與洋蔥烘烤的布丁。",
-        "history": "立陶宛常見的家常菜。",
-        "wiki": "Kugelis"
-      },
-      {
-        "name": "樹蛋糕",
-        "localName": "Šakotis",
-        "description": "在旋轉烤棒上逐層澆上麵糊烤成、形似樹枝的蛋糕。",
-        "history": "婚禮與節慶的傳統蛋糕。",
-        "wiki": "Šakotis"
-      }
-    ]
-  }
+ "iso": "LTU",
+ "capital": "維爾紐斯",
+ "summary": "立陶宛是波羅的海三國中面積最大的國家，中世紀立陶宛大公國曾是歐洲疆域最廣的國家之一，1990年率先宣布脫離蘇聯獨立。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "天主教",
+    "percent": 74,
+    "description": "立陶宛民族認同的重要支柱。"
+   },
+   {
+    "name": "無宗教",
+    "percent": 6,
+    "description": "未認同任何宗教的人口。"
+   },
+   {
+    "name": "東正教",
+    "percent": 4,
+    "description": "主要為俄羅斯裔與白俄羅斯裔居民。"
+   },
+   {
+    "name": "舊禮儀派",
+    "percent": 1,
+    "description": "十七世紀自俄羅斯東正教分出的教派。"
+   }
+  ],
+  "background": "立陶宛是歐洲最晚接受基督教的國家，1387年大公約蓋拉為與波蘭聯姻而受洗，此前信仰波羅的多神教。天主教在沙俄與蘇聯統治時期成為抵抗外來壓迫的象徵。"
+ },
+ "language": {
+  "official": "立陶宛語是官方語言。",
+  "ranking": [
+   {
+    "name": "立陶宛語",
+    "percent": 85,
+    "description": "屬波羅的語族，被認為保留了許多古印歐語特徵。",
+    "greeting": "Labas",
+    "pronunciation": "LAH-bas"
+   },
+   {
+    "name": "俄語",
+    "percent": 7,
+    "description": "俄羅斯裔居民的語言，許多年長者也能說。",
+    "greeting": "Здравствуйте",
+    "pronunciation": "ZDRAST-vuy-tye"
+   },
+   {
+    "name": "波蘭語",
+    "percent": 5,
+    "description": "維爾紐斯周邊波蘭裔居民的語言。",
+    "greeting": "Cześć",
+    "pronunciation": "cheshch"
+   }
+  ],
+  "history": "立陶宛語是現存最古老的印歐語言之一。沙俄統治時期曾於1864至1904年禁止以拉丁字母出版立陶宛語書籍，人們冒險偷運書籍，形成著名的「書籍走私者」運動。獨立後立陶宛語成為唯一官方語言。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "齊柏林餃子",
+    "localName": "Cepelinai",
+    "description": "以馬鈴薯泥包裹肉餡的大型餃子，配酸奶油與培根。",
+    "history": "因形似齊柏林飛艇而得名，被視為立陶宛國菜。",
+    "wiki": "Cepelinai",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Cepelinai_2%2C_Vilnius%2C_Lithuania_-_Diliff.jpg/960px-Cepelinai_2%2C_Vilnius%2C_Lithuania_-_Diliff.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Cepelinai_2,_Vilnius,_Lithuania_-_Diliff.jpg",
+    "imageCredit": "Diliff・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "冷甜菜湯",
+    "localName": "Šaltibarščiai",
+    "description": "以甜菜根、克菲爾酸奶與黃瓜做成的粉紅色冷湯。",
+    "history": "立陶宛夏季最受歡迎的料理，維爾紐斯甚至有粉紅湯節。",
+    "wiki": "Šaltibarščiai",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/37/Lurid_borscht.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Lurid_borscht.jpg",
+    "imageCredit": "User:TreasuryTag・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "基比奈",
+    "localName": "Kibinai",
+    "description": "包有羊肉或其他肉餡的半月形烤餡餅。",
+    "history": "源自特拉凱地區的卡拉伊姆人。",
+    "wiki": "Kibinai",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/02017_0065_Litauische_Kibinai_in_Schlesien.jpg/960px-02017_0065_Litauische_Kibinai_in_Schlesien.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:02017_0065_Litauische_Kibinai_in_Schlesien.jpg",
+    "imageCredit": "Silar・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "馬鈴薯布丁",
+    "localName": "Kugelis",
+    "description": "以馬鈴薯泥、培根與洋蔥烘烤的布丁。",
+    "history": "立陶宛常見的家常菜。",
+    "wiki": "Kugelis",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Kugelis_2012.jpg/960px-Kugelis_2012.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Kugelis_2012.jpg",
+    "imageCredit": "Eden, Janine and Jim・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "樹蛋糕",
+    "localName": "Šakotis",
+    "description": "在旋轉烤棒上逐層澆上麵糊烤成、形似樹枝的蛋糕。",
+    "history": "婚禮與節慶的傳統蛋糕。",
+    "wiki": "Šakotis",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/%C5%A0akotis_3799.jpg/960px-%C5%A0akotis_3799.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:%C5%A0akotis_3799.jpg",
+    "imageCredit": "Sven Teschke・CC BY-SA 3.0 de・Wikimedia Commons"
+   }
+  ]
+ }
 }

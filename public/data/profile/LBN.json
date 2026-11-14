@@ -1,89 +1,104 @@
 {
-  "iso": "LBN",
-  "capital": "貝魯特",
-  "summary": "黎巴嫩位於地中海東岸，境內宗教族群多元，曾有「中東小巴黎」之稱，政治制度依宗教派別分配權力。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "伊斯蘭教（遜尼派）",
-        "percent": 32,
-        "description": "主要分布於貝魯特、的黎波里與賽達等沿海城市。"
-      },
-      {
-        "name": "基督教",
-        "percent": 32,
-        "description": "以馬龍派天主教為最大宗，另有希臘正教等教派。"
-      },
-      {
-        "name": "伊斯蘭教（什葉派）",
-        "percent": 31,
-        "description": "主要分布於南部與貝卡谷地。"
-      },
-      {
-        "name": "德魯茲派",
-        "percent": 5,
-        "description": "源自伊斯蘭教的獨特宗教，集中於黎巴嫩山區。"
-      }
-    ],
-    "background": "黎巴嫩山區自古是各宗教少數派的避難所，馬龍派基督徒與德魯茲派長期在此定居。鄂圖曼時期與法國託管時期形成以宗教派別劃分的政治體制，1943年獨立後延續這種權力分配制度。"
-  },
-  "language": {
-    "official": "阿拉伯語是官方語言，法語亦有法律上的特殊地位。",
-    "ranking": [
-      {
-        "name": "阿拉伯語（黎巴嫩方言）",
-        "percent": 95,
-        "description": "屬黎凡特阿拉伯語，日常生活中常夾雜法語與英語。",
-        "greeting": "مرحبا",
-        "pronunciation": "MAR-ha-ba"
-      },
-      {
-        "name": "亞美尼亞語",
-        "percent": 4,
-        "description": "二十世紀初逃離鄂圖曼帝國的亞美尼亞人後代使用。",
-        "greeting": "Բարեւ",
-        "pronunciation": "ba-REV"
-      }
-    ],
-    "history": "古代腓尼基人在此發展出影響深遠的字母。後來亞蘭語成為主要語言，七世紀伊斯蘭擴張後逐漸被阿拉伯語取代。法國託管時期法語普及，至今黎巴嫩人常在阿拉伯語、法語與英語間切換。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "塔布勒沙拉",
-        "localName": "تبولة (Tabbouleh)",
-        "description": "以巴西里、番茄、碎小麥與檸檬橄欖油拌成的沙拉。",
-        "history": "黎巴嫩山區的傳統料理，被視為國菜之一。",
-        "wiki": "Tabbouleh"
-      },
-      {
-        "name": "基貝",
-        "localName": "كبة (Kibbeh)",
-        "description": "以碎小麥與絞肉製成的丸子或肉餅，可油炸、烘烤或生食。",
-        "history": "黎凡特地區歷史悠久的料理，被視為黎巴嫩國菜之一。",
-        "wiki": "Kibbeh"
-      },
-      {
-        "name": "鷹嘴豆泥",
-        "localName": "حمص (Hummus)",
-        "description": "以鷹嘴豆、芝麻醬、檸檬與大蒜打成的泥。",
-        "history": "在黎凡特地區有悠久歷史，是開胃菜拼盤中的經典。",
-        "wiki": "Hummus"
-      },
-      {
-        "name": "法圖什沙拉",
-        "localName": "فتوش (Fattoush)",
-        "description": "以蔬菜與烤或炸過的麵包碎片拌成，撒上鹽膚木粉。",
-        "history": "源自利用剩餘麵包的農家料理。",
-        "wiki": "Fattoush"
-      },
-      {
-        "name": "馬納基什",
-        "localName": "مناقيش (Manakish)",
-        "description": "撒上百里香香料或起司烘烤的扁麵包。",
-        "history": "黎巴嫩常見的早餐，由街角麵包店現烤。",
-        "wiki": "Manakish"
-      }
-    ]
-  }
+ "iso": "LBN",
+ "capital": "貝魯特",
+ "summary": "黎巴嫩位於地中海東岸，境內宗教族群多元，曾有「中東小巴黎」之稱，政治制度依宗教派別分配權力。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "伊斯蘭教（遜尼派）",
+    "percent": 32,
+    "description": "主要分布於貝魯特、的黎波里與賽達等沿海城市。"
+   },
+   {
+    "name": "基督教",
+    "percent": 32,
+    "description": "以馬龍派天主教為最大宗，另有希臘正教等教派。"
+   },
+   {
+    "name": "伊斯蘭教（什葉派）",
+    "percent": 31,
+    "description": "主要分布於南部與貝卡谷地。"
+   },
+   {
+    "name": "德魯茲派",
+    "percent": 5,
+    "description": "源自伊斯蘭教的獨特宗教，集中於黎巴嫩山區。"
+   }
+  ],
+  "background": "黎巴嫩山區自古是各宗教少數派的避難所，馬龍派基督徒與德魯茲派長期在此定居。鄂圖曼時期與法國託管時期形成以宗教派別劃分的政治體制，1943年獨立後延續這種權力分配制度。"
+ },
+ "language": {
+  "official": "阿拉伯語是官方語言，法語亦有法律上的特殊地位。",
+  "ranking": [
+   {
+    "name": "阿拉伯語（黎巴嫩方言）",
+    "percent": 95,
+    "description": "屬黎凡特阿拉伯語，日常生活中常夾雜法語與英語。",
+    "greeting": "مرحبا",
+    "pronunciation": "MAR-ha-ba"
+   },
+   {
+    "name": "亞美尼亞語",
+    "percent": 4,
+    "description": "二十世紀初逃離鄂圖曼帝國的亞美尼亞人後代使用。",
+    "greeting": "Բարեւ",
+    "pronunciation": "ba-REV"
+   }
+  ],
+  "history": "古代腓尼基人在此發展出影響深遠的字母。後來亞蘭語成為主要語言，七世紀伊斯蘭擴張後逐漸被阿拉伯語取代。法國託管時期法語普及，至今黎巴嫩人常在阿拉伯語、法語與英語間切換。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "塔布勒沙拉",
+    "localName": "تبولة (Tabbouleh)",
+    "description": "以巴西里、番茄、碎小麥與檸檬橄欖油拌成的沙拉。",
+    "history": "黎巴嫩山區的傳統料理，被視為國菜之一。",
+    "wiki": "Tabbouleh",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Tabouleh_1.JPG/960px-Tabouleh_1.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Tabouleh_1.JPG",
+    "imageCredit": "Miansari66・CC0・Wikimedia Commons"
+   },
+   {
+    "name": "基貝",
+    "localName": "كبة (Kibbeh)",
+    "description": "以碎小麥與絞肉製成的丸子或肉餅，可油炸、烘烤或生食。",
+    "history": "黎凡特地區歷史悠久的料理，被視為黎巴嫩國菜之一。",
+    "wiki": "Kibbeh",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Kibbeh3.jpg/960px-Kibbeh3.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Kibbeh3.jpg",
+    "imageCredit": "Bazel・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "鷹嘴豆泥",
+    "localName": "حمص (Hummus)",
+    "description": "以鷹嘴豆、芝麻醬、檸檬與大蒜打成的泥。",
+    "history": "在黎凡特地區有悠久歷史，是開胃菜拼盤中的經典。",
+    "wiki": "Hummus",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Lebanese_style_hummus.jpg/960px-Lebanese_style_hummus.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Lebanese_style_hummus.jpg",
+    "imageCredit": "Beyrouthhh at English Wikipedia・CC BY 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "法圖什沙拉",
+    "localName": "فتوش (Fattoush)",
+    "description": "以蔬菜與烤或炸過的麵包碎片拌成，撒上鹽膚木粉。",
+    "history": "源自利用剩餘麵包的農家料理。",
+    "wiki": "Fattoush",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/93/Fattoush_mixed-salad.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Fattoush_mixed-salad.jpg",
+    "imageCredit": "Arousing Appetites・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "馬納基什",
+    "localName": "مناقيش (Manakish)",
+    "description": "撒上百里香香料或起司烘烤的扁麵包。",
+    "history": "黎巴嫩常見的早餐，由街角麵包店現烤。",
+    "wiki": "Manakish",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Zaatar_Mankousheh.jpg/960px-Zaatar_Mankousheh.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Zaatar_Mankousheh.jpg",
+    "imageCredit": "Elie.ghob・CC BY-SA 4.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

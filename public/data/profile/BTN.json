@@ -1,91 +1,106 @@
 {
-  "iso": "BTN",
-  "capital": "辛布",
-  "summary": "位於喜馬拉雅山東段的內陸佛教王國，2008年轉型為君主立憲，以「國民幸福總值」理念聞名於世。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "藏傳佛教",
-        "percent": 75,
-        "description": "以竺巴噶舉派為國教，寺院與宗堡在社會中具核心地位。"
-      },
-      {
-        "name": "印度教",
-        "percent": 22,
-        "description": "主要為南部尼泊爾裔的洛昌巴人。"
-      },
-      {
-        "name": "其他（苯教、基督教等）",
-        "percent": 3,
-        "description": "苯教為佛教傳入前的本土信仰。"
-      }
-    ],
-    "background": "相傳8世紀蓮花生大士將佛教傳入不丹。17世紀西藏竺巴噶舉派高僧夏仲·阿旺朗傑來到不丹，統一各地並建立政教合一的體制，奠定今日以佛教為核心的國家認同。19世紀後尼泊爾移民帶來印度教。"
-  },
-  "language": {
-    "official": "官方語言為宗卡語。",
-    "ranking": [
-      {
-        "name": "宗卡語",
-        "percent": 25,
-        "description": "西部的藏緬語，為國語與政府語言，以藏文字母書寫。",
-        "greeting": "Kuzuzangpo la",
-        "pronunciation": "ku-zu-zang-po la"
-      },
-      {
-        "name": "尼泊爾語",
-        "percent": 22,
-        "description": "南部洛昌巴人的語言。",
-        "greeting": "नमस्ते",
-        "pronunciation": "na-ma-ste"
-      },
-      {
-        "name": "英語",
-        "percent": 2,
-        "description": "教育與政府的重要語言，學校以英語授課。",
-        "greeting": "Hello",
-        "pronunciation": "heh-loh"
-      }
-    ],
-    "history": "不丹有約20種語言，多屬藏緬語族，東部的倉拉語（Tshangla）是使用人數最多的語言之一。宗卡語源自西部方言，1971年起被推廣為國語；英語自1960年代起成為學校教學語言。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "辣椒起司",
-        "localName": "Ema datshi",
-        "description": "以大量辣椒與在地起司燉煮的菜餚，配紅米飯，為國菜。",
-        "history": "辣椒被視為蔬菜而非調味料，幾乎每餐都有，體現不丹人嗜辣的飲食文化。",
-        "wiki": "Ema datshi"
-      },
-      {
-        "name": "不丹紅米",
-        "localName": "Bhutanese red rice",
-        "description": "帶有堅果香氣的中粒紅米，是主食。",
-        "history": "在帕羅河谷等高海拔地區以冰川融水灌溉種植。",
-        "wiki": "Bhutanese red rice"
-      },
-      {
-        "name": "不丹饃饃",
-        "localName": "Momo",
-        "description": "包入肉、起司或蔬菜的蒸餃。",
-        "history": "源自西藏的點心，在不丹十分普遍。",
-        "wiki": "Momo (food)"
-      },
-      {
-        "name": "圖克巴湯麵",
-        "localName": "Thukpa",
-        "description": "以麵條、肉與蔬菜煮成的熱湯麵。",
-        "history": "源自西藏的湯麵，在高海拔寒冷的不丹相當普遍。",
-        "wiki": "Thukpa"
-      },
-      {
-        "name": "酥油茶",
-        "localName": "Suja",
-        "description": "以茶、酥油與鹽攪打而成的鹹茶。",
-        "history": "源自西藏，是待客與寺院生活不可或缺的飲品。",
-        "wiki": "Butter tea"
-      }
-    ]
-  }
+ "iso": "BTN",
+ "capital": "辛布",
+ "summary": "位於喜馬拉雅山東段的內陸佛教王國，2008年轉型為君主立憲，以「國民幸福總值」理念聞名於世。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "藏傳佛教",
+    "percent": 75,
+    "description": "以竺巴噶舉派為國教，寺院與宗堡在社會中具核心地位。"
+   },
+   {
+    "name": "印度教",
+    "percent": 22,
+    "description": "主要為南部尼泊爾裔的洛昌巴人。"
+   },
+   {
+    "name": "其他（苯教、基督教等）",
+    "percent": 3,
+    "description": "苯教為佛教傳入前的本土信仰。"
+   }
+  ],
+  "background": "相傳8世紀蓮花生大士將佛教傳入不丹。17世紀西藏竺巴噶舉派高僧夏仲·阿旺朗傑來到不丹，統一各地並建立政教合一的體制，奠定今日以佛教為核心的國家認同。19世紀後尼泊爾移民帶來印度教。"
+ },
+ "language": {
+  "official": "官方語言為宗卡語。",
+  "ranking": [
+   {
+    "name": "宗卡語",
+    "percent": 25,
+    "description": "西部的藏緬語，為國語與政府語言，以藏文字母書寫。",
+    "greeting": "Kuzuzangpo la",
+    "pronunciation": "ku-zu-zang-po la"
+   },
+   {
+    "name": "尼泊爾語",
+    "percent": 22,
+    "description": "南部洛昌巴人的語言。",
+    "greeting": "नमस्ते",
+    "pronunciation": "na-ma-ste"
+   },
+   {
+    "name": "英語",
+    "percent": 2,
+    "description": "教育與政府的重要語言，學校以英語授課。",
+    "greeting": "Hello",
+    "pronunciation": "heh-loh"
+   }
+  ],
+  "history": "不丹有約20種語言，多屬藏緬語族，東部的倉拉語（Tshangla）是使用人數最多的語言之一。宗卡語源自西部方言，1971年起被推廣為國語；英語自1960年代起成為學校教學語言。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "辣椒起司",
+    "localName": "Ema datshi",
+    "description": "以大量辣椒與在地起司燉煮的菜餚，配紅米飯，為國菜。",
+    "history": "辣椒被視為蔬菜而非調味料，幾乎每餐都有，體現不丹人嗜辣的飲食文化。",
+    "wiki": "Ema datshi",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Ema_datshi%28Dry_red_chilli_version%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Ema_datshi(Dry_red_chilli_version).jpg",
+    "imageCredit": "Rigzen Dema・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "不丹紅米",
+    "localName": "Bhutanese red rice",
+    "description": "帶有堅果香氣的中粒紅米，是主食。",
+    "history": "在帕羅河谷等高海拔地區以冰川融水灌溉種植。",
+    "wiki": "Bhutanese red rice",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Bhutanese_red_rice_with_chicken_and_spinach.jpg/960px-Bhutanese_red_rice_with_chicken_and_spinach.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Bhutanese_red_rice_with_chicken_and_spinach.jpg",
+    "imageCredit": "Steve・CC BY-SA 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "不丹饃饃",
+    "localName": "Momo",
+    "description": "包入肉、起司或蔬菜的蒸餃。",
+    "history": "源自西藏的點心，在不丹十分普遍。",
+    "wiki": "Momo (food)",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Momo_nepal.jpg/960px-Momo_nepal.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Momo_nepal.jpg",
+    "imageCredit": "Kushal Goyal・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "圖克巴湯麵",
+    "localName": "Thukpa",
+    "description": "以麵條、肉與蔬菜煮成的熱湯麵。",
+    "history": "源自西藏的湯麵，在高海拔寒冷的不丹相當普遍。",
+    "wiki": "Thukpa",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Thukpa%2C_Tibetan_noodle_in_Osaka%2C_Japan.jpg/960px-Thukpa%2C_Tibetan_noodle_in_Osaka%2C_Japan.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Thukpa,_Tibetan_noodle_in_Osaka,_Japan.jpg",
+    "imageCredit": "m-louis from Osaka・CC BY-SA 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "酥油茶",
+    "localName": "Suja",
+    "description": "以茶、酥油與鹽攪打而成的鹹茶。",
+    "history": "源自西藏，是待客與寺院生活不可或缺的飲品。",
+    "wiki": "Butter tea",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Tibetan_butter_tea.jpg/960px-Tibetan_butter_tea.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Tibetan_butter_tea.jpg",
+    "imageCredit": "Yosomono・CC BY 2.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

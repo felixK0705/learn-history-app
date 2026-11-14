@@ -1,94 +1,109 @@
 {
-  "iso": "BRA",
-  "capital": "巴西利亞",
-  "summary": "巴西是南美洲面積與人口最大的國家，擁有亞馬遜雨林，曾為葡萄牙殖民地，以足球、嘉年華與多元族群文化聞名。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "天主教",
-        "percent": 57,
-        "description": "巴西是世界上天主教徒人數最多的國家。"
-      },
-      {
-        "name": "福音派／基督新教",
-        "percent": 27,
-        "description": "近數十年快速成長，以五旬節派為主。"
-      },
-      {
-        "name": "無宗教",
-        "percent": 9,
-        "description": "未認同任何宗教的人口。"
-      },
-      {
-        "name": "招魂術（唯靈論）",
-        "percent": 2,
-        "description": "源自法國卡甸的唯靈論，在巴西特別盛行。"
-      },
-      {
-        "name": "非裔巴西宗教",
-        "percent": 1,
-        "description": "包括坎東布雷與翁班達，融合非洲信仰與天主教元素。"
-      }
-    ],
-    "background": "葡萄牙殖民使天主教成為主流；被帶到巴西的數百萬非洲奴隸將約魯巴等信仰與天主教聖人結合，形成坎東布雷等宗教。二十世紀後期起五旬節派福音教會快速成長，天主教比例逐年下降。"
-  },
-  "language": {
-    "official": "葡萄牙語是官方語言。",
-    "ranking": [
-      {
-        "name": "葡萄牙語",
-        "percent": 98,
-        "description": "巴西是世界上葡萄牙語人口最多的國家。",
-        "greeting": "Olá / Oi",
-        "pronunciation": "oh-LAH / oy"
-      },
-      {
-        "name": "德語方言（洪斯呂克語等）",
-        "percent": 1,
-        "description": "南部德裔移民社群使用。",
-        "greeting": "Guten Tag",
-        "pronunciation": "GOO-ten TAHK"
-      }
-    ],
-    "history": "殖民初期耶穌會傳教士以圖皮語為基礎發展出通用語，在十八世紀前廣泛使用。1758年葡萄牙政府下令推行葡萄牙語，十九世紀後歐洲與日本移民湧入，巴西葡萄牙語逐漸形成與葡萄牙不同的發音與用詞。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "黑豆燉肉",
-        "localName": "Feijoada",
-        "description": "以黑豆與多種豬肉、牛肉燉煮，配米飯、甘藍與樹薯粉。",
-        "history": "被視為巴西國菜，傳統上在週三或週六食用。",
-        "wiki": "Feijoada"
-      },
-      {
-        "name": "起司麵包",
-        "localName": "Pão de queijo",
-        "description": "以樹薯粉與起司製成的小圓麵包，外酥內Q。",
-        "history": "源自米納斯吉拉斯州，是巴西最受歡迎的點心。",
-        "wiki": "Pão de queijo"
-      },
-      {
-        "name": "巴西窯烤",
-        "localName": "Churrasco",
-        "description": "以大串燒烤牛肉等各種肉類。",
-        "history": "源自南部高喬牛仔的烤肉傳統。",
-        "wiki": "Churrasco"
-      },
-      {
-        "name": "椰奶燉魚",
-        "localName": "Moqueca",
-        "description": "以椰奶、棕櫚油與番茄燉煮的海鮮料理。",
-        "history": "巴伊亞州與聖埃斯皮里圖州的代表料理，融合原住民與非洲飲食傳統。",
-        "wiki": "Moqueca"
-      },
-      {
-        "name": "巧克力球",
-        "localName": "Brigadeiro",
-        "description": "以煉乳、可可與奶油製成的巧克力球。",
-        "history": "1940年代出現的甜點，是巴西生日派對的必備點心。",
-        "wiki": "Brigadeiro"
-      }
-    ]
-  }
+ "iso": "BRA",
+ "capital": "巴西利亞",
+ "summary": "巴西是南美洲面積與人口最大的國家，擁有亞馬遜雨林，曾為葡萄牙殖民地，以足球、嘉年華與多元族群文化聞名。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "天主教",
+    "percent": 57,
+    "description": "巴西是世界上天主教徒人數最多的國家。"
+   },
+   {
+    "name": "福音派／基督新教",
+    "percent": 27,
+    "description": "近數十年快速成長，以五旬節派為主。"
+   },
+   {
+    "name": "無宗教",
+    "percent": 9,
+    "description": "未認同任何宗教的人口。"
+   },
+   {
+    "name": "招魂術（唯靈論）",
+    "percent": 2,
+    "description": "源自法國卡甸的唯靈論，在巴西特別盛行。"
+   },
+   {
+    "name": "非裔巴西宗教",
+    "percent": 1,
+    "description": "包括坎東布雷與翁班達，融合非洲信仰與天主教元素。"
+   }
+  ],
+  "background": "葡萄牙殖民使天主教成為主流；被帶到巴西的數百萬非洲奴隸將約魯巴等信仰與天主教聖人結合，形成坎東布雷等宗教。二十世紀後期起五旬節派福音教會快速成長，天主教比例逐年下降。"
+ },
+ "language": {
+  "official": "葡萄牙語是官方語言。",
+  "ranking": [
+   {
+    "name": "葡萄牙語",
+    "percent": 98,
+    "description": "巴西是世界上葡萄牙語人口最多的國家。",
+    "greeting": "Olá / Oi",
+    "pronunciation": "oh-LAH / oy"
+   },
+   {
+    "name": "德語方言（洪斯呂克語等）",
+    "percent": 1,
+    "description": "南部德裔移民社群使用。",
+    "greeting": "Guten Tag",
+    "pronunciation": "GOO-ten TAHK"
+   }
+  ],
+  "history": "殖民初期耶穌會傳教士以圖皮語為基礎發展出通用語，在十八世紀前廣泛使用。1758年葡萄牙政府下令推行葡萄牙語，十九世紀後歐洲與日本移民湧入，巴西葡萄牙語逐漸形成與葡萄牙不同的發音與用詞。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "黑豆燉肉",
+    "localName": "Feijoada",
+    "description": "以黑豆與多種豬肉、牛肉燉煮，配米飯、甘藍與樹薯粉。",
+    "history": "被視為巴西國菜，傳統上在週三或週六食用。",
+    "wiki": "Feijoada",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/90/Feijoada_%C3%A0_transmontada.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Feijoada_%C3%A0_transmontada.jpg",
+    "imageCredit": "Adrião・CC BY 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "起司麵包",
+    "localName": "Pão de queijo",
+    "description": "以樹薯粉與起司製成的小圓麵包，外酥內Q。",
+    "history": "源自米納斯吉拉斯州，是巴西最受歡迎的點心。",
+    "wiki": "Pão de queijo",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Cheesebread.jpg/960px-Cheesebread.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Cheesebread.jpg",
+    "imageCredit": "Murilo manzini・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "巴西窯烤",
+    "localName": "Churrasco",
+    "description": "以大串燒烤牛肉等各種肉類。",
+    "history": "源自南部高喬牛仔的烤肉傳統。",
+    "wiki": "Churrasco",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Churrasco00003.jpg/960px-Churrasco00003.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Churrasco00003.jpg",
+    "imageCredit": "Leonardo Sakaki・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "椰奶燉魚",
+    "localName": "Moqueca",
+    "description": "以椰奶、棕櫚油與番茄燉煮的海鮮料理。",
+    "history": "巴伊亞州與聖埃斯皮里圖州的代表料理，融合原住民與非洲飲食傳統。",
+    "wiki": "Moqueca",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Moqueca.jpg/960px-Moqueca.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Moqueca.jpg",
+    "imageCredit": "BR・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "巧克力球",
+    "localName": "Brigadeiro",
+    "description": "以煉乳、可可與奶油製成的巧克力球。",
+    "history": "1940年代出現的甜點，是巴西生日派對的必備點心。",
+    "wiki": "Brigadeiro",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Brigadeiro.jpg/960px-Brigadeiro.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Brigadeiro.jpg",
+    "imageCredit": "User Mayra (Maych) on Flickr・CC BY-SA 2.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

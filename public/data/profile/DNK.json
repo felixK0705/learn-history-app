@@ -1,96 +1,111 @@
 {
-  "iso": "DNK",
-  "capital": "哥本哈根",
-  "summary": "丹麥位於北歐，由日德蘭半島與數百座島嶼組成，是歷史悠久的君主國，以高福利社會、樂高與安徒生童話聞名。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "路德宗（丹麥國教會）",
-        "percent": 72,
-        "description": "憲法規定的國教會，多數國民為其成員。"
-      },
-      {
-        "name": "無宗教",
-        "percent": 20,
-        "description": "未加入任何宗教團體的人口。"
-      },
-      {
-        "name": "伊斯蘭教",
-        "percent": 5,
-        "description": "主要為移民及其後代。"
-      },
-      {
-        "name": "天主教",
-        "percent": 1,
-        "description": "規模較小的天主教社群。"
-      }
-    ],
-    "background": "十世紀國王「藍牙」哈拉爾受洗，丹麥逐漸基督教化。1536年宗教改革後路德宗成為國教，至今仍是丹麥國教會。不過丹麥社會高度世俗化，許多教會成員並不常參與宗教活動。"
-  },
-  "language": {
-    "official": "丹麥語是官方語言，法羅群島與格陵蘭另有各自的官方語言。",
-    "ranking": [
-      {
-        "name": "丹麥語",
-        "percent": 92,
-        "description": "屬北日耳曼語支，與瑞典語、挪威語可部分互通。",
-        "greeting": "Hej",
-        "pronunciation": "hai"
-      },
-      {
-        "name": "土耳其語",
-        "percent": 1,
-        "description": "土耳其裔移民社群使用。",
-        "greeting": "Merhaba",
-        "pronunciation": "MER-ha-ba"
-      },
-      {
-        "name": "德語",
-        "percent": 1,
-        "description": "南日德蘭地區德裔少數民族使用。",
-        "greeting": "Hallo",
-        "pronunciation": "HAH-loh"
-      }
-    ],
-    "history": "丹麥語源自維京時代的古諾斯語。中世紀漢薩同盟時期吸收大量低地德語詞彙。丹麥曾統治挪威數百年，使丹麥語長期是挪威的書面語。現代丹麥語以發音中的「喉塞音」聞名。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "開放式三明治",
-        "localName": "Smørrebrød",
-        "description": "在黑麥麵包上鋪醃鯡魚、肝醬、蝦或烤牛肉等配料。",
-        "history": "十九世紀工人午餐演變而來的丹麥經典料理。",
-        "wiki": "Smørrebrød"
-      },
-      {
-        "name": "酥炸豬五花",
-        "localName": "Stegt flæsk",
-        "description": "將豬五花片煎得酥脆，配馬鈴薯與巴西里白醬。",
-        "history": "2014年被票選為丹麥國菜。",
-        "wiki": "Stegt flæsk"
-      },
-      {
-        "name": "丹麥肉丸",
-        "localName": "Frikadeller",
-        "description": "以豬肉與小牛肉絞肉煎成的扁圓肉丸。",
-        "history": "丹麥最常見的家常菜之一。",
-        "wiki": "Frikadeller"
-      },
-      {
-        "name": "球形鬆餅",
-        "localName": "Æbleskiver",
-        "description": "以專用鍋煎成的圓球形鬆餅，沾果醬與糖粉。",
-        "history": "丹麥聖誕季節的傳統點心，常配熱紅酒。",
-        "wiki": "Æbleskiver"
-      },
-      {
-        "name": "丹麥酥",
-        "localName": "Wienerbrød",
-        "description": "多層酥皮麵包，加入卡士達或果醬。",
-        "history": "丹麥語稱「維也納麵包」，源於十九世紀奧地利麵包師傅帶來的技術。",
-        "wiki": "Danish pastry"
-      }
-    ]
-  }
+ "iso": "DNK",
+ "capital": "哥本哈根",
+ "summary": "丹麥位於北歐，由日德蘭半島與數百座島嶼組成，是歷史悠久的君主國，以高福利社會、樂高與安徒生童話聞名。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "路德宗（丹麥國教會）",
+    "percent": 72,
+    "description": "憲法規定的國教會，多數國民為其成員。"
+   },
+   {
+    "name": "無宗教",
+    "percent": 20,
+    "description": "未加入任何宗教團體的人口。"
+   },
+   {
+    "name": "伊斯蘭教",
+    "percent": 5,
+    "description": "主要為移民及其後代。"
+   },
+   {
+    "name": "天主教",
+    "percent": 1,
+    "description": "規模較小的天主教社群。"
+   }
+  ],
+  "background": "十世紀國王「藍牙」哈拉爾受洗，丹麥逐漸基督教化。1536年宗教改革後路德宗成為國教，至今仍是丹麥國教會。不過丹麥社會高度世俗化，許多教會成員並不常參與宗教活動。"
+ },
+ "language": {
+  "official": "丹麥語是官方語言，法羅群島與格陵蘭另有各自的官方語言。",
+  "ranking": [
+   {
+    "name": "丹麥語",
+    "percent": 92,
+    "description": "屬北日耳曼語支，與瑞典語、挪威語可部分互通。",
+    "greeting": "Hej",
+    "pronunciation": "hai"
+   },
+   {
+    "name": "土耳其語",
+    "percent": 1,
+    "description": "土耳其裔移民社群使用。",
+    "greeting": "Merhaba",
+    "pronunciation": "MER-ha-ba"
+   },
+   {
+    "name": "德語",
+    "percent": 1,
+    "description": "南日德蘭地區德裔少數民族使用。",
+    "greeting": "Hallo",
+    "pronunciation": "HAH-loh"
+   }
+  ],
+  "history": "丹麥語源自維京時代的古諾斯語。中世紀漢薩同盟時期吸收大量低地德語詞彙。丹麥曾統治挪威數百年，使丹麥語長期是挪威的書面語。現代丹麥語以發音中的「喉塞音」聞名。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "開放式三明治",
+    "localName": "Smørrebrød",
+    "description": "在黑麥麵包上鋪醃鯡魚、肝醬、蝦或烤牛肉等配料。",
+    "history": "十九世紀工人午餐演變而來的丹麥經典料理。",
+    "wiki": "Smørrebrød",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Ida_Davidsen_udsnit_af_glasmontren.JPG/960px-Ida_Davidsen_udsnit_af_glasmontren.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Ida_Davidsen_udsnit_af_glasmontren.JPG",
+    "imageCredit": "User:Nillerdk・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "酥炸豬五花",
+    "localName": "Stegt flæsk",
+    "description": "將豬五花片煎得酥脆，配馬鈴薯與巴西里白醬。",
+    "history": "2014年被票選為丹麥國菜。",
+    "wiki": "Stegt flæsk",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Stegt_fl%C3%A6sk.jpg/960px-Stegt_fl%C3%A6sk.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Stegt_fl%C3%A6sk.jpg",
+    "imageCredit": "Original uploader was ChildofMidnight at en.wikipedia・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "丹麥肉丸",
+    "localName": "Frikadeller",
+    "description": "以豬肉與小牛肉絞肉煎成的扁圓肉丸。",
+    "history": "丹麥最常見的家常菜之一。",
+    "wiki": "Frikadeller",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Frikadeller.jpg/960px-Frikadeller.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Frikadeller.jpg",
+    "imageCredit": "This image was taken by Kenneth Jorgensen (gallery).Please a・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "球形鬆餅",
+    "localName": "Æbleskiver",
+    "description": "以專用鍋煎成的圓球形鬆餅，沾果醬與糖粉。",
+    "history": "丹麥聖誕季節的傳統點心，常配熱紅酒。",
+    "wiki": "Æbleskiver",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/%C3%86bleskriver_%2854997580931%29.jpg/960px-%C3%86bleskriver_%2854997580931%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:%C3%86bleskriver_(54997580931).jpg",
+    "imageCredit": "Christian Ursilva from København, Danmark・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "丹麥酥",
+    "localName": "Wienerbrød",
+    "description": "多層酥皮麵包，加入卡士達或果醬。",
+    "history": "丹麥語稱「維也納麵包」，源於十九世紀奧地利麵包師傅帶來的技術。",
+    "wiki": "Danish pastry",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Glazed_apple_Danish.jpg/960px-Glazed_apple_Danish.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Glazed_apple_Danish.jpg",
+    "imageCredit": "Peter Isotalo・CC BY-SA 3.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

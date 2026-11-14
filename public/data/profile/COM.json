@@ -1,91 +1,106 @@
 {
-  "iso": "COM",
-  "capital": "莫洛尼",
-  "summary": "位於非洲東南部印度洋莫三比克海峽北端的群島國家，以香料（香草、依蘭）出產聞名，1975年脫離法國獨立。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "伊斯蘭教（遜尼派）",
-        "percent": 98,
-        "description": "國教，屬沙斐儀學派。"
-      },
-      {
-        "name": "天主教",
-        "percent": 1,
-        "description": "少數信徒。"
-      },
-      {
-        "name": "其他",
-        "percent": 1,
-        "description": "人數極少。"
-      }
-    ],
-    "background": "伊斯蘭教自10世紀前後隨阿拉伯與斯瓦希里商人傳入，15世紀起來自設拉子（波斯）的移民建立蘇丹國，使伊斯蘭教在各島扎根。法國殖民時期基督教影響有限。"
-  },
-  "language": {
-    "official": "官方語言為葛摩語、法語與阿拉伯語。",
-    "ranking": [
-      {
-        "name": "葛摩語",
-        "percent": 96,
-        "description": "與斯瓦希里語相近的班圖語，各島有不同方言。",
-        "greeting": "Djedje?",
-        "pronunciation": "je-je"
-      },
-      {
-        "name": "法語",
-        "percent": 2,
-        "description": "教育與行政語言。",
-        "greeting": "Bonjour",
-        "pronunciation": "bon-zhoor"
-      },
-      {
-        "name": "阿拉伯語",
-        "percent": 1,
-        "description": "宗教與官方用語，多數人在古蘭經學校學習。",
-        "greeting": "السلام عليكم",
-        "pronunciation": "as-sa-lām ʿa-lay-kum"
-      }
-    ],
-    "history": "葛摩語屬斯瓦希里語的近親，吸收大量阿拉伯語詞彙，歷史上以阿拉伯字母書寫。法國殖民後法語成為教育與行政語言，獨立後葛摩語、法語與阿拉伯語並列官方語言。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "香料抓飯",
-        "localName": "Pilao",
-        "description": "以丁香、肉桂等香料與肉同煮的米飯，節慶常見。",
-        "history": "隨阿拉伯與印度洋貿易傳入，是東非沿岸共享的料理。",
-        "wiki": "Pilaf"
-      },
-      {
-        "name": "木薯葉椰奶燉菜",
-        "localName": "Mataba",
-        "description": "木薯葉搗碎後以椰奶燉煮，常加魚乾。",
-        "history": "葛摩與東非沿岸常見的家常菜。",
-        "wiki": "Matapa"
-      },
-      {
-        "name": "香草龍蝦",
-        "localName": "Langouste à la vanille",
-        "description": "以在地香草調味的龍蝦料理。",
-        "history": "葛摩是世界重要的香草產地，此菜結合島上海鮮與香料特色。",
-        "wiki": "Spiny lobster"
-      },
-      {
-        "name": "椰奶飯",
-        "localName": "Coconut rice",
-        "description": "以椰奶煮的米飯，搭配咖哩或燉魚。",
-        "history": "印度洋島嶼普遍的料理方式。",
-        "wiki": "Coconut rice"
-      },
-      {
-        "name": "三角炸餃",
-        "localName": "Sambusa",
-        "description": "包入肉餡或蔬菜的三角形油炸點心。",
-        "history": "隨印度洋貿易傳入，齋戒月期間尤其常見。",
-        "wiki": "Samosa"
-      }
-    ]
-  }
+ "iso": "COM",
+ "capital": "莫洛尼",
+ "summary": "位於非洲東南部印度洋莫三比克海峽北端的群島國家，以香料（香草、依蘭）出產聞名，1975年脫離法國獨立。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "伊斯蘭教（遜尼派）",
+    "percent": 98,
+    "description": "國教，屬沙斐儀學派。"
+   },
+   {
+    "name": "天主教",
+    "percent": 1,
+    "description": "少數信徒。"
+   },
+   {
+    "name": "其他",
+    "percent": 1,
+    "description": "人數極少。"
+   }
+  ],
+  "background": "伊斯蘭教自10世紀前後隨阿拉伯與斯瓦希里商人傳入，15世紀起來自設拉子（波斯）的移民建立蘇丹國，使伊斯蘭教在各島扎根。法國殖民時期基督教影響有限。"
+ },
+ "language": {
+  "official": "官方語言為葛摩語、法語與阿拉伯語。",
+  "ranking": [
+   {
+    "name": "葛摩語",
+    "percent": 96,
+    "description": "與斯瓦希里語相近的班圖語，各島有不同方言。",
+    "greeting": "Djedje?",
+    "pronunciation": "je-je"
+   },
+   {
+    "name": "法語",
+    "percent": 2,
+    "description": "教育與行政語言。",
+    "greeting": "Bonjour",
+    "pronunciation": "bon-zhoor"
+   },
+   {
+    "name": "阿拉伯語",
+    "percent": 1,
+    "description": "宗教與官方用語，多數人在古蘭經學校學習。",
+    "greeting": "السلام عليكم",
+    "pronunciation": "as-sa-lām ʿa-lay-kum"
+   }
+  ],
+  "history": "葛摩語屬斯瓦希里語的近親，吸收大量阿拉伯語詞彙，歷史上以阿拉伯字母書寫。法國殖民後法語成為教育與行政語言，獨立後葛摩語、法語與阿拉伯語並列官方語言。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "香料抓飯",
+    "localName": "Pilao",
+    "description": "以丁香、肉桂等香料與肉同煮的米飯，節慶常見。",
+    "history": "隨阿拉伯與印度洋貿易傳入，是東非沿岸共享的料理。",
+    "wiki": "Pilaf",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Afghan_Palo.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Afghan_Palo.jpg",
+    "imageCredit": "Jost Wagner・CC BY-SA 1.0・Wikimedia Commons"
+   },
+   {
+    "name": "木薯葉椰奶燉菜",
+    "localName": "Mataba",
+    "description": "木薯葉搗碎後以椰奶燉煮，常加魚乾。",
+    "history": "葛摩與東非沿岸常見的家常菜。",
+    "wiki": "Matapa",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Matapa.jpg/960px-Matapa.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Matapa.jpg",
+    "imageCredit": "PrestigiousSwazi・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "香草龍蝦",
+    "localName": "Langouste à la vanille",
+    "description": "以在地香草調味的龍蝦料理。",
+    "history": "葛摩是世界重要的香草產地，此菜結合島上海鮮與香料特色。",
+    "wiki": "Spiny lobster",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/California_spiny_lobster.JPG/960px-California_spiny_lobster.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:California_spiny_lobster.JPG",
+    "imageCredit": "No machine-readable author provided. DrKjaergaard assumed (b・CC BY-SA 2.5・Wikimedia Commons"
+   },
+   {
+    "name": "椰奶飯",
+    "localName": "Coconut rice",
+    "description": "以椰奶煮的米飯，搭配咖哩或燉魚。",
+    "history": "印度洋島嶼普遍的料理方式。",
+    "wiki": "Coconut rice",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Nasi_Liwet_Solo.jpg/960px-Nasi_Liwet_Solo.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Nasi_Liwet_Solo.jpg",
+    "imageCredit": "Gunawan Kartapranata・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "三角炸餃",
+    "localName": "Sambusa",
+    "description": "包入肉餡或蔬菜的三角形油炸點心。",
+    "history": "隨印度洋貿易傳入，齋戒月期間尤其常見。",
+    "wiki": "Samosa",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Samosas%2C_snack_food_at_Wikipedia%27s_16th_Birthday_celebration_in_Chittagong_%2801%29.jpg/960px-Samosas%2C_snack_food_at_Wikipedia%27s_16th_Birthday_celebration_in_Chittagong_%2801%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Samosas,_snack_food_at_Wikipedia%27s_16th_Birthday_celebration_in_Chittagong_(01).jpg",
+    "imageCredit": "Moheen Reeyad・CC BY-SA 4.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

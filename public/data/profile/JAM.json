@@ -1,89 +1,104 @@
 {
-  "iso": "JAM",
-  "capital": "京斯敦",
-  "summary": "牙買加是加勒比海的島國，1962年脫離英國獨立，是雷鬼音樂與拉斯塔法里運動的發源地，也以頂尖短跑選手聞名。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "基督新教",
-        "percent": 64,
-        "description": "包括復臨安息日會、五旬節派、浸信會等，教會數量居世界前列。"
-      },
-      {
-        "name": "無宗教",
-        "percent": 21,
-        "description": "未認同任何宗教的人口。"
-      },
-      {
-        "name": "天主教",
-        "percent": 2,
-        "description": "規模較小的天主教社群。"
-      },
-      {
-        "name": "拉斯塔法里教",
-        "percent": 1,
-        "description": "1930年代起源於牙買加的宗教運動。"
-      }
-    ],
-    "background": "英國殖民時期聖公會為主流，十八至十九世紀浸信會與衛理宗傳教士在被奴役的非洲人中傳教，並參與廢奴運動。二十世紀後五旬節派與復臨安息日會快速成長，而拉斯塔法里教則在1930年代從反殖民思想中誕生。"
-  },
-  "language": {
-    "official": "英語是官方語言。",
-    "ranking": [
-      {
-        "name": "牙買加克里奧爾語（帕托瓦語）",
-        "percent": 90,
-        "description": "以英語為基礎並融合西非語言的克里奧爾語，是日常生活語言。",
-        "greeting": "Wah gwaan",
-        "pronunciation": "wah GWAAN"
-      },
-      {
-        "name": "英語",
-        "percent": 10,
-        "description": "官方語言，用於政府、教育與正式場合。",
-        "greeting": "Hello",
-        "pronunciation": "heh-LOH"
-      }
-    ],
-    "history": "十七世紀英國從西班牙手中奪取牙買加後，從西非帶來大量奴隸，在種植園中形成以英語為基礎的克里奧爾語。牙買加帕托瓦語藉著雷鬼音樂傳遍世界，與標準英語形成語言連續體。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "阿開果鹹魚",
-        "localName": "Ackee and saltfish",
-        "description": "以阿開果與鹹鱈魚、洋蔥、辣椒拌炒。",
-        "history": "牙買加國菜，阿開果於十八世紀自西非傳入，鹹魚則來自與北美的貿易。",
-        "wiki": "Ackee and saltfish"
-      },
-      {
-        "name": "牙買加烤肉",
-        "localName": "Jerk",
-        "description": "以多香果與蘇格蘭帽辣椒醃漬後燻烤的雞肉或豬肉。",
-        "history": "源自原住民泰諾人與逃亡黑奴（馬龍人）的烹調技術。",
-        "wiki": "Jerk (cooking)"
-      },
-      {
-        "name": "牙買加餡餅",
-        "localName": "Jamaican patty",
-        "description": "以金黃色酥皮包裹咖哩牛肉等餡料烘烤的餡餅。",
-        "history": "融合英國餡餅與印度、非洲香料的街頭小吃。",
-        "wiki": "Jamaican patty"
-      },
-      {
-        "name": "米豆飯",
-        "localName": "Rice and peas",
-        "description": "以椰奶煮米與紅腰豆的飯。",
-        "history": "牙買加週日家庭餐的必備主食。",
-        "wiki": "Rice and peas"
-      },
-      {
-        "name": "咖哩羊肉",
-        "localName": "Curry goat",
-        "description": "以咖哩香料燉煮的山羊肉。",
-        "history": "十九世紀印度契約勞工帶來咖哩，成為牙買加節慶與聚會的代表菜。",
-        "wiki": "Curry goat"
-      }
-    ]
-  }
+ "iso": "JAM",
+ "capital": "京斯敦",
+ "summary": "牙買加是加勒比海的島國，1962年脫離英國獨立，是雷鬼音樂與拉斯塔法里運動的發源地，也以頂尖短跑選手聞名。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "基督新教",
+    "percent": 64,
+    "description": "包括復臨安息日會、五旬節派、浸信會等，教會數量居世界前列。"
+   },
+   {
+    "name": "無宗教",
+    "percent": 21,
+    "description": "未認同任何宗教的人口。"
+   },
+   {
+    "name": "天主教",
+    "percent": 2,
+    "description": "規模較小的天主教社群。"
+   },
+   {
+    "name": "拉斯塔法里教",
+    "percent": 1,
+    "description": "1930年代起源於牙買加的宗教運動。"
+   }
+  ],
+  "background": "英國殖民時期聖公會為主流，十八至十九世紀浸信會與衛理宗傳教士在被奴役的非洲人中傳教，並參與廢奴運動。二十世紀後五旬節派與復臨安息日會快速成長，而拉斯塔法里教則在1930年代從反殖民思想中誕生。"
+ },
+ "language": {
+  "official": "英語是官方語言。",
+  "ranking": [
+   {
+    "name": "牙買加克里奧爾語（帕托瓦語）",
+    "percent": 90,
+    "description": "以英語為基礎並融合西非語言的克里奧爾語，是日常生活語言。",
+    "greeting": "Wah gwaan",
+    "pronunciation": "wah GWAAN"
+   },
+   {
+    "name": "英語",
+    "percent": 10,
+    "description": "官方語言，用於政府、教育與正式場合。",
+    "greeting": "Hello",
+    "pronunciation": "heh-LOH"
+   }
+  ],
+  "history": "十七世紀英國從西班牙手中奪取牙買加後，從西非帶來大量奴隸，在種植園中形成以英語為基礎的克里奧爾語。牙買加帕托瓦語藉著雷鬼音樂傳遍世界，與標準英語形成語言連續體。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "阿開果鹹魚",
+    "localName": "Ackee and saltfish",
+    "description": "以阿開果與鹹鱈魚、洋蔥、辣椒拌炒。",
+    "history": "牙買加國菜，阿開果於十八世紀自西非傳入，鹹魚則來自與北美的貿易。",
+    "wiki": "Ackee and saltfish",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Ackee_and_Saltfish.jpg/960px-Ackee_and_Saltfish.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Ackee_and_Saltfish.jpg",
+    "imageCredit": "gailf548 from New York State, USA・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "牙買加烤肉",
+    "localName": "Jerk",
+    "description": "以多香果與蘇格蘭帽辣椒醃漬後燻烤的雞肉或豬肉。",
+    "history": "源自原住民泰諾人與逃亡黑奴（馬龍人）的烹調技術。",
+    "wiki": "Jerk (cooking)",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/BBQJerk_Chicken.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:BBQJerk_Chicken.jpg",
+    "imageCredit": "OUTography.com from Gilbert, AZ, USA・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "牙買加餡餅",
+    "localName": "Jamaican patty",
+    "description": "以金黃色酥皮包裹咖哩牛肉等餡料烘烤的餡餅。",
+    "history": "融合英國餡餅與印度、非洲香料的街頭小吃。",
+    "wiki": "Jamaican patty",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Jamaican_patties_and_redstripe.jpg/960px-Jamaican_patties_and_redstripe.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Jamaican_patties_and_redstripe.jpg",
+    "imageCredit": "ritcharnd moskow from Toshi Station, USA・CC BY-SA 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "米豆飯",
+    "localName": "Rice and peas",
+    "description": "以椰奶煮米與紅腰豆的飯。",
+    "history": "牙買加週日家庭餐的必備主食。",
+    "wiki": "Rice and peas",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Rice_and_Peas.jpg/960px-Rice_and_Peas.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Rice_and_Peas.jpg",
+    "imageCredit": "File:Rice and Peas.png: Whispyhistory\nconversion to jpg: Hik・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "咖哩羊肉",
+    "localName": "Curry goat",
+    "description": "以咖哩香料燉煮的山羊肉。",
+    "history": "十九世紀印度契約勞工帶來咖哩，成為牙買加節慶與聚會的代表菜。",
+    "wiki": "Curry goat",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Curry_Goat_and_Rice.jpg/960px-Curry_Goat_and_Rice.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Curry_Goat_and_Rice.jpg",
+    "imageCredit": "Leon Brocard from London, UK・CC BY 2.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

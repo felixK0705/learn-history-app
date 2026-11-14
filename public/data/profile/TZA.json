@@ -1,89 +1,104 @@
 {
-  "iso": "TZA",
-  "capital": "多多馬",
-  "summary": "坦尚尼亞位於東非，由坦干伊加與尚吉巴於1964年合併而成，擁有吉力馬札羅山與塞倫蓋蒂國家公園。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "基督教",
-        "percent": 63,
-        "description": "包括天主教、路德宗、聖公會與五旬節派等。"
-      },
-      {
-        "name": "伊斯蘭教",
-        "percent": 34,
-        "description": "主要分布於沿海與尚吉巴，尚吉巴幾乎全為穆斯林。"
-      },
-      {
-        "name": "傳統信仰",
-        "percent": 1,
-        "description": "部分族群保留的傳統宗教。"
-      },
-      {
-        "name": "無宗教",
-        "percent": 1,
-        "description": "未認同任何宗教的人口。"
-      }
-    ],
-    "background": "伊斯蘭教千年前便隨阿拉伯與波斯商人傳入東非沿海及尚吉巴，形成斯瓦希里文化。十九世紀後歐洲傳教士深入內陸傳播基督教，因此內陸多基督徒，沿海與島嶼多穆斯林。"
-  },
-  "language": {
-    "official": "斯瓦希里語與英語是官方語言。",
-    "ranking": [
-      {
-        "name": "斯瓦希里語",
-        "percent": 90,
-        "description": "國語，幾乎全國通用，多數人以第二語言使用。",
-        "greeting": "Habari",
-        "pronunciation": "ha-BAH-ree"
-      },
-      {
-        "name": "英語",
-        "percent": 10,
-        "description": "官方語言，用於高等教育、法院與商業。",
-        "greeting": "Hello",
-        "pronunciation": "heh-LOH"
-      }
-    ],
-    "history": "坦尚尼亞有超過120種民族語言，如蘇庫馬語。斯瓦希里語源自東非沿岸的班圖語，吸收大量阿拉伯語詞彙。獨立後首任總統尼雷爾大力推廣斯瓦希里語作為國家統一的語言，使坦尚尼亞成為斯瓦希里語最普及的國家。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "烏咖哩",
-        "localName": "Ugali",
-        "description": "以玉米粉煮成的濃稠糰狀主食，配燉菜食用。",
-        "history": "東非最普遍的主食。",
-        "wiki": "Ugali"
-      },
-      {
-        "name": "烤肉",
-        "localName": "Nyama choma",
-        "description": "炭火燒烤的山羊肉或牛肉。",
-        "history": "東非聚會與社交活動中最受歡迎的料理。",
-        "wiki": "Nyama choma"
-      },
-      {
-        "name": "薯條蛋餅",
-        "localName": "Chipsi mayai",
-        "description": "將薯條與蛋液一起煎成的蛋餅。",
-        "history": "坦尚尼亞最受歡迎的街頭小吃之一。",
-        "wiki": "Chipsi mayai"
-      },
-      {
-        "name": "皮拉烏飯",
-        "localName": "Pilau",
-        "description": "以香料與肉一起烹煮的香料飯。",
-        "history": "源自印度洋貿易與斯瓦希里沿岸文化，節慶時常見。",
-        "wiki": "Pilaf"
-      },
-      {
-        "name": "曼達濟",
-        "localName": "Mandazi",
-        "description": "微甜的椰香油炸麵團。",
-        "history": "斯瓦希里沿岸的傳統點心，常配奶茶當早餐。",
-        "wiki": "Mandazi"
-      }
-    ]
-  }
+ "iso": "TZA",
+ "capital": "多多馬",
+ "summary": "坦尚尼亞位於東非，由坦干伊加與尚吉巴於1964年合併而成，擁有吉力馬札羅山與塞倫蓋蒂國家公園。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "基督教",
+    "percent": 63,
+    "description": "包括天主教、路德宗、聖公會與五旬節派等。"
+   },
+   {
+    "name": "伊斯蘭教",
+    "percent": 34,
+    "description": "主要分布於沿海與尚吉巴，尚吉巴幾乎全為穆斯林。"
+   },
+   {
+    "name": "傳統信仰",
+    "percent": 1,
+    "description": "部分族群保留的傳統宗教。"
+   },
+   {
+    "name": "無宗教",
+    "percent": 1,
+    "description": "未認同任何宗教的人口。"
+   }
+  ],
+  "background": "伊斯蘭教千年前便隨阿拉伯與波斯商人傳入東非沿海及尚吉巴，形成斯瓦希里文化。十九世紀後歐洲傳教士深入內陸傳播基督教，因此內陸多基督徒，沿海與島嶼多穆斯林。"
+ },
+ "language": {
+  "official": "斯瓦希里語與英語是官方語言。",
+  "ranking": [
+   {
+    "name": "斯瓦希里語",
+    "percent": 90,
+    "description": "國語，幾乎全國通用，多數人以第二語言使用。",
+    "greeting": "Habari",
+    "pronunciation": "ha-BAH-ree"
+   },
+   {
+    "name": "英語",
+    "percent": 10,
+    "description": "官方語言，用於高等教育、法院與商業。",
+    "greeting": "Hello",
+    "pronunciation": "heh-LOH"
+   }
+  ],
+  "history": "坦尚尼亞有超過120種民族語言，如蘇庫馬語。斯瓦希里語源自東非沿岸的班圖語，吸收大量阿拉伯語詞彙。獨立後首任總統尼雷爾大力推廣斯瓦希里語作為國家統一的語言，使坦尚尼亞成為斯瓦希里語最普及的國家。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "烏咖哩",
+    "localName": "Ugali",
+    "description": "以玉米粉煮成的濃稠糰狀主食，配燉菜食用。",
+    "history": "東非最普遍的主食。",
+    "wiki": "Ugali",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/48/Ugali_%26_Sukuma_Wiki.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Ugali_%26_Sukuma_Wiki.jpg",
+    "imageCredit": "Paresh Jai from Nairobi, Kenya・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "烤肉",
+    "localName": "Nyama choma",
+    "description": "炭火燒烤的山羊肉或牛肉。",
+    "history": "東非聚會與社交活動中最受歡迎的料理。",
+    "wiki": "Nyama choma",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Goat_meat_being_roasted.jpg/960px-Goat_meat_being_roasted.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Goat_meat_being_roasted.jpg",
+    "imageCredit": "Samuel Kiongo・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "薯條蛋餅",
+    "localName": "Chipsi mayai",
+    "description": "將薯條與蛋液一起煎成的蛋餅。",
+    "history": "坦尚尼亞最受歡迎的街頭小吃之一。",
+    "wiki": "Chipsi mayai",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Chipsi_mayai_%28zege%29.jpg/960px-Chipsi_mayai_%28zege%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Chipsi_mayai_(zege).jpg",
+    "imageCredit": "iamkevoo・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "皮拉烏飯",
+    "localName": "Pilau",
+    "description": "以香料與肉一起烹煮的香料飯。",
+    "history": "源自印度洋貿易與斯瓦希里沿岸文化，節慶時常見。",
+    "wiki": "Pilaf",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Afghan_Palo.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Afghan_Palo.jpg",
+    "imageCredit": "Jost Wagner・CC BY-SA 1.0・Wikimedia Commons"
+   },
+   {
+    "name": "曼達濟",
+    "localName": "Mandazi",
+    "description": "微甜的椰香油炸麵團。",
+    "history": "斯瓦希里沿岸的傳統點心，常配奶茶當早餐。",
+    "wiki": "Mandazi",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/69/Bowl_of_mandazi.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Bowl_of_mandazi.jpg",
+    "imageCredit": "The original uploader was ChildofMidnight at English Wikiped・CC BY 2.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

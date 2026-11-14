@@ -1,94 +1,109 @@
 {
-  "iso": "SLB",
-  "capital": "荷尼阿拉",
-  "summary": "索羅門群島是南太平洋的群島國家，由近千座島嶼組成，二戰時瓜達康納爾島是美日激戰之地，1978年脫離英國獨立。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "聖公會",
-        "percent": 32,
-        "description": "美拉尼西亞聖公會是最大的教會。"
-      },
-      {
-        "name": "天主教",
-        "percent": 19,
-        "description": "重要的天主教社群。"
-      },
-      {
-        "name": "南海福音教會",
-        "percent": 17,
-        "description": "源自南海福音傳道團的福音派教會。"
-      },
-      {
-        "name": "復臨安息日會",
-        "percent": 12,
-        "description": "規模較大的新教教會。"
-      },
-      {
-        "name": "聯合教會",
-        "percent": 10,
-        "description": "源自衛理宗傳統的教會。"
-      }
-    ],
-    "background": "十九世紀中後期起，聖公會的美拉尼西亞傳道會、天主教與各新教傳道團陸續到來。二十世紀前半基督教迅速普及，至今超過九成人口為基督徒，但傳統祖靈觀念仍存在於部分社群中。"
-  },
-  "language": {
-    "official": "英語是官方語言。",
-    "ranking": [
-      {
-        "name": "索羅門群島皮欽語",
-        "percent": 60,
-        "description": "以英語為基礎的皮欽語，是全國通用語。",
-        "greeting": "Halo",
-        "pronunciation": "HAH-loh"
-      },
-      {
-        "name": "英語",
-        "percent": 2,
-        "description": "官方語言，用於政府與教育。",
-        "greeting": "Hello",
-        "pronunciation": "heh-LOH"
-      }
-    ],
-    "history": "索羅門群島有約70種本土語言。十九世紀島民被招募至澳洲昆士蘭與斐濟的種植園工作，在當地形成皮欽語並帶回家鄉，成為不同語言群體之間的通用語。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "地爐烤",
-        "localName": "Motu",
-        "description": "將芋頭、豬肉與魚包葉後放在熱石上燜烤。",
-        "history": "太平洋島嶼傳統的烹調方式，用於節慶與重要聚會。",
-        "wiki": "Earth oven"
-      },
-      {
-        "name": "芋頭",
-        "localName": "Taro",
-        "description": "以煮、烤或製成布丁方式食用。",
-        "history": "太平洋島嶼的古老主食作物。",
-        "wiki": "Taro"
-      },
-      {
-        "name": "恩加利堅果",
-        "localName": "Ngali nut",
-        "description": "橄欖科樹木的堅果，可生食或加入布丁。",
-        "history": "索羅門群島重要的傳統食物與經濟作物。",
-        "wiki": "Canarium indicum"
-      },
-      {
-        "name": "地瓜",
-        "localName": "Kumara",
-        "description": "以煮或烤方式食用的地瓜。",
-        "history": "日常重要的主食之一。",
-        "wiki": "Sweet potato"
-      },
-      {
-        "name": "木薯布丁",
-        "localName": "Cassava pudding",
-        "description": "以木薯泥與椰奶包葉烤成的布丁。",
-        "history": "太平洋島嶼常見的點心，常在地爐中製作。",
-        "wiki": "Cassava"
-      }
-    ]
-  }
+ "iso": "SLB",
+ "capital": "荷尼阿拉",
+ "summary": "索羅門群島是南太平洋的群島國家，由近千座島嶼組成，二戰時瓜達康納爾島是美日激戰之地，1978年脫離英國獨立。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "聖公會",
+    "percent": 32,
+    "description": "美拉尼西亞聖公會是最大的教會。"
+   },
+   {
+    "name": "天主教",
+    "percent": 19,
+    "description": "重要的天主教社群。"
+   },
+   {
+    "name": "南海福音教會",
+    "percent": 17,
+    "description": "源自南海福音傳道團的福音派教會。"
+   },
+   {
+    "name": "復臨安息日會",
+    "percent": 12,
+    "description": "規模較大的新教教會。"
+   },
+   {
+    "name": "聯合教會",
+    "percent": 10,
+    "description": "源自衛理宗傳統的教會。"
+   }
+  ],
+  "background": "十九世紀中後期起，聖公會的美拉尼西亞傳道會、天主教與各新教傳道團陸續到來。二十世紀前半基督教迅速普及，至今超過九成人口為基督徒，但傳統祖靈觀念仍存在於部分社群中。"
+ },
+ "language": {
+  "official": "英語是官方語言。",
+  "ranking": [
+   {
+    "name": "索羅門群島皮欽語",
+    "percent": 60,
+    "description": "以英語為基礎的皮欽語，是全國通用語。",
+    "greeting": "Halo",
+    "pronunciation": "HAH-loh"
+   },
+   {
+    "name": "英語",
+    "percent": 2,
+    "description": "官方語言，用於政府與教育。",
+    "greeting": "Hello",
+    "pronunciation": "heh-LOH"
+   }
+  ],
+  "history": "索羅門群島有約70種本土語言。十九世紀島民被招募至澳洲昆士蘭與斐濟的種植園工作，在當地形成皮欽語並帶回家鄉，成為不同語言群體之間的通用語。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "地爐烤",
+    "localName": "Motu",
+    "description": "將芋頭、豬肉與魚包葉後放在熱石上燜烤。",
+    "history": "太平洋島嶼傳統的烹調方式，用於節慶與重要聚會。",
+    "wiki": "Earth oven",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Samoa_umu.JPG/960px-Samoa_umu.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Samoa_umu.JPG",
+    "imageCredit": "CC BY 2.5・Wikimedia Commons"
+   },
+   {
+    "name": "芋頭",
+    "localName": "Taro",
+    "description": "以煮、烤或製成布丁方式食用。",
+    "history": "太平洋島嶼的古老主食作物。",
+    "wiki": "Taro",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Songe-R%C3%A9union.JPG/960px-Songe-R%C3%A9union.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Songe-R%C3%A9union.JPG",
+    "imageCredit": "No machine-readable author provided. Thierry Caro assumed (b・CC BY-SA 2.5・Wikimedia Commons"
+   },
+   {
+    "name": "恩加利堅果",
+    "localName": "Ngali nut",
+    "description": "橄欖科樹木的堅果，可生食或加入布丁。",
+    "history": "索羅門群島重要的傳統食物與經濟作物。",
+    "wiki": "Canarium indicum",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Canarium_indicum_-_Icica_icicariba_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-171.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Canarium_indicum_-_Icica_icicariba_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-171.jpg",
+    "imageCredit": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen・Public domain・Wikimedia Commons"
+   },
+   {
+    "name": "地瓜",
+    "localName": "Kumara",
+    "description": "以煮或烤方式食用的地瓜。",
+    "history": "日常重要的主食之一。",
+    "wiki": "Sweet potato",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Ipomoea_batatas_006.JPG/960px-Ipomoea_batatas_006.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Ipomoea_batatas_006.JPG",
+    "imageCredit": "Llez・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "木薯布丁",
+    "localName": "Cassava pudding",
+    "description": "以木薯泥與椰奶包葉烤成的布丁。",
+    "history": "太平洋島嶼常見的點心，常在地爐中製作。",
+    "wiki": "Cassava",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Manihot_esculenta_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-090.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Manihot_esculenta_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-090.jpg",
+    "imageCredit": "Franz Eugen Köhler, Köhlers Medizinal-Pflanzen・Public domain・Wikimedia Commons"
+   }
+  ]
+ }
 }

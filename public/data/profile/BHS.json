@@ -1,89 +1,101 @@
 {
-  "iso": "BHS",
-  "capital": "拿索",
-  "summary": "位於大西洋、由七百多座島嶼組成的群島國家，1973年脫離英國獨立，以觀光與金融服務業為主要經濟支柱。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "新教",
-        "percent": 70,
-        "description": "以浸信會、英國國教會（聖公會）、五旬節派、衛理公會等為主。"
-      },
-      {
-        "name": "天主教",
-        "percent": 12,
-        "description": "主要隨19世紀後的傳教活動發展。"
-      },
-      {
-        "name": "其他基督教",
-        "percent": 5,
-        "description": "包含耶和華見證人等。"
-      },
-      {
-        "name": "無宗教",
-        "percent": 2,
-        "description": "人數不多。"
-      }
-    ],
-    "background": "英國殖民時期聖公會隨殖民者傳入，美國獨立戰爭後效忠派帶著奴隸移入，非裔居民則在浸信會與衛理會傳教下大量改信，使新教成為主流。"
-  },
-  "language": {
-    "official": "官方語言為英語。",
-    "ranking": [
-      {
-        "name": "英語（含巴哈馬克里奧爾英語）",
-        "percent": 90,
-        "description": "英語為官方與教育語言，日常口語多為帶有西非語言影響的巴哈馬克里奧爾英語。",
-        "greeting": "Hello",
-        "pronunciation": "heh-loh"
-      },
-      {
-        "name": "海地克里奧爾語",
-        "percent": 8,
-        "description": "海地移民社群使用。",
-        "greeting": "Bonjou",
-        "pronunciation": "bon-zhoo"
-      }
-    ],
-    "history": "原住民盧卡雅人在西班牙殖民初期幾乎滅絕。17世紀起英國人移居，美國獨立後效忠派與其奴隸遷入，英語與非洲語言接觸形成巴哈馬克里奧爾語；近數十年海地移民帶來海地克里奧爾語。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "炸海螺球",
-        "localName": "Conch fritters",
-        "description": "將大鳳螺肉剁碎拌入麵糊炸成小球，搭配沾醬。",
-        "history": "大鳳螺是巴哈馬最具代表性的海產，炸海螺球是街頭與海灘小吃。",
-        "wiki": "Conch fritter"
-      },
-      {
-        "name": "豌豆飯",
-        "localName": "Peas 'n' rice",
-        "description": "以鴿豆、番茄與鹹豬肉調味煮成的米飯，幾乎每餐必備。",
-        "history": "源自非洲與加勒比地區的豆飯傳統，是巴哈馬家常主食。",
-        "wiki": "Rice and peas"
-      },
-      {
-        "name": "番石榴卷布丁",
-        "localName": "Guava duff",
-        "description": "將番石榴果泥捲入麵團蒸熟，淋上奶油醬的甜點。",
-        "history": "被視為巴哈馬國民甜點，源自英國蒸布丁傳統與在地熱帶水果的結合。",
-        "wiki": "Duff (dessert)"
-      },
-      {
-        "name": "約翰尼蛋糕",
-        "localName": "Johnnycake",
-        "description": "略帶甜味的厚實麵包，常搭配燉菜或湯。",
-        "history": "源自早期漁民與農民可長時間保存的乾糧。",
-        "wiki": "Johnnycake"
-      },
-      {
-        "name": "酸醃燉肉湯",
-        "localName": "Souse",
-        "description": "以雞、羊或豬腳加萊姆汁、洋蔥與辣椒燉成的清湯。",
-        "history": "傳統上是週末早晨的料理，與英式及西非飲食傳統有關。",
-        "wiki": "Souse"
-      }
-    ]
-  }
+ "iso": "BHS",
+ "capital": "拿索",
+ "summary": "位於大西洋、由七百多座島嶼組成的群島國家，1973年脫離英國獨立，以觀光與金融服務業為主要經濟支柱。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "新教",
+    "percent": 70,
+    "description": "以浸信會、英國國教會（聖公會）、五旬節派、衛理公會等為主。"
+   },
+   {
+    "name": "天主教",
+    "percent": 12,
+    "description": "主要隨19世紀後的傳教活動發展。"
+   },
+   {
+    "name": "其他基督教",
+    "percent": 5,
+    "description": "包含耶和華見證人等。"
+   },
+   {
+    "name": "無宗教",
+    "percent": 2,
+    "description": "人數不多。"
+   }
+  ],
+  "background": "英國殖民時期聖公會隨殖民者傳入，美國獨立戰爭後效忠派帶著奴隸移入，非裔居民則在浸信會與衛理會傳教下大量改信，使新教成為主流。"
+ },
+ "language": {
+  "official": "官方語言為英語。",
+  "ranking": [
+   {
+    "name": "英語（含巴哈馬克里奧爾英語）",
+    "percent": 90,
+    "description": "英語為官方與教育語言，日常口語多為帶有西非語言影響的巴哈馬克里奧爾英語。",
+    "greeting": "Hello",
+    "pronunciation": "heh-loh"
+   },
+   {
+    "name": "海地克里奧爾語",
+    "percent": 8,
+    "description": "海地移民社群使用。",
+    "greeting": "Bonjou",
+    "pronunciation": "bon-zhoo"
+   }
+  ],
+  "history": "原住民盧卡雅人在西班牙殖民初期幾乎滅絕。17世紀起英國人移居，美國獨立後效忠派與其奴隸遷入，英語與非洲語言接觸形成巴哈馬克里奧爾語；近數十年海地移民帶來海地克里奧爾語。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "炸海螺球",
+    "localName": "Conch fritters",
+    "description": "將大鳳螺肉剁碎拌入麵糊炸成小球，搭配沾醬。",
+    "history": "大鳳螺是巴哈馬最具代表性的海產，炸海螺球是街頭與海灘小吃。",
+    "wiki": "Conch fritter",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Queen_Conch_%28Lobatus_gigas%29.jpg/960px-Queen_Conch_%28Lobatus_gigas%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Queen_Conch_(Lobatus_gigas).jpg",
+    "imageCredit": "Daniel Neal from Sacramento, CA, US・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "豌豆飯",
+    "localName": "Peas 'n' rice",
+    "description": "以鴿豆、番茄與鹹豬肉調味煮成的米飯，幾乎每餐必備。",
+    "history": "源自非洲與加勒比地區的豆飯傳統，是巴哈馬家常主食。",
+    "wiki": "Rice and peas",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Rice_and_Peas.jpg/960px-Rice_and_Peas.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Rice_and_Peas.jpg",
+    "imageCredit": "File:Rice and Peas.png: Whispyhistory\nconversion to jpg: Hik・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "番石榴卷布丁",
+    "localName": "Guava duff",
+    "description": "將番石榴果泥捲入麵團蒸熟，淋上奶油醬的甜點。",
+    "history": "被視為巴哈馬國民甜點，源自英國蒸布丁傳統與在地熱帶水果的結合。",
+    "wiki": "Duff (dessert)",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Guava_duff.jpg/960px-Guava_duff.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Guava_duff.jpg",
+    "imageCredit": "LittleT889・CC BY 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "約翰尼蛋糕",
+    "localName": "Johnnycake",
+    "description": "略帶甜味的厚實麵包，常搭配燉菜或湯。",
+    "history": "源自早期漁民與農民可長時間保存的乾糧。",
+    "wiki": "Johnnycake",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Johnnycakes.jpg/960px-Johnnycakes.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Johnnycakes.jpg",
+    "imageCredit": "Douglas Perkins・CC BY 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "酸醃燉肉湯",
+    "localName": "Souse",
+    "description": "以雞、羊或豬腳加萊姆汁、洋蔥與辣椒燉成的清湯。",
+    "history": "傳統上是週末早晨的料理，與英式及西非飲食傳統有關。",
+    "wiki": "Souse"
+   }
+  ]
+ }
 }

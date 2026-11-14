@@ -1,96 +1,105 @@
 {
-  "iso": "MCO",
-  "capital": "摩納哥",
-  "summary": "摩納哥是位於法國蔚藍海岸的城邦國家，由格里馬爾迪家族統治，以蒙地卡羅賭場、一級方程式大獎賽與富豪聚集聞名。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "天主教",
-        "percent": 83,
-        "description": "國教，王室與國家慶典皆與天主教密切相關。"
-      },
-      {
-        "name": "無宗教",
-        "percent": 11,
-        "description": "未認同任何宗教的人口。"
-      },
-      {
-        "name": "其他基督教派",
-        "percent": 3,
-        "description": "包括新教與英國聖公會。"
-      },
-      {
-        "name": "猶太教",
-        "percent": 2,
-        "description": "規模較小的猶太社群。"
-      }
-    ],
-    "background": "摩納哥自中世紀起即為天主教地區，1297年格里馬爾迪家族奪取摩納哥要塞後統治至今，天主教被定為國教。現代大量外國居民移入，帶來多元的宗教背景。"
-  },
-  "language": {
-    "official": "法語是官方語言。",
-    "ranking": [
-      {
-        "name": "法語",
-        "percent": 70,
-        "description": "官方語言，也是大多數居民的日常語言。",
-        "greeting": "Bonjour",
-        "pronunciation": "bon-ZHOOR"
-      },
-      {
-        "name": "義大利語",
-        "percent": 15,
-        "description": "義大利裔居民眾多，義大利語十分普遍。",
-        "greeting": "Ciao",
-        "pronunciation": "CHOW"
-      },
-      {
-        "name": "英語",
-        "percent": 5,
-        "description": "外籍居民與觀光業常用。",
-        "greeting": "Hello",
-        "pronunciation": "heh-LOH"
-      }
-    ],
-    "history": "摩納哥傳統語言為與利古里亞語相近的摩納哥語，十九世紀以前義大利語長期是官方語言。1861年後摩納哥與法國關係緊密，法語取代義大利語成為官方語言，摩納哥語則在學校中作為必修課程保存。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "巴巴朱安",
-        "localName": "Barbagiuan",
-        "description": "以麵皮包裹瑞士甜菜、瑞可塔起司等餡料油炸的餃子。",
-        "history": "摩納哥國菜，在11月19日國慶日特別常見。",
-        "wiki": "Barbagiuan"
-      },
-      {
-        "name": "鷹嘴豆煎餅",
-        "localName": "Socca",
-        "description": "以鷹嘴豆粉與橄欖油烤成的薄餅。",
-        "history": "蔚藍海岸與利古里亞地區的傳統街頭小吃。",
-        "wiki": "Farinata"
-      },
-      {
-        "name": "斯托卡菲",
-        "localName": "Stocafi",
-        "description": "以番茄、橄欖燉煮的風乾鱈魚。",
-        "history": "源自地中海港口的鱈魚乾貿易。",
-        "wiki": "Stocafi"
-      },
-      {
-        "name": "摩納哥甜佛卡夏",
-        "localName": "Fougasse monégasque",
-        "description": "撒上糖粒、杏仁與茴香籽的甜味扁麵包。",
-        "history": "摩納哥國慶期間的傳統甜點。",
-        "wiki": "Fougasse (bread)"
-      },
-      {
-        "name": "尼斯三明治",
-        "localName": "Pan bagnat",
-        "description": "以圓麵包夾入鮪魚、番茄、蛋與橄欖的三明治。",
-        "history": "蔚藍海岸的傳統食物，摩納哥也十分常見。",
-        "wiki": "Pan bagnat"
-      }
-    ]
-  }
+ "iso": "MCO",
+ "capital": "摩納哥",
+ "summary": "摩納哥是位於法國蔚藍海岸的城邦國家，由格里馬爾迪家族統治，以蒙地卡羅賭場、一級方程式大獎賽與富豪聚集聞名。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "天主教",
+    "percent": 83,
+    "description": "國教，王室與國家慶典皆與天主教密切相關。"
+   },
+   {
+    "name": "無宗教",
+    "percent": 11,
+    "description": "未認同任何宗教的人口。"
+   },
+   {
+    "name": "其他基督教派",
+    "percent": 3,
+    "description": "包括新教與英國聖公會。"
+   },
+   {
+    "name": "猶太教",
+    "percent": 2,
+    "description": "規模較小的猶太社群。"
+   }
+  ],
+  "background": "摩納哥自中世紀起即為天主教地區，1297年格里馬爾迪家族奪取摩納哥要塞後統治至今，天主教被定為國教。現代大量外國居民移入，帶來多元的宗教背景。"
+ },
+ "language": {
+  "official": "法語是官方語言。",
+  "ranking": [
+   {
+    "name": "法語",
+    "percent": 70,
+    "description": "官方語言，也是大多數居民的日常語言。",
+    "greeting": "Bonjour",
+    "pronunciation": "bon-ZHOOR"
+   },
+   {
+    "name": "義大利語",
+    "percent": 15,
+    "description": "義大利裔居民眾多，義大利語十分普遍。",
+    "greeting": "Ciao",
+    "pronunciation": "CHOW"
+   },
+   {
+    "name": "英語",
+    "percent": 5,
+    "description": "外籍居民與觀光業常用。",
+    "greeting": "Hello",
+    "pronunciation": "heh-LOH"
+   }
+  ],
+  "history": "摩納哥傳統語言為與利古里亞語相近的摩納哥語，十九世紀以前義大利語長期是官方語言。1861年後摩納哥與法國關係緊密，法語取代義大利語成為官方語言，摩納哥語則在學校中作為必修課程保存。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "巴巴朱安",
+    "localName": "Barbagiuan",
+    "description": "以麵皮包裹瑞士甜菜、瑞可塔起司等餡料油炸的餃子。",
+    "history": "摩納哥國菜，在11月19日國慶日特別常見。",
+    "wiki": "Barbagiuan"
+   },
+   {
+    "name": "鷹嘴豆煎餅",
+    "localName": "Socca",
+    "description": "以鷹嘴豆粉與橄欖油烤成的薄餅。",
+    "history": "蔚藍海岸與利古里亞地區的傳統街頭小吃。",
+    "wiki": "Farinata",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Farinata_di_ceci_01.jpg/960px-Farinata_di_ceci_01.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Farinata_di_ceci_01.jpg",
+    "imageCredit": "Alessio Sbarbaro User_talk:Yoggysot・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "斯托卡菲",
+    "localName": "Stocafi",
+    "description": "以番茄、橄欖燉煮的風乾鱈魚。",
+    "history": "源自地中海港口的鱈魚乾貿易。",
+    "wiki": "Stocafi"
+   },
+   {
+    "name": "摩納哥甜佛卡夏",
+    "localName": "Fougasse monégasque",
+    "description": "撒上糖粒、杏仁與茴香籽的甜味扁麵包。",
+    "history": "摩納哥國慶期間的傳統甜點。",
+    "wiki": "Fougasse (bread)",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Fougasse_1.jpg/960px-Fougasse_1.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Fougasse_1.jpg",
+    "imageCredit": "https://www.flickr.com/photos/70253321@N00/・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "尼斯三明治",
+    "localName": "Pan bagnat",
+    "description": "以圓麵包夾入鮪魚、番茄、蛋與橄欖的三明治。",
+    "history": "蔚藍海岸的傳統食物，摩納哥也十分常見。",
+    "wiki": "Pan bagnat",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Pan-bagnat002.jpg/960px-Pan-bagnat002.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Pan-bagnat002.jpg",
+    "imageCredit": "Arnaud 25・CC BY-SA 4.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

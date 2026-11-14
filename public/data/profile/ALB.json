@@ -1,99 +1,114 @@
 {
-  "iso": "ALB",
-  "capital": "地拉那",
-  "summary": "位於巴爾幹半島西南部亞得里亞海岸的國家，曾受鄂圖曼帝國統治近五百年，共產時期曾宣布為「世界第一個無神論國家」。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "伊斯蘭教（遜尼派）",
-        "percent": 46,
-        "description": "鄂圖曼統治時期傳入，為最大宗教，但多數人宗教實踐較寬鬆。"
-      },
-      {
-        "name": "不屬特定宗教的信仰者",
-        "percent": 14,
-        "description": "2023年普查中自認有信仰但不屬任何宗派者。"
-      },
-      {
-        "name": "天主教",
-        "percent": 8,
-        "description": "主要分布於北部，如斯庫台地區。"
-      },
-      {
-        "name": "東正教",
-        "percent": 7,
-        "description": "主要分布於南部。"
-      },
-      {
-        "name": "拜克塔什教團",
-        "percent": 5,
-        "description": "伊斯蘭蘇非派分支，國際總部設於地拉那。"
-      },
-      {
-        "name": "無宗教",
-        "percent": 4,
-        "description": "包含無神論者。"
-      }
-    ],
-    "background": "阿爾巴尼亞人原信仰基督教，北部屬天主教、南部屬東正教。15世紀鄂圖曼征服後多數人逐漸改信伊斯蘭教。1967年霍查政權禁止一切宗教，1990年後恢復宗教自由；各宗教和睦共處，被視為宗教寬容的範例。"
-  },
-  "language": {
-    "official": "官方語言為阿爾巴尼亞語。",
-    "ranking": [
-      {
-        "name": "阿爾巴尼亞語",
-        "percent": 98,
-        "description": "印歐語系中獨立的一支，分為北部蓋格方言與南部托斯克方言。",
-        "greeting": "Përshëndetje",
-        "pronunciation": "pər-shən-det-ye"
-      },
-      {
-        "name": "希臘語",
-        "percent": 1,
-        "description": "南部希臘少數民族使用。",
-        "greeting": "Γεια σου",
-        "pronunciation": "ya su"
-      }
-    ],
-    "history": "阿爾巴尼亞語被認為可能源自古代伊利里亞語。由於長期在外族統治下，書面語發展較晚，1908年莫納斯提爾會議確立拉丁字母拼寫法。共產時期以南部托斯克方言為基礎制定標準語。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "優格烤羊肉",
-        "localName": "Tavë kosi",
-        "description": "羊肉與米飯上覆蓋優格蛋液烘烤，常被視為國菜。",
-        "history": "源自愛爾巴桑地區，鄂圖曼時期即已出現。",
-        "wiki": "Tavë kosi"
-      },
-      {
-        "name": "布雷克",
-        "localName": "Byrek",
-        "description": "多層薄酥皮內包菠菜、起司或肉的餡餅。",
-        "history": "鄂圖曼帝國時期傳入，是早餐與點心的常見選擇。",
-        "wiki": "Burek"
-      },
-      {
-        "name": "費爾蓋塞",
-        "localName": "Fërgesë",
-        "description": "以甜椒、番茄與白起司（或肝）燉煮的濃稠料理。",
-        "history": "地拉那地區的傳統菜，常配麵包。",
-        "wiki": "Fërgesë"
-      },
-      {
-        "name": "烤肉丸",
-        "localName": "Qofte",
-        "description": "以絞肉、香草與香料捏成的肉丸，炭烤或油煎。",
-        "history": "鄂圖曼時期傳入的料理，在巴爾幹與中東普遍。",
-        "wiki": "Kofta"
-      },
-      {
-        "name": "三奶蛋糕",
-        "localName": "Trileçe",
-        "description": "以三種牛奶浸泡海綿蛋糕，再淋上焦糖。",
-        "history": "源自拉丁美洲，1990年代後經土耳其傳入阿爾巴尼亞並迅速流行，成為國民甜點之一。",
-        "wiki": "Tres leches cake"
-      }
-    ]
-  }
+ "iso": "ALB",
+ "capital": "地拉那",
+ "summary": "位於巴爾幹半島西南部亞得里亞海岸的國家，曾受鄂圖曼帝國統治近五百年，共產時期曾宣布為「世界第一個無神論國家」。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "伊斯蘭教（遜尼派）",
+    "percent": 46,
+    "description": "鄂圖曼統治時期傳入，為最大宗教，但多數人宗教實踐較寬鬆。"
+   },
+   {
+    "name": "不屬特定宗教的信仰者",
+    "percent": 14,
+    "description": "2023年普查中自認有信仰但不屬任何宗派者。"
+   },
+   {
+    "name": "天主教",
+    "percent": 8,
+    "description": "主要分布於北部，如斯庫台地區。"
+   },
+   {
+    "name": "東正教",
+    "percent": 7,
+    "description": "主要分布於南部。"
+   },
+   {
+    "name": "拜克塔什教團",
+    "percent": 5,
+    "description": "伊斯蘭蘇非派分支，國際總部設於地拉那。"
+   },
+   {
+    "name": "無宗教",
+    "percent": 4,
+    "description": "包含無神論者。"
+   }
+  ],
+  "background": "阿爾巴尼亞人原信仰基督教，北部屬天主教、南部屬東正教。15世紀鄂圖曼征服後多數人逐漸改信伊斯蘭教。1967年霍查政權禁止一切宗教，1990年後恢復宗教自由；各宗教和睦共處，被視為宗教寬容的範例。"
+ },
+ "language": {
+  "official": "官方語言為阿爾巴尼亞語。",
+  "ranking": [
+   {
+    "name": "阿爾巴尼亞語",
+    "percent": 98,
+    "description": "印歐語系中獨立的一支，分為北部蓋格方言與南部托斯克方言。",
+    "greeting": "Përshëndetje",
+    "pronunciation": "pər-shən-det-ye"
+   },
+   {
+    "name": "希臘語",
+    "percent": 1,
+    "description": "南部希臘少數民族使用。",
+    "greeting": "Γεια σου",
+    "pronunciation": "ya su"
+   }
+  ],
+  "history": "阿爾巴尼亞語被認為可能源自古代伊利里亞語。由於長期在外族統治下，書面語發展較晚，1908年莫納斯提爾會議確立拉丁字母拼寫法。共產時期以南部托斯克方言為基礎制定標準語。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "優格烤羊肉",
+    "localName": "Tavë kosi",
+    "description": "羊肉與米飯上覆蓋優格蛋液烘烤，常被視為國菜。",
+    "history": "源自愛爾巴桑地區，鄂圖曼時期即已出現。",
+    "wiki": "Tavë kosi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Tav%C3%AB_kosi.jpg/960px-Tav%C3%AB_kosi.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Tav%C3%AB_kosi.jpg",
+    "imageCredit": "MirelaAndoni・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "布雷克",
+    "localName": "Byrek",
+    "description": "多層薄酥皮內包菠菜、起司或肉的餡餅。",
+    "history": "鄂圖曼帝國時期傳入，是早餐與點心的常見選擇。",
+    "wiki": "Burek",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/13/Burek_trokut_1.png",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Burek_trokut_1.png",
+    "imageCredit": "CC BY-SA 2.5・Wikimedia Commons"
+   },
+   {
+    "name": "費爾蓋塞",
+    "localName": "Fërgesë",
+    "description": "以甜椒、番茄與白起司（或肝）燉煮的濃稠料理。",
+    "history": "地拉那地區的傳統菜，常配麵包。",
+    "wiki": "Fërgesë",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/F%C3%ABrges%C3%AB_me_speca_dhe_gjiz%C3%AB.jpg/960px-F%C3%ABrges%C3%AB_me_speca_dhe_gjiz%C3%AB.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:F%C3%ABrges%C3%AB_me_speca_dhe_gjiz%C3%AB.jpg",
+    "imageCredit": "Rrezjaediellit・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "烤肉丸",
+    "localName": "Qofte",
+    "description": "以絞肉、香草與香料捏成的肉丸，炭烤或油煎。",
+    "history": "鄂圖曼時期傳入的料理，在巴爾幹與中東普遍。",
+    "wiki": "Kofta",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Koofteh_tabrizi.jpg/960px-Koofteh_tabrizi.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Koofteh_tabrizi.jpg",
+    "imageCredit": "Fabienkhan・CC BY-SA 2.5・Wikimedia Commons"
+   },
+   {
+    "name": "三奶蛋糕",
+    "localName": "Trileçe",
+    "description": "以三種牛奶浸泡海綿蛋糕，再淋上焦糖。",
+    "history": "源自拉丁美洲，1990年代後經土耳其傳入阿爾巴尼亞並迅速流行，成為國民甜點之一。",
+    "wiki": "Tres leches cake",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Pastel_de_Tres_Leches.jpg/960px-Pastel_de_Tres_Leches.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Pastel_de_Tres_Leches.jpg",
+    "imageCredit": "@joefoodie・CC BY 2.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

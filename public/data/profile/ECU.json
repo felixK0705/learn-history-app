@@ -1,89 +1,104 @@
 {
-  "iso": "ECU",
-  "capital": "基多",
-  "summary": "位於南美洲西北部赤道上的國家，國名即西班牙語「赤道」，涵蓋安地斯山、亞馬遜雨林與加拉巴哥群島。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "天主教",
-        "percent": 74,
-        "description": "西班牙殖民時期傳入，仍為主要宗教。"
-      },
-      {
-        "name": "新教（福音派）",
-        "percent": 13,
-        "description": "近數十年快速成長，原住民社群中尤多。"
-      },
-      {
-        "name": "無宗教",
-        "percent": 8,
-        "description": "多見於都市地區。"
-      },
-      {
-        "name": "其他",
-        "percent": 3,
-        "description": "包含耶和華見證人、摩門教等。"
-      }
-    ],
-    "background": "16世紀西班牙征服印加帝國北部後，天主教隨殖民傳入，基多成為重要的宗教藝術中心（基多畫派）。20世紀後期福音派教會在安地斯原住民社群中迅速擴展。"
-  },
-  "language": {
-    "official": "官方語言為西班牙語，克丘亞語（Kichwa）與舒阿爾語為跨文化關係官方語言。",
-    "ranking": [
-      {
-        "name": "西班牙語",
-        "percent": 94,
-        "description": "全國通用語言。",
-        "greeting": "Hola",
-        "pronunciation": "o-la"
-      },
-      {
-        "name": "克丘亞語（Kichwa）",
-        "percent": 4,
-        "description": "安地斯山區與亞馬遜原住民使用。",
-        "greeting": "Alli puncha（早安）",
-        "pronunciation": "a-yi pun-cha"
-      }
-    ],
-    "history": "15世紀末印加帝國征服此地，帶來克丘亞語作為帝國通用語。西班牙殖民後西班牙語成為主要語言，但安地斯原住民社群仍保存克丘亞語；2008年憲法承認原住民語言的地位。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "鮪魚洋蔥湯",
-        "localName": "Encebollado",
-        "description": "以鮪魚、樹薯與醃紅洋蔥熬成的湯，配香蕉片與爆米花。",
-        "history": "源自沿海瓜亞基爾一帶，被視為解酒良方，常作早餐。",
-        "wiki": "Encebollado"
-      },
-      {
-        "name": "厄瓜多檸汁醃海鮮",
-        "localName": "Ceviche",
-        "description": "以萊姆汁、番茄醬汁醃漬蝦或魚，帶湯汁，配爆米花或芭蕉片。",
-        "history": "厄瓜多版本多以煮熟的蝦製作，帶有較多湯汁，與秘魯版本不同。",
-        "wiki": "Ceviche"
-      },
-      {
-        "name": "馬鈴薯煎餅",
-        "localName": "Llapingacho",
-        "description": "以馬鈴薯泥包起司煎成的圓餅，配花生醬、香腸與煎蛋。",
-        "history": "源自安地斯山區的傳統料理。",
-        "wiki": "Llapingacho"
-      },
-      {
-        "name": "聖週濃湯",
-        "localName": "Fanesca",
-        "description": "以南瓜、多種豆類、穀物與鹹鱈魚煮成的濃湯。",
-        "history": "僅在復活節前聖週食用，據說12種穀豆象徵耶穌十二門徒。",
-        "wiki": "Fanesca"
-      },
-      {
-        "name": "馬鈴薯起司濃湯",
-        "localName": "Locro de papa",
-        "description": "以馬鈴薯、起司與酪梨熬成的濃湯。",
-        "history": "源自安地斯原住民的傳統湯品，馬鈴薯原產於此地區。",
-        "wiki": "Locro"
-      }
-    ]
-  }
+ "iso": "ECU",
+ "capital": "基多",
+ "summary": "位於南美洲西北部赤道上的國家，國名即西班牙語「赤道」，涵蓋安地斯山、亞馬遜雨林與加拉巴哥群島。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "天主教",
+    "percent": 74,
+    "description": "西班牙殖民時期傳入，仍為主要宗教。"
+   },
+   {
+    "name": "新教（福音派）",
+    "percent": 13,
+    "description": "近數十年快速成長，原住民社群中尤多。"
+   },
+   {
+    "name": "無宗教",
+    "percent": 8,
+    "description": "多見於都市地區。"
+   },
+   {
+    "name": "其他",
+    "percent": 3,
+    "description": "包含耶和華見證人、摩門教等。"
+   }
+  ],
+  "background": "16世紀西班牙征服印加帝國北部後，天主教隨殖民傳入，基多成為重要的宗教藝術中心（基多畫派）。20世紀後期福音派教會在安地斯原住民社群中迅速擴展。"
+ },
+ "language": {
+  "official": "官方語言為西班牙語，克丘亞語（Kichwa）與舒阿爾語為跨文化關係官方語言。",
+  "ranking": [
+   {
+    "name": "西班牙語",
+    "percent": 94,
+    "description": "全國通用語言。",
+    "greeting": "Hola",
+    "pronunciation": "o-la"
+   },
+   {
+    "name": "克丘亞語（Kichwa）",
+    "percent": 4,
+    "description": "安地斯山區與亞馬遜原住民使用。",
+    "greeting": "Alli puncha（早安）",
+    "pronunciation": "a-yi pun-cha"
+   }
+  ],
+  "history": "15世紀末印加帝國征服此地，帶來克丘亞語作為帝國通用語。西班牙殖民後西班牙語成為主要語言，但安地斯原住民社群仍保存克丘亞語；2008年憲法承認原住民語言的地位。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "鮪魚洋蔥湯",
+    "localName": "Encebollado",
+    "description": "以鮪魚、樹薯與醃紅洋蔥熬成的湯，配香蕉片與爆米花。",
+    "history": "源自沿海瓜亞基爾一帶，被視為解酒良方，常作早餐。",
+    "wiki": "Encebollado",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Semifinal_del_Campeonato_del_Encebollado_en_Esmeraldas_2015_%2818062294436%29.jpg/960px-Semifinal_del_Campeonato_del_Encebollado_en_Esmeraldas_2015_%2818062294436%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Semifinal_del_Campeonato_del_Encebollado_en_Esmeraldas_2015_(18062294436).jpg",
+    "imageCredit": "Ministerio de Turismo Ecuador from Ecuador・CC BY-SA 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "厄瓜多檸汁醃海鮮",
+    "localName": "Ceviche",
+    "description": "以萊姆汁、番茄醬汁醃漬蝦或魚，帶湯汁，配爆米花或芭蕉片。",
+    "history": "厄瓜多版本多以煮熟的蝦製作，帶有較多湯汁，與秘魯版本不同。",
+    "wiki": "Ceviche",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Cebiche_de_corvina.JPG/960px-Cebiche_de_corvina.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Cebiche_de_corvina.JPG",
+    "imageCredit": "Picanteria karol・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "馬鈴薯煎餅",
+    "localName": "Llapingacho",
+    "description": "以馬鈴薯泥包起司煎成的圓餅，配花生醬、香腸與煎蛋。",
+    "history": "源自安地斯山區的傳統料理。",
+    "wiki": "Llapingacho",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Llapingachos._%2840491622163%29.jpg/960px-Llapingachos._%2840491622163%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Llapingachos._(40491622163).jpg",
+    "imageCredit": "young shanahan from Bratislava, Slovakia・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "聖週濃湯",
+    "localName": "Fanesca",
+    "description": "以南瓜、多種豆類、穀物與鹹鱈魚煮成的濃湯。",
+    "history": "僅在復活節前聖週食用，據說12種穀豆象徵耶穌十二門徒。",
+    "wiki": "Fanesca",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/SEMANA_SANTA_QUITE%C3%91A_%2833852581341%29.jpg/960px-SEMANA_SANTA_QUITE%C3%91A_%2833852581341%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:SEMANA_SANTA_QUITE%C3%91A_(33852581341).jpg",
+    "imageCredit": "Agencia de Noticias ANDES・CC BY-SA 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "馬鈴薯起司濃湯",
+    "localName": "Locro de papa",
+    "description": "以馬鈴薯、起司與酪梨熬成的濃湯。",
+    "history": "源自安地斯原住民的傳統湯品，馬鈴薯原產於此地區。",
+    "wiki": "Locro",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/22/Locro_argentino.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Locro_argentino.jpg",
+    "imageCredit": "Matías Repetto/GCBA・CC BY 2.5 ar・Wikimedia Commons"
+   }
+  ]
+ }
 }

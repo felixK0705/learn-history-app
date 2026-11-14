@@ -1,105 +1,120 @@
 {
-  "iso": "FSM",
-  "capital": "帕利基爾",
-  "summary": "位於西太平洋加羅林群島的島國，由雅浦、楚克、波納佩與科斯雷四州組成，1986年起與美國締結自由聯合協定。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "天主教",
-        "percent": 55,
-        "description": "主要分布於楚克與雅浦。"
-      },
-      {
-        "name": "新教（聯合基督教會等）",
-        "percent": 40,
-        "description": "主要分布於波納佩與科斯雷。"
-      },
-      {
-        "name": "其他（摩門教、基督復臨安息日會等）",
-        "percent": 4,
-        "description": "規模較小。"
-      }
-    ],
-    "background": "19世紀美國新教傳教士在科斯雷與波納佩傳教，西班牙與德國統治時期天主教傳教士則在雅浦與楚克傳播。日本統治期間也有教會活動，戰後美國託管進一步鞏固基督教。"
-  },
-  "language": {
-    "official": "官方語言為英語。",
-    "ranking": [
-      {
-        "name": "楚克語",
-        "percent": 48,
-        "description": "人口最多的楚克州使用。",
-        "greeting": "Ran annim（早安）",
-        "pronunciation": "ran an-nim"
-      },
-      {
-        "name": "波納佩語",
-        "percent": 25,
-        "description": "波納佩州使用。",
-        "greeting": "Kaselehlie",
-        "pronunciation": "ka-se-le-lee"
-      },
-      {
-        "name": "科斯雷語",
-        "percent": 7,
-        "description": "科斯雷州使用。",
-        "greeting": "Len wo（日安）",
-        "pronunciation": "len wo"
-      },
-      {
-        "name": "雅浦語",
-        "percent": 5,
-        "description": "雅浦州使用。",
-        "greeting": "Mogethin",
-        "pronunciation": "mo-ge-thin"
-      },
-      {
-        "name": "英語",
-        "percent": 2,
-        "description": "官方、教育與政府語言。",
-        "greeting": "Hello",
-        "pronunciation": "heh-loh"
-      }
-    ],
-    "history": "各島語言多屬南島語系密克羅尼西亞語支，彼此差異大。西班牙、德國、日本與美國先後統治，各留下外來詞彙；美國託管時期英語成為教育與行政語言，獨立後成為官方語言。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "麵包果",
-        "localName": "Breadfruit",
-        "description": "烤、煮或發酵保存的麵包果，是傳統主食。",
-        "history": "太平洋島民數千年來的主要澱粉來源，傳統上會在地坑中發酵保存。",
-        "wiki": "Breadfruit"
-      },
-      {
-        "name": "芋頭",
-        "localName": "Taro",
-        "description": "煮熟或搗成泥的芋頭，是節慶與日常主食。",
-        "history": "大型芋頭在波納佩等地的宴席中是地位與財富的象徵。",
-        "wiki": "Taro"
-      },
-      {
-        "name": "沙考（卡瓦）",
-        "localName": "Sakau",
-        "description": "以胡椒科植物根部搗碎榨汁的儀式性飲品，具放鬆效果。",
-        "history": "波納佩的重要傳統飲品，在儀式與社交中扮演核心角色。",
-        "wiki": "Kava"
-      },
-      {
-        "name": "椰子蟹",
-        "localName": "Coconut crab",
-        "description": "世界最大的陸生甲殼類，常蒸煮或以椰奶烹調。",
-        "history": "太平洋島嶼的珍貴食材，常在特殊場合食用。",
-        "wiki": "Coconut crab"
-      },
-      {
-        "name": "生魚片",
-        "localName": "Sashimi",
-        "description": "新鮮鮪魚等生魚切片，蘸醬油與芥末。",
-        "history": "日本統治時期（1914–1945）傳入，至今仍是密克羅尼西亞普遍的料理。",
-        "wiki": "Sashimi"
-      }
-    ]
-  }
+ "iso": "FSM",
+ "capital": "帕利基爾",
+ "summary": "位於西太平洋加羅林群島的島國，由雅浦、楚克、波納佩與科斯雷四州組成，1986年起與美國締結自由聯合協定。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "天主教",
+    "percent": 55,
+    "description": "主要分布於楚克與雅浦。"
+   },
+   {
+    "name": "新教（聯合基督教會等）",
+    "percent": 40,
+    "description": "主要分布於波納佩與科斯雷。"
+   },
+   {
+    "name": "其他（摩門教、基督復臨安息日會等）",
+    "percent": 4,
+    "description": "規模較小。"
+   }
+  ],
+  "background": "19世紀美國新教傳教士在科斯雷與波納佩傳教，西班牙與德國統治時期天主教傳教士則在雅浦與楚克傳播。日本統治期間也有教會活動，戰後美國託管進一步鞏固基督教。"
+ },
+ "language": {
+  "official": "官方語言為英語。",
+  "ranking": [
+   {
+    "name": "楚克語",
+    "percent": 48,
+    "description": "人口最多的楚克州使用。",
+    "greeting": "Ran annim（早安）",
+    "pronunciation": "ran an-nim"
+   },
+   {
+    "name": "波納佩語",
+    "percent": 25,
+    "description": "波納佩州使用。",
+    "greeting": "Kaselehlie",
+    "pronunciation": "ka-se-le-lee"
+   },
+   {
+    "name": "科斯雷語",
+    "percent": 7,
+    "description": "科斯雷州使用。",
+    "greeting": "Len wo（日安）",
+    "pronunciation": "len wo"
+   },
+   {
+    "name": "雅浦語",
+    "percent": 5,
+    "description": "雅浦州使用。",
+    "greeting": "Mogethin",
+    "pronunciation": "mo-ge-thin"
+   },
+   {
+    "name": "英語",
+    "percent": 2,
+    "description": "官方、教育與政府語言。",
+    "greeting": "Hello",
+    "pronunciation": "heh-loh"
+   }
+  ],
+  "history": "各島語言多屬南島語系密克羅尼西亞語支，彼此差異大。西班牙、德國、日本與美國先後統治，各留下外來詞彙；美國託管時期英語成為教育與行政語言，獨立後成為官方語言。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "麵包果",
+    "localName": "Breadfruit",
+    "description": "烤、煮或發酵保存的麵包果，是傳統主食。",
+    "history": "太平洋島民數千年來的主要澱粉來源，傳統上會在地坑中發酵保存。",
+    "wiki": "Breadfruit",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Artocarpus_altilis_%28fruit%29.jpg/960px-Artocarpus_altilis_%28fruit%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Artocarpus_altilis_(fruit).jpg",
+    "imageCredit": "Hans Hillewaert・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "芋頭",
+    "localName": "Taro",
+    "description": "煮熟或搗成泥的芋頭，是節慶與日常主食。",
+    "history": "大型芋頭在波納佩等地的宴席中是地位與財富的象徵。",
+    "wiki": "Taro",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Songe-R%C3%A9union.JPG/960px-Songe-R%C3%A9union.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Songe-R%C3%A9union.JPG",
+    "imageCredit": "No machine-readable author provided. Thierry Caro assumed (b・CC BY-SA 2.5・Wikimedia Commons"
+   },
+   {
+    "name": "沙考（卡瓦）",
+    "localName": "Sakau",
+    "description": "以胡椒科植物根部搗碎榨汁的儀式性飲品，具放鬆效果。",
+    "history": "波納佩的重要傳統飲品，在儀式與社交中扮演核心角色。",
+    "wiki": "Kava",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Starr_070515-7054_Piper_methysticum.jpg/960px-Starr_070515-7054_Piper_methysticum.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Starr_070515-7054_Piper_methysticum.jpg",
+    "imageCredit": "Forest & Kim Starr・CC BY 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "椰子蟹",
+    "localName": "Coconut crab",
+    "description": "世界最大的陸生甲殼類，常蒸煮或以椰奶烹調。",
+    "history": "太平洋島嶼的珍貴食材，常在特殊場合食用。",
+    "wiki": "Coconut crab",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Coconut_Crab_Birgus_latro.jpg/960px-Coconut_Crab_Birgus_latro.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Coconut_Crab_Birgus_latro.jpg",
+    "imageCredit": "Drew Avery・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "生魚片",
+    "localName": "Sashimi",
+    "description": "新鮮鮪魚等生魚切片，蘸醬油與芥末。",
+    "history": "日本統治時期（1914–1945）傳入，至今仍是密克羅尼西亞普遍的料理。",
+    "wiki": "Sashimi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/241109_Shigaraki_ware_Koga_Shiga_pref_Japan01s3.jpg/960px-241109_Shigaraki_ware_Koga_Shiga_pref_Japan01s3.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:241109_Shigaraki_ware_Koga_Shiga_pref_Japan01s3.jpg",
+    "imageCredit": "663highland・CC BY-SA 4.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

@@ -1,120 +1,132 @@
 {
-  "iso": "AUS",
-  "capital": "坎培拉",
-  "summary": "占據整個澳洲大陸的國家，原住民在此生活超過六萬年，1788年起英國殖民，1901年成立聯邦，以多元移民社會與獨特生態聞名。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "無宗教",
-        "percent": 39,
-        "description": "2021年普查中最大的單一回答，近年快速成長。"
-      },
-      {
-        "name": "天主教",
-        "percent": 20,
-        "description": "最大基督教教會，愛爾蘭與義大利移民為重要來源。"
-      },
-      {
-        "name": "其他基督教",
-        "percent": 14,
-        "description": "包含聯合教會、長老會、東正教、五旬節派等。"
-      },
-      {
-        "name": "聖公會",
-        "percent": 10,
-        "description": "英國殖民時期傳入，歷史上曾為主要教會。"
-      },
-      {
-        "name": "伊斯蘭教",
-        "percent": 3,
-        "description": "主要來自中東、南亞與東南亞移民。"
-      },
-      {
-        "name": "印度教",
-        "percent": 3,
-        "description": "近年因印度移民增加而成長。"
-      }
-    ],
-    "background": "英國殖民者帶來聖公會與其他新教，愛爾蘭移民帶來天主教。原住民則有以「夢創時代」為核心的傳統信仰。二戰後多元移民帶入東正教、伊斯蘭教與佛教，20世紀後期起社會快速世俗化。"
-  },
-  "language": {
-    "official": "無法定官方語言，英語為事實上的國家語言。",
-    "ranking": [
-      {
-        "name": "英語",
-        "percent": 72,
-        "description": "全國通用，澳洲英語具獨特口音與俚語。",
-        "greeting": "G'day",
-        "pronunciation": "g-day"
-      },
-      {
-        "name": "華語",
-        "percent": 3,
-        "description": "華人社群使用。",
-        "greeting": "你好",
-        "pronunciation": "nǐ hǎo"
-      },
-      {
-        "name": "阿拉伯語",
-        "percent": 1,
-        "description": "中東移民社群使用。",
-        "greeting": "مرحبا",
-        "pronunciation": "mar-ha-ba"
-      },
-      {
-        "name": "越南語",
-        "percent": 1,
-        "description": "越南裔社群使用。",
-        "greeting": "Xin chào",
-        "pronunciation": "sin chow"
-      },
-      {
-        "name": "粵語",
-        "percent": 1,
-        "description": "香港與廣東移民社群使用。",
-        "greeting": "你好",
-        "pronunciation": "nei hou"
-      }
-    ],
-    "history": "英國殖民前澳洲有約250種原住民語言，殖民與同化政策使多數瀕危或消失。英國移民帶來的英語在各地方言融合下形成澳洲英語，並吸收原住民詞彙如kangaroo（袋鼠）。二戰後大量移民使社區語言更為多元。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "澳洲肉派",
-        "localName": "Meat pie",
-        "description": "酥皮內填入碎牛肉與肉汁，常淋番茄醬，是國民速食。",
-        "history": "源自英國肉派傳統，在澳洲成為球賽觀眾與上班族的經典小吃。",
-        "wiki": "Meat pie (Australia and New Zealand)"
-      },
-      {
-        "name": "維吉麥抹醬",
-        "localName": "Vegemite",
-        "description": "以啤酒酵母萃取物製成的深褐色鹹味抹醬，塗在吐司上。",
-        "history": "1922年墨爾本發明，二戰期間成為軍糧而普及，被視為澳洲文化象徵。",
-        "wiki": "Vegemite"
-      },
-      {
-        "name": "帕芙洛娃",
-        "localName": "Pavlova",
-        "description": "外脆內軟的蛋白霜蛋糕，鋪鮮奶油與水果。",
-        "history": "以俄羅斯芭蕾舞者安娜·帕芙洛娃命名，其發源地由澳洲與紐西蘭長期爭論。",
-        "wiki": "Pavlova"
-      },
-      {
-        "name": "萊明頓蛋糕",
-        "localName": "Lamington",
-        "description": "方塊海綿蛋糕裹巧克力醬並沾滿椰子絲。",
-        "history": "約20世紀初以昆士蘭總督萊明頓勳爵命名。",
-        "wiki": "Lamington"
-      },
-      {
-        "name": "澳紐軍團餅乾",
-        "localName": "Anzac biscuit",
-        "description": "以燕麥、椰子絲與金黃糖漿烤成的餅乾。",
-        "history": "與一戰澳紐軍團（ANZAC）相關，常在4月25日澳紐軍團日製作。",
-        "wiki": "Anzac biscuit"
-      }
-    ]
-  }
+ "iso": "AUS",
+ "capital": "坎培拉",
+ "summary": "占據整個澳洲大陸的國家，原住民在此生活超過六萬年，1788年起英國殖民，1901年成立聯邦，以多元移民社會與獨特生態聞名。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "無宗教",
+    "percent": 39,
+    "description": "2021年普查中最大的單一回答，近年快速成長。"
+   },
+   {
+    "name": "天主教",
+    "percent": 20,
+    "description": "最大基督教教會，愛爾蘭與義大利移民為重要來源。"
+   },
+   {
+    "name": "其他基督教",
+    "percent": 14,
+    "description": "包含聯合教會、長老會、東正教、五旬節派等。"
+   },
+   {
+    "name": "聖公會",
+    "percent": 10,
+    "description": "英國殖民時期傳入，歷史上曾為主要教會。"
+   },
+   {
+    "name": "伊斯蘭教",
+    "percent": 3,
+    "description": "主要來自中東、南亞與東南亞移民。"
+   },
+   {
+    "name": "印度教",
+    "percent": 3,
+    "description": "近年因印度移民增加而成長。"
+   }
+  ],
+  "background": "英國殖民者帶來聖公會與其他新教，愛爾蘭移民帶來天主教。原住民則有以「夢創時代」為核心的傳統信仰。二戰後多元移民帶入東正教、伊斯蘭教與佛教，20世紀後期起社會快速世俗化。"
+ },
+ "language": {
+  "official": "無法定官方語言，英語為事實上的國家語言。",
+  "ranking": [
+   {
+    "name": "英語",
+    "percent": 72,
+    "description": "全國通用，澳洲英語具獨特口音與俚語。",
+    "greeting": "G'day",
+    "pronunciation": "g-day"
+   },
+   {
+    "name": "華語",
+    "percent": 3,
+    "description": "華人社群使用。",
+    "greeting": "你好",
+    "pronunciation": "nǐ hǎo"
+   },
+   {
+    "name": "阿拉伯語",
+    "percent": 1,
+    "description": "中東移民社群使用。",
+    "greeting": "مرحبا",
+    "pronunciation": "mar-ha-ba"
+   },
+   {
+    "name": "越南語",
+    "percent": 1,
+    "description": "越南裔社群使用。",
+    "greeting": "Xin chào",
+    "pronunciation": "sin chow"
+   },
+   {
+    "name": "粵語",
+    "percent": 1,
+    "description": "香港與廣東移民社群使用。",
+    "greeting": "你好",
+    "pronunciation": "nei hou"
+   }
+  ],
+  "history": "英國殖民前澳洲有約250種原住民語言，殖民與同化政策使多數瀕危或消失。英國移民帶來的英語在各地方言融合下形成澳洲英語，並吸收原住民詞彙如kangaroo（袋鼠）。二戰後大量移民使社區語言更為多元。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "澳洲肉派",
+    "localName": "Meat pie",
+    "description": "酥皮內填入碎牛肉與肉汁，常淋番茄醬，是國民速食。",
+    "history": "源自英國肉派傳統，在澳洲成為球賽觀眾與上班族的經典小吃。",
+    "wiki": "Meat pie (Australia and New Zealand)",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Meat_pie.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Meat_pie.jpg",
+    "imageCredit": "fir0002  flagstaffotos [at] gmail.com\n\t\tCanon 20D + Canon 17・GFDL 1.2・Wikimedia Commons"
+   },
+   {
+    "name": "維吉麥抹醬",
+    "localName": "Vegemite",
+    "description": "以啤酒酵母萃取物製成的深褐色鹹味抹醬，塗在吐司上。",
+    "history": "1922年墨爾本發明，二戰期間成為軍糧而普及，被視為澳洲文化象徵。",
+    "wiki": "Vegemite"
+   },
+   {
+    "name": "帕芙洛娃",
+    "localName": "Pavlova",
+    "description": "外脆內軟的蛋白霜蛋糕，鋪鮮奶油與水果。",
+    "history": "以俄羅斯芭蕾舞者安娜·帕芙洛娃命名，其發源地由澳洲與紐西蘭長期爭論。",
+    "wiki": "Pavlova",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Pavlova_dessert.JPG/960px-Pavlova_dessert.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Pavlova_dessert.JPG",
+    "imageCredit": "Hazel Fowler・Public domain・Wikimedia Commons"
+   },
+   {
+    "name": "萊明頓蛋糕",
+    "localName": "Lamington",
+    "description": "方塊海綿蛋糕裹巧克力醬並沾滿椰子絲。",
+    "history": "約20世紀初以昆士蘭總督萊明頓勳爵命名。",
+    "wiki": "Lamington",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Mocha_Flake_amingtons.jpg/960px-Mocha_Flake_amingtons.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Mocha_Flake_amingtons.jpg",
+    "imageCredit": "Zeitgeistlondon・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "澳紐軍團餅乾",
+    "localName": "Anzac biscuit",
+    "description": "以燕麥、椰子絲與金黃糖漿烤成的餅乾。",
+    "history": "與一戰澳紐軍團（ANZAC）相關，常在4月25日澳紐軍團日製作。",
+    "wiki": "Anzac biscuit",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/ANZAC_biscuits_%2814_April_2006%29.jpg/960px-ANZAC_biscuits_%2814_April_2006%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:ANZAC_biscuits_(14_April_2006).jpg",
+    "imageCredit": "me (w:User:pfctdayelise)・CC BY-SA 2.5・Wikimedia Commons"
+   }
+  ]
+ }
 }

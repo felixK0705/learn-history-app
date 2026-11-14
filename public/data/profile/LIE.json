@@ -1,103 +1,118 @@
 {
-  "iso": "LIE",
-  "capital": "瓦都茲",
-  "summary": "位於瑞士與奧地利之間的阿爾卑斯山區小國，是世界上少數的雙重內陸國之一，由王室實際掌握相當權力，以金融業與精密工業聞名。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "天主教",
-        "percent": 73,
-        "description": "國教級地位，憲法明定天主教會為國家教會。"
-      },
-      {
-        "name": "新教",
-        "percent": 8,
-        "description": "包含歸正會與路德宗。"
-      },
-      {
-        "name": "無宗教",
-        "percent": 7,
-        "description": "比例逐漸上升。"
-      },
-      {
-        "name": "伊斯蘭教",
-        "percent": 6,
-        "description": "主要來自土耳其與巴爾幹半島移民。"
-      }
-    ],
-    "background": "列支敦斯登地區自中世紀起屬於天主教的庫爾教區，宗教改革未在此擴展。1719年列支敦斯登家族獲神聖羅馬帝國授予公國地位，天主教一直是國家主要宗教，1997年設立瓦都茲總教區。"
-  },
-  "language": {
-    "official": "官方語言為德語。",
-    "ranking": [
-      {
-        "name": "德語（阿勒曼尼方言）",
-        "percent": 92,
-        "description": "日常口語為阿勒曼尼方言，書面使用標準德語。",
-        "greeting": "Hoi / Grüezi",
-        "pronunciation": "hoy / grü-et-si"
-      },
-      {
-        "name": "義大利語",
-        "percent": 1,
-        "description": "義大利裔居民使用。",
-        "greeting": "Ciao",
-        "pronunciation": "chow"
-      },
-      {
-        "name": "葡萄牙語",
-        "percent": 1,
-        "description": "葡萄牙裔居民使用。",
-        "greeting": "Olá",
-        "pronunciation": "o-la"
-      },
-      {
-        "name": "土耳其語",
-        "percent": 1,
-        "description": "土耳其裔居民使用。",
-        "greeting": "Merhaba",
-        "pronunciation": "mer-ha-ba"
-      }
-    ],
-    "history": "此地原屬羅曼什語的分布範圍，中世紀阿勒曼尼人移入後日耳曼語逐漸取代羅曼語。至今地名中仍保留許多羅曼語痕跡，日常口語則與瑞士東部、奧地利福拉爾貝格方言相近。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "起司麵疙瘩",
-        "localName": "Käsknöpfle",
-        "description": "小麵疙瘩與在地起司層疊，鋪上炸洋蔥，常配蘋果泥。",
-        "history": "被視為國菜，源自阿爾卑斯山區的牧人料理。",
-        "wiki": "Käsknöpfle"
-      },
-      {
-        "name": "玉米碎煎粒",
-        "localName": "Ribel",
-        "description": "以玉米粗粉炒成的碎粒，配糖、果醬或咖啡奶。",
-        "history": "萊茵河谷傳統的農家早餐，種植的萊茵河谷白玉米為在地特產。",
-        "wiki": "Polenta"
-      },
-      {
-        "name": "瑞士薯餅",
-        "localName": "Rösti",
-        "description": "將馬鈴薯絲煎成金黃酥脆的圓餅。",
-        "history": "與鄰國瑞士共享的阿爾卑斯山區料理。",
-        "wiki": "Rösti"
-      },
-      {
-        "name": "起司火鍋",
-        "localName": "Fondue",
-        "description": "以起司與白酒融化，用叉子沾麵包食用。",
-        "history": "阿爾卑斯山區冬季的傳統料理。",
-        "wiki": "Fondue"
-      },
-      {
-        "name": "煎香腸",
-        "localName": "Schüblig",
-        "description": "煙燻過的豬肉牛肉香腸，常煎或烤後配馬鈴薯沙拉。",
-        "history": "瑞士東部與列支敦斯登一帶的常見香腸。",
-        "wiki": "Schüblig"
-      }
-    ]
-  }
+ "iso": "LIE",
+ "capital": "瓦都茲",
+ "summary": "位於瑞士與奧地利之間的阿爾卑斯山區小國，是世界上少數的雙重內陸國之一，由王室實際掌握相當權力，以金融業與精密工業聞名。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "天主教",
+    "percent": 73,
+    "description": "國教級地位，憲法明定天主教會為國家教會。"
+   },
+   {
+    "name": "新教",
+    "percent": 8,
+    "description": "包含歸正會與路德宗。"
+   },
+   {
+    "name": "無宗教",
+    "percent": 7,
+    "description": "比例逐漸上升。"
+   },
+   {
+    "name": "伊斯蘭教",
+    "percent": 6,
+    "description": "主要來自土耳其與巴爾幹半島移民。"
+   }
+  ],
+  "background": "列支敦斯登地區自中世紀起屬於天主教的庫爾教區，宗教改革未在此擴展。1719年列支敦斯登家族獲神聖羅馬帝國授予公國地位，天主教一直是國家主要宗教，1997年設立瓦都茲總教區。"
+ },
+ "language": {
+  "official": "官方語言為德語。",
+  "ranking": [
+   {
+    "name": "德語（阿勒曼尼方言）",
+    "percent": 92,
+    "description": "日常口語為阿勒曼尼方言，書面使用標準德語。",
+    "greeting": "Hoi / Grüezi",
+    "pronunciation": "hoy / grü-et-si"
+   },
+   {
+    "name": "義大利語",
+    "percent": 1,
+    "description": "義大利裔居民使用。",
+    "greeting": "Ciao",
+    "pronunciation": "chow"
+   },
+   {
+    "name": "葡萄牙語",
+    "percent": 1,
+    "description": "葡萄牙裔居民使用。",
+    "greeting": "Olá",
+    "pronunciation": "o-la"
+   },
+   {
+    "name": "土耳其語",
+    "percent": 1,
+    "description": "土耳其裔居民使用。",
+    "greeting": "Merhaba",
+    "pronunciation": "mer-ha-ba"
+   }
+  ],
+  "history": "此地原屬羅曼什語的分布範圍，中世紀阿勒曼尼人移入後日耳曼語逐漸取代羅曼語。至今地名中仍保留許多羅曼語痕跡，日常口語則與瑞士東部、奧地利福拉爾貝格方言相近。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "起司麵疙瘩",
+    "localName": "Käsknöpfle",
+    "description": "小麵疙瘩與在地起司層疊，鋪上炸洋蔥，常配蘋果泥。",
+    "history": "被視為國菜，源自阿爾卑斯山區的牧人料理。",
+    "wiki": "Käsknöpfle",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Berggasthof_Haldenhof_-_K%C3%A4skn%C3%B6pfle_%281%29.jpg/960px-Berggasthof_Haldenhof_-_K%C3%A4skn%C3%B6pfle_%281%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Berggasthof_Haldenhof_-_K%C3%A4skn%C3%B6pfle_(1).jpg",
+    "imageCredit": "© 1971markus・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "玉米碎煎粒",
+    "localName": "Ribel",
+    "description": "以玉米粗粉炒成的碎粒，配糖、果醬或咖啡奶。",
+    "history": "萊茵河谷傳統的農家早餐，種植的萊茵河谷白玉米為在地特產。",
+    "wiki": "Polenta",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Cotechino-Servito-Polenta-Lenticchie.jpg/960px-Cotechino-Servito-Polenta-Lenticchie.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Cotechino-Servito-Polenta-Lenticchie.jpg",
+    "imageCredit": "J.P.Lon・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "瑞士薯餅",
+    "localName": "Rösti",
+    "description": "將馬鈴薯絲煎成金黃酥脆的圓餅。",
+    "history": "與鄰國瑞士共享的阿爾卑斯山區料理。",
+    "wiki": "Rösti",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Roesti.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Roesti.jpg",
+    "imageCredit": "Benutzer:Mussklprozz・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "起司火鍋",
+    "localName": "Fondue",
+    "description": "以起司與白酒融化，用叉子沾麵包食用。",
+    "history": "阿爾卑斯山區冬季的傳統料理。",
+    "wiki": "Fondue",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Fondue_dish.jpg/960px-Fondue_dish.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Fondue_dish.jpg",
+    "imageCredit": "Juliano Mendes・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "煎香腸",
+    "localName": "Schüblig",
+    "description": "煙燻過的豬肉牛肉香腸，常煎或烤後配馬鈴薯沙拉。",
+    "history": "瑞士東部與列支敦斯登一帶的常見香腸。",
+    "wiki": "Schüblig",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Sch%C3%BCblig_ks3.JPG/960px-Sch%C3%BCblig_ks3.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Sch%C3%BCblig_ks3.JPG",
+    "imageCredit": "Schofför・CC BY-SA 3.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

@@ -1,84 +1,99 @@
 {
-  "iso": "JOR",
-  "capital": "安曼",
-  "summary": "約旦位於西亞，鄰近以色列、敘利亞、伊拉克與沙烏地阿拉伯，擁有佩特拉古城與死海，接納了大量巴勒斯坦與敘利亞難民。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "伊斯蘭教（遜尼派）",
-        "percent": 95,
-        "description": "國教，哈希姆王室自稱為先知穆罕默德的後裔。"
-      },
-      {
-        "name": "基督教",
-        "percent": 3,
-        "description": "古老的基督教社群，以希臘正教為主。"
-      },
-      {
-        "name": "其他",
-        "percent": 1,
-        "description": "包括什葉派、德魯茲派等。"
-      }
-    ],
-    "background": "約旦地區在一世紀即有基督教社群，七世紀阿拉伯穆斯林征服後伊斯蘭教逐漸成為多數。約旦的阿拉伯基督徒是世界上最古老的基督教社群之一，至今在社會中仍有重要地位。"
-  },
-  "language": {
-    "official": "阿拉伯語是官方語言。",
-    "ranking": [
-      {
-        "name": "阿拉伯語（約旦方言）",
-        "percent": 97,
-        "description": "屬黎凡特阿拉伯語，英語在教育與商業中也十分普遍。",
-        "greeting": "مرحبا",
-        "pronunciation": "MAR-ha-ba"
-      },
-      {
-        "name": "切爾克斯語（阿迪格語）",
-        "percent": 1,
-        "description": "十九世紀自高加索遷入的切爾克斯人後代使用。",
-        "greeting": "Уимафэ шӀу",
-        "pronunciation": "wee-ma-FEH shu"
-      }
-    ],
-    "history": "古代約旦地區曾使用納巴泰語等亞蘭語系語言，伊斯蘭化後阿拉伯語成為主流。英國託管時期英語普及，十九世紀鄂圖曼帝國安置的切爾克斯與車臣移民保留了自己的語言。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "曼薩夫",
-        "localName": "منسف (Mansaf)",
-        "description": "以發酵乾優格（傑米德）醬燉煮羊肉，鋪在米飯與薄餅上。",
-        "history": "約旦國菜，象徵貝都因人的好客，2022年列入聯合國教科文組織非物質文化遺產。",
-        "wiki": "Mansaf"
-      },
-      {
-        "name": "馬克盧巴",
-        "localName": "مقلوبة (Maqluba)",
-        "description": "將肉、米飯與炸蔬菜燜煮後整鍋倒扣上桌。",
-        "history": "名稱意為「翻轉」，是黎凡特地區的家庭料理。",
-        "wiki": "Maqluba"
-      },
-      {
-        "name": "穆薩汗",
-        "localName": "مسخن (Musakhan)",
-        "description": "在塔崩麵包上鋪洋蔥、鹽膚木與烤雞。",
-        "history": "源自巴勒斯坦的料理，在約旦也非常普遍。",
-        "wiki": "Musakhan"
-      },
-      {
-        "name": "法拉費",
-        "localName": "فلافل (Falafel)",
-        "description": "以鷹嘴豆泥製成的炸豆丸子，常包在皮塔餅中。",
-        "history": "黎凡特地區最常見的街頭小吃。",
-        "wiki": "Falafel"
-      },
-      {
-        "name": "庫納法",
-        "localName": "كنافة (Knafeh)",
-        "description": "以細麵絲或粗粒麥粉包裹起司，烘烤後淋糖漿。",
-        "history": "黎凡特地區經典甜點，常在齋戒月享用。",
-        "wiki": "Knafeh"
-      }
-    ]
-  }
+ "iso": "JOR",
+ "capital": "安曼",
+ "summary": "約旦位於西亞，鄰近以色列、敘利亞、伊拉克與沙烏地阿拉伯，擁有佩特拉古城與死海，接納了大量巴勒斯坦與敘利亞難民。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "伊斯蘭教（遜尼派）",
+    "percent": 95,
+    "description": "國教，哈希姆王室自稱為先知穆罕默德的後裔。"
+   },
+   {
+    "name": "基督教",
+    "percent": 3,
+    "description": "古老的基督教社群，以希臘正教為主。"
+   },
+   {
+    "name": "其他",
+    "percent": 1,
+    "description": "包括什葉派、德魯茲派等。"
+   }
+  ],
+  "background": "約旦地區在一世紀即有基督教社群，七世紀阿拉伯穆斯林征服後伊斯蘭教逐漸成為多數。約旦的阿拉伯基督徒是世界上最古老的基督教社群之一，至今在社會中仍有重要地位。"
+ },
+ "language": {
+  "official": "阿拉伯語是官方語言。",
+  "ranking": [
+   {
+    "name": "阿拉伯語（約旦方言）",
+    "percent": 97,
+    "description": "屬黎凡特阿拉伯語，英語在教育與商業中也十分普遍。",
+    "greeting": "مرحبا",
+    "pronunciation": "MAR-ha-ba"
+   },
+   {
+    "name": "切爾克斯語（阿迪格語）",
+    "percent": 1,
+    "description": "十九世紀自高加索遷入的切爾克斯人後代使用。",
+    "greeting": "Уимафэ шӀу",
+    "pronunciation": "wee-ma-FEH shu"
+   }
+  ],
+  "history": "古代約旦地區曾使用納巴泰語等亞蘭語系語言，伊斯蘭化後阿拉伯語成為主流。英國託管時期英語普及，十九世紀鄂圖曼帝國安置的切爾克斯與車臣移民保留了自己的語言。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "曼薩夫",
+    "localName": "منسف (Mansaf)",
+    "description": "以發酵乾優格（傑米德）醬燉煮羊肉，鋪在米飯與薄餅上。",
+    "history": "約旦國菜，象徵貝都因人的好客，2022年列入聯合國教科文組織非物質文化遺產。",
+    "wiki": "Mansaf",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/86/Mansaf%2C_the_traditional_dish_of_Jordan.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Mansaf,_the_traditional_dish_of_Jordan.jpg",
+    "imageCredit": "Jktab・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "馬克盧巴",
+    "localName": "مقلوبة (Maqluba)",
+    "description": "將肉、米飯與炸蔬菜燜煮後整鍋倒扣上桌。",
+    "history": "名稱意為「翻轉」，是黎凡特地區的家庭料理。",
+    "wiki": "Maqluba",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Makluba.JPG/960px-Makluba.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Makluba.JPG",
+    "imageCredit": "Arafataslan・Public domain・Wikimedia Commons"
+   },
+   {
+    "name": "穆薩汗",
+    "localName": "مسخن (Musakhan)",
+    "description": "在塔崩麵包上鋪洋蔥、鹽膚木與烤雞。",
+    "history": "源自巴勒斯坦的料理，在約旦也非常普遍。",
+    "wiki": "Musakhan",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Mushakhan_Dish.jpg/960px-Mushakhan_Dish.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Mushakhan_Dish.jpg",
+    "imageCredit": "Kokaly・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "法拉費",
+    "localName": "فلافل (Falafel)",
+    "description": "以鷹嘴豆泥製成的炸豆丸子，常包在皮塔餅中。",
+    "history": "黎凡特地區最常見的街頭小吃。",
+    "wiki": "Falafel",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Falafels_2.jpg/960px-Falafels_2.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Falafels_2.jpg",
+    "imageCredit": "Popo le Chien・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "庫納法",
+    "localName": "كنافة (Knafeh)",
+    "description": "以細麵絲或粗粒麥粉包裹起司，烘烤後淋糖漿。",
+    "history": "黎凡特地區經典甜點，常在齋戒月享用。",
+    "wiki": "Knafeh",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c8/K%C3%BCnefe.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:K%C3%BCnefe.jpg",
+    "imageCredit": "elif ayse・CC BY 2.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

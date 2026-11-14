@@ -1,94 +1,106 @@
 {
-  "iso": "KIR",
-  "capital": "塔拉瓦",
-  "summary": "吉里巴斯是位於中太平洋的島國，由33個環礁與島嶼組成，橫跨赤道與國際換日線，深受海平面上升威脅。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "天主教",
-        "percent": 57,
-        "description": "信徒最多的教會。"
-      },
-      {
-        "name": "吉里巴斯統一教會",
-        "percent": 21,
-        "description": "源自倫敦傳道會的新教教會。"
-      },
-      {
-        "name": "吉里巴斯新教教會",
-        "percent": 8,
-        "description": "自統一教會分出的新教教會。"
-      },
-      {
-        "name": "耶穌基督後期聖徒教會",
-        "percent": 5,
-        "description": "近數十年成長的教會。"
-      },
-      {
-        "name": "巴哈伊信仰",
-        "percent": 2,
-        "description": "規模較小的宗教社群。"
-      }
-    ],
-    "background": "十九世紀中期起，美國公理會與倫敦傳道會的新教傳教士及法國天主教傳教士先後抵達，使基督教迅速普及。天主教傳教士主要在北部島嶼，新教則在南部島嶼較有影響力。"
-  },
-  "language": {
-    "official": "英語與吉里巴斯語是官方語言。",
-    "ranking": [
-      {
-        "name": "吉里巴斯語",
-        "percent": 97,
-        "description": "屬南島語系密克羅尼西亞語支，是全民的母語。",
-        "greeting": "Mauri",
-        "pronunciation": "MAO-ree"
-      },
-      {
-        "name": "英語",
-        "percent": 2,
-        "description": "官方語言，用於政府與教育。",
-        "greeting": "Hello",
-        "pronunciation": "heh-LOH"
-      }
-    ],
-    "history": "吉里巴斯語又稱吉爾伯特語，十九世紀傳教士以拉丁字母書寫並翻譯聖經。英國殖民時期英語成為行政語言，1979年獨立後兩者並列官方語言。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "巴拜芋",
-        "localName": "Te babai",
-        "description": "在坑中種植多年的大型沼澤芋，煮熟或烤熟食用。",
-        "history": "環礁上珍貴的作物，在婚禮與重要儀式中象徵地位。",
-        "wiki": "Cyrtosperma merkusii"
-      },
-      {
-        "name": "麵包果",
-        "localName": "Te mai",
-        "description": "以烤或煮方式食用的麵包果。",
-        "history": "太平洋島嶼的重要主食。",
-        "wiki": "Breadfruit"
-      },
-      {
-        "name": "林投果",
-        "localName": "Te kaina",
-        "description": "林投樹的果實，可直接嚼食或製成果醬乾。",
-        "history": "環礁上的傳統食物，可加工保存以度過乾旱。",
-        "wiki": "Pandanus tectorius"
-      },
-      {
-        "name": "椰子蟹",
-        "localName": "Te ai",
-        "description": "大型陸生寄居蟹，蒸煮後食用。",
-        "history": "太平洋島嶼的珍饈，現因過度捕撈而受到保育關注。",
-        "wiki": "Coconut crab"
-      },
-      {
-        "name": "椰奶生魚",
-        "localName": "Raw fish in coconut",
-        "description": "以檸檬汁醃漬生魚，加入椰奶。",
-        "history": "太平洋地區常見的生魚料理，在漁業為主的吉里巴斯十分普遍。",
-        "wiki": "Kokoda"
-      }
-    ]
-  }
+ "iso": "KIR",
+ "capital": "塔拉瓦",
+ "summary": "吉里巴斯是位於中太平洋的島國，由33個環礁與島嶼組成，橫跨赤道與國際換日線，深受海平面上升威脅。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "天主教",
+    "percent": 57,
+    "description": "信徒最多的教會。"
+   },
+   {
+    "name": "吉里巴斯統一教會",
+    "percent": 21,
+    "description": "源自倫敦傳道會的新教教會。"
+   },
+   {
+    "name": "吉里巴斯新教教會",
+    "percent": 8,
+    "description": "自統一教會分出的新教教會。"
+   },
+   {
+    "name": "耶穌基督後期聖徒教會",
+    "percent": 5,
+    "description": "近數十年成長的教會。"
+   },
+   {
+    "name": "巴哈伊信仰",
+    "percent": 2,
+    "description": "規模較小的宗教社群。"
+   }
+  ],
+  "background": "十九世紀中期起，美國公理會與倫敦傳道會的新教傳教士及法國天主教傳教士先後抵達，使基督教迅速普及。天主教傳教士主要在北部島嶼，新教則在南部島嶼較有影響力。"
+ },
+ "language": {
+  "official": "英語與吉里巴斯語是官方語言。",
+  "ranking": [
+   {
+    "name": "吉里巴斯語",
+    "percent": 97,
+    "description": "屬南島語系密克羅尼西亞語支，是全民的母語。",
+    "greeting": "Mauri",
+    "pronunciation": "MAO-ree"
+   },
+   {
+    "name": "英語",
+    "percent": 2,
+    "description": "官方語言，用於政府與教育。",
+    "greeting": "Hello",
+    "pronunciation": "heh-LOH"
+   }
+  ],
+  "history": "吉里巴斯語又稱吉爾伯特語，十九世紀傳教士以拉丁字母書寫並翻譯聖經。英國殖民時期英語成為行政語言，1979年獨立後兩者並列官方語言。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "巴拜芋",
+    "localName": "Te babai",
+    "description": "在坑中種植多年的大型沼澤芋，煮熟或烤熟食用。",
+    "history": "環礁上珍貴的作物，在婚禮與重要儀式中象徵地位。",
+    "wiki": "Cyrtosperma merkusii",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Babai.jpg/960px-Babai.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Babai.jpg",
+    "imageCredit": "Tauʻolunga・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "麵包果",
+    "localName": "Te mai",
+    "description": "以烤或煮方式食用的麵包果。",
+    "history": "太平洋島嶼的重要主食。",
+    "wiki": "Breadfruit",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Artocarpus_altilis_%28fruit%29.jpg/960px-Artocarpus_altilis_%28fruit%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Artocarpus_altilis_(fruit).jpg",
+    "imageCredit": "Hans Hillewaert・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "林投果",
+    "localName": "Te kaina",
+    "description": "林投樹的果實，可直接嚼食或製成果醬乾。",
+    "history": "環礁上的傳統食物，可加工保存以度過乾旱。",
+    "wiki": "Pandanus tectorius",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Pandanus_tectorius.jpg/960px-Pandanus_tectorius.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Pandanus_tectorius.jpg",
+    "imageCredit": "No machine-readable author provided. Marshman~commonswiki as・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "椰子蟹",
+    "localName": "Te ai",
+    "description": "大型陸生寄居蟹，蒸煮後食用。",
+    "history": "太平洋島嶼的珍饈，現因過度捕撈而受到保育關注。",
+    "wiki": "Coconut crab",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Coconut_Crab_Birgus_latro.jpg/960px-Coconut_Crab_Birgus_latro.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Coconut_Crab_Birgus_latro.jpg",
+    "imageCredit": "Drew Avery・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "椰奶生魚",
+    "localName": "Raw fish in coconut",
+    "description": "以檸檬汁醃漬生魚，加入椰奶。",
+    "history": "太平洋地區常見的生魚料理，在漁業為主的吉里巴斯十分普遍。",
+    "wiki": "Kokoda"
+   }
+  ]
+ }
 }

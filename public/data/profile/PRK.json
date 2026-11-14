@@ -1,87 +1,99 @@
 {
-  "iso": "PRK",
-  "capital": "平壤",
-  "summary": "北韓（朝鮮民主主義人民共和國）位於朝鮮半島北部，1948年建國，由金氏家族統治，是全球最封閉的國家之一。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "無宗教",
-        "percent": 64,
-        "description": "官方推行無神論與主體思想，宗教活動受到嚴格限制。"
-      },
-      {
-        "name": "薩滿信仰",
-        "percent": 16,
-        "description": "韓民族傳統的民間信仰。"
-      },
-      {
-        "name": "天道教",
-        "percent": 13,
-        "description": "十九世紀朝鮮本土興起的宗教，國家允許其官方團體存在。"
-      },
-      {
-        "name": "佛教",
-        "percent": 5,
-        "description": "歷史悠久的傳統宗教。"
-      },
-      {
-        "name": "基督教",
-        "percent": 2,
-        "description": "受到嚴格管控，平壤曾是東亞基督教的重要中心。"
-      }
-    ],
-    "background": "朝鮮半島北部傳統上融合薩滿信仰、佛教與儒家思想。二十世紀初平壤曾有「東方耶路撒冷」之稱，基督教十分興盛。1948年建國後政府壓制宗教並推行主體思想，因此現今宗教人口難以準確統計，以上僅為外界的粗略估計。"
-  },
-  "language": {
-    "official": "韓語（朝鮮語）是官方語言。",
-    "ranking": [
-      {
-        "name": "韓語（朝鮮語）",
-        "percent": 99,
-        "description": "北韓稱其標準語為「文化語」，以平壤方言為基礎，並減少使用外來語。",
-        "greeting": "안녕하십니까",
-        "pronunciation": "an-nyeong-ha-SHIM-nik-ka"
-      }
-    ],
-    "history": "韓語在十五世紀世宗大王創制訓民正音（韓文字母）後擁有自己的文字。北韓建國後廢除漢字的日常使用，並以平壤方言為基礎制定「文化語」，大量以固有詞取代漢字詞與外來語，使南北韓語言出現差異。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "平壤冷麵",
-        "localName": "평양냉면 (Pyongyang naengmyeon)",
-        "description": "以蕎麥麵條搭配冰涼的牛肉高湯或東北醃蘿蔔汁。",
-        "history": "平壤的代表料理，玉流館是最著名的冷麵餐廳。",
-        "wiki": "Naengmyeon"
-      },
-      {
-        "name": "泡菜",
-        "localName": "김치 (Kimchi)",
-        "description": "以白菜、蘿蔔與辣椒、大蒜等醃漬發酵的蔬菜。",
-        "history": "朝鮮半島共同的飲食文化，北韓的越冬泡菜製作已列入聯合國教科文組織非物質文化遺產。",
-        "wiki": "Kimchi"
-      },
-      {
-        "name": "綠豆煎餅",
-        "localName": "빈대떡 (Bindae-tteok)",
-        "description": "以磨碎的綠豆與蔬菜、豬肉煎成的煎餅。",
-        "history": "平安道地區的傳統料理。",
-        "wiki": "Bindae-tteok"
-      },
-      {
-        "name": "溫飯",
-        "localName": "온반 (Onban)",
-        "description": "在米飯上淋熱雞湯，配雞肉絲與綠豆煎餅。",
-        "history": "平壤的傳統料理，常在冬季或招待客人時食用。",
-        "wiki": "Onban"
-      },
-      {
-        "name": "餃子",
-        "localName": "만두 (Mandu)",
-        "description": "以麵皮包肉與蔬菜的餃子，可蒸、煮或煎。",
-        "history": "北方地區傳統上在新年時食用，比南方更常見。",
-        "wiki": "Mandu (food)"
-      }
-    ]
-  }
+ "iso": "PRK",
+ "capital": "平壤",
+ "summary": "北韓（朝鮮民主主義人民共和國）位於朝鮮半島北部，1948年建國，由金氏家族統治，是全球最封閉的國家之一。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "無宗教",
+    "percent": 64,
+    "description": "官方推行無神論與主體思想，宗教活動受到嚴格限制。"
+   },
+   {
+    "name": "薩滿信仰",
+    "percent": 16,
+    "description": "韓民族傳統的民間信仰。"
+   },
+   {
+    "name": "天道教",
+    "percent": 13,
+    "description": "十九世紀朝鮮本土興起的宗教，國家允許其官方團體存在。"
+   },
+   {
+    "name": "佛教",
+    "percent": 5,
+    "description": "歷史悠久的傳統宗教。"
+   },
+   {
+    "name": "基督教",
+    "percent": 2,
+    "description": "受到嚴格管控，平壤曾是東亞基督教的重要中心。"
+   }
+  ],
+  "background": "朝鮮半島北部傳統上融合薩滿信仰、佛教與儒家思想。二十世紀初平壤曾有「東方耶路撒冷」之稱，基督教十分興盛。1948年建國後政府壓制宗教並推行主體思想，因此現今宗教人口難以準確統計，以上僅為外界的粗略估計。"
+ },
+ "language": {
+  "official": "韓語（朝鮮語）是官方語言。",
+  "ranking": [
+   {
+    "name": "韓語（朝鮮語）",
+    "percent": 99,
+    "description": "北韓稱其標準語為「文化語」，以平壤方言為基礎，並減少使用外來語。",
+    "greeting": "안녕하십니까",
+    "pronunciation": "an-nyeong-ha-SHIM-nik-ka"
+   }
+  ],
+  "history": "韓語在十五世紀世宗大王創制訓民正音（韓文字母）後擁有自己的文字。北韓建國後廢除漢字的日常使用，並以平壤方言為基礎制定「文化語」，大量以固有詞取代漢字詞與外來語，使南北韓語言出現差異。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "平壤冷麵",
+    "localName": "평양냉면 (Pyongyang naengmyeon)",
+    "description": "以蕎麥麵條搭配冰涼的牛肉高湯或東北醃蘿蔔汁。",
+    "history": "平壤的代表料理，玉流館是最著名的冷麵餐廳。",
+    "wiki": "Naengmyeon",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/58/Naengmyeon_%28cold_noodles%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Naengmyeon_(cold_noodles).jpg",
+    "imageCredit": "wjlee4284・CC BY 2.5・Wikimedia Commons"
+   },
+   {
+    "name": "泡菜",
+    "localName": "김치 (Kimchi)",
+    "description": "以白菜、蘿蔔與辣椒、大蒜等醃漬發酵的蔬菜。",
+    "history": "朝鮮半島共同的飲食文化，北韓的越冬泡菜製作已列入聯合國教科文組織非物質文化遺產。",
+    "wiki": "Kimchi",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Various_kimchi.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Various_kimchi.jpg",
+    "imageCredit": "국립국어원・CC BY-SA 2.0 kr・Wikimedia Commons"
+   },
+   {
+    "name": "綠豆煎餅",
+    "localName": "빈대떡 (Bindae-tteok)",
+    "description": "以磨碎的綠豆與蔬菜、豬肉煎成的煎餅。",
+    "history": "平安道地區的傳統料理。",
+    "wiki": "Bindae-tteok",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Korea_GwangjangMarket_Eats_11_Bindaetteok.jpg/960px-Korea_GwangjangMarket_Eats_11_Bindaetteok.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Korea_GwangjangMarket_Eats_11_Bindaetteok.jpg",
+    "imageCredit": "Korea.net / Korean Culture and Information Service・CC BY-SA 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "溫飯",
+    "localName": "온반 (Onban)",
+    "description": "在米飯上淋熱雞湯，配雞肉絲與綠豆煎餅。",
+    "history": "平壤的傳統料理，常在冬季或招待客人時食用。",
+    "wiki": "Onban"
+   },
+   {
+    "name": "餃子",
+    "localName": "만두 (Mandu)",
+    "description": "以麵皮包肉與蔬菜的餃子，可蒸、煮或煎。",
+    "history": "北方地區傳統上在新年時食用，比南方更常見。",
+    "wiki": "Mandu (food)",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/%EB%A7%8C%EB%91%90.jpg/960px-%EB%A7%8C%EB%91%90.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:%EB%A7%8C%EB%91%90.jpg",
+    "imageCredit": "Raven9722・CC0・Wikimedia Commons"
+   }
+  ]
+ }
 }

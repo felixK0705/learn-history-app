@@ -1,120 +1,135 @@
 {
-  "iso": "SGP",
-  "capital": "新加坡",
-  "summary": "新加坡是位於馬來半島南端的城市國家，1965年獨立，以國際金融與航運樞紐地位、多元族群與高效治理聞名。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "佛教",
-        "percent": 31,
-        "description": "主要為華人信徒。"
-      },
-      {
-        "name": "無宗教",
-        "percent": 20,
-        "description": "未認同任何宗教的人口持續增加。"
-      },
-      {
-        "name": "基督教",
-        "percent": 19,
-        "description": "包括新教與天主教。"
-      },
-      {
-        "name": "伊斯蘭教",
-        "percent": 16,
-        "description": "主要為馬來裔與部分印度裔居民。"
-      },
-      {
-        "name": "道教及民間信仰",
-        "percent": 9,
-        "description": "華人的傳統信仰。"
-      },
-      {
-        "name": "印度教",
-        "percent": 5,
-        "description": "主要為印度裔居民。"
-      }
-    ],
-    "background": "新加坡作為海上貿易港口，十九世紀英國殖民後吸引了來自中國、馬來群島與印度的移民，各族群帶來各自的宗教。政府以宗教和諧為重要國策，各宗教的重要節日多為公共假日。"
-  },
-  "language": {
-    "official": "英語、華語、馬來語與淡米爾語是官方語言，馬來語為國語。",
-    "ranking": [
-      {
-        "name": "英語",
-        "percent": 48,
-        "description": "行政、教育與商業的主要語言，也是最常在家使用的語言。",
-        "greeting": "Hello",
-        "pronunciation": "heh-LOH"
-      },
-      {
-        "name": "華語",
-        "percent": 30,
-        "description": "華人社群的主要語言。",
-        "greeting": "你好",
-        "pronunciation": "nee HOW"
-      },
-      {
-        "name": "其他漢語方言（閩南語等）",
-        "percent": 9,
-        "description": "閩南語、粵語、潮州話等傳統方言。",
-        "greeting": "汝好 (Lí hó)",
-        "pronunciation": "lee HOH"
-      },
-      {
-        "name": "馬來語",
-        "percent": 9,
-        "description": "國語，國歌以馬來語演唱。",
-        "greeting": "Apa khabar",
-        "pronunciation": "AH-pa KAH-bar"
-      },
-      {
-        "name": "淡米爾語",
-        "percent": 3,
-        "description": "印度裔社群的主要語言。",
-        "greeting": "வணக்கம்",
-        "pronunciation": "va-NAK-kam"
-      }
-    ],
-    "history": "殖民時期新加坡的華人多說閩南語、潮州話、粵語等方言，馬來語則是區域通用語。獨立後政府推行以英語為主的雙語政策，1979年起推動「講華語運動」，使華語逐漸取代方言。新加坡式英語也形成獨特風格。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "海南雞飯",
-        "localName": "Hainanese chicken rice",
-        "description": "以雞湯煮的米飯搭配白斬雞與辣椒醬、薑蓉。",
-        "history": "由海南移民帶來並在新加坡發展，被視為國民美食。",
-        "wiki": "Hainanese chicken rice"
-      },
-      {
-        "name": "辣椒螃蟹",
-        "localName": "Chilli crab",
-        "description": "以甜辣番茄醬汁炒製的螃蟹，配炸饅頭沾醬。",
-        "history": "1950年代於新加坡誕生的海鮮料理。",
-        "wiki": "Chilli crab"
-      },
-      {
-        "name": "叻沙",
-        "localName": "Laksa",
-        "description": "以椰奶咖哩湯底配米粉、蝦與魚餅的湯麵。",
-        "history": "土生華人（娘惹）料理的代表，加東叻沙尤其有名。",
-        "wiki": "Laksa"
-      },
-      {
-        "name": "肉骨茶",
-        "localName": "Bak kut teh",
-        "description": "以胡椒、大蒜等熬煮的排骨湯。",
-        "history": "由閩南與潮州移民苦力帶來的料理，新加坡版本以胡椒味著稱。",
-        "wiki": "Bak kut teh"
-      },
-      {
-        "name": "炒粿條",
-        "localName": "Char kway teow",
-        "description": "以大火快炒的粿條，加入蝦、臘腸、蛋與黑醬油。",
-        "history": "源自潮州與閩南移民的小販料理。",
-        "wiki": "Char kway teow"
-      }
-    ]
-  }
+ "iso": "SGP",
+ "capital": "新加坡",
+ "summary": "新加坡是位於馬來半島南端的城市國家，1965年獨立，以國際金融與航運樞紐地位、多元族群與高效治理聞名。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "佛教",
+    "percent": 31,
+    "description": "主要為華人信徒。"
+   },
+   {
+    "name": "無宗教",
+    "percent": 20,
+    "description": "未認同任何宗教的人口持續增加。"
+   },
+   {
+    "name": "基督教",
+    "percent": 19,
+    "description": "包括新教與天主教。"
+   },
+   {
+    "name": "伊斯蘭教",
+    "percent": 16,
+    "description": "主要為馬來裔與部分印度裔居民。"
+   },
+   {
+    "name": "道教及民間信仰",
+    "percent": 9,
+    "description": "華人的傳統信仰。"
+   },
+   {
+    "name": "印度教",
+    "percent": 5,
+    "description": "主要為印度裔居民。"
+   }
+  ],
+  "background": "新加坡作為海上貿易港口，十九世紀英國殖民後吸引了來自中國、馬來群島與印度的移民，各族群帶來各自的宗教。政府以宗教和諧為重要國策，各宗教的重要節日多為公共假日。"
+ },
+ "language": {
+  "official": "英語、華語、馬來語與淡米爾語是官方語言，馬來語為國語。",
+  "ranking": [
+   {
+    "name": "英語",
+    "percent": 48,
+    "description": "行政、教育與商業的主要語言，也是最常在家使用的語言。",
+    "greeting": "Hello",
+    "pronunciation": "heh-LOH"
+   },
+   {
+    "name": "華語",
+    "percent": 30,
+    "description": "華人社群的主要語言。",
+    "greeting": "你好",
+    "pronunciation": "nee HOW"
+   },
+   {
+    "name": "其他漢語方言（閩南語等）",
+    "percent": 9,
+    "description": "閩南語、粵語、潮州話等傳統方言。",
+    "greeting": "汝好 (Lí hó)",
+    "pronunciation": "lee HOH"
+   },
+   {
+    "name": "馬來語",
+    "percent": 9,
+    "description": "國語，國歌以馬來語演唱。",
+    "greeting": "Apa khabar",
+    "pronunciation": "AH-pa KAH-bar"
+   },
+   {
+    "name": "淡米爾語",
+    "percent": 3,
+    "description": "印度裔社群的主要語言。",
+    "greeting": "வணக்கம்",
+    "pronunciation": "va-NAK-kam"
+   }
+  ],
+  "history": "殖民時期新加坡的華人多說閩南語、潮州話、粵語等方言，馬來語則是區域通用語。獨立後政府推行以英語為主的雙語政策，1979年起推動「講華語運動」，使華語逐漸取代方言。新加坡式英語也形成獨特風格。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "海南雞飯",
+    "localName": "Hainanese chicken rice",
+    "description": "以雞湯煮的米飯搭配白斬雞與辣椒醬、薑蓉。",
+    "history": "由海南移民帶來並在新加坡發展，被視為國民美食。",
+    "wiki": "Hainanese chicken rice",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Hainanese_Chicken_Rice.jpg/960px-Hainanese_Chicken_Rice.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Hainanese_Chicken_Rice.jpg",
+    "imageCredit": "No machine-readable author provided. Terence assumed (based ・CC BY 2.5・Wikimedia Commons"
+   },
+   {
+    "name": "辣椒螃蟹",
+    "localName": "Chilli crab",
+    "description": "以甜辣番茄醬汁炒製的螃蟹，配炸饅頭沾醬。",
+    "history": "1950年代於新加坡誕生的海鮮料理。",
+    "wiki": "Chilli crab",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Chilli_crab-02.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Chilli_crab-02.jpg",
+    "imageCredit": "megawatts86・CC BY-SA 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "叻沙",
+    "localName": "Laksa",
+    "description": "以椰奶咖哩湯底配米粉、蝦與魚餅的湯麵。",
+    "history": "土生華人（娘惹）料理的代表，加東叻沙尤其有名。",
+    "wiki": "Laksa",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Nyonya_Laksa.jpg/960px-Nyonya_Laksa.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Nyonya_Laksa.jpg",
+    "imageCredit": "Giddy98・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "肉骨茶",
+    "localName": "Bak kut teh",
+    "description": "以胡椒、大蒜等熬煮的排骨湯。",
+    "history": "由閩南與潮州移民苦力帶來的料理，新加坡版本以胡椒味著稱。",
+    "wiki": "Bak kut teh",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Song_Fa_Bak_Kut_Teh%2C_New_Bridge_Rd%2C_Singapore_%282023%29_06.jpg/960px-Song_Fa_Bak_Kut_Teh%2C_New_Bridge_Rd%2C_Singapore_%282023%29_06.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Song_Fa_Bak_Kut_Teh,_New_Bridge_Rd,_Singapore_(2023)_06.jpg",
+    "imageCredit": "Chainwit.・CC BY 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "炒粿條",
+    "localName": "Char kway teow",
+    "description": "以大火快炒的粿條，加入蝦、臘腸、蛋與黑醬油。",
+    "history": "源自潮州與閩南移民的小販料理。",
+    "wiki": "Char kway teow",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/04/Char_kway_teow.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Char_kway_teow.jpg",
+    "imageCredit": "Elizetang・Public domain・Wikimedia Commons"
+   }
+  ]
+ }
 }

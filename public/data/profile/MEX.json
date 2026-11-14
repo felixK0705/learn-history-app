@@ -1,91 +1,106 @@
 {
-  "iso": "MEX",
-  "capital": "墨西哥市",
-  "summary": "墨西哥位於北美洲南部，曾孕育奧爾梅克、馬雅與阿茲提克等古文明，是全球西班牙語人口最多的國家。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "天主教",
-        "percent": 78,
-        "description": "西班牙殖民時期傳入，瓜達露佩聖母信仰是重要的民族象徵。"
-      },
-      {
-        "name": "基督新教／福音派",
-        "percent": 11,
-        "description": "近數十年在南部各州快速成長。"
-      },
-      {
-        "name": "無宗教",
-        "percent": 10,
-        "description": "不屬於任何宗教的人口逐年增加。"
-      }
-    ],
-    "background": "十六世紀西班牙征服阿茲提克帝國後，天主教傳教士大規模傳教，並與原住民信仰融合，例如亡靈節與瓜達露佩聖母信仰。十九世紀改革運動推動政教分離，二十世紀後期福音派教會逐漸成長。"
-  },
-  "language": {
-    "official": "墨西哥聯邦法律未指定官方語言，西班牙語為事實上的國家語言，並承認68種原住民語言為國家語言。",
-    "ranking": [
-      {
-        "name": "西班牙語",
-        "percent": 94,
-        "description": "全國通用語言。",
-        "greeting": "Hola",
-        "pronunciation": "OH-la"
-      },
-      {
-        "name": "納瓦特爾語",
-        "percent": 1,
-        "description": "阿茲提克人的語言，是墨西哥使用人數最多的原住民語言。",
-        "greeting": "Niltze",
-        "pronunciation": "NEEL-tseh"
-      },
-      {
-        "name": "猶加敦馬雅語",
-        "percent": 1,
-        "description": "猶加敦半島馬雅人的語言。",
-        "greeting": "Ba'ax ka wa'alik",
-        "pronunciation": "bash ka wa-a-LEEK"
-      }
-    ],
-    "history": "阿茲提克時期納瓦特爾語是中墨西哥的通用語，番茄、巧克力等字皆源於此。西班牙殖民後西班牙語逐漸成為主流，但許多原住民語言延續至今，2003年法律承認原住民語言與西班牙語同為國家語言。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "塔可",
-        "localName": "Taco",
-        "description": "以玉米薄餅包裹肉類、洋蔥、香菜與莎莎醬。",
-        "history": "玉米餅是中美洲數千年的主食，塔可在十九世紀後於墨西哥城普及。",
-        "wiki": "Taco"
-      },
-      {
-        "name": "莫雷醬",
-        "localName": "Mole",
-        "description": "以辣椒、香料、堅果與巧克力等數十種材料熬成的濃醬，常配雞肉。",
-        "history": "融合原住民與西班牙食材，普埃布拉與瓦哈卡的莫雷特別有名。",
-        "wiki": "Mole (sauce)"
-      },
-      {
-        "name": "玉米粽",
-        "localName": "Tamal",
-        "description": "以玉米麵團包餡料，用玉米葉或香蕉葉包好蒸熟。",
-        "history": "可追溯至前哥倫布時期，是節慶與聖燭節的傳統食物。",
-        "wiki": "Tamale"
-      },
-      {
-        "name": "核桃醬鑲辣椒",
-        "localName": "Chiles en nogada",
-        "description": "以肉餡鑲入辣椒，淋上白色核桃醬並撒石榴籽。",
-        "history": "紅、白、綠三色象徵墨西哥國旗，傳統上在獨立紀念月份食用。",
-        "wiki": "Chiles en nogada"
-      },
-      {
-        "name": "玉米燉湯",
-        "localName": "Pozole",
-        "description": "以大顆玉米粒與豬肉或雞肉燉煮的湯。",
-        "history": "源自前哥倫布時期的儀式料理，現常於國慶等節日食用。",
-        "wiki": "Pozole"
-      }
-    ]
-  }
+ "iso": "MEX",
+ "capital": "墨西哥市",
+ "summary": "墨西哥位於北美洲南部，曾孕育奧爾梅克、馬雅與阿茲提克等古文明，是全球西班牙語人口最多的國家。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "天主教",
+    "percent": 78,
+    "description": "西班牙殖民時期傳入，瓜達露佩聖母信仰是重要的民族象徵。"
+   },
+   {
+    "name": "基督新教／福音派",
+    "percent": 11,
+    "description": "近數十年在南部各州快速成長。"
+   },
+   {
+    "name": "無宗教",
+    "percent": 10,
+    "description": "不屬於任何宗教的人口逐年增加。"
+   }
+  ],
+  "background": "十六世紀西班牙征服阿茲提克帝國後，天主教傳教士大規模傳教，並與原住民信仰融合，例如亡靈節與瓜達露佩聖母信仰。十九世紀改革運動推動政教分離，二十世紀後期福音派教會逐漸成長。"
+ },
+ "language": {
+  "official": "墨西哥聯邦法律未指定官方語言，西班牙語為事實上的國家語言，並承認68種原住民語言為國家語言。",
+  "ranking": [
+   {
+    "name": "西班牙語",
+    "percent": 94,
+    "description": "全國通用語言。",
+    "greeting": "Hola",
+    "pronunciation": "OH-la"
+   },
+   {
+    "name": "納瓦特爾語",
+    "percent": 1,
+    "description": "阿茲提克人的語言，是墨西哥使用人數最多的原住民語言。",
+    "greeting": "Niltze",
+    "pronunciation": "NEEL-tseh"
+   },
+   {
+    "name": "猶加敦馬雅語",
+    "percent": 1,
+    "description": "猶加敦半島馬雅人的語言。",
+    "greeting": "Ba'ax ka wa'alik",
+    "pronunciation": "bash ka wa-a-LEEK"
+   }
+  ],
+  "history": "阿茲提克時期納瓦特爾語是中墨西哥的通用語，番茄、巧克力等字皆源於此。西班牙殖民後西班牙語逐漸成為主流，但許多原住民語言延續至今，2003年法律承認原住民語言與西班牙語同為國家語言。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "塔可",
+    "localName": "Taco",
+    "description": "以玉米薄餅包裹肉類、洋蔥、香菜與莎莎醬。",
+    "history": "玉米餅是中美洲數千年的主食，塔可在十九世紀後於墨西哥城普及。",
+    "wiki": "Taco",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg/960px-001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:001_Tacos_de_carnitas,_carne_asada_y_al_pastor.jpg",
+    "imageCredit": "Larry Miller・CC BY-SA 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "莫雷醬",
+    "localName": "Mole",
+    "description": "以辣椒、香料、堅果與巧克力等數十種材料熬成的濃醬，常配雞肉。",
+    "history": "融合原住民與西班牙食材，普埃布拉與瓦哈卡的莫雷特別有名。",
+    "wiki": "Mole (sauce)",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/ChickRedMole.JPG/960px-ChickRedMole.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:ChickRedMole.JPG",
+    "imageCredit": "AlejandroLinaresGarcia・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "玉米粽",
+    "localName": "Tamal",
+    "description": "以玉米麵團包餡料，用玉米葉或香蕉葉包好蒸熟。",
+    "history": "可追溯至前哥倫布時期，是節慶與聖燭節的傳統食物。",
+    "wiki": "Tamale",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Tamal_oaxaque%C3%B1o.jpg/960px-Tamal_oaxaque%C3%B1o.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Tamal_oaxaque%C3%B1o.jpg",
+    "imageCredit": "Georgina Meneses・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "核桃醬鑲辣椒",
+    "localName": "Chiles en nogada",
+    "description": "以肉餡鑲入辣椒，淋上白色核桃醬並撒石榴籽。",
+    "history": "紅、白、綠三色象徵墨西哥國旗，傳統上在獨立紀念月份食用。",
+    "wiki": "Chiles en nogada",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Chile_en_nogada24.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Chile_en_nogada24.jpg",
+    "imageCredit": "Jessica Toledo・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "玉米燉湯",
+    "localName": "Pozole",
+    "description": "以大顆玉米粒與豬肉或雞肉燉煮的湯。",
+    "history": "源自前哥倫布時期的儀式料理，現常於國慶等節日食用。",
+    "wiki": "Pozole",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Green_pozole%2C_dressed_%2829161841908%29_%28cropped%29.jpg/960px-Green_pozole%2C_dressed_%2829161841908%29_%28cropped%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Green_pozole,_dressed_(29161841908)_(cropped).jpg",
+    "imageCredit": "T.Tseng・CC BY 2.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

@@ -1,89 +1,104 @@
 {
-  "iso": "DOM",
-  "capital": "聖多明哥",
-  "summary": "位於加勒比海伊斯帕尼奧拉島東部的國家，首都聖多明哥是歐洲人在美洲建立的最早城市之一，以棒球與梅倫格音樂聞名。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "天主教",
-        "percent": 49,
-        "description": "西班牙殖民時期傳入，仍是最大宗教，影響節慶與社會生活。"
-      },
-      {
-        "name": "新教（福音派）",
-        "percent": 24,
-        "description": "20世紀後期快速成長，以五旬節派為主。"
-      },
-      {
-        "name": "無宗教",
-        "percent": 22,
-        "description": "近年比例上升，尤其在年輕人之間。"
-      },
-      {
-        "name": "其他",
-        "percent": 3,
-        "description": "包含耶和華見證人、伊斯蘭教等。"
-      }
-    ],
-    "background": "1492年哥倫布抵達後，西班牙在此建立美洲第一個主教區，天主教成為殖民社會核心，1954年與梵蒂岡簽訂協定確立其地位。20世紀後期美國福音派傳教活動帶動新教成長。"
-  },
-  "language": {
-    "official": "官方語言為西班牙語。",
-    "ranking": [
-      {
-        "name": "西班牙語",
-        "percent": 98,
-        "description": "全國通用，加勒比海西班牙語口音明顯。",
-        "greeting": "Hola",
-        "pronunciation": "o-la"
-      },
-      {
-        "name": "海地克里奧爾語",
-        "percent": 2,
-        "description": "海地移民及其後代使用。",
-        "greeting": "Bonjou",
-        "pronunciation": "bon-zhoo"
-      }
-    ],
-    "history": "原住民泰諾人的語言隨人口在殖民初期銳減而消失，僅留下如hamaca（吊床）、huracán（颶風）等詞彙。西班牙語隨殖民成為主要語言，與西鄰海地使用法語系克里奧爾語形成對比。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "國旗餐",
-        "localName": "La bandera dominicana",
-        "description": "白飯、紅豆燉菜與燉肉的組合，配上沙拉，是典型午餐。",
-        "history": "因白、紅、肉色組合被比喻為國旗而得名，是多明尼加人最日常的一餐。",
-        "wiki": "Dominican Republic cuisine"
-      },
-      {
-        "name": "芭蕉泥",
-        "localName": "Mangú",
-        "description": "將青芭蕉煮熟搗成泥，配上醋漬紅洋蔥、炸起司、香腸與蛋。",
-        "history": "源自西非的搗泥傳統，隨奴隸貿易傳入，是代表性早餐。",
-        "wiki": "Mangú"
-      },
-      {
-        "name": "什錦燉肉湯",
-        "localName": "Sancocho",
-        "description": "以多種肉類、根莖類與芭蕉燉成的濃湯，節慶時常見。",
-        "history": "源自西班牙的燉菜傳統並融合在地食材，多明尼加版本以「七種肉」最為隆重。",
-        "wiki": "Sancocho"
-      },
-      {
-        "name": "炸芭蕉片",
-        "localName": "Tostones",
-        "description": "將青芭蕉切片後壓扁兩次油炸，酥脆鹹香。",
-        "history": "加勒比海普遍的配菜，幾乎是多明尼加每餐必備。",
-        "wiki": "Tostones"
-      },
-      {
-        "name": "甜豆奶羹",
-        "localName": "Habichuelas con dulce",
-        "description": "以紅豆、椰奶、地瓜與香料煮成的甜湯，加上小餅乾。",
-        "history": "大齋期與復活節期間的傳統甜點，是多明尼加獨特的節慶食物。",
-        "wiki": "Habichuelas con dulce"
-      }
-    ]
-  }
+ "iso": "DOM",
+ "capital": "聖多明哥",
+ "summary": "位於加勒比海伊斯帕尼奧拉島東部的國家，首都聖多明哥是歐洲人在美洲建立的最早城市之一，以棒球與梅倫格音樂聞名。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "天主教",
+    "percent": 49,
+    "description": "西班牙殖民時期傳入，仍是最大宗教，影響節慶與社會生活。"
+   },
+   {
+    "name": "新教（福音派）",
+    "percent": 24,
+    "description": "20世紀後期快速成長，以五旬節派為主。"
+   },
+   {
+    "name": "無宗教",
+    "percent": 22,
+    "description": "近年比例上升，尤其在年輕人之間。"
+   },
+   {
+    "name": "其他",
+    "percent": 3,
+    "description": "包含耶和華見證人、伊斯蘭教等。"
+   }
+  ],
+  "background": "1492年哥倫布抵達後，西班牙在此建立美洲第一個主教區，天主教成為殖民社會核心，1954年與梵蒂岡簽訂協定確立其地位。20世紀後期美國福音派傳教活動帶動新教成長。"
+ },
+ "language": {
+  "official": "官方語言為西班牙語。",
+  "ranking": [
+   {
+    "name": "西班牙語",
+    "percent": 98,
+    "description": "全國通用，加勒比海西班牙語口音明顯。",
+    "greeting": "Hola",
+    "pronunciation": "o-la"
+   },
+   {
+    "name": "海地克里奧爾語",
+    "percent": 2,
+    "description": "海地移民及其後代使用。",
+    "greeting": "Bonjou",
+    "pronunciation": "bon-zhoo"
+   }
+  ],
+  "history": "原住民泰諾人的語言隨人口在殖民初期銳減而消失，僅留下如hamaca（吊床）、huracán（颶風）等詞彙。西班牙語隨殖民成為主要語言，與西鄰海地使用法語系克里奧爾語形成對比。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "國旗餐",
+    "localName": "La bandera dominicana",
+    "description": "白飯、紅豆燉菜與燉肉的組合，配上沙拉，是典型午餐。",
+    "history": "因白、紅、肉色組合被比喻為國旗而得名，是多明尼加人最日常的一餐。",
+    "wiki": "Dominican Republic cuisine",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Chimichurri_burger.jpg/960px-Chimichurri_burger.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Chimichurri_burger.jpg",
+    "imageCredit": "LittleT889・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "芭蕉泥",
+    "localName": "Mangú",
+    "description": "將青芭蕉煮熟搗成泥，配上醋漬紅洋蔥、炸起司、香腸與蛋。",
+    "history": "源自西非的搗泥傳統，隨奴隸貿易傳入，是代表性早餐。",
+    "wiki": "Mangú",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Mangu_dominicano_--Contenido-_-Lonjas_de_salami_fritas_-Lonjas_de_queso_blanco_-Mangu_o_pur%C3%A9_de_pl%C3%A1tano_verde_-Mantequilla_--Este_es_un_plato_t%C3%ADpico_en_el_desayuno_dominicano_--Rep%C3%BAblica_Dominicana_-_2013-10-08_14-28.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Mangu_dominicano_--Contenido-_-Lonjas_de_salami_fritas_-Lonjas_de_queso_blanco_-Mangu_o_pur%C3%A9_de_pl%C3%A1tano_verde_-Mantequilla_--Este_es_un_plato_t%C3%ADpico_en_el_desayuno_dominicano_--Rep%C3%BAblica_Dominicana_-_2013-10-08_14-28.jpg",
+    "imageCredit": "User:Dominicanoventura・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "什錦燉肉湯",
+    "localName": "Sancocho",
+    "description": "以多種肉類、根莖類與芭蕉燉成的濃湯，節慶時常見。",
+    "history": "源自西班牙的燉菜傳統並融合在地食材，多明尼加版本以「七種肉」最為隆重。",
+    "wiki": "Sancocho",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Sancocho_de_espinazo_de_cerdo.jpg/960px-Sancocho_de_espinazo_de_cerdo.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Sancocho_de_espinazo_de_cerdo.jpg",
+    "imageCredit": "Daguerreroa・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "炸芭蕉片",
+    "localName": "Tostones",
+    "description": "將青芭蕉切片後壓扁兩次油炸，酥脆鹹香。",
+    "history": "加勒比海普遍的配菜，幾乎是多明尼加每餐必備。",
+    "wiki": "Tostones",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Tostones.JPG/960px-Tostones.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Tostones.JPG",
+    "imageCredit": "AMartiniouk・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "甜豆奶羹",
+    "localName": "Habichuelas con dulce",
+    "description": "以紅豆、椰奶、地瓜與香料煮成的甜湯，加上小餅乾。",
+    "history": "大齋期與復活節期間的傳統甜點，是多明尼加獨特的節慶食物。",
+    "wiki": "Habichuelas con dulce",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Habichuelas_con_dulce_dominicana.jpg/960px-Habichuelas_con_dulce_dominicana.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Habichuelas_con_dulce_dominicana.jpg",
+    "imageCredit": "Arlene Campusano・CC BY-SA 4.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

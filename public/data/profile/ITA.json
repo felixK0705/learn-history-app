@@ -1,96 +1,111 @@
 {
-  "iso": "ITA",
-  "capital": "羅馬",
-  "summary": "位於南歐亞平寧半島的國家，是古羅馬帝國與文藝復興的發源地，梵蒂岡位於首都羅馬境內，擁有全球最多的世界遺產之一。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "天主教",
-        "percent": 74,
-        "description": "歷史上的主要宗教，梵蒂岡位於羅馬，影響深遠。"
-      },
-      {
-        "name": "無宗教",
-        "percent": 20,
-        "description": "近年比例上升，北部較明顯。"
-      },
-      {
-        "name": "伊斯蘭教",
-        "percent": 3,
-        "description": "主要來自北非與南亞移民。"
-      },
-      {
-        "name": "其他基督教（東正教、新教等）",
-        "percent": 2,
-        "description": "包含羅馬尼亞等東歐移民的東正教與瓦勒度派等。"
-      }
-    ],
-    "background": "羅馬帝國於4世紀將基督教定為國教，羅馬主教（教宗）成為西方教會領袖。教宗國曾統治義大利中部直到1870年，1929年《拉特蘭條約》建立梵蒂岡城國。近數十年社會世俗化，移民帶入伊斯蘭教與東正教。"
-  },
-  "language": {
-    "official": "官方語言為義大利語，部分地區另有德語、法語、斯洛維尼亞語等官方語言。",
-    "ranking": [
-      {
-        "name": "義大利語",
-        "percent": 93,
-        "description": "源自托斯卡尼方言，全國通用。",
-        "greeting": "Ciao / Buongiorno",
-        "pronunciation": "chow / bwon-jor-no"
-      },
-      {
-        "name": "德語",
-        "percent": 1,
-        "description": "北部南提洛（上阿迪傑）的主要語言。",
-        "greeting": "Grüß Gott",
-        "pronunciation": "grüs got"
-      },
-      {
-        "name": "羅馬尼亞語",
-        "percent": 1,
-        "description": "最大移民群體羅馬尼亞人使用。",
-        "greeting": "Bună ziua",
-        "pronunciation": "bu-nuh zi-wa"
-      }
-    ],
-    "history": "拉丁語在羅馬帝國崩潰後分化為各地方言。14世紀但丁、佩脫拉克、薄伽丘以托斯卡尼方言創作，奠定標準義大利語的基礎。1861年統一時只有少數人說標準義大利語，20世紀透過教育與電視才普及全國，方言至今仍廣泛存在。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "拿坡里披薩",
-        "localName": "Pizza napoletana",
-        "description": "薄餅皮鋪上番茄、莫札瑞拉起司與羅勒，以柴窯高溫烤製。",
-        "history": "18–19世紀在拿坡里發展成形，「拿坡里披薩師傅的技藝」於2017年列入聯合國教科文組織非物質文化遺產。",
-        "wiki": "Neapolitan pizza"
-      },
-      {
-        "name": "培根蛋麵",
-        "localName": "Spaghetti alla carbonara",
-        "description": "義大利麵拌入蛋黃、佩科里諾起司、醃豬頰肉與黑胡椒。",
-        "history": "羅馬代表性料理，一般認為於二戰後期至戰後才出現。",
-        "wiki": "Carbonara"
-      },
-      {
-        "name": "千層麵",
-        "localName": "Lasagne",
-        "description": "多層麵皮夾肉醬、白醬與起司烘烤。",
-        "history": "源自艾米利亞－羅馬涅地區（波隆那）的傳統料理。",
-        "wiki": "Lasagna"
-      },
-      {
-        "name": "燉飯",
-        "localName": "Risotto",
-        "description": "以短粒米慢慢加入高湯攪拌熬煮，成品濃稠滑順。",
-        "history": "源自北部倫巴底與皮埃蒙特的稻作地區，米蘭番紅花燉飯最為著名。",
-        "wiki": "Risotto"
-      },
-      {
-        "name": "提拉米蘇",
-        "localName": "Tiramisù",
-        "description": "以浸過咖啡的手指餅乾與馬斯卡彭起司層疊，撒可可粉。",
-        "history": "一般認為1960至70年代於威尼托地區誕生，名稱意為「帶我走／提振我」。",
-        "wiki": "Tiramisu"
-      }
-    ]
-  }
+ "iso": "ITA",
+ "capital": "羅馬",
+ "summary": "位於南歐亞平寧半島的國家，是古羅馬帝國與文藝復興的發源地，梵蒂岡位於首都羅馬境內，擁有全球最多的世界遺產之一。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "天主教",
+    "percent": 74,
+    "description": "歷史上的主要宗教，梵蒂岡位於羅馬，影響深遠。"
+   },
+   {
+    "name": "無宗教",
+    "percent": 20,
+    "description": "近年比例上升，北部較明顯。"
+   },
+   {
+    "name": "伊斯蘭教",
+    "percent": 3,
+    "description": "主要來自北非與南亞移民。"
+   },
+   {
+    "name": "其他基督教（東正教、新教等）",
+    "percent": 2,
+    "description": "包含羅馬尼亞等東歐移民的東正教與瓦勒度派等。"
+   }
+  ],
+  "background": "羅馬帝國於4世紀將基督教定為國教，羅馬主教（教宗）成為西方教會領袖。教宗國曾統治義大利中部直到1870年，1929年《拉特蘭條約》建立梵蒂岡城國。近數十年社會世俗化，移民帶入伊斯蘭教與東正教。"
+ },
+ "language": {
+  "official": "官方語言為義大利語，部分地區另有德語、法語、斯洛維尼亞語等官方語言。",
+  "ranking": [
+   {
+    "name": "義大利語",
+    "percent": 93,
+    "description": "源自托斯卡尼方言，全國通用。",
+    "greeting": "Ciao / Buongiorno",
+    "pronunciation": "chow / bwon-jor-no"
+   },
+   {
+    "name": "德語",
+    "percent": 1,
+    "description": "北部南提洛（上阿迪傑）的主要語言。",
+    "greeting": "Grüß Gott",
+    "pronunciation": "grüs got"
+   },
+   {
+    "name": "羅馬尼亞語",
+    "percent": 1,
+    "description": "最大移民群體羅馬尼亞人使用。",
+    "greeting": "Bună ziua",
+    "pronunciation": "bu-nuh zi-wa"
+   }
+  ],
+  "history": "拉丁語在羅馬帝國崩潰後分化為各地方言。14世紀但丁、佩脫拉克、薄伽丘以托斯卡尼方言創作，奠定標準義大利語的基礎。1861年統一時只有少數人說標準義大利語，20世紀透過教育與電視才普及全國，方言至今仍廣泛存在。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "拿坡里披薩",
+    "localName": "Pizza napoletana",
+    "description": "薄餅皮鋪上番茄、莫札瑞拉起司與羅勒，以柴窯高溫烤製。",
+    "history": "18–19世紀在拿坡里發展成形，「拿坡里披薩師傅的技藝」於2017年列入聯合國教科文組織非物質文化遺產。",
+    "wiki": "Neapolitan pizza",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Neapolitan_pizza_at_Trappica_%2848701940197%29.jpg/960px-Neapolitan_pizza_at_Trappica_%2848701940197%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Neapolitan_pizza_at_Trappica_(48701940197).jpg",
+    "imageCredit": "Bex Walton from London, England・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "培根蛋麵",
+    "localName": "Spaghetti alla carbonara",
+    "description": "義大利麵拌入蛋黃、佩科里諾起司、醃豬頰肉與黑胡椒。",
+    "history": "羅馬代表性料理，一般認為於二戰後期至戰後才出現。",
+    "wiki": "Carbonara",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Espaguetis_carbonara.jpg/960px-Espaguetis_carbonara.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Espaguetis_carbonara.jpg",
+    "imageCredit": "Javier Somoza・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "千層麵",
+    "localName": "Lasagne",
+    "description": "多層麵皮夾肉醬、白醬與起司烘烤。",
+    "history": "源自艾米利亞－羅馬涅地區（波隆那）的傳統料理。",
+    "wiki": "Lasagna",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Lasagne_-_stonesoup.jpg/960px-Lasagne_-_stonesoup.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Lasagne_-_stonesoup.jpg",
+    "imageCredit": "jules / stonesoup・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "燉飯",
+    "localName": "Risotto",
+    "description": "以短粒米慢慢加入高湯攪拌熬煮，成品濃稠滑順。",
+    "history": "源自北部倫巴底與皮埃蒙特的稻作地區，米蘭番紅花燉飯最為著名。",
+    "wiki": "Risotto",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Risotto_with_speck_and_goat_cheese_%286101067436%29.jpg/960px-Risotto_with_speck_and_goat_cheese_%286101067436%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Risotto_with_speck_and_goat_cheese_(6101067436).jpg",
+    "imageCredit": "Luca Nebuloni from Milan, Italy・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "提拉米蘇",
+    "localName": "Tiramisù",
+    "description": "以浸過咖啡的手指餅乾與馬斯卡彭起司層疊，撒可可粉。",
+    "history": "一般認為1960至70年代於威尼托地區誕生，名稱意為「帶我走／提振我」。",
+    "wiki": "Tiramisu",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Tiramisu_-_Raffaele_Diomede.jpg/960px-Tiramisu_-_Raffaele_Diomede.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Tiramisu_-_Raffaele_Diomede.jpg",
+    "imageCredit": "Raffaele Diomede from Pordenone, ITALIA・CC BY 2.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

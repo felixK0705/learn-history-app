@@ -1,103 +1,118 @@
 {
-  "iso": "PAK",
-  "capital": "伊斯蘭馬巴德",
-  "summary": "巴基斯坦位於南亞西北部，1947年印巴分治時建國，人口位居世界前列，境內有印度河文明遺址與喀喇崑崙山脈。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "伊斯蘭教（遜尼派）",
-        "percent": 84,
-        "description": "國教，以哈乃斐學派為主，蘇菲信仰影響深遠。"
-      },
-      {
-        "name": "伊斯蘭教（什葉派）",
-        "percent": 12,
-        "description": "規模龐大的少數派。"
-      },
-      {
-        "name": "印度教",
-        "percent": 2,
-        "description": "主要分布於信德省。"
-      },
-      {
-        "name": "基督教",
-        "percent": 1,
-        "description": "主要分布於旁遮普省。"
-      }
-    ],
-    "background": "八世紀阿拉伯軍隊征服信德，之後伽色尼、德里蘇丹國與蒙兀兒帝國等穆斯林政權統治，加上蘇菲聖者的傳教，使伊斯蘭教在當地深根。1947年印巴分治時大量印度教徒與錫克教徒遷往印度，使穆斯林比例大幅上升。"
-  },
-  "language": {
-    "official": "烏爾都語與英語是官方語言。",
-    "ranking": [
-      {
-        "name": "旁遮普語",
-        "percent": 37,
-        "description": "人數最多的母語，主要使用於旁遮普省。",
-        "greeting": "سلام (Salaam)",
-        "pronunciation": "sa-LAAM"
-      },
-      {
-        "name": "普什圖語",
-        "percent": 18,
-        "description": "西北部開伯爾—普什圖省普什圖人的語言。",
-        "greeting": "ستړي مه شې",
-        "pronunciation": "STUH-ray ma SHAY"
-      },
-      {
-        "name": "信德語",
-        "percent": 14,
-        "description": "南部信德省的語言。",
-        "greeting": "ڀلي ڪري آيا",
-        "pronunciation": "BHA-lee ka-REE AA-ya"
-      },
-      {
-        "name": "烏爾都語",
-        "percent": 9,
-        "description": "國語，母語者不多，但是全國通用語。",
-        "greeting": "السلام علیکم",
-        "pronunciation": "as-sa-LAA-mu a-LAI-kum"
-      }
-    ],
-    "history": "烏爾都語在蒙兀兒時期融合波斯語、阿拉伯語與當地印度語言發展而成，與印地語口語高度互通。建國後烏爾都語被定為國語以促進統一，但1952年東巴基斯坦的孟加拉語運動也凸顯了語言與族群認同的緊張關係。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "比爾亞尼飯",
-        "localName": "بریانی (Biryani)",
-        "description": "以香料、肉類與長米一同燜煮的香料飯。",
-        "history": "源自蒙兀兒宮廷料理，喀拉蚩的信德比爾亞尼尤其有名。",
-        "wiki": "Biryani"
-      },
-      {
-        "name": "尼哈里",
-        "localName": "نہاری (Nihari)",
-        "description": "以牛腱長時間慢燉的濃郁咖哩。",
-        "history": "源自蒙兀兒時期的德里，傳統上作為早餐食用。",
-        "wiki": "Nihari"
-      },
-      {
-        "name": "哈利姆",
-        "localName": "حلیم (Haleem)",
-        "description": "以小麥、扁豆與肉長時間燉煮成的濃稠糊狀料理。",
-        "history": "源自阿拉伯的哈里斯，在南亞發展出獨特版本，齋戒月常見。",
-        "wiki": "Haleem"
-      },
-      {
-        "name": "恰普利烤肉餅",
-        "localName": "چپلی کباب (Chapli kebab)",
-        "description": "以絞肉、香料與番茄製成的扁平煎肉餅。",
-        "history": "源自白沙瓦的普什圖料理。",
-        "wiki": "Chapli kebab"
-      },
-      {
-        "name": "卡拉希雞",
-        "localName": "کڑاہی (Karahi)",
-        "description": "在深鍋中以番茄、薑與辣椒快炒的雞肉或羊肉。",
-        "history": "源自西北部公路邊的小吃店，現已普及全國。",
-        "wiki": "Karahi"
-      }
-    ]
-  }
+ "iso": "PAK",
+ "capital": "伊斯蘭馬巴德",
+ "summary": "巴基斯坦位於南亞西北部，1947年印巴分治時建國，人口位居世界前列，境內有印度河文明遺址與喀喇崑崙山脈。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "伊斯蘭教（遜尼派）",
+    "percent": 84,
+    "description": "國教，以哈乃斐學派為主，蘇菲信仰影響深遠。"
+   },
+   {
+    "name": "伊斯蘭教（什葉派）",
+    "percent": 12,
+    "description": "規模龐大的少數派。"
+   },
+   {
+    "name": "印度教",
+    "percent": 2,
+    "description": "主要分布於信德省。"
+   },
+   {
+    "name": "基督教",
+    "percent": 1,
+    "description": "主要分布於旁遮普省。"
+   }
+  ],
+  "background": "八世紀阿拉伯軍隊征服信德，之後伽色尼、德里蘇丹國與蒙兀兒帝國等穆斯林政權統治，加上蘇菲聖者的傳教，使伊斯蘭教在當地深根。1947年印巴分治時大量印度教徒與錫克教徒遷往印度，使穆斯林比例大幅上升。"
+ },
+ "language": {
+  "official": "烏爾都語與英語是官方語言。",
+  "ranking": [
+   {
+    "name": "旁遮普語",
+    "percent": 37,
+    "description": "人數最多的母語，主要使用於旁遮普省。",
+    "greeting": "سلام (Salaam)",
+    "pronunciation": "sa-LAAM"
+   },
+   {
+    "name": "普什圖語",
+    "percent": 18,
+    "description": "西北部開伯爾—普什圖省普什圖人的語言。",
+    "greeting": "ستړي مه شې",
+    "pronunciation": "STUH-ray ma SHAY"
+   },
+   {
+    "name": "信德語",
+    "percent": 14,
+    "description": "南部信德省的語言。",
+    "greeting": "ڀلي ڪري آيا",
+    "pronunciation": "BHA-lee ka-REE AA-ya"
+   },
+   {
+    "name": "烏爾都語",
+    "percent": 9,
+    "description": "國語，母語者不多，但是全國通用語。",
+    "greeting": "السلام علیکم",
+    "pronunciation": "as-sa-LAA-mu a-LAI-kum"
+   }
+  ],
+  "history": "烏爾都語在蒙兀兒時期融合波斯語、阿拉伯語與當地印度語言發展而成，與印地語口語高度互通。建國後烏爾都語被定為國語以促進統一，但1952年東巴基斯坦的孟加拉語運動也凸顯了語言與族群認同的緊張關係。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "比爾亞尼飯",
+    "localName": "بریانی (Biryani)",
+    "description": "以香料、肉類與長米一同燜煮的香料飯。",
+    "history": "源自蒙兀兒宮廷料理，喀拉蚩的信德比爾亞尼尤其有名。",
+    "wiki": "Biryani",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/%22Hyderabadi_Dum_Biryani%22.jpg/960px-%22Hyderabadi_Dum_Biryani%22.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:%22Hyderabadi_Dum_Biryani%22.jpg",
+    "imageCredit": "Mahi Tatavarty・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "尼哈里",
+    "localName": "نہاری (Nihari)",
+    "description": "以牛腱長時間慢燉的濃郁咖哩。",
+    "history": "源自蒙兀兒時期的德里，傳統上作為早餐食用。",
+    "wiki": "Nihari",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Nalli_Nihari_India.jpg/960px-Nalli_Nihari_India.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Nalli_Nihari_India.jpg",
+    "imageCredit": "Nilanjan Sasmal・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "哈利姆",
+    "localName": "حلیم (Haleem)",
+    "description": "以小麥、扁豆與肉長時間燉煮成的濃稠糊狀料理。",
+    "history": "源自阿拉伯的哈里斯，在南亞發展出獨特版本，齋戒月常見。",
+    "wiki": "Haleem",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Pakistani_Haleem_served_with_garnish.jpg/960px-Pakistani_Haleem_served_with_garnish.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Pakistani_Haleem_served_with_garnish.jpg",
+    "imageCredit": "Halt123halt・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "恰普利烤肉餅",
+    "localName": "چپلی کباب (Chapli kebab)",
+    "description": "以絞肉、香料與番茄製成的扁平煎肉餅。",
+    "history": "源自白沙瓦的普什圖料理。",
+    "wiki": "Chapli kebab",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Chapli_Kebab.jpg/960px-Chapli_Kebab.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Chapli_Kebab.jpg",
+    "imageCredit": "Murcotipton・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "卡拉希雞",
+    "localName": "کڑاہی (Karahi)",
+    "description": "在深鍋中以番茄、薑與辣椒快炒的雞肉或羊肉。",
+    "history": "源自西北部公路邊的小吃店，現已普及全國。",
+    "wiki": "Karahi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Wok-and-karahi-2.jpg/960px-Wok-and-karahi-2.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Wok-and-karahi-2.jpg",
+    "imageCredit": "FiveRings at en.wikipedia・CC BY-SA 3.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

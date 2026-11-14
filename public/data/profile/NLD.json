@@ -1,96 +1,111 @@
 {
-  "iso": "NLD",
-  "capital": "阿姆斯特丹",
-  "summary": "荷蘭位於西歐北海沿岸，約四分之一國土低於海平面，以風車、鬱金香、運河與開放的社會風氣聞名；政府所在地為海牙。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "無宗教",
-        "percent": 57,
-        "description": "荷蘭是歐洲最世俗化的國家之一。"
-      },
-      {
-        "name": "天主教",
-        "percent": 17,
-        "description": "主要分布於南部各省。"
-      },
-      {
-        "name": "基督新教",
-        "percent": 13,
-        "description": "以荷蘭新教教會為主。"
-      },
-      {
-        "name": "伊斯蘭教",
-        "percent": 5,
-        "description": "主要為土耳其與摩洛哥裔移民及其後代。"
-      }
-    ],
-    "background": "十六世紀宗教改革後喀爾文派在北部成為主流，南部則保留天主教，二十世紀前社會曾依宗教與意識形態「柱化」分隔。1960年代後世俗化迅速，戰後來自土耳其與摩洛哥的勞工則帶來伊斯蘭教。"
-  },
-  "language": {
-    "official": "荷蘭語是官方語言，弗里斯蘭語在弗里斯蘭省亦具官方地位。",
-    "ranking": [
-      {
-        "name": "荷蘭語",
-        "percent": 95,
-        "description": "屬西日耳曼語支，與德語和英語相近。",
-        "greeting": "Hallo",
-        "pronunciation": "HAH-loh"
-      },
-      {
-        "name": "西弗里斯蘭語",
-        "percent": 2,
-        "description": "北部弗里斯蘭省的語言，是與英語最接近的語言之一。",
-        "greeting": "Goeie",
-        "pronunciation": "GOO-yeh"
-      },
-      {
-        "name": "土耳其語",
-        "percent": 1,
-        "description": "土耳其裔移民社群使用。",
-        "greeting": "Merhaba",
-        "pronunciation": "MER-ha-ba"
-      }
-    ],
-    "history": "荷蘭語由中世紀低地法蘭克方言發展而來，1637年出版的《國家譯本聖經》對標準荷蘭語影響深遠。荷蘭在海外殖民時代將荷蘭語帶至南非（演變為南非語）、蘇利南與印尼等地。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "什錦薯泥",
-        "localName": "Stamppot",
-        "description": "將馬鈴薯泥與羽衣甘藍或酸菜拌勻，配煙燻香腸。",
-        "history": "荷蘭傳統的冬季家常菜。",
-        "wiki": "Stamppot"
-      },
-      {
-        "name": "焦糖煎餅",
-        "localName": "Stroopwafel",
-        "description": "兩片薄脆鬆餅夾焦糖糖漿。",
-        "history": "十九世紀源自豪達市的點心，現已風靡全球。",
-        "wiki": "Stroopwafel"
-      },
-      {
-        "name": "生醃鯡魚",
-        "localName": "Hollandse Nieuwe",
-        "description": "以鹽輕醃的生鯡魚，常配洋蔥生食。",
-        "history": "鯡魚貿易是荷蘭黃金時代經濟的基礎之一。",
-        "wiki": "Soused herring"
-      },
-      {
-        "name": "炸肉丸",
-        "localName": "Bitterballen",
-        "description": "外酥內軟的炸肉醬丸，配芥末醬。",
-        "history": "荷蘭酒館最經典的下酒小吃。",
-        "wiki": "Bitterballen"
-      },
-      {
-        "name": "小鬆餅",
-        "localName": "Poffertjes",
-        "description": "以蕎麥與麵粉麵糊煎成的迷你蓬鬆鬆餅，撒糖粉。",
-        "history": "荷蘭市集與節慶常見的傳統點心。",
-        "wiki": "Poffertjes"
-      }
-    ]
-  }
+ "iso": "NLD",
+ "capital": "阿姆斯特丹",
+ "summary": "荷蘭位於西歐北海沿岸，約四分之一國土低於海平面，以風車、鬱金香、運河與開放的社會風氣聞名；政府所在地為海牙。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "無宗教",
+    "percent": 57,
+    "description": "荷蘭是歐洲最世俗化的國家之一。"
+   },
+   {
+    "name": "天主教",
+    "percent": 17,
+    "description": "主要分布於南部各省。"
+   },
+   {
+    "name": "基督新教",
+    "percent": 13,
+    "description": "以荷蘭新教教會為主。"
+   },
+   {
+    "name": "伊斯蘭教",
+    "percent": 5,
+    "description": "主要為土耳其與摩洛哥裔移民及其後代。"
+   }
+  ],
+  "background": "十六世紀宗教改革後喀爾文派在北部成為主流，南部則保留天主教，二十世紀前社會曾依宗教與意識形態「柱化」分隔。1960年代後世俗化迅速，戰後來自土耳其與摩洛哥的勞工則帶來伊斯蘭教。"
+ },
+ "language": {
+  "official": "荷蘭語是官方語言，弗里斯蘭語在弗里斯蘭省亦具官方地位。",
+  "ranking": [
+   {
+    "name": "荷蘭語",
+    "percent": 95,
+    "description": "屬西日耳曼語支，與德語和英語相近。",
+    "greeting": "Hallo",
+    "pronunciation": "HAH-loh"
+   },
+   {
+    "name": "西弗里斯蘭語",
+    "percent": 2,
+    "description": "北部弗里斯蘭省的語言，是與英語最接近的語言之一。",
+    "greeting": "Goeie",
+    "pronunciation": "GOO-yeh"
+   },
+   {
+    "name": "土耳其語",
+    "percent": 1,
+    "description": "土耳其裔移民社群使用。",
+    "greeting": "Merhaba",
+    "pronunciation": "MER-ha-ba"
+   }
+  ],
+  "history": "荷蘭語由中世紀低地法蘭克方言發展而來，1637年出版的《國家譯本聖經》對標準荷蘭語影響深遠。荷蘭在海外殖民時代將荷蘭語帶至南非（演變為南非語）、蘇利南與印尼等地。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "什錦薯泥",
+    "localName": "Stamppot",
+    "description": "將馬鈴薯泥與羽衣甘藍或酸菜拌勻，配煙燻香腸。",
+    "history": "荷蘭傳統的冬季家常菜。",
+    "wiki": "Stamppot",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Boerenkool_stamppot.jpg/960px-Boerenkool_stamppot.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Boerenkool_stamppot.jpg",
+    "imageCredit": "M.Minderhoud・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "焦糖煎餅",
+    "localName": "Stroopwafel",
+    "description": "兩片薄脆鬆餅夾焦糖糖漿。",
+    "history": "十九世紀源自豪達市的點心，現已風靡全球。",
+    "wiki": "Stroopwafel",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Stroopwafels_01.jpg/960px-Stroopwafels_01.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Stroopwafels_01.jpg",
+    "imageCredit": "Takeaway・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "生醃鯡魚",
+    "localName": "Hollandse Nieuwe",
+    "description": "以鹽輕醃的生鯡魚，常配洋蔥生食。",
+    "history": "鯡魚貿易是荷蘭黃金時代經濟的基礎之一。",
+    "wiki": "Soused herring",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Haring_04.jpg/960px-Haring_04.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Haring_04.jpg",
+    "imageCredit": "Takeaway・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "炸肉丸",
+    "localName": "Bitterballen",
+    "description": "外酥內軟的炸肉醬丸，配芥末醬。",
+    "history": "荷蘭酒館最經典的下酒小吃。",
+    "wiki": "Bitterballen",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Bitterballen_mosterd_mayo.jpg/960px-Bitterballen_mosterd_mayo.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Bitterballen_mosterd_mayo.jpg",
+    "imageCredit": "Takeaway・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "小鬆餅",
+    "localName": "Poffertjes",
+    "description": "以蕎麥與麵粉麵糊煎成的迷你蓬鬆鬆餅，撒糖粉。",
+    "history": "荷蘭市集與節慶常見的傳統點心。",
+    "wiki": "Poffertjes",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Poffertjes-Melkhuis_%28cropped%29.jpg/960px-Poffertjes-Melkhuis_%28cropped%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Poffertjes-Melkhuis_(cropped).jpg",
+    "imageCredit": "Illustratedjc・CC BY-SA 4.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

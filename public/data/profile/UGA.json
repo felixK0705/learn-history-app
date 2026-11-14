@@ -1,101 +1,116 @@
 {
-  "iso": "UGA",
-  "capital": "坎帕拉",
-  "summary": "烏干達位於東非內陸，橫跨赤道，擁有維多利亞湖與尼羅河源頭，被邱吉爾稱為「非洲明珠」。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "天主教",
-        "percent": 39,
-        "description": "最大的宗教團體。"
-      },
-      {
-        "name": "聖公會",
-        "percent": 32,
-        "description": "烏干達聖公會是另一大教會。"
-      },
-      {
-        "name": "伊斯蘭教",
-        "percent": 14,
-        "description": "十九世紀隨阿拉伯商人傳入。"
-      },
-      {
-        "name": "五旬節派／重生派",
-        "percent": 11,
-        "description": "近數十年快速成長的教會。"
-      },
-      {
-        "name": "復臨安息日會",
-        "percent": 2,
-        "description": "規模較小的新教教會。"
-      }
-    ],
-    "background": "十九世紀中期伊斯蘭教隨桑吉巴的阿拉伯商人傳入布干達王國，1870年代後英國聖公會與法國天主教傳教士相繼抵達，各派曾爆發宗教戰爭。英國保護國時期基督教成為主流，近年五旬節派教會迅速成長。"
-  },
-  "language": {
-    "official": "英語與斯瓦希里語是官方語言。",
-    "ranking": [
-      {
-        "name": "盧干達語",
-        "percent": 16,
-        "description": "中部布干達地區的語言，在首都坎帕拉廣泛使用。",
-        "greeting": "Oli otya?",
-        "pronunciation": "oh-lee OH-tya"
-      },
-      {
-        "name": "尼揚科雷語",
-        "percent": 10,
-        "description": "西南部安科雷地區的語言。",
-        "greeting": "Agandi",
-        "pronunciation": "a-GAN-dee"
-      },
-      {
-        "name": "斯瓦希里語",
-        "percent": 5,
-        "description": "官方語言，常用於軍警與跨族群溝通。",
-        "greeting": "Habari",
-        "pronunciation": "ha-BAH-ree"
-      }
-    ],
-    "history": "烏干達有40多種語言，以班圖語與尼羅語為主。英國殖民時期以英語為行政語言，並以盧干達語作為中部的教育語言；斯瓦希里語於2005年列為第二官方語言，以加強與東非共同體的連結。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "馬托基",
-        "localName": "Matoke",
-        "description": "將青香蕉蒸熟搗成泥，配花生醬或燉肉。",
-        "history": "烏干達中部與西部的主食，被視為國菜。",
-        "wiki": "Matoke"
-      },
-      {
-        "name": "勞力士蛋捲",
-        "localName": "Rolex",
-        "description": "以印度式薄餅捲起蔬菜煎蛋。",
-        "history": "名稱來自「rolled eggs」，是坎帕拉最受歡迎的街頭小吃。",
-        "wiki": "Rolex (food)"
-      },
-      {
-        "name": "盧翁博",
-        "localName": "Luwombo",
-        "description": "將肉或花生醬以香蕉葉包裹後蒸煮。",
-        "history": "源自布干達王國的宮廷料理，現常見於婚禮與節慶宴席。",
-        "wiki": "Luwombo"
-      },
-      {
-        "name": "玉米糊",
-        "localName": "Posho",
-        "description": "以玉米粉煮成的糰狀主食。",
-        "history": "東非普遍食用的主食。",
-        "wiki": "Ugali"
-      },
-      {
-        "name": "花生醬燉湯",
-        "localName": "Binyebwa",
-        "description": "以磨碎的花生熬成的濃醬，配馬托基或玉米糊。",
-        "history": "花生醬是烏干達料理中重要的蛋白質來源。",
-        "wiki": "Peanut sauce"
-      }
-    ]
-  }
+ "iso": "UGA",
+ "capital": "坎帕拉",
+ "summary": "烏干達位於東非內陸，橫跨赤道，擁有維多利亞湖與尼羅河源頭，被邱吉爾稱為「非洲明珠」。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "天主教",
+    "percent": 39,
+    "description": "最大的宗教團體。"
+   },
+   {
+    "name": "聖公會",
+    "percent": 32,
+    "description": "烏干達聖公會是另一大教會。"
+   },
+   {
+    "name": "伊斯蘭教",
+    "percent": 14,
+    "description": "十九世紀隨阿拉伯商人傳入。"
+   },
+   {
+    "name": "五旬節派／重生派",
+    "percent": 11,
+    "description": "近數十年快速成長的教會。"
+   },
+   {
+    "name": "復臨安息日會",
+    "percent": 2,
+    "description": "規模較小的新教教會。"
+   }
+  ],
+  "background": "十九世紀中期伊斯蘭教隨桑吉巴的阿拉伯商人傳入布干達王國，1870年代後英國聖公會與法國天主教傳教士相繼抵達，各派曾爆發宗教戰爭。英國保護國時期基督教成為主流，近年五旬節派教會迅速成長。"
+ },
+ "language": {
+  "official": "英語與斯瓦希里語是官方語言。",
+  "ranking": [
+   {
+    "name": "盧干達語",
+    "percent": 16,
+    "description": "中部布干達地區的語言，在首都坎帕拉廣泛使用。",
+    "greeting": "Oli otya?",
+    "pronunciation": "oh-lee OH-tya"
+   },
+   {
+    "name": "尼揚科雷語",
+    "percent": 10,
+    "description": "西南部安科雷地區的語言。",
+    "greeting": "Agandi",
+    "pronunciation": "a-GAN-dee"
+   },
+   {
+    "name": "斯瓦希里語",
+    "percent": 5,
+    "description": "官方語言，常用於軍警與跨族群溝通。",
+    "greeting": "Habari",
+    "pronunciation": "ha-BAH-ree"
+   }
+  ],
+  "history": "烏干達有40多種語言，以班圖語與尼羅語為主。英國殖民時期以英語為行政語言，並以盧干達語作為中部的教育語言；斯瓦希里語於2005年列為第二官方語言，以加強與東非共同體的連結。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "馬托基",
+    "localName": "Matoke",
+    "description": "將青香蕉蒸熟搗成泥，配花生醬或燉肉。",
+    "history": "烏干達中部與西部的主食，被視為國菜。",
+    "wiki": "Matoke",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Matooke_to_the_market.jpg/960px-Matooke_to_the_market.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Matooke_to_the_market.jpg",
+    "imageCredit": "Sagiomhza・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "勞力士蛋捲",
+    "localName": "Rolex",
+    "description": "以印度式薄餅捲起蔬菜煎蛋。",
+    "history": "名稱來自「rolled eggs」，是坎帕拉最受歡迎的街頭小吃。",
+    "wiki": "Rolex (food)",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Rolex_wrap.jpg/960px-Rolex_wrap.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Rolex_wrap.jpg",
+    "imageCredit": "Roxanne.heston・CC0・Wikimedia Commons"
+   },
+   {
+    "name": "盧翁博",
+    "localName": "Luwombo",
+    "description": "將肉或花生醬以香蕉葉包裹後蒸煮。",
+    "history": "源自布干達王國的宮廷料理，現常見於婚禮與節慶宴席。",
+    "wiki": "Luwombo",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Chicken_Luwombo.JPG/960px-Chicken_Luwombo.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Chicken_Luwombo.JPG",
+    "imageCredit": "Namuganyi・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "玉米糊",
+    "localName": "Posho",
+    "description": "以玉米粉煮成的糰狀主食。",
+    "history": "東非普遍食用的主食。",
+    "wiki": "Ugali",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/48/Ugali_%26_Sukuma_Wiki.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Ugali_%26_Sukuma_Wiki.jpg",
+    "imageCredit": "Paresh Jai from Nairobi, Kenya・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "花生醬燉湯",
+    "localName": "Binyebwa",
+    "description": "以磨碎的花生熬成的濃醬，配馬托基或玉米糊。",
+    "history": "花生醬是烏干達料理中重要的蛋白質來源。",
+    "wiki": "Peanut sauce",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Pecel_Solo.JPG/960px-Pecel_Solo.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Pecel_Solo.JPG",
+    "imageCredit": "Gunawan Kartapranata・CC BY-SA 3.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

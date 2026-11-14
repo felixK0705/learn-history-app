@@ -1,110 +1,122 @@
 {
-  "iso": "ZMB",
-  "capital": "路沙卡",
-  "summary": "位於非洲中南部的內陸國，舊稱北羅德西亞，1964年脫離英國獨立，以銅礦與維多利亞瀑布聞名。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "新教",
-        "percent": 75,
-        "description": "包含五旬節派、基督復臨安息日會、尚比亞聯合教會等，1991年憲法宣布尚比亞為「基督教國家」。"
-      },
-      {
-        "name": "天主教",
-        "percent": 20,
-        "description": "分布廣泛，辦有許多學校與醫院。"
-      },
-      {
-        "name": "其他（伊斯蘭教、印度教、巴哈伊教等）",
-        "percent": 3,
-        "description": "主要為亞裔與部分城市社群。"
-      },
-      {
-        "name": "無宗教",
-        "percent": 2,
-        "description": "比例較低。"
-      }
-    ],
-    "background": "19世紀李文斯頓等傳教士與探險家進入此地，倫敦傳道會、天主教白衣神父會等隨後建立教會與學校。殖民時期教會主導教育，使基督教廣泛普及；1991年齊盧巴總統宣布尚比亞為基督教國家，後寫入憲法。"
-  },
-  "language": {
-    "official": "官方語言為英語，另有七種主要本土語言用於教育與廣播。",
-    "ranking": [
-      {
-        "name": "本巴語",
-        "percent": 33,
-        "description": "北部與銅礦帶的主要語言，也是城市通用語之一。",
-        "greeting": "Muli shani",
-        "pronunciation": "mu-li sha-ni"
-      },
-      {
-        "name": "尼揚賈語（齊切瓦語）",
-        "percent": 15,
-        "description": "首都路沙卡與東部的主要語言。",
-        "greeting": "Muli bwanji",
-        "pronunciation": "mu-li bwan-ji"
-      },
-      {
-        "name": "通加語",
-        "percent": 11,
-        "description": "南部通加人的語言。",
-        "greeting": "Mwabuka buti（早安）",
-        "pronunciation": "mwa-bu-ka bu-ti"
-      },
-      {
-        "name": "洛齊語",
-        "percent": 6,
-        "description": "西部巴羅策蘭地區的語言。",
-        "greeting": "Lumela",
-        "pronunciation": "lu-me-la"
-      },
-      {
-        "name": "英語",
-        "percent": 2,
-        "description": "官方、教育與商業語言。",
-        "greeting": "Hello",
-        "pronunciation": "heh-loh"
-      }
-    ],
-    "history": "境內七十多種語言多屬班圖語族。19世紀科洛洛人自南方入侵巴羅策蘭，留下受索托語影響的洛齊語。英國殖民時期英語成為行政語言，銅礦帶的城市化讓本巴語與尼揚賈語成為主要族際通用語。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "玉米糊",
-        "localName": "Nshima",
-        "description": "以白玉米粉攪煮成的稠糊，配菜餚以手捏食，是國民主食。",
-        "history": "玉米於殖民時期普及後取代小米與高粱，尚比亞人常說「沒吃恩希馬就不算吃過飯」。",
-        "wiki": "Nshima"
-      },
-      {
-        "name": "花生醬燉菜",
-        "localName": "Ifisashi",
-        "description": "以綠葉菜（如南瓜葉、菠菜）加花生醬燉煮的配菜。",
-        "history": "源自本巴人的傳統料理，是常見的恩希馬配菜。",
-        "wiki": "Ifisashi"
-      },
-      {
-        "name": "非洲波隆納香腸",
-        "localName": "Chikanda",
-        "description": "以野生蘭花塊莖、花生粉與辣椒製成的素食糕。",
-        "history": "北部本巴地區的傳統食物，因過度採集蘭花而引起保育關注。",
-        "wiki": "Chikanda"
-      },
-      {
-        "name": "小魚乾",
-        "localName": "Kapenta",
-        "description": "坦干依喀湖小沙丁魚曬乾或煮成番茄燉菜，配恩希馬。",
-        "history": "1960年代引入卡里巴湖後成為重要的廉價蛋白質來源。",
-        "wiki": "Kapenta"
-      },
-      {
-        "name": "可樂豆木毛蟲",
-        "localName": "Ifinkubala",
-        "description": "炒製或燉煮的可樂豆木蛾幼蟲，富含蛋白質。",
-        "history": "南部非洲傳統的季節性食物，在尚比亞市場常見。",
-        "wiki": "Mopane worm"
-      }
-    ]
-  }
+ "iso": "ZMB",
+ "capital": "路沙卡",
+ "summary": "位於非洲中南部的內陸國，舊稱北羅德西亞，1964年脫離英國獨立，以銅礦與維多利亞瀑布聞名。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "新教",
+    "percent": 75,
+    "description": "包含五旬節派、基督復臨安息日會、尚比亞聯合教會等，1991年憲法宣布尚比亞為「基督教國家」。"
+   },
+   {
+    "name": "天主教",
+    "percent": 20,
+    "description": "分布廣泛，辦有許多學校與醫院。"
+   },
+   {
+    "name": "其他（伊斯蘭教、印度教、巴哈伊教等）",
+    "percent": 3,
+    "description": "主要為亞裔與部分城市社群。"
+   },
+   {
+    "name": "無宗教",
+    "percent": 2,
+    "description": "比例較低。"
+   }
+  ],
+  "background": "19世紀李文斯頓等傳教士與探險家進入此地，倫敦傳道會、天主教白衣神父會等隨後建立教會與學校。殖民時期教會主導教育，使基督教廣泛普及；1991年齊盧巴總統宣布尚比亞為基督教國家，後寫入憲法。"
+ },
+ "language": {
+  "official": "官方語言為英語，另有七種主要本土語言用於教育與廣播。",
+  "ranking": [
+   {
+    "name": "本巴語",
+    "percent": 33,
+    "description": "北部與銅礦帶的主要語言，也是城市通用語之一。",
+    "greeting": "Muli shani",
+    "pronunciation": "mu-li sha-ni"
+   },
+   {
+    "name": "尼揚賈語（齊切瓦語）",
+    "percent": 15,
+    "description": "首都路沙卡與東部的主要語言。",
+    "greeting": "Muli bwanji",
+    "pronunciation": "mu-li bwan-ji"
+   },
+   {
+    "name": "通加語",
+    "percent": 11,
+    "description": "南部通加人的語言。",
+    "greeting": "Mwabuka buti（早安）",
+    "pronunciation": "mwa-bu-ka bu-ti"
+   },
+   {
+    "name": "洛齊語",
+    "percent": 6,
+    "description": "西部巴羅策蘭地區的語言。",
+    "greeting": "Lumela",
+    "pronunciation": "lu-me-la"
+   },
+   {
+    "name": "英語",
+    "percent": 2,
+    "description": "官方、教育與商業語言。",
+    "greeting": "Hello",
+    "pronunciation": "heh-loh"
+   }
+  ],
+  "history": "境內七十多種語言多屬班圖語族。19世紀科洛洛人自南方入侵巴羅策蘭，留下受索托語影響的洛齊語。英國殖民時期英語成為行政語言，銅礦帶的城市化讓本巴語與尼揚賈語成為主要族際通用語。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "玉米糊",
+    "localName": "Nshima",
+    "description": "以白玉米粉攪煮成的稠糊，配菜餚以手捏食，是國民主食。",
+    "history": "玉米於殖民時期普及後取代小米與高粱，尚比亞人常說「沒吃恩希馬就不算吃過飯」。",
+    "wiki": "Nshima",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/48/Ugali_%26_Sukuma_Wiki.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Ugali_%26_Sukuma_Wiki.jpg",
+    "imageCredit": "Paresh Jai from Nairobi, Kenya・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "花生醬燉菜",
+    "localName": "Ifisashi",
+    "description": "以綠葉菜（如南瓜葉、菠菜）加花生醬燉煮的配菜。",
+    "history": "源自本巴人的傳統料理，是常見的恩希馬配菜。",
+    "wiki": "Ifisashi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Ifisashi.jpg/960px-Ifisashi.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Ifisashi.jpg",
+    "imageCredit": "LittleT889・CC BY 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "非洲波隆納香腸",
+    "localName": "Chikanda",
+    "description": "以野生蘭花塊莖、花生粉與辣椒製成的素食糕。",
+    "history": "北部本巴地區的傳統食物，因過度採集蘭花而引起保育關注。",
+    "wiki": "Chikanda",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Chikanda2.jpg/960px-Chikanda2.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Chikanda2.jpg",
+    "imageCredit": "LittleT889・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "小魚乾",
+    "localName": "Kapenta",
+    "description": "坦干依喀湖小沙丁魚曬乾或煮成番茄燉菜，配恩希馬。",
+    "history": "1960年代引入卡里巴湖後成為重要的廉價蛋白質來源。",
+    "wiki": "Kapenta"
+   },
+   {
+    "name": "可樂豆木毛蟲",
+    "localName": "Ifinkubala",
+    "description": "炒製或燉煮的可樂豆木蛾幼蟲，富含蛋白質。",
+    "history": "南部非洲傳統的季節性食物，在尚比亞市場常見。",
+    "wiki": "Mopane worm",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Colophospermum_mopane_50D_0486.jpg/960px-Colophospermum_mopane_50D_0486.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Colophospermum_mopane_50D_0486.jpg",
+    "imageCredit": "SAplants・CC BY-SA 4.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

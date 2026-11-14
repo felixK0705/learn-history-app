@@ -1,89 +1,101 @@
 {
-  "iso": "BRB",
-  "capital": "布里奇頓",
-  "summary": "加勒比海東端的島國，曾為英國殖民地，1966年獨立，2021年改制為共和國，以甘蔗、蘭姆酒與觀光聞名。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "新教",
-        "percent": 66,
-        "description": "以英國國教會（聖公會）、五旬節派、衛理公會等為主。"
-      },
-      {
-        "name": "無宗教",
-        "percent": 21,
-        "description": "近年比例上升。"
-      },
-      {
-        "name": "天主教",
-        "percent": 4,
-        "description": "少數信徒。"
-      },
-      {
-        "name": "其他（伊斯蘭教、印度教等）",
-        "percent": 3,
-        "description": "主要來自南亞移民社群。"
-      }
-    ],
-    "background": "1627年英國殖民後，聖公會成為官方教會，島上主要教區亦依聖公會劃分。廢奴前後衛理宗、摩拉維亞弟兄會等向非裔居民傳教，20世紀五旬節派興起，形成新教為主的格局。"
-  },
-  "language": {
-    "official": "官方語言為英語。",
-    "ranking": [
-      {
-        "name": "英語（含巴貝多克里奧爾語 Bajan）",
-        "percent": 97,
-        "description": "標準英語用於官方、教育與媒體，日常口語則多為帶有西非語言影響的Bajan。",
-        "greeting": "Hello",
-        "pronunciation": "heh-loh"
-      },
-      {
-        "name": "其他（印度斯坦語等移民語言）",
-        "percent": 2,
-        "description": "來自南亞與其他加勒比國家的移民社群使用。",
-        "greeting": "नमस्ते",
-        "pronunciation": "namaste"
-      }
-    ],
-    "history": "英國殖民者引進大量西非奴隸從事甘蔗種植，英語與西非語言接觸後形成巴貝多克里奧爾語（Bajan）。標準英語則透過殖民教育與行政體系成為正式語言。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "古古糊配飛魚",
-        "localName": "Cou-cou and flying fish",
-        "description": "以玉米粉與秋葵攪成的糊狀主食，配上番茄醬汁燉飛魚，為國菜。",
-        "history": "古古糊源自西非的粥糊傳統，飛魚則是巴貝多的象徵，常見於硬幣與護照圖案。",
-        "wiki": "Cou-cou"
-      },
-      {
-        "name": "布丁與醃肉",
-        "localName": "Pudding and souse",
-        "description": "以地瓜為餡的蒸香腸配上醃製豬肉，是週六傳統餐。",
-        "history": "源自奴隸時期利用豬的剩餘部位烹調，週六食用的習慣延續至今。",
-        "wiki": "Souse"
-      },
-      {
-        "name": "巴貝多焗烤通心粉",
-        "localName": "Macaroni pie",
-        "description": "加入起司、雞蛋與調味料烤成的焗烤通心粉。",
-        "history": "受英國烹調影響，是週日家庭餐桌與聚會的常見配菜。",
-        "wiki": "Macaroni pie"
-      },
-      {
-        "name": "椰香玉米甜糕",
-        "localName": "Conkies",
-        "description": "以玉米粉、南瓜、地瓜、椰子與香料包入香蕉葉蒸製的甜糕。",
-        "history": "源自西非的蒸糕傳統，傳統上於11月30日獨立紀念日前後製作。",
-        "wiki": "Conkies"
-      },
-      {
-        "name": "炸魚餅",
-        "localName": "Fish cakes",
-        "description": "以鹹鱈魚與香草拌麵糊炸成的小球，常夾麵包吃。",
-        "history": "鹹鱈魚自殖民時期與北大西洋貿易傳入，是常見街頭小吃。",
-        "wiki": "Fish cake"
-      }
-    ]
-  }
+ "iso": "BRB",
+ "capital": "布里奇頓",
+ "summary": "加勒比海東端的島國，曾為英國殖民地，1966年獨立，2021年改制為共和國，以甘蔗、蘭姆酒與觀光聞名。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "新教",
+    "percent": 66,
+    "description": "以英國國教會（聖公會）、五旬節派、衛理公會等為主。"
+   },
+   {
+    "name": "無宗教",
+    "percent": 21,
+    "description": "近年比例上升。"
+   },
+   {
+    "name": "天主教",
+    "percent": 4,
+    "description": "少數信徒。"
+   },
+   {
+    "name": "其他（伊斯蘭教、印度教等）",
+    "percent": 3,
+    "description": "主要來自南亞移民社群。"
+   }
+  ],
+  "background": "1627年英國殖民後，聖公會成為官方教會，島上主要教區亦依聖公會劃分。廢奴前後衛理宗、摩拉維亞弟兄會等向非裔居民傳教，20世紀五旬節派興起，形成新教為主的格局。"
+ },
+ "language": {
+  "official": "官方語言為英語。",
+  "ranking": [
+   {
+    "name": "英語（含巴貝多克里奧爾語 Bajan）",
+    "percent": 97,
+    "description": "標準英語用於官方、教育與媒體，日常口語則多為帶有西非語言影響的Bajan。",
+    "greeting": "Hello",
+    "pronunciation": "heh-loh"
+   },
+   {
+    "name": "其他（印度斯坦語等移民語言）",
+    "percent": 2,
+    "description": "來自南亞與其他加勒比國家的移民社群使用。",
+    "greeting": "नमस्ते",
+    "pronunciation": "namaste"
+   }
+  ],
+  "history": "英國殖民者引進大量西非奴隸從事甘蔗種植，英語與西非語言接觸後形成巴貝多克里奧爾語（Bajan）。標準英語則透過殖民教育與行政體系成為正式語言。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "古古糊配飛魚",
+    "localName": "Cou-cou and flying fish",
+    "description": "以玉米粉與秋葵攪成的糊狀主食，配上番茄醬汁燉飛魚，為國菜。",
+    "history": "古古糊源自西非的粥糊傳統，飛魚則是巴貝多的象徵，常見於硬幣與護照圖案。",
+    "wiki": "Cou-cou",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/COO_COOO.jpg/960px-COO_COOO.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:COO_COOO.jpg",
+    "imageCredit": "KINGBROBLOXZZZ・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "布丁與醃肉",
+    "localName": "Pudding and souse",
+    "description": "以地瓜為餡的蒸香腸配上醃製豬肉，是週六傳統餐。",
+    "history": "源自奴隸時期利用豬的剩餘部位烹調，週六食用的習慣延續至今。",
+    "wiki": "Souse"
+   },
+   {
+    "name": "巴貝多焗烤通心粉",
+    "localName": "Macaroni pie",
+    "description": "加入起司、雞蛋與調味料烤成的焗烤通心粉。",
+    "history": "受英國烹調影響，是週日家庭餐桌與聚會的常見配菜。",
+    "wiki": "Macaroni pie",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Macaroni_pie_1.jpg/960px-Macaroni_pie_1.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Macaroni_pie_1.jpg",
+    "imageCredit": "Wendy Harman from Washington DC, USA・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "椰香玉米甜糕",
+    "localName": "Conkies",
+    "description": "以玉米粉、南瓜、地瓜、椰子與香料包入香蕉葉蒸製的甜糕。",
+    "history": "源自西非的蒸糕傳統，傳統上於11月30日獨立紀念日前後製作。",
+    "wiki": "Conkies",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Conkie.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Conkie.jpg",
+    "imageCredit": "Foodista・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "炸魚餅",
+    "localName": "Fish cakes",
+    "description": "以鹹鱈魚與香草拌麵糊炸成的小球，常夾麵包吃。",
+    "history": "鹹鱈魚自殖民時期與北大西洋貿易傳入，是常見街頭小吃。",
+    "wiki": "Fish cake",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Fish_cakes_food_dinner.jpg/960px-Fish_cakes_food_dinner.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Fish_cakes_food_dinner.jpg",
+    "imageCredit": "Jon Sullivan・Public domain・Wikimedia Commons"
+   }
+  ]
+ }
 }

@@ -1,101 +1,116 @@
 {
-  "iso": "FRA",
-  "capital": "巴黎",
-  "summary": "西歐大國，法國大革命與啟蒙思想對現代世界影響深遠，以藝術、時尚、葡萄酒與美食聞名，「法國美食大餐」列入聯合國教科文組織非物質文化遺產。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "無宗教",
-        "percent": 51,
-        "description": "法國高度世俗化，依2019–2020年調查，半數左右成年人表示無宗教。"
-      },
-      {
-        "name": "天主教",
-        "percent": 29,
-        "description": "歷史上的主要宗教，影響節日與文化傳統。"
-      },
-      {
-        "name": "伊斯蘭教",
-        "percent": 10,
-        "description": "主要來自北非與西非的移民及其後代，是第二大宗教。"
-      },
-      {
-        "name": "其他基督教（新教、東正教等）",
-        "percent": 9,
-        "description": "包含歸正宗、福音派與東正教。"
-      },
-      {
-        "name": "猶太教",
-        "percent": 1,
-        "description": "擁有歐洲最大的猶太社群之一。"
-      }
-    ],
-    "background": "法國自法蘭克王克洛維受洗後長期以天主教為主，16世紀宗教戰爭後新教徒（胡格諾派）遭壓迫。大革命削弱教會權力，1905年通過政教分離法，確立「世俗主義」（laïcité），20世紀後期社會快速世俗化，並因殖民歷史與移民而有大量穆斯林。"
-  },
-  "language": {
-    "official": "官方語言為法語。",
-    "ranking": [
-      {
-        "name": "法語",
-        "percent": 88,
-        "description": "全國通用的官方語言，也是國際組織的工作語言之一。",
-        "greeting": "Bonjour",
-        "pronunciation": "bon-zhoor"
-      },
-      {
-        "name": "阿拉伯語（北非方言）",
-        "percent": 4,
-        "description": "北非移民社群常用的家庭語言。",
-        "greeting": "مرحبا",
-        "pronunciation": "mar-ha-ba"
-      },
-      {
-        "name": "區域語言（奧克語、布列塔尼語、阿爾薩斯語等）",
-        "percent": 2,
-        "description": "各地傳統語言，使用者以年長者為主。",
-        "greeting": "Bonjorn",
-        "pronunciation": "bun-jur"
-      }
-    ],
-    "history": "高盧地區在羅馬統治後改說通俗拉丁語，再受法蘭克人日耳曼語影響形成古法語。1539年《維萊科特雷敕令》規定法律文書使用法語，大革命後政府積極推廣標準法語，壓縮了布列塔尼語、奧克語等地方語言。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "法國長棍麵包",
-        "localName": "Baguette",
-        "description": "外皮酥脆、內部鬆軟的長條白麵包，是法國人日常主食。",
-        "history": "20世紀初在巴黎普及，2022年「法國長棍麵包的工藝與文化」列入聯合國教科文組織非物質文化遺產。",
-        "wiki": "Baguette"
-      },
-      {
-        "name": "可頌",
-        "localName": "Croissant",
-        "description": "以奶油與麵團多次摺疊烘烤而成的層次酥皮麵包。",
-        "history": "源自奧地利的維也納麵包（kipferl），19世紀傳入巴黎，後演變為現代的酥皮可頌。",
-        "wiki": "Croissant"
-      },
-      {
-        "name": "勃艮第紅酒燉牛肉",
-        "localName": "Bœuf bourguignon",
-        "description": "牛肉以勃艮第紅酒、洋蔥、蘑菇與培根慢燉。",
-        "history": "源自勃艮第的農家燉菜，20世紀經名廚推廣成為法國經典菜。",
-        "wiki": "Beef bourguignon"
-      },
-      {
-        "name": "紅酒燉雞",
-        "localName": "Coq au vin",
-        "description": "以紅酒燉煮雞肉，加入蘑菇、洋蔥與培根。",
-        "history": "傳統上用老公雞長時間燉煮，是法國鄉村料理的代表。",
-        "wiki": "Coq au vin"
-      },
-      {
-        "name": "普羅旺斯燉菜",
-        "localName": "Ratatouille",
-        "description": "以茄子、櫛瓜、甜椒、番茄與香草燉煮的蔬菜料理。",
-        "history": "源自尼斯一帶的普羅旺斯農家菜，因同名動畫電影而廣為人知。",
-        "wiki": "Ratatouille"
-      }
-    ]
-  }
+ "iso": "FRA",
+ "capital": "巴黎",
+ "summary": "西歐大國，法國大革命與啟蒙思想對現代世界影響深遠，以藝術、時尚、葡萄酒與美食聞名，「法國美食大餐」列入聯合國教科文組織非物質文化遺產。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "無宗教",
+    "percent": 51,
+    "description": "法國高度世俗化，依2019–2020年調查，半數左右成年人表示無宗教。"
+   },
+   {
+    "name": "天主教",
+    "percent": 29,
+    "description": "歷史上的主要宗教，影響節日與文化傳統。"
+   },
+   {
+    "name": "伊斯蘭教",
+    "percent": 10,
+    "description": "主要來自北非與西非的移民及其後代，是第二大宗教。"
+   },
+   {
+    "name": "其他基督教（新教、東正教等）",
+    "percent": 9,
+    "description": "包含歸正宗、福音派與東正教。"
+   },
+   {
+    "name": "猶太教",
+    "percent": 1,
+    "description": "擁有歐洲最大的猶太社群之一。"
+   }
+  ],
+  "background": "法國自法蘭克王克洛維受洗後長期以天主教為主，16世紀宗教戰爭後新教徒（胡格諾派）遭壓迫。大革命削弱教會權力，1905年通過政教分離法，確立「世俗主義」（laïcité），20世紀後期社會快速世俗化，並因殖民歷史與移民而有大量穆斯林。"
+ },
+ "language": {
+  "official": "官方語言為法語。",
+  "ranking": [
+   {
+    "name": "法語",
+    "percent": 88,
+    "description": "全國通用的官方語言，也是國際組織的工作語言之一。",
+    "greeting": "Bonjour",
+    "pronunciation": "bon-zhoor"
+   },
+   {
+    "name": "阿拉伯語（北非方言）",
+    "percent": 4,
+    "description": "北非移民社群常用的家庭語言。",
+    "greeting": "مرحبا",
+    "pronunciation": "mar-ha-ba"
+   },
+   {
+    "name": "區域語言（奧克語、布列塔尼語、阿爾薩斯語等）",
+    "percent": 2,
+    "description": "各地傳統語言，使用者以年長者為主。",
+    "greeting": "Bonjorn",
+    "pronunciation": "bun-jur"
+   }
+  ],
+  "history": "高盧地區在羅馬統治後改說通俗拉丁語，再受法蘭克人日耳曼語影響形成古法語。1539年《維萊科特雷敕令》規定法律文書使用法語，大革命後政府積極推廣標準法語，壓縮了布列塔尼語、奧克語等地方語言。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "法國長棍麵包",
+    "localName": "Baguette",
+    "description": "外皮酥脆、內部鬆軟的長條白麵包，是法國人日常主食。",
+    "history": "20世紀初在巴黎普及，2022年「法國長棍麵包的工藝與文化」列入聯合國教科文組織非物質文化遺產。",
+    "wiki": "Baguette",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Baguettes%2C_Paris%2C_France_-_panoramio.jpg/960px-Baguettes%2C_Paris%2C_France_-_panoramio.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Baguettes,_Paris,_France_-_panoramio.jpg",
+    "imageCredit": "Nick Thweatt・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "可頌",
+    "localName": "Croissant",
+    "description": "以奶油與麵團多次摺疊烘烤而成的層次酥皮麵包。",
+    "history": "源自奧地利的維也納麵包（kipferl），19世紀傳入巴黎，後演變為現代的酥皮可頌。",
+    "wiki": "Croissant",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Croissant-Petr_Kratochvil.jpg/960px-Croissant-Petr_Kratochvil.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Croissant-Petr_Kratochvil.jpg",
+    "imageCredit": "Petr Kratochvil・CC0・Wikimedia Commons"
+   },
+   {
+    "name": "勃艮第紅酒燉牛肉",
+    "localName": "Bœuf bourguignon",
+    "description": "牛肉以勃艮第紅酒、洋蔥、蘑菇與培根慢燉。",
+    "history": "源自勃艮第的農家燉菜，20世紀經名廚推廣成為法國經典菜。",
+    "wiki": "Beef bourguignon",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Beef_bourguignon_NYT.jpg/960px-Beef_bourguignon_NYT.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Beef_bourguignon_NYT.jpg",
+    "imageCredit": "Slayschips・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "紅酒燉雞",
+    "localName": "Coq au vin",
+    "description": "以紅酒燉煮雞肉，加入蘑菇、洋蔥與培根。",
+    "history": "傳統上用老公雞長時間燉煮，是法國鄉村料理的代表。",
+    "wiki": "Coq au vin",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Gourmet_coq_au_vin.jpg/960px-Gourmet_coq_au_vin.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Gourmet_coq_au_vin.jpg",
+    "imageCredit": "Beck from East Midlands, United Kingdon・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "普羅旺斯燉菜",
+    "localName": "Ratatouille",
+    "description": "以茄子、櫛瓜、甜椒、番茄與香草燉煮的蔬菜料理。",
+    "history": "源自尼斯一帶的普羅旺斯農家菜，因同名動畫電影而廣為人知。",
+    "wiki": "Ratatouille",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/37/Ratatouille_home_cooked.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Ratatouille_home_cooked.jpg",
+    "imageCredit": "Jack145945・CC0・Wikimedia Commons"
+   }
+  ]
+ }
 }

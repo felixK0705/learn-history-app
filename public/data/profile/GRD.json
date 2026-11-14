@@ -1,96 +1,111 @@
 {
-  "iso": "GRD",
-  "capital": "聖喬治",
-  "summary": "格瑞那達是位於加勒比海東南部的島國，以盛產肉豆蔻等香料而有「香料之島」之稱，1974年脫離英國獨立。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "基督新教",
-        "percent": 49,
-        "description": "包括五旬節派、復臨安息日會、聖公會等。"
-      },
-      {
-        "name": "天主教",
-        "percent": 36,
-        "description": "法國殖民時期留下的重要宗教。"
-      },
-      {
-        "name": "無宗教",
-        "percent": 6,
-        "description": "未認同任何宗教的人口。"
-      },
-      {
-        "name": "拉斯塔法里教",
-        "percent": 1,
-        "description": "規模較小的宗教運動。"
-      }
-    ],
-    "background": "格瑞那達先由法國殖民，天主教隨之傳入，1763年後英國取得統治權，帶來聖公會等新教。二十世紀後五旬節派與復臨安息日會等教派成長迅速。"
-  },
-  "language": {
-    "official": "英語是官方語言。",
-    "ranking": [
-      {
-        "name": "格瑞那達克里奧爾英語",
-        "percent": 90,
-        "description": "以英語為基礎的克里奧爾語，是日常生活語言。",
-        "greeting": "Good mornin'",
-        "pronunciation": "gud MAW-nin"
-      },
-      {
-        "name": "英語",
-        "percent": 9,
-        "description": "官方語言，用於政府與教育。",
-        "greeting": "Hello",
-        "pronunciation": "heh-LOH"
-      },
-      {
-        "name": "格瑞那達克里奧爾法語",
-        "percent": 1,
-        "description": "法國殖民時期形成的克里奧爾語，現多為年長者使用。",
-        "greeting": "Bonjou",
-        "pronunciation": "bon-ZHOO"
-      }
-    ],
-    "history": "法國殖民時期當地形成以法語為基礎的克里奧爾語。英國統治後英語逐漸取代法語系克里奧爾語，成為行政與日常語言的基礎。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "奧爾當",
-        "localName": "Oil down",
-        "description": "以麵包果、鹹肉、雞肉、餃子與蔬菜在椰奶中燉煮的一鍋料理。",
-        "history": "格瑞那達國菜，名稱來自椰奶被完全吸收後鍋底留下的油。",
-        "wiki": "Oil down"
-      },
-      {
-        "name": "卡拉魯",
-        "localName": "Callaloo",
-        "description": "以芋頭葉、秋葵與椰奶燉煮的濃湯。",
-        "history": "源自西非飲食傳統的加勒比海湯品。",
-        "wiki": "Callaloo"
-      },
-      {
-        "name": "肉豆蔻",
-        "localName": "Nutmeg",
-        "description": "格瑞那達特產的香料，用於甜點、飲品與果醬。",
-        "history": "十九世紀引進後成為主要出口作物，國旗上也繪有肉豆蔻。",
-        "wiki": "Nutmeg"
-      },
-      {
-        "name": "炸麵餅",
-        "localName": "Bakes",
-        "description": "以麵團油炸或烘烤成的小餅，常配鹹魚。",
-        "history": "加勒比海常見的早餐麵食。",
-        "wiki": "Johnnycake"
-      },
-      {
-        "name": "羅地",
-        "localName": "Roti",
-        "description": "以薄餅包裹咖哩肉或蔬菜。",
-        "history": "由印度契約勞工後代帶來的料理，在格瑞那達十分普遍。",
-        "wiki": "Roti"
-      }
-    ]
-  }
+ "iso": "GRD",
+ "capital": "聖喬治",
+ "summary": "格瑞那達是位於加勒比海東南部的島國，以盛產肉豆蔻等香料而有「香料之島」之稱，1974年脫離英國獨立。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "基督新教",
+    "percent": 49,
+    "description": "包括五旬節派、復臨安息日會、聖公會等。"
+   },
+   {
+    "name": "天主教",
+    "percent": 36,
+    "description": "法國殖民時期留下的重要宗教。"
+   },
+   {
+    "name": "無宗教",
+    "percent": 6,
+    "description": "未認同任何宗教的人口。"
+   },
+   {
+    "name": "拉斯塔法里教",
+    "percent": 1,
+    "description": "規模較小的宗教運動。"
+   }
+  ],
+  "background": "格瑞那達先由法國殖民，天主教隨之傳入，1763年後英國取得統治權，帶來聖公會等新教。二十世紀後五旬節派與復臨安息日會等教派成長迅速。"
+ },
+ "language": {
+  "official": "英語是官方語言。",
+  "ranking": [
+   {
+    "name": "格瑞那達克里奧爾英語",
+    "percent": 90,
+    "description": "以英語為基礎的克里奧爾語，是日常生活語言。",
+    "greeting": "Good mornin'",
+    "pronunciation": "gud MAW-nin"
+   },
+   {
+    "name": "英語",
+    "percent": 9,
+    "description": "官方語言，用於政府與教育。",
+    "greeting": "Hello",
+    "pronunciation": "heh-LOH"
+   },
+   {
+    "name": "格瑞那達克里奧爾法語",
+    "percent": 1,
+    "description": "法國殖民時期形成的克里奧爾語，現多為年長者使用。",
+    "greeting": "Bonjou",
+    "pronunciation": "bon-ZHOO"
+   }
+  ],
+  "history": "法國殖民時期當地形成以法語為基礎的克里奧爾語。英國統治後英語逐漸取代法語系克里奧爾語，成為行政與日常語言的基礎。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "奧爾當",
+    "localName": "Oil down",
+    "description": "以麵包果、鹹肉、雞肉、餃子與蔬菜在椰奶中燉煮的一鍋料理。",
+    "history": "格瑞那達國菜，名稱來自椰奶被完全吸收後鍋底留下的油。",
+    "wiki": "Oil down",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Cooking_oil_down_03.jpg/960px-Cooking_oil_down_03.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Cooking_oil_down_03.jpg",
+    "imageCredit": "St. Georges U. S. Embassy・Public domain・Wikimedia Commons"
+   },
+   {
+    "name": "卡拉魯",
+    "localName": "Callaloo",
+    "description": "以芋頭葉、秋葵與椰奶燉煮的濃湯。",
+    "history": "源自西非飲食傳統的加勒比海湯品。",
+    "wiki": "Callaloo",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Callaloo.jpg/960px-Callaloo.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Callaloo.jpg",
+    "imageCredit": "https://www.flickr.com/photos/67276179@N08/・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "肉豆蔻",
+    "localName": "Nutmeg",
+    "description": "格瑞那達特產的香料，用於甜點、飲品與果醬。",
+    "history": "十九世紀引進後成為主要出口作物，國旗上也繪有肉豆蔻。",
+    "wiki": "Nutmeg",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Biji_Pala_Bubuk.jpg/960px-Biji_Pala_Bubuk.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Biji_Pala_Bubuk.jpg",
+    "imageCredit": "Herusutimbul・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "炸麵餅",
+    "localName": "Bakes",
+    "description": "以麵團油炸或烘烤成的小餅，常配鹹魚。",
+    "history": "加勒比海常見的早餐麵食。",
+    "wiki": "Johnnycake",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Johnnycakes.jpg/960px-Johnnycakes.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Johnnycakes.jpg",
+    "imageCredit": "Douglas Perkins・CC BY 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "羅地",
+    "localName": "Roti",
+    "description": "以薄餅包裹咖哩肉或蔬菜。",
+    "history": "由印度契約勞工後代帶來的料理，在格瑞那達十分普遍。",
+    "wiki": "Roti",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/2020-05-08_19_34_28_Chapati_being_made_in_a_pan_in_the_Franklin_Farm_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg/960px-2020-05-08_19_34_28_Chapati_being_made_in_a_pan_in_the_Franklin_Farm_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:2020-05-08_19_34_28_Chapati_being_made_in_a_pan_in_the_Franklin_Farm_section_of_Oak_Hill,_Fairfax_County,_Virginia.jpg",
+    "imageCredit": "Famartin・CC BY-SA 4.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

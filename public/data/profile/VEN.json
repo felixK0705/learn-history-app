@@ -1,84 +1,99 @@
 {
-  "iso": "VEN",
-  "capital": "卡拉卡斯",
-  "summary": "委內瑞拉位於南美洲北部，擁有全球最大的已探明石油儲量與世界最高的安赫爾瀑布，近年經歷嚴重的經濟與政治危機。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "天主教",
-        "percent": 73,
-        "description": "西班牙殖民時期傳入的主要宗教。"
-      },
-      {
-        "name": "基督新教／福音派",
-        "percent": 17,
-        "description": "近數十年快速成長。"
-      },
-      {
-        "name": "無宗教",
-        "percent": 7,
-        "description": "未認同任何宗教的人口。"
-      }
-    ],
-    "background": "西班牙殖民使天主教成為主流，並與原住民及非洲信仰融合，例如瑪麗亞·利翁薩信仰。二十世紀後期起福音派教會在各地快速成長。"
-  },
-  "language": {
-    "official": "西班牙語是官方語言，憲法也承認原住民語言在原住民地區的官方地位。",
-    "ranking": [
-      {
-        "name": "西班牙語",
-        "percent": 98,
-        "description": "全國通用語言。",
-        "greeting": "Hola",
-        "pronunciation": "OH-la"
-      },
-      {
-        "name": "瓦尤語",
-        "percent": 1,
-        "description": "西北部瓜希拉半島瓦尤人的語言，是人數最多的原住民語言。",
-        "greeting": "Jamaya pia",
-        "pronunciation": "ha-MAI-ya PEE-a"
-      }
-    ],
-    "history": "西班牙殖民前當地有加勒比語系與阿拉瓦克語系等多種原住民語言，至今仍有數十種原住民語言在使用。西班牙語在殖民後成為主流，並吸收原住民與非洲語言的詞彙。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "阿瑞帕",
-        "localName": "Arepa",
-        "description": "以玉米粉做成的圓餅，剖開夾入起司、肉或豆子。",
-        "history": "源自原住民的古老食物，是委內瑞拉人每日的主食。",
-        "wiki": "Arepa"
-      },
-      {
-        "name": "克里奧爾大拼盤",
-        "localName": "Pabellón criollo",
-        "description": "米飯、黑豆、牛肉絲與炸大蕉組成的套餐。",
-        "history": "被視為委內瑞拉國菜，象徵多元族群的融合。",
-        "wiki": "Pabellón criollo"
-      },
-      {
-        "name": "哈亞卡",
-        "localName": "Hallaca",
-        "description": "以玉米麵團包肉、橄欖與葡萄乾，用香蕉葉包好煮熟。",
-        "history": "聖誕節的傳統料理，家人通常一起製作。",
-        "wiki": "Hallaca"
-      },
-      {
-        "name": "玉米煎餅",
-        "localName": "Cachapa",
-        "description": "以新鮮甜玉米做成的厚煎餅，夾入軟起司。",
-        "history": "委內瑞拉常見的早餐與路邊小吃。",
-        "wiki": "Cachapa"
-      },
-      {
-        "name": "起司條",
-        "localName": "Tequeño",
-        "description": "以麵皮捲起白起司條後油炸。",
-        "history": "起源於米蘭達州的洛斯特克斯，是派對上的必備點心。",
-        "wiki": "Tequeño"
-      }
-    ]
-  }
+ "iso": "VEN",
+ "capital": "卡拉卡斯",
+ "summary": "委內瑞拉位於南美洲北部，擁有全球最大的已探明石油儲量與世界最高的安赫爾瀑布，近年經歷嚴重的經濟與政治危機。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "天主教",
+    "percent": 73,
+    "description": "西班牙殖民時期傳入的主要宗教。"
+   },
+   {
+    "name": "基督新教／福音派",
+    "percent": 17,
+    "description": "近數十年快速成長。"
+   },
+   {
+    "name": "無宗教",
+    "percent": 7,
+    "description": "未認同任何宗教的人口。"
+   }
+  ],
+  "background": "西班牙殖民使天主教成為主流，並與原住民及非洲信仰融合，例如瑪麗亞·利翁薩信仰。二十世紀後期起福音派教會在各地快速成長。"
+ },
+ "language": {
+  "official": "西班牙語是官方語言，憲法也承認原住民語言在原住民地區的官方地位。",
+  "ranking": [
+   {
+    "name": "西班牙語",
+    "percent": 98,
+    "description": "全國通用語言。",
+    "greeting": "Hola",
+    "pronunciation": "OH-la"
+   },
+   {
+    "name": "瓦尤語",
+    "percent": 1,
+    "description": "西北部瓜希拉半島瓦尤人的語言，是人數最多的原住民語言。",
+    "greeting": "Jamaya pia",
+    "pronunciation": "ha-MAI-ya PEE-a"
+   }
+  ],
+  "history": "西班牙殖民前當地有加勒比語系與阿拉瓦克語系等多種原住民語言，至今仍有數十種原住民語言在使用。西班牙語在殖民後成為主流，並吸收原住民與非洲語言的詞彙。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "阿瑞帕",
+    "localName": "Arepa",
+    "description": "以玉米粉做成的圓餅，剖開夾入起司、肉或豆子。",
+    "history": "源自原住民的古老食物，是委內瑞拉人每日的主食。",
+    "wiki": "Arepa",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Arepitas_Food_Macro.jpg/960px-Arepitas_Food_Macro.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Arepitas_Food_Macro.jpg",
+    "imageCredit": "Steven Depolo from Grand Rapids, MI, USA・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "克里奧爾大拼盤",
+    "localName": "Pabellón criollo",
+    "description": "米飯、黑豆、牛肉絲與炸大蕉組成的套餐。",
+    "history": "被視為委內瑞拉國菜，象徵多元族群的融合。",
+    "wiki": "Pabellón criollo",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Pabell%C3%B3n_Criollo_Venezolano.jpg/960px-Pabell%C3%B3n_Criollo_Venezolano.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Pabell%C3%B3n_Criollo_Venezolano.jpg",
+    "imageCredit": "Wilfredor・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "哈亞卡",
+    "localName": "Hallaca",
+    "description": "以玉米麵團包肉、橄欖與葡萄乾，用香蕉葉包好煮熟。",
+    "history": "聖誕節的傳統料理，家人通常一起製作。",
+    "wiki": "Hallaca",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Hallacas_con_pan_de_jamon%2C_plato_Venezuelano.jpg/960px-Hallacas_con_pan_de_jamon%2C_plato_Venezuelano.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Hallacas_con_pan_de_jamon,_plato_Venezuelano.jpg",
+    "imageCredit": "Wilfredor・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "玉米煎餅",
+    "localName": "Cachapa",
+    "description": "以新鮮甜玉米做成的厚煎餅，夾入軟起司。",
+    "history": "委內瑞拉常見的早餐與路邊小吃。",
+    "wiki": "Cachapa",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Cooking_a_cachapa.jpg/960px-Cooking_a_cachapa.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Cooking_a_cachapa.jpg",
+    "imageCredit": "Wilfredor・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "起司條",
+    "localName": "Tequeño",
+    "description": "以麵皮捲起白起司條後油炸。",
+    "history": "起源於米蘭達州的洛斯特克斯，是派對上的必備點心。",
+    "wiki": "Tequeño",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Teque%C3%B1os_v%C3%A9n%C3%A9zu%C3%A9liens_%C3%A0_Arepado_%28Lyon%29%2C_avril_2019_%282%29.jpg/960px-Teque%C3%B1os_v%C3%A9n%C3%A9zu%C3%A9liens_%C3%A0_Arepado_%28Lyon%29%2C_avril_2019_%282%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Teque%C3%B1os_v%C3%A9n%C3%A9zu%C3%A9liens_%C3%A0_Arepado_(Lyon),_avril_2019_(2).jpg",
+    "imageCredit": "Benoît Prieur・CC0・Wikimedia Commons"
+   }
+  ]
+ }
 }

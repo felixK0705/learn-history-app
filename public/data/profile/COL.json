@@ -1,89 +1,104 @@
 {
-  "iso": "COL",
-  "capital": "波哥大",
-  "summary": "位於南美洲西北部的國家，同時面臨加勒比海與太平洋，以咖啡、生物多樣性與小說家馬奎斯聞名。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "天主教",
-        "percent": 70,
-        "description": "西班牙殖民時期傳入，仍為最大宗教。"
-      },
-      {
-        "name": "新教（福音派）",
-        "percent": 17,
-        "description": "近數十年快速成長，以五旬節派為主。"
-      },
-      {
-        "name": "無宗教",
-        "percent": 11,
-        "description": "多見於都市年輕人。"
-      },
-      {
-        "name": "其他",
-        "percent": 2,
-        "description": "包含原住民信仰、猶太教等。"
-      }
-    ],
-    "background": "西班牙殖民時期天主教是新格拉納達的國家宗教，1886年憲法再度確立其特殊地位。1991年新憲法確立宗教自由與平等，福音派教會隨後迅速擴展。"
-  },
-  "language": {
-    "official": "官方語言為西班牙語，原住民語言在其領域內亦為官方語言。",
-    "ranking": [
-      {
-        "name": "西班牙語",
-        "percent": 99,
-        "description": "全國通用，波哥大口音被認為清晰標準。",
-        "greeting": "Hola",
-        "pronunciation": "o-la"
-      },
-      {
-        "name": "原住民語言（瓦尤語等60餘種）",
-        "percent": 1,
-        "description": "瓦尤語是使用人數最多的原住民語言，通行於瓜希拉半島。",
-        "greeting": "Jamaya pia（瓦尤語：你好嗎）",
-        "pronunciation": "ha-ma-ya pia"
-      }
-    ],
-    "history": "西班牙語隨16世紀殖民傳入並成為主要語言。境內仍有60多種原住民語言，以及聖巴西里奧德帕倫克的帕倫克語與聖安德烈斯島的克里奧爾英語，1991年憲法保障其地位。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "派薩大拼盤",
-        "localName": "Bandeja paisa",
-        "description": "一大盤包含米飯、紅豆、碎牛肉、炸豬皮、香腸、煎蛋、芭蕉與酪梨。",
-        "history": "源自安蒂奧基亞省的農工料理，提供高熱量以應付勞動，被視為國菜代表。",
-        "wiki": "Bandeja paisa"
-      },
-      {
-        "name": "阿瑞巴玉米餅",
-        "localName": "Arepa",
-        "description": "以玉米麵團做成的圓餅，煎烤後夾起司或配菜食用。",
-        "history": "源自前哥倫布時期原住民，與委內瑞拉共享的主食。",
-        "wiki": "Arepa"
-      },
-      {
-        "name": "波哥大雞湯",
-        "localName": "Ajiaco",
-        "description": "以三種馬鈴薯、雞肉、玉米與瓜卡斯香草燉成的濃湯，加奶油與酸豆。",
-        "history": "波哥大的代表菜，融合原住民食材與西班牙燉湯。",
-        "wiki": "Ajiaco"
-      },
-      {
-        "name": "什錦燉肉湯",
-        "localName": "Sancocho",
-        "description": "以肉或魚、樹薯、芭蕉、玉米燉成的大鍋湯。",
-        "history": "哥倫比亞各地都有版本，常是週末家庭聚會料理。",
-        "wiki": "Sancocho"
-      },
-      {
-        "name": "烤全豬",
-        "localName": "Lechona",
-        "description": "將整隻豬塞滿米、豌豆與豬肉後長時間烘烤。",
-        "history": "托利馬省的節慶料理，常見於慶典與聖誕節。",
-        "wiki": "Lechona"
-      }
-    ]
-  }
+ "iso": "COL",
+ "capital": "波哥大",
+ "summary": "位於南美洲西北部的國家，同時面臨加勒比海與太平洋，以咖啡、生物多樣性與小說家馬奎斯聞名。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "天主教",
+    "percent": 70,
+    "description": "西班牙殖民時期傳入，仍為最大宗教。"
+   },
+   {
+    "name": "新教（福音派）",
+    "percent": 17,
+    "description": "近數十年快速成長，以五旬節派為主。"
+   },
+   {
+    "name": "無宗教",
+    "percent": 11,
+    "description": "多見於都市年輕人。"
+   },
+   {
+    "name": "其他",
+    "percent": 2,
+    "description": "包含原住民信仰、猶太教等。"
+   }
+  ],
+  "background": "西班牙殖民時期天主教是新格拉納達的國家宗教，1886年憲法再度確立其特殊地位。1991年新憲法確立宗教自由與平等，福音派教會隨後迅速擴展。"
+ },
+ "language": {
+  "official": "官方語言為西班牙語，原住民語言在其領域內亦為官方語言。",
+  "ranking": [
+   {
+    "name": "西班牙語",
+    "percent": 99,
+    "description": "全國通用，波哥大口音被認為清晰標準。",
+    "greeting": "Hola",
+    "pronunciation": "o-la"
+   },
+   {
+    "name": "原住民語言（瓦尤語等60餘種）",
+    "percent": 1,
+    "description": "瓦尤語是使用人數最多的原住民語言，通行於瓜希拉半島。",
+    "greeting": "Jamaya pia（瓦尤語：你好嗎）",
+    "pronunciation": "ha-ma-ya pia"
+   }
+  ],
+  "history": "西班牙語隨16世紀殖民傳入並成為主要語言。境內仍有60多種原住民語言，以及聖巴西里奧德帕倫克的帕倫克語與聖安德烈斯島的克里奧爾英語，1991年憲法保障其地位。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "派薩大拼盤",
+    "localName": "Bandeja paisa",
+    "description": "一大盤包含米飯、紅豆、碎牛肉、炸豬皮、香腸、煎蛋、芭蕉與酪梨。",
+    "history": "源自安蒂奧基亞省的農工料理，提供高熱量以應付勞動，被視為國菜代表。",
+    "wiki": "Bandeja paisa",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Bandeja_paisa%2C_plato_Colombiano.jpg/960px-Bandeja_paisa%2C_plato_Colombiano.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Bandeja_paisa,_plato_Colombiano.jpg",
+    "imageCredit": "Wilfredor・CC0・Wikimedia Commons"
+   },
+   {
+    "name": "阿瑞巴玉米餅",
+    "localName": "Arepa",
+    "description": "以玉米麵團做成的圓餅，煎烤後夾起司或配菜食用。",
+    "history": "源自前哥倫布時期原住民，與委內瑞拉共享的主食。",
+    "wiki": "Arepa",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Arepitas_Food_Macro.jpg/960px-Arepitas_Food_Macro.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Arepitas_Food_Macro.jpg",
+    "imageCredit": "Steven Depolo from Grand Rapids, MI, USA・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "波哥大雞湯",
+    "localName": "Ajiaco",
+    "description": "以三種馬鈴薯、雞肉、玉米與瓜卡斯香草燉成的濃湯，加奶油與酸豆。",
+    "history": "波哥大的代表菜，融合原住民食材與西班牙燉湯。",
+    "wiki": "Ajiaco",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Ajiaco.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Ajiaco.jpg",
+    "imageCredit": "Mauricio Giraldo from Bogotá, Colombia・CC BY-SA 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "什錦燉肉湯",
+    "localName": "Sancocho",
+    "description": "以肉或魚、樹薯、芭蕉、玉米燉成的大鍋湯。",
+    "history": "哥倫比亞各地都有版本，常是週末家庭聚會料理。",
+    "wiki": "Sancocho",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Sancocho_de_espinazo_de_cerdo.jpg/960px-Sancocho_de_espinazo_de_cerdo.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Sancocho_de_espinazo_de_cerdo.jpg",
+    "imageCredit": "Daguerreroa・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "烤全豬",
+    "localName": "Lechona",
+    "description": "將整隻豬塞滿米、豌豆與豬肉後長時間烘烤。",
+    "history": "托利馬省的節慶料理，常見於慶典與聖誕節。",
+    "wiki": "Lechona",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Cochinillos-Mercado_de_la_Cebada.jpg/960px-Cochinillos-Mercado_de_la_Cebada.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Cochinillos-Mercado_de_la_Cebada.jpg",
+    "imageCredit": "Tamorlan・CC BY 3.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

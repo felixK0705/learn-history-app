@@ -1,89 +1,104 @@
 {
-  "iso": "GTM",
-  "capital": "瓜地馬拉市",
-  "summary": "位於中美洲的國家，是古馬雅文明核心地帶之一，原住民人口比例在中美洲最高，擁有提卡爾等著名遺址。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "天主教",
-        "percent": 45,
-        "description": "西班牙殖民時期傳入，常融合馬雅傳統儀式。"
-      },
-      {
-        "name": "新教（福音派）",
-        "percent": 41,
-        "description": "自1970年代後快速成長，比例在拉丁美洲名列前茅。"
-      },
-      {
-        "name": "無宗教",
-        "percent": 12,
-        "description": "多見於年輕人與都市地區。"
-      },
-      {
-        "name": "馬雅傳統信仰",
-        "percent": 1,
-        "description": "部分原住民社群保有獨立的馬雅靈性儀式。"
-      }
-    ],
-    "background": "16世紀西班牙征服後，天主教傳教士使馬雅人改宗，但許多原住民將天主教與傳統信仰融合。1976年大地震與內戰期間，美國福音派教會大量進入，加上政治人物推動，使新教迅速擴展。"
-  },
-  "language": {
-    "official": "官方語言為西班牙語，另承認22種馬雅語言及加利富納語、辛卡語。",
-    "ranking": [
-      {
-        "name": "西班牙語",
-        "percent": 69,
-        "description": "官方語言與全國通用語。",
-        "greeting": "Hola",
-        "pronunciation": "o-la"
-      },
-      {
-        "name": "馬雅語族（基切語、凱克奇語、卡克奇克爾語、馬姆語等）",
-        "percent": 30,
-        "description": "超過20種馬雅語言，基切語使用人數最多。",
-        "greeting": "Saqarik（基切語：早安）",
-        "pronunciation": "sa-ka-rik"
-      }
-    ],
-    "history": "西班牙征服前，馬雅語言在此已發展數千年，《波波爾·烏》即以基切語寫成。殖民後西班牙語成為統治與教育語言，但山區原住民社群仍保存母語；1996年和平協定後，國家加強對原住民語言的承認。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "佩皮安燉肉",
-        "localName": "Pepián",
-        "description": "以烤過的南瓜籽、芝麻、辣椒與番茄磨成醬汁燉煮雞肉或牛肉。",
-        "history": "融合馬雅與西班牙烹調的混血料理，被瓜地馬拉文化部宣布為國家文化遺產。",
-        "wiki": "Pepián"
-      },
-      {
-        "name": "卡基克火雞湯",
-        "localName": "Kak'ik",
-        "description": "以辣椒、番茄與香料熬煮的紅色火雞湯。",
-        "history": "源自凱克奇馬雅人的儀式料理，2007年被列為國家無形文化遺產。",
-        "wiki": "Kak'ik"
-      },
-      {
-        "name": "菲安布雷冷盤",
-        "localName": "Fiambre",
-        "description": "由數十種冷肉、香腸、起司、醃漬蔬菜組成的冷沙拉。",
-        "history": "每年11月1日諸聖節家庭團聚時製作，用以紀念逝去親人。",
-        "wiki": "Fiambre"
-      },
-      {
-        "name": "塔馬利粽",
-        "localName": "Tamales",
-        "description": "以玉米麵團包入肉與醬汁，用香蕉葉包裹蒸熟。",
-        "history": "源自前哥倫布時期的中美洲，瓜地馬拉在聖誕節與週六晚上常吃。",
-        "wiki": "Tamale"
-      },
-      {
-        "name": "鑲辣椒",
-        "localName": "Chiles rellenos",
-        "description": "將甜椒填入肉末與蔬菜，裹蛋液油炸後淋上番茄醬。",
-        "history": "源自墨西哥與中美洲的殖民時期料理，是瓜地馬拉常見家常菜。",
-        "wiki": "Chile relleno"
-      }
-    ]
-  }
+ "iso": "GTM",
+ "capital": "瓜地馬拉市",
+ "summary": "位於中美洲的國家，是古馬雅文明核心地帶之一，原住民人口比例在中美洲最高，擁有提卡爾等著名遺址。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "天主教",
+    "percent": 45,
+    "description": "西班牙殖民時期傳入，常融合馬雅傳統儀式。"
+   },
+   {
+    "name": "新教（福音派）",
+    "percent": 41,
+    "description": "自1970年代後快速成長，比例在拉丁美洲名列前茅。"
+   },
+   {
+    "name": "無宗教",
+    "percent": 12,
+    "description": "多見於年輕人與都市地區。"
+   },
+   {
+    "name": "馬雅傳統信仰",
+    "percent": 1,
+    "description": "部分原住民社群保有獨立的馬雅靈性儀式。"
+   }
+  ],
+  "background": "16世紀西班牙征服後，天主教傳教士使馬雅人改宗，但許多原住民將天主教與傳統信仰融合。1976年大地震與內戰期間，美國福音派教會大量進入，加上政治人物推動，使新教迅速擴展。"
+ },
+ "language": {
+  "official": "官方語言為西班牙語，另承認22種馬雅語言及加利富納語、辛卡語。",
+  "ranking": [
+   {
+    "name": "西班牙語",
+    "percent": 69,
+    "description": "官方語言與全國通用語。",
+    "greeting": "Hola",
+    "pronunciation": "o-la"
+   },
+   {
+    "name": "馬雅語族（基切語、凱克奇語、卡克奇克爾語、馬姆語等）",
+    "percent": 30,
+    "description": "超過20種馬雅語言，基切語使用人數最多。",
+    "greeting": "Saqarik（基切語：早安）",
+    "pronunciation": "sa-ka-rik"
+   }
+  ],
+  "history": "西班牙征服前，馬雅語言在此已發展數千年，《波波爾·烏》即以基切語寫成。殖民後西班牙語成為統治與教育語言，但山區原住民社群仍保存母語；1996年和平協定後，國家加強對原住民語言的承認。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "佩皮安燉肉",
+    "localName": "Pepián",
+    "description": "以烤過的南瓜籽、芝麻、辣椒與番茄磨成醬汁燉煮雞肉或牛肉。",
+    "history": "融合馬雅與西班牙烹調的混血料理，被瓜地馬拉文化部宣布為國家文化遺產。",
+    "wiki": "Pepián",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Cocinando_El_Pepian.jpg/960px-Cocinando_El_Pepian.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Cocinando_El_Pepian.jpg",
+    "imageCredit": "erwin.flores69・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "卡基克火雞湯",
+    "localName": "Kak'ik",
+    "description": "以辣椒、番茄與香料熬煮的紅色火雞湯。",
+    "history": "源自凱克奇馬雅人的儀式料理，2007年被列為國家無形文化遺產。",
+    "wiki": "Kak'ik",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/2010.05.13.141849_Kac-iq_Fonda_Calle_Real_Antigua_Guatemala.jpg/960px-2010.05.13.141849_Kac-iq_Fonda_Calle_Real_Antigua_Guatemala.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:2010.05.13.141849_Kac-iq_Fonda_Calle_Real_Antigua_Guatemala.jpg",
+    "imageCredit": "Hermann Luyken・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "菲安布雷冷盤",
+    "localName": "Fiambre",
+    "description": "由數十種冷肉、香腸、起司、醃漬蔬菜組成的冷沙拉。",
+    "history": "每年11月1日諸聖節家庭團聚時製作，用以紀念逝去親人。",
+    "wiki": "Fiambre",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Fiambre_-_11042021_%28cropped%29.jpg/960px-Fiambre_-_11042021_%28cropped%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Fiambre_-_11042021_(cropped).jpg",
+    "imageCredit": "Gobierno de Guatemala・CC0・Wikimedia Commons"
+   },
+   {
+    "name": "塔馬利粽",
+    "localName": "Tamales",
+    "description": "以玉米麵團包入肉與醬汁，用香蕉葉包裹蒸熟。",
+    "history": "源自前哥倫布時期的中美洲，瓜地馬拉在聖誕節與週六晚上常吃。",
+    "wiki": "Tamale",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Tamal_oaxaque%C3%B1o.jpg/960px-Tamal_oaxaque%C3%B1o.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Tamal_oaxaque%C3%B1o.jpg",
+    "imageCredit": "Georgina Meneses・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "鑲辣椒",
+    "localName": "Chiles rellenos",
+    "description": "將甜椒填入肉末與蔬菜，裹蛋液油炸後淋上番茄醬。",
+    "history": "源自墨西哥與中美洲的殖民時期料理，是瓜地馬拉常見家常菜。",
+    "wiki": "Chile relleno",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Chile_Rellenos.jpg/960px-Chile_Rellenos.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Chile_Rellenos.jpg",
+    "imageCredit": "Skyler Lewis (w:en:User:Double.reed)・CC BY-SA 3.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

@@ -1,115 +1,130 @@
 {
-  "iso": "DEU",
-  "capital": "柏林",
-  "summary": "位於中歐的聯邦共和國，歐盟人口最多的國家與最大經濟體，曾經歷兩次世界大戰與東西分裂，1990年統一。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "無宗教",
-        "percent": 44,
-        "description": "東部地區因共產時期影響，無宗教比例特別高。"
-      },
-      {
-        "name": "天主教",
-        "percent": 24,
-        "description": "主要分布於南部巴伐利亞、西部萊茵蘭等地。"
-      },
-      {
-        "name": "新教（德國福音教會）",
-        "percent": 22,
-        "description": "以路德宗為主，主要分布於北部與中部。"
-      },
-      {
-        "name": "伊斯蘭教",
-        "percent": 7,
-        "description": "主要來自土耳其、中東移民及其後代。"
-      },
-      {
-        "name": "東正教",
-        "percent": 2,
-        "description": "主要來自東南歐移民。"
-      }
-    ],
-    "background": "1517年馬丁·路德在威登堡發起宗教改革，德意志各邦依「教隨國定」原則分屬新教或天主教，形成北新南天主的格局。二戰後土耳其等地的移工帶來伊斯蘭教，東德的無神論政策與整體世俗化則使無宗教人口快速增加。"
-  },
-  "language": {
-    "official": "官方語言為德語。",
-    "ranking": [
-      {
-        "name": "德語",
-        "percent": 88,
-        "description": "全國通用語言，各地有巴伐利亞、施瓦本、低地德語等方言。",
-        "greeting": "Hallo / Guten Tag",
-        "pronunciation": "ha-lo / gu-ten tahk"
-      },
-      {
-        "name": "土耳其語",
-        "percent": 3,
-        "description": "土耳其裔社群使用。",
-        "greeting": "Merhaba",
-        "pronunciation": "mer-ha-ba"
-      },
-      {
-        "name": "俄語",
-        "percent": 2,
-        "description": "前蘇聯德裔回歸者與移民使用。",
-        "greeting": "Привет",
-        "pronunciation": "pri-vyet"
-      },
-      {
-        "name": "阿拉伯語",
-        "percent": 2,
-        "description": "中東移民與難民使用。",
-        "greeting": "مرحبا",
-        "pronunciation": "mar-ha-ba"
-      },
-      {
-        "name": "波蘭語",
-        "percent": 1,
-        "description": "波蘭裔社群使用。",
-        "greeting": "Cześć",
-        "pronunciation": "cheshch"
-      }
-    ],
-    "history": "德語屬日耳曼語族，中世紀分為各地方言。16世紀路德以中部方言翻譯聖經，大大促進了標準德語的形成。19世紀格林兄弟編纂德語辭典，民族統一進一步確立標準語；丹麥語、索布語等少數語言受法律保護。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "德國香腸",
-        "localName": "Bratwurst",
-        "description": "以豬肉或小牛肉製成的煎烤香腸，配芥末與酸菜。",
-        "history": "德國各地有上千種香腸，紐倫堡與圖林根香腸享有原產地保護。",
-        "wiki": "Bratwurst"
-      },
-      {
-        "name": "德國結麵包",
-        "localName": "Brezel",
-        "description": "打結形狀的鹼水麵包，外皮深褐、撒粗鹽。",
-        "history": "中世紀已出現於修道院，是南德巴伐利亞的代表，也是麵包店的標誌。",
-        "wiki": "Pretzel"
-      },
-      {
-        "name": "咖哩香腸",
-        "localName": "Currywurst",
-        "description": "切片的煎香腸淋上咖哩番茄醬，配薯條。",
-        "history": "1949年柏林小吃攤老闆以英軍取得的咖哩粉創製，成為柏林代表性街頭小吃。",
-        "wiki": "Currywurst"
-      },
-      {
-        "name": "德國豬腳",
-        "localName": "Schweinshaxe",
-        "description": "豬腳經烤製至外皮酥脆，配馬鈴薯丸子與酸菜。",
-        "history": "巴伐利亞的傳統料理，常在啤酒館與慕尼黑啤酒節享用。",
-        "wiki": "Schweinshaxe"
-      },
-      {
-        "name": "黑森林蛋糕",
-        "localName": "Schwarzwälder Kirschtorte",
-        "description": "巧克力海綿蛋糕夾櫻桃與鮮奶油，加入櫻桃酒。",
-        "history": "以西南部黑森林地區的櫻桃酒命名，20世紀初出現後成為德國最著名的蛋糕。",
-        "wiki": "Black Forest gateau"
-      }
-    ]
-  }
+ "iso": "DEU",
+ "capital": "柏林",
+ "summary": "位於中歐的聯邦共和國，歐盟人口最多的國家與最大經濟體，曾經歷兩次世界大戰與東西分裂，1990年統一。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "無宗教",
+    "percent": 44,
+    "description": "東部地區因共產時期影響，無宗教比例特別高。"
+   },
+   {
+    "name": "天主教",
+    "percent": 24,
+    "description": "主要分布於南部巴伐利亞、西部萊茵蘭等地。"
+   },
+   {
+    "name": "新教（德國福音教會）",
+    "percent": 22,
+    "description": "以路德宗為主，主要分布於北部與中部。"
+   },
+   {
+    "name": "伊斯蘭教",
+    "percent": 7,
+    "description": "主要來自土耳其、中東移民及其後代。"
+   },
+   {
+    "name": "東正教",
+    "percent": 2,
+    "description": "主要來自東南歐移民。"
+   }
+  ],
+  "background": "1517年馬丁·路德在威登堡發起宗教改革，德意志各邦依「教隨國定」原則分屬新教或天主教，形成北新南天主的格局。二戰後土耳其等地的移工帶來伊斯蘭教，東德的無神論政策與整體世俗化則使無宗教人口快速增加。"
+ },
+ "language": {
+  "official": "官方語言為德語。",
+  "ranking": [
+   {
+    "name": "德語",
+    "percent": 88,
+    "description": "全國通用語言，各地有巴伐利亞、施瓦本、低地德語等方言。",
+    "greeting": "Hallo / Guten Tag",
+    "pronunciation": "ha-lo / gu-ten tahk"
+   },
+   {
+    "name": "土耳其語",
+    "percent": 3,
+    "description": "土耳其裔社群使用。",
+    "greeting": "Merhaba",
+    "pronunciation": "mer-ha-ba"
+   },
+   {
+    "name": "俄語",
+    "percent": 2,
+    "description": "前蘇聯德裔回歸者與移民使用。",
+    "greeting": "Привет",
+    "pronunciation": "pri-vyet"
+   },
+   {
+    "name": "阿拉伯語",
+    "percent": 2,
+    "description": "中東移民與難民使用。",
+    "greeting": "مرحبا",
+    "pronunciation": "mar-ha-ba"
+   },
+   {
+    "name": "波蘭語",
+    "percent": 1,
+    "description": "波蘭裔社群使用。",
+    "greeting": "Cześć",
+    "pronunciation": "cheshch"
+   }
+  ],
+  "history": "德語屬日耳曼語族，中世紀分為各地方言。16世紀路德以中部方言翻譯聖經，大大促進了標準德語的形成。19世紀格林兄弟編纂德語辭典，民族統一進一步確立標準語；丹麥語、索布語等少數語言受法律保護。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "德國香腸",
+    "localName": "Bratwurst",
+    "description": "以豬肉或小牛肉製成的煎烤香腸，配芥末與酸菜。",
+    "history": "德國各地有上千種香腸，紐倫堡與圖林根香腸享有原產地保護。",
+    "wiki": "Bratwurst",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b0/German_Bratw%C3%BCrste.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:German_Bratw%C3%BCrste.jpg",
+    "imageCredit": "Gerbis・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "德國結麵包",
+    "localName": "Brezel",
+    "description": "打結形狀的鹼水麵包，外皮深褐、撒粗鹽。",
+    "history": "中世紀已出現於修道院，是南德巴伐利亞的代表，也是麵包店的標誌。",
+    "wiki": "Pretzel",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/BrezelnSalz02_%28cropped%29.JPG/960px-BrezelnSalz02_%28cropped%29.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:BrezelnSalz02_(cropped).JPG",
+    "imageCredit": "Sundar1・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "咖哩香腸",
+    "localName": "Currywurst",
+    "description": "切片的煎香腸淋上咖哩番茄醬，配薯條。",
+    "history": "1949年柏林小吃攤老闆以英軍取得的咖哩粉創製，成為柏林代表性街頭小吃。",
+    "wiki": "Currywurst",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/20220430_currywurst.jpg/960px-20220430_currywurst.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:20220430_currywurst.jpg",
+    "imageCredit": "Ziko van Dijk・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "德國豬腳",
+    "localName": "Schweinshaxe",
+    "description": "豬腳經烤製至外皮酥脆，配馬鈴薯丸子與酸菜。",
+    "history": "巴伐利亞的傳統料理，常在啤酒館與慕尼黑啤酒節享用。",
+    "wiki": "Schweinshaxe",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/54/00ane_Haxen.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:00ane_Haxen.jpg",
+    "imageCredit": "Erich Ferdinand・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "黑森林蛋糕",
+    "localName": "Schwarzwälder Kirschtorte",
+    "description": "巧克力海綿蛋糕夾櫻桃與鮮奶油，加入櫻桃酒。",
+    "history": "以西南部黑森林地區的櫻桃酒命名，20世紀初出現後成為德國最著名的蛋糕。",
+    "wiki": "Black Forest gateau",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Black_Forest_gateau.jpg/960px-Black_Forest_gateau.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Black_Forest_gateau.jpg",
+    "imageCredit": "Mikelo・CC BY-SA 2.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

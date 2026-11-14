@@ -1,98 +1,113 @@
 {
-  "iso": "IRN",
-  "capital": "德黑蘭",
-  "summary": "伊朗位於西亞，古稱波斯，曾孕育阿契美尼德等古代帝國，1979年伊斯蘭革命後成為伊斯蘭共和國。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "伊斯蘭教（什葉派）",
-        "percent": 90,
-        "description": "國教，以十二伊瑪目派為主。"
-      },
-      {
-        "name": "伊斯蘭教（遜尼派）",
-        "percent": 9,
-        "description": "主要為庫德人、俾路支人與土庫曼人。"
-      },
-      {
-        "name": "其他",
-        "percent": 1,
-        "description": "包括巴哈伊信仰、基督教、祆教與猶太教。"
-      }
-    ],
-    "background": "古代波斯以祆教為國教。七世紀阿拉伯人征服後，伊斯蘭教逐漸普及。十六世紀薩非王朝將什葉派定為國教，使伊朗成為什葉派中心。亞美尼亞基督徒、祆教徒與猶太人等古老少數社群延續至今。"
-  },
-  "language": {
-    "official": "波斯語是官方語言。",
-    "ranking": [
-      {
-        "name": "波斯語",
-        "percent": 53,
-        "description": "伊朗的國家語言，使用阿拉伯字母書寫。",
-        "greeting": "سلام (Salâm)",
-        "pronunciation": "sa-LAAM"
-      },
-      {
-        "name": "亞塞拜然語",
-        "percent": 18,
-        "description": "西北部亞塞拜然人的突厥語言。",
-        "greeting": "Salam",
-        "pronunciation": "sa-LAM"
-      },
-      {
-        "name": "庫德語",
-        "percent": 10,
-        "description": "西部庫德人的語言。",
-        "greeting": "Silav",
-        "pronunciation": "sih-LAHV"
-      },
-      {
-        "name": "阿拉伯語",
-        "percent": 2,
-        "description": "西南部胡齊斯坦地區阿拉伯人使用。",
-        "greeting": "مرحبا",
-        "pronunciation": "MAR-ha-ba"
-      }
-    ],
-    "history": "古波斯語以楔形文字記錄，後演變為中古波斯語。伊斯蘭化後新波斯語改用阿拉伯字母並吸收大量阿拉伯詞彙，十世紀菲爾多西的史詩《列王紀》奠定其文學地位，波斯語也曾是中亞與南亞宮廷的文化語言。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "烤肉飯",
-        "localName": "چلوکباب (Chelow kabab)",
-        "description": "以番紅花米飯搭配烤肉串與烤番茄。",
-        "history": "被視為伊朗國菜，十九世紀卡札爾王朝時期已十分流行。",
-        "wiki": "Chelow kabab"
-      },
-      {
-        "name": "香草燉肉",
-        "localName": "قورمه‌سبزی (Ghormeh sabzi)",
-        "description": "以大量香草、紅腰豆與羊肉燉煮的料理，配米飯食用。",
-        "history": "伊朗最受歡迎的燉菜之一。",
-        "wiki": "Ghormeh sabzi"
-      },
-      {
-        "name": "石榴核桃燉雞",
-        "localName": "فسنجان (Fesenjān)",
-        "description": "以石榴糖漿與核桃燉煮的雞肉或鴨肉，酸甜濃郁。",
-        "history": "源自北部吉蘭地區，是節慶與宴客料理。",
-        "wiki": "Fesenjān"
-      },
-      {
-        "name": "鍋巴飯",
-        "localName": "ته‌دیگ (Tahdig)",
-        "description": "鍋底烤得金黃酥脆的米飯鍋巴。",
-        "history": "伊朗餐桌上最受珍視的部分。",
-        "wiki": "Tahdig"
-      },
-      {
-        "name": "麵條濃湯",
-        "localName": "آش رشته (Ash reshteh)",
-        "description": "以麵條、豆類與香草熬煮的濃湯，上面淋優格乳。",
-        "history": "波斯新年諾魯茲期間常見，象徵好運。",
-        "wiki": "Ash reshteh"
-      }
-    ]
-  }
+ "iso": "IRN",
+ "capital": "德黑蘭",
+ "summary": "伊朗位於西亞，古稱波斯，曾孕育阿契美尼德等古代帝國，1979年伊斯蘭革命後成為伊斯蘭共和國。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "伊斯蘭教（什葉派）",
+    "percent": 90,
+    "description": "國教，以十二伊瑪目派為主。"
+   },
+   {
+    "name": "伊斯蘭教（遜尼派）",
+    "percent": 9,
+    "description": "主要為庫德人、俾路支人與土庫曼人。"
+   },
+   {
+    "name": "其他",
+    "percent": 1,
+    "description": "包括巴哈伊信仰、基督教、祆教與猶太教。"
+   }
+  ],
+  "background": "古代波斯以祆教為國教。七世紀阿拉伯人征服後，伊斯蘭教逐漸普及。十六世紀薩非王朝將什葉派定為國教，使伊朗成為什葉派中心。亞美尼亞基督徒、祆教徒與猶太人等古老少數社群延續至今。"
+ },
+ "language": {
+  "official": "波斯語是官方語言。",
+  "ranking": [
+   {
+    "name": "波斯語",
+    "percent": 53,
+    "description": "伊朗的國家語言，使用阿拉伯字母書寫。",
+    "greeting": "سلام (Salâm)",
+    "pronunciation": "sa-LAAM"
+   },
+   {
+    "name": "亞塞拜然語",
+    "percent": 18,
+    "description": "西北部亞塞拜然人的突厥語言。",
+    "greeting": "Salam",
+    "pronunciation": "sa-LAM"
+   },
+   {
+    "name": "庫德語",
+    "percent": 10,
+    "description": "西部庫德人的語言。",
+    "greeting": "Silav",
+    "pronunciation": "sih-LAHV"
+   },
+   {
+    "name": "阿拉伯語",
+    "percent": 2,
+    "description": "西南部胡齊斯坦地區阿拉伯人使用。",
+    "greeting": "مرحبا",
+    "pronunciation": "MAR-ha-ba"
+   }
+  ],
+  "history": "古波斯語以楔形文字記錄，後演變為中古波斯語。伊斯蘭化後新波斯語改用阿拉伯字母並吸收大量阿拉伯詞彙，十世紀菲爾多西的史詩《列王紀》奠定其文學地位，波斯語也曾是中亞與南亞宮廷的文化語言。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "烤肉飯",
+    "localName": "چلوکباب (Chelow kabab)",
+    "description": "以番紅花米飯搭配烤肉串與烤番茄。",
+    "history": "被視為伊朗國菜，十九世紀卡札爾王朝時期已十分流行。",
+    "wiki": "Chelow kabab",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Kebab_Bakhtyari.jpg/960px-Kebab_Bakhtyari.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Kebab_Bakhtyari.jpg",
+    "imageCredit": "Taylor and Kevin・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "香草燉肉",
+    "localName": "قورمه‌سبزی (Ghormeh sabzi)",
+    "description": "以大量香草、紅腰豆與羊肉燉煮的料理，配米飯食用。",
+    "history": "伊朗最受歡迎的燉菜之一。",
+    "wiki": "Ghormeh sabzi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Ghormeh_Sabzi.JPG/960px-Ghormeh_Sabzi.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Ghormeh_Sabzi.JPG",
+    "imageCredit": "Amin Majidi・CC0・Wikimedia Commons"
+   },
+   {
+    "name": "石榴核桃燉雞",
+    "localName": "فسنجان (Fesenjān)",
+    "description": "以石榴糖漿與核桃燉煮的雞肉或鴨肉，酸甜濃郁。",
+    "history": "源自北部吉蘭地區，是節慶與宴客料理。",
+    "wiki": "Fesenjān",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Khoresht-e_fesenjan.jpg/960px-Khoresht-e_fesenjan.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Khoresht-e_fesenjan.jpg",
+    "imageCredit": "stringparts・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "鍋巴飯",
+    "localName": "ته‌دیگ (Tahdig)",
+    "description": "鍋底烤得金黃酥脆的米飯鍋巴。",
+    "history": "伊朗餐桌上最受珍視的部分。",
+    "wiki": "Tahdig",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Persianmom%27s_mother%27s_%28persiangrandma%29_perfect_tahdig_rice.png/960px-Persianmom%27s_mother%27s_%28persiangrandma%29_perfect_tahdig_rice.png",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Persianmom%27s_mother%27s_(persiangrandma)_perfect_tahdig_rice.png",
+    "imageCredit": "AninnymouseEditor・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "麵條濃湯",
+    "localName": "آش رشته (Ash reshteh)",
+    "description": "以麵條、豆類與香草熬煮的濃湯，上面淋優格乳。",
+    "history": "波斯新年諾魯茲期間常見，象徵好運。",
+    "wiki": "Ash reshteh",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Ash_Reshteh.JPG/960px-Ash_Reshteh.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Ash_Reshteh.JPG",
+    "imageCredit": "AilinParsa・CC BY-SA 3.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

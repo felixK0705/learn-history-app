@@ -1,89 +1,104 @@
 {
-  "iso": "GNQ",
-  "capital": "馬拉博",
-  "summary": "赤道幾內亞位於中非西岸，由大陸部分與比奧科島等島嶼組成，曾為西班牙殖民地，是非洲唯一以西班牙語為官方語言的國家，經濟高度依賴石油。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "天主教",
-        "percent": 80,
-        "description": "西班牙殖民時期傳入，至今是最主要的宗教。"
-      },
-      {
-        "name": "基督新教",
-        "percent": 7,
-        "description": "包括長老會、衛理宗及福音派教會。"
-      },
-      {
-        "name": "傳統信仰及其他",
-        "percent": 5,
-        "description": "部分民眾保留傳統信仰，或將其與基督教融合。"
-      },
-      {
-        "name": "伊斯蘭教",
-        "percent": 4,
-        "description": "主要為西非移民社群。"
-      }
-    ],
-    "background": "十八世紀末葡萄牙將此地割讓給西班牙，西班牙殖民與天主教傳教使天主教成為主流。1968年獨立後一度壓制宗教，之後恢復宗教自由，天主教會仍具重要影響力。"
-  },
-  "language": {
-    "official": "西班牙語、法語與葡萄牙語是官方語言。",
-    "ranking": [
-      {
-        "name": "芳語",
-        "percent": 80,
-        "description": "大陸地區人數最多的芳族所使用的班圖語言。",
-        "greeting": "Mbolo",
-        "pronunciation": "m-BOH-loh"
-      },
-      {
-        "name": "西班牙語",
-        "percent": 10,
-        "description": "官方語言及教育語言，多數人作為第二語言使用。",
-        "greeting": "Hola",
-        "pronunciation": "OH-la"
-      }
-    ],
-    "history": "當地原有芳語、布比語等班圖語言。西班牙殖民期間西班牙語成為行政與教育語言；獨立後為加強與周邊法語國家及葡語國家的連結，陸續增列法語與葡萄牙語為官方語言。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "胡椒湯",
-        "localName": "Pepesup",
-        "description": "以魚或肉加上大量辣椒與香料熬煮的辣湯。",
-        "history": "西非與中非沿海常見的湯品，在赤道幾內亞相當普遍。",
-        "wiki": "Pepper soup"
-      },
-      {
-        "name": "富富",
-        "localName": "Fufu",
-        "description": "以木薯或大蕉搗成的糰狀主食，搭配湯汁食用。",
-        "history": "中西非廣泛食用的主食，木薯在殖民時期自美洲傳入。",
-        "wiki": "Fufu"
-      },
-      {
-        "name": "棕櫚醬燉雞",
-        "localName": "Moambe",
-        "description": "以棕櫚果醬燉煮雞肉的料理。",
-        "history": "中非地區的經典料理，常搭配米飯或木薯。",
-        "wiki": "Moambe"
-      },
-      {
-        "name": "苦葉燉菜",
-        "localName": "Ndolé",
-        "description": "以苦葉、花生醬與肉或蝦燉煮的料理。",
-        "history": "流行於喀麥隆與鄰近芳族地區的傳統菜餚。",
-        "wiki": "Ndolé"
-      },
-      {
-        "name": "炸大蕉",
-        "localName": "Plátano frito",
-        "description": "將大蕉切片油炸，作為配菜或點心。",
-        "history": "大蕉是中非常見的主食作物，炸大蕉是日常餐桌上的配菜。",
-        "wiki": "Fried plantain"
-      }
-    ]
-  }
+ "iso": "GNQ",
+ "capital": "馬拉博",
+ "summary": "赤道幾內亞位於中非西岸，由大陸部分與比奧科島等島嶼組成，曾為西班牙殖民地，是非洲唯一以西班牙語為官方語言的國家，經濟高度依賴石油。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "天主教",
+    "percent": 80,
+    "description": "西班牙殖民時期傳入，至今是最主要的宗教。"
+   },
+   {
+    "name": "基督新教",
+    "percent": 7,
+    "description": "包括長老會、衛理宗及福音派教會。"
+   },
+   {
+    "name": "傳統信仰及其他",
+    "percent": 5,
+    "description": "部分民眾保留傳統信仰，或將其與基督教融合。"
+   },
+   {
+    "name": "伊斯蘭教",
+    "percent": 4,
+    "description": "主要為西非移民社群。"
+   }
+  ],
+  "background": "十八世紀末葡萄牙將此地割讓給西班牙，西班牙殖民與天主教傳教使天主教成為主流。1968年獨立後一度壓制宗教，之後恢復宗教自由，天主教會仍具重要影響力。"
+ },
+ "language": {
+  "official": "西班牙語、法語與葡萄牙語是官方語言。",
+  "ranking": [
+   {
+    "name": "芳語",
+    "percent": 80,
+    "description": "大陸地區人數最多的芳族所使用的班圖語言。",
+    "greeting": "Mbolo",
+    "pronunciation": "m-BOH-loh"
+   },
+   {
+    "name": "西班牙語",
+    "percent": 10,
+    "description": "官方語言及教育語言，多數人作為第二語言使用。",
+    "greeting": "Hola",
+    "pronunciation": "OH-la"
+   }
+  ],
+  "history": "當地原有芳語、布比語等班圖語言。西班牙殖民期間西班牙語成為行政與教育語言；獨立後為加強與周邊法語國家及葡語國家的連結，陸續增列法語與葡萄牙語為官方語言。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "胡椒湯",
+    "localName": "Pepesup",
+    "description": "以魚或肉加上大量辣椒與香料熬煮的辣湯。",
+    "history": "西非與中非沿海常見的湯品，在赤道幾內亞相當普遍。",
+    "wiki": "Pepper soup",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Assorted_meat_pepper_soup_at_Lagos_Island.jpg/960px-Assorted_meat_pepper_soup_at_Lagos_Island.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Assorted_meat_pepper_soup_at_Lagos_Island.jpg",
+    "imageCredit": "bob walker・CC BY-SA 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "富富",
+    "localName": "Fufu",
+    "description": "以木薯或大蕉搗成的糰狀主食，搭配湯汁食用。",
+    "history": "中西非廣泛食用的主食，木薯在殖民時期自美洲傳入。",
+    "wiki": "Fufu",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Wrapped_fufu.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Wrapped_fufu.jpg",
+    "imageCredit": "daSupremo・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "棕櫚醬燉雞",
+    "localName": "Moambe",
+    "description": "以棕櫚果醬燉煮雞肉的料理。",
+    "history": "中非地區的經典料理，常搭配米飯或木薯。",
+    "wiki": "Moambe",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Elaeis_guineensis_fruits_on_tree.jpg/960px-Elaeis_guineensis_fruits_on_tree.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Elaeis_guineensis_fruits_on_tree.jpg",
+    "imageCredit": "Bongoman・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "苦葉燉菜",
+    "localName": "Ndolé",
+    "description": "以苦葉、花生醬與肉或蝦燉煮的料理。",
+    "history": "流行於喀麥隆與鄰近芳族地區的傳統菜餚。",
+    "wiki": "Ndolé",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/91/Ndol%C3%A8_%C3%A0_la_viande%2C_morue_et_crevettes.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Ndol%C3%A8_%C3%A0_la_viande,_morue_et_crevettes.jpg",
+    "imageCredit": "Coco lago・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "炸大蕉",
+    "localName": "Plátano frito",
+    "description": "將大蕉切片油炸，作為配菜或點心。",
+    "history": "大蕉是中非常見的主食作物，炸大蕉是日常餐桌上的配菜。",
+    "wiki": "Fried plantain",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Vendeuses_de_bananes_plantain.jpg/960px-Vendeuses_de_bananes_plantain.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Vendeuses_de_bananes_plantain.jpg",
+    "imageCredit": "Romanceor・CC BY-SA 3.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

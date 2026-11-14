@@ -1,89 +1,101 @@
 {
-  "iso": "CAF",
-  "capital": "班基",
-  "summary": "中非共和國位於非洲大陸中心，1960年脫離法國獨立，擁有豐富的礦產與熱帶雨林，但長期受政局動盪影響。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "基督新教",
-        "percent": 60,
-        "description": "包括浸信會、福音派等多個教派。"
-      },
-      {
-        "name": "天主教",
-        "percent": 29,
-        "description": "殖民時期傳入，在教育與社會服務方面影響深遠。"
-      },
-      {
-        "name": "伊斯蘭教",
-        "percent": 9,
-        "description": "主要分布於北部與東北部。"
-      },
-      {
-        "name": "傳統信仰",
-        "percent": 1,
-        "description": "部分族群保留的傳統宗教。"
-      }
-    ],
-    "background": "十九世紀末法國殖民後，天主教與新教傳教士陸續進入，使基督教成為多數人的信仰。伊斯蘭教則經由北方的薩赫爾貿易路線傳入。近年衝突中宗教與族群界線常被政治化。"
-  },
-  "language": {
-    "official": "桑戈語與法語是官方語言。",
-    "ranking": [
-      {
-        "name": "桑戈語",
-        "percent": 90,
-        "description": "全國通用語，絕大多數人能說，多數人以第二語言使用。",
-        "greeting": "Bara ala",
-        "pronunciation": "BA-ra a-LA"
-      },
-      {
-        "name": "法語",
-        "percent": 10,
-        "description": "官方語言，用於政府與教育。",
-        "greeting": "Bonjour",
-        "pronunciation": "bon-ZHOOR"
-      }
-    ],
-    "history": "桑戈語原是烏班吉河沿岸的貿易語言，殖民時期隨商業與軍隊傳播，成為全國通用語。法語是殖民遺留的行政語言，1991年桑戈語亦成為官方語言，使中非成為少數擁有全國性非洲通用語的國家之一。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "木薯糰",
-        "localName": "Gozo",
-        "description": "以木薯粉煮成的糰狀主食，搭配醬汁或燉菜。",
-        "history": "木薯是中非最重要的主食作物。",
-        "wiki": "Fufu"
-      },
-      {
-        "name": "木薯葉燉菜",
-        "localName": "Ngunza",
-        "description": "將木薯葉搗碎後與棕櫚油、魚或肉燉煮。",
-        "history": "中部非洲常見的家常菜。",
-        "wiki": "Pondu"
-      },
-      {
-        "name": "棕櫚醬燉雞",
-        "localName": "Moambe",
-        "description": "以棕櫚果醬燉煮雞肉的料理。",
-        "history": "中部非洲的經典料理，常配米飯或木薯糰。",
-        "wiki": "Moambe"
-      },
-      {
-        "name": "花生醬燉湯",
-        "localName": "Kanda",
-        "description": "以花生醬燉煮肉類或肉丸的料理。",
-        "history": "花生是中非重要作物，花生醬常用於燉菜。",
-        "wiki": "Peanut soup"
-      },
-      {
-        "name": "炸麵球",
-        "localName": "Makara",
-        "description": "以麵粉發酵後油炸的小圓球。",
-        "history": "中西非常見的街頭點心。",
-        "wiki": "Puff-puff"
-      }
-    ]
-  }
+ "iso": "CAF",
+ "capital": "班基",
+ "summary": "中非共和國位於非洲大陸中心，1960年脫離法國獨立，擁有豐富的礦產與熱帶雨林，但長期受政局動盪影響。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "基督新教",
+    "percent": 60,
+    "description": "包括浸信會、福音派等多個教派。"
+   },
+   {
+    "name": "天主教",
+    "percent": 29,
+    "description": "殖民時期傳入，在教育與社會服務方面影響深遠。"
+   },
+   {
+    "name": "伊斯蘭教",
+    "percent": 9,
+    "description": "主要分布於北部與東北部。"
+   },
+   {
+    "name": "傳統信仰",
+    "percent": 1,
+    "description": "部分族群保留的傳統宗教。"
+   }
+  ],
+  "background": "十九世紀末法國殖民後，天主教與新教傳教士陸續進入，使基督教成為多數人的信仰。伊斯蘭教則經由北方的薩赫爾貿易路線傳入。近年衝突中宗教與族群界線常被政治化。"
+ },
+ "language": {
+  "official": "桑戈語與法語是官方語言。",
+  "ranking": [
+   {
+    "name": "桑戈語",
+    "percent": 90,
+    "description": "全國通用語，絕大多數人能說，多數人以第二語言使用。",
+    "greeting": "Bara ala",
+    "pronunciation": "BA-ra a-LA"
+   },
+   {
+    "name": "法語",
+    "percent": 10,
+    "description": "官方語言，用於政府與教育。",
+    "greeting": "Bonjour",
+    "pronunciation": "bon-ZHOOR"
+   }
+  ],
+  "history": "桑戈語原是烏班吉河沿岸的貿易語言，殖民時期隨商業與軍隊傳播，成為全國通用語。法語是殖民遺留的行政語言，1991年桑戈語亦成為官方語言，使中非成為少數擁有全國性非洲通用語的國家之一。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "木薯糰",
+    "localName": "Gozo",
+    "description": "以木薯粉煮成的糰狀主食，搭配醬汁或燉菜。",
+    "history": "木薯是中非最重要的主食作物。",
+    "wiki": "Fufu",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Wrapped_fufu.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Wrapped_fufu.jpg",
+    "imageCredit": "daSupremo・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "木薯葉燉菜",
+    "localName": "Ngunza",
+    "description": "將木薯葉搗碎後與棕櫚油、魚或肉燉煮。",
+    "history": "中部非洲常見的家常菜。",
+    "wiki": "Pondu"
+   },
+   {
+    "name": "棕櫚醬燉雞",
+    "localName": "Moambe",
+    "description": "以棕櫚果醬燉煮雞肉的料理。",
+    "history": "中部非洲的經典料理，常配米飯或木薯糰。",
+    "wiki": "Moambe",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Elaeis_guineensis_fruits_on_tree.jpg/960px-Elaeis_guineensis_fruits_on_tree.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Elaeis_guineensis_fruits_on_tree.jpg",
+    "imageCredit": "Bongoman・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "花生醬燉湯",
+    "localName": "Kanda",
+    "description": "以花生醬燉煮肉類或肉丸的料理。",
+    "history": "花生是中非重要作物，花生醬常用於燉菜。",
+    "wiki": "Peanut soup",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Fufu.jpg/960px-Fufu.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Fufu.jpg",
+    "imageCredit": "Londonsista・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "炸麵球",
+    "localName": "Makara",
+    "description": "以麵粉發酵後油炸的小圓球。",
+    "history": "中西非常見的街頭點心。",
+    "wiki": "Puff-puff",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Nigerian-puff-puff-recipe_cropped.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Nigerian-puff-puff-recipe_cropped.jpg",
+    "imageCredit": "Afrolems ; cropped by Off-shell・CC BY-SA 4.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

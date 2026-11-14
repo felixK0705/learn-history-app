@@ -1,74 +1,89 @@
 {
-  "iso": "VAT",
-  "capital": "梵蒂岡城",
-  "summary": "梵蒂岡是位於羅馬城內的城邦國家，是全球面積最小的主權國家，也是羅馬天主教會的中心與教宗駐地。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "天主教",
-        "percent": 100,
-        "description": "梵蒂岡的居民幾乎全為神職人員、修會成員、瑞士近衛隊及其家屬，均屬天主教。"
-      }
-    ],
-    "background": "梵蒂岡是天主教教宗的駐地，傳統上被視為使徒聖彼得的殉道與埋葬地。1929年教廷與義大利簽訂《拉特朗條約》，成立梵蒂岡城國，以保障教宗的獨立地位。"
-  },
-  "language": {
-    "official": "梵蒂岡城國的官方語言為義大利語；教廷的正式語言為拉丁語。",
-    "ranking": [
-      {
-        "name": "義大利語",
-        "percent": 60,
-        "description": "梵蒂岡城國的行政與日常語言。",
-        "greeting": "Buongiorno",
-        "pronunciation": "bwon-JOR-no"
-      },
-      {
-        "name": "德語",
-        "percent": 15,
-        "description": "瑞士近衛隊成員多以德語為母語，也是近衛隊的指揮語言。",
-        "greeting": "Grüezi",
-        "pronunciation": "GRÜ-et-see"
-      }
-    ],
-    "history": "拉丁語是天主教會的傳統語言，至今仍用於教廷的正式文件。梵蒂岡位於羅馬，日常行政使用義大利語；因教會的國際性，居民與工作人員來自世界各地，也使用法語、英語、西班牙語等多種語言。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "培根蛋麵",
-        "localName": "Carbonara",
-        "description": "以蛋黃、羅馬羊乳酪、醃豬頰肉與黑胡椒拌成的麵。",
-        "history": "羅馬料理的代表之一，一般認為在二十世紀中期發展成形。梵蒂岡沒有獨立的料理體系，日常飲食與羅馬相同。",
-        "wiki": "Carbonara"
-      },
-      {
-        "name": "起司胡椒麵",
-        "localName": "Cacio e pepe",
-        "description": "僅以羅馬羊乳酪與黑胡椒調味的麵。",
-        "history": "源自羅馬周邊牧羊人的簡單料理。",
-        "wiki": "Cacio e pepe"
-      },
-      {
-        "name": "阿瑪翠斯麵",
-        "localName": "Amatriciana",
-        "description": "以番茄、醃豬頰肉與羊乳酪做成的麵醬。",
-        "history": "源自拉齊奧大區的阿馬特里切小鎮，是羅馬經典麵食。",
-        "wiki": "Amatriciana sauce"
-      },
-      {
-        "name": "跳進嘴裡",
-        "localName": "Saltimbocca",
-        "description": "小牛肉片疊上生火腿與鼠尾草煎製。",
-        "history": "羅馬經典肉料理，名稱意為「跳進嘴裡」。",
-        "wiki": "Saltimbocca"
-      },
-      {
-        "name": "炸米球",
-        "localName": "Supplì",
-        "description": "內含莫札瑞拉起司的炸米球。",
-        "history": "羅馬傳統街頭小吃，咬開時起司會拉絲。",
-        "wiki": "Supplì"
-      }
-    ]
-  }
+ "iso": "VAT",
+ "capital": "梵蒂岡城",
+ "summary": "梵蒂岡是位於羅馬城內的城邦國家，是全球面積最小的主權國家，也是羅馬天主教會的中心與教宗駐地。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "天主教",
+    "percent": 100,
+    "description": "梵蒂岡的居民幾乎全為神職人員、修會成員、瑞士近衛隊及其家屬，均屬天主教。"
+   }
+  ],
+  "background": "梵蒂岡是天主教教宗的駐地，傳統上被視為使徒聖彼得的殉道與埋葬地。1929年教廷與義大利簽訂《拉特朗條約》，成立梵蒂岡城國，以保障教宗的獨立地位。"
+ },
+ "language": {
+  "official": "梵蒂岡城國的官方語言為義大利語；教廷的正式語言為拉丁語。",
+  "ranking": [
+   {
+    "name": "義大利語",
+    "percent": 60,
+    "description": "梵蒂岡城國的行政與日常語言。",
+    "greeting": "Buongiorno",
+    "pronunciation": "bwon-JOR-no"
+   },
+   {
+    "name": "德語",
+    "percent": 15,
+    "description": "瑞士近衛隊成員多以德語為母語，也是近衛隊的指揮語言。",
+    "greeting": "Grüezi",
+    "pronunciation": "GRÜ-et-see"
+   }
+  ],
+  "history": "拉丁語是天主教會的傳統語言，至今仍用於教廷的正式文件。梵蒂岡位於羅馬，日常行政使用義大利語；因教會的國際性，居民與工作人員來自世界各地，也使用法語、英語、西班牙語等多種語言。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "培根蛋麵",
+    "localName": "Carbonara",
+    "description": "以蛋黃、羅馬羊乳酪、醃豬頰肉與黑胡椒拌成的麵。",
+    "history": "羅馬料理的代表之一，一般認為在二十世紀中期發展成形。梵蒂岡沒有獨立的料理體系，日常飲食與羅馬相同。",
+    "wiki": "Carbonara",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Espaguetis_carbonara.jpg/960px-Espaguetis_carbonara.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Espaguetis_carbonara.jpg",
+    "imageCredit": "Javier Somoza・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "起司胡椒麵",
+    "localName": "Cacio e pepe",
+    "description": "僅以羅馬羊乳酪與黑胡椒調味的麵。",
+    "history": "源自羅馬周邊牧羊人的簡單料理。",
+    "wiki": "Cacio e pepe",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Cacio_e_pepe.jpg/960px-Cacio_e_pepe.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Cacio_e_pepe.jpg",
+    "imageCredit": "Popo le Chien・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "阿瑪翠斯麵",
+    "localName": "Amatriciana",
+    "description": "以番茄、醃豬頰肉與羊乳酪做成的麵醬。",
+    "history": "源自拉齊奧大區的阿馬特里切小鎮，是羅馬經典麵食。",
+    "wiki": "Amatriciana sauce",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Bucatini_allamatriciana.jpg/960px-Bucatini_allamatriciana.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Bucatini_allamatriciana.jpg",
+    "imageCredit": "Popo le Chien・CC0・Wikimedia Commons"
+   },
+   {
+    "name": "跳進嘴裡",
+    "localName": "Saltimbocca",
+    "description": "小牛肉片疊上生火腿與鼠尾草煎製。",
+    "history": "羅馬經典肉料理，名稱意為「跳進嘴裡」。",
+    "wiki": "Saltimbocca",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Saltimbocca_01.jpg/960px-Saltimbocca_01.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Saltimbocca_01.jpg",
+    "imageCredit": "Arnaud 25・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "炸米球",
+    "localName": "Supplì",
+    "description": "內含莫札瑞拉起司的炸米球。",
+    "history": "羅馬傳統街頭小吃，咬開時起司會拉絲。",
+    "wiki": "Supplì",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Suppl%C3%AC.jpg/960px-Suppl%C3%AC.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Suppl%C3%AC.jpg",
+    "imageCredit": "FrederikBianko・CC BY-SA 3.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

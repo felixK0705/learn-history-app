@@ -1,91 +1,106 @@
 {
-  "iso": "GRC",
-  "capital": "雅典",
-  "summary": "希臘位於巴爾幹半島南端，擁有眾多愛琴海島嶼，是西方哲學、民主與奧林匹克運動的發源地。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "希臘正教",
-        "percent": 90,
-        "description": "憲法承認的主流宗教，與希臘民族認同密切相關。"
-      },
-      {
-        "name": "無宗教",
-        "percent": 4,
-        "description": "未認同任何宗教的人口。"
-      },
-      {
-        "name": "伊斯蘭教",
-        "percent": 2,
-        "description": "主要為色雷斯地區的穆斯林少數民族與移民。"
-      }
-    ],
-    "background": "使徒保羅在一世紀已於希臘城市傳教，希臘語也是新約聖經的原文。拜占庭帝國時期東正教成為主流，鄂圖曼帝國統治近四百年間，正教會在保存希臘認同上扮演關鍵角色。"
-  },
-  "language": {
-    "official": "希臘語是官方語言。",
-    "ranking": [
-      {
-        "name": "希臘語",
-        "percent": 97,
-        "description": "擁有三千多年書寫歷史的印歐語言。",
-        "greeting": "Γειά σου (Yia sou)",
-        "pronunciation": "YAH-soo"
-      },
-      {
-        "name": "阿爾巴尼亞語",
-        "percent": 2,
-        "description": "阿爾巴尼亞移民社群使用。",
-        "greeting": "Përshëndetje",
-        "pronunciation": "pur-shun-DET-yeh"
-      },
-      {
-        "name": "土耳其語",
-        "percent": 1,
-        "description": "色雷斯地區穆斯林少數民族使用。",
-        "greeting": "Merhaba",
-        "pronunciation": "MER-ha-ba"
-      }
-    ],
-    "history": "希臘語的文字紀錄可追溯至邁錫尼時期的線形文字B。古希臘語是哲學與科學的經典語言，希臘化時期的通用希臘語傳遍地中海東部。現代希臘曾有「純正語」與「通俗語」之爭，1976年確立以通俗語為標準。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "慕沙卡",
-        "localName": "Μουσακάς (Moussaka)",
-        "description": "以茄子、絞肉與白醬層層堆疊烘烤的料理。",
-        "history": "二十世紀初廚師采勒門德斯將其改良成現代希臘版本。",
-        "wiki": "Moussaka"
-      },
-      {
-        "name": "蘇夫拉基",
-        "localName": "Σουβλάκι (Souvlaki)",
-        "description": "將小塊肉串起燒烤，常包在皮塔餅中。",
-        "history": "烤肉串在古希臘已有記載，是現代希臘最普遍的街頭小吃。",
-        "wiki": "Souvlaki"
-      },
-      {
-        "name": "希臘沙拉",
-        "localName": "Χωριάτικη (Horiatiki)",
-        "description": "以番茄、黃瓜、洋蔥、橄欖與菲達起司做成的沙拉。",
-        "history": "名稱意為「鄉村沙拉」，以簡單的地中海食材組合而成。",
-        "wiki": "Greek salad"
-      },
-      {
-        "name": "菠菜派",
-        "localName": "Σπανακόπιτα (Spanakopita)",
-        "description": "以酥皮包裹菠菜與菲達起司烘烤的派。",
-        "history": "希臘常見的家常點心。",
-        "wiki": "Spanakopita"
-      },
-      {
-        "name": "旋轉烤肉",
-        "localName": "Γύρος (Gyros)",
-        "description": "在垂直旋轉烤架上烤熟的肉片，包入皮塔餅。",
-        "history": "二十世紀由希臘與小亞細亞移民發展而成。",
-        "wiki": "Gyros"
-      }
-    ]
-  }
+ "iso": "GRC",
+ "capital": "雅典",
+ "summary": "希臘位於巴爾幹半島南端，擁有眾多愛琴海島嶼，是西方哲學、民主與奧林匹克運動的發源地。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "希臘正教",
+    "percent": 90,
+    "description": "憲法承認的主流宗教，與希臘民族認同密切相關。"
+   },
+   {
+    "name": "無宗教",
+    "percent": 4,
+    "description": "未認同任何宗教的人口。"
+   },
+   {
+    "name": "伊斯蘭教",
+    "percent": 2,
+    "description": "主要為色雷斯地區的穆斯林少數民族與移民。"
+   }
+  ],
+  "background": "使徒保羅在一世紀已於希臘城市傳教，希臘語也是新約聖經的原文。拜占庭帝國時期東正教成為主流，鄂圖曼帝國統治近四百年間，正教會在保存希臘認同上扮演關鍵角色。"
+ },
+ "language": {
+  "official": "希臘語是官方語言。",
+  "ranking": [
+   {
+    "name": "希臘語",
+    "percent": 97,
+    "description": "擁有三千多年書寫歷史的印歐語言。",
+    "greeting": "Γειά σου (Yia sou)",
+    "pronunciation": "YAH-soo"
+   },
+   {
+    "name": "阿爾巴尼亞語",
+    "percent": 2,
+    "description": "阿爾巴尼亞移民社群使用。",
+    "greeting": "Përshëndetje",
+    "pronunciation": "pur-shun-DET-yeh"
+   },
+   {
+    "name": "土耳其語",
+    "percent": 1,
+    "description": "色雷斯地區穆斯林少數民族使用。",
+    "greeting": "Merhaba",
+    "pronunciation": "MER-ha-ba"
+   }
+  ],
+  "history": "希臘語的文字紀錄可追溯至邁錫尼時期的線形文字B。古希臘語是哲學與科學的經典語言，希臘化時期的通用希臘語傳遍地中海東部。現代希臘曾有「純正語」與「通俗語」之爭，1976年確立以通俗語為標準。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "慕沙卡",
+    "localName": "Μουσακάς (Moussaka)",
+    "description": "以茄子、絞肉與白醬層層堆疊烘烤的料理。",
+    "history": "二十世紀初廚師采勒門德斯將其改良成現代希臘版本。",
+    "wiki": "Moussaka",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/MussakasMeMelitsanesKePatates01.JPG/960px-MussakasMeMelitsanesKePatates01.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:MussakasMeMelitsanesKePatates01.JPG",
+    "imageCredit": "Robert Kindermann aka RobertK・CC BY-SA 2.5・Wikimedia Commons"
+   },
+   {
+    "name": "蘇夫拉基",
+    "localName": "Σουβλάκι (Souvlaki)",
+    "description": "將小塊肉串起燒烤，常包在皮塔餅中。",
+    "history": "烤肉串在古希臘已有記載，是現代希臘最普遍的街頭小吃。",
+    "wiki": "Souvlaki",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/%CE%95%CE%BB%CE%BB%CE%B7%CE%BD%CE%B9%CE%BA%CF%8C_%CE%A3%CE%BF%CF%85%CE%B2%CE%BB%CE%AC%CE%BA%CE%B9_-_panoramio.jpg/960px-%CE%95%CE%BB%CE%BB%CE%B7%CE%BD%CE%B9%CE%BA%CF%8C_%CE%A3%CE%BF%CF%85%CE%B2%CE%BB%CE%AC%CE%BA%CE%B9_-_panoramio.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:%CE%95%CE%BB%CE%BB%CE%B7%CE%BD%CE%B9%CE%BA%CF%8C_%CE%A3%CE%BF%CF%85%CE%B2%CE%BB%CE%AC%CE%BA%CE%B9_-_panoramio.jpg",
+    "imageCredit": "EntaXoyas・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "希臘沙拉",
+    "localName": "Χωριάτικη (Horiatiki)",
+    "description": "以番茄、黃瓜、洋蔥、橄欖與菲達起司做成的沙拉。",
+    "history": "名稱意為「鄉村沙拉」，以簡單的地中海食材組合而成。",
+    "wiki": "Greek salad",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Greece_Food_Horiatiki.JPG/960px-Greece_Food_Horiatiki.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Greece_Food_Horiatiki.JPG",
+    "imageCredit": "User:Jpatokal・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "菠菜派",
+    "localName": "Σπανακόπιτα (Spanakopita)",
+    "description": "以酥皮包裹菠菜與菲達起司烘烤的派。",
+    "history": "希臘常見的家常點心。",
+    "wiki": "Spanakopita",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Spanakopita.jpg/960px-Spanakopita.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Spanakopita.jpg",
+    "imageCredit": "Alpha・CC BY-SA 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "旋轉烤肉",
+    "localName": "Γύρος (Gyros)",
+    "description": "在垂直旋轉烤架上烤熟的肉片，包入皮塔餅。",
+    "history": "二十世紀由希臘與小亞細亞移民發展而成。",
+    "wiki": "Gyros",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Pita_giros.JPG/960px-Pita_giros.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Pita_giros.JPG",
+    "imageCredit": "Antonio Fajardo i López・CC BY-SA 3.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

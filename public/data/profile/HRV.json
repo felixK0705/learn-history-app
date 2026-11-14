@@ -1,89 +1,104 @@
 {
-  "iso": "HRV",
-  "capital": "札格瑞布",
-  "summary": "克羅埃西亞位於巴爾幹半島西北部、亞得里亞海東岸，擁有綿長的海岸線與杜布羅夫尼克等歷史古城，1991年自南斯拉夫獨立。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "天主教",
-        "percent": 79,
-        "description": "克羅埃西亞民族認同的重要元素。"
-      },
-      {
-        "name": "無宗教",
-        "percent": 6,
-        "description": "包括無神論者與不可知論者。"
-      },
-      {
-        "name": "東正教",
-        "percent": 3,
-        "description": "主要為塞爾維亞裔少數民族。"
-      },
-      {
-        "name": "伊斯蘭教",
-        "percent": 1,
-        "description": "主要為波士尼亞裔社群。"
-      }
-    ],
-    "background": "克羅埃西亞人在七世紀定居後於九世紀前後接受羅馬教會的基督教，與西方天主教世界緊密相連。塞爾維亞裔則屬東正教，鄂圖曼帝國的擴張也帶來穆斯林社群。1990年代戰爭後，宗教與族群認同的連結更為強烈。"
-  },
-  "language": {
-    "official": "克羅埃西亞語是官方語言。",
-    "ranking": [
-      {
-        "name": "克羅埃西亞語",
-        "percent": 96,
-        "description": "屬南斯拉夫語支，使用拉丁字母。",
-        "greeting": "Bok",
-        "pronunciation": "bok"
-      },
-      {
-        "name": "塞爾維亞語",
-        "percent": 1,
-        "description": "塞爾維亞裔少數民族使用。",
-        "greeting": "Здраво (Zdravo)",
-        "pronunciation": "ZDRAH-voh"
-      }
-    ],
-    "history": "克羅埃西亞語早期曾使用格拉哥里字母書寫，後來改用拉丁字母。十九世紀伊利里亞運動推動語言標準化；南斯拉夫時期曾被稱為塞爾維亞—克羅埃西亞語，獨立後則強調其獨立地位。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "帕什蒂查達燉牛肉",
-        "localName": "Pašticada",
-        "description": "以醋、紅酒與香料醃漬後慢燉的牛肉，常配麵疙瘩。",
-        "history": "達爾馬提亞地區的傳統節慶料理，製作需一至兩天。",
-        "wiki": "Pašticada"
-      },
-      {
-        "name": "施特魯克利",
-        "localName": "Štrukli",
-        "description": "以麵皮包裹鮮乳酪後水煮或烘烤的料理。",
-        "history": "源自札格瑞布與札戈列地區，列入克羅埃西亞文化遺產。",
-        "wiki": "Štrukli"
-      },
-      {
-        "name": "炸甜球",
-        "localName": "Fritule",
-        "description": "帶有柑橘與蘭姆酒香的小炸麵團球。",
-        "history": "達爾馬提亞海岸的傳統點心，聖誕節前特別常見。",
-        "wiki": "Fritule"
-      },
-      {
-        "name": "高麗菜捲",
-        "localName": "Sarma",
-        "description": "以醃漬高麗菜葉包裹肉餡與米慢燉。",
-        "history": "受鄂圖曼飲食影響的料理，是冬季與節慶的家常菜。",
-        "wiki": "Sarma (food)"
-      },
-      {
-        "name": "切巴契契",
-        "localName": "Ćevapi",
-        "description": "以絞肉做成的小肉條，炭烤後夾在麵包中並配洋蔥。",
-        "history": "源自鄂圖曼時期的巴爾幹地區，是前南斯拉夫各地常見的街頭美食。",
-        "wiki": "Ćevapi"
-      }
-    ]
-  }
+ "iso": "HRV",
+ "capital": "札格瑞布",
+ "summary": "克羅埃西亞位於巴爾幹半島西北部、亞得里亞海東岸，擁有綿長的海岸線與杜布羅夫尼克等歷史古城，1991年自南斯拉夫獨立。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "天主教",
+    "percent": 79,
+    "description": "克羅埃西亞民族認同的重要元素。"
+   },
+   {
+    "name": "無宗教",
+    "percent": 6,
+    "description": "包括無神論者與不可知論者。"
+   },
+   {
+    "name": "東正教",
+    "percent": 3,
+    "description": "主要為塞爾維亞裔少數民族。"
+   },
+   {
+    "name": "伊斯蘭教",
+    "percent": 1,
+    "description": "主要為波士尼亞裔社群。"
+   }
+  ],
+  "background": "克羅埃西亞人在七世紀定居後於九世紀前後接受羅馬教會的基督教，與西方天主教世界緊密相連。塞爾維亞裔則屬東正教，鄂圖曼帝國的擴張也帶來穆斯林社群。1990年代戰爭後，宗教與族群認同的連結更為強烈。"
+ },
+ "language": {
+  "official": "克羅埃西亞語是官方語言。",
+  "ranking": [
+   {
+    "name": "克羅埃西亞語",
+    "percent": 96,
+    "description": "屬南斯拉夫語支，使用拉丁字母。",
+    "greeting": "Bok",
+    "pronunciation": "bok"
+   },
+   {
+    "name": "塞爾維亞語",
+    "percent": 1,
+    "description": "塞爾維亞裔少數民族使用。",
+    "greeting": "Здраво (Zdravo)",
+    "pronunciation": "ZDRAH-voh"
+   }
+  ],
+  "history": "克羅埃西亞語早期曾使用格拉哥里字母書寫，後來改用拉丁字母。十九世紀伊利里亞運動推動語言標準化；南斯拉夫時期曾被稱為塞爾維亞—克羅埃西亞語，獨立後則強調其獨立地位。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "帕什蒂查達燉牛肉",
+    "localName": "Pašticada",
+    "description": "以醋、紅酒與香料醃漬後慢燉的牛肉，常配麵疙瘩。",
+    "history": "達爾馬提亞地區的傳統節慶料理，製作需一至兩天。",
+    "wiki": "Pašticada",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Pa%C5%A1ticada_-_Dalmatinska_pa%C5%A1ticada.jpg/960px-Pa%C5%A1ticada_-_Dalmatinska_pa%C5%A1ticada.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Pa%C5%A1ticada_-_Dalmatinska_pa%C5%A1ticada.jpg",
+    "imageCredit": "Imbehind・CC BY 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "施特魯克利",
+    "localName": "Štrukli",
+    "description": "以麵皮包裹鮮乳酪後水煮或烘烤的料理。",
+    "history": "源自札格瑞布與札戈列地區，列入克羅埃西亞文化遺產。",
+    "wiki": "Štrukli",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/%C5%A0trukli_iz_Okrugljaka.jpg/960px-%C5%A0trukli_iz_Okrugljaka.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:%C5%A0trukli_iz_Okrugljaka.jpg",
+    "imageCredit": "Bonč・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "炸甜球",
+    "localName": "Fritule",
+    "description": "帶有柑橘與蘭姆酒香的小炸麵團球。",
+    "history": "達爾馬提亞海岸的傳統點心，聖誕節前特別常見。",
+    "wiki": "Fritule",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Carnival_Frittelle_%28250677305%29.jpeg/960px-Carnival_Frittelle_%28250677305%29.jpeg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Carnival_Frittelle_(250677305).jpeg",
+    "imageCredit": "Simone Coletta・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "高麗菜捲",
+    "localName": "Sarma",
+    "description": "以醃漬高麗菜葉包裹肉餡與米慢燉。",
+    "history": "受鄂圖曼飲食影響的料理，是冬季與節慶的家常菜。",
+    "wiki": "Sarma (food)",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Yaprak_sarma%2C_Kayseri_style.jpg/960px-Yaprak_sarma%2C_Kayseri_style.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Yaprak_sarma,_Kayseri_style.jpg",
+    "imageCredit": "E4024・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "切巴契契",
+    "localName": "Ćevapi",
+    "description": "以絞肉做成的小肉條，炭烤後夾在麵包中並配洋蔥。",
+    "history": "源自鄂圖曼時期的巴爾幹地區，是前南斯拉夫各地常見的街頭美食。",
+    "wiki": "Ćevapi",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Cevapi_s_kajmakom.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Cevapi_s_kajmakom.jpg",
+    "imageCredit": "Christian Paul from Vancouver, Canada・CC BY-SA 2.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

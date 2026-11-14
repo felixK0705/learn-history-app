@@ -1,91 +1,106 @@
 {
-  "iso": "DZA",
-  "capital": "阿爾及爾",
-  "summary": "非洲面積最大的國家，國土大半為撒哈拉沙漠，經歷132年法國殖民統治與獨立戰爭後於1962年獨立，石油天然氣資源豐富。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "伊斯蘭教（遜尼派）",
-        "percent": 98,
-        "description": "國教，屬馬立基學派。"
-      },
-      {
-        "name": "伊斯蘭教（伊巴德派）",
-        "percent": 1,
-        "description": "主要分布於撒哈拉北部的姆扎布谷地。"
-      },
-      {
-        "name": "基督教與其他",
-        "percent": 1,
-        "description": "人數極少。"
-      }
-    ],
-    "background": "7世紀末阿拉伯人征服北非，柏柏爾人逐漸改信伊斯蘭教，但也曾支持哈瓦利吉派等派別，留下今日的伊巴德派社群。法國殖民時期雖有歐洲移民帶入天主教，但獨立後大多數歐裔居民離開。"
-  },
-  "language": {
-    "official": "官方語言為阿拉伯語與柏柏爾語（塔馬齊格特語）。",
-    "ranking": [
-      {
-        "name": "阿拉伯語（阿爾及利亞方言）",
-        "percent": 72,
-        "description": "日常口語為阿爾及利亞阿拉伯語（Darja），混有柏柏爾語與法語詞彙。",
-        "greeting": "السلام عليكم",
-        "pronunciation": "as-sa-lām ʿa-lay-kum"
-      },
-      {
-        "name": "柏柏爾語（卡拜爾語、沙威語等）",
-        "percent": 27,
-        "description": "北非原住民語言，2016年成為官方語言。",
-        "greeting": "Azul",
-        "pronunciation": "a-zul"
-      },
-      {
-        "name": "法語",
-        "percent": 1,
-        "description": "母語者不多，但在行政、商業與高等教育中廣泛使用。",
-        "greeting": "Bonjour",
-        "pronunciation": "bon-zhoor"
-      }
-    ],
-    "history": "柏柏爾語是北非最古老的語言。7世紀後隨伊斯蘭教傳入的阿拉伯語逐漸成為主要語言。法國殖民時期推行法語，獨立後政府推動阿拉伯化，柏柏爾人則長期爭取語言權利，2002年與2016年分別獲得國家語言與官方語言地位。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "庫斯庫斯",
-        "localName": "Couscous / Seksu",
-        "description": "蒸熟的粗麥粒配上蔬菜、羊肉或雞肉燉湯。",
-        "history": "源自柏柏爾人的古老主食，2020年由北非四國共同列入聯合國教科文組織非物質文化遺產。",
-        "wiki": "Couscous"
-      },
-      {
-        "name": "碎餅燉菜",
-        "localName": "Chakhchoukha",
-        "description": "將薄餅撕碎後淋上番茄羊肉燉湯。",
-        "history": "源自東部奧雷斯山區沙威柏柏爾人的節慶料理。",
-        "wiki": "Chakhchoukha"
-      },
-      {
-        "name": "雷什塔麵",
-        "localName": "Rechta",
-        "description": "細長的手工麵條，配上雞肉與白蘿蔔白醬湯汁。",
-        "history": "阿爾及爾的傳統料理，常在開齋節與婚禮食用。",
-        "wiki": "Rechta"
-      },
-      {
-        "name": "肉湯",
-        "localName": "Chorba frik",
-        "description": "以碾碎的青麥、羊肉、番茄與香草熬成的濃湯。",
-        "history": "齋戒月開齋時最常見的湯品。",
-        "wiki": "Shorba"
-      },
-      {
-        "name": "椰棗粗麥糕",
-        "localName": "Makroud",
-        "description": "以粗麥粉包入椰棗泥，油炸或烘烤後浸蜂蜜。",
-        "history": "北非馬格里布地區共享的傳統甜點，常見於節慶。",
-        "wiki": "Makroudh"
-      }
-    ]
-  }
+ "iso": "DZA",
+ "capital": "阿爾及爾",
+ "summary": "非洲面積最大的國家，國土大半為撒哈拉沙漠，經歷132年法國殖民統治與獨立戰爭後於1962年獨立，石油天然氣資源豐富。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "伊斯蘭教（遜尼派）",
+    "percent": 98,
+    "description": "國教，屬馬立基學派。"
+   },
+   {
+    "name": "伊斯蘭教（伊巴德派）",
+    "percent": 1,
+    "description": "主要分布於撒哈拉北部的姆扎布谷地。"
+   },
+   {
+    "name": "基督教與其他",
+    "percent": 1,
+    "description": "人數極少。"
+   }
+  ],
+  "background": "7世紀末阿拉伯人征服北非，柏柏爾人逐漸改信伊斯蘭教，但也曾支持哈瓦利吉派等派別，留下今日的伊巴德派社群。法國殖民時期雖有歐洲移民帶入天主教，但獨立後大多數歐裔居民離開。"
+ },
+ "language": {
+  "official": "官方語言為阿拉伯語與柏柏爾語（塔馬齊格特語）。",
+  "ranking": [
+   {
+    "name": "阿拉伯語（阿爾及利亞方言）",
+    "percent": 72,
+    "description": "日常口語為阿爾及利亞阿拉伯語（Darja），混有柏柏爾語與法語詞彙。",
+    "greeting": "السلام عليكم",
+    "pronunciation": "as-sa-lām ʿa-lay-kum"
+   },
+   {
+    "name": "柏柏爾語（卡拜爾語、沙威語等）",
+    "percent": 27,
+    "description": "北非原住民語言，2016年成為官方語言。",
+    "greeting": "Azul",
+    "pronunciation": "a-zul"
+   },
+   {
+    "name": "法語",
+    "percent": 1,
+    "description": "母語者不多，但在行政、商業與高等教育中廣泛使用。",
+    "greeting": "Bonjour",
+    "pronunciation": "bon-zhoor"
+   }
+  ],
+  "history": "柏柏爾語是北非最古老的語言。7世紀後隨伊斯蘭教傳入的阿拉伯語逐漸成為主要語言。法國殖民時期推行法語，獨立後政府推動阿拉伯化，柏柏爾人則長期爭取語言權利，2002年與2016年分別獲得國家語言與官方語言地位。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "庫斯庫斯",
+    "localName": "Couscous / Seksu",
+    "description": "蒸熟的粗麥粒配上蔬菜、羊肉或雞肉燉湯。",
+    "history": "源自柏柏爾人的古老主食，2020年由北非四國共同列入聯合國教科文組織非物質文化遺產。",
+    "wiki": "Couscous",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Moroccan_cuscus%2C_from_Casablanca%2C_September_2018.jpg/960px-Moroccan_cuscus%2C_from_Casablanca%2C_September_2018.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Moroccan_cuscus,_from_Casablanca,_September_2018.jpg",
+    "imageCredit": "Lmmima・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "碎餅燉菜",
+    "localName": "Chakhchoukha",
+    "description": "將薄餅撕碎後淋上番茄羊肉燉湯。",
+    "history": "源自東部奧雷斯山區沙威柏柏爾人的節慶料理。",
+    "wiki": "Chakhchoukha",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Algerian_Chakhchoukha.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Algerian_Chakhchoukha.jpg",
+    "imageCredit": "Plwnt・CC0・Wikimedia Commons"
+   },
+   {
+    "name": "雷什塔麵",
+    "localName": "Rechta",
+    "description": "細長的手工麵條，配上雞肉與白蘿蔔白醬湯汁。",
+    "history": "阿爾及爾的傳統料理，常在開齋節與婚禮食用。",
+    "wiki": "Rechta",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Rechtaalgeroise.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Rechtaalgeroise.jpg",
+    "imageCredit": "Slothtysloth・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "肉湯",
+    "localName": "Chorba frik",
+    "description": "以碾碎的青麥、羊肉、番茄與香草熬成的濃湯。",
+    "history": "齋戒月開齋時最常見的湯品。",
+    "wiki": "Shorba",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Bean_soup_with_tomatoes_and_red_peppers.jpeg/960px-Bean_soup_with_tomatoes_and_red_peppers.jpeg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Bean_soup_with_tomatoes_and_red_peppers.jpeg",
+    "imageCredit": "Gillgaramond・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "椰棗粗麥糕",
+    "localName": "Makroud",
+    "description": "以粗麥粉包入椰棗泥，油炸或烘烤後浸蜂蜜。",
+    "history": "北非馬格里布地區共享的傳統甜點，常見於節慶。",
+    "wiki": "Makroudh",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Makrouds.JPG/960px-Makrouds.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Makrouds.JPG",
+    "imageCredit": "Credits to Mourad Ben Abdallah / Wikimedia Commons・Public domain・Wikimedia Commons"
+   }
+  ]
+ }
 }

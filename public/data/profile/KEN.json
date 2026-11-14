@@ -1,120 +1,135 @@
 {
-  "iso": "KEN",
-  "capital": "奈洛比",
-  "summary": "位於東非赤道上的國家，擁有東非大裂谷、吉力馬札羅山北麓的草原與豐富野生動物，1963年脫離英國獨立，以長跑選手聞名。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "新教",
-        "percent": 33,
-        "description": "包含聖公會、長老會等主流教派。"
-      },
-      {
-        "name": "天主教",
-        "percent": 21,
-        "description": "分布廣泛，是最大的單一教會。"
-      },
-      {
-        "name": "福音派",
-        "percent": 20,
-        "description": "五旬節派與福音派教會近年快速成長。"
-      },
-      {
-        "name": "伊斯蘭教",
-        "percent": 11,
-        "description": "集中於沿海地區與東北部。"
-      },
-      {
-        "name": "非洲本土教會",
-        "percent": 7,
-        "description": "融合基督教與非洲傳統的獨立教會。"
-      },
-      {
-        "name": "無宗教",
-        "percent": 2,
-        "description": "比例較低。"
-      }
-    ],
-    "background": "伊斯蘭教自8世紀起經阿拉伯商人傳入沿海斯瓦希里城邦。19世紀起英國與歐洲傳教士深入內陸，建立教會與學校，使基督教在殖民時期大量普及；20世紀亦興起許多非洲本土獨立教會。"
-  },
-  "language": {
-    "official": "官方語言為斯瓦希里語與英語。",
-    "ranking": [
-      {
-        "name": "吉庫尤語",
-        "percent": 17,
-        "description": "最大民族吉庫尤人的語言，主要通行於中部高地。",
-        "greeting": "Wĩ mwega",
-        "pronunciation": "wee mwe-ga"
-      },
-      {
-        "name": "盧希亞語",
-        "percent": 14,
-        "description": "西部盧希亞人的語言。",
-        "greeting": "Mulembe",
-        "pronunciation": "mu-lem-be"
-      },
-      {
-        "name": "卡倫金語",
-        "percent": 13,
-        "description": "裂谷地區卡倫金人的語言，許多長跑選手出身於此族。",
-        "greeting": "Chamge",
-        "pronunciation": "cham-ge"
-      },
-      {
-        "name": "盧奧語",
-        "percent": 11,
-        "description": "維多利亞湖畔盧奧人的語言。",
-        "greeting": "Misawa",
-        "pronunciation": "mi-sa-wa"
-      },
-      {
-        "name": "斯瓦希里語",
-        "percent": 2,
-        "description": "母語者主要在沿海，但為全國通用語，多數國民都能使用。",
-        "greeting": "Jambo / Habari",
-        "pronunciation": "jam-bo / ha-ba-ri"
-      }
-    ],
-    "history": "肯亞有四十多個民族，語言分屬班圖語、尼羅語與庫希特語。斯瓦希里語在沿海融合班圖語與阿拉伯語形成，隨商隊貿易深入內陸。英國殖民時期英語成為行政與教育語言，獨立後斯瓦希里語被定為國語，加強國家認同。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "烏咖哩",
-        "localName": "Ugali",
-        "description": "以白玉米粉攪煮成的稠糊，配燉菜或烤肉，為國民主食。",
-        "history": "玉米於殖民時期普及，烏咖哩成為肯亞人最基本的主食。",
-        "wiki": "Ugali"
-      },
-      {
-        "name": "炭烤肉",
-        "localName": "Nyama choma",
-        "description": "炭火烤的山羊肉或牛肉，配烏咖哩與番茄洋蔥沙拉。",
-        "history": "名稱在斯瓦希里語意為「烤肉」，是週末與聚會的核心料理。",
-        "wiki": "Nyama choma"
-      },
-      {
-        "name": "炒羽衣甘藍",
-        "localName": "Sukuma wiki",
-        "description": "羽衣甘藍與番茄、洋蔥同炒的平價配菜。",
-        "history": "名稱意為「撐過一週」，反映其價格低廉、日常必備。",
-        "wiki": "Sukuma wiki"
-      },
-      {
-        "name": "玉米豆燉菜",
-        "localName": "Githeri",
-        "description": "玉米粒與豆子一起燉煮的料理。",
-        "history": "源自吉庫尤人的傳統主食，也常見於學校營養午餐。",
-        "wiki": "Githeri"
-      },
-      {
-        "name": "恰帕提餅",
-        "localName": "Chapati",
-        "description": "多層次的煎薄餅，配燉菜或茶食用。",
-        "history": "19世紀末隨修築鐵路的印度勞工傳入，成為節慶與日常食物。",
-        "wiki": "Chapati"
-      }
-    ]
-  }
+ "iso": "KEN",
+ "capital": "奈洛比",
+ "summary": "位於東非赤道上的國家，擁有東非大裂谷、吉力馬札羅山北麓的草原與豐富野生動物，1963年脫離英國獨立，以長跑選手聞名。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "新教",
+    "percent": 33,
+    "description": "包含聖公會、長老會等主流教派。"
+   },
+   {
+    "name": "天主教",
+    "percent": 21,
+    "description": "分布廣泛，是最大的單一教會。"
+   },
+   {
+    "name": "福音派",
+    "percent": 20,
+    "description": "五旬節派與福音派教會近年快速成長。"
+   },
+   {
+    "name": "伊斯蘭教",
+    "percent": 11,
+    "description": "集中於沿海地區與東北部。"
+   },
+   {
+    "name": "非洲本土教會",
+    "percent": 7,
+    "description": "融合基督教與非洲傳統的獨立教會。"
+   },
+   {
+    "name": "無宗教",
+    "percent": 2,
+    "description": "比例較低。"
+   }
+  ],
+  "background": "伊斯蘭教自8世紀起經阿拉伯商人傳入沿海斯瓦希里城邦。19世紀起英國與歐洲傳教士深入內陸，建立教會與學校，使基督教在殖民時期大量普及；20世紀亦興起許多非洲本土獨立教會。"
+ },
+ "language": {
+  "official": "官方語言為斯瓦希里語與英語。",
+  "ranking": [
+   {
+    "name": "吉庫尤語",
+    "percent": 17,
+    "description": "最大民族吉庫尤人的語言，主要通行於中部高地。",
+    "greeting": "Wĩ mwega",
+    "pronunciation": "wee mwe-ga"
+   },
+   {
+    "name": "盧希亞語",
+    "percent": 14,
+    "description": "西部盧希亞人的語言。",
+    "greeting": "Mulembe",
+    "pronunciation": "mu-lem-be"
+   },
+   {
+    "name": "卡倫金語",
+    "percent": 13,
+    "description": "裂谷地區卡倫金人的語言，許多長跑選手出身於此族。",
+    "greeting": "Chamge",
+    "pronunciation": "cham-ge"
+   },
+   {
+    "name": "盧奧語",
+    "percent": 11,
+    "description": "維多利亞湖畔盧奧人的語言。",
+    "greeting": "Misawa",
+    "pronunciation": "mi-sa-wa"
+   },
+   {
+    "name": "斯瓦希里語",
+    "percent": 2,
+    "description": "母語者主要在沿海，但為全國通用語，多數國民都能使用。",
+    "greeting": "Jambo / Habari",
+    "pronunciation": "jam-bo / ha-ba-ri"
+   }
+  ],
+  "history": "肯亞有四十多個民族，語言分屬班圖語、尼羅語與庫希特語。斯瓦希里語在沿海融合班圖語與阿拉伯語形成，隨商隊貿易深入內陸。英國殖民時期英語成為行政與教育語言，獨立後斯瓦希里語被定為國語，加強國家認同。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "烏咖哩",
+    "localName": "Ugali",
+    "description": "以白玉米粉攪煮成的稠糊，配燉菜或烤肉，為國民主食。",
+    "history": "玉米於殖民時期普及，烏咖哩成為肯亞人最基本的主食。",
+    "wiki": "Ugali",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/48/Ugali_%26_Sukuma_Wiki.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Ugali_%26_Sukuma_Wiki.jpg",
+    "imageCredit": "Paresh Jai from Nairobi, Kenya・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "炭烤肉",
+    "localName": "Nyama choma",
+    "description": "炭火烤的山羊肉或牛肉，配烏咖哩與番茄洋蔥沙拉。",
+    "history": "名稱在斯瓦希里語意為「烤肉」，是週末與聚會的核心料理。",
+    "wiki": "Nyama choma",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Goat_meat_being_roasted.jpg/960px-Goat_meat_being_roasted.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Goat_meat_being_roasted.jpg",
+    "imageCredit": "Samuel Kiongo・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "炒羽衣甘藍",
+    "localName": "Sukuma wiki",
+    "description": "羽衣甘藍與番茄、洋蔥同炒的平價配菜。",
+    "history": "名稱意為「撐過一週」，反映其價格低廉、日常必備。",
+    "wiki": "Sukuma wiki",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/48/Ugali_%26_Sukuma_Wiki.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Ugali_%26_Sukuma_Wiki.jpg",
+    "imageCredit": "Paresh Jai from Nairobi, Kenya・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "玉米豆燉菜",
+    "localName": "Githeri",
+    "description": "玉米粒與豆子一起燉煮的料理。",
+    "history": "源自吉庫尤人的傳統主食，也常見於學校營養午餐。",
+    "wiki": "Githeri",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Githeri_Meal.jpg/960px-Githeri_Meal.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Githeri_Meal.jpg",
+    "imageCredit": "safaritravelplus・CC0・Wikimedia Commons"
+   },
+   {
+    "name": "恰帕提餅",
+    "localName": "Chapati",
+    "description": "多層次的煎薄餅，配燉菜或茶食用。",
+    "history": "19世紀末隨修築鐵路的印度勞工傳入，成為節慶與日常食物。",
+    "wiki": "Chapati",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/2_Chapati_warm_and_ready_to_be_eaten.jpg/960px-2_Chapati_warm_and_ready_to_be_eaten.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:2_Chapati_warm_and_ready_to_be_eaten.jpg",
+    "imageCredit": "KittyKaht from Hong Kong, Hong Kong・CC BY-SA 2.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

@@ -1,91 +1,106 @@
 {
-  "iso": "NIC",
-  "capital": "馬納瓜",
-  "summary": "尼加拉瓜是中美洲面積最大的國家，擁有尼加拉瓜湖與眾多火山，曾經歷長期的內戰與政治動盪。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "天主教",
-        "percent": 50,
-        "description": "西班牙殖民時期傳入，傳統上是主要宗教。"
-      },
-      {
-        "name": "福音派",
-        "percent": 33,
-        "description": "近數十年快速成長的新教教會。"
-      },
-      {
-        "name": "無宗教",
-        "percent": 14,
-        "description": "未認同任何宗教的人口。"
-      }
-    ],
-    "background": "西班牙殖民使天主教成為主流，加勒比海岸則因英國影響與摩拉維亞弟兄會傳教而有新教傳統。二十世紀後期起福音派與五旬節派教會迅速成長，改變了國家的宗教版圖。"
-  },
-  "language": {
-    "official": "西班牙語是官方語言，加勒比海岸自治區的原住民語言與克里奧爾英語也具官方地位。",
-    "ranking": [
-      {
-        "name": "西班牙語",
-        "percent": 95,
-        "description": "全國通用語言。",
-        "greeting": "Hola",
-        "pronunciation": "OH-la"
-      },
-      {
-        "name": "米斯基托語",
-        "percent": 2,
-        "description": "加勒比海岸米斯基托人的語言。",
-        "greeting": "Naksa",
-        "pronunciation": "NAK-sa"
-      },
-      {
-        "name": "克里奧爾英語",
-        "percent": 1,
-        "description": "加勒比海岸非裔社群的語言。",
-        "greeting": "Hello",
-        "pronunciation": "heh-LOH"
-      }
-    ],
-    "history": "西班牙殖民前當地有多種原住民語言。西班牙語在太平洋側成為主流；加勒比海岸曾受英國保護，形成米斯基托語與克里奧爾英語並存的不同語言環境。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "加洛平托",
-        "localName": "Gallo pinto",
-        "description": "將米飯與紅豆一起炒香的料理。",
-        "history": "尼加拉瓜的國民早餐，與哥斯大黎加都視其為代表料理。",
-        "wiki": "Gallo pinto"
-      },
-      {
-        "name": "納卡塔瑪",
-        "localName": "Nacatamal",
-        "description": "以玉米麵團包豬肉、米與蔬菜，再用香蕉葉包好蒸煮。",
-        "history": "源自原住民的傳統料理，週末早餐常見。",
-        "wiki": "Nacatamal"
-      },
-      {
-        "name": "老印第安人燉菜",
-        "localName": "Indio viejo",
-        "description": "以玉米麵團、牛肉絲與酸橙汁燉成的濃稠料理。",
-        "history": "名稱意為「老印第安人」，具有原住民與西班牙飲食融合的特色。",
-        "wiki": "Indio viejo"
-      },
-      {
-        "name": "維戈隆",
-        "localName": "Vigorón",
-        "description": "在香蕉葉上放木薯、炸豬皮與高麗菜沙拉。",
-        "history": "源自格拉納達的街頭小吃。",
-        "wiki": "Vigorón"
-      },
-      {
-        "name": "奇查玉米飲",
-        "localName": "Chicha de maíz",
-        "description": "以玉米發酵製成的甜味飲料。",
-        "history": "源自原住民的古老飲品，在中南美洲廣泛流傳。",
-        "wiki": "Chicha"
-      }
-    ]
-  }
+ "iso": "NIC",
+ "capital": "馬納瓜",
+ "summary": "尼加拉瓜是中美洲面積最大的國家，擁有尼加拉瓜湖與眾多火山，曾經歷長期的內戰與政治動盪。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "天主教",
+    "percent": 50,
+    "description": "西班牙殖民時期傳入，傳統上是主要宗教。"
+   },
+   {
+    "name": "福音派",
+    "percent": 33,
+    "description": "近數十年快速成長的新教教會。"
+   },
+   {
+    "name": "無宗教",
+    "percent": 14,
+    "description": "未認同任何宗教的人口。"
+   }
+  ],
+  "background": "西班牙殖民使天主教成為主流，加勒比海岸則因英國影響與摩拉維亞弟兄會傳教而有新教傳統。二十世紀後期起福音派與五旬節派教會迅速成長，改變了國家的宗教版圖。"
+ },
+ "language": {
+  "official": "西班牙語是官方語言，加勒比海岸自治區的原住民語言與克里奧爾英語也具官方地位。",
+  "ranking": [
+   {
+    "name": "西班牙語",
+    "percent": 95,
+    "description": "全國通用語言。",
+    "greeting": "Hola",
+    "pronunciation": "OH-la"
+   },
+   {
+    "name": "米斯基托語",
+    "percent": 2,
+    "description": "加勒比海岸米斯基托人的語言。",
+    "greeting": "Naksa",
+    "pronunciation": "NAK-sa"
+   },
+   {
+    "name": "克里奧爾英語",
+    "percent": 1,
+    "description": "加勒比海岸非裔社群的語言。",
+    "greeting": "Hello",
+    "pronunciation": "heh-LOH"
+   }
+  ],
+  "history": "西班牙殖民前當地有多種原住民語言。西班牙語在太平洋側成為主流；加勒比海岸曾受英國保護，形成米斯基托語與克里奧爾英語並存的不同語言環境。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "加洛平托",
+    "localName": "Gallo pinto",
+    "description": "將米飯與紅豆一起炒香的料理。",
+    "history": "尼加拉瓜的國民早餐，與哥斯大黎加都視其為代表料理。",
+    "wiki": "Gallo pinto",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Gallo_Pinto.jpg/960px-Gallo_Pinto.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Gallo_Pinto.jpg",
+    "imageCredit": "Gmasmcal・CC BY 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "納卡塔瑪",
+    "localName": "Nacatamal",
+    "description": "以玉米麵團包豬肉、米與蔬菜，再用香蕉葉包好蒸煮。",
+    "history": "源自原住民的傳統料理，週末早餐常見。",
+    "wiki": "Nacatamal",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Nicaraguan_Nacatamal.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Nicaraguan_Nacatamal.jpg",
+    "imageCredit": "MiguelRamirez77・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "老印第安人燉菜",
+    "localName": "Indio viejo",
+    "description": "以玉米麵團、牛肉絲與酸橙汁燉成的濃稠料理。",
+    "history": "名稱意為「老印第安人」，具有原住民與西班牙飲食融合的特色。",
+    "wiki": "Indio viejo",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Indio-viejo-nicaraguense.jpg/960px-Indio-viejo-nicaraguense.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Indio-viejo-nicaraguense.jpg",
+    "imageCredit": "MiguelRamirez77・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "維戈隆",
+    "localName": "Vigorón",
+    "description": "在香蕉葉上放木薯、炸豬皮與高麗菜沙拉。",
+    "history": "源自格拉納達的街頭小吃。",
+    "wiki": "Vigorón",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/VIGORON.JPG/960px-VIGORON.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:VIGORON.JPG",
+    "imageCredit": "Nicaraguan food・Public domain・Wikimedia Commons"
+   },
+   {
+    "name": "奇查玉米飲",
+    "localName": "Chicha de maíz",
+    "description": "以玉米發酵製成的甜味飲料。",
+    "history": "源自原住民的古老飲品，在中南美洲廣泛流傳。",
+    "wiki": "Chicha",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/17/Chicha_with_Pipe%C3%B1o.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Chicha_with_Pipe%C3%B1o.jpg",
+    "imageCredit": "simenon simenon・CC BY-SA 2.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

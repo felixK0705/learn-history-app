@@ -1,98 +1,113 @@
 {
-  "iso": "UZB",
-  "capital": "塔什干",
-  "summary": "位於中亞中心的雙重內陸國，撒馬爾罕、布哈拉、希瓦等絲路古城留有大量伊斯蘭建築，曾是帖木兒帝國中心，1991年脫離蘇聯獨立。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "伊斯蘭教（遜尼派）",
-        "percent": 93,
-        "description": "多數居民信仰，屬哈乃斐學派，蘇非派納克什班迪教團源於布哈拉。"
-      },
-      {
-        "name": "其他（含無宗教）",
-        "percent": 4,
-        "description": "包含少數什葉派、基督教其他教派與無宗教者。"
-      },
-      {
-        "name": "俄羅斯正教",
-        "percent": 3,
-        "description": "主要為俄羅斯裔居民。"
-      }
-    ],
-    "background": "伊斯蘭教自8世紀阿拉伯人征服河中地區後傳入，布哈拉與撒馬爾罕成為伊斯蘭學術重鎮，伊斯蘭重要聖訓學者布哈里即出生於此。蘇聯時期宗教受壓制，獨立後伊斯蘭教逐步復興。"
-  },
-  "language": {
-    "official": "官方語言為烏茲別克語。",
-    "ranking": [
-      {
-        "name": "烏茲別克語",
-        "percent": 80,
-        "description": "屬突厥語族，現正由西里爾字母轉換為拉丁字母。",
-        "greeting": "Assalomu alaykum / Salom",
-        "pronunciation": "as-sa-lo-mu a-lay-kum / sa-lom"
-      },
-      {
-        "name": "俄語",
-        "percent": 6,
-        "description": "母語者不多，但在城市與商業中廣泛使用。",
-        "greeting": "Здравствуйте",
-        "pronunciation": "zdrast-vuy-tye"
-      },
-      {
-        "name": "塔吉克語",
-        "percent": 4,
-        "description": "撒馬爾罕與布哈拉一帶的塔吉克人使用。",
-        "greeting": "Салом",
-        "pronunciation": "sa-lom"
-      },
-      {
-        "name": "哈薩克語",
-        "percent": 2,
-        "description": "西北部哈薩克人使用。",
-        "greeting": "Сәлеметсіз бе",
-        "pronunciation": "sä-le-met-siz be"
-      }
-    ],
-    "history": "烏茲別克語源自察合台語，15世紀詩人納沃伊以察合台語創作，奠定文學傳統。撒馬爾罕與布哈拉長期為波斯語與突厥語雙語城市。蘇聯時期改用西里爾字母，1993年起推動改用拉丁字母。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "烏茲別克抓飯",
-        "localName": "Osh (Plov)",
-        "description": "以米、羊肉、黃胡蘿蔔、洋蔥與鷹嘴豆在大鍋燉煮，為國菜。",
-        "history": "「抓飯文化與傳統」於2016年列入聯合國教科文組織非物質文化遺產，招待賓客必備。",
-        "wiki": "Pilaf"
-      },
-      {
-        "name": "烤包子",
-        "localName": "Somsa",
-        "description": "以麵皮包入羊肉洋蔥餡，貼在饢坑壁上烤製。",
-        "history": "中亞共享的點心，在烏茲別克街頭隨處可見。",
-        "wiki": "Samsa (food)"
-      },
-      {
-        "name": "拉條子",
-        "localName": "Lagʻmon",
-        "description": "手拉麵配上牛羊肉與蔬菜燉煮的醬汁。",
-        "history": "隨維吾爾與東干人傳入中亞的麵食。",
-        "wiki": "Laghman (food)"
-      },
-      {
-        "name": "曼提餃",
-        "localName": "Manti",
-        "description": "以羊肉與洋蔥為餡的大型蒸餃。",
-        "history": "隨突厥與蒙古民族流傳於中亞的傳統料理。",
-        "wiki": "Manti (food)"
-      },
-      {
-        "name": "烤肉串",
-        "localName": "Shashlik",
-        "description": "羊肉、牛肉串在炭火上燒烤，配洋蔥與饢。",
-        "history": "中亞茶館（chaikhana）的經典料理。",
-        "wiki": "Shashlik"
-      }
-    ]
-  }
+ "iso": "UZB",
+ "capital": "塔什干",
+ "summary": "位於中亞中心的雙重內陸國，撒馬爾罕、布哈拉、希瓦等絲路古城留有大量伊斯蘭建築，曾是帖木兒帝國中心，1991年脫離蘇聯獨立。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "伊斯蘭教（遜尼派）",
+    "percent": 93,
+    "description": "多數居民信仰，屬哈乃斐學派，蘇非派納克什班迪教團源於布哈拉。"
+   },
+   {
+    "name": "其他（含無宗教）",
+    "percent": 4,
+    "description": "包含少數什葉派、基督教其他教派與無宗教者。"
+   },
+   {
+    "name": "俄羅斯正教",
+    "percent": 3,
+    "description": "主要為俄羅斯裔居民。"
+   }
+  ],
+  "background": "伊斯蘭教自8世紀阿拉伯人征服河中地區後傳入，布哈拉與撒馬爾罕成為伊斯蘭學術重鎮，伊斯蘭重要聖訓學者布哈里即出生於此。蘇聯時期宗教受壓制，獨立後伊斯蘭教逐步復興。"
+ },
+ "language": {
+  "official": "官方語言為烏茲別克語。",
+  "ranking": [
+   {
+    "name": "烏茲別克語",
+    "percent": 80,
+    "description": "屬突厥語族，現正由西里爾字母轉換為拉丁字母。",
+    "greeting": "Assalomu alaykum / Salom",
+    "pronunciation": "as-sa-lo-mu a-lay-kum / sa-lom"
+   },
+   {
+    "name": "俄語",
+    "percent": 6,
+    "description": "母語者不多，但在城市與商業中廣泛使用。",
+    "greeting": "Здравствуйте",
+    "pronunciation": "zdrast-vuy-tye"
+   },
+   {
+    "name": "塔吉克語",
+    "percent": 4,
+    "description": "撒馬爾罕與布哈拉一帶的塔吉克人使用。",
+    "greeting": "Салом",
+    "pronunciation": "sa-lom"
+   },
+   {
+    "name": "哈薩克語",
+    "percent": 2,
+    "description": "西北部哈薩克人使用。",
+    "greeting": "Сәлеметсіз бе",
+    "pronunciation": "sä-le-met-siz be"
+   }
+  ],
+  "history": "烏茲別克語源自察合台語，15世紀詩人納沃伊以察合台語創作，奠定文學傳統。撒馬爾罕與布哈拉長期為波斯語與突厥語雙語城市。蘇聯時期改用西里爾字母，1993年起推動改用拉丁字母。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "烏茲別克抓飯",
+    "localName": "Osh (Plov)",
+    "description": "以米、羊肉、黃胡蘿蔔、洋蔥與鷹嘴豆在大鍋燉煮，為國菜。",
+    "history": "「抓飯文化與傳統」於2016年列入聯合國教科文組織非物質文化遺產，招待賓客必備。",
+    "wiki": "Pilaf",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Afghan_Palo.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Afghan_Palo.jpg",
+    "imageCredit": "Jost Wagner・CC BY-SA 1.0・Wikimedia Commons"
+   },
+   {
+    "name": "烤包子",
+    "localName": "Somsa",
+    "description": "以麵皮包入羊肉洋蔥餡，貼在饢坑壁上烤製。",
+    "history": "中亞共享的點心，在烏茲別克街頭隨處可見。",
+    "wiki": "Samsa (food)",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Ouzb%C3%A9kistan-Samsas.jpg/960px-Ouzb%C3%A9kistan-Samsas.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Ouzb%C3%A9kistan-Samsas.jpg",
+    "imageCredit": "Ji-Elle・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "拉條子",
+    "localName": "Lagʻmon",
+    "description": "手拉麵配上牛羊肉與蔬菜燉煮的醬汁。",
+    "history": "隨維吾爾與東干人傳入中亞的麵食。",
+    "wiki": "Laghman (food)",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/74/%D0%9B%D0%B0%D0%B3%D0%BC%D0%B0%D0%BD.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:%D0%9B%D0%B0%D0%B3%D0%BC%D0%B0%D0%BD.jpg",
+    "imageCredit": "Армен Авакян・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "曼提餃",
+    "localName": "Manti",
+    "description": "以羊肉與洋蔥為餡的大型蒸餃。",
+    "history": "隨突厥與蒙古民族流傳於中亞的傳統料理。",
+    "wiki": "Manti (food)",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Kayseride_bir_restoranda_Kayseri_mant%C4%B1s%C4%B1_%28cropped%29.jpg/960px-Kayseride_bir_restoranda_Kayseri_mant%C4%B1s%C4%B1_%28cropped%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Kayseride_bir_restoranda_Kayseri_mant%C4%B1s%C4%B1_(cropped).jpg",
+    "imageCredit": "Kızılkum・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "烤肉串",
+    "localName": "Shashlik",
+    "description": "羊肉、牛肉串在炭火上燒烤，配洋蔥與饢。",
+    "history": "中亞茶館（chaikhana）的經典料理。",
+    "wiki": "Shashlik",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Shashlik.jpg/960px-Shashlik.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Shashlik.jpg",
+    "imageCredit": "Игоревич・Public domain・Wikimedia Commons"
+   }
+  ]
+ }
 }

@@ -1,101 +1,116 @@
 {
-  "iso": "IDN",
-  "capital": "雅加達",
-  "summary": "由一萬七千多座島嶼組成的東南亞群島國家，人口全球第四，也是穆斯林人口最多的國家，1945年脫離荷蘭宣布獨立。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "伊斯蘭教（遜尼派）",
-        "percent": 87,
-        "description": "全國多數民族信奉，是世界上穆斯林人口最多的國家。"
-      },
-      {
-        "name": "新教",
-        "percent": 7,
-        "description": "集中於北蘇門答臘巴塔克人、蘇拉威西北部與巴布亞等地。"
-      },
-      {
-        "name": "天主教",
-        "percent": 3,
-        "description": "集中於東努沙登加拉（如弗洛勒斯島）等地。"
-      },
-      {
-        "name": "印度教",
-        "percent": 2,
-        "description": "主要集中於峇里島。"
-      },
-      {
-        "name": "佛教與孔教",
-        "percent": 1,
-        "description": "主要為華人社群信仰。"
-      }
-    ],
-    "background": "印度教與佛教在1世紀後由印度傳入，曾建立室利佛逝與滿者伯夷等王國。13世紀起伊斯蘭教隨商人與蘇非派傳入沿海港口並逐漸普及。荷蘭殖民時期傳教士在部分外島傳播基督教，峇里島則保存了印度教。"
-  },
-  "language": {
-    "official": "官方語言為印尼語。",
-    "ranking": [
-      {
-        "name": "爪哇語",
-        "percent": 31,
-        "description": "爪哇人的母語，是使用人數最多的地方語言，具複雜的敬語系統。",
-        "greeting": "Sugeng enjing（早安）",
-        "pronunciation": "su-geng en-jing"
-      },
-      {
-        "name": "印尼語（作為母語）",
-        "percent": 20,
-        "description": "以馬來語為基礎的國語，雖作為母語者約兩成，但全國絕大多數人能使用。",
-        "greeting": "Halo / Selamat pagi",
-        "pronunciation": "ha-lo / se-la-mat pa-gi"
-      },
-      {
-        "name": "巽他語",
-        "percent": 15,
-        "description": "西爪哇巽他人的語言。",
-        "greeting": "Sampurasun",
-        "pronunciation": "sam-pu-ra-sun"
-      }
-    ],
-    "history": "馬來語長期為群島貿易的通用語。1928年「青年誓言」宣示以「印尼語」作為統一的國家語言，1945年獨立後寫入憲法；選擇馬來語而非人口最多的爪哇語，有助於凝聚多民族國家。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "印尼炒飯",
-        "localName": "Nasi goreng",
-        "description": "以甜醬油、蝦醬、辣椒等炒製的米飯，常加煎蛋與蝦餅。",
-        "history": "源自利用剩飯的家常做法，受華人炒飯影響，被視為國菜之一。",
-        "wiki": "Nasi goreng"
-      },
-      {
-        "name": "巴東仁當牛肉",
-        "localName": "Rendang",
-        "description": "以椰奶與香料長時間慢燉至收乾的牛肉。",
-        "history": "源自西蘇門答臘米南佳保人，因可長時間保存而適合遠行，常見於節慶。",
-        "wiki": "Rendang"
-      },
-      {
-        "name": "沙爹",
-        "localName": "Sate",
-        "description": "竹籤串烤的醃肉，搭配花生醬或甜醬油。",
-        "history": "一般認為19世紀爪哇街頭小販受印度與阿拉伯烤肉影響而發展出沙爹。",
-        "wiki": "Satay"
-      },
-      {
-        "name": "加多加多",
-        "localName": "Gado-gado",
-        "description": "汆燙蔬菜、豆腐、天貝與水煮蛋淋上花生醬的沙拉。",
-        "history": "源自巴達維亞（今雅加達）的貝塔維料理，是常見平民小吃。",
-        "wiki": "Gado-gado"
-      },
-      {
-        "name": "印尼湯",
-        "localName": "Soto",
-        "description": "以香料湯底加入雞肉或牛肉等的湯品，各地有不同版本。",
-        "history": "受華人湯麵料理影響發展而來，各地如蘇拉巴亞、貝塔維皆有特色版本。",
-        "wiki": "Soto (food)"
-      }
-    ]
-  }
+ "iso": "IDN",
+ "capital": "雅加達",
+ "summary": "由一萬七千多座島嶼組成的東南亞群島國家，人口全球第四，也是穆斯林人口最多的國家，1945年脫離荷蘭宣布獨立。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "伊斯蘭教（遜尼派）",
+    "percent": 87,
+    "description": "全國多數民族信奉，是世界上穆斯林人口最多的國家。"
+   },
+   {
+    "name": "新教",
+    "percent": 7,
+    "description": "集中於北蘇門答臘巴塔克人、蘇拉威西北部與巴布亞等地。"
+   },
+   {
+    "name": "天主教",
+    "percent": 3,
+    "description": "集中於東努沙登加拉（如弗洛勒斯島）等地。"
+   },
+   {
+    "name": "印度教",
+    "percent": 2,
+    "description": "主要集中於峇里島。"
+   },
+   {
+    "name": "佛教與孔教",
+    "percent": 1,
+    "description": "主要為華人社群信仰。"
+   }
+  ],
+  "background": "印度教與佛教在1世紀後由印度傳入，曾建立室利佛逝與滿者伯夷等王國。13世紀起伊斯蘭教隨商人與蘇非派傳入沿海港口並逐漸普及。荷蘭殖民時期傳教士在部分外島傳播基督教，峇里島則保存了印度教。"
+ },
+ "language": {
+  "official": "官方語言為印尼語。",
+  "ranking": [
+   {
+    "name": "爪哇語",
+    "percent": 31,
+    "description": "爪哇人的母語，是使用人數最多的地方語言，具複雜的敬語系統。",
+    "greeting": "Sugeng enjing（早安）",
+    "pronunciation": "su-geng en-jing"
+   },
+   {
+    "name": "印尼語（作為母語）",
+    "percent": 20,
+    "description": "以馬來語為基礎的國語，雖作為母語者約兩成，但全國絕大多數人能使用。",
+    "greeting": "Halo / Selamat pagi",
+    "pronunciation": "ha-lo / se-la-mat pa-gi"
+   },
+   {
+    "name": "巽他語",
+    "percent": 15,
+    "description": "西爪哇巽他人的語言。",
+    "greeting": "Sampurasun",
+    "pronunciation": "sam-pu-ra-sun"
+   }
+  ],
+  "history": "馬來語長期為群島貿易的通用語。1928年「青年誓言」宣示以「印尼語」作為統一的國家語言，1945年獨立後寫入憲法；選擇馬來語而非人口最多的爪哇語，有助於凝聚多民族國家。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "印尼炒飯",
+    "localName": "Nasi goreng",
+    "description": "以甜醬油、蝦醬、辣椒等炒製的米飯，常加煎蛋與蝦餅。",
+    "history": "源自利用剩飯的家常做法，受華人炒飯影響，被視為國菜之一。",
+    "wiki": "Nasi goreng",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Nasi_Goreng_Kampung_%2811967588375%29.jpg/960px-Nasi_Goreng_Kampung_%2811967588375%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Nasi_Goreng_Kampung_(11967588375).jpg",
+    "imageCredit": "shankar s. from Dubai, united arab emirates・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "巴東仁當牛肉",
+    "localName": "Rendang",
+    "description": "以椰奶與香料長時間慢燉至收乾的牛肉。",
+    "history": "源自西蘇門答臘米南佳保人，因可長時間保存而適合遠行，常見於節慶。",
+    "wiki": "Rendang",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Rendang_daging_sapi_asli_Padang.JPG/960px-Rendang_daging_sapi_asli_Padang.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Rendang_daging_sapi_asli_Padang.JPG",
+    "imageCredit": "Midori・CC BY 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "沙爹",
+    "localName": "Sate",
+    "description": "竹籤串烤的醃肉，搭配花生醬或甜醬油。",
+    "history": "一般認為19世紀爪哇街頭小販受印度與阿拉伯烤肉影響而發展出沙爹。",
+    "wiki": "Satay",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Sate_Udang.JPG/960px-Sate_Udang.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Sate_Udang.JPG",
+    "imageCredit": "Gunawan Kartapranata・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "加多加多",
+    "localName": "Gado-gado",
+    "description": "汆燙蔬菜、豆腐、天貝與水煮蛋淋上花生醬的沙拉。",
+    "history": "源自巴達維亞（今雅加達）的貝塔維料理，是常見平民小吃。",
+    "wiki": "Gado-gado",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Gado_gado_jakarta.jpg/960px-Gado_gado_jakarta.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Gado_gado_jakarta.jpg",
+    "imageCredit": "Piknikdong・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "印尼湯",
+    "localName": "Soto",
+    "description": "以香料湯底加入雞肉或牛肉等的湯品，各地有不同版本。",
+    "history": "受華人湯麵料理影響發展而來，各地如蘇拉巴亞、貝塔維皆有特色版本。",
+    "wiki": "Soto (food)",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Soto_Ayam_Savoy_Homann_Hotel.JPG/960px-Soto_Ayam_Savoy_Homann_Hotel.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Soto_Ayam_Savoy_Homann_Hotel.JPG",
+    "imageCredit": "Gunawan Kartapranata・CC BY-SA 3.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

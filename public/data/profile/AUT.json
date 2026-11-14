@@ -1,101 +1,116 @@
 {
-  "iso": "AUT",
-  "capital": "維也納",
-  "summary": "奧地利是中歐內陸國家，曾為哈布斯堡王朝與奧匈帝國的核心，以阿爾卑斯山景、古典音樂與咖啡館文化聞名。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "天主教",
-        "percent": 55,
-        "description": "奧地利最主要的宗教，哈布斯堡王朝長期是天主教的重要支持者。"
-      },
-      {
-        "name": "無宗教",
-        "percent": 22,
-        "description": "近數十年退出教會的人數增加，無宗教人口快速成長。"
-      },
-      {
-        "name": "伊斯蘭教",
-        "percent": 8,
-        "description": "主要來自土耳其與巴爾幹地區的移民及其後代。"
-      },
-      {
-        "name": "東正教",
-        "percent": 5,
-        "description": "多為塞爾維亞、羅馬尼亞等東歐移民社群。"
-      },
-      {
-        "name": "基督新教",
-        "percent": 4,
-        "description": "以路德宗為主，宗教改革時期曾一度盛行。"
-      }
-    ],
-    "background": "十六世紀宗教改革時新教一度在奧地利廣泛傳播，但哈布斯堡王朝推動反宗教改革，使天主教重新成為主流。二十世紀後期起世俗化使許多人退出教會，而二戰後的外籍勞工與難民則帶來伊斯蘭教與東正教社群。"
-  },
-  "language": {
-    "official": "德語是奧地利的官方語言，部分地區另承認克羅埃西亞語、斯洛維尼亞語與匈牙利語為區域官方語言。",
-    "ranking": [
-      {
-        "name": "德語（奧地利德語）",
-        "percent": 89,
-        "description": "絕大多數國民的母語，有獨特的詞彙與口音。",
-        "greeting": "Grüß Gott",
-        "pronunciation": "grüss GOT"
-      },
-      {
-        "name": "波士尼亞語／克羅埃西亞語／塞爾維亞語",
-        "percent": 4,
-        "description": "來自前南斯拉夫地區的移民社群使用。",
-        "greeting": "Zdravo",
-        "pronunciation": "ZDRAH-voh"
-      },
-      {
-        "name": "土耳其語",
-        "percent": 2,
-        "description": "土耳其裔移民社群的主要語言。",
-        "greeting": "Merhaba",
-        "pronunciation": "MER-ha-ba"
-      }
-    ],
-    "history": "奧地利自中世紀起屬於德語文化圈，哈布斯堡王朝統治多民族帝國時，宮廷與行政以德語為主。1918年帝國解體後奧地利成為德語國家，但仍保留布爾根蘭的克羅埃西亞語、克恩頓的斯洛維尼亞語等少數民族語言。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "維也納炸肉排",
-        "localName": "Wiener Schnitzel",
-        "description": "將小牛肉片拍薄、裹粉後油炸的金黃色肉排，常配檸檬與馬鈴薯沙拉。",
-        "history": "十九世紀已是維也納代表菜，依奧地利法規，正宗做法必須使用小牛肉。",
-        "wiki": "Wiener schnitzel"
-      },
-      {
-        "name": "薩赫蛋糕",
-        "localName": "Sachertorte",
-        "description": "以杏桃果醬夾層、外層淋上黑巧克力的濃郁巧克力蛋糕。",
-        "history": "1832年由學徒弗朗茲·薩赫為梅特涅親王的宴會所創，後成為維也納名產。",
-        "wiki": "Sachertorte"
-      },
-      {
-        "name": "蘋果捲",
-        "localName": "Apfelstrudel",
-        "description": "以極薄麵皮包裹蘋果、肉桂與葡萄乾烘烤的酥捲。",
-        "history": "其薄餅皮技術與鄂圖曼帝國的酥皮點心有關，在哈布斯堡時代成為奧地利經典甜點。",
-        "wiki": "Apple strudel"
-      },
-      {
-        "name": "清燉牛肉",
-        "localName": "Tafelspitz",
-        "description": "將牛臀肉與根莖蔬菜慢燉，搭配辣根醬與蘋果醬食用。",
-        "history": "據說是皇帝法蘭茲·約瑟夫一世喜愛的菜餚，被視為維也納傳統料理代表。",
-        "wiki": "Tafelspitz"
-      },
-      {
-        "name": "皇帝煎餅",
-        "localName": "Kaiserschmarrn",
-        "description": "將鬆軟的煎餅撕碎後撒上糖粉，常配李子醬。",
-        "history": "名稱意為「皇帝的碎煎餅」，傳說與法蘭茲·約瑟夫一世有關。",
-        "wiki": "Kaiserschmarrn"
-      }
-    ]
-  }
+ "iso": "AUT",
+ "capital": "維也納",
+ "summary": "奧地利是中歐內陸國家，曾為哈布斯堡王朝與奧匈帝國的核心，以阿爾卑斯山景、古典音樂與咖啡館文化聞名。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "天主教",
+    "percent": 55,
+    "description": "奧地利最主要的宗教，哈布斯堡王朝長期是天主教的重要支持者。"
+   },
+   {
+    "name": "無宗教",
+    "percent": 22,
+    "description": "近數十年退出教會的人數增加，無宗教人口快速成長。"
+   },
+   {
+    "name": "伊斯蘭教",
+    "percent": 8,
+    "description": "主要來自土耳其與巴爾幹地區的移民及其後代。"
+   },
+   {
+    "name": "東正教",
+    "percent": 5,
+    "description": "多為塞爾維亞、羅馬尼亞等東歐移民社群。"
+   },
+   {
+    "name": "基督新教",
+    "percent": 4,
+    "description": "以路德宗為主，宗教改革時期曾一度盛行。"
+   }
+  ],
+  "background": "十六世紀宗教改革時新教一度在奧地利廣泛傳播，但哈布斯堡王朝推動反宗教改革，使天主教重新成為主流。二十世紀後期起世俗化使許多人退出教會，而二戰後的外籍勞工與難民則帶來伊斯蘭教與東正教社群。"
+ },
+ "language": {
+  "official": "德語是奧地利的官方語言，部分地區另承認克羅埃西亞語、斯洛維尼亞語與匈牙利語為區域官方語言。",
+  "ranking": [
+   {
+    "name": "德語（奧地利德語）",
+    "percent": 89,
+    "description": "絕大多數國民的母語，有獨特的詞彙與口音。",
+    "greeting": "Grüß Gott",
+    "pronunciation": "grüss GOT"
+   },
+   {
+    "name": "波士尼亞語／克羅埃西亞語／塞爾維亞語",
+    "percent": 4,
+    "description": "來自前南斯拉夫地區的移民社群使用。",
+    "greeting": "Zdravo",
+    "pronunciation": "ZDRAH-voh"
+   },
+   {
+    "name": "土耳其語",
+    "percent": 2,
+    "description": "土耳其裔移民社群的主要語言。",
+    "greeting": "Merhaba",
+    "pronunciation": "MER-ha-ba"
+   }
+  ],
+  "history": "奧地利自中世紀起屬於德語文化圈，哈布斯堡王朝統治多民族帝國時，宮廷與行政以德語為主。1918年帝國解體後奧地利成為德語國家，但仍保留布爾根蘭的克羅埃西亞語、克恩頓的斯洛維尼亞語等少數民族語言。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "維也納炸肉排",
+    "localName": "Wiener Schnitzel",
+    "description": "將小牛肉片拍薄、裹粉後油炸的金黃色肉排，常配檸檬與馬鈴薯沙拉。",
+    "history": "十九世紀已是維也納代表菜，依奧地利法規，正宗做法必須使用小牛肉。",
+    "wiki": "Wiener schnitzel",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Wiener-Schnitzel02.jpg/960px-Wiener-Schnitzel02.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Wiener-Schnitzel02.jpg",
+    "imageCredit": "Kobako・CC BY-SA 2.5・Wikimedia Commons"
+   },
+   {
+    "name": "薩赫蛋糕",
+    "localName": "Sachertorte",
+    "description": "以杏桃果醬夾層、外層淋上黑巧克力的濃郁巧克力蛋糕。",
+    "history": "1832年由學徒弗朗茲·薩赫為梅特涅親王的宴會所創，後成為維也納名產。",
+    "wiki": "Sachertorte",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Sachertorte_DSC03027.JPG/960px-Sachertorte_DSC03027.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Sachertorte_DSC03027.JPG",
+    "imageCredit": "David Monniaux・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "蘋果捲",
+    "localName": "Apfelstrudel",
+    "description": "以極薄麵皮包裹蘋果、肉桂與葡萄乾烘烤的酥捲。",
+    "history": "其薄餅皮技術與鄂圖曼帝國的酥皮點心有關，在哈布斯堡時代成為奧地利經典甜點。",
+    "wiki": "Apple strudel",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Strudel.jpg/960px-Strudel.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Strudel.jpg",
+    "imageCredit": "che・CC BY-SA 2.5・Wikimedia Commons"
+   },
+   {
+    "name": "清燉牛肉",
+    "localName": "Tafelspitz",
+    "description": "將牛臀肉與根莖蔬菜慢燉，搭配辣根醬與蘋果醬食用。",
+    "history": "據說是皇帝法蘭茲·約瑟夫一世喜愛的菜餚，被視為維也納傳統料理代表。",
+    "wiki": "Tafelspitz",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Tafelspitz.jpg/960px-Tafelspitz.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Tafelspitz.jpg",
+    "imageCredit": "RobertK・CC BY-SA 2.5・Wikimedia Commons"
+   },
+   {
+    "name": "皇帝煎餅",
+    "localName": "Kaiserschmarrn",
+    "description": "將鬆軟的煎餅撕碎後撒上糖粉，常配李子醬。",
+    "history": "名稱意為「皇帝的碎煎餅」，傳說與法蘭茲·約瑟夫一世有關。",
+    "wiki": "Kaiserschmarrn",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/2015_0731_Kaiserschmarrn_Apfelso%C3%9Fe_Edelweissh%C3%BCtte_S%C3%B6lden.jpg/960px-2015_0731_Kaiserschmarrn_Apfelso%C3%9Fe_Edelweissh%C3%BCtte_S%C3%B6lden.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:2015_0731_Kaiserschmarrn_Apfelso%C3%9Fe_Edelweissh%C3%BCtte_S%C3%B6lden.jpg",
+    "imageCredit": "Takeaway・CC BY-SA 4.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

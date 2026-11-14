@@ -1,98 +1,113 @@
 {
-  "iso": "GEO",
-  "capital": "提比里斯",
-  "summary": "喬治亞位於高加索山脈南麓，擁有八千年釀酒歷史，是最早將基督教定為國教的國家之一。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "喬治亞正教",
-        "percent": 83,
-        "description": "喬治亞民族認同的核心。"
-      },
-      {
-        "name": "伊斯蘭教",
-        "percent": 11,
-        "description": "主要為亞塞拜然裔與阿札爾地區居民。"
-      },
-      {
-        "name": "亞美尼亞使徒教會",
-        "percent": 3,
-        "description": "亞美尼亞裔社群的教會。"
-      }
-    ],
-    "background": "約四世紀時聖妮諾在此傳教，伊比利亞王國國王米里安三世皈依，使喬治亞成為最早接受基督教為國教的國家之一。歷史上受波斯與鄂圖曼帝國統治的地區則有穆斯林社群。"
-  },
-  "language": {
-    "official": "喬治亞語是官方語言，阿布哈茲語在阿布哈茲地區亦具官方地位。",
-    "ranking": [
-      {
-        "name": "喬治亞語",
-        "percent": 87,
-        "description": "屬南高加索語系，擁有獨特的喬治亞字母。",
-        "greeting": "გამარჯობა",
-        "pronunciation": "ga-mar-JO-ba"
-      },
-      {
-        "name": "亞塞拜然語",
-        "percent": 6,
-        "description": "東南部亞塞拜然裔居民使用。",
-        "greeting": "Salam",
-        "pronunciation": "sa-LAM"
-      },
-      {
-        "name": "亞美尼亞語",
-        "percent": 4,
-        "description": "南部亞美尼亞裔居民使用。",
-        "greeting": "Բարեւ",
-        "pronunciation": "ba-REV"
-      },
-      {
-        "name": "俄語",
-        "percent": 1,
-        "description": "蘇聯時期的通用語，至今仍有不少人能說。",
-        "greeting": "Здравствуйте",
-        "pronunciation": "ZDRAST-vuy-tye"
-      }
-    ],
-    "history": "喬治亞語擁有約五世紀起的書寫傳統，十二世紀魯斯塔維利的史詩《虎皮騎士》是其文學代表。俄羅斯帝國與蘇聯時期俄語影響很大，獨立後喬治亞語的地位更加鞏固。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "喬治亞起司麵包",
-        "localName": "ხაჭაპური (Khachapuri)",
-        "description": "烤製的麵包中填入融化起司，阿札爾式還會加上蛋黃與奶油。",
-        "history": "喬治亞最具代表性的國民美食，各地有不同造型。",
-        "wiki": "Khachapuri"
-      },
-      {
-        "name": "欣卡利",
-        "localName": "ხინკალი (Khinkali)",
-        "description": "包有肉餡與湯汁的大型餃子，咬開先吸湯汁。",
-        "history": "源自山區，是喬治亞最受歡迎的料理之一。",
-        "wiki": "Khinkali"
-      },
-      {
-        "name": "丘爾契赫拉",
-        "localName": "ჩურჩხელა (Churchkhela)",
-        "description": "將核桃串起後反覆浸入濃縮葡萄汁而成的甜點。",
-        "history": "喬治亞傳統點心，與葡萄酒文化密切相關。",
-        "wiki": "Churchkhela"
-      },
-      {
-        "name": "普哈利",
-        "localName": "ფხალი (Pkhali)",
-        "description": "將菠菜等蔬菜切碎拌入核桃醬做成的冷盤。",
-        "history": "喬治亞宴席上常見的開胃菜。",
-        "wiki": "Pkhali"
-      },
-      {
-        "name": "核桃醬雞",
-        "localName": "საცივი (Satsivi)",
-        "description": "以核桃醬冷食的雞肉或火雞。",
-        "history": "傳統的新年與節慶料理。",
-        "wiki": "Satsivi"
-      }
-    ]
-  }
+ "iso": "GEO",
+ "capital": "提比里斯",
+ "summary": "喬治亞位於高加索山脈南麓，擁有八千年釀酒歷史，是最早將基督教定為國教的國家之一。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "喬治亞正教",
+    "percent": 83,
+    "description": "喬治亞民族認同的核心。"
+   },
+   {
+    "name": "伊斯蘭教",
+    "percent": 11,
+    "description": "主要為亞塞拜然裔與阿札爾地區居民。"
+   },
+   {
+    "name": "亞美尼亞使徒教會",
+    "percent": 3,
+    "description": "亞美尼亞裔社群的教會。"
+   }
+  ],
+  "background": "約四世紀時聖妮諾在此傳教，伊比利亞王國國王米里安三世皈依，使喬治亞成為最早接受基督教為國教的國家之一。歷史上受波斯與鄂圖曼帝國統治的地區則有穆斯林社群。"
+ },
+ "language": {
+  "official": "喬治亞語是官方語言，阿布哈茲語在阿布哈茲地區亦具官方地位。",
+  "ranking": [
+   {
+    "name": "喬治亞語",
+    "percent": 87,
+    "description": "屬南高加索語系，擁有獨特的喬治亞字母。",
+    "greeting": "გამარჯობა",
+    "pronunciation": "ga-mar-JO-ba"
+   },
+   {
+    "name": "亞塞拜然語",
+    "percent": 6,
+    "description": "東南部亞塞拜然裔居民使用。",
+    "greeting": "Salam",
+    "pronunciation": "sa-LAM"
+   },
+   {
+    "name": "亞美尼亞語",
+    "percent": 4,
+    "description": "南部亞美尼亞裔居民使用。",
+    "greeting": "Բարեւ",
+    "pronunciation": "ba-REV"
+   },
+   {
+    "name": "俄語",
+    "percent": 1,
+    "description": "蘇聯時期的通用語，至今仍有不少人能說。",
+    "greeting": "Здравствуйте",
+    "pronunciation": "ZDRAST-vuy-tye"
+   }
+  ],
+  "history": "喬治亞語擁有約五世紀起的書寫傳統，十二世紀魯斯塔維利的史詩《虎皮騎士》是其文學代表。俄羅斯帝國與蘇聯時期俄語影響很大，獨立後喬治亞語的地位更加鞏固。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "喬治亞起司麵包",
+    "localName": "ხაჭაპური (Khachapuri)",
+    "description": "烤製的麵包中填入融化起司，阿札爾式還會加上蛋黃與奶油。",
+    "history": "喬治亞最具代表性的國民美食，各地有不同造型。",
+    "wiki": "Khachapuri",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Old_Tbilisi%2C_Georgian_khachapuri%2C_Georgia.jpg/960px-Old_Tbilisi%2C_Georgian_khachapuri%2C_Georgia.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Old_Tbilisi,_Georgian_khachapuri,_Georgia.jpg",
+    "imageCredit": "Vyacheslav Argenberg・CC BY 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "欣卡利",
+    "localName": "ხინკალი (Khinkali)",
+    "description": "包有肉餡與湯汁的大型餃子，咬開先吸湯汁。",
+    "history": "源自山區，是喬治亞最受歡迎的料理之一。",
+    "wiki": "Khinkali",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Khinkali%2C_Restaurant_Aragvi.jpg/960px-Khinkali%2C_Restaurant_Aragvi.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Khinkali,_Restaurant_Aragvi.jpg",
+    "imageCredit": "Sandra C from Canada・CC BY-SA 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "丘爾契赫拉",
+    "localName": "ჩურჩხელა (Churchkhela)",
+    "description": "將核桃串起後反覆浸入濃縮葡萄汁而成的甜點。",
+    "history": "喬治亞傳統點心，與葡萄酒文化密切相關。",
+    "wiki": "Churchkhela",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Kakheti%2C_Georgia_%E2%80%94_Churchkhela.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Kakheti,_Georgia_%E2%80%94_Churchkhela.jpg",
+    "imageCredit": "Levan Gokadze (uploaded by Giorgi Balakhadze)・CC BY-SA 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "普哈利",
+    "localName": "ფხალი (Pkhali)",
+    "description": "將菠菜等蔬菜切碎拌入核桃醬做成的冷盤。",
+    "history": "喬治亞宴席上常見的開胃菜。",
+    "wiki": "Pkhali",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Pkhali%2C_Badrijani_and_Ajika.jpg/960px-Pkhali%2C_Badrijani_and_Ajika.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Pkhali,_Badrijani_and_Ajika.jpg",
+    "imageCredit": "salvagekat・CC BY-SA 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "核桃醬雞",
+    "localName": "საცივი (Satsivi)",
+    "description": "以核桃醬冷食的雞肉或火雞。",
+    "history": "傳統的新年與節慶料理。",
+    "wiki": "Satsivi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Satsivi_%282%29.jpg/960px-Satsivi_%282%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Satsivi_(2).jpg",
+    "imageCredit": "Lesya Dolyk・CC BY-SA 2.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

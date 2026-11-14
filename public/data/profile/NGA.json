@@ -1,110 +1,125 @@
 {
-  "iso": "NGA",
-  "capital": "阿布加",
-  "summary": "位於西非幾內亞灣的國家，人口居非洲之首，擁有超過250個民族，石油資源豐富，1960年脫離英國獨立，以電影業（諾萊塢）與音樂聞名。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "伊斯蘭教",
-        "percent": 50,
-        "description": "主要為北部的豪薩人、富拉人與西南部部分約魯巴人。"
-      },
-      {
-        "name": "新教與其他基督教",
-        "percent": 36,
-        "description": "包含聖公會、五旬節派與本土教會，以南部為主。"
-      },
-      {
-        "name": "天主教",
-        "percent": 12,
-        "description": "在東南部伊博人中特別普遍。"
-      },
-      {
-        "name": "傳統信仰",
-        "percent": 2,
-        "description": "如約魯巴的奧里莎信仰，常與其他宗教並存。"
-      }
-    ],
-    "background": "伊斯蘭教自11世紀起經跨撒哈拉貿易傳入北部的卡涅姆－博爾努與豪薩城邦，19世紀初索科托哈里發國的聖戰運動使其廣泛普及。19世紀起基督教傳教士在南部傳教並興辦學校，形成北穆斯林、南基督徒的大致格局。"
-  },
-  "language": {
-    "official": "官方語言為英語。",
-    "ranking": [
-      {
-        "name": "豪薩語",
-        "percent": 25,
-        "description": "北部豪薩人的語言，也是北方的通用語。",
-        "greeting": "Sannu",
-        "pronunciation": "san-nu"
-      },
-      {
-        "name": "約魯巴語",
-        "percent": 21,
-        "description": "西南部約魯巴人的語言，以聲調著稱。",
-        "greeting": "Ẹ n lẹ / Bawo ni",
-        "pronunciation": "eh-n-leh / ba-wo ni"
-      },
-      {
-        "name": "伊博語",
-        "percent": 18,
-        "description": "東南部伊博人的語言。",
-        "greeting": "Ndewo",
-        "pronunciation": "n-de-wo"
-      },
-      {
-        "name": "富拉語",
-        "percent": 6,
-        "description": "北部富拉人的語言。",
-        "greeting": "Jam waali",
-        "pronunciation": "jam waa-li"
-      },
-      {
-        "name": "奈及利亞皮欽語",
-        "percent": 5,
-        "description": "以英語為基礎的混合語，母語者不多但為全國廣泛使用的通用語。",
-        "greeting": "How far?",
-        "pronunciation": "how far"
-      }
-    ],
-    "history": "奈及利亞有五百多種語言。英國殖民將南北統一後，英語成為行政與教育語言，並作為不同民族之間的中立語言；奈及利亞皮欽語則在沿海港口與城市中形成，成為最普遍的口語通用語。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "喬洛夫飯",
-        "localName": "Jollof rice",
-        "description": "以番茄、甜椒、洋蔥與香料燉煮的紅色米飯，常配炸雞與芭蕉。",
-        "history": "西非各國共有的料理，奈及利亞與迦納長期「爭奪」誰的最好吃。",
-        "wiki": "Jollof rice"
-      },
-      {
-        "name": "蘇亞烤肉",
-        "localName": "Suya",
-        "description": "抹上花生香料粉的牛肉串炭烤。",
-        "history": "源自北部豪薩人，現為全國夜間街頭最受歡迎的燒烤。",
-        "wiki": "Suya"
-      },
-      {
-        "name": "瓜子濃湯",
-        "localName": "Egusi soup",
-        "description": "以磨碎的瓜子、棕櫚油、葉菜與肉魚燉成的濃湯，配搗山藥食用。",
-        "history": "西非廣泛食用的湯品，在伊博人與約魯巴人中都十分普遍。",
-        "wiki": "Egusi"
-      },
-      {
-        "name": "搗山藥",
-        "localName": "Pounded yam",
-        "description": "將煮熟的山藥搗成黏稠麵團，配各式湯品食用。",
-        "history": "山藥在約魯巴與伊博文化中具重要地位，伊博人有「新山藥節」慶祝收成。",
-        "wiki": "Pounded yam"
-      },
-      {
-        "name": "蒸豆糕",
-        "localName": "Moi moi",
-        "description": "以黑眼豆泥加辣椒、洋蔥與油蒸製的布丁狀豆糕。",
-        "history": "源自約魯巴人的傳統料理，常與喬洛夫飯一起出現在宴席上。",
-        "wiki": "Moi moi"
-      }
-    ]
-  }
+ "iso": "NGA",
+ "capital": "阿布加",
+ "summary": "位於西非幾內亞灣的國家，人口居非洲之首，擁有超過250個民族，石油資源豐富，1960年脫離英國獨立，以電影業（諾萊塢）與音樂聞名。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "伊斯蘭教",
+    "percent": 50,
+    "description": "主要為北部的豪薩人、富拉人與西南部部分約魯巴人。"
+   },
+   {
+    "name": "新教與其他基督教",
+    "percent": 36,
+    "description": "包含聖公會、五旬節派與本土教會，以南部為主。"
+   },
+   {
+    "name": "天主教",
+    "percent": 12,
+    "description": "在東南部伊博人中特別普遍。"
+   },
+   {
+    "name": "傳統信仰",
+    "percent": 2,
+    "description": "如約魯巴的奧里莎信仰，常與其他宗教並存。"
+   }
+  ],
+  "background": "伊斯蘭教自11世紀起經跨撒哈拉貿易傳入北部的卡涅姆－博爾努與豪薩城邦，19世紀初索科托哈里發國的聖戰運動使其廣泛普及。19世紀起基督教傳教士在南部傳教並興辦學校，形成北穆斯林、南基督徒的大致格局。"
+ },
+ "language": {
+  "official": "官方語言為英語。",
+  "ranking": [
+   {
+    "name": "豪薩語",
+    "percent": 25,
+    "description": "北部豪薩人的語言，也是北方的通用語。",
+    "greeting": "Sannu",
+    "pronunciation": "san-nu"
+   },
+   {
+    "name": "約魯巴語",
+    "percent": 21,
+    "description": "西南部約魯巴人的語言，以聲調著稱。",
+    "greeting": "Ẹ n lẹ / Bawo ni",
+    "pronunciation": "eh-n-leh / ba-wo ni"
+   },
+   {
+    "name": "伊博語",
+    "percent": 18,
+    "description": "東南部伊博人的語言。",
+    "greeting": "Ndewo",
+    "pronunciation": "n-de-wo"
+   },
+   {
+    "name": "富拉語",
+    "percent": 6,
+    "description": "北部富拉人的語言。",
+    "greeting": "Jam waali",
+    "pronunciation": "jam waa-li"
+   },
+   {
+    "name": "奈及利亞皮欽語",
+    "percent": 5,
+    "description": "以英語為基礎的混合語，母語者不多但為全國廣泛使用的通用語。",
+    "greeting": "How far?",
+    "pronunciation": "how far"
+   }
+  ],
+  "history": "奈及利亞有五百多種語言。英國殖民將南北統一後，英語成為行政與教育語言，並作為不同民族之間的中立語言；奈及利亞皮欽語則在沿海港口與城市中形成，成為最普遍的口語通用語。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "喬洛夫飯",
+    "localName": "Jollof rice",
+    "description": "以番茄、甜椒、洋蔥與香料燉煮的紅色米飯，常配炸雞與芭蕉。",
+    "history": "西非各國共有的料理，奈及利亞與迦納長期「爭奪」誰的最好吃。",
+    "wiki": "Jollof rice",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Jollof_Rice_with_Stew.jpg/960px-Jollof_Rice_with_Stew.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Jollof_Rice_with_Stew.jpg",
+    "imageCredit": "Noahalorwu・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "蘇亞烤肉",
+    "localName": "Suya",
+    "description": "抹上花生香料粉的牛肉串炭烤。",
+    "history": "源自北部豪薩人，現為全國夜間街頭最受歡迎的燒烤。",
+    "wiki": "Suya",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/SuyavarietiesTX.JPG/960px-SuyavarietiesTX.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:SuyavarietiesTX.JPG",
+    "imageCredit": "WhisperToMe・CC0・Wikimedia Commons"
+   },
+   {
+    "name": "瓜子濃湯",
+    "localName": "Egusi soup",
+    "description": "以磨碎的瓜子、棕櫚油、葉菜與肉魚燉成的濃湯，配搗山藥食用。",
+    "history": "西非廣泛食用的湯品，在伊博人與約魯巴人中都十分普遍。",
+    "wiki": "Egusi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/EGUSI.JPG/960px-EGUSI.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:EGUSI.JPG",
+    "imageCredit": "Zz411 at English Wikipedia・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "搗山藥",
+    "localName": "Pounded yam",
+    "description": "將煮熟的山藥搗成黏稠麵團，配各式湯品食用。",
+    "history": "山藥在約魯巴與伊博文化中具重要地位，伊博人有「新山藥節」慶祝收成。",
+    "wiki": "Pounded yam",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Pounded_yam_%28Iy%C3%A0n%29.jpg/960px-Pounded_yam_%28Iy%C3%A0n%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Pounded_yam_(Iy%C3%A0n).jpg",
+    "imageCredit": "Taoheedah・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "蒸豆糕",
+    "localName": "Moi moi",
+    "description": "以黑眼豆泥加辣椒、洋蔥與油蒸製的布丁狀豆糕。",
+    "history": "源自約魯巴人的傳統料理，常與喬洛夫飯一起出現在宴席上。",
+    "wiki": "Moi moi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Moin-Moin-good.jpg/960px-Moin-Moin-good.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Moin-Moin-good.jpg",
+    "imageCredit": "ProVeg International・CC0・Wikimedia Commons"
+   }
+  ]
+ }
 }

@@ -1,91 +1,106 @@
 {
-  "iso": "SLE",
-  "capital": "自由城",
-  "summary": "位於西非大西洋岸的國家，首都自由城由英國廢奴人士於18世紀末建立，安置獲釋奴隸，以鑽石資源與內戰歷史為人所知。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "伊斯蘭教（遜尼派）",
-        "percent": 77,
-        "description": "多數居民信仰，以馬立基學派為主。"
-      },
-      {
-        "name": "基督教",
-        "percent": 22,
-        "description": "包含新教與天主教，以自由城和南部較多。"
-      },
-      {
-        "name": "傳統信仰",
-        "percent": 1,
-        "description": "常與伊斯蘭教或基督教並存。"
-      }
-    ],
-    "background": "伊斯蘭教自18世紀起透過富拉與曼丁卡商人及學者傳入北部。1787年後英國廢奴人士在自由城安置獲釋奴隸，帶來新教並設立西非最早的西式大學福拉灣學院。獅子山以宗教寬容著稱，跨宗教通婚常見。"
-  },
-  "language": {
-    "official": "官方語言為英語。",
-    "ranking": [
-      {
-        "name": "門德語",
-        "percent": 31,
-        "description": "南部與東部門德人的語言。",
-        "greeting": "Bua",
-        "pronunciation": "bu-a"
-      },
-      {
-        "name": "克里奧語（Krio）",
-        "percent": 10,
-        "description": "以英語為基礎的克里奧爾語，母語者約一成，但全國九成以上能使用，是通用語。",
-        "greeting": "Kushɛ",
-        "pronunciation": "ku-sheh"
-      },
-      {
-        "name": "英語",
-        "percent": 1,
-        "description": "官方、教育與行政語言。",
-        "greeting": "Hello",
-        "pronunciation": "heh-loh"
-      }
-    ],
-    "history": "本地語言多屬尼日－剛果語系，泰姆奈語與門德語為兩大語言。自由城的獲釋奴隸來自英國、新斯科細亞、牙買加與被截獲的奴隸船，他們的語言融合發展為克里奧語，並成為全國通用語；英國殖民則確立英語的官方地位。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "木薯葉燉菜",
-        "localName": "Cassava leaves",
-        "description": "木薯葉搗碎後與棕櫚油、肉或魚燉煮，配白飯。",
-        "history": "被視為獅子山國菜，反映西非以葉菜配飯的飲食傳統。",
-        "wiki": "Palaver sauce"
-      },
-      {
-        "name": "番茄肉飯",
-        "localName": "Jollof rice",
-        "description": "以番茄、洋蔥、香料與肉一起煮成的紅色米飯。",
-        "history": "流傳全西非的節慶米飯，是聚會必備料理。",
-        "wiki": "Jollof rice"
-      },
-      {
-        "name": "胡椒湯",
-        "localName": "Pepper soup",
-        "description": "以辣椒與香料熬煮魚肉或雞肉的清辣湯。",
-        "history": "西非常見湯品，被認為有暖身、治感冒的功效。",
-        "wiki": "Pepper soup"
-      },
-      {
-        "name": "炸豆餅",
-        "localName": "Akara",
-        "description": "以黑眼豆泥加洋蔥與辣椒油炸成的小球。",
-        "history": "源自西非約魯巴人的傳統食物，隨奴隸貿易傳到美洲與加勒比海。",
-        "wiki": "Akara"
-      },
-      {
-        "name": "富富",
-        "localName": "Fufu",
-        "description": "以發酵木薯搗成的黏稠麵團，配湯菜食用。",
-        "history": "西非與中非普遍的主食。",
-        "wiki": "Fufu"
-      }
-    ]
-  }
+ "iso": "SLE",
+ "capital": "自由城",
+ "summary": "位於西非大西洋岸的國家，首都自由城由英國廢奴人士於18世紀末建立，安置獲釋奴隸，以鑽石資源與內戰歷史為人所知。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "伊斯蘭教（遜尼派）",
+    "percent": 77,
+    "description": "多數居民信仰，以馬立基學派為主。"
+   },
+   {
+    "name": "基督教",
+    "percent": 22,
+    "description": "包含新教與天主教，以自由城和南部較多。"
+   },
+   {
+    "name": "傳統信仰",
+    "percent": 1,
+    "description": "常與伊斯蘭教或基督教並存。"
+   }
+  ],
+  "background": "伊斯蘭教自18世紀起透過富拉與曼丁卡商人及學者傳入北部。1787年後英國廢奴人士在自由城安置獲釋奴隸，帶來新教並設立西非最早的西式大學福拉灣學院。獅子山以宗教寬容著稱，跨宗教通婚常見。"
+ },
+ "language": {
+  "official": "官方語言為英語。",
+  "ranking": [
+   {
+    "name": "門德語",
+    "percent": 31,
+    "description": "南部與東部門德人的語言。",
+    "greeting": "Bua",
+    "pronunciation": "bu-a"
+   },
+   {
+    "name": "克里奧語（Krio）",
+    "percent": 10,
+    "description": "以英語為基礎的克里奧爾語，母語者約一成，但全國九成以上能使用，是通用語。",
+    "greeting": "Kushɛ",
+    "pronunciation": "ku-sheh"
+   },
+   {
+    "name": "英語",
+    "percent": 1,
+    "description": "官方、教育與行政語言。",
+    "greeting": "Hello",
+    "pronunciation": "heh-loh"
+   }
+  ],
+  "history": "本地語言多屬尼日－剛果語系，泰姆奈語與門德語為兩大語言。自由城的獲釋奴隸來自英國、新斯科細亞、牙買加與被截獲的奴隸船，他們的語言融合發展為克里奧語，並成為全國通用語；英國殖民則確立英語的官方地位。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "木薯葉燉菜",
+    "localName": "Cassava leaves",
+    "description": "木薯葉搗碎後與棕櫚油、肉或魚燉煮，配白飯。",
+    "history": "被視為獅子山國菜，反映西非以葉菜配飯的飲食傳統。",
+    "wiki": "Palaver sauce",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Palava_sauce_w-_cocoyam_leaf_%285612472154%29.jpg/960px-Palava_sauce_w-_cocoyam_leaf_%285612472154%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Palava_sauce_w-_cocoyam_leaf_(5612472154).jpg",
+    "imageCredit": "benketaro from San Francisco・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "番茄肉飯",
+    "localName": "Jollof rice",
+    "description": "以番茄、洋蔥、香料與肉一起煮成的紅色米飯。",
+    "history": "流傳全西非的節慶米飯，是聚會必備料理。",
+    "wiki": "Jollof rice",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Jollof_Rice_with_Stew.jpg/960px-Jollof_Rice_with_Stew.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Jollof_Rice_with_Stew.jpg",
+    "imageCredit": "Noahalorwu・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "胡椒湯",
+    "localName": "Pepper soup",
+    "description": "以辣椒與香料熬煮魚肉或雞肉的清辣湯。",
+    "history": "西非常見湯品，被認為有暖身、治感冒的功效。",
+    "wiki": "Pepper soup",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Assorted_meat_pepper_soup_at_Lagos_Island.jpg/960px-Assorted_meat_pepper_soup_at_Lagos_Island.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Assorted_meat_pepper_soup_at_Lagos_Island.jpg",
+    "imageCredit": "bob walker・CC BY-SA 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "炸豆餅",
+    "localName": "Akara",
+    "description": "以黑眼豆泥加洋蔥與辣椒油炸成的小球。",
+    "history": "源自西非約魯巴人的傳統食物，隨奴隸貿易傳到美洲與加勒比海。",
+    "wiki": "Akara",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Beans_Ball-Akara.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Beans_Ball-Akara.jpg",
+    "imageCredit": "AkinkuotuFunmi・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "富富",
+    "localName": "Fufu",
+    "description": "以發酵木薯搗成的黏稠麵團，配湯菜食用。",
+    "history": "西非與中非普遍的主食。",
+    "wiki": "Fufu",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Wrapped_fufu.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Wrapped_fufu.jpg",
+    "imageCredit": "daSupremo・CC BY-SA 4.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

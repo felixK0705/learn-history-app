@@ -1,106 +1,121 @@
 {
-  "iso": "BEN",
-  "capital": "波多諾伏（憲法首都）",
-  "summary": "位於西非幾內亞灣的國家，曾是達荷美王國所在地，也是伏都教（Vodun）的發源地，1960年脫離法國獨立。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "伊斯蘭教",
-        "percent": 28,
-        "description": "主要分布於北部與東南部約魯巴人社群。"
-      },
-      {
-        "name": "天主教",
-        "percent": 26,
-        "description": "殖民時期傳入，以南部為主。"
-      },
-      {
-        "name": "其他基督教（天上基督教會、衛理宗、五旬節派等）",
-        "percent": 17,
-        "description": "包含1947年在波多諾伏創立的天上基督教會。"
-      },
-      {
-        "name": "伏都教",
-        "percent": 12,
-        "description": "西非傳統宗教，1月10日為國定伏都教節日。"
-      },
-      {
-        "name": "無宗教",
-        "percent": 6,
-        "description": "比例較低。"
-      },
-      {
-        "name": "其他傳統信仰",
-        "percent": 3,
-        "description": "包含各民族的祖先崇拜。"
-      }
-    ],
-    "background": "伏都教起源於達荷美王國與周邊的豐族、埃維族，隨奴隸貿易傳到海地與美洲。伊斯蘭教經北部的貿易路線與約魯巴商人傳入；19世紀起天主教與新教傳教士在南部傳教。許多貝南人同時參與伏都教與一神教儀式。"
-  },
-  "language": {
-    "official": "官方語言為法語。",
-    "ranking": [
-      {
-        "name": "豐語",
-        "percent": 24,
-        "description": "南部豐族的語言，是南部主要通用語。",
-        "greeting": "A fɔn ganji à?（早安）",
-        "pronunciation": "a fon gan-ji a"
-      },
-      {
-        "name": "約魯巴語",
-        "percent": 12,
-        "description": "東南部約魯巴人使用，與奈及利亞相通。",
-        "greeting": "Ẹ n lẹ",
-        "pronunciation": "eh-n-leh"
-      },
-      {
-        "name": "法語",
-        "percent": 2,
-        "description": "官方、教育與行政語言，母語者少但城市普遍使用。",
-        "greeting": "Bonjour",
-        "pronunciation": "bon-zhoor"
-      }
-    ],
-    "history": "本地語言屬尼日－剛果語系，達荷美王國時期豐語成為南部強勢語言。法國殖民後法語成為官方語言；北部則以巴里巴語、登迪語等為主。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "炸豆餅",
-        "localName": "Ata / Akara",
-        "description": "以黑眼豆泥加香料油炸成的小球，常作為早餐或點心。",
-        "history": "西非約魯巴與豐族共享的傳統小吃。",
-        "wiki": "Akara"
-      },
-      {
-        "name": "花生餅乾",
-        "localName": "Kuli-kuli",
-        "description": "花生榨油後的花生糊捏成條狀或圈狀油炸的脆餅。",
-        "history": "北部與奈及利亞豪薩人地區常見的點心，也可磨碎拌入沙拉。",
-        "wiki": "Kuli-kuli"
-      },
-      {
-        "name": "瓦加西起司",
-        "localName": "Wagasi",
-        "description": "富拉族婦女以牛奶製成的軟起司，常煎炸或燉煮。",
-        "history": "富拉牧人的傳統乳製品，北部地區尤其常見。",
-        "wiki": "Wagasi"
-      },
-      {
-        "name": "紅玉米糊",
-        "localName": "Amiwo",
-        "description": "以玉米粉加番茄醬汁、洋蔥與香料攪成的紅色玉米糊，常配雞肉。",
-        "history": "豐族的節慶料理，常見於婚禮與宗教儀式。",
-        "wiki": "Amiwo"
-      },
-      {
-        "name": "搗山藥",
-        "localName": "Igname pilée",
-        "description": "以煮熟山藥搗成的黏稠麵團，配花生湯或醬汁食用。",
-        "history": "北部巴里巴人地區的代表主食，山藥在西非文化中具特殊地位。",
-        "wiki": "Pounded yam"
-      }
-    ]
-  }
+ "iso": "BEN",
+ "capital": "波多諾伏（憲法首都）",
+ "summary": "位於西非幾內亞灣的國家，曾是達荷美王國所在地，也是伏都教（Vodun）的發源地，1960年脫離法國獨立。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "伊斯蘭教",
+    "percent": 28,
+    "description": "主要分布於北部與東南部約魯巴人社群。"
+   },
+   {
+    "name": "天主教",
+    "percent": 26,
+    "description": "殖民時期傳入，以南部為主。"
+   },
+   {
+    "name": "其他基督教（天上基督教會、衛理宗、五旬節派等）",
+    "percent": 17,
+    "description": "包含1947年在波多諾伏創立的天上基督教會。"
+   },
+   {
+    "name": "伏都教",
+    "percent": 12,
+    "description": "西非傳統宗教，1月10日為國定伏都教節日。"
+   },
+   {
+    "name": "無宗教",
+    "percent": 6,
+    "description": "比例較低。"
+   },
+   {
+    "name": "其他傳統信仰",
+    "percent": 3,
+    "description": "包含各民族的祖先崇拜。"
+   }
+  ],
+  "background": "伏都教起源於達荷美王國與周邊的豐族、埃維族，隨奴隸貿易傳到海地與美洲。伊斯蘭教經北部的貿易路線與約魯巴商人傳入；19世紀起天主教與新教傳教士在南部傳教。許多貝南人同時參與伏都教與一神教儀式。"
+ },
+ "language": {
+  "official": "官方語言為法語。",
+  "ranking": [
+   {
+    "name": "豐語",
+    "percent": 24,
+    "description": "南部豐族的語言，是南部主要通用語。",
+    "greeting": "A fɔn ganji à?（早安）",
+    "pronunciation": "a fon gan-ji a"
+   },
+   {
+    "name": "約魯巴語",
+    "percent": 12,
+    "description": "東南部約魯巴人使用，與奈及利亞相通。",
+    "greeting": "Ẹ n lẹ",
+    "pronunciation": "eh-n-leh"
+   },
+   {
+    "name": "法語",
+    "percent": 2,
+    "description": "官方、教育與行政語言，母語者少但城市普遍使用。",
+    "greeting": "Bonjour",
+    "pronunciation": "bon-zhoor"
+   }
+  ],
+  "history": "本地語言屬尼日－剛果語系，達荷美王國時期豐語成為南部強勢語言。法國殖民後法語成為官方語言；北部則以巴里巴語、登迪語等為主。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "炸豆餅",
+    "localName": "Ata / Akara",
+    "description": "以黑眼豆泥加香料油炸成的小球，常作為早餐或點心。",
+    "history": "西非約魯巴與豐族共享的傳統小吃。",
+    "wiki": "Akara",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Beans_Ball-Akara.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Beans_Ball-Akara.jpg",
+    "imageCredit": "AkinkuotuFunmi・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "花生餅乾",
+    "localName": "Kuli-kuli",
+    "description": "花生榨油後的花生糊捏成條狀或圈狀油炸的脆餅。",
+    "history": "北部與奈及利亞豪薩人地區常見的點心，也可磨碎拌入沙拉。",
+    "wiki": "Kuli-kuli",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Kulikuli.jpg/960px-Kulikuli.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Kulikuli.jpg",
+    "imageCredit": "Kwameghana・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "瓦加西起司",
+    "localName": "Wagasi",
+    "description": "富拉族婦女以牛奶製成的軟起司，常煎炸或燉煮。",
+    "history": "富拉牧人的傳統乳製品，北部地區尤其常見。",
+    "wiki": "Wagasi",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/27/Wagasi.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Wagasi.jpg",
+    "imageCredit": "daSupremo・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "紅玉米糊",
+    "localName": "Amiwo",
+    "description": "以玉米粉加番茄醬汁、洋蔥與香料攪成的紅色玉米糊，常配雞肉。",
+    "history": "豐族的節慶料理，常見於婚禮與宗教儀式。",
+    "wiki": "Amiwo",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Un_plats_d%27amiwo_au_poisson_au_benin.jpg/960px-Un_plats_d%27amiwo_au_poisson_au_benin.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Un_plats_d%27amiwo_au_poisson_au_benin.jpg",
+    "imageCredit": "Adoscam・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "搗山藥",
+    "localName": "Igname pilée",
+    "description": "以煮熟山藥搗成的黏稠麵團，配花生湯或醬汁食用。",
+    "history": "北部巴里巴人地區的代表主食，山藥在西非文化中具特殊地位。",
+    "wiki": "Pounded yam",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Pounded_yam_%28Iy%C3%A0n%29.jpg/960px-Pounded_yam_%28Iy%C3%A0n%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Pounded_yam_(Iy%C3%A0n).jpg",
+    "imageCredit": "Taoheedah・CC BY-SA 4.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

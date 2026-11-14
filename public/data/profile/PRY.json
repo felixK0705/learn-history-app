@@ -1,103 +1,118 @@
 {
-  "iso": "PRY",
-  "capital": "亞松森",
-  "summary": "位於南美洲中部的內陸國，是美洲少數原住民語言（瓜拉尼語）與西班牙語並列官方語言、且多數人通曉的國家。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "天主教",
-        "percent": 85,
-        "description": "西班牙殖民與耶穌會傳教時期傳入，至今仍是主要宗教。"
-      },
-      {
-        "name": "新教（福音派等）",
-        "percent": 10,
-        "description": "包含福音派與門諾會。"
-      },
-      {
-        "name": "無宗教",
-        "percent": 3,
-        "description": "比例較低。"
-      },
-      {
-        "name": "其他",
-        "percent": 1,
-        "description": "包含原住民傳統信仰等。"
-      }
-    ],
-    "background": "17–18世紀耶穌會在瓜拉尼人地區建立傳教村（reducciones），讓原住民集體改信天主教，並以瓜拉尼語傳教。20世紀門諾會信徒移居查科地區，帶來新教社群。"
-  },
-  "language": {
-    "official": "官方語言為西班牙語與瓜拉尼語。",
-    "ranking": [
-      {
-        "name": "西班牙語與瓜拉尼語雙語",
-        "percent": 42,
-        "description": "許多家庭同時使用兩種語言，並混合成稱為「Jopara」的口語。",
-        "greeting": "Mba'éichapa / Hola",
-        "pronunciation": "mba-ei-sha-pa / o-la"
-      },
-      {
-        "name": "瓜拉尼語",
-        "percent": 34,
-        "description": "原住民瓜拉尼人的語言，鄉村地區家庭多以其為主要語言。",
-        "greeting": "Mba'éichapa",
-        "pronunciation": "mba-ei-sha-pa"
-      },
-      {
-        "name": "西班牙語",
-        "percent": 15,
-        "description": "都市地區較多僅使用西班牙語的家庭。",
-        "greeting": "Hola",
-        "pronunciation": "o-la"
-      },
-      {
-        "name": "葡萄牙語",
-        "percent": 2,
-        "description": "巴西移民社群使用。",
-        "greeting": "Olá",
-        "pronunciation": "o-la"
-      }
-    ],
-    "history": "殖民時期西班牙男性與瓜拉尼女性通婚，加上耶穌會以瓜拉尼語傳教，使瓜拉尼語未被西班牙語取代，反而成為多數混血居民的語言。1992年憲法將瓜拉尼語與西班牙語並列為官方語言。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "巴拉圭玉米糕",
-        "localName": "Sopa paraguaya",
-        "description": "以玉米粉、起司、洋蔥與牛奶烤成的鹹味玉米糕。",
-        "history": "名稱雖為「湯」，實為固態糕點；相傳是19世紀為總統烹調湯品時加了過多玉米粉而成。",
-        "wiki": "Sopa paraguaya"
-      },
-      {
-        "name": "奇帕起司麵包",
-        "localName": "Chipá",
-        "description": "以木薯粉與起司製成的小圓麵包。",
-        "history": "源自瓜拉尼人的木薯烹調與耶穌會時期引入的乳製品，是巴拉圭國民點心。",
-        "wiki": "Chipa"
-      },
-      {
-        "name": "木薯煎餅",
-        "localName": "Mbejú",
-        "description": "以木薯澱粉、起司與油脂煎成的扁餅。",
-        "history": "源自瓜拉尼原住民的傳統食物，常配咖啡或瑪黛茶。",
-        "wiki": "Mbejú"
-      },
-      {
-        "name": "冷瑪黛茶",
-        "localName": "Tereré",
-        "description": "以冷水或果汁沖泡瑪黛葉，加入藥草飲用。",
-        "history": "源自瓜拉尼人，2020年列入聯合國教科文組織非物質文化遺產。",
-        "wiki": "Tereré"
-      },
-      {
-        "name": "雞肉丸子湯",
-        "localName": "Vori vori",
-        "description": "以玉米粉與起司做成的小丸子放入雞湯中煮成。",
-        "history": "名稱源自瓜拉尼語，是寒冷時節的家常湯品。",
-        "wiki": "Vori vori"
-      }
-    ]
-  }
+ "iso": "PRY",
+ "capital": "亞松森",
+ "summary": "位於南美洲中部的內陸國，是美洲少數原住民語言（瓜拉尼語）與西班牙語並列官方語言、且多數人通曉的國家。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "天主教",
+    "percent": 85,
+    "description": "西班牙殖民與耶穌會傳教時期傳入，至今仍是主要宗教。"
+   },
+   {
+    "name": "新教（福音派等）",
+    "percent": 10,
+    "description": "包含福音派與門諾會。"
+   },
+   {
+    "name": "無宗教",
+    "percent": 3,
+    "description": "比例較低。"
+   },
+   {
+    "name": "其他",
+    "percent": 1,
+    "description": "包含原住民傳統信仰等。"
+   }
+  ],
+  "background": "17–18世紀耶穌會在瓜拉尼人地區建立傳教村（reducciones），讓原住民集體改信天主教，並以瓜拉尼語傳教。20世紀門諾會信徒移居查科地區，帶來新教社群。"
+ },
+ "language": {
+  "official": "官方語言為西班牙語與瓜拉尼語。",
+  "ranking": [
+   {
+    "name": "西班牙語與瓜拉尼語雙語",
+    "percent": 42,
+    "description": "許多家庭同時使用兩種語言，並混合成稱為「Jopara」的口語。",
+    "greeting": "Mba'éichapa / Hola",
+    "pronunciation": "mba-ei-sha-pa / o-la"
+   },
+   {
+    "name": "瓜拉尼語",
+    "percent": 34,
+    "description": "原住民瓜拉尼人的語言，鄉村地區家庭多以其為主要語言。",
+    "greeting": "Mba'éichapa",
+    "pronunciation": "mba-ei-sha-pa"
+   },
+   {
+    "name": "西班牙語",
+    "percent": 15,
+    "description": "都市地區較多僅使用西班牙語的家庭。",
+    "greeting": "Hola",
+    "pronunciation": "o-la"
+   },
+   {
+    "name": "葡萄牙語",
+    "percent": 2,
+    "description": "巴西移民社群使用。",
+    "greeting": "Olá",
+    "pronunciation": "o-la"
+   }
+  ],
+  "history": "殖民時期西班牙男性與瓜拉尼女性通婚，加上耶穌會以瓜拉尼語傳教，使瓜拉尼語未被西班牙語取代，反而成為多數混血居民的語言。1992年憲法將瓜拉尼語與西班牙語並列為官方語言。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "巴拉圭玉米糕",
+    "localName": "Sopa paraguaya",
+    "description": "以玉米粉、起司、洋蔥與牛奶烤成的鹹味玉米糕。",
+    "history": "名稱雖為「湯」，實為固態糕點；相傳是19世紀為總統烹調湯品時加了過多玉米粉而成。",
+    "wiki": "Sopa paraguaya",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/58/Sopa_Paraguaya_2.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Sopa_Paraguaya_2.jpg",
+    "imageCredit": "Aterovi・Public domain・Wikimedia Commons"
+   },
+   {
+    "name": "奇帕起司麵包",
+    "localName": "Chipá",
+    "description": "以木薯粉與起司製成的小圓麵包。",
+    "history": "源自瓜拉尼人的木薯烹調與耶穌會時期引入的乳製品，是巴拉圭國民點心。",
+    "wiki": "Chipa",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Chipa_Paraguay.jpg/960px-Chipa_Paraguay.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Chipa_Paraguay.jpg",
+    "imageCredit": "Ekem at English Wikipedia・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "木薯煎餅",
+    "localName": "Mbejú",
+    "description": "以木薯澱粉、起司與油脂煎成的扁餅。",
+    "history": "源自瓜拉尼原住民的傳統食物，常配咖啡或瑪黛茶。",
+    "wiki": "Mbejú",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/31/Mbey%C3%BA_paraguayo.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Mbey%C3%BA_paraguayo.jpg",
+    "imageCredit": "Overkill53・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "冷瑪黛茶",
+    "localName": "Tereré",
+    "description": "以冷水或果汁沖泡瑪黛葉，加入藥草飲用。",
+    "history": "源自瓜拉尼人，2020年列入聯合國教科文組織非物質文化遺產。",
+    "wiki": "Tereré",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Terere_%C3%B1ana.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Terere_%C3%B1ana.jpg",
+    "imageCredit": "Genialnico・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "雞肉丸子湯",
+    "localName": "Vori vori",
+    "description": "以玉米粉與起司做成的小丸子放入雞湯中煮成。",
+    "history": "名稱源自瓜拉尼語，是寒冷時節的家常湯品。",
+    "wiki": "Vori vori",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Vor%C3%AD_vor%C3%AD_paraguay.jpg/960px-Vor%C3%AD_vor%C3%AD_paraguay.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Vor%C3%AD_vor%C3%AD_paraguay.jpg",
+    "imageCredit": "Overkill53・CC BY-SA 4.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

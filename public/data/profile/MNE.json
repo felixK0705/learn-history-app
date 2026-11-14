@@ -1,103 +1,118 @@
 {
-  "iso": "MNE",
-  "capital": "波德里查",
-  "summary": "蒙特內哥羅位於巴爾幹半島西南部、亞得里亞海岸，國名意為「黑山」，2006年脫離與塞爾維亞的聯邦而獨立。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "東正教",
-        "percent": 71,
-        "description": "包括塞爾維亞正教會及蒙特內哥羅正教會的信徒。"
-      },
-      {
-        "name": "伊斯蘭教",
-        "percent": 19,
-        "description": "包括波士尼亞裔、阿爾巴尼亞裔及自稱穆斯林族的居民。"
-      },
-      {
-        "name": "天主教",
-        "percent": 3,
-        "description": "主要為沿海地區與阿爾巴尼亞裔、克羅埃西亞裔社群。"
-      },
-      {
-        "name": "無宗教",
-        "percent": 2,
-        "description": "不認同任何宗教的人口。"
-      }
-    ],
-    "background": "蒙特內哥羅在中世紀接受東正教，並長期由采蒂涅的主教兼任統治者。鄂圖曼帝國統治周邊地區時，部分居民改信伊斯蘭教；沿海地區因威尼斯共和國的影響保有天主教社群。"
-  },
-  "language": {
-    "official": "蒙特內哥羅語是官方語言，塞爾維亞語、波士尼亞語、阿爾巴尼亞語與克羅埃西亞語也獲官方承認。",
-    "ranking": [
-      {
-        "name": "塞爾維亞語",
-        "percent": 43,
-        "description": "自報母語為塞爾維亞語的人口最多。",
-        "greeting": "Zdravo",
-        "pronunciation": "ZDRAH-voh"
-      },
-      {
-        "name": "蒙特內哥羅語",
-        "percent": 35,
-        "description": "2007年憲法定為官方語言。",
-        "greeting": "Zdravo",
-        "pronunciation": "ZDRAH-voh"
-      },
-      {
-        "name": "波士尼亞語",
-        "percent": 7,
-        "description": "波士尼亞裔居民的語言。",
-        "greeting": "Zdravo",
-        "pronunciation": "ZDRAH-voh"
-      },
-      {
-        "name": "阿爾巴尼亞語",
-        "percent": 5,
-        "description": "東南部阿爾巴尼亞裔居民的語言。",
-        "greeting": "Përshëndetje",
-        "pronunciation": "pur-shun-DET-yeh"
-      }
-    ],
-    "history": "蒙特內哥羅語、塞爾維亞語、波士尼亞語在語言學上非常接近，過去統稱塞爾維亞—克羅埃西亞語。獨立後語言名稱與國家認同緊密相關，因此人口普查中自報語言的差異往往反映政治與族群認同。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "涅古希火腿",
-        "localName": "Njeguški pršut",
-        "description": "在山區以海風與木柴煙燻風乾的火腿。",
-        "history": "產自洛夫琴山下的涅古希村，是蒙特內哥羅最知名的特產。",
-        "wiki": "Njeguški pršut"
-      },
-      {
-        "name": "卡恰馬克",
-        "localName": "Kačamak",
-        "description": "以玉米粉、馬鈴薯與乳酪煮成的濃稠糊。",
-        "history": "北部山區牧民的傳統料理，能提供充足熱量。",
-        "wiki": "Kačamak"
-      },
-      {
-        "name": "布雷克",
-        "localName": "Burek",
-        "description": "以薄酥皮包裹肉、乳酪或菠菜烘烤的派。",
-        "history": "鄂圖曼時期傳入巴爾幹地區的料理，是常見早餐。",
-        "wiki": "Burek"
-      },
-      {
-        "name": "切巴契契",
-        "localName": "Ćevapi",
-        "description": "炭烤的小絞肉條，配麵包與洋蔥。",
-        "history": "巴爾幹地區廣泛流行的燒烤料理。",
-        "wiki": "Ćevapi"
-      },
-      {
-        "name": "卡伊馬克",
-        "localName": "Kajmak",
-        "description": "以牛奶表層凝脂發酵製成的乳製品，常塗抹麵包。",
-        "history": "巴爾幹與西亞廣泛食用的乳製品，在山區牧業文化中歷史悠久。",
-        "wiki": "Kaymak"
-      }
-    ]
-  }
+ "iso": "MNE",
+ "capital": "波德里查",
+ "summary": "蒙特內哥羅位於巴爾幹半島西南部、亞得里亞海岸，國名意為「黑山」，2006年脫離與塞爾維亞的聯邦而獨立。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "東正教",
+    "percent": 71,
+    "description": "包括塞爾維亞正教會及蒙特內哥羅正教會的信徒。"
+   },
+   {
+    "name": "伊斯蘭教",
+    "percent": 19,
+    "description": "包括波士尼亞裔、阿爾巴尼亞裔及自稱穆斯林族的居民。"
+   },
+   {
+    "name": "天主教",
+    "percent": 3,
+    "description": "主要為沿海地區與阿爾巴尼亞裔、克羅埃西亞裔社群。"
+   },
+   {
+    "name": "無宗教",
+    "percent": 2,
+    "description": "不認同任何宗教的人口。"
+   }
+  ],
+  "background": "蒙特內哥羅在中世紀接受東正教，並長期由采蒂涅的主教兼任統治者。鄂圖曼帝國統治周邊地區時，部分居民改信伊斯蘭教；沿海地區因威尼斯共和國的影響保有天主教社群。"
+ },
+ "language": {
+  "official": "蒙特內哥羅語是官方語言，塞爾維亞語、波士尼亞語、阿爾巴尼亞語與克羅埃西亞語也獲官方承認。",
+  "ranking": [
+   {
+    "name": "塞爾維亞語",
+    "percent": 43,
+    "description": "自報母語為塞爾維亞語的人口最多。",
+    "greeting": "Zdravo",
+    "pronunciation": "ZDRAH-voh"
+   },
+   {
+    "name": "蒙特內哥羅語",
+    "percent": 35,
+    "description": "2007年憲法定為官方語言。",
+    "greeting": "Zdravo",
+    "pronunciation": "ZDRAH-voh"
+   },
+   {
+    "name": "波士尼亞語",
+    "percent": 7,
+    "description": "波士尼亞裔居民的語言。",
+    "greeting": "Zdravo",
+    "pronunciation": "ZDRAH-voh"
+   },
+   {
+    "name": "阿爾巴尼亞語",
+    "percent": 5,
+    "description": "東南部阿爾巴尼亞裔居民的語言。",
+    "greeting": "Përshëndetje",
+    "pronunciation": "pur-shun-DET-yeh"
+   }
+  ],
+  "history": "蒙特內哥羅語、塞爾維亞語、波士尼亞語在語言學上非常接近，過去統稱塞爾維亞—克羅埃西亞語。獨立後語言名稱與國家認同緊密相關，因此人口普查中自報語言的差異往往反映政治與族群認同。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "涅古希火腿",
+    "localName": "Njeguški pršut",
+    "description": "在山區以海風與木柴煙燻風乾的火腿。",
+    "history": "產自洛夫琴山下的涅古希村，是蒙特內哥羅最知名的特產。",
+    "wiki": "Njeguški pršut",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/19/Njegu%C5%A1ki_pr%C5%A1ut.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Njegu%C5%A1ki_pr%C5%A1ut.jpg",
+    "imageCredit": "Klavs・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "卡恰馬克",
+    "localName": "Kačamak",
+    "description": "以玉米粉、馬鈴薯與乳酪煮成的濃稠糊。",
+    "history": "北部山區牧民的傳統料理，能提供充足熱量。",
+    "wiki": "Kačamak",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/%D0%9A%D0%B0%D1%87%D0%B0%D0%BC%D0%B0%D0%BA_%D1%81%D0%BE_%D0%BA%D0%B8%D1%81%D0%B5%D0%BB%D0%BE_%D0%BC%D0%BB%D0%B5%D0%BA%D0%BE_%D0%B8_%D0%BF%D0%B0%D1%80%D1%87%D0%B5_%D1%81%D0%B8%D1%80%D0%B5%D1%9A%D0%B5.jpg/960px-%D0%9A%D0%B0%D1%87%D0%B0%D0%BC%D0%B0%D0%BA_%D1%81%D0%BE_%D0%BA%D0%B8%D1%81%D0%B5%D0%BB%D0%BE_%D0%BC%D0%BB%D0%B5%D0%BA%D0%BE_%D0%B8_%D0%BF%D0%B0%D1%80%D1%87%D0%B5_%D1%81%D0%B8%D1%80%D0%B5%D1%9A%D0%B5.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%B0%D1%87%D0%B0%D0%BC%D0%B0%D0%BA_%D1%81%D0%BE_%D0%BA%D0%B8%D1%81%D0%B5%D0%BB%D0%BE_%D0%BC%D0%BB%D0%B5%D0%BA%D0%BE_%D0%B8_%D0%BF%D0%B0%D1%80%D1%87%D0%B5_%D1%81%D0%B8%D1%80%D0%B5%D1%9A%D0%B5.jpg",
+    "imageCredit": "Ssofija・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "布雷克",
+    "localName": "Burek",
+    "description": "以薄酥皮包裹肉、乳酪或菠菜烘烤的派。",
+    "history": "鄂圖曼時期傳入巴爾幹地區的料理，是常見早餐。",
+    "wiki": "Burek",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/13/Burek_trokut_1.png",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Burek_trokut_1.png",
+    "imageCredit": "CC BY-SA 2.5・Wikimedia Commons"
+   },
+   {
+    "name": "切巴契契",
+    "localName": "Ćevapi",
+    "description": "炭烤的小絞肉條，配麵包與洋蔥。",
+    "history": "巴爾幹地區廣泛流行的燒烤料理。",
+    "wiki": "Ćevapi",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Cevapi_s_kajmakom.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Cevapi_s_kajmakom.jpg",
+    "imageCredit": "Christian Paul from Vancouver, Canada・CC BY-SA 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "卡伊馬克",
+    "localName": "Kajmak",
+    "description": "以牛奶表層凝脂發酵製成的乳製品，常塗抹麵包。",
+    "history": "巴爾幹與西亞廣泛食用的乳製品，在山區牧業文化中歷史悠久。",
+    "wiki": "Kaymak",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Kaymak_in_Turkey.jpg/960px-Kaymak_in_Turkey.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Kaymak_in_Turkey.jpg",
+    "imageCredit": "E4024・CC BY-SA 4.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

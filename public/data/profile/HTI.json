@@ -1,89 +1,101 @@
 {
-  "iso": "HTI",
-  "capital": "太子港",
-  "summary": "海地位於加勒比海伊斯帕尼奧拉島西部，1804年由奴隸革命建國，是世界第一個由前奴隸建立的共和國。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "天主教",
-        "percent": 55,
-        "description": "法國殖民時期傳入的傳統主要宗教。"
-      },
-      {
-        "name": "基督新教",
-        "percent": 29,
-        "description": "二十世紀後快速成長，包括浸信會、五旬節派等。"
-      },
-      {
-        "name": "無宗教",
-        "percent": 10,
-        "description": "未認同任何宗教的人口。"
-      },
-      {
-        "name": "巫毒教（Vodou）",
-        "percent": 2,
-        "description": "融合西非宗教與天主教元素的信仰，許多基督徒也同時參與其儀式。"
-      }
-    ],
-    "background": "法國殖民時期被帶到海地的西非奴隸，將傳統信仰與天主教聖人崇拜結合，形成巫毒教。獨立後天主教仍是官方主流，二十世紀起新教教會快速成長。2003年政府正式承認巫毒教為宗教。"
-  },
-  "language": {
-    "official": "海地克里奧爾語與法語是官方語言。",
-    "ranking": [
-      {
-        "name": "海地克里奧爾語",
-        "percent": 95,
-        "description": "以法語為基礎並融合西非語言的克里奧爾語，是全民的母語。",
-        "greeting": "Bonjou",
-        "pronunciation": "bon-ZHOO"
-      },
-      {
-        "name": "法語",
-        "percent": 5,
-        "description": "官方語言，母語者少，但約四成人口能使用，多用於正式場合。",
-        "greeting": "Bonjour",
-        "pronunciation": "bon-ZHOOR"
-      }
-    ],
-    "history": "殖民時期法國種植園主與來自西非各地的奴隸之間形成了海地克里奧爾語。法語長期是精英與官方語言，1987年憲法將克里奧爾語列為官方語言，並逐步用於教育與媒體。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "南瓜湯",
-        "localName": "Soup joumou",
-        "description": "以南瓜、牛肉、蔬菜與義大利麵熬煮的湯。",
-        "history": "1804年1月1日獨立時，過去被禁止喝此湯的人民以喝南瓜湯慶祝自由，2021年列入聯合國教科文組織非物質文化遺產。",
-        "wiki": "Soup joumou"
-      },
-      {
-        "name": "炸豬肉塊",
-        "localName": "Griot",
-        "description": "以柑橘醃漬後燉軟再油炸的豬肉塊。",
-        "history": "海地最受歡迎的料理之一，常配炸大蕉與辣醃菜。",
-        "wiki": "Griot (food)"
-      },
-      {
-        "name": "辣醃菜",
-        "localName": "Pikliz",
-        "description": "以高麗菜、胡蘿蔔與辣椒醃漬的辛辣醬菜。",
-        "history": "海地餐桌上不可或缺的配菜。",
-        "wiki": "Pikliz"
-      },
-      {
-        "name": "炸大蕉",
-        "localName": "Bannann peze",
-        "description": "將青大蕉切片壓扁後兩次油炸。",
-        "history": "加勒比海常見的配菜，在海地常配炸豬肉。",
-        "wiki": "Tostones"
-      },
-      {
-        "name": "黑菇飯",
-        "localName": "Diri djon djon",
-        "description": "以海地特產黑蘑菇煮出黑色湯汁的米飯。",
-        "history": "海地北部的特色料理，常在節慶時製作。",
-        "wiki": "Diri ak djon djon"
-      }
-    ]
-  }
+ "iso": "HTI",
+ "capital": "太子港",
+ "summary": "海地位於加勒比海伊斯帕尼奧拉島西部，1804年由奴隸革命建國，是世界第一個由前奴隸建立的共和國。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "天主教",
+    "percent": 55,
+    "description": "法國殖民時期傳入的傳統主要宗教。"
+   },
+   {
+    "name": "基督新教",
+    "percent": 29,
+    "description": "二十世紀後快速成長，包括浸信會、五旬節派等。"
+   },
+   {
+    "name": "無宗教",
+    "percent": 10,
+    "description": "未認同任何宗教的人口。"
+   },
+   {
+    "name": "巫毒教（Vodou）",
+    "percent": 2,
+    "description": "融合西非宗教與天主教元素的信仰，許多基督徒也同時參與其儀式。"
+   }
+  ],
+  "background": "法國殖民時期被帶到海地的西非奴隸，將傳統信仰與天主教聖人崇拜結合，形成巫毒教。獨立後天主教仍是官方主流，二十世紀起新教教會快速成長。2003年政府正式承認巫毒教為宗教。"
+ },
+ "language": {
+  "official": "海地克里奧爾語與法語是官方語言。",
+  "ranking": [
+   {
+    "name": "海地克里奧爾語",
+    "percent": 95,
+    "description": "以法語為基礎並融合西非語言的克里奧爾語，是全民的母語。",
+    "greeting": "Bonjou",
+    "pronunciation": "bon-ZHOO"
+   },
+   {
+    "name": "法語",
+    "percent": 5,
+    "description": "官方語言，母語者少，但約四成人口能使用，多用於正式場合。",
+    "greeting": "Bonjour",
+    "pronunciation": "bon-ZHOOR"
+   }
+  ],
+  "history": "殖民時期法國種植園主與來自西非各地的奴隸之間形成了海地克里奧爾語。法語長期是精英與官方語言，1987年憲法將克里奧爾語列為官方語言，並逐步用於教育與媒體。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "南瓜湯",
+    "localName": "Soup joumou",
+    "description": "以南瓜、牛肉、蔬菜與義大利麵熬煮的湯。",
+    "history": "1804年1月1日獨立時，過去被禁止喝此湯的人民以喝南瓜湯慶祝自由，2021年列入聯合國教科文組織非物質文化遺產。",
+    "wiki": "Soup joumou",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Soup_joumou.jpg/960px-Soup_joumou.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Soup_joumou.jpg",
+    "imageCredit": "Lëa-Kim Châteauneuf・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "炸豬肉塊",
+    "localName": "Griot",
+    "description": "以柑橘醃漬後燉軟再油炸的豬肉塊。",
+    "history": "海地最受歡迎的料理之一，常配炸大蕉與辣醃菜。",
+    "wiki": "Griot (food)",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Griot_ha%C3%AFtien_%2842675563925%29.jpg/960px-Griot_ha%C3%AFtien_%2842675563925%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Griot_ha%C3%AFtien_(42675563925).jpg",
+    "imageCredit": "Lëa-Kim Châteauneuf・CC BY-SA 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "辣醃菜",
+    "localName": "Pikliz",
+    "description": "以高麗菜、胡蘿蔔與辣椒醃漬的辛辣醬菜。",
+    "history": "海地餐桌上不可或缺的配菜。",
+    "wiki": "Pikliz",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Haitian_Pikliz.jpg/960px-Haitian_Pikliz.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Haitian_Pikliz.jpg",
+    "imageCredit": "Aliceba・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "炸大蕉",
+    "localName": "Bannann peze",
+    "description": "將青大蕉切片壓扁後兩次油炸。",
+    "history": "加勒比海常見的配菜，在海地常配炸豬肉。",
+    "wiki": "Tostones",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Tostones.JPG/960px-Tostones.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Tostones.JPG",
+    "imageCredit": "AMartiniouk・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "黑菇飯",
+    "localName": "Diri djon djon",
+    "description": "以海地特產黑蘑菇煮出黑色湯汁的米飯。",
+    "history": "海地北部的特色料理，常在節慶時製作。",
+    "wiki": "Diri ak djon djon"
+   }
+  ]
+ }
 }

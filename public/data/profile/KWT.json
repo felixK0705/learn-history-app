@@ -1,91 +1,106 @@
 {
-  "iso": "KWT",
-  "capital": "科威特市",
-  "summary": "位於波斯灣西北角的君主國，擁有豐富石油儲量，1990年曾遭伊拉克入侵，翌年由多國聯軍解放，外籍居民占人口多數。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "伊斯蘭教",
-        "percent": 75,
-        "description": "國教；科威特公民中遜尼派約占七成、什葉派約占三成。"
-      },
-      {
-        "name": "基督教",
-        "percent": 18,
-        "description": "主要為外籍勞工，也有少數科威特籍基督徒。"
-      },
-      {
-        "name": "其他（印度教、佛教等）",
-        "percent": 7,
-        "description": "主要為南亞與東南亞外籍勞工。"
-      }
-    ],
-    "background": "伊斯蘭教自7世紀起在阿拉伯半島普及。18世紀起阿拉伯部落在此建立港口城鎮，薩巴赫家族統治至今。20世紀中期石油開發後引進大量外籍勞工，帶來基督教、印度教等多元信仰。"
-  },
-  "language": {
-    "official": "官方語言為阿拉伯語。",
-    "ranking": [
-      {
-        "name": "阿拉伯語（科威特方言）",
-        "percent": 50,
-        "description": "科威特公民與阿拉伯移民的語言。",
-        "greeting": "السلام عليكم",
-        "pronunciation": "as-sa-lām ʿa-lay-kum"
-      },
-      {
-        "name": "印度諸語言（馬拉雅拉姆語、印地語等）",
-        "percent": 20,
-        "description": "大量印度外籍勞工使用。",
-        "greeting": "नमस्ते",
-        "pronunciation": "na-ma-ste"
-      },
-      {
-        "name": "他加祿語",
-        "percent": 5,
-        "description": "菲律賓外籍勞工使用。",
-        "greeting": "Kumusta",
-        "pronunciation": "ku-mus-ta"
-      }
-    ],
-    "history": "科威特阿拉伯語屬海灣阿拉伯語方言，因航海貿易吸收波斯語、印度語與英語詞彙。石油時代後外籍人口大增，英語成為商業與跨族群交流的常用語言。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "瑪奇布斯香料飯",
-        "localName": "مجبوس (Machboos)",
-        "description": "以香料、乾萊姆燉煮的雞肉、羊肉或魚，與米飯同煮，為國菜。",
-        "history": "波斯灣地區共享的料理，與印度香飯有關，反映海上貿易帶來的香料文化。",
-        "wiki": "Kabsa"
-      },
-      {
-        "name": "哈里斯麥粥",
-        "localName": "هريس (Harees)",
-        "description": "以小麥與肉長時間燉煮搗成的濃稠粥。",
-        "history": "阿拉伯半島的古老料理，在齋戒月與節慶時特別常見。",
-        "wiki": "Harees"
-      },
-      {
-        "name": "巴拉利特甜麵",
-        "localName": "بلاليط (Balaleet)",
-        "description": "以番紅花、小荳蔻調味的甜細麵，上鋪煎蛋。",
-        "history": "海灣地區的傳統早餐，常見於開齋節與節慶。",
-        "wiki": "Balaleet"
-      },
-      {
-        "name": "盧凱瑪特",
-        "localName": "لقيمات (Luqaimat)",
-        "description": "炸成小球的甜麵團，淋上椰棗糖漿或蜂蜜。",
-        "history": "海灣地區傳統甜點，齋戒月開齋時尤其受歡迎。",
-        "wiki": "Luqaimat"
-      },
-      {
-        "name": "阿拉伯咖啡",
-        "localName": "قهوة عربية (Gahwa)",
-        "description": "加入小荳蔻的淡色咖啡，以小杯招待客人。",
-        "history": "「阿拉伯咖啡」於2015年列入聯合國教科文組織非物質文化遺產，是好客的象徵。",
-        "wiki": "Arabic coffee"
-      }
-    ]
-  }
+ "iso": "KWT",
+ "capital": "科威特市",
+ "summary": "位於波斯灣西北角的君主國，擁有豐富石油儲量，1990年曾遭伊拉克入侵，翌年由多國聯軍解放，外籍居民占人口多數。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "伊斯蘭教",
+    "percent": 75,
+    "description": "國教；科威特公民中遜尼派約占七成、什葉派約占三成。"
+   },
+   {
+    "name": "基督教",
+    "percent": 18,
+    "description": "主要為外籍勞工，也有少數科威特籍基督徒。"
+   },
+   {
+    "name": "其他（印度教、佛教等）",
+    "percent": 7,
+    "description": "主要為南亞與東南亞外籍勞工。"
+   }
+  ],
+  "background": "伊斯蘭教自7世紀起在阿拉伯半島普及。18世紀起阿拉伯部落在此建立港口城鎮，薩巴赫家族統治至今。20世紀中期石油開發後引進大量外籍勞工，帶來基督教、印度教等多元信仰。"
+ },
+ "language": {
+  "official": "官方語言為阿拉伯語。",
+  "ranking": [
+   {
+    "name": "阿拉伯語（科威特方言）",
+    "percent": 50,
+    "description": "科威特公民與阿拉伯移民的語言。",
+    "greeting": "السلام عليكم",
+    "pronunciation": "as-sa-lām ʿa-lay-kum"
+   },
+   {
+    "name": "印度諸語言（馬拉雅拉姆語、印地語等）",
+    "percent": 20,
+    "description": "大量印度外籍勞工使用。",
+    "greeting": "नमस्ते",
+    "pronunciation": "na-ma-ste"
+   },
+   {
+    "name": "他加祿語",
+    "percent": 5,
+    "description": "菲律賓外籍勞工使用。",
+    "greeting": "Kumusta",
+    "pronunciation": "ku-mus-ta"
+   }
+  ],
+  "history": "科威特阿拉伯語屬海灣阿拉伯語方言，因航海貿易吸收波斯語、印度語與英語詞彙。石油時代後外籍人口大增，英語成為商業與跨族群交流的常用語言。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "瑪奇布斯香料飯",
+    "localName": "مجبوس (Machboos)",
+    "description": "以香料、乾萊姆燉煮的雞肉、羊肉或魚，與米飯同煮，為國菜。",
+    "history": "波斯灣地區共享的料理，與印度香飯有關，反映海上貿易帶來的香料文化。",
+    "wiki": "Kabsa",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Machboos_%28cropped%29.JPG/960px-Machboos_%28cropped%29.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Machboos_(cropped).JPG",
+    "imageCredit": "Miansari66・CC0・Wikimedia Commons"
+   },
+   {
+    "name": "哈里斯麥粥",
+    "localName": "هريس (Harees)",
+    "description": "以小麥與肉長時間燉煮搗成的濃稠粥。",
+    "history": "阿拉伯半島的古老料理，在齋戒月與節慶時特別常見。",
+    "wiki": "Harees",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Armenian_Harisa.JPG/960px-Armenian_Harisa.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Armenian_Harisa.JPG",
+    "imageCredit": "Ketone16・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "巴拉利特甜麵",
+    "localName": "بلاليط (Balaleet)",
+    "description": "以番紅花、小荳蔻調味的甜細麵，上鋪煎蛋。",
+    "history": "海灣地區的傳統早餐，常見於開齋節與節慶。",
+    "wiki": "Balaleet",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Homemade_Balaleet%2C_2023.jpg/960px-Homemade_Balaleet%2C_2023.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Homemade_Balaleet,_2023.jpg",
+    "imageCredit": "Mohamed Toorani・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "盧凱瑪特",
+    "localName": "لقيمات (Luqaimat)",
+    "description": "炸成小球的甜麵團，淋上椰棗糖漿或蜂蜜。",
+    "history": "海灣地區傳統甜點，齋戒月開齋時尤其受歡迎。",
+    "wiki": "Luqaimat",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/15/Sam%27dan_lokma_tatlisi.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Sam%27dan_lokma_tatlisi.jpg",
+    "imageCredit": "elif ayse・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "阿拉伯咖啡",
+    "localName": "قهوة عربية (Gahwa)",
+    "description": "加入小荳蔻的淡色咖啡，以小杯招待客人。",
+    "history": "「阿拉伯咖啡」於2015年列入聯合國教科文組織非物質文化遺產，是好客的象徵。",
+    "wiki": "Arabic coffee",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/49/A_dallah_a_traditional_Arabic_coffee_pot_with_cups_and_coffee_beans.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:A_dallah_a_traditional_Arabic_coffee_pot_with_cups_and_coffee_beans.jpg",
+    "imageCredit": "Canbel・CC BY-SA 4.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

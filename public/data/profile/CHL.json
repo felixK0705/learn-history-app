@@ -1,89 +1,104 @@
 {
-  "iso": "CHL",
-  "capital": "聖地牙哥",
-  "summary": "沿南美洲西岸延伸四千多公里的狹長國家，北有阿他加馬沙漠、南至巴塔哥尼亞，以銅礦、葡萄酒與穩定的經濟發展聞名。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "天主教",
-        "percent": 50,
-        "description": "仍是最大宗教，但近二十年比例明顯下降。"
-      },
-      {
-        "name": "無宗教",
-        "percent": 30,
-        "description": "年輕世代比例快速上升。"
-      },
-      {
-        "name": "新教（福音派）",
-        "percent": 17,
-        "description": "以五旬節派為主，在中下階層中影響深遠。"
-      },
-      {
-        "name": "其他",
-        "percent": 3,
-        "description": "包含耶和華見證人、摩門教與馬普切傳統信仰等。"
-      }
-    ],
-    "background": "16世紀西班牙征服後天主教成為殖民社會核心，獨立後仍長期為國教，1925年憲法實施政教分離。20世紀初五旬節運動在瓦爾帕萊索興起並向全國擴展。近年教會醜聞與社會變遷使天主教比例下滑。"
-  },
-  "language": {
-    "official": "官方語言事實上為西班牙語。",
-    "ranking": [
-      {
-        "name": "西班牙語",
-        "percent": 99,
-        "description": "全國通用，智利西班牙語語速快、俚語多。",
-        "greeting": "Hola",
-        "pronunciation": "o-la"
-      },
-      {
-        "name": "馬普切語（馬普敦貢語）",
-        "percent": 1,
-        "description": "南部馬普切原住民的語言。",
-        "greeting": "Mari mari",
-        "pronunciation": "ma-ri ma-ri"
-      }
-    ],
-    "history": "馬普切人曾長期抵抗西班牙與智利的征服，直至19世紀末「阿勞卡尼亞平定」後其土地才被併入。西班牙語隨殖民與國家教育普及，原住民語言使用者逐漸減少，近年推動復振。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "智利肉餡餅",
-        "localName": "Empanada de pino",
-        "description": "以牛絞肉、洋蔥、橄欖、葡萄乾與水煮蛋為餡烤製的大餡餅。",
-        "history": "隨西班牙殖民傳入，每年9月國慶節（Fiestas Patrias）家家必吃。",
-        "wiki": "Empanada"
-      },
-      {
-        "name": "玉米派",
-        "localName": "Pastel de choclo",
-        "description": "以牛肉、雞肉餡鋪上甜玉米泥，在陶碗中烘烤。",
-        "history": "結合原住民的玉米與西班牙的肉餡烹調，是夏季代表菜。",
-        "wiki": "Pastel de choclo"
-      },
-      {
-        "name": "智利燉湯",
-        "localName": "Cazuela",
-        "description": "以牛肉或雞肉、馬鈴薯、南瓜與玉米燉成的清湯。",
-        "history": "融合馬普切人的燉菜與西班牙烹調，是家常料理。",
-        "wiki": "Cazuela"
-      },
-      {
-        "name": "庫蘭托地坑烤",
-        "localName": "Curanto",
-        "description": "在地坑中以熱石烘烤貝類、肉類與馬鈴薯，蓋上大葉片。",
-        "history": "南部奇洛埃島的傳統料理，起源可追溯至數千年前的原住民。",
-        "wiki": "Curanto"
-      },
-      {
-        "name": "智利熱狗",
-        "localName": "Completo",
-        "description": "熱狗上鋪滿番茄、酪梨泥與大量美乃滋。",
-        "history": "20世紀中期起在聖地牙哥流行，是最受歡迎的速食之一。",
-        "wiki": "Completo"
-      }
-    ]
-  }
+ "iso": "CHL",
+ "capital": "聖地牙哥",
+ "summary": "沿南美洲西岸延伸四千多公里的狹長國家，北有阿他加馬沙漠、南至巴塔哥尼亞，以銅礦、葡萄酒與穩定的經濟發展聞名。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "天主教",
+    "percent": 50,
+    "description": "仍是最大宗教，但近二十年比例明顯下降。"
+   },
+   {
+    "name": "無宗教",
+    "percent": 30,
+    "description": "年輕世代比例快速上升。"
+   },
+   {
+    "name": "新教（福音派）",
+    "percent": 17,
+    "description": "以五旬節派為主，在中下階層中影響深遠。"
+   },
+   {
+    "name": "其他",
+    "percent": 3,
+    "description": "包含耶和華見證人、摩門教與馬普切傳統信仰等。"
+   }
+  ],
+  "background": "16世紀西班牙征服後天主教成為殖民社會核心，獨立後仍長期為國教，1925年憲法實施政教分離。20世紀初五旬節運動在瓦爾帕萊索興起並向全國擴展。近年教會醜聞與社會變遷使天主教比例下滑。"
+ },
+ "language": {
+  "official": "官方語言事實上為西班牙語。",
+  "ranking": [
+   {
+    "name": "西班牙語",
+    "percent": 99,
+    "description": "全國通用，智利西班牙語語速快、俚語多。",
+    "greeting": "Hola",
+    "pronunciation": "o-la"
+   },
+   {
+    "name": "馬普切語（馬普敦貢語）",
+    "percent": 1,
+    "description": "南部馬普切原住民的語言。",
+    "greeting": "Mari mari",
+    "pronunciation": "ma-ri ma-ri"
+   }
+  ],
+  "history": "馬普切人曾長期抵抗西班牙與智利的征服，直至19世紀末「阿勞卡尼亞平定」後其土地才被併入。西班牙語隨殖民與國家教育普及，原住民語言使用者逐漸減少，近年推動復振。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "智利肉餡餅",
+    "localName": "Empanada de pino",
+    "description": "以牛絞肉、洋蔥、橄欖、葡萄乾與水煮蛋為餡烤製的大餡餅。",
+    "history": "隨西班牙殖民傳入，每年9月國慶節（Fiestas Patrias）家家必吃。",
+    "wiki": "Empanada",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Tapa_de_empanadillitas.JPG/960px-Tapa_de_empanadillitas.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Tapa_de_empanadillitas.JPG",
+    "imageCredit": "Tamorlan・CC BY 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "玉米派",
+    "localName": "Pastel de choclo",
+    "description": "以牛肉、雞肉餡鋪上甜玉米泥，在陶碗中烘烤。",
+    "history": "結合原住民的玉米與西班牙的肉餡烹調，是夏季代表菜。",
+    "wiki": "Pastel de choclo",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Pastel_de_choclo.jpg/960px-Pastel_de_choclo.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Pastel_de_choclo.jpg",
+    "imageCredit": "Paloma Baytelman from Santiago, Chile・CC BY-SA 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "智利燉湯",
+    "localName": "Cazuela",
+    "description": "以牛肉或雞肉、馬鈴薯、南瓜與玉米燉成的清湯。",
+    "history": "融合馬普切人的燉菜與西班牙烹調，是家常料理。",
+    "wiki": "Cazuela",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Cazuela_ecuatoriana.jpg/960px-Cazuela_ecuatoriana.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Cazuela_ecuatoriana.jpg",
+    "imageCredit": "Paborbor・CC0・Wikimedia Commons"
+   },
+   {
+    "name": "庫蘭托地坑烤",
+    "localName": "Curanto",
+    "description": "在地坑中以熱石烘烤貝類、肉類與馬鈴薯，蓋上大葉片。",
+    "history": "南部奇洛埃島的傳統料理，起源可追溯至數千年前的原住民。",
+    "wiki": "Curanto",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Destape_de_curanto.JPG/960px-Destape_de_curanto.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Destape_de_curanto.JPG",
+    "imageCredit": "Lin linao・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "智利熱狗",
+    "localName": "Completo",
+    "description": "熱狗上鋪滿番茄、酪梨泥與大量美乃滋。",
+    "history": "20世紀中期起在聖地牙哥流行，是最受歡迎的速食之一。",
+    "wiki": "Completo",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Completo_italiano.jpg/960px-Completo_italiano.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Completo_italiano.jpg",
+    "imageCredit": "Paul Lowry・CC BY 2.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

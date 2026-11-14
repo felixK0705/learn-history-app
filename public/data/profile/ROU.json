@@ -1,96 +1,111 @@
 {
-  "iso": "ROU",
-  "capital": "布加勒斯特",
-  "summary": "羅馬尼亞位於東南歐，喀爾巴阡山脈縱貫境內，是羅馬帝國達契亞行省的後裔，以外西凡尼亞的城堡與德古拉傳說聞名。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "東正教",
-        "percent": 73,
-        "description": "羅馬尼亞正教會是最大的宗教團體。"
-      },
-      {
-        "name": "天主教",
-        "percent": 5,
-        "description": "包括羅馬禮與希臘禮天主教，多分布於外西凡尼亞。"
-      },
-      {
-        "name": "歸正宗",
-        "percent": 3,
-        "description": "主要為匈牙利裔居民。"
-      },
-      {
-        "name": "五旬節派",
-        "percent": 2,
-        "description": "近年成長的新教教派。"
-      }
-    ],
-    "background": "羅馬尼亞人在中世紀接受拜占庭傳統的東正教。外西凡尼亞長期受匈牙利王國與哈布斯堡王朝統治，匈牙利裔與德裔居民信仰天主教或新教，因此當地宗教更為多元。"
-  },
-  "language": {
-    "official": "羅馬尼亞語是官方語言。",
-    "ranking": [
-      {
-        "name": "羅馬尼亞語",
-        "percent": 92,
-        "description": "屬羅曼語族，是東歐唯一源自拉丁語的國家語言。",
-        "greeting": "Bună ziua",
-        "pronunciation": "BOO-nuh ZEE-wa"
-      },
-      {
-        "name": "匈牙利語",
-        "percent": 6,
-        "description": "外西凡尼亞匈牙利裔居民的語言。",
-        "greeting": "Szia",
-        "pronunciation": "SEE-ya"
-      },
-      {
-        "name": "羅姆語",
-        "percent": 1,
-        "description": "羅姆人社群使用。",
-        "greeting": "Sar san?",
-        "pronunciation": "sar SAN"
-      }
-    ],
-    "history": "羅馬尼亞語源自羅馬統治達契亞時期的通俗拉丁語，並吸收斯拉夫語、希臘語、土耳其語等詞彙。歷史上曾使用西里爾字母，十九世紀改用拉丁字母以強調其羅馬淵源。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "高麗菜捲",
-        "localName": "Sarmale",
-        "description": "以醃高麗菜葉包裹豬肉與米長時間燉煮，配玉米糊。",
-        "history": "羅馬尼亞國菜之一，聖誕節與婚禮必備。",
-        "wiki": "Sarma (food)"
-      },
-      {
-        "name": "玉米糊",
-        "localName": "Mămăligă",
-        "description": "以玉米粉煮成的濃稠糊，常配酸奶油與起司。",
-        "history": "十七世紀玉米傳入後成為農民主食。",
-        "wiki": "Mămăligă"
-      },
-      {
-        "name": "米奇烤肉腸",
-        "localName": "Mici",
-        "description": "以多種肉類與大蒜香料製成的無腸衣烤肉腸，配芥末與啤酒。",
-        "history": "羅馬尼亞燒烤與節日聚會的必備美食。",
-        "wiki": "Mici"
-      },
-      {
-        "name": "克佐納克",
-        "localName": "Cozonac",
-        "description": "加入核桃、可可或葡萄乾的甜麵包捲。",
-        "history": "聖誕節與復活節的傳統甜點。",
-        "wiki": "Cozonac"
-      },
-      {
-        "name": "帕帕納希",
-        "localName": "Papanași",
-        "description": "以起司麵團炸成的甜甜圈，淋酸奶油與果醬。",
-        "history": "羅馬尼亞最受歡迎的甜點之一。",
-        "wiki": "Papanași"
-      }
-    ]
-  }
+ "iso": "ROU",
+ "capital": "布加勒斯特",
+ "summary": "羅馬尼亞位於東南歐，喀爾巴阡山脈縱貫境內，是羅馬帝國達契亞行省的後裔，以外西凡尼亞的城堡與德古拉傳說聞名。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "東正教",
+    "percent": 73,
+    "description": "羅馬尼亞正教會是最大的宗教團體。"
+   },
+   {
+    "name": "天主教",
+    "percent": 5,
+    "description": "包括羅馬禮與希臘禮天主教，多分布於外西凡尼亞。"
+   },
+   {
+    "name": "歸正宗",
+    "percent": 3,
+    "description": "主要為匈牙利裔居民。"
+   },
+   {
+    "name": "五旬節派",
+    "percent": 2,
+    "description": "近年成長的新教教派。"
+   }
+  ],
+  "background": "羅馬尼亞人在中世紀接受拜占庭傳統的東正教。外西凡尼亞長期受匈牙利王國與哈布斯堡王朝統治，匈牙利裔與德裔居民信仰天主教或新教，因此當地宗教更為多元。"
+ },
+ "language": {
+  "official": "羅馬尼亞語是官方語言。",
+  "ranking": [
+   {
+    "name": "羅馬尼亞語",
+    "percent": 92,
+    "description": "屬羅曼語族，是東歐唯一源自拉丁語的國家語言。",
+    "greeting": "Bună ziua",
+    "pronunciation": "BOO-nuh ZEE-wa"
+   },
+   {
+    "name": "匈牙利語",
+    "percent": 6,
+    "description": "外西凡尼亞匈牙利裔居民的語言。",
+    "greeting": "Szia",
+    "pronunciation": "SEE-ya"
+   },
+   {
+    "name": "羅姆語",
+    "percent": 1,
+    "description": "羅姆人社群使用。",
+    "greeting": "Sar san?",
+    "pronunciation": "sar SAN"
+   }
+  ],
+  "history": "羅馬尼亞語源自羅馬統治達契亞時期的通俗拉丁語，並吸收斯拉夫語、希臘語、土耳其語等詞彙。歷史上曾使用西里爾字母，十九世紀改用拉丁字母以強調其羅馬淵源。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "高麗菜捲",
+    "localName": "Sarmale",
+    "description": "以醃高麗菜葉包裹豬肉與米長時間燉煮，配玉米糊。",
+    "history": "羅馬尼亞國菜之一，聖誕節與婚禮必備。",
+    "wiki": "Sarma (food)",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Yaprak_sarma%2C_Kayseri_style.jpg/960px-Yaprak_sarma%2C_Kayseri_style.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Yaprak_sarma,_Kayseri_style.jpg",
+    "imageCredit": "E4024・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "玉米糊",
+    "localName": "Mămăligă",
+    "description": "以玉米粉煮成的濃稠糊，常配酸奶油與起司。",
+    "history": "十七世紀玉米傳入後成為農民主食。",
+    "wiki": "Mămăligă",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Mamaliga.jpg/960px-Mamaliga.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Mamaliga.jpg",
+    "imageCredit": "CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "米奇烤肉腸",
+    "localName": "Mici",
+    "description": "以多種肉類與大蒜香料製成的無腸衣烤肉腸，配芥末與啤酒。",
+    "history": "羅馬尼亞燒烤與節日聚會的必備美食。",
+    "wiki": "Mici",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Mititei_aufm_Grill.jpg/960px-Mititei_aufm_Grill.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Mititei_aufm_Grill.jpg",
+    "imageCredit": "Stoschmidt・CC BY 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "克佐納克",
+    "localName": "Cozonac",
+    "description": "加入核桃、可可或葡萄乾的甜麵包捲。",
+    "history": "聖誕節與復活節的傳統甜點。",
+    "wiki": "Cozonac",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Cozonac-cu-nuca-103.jpg/960px-Cozonac-cu-nuca-103.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Cozonac-cu-nuca-103.jpg",
+    "imageCredit": "Vvssmmaann・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "帕帕納希",
+    "localName": "Papanași",
+    "description": "以起司麵團炸成的甜甜圈，淋酸奶油與果醬。",
+    "history": "羅馬尼亞最受歡迎的甜點之一。",
+    "wiki": "Papanași",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Papana%C8%99i_Sinaia.jpg/960px-Papana%C8%99i_Sinaia.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Papana%C8%99i_Sinaia.jpg",
+    "imageCredit": "Toniher・CC BY-SA 3.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

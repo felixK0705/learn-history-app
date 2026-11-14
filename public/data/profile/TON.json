@@ -1,94 +1,103 @@
 {
-  "iso": "TON",
-  "capital": "努瓜婁發",
-  "summary": "東加是南太平洋的群島王國，是太平洋地區唯一從未被正式殖民的國家，至今仍為君主立憲制。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "衛斯理宗（東加自由衛斯理教會）",
-        "percent": 36,
-        "description": "信徒最多的教會，國王也是其成員。"
-      },
-      {
-        "name": "耶穌基督後期聖徒教會",
-        "percent": 18,
-        "description": "東加是後期聖徒比例最高的國家之一。"
-      },
-      {
-        "name": "天主教",
-        "percent": 15,
-        "description": "重要的天主教社群。"
-      },
-      {
-        "name": "東加自由教會",
-        "percent": 12,
-        "description": "自衛斯理宗分出的教會。"
-      },
-      {
-        "name": "東加教會",
-        "percent": 7,
-        "description": "另一個衛斯理宗傳統的教會。"
-      }
-    ],
-    "background": "十九世紀英國衛斯理宗傳教士抵達東加，國王喬治·圖普一世皈依並統一全國，使基督教成為國家根基。後來衛斯理宗內部分裂出數個教會，二十世紀後期耶穌基督後期聖徒教會快速成長。"
-  },
-  "language": {
-    "official": "東加語與英語是官方語言。",
-    "ranking": [
-      {
-        "name": "東加語",
-        "percent": 97,
-        "description": "屬南島語系玻里尼西亞語支，是全民的母語。",
-        "greeting": "Mālō e lelei",
-        "pronunciation": "MAH-loh eh leh-LAY"
-      },
-      {
-        "name": "英語",
-        "percent": 2,
-        "description": "官方語言，用於教育與政府。",
-        "greeting": "Hello",
-        "pronunciation": "heh-LOH"
-      }
-    ],
-    "history": "東加語屬玻里尼西亞語支，與薩摩亞語、紐埃語等有親緣關係。十九世紀傳教士以拉丁字母書寫東加語並翻譯聖經；英語則因教育與國際往來而普及。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "盧普魯",
-        "localName": "Lu pulu",
-        "description": "以芋頭葉包裹鹹牛肉與椰奶，在地爐中烤熟。",
-        "history": "東加的代表料理，鹹牛肉罐頭自二十世紀起成為太平洋島嶼常見食材。",
-        "wiki": "Lu pulu"
-      },
-      {
-        "name": "椰奶生魚",
-        "localName": "ʻOta ʻika",
-        "description": "以檸檬汁醃漬生魚，加入椰奶與蔬菜。",
-        "history": "玻里尼西亞地區常見的料理。",
-        "wiki": "Ota ika"
-      },
-      {
-        "name": "烏姆地爐烤",
-        "localName": "ʻUmu",
-        "description": "將食物包葉後放在熱石上，覆土燜烤。",
-        "history": "太平洋島嶼傳統的烹調方式，週日與節慶時常見。",
-        "wiki": "Earth oven"
-      },
-      {
-        "name": "烤乳豬",
-        "localName": "Puaka tunu",
-        "description": "整隻烤製的乳豬。",
-        "history": "在婚禮、生日與皇室慶典等重要場合不可或缺。",
-        "wiki": "Suckling pig"
-      },
-      {
-        "name": "芋頭",
-        "localName": "Talo",
-        "description": "以地爐烤熟或水煮的芋頭。",
-        "history": "東加傳統主食，也是重要的禮物與交換物品。",
-        "wiki": "Taro"
-      }
-    ]
-  }
+ "iso": "TON",
+ "capital": "努瓜婁發",
+ "summary": "東加是南太平洋的群島王國，是太平洋地區唯一從未被正式殖民的國家，至今仍為君主立憲制。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "衛斯理宗（東加自由衛斯理教會）",
+    "percent": 36,
+    "description": "信徒最多的教會，國王也是其成員。"
+   },
+   {
+    "name": "耶穌基督後期聖徒教會",
+    "percent": 18,
+    "description": "東加是後期聖徒比例最高的國家之一。"
+   },
+   {
+    "name": "天主教",
+    "percent": 15,
+    "description": "重要的天主教社群。"
+   },
+   {
+    "name": "東加自由教會",
+    "percent": 12,
+    "description": "自衛斯理宗分出的教會。"
+   },
+   {
+    "name": "東加教會",
+    "percent": 7,
+    "description": "另一個衛斯理宗傳統的教會。"
+   }
+  ],
+  "background": "十九世紀英國衛斯理宗傳教士抵達東加，國王喬治·圖普一世皈依並統一全國，使基督教成為國家根基。後來衛斯理宗內部分裂出數個教會，二十世紀後期耶穌基督後期聖徒教會快速成長。"
+ },
+ "language": {
+  "official": "東加語與英語是官方語言。",
+  "ranking": [
+   {
+    "name": "東加語",
+    "percent": 97,
+    "description": "屬南島語系玻里尼西亞語支，是全民的母語。",
+    "greeting": "Mālō e lelei",
+    "pronunciation": "MAH-loh eh leh-LAY"
+   },
+   {
+    "name": "英語",
+    "percent": 2,
+    "description": "官方語言，用於教育與政府。",
+    "greeting": "Hello",
+    "pronunciation": "heh-LOH"
+   }
+  ],
+  "history": "東加語屬玻里尼西亞語支，與薩摩亞語、紐埃語等有親緣關係。十九世紀傳教士以拉丁字母書寫東加語並翻譯聖經；英語則因教育與國際往來而普及。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "盧普魯",
+    "localName": "Lu pulu",
+    "description": "以芋頭葉包裹鹹牛肉與椰奶，在地爐中烤熟。",
+    "history": "東加的代表料理，鹹牛肉罐頭自二十世紀起成為太平洋島嶼常見食材。",
+    "wiki": "Lu pulu"
+   },
+   {
+    "name": "椰奶生魚",
+    "localName": "ʻOta ʻika",
+    "description": "以檸檬汁醃漬生魚，加入椰奶與蔬菜。",
+    "history": "玻里尼西亞地區常見的料理。",
+    "wiki": "Ota ika"
+   },
+   {
+    "name": "烏姆地爐烤",
+    "localName": "ʻUmu",
+    "description": "將食物包葉後放在熱石上，覆土燜烤。",
+    "history": "太平洋島嶼傳統的烹調方式，週日與節慶時常見。",
+    "wiki": "Earth oven",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Samoa_umu.JPG/960px-Samoa_umu.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Samoa_umu.JPG",
+    "imageCredit": "CC BY 2.5・Wikimedia Commons"
+   },
+   {
+    "name": "烤乳豬",
+    "localName": "Puaka tunu",
+    "description": "整隻烤製的乳豬。",
+    "history": "在婚禮、生日與皇室慶典等重要場合不可或缺。",
+    "wiki": "Suckling pig",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Cochinillos-Mercado_de_la_Cebada.jpg/960px-Cochinillos-Mercado_de_la_Cebada.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Cochinillos-Mercado_de_la_Cebada.jpg",
+    "imageCredit": "Tamorlan・CC BY 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "芋頭",
+    "localName": "Talo",
+    "description": "以地爐烤熟或水煮的芋頭。",
+    "history": "東加傳統主食，也是重要的禮物與交換物品。",
+    "wiki": "Taro",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Songe-R%C3%A9union.JPG/960px-Songe-R%C3%A9union.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Songe-R%C3%A9union.JPG",
+    "imageCredit": "No machine-readable author provided. Thierry Caro assumed (b・CC BY-SA 2.5・Wikimedia Commons"
+   }
+  ]
+ }
 }

@@ -1,113 +1,125 @@
 {
-  "iso": "CAN",
-  "capital": "渥太華",
-  "summary": "加拿大是世界面積第二大的國家，位於北美洲北部，以英法雙語、多元文化政策與壯麗的自然景觀聞名。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "無宗教",
-        "percent": 35,
-        "description": "近年快速成長，已成為最大的單一類別。"
-      },
-      {
-        "name": "天主教",
-        "percent": 29,
-        "description": "在魁北克省尤其普遍。"
-      },
-      {
-        "name": "其他基督教派",
-        "percent": 24,
-        "description": "包括加拿大聯合教會、聖公會等。"
-      },
-      {
-        "name": "伊斯蘭教",
-        "percent": 5,
-        "description": "主要為移民及其後代。"
-      },
-      {
-        "name": "印度教",
-        "percent": 2,
-        "description": "主要為南亞裔社群。"
-      },
-      {
-        "name": "錫克教",
-        "percent": 2,
-        "description": "主要為旁遮普裔社群。"
-      }
-    ],
-    "background": "法國殖民者在魁北克建立天主教傳統，英國殖民則帶來聖公會、長老會等新教。二十世紀後期魁北克的「寂靜革命」加速了世俗化，而來自亞洲與中東的移民帶來伊斯蘭教、印度教與錫克教。"
-  },
-  "language": {
-    "official": "英語與法語是聯邦官方語言。",
-    "ranking": [
-      {
-        "name": "英語",
-        "percent": 56,
-        "description": "大多數省份的主要語言。",
-        "greeting": "Hello",
-        "pronunciation": "heh-LOH"
-      },
-      {
-        "name": "法語",
-        "percent": 21,
-        "description": "魁北克省的官方語言，新布倫瑞克省亦為雙語省。",
-        "greeting": "Bonjour",
-        "pronunciation": "bon-ZHOOR"
-      },
-      {
-        "name": "旁遮普語",
-        "percent": 2,
-        "description": "人數最多的移民語言之一。",
-        "greeting": "ਸਤ ਸ੍ਰੀ ਅਕਾਲ",
-        "pronunciation": "sat sree a-KAAL"
-      },
-      {
-        "name": "華語",
-        "percent": 2,
-        "description": "華裔移民社群使用。",
-        "greeting": "你好",
-        "pronunciation": "nee HOW"
-      }
-    ],
-    "history": "加拿大原有數十種原住民語言。十七世紀法國殖民帶來法語，1763年英國取得新法蘭西後英語成為主流。1969年《官方語言法》確立英法雙語，近年移民使華語、旁遮普語等語言普及。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "肉汁乳酪薯條",
-        "localName": "Poutine",
-        "description": "薯條上鋪新鮮起司凝乳並淋上肉汁。",
-        "history": "1950年代起源於魁北克鄉村，現被視為加拿大代表美食。",
-        "wiki": "Poutine"
-      },
-      {
-        "name": "楓糖漿",
-        "localName": "Maple syrup",
-        "description": "以糖楓樹汁熬煮而成的糖漿，常淋在鬆餅上。",
-        "history": "原住民最早採集楓樹汁，加拿大產量占全球大部分。",
-        "wiki": "Maple syrup"
-      },
-      {
-        "name": "奶油塔",
-        "localName": "Butter tart",
-        "description": "以奶油、糖與雞蛋為內餡的小塔。",
-        "history": "加拿大英語區的傳統甜點，最早食譜見於二十世紀初的安大略。",
-        "wiki": "Butter tart"
-      },
-      {
-        "name": "納奈莫條",
-        "localName": "Nanaimo bar",
-        "description": "由餅乾底、卡士達奶油與巧克力三層組成的免烤甜點。",
-        "history": "以卑詩省納奈莫市命名。",
-        "wiki": "Nanaimo bar"
-      },
-      {
-        "name": "圖爾提耶肉派",
-        "localName": "Tourtière",
-        "description": "以豬肉等絞肉與香料製成的肉派。",
-        "history": "魁北克的傳統料理，聖誕夜與新年時常見。",
-        "wiki": "Tourtière"
-      }
-    ]
-  }
+ "iso": "CAN",
+ "capital": "渥太華",
+ "summary": "加拿大是世界面積第二大的國家，位於北美洲北部，以英法雙語、多元文化政策與壯麗的自然景觀聞名。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "無宗教",
+    "percent": 35,
+    "description": "近年快速成長，已成為最大的單一類別。"
+   },
+   {
+    "name": "天主教",
+    "percent": 29,
+    "description": "在魁北克省尤其普遍。"
+   },
+   {
+    "name": "其他基督教派",
+    "percent": 24,
+    "description": "包括加拿大聯合教會、聖公會等。"
+   },
+   {
+    "name": "伊斯蘭教",
+    "percent": 5,
+    "description": "主要為移民及其後代。"
+   },
+   {
+    "name": "印度教",
+    "percent": 2,
+    "description": "主要為南亞裔社群。"
+   },
+   {
+    "name": "錫克教",
+    "percent": 2,
+    "description": "主要為旁遮普裔社群。"
+   }
+  ],
+  "background": "法國殖民者在魁北克建立天主教傳統，英國殖民則帶來聖公會、長老會等新教。二十世紀後期魁北克的「寂靜革命」加速了世俗化，而來自亞洲與中東的移民帶來伊斯蘭教、印度教與錫克教。"
+ },
+ "language": {
+  "official": "英語與法語是聯邦官方語言。",
+  "ranking": [
+   {
+    "name": "英語",
+    "percent": 56,
+    "description": "大多數省份的主要語言。",
+    "greeting": "Hello",
+    "pronunciation": "heh-LOH"
+   },
+   {
+    "name": "法語",
+    "percent": 21,
+    "description": "魁北克省的官方語言，新布倫瑞克省亦為雙語省。",
+    "greeting": "Bonjour",
+    "pronunciation": "bon-ZHOOR"
+   },
+   {
+    "name": "旁遮普語",
+    "percent": 2,
+    "description": "人數最多的移民語言之一。",
+    "greeting": "ਸਤ ਸ੍ਰੀ ਅਕਾਲ",
+    "pronunciation": "sat sree a-KAAL"
+   },
+   {
+    "name": "華語",
+    "percent": 2,
+    "description": "華裔移民社群使用。",
+    "greeting": "你好",
+    "pronunciation": "nee HOW"
+   }
+  ],
+  "history": "加拿大原有數十種原住民語言。十七世紀法國殖民帶來法語，1763年英國取得新法蘭西後英語成為主流。1969年《官方語言法》確立英法雙語，近年移民使華語、旁遮普語等語言普及。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "肉汁乳酪薯條",
+    "localName": "Poutine",
+    "description": "薯條上鋪新鮮起司凝乳並淋上肉汁。",
+    "history": "1950年代起源於魁北克鄉村，現被視為加拿大代表美食。",
+    "wiki": "Poutine",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Food_at_WIkimanian_2017_02.jpg/960px-Food_at_WIkimanian_2017_02.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Food_at_WIkimanian_2017_02.jpg",
+    "imageCredit": "Camelia.boban・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "楓糖漿",
+    "localName": "Maple syrup",
+    "description": "以糖楓樹汁熬煮而成的糖漿，常淋在鬆餅上。",
+    "history": "原住民最早採集楓樹汁，加拿大產量占全球大部分。",
+    "wiki": "Maple syrup"
+   },
+   {
+    "name": "奶油塔",
+    "localName": "Butter tart",
+    "description": "以奶油、糖與雞蛋為內餡的小塔。",
+    "history": "加拿大英語區的傳統甜點，最早食譜見於二十世紀初的安大略。",
+    "wiki": "Butter tart",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/ButtertartS1360020.jpg/960px-ButtertartS1360020.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:ButtertartS1360020.jpg",
+    "imageCredit": "Alex Lozupone・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "納奈莫條",
+    "localName": "Nanaimo bar",
+    "description": "由餅乾底、卡士達奶油與巧克力三層組成的免烤甜點。",
+    "history": "以卑詩省納奈莫市命名。",
+    "wiki": "Nanaimo bar",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Nanaimo_bar.JPG/960px-Nanaimo_bar.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Nanaimo_bar.JPG",
+    "imageCredit": "Stephanie Spencer・CC BY 2.5・Wikimedia Commons"
+   },
+   {
+    "name": "圖爾提耶肉派",
+    "localName": "Tourtière",
+    "description": "以豬肉等絞肉與香料製成的肉派。",
+    "history": "魁北克的傳統料理，聖誕夜與新年時常見。",
+    "wiki": "Tourtière",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Tourtiere_Fin.jpg/960px-Tourtiere_Fin.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Tourtiere_Fin.jpg",
+    "imageCredit": "Dominic Genest・Public domain・Wikimedia Commons"
+   }
+  ]
+ }
 }

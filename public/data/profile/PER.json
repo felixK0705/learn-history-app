@@ -1,96 +1,111 @@
 {
-  "iso": "PER",
-  "capital": "利馬",
-  "summary": "位於南美洲西岸的國家，是印加帝國的中心，擁有馬丘比丘與納斯卡線等遺跡，地形涵蓋沙漠、安地斯山與亞馬遜雨林。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "天主教",
-        "percent": 76,
-        "description": "西班牙殖民時期傳入，常與安地斯傳統信仰融合。"
-      },
-      {
-        "name": "新教（福音派）",
-        "percent": 14,
-        "description": "20世紀後期快速成長。"
-      },
-      {
-        "name": "無宗教",
-        "percent": 5,
-        "description": "多見於都市地區。"
-      },
-      {
-        "name": "其他",
-        "percent": 5,
-        "description": "包含耶和華見證人、摩門教等。"
-      }
-    ],
-    "background": "1532年皮薩羅征服印加帝國後，西班牙傳教士推動原住民改宗天主教，利馬成為南美殖民宗教中心。原住民將大地之母（帕查瑪瑪）等信仰融入天主教儀式，福音派則在20世紀後期隨傳教活動成長。"
-  },
-  "language": {
-    "official": "官方語言為西班牙語，克丘亞語、艾馬拉語等原住民語言在其通行地區亦為官方語言。",
-    "ranking": [
-      {
-        "name": "西班牙語",
-        "percent": 83,
-        "description": "全國通用語言。",
-        "greeting": "Hola",
-        "pronunciation": "o-la"
-      },
-      {
-        "name": "克丘亞語",
-        "percent": 14,
-        "description": "印加帝國的通用語，主要通行於安地斯山區。",
-        "greeting": "Allillanchu",
-        "pronunciation": "a-yi-yan-chu"
-      },
-      {
-        "name": "艾馬拉語",
-        "percent": 2,
-        "description": "主要通行於南部的的喀喀湖一帶。",
-        "greeting": "Kamisaki",
-        "pronunciation": "ka-mi-sa-ki"
-      }
-    ],
-    "history": "克丘亞語在印加帝國時期被推廣為帝國通用語。西班牙殖民初期傳教士曾用克丘亞語傳教，但18世紀圖帕克·阿馬魯二世起義後殖民當局加以壓制，西班牙語逐漸主導。1975年克丘亞語首度獲官方地位。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "檸汁醃生魚",
-        "localName": "Ceviche",
-        "description": "以萊姆汁醃漬生魚，加入紅洋蔥、辣椒與香菜，配地瓜與玉米。",
-        "history": "沿海居民自古即以酸性汁液處理魚肉，萊姆隨西班牙人傳入後形成現代做法，2023年列入聯合國非物質文化遺產。",
-        "wiki": "Ceviche"
-      },
-      {
-        "name": "醬炒牛柳",
-        "localName": "Lomo saltado",
-        "description": "牛肉條與洋蔥、番茄以醬油大火快炒，配薯條與白飯。",
-        "history": "19世紀華人移民帶來的炒菜技法（chifa料理）與秘魯食材結合的代表菜。",
-        "wiki": "Lomo saltado"
-      },
-      {
-        "name": "黃辣椒奶醬雞",
-        "localName": "Ají de gallina",
-        "description": "雞絲以黃辣椒、牛奶、麵包與核桃熬成的奶黃醬汁燉煮。",
-        "history": "據信源自殖民時期西班牙的雞肉濃醬料理，加入秘魯黃辣椒後在地化。",
-        "wiki": "Ají de gallina"
-      },
-      {
-        "name": "烤牛心串",
-        "localName": "Anticucho",
-        "description": "以醋與辣椒醃漬的牛心串炭烤，街頭常見。",
-        "history": "源自印加時期的燒烤，殖民時期非裔奴隸利用主人不吃的牛心發展出今日做法。",
-        "wiki": "Anticucho"
-      },
-      {
-        "name": "帕恰曼卡地窖烤",
-        "localName": "Pachamanca",
-        "description": "在地坑中以燒熱的石頭烘烤肉類、馬鈴薯與玉米。",
-        "history": "名稱源自克丘亞語「大地之鍋」，是安地斯地區自印加時代流傳的節慶料理。",
-        "wiki": "Pachamanca"
-      }
-    ]
-  }
+ "iso": "PER",
+ "capital": "利馬",
+ "summary": "位於南美洲西岸的國家，是印加帝國的中心，擁有馬丘比丘與納斯卡線等遺跡，地形涵蓋沙漠、安地斯山與亞馬遜雨林。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "天主教",
+    "percent": 76,
+    "description": "西班牙殖民時期傳入，常與安地斯傳統信仰融合。"
+   },
+   {
+    "name": "新教（福音派）",
+    "percent": 14,
+    "description": "20世紀後期快速成長。"
+   },
+   {
+    "name": "無宗教",
+    "percent": 5,
+    "description": "多見於都市地區。"
+   },
+   {
+    "name": "其他",
+    "percent": 5,
+    "description": "包含耶和華見證人、摩門教等。"
+   }
+  ],
+  "background": "1532年皮薩羅征服印加帝國後，西班牙傳教士推動原住民改宗天主教，利馬成為南美殖民宗教中心。原住民將大地之母（帕查瑪瑪）等信仰融入天主教儀式，福音派則在20世紀後期隨傳教活動成長。"
+ },
+ "language": {
+  "official": "官方語言為西班牙語，克丘亞語、艾馬拉語等原住民語言在其通行地區亦為官方語言。",
+  "ranking": [
+   {
+    "name": "西班牙語",
+    "percent": 83,
+    "description": "全國通用語言。",
+    "greeting": "Hola",
+    "pronunciation": "o-la"
+   },
+   {
+    "name": "克丘亞語",
+    "percent": 14,
+    "description": "印加帝國的通用語，主要通行於安地斯山區。",
+    "greeting": "Allillanchu",
+    "pronunciation": "a-yi-yan-chu"
+   },
+   {
+    "name": "艾馬拉語",
+    "percent": 2,
+    "description": "主要通行於南部的的喀喀湖一帶。",
+    "greeting": "Kamisaki",
+    "pronunciation": "ka-mi-sa-ki"
+   }
+  ],
+  "history": "克丘亞語在印加帝國時期被推廣為帝國通用語。西班牙殖民初期傳教士曾用克丘亞語傳教，但18世紀圖帕克·阿馬魯二世起義後殖民當局加以壓制，西班牙語逐漸主導。1975年克丘亞語首度獲官方地位。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "檸汁醃生魚",
+    "localName": "Ceviche",
+    "description": "以萊姆汁醃漬生魚，加入紅洋蔥、辣椒與香菜，配地瓜與玉米。",
+    "history": "沿海居民自古即以酸性汁液處理魚肉，萊姆隨西班牙人傳入後形成現代做法，2023年列入聯合國非物質文化遺產。",
+    "wiki": "Ceviche",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Cebiche_de_corvina.JPG/960px-Cebiche_de_corvina.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Cebiche_de_corvina.JPG",
+    "imageCredit": "Picanteria karol・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "醬炒牛柳",
+    "localName": "Lomo saltado",
+    "description": "牛肉條與洋蔥、番茄以醬油大火快炒，配薯條與白飯。",
+    "history": "19世紀華人移民帶來的炒菜技法（chifa料理）與秘魯食材結合的代表菜。",
+    "wiki": "Lomo saltado",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Lomo_Saltado_-_Lima%2C_Peru_Miraflores_%28Tiendecita_Blanca%29.jpg/960px-Lomo_Saltado_-_Lima%2C_Peru_Miraflores_%28Tiendecita_Blanca%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Lomo_Saltado_-_Lima,_Peru_Miraflores_(Tiendecita_Blanca).jpg",
+    "imageCredit": "Chasqui (Luis Tamayo)・CC BY-SA 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "黃辣椒奶醬雞",
+    "localName": "Ají de gallina",
+    "description": "雞絲以黃辣椒、牛奶、麵包與核桃熬成的奶黃醬汁燉煮。",
+    "history": "據信源自殖民時期西班牙的雞肉濃醬料理，加入秘魯黃辣椒後在地化。",
+    "wiki": "Ají de gallina",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Aj%C3%AD_de_gallina.jpg/960px-Aj%C3%AD_de_gallina.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Aj%C3%AD_de_gallina.jpg",
+    "imageCredit": "Feralbt・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "烤牛心串",
+    "localName": "Anticucho",
+    "description": "以醋與辣椒醃漬的牛心串炭烤，街頭常見。",
+    "history": "源自印加時期的燒烤，殖民時期非裔奴隸利用主人不吃的牛心發展出今日做法。",
+    "wiki": "Anticucho",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Anticuchos_-_Grilled_Beef_Heart_skewers.jpg/960px-Anticuchos_-_Grilled_Beef_Heart_skewers.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Anticuchos_-_Grilled_Beef_Heart_skewers.jpg",
+    "imageCredit": "Carly & Art・CC BY-SA 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "帕恰曼卡地窖烤",
+    "localName": "Pachamanca",
+    "description": "在地坑中以燒熱的石頭烘烤肉類、馬鈴薯與玉米。",
+    "history": "名稱源自克丘亞語「大地之鍋」，是安地斯地區自印加時代流傳的節慶料理。",
+    "wiki": "Pachamanca",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/57/PachaComer.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:PachaComer.jpg",
+    "imageCredit": "Håkan Svensson. Uploaded by Xauxa・CC BY-SA 3.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

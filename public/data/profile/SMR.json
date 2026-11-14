@@ -1,84 +1,99 @@
 {
-  "iso": "SMR",
-  "capital": "聖馬利諾市",
-  "summary": "位於義大利半島東北部、被義大利完全包圍的內陸小國，相傳建於西元301年，被認為是世界上現存最古老的共和國。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "天主教",
-        "percent": 90,
-        "description": "傳統上的主要宗教，與國家歷史緊密相連。"
-      },
-      {
-        "name": "無宗教",
-        "percent": 7,
-        "description": "比例較低但逐漸增加。"
-      },
-      {
-        "name": "其他",
-        "percent": 2,
-        "description": "包含新教、耶和華見證人等。"
-      }
-    ],
-    "background": "相傳西元301年石匠聖馬力諾為躲避羅馬帝國的基督徒迫害，在蒂塔諾山建立修道團體，聖馬利諾即由此發展而來。天主教因此與國家起源密不可分，國名即來自這位聖人。"
-  },
-  "language": {
-    "official": "官方語言為義大利語。",
-    "ranking": [
-      {
-        "name": "義大利語",
-        "percent": 96,
-        "description": "全國通用的官方語言。",
-        "greeting": "Ciao / Buongiorno",
-        "pronunciation": "chow / bwon-jor-no"
-      },
-      {
-        "name": "羅馬涅語",
-        "percent": 3,
-        "description": "當地傳統方言，屬艾米利亞－羅馬涅語，年長者較常使用。",
-        "greeting": "Ciao",
-        "pronunciation": "chow"
-      }
-    ],
-    "history": "聖馬利諾位於羅馬涅地區，傳統口語為羅馬涅方言。隨著義大利統一後標準義大利語的普及，以及媒體與教育的影響，義大利語已成為日常與正式場合的主要語言。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "羅馬涅薄餅",
-        "localName": "Piadina",
-        "description": "以麵粉、豬油製成的薄扁餅，夾火腿、起司與芝麻菜。",
-        "history": "羅馬涅地區的傳統平民食物，在聖馬利諾十分普遍。",
-        "wiki": "Piadina"
-      },
-      {
-        "name": "三塔威化蛋糕",
-        "localName": "Torta Tre Monti",
-        "description": "多層薄威化餅夾榛果巧克力醬，外層裹巧克力。",
-        "history": "以國徽上蒂塔諾山的三座塔樓命名，1940年代創製，是聖馬利諾代表性甜點。",
-        "wiki": "Torta Tre Monti"
-      },
-      {
-        "name": "帽子餃",
-        "localName": "Cappelletti",
-        "description": "形似小帽的包餡麵食，常在清湯中食用。",
-        "history": "羅馬涅地區的傳統聖誕節料理。",
-        "wiki": "Cappelletti"
-      },
-      {
-        "name": "麵包屑麵",
-        "localName": "Passatelli",
-        "description": "以麵包屑、帕瑪森起司與雞蛋壓成的粗麵條，放入高湯中煮。",
-        "history": "源自羅馬涅地區利用剩餘麵包的農家料理。",
-        "wiki": "Passatelli"
-      },
-      {
-        "name": "布斯特倫戈蛋糕",
-        "localName": "Bustrengo",
-        "description": "以麵包屑、玉米粉、蜂蜜、果乾製成的紮實蛋糕。",
-        "history": "聖馬利諾傳統的農家聖誕節甜點。",
-        "wiki": "Bustrengo"
-      }
-    ]
-  }
+ "iso": "SMR",
+ "capital": "聖馬利諾市",
+ "summary": "位於義大利半島東北部、被義大利完全包圍的內陸小國，相傳建於西元301年，被認為是世界上現存最古老的共和國。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "天主教",
+    "percent": 90,
+    "description": "傳統上的主要宗教，與國家歷史緊密相連。"
+   },
+   {
+    "name": "無宗教",
+    "percent": 7,
+    "description": "比例較低但逐漸增加。"
+   },
+   {
+    "name": "其他",
+    "percent": 2,
+    "description": "包含新教、耶和華見證人等。"
+   }
+  ],
+  "background": "相傳西元301年石匠聖馬力諾為躲避羅馬帝國的基督徒迫害，在蒂塔諾山建立修道團體，聖馬利諾即由此發展而來。天主教因此與國家起源密不可分，國名即來自這位聖人。"
+ },
+ "language": {
+  "official": "官方語言為義大利語。",
+  "ranking": [
+   {
+    "name": "義大利語",
+    "percent": 96,
+    "description": "全國通用的官方語言。",
+    "greeting": "Ciao / Buongiorno",
+    "pronunciation": "chow / bwon-jor-no"
+   },
+   {
+    "name": "羅馬涅語",
+    "percent": 3,
+    "description": "當地傳統方言，屬艾米利亞－羅馬涅語，年長者較常使用。",
+    "greeting": "Ciao",
+    "pronunciation": "chow"
+   }
+  ],
+  "history": "聖馬利諾位於羅馬涅地區，傳統口語為羅馬涅方言。隨著義大利統一後標準義大利語的普及，以及媒體與教育的影響，義大利語已成為日常與正式場合的主要語言。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "羅馬涅薄餅",
+    "localName": "Piadina",
+    "description": "以麵粉、豬油製成的薄扁餅，夾火腿、起司與芝麻菜。",
+    "history": "羅馬涅地區的傳統平民食物，在聖馬利諾十分普遍。",
+    "wiki": "Piadina",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Piadina_romagnola_2.jpg/960px-Piadina_romagnola_2.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Piadina_romagnola_2.jpg",
+    "imageCredit": "Lasagnolo9・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "三塔威化蛋糕",
+    "localName": "Torta Tre Monti",
+    "description": "多層薄威化餅夾榛果巧克力醬，外層裹巧克力。",
+    "history": "以國徽上蒂塔諾山的三座塔樓命名，1940年代創製，是聖馬利諾代表性甜點。",
+    "wiki": "Torta Tre Monti",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/La_Serenissima_Torta_Tre_Monti.jpg/960px-La_Serenissima_Torta_Tre_Monti.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:La_Serenissima_Torta_Tre_Monti.jpg",
+    "imageCredit": "Mooonswimmer・CC BY 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "帽子餃",
+    "localName": "Cappelletti",
+    "description": "形似小帽的包餡麵食，常在清湯中食用。",
+    "history": "羅馬涅地區的傳統聖誕節料理。",
+    "wiki": "Cappelletti",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/02_Cappelletti_-_Cappellacci_-_Pasta_ripiena_-_Cucina_tipica_-_Ferrara.jpg/960px-02_Cappelletti_-_Cappellacci_-_Pasta_ripiena_-_Cucina_tipica_-_Ferrara.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:02_Cappelletti_-_Cappellacci_-_Pasta_ripiena_-_Cucina_tipica_-_Ferrara.jpg",
+    "imageCredit": "Lungoleno・CC BY-SA 2.5・Wikimedia Commons"
+   },
+   {
+    "name": "麵包屑麵",
+    "localName": "Passatelli",
+    "description": "以麵包屑、帕瑪森起司與雞蛋壓成的粗麵條，放入高湯中煮。",
+    "history": "源自羅馬涅地區利用剩餘麵包的農家料理。",
+    "wiki": "Passatelli",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Passatelli.jpg/960px-Passatelli.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Passatelli.jpg",
+    "imageCredit": "Popo le Chien・CC0・Wikimedia Commons"
+   },
+   {
+    "name": "布斯特倫戈蛋糕",
+    "localName": "Bustrengo",
+    "description": "以麵包屑、玉米粉、蜂蜜、果乾製成的紮實蛋糕。",
+    "history": "聖馬利諾傳統的農家聖誕節甜點。",
+    "wiki": "Bustrengo",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Bustrengo.jpg/960px-Bustrengo.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Bustrengo.jpg",
+    "imageCredit": "Peter Smith・CC BY 2.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

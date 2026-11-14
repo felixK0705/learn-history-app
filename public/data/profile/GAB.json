@@ -1,94 +1,109 @@
 {
-  "iso": "GAB",
-  "capital": "自由市",
-  "summary": "位於中非西部赤道上的國家，國土約八成為熱帶雨林，擁有豐富石油與錳礦，1960年脫離法國獨立。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "天主教",
-        "percent": 42,
-        "description": "法國殖民時期傳入，是最大教派。"
-      },
-      {
-        "name": "其他基督教（覺醒教會等）",
-        "percent": 32,
-        "description": "五旬節派與覺醒教會近年成長快速。"
-      },
-      {
-        "name": "新教",
-        "percent": 14,
-        "description": "19世紀美國傳教士最早在此傳教。"
-      },
-      {
-        "name": "伊斯蘭教",
-        "percent": 6,
-        "description": "主要為西非移民。"
-      },
-      {
-        "name": "無宗教",
-        "percent": 5,
-        "description": "比例較低。"
-      }
-    ],
-    "background": "19世紀美國長老會與法國天主教傳教士相繼到來，殖民時期教會主導教育，使基督教普及。傳統的布維蒂（Bwiti）信仰至今仍在部分民族中延續，並與基督教元素融合。"
-  },
-  "language": {
-    "official": "官方語言為法語。",
-    "ranking": [
-      {
-        "name": "法語",
-        "percent": 35,
-        "description": "官方語言，城市居民多以其為家庭語言，幾乎全國通用。",
-        "greeting": "Bonjour",
-        "pronunciation": "bon-zhoor"
-      },
-      {
-        "name": "芳語",
-        "percent": 30,
-        "description": "北部芳族的語言，是使用人數最多的本土語言。",
-        "greeting": "Mbolo",
-        "pronunciation": "m-bo-lo"
-      }
-    ],
-    "history": "加彭的本土語言多屬班圖語族，包括芳語、普努語、恩澤比語等。法國殖民後法語成為教育與行政語言，加上都市化與跨族通婚，加彭成為非洲法語使用比例最高的國家之一。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "棕櫚醬燉雞",
-        "localName": "Poulet nyembwe",
-        "description": "以棕櫚果醬汁燉煮的雞肉，配米飯或木薯棒，為國菜。",
-        "history": "中非地區常見的棕櫚油料理，是加彭最具代表性的菜餚。",
-        "wiki": "Nyembwe chicken"
-      },
-      {
-        "name": "木薯棒",
-        "localName": "Bâton de manioc",
-        "description": "木薯發酵後搗成糊，以葉子包成長條蒸熟。",
-        "history": "中非最普遍的主食之一，便於保存。",
-        "wiki": "Chikwangue"
-      },
-      {
-        "name": "奧迪卡醬",
-        "localName": "Odika",
-        "description": "以野生芒果（Irvingia）種子製成的濃醬，又稱「本土巧克力」，用來燉魚或肉。",
-        "history": "加彭森林民族的傳統調味料。",
-        "wiki": "Irvingia gabonensis"
-      },
-      {
-        "name": "非洲李（藍莓果）",
-        "localName": "Atanga",
-        "description": "紫色的非洲李果實，煮或烤後食用。",
-        "history": "雨季的季節性水果，常配木薯棒食用。",
-        "wiki": "Dacryodes edulis"
-      },
-      {
-        "name": "炸芭蕉",
-        "localName": "Banane plantain",
-        "description": "將成熟芭蕉切片油炸，是常見配菜。",
-        "history": "芭蕉是加彭與中西非日常重要的澱粉來源。",
-        "wiki": "Cooking banana"
-      }
-    ]
-  }
+ "iso": "GAB",
+ "capital": "自由市",
+ "summary": "位於中非西部赤道上的國家，國土約八成為熱帶雨林，擁有豐富石油與錳礦，1960年脫離法國獨立。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "天主教",
+    "percent": 42,
+    "description": "法國殖民時期傳入，是最大教派。"
+   },
+   {
+    "name": "其他基督教（覺醒教會等）",
+    "percent": 32,
+    "description": "五旬節派與覺醒教會近年成長快速。"
+   },
+   {
+    "name": "新教",
+    "percent": 14,
+    "description": "19世紀美國傳教士最早在此傳教。"
+   },
+   {
+    "name": "伊斯蘭教",
+    "percent": 6,
+    "description": "主要為西非移民。"
+   },
+   {
+    "name": "無宗教",
+    "percent": 5,
+    "description": "比例較低。"
+   }
+  ],
+  "background": "19世紀美國長老會與法國天主教傳教士相繼到來，殖民時期教會主導教育，使基督教普及。傳統的布維蒂（Bwiti）信仰至今仍在部分民族中延續，並與基督教元素融合。"
+ },
+ "language": {
+  "official": "官方語言為法語。",
+  "ranking": [
+   {
+    "name": "法語",
+    "percent": 35,
+    "description": "官方語言，城市居民多以其為家庭語言，幾乎全國通用。",
+    "greeting": "Bonjour",
+    "pronunciation": "bon-zhoor"
+   },
+   {
+    "name": "芳語",
+    "percent": 30,
+    "description": "北部芳族的語言，是使用人數最多的本土語言。",
+    "greeting": "Mbolo",
+    "pronunciation": "m-bo-lo"
+   }
+  ],
+  "history": "加彭的本土語言多屬班圖語族，包括芳語、普努語、恩澤比語等。法國殖民後法語成為教育與行政語言，加上都市化與跨族通婚，加彭成為非洲法語使用比例最高的國家之一。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "棕櫚醬燉雞",
+    "localName": "Poulet nyembwe",
+    "description": "以棕櫚果醬汁燉煮的雞肉，配米飯或木薯棒，為國菜。",
+    "history": "中非地區常見的棕櫚油料理，是加彭最具代表性的菜餚。",
+    "wiki": "Nyembwe chicken",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Poulet_%C3%A0_la_moambe.JPG/960px-Poulet_%C3%A0_la_moambe.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Poulet_%C3%A0_la_moambe.JPG",
+    "imageCredit": "Brigade Piron・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "木薯棒",
+    "localName": "Bâton de manioc",
+    "description": "木薯發酵後搗成糊，以葉子包成長條蒸熟。",
+    "history": "中非最普遍的主食之一，便於保存。",
+    "wiki": "Chikwangue",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/07/Cassava_Bread_-_cassava_cooked_in_leaf_wrap_%28Kwanga%2C_Chikwangue%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Cassava_Bread_-_cassava_cooked_in_leaf_wrap_(Kwanga,_Chikwangue).jpg",
+    "imageCredit": "T.K. Naliaka・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "奧迪卡醬",
+    "localName": "Odika",
+    "description": "以野生芒果（Irvingia）種子製成的濃醬，又稱「本土巧克力」，用來燉魚或肉。",
+    "history": "加彭森林民族的傳統調味料。",
+    "wiki": "Irvingia gabonensis",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Picture_of_the_african_mango_tree.jpg/960px-Picture_of_the_african_mango_tree.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Picture_of_the_african_mango_tree.jpg",
+    "imageCredit": "Nubelbariloe・CC BY 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "非洲李（藍莓果）",
+    "localName": "Atanga",
+    "description": "紫色的非洲李果實，煮或烤後食用。",
+    "history": "雨季的季節性水果，常配木薯棒食用。",
+    "wiki": "Dacryodes edulis",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/34/Safoutier.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Safoutier.jpg",
+    "imageCredit": "Public domain・Wikimedia Commons"
+   },
+   {
+    "name": "炸芭蕉",
+    "localName": "Banane plantain",
+    "description": "將成熟芭蕉切片油炸，是常見配菜。",
+    "history": "芭蕉是加彭與中西非日常重要的澱粉來源。",
+    "wiki": "Cooking banana",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Mega_racimos_de_guineos.jpg/960px-Mega_racimos_de_guineos.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Mega_racimos_de_guineos.jpg",
+    "imageCredit": "J & E・CC BY 2.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

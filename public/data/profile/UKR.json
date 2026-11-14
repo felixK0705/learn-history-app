@@ -1,101 +1,116 @@
 {
-  "iso": "UKR",
-  "capital": "基輔",
-  "summary": "烏克蘭是歐洲面積第二大的國家，擁有肥沃的黑土，有「歐洲糧倉」之稱，1991年自蘇聯獨立，2022年起遭受俄羅斯全面入侵。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "東正教",
-        "percent": 72,
-        "description": "包括烏克蘭正教會等，是最大的宗教。"
-      },
-      {
-        "name": "希臘禮天主教",
-        "percent": 9,
-        "description": "主要分布於西部，使用拜占庭禮儀但與羅馬教廷共融。"
-      },
-      {
-        "name": "無宗教",
-        "percent": 8,
-        "description": "未認同任何宗教的人口。"
-      },
-      {
-        "name": "基督新教",
-        "percent": 2,
-        "description": "包括浸信會與五旬節派等。"
-      },
-      {
-        "name": "伊斯蘭教",
-        "percent": 1,
-        "description": "主要為克里米亞韃靼人。"
-      }
-    ],
-    "background": "988年基輔羅斯的弗拉基米爾大公受洗，東正教成為國教。1596年布列斯特聯合後西部形成希臘禮天主教會。蘇聯時期宗教受壓制，獨立後宗教復興；2019年烏克蘭正教會獲普世牧首承認自主地位。"
-  },
-  "language": {
-    "official": "烏克蘭語是唯一官方語言。",
-    "ranking": [
-      {
-        "name": "烏克蘭語",
-        "percent": 68,
-        "description": "屬東斯拉夫語支，使用西里爾字母。",
-        "greeting": "Привіт (Pryvit)",
-        "pronunciation": "pry-VEET"
-      },
-      {
-        "name": "俄語",
-        "percent": 30,
-        "description": "東部與南部的傳統常用語言，2022年後越來越多人改用烏克蘭語。",
-        "greeting": "Привет (Privet)",
-        "pronunciation": "pree-VYET"
-      },
-      {
-        "name": "克里米亞韃靼語",
-        "percent": 1,
-        "description": "克里米亞韃靼人的突厥語言。",
-        "greeting": "Selâm",
-        "pronunciation": "se-LAHM"
-      }
-    ],
-    "history": "烏克蘭語在基輔羅斯之後逐漸形成，十九世紀詩人謝甫琴科的作品奠定了現代烏克蘭文學語言。沙俄時期曾頒布限制烏克蘭語出版的法令，蘇聯時期則推行俄語化，獨立後烏克蘭語成為唯一官方語言。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "羅宋湯",
-        "localName": "Борщ (Borshch)",
-        "description": "以甜菜根、高麗菜、馬鈴薯與肉熬煮的紅色湯，配酸奶油。",
-        "history": "烏克蘭的羅宋湯烹飪文化於2022年列入聯合國教科文組織急需保護的非物質文化遺產。",
-        "wiki": "Borscht"
-      },
-      {
-        "name": "瓦雷尼基",
-        "localName": "Вареники (Varenyky)",
-        "description": "包入馬鈴薯、酸菜、櫻桃或起司的水餃。",
-        "history": "烏克蘭家庭常見料理，也是平安夜十二道菜之一。",
-        "wiki": "Varenyky"
-      },
-      {
-        "name": "高麗菜捲",
-        "localName": "Голубці (Holubtsi)",
-        "description": "以高麗菜葉包裹米與肉，燉煮後配酸奶油。",
-        "history": "烏克蘭節慶與婚禮的傳統料理。",
-        "wiki": "Cabbage roll"
-      },
-      {
-        "name": "醃豬背脂",
-        "localName": "Сало (Salo)",
-        "description": "以鹽與大蒜醃漬的豬背脂，切片配黑麥麵包。",
-        "history": "被視為烏克蘭的代表食物，能長期保存。",
-        "wiki": "Salo (food)"
-      },
-      {
-        "name": "基輔炸雞捲",
-        "localName": "Котлета по-київськи (Chicken Kiev)",
-        "description": "以雞胸肉包裹香草奶油後裹粉油炸。",
-        "history": "十九至二十世紀在宮廷與餐廳料理中發展而成，以基輔命名。",
-        "wiki": "Chicken Kiev"
-      }
-    ]
-  }
+ "iso": "UKR",
+ "capital": "基輔",
+ "summary": "烏克蘭是歐洲面積第二大的國家，擁有肥沃的黑土，有「歐洲糧倉」之稱，1991年自蘇聯獨立，2022年起遭受俄羅斯全面入侵。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "東正教",
+    "percent": 72,
+    "description": "包括烏克蘭正教會等，是最大的宗教。"
+   },
+   {
+    "name": "希臘禮天主教",
+    "percent": 9,
+    "description": "主要分布於西部，使用拜占庭禮儀但與羅馬教廷共融。"
+   },
+   {
+    "name": "無宗教",
+    "percent": 8,
+    "description": "未認同任何宗教的人口。"
+   },
+   {
+    "name": "基督新教",
+    "percent": 2,
+    "description": "包括浸信會與五旬節派等。"
+   },
+   {
+    "name": "伊斯蘭教",
+    "percent": 1,
+    "description": "主要為克里米亞韃靼人。"
+   }
+  ],
+  "background": "988年基輔羅斯的弗拉基米爾大公受洗，東正教成為國教。1596年布列斯特聯合後西部形成希臘禮天主教會。蘇聯時期宗教受壓制，獨立後宗教復興；2019年烏克蘭正教會獲普世牧首承認自主地位。"
+ },
+ "language": {
+  "official": "烏克蘭語是唯一官方語言。",
+  "ranking": [
+   {
+    "name": "烏克蘭語",
+    "percent": 68,
+    "description": "屬東斯拉夫語支，使用西里爾字母。",
+    "greeting": "Привіт (Pryvit)",
+    "pronunciation": "pry-VEET"
+   },
+   {
+    "name": "俄語",
+    "percent": 30,
+    "description": "東部與南部的傳統常用語言，2022年後越來越多人改用烏克蘭語。",
+    "greeting": "Привет (Privet)",
+    "pronunciation": "pree-VYET"
+   },
+   {
+    "name": "克里米亞韃靼語",
+    "percent": 1,
+    "description": "克里米亞韃靼人的突厥語言。",
+    "greeting": "Selâm",
+    "pronunciation": "se-LAHM"
+   }
+  ],
+  "history": "烏克蘭語在基輔羅斯之後逐漸形成，十九世紀詩人謝甫琴科的作品奠定了現代烏克蘭文學語言。沙俄時期曾頒布限制烏克蘭語出版的法令，蘇聯時期則推行俄語化，獨立後烏克蘭語成為唯一官方語言。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "羅宋湯",
+    "localName": "Борщ (Borshch)",
+    "description": "以甜菜根、高麗菜、馬鈴薯與肉熬煮的紅色湯，配酸奶油。",
+    "history": "烏克蘭的羅宋湯烹飪文化於2022年列入聯合國教科文組織急需保護的非物質文化遺產。",
+    "wiki": "Borscht",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Borscht_served.jpg/960px-Borscht_served.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Borscht_served.jpg",
+    "imageCredit": "liz west from Boxborough, MA・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "瓦雷尼基",
+    "localName": "Вареники (Varenyky)",
+    "description": "包入馬鈴薯、酸菜、櫻桃或起司的水餃。",
+    "history": "烏克蘭家庭常見料理，也是平安夜十二道菜之一。",
+    "wiki": "Varenyky",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Varenyky_with_Potatoes_-_2026_-03.jpg/960px-Varenyky_with_Potatoes_-_2026_-03.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Varenyky_with_Potatoes_-_2026_-03.jpg",
+    "imageCredit": "DemieK07・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "高麗菜捲",
+    "localName": "Голубці (Holubtsi)",
+    "description": "以高麗菜葉包裹米與肉，燉煮後配酸奶油。",
+    "history": "烏克蘭節慶與婚禮的傳統料理。",
+    "wiki": "Cabbage roll",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/T%C3%B6lt%C3%B6tt_k%C3%A1poszta%2C_2.jpg/960px-T%C3%B6lt%C3%B6tt_k%C3%A1poszta%2C_2.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:T%C3%B6lt%C3%B6tt_k%C3%A1poszta,_2.jpg",
+    "imageCredit": "Christo・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "醃豬背脂",
+    "localName": "Сало (Salo)",
+    "description": "以鹽與大蒜醃漬的豬背脂，切片配黑麥麵包。",
+    "history": "被視為烏克蘭的代表食物，能長期保存。",
+    "wiki": "Salo (food)",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Sa%C5%82o.JPG/960px-Sa%C5%82o.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Sa%C5%82o.JPG",
+    "imageCredit": "Beiot・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "基輔炸雞捲",
+    "localName": "Котлета по-київськи (Chicken Kiev)",
+    "description": "以雞胸肉包裹香草奶油後裹粉油炸。",
+    "history": "十九至二十世紀在宮廷與餐廳料理中發展而成，以基輔命名。",
+    "wiki": "Chicken Kiev",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/08/Chicken_Kiev_-_Ukrainian_East_Village_restaurant.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Chicken_Kiev_-_Ukrainian_East_Village_restaurant.jpg",
+    "imageCredit": "Jason Lam・CC BY-SA 2.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

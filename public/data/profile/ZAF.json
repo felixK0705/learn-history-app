@@ -1,122 +1,137 @@
 {
-  "iso": "ZAF",
-  "capital": "普利托利亞（行政首都）；開普敦（立法首都）；布隆泉（司法首都）",
-  "summary": "南非位於非洲最南端，有三個首都與12種官方語言，經歷種族隔離制度後於1994年舉行首次民主選舉，被稱為「彩虹之國」。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "基督教",
-        "percent": 85,
-        "description": "包括錫安基督教會等非洲獨立教會、五旬節派、天主教與荷蘭歸正會等。"
-      },
-      {
-        "name": "無宗教",
-        "percent": 7,
-        "description": "未認同任何宗教的人口。"
-      },
-      {
-        "name": "傳統信仰",
-        "percent": 4,
-        "description": "崇敬祖先的非洲傳統信仰。"
-      },
-      {
-        "name": "伊斯蘭教",
-        "percent": 2,
-        "description": "主要為開普馬來人與印度裔居民。"
-      },
-      {
-        "name": "印度教",
-        "percent": 1,
-        "description": "主要為夸祖魯—納塔爾省的印度裔居民。"
-      }
-    ],
-    "background": "十七世紀荷蘭移民帶來歸正宗，十九世紀英國統治後各國傳教士深入內陸傳教。二十世紀初興起的非洲獨立教會將基督教與祖先崇拜結合；荷蘭東印度公司帶來的東南亞穆斯林奴隸，以及十九世紀的印度契約勞工，則帶來伊斯蘭教與印度教。"
-  },
-  "language": {
-    "official": "南非有12種官方語言，包括祖魯語、科薩語、南非語、英語與南非手語等。",
-    "ranking": [
-      {
-        "name": "祖魯語",
-        "percent": 24,
-        "description": "人數最多的母語，主要使用於夸祖魯—納塔爾省。",
-        "greeting": "Sawubona",
-        "pronunciation": "sah-woo-BOH-na"
-      },
-      {
-        "name": "科薩語",
-        "percent": 16,
-        "description": "東開普省的主要語言，以吸氣音聞名。",
-        "greeting": "Molo",
-        "pronunciation": "MOH-loh"
-      },
-      {
-        "name": "南非語",
-        "percent": 11,
-        "description": "由荷蘭語演變而來，白人與有色人種社群廣泛使用。",
-        "greeting": "Hallo",
-        "pronunciation": "HAH-loh"
-      },
-      {
-        "name": "北索托語（佩迪語）",
-        "percent": 10,
-        "description": "林波波省的主要語言。",
-        "greeting": "Thobela",
-        "pronunciation": "toh-BEH-la"
-      },
-      {
-        "name": "英語",
-        "percent": 9,
-        "description": "政府、商業與媒體的主要語言。",
-        "greeting": "Hello",
-        "pronunciation": "heh-LOH"
-      },
-      {
-        "name": "茨瓦納語",
-        "percent": 8,
-        "description": "西北省的主要語言。",
-        "greeting": "Dumela",
-        "pronunciation": "doo-MEH-la"
-      }
-    ],
-    "history": "南非原住民語言以班圖語族為主，科伊桑語則有獨特的吸氣音並影響了祖魯語與科薩語。荷蘭移民的語言發展成南非語，英國統治則使英語普及。種族隔離時期南非語與英語是唯二官方語言，1994年後擴大為11種，2023年再加入南非手語。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "布萊烤肉",
-        "localName": "Braai",
-        "description": "在戶外以木炭或木柴燒烤肉類與香腸。",
-        "history": "南非各族群共享的社交飲食文化，9月24日傳統節常被暱稱為「布萊日」。",
-        "wiki": "Braai"
-      },
-      {
-        "name": "波波提",
-        "localName": "Bobotie",
-        "description": "以香料絞肉上覆蛋奶烘烤的料理，帶有咖哩與果香。",
-        "history": "源自開普馬來人的料理，被視為南非國菜之一。",
-        "wiki": "Bobotie"
-      },
-      {
-        "name": "比爾通肉乾",
-        "localName": "Biltong",
-        "description": "以醋與香料醃漬後風乾的肉乾。",
-        "history": "源自早期荷蘭移民與原住民保存肉類的方法。",
-        "wiki": "Biltong"
-      },
-      {
-        "name": "兔子咖哩",
-        "localName": "Bunny chow",
-        "description": "將白吐司挖空後填入咖哩。",
-        "history": "二十世紀於德班的印度裔社群發展而成。",
-        "wiki": "Bunny chow"
-      },
-      {
-        "name": "農夫香腸",
-        "localName": "Boerewors",
-        "description": "以牛肉與香菜籽等香料製成的盤捲狀粗香腸。",
-        "history": "南非布萊烤肉的必備食材，源自荷蘭移民的製腸傳統。",
-        "wiki": "Boerewors"
-      }
-    ]
-  }
+ "iso": "ZAF",
+ "capital": "普利托利亞（行政首都）；開普敦（立法首都）；布隆泉（司法首都）",
+ "summary": "南非位於非洲最南端，有三個首都與12種官方語言，經歷種族隔離制度後於1994年舉行首次民主選舉，被稱為「彩虹之國」。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "基督教",
+    "percent": 85,
+    "description": "包括錫安基督教會等非洲獨立教會、五旬節派、天主教與荷蘭歸正會等。"
+   },
+   {
+    "name": "無宗教",
+    "percent": 7,
+    "description": "未認同任何宗教的人口。"
+   },
+   {
+    "name": "傳統信仰",
+    "percent": 4,
+    "description": "崇敬祖先的非洲傳統信仰。"
+   },
+   {
+    "name": "伊斯蘭教",
+    "percent": 2,
+    "description": "主要為開普馬來人與印度裔居民。"
+   },
+   {
+    "name": "印度教",
+    "percent": 1,
+    "description": "主要為夸祖魯—納塔爾省的印度裔居民。"
+   }
+  ],
+  "background": "十七世紀荷蘭移民帶來歸正宗，十九世紀英國統治後各國傳教士深入內陸傳教。二十世紀初興起的非洲獨立教會將基督教與祖先崇拜結合；荷蘭東印度公司帶來的東南亞穆斯林奴隸，以及十九世紀的印度契約勞工，則帶來伊斯蘭教與印度教。"
+ },
+ "language": {
+  "official": "南非有12種官方語言，包括祖魯語、科薩語、南非語、英語與南非手語等。",
+  "ranking": [
+   {
+    "name": "祖魯語",
+    "percent": 24,
+    "description": "人數最多的母語，主要使用於夸祖魯—納塔爾省。",
+    "greeting": "Sawubona",
+    "pronunciation": "sah-woo-BOH-na"
+   },
+   {
+    "name": "科薩語",
+    "percent": 16,
+    "description": "東開普省的主要語言，以吸氣音聞名。",
+    "greeting": "Molo",
+    "pronunciation": "MOH-loh"
+   },
+   {
+    "name": "南非語",
+    "percent": 11,
+    "description": "由荷蘭語演變而來，白人與有色人種社群廣泛使用。",
+    "greeting": "Hallo",
+    "pronunciation": "HAH-loh"
+   },
+   {
+    "name": "北索托語（佩迪語）",
+    "percent": 10,
+    "description": "林波波省的主要語言。",
+    "greeting": "Thobela",
+    "pronunciation": "toh-BEH-la"
+   },
+   {
+    "name": "英語",
+    "percent": 9,
+    "description": "政府、商業與媒體的主要語言。",
+    "greeting": "Hello",
+    "pronunciation": "heh-LOH"
+   },
+   {
+    "name": "茨瓦納語",
+    "percent": 8,
+    "description": "西北省的主要語言。",
+    "greeting": "Dumela",
+    "pronunciation": "doo-MEH-la"
+   }
+  ],
+  "history": "南非原住民語言以班圖語族為主，科伊桑語則有獨特的吸氣音並影響了祖魯語與科薩語。荷蘭移民的語言發展成南非語，英國統治則使英語普及。種族隔離時期南非語與英語是唯二官方語言，1994年後擴大為11種，2023年再加入南非手語。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "布萊烤肉",
+    "localName": "Braai",
+    "description": "在戶外以木炭或木柴燒烤肉類與香腸。",
+    "history": "南非各族群共享的社交飲食文化，9月24日傳統節常被暱稱為「布萊日」。",
+    "wiki": "Braai",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Barbecue_barbecook.JPG/960px-Barbecue_barbecook.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Barbecue_barbecook.JPG",
+    "imageCredit": "No machine-readable author provided. Bree~commonswiki assume・Public domain・Wikimedia Commons"
+   },
+   {
+    "name": "波波提",
+    "localName": "Bobotie",
+    "description": "以香料絞肉上覆蛋奶烘烤的料理，帶有咖哩與果香。",
+    "history": "源自開普馬來人的料理，被視為南非國菜之一。",
+    "wiki": "Bobotie",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Bobotie%2C_South_African_dish.jpg/960px-Bobotie%2C_South_African_dish.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Bobotie,_South_African_dish.jpg",
+    "imageCredit": "Olga Ernst・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "比爾通肉乾",
+    "localName": "Biltong",
+    "description": "以醋與香料醃漬後風乾的肉乾。",
+    "history": "源自早期荷蘭移民與原住民保存肉類的方法。",
+    "wiki": "Biltong",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Sliced_Biltong.jpg/960px-Sliced_Biltong.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Sliced_Biltong.jpg",
+    "imageCredit": "Delia du Plessis・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "兔子咖哩",
+    "localName": "Bunny chow",
+    "description": "將白吐司挖空後填入咖哩。",
+    "history": "二十世紀於德班的印度裔社群發展而成。",
+    "wiki": "Bunny chow",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/70/Quarter_Mutton_Bunny_Chow.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Quarter_Mutton_Bunny_Chow.jpg",
+    "imageCredit": "Luke Comins・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "農夫香腸",
+    "localName": "Boerewors",
+    "description": "以牛肉與香菜籽等香料製成的盤捲狀粗香腸。",
+    "history": "南非布萊烤肉的必備食材，源自荷蘭移民的製腸傳統。",
+    "wiki": "Boerewors",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Boerewors_raw.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Boerewors_raw.jpg",
+    "imageCredit": "TempestSA at English Wikipedia・CC BY-SA 3.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

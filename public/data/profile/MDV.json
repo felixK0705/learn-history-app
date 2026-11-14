@@ -1,91 +1,106 @@
 {
-  "iso": "MDV",
-  "capital": "瑪律",
-  "summary": "位於印度洋中北部、由約1,200座珊瑚島組成的群島國家，是亞洲面積最小、平均海拔最低的國家，以度假島嶼聞名。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "伊斯蘭教（遜尼派）",
-        "percent": 98,
-        "description": "國教，依法公民須為穆斯林。"
-      },
-      {
-        "name": "印度教",
-        "percent": 1,
-        "description": "主要為印度外籍勞工。"
-      },
-      {
-        "name": "其他（佛教、基督教等）",
-        "percent": 1,
-        "description": "主要為外籍勞工，不得公開傳教。"
-      }
-    ],
-    "background": "馬爾地夫在古代信奉佛教，留有佛教遺址。相傳1153年國王在一位北非或波斯學者的勸導下改信伊斯蘭教，全國隨之伊斯蘭化，此後伊斯蘭教成為國家認同核心。"
-  },
-  "language": {
-    "official": "官方語言為迪維希語。",
-    "ranking": [
-      {
-        "name": "迪維希語",
-        "percent": 95,
-        "description": "屬印度－雅利安語支，與僧伽羅語相近，以塔納文字（由右至左書寫）記錄。",
-        "greeting": "Kihineh?",
-        "pronunciation": "ki-hi-neh"
-      },
-      {
-        "name": "英語",
-        "percent": 2,
-        "description": "教育、商業與觀光業的重要語言。",
-        "greeting": "Hello",
-        "pronunciation": "heh-loh"
-      },
-      {
-        "name": "孟加拉語",
-        "percent": 2,
-        "description": "孟加拉外籍勞工使用。",
-        "greeting": "নমস্কার / আসসালামু আলাইকুম",
-        "pronunciation": "no-mosh-kar / as-sa-la-mu a-lai-kum"
-      }
-    ],
-    "history": "迪維希語源自古代斯里蘭卡移民的語言，並吸收阿拉伯語、波斯語與印度語言詞彙。18世紀發展出獨特的塔納文字，以阿拉伯數字與迪維希文字母為基礎。英語自20世紀後期成為教育語言。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "鮪魚椰子沙拉",
-        "localName": "Mas huni",
-        "description": "以碎鮪魚、椰絲、洋蔥與辣椒拌成的沙拉，配烤餅食用，是傳統早餐。",
-        "history": "鮪魚與椰子是馬爾地夫飲食的兩大基石。",
-        "wiki": "Mas huni"
-      },
-      {
-        "name": "鮪魚清湯",
-        "localName": "Garudhiya",
-        "description": "以鮪魚熬成的清湯，配米飯、萊姆與辣椒。",
-        "history": "馬爾地夫最傳統的料理之一，反映以捕魚為生的歷史。",
-        "wiki": "Garudhiya"
-      },
-      {
-        "name": "鮪魚炸球",
-        "localName": "Gulha",
-        "description": "以麵團包入鮪魚、椰絲與洋蔥的小炸球。",
-        "history": "是馬爾地夫最常見的「hedhikaa」（午茶點心）之一。",
-        "wiki": "Gulha"
-      },
-      {
-        "name": "鮪魚醬",
-        "localName": "Rihaakuru",
-        "description": "以鮪魚長時間熬煮成的濃稠魚醬。",
-        "history": "製作鮪魚乾的副產品，是馬爾地夫特有的調味料。",
-        "wiki": "Rihaakuru"
-      },
-      {
-        "name": "羅希烤餅",
-        "localName": "Roshi",
-        "description": "以麵粉做成的薄圓餅，搭配咖哩或鮪魚沙拉。",
-        "history": "受南亞飲食影響，是日常主食之一。",
-        "wiki": "Roti"
-      }
-    ]
-  }
+ "iso": "MDV",
+ "capital": "瑪律",
+ "summary": "位於印度洋中北部、由約1,200座珊瑚島組成的群島國家，是亞洲面積最小、平均海拔最低的國家，以度假島嶼聞名。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "伊斯蘭教（遜尼派）",
+    "percent": 98,
+    "description": "國教，依法公民須為穆斯林。"
+   },
+   {
+    "name": "印度教",
+    "percent": 1,
+    "description": "主要為印度外籍勞工。"
+   },
+   {
+    "name": "其他（佛教、基督教等）",
+    "percent": 1,
+    "description": "主要為外籍勞工，不得公開傳教。"
+   }
+  ],
+  "background": "馬爾地夫在古代信奉佛教，留有佛教遺址。相傳1153年國王在一位北非或波斯學者的勸導下改信伊斯蘭教，全國隨之伊斯蘭化，此後伊斯蘭教成為國家認同核心。"
+ },
+ "language": {
+  "official": "官方語言為迪維希語。",
+  "ranking": [
+   {
+    "name": "迪維希語",
+    "percent": 95,
+    "description": "屬印度－雅利安語支，與僧伽羅語相近，以塔納文字（由右至左書寫）記錄。",
+    "greeting": "Kihineh?",
+    "pronunciation": "ki-hi-neh"
+   },
+   {
+    "name": "英語",
+    "percent": 2,
+    "description": "教育、商業與觀光業的重要語言。",
+    "greeting": "Hello",
+    "pronunciation": "heh-loh"
+   },
+   {
+    "name": "孟加拉語",
+    "percent": 2,
+    "description": "孟加拉外籍勞工使用。",
+    "greeting": "নমস্কার / আসসালামু আলাইকুম",
+    "pronunciation": "no-mosh-kar / as-sa-la-mu a-lai-kum"
+   }
+  ],
+  "history": "迪維希語源自古代斯里蘭卡移民的語言，並吸收阿拉伯語、波斯語與印度語言詞彙。18世紀發展出獨特的塔納文字，以阿拉伯數字與迪維希文字母為基礎。英語自20世紀後期成為教育語言。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "鮪魚椰子沙拉",
+    "localName": "Mas huni",
+    "description": "以碎鮪魚、椰絲、洋蔥與辣椒拌成的沙拉，配烤餅食用，是傳統早餐。",
+    "history": "鮪魚與椰子是馬爾地夫飲食的兩大基石。",
+    "wiki": "Mas huni",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Mas_huni-roshi087.JPG/960px-Mas_huni-roshi087.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Mas_huni-roshi087.JPG",
+    "imageCredit": "Xavier Romero-Frias・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "鮪魚清湯",
+    "localName": "Garudhiya",
+    "description": "以鮪魚熬成的清湯，配米飯、萊姆與辣椒。",
+    "history": "馬爾地夫最傳統的料理之一，反映以捕魚為生的歷史。",
+    "wiki": "Garudhiya",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Garudiya.jpg/960px-Garudiya.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Garudiya.jpg",
+    "imageCredit": "LittleT889・CC BY 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "鮪魚炸球",
+    "localName": "Gulha",
+    "description": "以麵團包入鮪魚、椰絲與洋蔥的小炸球。",
+    "history": "是馬爾地夫最常見的「hedhikaa」（午茶點心）之一。",
+    "wiki": "Gulha",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Maldivian_gulha33.JPG/960px-Maldivian_gulha33.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Maldivian_gulha33.JPG",
+    "imageCredit": "Xavier Romero-Frias・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "鮪魚醬",
+    "localName": "Rihaakuru",
+    "description": "以鮪魚長時間熬煮成的濃稠魚醬。",
+    "history": "製作鮪魚乾的副產品，是馬爾地夫特有的調味料。",
+    "wiki": "Rihaakuru",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Rihaakuru.JPEG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Rihaakuru.JPEG",
+    "imageCredit": "Mohamed Ishan・Public domain・Wikimedia Commons"
+   },
+   {
+    "name": "羅希烤餅",
+    "localName": "Roshi",
+    "description": "以麵粉做成的薄圓餅，搭配咖哩或鮪魚沙拉。",
+    "history": "受南亞飲食影響，是日常主食之一。",
+    "wiki": "Roti",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/2020-05-08_19_34_28_Chapati_being_made_in_a_pan_in_the_Franklin_Farm_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg/960px-2020-05-08_19_34_28_Chapati_being_made_in_a_pan_in_the_Franklin_Farm_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:2020-05-08_19_34_28_Chapati_being_made_in_a_pan_in_the_Franklin_Farm_section_of_Oak_Hill,_Fairfax_County,_Virginia.jpg",
+    "imageCredit": "Famartin・CC BY-SA 4.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

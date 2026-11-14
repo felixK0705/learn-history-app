@@ -1,110 +1,122 @@
 {
-  "iso": "BLZ",
-  "capital": "貝爾墨邦",
-  "summary": "貝里斯位於中美洲東岸，是該地區唯一以英語為官方語言的國家，擁有馬雅遺址與世界第二長的堡礁。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "天主教",
-        "percent": 40,
-        "description": "最大的單一宗教，信徒包括梅斯蒂索人與馬雅人等。"
-      },
-      {
-        "name": "基督新教",
-        "percent": 32,
-        "description": "包括五旬節派、復臨安息日會、聖公會與門諾會等多個教派。"
-      },
-      {
-        "name": "無宗教",
-        "percent": 16,
-        "description": "不屬於任何宗教的人口比例逐漸增加。"
-      },
-      {
-        "name": "其他宗教",
-        "percent": 4,
-        "description": "包括耶和華見證人、巴哈伊信仰等。"
-      }
-    ],
-    "background": "貝里斯曾為英屬宏都拉斯，英國殖民帶來聖公會與衛理宗等新教，而來自鄰近西語國家的移民則多為天主教徒。二十世紀中期移入的德裔門諾會社群，以及近年福音派的成長，使宗教版圖更為多元。"
-  },
-  "language": {
-    "official": "英語是官方語言，但西班牙語與貝里斯克里奧爾語在日常生活中更為普遍。",
-    "ranking": [
-      {
-        "name": "西班牙語",
-        "percent": 46,
-        "description": "梅斯蒂索人與中美洲移民的主要語言，北部與西部地區最常用。",
-        "greeting": "Hola",
-        "pronunciation": "OH-la"
-      },
-      {
-        "name": "貝里斯克里奧爾語",
-        "percent": 32,
-        "description": "以英語為基礎的克里奧爾語，是許多國民的共同交際語。",
-        "greeting": "Weh di go aan?",
-        "pronunciation": "weh dee go AHN"
-      },
-      {
-        "name": "馬雅語（凱克奇語等）",
-        "percent": 9,
-        "description": "南部托萊多區等地的馬雅族群使用。",
-        "greeting": "Ma sa laa ch'ool?",
-        "pronunciation": "ma sa la CHOOL"
-      },
-      {
-        "name": "英語",
-        "percent": 6,
-        "description": "官方語言，用於政府、教育與媒體。",
-        "greeting": "Hello",
-        "pronunciation": "heh-LOH"
-      },
-      {
-        "name": "低地德語（門諾會）",
-        "percent": 3,
-        "description": "門諾會社群使用的普勞特迪奇語。",
-        "greeting": "Gooden Dach",
-        "pronunciation": "GOO-den dakh"
-      }
-    ],
-    "history": "馬雅文明時期當地使用多種馬雅語。十七世紀起英國伐木工人與其帶來的非洲奴隸在此定居，形成以英語為基礎的克里奧爾語。二十世紀後大量來自瓜地馬拉、薩爾瓦多與宏都拉斯的移民，使西班牙語使用人口持續增加。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "米豆飯",
-        "localName": "Rice and beans",
-        "description": "以椰奶將米與紅腰豆一起煮成的飯，常配燉雞與馬鈴薯沙拉。",
-        "history": "源自加勒比海克里奧爾飲食傳統，是貝里斯週日餐桌上最常見的國民料理。",
-        "wiki": "Rice and beans"
-      },
-      {
-        "name": "炸傑克餅",
-        "localName": "Fry jack",
-        "description": "將麵團切塊油炸成膨鬆的炸餅，常當早餐。",
-        "history": "受英國與加勒比海飲食影響的克里奧爾早餐，搭配豆泥、雞蛋或果醬。",
-        "wiki": "Fry jack"
-      },
-      {
-        "name": "胡度湯",
-        "localName": "Hudut",
-        "description": "以椰奶燉魚，搭配搗成泥的大蕉。",
-        "history": "加利福納族（Garifuna）的代表料理，承載其非洲與加勒比原住民混合的文化遺產。",
-        "wiki": "Hudut"
-      },
-      {
-        "name": "玉米粽",
-        "localName": "Tamal",
-        "description": "以玉米麵團包裹肉餡，用芭蕉葉包好蒸熟。",
-        "history": "源自中美洲原住民的古老料理，在貝里斯常於聖誕節等節慶製作。",
-        "wiki": "Tamale"
-      },
-      {
-        "name": "薩爾布特",
-        "localName": "Salbute",
-        "description": "將炸過的小玉米餅鋪上雞肉、高麗菜與番茄。",
-        "history": "源自墨西哥猶加敦半島的馬雅飲食，是貝里斯常見的街頭小吃。",
-        "wiki": "Salbute"
-      }
-    ]
-  }
+ "iso": "BLZ",
+ "capital": "貝爾墨邦",
+ "summary": "貝里斯位於中美洲東岸，是該地區唯一以英語為官方語言的國家，擁有馬雅遺址與世界第二長的堡礁。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "天主教",
+    "percent": 40,
+    "description": "最大的單一宗教，信徒包括梅斯蒂索人與馬雅人等。"
+   },
+   {
+    "name": "基督新教",
+    "percent": 32,
+    "description": "包括五旬節派、復臨安息日會、聖公會與門諾會等多個教派。"
+   },
+   {
+    "name": "無宗教",
+    "percent": 16,
+    "description": "不屬於任何宗教的人口比例逐漸增加。"
+   },
+   {
+    "name": "其他宗教",
+    "percent": 4,
+    "description": "包括耶和華見證人、巴哈伊信仰等。"
+   }
+  ],
+  "background": "貝里斯曾為英屬宏都拉斯，英國殖民帶來聖公會與衛理宗等新教，而來自鄰近西語國家的移民則多為天主教徒。二十世紀中期移入的德裔門諾會社群，以及近年福音派的成長，使宗教版圖更為多元。"
+ },
+ "language": {
+  "official": "英語是官方語言，但西班牙語與貝里斯克里奧爾語在日常生活中更為普遍。",
+  "ranking": [
+   {
+    "name": "西班牙語",
+    "percent": 46,
+    "description": "梅斯蒂索人與中美洲移民的主要語言，北部與西部地區最常用。",
+    "greeting": "Hola",
+    "pronunciation": "OH-la"
+   },
+   {
+    "name": "貝里斯克里奧爾語",
+    "percent": 32,
+    "description": "以英語為基礎的克里奧爾語，是許多國民的共同交際語。",
+    "greeting": "Weh di go aan?",
+    "pronunciation": "weh dee go AHN"
+   },
+   {
+    "name": "馬雅語（凱克奇語等）",
+    "percent": 9,
+    "description": "南部托萊多區等地的馬雅族群使用。",
+    "greeting": "Ma sa laa ch'ool?",
+    "pronunciation": "ma sa la CHOOL"
+   },
+   {
+    "name": "英語",
+    "percent": 6,
+    "description": "官方語言，用於政府、教育與媒體。",
+    "greeting": "Hello",
+    "pronunciation": "heh-LOH"
+   },
+   {
+    "name": "低地德語（門諾會）",
+    "percent": 3,
+    "description": "門諾會社群使用的普勞特迪奇語。",
+    "greeting": "Gooden Dach",
+    "pronunciation": "GOO-den dakh"
+   }
+  ],
+  "history": "馬雅文明時期當地使用多種馬雅語。十七世紀起英國伐木工人與其帶來的非洲奴隸在此定居，形成以英語為基礎的克里奧爾語。二十世紀後大量來自瓜地馬拉、薩爾瓦多與宏都拉斯的移民，使西班牙語使用人口持續增加。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "米豆飯",
+    "localName": "Rice and beans",
+    "description": "以椰奶將米與紅腰豆一起煮成的飯，常配燉雞與馬鈴薯沙拉。",
+    "history": "源自加勒比海克里奧爾飲食傳統，是貝里斯週日餐桌上最常見的國民料理。",
+    "wiki": "Rice and beans",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Rice_and_beans%2C_Hotel_in_Itatiaia.jpeg/960px-Rice_and_beans%2C_Hotel_in_Itatiaia.jpeg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Rice_and_beans,_Hotel_in_Itatiaia.jpeg",
+    "imageCredit": "Henrique Dante de Almeida・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "炸傑克餅",
+    "localName": "Fry jack",
+    "description": "將麵團切塊油炸成膨鬆的炸餅，常當早餐。",
+    "history": "受英國與加勒比海飲食影響的克里奧爾早餐，搭配豆泥、雞蛋或果醬。",
+    "wiki": "Fry jack",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/58/Fry_jacks_with_eggs_and_salsa.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Fry_jacks_with_eggs_and_salsa.jpg",
+    "imageCredit": "US Embassy Belize・Public domain・Wikimedia Commons"
+   },
+   {
+    "name": "胡度湯",
+    "localName": "Hudut",
+    "description": "以椰奶燉魚，搭配搗成泥的大蕉。",
+    "history": "加利福納族（Garifuna）的代表料理，承載其非洲與加勒比原住民混合的文化遺產。",
+    "wiki": "Hudut"
+   },
+   {
+    "name": "玉米粽",
+    "localName": "Tamal",
+    "description": "以玉米麵團包裹肉餡，用芭蕉葉包好蒸熟。",
+    "history": "源自中美洲原住民的古老料理，在貝里斯常於聖誕節等節慶製作。",
+    "wiki": "Tamale",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Tamal_oaxaque%C3%B1o.jpg/960px-Tamal_oaxaque%C3%B1o.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Tamal_oaxaque%C3%B1o.jpg",
+    "imageCredit": "Georgina Meneses・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "薩爾布特",
+    "localName": "Salbute",
+    "description": "將炸過的小玉米餅鋪上雞肉、高麗菜與番茄。",
+    "history": "源自墨西哥猶加敦半島的馬雅飲食，是貝里斯常見的街頭小吃。",
+    "wiki": "Salbute",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Coox_hanal_salbutes.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Coox_hanal_salbutes.jpg",
+    "imageCredit": "https://www.flickr.com/photos/scaredykat/・CC BY 2.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

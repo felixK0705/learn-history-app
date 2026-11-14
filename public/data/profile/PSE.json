@@ -1,84 +1,99 @@
 {
-  "iso": "PSE",
-  "capital": "拉姆安拉（行政所在地；主張東耶路撒冷為首都）",
-  "summary": "位於地中海東岸的巴勒斯坦國，包含約旦河西岸與加薩走廊，1988年宣布建國，獲得多數聯合國會員國承認，與以色列的衝突至今未解。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "伊斯蘭教（遜尼派）",
-        "percent": 97,
-        "description": "絕大多數巴勒斯坦人信仰。"
-      },
-      {
-        "name": "基督教",
-        "percent": 1,
-        "description": "歷史悠久的社群，集中於伯利恆、拉姆安拉與耶路撒冷。"
-      },
-      {
-        "name": "其他（撒瑪利亞人等）",
-        "percent": 1,
-        "description": "撒瑪利亞人是古老的宗教群體，聚居於納布盧斯附近。"
-      }
-    ],
-    "background": "此地是基督教的發源地，拜占庭時期多數居民為基督徒。7世紀阿拉伯穆斯林征服後伊斯蘭教逐步成為主流，耶路撒冷的阿克薩清真寺為伊斯蘭第三聖地。20世紀以來衝突與移民使基督徒比例大幅下降。"
-  },
-  "language": {
-    "official": "官方語言為阿拉伯語。",
-    "ranking": [
-      {
-        "name": "阿拉伯語（巴勒斯坦方言）",
-        "percent": 98,
-        "description": "屬黎凡特阿拉伯語方言。",
-        "greeting": "مرحبا",
-        "pronunciation": "mar-ha-ba"
-      },
-      {
-        "name": "亞美尼亞語",
-        "percent": 1,
-        "description": "耶路撒冷亞美尼亞區的古老社群使用。",
-        "greeting": "Բարև",
-        "pronunciation": "ba-rev"
-      }
-    ],
-    "history": "古代此地使用阿拉米語與希臘語，7世紀伊斯蘭征服後阿拉伯語逐漸成為主要語言。英國託管時期英語引入，近代許多巴勒斯坦人因與以色列的接觸而能說希伯來語。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "穆薩漢烤雞",
-        "localName": "مسخن (Musakhan)",
-        "description": "塔布恩烤餅上鋪滿漆樹粉與洋蔥炒雞，以橄欖油烘烤，為國菜。",
-        "history": "源自北部傑寧與圖勒凱爾姆地區，傳統上於橄欖油採收季製作。",
-        "wiki": "Musakhan"
-      },
-      {
-        "name": "馬克魯巴翻轉飯",
-        "localName": "مقلوبة (Maqluba)",
-        "description": "將肉、炸茄子或花椰菜與米飯分層燉煮，上桌時整鍋倒扣。",
-        "history": "名稱意為「倒扣」，是家庭聚會的經典料理。",
-        "wiki": "Maqluba"
-      },
-      {
-        "name": "庫納法",
-        "localName": "كنافة (Knafeh)",
-        "description": "以細麵絲或粗麥粉夾白起司烘烤，淋上糖漿。",
-        "history": "納布盧斯的庫納法最為著名，是節慶與齋戒月的甜點。",
-        "wiki": "Knafeh"
-      },
-      {
-        "name": "鷹嘴豆泥",
-        "localName": "حمص (Hummus)",
-        "description": "以鷹嘴豆、芝麻醬、檸檬與大蒜打成的沾醬。",
-        "history": "黎凡特地區共享的古老料理。",
-        "wiki": "Hummus"
-      },
-      {
-        "name": "法拉費",
-        "localName": "فلافل (Falafel)",
-        "description": "以鷹嘴豆泥加香草油炸的小丸子。",
-        "history": "黎凡特街頭的經典小吃，常夾皮塔餅食用。",
-        "wiki": "Falafel"
-      }
-    ]
-  }
+ "iso": "PSE",
+ "capital": "拉姆安拉（行政所在地；主張東耶路撒冷為首都）",
+ "summary": "位於地中海東岸的巴勒斯坦國，包含約旦河西岸與加薩走廊，1988年宣布建國，獲得多數聯合國會員國承認，與以色列的衝突至今未解。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "伊斯蘭教（遜尼派）",
+    "percent": 97,
+    "description": "絕大多數巴勒斯坦人信仰。"
+   },
+   {
+    "name": "基督教",
+    "percent": 1,
+    "description": "歷史悠久的社群，集中於伯利恆、拉姆安拉與耶路撒冷。"
+   },
+   {
+    "name": "其他（撒瑪利亞人等）",
+    "percent": 1,
+    "description": "撒瑪利亞人是古老的宗教群體，聚居於納布盧斯附近。"
+   }
+  ],
+  "background": "此地是基督教的發源地，拜占庭時期多數居民為基督徒。7世紀阿拉伯穆斯林征服後伊斯蘭教逐步成為主流，耶路撒冷的阿克薩清真寺為伊斯蘭第三聖地。20世紀以來衝突與移民使基督徒比例大幅下降。"
+ },
+ "language": {
+  "official": "官方語言為阿拉伯語。",
+  "ranking": [
+   {
+    "name": "阿拉伯語（巴勒斯坦方言）",
+    "percent": 98,
+    "description": "屬黎凡特阿拉伯語方言。",
+    "greeting": "مرحبا",
+    "pronunciation": "mar-ha-ba"
+   },
+   {
+    "name": "亞美尼亞語",
+    "percent": 1,
+    "description": "耶路撒冷亞美尼亞區的古老社群使用。",
+    "greeting": "Բարև",
+    "pronunciation": "ba-rev"
+   }
+  ],
+  "history": "古代此地使用阿拉米語與希臘語，7世紀伊斯蘭征服後阿拉伯語逐漸成為主要語言。英國託管時期英語引入，近代許多巴勒斯坦人因與以色列的接觸而能說希伯來語。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "穆薩漢烤雞",
+    "localName": "مسخن (Musakhan)",
+    "description": "塔布恩烤餅上鋪滿漆樹粉與洋蔥炒雞，以橄欖油烘烤，為國菜。",
+    "history": "源自北部傑寧與圖勒凱爾姆地區，傳統上於橄欖油採收季製作。",
+    "wiki": "Musakhan",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Mushakhan_Dish.jpg/960px-Mushakhan_Dish.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Mushakhan_Dish.jpg",
+    "imageCredit": "Kokaly・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "馬克魯巴翻轉飯",
+    "localName": "مقلوبة (Maqluba)",
+    "description": "將肉、炸茄子或花椰菜與米飯分層燉煮，上桌時整鍋倒扣。",
+    "history": "名稱意為「倒扣」，是家庭聚會的經典料理。",
+    "wiki": "Maqluba",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Makluba.JPG/960px-Makluba.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Makluba.JPG",
+    "imageCredit": "Arafataslan・Public domain・Wikimedia Commons"
+   },
+   {
+    "name": "庫納法",
+    "localName": "كنافة (Knafeh)",
+    "description": "以細麵絲或粗麥粉夾白起司烘烤，淋上糖漿。",
+    "history": "納布盧斯的庫納法最為著名，是節慶與齋戒月的甜點。",
+    "wiki": "Knafeh",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c8/K%C3%BCnefe.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:K%C3%BCnefe.jpg",
+    "imageCredit": "elif ayse・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "鷹嘴豆泥",
+    "localName": "حمص (Hummus)",
+    "description": "以鷹嘴豆、芝麻醬、檸檬與大蒜打成的沾醬。",
+    "history": "黎凡特地區共享的古老料理。",
+    "wiki": "Hummus",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Lebanese_style_hummus.jpg/960px-Lebanese_style_hummus.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Lebanese_style_hummus.jpg",
+    "imageCredit": "Beyrouthhh at English Wikipedia・CC BY 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "法拉費",
+    "localName": "فلافل (Falafel)",
+    "description": "以鷹嘴豆泥加香草油炸的小丸子。",
+    "history": "黎凡特街頭的經典小吃，常夾皮塔餅食用。",
+    "wiki": "Falafel",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Falafels_2.jpg/960px-Falafels_2.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Falafels_2.jpg",
+    "imageCredit": "Popo le Chien・CC BY-SA 3.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

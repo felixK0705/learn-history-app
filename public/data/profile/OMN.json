@@ -1,96 +1,108 @@
 {
-  "iso": "OMN",
-  "capital": "馬斯開特",
-  "summary": "阿曼位於阿拉伯半島東南端，扼守荷莫茲海峽，歷史上是印度洋海上貿易強國，曾控制東非的尚吉巴。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "伊斯蘭教",
-        "percent": 86,
-        "description": "以伊巴德派為主，亦有遜尼派與什葉派。"
-      },
-      {
-        "name": "基督教",
-        "percent": 6,
-        "description": "主要為外籍勞工。"
-      },
-      {
-        "name": "印度教",
-        "percent": 5,
-        "description": "主要為南亞外籍勞工。"
-      },
-      {
-        "name": "佛教",
-        "percent": 1,
-        "description": "主要為外籍勞工。"
-      }
-    ],
-    "background": "伊斯蘭教在七世紀先知穆罕默德時代即傳入阿曼。伊巴德派是早期伊斯蘭教的一個派別，在阿曼發展成為主流，阿曼也是全世界唯一以伊巴德派為主的國家。現今大量外籍勞工帶來基督教與印度教。"
-  },
-  "language": {
-    "official": "阿拉伯語是官方語言。",
-    "ranking": [
-      {
-        "name": "阿拉伯語",
-        "percent": 60,
-        "description": "阿曼國民的母語，也是官方語言。",
-        "greeting": "مرحبا",
-        "pronunciation": "MAR-ha-ba"
-      },
-      {
-        "name": "馬拉雅拉姆語",
-        "percent": 8,
-        "description": "來自印度喀拉拉邦的勞工社群使用。",
-        "greeting": "നമസ്കാരം",
-        "pronunciation": "na-mas-KAA-ram"
-      },
-      {
-        "name": "烏爾都語",
-        "percent": 6,
-        "description": "來自巴基斯坦的勞工社群使用。",
-        "greeting": "السلام علیکم",
-        "pronunciation": "as-sa-LAA-mu a-LAI-kum"
-      }
-    ],
-    "history": "阿拉伯語是阿曼的主要語言，南部另有梅赫里語等古老的南阿拉伯語。阿曼歷史上與東非、印度與俾路支斯坦往來密切，因此社會中也有斯瓦希里語與俾路支語使用者，現代則有大量南亞移工。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "舒瓦烤羊",
-        "localName": "شواء (Shuwa)",
-        "description": "將以香料醃漬的羊肉以香蕉葉包裹，埋入地下坑中慢烤一至兩天。",
-        "history": "阿曼開齋節與宰牲節最重要的節慶料理。",
-        "wiki": "Shuwa"
-      },
-      {
-        "name": "哈里斯",
-        "localName": "هريس (Harees)",
-        "description": "以小麥與肉長時間燉煮搗成的粥。",
-        "history": "阿拉伯半島歷史悠久的料理，齋戒月與婚禮常見。",
-        "wiki": "Harees"
-      },
-      {
-        "name": "馬奇布斯",
-        "localName": "مجبوس (Majboos)",
-        "description": "以香料與肉類一同烹煮的香料飯。",
-        "history": "海灣地區代表性的米飯料理，反映印度洋香料貿易的影響。",
-        "wiki": "Kabsa"
-      },
-      {
-        "name": "阿曼哈爾瓦",
-        "localName": "حلوى عمانية (Omani halwa)",
-        "description": "以糖、玫瑰水、番紅花與堅果熬製的Q軟甜點。",
-        "history": "是阿曼招待客人時必備的傳統甜點，常配咖啡。",
-        "wiki": "Halva"
-      },
-      {
-        "name": "阿拉伯咖啡",
-        "localName": "قهوة (Qahwa)",
-        "description": "以小豆蔻調味的淺焙咖啡，以小杯招待。",
-        "history": "阿拉伯咖啡文化是阿曼待客禮儀的核心，已列入聯合國教科文組織非物質文化遺產。",
-        "wiki": "Arabic coffee"
-      }
-    ]
-  }
+ "iso": "OMN",
+ "capital": "馬斯開特",
+ "summary": "阿曼位於阿拉伯半島東南端，扼守荷莫茲海峽，歷史上是印度洋海上貿易強國，曾控制東非的尚吉巴。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "伊斯蘭教",
+    "percent": 86,
+    "description": "以伊巴德派為主，亦有遜尼派與什葉派。"
+   },
+   {
+    "name": "基督教",
+    "percent": 6,
+    "description": "主要為外籍勞工。"
+   },
+   {
+    "name": "印度教",
+    "percent": 5,
+    "description": "主要為南亞外籍勞工。"
+   },
+   {
+    "name": "佛教",
+    "percent": 1,
+    "description": "主要為外籍勞工。"
+   }
+  ],
+  "background": "伊斯蘭教在七世紀先知穆罕默德時代即傳入阿曼。伊巴德派是早期伊斯蘭教的一個派別，在阿曼發展成為主流，阿曼也是全世界唯一以伊巴德派為主的國家。現今大量外籍勞工帶來基督教與印度教。"
+ },
+ "language": {
+  "official": "阿拉伯語是官方語言。",
+  "ranking": [
+   {
+    "name": "阿拉伯語",
+    "percent": 60,
+    "description": "阿曼國民的母語，也是官方語言。",
+    "greeting": "مرحبا",
+    "pronunciation": "MAR-ha-ba"
+   },
+   {
+    "name": "馬拉雅拉姆語",
+    "percent": 8,
+    "description": "來自印度喀拉拉邦的勞工社群使用。",
+    "greeting": "നമസ്കാരം",
+    "pronunciation": "na-mas-KAA-ram"
+   },
+   {
+    "name": "烏爾都語",
+    "percent": 6,
+    "description": "來自巴基斯坦的勞工社群使用。",
+    "greeting": "السلام علیکم",
+    "pronunciation": "as-sa-LAA-mu a-LAI-kum"
+   }
+  ],
+  "history": "阿拉伯語是阿曼的主要語言，南部另有梅赫里語等古老的南阿拉伯語。阿曼歷史上與東非、印度與俾路支斯坦往來密切，因此社會中也有斯瓦希里語與俾路支語使用者，現代則有大量南亞移工。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "舒瓦烤羊",
+    "localName": "شواء (Shuwa)",
+    "description": "將以香料醃漬的羊肉以香蕉葉包裹，埋入地下坑中慢烤一至兩天。",
+    "history": "阿曼開齋節與宰牲節最重要的節慶料理。",
+    "wiki": "Shuwa"
+   },
+   {
+    "name": "哈里斯",
+    "localName": "هريس (Harees)",
+    "description": "以小麥與肉長時間燉煮搗成的粥。",
+    "history": "阿拉伯半島歷史悠久的料理，齋戒月與婚禮常見。",
+    "wiki": "Harees",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Armenian_Harisa.JPG/960px-Armenian_Harisa.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Armenian_Harisa.JPG",
+    "imageCredit": "Ketone16・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "馬奇布斯",
+    "localName": "مجبوس (Majboos)",
+    "description": "以香料與肉類一同烹煮的香料飯。",
+    "history": "海灣地區代表性的米飯料理，反映印度洋香料貿易的影響。",
+    "wiki": "Kabsa",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Machboos_%28cropped%29.JPG/960px-Machboos_%28cropped%29.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Machboos_(cropped).JPG",
+    "imageCredit": "Miansari66・CC0・Wikimedia Commons"
+   },
+   {
+    "name": "阿曼哈爾瓦",
+    "localName": "حلوى عمانية (Omani halwa)",
+    "description": "以糖、玫瑰水、番紅花與堅果熬製的Q軟甜點。",
+    "history": "是阿曼招待客人時必備的傳統甜點，常配咖啡。",
+    "wiki": "Halva",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Orient_sweets_%28special_halva%29_Samarkand%2C_Siyab.jpg/960px-Orient_sweets_%28special_halva%29_Samarkand%2C_Siyab.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Orient_sweets_(special_halva)_Samarkand,_Siyab.jpg",
+    "imageCredit": "Shuhrenataxmedov・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "阿拉伯咖啡",
+    "localName": "قهوة (Qahwa)",
+    "description": "以小豆蔻調味的淺焙咖啡，以小杯招待。",
+    "history": "阿拉伯咖啡文化是阿曼待客禮儀的核心，已列入聯合國教科文組織非物質文化遺產。",
+    "wiki": "Arabic coffee",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/49/A_dallah_a_traditional_Arabic_coffee_pot_with_cups_and_coffee_beans.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:A_dallah_a_traditional_Arabic_coffee_pot_with_cups_and_coffee_beans.jpg",
+    "imageCredit": "Canbel・CC BY-SA 4.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

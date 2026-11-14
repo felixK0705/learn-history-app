@@ -1,89 +1,104 @@
 {
-  "iso": "LCA",
-  "capital": "卡斯翠",
-  "summary": "位於東加勒比海向風群島的火山島國，在英法之間易手14次，1979年脫離英國獨立，以雙峰山（Pitons）聞名。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "天主教",
-        "percent": 61,
-        "description": "法國殖民時期傳入，至今仍是最大宗教。"
-      },
-      {
-        "name": "新教（基督復臨安息日會、五旬節派、聖公會等）",
-        "percent": 26,
-        "description": "英國統治後傳入並在近數十年成長。"
-      },
-      {
-        "name": "無宗教",
-        "percent": 6,
-        "description": "比例較低。"
-      },
-      {
-        "name": "拉斯塔法里教",
-        "percent": 2,
-        "description": "20世紀興起於牙買加的宗教運動。"
-      }
-    ],
-    "background": "法國殖民者最早在島上建立定居點並帶入天主教，雖然1814年後由英國統治，天主教仍深植於法語克里奧爾社群。英國統治期間聖公會與其他新教教派逐漸傳入。"
-  },
-  "language": {
-    "official": "官方語言為英語。",
-    "ranking": [
-      {
-        "name": "聖露西亞克里奧爾法語（Kwéyòl）",
-        "percent": 60,
-        "description": "以法語為基礎的克里奧爾語，是許多人的家庭語言。",
-        "greeting": "Bonjou",
-        "pronunciation": "bon-zhoo"
-      },
-      {
-        "name": "英語",
-        "percent": 38,
-        "description": "官方、教育與媒體語言。",
-        "greeting": "Hello",
-        "pronunciation": "heh-loh"
-      }
-    ],
-    "history": "法國人於17–18世紀引入非洲奴隸，法語與西非語言接觸形成克里奧爾法語（Kwéyòl）。1814年英國取得此島後英語成為官方與教育語言，但Kwéyòl至今仍為日常生活語言。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "青香蕉鹹魚",
-        "localName": "Green fig and saltfish",
-        "description": "以青香蕉（當地稱green fig）配上炒鹹鱈魚，為國菜。",
-        "history": "鹹鱈魚自殖民時期作為廉價蛋白質輸入，與在地香蕉結合成為代表菜。",
-        "wiki": "Dried and salted cod"
-      },
-      {
-        "name": "卡拉魯湯",
-        "localName": "Callaloo",
-        "description": "以芋葉或莧菜葉加入椰奶、秋葵燉成的綠色濃湯。",
-        "history": "源自西非的葉菜料理，經奴隸貿易傳入加勒比海。",
-        "wiki": "Callaloo"
-      },
-      {
-        "name": "羅提捲餅",
-        "localName": "Roti",
-        "description": "以咖哩雞、馬鈴薯等內餡包入薄餅中食用。",
-        "history": "19世紀印度契約勞工帶入，成為加勒比海普遍的街頭食物。",
-        "wiki": "Roti"
-      },
-      {
-        "name": "可可茶",
-        "localName": "Cocoa tea",
-        "description": "以在地可可球加牛奶、肉桂與肉豆蔻煮成的熱飲，常在早餐飲用。",
-        "history": "聖露西亞長期種植可可，此飲品是傳統早餐的一部分。",
-        "wiki": "Hot chocolate"
-      },
-      {
-        "name": "炸鹹魚餅",
-        "localName": "Accra",
-        "description": "以鹹鱈魚與香草拌麵糊炸成的小餅。",
-        "history": "源自西非的油炸麵糊點心，在法語系加勒比地區廣受歡迎。",
-        "wiki": "Akara"
-      }
-    ]
-  }
+ "iso": "LCA",
+ "capital": "卡斯翠",
+ "summary": "位於東加勒比海向風群島的火山島國，在英法之間易手14次，1979年脫離英國獨立，以雙峰山（Pitons）聞名。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "天主教",
+    "percent": 61,
+    "description": "法國殖民時期傳入，至今仍是最大宗教。"
+   },
+   {
+    "name": "新教（基督復臨安息日會、五旬節派、聖公會等）",
+    "percent": 26,
+    "description": "英國統治後傳入並在近數十年成長。"
+   },
+   {
+    "name": "無宗教",
+    "percent": 6,
+    "description": "比例較低。"
+   },
+   {
+    "name": "拉斯塔法里教",
+    "percent": 2,
+    "description": "20世紀興起於牙買加的宗教運動。"
+   }
+  ],
+  "background": "法國殖民者最早在島上建立定居點並帶入天主教，雖然1814年後由英國統治，天主教仍深植於法語克里奧爾社群。英國統治期間聖公會與其他新教教派逐漸傳入。"
+ },
+ "language": {
+  "official": "官方語言為英語。",
+  "ranking": [
+   {
+    "name": "聖露西亞克里奧爾法語（Kwéyòl）",
+    "percent": 60,
+    "description": "以法語為基礎的克里奧爾語，是許多人的家庭語言。",
+    "greeting": "Bonjou",
+    "pronunciation": "bon-zhoo"
+   },
+   {
+    "name": "英語",
+    "percent": 38,
+    "description": "官方、教育與媒體語言。",
+    "greeting": "Hello",
+    "pronunciation": "heh-loh"
+   }
+  ],
+  "history": "法國人於17–18世紀引入非洲奴隸，法語與西非語言接觸形成克里奧爾法語（Kwéyòl）。1814年英國取得此島後英語成為官方與教育語言，但Kwéyòl至今仍為日常生活語言。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "青香蕉鹹魚",
+    "localName": "Green fig and saltfish",
+    "description": "以青香蕉（當地稱green fig）配上炒鹹鱈魚，為國菜。",
+    "history": "鹹鱈魚自殖民時期作為廉價蛋白質輸入，與在地香蕉結合成為代表菜。",
+    "wiki": "Dried and salted cod",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Bacalhau_%28Porto%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Bacalhau_(Porto).jpg",
+    "imageCredit": "Sitomon・CC BY-SA 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "卡拉魯湯",
+    "localName": "Callaloo",
+    "description": "以芋葉或莧菜葉加入椰奶、秋葵燉成的綠色濃湯。",
+    "history": "源自西非的葉菜料理，經奴隸貿易傳入加勒比海。",
+    "wiki": "Callaloo",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Callaloo.jpg/960px-Callaloo.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Callaloo.jpg",
+    "imageCredit": "https://www.flickr.com/photos/67276179@N08/・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "羅提捲餅",
+    "localName": "Roti",
+    "description": "以咖哩雞、馬鈴薯等內餡包入薄餅中食用。",
+    "history": "19世紀印度契約勞工帶入，成為加勒比海普遍的街頭食物。",
+    "wiki": "Roti",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/2020-05-08_19_34_28_Chapati_being_made_in_a_pan_in_the_Franklin_Farm_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg/960px-2020-05-08_19_34_28_Chapati_being_made_in_a_pan_in_the_Franklin_Farm_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:2020-05-08_19_34_28_Chapati_being_made_in_a_pan_in_the_Franklin_Farm_section_of_Oak_Hill,_Fairfax_County,_Virginia.jpg",
+    "imageCredit": "Famartin・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "可可茶",
+    "localName": "Cocoa tea",
+    "description": "以在地可可球加牛奶、肉桂與肉豆蔻煮成的熱飲，常在早餐飲用。",
+    "history": "聖露西亞長期種植可可，此飲品是傳統早餐的一部分。",
+    "wiki": "Hot chocolate",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/After_The_St._Patrick%27s_Parade_Late_Lunch_%40_Lemon%2C_Dawson_Street%2C_Dublin%2C_Rep._Of_Ireland_A_Fine_Tradition%21_%286992614913%29.jpg/960px-After_The_St._Patrick%27s_Parade_Late_Lunch_%40_Lemon%2C_Dawson_Street%2C_Dublin%2C_Rep._Of_Ireland_A_Fine_Tradition%21_%286992614913%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:After_The_St._Patrick%27s_Parade_Late_Lunch_@_Lemon,_Dawson_Street,_Dublin,_Rep._Of_Ireland_A_Fine_Tradition!_(6992614913).jpg",
+    "imageCredit": "|| UggBoy♥UggGirl || PHOTO || WORLD || TRAVEL ||・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "炸鹹魚餅",
+    "localName": "Accra",
+    "description": "以鹹鱈魚與香草拌麵糊炸成的小餅。",
+    "history": "源自西非的油炸麵糊點心，在法語系加勒比地區廣受歡迎。",
+    "wiki": "Akara",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Beans_Ball-Akara.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Beans_Ball-Akara.jpg",
+    "imageCredit": "AkinkuotuFunmi・CC BY-SA 4.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

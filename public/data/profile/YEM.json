@@ -1,91 +1,106 @@
 {
-  "iso": "YEM",
-  "capital": "沙那",
-  "summary": "葉門位於阿拉伯半島西南端，是古代示巴王國與乳香貿易的所在地，近年飽受內戰與人道危機所苦。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "伊斯蘭教（遜尼派）",
-        "percent": 60,
-        "description": "以沙斐儀學派為主，分布於南部與東部。"
-      },
-      {
-        "name": "伊斯蘭教（什葉派宰德派）",
-        "percent": 38,
-        "description": "主要分布於北部高原。"
-      },
-      {
-        "name": "其他",
-        "percent": 1,
-        "description": "包括伊斯瑪儀派、極少數基督徒與猶太人。"
-      }
-    ],
-    "background": "伊斯蘭教於七世紀傳入葉門。九世紀末宰德派伊瑪目在北部建立政權，延續近千年直到1962年；南部則以遜尼派沙斐儀學派為主。歷史上葉門有古老的猶太社群，但大多在二十世紀中期移居以色列。"
-  },
-  "language": {
-    "official": "阿拉伯語是官方語言。",
-    "ranking": [
-      {
-        "name": "沙那阿拉伯語",
-        "percent": 45,
-        "description": "北部高原地區使用的葉門阿拉伯語方言。",
-        "greeting": "السلام عليكم",
-        "pronunciation": "as-sa-LAA-mu a-LAI-kum"
-      },
-      {
-        "name": "塔伊茲—亞丁阿拉伯語",
-        "percent": 40,
-        "description": "南部與西南部使用的方言。",
-        "greeting": "أهلاً",
-        "pronunciation": "AH-lan"
-      },
-      {
-        "name": "哈德拉毛阿拉伯語",
-        "percent": 3,
-        "description": "東部哈德拉毛地區使用的方言。",
-        "greeting": "السلام عليكم",
-        "pronunciation": "as-sa-LAA-mu a-LAI-kum"
-      }
-    ],
-    "history": "古代葉門使用古南阿拉伯語，留下大量示巴文碑銘。伊斯蘭化後阿拉伯語成為主要語言，但東部的梅赫里語與索科特拉島的索科特拉語等現代南阿拉伯語延續至今。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "薩爾塔",
-        "localName": "سلتة (Saltah)",
-        "description": "以肉湯、蔬菜與葫蘆巴泡沫製成，在石鍋中滾燙上桌的燉菜。",
-        "history": "被視為葉門國菜，是沙那午餐的代表料理。",
-        "wiki": "Saltah"
-      },
-      {
-        "name": "曼迪",
-        "localName": "مندي (Mandi)",
-        "description": "將肉放在地坑爐中燜烤，搭配香料米飯。",
-        "history": "源自哈德拉毛地區，現已流行於整個阿拉伯半島。",
-        "wiki": "Mandi (food)"
-      },
-      {
-        "name": "蜂蜜千層麵包",
-        "localName": "بنت الصحن (Bint al-sahn)",
-        "description": "多層酥軟的麵包，淋上蜂蜜與黑種草籽。",
-        "history": "葉門傳統甜點，常在節慶與待客時享用。",
-        "wiki": "Bint al-sahn"
-      },
-      {
-        "name": "法赫薩",
-        "localName": "فحسة (Fahsa)",
-        "description": "以羊肉燉湯加上葫蘆巴泡沫，在石鍋中上桌。",
-        "history": "與薩爾塔相似，但以燉羊肉為主，是沙那的傳統料理。",
-        "wiki": "Fahsa"
-      },
-      {
-        "name": "祖格辣醬",
-        "localName": "سحاوق (Sahawiq)",
-        "description": "以青辣椒、香菜、大蒜與香料搗成的辣醬。",
-        "history": "葉門料理的常備調味醬，也隨葉門猶太人傳至以色列。",
-        "wiki": "Zhug"
-      }
-    ]
-  }
+ "iso": "YEM",
+ "capital": "沙那",
+ "summary": "葉門位於阿拉伯半島西南端，是古代示巴王國與乳香貿易的所在地，近年飽受內戰與人道危機所苦。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "伊斯蘭教（遜尼派）",
+    "percent": 60,
+    "description": "以沙斐儀學派為主，分布於南部與東部。"
+   },
+   {
+    "name": "伊斯蘭教（什葉派宰德派）",
+    "percent": 38,
+    "description": "主要分布於北部高原。"
+   },
+   {
+    "name": "其他",
+    "percent": 1,
+    "description": "包括伊斯瑪儀派、極少數基督徒與猶太人。"
+   }
+  ],
+  "background": "伊斯蘭教於七世紀傳入葉門。九世紀末宰德派伊瑪目在北部建立政權，延續近千年直到1962年；南部則以遜尼派沙斐儀學派為主。歷史上葉門有古老的猶太社群，但大多在二十世紀中期移居以色列。"
+ },
+ "language": {
+  "official": "阿拉伯語是官方語言。",
+  "ranking": [
+   {
+    "name": "沙那阿拉伯語",
+    "percent": 45,
+    "description": "北部高原地區使用的葉門阿拉伯語方言。",
+    "greeting": "السلام عليكم",
+    "pronunciation": "as-sa-LAA-mu a-LAI-kum"
+   },
+   {
+    "name": "塔伊茲—亞丁阿拉伯語",
+    "percent": 40,
+    "description": "南部與西南部使用的方言。",
+    "greeting": "أهلاً",
+    "pronunciation": "AH-lan"
+   },
+   {
+    "name": "哈德拉毛阿拉伯語",
+    "percent": 3,
+    "description": "東部哈德拉毛地區使用的方言。",
+    "greeting": "السلام عليكم",
+    "pronunciation": "as-sa-LAA-mu a-LAI-kum"
+   }
+  ],
+  "history": "古代葉門使用古南阿拉伯語，留下大量示巴文碑銘。伊斯蘭化後阿拉伯語成為主要語言，但東部的梅赫里語與索科特拉島的索科特拉語等現代南阿拉伯語延續至今。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "薩爾塔",
+    "localName": "سلتة (Saltah)",
+    "description": "以肉湯、蔬菜與葫蘆巴泡沫製成，在石鍋中滾燙上桌的燉菜。",
+    "history": "被視為葉門國菜，是沙那午餐的代表料理。",
+    "wiki": "Saltah",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Saltah.jpg/960px-Saltah.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Saltah.jpg",
+    "imageCredit": "Rania al-Bahara・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "曼迪",
+    "localName": "مندي (Mandi)",
+    "description": "將肉放在地坑爐中燜烤，搭配香料米飯。",
+    "history": "源自哈德拉毛地區，現已流行於整個阿拉伯半島。",
+    "wiki": "Mandi (food)",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/05/Mandi_pit_from_inside.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Mandi_pit_from_inside.jpg",
+    "imageCredit": "Donpapa・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "蜂蜜千層麵包",
+    "localName": "بنت الصحن (Bint al-sahn)",
+    "description": "多層酥軟的麵包，淋上蜂蜜與黑種草籽。",
+    "history": "葉門傳統甜點，常在節慶與待客時享用。",
+    "wiki": "Bint al-sahn",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Bint_al_Sahn.png/960px-Bint_al_Sahn.png",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Bint_al_Sahn.png",
+    "imageCredit": "Rukn950・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "法赫薩",
+    "localName": "فحسة (Fahsa)",
+    "description": "以羊肉燉湯加上葫蘆巴泡沫，在石鍋中上桌。",
+    "history": "與薩爾塔相似，但以燉羊肉為主，是沙那的傳統料理。",
+    "wiki": "Fahsa",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/%D8%AE%D8%A8%D8%B2_%D9%85%D9%84%D9%88%D8%AD.jpg/960px-%D8%AE%D8%A8%D8%B2_%D9%85%D9%84%D9%88%D8%AD.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:%D8%AE%D8%A8%D8%B2_%D9%85%D9%84%D9%88%D8%AD.jpg",
+    "imageCredit": "SharabSalam・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "祖格辣醬",
+    "localName": "سحاوق (Sahawiq)",
+    "description": "以青辣椒、香菜、大蒜與香料搗成的辣醬。",
+    "history": "葉門料理的常備調味醬，也隨葉門猶太人傳至以色列。",
+    "wiki": "Zhug",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Zkhoug_vert.jpg/960px-Zkhoug_vert.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Zkhoug_vert.jpg",
+    "imageCredit": "Sacrepan・CC BY-SA 4.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

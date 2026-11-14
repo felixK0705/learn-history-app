@@ -1,94 +1,109 @@
 {
-  "iso": "LKA",
-  "capital": "斯里賈亞瓦德納普拉科特（立法首都）／可倫坡（商業首都）",
-  "summary": "位於印度南方印度洋上的島國，舊稱錫蘭，以紅茶、佛教古蹟與多元文化聞名，1948年脫離英國獨立。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "佛教",
-        "percent": 70,
-        "description": "以上座部佛教為主，主要為僧伽羅人。"
-      },
-      {
-        "name": "印度教",
-        "percent": 13,
-        "description": "主要為泰米爾人。"
-      },
-      {
-        "name": "伊斯蘭教",
-        "percent": 10,
-        "description": "主要為摩爾人與馬來人後裔。"
-      },
-      {
-        "name": "天主教",
-        "percent": 6,
-        "description": "葡萄牙殖民時期傳入，信徒分屬僧伽羅與泰米爾族群。"
-      },
-      {
-        "name": "其他基督教",
-        "percent": 1,
-        "description": "包含荷蘭與英國時期傳入的新教。"
-      }
-    ],
-    "background": "西元前3世紀阿育王之子摩哂陀將佛教傳入錫蘭，此地成為上座部佛教重鎮。泰米爾人自南印度帶來印度教，阿拉伯商人帶來伊斯蘭教。16世紀起葡萄牙、荷蘭、英國相繼殖民，引入天主教與新教。"
-  },
-  "language": {
-    "official": "官方語言為僧伽羅語與泰米爾語，英語為聯絡語言。",
-    "ranking": [
-      {
-        "name": "僧伽羅語",
-        "percent": 74,
-        "description": "屬印度－雅利安語支，主要為僧伽羅人使用。",
-        "greeting": "ආයුබෝවන්",
-        "pronunciation": "aa-yu-bo-wan"
-      },
-      {
-        "name": "泰米爾語",
-        "percent": 24,
-        "description": "泰米爾人與穆斯林社群使用，屬達羅毗荼語系。",
-        "greeting": "வணக்கம்",
-        "pronunciation": "va-nak-kam"
-      }
-    ],
-    "history": "僧伽羅語源自西元前數世紀由北印度移入的移民，吸收了巴利語與泰米爾語影響。英國殖民時期英語成為行政語言，1956年「僅僧伽羅語法案」引發族群緊張，最終成為內戰背景之一，1987年泰米爾語亦成為官方語言。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "椰奶米糕",
-        "localName": "Kiribath",
-        "description": "以椰奶煮成的米飯壓成方塊，配辣椒洋蔥醬。",
-        "history": "在新年與重要節日的早晨食用，象徵吉祥。",
-        "wiki": "Kiribath"
-      },
-      {
-        "name": "科圖烤餅",
-        "localName": "Kottu",
-        "description": "將羅提餅切碎後與蔬菜、蛋、肉在鐵板上剁炒。",
-        "history": "1970年代於東部拜蒂克洛一帶興起，鐵板剁切聲成為夜市招牌。",
-        "wiki": "Kottu"
-      },
-      {
-        "name": "碗狀米餅",
-        "localName": "Appa (Hoppers)",
-        "description": "以發酵米漿與椰奶煎成碗狀的薄餅，中央可加一顆蛋。",
-        "history": "源自南印度與斯里蘭卡的傳統早餐與晚餐。",
-        "wiki": "Appam"
-      },
-      {
-        "name": "米線團",
-        "localName": "Indiappa (String hoppers)",
-        "description": "以米粉麵團擠成細絲蒸熟的小圓餅，配咖哩。",
-        "history": "與南印度共享的傳統早餐。",
-        "wiki": "Idiyappam"
-      },
-      {
-        "name": "荷蘭裔葉包飯",
-        "localName": "Lamprais",
-        "description": "米飯與多種咖哩、肉丸、炸蛋等用香蕉葉包裹烘烤。",
-        "history": "源自荷蘭殖民時期的伯格人（荷蘭裔混血）社群。",
-        "wiki": "Lamprais"
-      }
-    ]
-  }
+ "iso": "LKA",
+ "capital": "斯里賈亞瓦德納普拉科特（立法首都）／可倫坡（商業首都）",
+ "summary": "位於印度南方印度洋上的島國，舊稱錫蘭，以紅茶、佛教古蹟與多元文化聞名，1948年脫離英國獨立。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "佛教",
+    "percent": 70,
+    "description": "以上座部佛教為主，主要為僧伽羅人。"
+   },
+   {
+    "name": "印度教",
+    "percent": 13,
+    "description": "主要為泰米爾人。"
+   },
+   {
+    "name": "伊斯蘭教",
+    "percent": 10,
+    "description": "主要為摩爾人與馬來人後裔。"
+   },
+   {
+    "name": "天主教",
+    "percent": 6,
+    "description": "葡萄牙殖民時期傳入，信徒分屬僧伽羅與泰米爾族群。"
+   },
+   {
+    "name": "其他基督教",
+    "percent": 1,
+    "description": "包含荷蘭與英國時期傳入的新教。"
+   }
+  ],
+  "background": "西元前3世紀阿育王之子摩哂陀將佛教傳入錫蘭，此地成為上座部佛教重鎮。泰米爾人自南印度帶來印度教，阿拉伯商人帶來伊斯蘭教。16世紀起葡萄牙、荷蘭、英國相繼殖民，引入天主教與新教。"
+ },
+ "language": {
+  "official": "官方語言為僧伽羅語與泰米爾語，英語為聯絡語言。",
+  "ranking": [
+   {
+    "name": "僧伽羅語",
+    "percent": 74,
+    "description": "屬印度－雅利安語支，主要為僧伽羅人使用。",
+    "greeting": "ආයුබෝවන්",
+    "pronunciation": "aa-yu-bo-wan"
+   },
+   {
+    "name": "泰米爾語",
+    "percent": 24,
+    "description": "泰米爾人與穆斯林社群使用，屬達羅毗荼語系。",
+    "greeting": "வணக்கம்",
+    "pronunciation": "va-nak-kam"
+   }
+  ],
+  "history": "僧伽羅語源自西元前數世紀由北印度移入的移民，吸收了巴利語與泰米爾語影響。英國殖民時期英語成為行政語言，1956年「僅僧伽羅語法案」引發族群緊張，最終成為內戰背景之一，1987年泰米爾語亦成為官方語言。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "椰奶米糕",
+    "localName": "Kiribath",
+    "description": "以椰奶煮成的米飯壓成方塊，配辣椒洋蔥醬。",
+    "history": "在新年與重要節日的早晨食用，象徵吉祥。",
+    "wiki": "Kiribath",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Kiribath.jpg/960px-Kiribath.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Kiribath.jpg",
+    "imageCredit": "AntanO・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "科圖烤餅",
+    "localName": "Kottu",
+    "description": "將羅提餅切碎後與蔬菜、蛋、肉在鐵板上剁炒。",
+    "history": "1970年代於東部拜蒂克洛一帶興起，鐵板剁切聲成為夜市招牌。",
+    "wiki": "Kottu",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Chicken_Kottu.jpg/960px-Chicken_Kottu.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Chicken_Kottu.jpg",
+    "imageCredit": "Dan arndt・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "碗狀米餅",
+    "localName": "Appa (Hoppers)",
+    "description": "以發酵米漿與椰奶煎成碗狀的薄餅，中央可加一顆蛋。",
+    "history": "源自南印度與斯里蘭卡的傳統早餐與晚餐。",
+    "wiki": "Appam",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Appam_-_%E0%AE%85%E0%AE%AA%E0%AF%8D%E0%AE%AA%E0%AE%AE%E0%AF%8D.jpg/960px-Appam_-_%E0%AE%85%E0%AE%AA%E0%AF%8D%E0%AE%AA%E0%AE%AE%E0%AF%8D.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Appam_-_%E0%AE%85%E0%AE%AA%E0%AF%8D%E0%AE%AA%E0%AE%AE%E0%AF%8D.jpg",
+    "imageCredit": "VinPrasad・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "米線團",
+    "localName": "Indiappa (String hoppers)",
+    "description": "以米粉麵團擠成細絲蒸熟的小圓餅，配咖哩。",
+    "history": "與南印度共享的傳統早餐。",
+    "wiki": "Idiyappam",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Idiyappam_with_Egg_Masala_Curry.jpg/960px-Idiyappam_with_Egg_Masala_Curry.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Idiyappam_with_Egg_Masala_Curry.jpg",
+    "imageCredit": "Viewfinder18・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "荷蘭裔葉包飯",
+    "localName": "Lamprais",
+    "description": "米飯與多種咖哩、肉丸、炸蛋等用香蕉葉包裹烘烤。",
+    "history": "源自荷蘭殖民時期的伯格人（荷蘭裔混血）社群。",
+    "wiki": "Lamprais",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Lamprais_%282%29.jpg/960px-Lamprais_%282%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Lamprais_(2).jpg",
+    "imageCredit": "Dan arndt・CC BY-SA 4.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

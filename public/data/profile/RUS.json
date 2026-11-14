@@ -1,101 +1,116 @@
 {
-  "iso": "RUS",
-  "capital": "莫斯科",
-  "summary": "俄羅斯是世界面積最大的國家，橫跨東歐與北亞，擁有11個時區，以文學、芭蕾舞與廣闊的西伯利亞聞名。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "俄羅斯東正教",
-        "percent": 71,
-        "description": "最大的宗教，與俄羅斯民族認同密切相關。"
-      },
-      {
-        "name": "無宗教",
-        "percent": 15,
-        "description": "蘇聯時期無神論政策影響下的人口。"
-      },
-      {
-        "name": "伊斯蘭教",
-        "percent": 10,
-        "description": "主要分布於北高加索與窩瓦河流域的韃靼、巴什基爾等民族。"
-      },
-      {
-        "name": "其他基督教派",
-        "percent": 2,
-        "description": "包括天主教與新教。"
-      },
-      {
-        "name": "佛教",
-        "percent": 1,
-        "description": "主要為布里亞特、卡爾梅克與圖瓦等民族。"
-      }
-    ],
-    "background": "988年基輔羅斯的弗拉基米爾大公受洗，東正教成為國教。伊斯蘭教則早在十世紀就傳入窩瓦河流域。蘇聯時期推行無神論，宗教受到壓制；1991年後東正教迅速復興，但許多人的宗教認同偏向文化層面。"
-  },
-  "language": {
-    "official": "俄語是全國官方語言，各共和國另有本地官方語言。",
-    "ranking": [
-      {
-        "name": "俄語",
-        "percent": 86,
-        "description": "屬東斯拉夫語支，使用西里爾字母，是全國通用語。",
-        "greeting": "Здравствуйте",
-        "pronunciation": "ZDRAST-vuy-tye"
-      },
-      {
-        "name": "韃靼語",
-        "percent": 3,
-        "description": "韃靼斯坦共和國的突厥語言。",
-        "greeting": "Сәлам",
-        "pronunciation": "sa-LAM"
-      },
-      {
-        "name": "巴什基爾語",
-        "percent": 1,
-        "description": "巴什科爾托斯坦共和國的突厥語言。",
-        "greeting": "Һаумыһығыҙ",
-        "pronunciation": "how-muh-suh-GUTH"
-      }
-    ],
-    "history": "俄語源自東斯拉夫語，宗教書面語則受古教會斯拉夫語影響。十八世紀彼得大帝改革文字，十九世紀普希金奠定現代俄語文學語言。俄羅斯帝國與蘇聯擴張使俄語成為歐亞大陸廣大地區的通用語，境內仍有上百種民族語言。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "佩爾梅尼",
-        "localName": "Пельмени (Pelmeni)",
-        "description": "以薄麵皮包肉餡的小餃子，配酸奶油食用。",
-        "history": "源自烏拉爾與西伯利亞地區，可冷凍保存以度過寒冬。",
-        "wiki": "Pelmeni"
-      },
-      {
-        "name": "布林餅",
-        "localName": "Блины (Bliny)",
-        "description": "薄煎餅，可配魚子醬、酸奶油或果醬。",
-        "history": "謝肉節期間大量製作，圓形象徵太陽與春天到來。",
-        "wiki": "Blini"
-      },
-      {
-        "name": "酸菜湯",
-        "localName": "Щи (Shchi)",
-        "description": "以高麗菜或酸菜熬煮的湯。",
-        "history": "俄羅斯最古老的湯品之一，有「酸菜湯與粥是我們的食物」的俗語。",
-        "wiki": "Shchi"
-      },
-      {
-        "name": "酸奶牛肉",
-        "localName": "Бефстроганов (Beef Stroganoff)",
-        "description": "以酸奶油醬汁燉煮的牛肉條。",
-        "history": "十九世紀以斯特羅加諾夫家族命名的料理。",
-        "wiki": "Beef Stroganoff"
-      },
-      {
-        "name": "奧利維耶沙拉",
-        "localName": "Салат Оливье (Olivier salad)",
-        "description": "以馬鈴薯、胡蘿蔔、豌豆、醃黃瓜與肉丁拌美乃滋的沙拉。",
-        "history": "十九世紀莫斯科廚師奧利維耶所創，是新年餐桌必備的料理。",
-        "wiki": "Olivier salad"
-      }
-    ]
-  }
+ "iso": "RUS",
+ "capital": "莫斯科",
+ "summary": "俄羅斯是世界面積最大的國家，橫跨東歐與北亞，擁有11個時區，以文學、芭蕾舞與廣闊的西伯利亞聞名。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "俄羅斯東正教",
+    "percent": 71,
+    "description": "最大的宗教，與俄羅斯民族認同密切相關。"
+   },
+   {
+    "name": "無宗教",
+    "percent": 15,
+    "description": "蘇聯時期無神論政策影響下的人口。"
+   },
+   {
+    "name": "伊斯蘭教",
+    "percent": 10,
+    "description": "主要分布於北高加索與窩瓦河流域的韃靼、巴什基爾等民族。"
+   },
+   {
+    "name": "其他基督教派",
+    "percent": 2,
+    "description": "包括天主教與新教。"
+   },
+   {
+    "name": "佛教",
+    "percent": 1,
+    "description": "主要為布里亞特、卡爾梅克與圖瓦等民族。"
+   }
+  ],
+  "background": "988年基輔羅斯的弗拉基米爾大公受洗，東正教成為國教。伊斯蘭教則早在十世紀就傳入窩瓦河流域。蘇聯時期推行無神論，宗教受到壓制；1991年後東正教迅速復興，但許多人的宗教認同偏向文化層面。"
+ },
+ "language": {
+  "official": "俄語是全國官方語言，各共和國另有本地官方語言。",
+  "ranking": [
+   {
+    "name": "俄語",
+    "percent": 86,
+    "description": "屬東斯拉夫語支，使用西里爾字母，是全國通用語。",
+    "greeting": "Здравствуйте",
+    "pronunciation": "ZDRAST-vuy-tye"
+   },
+   {
+    "name": "韃靼語",
+    "percent": 3,
+    "description": "韃靼斯坦共和國的突厥語言。",
+    "greeting": "Сәлам",
+    "pronunciation": "sa-LAM"
+   },
+   {
+    "name": "巴什基爾語",
+    "percent": 1,
+    "description": "巴什科爾托斯坦共和國的突厥語言。",
+    "greeting": "Һаумыһығыҙ",
+    "pronunciation": "how-muh-suh-GUTH"
+   }
+  ],
+  "history": "俄語源自東斯拉夫語，宗教書面語則受古教會斯拉夫語影響。十八世紀彼得大帝改革文字，十九世紀普希金奠定現代俄語文學語言。俄羅斯帝國與蘇聯擴張使俄語成為歐亞大陸廣大地區的通用語，境內仍有上百種民族語言。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "佩爾梅尼",
+    "localName": "Пельмени (Pelmeni)",
+    "description": "以薄麵皮包肉餡的小餃子，配酸奶油食用。",
+    "history": "源自烏拉爾與西伯利亞地區，可冷凍保存以度過寒冬。",
+    "wiki": "Pelmeni",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Pelmeni_Russian.jpg/960px-Pelmeni_Russian.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Pelmeni_Russian.jpg",
+    "imageCredit": "Eugene Kim @ Flickr・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "布林餅",
+    "localName": "Блины (Bliny)",
+    "description": "薄煎餅，可配魚子醬、酸奶油或果醬。",
+    "history": "謝肉節期間大量製作，圓形象徵太陽與春天到來。",
+    "wiki": "Blini",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/50_%D0%B1%D0%BB%D1%96%D0%BD%D0%BA%D0%BE%D1%9E_%D0%BD%D0%B0_%D1%82%D0%B0%D0%BB%D0%B5%D1%80%D1%86%D1%8B_240_%D0%BC%D0%BC.jpg/960px-50_%D0%B1%D0%BB%D1%96%D0%BD%D0%BA%D0%BE%D1%9E_%D0%BD%D0%B0_%D1%82%D0%B0%D0%BB%D0%B5%D1%80%D1%86%D1%8B_240_%D0%BC%D0%BC.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:50_%D0%B1%D0%BB%D1%96%D0%BD%D0%BA%D0%BE%D1%9E_%D0%BD%D0%B0_%D1%82%D0%B0%D0%BB%D0%B5%D1%80%D1%86%D1%8B_240_%D0%BC%D0%BC.jpg",
+    "imageCredit": "Maksim L.・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "酸菜湯",
+    "localName": "Щи (Shchi)",
+    "description": "以高麗菜或酸菜熬煮的湯。",
+    "history": "俄羅斯最古老的湯品之一，有「酸菜湯與粥是我們的食物」的俗語。",
+    "wiki": "Shchi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Schi.jpg/960px-Schi.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Schi.jpg",
+    "imageCredit": "Шнапс・Public domain・Wikimedia Commons"
+   },
+   {
+    "name": "酸奶牛肉",
+    "localName": "Бефстроганов (Beef Stroganoff)",
+    "description": "以酸奶油醬汁燉煮的牛肉條。",
+    "history": "十九世紀以斯特羅加諾夫家族命名的料理。",
+    "wiki": "Beef Stroganoff",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Moscow_%288351271825%29.jpg/960px-Moscow_%288351271825%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Moscow_(8351271825).jpg",
+    "imageCredit": "jimmyweee・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "奧利維耶沙拉",
+    "localName": "Салат Оливье (Olivier salad)",
+    "description": "以馬鈴薯、胡蘿蔔、豌豆、醃黃瓜與肉丁拌美乃滋的沙拉。",
+    "history": "十九世紀莫斯科廚師奧利維耶所創，是新年餐桌必備的料理。",
+    "wiki": "Olivier salad",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/%D0%A1%D0%B0%D0%BB%D0%B0%D1%82_%D0%9E%D0%BB%D0%B8%D0%B2%D1%8C%D0%B5_03.jpg/960px-%D0%A1%D0%B0%D0%BB%D0%B0%D1%82_%D0%9E%D0%BB%D0%B8%D0%B2%D1%8C%D0%B5_03.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:%D0%A1%D0%B0%D0%BB%D0%B0%D1%82_%D0%9E%D0%BB%D0%B8%D0%B2%D1%8C%D0%B5_03.jpg",
+    "imageCredit": "Pannet・CC BY-SA 4.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

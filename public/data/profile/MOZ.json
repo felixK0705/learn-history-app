@@ -1,101 +1,113 @@
 {
-  "iso": "MOZ",
-  "capital": "馬布多",
-  "summary": "位於非洲東南部印度洋岸的國家，曾為葡萄牙殖民地，1975年獨立後經歷長期內戰，擁有漫長海岸線與豐富天然氣。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "天主教",
-        "percent": 27,
-        "description": "葡萄牙殖民時期傳入，為最大教派。"
-      },
-      {
-        "name": "伊斯蘭教",
-        "percent": 19,
-        "description": "集中於北部沿海，如楠普拉、德爾加杜角省。"
-      },
-      {
-        "name": "錫安派基督教",
-        "percent": 15,
-        "description": "融合非洲傳統信仰的本土教會。"
-      },
-      {
-        "name": "福音派與五旬節派",
-        "percent": 15,
-        "description": "近數十年快速成長。"
-      },
-      {
-        "name": "無宗教",
-        "percent": 13,
-        "description": "部分人口不屬任何宗教。"
-      }
-    ],
-    "background": "阿拉伯與斯瓦希里商人在殖民前即沿印度洋貿易帶入伊斯蘭教。16世紀起葡萄牙傳教士傳播天主教，殖民後期南部受南非礦工往來影響，興起錫安派等本土教會。"
-  },
-  "language": {
-    "official": "官方語言為葡萄牙語。",
-    "ranking": [
-      {
-        "name": "馬庫阿語",
-        "percent": 26,
-        "description": "北部最大民族馬庫阿人的語言，是母語人數最多的語言。",
-        "greeting": "Salama",
-        "pronunciation": "sa-la-ma"
-      },
-      {
-        "name": "葡萄牙語",
-        "percent": 17,
-        "description": "官方與教育語言，作為母語的比例在城市增長中，約半數人能使用。",
-        "greeting": "Olá",
-        "pronunciation": "o-la"
-      },
-      {
-        "name": "聰加語（尚加納語）",
-        "percent": 8,
-        "description": "南部馬布多、加薩一帶的主要語言。",
-        "greeting": "Avuxeni（早安）",
-        "pronunciation": "a-vu-she-ni"
-      }
-    ],
-    "history": "境內語言多屬班圖語族。葡萄牙自16世紀起在沿海設立據點，20世紀才全面控制內陸，並推行葡語教育。獨立後政府以葡萄牙語作為統一國家的語言，近年本土語言雙語教育逐步推廣。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "木薯葉花生燉菜",
-        "localName": "Matapa",
-        "description": "木薯葉搗碎後與花生粉、椰奶、蝦或蟹一起燉煮，配米飯或玉米糊。",
-        "history": "源自沿海地區，是莫三比克最具代表性的家常菜。",
-        "wiki": "Matapa"
-      },
-      {
-        "name": "霹靂霹靂辣雞",
-        "localName": "Frango à piri-piri",
-        "description": "以霹靂霹靂辣椒、大蒜、檸檬醃漬後炭烤的雞肉。",
-        "history": "葡萄牙人將美洲辣椒帶到非洲，莫三比克的辣椒醬與烤雞後來隨葡萄牙人傳遍全球。",
-        "wiki": "Piri piri"
-      },
-      {
-        "name": "玉米糊",
-        "localName": "Xima",
-        "description": "以白玉米粉攪煮成的稠糊，是日常主食。",
-        "history": "與東南非的烏咖哩（ugali）、恩希馬（nsima）同類，為農村最基本的食物。",
-        "wiki": "Ugali"
-      },
-      {
-        "name": "葡式炸餃",
-        "localName": "Rissóis",
-        "description": "以麵皮包入蝦肉或雞肉奶油醬後裹粉油炸的半月形點心。",
-        "history": "源自葡萄牙的點心，在莫三比克以海蝦內餡最為常見。",
-        "wiki": "Rissole"
-      },
-      {
-        "name": "木薯腰果蛋糕",
-        "localName": "Bolo polana",
-        "description": "以馬鈴薯或木薯與腰果製成的濃郁蛋糕。",
-        "history": "莫三比克是腰果重要產地，此蛋糕融合葡萄牙烘焙與在地食材。",
-        "wiki": "Bolo polana"
-      }
-    ]
-  }
+ "iso": "MOZ",
+ "capital": "馬布多",
+ "summary": "位於非洲東南部印度洋岸的國家，曾為葡萄牙殖民地，1975年獨立後經歷長期內戰，擁有漫長海岸線與豐富天然氣。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "天主教",
+    "percent": 27,
+    "description": "葡萄牙殖民時期傳入，為最大教派。"
+   },
+   {
+    "name": "伊斯蘭教",
+    "percent": 19,
+    "description": "集中於北部沿海，如楠普拉、德爾加杜角省。"
+   },
+   {
+    "name": "錫安派基督教",
+    "percent": 15,
+    "description": "融合非洲傳統信仰的本土教會。"
+   },
+   {
+    "name": "福音派與五旬節派",
+    "percent": 15,
+    "description": "近數十年快速成長。"
+   },
+   {
+    "name": "無宗教",
+    "percent": 13,
+    "description": "部分人口不屬任何宗教。"
+   }
+  ],
+  "background": "阿拉伯與斯瓦希里商人在殖民前即沿印度洋貿易帶入伊斯蘭教。16世紀起葡萄牙傳教士傳播天主教，殖民後期南部受南非礦工往來影響，興起錫安派等本土教會。"
+ },
+ "language": {
+  "official": "官方語言為葡萄牙語。",
+  "ranking": [
+   {
+    "name": "馬庫阿語",
+    "percent": 26,
+    "description": "北部最大民族馬庫阿人的語言，是母語人數最多的語言。",
+    "greeting": "Salama",
+    "pronunciation": "sa-la-ma"
+   },
+   {
+    "name": "葡萄牙語",
+    "percent": 17,
+    "description": "官方與教育語言，作為母語的比例在城市增長中，約半數人能使用。",
+    "greeting": "Olá",
+    "pronunciation": "o-la"
+   },
+   {
+    "name": "聰加語（尚加納語）",
+    "percent": 8,
+    "description": "南部馬布多、加薩一帶的主要語言。",
+    "greeting": "Avuxeni（早安）",
+    "pronunciation": "a-vu-she-ni"
+   }
+  ],
+  "history": "境內語言多屬班圖語族。葡萄牙自16世紀起在沿海設立據點，20世紀才全面控制內陸，並推行葡語教育。獨立後政府以葡萄牙語作為統一國家的語言，近年本土語言雙語教育逐步推廣。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "木薯葉花生燉菜",
+    "localName": "Matapa",
+    "description": "木薯葉搗碎後與花生粉、椰奶、蝦或蟹一起燉煮，配米飯或玉米糊。",
+    "history": "源自沿海地區，是莫三比克最具代表性的家常菜。",
+    "wiki": "Matapa",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Matapa.jpg/960px-Matapa.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Matapa.jpg",
+    "imageCredit": "PrestigiousSwazi・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "霹靂霹靂辣雞",
+    "localName": "Frango à piri-piri",
+    "description": "以霹靂霹靂辣椒、大蒜、檸檬醃漬後炭烤的雞肉。",
+    "history": "葡萄牙人將美洲辣椒帶到非洲，莫三比克的辣椒醬與烤雞後來隨葡萄牙人傳遍全球。",
+    "wiki": "Piri piri",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/African_red_devil_peppers.jpg/960px-African_red_devil_peppers.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:African_red_devil_peppers.jpg",
+    "imageCredit": "Bovineone at English Wikipedia・Public domain・Wikimedia Commons"
+   },
+   {
+    "name": "玉米糊",
+    "localName": "Xima",
+    "description": "以白玉米粉攪煮成的稠糊，是日常主食。",
+    "history": "與東南非的烏咖哩（ugali）、恩希馬（nsima）同類，為農村最基本的食物。",
+    "wiki": "Ugali",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/48/Ugali_%26_Sukuma_Wiki.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Ugali_%26_Sukuma_Wiki.jpg",
+    "imageCredit": "Paresh Jai from Nairobi, Kenya・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "葡式炸餃",
+    "localName": "Rissóis",
+    "description": "以麵皮包入蝦肉或雞肉奶油醬後裹粉油炸的半月形點心。",
+    "history": "源自葡萄牙的點心，在莫三比克以海蝦內餡最為常見。",
+    "wiki": "Rissole",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Risole1.JPG/960px-Risole1.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Risole1.JPG",
+    "imageCredit": "PD-self・Public domain・Wikimedia Commons"
+   },
+   {
+    "name": "木薯腰果蛋糕",
+    "localName": "Bolo polana",
+    "description": "以馬鈴薯或木薯與腰果製成的濃郁蛋糕。",
+    "history": "莫三比克是腰果重要產地，此蛋糕融合葡萄牙烘焙與在地食材。",
+    "wiki": "Bolo polana"
+   }
+  ]
+ }
 }

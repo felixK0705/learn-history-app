@@ -1,84 +1,99 @@
 {
-  "iso": "TUN",
-  "capital": "突尼斯",
-  "summary": "突尼西亞位於北非地中海沿岸，古代迦太基的所在地，也是2011年「阿拉伯之春」的發源地。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "伊斯蘭教（遜尼派）",
-        "percent": 98,
-        "description": "國家主要宗教，以馬立克學派為主。"
-      },
-      {
-        "name": "基督教",
-        "percent": 1,
-        "description": "主要為外籍人士。"
-      },
-      {
-        "name": "其他",
-        "percent": 1,
-        "description": "包括猶太教與無宗教者，傑爾巴島有歷史悠久的猶太會堂。"
-      }
-    ],
-    "background": "迦太基與羅馬時期當地曾是基督教重鎮，奧古斯丁等教父即出身北非。七世紀阿拉伯人征服後，凱魯萬成為北非伊斯蘭教的學術中心，伊斯蘭教逐漸成為主流。"
-  },
-  "language": {
-    "official": "阿拉伯語是官方語言。",
-    "ranking": [
-      {
-        "name": "突尼西亞阿拉伯語",
-        "percent": 98,
-        "description": "日常使用的方言，融合柏柏語、法語、義大利語與土耳其語詞彙。",
-        "greeting": "عسلامة (Aslema)",
-        "pronunciation": "as-LAA-ma"
-      },
-      {
-        "name": "柏柏語",
-        "percent": 1,
-        "description": "南部傑爾巴島與少數山區村落使用。",
-        "greeting": "Azul",
-        "pronunciation": "a-ZOOL"
-      }
-    ],
-    "history": "古代當地使用柏柏語與迦太基人的布匿語，羅馬時期拉丁語普及。伊斯蘭化後阿拉伯語成為主流；1881年起法國保護國統治使法語廣泛用於教育與商業，至今仍是重要的第二語言。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "庫斯庫斯",
-        "localName": "كسكسي (Kosksi)",
-        "description": "以粗粒小麥粉蒸成的主食，配辣味番茄燉肉或魚。",
-        "history": "北非共同的傳統主食，突尼西亞版本常較辛辣。",
-        "wiki": "Couscous"
-      },
-      {
-        "name": "布里克",
-        "localName": "بريك (Brik)",
-        "description": "以極薄麵皮包裹雞蛋、鮪魚與巴西里油炸的三角餅。",
-        "history": "受鄂圖曼飲食影響的料理，齋戒月時特別常見。",
-        "wiki": "Brik"
-      },
-      {
-        "name": "拉布拉比",
-        "localName": "لبلابي (Lablabi)",
-        "description": "以鷹嘴豆、大蒜與孜然熬煮，加入麵包塊的湯。",
-        "history": "突尼西亞平民的冬季早餐。",
-        "wiki": "Lablabi"
-      },
-      {
-        "name": "番茄燉蛋",
-        "localName": "شكشوكة (Shakshouka)",
-        "description": "以番茄、甜椒與辣椒燉煮，再打入雞蛋。",
-        "history": "源自北非的料理，現流行於中東與世界各地。",
-        "wiki": "Shakshouka"
-      },
-      {
-        "name": "哈里薩辣醬",
-        "localName": "هريسة (Harissa)",
-        "description": "以紅辣椒、大蒜與香料製成的辣醬。",
-        "history": "突尼西亞料理的基本調味，2022年列入聯合國教科文組織非物質文化遺產。",
-        "wiki": "Harissa"
-      }
-    ]
-  }
+ "iso": "TUN",
+ "capital": "突尼斯",
+ "summary": "突尼西亞位於北非地中海沿岸，古代迦太基的所在地，也是2011年「阿拉伯之春」的發源地。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "伊斯蘭教（遜尼派）",
+    "percent": 98,
+    "description": "國家主要宗教，以馬立克學派為主。"
+   },
+   {
+    "name": "基督教",
+    "percent": 1,
+    "description": "主要為外籍人士。"
+   },
+   {
+    "name": "其他",
+    "percent": 1,
+    "description": "包括猶太教與無宗教者，傑爾巴島有歷史悠久的猶太會堂。"
+   }
+  ],
+  "background": "迦太基與羅馬時期當地曾是基督教重鎮，奧古斯丁等教父即出身北非。七世紀阿拉伯人征服後，凱魯萬成為北非伊斯蘭教的學術中心，伊斯蘭教逐漸成為主流。"
+ },
+ "language": {
+  "official": "阿拉伯語是官方語言。",
+  "ranking": [
+   {
+    "name": "突尼西亞阿拉伯語",
+    "percent": 98,
+    "description": "日常使用的方言，融合柏柏語、法語、義大利語與土耳其語詞彙。",
+    "greeting": "عسلامة (Aslema)",
+    "pronunciation": "as-LAA-ma"
+   },
+   {
+    "name": "柏柏語",
+    "percent": 1,
+    "description": "南部傑爾巴島與少數山區村落使用。",
+    "greeting": "Azul",
+    "pronunciation": "a-ZOOL"
+   }
+  ],
+  "history": "古代當地使用柏柏語與迦太基人的布匿語，羅馬時期拉丁語普及。伊斯蘭化後阿拉伯語成為主流；1881年起法國保護國統治使法語廣泛用於教育與商業，至今仍是重要的第二語言。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "庫斯庫斯",
+    "localName": "كسكسي (Kosksi)",
+    "description": "以粗粒小麥粉蒸成的主食，配辣味番茄燉肉或魚。",
+    "history": "北非共同的傳統主食，突尼西亞版本常較辛辣。",
+    "wiki": "Couscous",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Moroccan_cuscus%2C_from_Casablanca%2C_September_2018.jpg/960px-Moroccan_cuscus%2C_from_Casablanca%2C_September_2018.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Moroccan_cuscus,_from_Casablanca,_September_2018.jpg",
+    "imageCredit": "Lmmima・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "布里克",
+    "localName": "بريك (Brik)",
+    "description": "以極薄麵皮包裹雞蛋、鮪魚與巴西里油炸的三角餅。",
+    "history": "受鄂圖曼飲食影響的料理，齋戒月時特別常見。",
+    "wiki": "Brik",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Brikdish.jpg/960px-Brikdish.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Brikdish.jpg",
+    "imageCredit": "Muckster・CC BY 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "拉布拉比",
+    "localName": "لبلابي (Lablabi)",
+    "description": "以鷹嘴豆、大蒜與孜然熬煮，加入麵包塊的湯。",
+    "history": "突尼西亞平民的冬季早餐。",
+    "wiki": "Lablabi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Bol_de_Leblabi_de_Tunisie%2C_21_mars_2017.jpg/960px-Bol_de_Leblabi_de_Tunisie%2C_21_mars_2017.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Bol_de_Leblabi_de_Tunisie,_21_mars_2017.jpg",
+    "imageCredit": "Habib M'henni・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "番茄燉蛋",
+    "localName": "شكشوكة (Shakshouka)",
+    "description": "以番茄、甜椒與辣椒燉煮，再打入雞蛋。",
+    "history": "源自北非的料理，現流行於中東與世界各地。",
+    "wiki": "Shakshouka",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Shakshuka_by_Calliopejen1.jpg/960px-Shakshuka_by_Calliopejen1.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Shakshuka_by_Calliopejen1.jpg",
+    "imageCredit": "Calliopejen1・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "哈里薩辣醬",
+    "localName": "هريسة (Harissa)",
+    "description": "以紅辣椒、大蒜與香料製成的辣醬。",
+    "history": "突尼西亞料理的基本調味，2022年列入聯合國教科文組織非物質文化遺產。",
+    "wiki": "Harissa",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/%D9%87%D8%B1%D9%8A%D8%B3%D8%A9_%D8%AF%D9%8A%D8%A7%D8%B1%D9%8A.JPG/960px-%D9%87%D8%B1%D9%8A%D8%B3%D8%A9_%D8%AF%D9%8A%D8%A7%D8%B1%D9%8A.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:%D9%87%D8%B1%D9%8A%D8%B3%D8%A9_%D8%AF%D9%8A%D8%A7%D8%B1%D9%8A.JPG",
+    "imageCredit": "Ovva olfa・CC BY-SA 4.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

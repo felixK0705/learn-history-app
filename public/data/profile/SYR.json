@@ -1,101 +1,116 @@
 {
-  "iso": "SYR",
-  "capital": "大馬士革",
-  "summary": "位於地中海東岸的國家，首都大馬士革與阿勒坡是世界上最古老的持續居住城市之一，2011年起陷入內戰，2024年底阿塞德政權倒台。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "伊斯蘭教（遜尼派）",
-        "percent": 74,
-        "description": "多數居民信仰。"
-      },
-      {
-        "name": "阿拉維派",
-        "percent": 11,
-        "description": "源自什葉派的教派，主要分布於西部沿海山區。"
-      },
-      {
-        "name": "基督教",
-        "percent": 5,
-        "description": "包含東正教、東儀天主教與亞美尼亞教會，內戰後人數大幅減少。"
-      },
-      {
-        "name": "德魯茲派",
-        "percent": 3,
-        "description": "主要分布於南部蘇韋達。"
-      },
-      {
-        "name": "其他什葉派（十二伊瑪目派、伊斯瑪儀派）",
-        "percent": 2,
-        "description": "規模較小的伊斯蘭教派。"
-      }
-    ],
-    "background": "敘利亞是早期基督教的重要地區，使徒保羅在大馬士革歸信。7世紀阿拉伯穆斯林征服後，大馬士革成為伍麥亞王朝首都，伊斯蘭教成為主流；中世紀分化出阿拉維派與德魯茲派等教派，基督教社群則延續至今。"
-  },
-  "language": {
-    "official": "官方語言為阿拉伯語。",
-    "ranking": [
-      {
-        "name": "阿拉伯語（黎凡特方言）",
-        "percent": 85,
-        "description": "全國主要語言。",
-        "greeting": "مرحبا",
-        "pronunciation": "mar-ha-ba"
-      },
-      {
-        "name": "庫德語",
-        "percent": 9,
-        "description": "東北部庫德人的語言。",
-        "greeting": "Silav",
-        "pronunciation": "si-lav"
-      },
-      {
-        "name": "亞美尼亞語",
-        "percent": 1,
-        "description": "阿勒坡等地的亞美尼亞社群使用。",
-        "greeting": "Բարև",
-        "pronunciation": "ba-rev"
-      }
-    ],
-    "history": "古代敘利亞通行阿拉米語，是耶穌時代的日常語言，至今在馬盧拉等村莊仍有人使用西阿拉米語。7世紀伊斯蘭征服後阿拉伯語逐漸取代阿拉米語。20世紀初亞美尼亞大屠殺後的倖存者在此定居，帶來亞美尼亞語。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "基貝",
-        "localName": "كبة (Kibbeh)",
-        "description": "以碎麥與絞肉製成外殼，包入肉餡與松子後油炸或烘烤。",
-        "history": "黎凡特的經典料理，敘利亞有數十種版本，阿勒坡尤其有名。",
-        "wiki": "Kibbeh"
-      },
-      {
-        "name": "沙威瑪",
-        "localName": "شاورما (Shawarma)",
-        "description": "層疊醃肉在直立烤架上旋轉燒烤，削片捲入薄餅。",
-        "history": "源自鄂圖曼時代的旋轉烤肉，在黎凡特發展出今日形式。",
-        "wiki": "Shawarma"
-      },
-      {
-        "name": "法圖什沙拉",
-        "localName": "فتوش (Fattoush)",
-        "description": "以生菜、番茄、黃瓜與烤脆的麵包片拌漆樹粉與橄欖油。",
-        "history": "源自黎凡特農家利用剩餘麵包的料理。",
-        "wiki": "Fattoush"
-      },
-      {
-        "name": "紅椒核桃醬",
-        "localName": "محمرة (Muhammara)",
-        "description": "以烤紅椒、核桃、麵包屑與石榴糖漿製成的沾醬。",
-        "history": "源自阿勒坡的傳統沾醬，以當地的阿勒坡辣椒製作。",
-        "wiki": "Muhammara"
-      },
-      {
-        "name": "烤茄子泥",
-        "localName": "بابا غنوج (Baba ghanoush)",
-        "description": "以炭烤茄子搗泥，加入芝麻醬、檸檬與大蒜。",
-        "history": "黎凡特地區共享的開胃小菜。",
-        "wiki": "Baba ghanoush"
-      }
-    ]
-  }
+ "iso": "SYR",
+ "capital": "大馬士革",
+ "summary": "位於地中海東岸的國家，首都大馬士革與阿勒坡是世界上最古老的持續居住城市之一，2011年起陷入內戰，2024年底阿塞德政權倒台。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "伊斯蘭教（遜尼派）",
+    "percent": 74,
+    "description": "多數居民信仰。"
+   },
+   {
+    "name": "阿拉維派",
+    "percent": 11,
+    "description": "源自什葉派的教派，主要分布於西部沿海山區。"
+   },
+   {
+    "name": "基督教",
+    "percent": 5,
+    "description": "包含東正教、東儀天主教與亞美尼亞教會，內戰後人數大幅減少。"
+   },
+   {
+    "name": "德魯茲派",
+    "percent": 3,
+    "description": "主要分布於南部蘇韋達。"
+   },
+   {
+    "name": "其他什葉派（十二伊瑪目派、伊斯瑪儀派）",
+    "percent": 2,
+    "description": "規模較小的伊斯蘭教派。"
+   }
+  ],
+  "background": "敘利亞是早期基督教的重要地區，使徒保羅在大馬士革歸信。7世紀阿拉伯穆斯林征服後，大馬士革成為伍麥亞王朝首都，伊斯蘭教成為主流；中世紀分化出阿拉維派與德魯茲派等教派，基督教社群則延續至今。"
+ },
+ "language": {
+  "official": "官方語言為阿拉伯語。",
+  "ranking": [
+   {
+    "name": "阿拉伯語（黎凡特方言）",
+    "percent": 85,
+    "description": "全國主要語言。",
+    "greeting": "مرحبا",
+    "pronunciation": "mar-ha-ba"
+   },
+   {
+    "name": "庫德語",
+    "percent": 9,
+    "description": "東北部庫德人的語言。",
+    "greeting": "Silav",
+    "pronunciation": "si-lav"
+   },
+   {
+    "name": "亞美尼亞語",
+    "percent": 1,
+    "description": "阿勒坡等地的亞美尼亞社群使用。",
+    "greeting": "Բարև",
+    "pronunciation": "ba-rev"
+   }
+  ],
+  "history": "古代敘利亞通行阿拉米語，是耶穌時代的日常語言，至今在馬盧拉等村莊仍有人使用西阿拉米語。7世紀伊斯蘭征服後阿拉伯語逐漸取代阿拉米語。20世紀初亞美尼亞大屠殺後的倖存者在此定居，帶來亞美尼亞語。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "基貝",
+    "localName": "كبة (Kibbeh)",
+    "description": "以碎麥與絞肉製成外殼，包入肉餡與松子後油炸或烘烤。",
+    "history": "黎凡特的經典料理，敘利亞有數十種版本，阿勒坡尤其有名。",
+    "wiki": "Kibbeh",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Kibbeh3.jpg/960px-Kibbeh3.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Kibbeh3.jpg",
+    "imageCredit": "Bazel・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "沙威瑪",
+    "localName": "شاورما (Shawarma)",
+    "description": "層疊醃肉在直立烤架上旋轉燒烤，削片捲入薄餅。",
+    "history": "源自鄂圖曼時代的旋轉烤肉，在黎凡特發展出今日形式。",
+    "wiki": "Shawarma",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Shawarma_2.jpg/960px-Shawarma_2.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Shawarma_2.jpg",
+    "imageCredit": "Vis M・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "法圖什沙拉",
+    "localName": "فتوش (Fattoush)",
+    "description": "以生菜、番茄、黃瓜與烤脆的麵包片拌漆樹粉與橄欖油。",
+    "history": "源自黎凡特農家利用剩餘麵包的料理。",
+    "wiki": "Fattoush",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/93/Fattoush_mixed-salad.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Fattoush_mixed-salad.jpg",
+    "imageCredit": "Arousing Appetites・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "紅椒核桃醬",
+    "localName": "محمرة (Muhammara)",
+    "description": "以烤紅椒、核桃、麵包屑與石榴糖漿製成的沾醬。",
+    "history": "源自阿勒坡的傳統沾醬，以當地的阿勒坡辣椒製作。",
+    "wiki": "Muhammara",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Tanoreen_muhammara.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Tanoreen_muhammara.jpg",
+    "imageCredit": "Krista・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "烤茄子泥",
+    "localName": "بابا غنوج (Baba ghanoush)",
+    "description": "以炭烤茄子搗泥，加入芝麻醬、檸檬與大蒜。",
+    "history": "黎凡特地區共享的開胃小菜。",
+    "wiki": "Baba ghanoush",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Baba_Ganoush_05of05_%288735238183%29.jpg/960px-Baba_Ganoush_05of05_%288735238183%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Baba_Ganoush_05of05_(8735238183).jpg",
+    "imageCredit": "Breville USA・CC BY 2.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

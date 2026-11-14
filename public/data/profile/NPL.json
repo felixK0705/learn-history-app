@@ -1,115 +1,127 @@
 {
-  "iso": "NPL",
-  "capital": "加德滿都",
-  "summary": "位於喜馬拉雅山南麓的內陸國，擁有聖母峰等世界最高峰，是佛陀誕生地藍毗尼所在，2008年廢除君主制改為聯邦共和國。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "印度教",
-        "percent": 81,
-        "description": "多數居民信仰，尼泊爾在2008年前曾是世界上唯一以印度教為國教的國家。"
-      },
-      {
-        "name": "佛教",
-        "percent": 8,
-        "description": "主要為山區藏緬語族與內瓦爾人，藍毗尼為佛陀誕生地。"
-      },
-      {
-        "name": "伊斯蘭教",
-        "percent": 5,
-        "description": "集中於南部特萊平原。"
-      },
-      {
-        "name": "基拉特教",
-        "percent": 3,
-        "description": "東部拉伊人、林布人的傳統信仰。"
-      },
-      {
-        "name": "基督教",
-        "percent": 2,
-        "description": "近數十年快速成長。"
-      }
-    ],
-    "background": "印度教與佛教在尼泊爾已共存兩千多年，加德滿都谷地的內瓦爾人同時融合兩種傳統。18世紀廓爾喀王朝統一尼泊爾並以印度教為國家基礎，2008年改為世俗共和國。"
-  },
-  "language": {
-    "official": "官方語言為尼泊爾語，各省可另定官方語言。",
-    "ranking": [
-      {
-        "name": "尼泊爾語",
-        "percent": 45,
-        "description": "屬印度－雅利安語支，以天城體書寫，為全國通用語。",
-        "greeting": "नमस्ते",
-        "pronunciation": "na-ma-ste"
-      },
-      {
-        "name": "邁蒂利語",
-        "percent": 11,
-        "description": "南部特萊平原東部的主要語言。",
-        "greeting": "प्रणाम",
-        "pronunciation": "pra-naam"
-      },
-      {
-        "name": "博傑普爾語",
-        "percent": 6,
-        "description": "南部特萊平原中部使用。",
-        "greeting": "प्रणाम",
-        "pronunciation": "pra-naam"
-      },
-      {
-        "name": "塔芒語",
-        "percent": 5,
-        "description": "中部山區塔芒人的藏緬語。",
-        "greeting": "Fyafulla",
-        "pronunciation": "fya-ful-la"
-      },
-      {
-        "name": "內瓦爾語",
-        "percent": 3,
-        "description": "加德滿都谷地內瓦爾人的語言，擁有悠久文學傳統。",
-        "greeting": "ज्वजलपा",
-        "pronunciation": "jwa-ja-la-pa"
-      }
-    ],
-    "history": "尼泊爾語原為西部卡斯人的語言，隨18世紀廓爾喀王國統一而成為國家語言。加德滿都谷地的內瓦爾語曾是馬拉王朝的宮廷語言。2015年新憲法承認所有母語為國家語言。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "扁豆湯飯",
-        "localName": "दाल भात (Dal bhat)",
-        "description": "米飯配扁豆湯、咖哩蔬菜與醃菜，一日兩餐的主食。",
-        "history": "南亞普遍的飲食組合，尼泊爾人常說「吃了扁豆湯飯就有力氣」。",
-        "wiki": "Dal bhat"
-      },
-      {
-        "name": "尼泊爾饃饃",
-        "localName": "म:म: (Momo)",
-        "description": "包入肉或蔬菜餡的蒸餃，配番茄辣醬。",
-        "history": "源自西藏，經內瓦爾商人引入加德滿都谷地，現為全國最受歡迎的小吃。",
-        "wiki": "Momo (food)"
-      },
-      {
-        "name": "圓圈甜米餅",
-        "localName": "सेल रोटी (Sel roti)",
-        "description": "以米漿做成圓圈狀油炸的甜甜圈狀點心。",
-        "history": "德賽節與燈節（提哈爾節）時家家戶戶製作的傳統點心。",
-        "wiki": "Sel roti"
-      },
-      {
-        "name": "迪多糊",
-        "localName": "ढिंडो (Dhindo)",
-        "description": "以蕎麥或小米粉在熱水中攪成的稠糊，配湯菜食用。",
-        "history": "山區農民的傳統主食，近年作為健康料理重新受到歡迎。",
-        "wiki": "Dhindo"
-      },
-      {
-        "name": "尤瑪麗甜糕",
-        "localName": "योमरी (Yomari)",
-        "description": "米粉麵團捏成魚形，包入糖蜜與芝麻蒸熟。",
-        "history": "內瓦爾人在冬季「尤瑪麗節」慶祝豐收時製作。",
-        "wiki": "Yomari"
-      }
-    ]
-  }
+ "iso": "NPL",
+ "capital": "加德滿都",
+ "summary": "位於喜馬拉雅山南麓的內陸國，擁有聖母峰等世界最高峰，是佛陀誕生地藍毗尼所在，2008年廢除君主制改為聯邦共和國。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "印度教",
+    "percent": 81,
+    "description": "多數居民信仰，尼泊爾在2008年前曾是世界上唯一以印度教為國教的國家。"
+   },
+   {
+    "name": "佛教",
+    "percent": 8,
+    "description": "主要為山區藏緬語族與內瓦爾人，藍毗尼為佛陀誕生地。"
+   },
+   {
+    "name": "伊斯蘭教",
+    "percent": 5,
+    "description": "集中於南部特萊平原。"
+   },
+   {
+    "name": "基拉特教",
+    "percent": 3,
+    "description": "東部拉伊人、林布人的傳統信仰。"
+   },
+   {
+    "name": "基督教",
+    "percent": 2,
+    "description": "近數十年快速成長。"
+   }
+  ],
+  "background": "印度教與佛教在尼泊爾已共存兩千多年，加德滿都谷地的內瓦爾人同時融合兩種傳統。18世紀廓爾喀王朝統一尼泊爾並以印度教為國家基礎，2008年改為世俗共和國。"
+ },
+ "language": {
+  "official": "官方語言為尼泊爾語，各省可另定官方語言。",
+  "ranking": [
+   {
+    "name": "尼泊爾語",
+    "percent": 45,
+    "description": "屬印度－雅利安語支，以天城體書寫，為全國通用語。",
+    "greeting": "नमस्ते",
+    "pronunciation": "na-ma-ste"
+   },
+   {
+    "name": "邁蒂利語",
+    "percent": 11,
+    "description": "南部特萊平原東部的主要語言。",
+    "greeting": "प्रणाम",
+    "pronunciation": "pra-naam"
+   },
+   {
+    "name": "博傑普爾語",
+    "percent": 6,
+    "description": "南部特萊平原中部使用。",
+    "greeting": "प्रणाम",
+    "pronunciation": "pra-naam"
+   },
+   {
+    "name": "塔芒語",
+    "percent": 5,
+    "description": "中部山區塔芒人的藏緬語。",
+    "greeting": "Fyafulla",
+    "pronunciation": "fya-ful-la"
+   },
+   {
+    "name": "內瓦爾語",
+    "percent": 3,
+    "description": "加德滿都谷地內瓦爾人的語言，擁有悠久文學傳統。",
+    "greeting": "ज्वजलपा",
+    "pronunciation": "jwa-ja-la-pa"
+   }
+  ],
+  "history": "尼泊爾語原為西部卡斯人的語言，隨18世紀廓爾喀王國統一而成為國家語言。加德滿都谷地的內瓦爾語曾是馬拉王朝的宮廷語言。2015年新憲法承認所有母語為國家語言。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "扁豆湯飯",
+    "localName": "दाल भात (Dal bhat)",
+    "description": "米飯配扁豆湯、咖哩蔬菜與醃菜，一日兩餐的主食。",
+    "history": "南亞普遍的飲食組合，尼泊爾人常說「吃了扁豆湯飯就有力氣」。",
+    "wiki": "Dal bhat"
+   },
+   {
+    "name": "尼泊爾饃饃",
+    "localName": "म:म: (Momo)",
+    "description": "包入肉或蔬菜餡的蒸餃，配番茄辣醬。",
+    "history": "源自西藏，經內瓦爾商人引入加德滿都谷地，現為全國最受歡迎的小吃。",
+    "wiki": "Momo (food)",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Momo_nepal.jpg/960px-Momo_nepal.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Momo_nepal.jpg",
+    "imageCredit": "Kushal Goyal・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "圓圈甜米餅",
+    "localName": "सेल रोटी (Sel roti)",
+    "description": "以米漿做成圓圈狀油炸的甜甜圈狀點心。",
+    "history": "德賽節與燈節（提哈爾節）時家家戶戶製作的傳統點心。",
+    "wiki": "Sel roti",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Sel_Roti.jpg/960px-Sel_Roti.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Sel_Roti.jpg",
+    "imageCredit": "Swapnil Acharya・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "迪多糊",
+    "localName": "ढिंडो (Dhindo)",
+    "description": "以蕎麥或小米粉在熱水中攪成的稠糊，配湯菜食用。",
+    "history": "山區農民的傳統主食，近年作為健康料理重新受到歡迎。",
+    "wiki": "Dhindo",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Dhindo_by_Ganesh.jpeg/960px-Dhindo_by_Ganesh.jpeg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Dhindo_by_Ganesh.jpeg",
+    "imageCredit": "User:Ganesh Paudel・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "尤瑪麗甜糕",
+    "localName": "योमरी (Yomari)",
+    "description": "米粉麵團捏成魚形，包入糖蜜與芝麻蒸熟。",
+    "history": "內瓦爾人在冬季「尤瑪麗節」慶祝豐收時製作。",
+    "wiki": "Yomari",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Yomari_double.jpg/960px-Yomari_double.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Yomari_double.jpg",
+    "imageCredit": "Raunak Maskay・CC BY-SA 4.0・Wikimedia Commons"
+   }
+  ]
+ }
 }

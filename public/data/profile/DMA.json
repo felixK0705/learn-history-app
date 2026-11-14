@@ -1,89 +1,104 @@
 {
-  "iso": "DMA",
-  "capital": "羅索",
-  "summary": "多米尼克是加勒比海的火山島國，以原始雨林、溫泉與「沸騰湖」聞名，也是加勒比海少數仍有原住民卡利納哥人保留區的國家。",
-  "religion": {
-    "ranking": [
-      {
-        "name": "天主教",
-        "percent": 53,
-        "description": "法國殖民影響留下的主要宗教。"
-      },
-      {
-        "name": "基督新教",
-        "percent": 30,
-        "description": "包括五旬節派、復臨安息日會、衛理宗等。"
-      },
-      {
-        "name": "無宗教",
-        "percent": 6,
-        "description": "未認同任何宗教的人口。"
-      },
-      {
-        "name": "拉斯塔法里教",
-        "percent": 1,
-        "description": "規模較小的宗教運動。"
-      }
-    ],
-    "background": "十八世紀法國人最先在多米尼克建立殖民地並帶來天主教，之後英國取得統治權，帶來衛理宗等新教，近數十年五旬節派等福音派教會成長迅速。"
-  },
-  "language": {
-    "official": "英語是官方語言。",
-    "ranking": [
-      {
-        "name": "英語",
-        "percent": 70,
-        "description": "官方語言，用於政府與教育。",
-        "greeting": "Hello",
-        "pronunciation": "heh-LOH"
-      },
-      {
-        "name": "多米尼克克里奧爾法語（Kwéyòl）",
-        "percent": 30,
-        "description": "以法語為基礎的克里奧爾語，許多國民能說，常見於鄉村與日常生活。",
-        "greeting": "Bonjou",
-        "pronunciation": "bon-ZHOO"
-      }
-    ],
-    "history": "法國殖民時期形成了以法語為基礎的克里奧爾語。1763年後英國統治使英語成為官方語言，Kwéyòl則延續為民間語言，近年透過文化節慶推廣保存。"
-  },
-  "food": {
-    "ranking": [
-      {
-        "name": "卡拉魯湯",
-        "localName": "Callaloo",
-        "description": "以芋頭葉等綠葉菜與椰奶、秋葵燉煮的湯。",
-        "history": "源自西非的烹飪傳統，在加勒比海地區廣泛流行。",
-        "wiki": "Callaloo"
-      },
-      {
-        "name": "炸麵餅",
-        "localName": "Bakes",
-        "description": "以麵團油炸或烘烤成的小餅，常配鹹魚當早餐。",
-        "history": "加勒比海常見的早餐麵食。",
-        "wiki": "Johnnycake"
-      },
-      {
-        "name": "鹹魚",
-        "localName": "Saltfish",
-        "description": "以鹽醃鱈魚泡水去鹽後與洋蔥、番茄炒製。",
-        "history": "鹹鱈魚自殖民時期由北美輸入，成為加勒比海的重要食材。",
-        "wiki": "Salt cod"
-      },
-      {
-        "name": "麵包果",
-        "localName": "Breadfruit",
-        "description": "以烤或煮方式食用的麵包果，口感似馬鈴薯。",
-        "history": "十八世紀末由英國人從太平洋引進加勒比海，作為廉價的糧食。",
-        "wiki": "Breadfruit"
-      },
-      {
-        "name": "木薯餅",
-        "localName": "Cassava bread",
-        "description": "以木薯粉製成的扁平麵餅。",
-        "history": "延續卡利納哥原住民的飲食傳統。",
-        "wiki": "Cassava bread"
-      }
-    ]
-  }
+ "iso": "DMA",
+ "capital": "羅索",
+ "summary": "多米尼克是加勒比海的火山島國，以原始雨林、溫泉與「沸騰湖」聞名，也是加勒比海少數仍有原住民卡利納哥人保留區的國家。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "天主教",
+    "percent": 53,
+    "description": "法國殖民影響留下的主要宗教。"
+   },
+   {
+    "name": "基督新教",
+    "percent": 30,
+    "description": "包括五旬節派、復臨安息日會、衛理宗等。"
+   },
+   {
+    "name": "無宗教",
+    "percent": 6,
+    "description": "未認同任何宗教的人口。"
+   },
+   {
+    "name": "拉斯塔法里教",
+    "percent": 1,
+    "description": "規模較小的宗教運動。"
+   }
+  ],
+  "background": "十八世紀法國人最先在多米尼克建立殖民地並帶來天主教，之後英國取得統治權，帶來衛理宗等新教，近數十年五旬節派等福音派教會成長迅速。"
+ },
+ "language": {
+  "official": "英語是官方語言。",
+  "ranking": [
+   {
+    "name": "英語",
+    "percent": 70,
+    "description": "官方語言，用於政府與教育。",
+    "greeting": "Hello",
+    "pronunciation": "heh-LOH"
+   },
+   {
+    "name": "多米尼克克里奧爾法語（Kwéyòl）",
+    "percent": 30,
+    "description": "以法語為基礎的克里奧爾語，許多國民能說，常見於鄉村與日常生活。",
+    "greeting": "Bonjou",
+    "pronunciation": "bon-ZHOO"
+   }
+  ],
+  "history": "法國殖民時期形成了以法語為基礎的克里奧爾語。1763年後英國統治使英語成為官方語言，Kwéyòl則延續為民間語言，近年透過文化節慶推廣保存。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "卡拉魯湯",
+    "localName": "Callaloo",
+    "description": "以芋頭葉等綠葉菜與椰奶、秋葵燉煮的湯。",
+    "history": "源自西非的烹飪傳統，在加勒比海地區廣泛流行。",
+    "wiki": "Callaloo",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Callaloo.jpg/960px-Callaloo.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Callaloo.jpg",
+    "imageCredit": "https://www.flickr.com/photos/67276179@N08/・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "炸麵餅",
+    "localName": "Bakes",
+    "description": "以麵團油炸或烘烤成的小餅，常配鹹魚當早餐。",
+    "history": "加勒比海常見的早餐麵食。",
+    "wiki": "Johnnycake",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Johnnycakes.jpg/960px-Johnnycakes.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Johnnycakes.jpg",
+    "imageCredit": "Douglas Perkins・CC BY 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "鹹魚",
+    "localName": "Saltfish",
+    "description": "以鹽醃鱈魚泡水去鹽後與洋蔥、番茄炒製。",
+    "history": "鹹鱈魚自殖民時期由北美輸入，成為加勒比海的重要食材。",
+    "wiki": "Salt cod",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Bacalhau_%28Porto%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Bacalhau_(Porto).jpg",
+    "imageCredit": "Sitomon・CC BY-SA 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "麵包果",
+    "localName": "Breadfruit",
+    "description": "以烤或煮方式食用的麵包果，口感似馬鈴薯。",
+    "history": "十八世紀末由英國人從太平洋引進加勒比海，作為廉價的糧食。",
+    "wiki": "Breadfruit",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Artocarpus_altilis_%28fruit%29.jpg/960px-Artocarpus_altilis_%28fruit%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Artocarpus_altilis_(fruit).jpg",
+    "imageCredit": "Hans Hillewaert・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "木薯餅",
+    "localName": "Cassava bread",
+    "description": "以木薯粉製成的扁平麵餅。",
+    "history": "延續卡利納哥原住民的飲食傳統。",
+    "wiki": "Cassava bread",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Tortasdecasabe.JPG/960px-Tortasdecasabe.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Tortasdecasabe.JPG",
+    "imageCredit": "Rosa García・CC BY-SA 3.0・Wikimedia Commons"
+   }
+  ]
+ }
 }
