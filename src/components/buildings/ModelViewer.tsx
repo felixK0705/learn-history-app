@@ -14,7 +14,7 @@ import {
 import type { OrbitControls as OrbitControlsImpl } from "three-stdlib";
 
 function Model({ url }: { url: string }) {
-  const { scene } = useGLTF(url, "/draco/");
+  const { scene } = useGLTF(url);
   useEffect(() => {
     scene.traverse((o) => {
       const mesh = o as unknown as { isMesh?: boolean; castShadow: boolean; receiveShadow: boolean };
@@ -92,7 +92,7 @@ export default function ModelViewer({
   return (
     <>
     <Overlay failed={failedUrl === url} />
-    <Canvas shadows dpr={[1, 2]} camera={{ position: [6, 4, 8], fov: 40 }} gl={{ antialias: true, alpha: true }}>
+    <Canvas shadows dpr={[1, 2]} camera={{ position: [9, 8, 11], fov: 40 }} gl={{ antialias: true, alpha: true }}>
       <ambientLight intensity={0.5} />
       <directionalLight position={[8, 12, 6]} intensity={2.2} castShadow shadow-mapSize={[1024, 1024]} />
       <directionalLight position={[-6, 4, -4]} intensity={0.6} color="#9cd7ff" />
@@ -104,7 +104,7 @@ export default function ModelViewer({
 
       <ModelErrorBoundary resetKey={url} onError={() => setFailedUrl(url)}>
       <Suspense fallback={null}>
-        <Bounds fit clip observe margin={1.6}>
+        <Bounds fit clip observe margin={1.1} maxDuration={0.8}>
           <Refit token={`${url}#${resetToken}`} />
           <Center top key={url}>
             <Model url={url} />
