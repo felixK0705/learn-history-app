@@ -1,0 +1,96 @@
+{
+  "iso": "NOR",
+  "capital": "奧斯陸",
+  "summary": "挪威位於斯堪地那維亞半島西部，以峽灣、極光與北極圈景色聞名，憑藉石油財富建立了全球最大的主權基金之一。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "路德宗（挪威教會）",
+        "percent": 62,
+        "description": "多數國民為其成員，2012年前為國教會。"
+      },
+      {
+        "name": "無宗教",
+        "percent": 25,
+        "description": "未加入任何宗教團體的人口。"
+      },
+      {
+        "name": "其他基督教派",
+        "percent": 6,
+        "description": "包括天主教與自由教會等。"
+      },
+      {
+        "name": "伊斯蘭教",
+        "percent": 4,
+        "description": "主要為移民及其後代。"
+      }
+    ],
+    "background": "十至十一世紀奧拉夫一世與聖奧拉夫等國王推動基督教化。1537年宗教改革後路德宗成為國教，延續近五百年，2012年修憲後挪威教會與國家正式分離。近年無宗教人口與移民宗教都有所增加。"
+  },
+  "language": {
+    "official": "挪威語是官方語言，薩米語在北部部分地區亦具官方地位。",
+    "ranking": [
+      {
+        "name": "挪威語",
+        "percent": 92,
+        "description": "有「書面挪威語」與「新挪威語」兩種書寫標準。",
+        "greeting": "Hei",
+        "pronunciation": "hai"
+      },
+      {
+        "name": "波蘭語",
+        "percent": 2,
+        "description": "人數最多的移民語言。",
+        "greeting": "Cześć",
+        "pronunciation": "cheshch"
+      },
+      {
+        "name": "北薩米語",
+        "percent": 1,
+        "description": "北部原住民薩米人的語言。",
+        "greeting": "Bures",
+        "pronunciation": "BOO-res"
+      }
+    ],
+    "history": "挪威語源自古諾斯語。在與丹麥聯合的約四百年間，丹麥語是挪威的書面語。十九世紀獨立意識高漲，形成以丹麥語為基礎的書面挪威語，以及奧森以方言為基礎創造的新挪威語，兩者並存至今。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "羊肉燉高麗菜",
+        "localName": "Fårikål",
+        "description": "以羊肉與高麗菜層層疊放，加胡椒粒慢燉。",
+        "history": "被票選為挪威國菜，九月最後一個星期四為「羊肉燉高麗菜日」。",
+        "wiki": "Fårikål"
+      },
+      {
+        "name": "棕色起司",
+        "localName": "Brunost",
+        "description": "以乳清熬煮至焦糖化製成的甜味棕色起司。",
+        "history": "挪威獨特的乳製品，常以專用刨刀切片放在麵包上。",
+        "wiki": "Brunost"
+      },
+      {
+        "name": "鹼漬鱈魚",
+        "localName": "Lutefisk",
+        "description": "以鹼水浸泡過的鱈魚乾，質地如凍。",
+        "history": "維京時代以來的保存方法，是聖誕節的傳統料理。",
+        "wiki": "Lutefisk"
+      },
+      {
+        "name": "醃漬鮭魚",
+        "localName": "Gravlaks",
+        "description": "以鹽、糖與蒔蘿醃漬的生鮭魚。",
+        "history": "源自中世紀漁民將鮭魚埋入沙中發酵保存的方法。",
+        "wiki": "Gravlax"
+      },
+      {
+        "name": "蛋捲餅",
+        "localName": "Krumkake",
+        "description": "以花紋鐵模烤成的薄脆捲餅，可填入奶油。",
+        "history": "挪威聖誕節的傳統餅乾。",
+        "wiki": "Krumkake"
+      }
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "iso": "BGD",
+  "capital": "達卡",
+  "summary": "孟加拉位於南亞恆河與布拉馬普特拉河三角洲，是全球人口最稠密的國家之一，1971年自巴基斯坦獨立。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "伊斯蘭教（遜尼派為主）",
+        "percent": 91,
+        "description": "絕大多數人信仰伊斯蘭教，是國家的主要宗教。"
+      },
+      {
+        "name": "印度教",
+        "percent": 8,
+        "description": "孟加拉最大的宗教少數群體，杜爾迦節是重要節慶。"
+      },
+      {
+        "name": "佛教",
+        "percent": 1,
+        "description": "主要分布於東南部吉大港山區的少數民族。"
+      }
+    ],
+    "background": "伊斯蘭教自十三世紀起隨穆斯林王朝與蘇菲派傳教士傳入孟加拉，在農村地區廣泛傳播。1947年印巴分治時大量印度教徒移往印度，使穆斯林比例進一步上升。"
+  },
+  "language": {
+    "official": "孟加拉語是唯一的官方語言。",
+    "ranking": [
+      {
+        "name": "孟加拉語",
+        "percent": 98,
+        "description": "全國通用的語言，也是國家認同的核心。",
+        "greeting": "আসসালামু আলাইকুম",
+        "pronunciation": "as-sa-LA-mu a-LAI-kum"
+      },
+      {
+        "name": "其他少數民族語言（查克瑪語等）",
+        "percent": 2,
+        "description": "吉大港山區等地的少數民族使用多種藏緬語與南亞語系語言。",
+        "greeting": "Ju",
+        "pronunciation": "joo"
+      }
+    ],
+    "history": "孟加拉語源自古印度的普拉克里特語，在中世紀發展出豐富的文學傳統。1952年東巴基斯坦爆發「語言運動」，爭取孟加拉語的官方地位，2月21日後來被聯合國定為「國際母語日」，也成為後來獨立運動的重要起點。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "芥末醬希爾薩魚",
+        "localName": "শর্ষে ইলিশ (Shorshe ilish)",
+        "description": "以芥末醬烹調的希爾薩魚（鰣魚），風味辛香。",
+        "history": "希爾薩魚是孟加拉的國魚，雨季時盛產，在孟加拉文化中象徵豐收與節慶。",
+        "wiki": "Shorshe ilish"
+      },
+      {
+        "name": "比爾亞尼飯",
+        "localName": "বিরিয়ানি (Biryani)",
+        "description": "以香料、肉類與長米一同燜煮的香料飯。",
+        "history": "隨蒙兀兒帝國宮廷料理傳入孟加拉，達卡舊城的羊肉比爾亞尼尤其有名。",
+        "wiki": "Biryani"
+      },
+      {
+        "name": "潘塔飯",
+        "localName": "পান্তা ভাত (Panta bhat)",
+        "description": "將米飯浸泡在水中隔夜發酵，配洋蔥、辣椒與鹹魚食用。",
+        "history": "傳統農家早餐，孟加拉新年（Pohela Boishakh）時也會吃潘塔飯配炸希爾薩魚。",
+        "wiki": "Panta bhat"
+      },
+      {
+        "name": "皮塔糕",
+        "localName": "পিঠা (Pitha)",
+        "description": "以米粉製成的各式糕點，有蒸、煎、炸等多種做法。",
+        "history": "冬季收割新米時製作，是孟加拉鄉村節慶與家庭團聚的重要點心。",
+        "wiki": "Pitha"
+      },
+      {
+        "name": "甜優格",
+        "localName": "মিষ্টি দই (Mishti doi)",
+        "description": "以焦糖化的牛奶發酵而成的甜味優格，常盛裝於陶罐中。",
+        "history": "孟加拉地區的傳統甜點，博格拉（Bogra）的甜優格特別有名。",
+        "wiki": "Mishti doi"
+      }
+    ]
+  }
+}

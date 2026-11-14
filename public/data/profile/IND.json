@@ -1,0 +1,127 @@
+{
+  "iso": "IND",
+  "capital": "新德里",
+  "summary": "南亞次大陸的大國，人口居世界第一，孕育了印度河文明與印度教、佛教、耆那教、錫克教，1947年脫離英國獨立，是世界上最大的民主國家。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "印度教",
+        "percent": 80,
+        "description": "多數國民信仰，包含眾多神祇、教派與地方傳統。"
+      },
+      {
+        "name": "伊斯蘭教",
+        "percent": 14,
+        "description": "印度擁有世界第三多的穆斯林人口。"
+      },
+      {
+        "name": "基督教",
+        "percent": 2,
+        "description": "集中於南部喀拉拉、果亞與東北各邦。"
+      },
+      {
+        "name": "錫克教",
+        "percent": 2,
+        "description": "15世紀發源於旁遮普，信徒多居於該地。"
+      },
+      {
+        "name": "佛教",
+        "percent": 1,
+        "description": "發源於印度，現代信徒多為20世紀改宗的達利特人。"
+      },
+      {
+        "name": "耆那教",
+        "percent": 1,
+        "description": "古老的非暴力宗教，信徒多從事商業。"
+      }
+    ],
+    "background": "印度教由吠陀傳統演變而來，佛教與耆那教於西元前6世紀前後在恆河流域興起。伊斯蘭教自8世紀起經阿拉伯商人與德里蘇丹國、蒙兀兒帝國傳入；15世紀錫克教在旁遮普創立。1947年印巴分治造成大規模宗教人口遷徙。"
+  },
+  "language": {
+    "official": "聯邦官方語言為印地語與英語，憲法另承認22種排定語言。",
+    "ranking": [
+      {
+        "name": "印地語",
+        "percent": 44,
+        "description": "以天城體書寫，含多種方言，主要通行於北印度。",
+        "greeting": "नमस्ते",
+        "pronunciation": "na-ma-ste"
+      },
+      {
+        "name": "孟加拉語",
+        "percent": 8,
+        "description": "西孟加拉邦的主要語言，泰戈爾以此語創作。",
+        "greeting": "নমস্কার",
+        "pronunciation": "no-mosh-kar"
+      },
+      {
+        "name": "馬拉地語",
+        "percent": 7,
+        "description": "馬哈拉施特拉邦（孟買所在）的主要語言。",
+        "greeting": "नमस्कार",
+        "pronunciation": "na-mas-kar"
+      },
+      {
+        "name": "泰盧固語",
+        "percent": 7,
+        "description": "南部安德拉邦與特倫甘納邦的語言，屬達羅毗荼語系。",
+        "greeting": "నమస్కారం",
+        "pronunciation": "na-mas-ka-ram"
+      },
+      {
+        "name": "泰米爾語",
+        "percent": 6,
+        "description": "南部泰米爾納德邦的語言，擁有兩千多年文學傳統。",
+        "greeting": "வணக்கம்",
+        "pronunciation": "va-nak-kam"
+      },
+      {
+        "name": "古吉拉特語",
+        "percent": 5,
+        "description": "西部古吉拉特邦的語言，甘地的母語。",
+        "greeting": "કેમ છો",
+        "pronunciation": "kem cho"
+      }
+    ],
+    "history": "北印度語言多源自梵語演變的印度－雅利安語支，南印度則以達羅毗荼語系為主。蒙兀兒時期波斯語為宮廷語言並催生烏爾都語；英國殖民時期英語成為行政與高等教育語言。獨立後依語言重劃各邦，形成多語並存的國家。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "印度香飯",
+        "localName": "बिरयानी (Biryani)",
+        "description": "以香料醃漬的肉與印度香米分層燜煮的米飯。",
+        "history": "一般認為源自波斯抓飯，於蒙兀兒帝國宮廷中發展成形，各地有海德拉巴、勒克瑙等版本。",
+        "wiki": "Biryani"
+      },
+      {
+        "name": "奶油雞",
+        "localName": "मुर्ग मक्खनी (Butter chicken)",
+        "description": "坦都里烤雞浸在番茄奶油醬汁中，配饢餅食用。",
+        "history": "1950年代德里一家餐廳利用剩餘的坦都里烤雞創製，後風靡全球。",
+        "wiki": "Butter chicken"
+      },
+      {
+        "name": "馬薩拉多薩",
+        "localName": "மசால் தோசை (Masala dosa)",
+        "description": "以發酵米與黑豆漿煎成的薄脆餅，包入香料馬鈴薯，配椰子醬與扁豆湯。",
+        "history": "源自南印度卡納塔克邦，是南印度最具代表性的早餐。",
+        "wiki": "Masala dosa"
+      },
+      {
+        "name": "咖哩角",
+        "localName": "समोसा (Samosa)",
+        "description": "三角形油炸酥皮，包入香料馬鈴薯與豌豆。",
+        "history": "源自中亞與中東的「三角餡餅」，約13–14世紀隨商旅傳入印度。",
+        "wiki": "Samosa"
+      },
+      {
+        "name": "香料鷹嘴豆配炸餅",
+        "localName": "छोले भटूरे (Chole bhature)",
+        "description": "辛辣的鷹嘴豆咖哩配上膨脹的油炸發酵麵餅。",
+        "history": "旁遮普與德里地區廣受歡迎的早午餐。",
+        "wiki": "Chole bhature"
+      }
+    ]
+  }
+}

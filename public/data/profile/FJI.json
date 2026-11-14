@@ -1,0 +1,94 @@
+{
+  "iso": "FJI",
+  "capital": "蘇瓦",
+  "summary": "斐濟是南太平洋的群島國家，由300多座島嶼組成，原住民斐濟人與印度裔斐濟人構成主要人口，以熱帶度假勝地與橄欖球聞名。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "衛理宗",
+        "percent": 35,
+        "description": "斐濟最大的教會，原住民斐濟人多為其信徒。"
+      },
+      {
+        "name": "印度教",
+        "percent": 28,
+        "description": "主要為印度裔斐濟人。"
+      },
+      {
+        "name": "其他基督教派",
+        "percent": 20,
+        "description": "包括神召會、復臨安息日會、聖公會等。"
+      },
+      {
+        "name": "天主教",
+        "percent": 9,
+        "description": "規模較大的天主教社群。"
+      },
+      {
+        "name": "伊斯蘭教",
+        "percent": 6,
+        "description": "主要為印度裔斐濟人。"
+      }
+    ],
+    "background": "十九世紀衛理宗傳教士抵達斐濟，酋長卡科鮑皈依後基督教迅速普及。1879年起英國從印度引進契約勞工到甘蔗園工作，帶來印度教與伊斯蘭教，形成今日多元的宗教結構。"
+  },
+  "language": {
+    "official": "英語、斐濟語與斐濟印地語是官方語言。",
+    "ranking": [
+      {
+        "name": "斐濟語",
+        "percent": 55,
+        "description": "原住民斐濟人的語言，屬南島語系。",
+        "greeting": "Bula",
+        "pronunciation": "MBOO-la"
+      },
+      {
+        "name": "斐濟印地語",
+        "percent": 37,
+        "description": "印度裔斐濟人的語言，源自印度北部的阿瓦德語與博傑普爾語。",
+        "greeting": "नमस्ते (Namaste)",
+        "pronunciation": "na-ma-STAY"
+      }
+    ],
+    "history": "斐濟語各島方言差異大，十九世紀傳教士以包烏方言為基礎制定標準斐濟語。印度契約勞工的後代在斐濟發展出獨特的斐濟印地語，英語則是殖民時期遺留的政府與教育語言。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "可可達",
+        "localName": "Kokoda",
+        "description": "以檸檬汁醃漬生魚，加入椰奶、洋蔥與辣椒。",
+        "history": "斐濟最具代表性的料理。",
+        "wiki": "Kokoda"
+      },
+      {
+        "name": "洛沃地爐烤",
+        "localName": "Lovo",
+        "description": "將肉、魚與根莖類包葉後放在熱石上覆土燜烤。",
+        "history": "斐濟節慶與重要聚會的傳統烹調方式。",
+        "wiki": "Lovo (food)"
+      },
+      {
+        "name": "帕盧薩米",
+        "localName": "Palusami",
+        "description": "以芋頭葉包裹椰奶與洋蔥烤製。",
+        "history": "太平洋島嶼常見的傳統料理。",
+        "wiki": "Palusami"
+      },
+      {
+        "name": "卡瓦",
+        "localName": "Yaqona",
+        "description": "以卡瓦胡椒根磨粉泡製的傳統飲品。",
+        "history": "斐濟社交與儀式中不可或缺的飲品，用於迎賓與重要場合。",
+        "wiki": "Kava"
+      },
+      {
+        "name": "羅地",
+        "localName": "Roti",
+        "description": "以薄餅搭配咖哩食用。",
+        "history": "由印度契約勞工帶來，成為斐濟日常飲食的一部分。",
+        "wiki": "Roti"
+      }
+    ]
+  }
+}

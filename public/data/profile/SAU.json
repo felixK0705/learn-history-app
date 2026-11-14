@@ -1,0 +1,103 @@
+{
+  "iso": "SAU",
+  "capital": "利雅德",
+  "summary": "占據阿拉伯半島大部分的君主國，是伊斯蘭教發源地，擁有聖城麥加與麥地那，石油儲量與產量名列世界前茅。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "伊斯蘭教（遜尼派）",
+        "percent": 85,
+        "description": "主流信仰，國家官方宗教詮釋以瓦哈比派（薩拉菲派）為主。"
+      },
+      {
+        "name": "伊斯蘭教（什葉派）",
+        "percent": 8,
+        "description": "主要分布於東部省。"
+      },
+      {
+        "name": "基督教",
+        "percent": 4,
+        "description": "主要為外籍勞工，不得公開舉行宗教儀式。"
+      },
+      {
+        "name": "印度教",
+        "percent": 1,
+        "description": "主要為南亞外籍勞工。"
+      }
+    ],
+    "background": "伊斯蘭教於7世紀在麥加與麥地那興起。18世紀中期伊本·紹德與宗教學者穆罕默德·伊本·阿卜杜勒－瓦哈卜結盟，以嚴格的瓦哈比教義建立國家基礎，1932年沙烏地阿拉伯王國正式建立。"
+  },
+  "language": {
+    "official": "官方語言為阿拉伯語。",
+    "ranking": [
+      {
+        "name": "阿拉伯語",
+        "percent": 80,
+        "description": "公民與阿拉伯移民的語言，包括內志、漢志等方言。",
+        "greeting": "السلام عليكم",
+        "pronunciation": "as-sa-lām ʿa-lay-kum"
+      },
+      {
+        "name": "印度斯坦語（烏爾都語、印地語）",
+        "percent": 7,
+        "description": "南亞外籍勞工使用。",
+        "greeting": "السلام علیکم / नमस्ते",
+        "pronunciation": "as-sa-lām ʿa-lay-kum / na-ma-ste"
+      },
+      {
+        "name": "孟加拉語",
+        "percent": 4,
+        "description": "孟加拉外籍勞工使用。",
+        "greeting": "নমস্কার / আসসালামু আলাইকুম",
+        "pronunciation": "no-mosh-kar / as-sa-la-mu a-lai-kum"
+      },
+      {
+        "name": "他加祿語",
+        "percent": 2,
+        "description": "菲律賓外籍勞工使用。",
+        "greeting": "Kumusta",
+        "pronunciation": "ku-mus-ta"
+      }
+    ],
+    "history": "阿拉伯半島是阿拉伯語的發源地，《古蘭經》以古典阿拉伯語寫成，奠定標準阿拉伯語的基礎。20世紀石油開發後引進大量外籍勞工，英語成為商業常用語言。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "卡布薩香料飯",
+        "localName": "كبسة (Kabsa)",
+        "description": "以香料、番茄與雞肉或羊肉燉煮的米飯，為國菜。",
+        "history": "源自阿拉伯半島，香料隨印度洋貿易而來，是家庭聚會與待客的主菜。",
+        "wiki": "Kabsa"
+      },
+      {
+        "name": "曼迪燜飯",
+        "localName": "مندي (Mandi)",
+        "description": "肉類在地坑窯中燻烤，汁液滴落於下方米飯。",
+        "history": "源自葉門哈德拉毛地區，在沙烏地阿拉伯極受歡迎。",
+        "wiki": "Mandi (food)"
+      },
+      {
+        "name": "穆塔巴克煎餅",
+        "localName": "مطبق (Mutabbaq)",
+        "description": "薄麵皮包入絞肉、蛋與蔥煎成的方形煎餅。",
+        "history": "漢志地區的街頭小吃，與東南亞的「瑪塔巴」同源。",
+        "wiki": "Murtabak"
+      },
+      {
+        "name": "沙利格奶飯",
+        "localName": "سليق (Saleeg)",
+        "description": "以雞湯與牛奶煮成的濃稠米飯，配烤雞。",
+        "history": "源自西部塔伊夫地區的傳統料理。",
+        "wiki": "Saleeg"
+      },
+      {
+        "name": "阿拉伯咖啡",
+        "localName": "قهوة عربية (Gahwa)",
+        "description": "加入小荳蔻與番紅花的淡色咖啡，配椰棗招待客人。",
+        "history": "待客的重要禮儀，2015年「阿拉伯咖啡」列入聯合國教科文組織非物質文化遺產。",
+        "wiki": "Arabic coffee"
+      }
+    ]
+  }
+}

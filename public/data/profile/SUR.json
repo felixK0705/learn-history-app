@@ -1,0 +1,106 @@
+{
+  "iso": "SUR",
+  "capital": "巴拉馬利波",
+  "summary": "位於南美洲東北部的國家，曾為荷蘭殖民地，1975年獨立，是南美洲唯一以荷蘭語為官方語言的國家，族群與宗教極為多元。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "新教",
+        "percent": 24,
+        "description": "包含摩拉維亞弟兄會、五旬節派等。"
+      },
+      {
+        "name": "印度教",
+        "percent": 22,
+        "description": "主要為印度裔（興都斯坦人）居民。"
+      },
+      {
+        "name": "天主教",
+        "percent": 22,
+        "description": "分布於各族群。"
+      },
+      {
+        "name": "伊斯蘭教",
+        "percent": 14,
+        "description": "主要為爪哇裔與印度裔居民。"
+      },
+      {
+        "name": "無宗教",
+        "percent": 8,
+        "description": "比例較低。"
+      },
+      {
+        "name": "其他（溫蒂教等）",
+        "percent": 3,
+        "description": "溫蒂教是非裔蘇利南人的傳統宗教。"
+      }
+    ],
+    "background": "荷蘭殖民時期引入非洲奴隸種植甘蔗，摩拉維亞弟兄會與天主教向非裔居民傳教。1863年廢奴後，荷蘭自印度與爪哇招募契約勞工，帶來印度教與伊斯蘭教；首都巴拉馬利波的清真寺與猶太會堂比鄰而立，象徵宗教共存。"
+  },
+  "language": {
+    "official": "官方語言為荷蘭語。",
+    "ranking": [
+      {
+        "name": "荷蘭語",
+        "percent": 47,
+        "description": "官方與教育語言，也是許多家庭的主要語言。",
+        "greeting": "Hallo",
+        "pronunciation": "ha-lo"
+      },
+      {
+        "name": "蘇利南語（Sranan Tongo）",
+        "percent": 37,
+        "description": "以英語為基礎的克里奧爾語，是全國通用語。",
+        "greeting": "Fa waka?",
+        "pronunciation": "fa wa-ka"
+      },
+      {
+        "name": "沙納米語（蘇利南印度斯坦語）",
+        "percent": 16,
+        "description": "印度裔居民的語言，源自博傑普爾語與阿瓦德語。",
+        "greeting": "Ram ram",
+        "pronunciation": "ram ram"
+      }
+    ],
+    "history": "英國曾短暫統治蘇利南，1667年荷蘭以新阿姆斯特丹（紐約）與英國交換取得此地，留下以英語為基礎的蘇利南語。荷蘭語作為殖民與教育語言持續至今；契約勞工帶來沙納米語與爪哇語。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "波姆",
+        "localName": "Pom",
+        "description": "以芋頭類塊莖（pomtajer）、雞肉與柑橘汁烘烤的焗烤料理。",
+        "history": "源自當地猶太社群對歐洲馬鈴薯料理的在地化改良，是生日與節慶必備菜。",
+        "wiki": "Pom (dish)"
+      },
+      {
+        "name": "羅提",
+        "localName": "Roti",
+        "description": "薄軟的麵餅配咖哩雞、馬鈴薯與長豆。",
+        "history": "由印度契約勞工帶入，成為蘇利南人共享的日常料理。",
+        "wiki": "Roti"
+      },
+      {
+        "name": "混合米飯",
+        "localName": "Moksi alesi",
+        "description": "米飯與鹹肉、鹹魚、豆類一起烹煮的料理。",
+        "history": "名稱在蘇利南語中意為「混合米飯」，源自非裔蘇利南人的家常料理。",
+        "wiki": "Moksi alesi"
+      },
+      {
+        "name": "爪哇炒麵",
+        "localName": "Bami",
+        "description": "以醬油炒製的雞蛋麵，配雞肉與蔬菜。",
+        "history": "爪哇移民帶來的料理，成為蘇利南常見外食。",
+        "wiki": "Bami goreng"
+      },
+      {
+        "name": "沙奧托湯",
+        "localName": "Saoto",
+        "description": "以雞湯、米粉、豆芽、炸馬鈴薯與水煮蛋組成的湯品。",
+        "history": "源自爪哇的蘇托湯（soto），是爪哇裔蘇利南人的代表料理。",
+        "wiki": "Soto (food)"
+      }
+    ]
+  }
+}

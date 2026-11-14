@@ -1,0 +1,101 @@
+{
+  "iso": "ISL",
+  "capital": "雷克雅維克",
+  "summary": "位於北大西洋的火山島國，9世紀由北歐維京人定居，930年設立的阿爾庭被視為最古老的議會之一，以冰川、溫泉與極光聞名。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "冰島國教會（路德宗）",
+        "percent": 56,
+        "description": "國家教會，但成員比例逐年下降。"
+      },
+      {
+        "name": "無宗教或未登記",
+        "percent": 25,
+        "description": "近年快速成長。"
+      },
+      {
+        "name": "其他路德宗自由教會",
+        "percent": 5,
+        "description": "如雷克雅維克自由教會等。"
+      },
+      {
+        "name": "天主教",
+        "percent": 4,
+        "description": "主要來自波蘭等國移民。"
+      },
+      {
+        "name": "北歐古信仰（阿薩特魯）",
+        "percent": 2,
+        "description": "復興古代北歐神祇信仰的團體，1973年獲官方承認。"
+      }
+    ],
+    "background": "西元1000年，冰島阿爾庭決議全島改信基督教，同時允許私下保留異教習俗。1550年左右在丹麥國王推動下改行路德宗，路德宗自此成為國家教會。近數十年世俗化與移民使宗教多元化。"
+  },
+  "language": {
+    "official": "官方語言為冰島語。",
+    "ranking": [
+      {
+        "name": "冰島語",
+        "percent": 88,
+        "description": "源自古諾斯語，保守且純正，現代冰島人仍能讀懂中世紀薩迦文學。",
+        "greeting": "Halló / Góðan daginn",
+        "pronunciation": "hal-lo / go-than dai-in"
+      },
+      {
+        "name": "波蘭語",
+        "percent": 5,
+        "description": "冰島最大移民群體波蘭人的語言。",
+        "greeting": "Cześć",
+        "pronunciation": "cheshch"
+      },
+      {
+        "name": "英語",
+        "percent": 2,
+        "description": "廣泛作為第二語言，觀光與商業常用。",
+        "greeting": "Hello",
+        "pronunciation": "heh-loh"
+      }
+    ],
+    "history": "9世紀維京人移民帶來古諾斯語。由於地理孤立，冰島語變化很少，13世紀寫成的《埃達》與薩迦至今仍易於閱讀。冰島長期推行語言純化政策，傾向以固有詞根創造新詞而非借用外語。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "冰島優格",
+        "localName": "Skyr",
+        "description": "質地濃稠、高蛋白低脂的發酵乳製品，常加莓果食用。",
+        "history": "維京移民自挪威帶來的製作傳統，在冰島延續逾千年。",
+        "wiki": "Skyr"
+      },
+      {
+        "name": "煙燻羊肉",
+        "localName": "Hangikjöt",
+        "description": "以樺木或羊糞燻製的羊肉，常配馬鈴薯與白醬。",
+        "history": "冰島的傳統聖誕節主菜，燻製法源自缺乏木材的環境。",
+        "wiki": "Hangikjöt"
+      },
+      {
+        "name": "發酵鯊魚肉",
+        "localName": "Hákarl",
+        "description": "格陵蘭鯊經發酵與風乾數月後製成，味道強烈。",
+        "history": "格陵蘭鯊鮮肉有毒，發酵處理是古代生存智慧，現為冬季索拉布洛特節的傳統食物。",
+        "wiki": "Hákarl"
+      },
+      {
+        "name": "冰島羊肉湯",
+        "localName": "Kjötsúpa",
+        "description": "以羊肉、根莖蔬菜與燕麥燉成的湯。",
+        "history": "冰島傳統冬季家常料理，體現當地以羊肉為主的畜牧文化。",
+        "wiki": "Kjötsúpa"
+      },
+      {
+        "name": "魚乾",
+        "localName": "Harðfiskur",
+        "description": "風乾的鱈魚或黑線鱈，常抹奶油當點心吃。",
+        "history": "冰島人自中世紀起以風乾方式保存漁獲，是長期的主要蛋白質來源。",
+        "wiki": "Harðfiskur"
+      }
+    ]
+  }
+}

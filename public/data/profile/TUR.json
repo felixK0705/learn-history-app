@@ -1,0 +1,96 @@
+{
+  "iso": "TUR",
+  "capital": "安卡拉",
+  "summary": "橫跨歐亞兩洲的國家，曾是拜占庭帝國與鄂圖曼帝國的中心，1923年由凱末爾建立共和國，伊斯坦堡是歷史文化名城。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "伊斯蘭教（遜尼派）",
+        "percent": 77,
+        "description": "多數國民信仰，屬哈乃斐學派。"
+      },
+      {
+        "name": "伊斯蘭教（阿列維派）",
+        "percent": 15,
+        "description": "具獨特儀式與傳統的少數派，常被視為什葉派的支流。"
+      },
+      {
+        "name": "無宗教",
+        "percent": 5,
+        "description": "近年調查顯示比例上升。"
+      },
+      {
+        "name": "基督教與猶太教",
+        "percent": 1,
+        "description": "包括亞美尼亞人、希臘人、亞述人與猶太社群。"
+      }
+    ],
+    "background": "11世紀塞爾柱突厥人進入安納托利亞，帶來伊斯蘭教；鄂圖曼帝國以遜尼派為國家宗教，並擁有哈里發頭銜。20世紀初的人口交換與動盪使基督徒大幅減少。凱末爾建立世俗共和國，廢除哈里發制度。"
+  },
+  "language": {
+    "official": "官方語言為土耳其語。",
+    "ranking": [
+      {
+        "name": "土耳其語",
+        "percent": 80,
+        "description": "突厥語族語言，1928年改用拉丁字母。",
+        "greeting": "Merhaba",
+        "pronunciation": "mer-ha-ba"
+      },
+      {
+        "name": "庫德語",
+        "percent": 15,
+        "description": "東南部庫德人的語言，以庫爾曼吉方言為主。",
+        "greeting": "Silav",
+        "pronunciation": "si-lav"
+      },
+      {
+        "name": "阿拉伯語",
+        "percent": 2,
+        "description": "東南部與敘利亞難民社群使用。",
+        "greeting": "مرحبا",
+        "pronunciation": "mar-ha-ba"
+      }
+    ],
+    "history": "突厥語隨塞爾柱人進入安納托利亞，鄂圖曼時期的鄂圖曼土耳其語融合大量阿拉伯與波斯詞彙。1928年凱末爾推動文字改革，以拉丁字母取代阿拉伯字母，並由土耳其語言協會淨化外來詞彙。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "旋轉烤肉",
+        "localName": "Döner kebap",
+        "description": "將層疊醃肉在直立烤架上旋轉燒烤，削片夾麵包或配飯。",
+        "history": "19世紀在布爾薩等地發展成形，後隨土耳其移民在德國流行，風靡全球。",
+        "wiki": "Doner kebab"
+      },
+      {
+        "name": "果仁蜜餅",
+        "localName": "Baklava",
+        "description": "以多層薄酥皮夾入開心果或核桃，淋上糖漿烘烤。",
+        "history": "鄂圖曼宮廷甜點，加濟安泰普的開心果蜜餅尤負盛名。",
+        "wiki": "Baklava"
+      },
+      {
+        "name": "土耳其薄餅",
+        "localName": "Lahmacun",
+        "description": "極薄的麵皮抹上絞肉、番茄、洋蔥與香料烤成，常捲生菜食用。",
+        "history": "源自東南安納托利亞與敘利亞北部地區。",
+        "wiki": "Lahmacun"
+      },
+      {
+        "name": "伊斯坎德烤肉",
+        "localName": "İskender kebap",
+        "description": "旋轉烤肉片鋪在麵包上，淋番茄醬汁與熱奶油，配優格。",
+        "history": "19世紀末由布爾薩的伊斯坎德·埃芬迪創製。",
+        "wiki": "İskender kebap"
+      },
+      {
+        "name": "土耳其軟糖",
+        "localName": "Lokum",
+        "description": "以澱粉與糖製成的Q彈軟糖，加入玫瑰水、堅果等。",
+        "history": "18–19世紀在伊斯坦堡發展成形，是鄂圖曼時代流傳至今的經典甜點。",
+        "wiki": "Turkish delight"
+      }
+    ]
+  }
+}

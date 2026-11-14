@@ -1,0 +1,98 @@
+{
+  "iso": "THA",
+  "capital": "曼谷",
+  "summary": "泰國位於中南半島中部，是東南亞唯一未曾被歐洲殖民的國家，以佛寺、美食與觀光聞名，實行君主立憲制。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "上座部佛教",
+        "percent": 93,
+        "description": "泰國社會與文化的核心，許多男性一生中會短期出家。"
+      },
+      {
+        "name": "伊斯蘭教",
+        "percent": 5,
+        "description": "主要分布於南部與馬來西亞接壤的省份。"
+      },
+      {
+        "name": "基督教",
+        "percent": 1,
+        "description": "規模較小的天主教與新教社群。"
+      }
+    ],
+    "background": "十三世紀素可泰王朝時期，上座部佛教自斯里蘭卡傳入並成為國家宗教，歷代國王都是佛教的護持者。南部的北大年等地在歷史上屬於馬來穆斯林蘇丹國，因此至今以穆斯林為主。"
+  },
+  "language": {
+    "official": "泰語是官方語言。",
+    "ranking": [
+      {
+        "name": "泰語（中部泰語）",
+        "percent": 36,
+        "description": "以曼谷口音為標準的國語。",
+        "greeting": "สวัสดี",
+        "pronunciation": "sa-wat-DEE"
+      },
+      {
+        "name": "伊善語",
+        "percent": 22,
+        "description": "東北部伊善地區的語言，與寮語非常接近。",
+        "greeting": "สบายดีบ่",
+        "pronunciation": "sa-bai-DEE boh"
+      },
+      {
+        "name": "北泰語",
+        "percent": 9,
+        "description": "北部清邁等地的傳統語言，又稱蘭納語。",
+        "greeting": "สวัสดีเจ้า",
+        "pronunciation": "sa-wat-DEE JAO"
+      },
+      {
+        "name": "北大年馬來語",
+        "percent": 3,
+        "description": "南部穆斯林社群使用的馬來語方言。",
+        "greeting": "Apa khabar",
+        "pronunciation": "AH-pa KAH-bar"
+      }
+    ],
+    "history": "泰語屬壯侗語系，1283年素可泰王朝的蘭甘亨國王據傳創制了泰文字母。泰語吸收大量梵語、巴利語與高棉語詞彙；二十世紀國家推行以中部泰語為標準的教育，使其成為全國通用語。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "冬蔭湯",
+        "localName": "ต้มยำ (Tom yum)",
+        "description": "以香茅、南薑、檸檬葉與辣椒熬煮的酸辣湯，常加入蝦。",
+        "history": "泰國最具代表性的湯品，2024年列入聯合國教科文組織非物質文化遺產。",
+        "wiki": "Tom yum"
+      },
+      {
+        "name": "泰式炒河粉",
+        "localName": "ผัดไทย (Pad thai)",
+        "description": "以河粉、蝦、豆腐、蛋與羅望子醬拌炒，撒花生碎。",
+        "history": "1930至1940年代在政府推廣下普及，成為國家代表料理。",
+        "wiki": "Pad thai"
+      },
+      {
+        "name": "青木瓜沙拉",
+        "localName": "ส้มตำ (Som tam)",
+        "description": "將青木瓜絲與辣椒、魚露、萊姆汁在臼中搗拌。",
+        "history": "源自寮國與泰國東北部伊善地區，現風行全國。",
+        "wiki": "Green papaya salad"
+      },
+      {
+        "name": "綠咖哩",
+        "localName": "แกงเขียวหวาน (Kaeng khiao wan)",
+        "description": "以青辣椒咖哩醬與椰奶燉煮雞肉或牛肉。",
+        "history": "泰國中部的經典咖哩。",
+        "wiki": "Green curry"
+      },
+      {
+        "name": "芒果糯米飯",
+        "localName": "ข้าวเหนียวมะม่วง (Khao niao mamuang)",
+        "description": "糯米淋上椰奶，搭配新鮮芒果。",
+        "history": "泰國最受歡迎的甜點，盛產於夏季芒果季節。",
+        "wiki": "Mango sticky rice"
+      }
+    ]
+  }
+}

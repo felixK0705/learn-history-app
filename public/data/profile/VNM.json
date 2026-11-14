@@ -1,0 +1,101 @@
+{
+  "iso": "VNM",
+  "capital": "河內",
+  "summary": "位於中南半島東部的社會主義國家，長期受中華文化影響，歷經法國殖民與越戰，1986年「革新開放」後經濟快速成長。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "無宗教（含民間信仰）",
+        "percent": 86,
+        "description": "多數人未登記宗教，但普遍祭祖並參與民間信仰與佛教儀式。"
+      },
+      {
+        "name": "天主教",
+        "percent": 6,
+        "description": "17世紀由歐洲傳教士傳入，是東南亞天主教人口較多的國家之一。"
+      },
+      {
+        "name": "佛教",
+        "percent": 5,
+        "description": "以大乘佛教為主，登記信徒雖不多，但佛教文化影響廣泛。"
+      },
+      {
+        "name": "和好教",
+        "percent": 1,
+        "description": "1939年於湄公河三角洲創立的佛教新宗派。"
+      },
+      {
+        "name": "新教",
+        "percent": 1,
+        "description": "主要分布於中部高原與北部山區少數民族。"
+      }
+    ],
+    "background": "越南受中國影響，形成佛教、儒家、道教與祖先崇拜交融的信仰傳統。17世紀起天主教由葡萄牙與法國傳教士傳入，法國殖民時期進一步擴展。20世紀南部興起高台教與和好教，共產政權時期許多人不登記宗教。"
+  },
+  "language": {
+    "official": "官方語言為越南語。",
+    "ranking": [
+      {
+        "name": "越南語",
+        "percent": 86,
+        "description": "京族的語言，屬南亞語系，使用拉丁字母為基礎的國語字。",
+        "greeting": "Xin chào",
+        "pronunciation": "sin chow"
+      },
+      {
+        "name": "赫蒙語（苗語）",
+        "percent": 1,
+        "description": "北部山區赫蒙族使用。",
+        "greeting": "Nyob zoo",
+        "pronunciation": "nyaw zhong"
+      },
+      {
+        "name": "高棉語",
+        "percent": 1,
+        "description": "湄公河三角洲高棉族使用。",
+        "greeting": "សួស្តី",
+        "pronunciation": "suo-sdei"
+      }
+    ],
+    "history": "越南語長期以漢字書寫，後來發展出以漢字為基礎的「字喃」。17世紀葡萄牙與法國傳教士創制拉丁字母拼寫法，20世紀初法國殖民政府與民族運動共同推廣，最終成為官方的「國語字」。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "越南河粉",
+        "localName": "Phở",
+        "description": "以牛骨或雞骨熬成清湯，加入米粉、肉片與香草的湯麵。",
+        "history": "20世紀初起源於北越南定、河內一帶，受法國燉牛肉與中國飲食影響，1954年後隨移民傳至南方。",
+        "wiki": "Pho"
+      },
+      {
+        "name": "越南法國麵包",
+        "localName": "Bánh mì",
+        "description": "酥脆法國長棍夾入肉類、肝醬、醃蘿蔔、香菜與辣椒。",
+        "history": "法國殖民時期引入麵包，1950年代西貢小販發展出越式夾餡版本。",
+        "wiki": "Bánh mì"
+      },
+      {
+        "name": "越南生春捲",
+        "localName": "Gỏi cuốn",
+        "description": "以米紙包入蝦、豬肉、米線與香草，蘸花生醬或魚露。",
+        "history": "南越常見的清爽前菜，展現越南料理重視新鮮香草的特色。",
+        "wiki": "Gỏi cuốn"
+      },
+      {
+        "name": "烤肉米線",
+        "localName": "Bún chả",
+        "description": "炭烤豬肉餅與五花肉浸在酸甜魚露湯汁中，配米線與香草。",
+        "history": "河內的代表性街頭料理，2016年美國總統歐巴馬造訪河內時品嘗而聲名大噪。",
+        "wiki": "Bún chả"
+      },
+      {
+        "name": "越南煎餅",
+        "localName": "Bánh xèo",
+        "description": "以米漿與薑黃煎成的脆皮薄餅，包入蝦、豬肉與豆芽。",
+        "history": "名稱源自米漿倒入熱鍋時的「滋滋」聲，在中部與南部最為流行。",
+        "wiki": "Bánh xèo"
+      }
+    ]
+  }
+}

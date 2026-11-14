@@ -1,0 +1,89 @@
+{
+  "iso": "LBR",
+  "capital": "蒙羅維亞",
+  "summary": "賴比瑞亞位於西非，1847年由美國獲釋的非裔美國人建國，是非洲第一個共和國，曾經歷兩次內戰。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "基督教",
+        "percent": 86,
+        "description": "以新教為主，包括五旬節派、衛理宗、浸信會等。"
+      },
+      {
+        "name": "伊斯蘭教",
+        "percent": 12,
+        "description": "主要為曼丁哥人與瓦伊人等族群。"
+      },
+      {
+        "name": "無宗教",
+        "percent": 1,
+        "description": "未認同任何宗教的人口。"
+      },
+      {
+        "name": "傳統信仰",
+        "percent": 1,
+        "description": "許多人同時參與波羅與桑德等傳統秘密社團。"
+      }
+    ],
+    "background": "十九世紀從美國遷來的非裔美國移民帶來衛理宗、浸信會等新教，並在統治階層中扮演重要角色。伊斯蘭教則較早經由西非貿易網路傳入。傳統宗教與秘密社團至今仍影響社會生活。"
+  },
+  "language": {
+    "official": "英語是官方語言。",
+    "ranking": [
+      {
+        "name": "英語（含利比亞英語）",
+        "percent": 20,
+        "description": "官方語言；日常多使用帶有本地特色的利比亞英語作為通用語。",
+        "greeting": "How da body?",
+        "pronunciation": "how da BAH-dee"
+      },
+      {
+        "name": "曼丁哥語",
+        "percent": 5,
+        "description": "曼丁哥商人的語言，常作為穆斯林與市場的通用語。",
+        "greeting": "I ni sɔgɔma",
+        "pronunciation": "ee nee SO-go-ma"
+      }
+    ],
+    "history": "賴比瑞亞境內有約30種本土語言，人口最多的是克佩勒語，其次為巴薩語與格雷博語。美國移民帶來的英語成為官方語言，並發展出本地的利比亞英語；瓦伊人在十九世紀還發明了獨特的瓦伊音節文字。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "喬洛夫飯",
+        "localName": "Jollof rice",
+        "description": "以番茄、洋蔥與香料燉煮的紅色米飯。",
+        "history": "西非各國共同的代表料理。",
+        "wiki": "Jollof rice"
+      },
+      {
+        "name": "富富",
+        "localName": "Fufu",
+        "description": "以木薯發酵搗成的糰狀主食，配湯食用。",
+        "history": "西非廣泛食用的主食。",
+        "wiki": "Fufu"
+      },
+      {
+        "name": "胡椒湯",
+        "localName": "Pepper soup",
+        "description": "以魚或肉加大量辣椒熬煮的辣湯。",
+        "history": "賴比瑞亞人喜愛重辣，胡椒湯是常見的家常湯品。",
+        "wiki": "Pepper soup"
+      },
+      {
+        "name": "棕櫚醬燉菜",
+        "localName": "Palm butter",
+        "description": "以棕櫚果醬燉煮肉或魚，配米飯。",
+        "history": "賴比瑞亞最具代表性的家常菜之一。",
+        "wiki": "Palm butter"
+      },
+      {
+        "name": "木薯葉燉菜",
+        "localName": "Cassava leaf",
+        "description": "將木薯葉搗碎後與棕櫚油、肉或魚燉煮。",
+        "history": "西非沿海常見的料理，在賴比瑞亞被視為國民美食。",
+        "wiki": "Pondu"
+      }
+    ]
+  }
+}

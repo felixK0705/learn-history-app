@@ -1,0 +1,98 @@
+{
+  "iso": "MKD",
+  "capital": "史高比耶",
+  "summary": "北馬其頓是位於巴爾幹半島中部的內陸國家，1991年自南斯拉夫獨立，2019年與希臘達成協議後改用現名，以奧赫里德湖聞名。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "東正教",
+        "percent": 46,
+        "description": "馬其頓正教會是最大的宗教團體。"
+      },
+      {
+        "name": "伊斯蘭教",
+        "percent": 32,
+        "description": "主要為阿爾巴尼亞裔、土耳其裔與部分羅姆人。"
+      },
+      {
+        "name": "其他基督教",
+        "percent": 14,
+        "description": "普查中未註明教派的基督徒。"
+      }
+    ],
+    "background": "九世紀聖西里爾與聖美多德的門徒克萊門特與納烏姆在奧赫里德傳教，使當地成為斯拉夫基督教的重要中心。十四世紀末起鄂圖曼帝國統治五百多年，部分居民改信伊斯蘭教。"
+  },
+  "language": {
+    "official": "馬其頓語是官方語言，阿爾巴尼亞語也是全國性官方語言。",
+    "ranking": [
+      {
+        "name": "馬其頓語",
+        "percent": 61,
+        "description": "屬南斯拉夫語支，使用西里爾字母。",
+        "greeting": "Здраво (Zdravo)",
+        "pronunciation": "ZDRAH-voh"
+      },
+      {
+        "name": "阿爾巴尼亞語",
+        "percent": 24,
+        "description": "西部與西北部阿爾巴尼亞裔居民的語言。",
+        "greeting": "Përshëndetje",
+        "pronunciation": "pur-shun-DET-yeh"
+      },
+      {
+        "name": "土耳其語",
+        "percent": 3,
+        "description": "土耳其裔居民使用。",
+        "greeting": "Merhaba",
+        "pronunciation": "MER-ha-ba"
+      },
+      {
+        "name": "羅姆語",
+        "percent": 2,
+        "description": "羅姆人社群使用，史高比耶的舒托奧里扎里區是羅姆人聚居地。",
+        "greeting": "Sar san?",
+        "pronunciation": "sar SAN"
+      }
+    ],
+    "history": "奧赫里德是中世紀斯拉夫文字與文學的中心。現代馬其頓標準語在1945年才正式制定，以西部方言為基礎。2001年衝突後的《奧赫里德協議》提升了阿爾巴尼亞語的地位，2019年起成為全國官方語言。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "烤豆",
+        "localName": "Тавче гравче (Tavče gravče)",
+        "description": "以白豆、洋蔥與紅椒粉在陶鍋中烘烤的料理。",
+        "history": "被視為北馬其頓國菜。",
+        "wiki": "Tavče gravče"
+      },
+      {
+        "name": "阿伊瓦爾",
+        "localName": "Ајвар (Ajvar)",
+        "description": "以烤紅椒與茄子熬成的抹醬。",
+        "history": "秋季家家戶戶自製的傳統醬料。",
+        "wiki": "Ajvar"
+      },
+      {
+        "name": "帕斯特馬伊利亞",
+        "localName": "Пастрмајлија (Pastrmajlija)",
+        "description": "在船形麵包上鋪醃漬肉丁烘烤的料理。",
+        "history": "源自什蒂普地區，當地每年舉辦相關美食節。",
+        "wiki": "Pastrmajlija"
+      },
+      {
+        "name": "布雷克",
+        "localName": "Бурек (Burek)",
+        "description": "以薄酥皮包裹肉、起司或菠菜烘烤的派。",
+        "history": "鄂圖曼時期傳入的料理，是常見早餐。",
+        "wiki": "Burek"
+      },
+      {
+        "name": "肖普斯卡沙拉",
+        "localName": "Шопска салата (Shopska salata)",
+        "description": "以番茄、黃瓜、甜椒與白乳酪碎做成的沙拉。",
+        "history": "巴爾幹地區廣受歡迎的沙拉。",
+        "wiki": "Shopska salad"
+      }
+    ]
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "iso": "MUS",
+  "capital": "路易港",
+  "summary": "位於印度洋西南部的島國，原為無人島，經荷蘭、法國與英國殖民後於1968年獨立，以多元族群、甘蔗與觀光業聞名，也是渡渡鳥的故鄉。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "印度教",
+        "percent": 48,
+        "description": "主要為印度裔居民。"
+      },
+      {
+        "name": "天主教",
+        "percent": 26,
+        "description": "克里奧爾人與部分其他族群信仰。"
+      },
+      {
+        "name": "伊斯蘭教",
+        "percent": 17,
+        "description": "主要為印度裔穆斯林。"
+      },
+      {
+        "name": "其他基督教",
+        "percent": 6,
+        "description": "包含五旬節派、基督復臨安息日會等。"
+      },
+      {
+        "name": "佛教",
+        "percent": 1,
+        "description": "主要為華裔居民。"
+      }
+    ],
+    "background": "法國殖民時期引入非洲與馬達加斯加奴隸，並帶來天主教。1835年英國廢奴後，從印度招募大量契約勞工，使印度教與伊斯蘭教成為主要宗教；華人移民則帶來佛教與民間信仰。"
+  },
+  "language": {
+    "official": "國會使用英語，法語與模里西斯克里奧爾語廣泛使用。",
+    "ranking": [
+      {
+        "name": "模里西斯克里奧爾語",
+        "percent": 87,
+        "description": "以法語為基礎的克里奧爾語，是多數家庭的語言。",
+        "greeting": "Bonzour",
+        "pronunciation": "bon-zur"
+      },
+      {
+        "name": "博傑普爾語",
+        "percent": 5,
+        "description": "印度裔居民的傳統語言，使用者減少中。",
+        "greeting": "प्रणाम",
+        "pronunciation": "pra-naam"
+      },
+      {
+        "name": "法語",
+        "percent": 4,
+        "description": "媒體與上層社會常用。",
+        "greeting": "Bonjour",
+        "pronunciation": "bon-zhoor"
+      }
+    ],
+    "history": "法國殖民時期奴隸與殖民者形成克里奧爾語。英國統治後英語成為官方與行政語言，但法語仍主導媒體與文化。印度勞工帶來博傑普爾語等，近年多數年輕人改以克里奧爾語為主要語言。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "豆餡烙餅",
+        "localName": "Dholl puri",
+        "description": "包入黃豌豆仁餡的薄餅，配咖哩豆、番茄醬與醃菜捲著吃。",
+        "history": "源自印度契約勞工，現為模里西斯最受歡迎的街頭小吃。",
+        "wiki": "Dhal puri"
+      },
+      {
+        "name": "番茄燉菜",
+        "localName": "Rougaille",
+        "description": "以番茄、洋蔥、大蒜、百里香與辣椒燉煮魚、香腸或鹹魚。",
+        "history": "源自法國殖民時期的克里奧爾料理，是家常必備菜。",
+        "wiki": "Rougaille"
+      },
+      {
+        "name": "辣椒豆餅",
+        "localName": "Gâteau piment",
+        "description": "以黃豆仁泥加辣椒與香草炸成的小圓餅。",
+        "history": "源自印度的豆餅，在街頭攤販常見。",
+        "wiki": "Gateau piment"
+      },
+      {
+        "name": "香料飯",
+        "localName": "Briani",
+        "description": "以香料、肉與馬鈴薯與米飯分層燜煮。",
+        "history": "隨印度穆斯林移民傳入，常見於婚禮與節慶。",
+        "wiki": "Biryani"
+      },
+      {
+        "name": "阿露達冰飲",
+        "localName": "Alouda",
+        "description": "以牛奶、洋菜凍與羅勒籽調製的甜冰飲。",
+        "history": "源自印度與波斯的法魯達（falooda），在路易港中央市場尤其著名。",
+        "wiki": "Falooda"
+      }
+    ]
+  }
+}

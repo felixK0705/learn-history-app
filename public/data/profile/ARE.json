@@ -1,0 +1,103 @@
+{
+  "iso": "ARE",
+  "capital": "阿布達比",
+  "summary": "阿拉伯聯合大公國由七個酋長國組成，1971年成立，以石油財富、杜拜的摩天大樓與國際航空樞紐聞名，外籍人口約占九成。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "伊斯蘭教",
+        "percent": 77,
+        "description": "國教，本國公民多為遜尼派。"
+      },
+      {
+        "name": "基督教",
+        "percent": 13,
+        "description": "主要為外籍居民。"
+      },
+      {
+        "name": "印度教",
+        "percent": 7,
+        "description": "主要為印度籍居民。"
+      },
+      {
+        "name": "佛教",
+        "percent": 2,
+        "description": "主要為南亞與東亞籍居民。"
+      }
+    ],
+    "background": "伊斯蘭教自七世紀起即為阿拉伯半島的主要宗教。二十世紀後期石油經濟吸引大量外籍勞工，使外籍人口遠超過本國公民，因而形成多元的宗教組成，政府也允許興建教堂與印度教寺廟。"
+  },
+  "language": {
+    "official": "阿拉伯語是官方語言，英語廣泛用於商業與日常溝通。",
+    "ranking": [
+      {
+        "name": "阿拉伯語",
+        "percent": 20,
+        "description": "本國公民與阿拉伯移民的語言。",
+        "greeting": "مرحبا",
+        "pronunciation": "MAR-ha-ba"
+      },
+      {
+        "name": "馬拉雅拉姆語",
+        "percent": 15,
+        "description": "來自印度喀拉拉邦的大型移民社群使用。",
+        "greeting": "നമസ്കാരം",
+        "pronunciation": "na-mas-KAA-ram"
+      },
+      {
+        "name": "烏爾都語",
+        "percent": 12,
+        "description": "巴基斯坦移民社群使用。",
+        "greeting": "السلام علیکم",
+        "pronunciation": "as-sa-LAA-mu a-LAI-kum"
+      },
+      {
+        "name": "塔加洛語",
+        "percent": 6,
+        "description": "菲律賓移民社群使用。",
+        "greeting": "Kumusta",
+        "pronunciation": "koo-MOOS-ta"
+      }
+    ],
+    "history": "當地傳統上使用海灣阿拉伯語方言。石油開採後大量移民湧入，英語成為不同族群間的共通語言，南亞語言在街頭也十分常見，形成高度多語的社會。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "馬奇布斯",
+        "localName": "مجبوس (Machboos)",
+        "description": "以香料、乾萊姆與肉一同烹煮的香料飯。",
+        "history": "海灣地區代表性的米飯料理，反映印度洋香料貿易的影響。",
+        "wiki": "Kabsa"
+      },
+      {
+        "name": "哈里斯",
+        "localName": "هريس (Harees)",
+        "description": "以小麥與肉長時間燉煮搗成的粥。",
+        "history": "阿聯傳統的節慶料理，齋戒月與婚禮常見。",
+        "wiki": "Harees"
+      },
+      {
+        "name": "盧蓋瑪特",
+        "localName": "لقيمات (Luqaimat)",
+        "description": "外酥內軟的小炸麵團球，淋上椰棗糖漿。",
+        "history": "齋戒月期間最受歡迎的甜點之一。",
+        "wiki": "Luqaimat"
+      },
+      {
+        "name": "巴拉利特",
+        "localName": "بلاليط (Balaleet)",
+        "description": "甜味細麵上覆蓋蛋餅的早餐料理。",
+        "history": "以番紅花與小豆蔻調味，是傳統的節慶早餐。",
+        "wiki": "Balaleet"
+      },
+      {
+        "name": "沙里德",
+        "localName": "ثريد (Thareed)",
+        "description": "將薄麵包浸在肉與蔬菜燉湯中的料理。",
+        "history": "齋戒月開齋時常見的傳統料理。",
+        "wiki": "Tharid"
+      }
+    ]
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "iso": "EST",
+  "capital": "塔林",
+  "summary": "波羅的海三國中最北的國家，1918年首度獨立，二戰後被蘇聯併入，1991年恢復獨立，以數位政府與科技新創聞名。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "無宗教",
+        "percent": 58,
+        "description": "愛沙尼亞是全球最世俗化的社會之一。"
+      },
+      {
+        "name": "東正教",
+        "percent": 16,
+        "description": "主要為俄羅斯裔居民。"
+      },
+      {
+        "name": "路德宗",
+        "percent": 8,
+        "description": "歷史上愛沙尼亞人的主要教會。"
+      },
+      {
+        "name": "其他基督教",
+        "percent": 2,
+        "description": "包含浸信會、天主教等。"
+      },
+      {
+        "name": "其他宗教（含本土信仰Taara等）",
+        "percent": 1,
+        "description": "包含復興傳統自然信仰的團體。"
+      }
+    ],
+    "background": "13世紀德意志與丹麥十字軍以武力使愛沙尼亞人改信天主教，16世紀宗教改革後改信路德宗。由於教會長期與德裔地主階級連結，加上蘇聯時期的無神論政策，愛沙尼亞人宗教認同薄弱；東正教則隨俄羅斯移民而來。"
+  },
+  "language": {
+    "official": "官方語言為愛沙尼亞語。",
+    "ranking": [
+      {
+        "name": "愛沙尼亞語",
+        "percent": 67,
+        "description": "屬烏拉語系芬蘭語支，與芬蘭語相近。",
+        "greeting": "Tere",
+        "pronunciation": "te-re"
+      },
+      {
+        "name": "俄語",
+        "percent": 28,
+        "description": "蘇聯時期移入的俄羅斯裔居民使用，東北部比例最高。",
+        "greeting": "Привет",
+        "pronunciation": "pri-vyet"
+      },
+      {
+        "name": "烏克蘭語",
+        "percent": 2,
+        "description": "烏克蘭裔與難民社群使用。",
+        "greeting": "Привіт",
+        "pronunciation": "pry-vit"
+      }
+    ],
+    "history": "愛沙尼亞語與周邊印歐語言不同，屬烏拉語系。數百年間德語是上層與教會語言，19世紀民族覺醒運動推動愛沙尼亞語文學。蘇聯時期俄語強勢，恢復獨立後愛沙尼亞語成為唯一官方語言。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "黑麥麵包",
+        "localName": "Rukkileib",
+        "description": "以黑麥製成的酸種深色麵包，幾乎每餐都吃。",
+        "history": "黑麥是北方寒冷氣候的主要作物，愛沙尼亞人視黑麥麵包為文化象徵。",
+        "wiki": "Rye bread"
+      },
+      {
+        "name": "血腸",
+        "localName": "Verivorst",
+        "description": "以豬血、大麥與香料灌製的香腸，配越橘醬。",
+        "history": "愛沙尼亞傳統聖誕節料理。",
+        "wiki": "Blood sausage"
+      },
+      {
+        "name": "卡瑪穀粉",
+        "localName": "Kama",
+        "description": "以烘烤過的大麥、黑麥、燕麥與豌豆磨成的粉，拌優格或酪乳食用。",
+        "history": "愛沙尼亞獨特的傳統食品，過去是方便攜帶的農民乾糧。",
+        "wiki": "Kama (food)"
+      },
+      {
+        "name": "穆爾吉粥",
+        "localName": "Mulgipuder",
+        "description": "以馬鈴薯與大麥煮成的粥，配煎培根與洋蔥。",
+        "history": "源自南部穆爾吉地區的農家料理。",
+        "wiki": "Mulgipuder"
+      },
+      {
+        "name": "甜凝乳棒",
+        "localName": "Kohuke",
+        "description": "以甜凝乳製成並裹上巧克力的冷藏點心。",
+        "history": "蘇聯時期普及，至今仍是愛沙尼亞人最喜愛的零食之一。",
+        "wiki": "Kohuke"
+      }
+    ]
+  }
+}

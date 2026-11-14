@@ -1,0 +1,91 @@
+{
+  "iso": "KGZ",
+  "capital": "比斯凱克",
+  "summary": "位於中亞的內陸山國，天山山脈橫貫全境，擁有伊塞克湖，以游牧文化與史詩《瑪納斯》聞名，1991年脫離蘇聯獨立。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "伊斯蘭教（遜尼派）",
+        "percent": 90,
+        "description": "多數居民信仰，屬哈乃斐學派，融合游牧傳統。"
+      },
+      {
+        "name": "俄羅斯正教",
+        "percent": 7,
+        "description": "主要為俄羅斯裔居民。"
+      },
+      {
+        "name": "其他",
+        "percent": 3,
+        "description": "包含新教、無宗教等。"
+      }
+    ],
+    "background": "伊斯蘭教自10世紀前後由喀喇汗王朝推廣於費爾干納谷地，吉爾吉斯游牧民族直到17–19世紀才在浩罕汗國影響下大量改信伊斯蘭教，並保有騰格里信仰等傳統習俗。俄帝國與蘇聯時期帶來東正教與斯拉夫移民。"
+  },
+  "language": {
+    "official": "官方語言為吉爾吉斯語（國語）與俄語。",
+    "ranking": [
+      {
+        "name": "吉爾吉斯語",
+        "percent": 73,
+        "description": "突厥語族的語言，以西里爾字母書寫。",
+        "greeting": "Саламатсызбы",
+        "pronunciation": "sa-la-mat-syz-by"
+      },
+      {
+        "name": "烏茲別克語",
+        "percent": 14,
+        "description": "南部費爾干納谷地的烏茲別克人使用。",
+        "greeting": "Salom",
+        "pronunciation": "sa-lom"
+      },
+      {
+        "name": "俄語",
+        "percent": 9,
+        "description": "母語者約一成，但在城市與商業中廣泛使用。",
+        "greeting": "Здравствуйте",
+        "pronunciation": "zdrast-vuy-tye"
+      }
+    ],
+    "history": "吉爾吉斯語屬突厥語族，口傳史詩《瑪納斯》是其文化瑰寶。蘇聯時期吉爾吉斯語先改用拉丁字母再改為西里爾字母，俄語成為行政與教育語言。獨立後吉爾吉斯語成為國語，俄語保有官方地位。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "別什巴爾馬克",
+        "localName": "Бешбармак (Beshbarmak)",
+        "description": "水煮羊肉或馬肉鋪在寬麵片上，配肉湯與洋蔥，為國菜。",
+        "history": "游牧民族待客的傳統料理，名稱意為「五根手指」。",
+        "wiki": "Beshbarmak"
+      },
+      {
+        "name": "中亞抓飯",
+        "localName": "Палоо (Plov)",
+        "description": "以米、羊肉、胡蘿蔔與洋蔥在大鍋燉煮。",
+        "history": "在南部奧什一帶尤其普遍，是婚禮與節慶主菜。",
+        "wiki": "Pilaf"
+      },
+      {
+        "name": "拉條子",
+        "localName": "Лагман (Lagman)",
+        "description": "手拉麵條配上羊肉、蔬菜炒製或燉煮的醬汁。",
+        "history": "源自東干人與維吾爾人的麵食，傳入中亞後成為各國共享的料理。",
+        "wiki": "Laghman (food)"
+      },
+      {
+        "name": "曼提餃",
+        "localName": "Манты (Manty)",
+        "description": "以羊肉、洋蔥為餡的大型蒸餃。",
+        "history": "隨突厥與蒙古民族遷徙流傳於中亞。",
+        "wiki": "Manti (food)"
+      },
+      {
+        "name": "馬奶酒",
+        "localName": "Кымыз (Kymyz)",
+        "description": "發酵馬奶製成的微酸低酒精飲品。",
+        "history": "游牧民族夏季牧場的傳統飲品，被視為國飲。",
+        "wiki": "Kumis"
+      }
+    ]
+  }
+}

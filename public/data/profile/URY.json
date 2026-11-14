@@ -1,0 +1,89 @@
+{
+  "iso": "URY",
+  "capital": "蒙特維多",
+  "summary": "位於南美洲東南部、拉布拉他河北岸的國家，政治穩定、社會福利完善，是拉丁美洲最世俗化的國家之一，以足球與牛肉聞名。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "天主教",
+        "percent": 42,
+        "description": "殖民時期傳入，仍是最大宗教，但影響力遠低於其他拉美國家。"
+      },
+      {
+        "name": "無宗教",
+        "percent": 37,
+        "description": "烏拉圭是拉丁美洲無宗教比例最高的國家之一。"
+      },
+      {
+        "name": "新教（福音派）",
+        "percent": 15,
+        "description": "近數十年有所成長。"
+      },
+      {
+        "name": "其他（猶太教、非裔巴西宗教等）",
+        "percent": 3,
+        "description": "包含猶太社群與溫班達教等。"
+      }
+    ],
+    "background": "烏拉圭在殖民時期天主教勢力相對薄弱，19世紀末大量歐洲移民帶入自由主義思想。20世紀初總統巴特列推動政教分離，1917年憲法正式確立，宗教節日甚至被改名（如聖誕節稱「家庭日」），使社會高度世俗化。"
+  },
+  "language": {
+    "official": "官方語言事實上為西班牙語。",
+    "ranking": [
+      {
+        "name": "西班牙語",
+        "percent": 98,
+        "description": "全國通用，屬拉布拉他河口音，與阿根廷相近。",
+        "greeting": "Hola",
+        "pronunciation": "o-la"
+      },
+      {
+        "name": "葡萄牙語（烏拉圭葡萄牙語）",
+        "percent": 1,
+        "description": "與巴西接壤的北部邊境地區使用。",
+        "greeting": "Olá",
+        "pronunciation": "o-la"
+      }
+    ],
+    "history": "原住民查魯亞人的語言在殖民時期消失。西班牙與葡萄牙曾爭奪此地，北部邊境因此保留葡萄牙語方言。19–20世紀大量義大利移民使當地西班牙語的語調與詞彙深受義大利語影響。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "烏拉圭烤肉",
+        "localName": "Asado",
+        "description": "以木炭或木柴慢烤牛肋排、香腸與內臟，是社交聚會核心。",
+        "history": "源自草原牛仔（gaucho）的戶外燒烤傳統，烏拉圭是全球人均牛肉消費最高的國家之一。",
+        "wiki": "Asado"
+      },
+      {
+        "name": "奇維多牛排三明治",
+        "localName": "Chivito",
+        "description": "夾著薄牛排、火腿、起司、蛋、培根與生菜的大型三明治，為國菜。",
+        "history": "1940年代誕生於東岬（Punta del Este）一家餐廳，據說為一名阿根廷客人臨時創製。",
+        "wiki": "Chivito (sandwich)"
+      },
+      {
+        "name": "炸肉排",
+        "localName": "Milanesa",
+        "description": "裹麵包粉的薄牛排或雞排油炸，常配薯泥或薯條。",
+        "history": "隨19–20世紀義大利移民傳入，源自米蘭式炸肉排。",
+        "wiki": "Milanesa"
+      },
+      {
+        "name": "牛奶焦糖醬",
+        "localName": "Dulce de leche",
+        "description": "以牛奶與糖長時間熬煮成的焦糖抹醬，用於甜點與麵包。",
+        "history": "拉布拉他河流域共享的經典甜醬，烏拉圭與阿根廷皆視為國民甜點。",
+        "wiki": "Dulce de leche"
+      },
+      {
+        "name": "瑪黛茶",
+        "localName": "Mate",
+        "description": "以瑪黛葉沖泡的熱飲，用葫蘆杯與金屬吸管飲用。",
+        "history": "源自瓜拉尼原住民，烏拉圭人隨身攜帶熱水壺，人均消費量居世界前列。",
+        "wiki": "Mate (drink)"
+      }
+    ]
+  }
+}

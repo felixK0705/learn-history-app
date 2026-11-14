@@ -1,0 +1,110 @@
+{
+  "iso": "LUX",
+  "capital": "盧森堡市",
+  "summary": "西歐的內陸大公國，國土面積小但人均所得居世界前列，是歐盟創始國之一，也是金融與歐盟機構重鎮。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "天主教",
+        "percent": 55,
+        "description": "歷史上的主要宗教，2015年後政府與宗教團體關係改革。"
+      },
+      {
+        "name": "無宗教",
+        "percent": 30,
+        "description": "近年世俗化程度提高。"
+      },
+      {
+        "name": "其他基督教（新教、東正教等）",
+        "percent": 5,
+        "description": "包含新教與東歐移民的東正教。"
+      },
+      {
+        "name": "伊斯蘭教",
+        "percent": 3,
+        "description": "主要來自巴爾幹半島移民。"
+      }
+    ],
+    "background": "盧森堡長期由天主教的勃艮第、西班牙與奧地利哈布斯堡統治，宗教改革未在此扎根，天主教一直占主導。近年大量外國居民與世俗化趨勢使宗教格局更加多元。"
+  },
+  "language": {
+    "official": "官方語言為盧森堡語（國語）、法語與德語。",
+    "ranking": [
+      {
+        "name": "盧森堡語",
+        "percent": 49,
+        "description": "源自摩澤爾法蘭克方言，是國家認同的象徵。",
+        "greeting": "Moien",
+        "pronunciation": "moy-en"
+      },
+      {
+        "name": "葡萄牙語",
+        "percent": 15,
+        "description": "葡萄牙裔居民約占人口六分之一，是重要的家庭語言。",
+        "greeting": "Olá",
+        "pronunciation": "o-la"
+      },
+      {
+        "name": "法語",
+        "percent": 15,
+        "description": "立法與行政主要語言，也是跨國通勤者常用語。",
+        "greeting": "Bonjour",
+        "pronunciation": "bon-zhoor"
+      },
+      {
+        "name": "英語",
+        "percent": 4,
+        "description": "金融與國際機構常用。",
+        "greeting": "Hello",
+        "pronunciation": "heh-loh"
+      },
+      {
+        "name": "德語",
+        "percent": 3,
+        "description": "媒體與基礎教育常用的書面語。",
+        "greeting": "Hallo",
+        "pronunciation": "ha-lo"
+      }
+    ],
+    "history": "盧森堡位於日耳曼語與羅曼語交界，本地口語屬德語方言，法語則自中世紀起為貴族與行政語言。二戰期間德國占領，1941年居民拒絕認同德國身分，戰後盧森堡語成為國家認同核心，1984年立法確立為國語。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "燻豬頸配蠶豆",
+        "localName": "Judd mat Gaardebounen",
+        "description": "煙燻豬頸肉配上奶油醬蠶豆與馬鈴薯，為國菜。",
+        "history": "源自農村傳統，豬頸肉在冬季燻製保存，夏季配新鮮蠶豆食用。",
+        "wiki": "Judd mat Gaardebounen"
+      },
+      {
+        "name": "馬鈴薯煎餅",
+        "localName": "Gromperekichelcher",
+        "description": "以馬鈴薯絲、洋蔥與香草煎炸的薄餅，常配蘋果泥。",
+        "history": "盧森堡各地節慶與聖誕市集上的經典小吃。",
+        "wiki": "Gromperekichelcher"
+      },
+      {
+        "name": "四季豆湯",
+        "localName": "Bouneschlupp",
+        "description": "以四季豆、馬鈴薯、培根與洋蔥燉成的濃湯。",
+        "history": "盧森堡傳統的家庭湯品，被視為國民料理之一。",
+        "wiki": "Bouneschlupp"
+      },
+      {
+        "name": "煮乳酪",
+        "localName": "Kachkéis",
+        "description": "軟質的熟成乳酪醬，抹在麵包上食用。",
+        "history": "傳統農家利用脫脂牛奶製作的乳製品。",
+        "wiki": "Kachkéis"
+      },
+      {
+        "name": "李子塔",
+        "localName": "Quetschentaart",
+        "description": "以當地紫李子鋪滿塔皮烘烤的甜點。",
+        "history": "每年夏末李子成熟時的傳統甜點，常見於村莊節慶。",
+        "wiki": "Quetschentaart"
+      }
+    ]
+  }
+}

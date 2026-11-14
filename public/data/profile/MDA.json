@@ -1,0 +1,98 @@
+{
+  "iso": "MDA",
+  "capital": "奇西瑙",
+  "summary": "摩爾多瓦是東歐內陸國家，位於羅馬尼亞與烏克蘭之間，以葡萄酒產業聞名，東部聶斯特河沿岸地區自1990年代起由分離勢力控制。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "東正教",
+        "percent": 90,
+        "description": "包括摩爾多瓦正教會與比薩拉比亞正教會。"
+      },
+      {
+        "name": "其他基督教派",
+        "percent": 3,
+        "description": "包括浸信會、五旬節派、耶和華見證人等。"
+      },
+      {
+        "name": "無宗教",
+        "percent": 1,
+        "description": "未認同任何宗教的人口。"
+      }
+    ],
+    "background": "摩爾多瓦地區在中世紀摩爾達維亞公國時期屬東正教世界。1812年後被俄羅斯帝國併入，正教會一度受俄羅斯正教會管轄，至今仍有隸屬莫斯科與隸屬羅馬尼亞兩個正教會並存。"
+  },
+  "language": {
+    "official": "羅馬尼亞語是官方語言。",
+    "ranking": [
+      {
+        "name": "羅馬尼亞語",
+        "percent": 79,
+        "description": "官方語言，過去也稱為「摩爾多瓦語」。",
+        "greeting": "Bună ziua",
+        "pronunciation": "BOO-nuh ZEE-wa"
+      },
+      {
+        "name": "俄語",
+        "percent": 15,
+        "description": "許多人能說，在都市與聶斯特河沿岸地區十分普遍。",
+        "greeting": "Здравствуйте",
+        "pronunciation": "ZDRAST-vuy-tye"
+      },
+      {
+        "name": "加告茲語",
+        "percent": 3,
+        "description": "南部加告茲自治區信奉東正教的突厥族群語言。",
+        "greeting": "Merhaba",
+        "pronunciation": "MER-ha-ba"
+      },
+      {
+        "name": "烏克蘭語",
+        "percent": 3,
+        "description": "烏克蘭裔居民使用。",
+        "greeting": "Привіт",
+        "pronunciation": "pry-VEET"
+      }
+    ],
+    "history": "蘇聯時期當局稱當地語言為「摩爾多瓦語」，並改用西里爾字母，以強調其與羅馬尼亞語的區別。1989年恢復使用拉丁字母，2023年國會通過法律，將官方語言名稱統一為羅馬尼亞語。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "玉米糊",
+        "localName": "Mămăligă",
+        "description": "以玉米粉煮成的濃稠糊，配起司、酸奶油與燉肉。",
+        "history": "摩爾多瓦與羅馬尼亞共同的傳統主食。",
+        "wiki": "Mămăligă"
+      },
+      {
+        "name": "普拉金塔",
+        "localName": "Plăcintă",
+        "description": "以薄麵皮包裹起司、馬鈴薯或高麗菜的煎餅或烤餅。",
+        "history": "摩爾多瓦家庭最常製作的點心之一。",
+        "wiki": "Plăcintă"
+      },
+      {
+        "name": "高麗菜捲",
+        "localName": "Sarmale",
+        "description": "以葡萄葉或高麗菜葉包裹肉與米燉煮。",
+        "history": "節慶與婚禮的傳統料理。",
+        "wiki": "Sarma (food)"
+      },
+      {
+        "name": "雞湯",
+        "localName": "Zeamă",
+        "description": "以雞肉、蔬菜與手工麵條熬煮的酸味湯。",
+        "history": "摩爾多瓦最具代表性的湯品，常以醃麥麩調出酸味。",
+        "wiki": "Zeamă"
+      },
+      {
+        "name": "米奇烤肉腸",
+        "localName": "Mititei",
+        "description": "以多種肉類與大蒜香料製成的無腸衣烤肉腸。",
+        "history": "與羅馬尼亞共享的燒烤料理。",
+        "wiki": "Mici"
+      }
+    ]
+  }
+}

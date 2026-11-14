@@ -1,0 +1,108 @@
+{
+  "iso": "PHL",
+  "capital": "馬尼拉",
+  "summary": "由七千多座島嶼組成的東南亞群島國家，曾受西班牙統治三百多年及美國統治近半世紀，是亞洲天主教人口最多的國家。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "天主教",
+        "percent": 79,
+        "description": "西班牙殖民時期傳入，深刻影響節慶與社會生活。"
+      },
+      {
+        "name": "伊斯蘭教",
+        "percent": 6,
+        "description": "主要分布於南部民答那峨與蘇祿群島。"
+      },
+      {
+        "name": "新教（福音派等）",
+        "percent": 5,
+        "description": "美國統治時期傳入，近年福音派持續成長。"
+      },
+      {
+        "name": "基督教會（Iglesia ni Cristo）",
+        "percent": 3,
+        "description": "1914年在菲律賓創立的本土教會。"
+      },
+      {
+        "name": "菲律賓獨立教會",
+        "percent": 1,
+        "description": "1902年脫離羅馬天主教會成立的本土教會。"
+      }
+    ],
+    "background": "伊斯蘭教於14世紀經馬來商人傳入南部蘇祿與民答那峨。1565年起西班牙殖民，傳教士使北部與中部居民大規模改信天主教，但南部穆斯林長期抵抗。美國統治期間新教傳入，20世紀初亦興起本土教會。"
+  },
+  "language": {
+    "official": "官方語言為菲律賓語（以他加祿語為基礎）與英語。",
+    "ranking": [
+      {
+        "name": "他加祿語",
+        "percent": 40,
+        "description": "呂宋島中南部的語言，菲律賓語即以其為基礎，全國通用。",
+        "greeting": "Kumusta",
+        "pronunciation": "ku-mus-ta"
+      },
+      {
+        "name": "宿霧語（比薩亞語）",
+        "percent": 21,
+        "description": "中部維薩亞斯與民答那峨的主要語言。",
+        "greeting": "Maayong buntag（早安）",
+        "pronunciation": "ma-a-yong bun-tag"
+      },
+      {
+        "name": "伊洛卡諾語",
+        "percent": 8,
+        "description": "呂宋島北部伊洛卡諾人的語言。",
+        "greeting": "Naimbag nga aldaw（日安）",
+        "pronunciation": "na-im-bag nga al-dau"
+      },
+      {
+        "name": "希利蓋農語",
+        "percent": 7,
+        "description": "班乃島與西內格羅斯的語言。",
+        "greeting": "Maayong aga（早安）",
+        "pronunciation": "ma-a-yong a-ga"
+      }
+    ],
+    "history": "菲律賓有一百多種南島語系語言。西班牙統治三百年間西班牙語留下大量詞彙但未普及；美國統治時期以英語推行公共教育，使英語普及至今。1937年選定他加祿語作為國語基礎，後稱為菲律賓語。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "菲律賓阿多波",
+        "localName": "Adobo",
+        "description": "以醋、醬油、大蒜、月桂葉與胡椒燉煮的雞肉或豬肉，常被視為國菜。",
+        "history": "以醋保存食物的做法早於殖民時期，西班牙人以其醃漬料理之名稱呼此菜。",
+        "wiki": "Philippine adobo"
+      },
+      {
+        "name": "酸湯",
+        "localName": "Sinigang",
+        "description": "以羅望子等酸味食材熬煮豬肉、蝦或魚與蔬菜的酸湯。",
+        "history": "菲律賓本土的傳統湯品，反映熱帶地區偏好酸味的飲食習慣。",
+        "wiki": "Sinigang"
+      },
+      {
+        "name": "烤乳豬",
+        "localName": "Lechon",
+        "description": "整隻豬以炭火慢烤，外皮酥脆，是節慶宴席主角。",
+        "history": "隨西班牙殖民傳入的烤全豬傳統，宿霧的版本尤其著名。",
+        "wiki": "Lechon"
+      },
+      {
+        "name": "鐵板豬頭肉",
+        "localName": "Sisig",
+        "description": "將豬頭肉切碎與洋蔥、辣椒、卡拉蒙西酸橘在鐵板上炒製。",
+        "history": "源自邦板牙省安赫萊斯市，1970年代起在當地普及，成為下酒菜代表。",
+        "wiki": "Sisig"
+      },
+      {
+        "name": "哈囉哈囉剉冰",
+        "localName": "Halo-halo",
+        "description": "剉冰上加入甜豆、水果、紫山藥、煉乳與冰淇淋混合食用。",
+        "history": "名稱意為「混合」，一般認為受二戰前日本移民的刨冰點心影響。",
+        "wiki": "Halo-halo"
+      }
+    ]
+  }
+}

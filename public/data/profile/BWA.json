@@ -1,0 +1,96 @@
+{
+  "iso": "BWA",
+  "capital": "嘉柏隆里",
+  "summary": "波札那位於非洲南部內陸，1966年脫離英國獨立，以穩定的民主政治、鑽石產業及奧卡萬戈三角洲的野生動物聞名。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "基督新教（含非洲獨立教會）",
+        "percent": 74,
+        "description": "包括錫安基督教會等非洲獨立教會、五旬節派及倫敦傳道會傳統的教會。"
+      },
+      {
+        "name": "無宗教",
+        "percent": 15,
+        "description": "不認同任何宗教的人口占相當比例。"
+      },
+      {
+        "name": "天主教",
+        "percent": 5,
+        "description": "天主教會在教育與醫療方面頗具影響力。"
+      },
+      {
+        "name": "傳統信仰（巴迪莫）",
+        "percent": 4,
+        "description": "崇敬祖先靈魂的茨瓦納傳統信仰。"
+      }
+    ],
+    "background": "十九世紀倫敦傳道會傳教士（如李文斯頓）進入茨瓦納地區，酋長卡馬三世等人皈依基督教，使基督教迅速傳播。二十世紀後結合非洲傳統元素的獨立教會快速成長，而祖先崇拜觀念仍融入許多人的生活。"
+  },
+  "language": {
+    "official": "英語為官方語言，茨瓦納語為國語。",
+    "ranking": [
+      {
+        "name": "茨瓦納語",
+        "percent": 77,
+        "description": "國語，也是大多數人的母語與日常通用語。",
+        "greeting": "Dumela",
+        "pronunciation": "doo-MEH-la"
+      },
+      {
+        "name": "卡蘭加語",
+        "percent": 8,
+        "description": "東北部弗朗西斯敦一帶卡蘭加人的語言。",
+        "greeting": "Dumilani",
+        "pronunciation": "doo-mee-LAH-nee"
+      },
+      {
+        "name": "英語",
+        "percent": 3,
+        "description": "官方語言，用於政府、商業與高等教育。",
+        "greeting": "Hello",
+        "pronunciation": "heh-LOH"
+      }
+    ],
+    "history": "茨瓦納語屬班圖語族，十九世紀傳教士以拉丁字母記錄並翻譯聖經，奠定其書面基礎。英國保護地時期英語成為行政語言，獨立後茨瓦納語則作為國家認同的象徵持續推廣。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "塞斯瓦燉肉",
+        "localName": "Seswaa",
+        "description": "將牛肉或羊肉加鹽長時間燉煮後搗成絲狀的肉料理。",
+        "history": "波札那的國菜，傳統上由男性在婚禮、葬禮等重大場合以鐵鍋烹煮。",
+        "wiki": "Seswaa"
+      },
+      {
+        "name": "玉米粥",
+        "localName": "Bogobe",
+        "description": "以高粱或玉米粉煮成的濃稠粥糊，是主食。",
+        "history": "南部非洲農牧社會的傳統主食，常搭配燉肉或蔬菜。",
+        "wiki": "Bogobe"
+      },
+      {
+        "name": "莫帕尼蟲",
+        "localName": "Phane",
+        "description": "莫帕尼蛾的幼蟲，曬乾後煎炒或燉煮，富含蛋白質。",
+        "history": "是波札那與南部非洲傳統的重要季節性食物，採集也帶來經濟收入。",
+        "wiki": "Gonimbrasia belina"
+      },
+      {
+        "name": "莫羅戈野菜",
+        "localName": "Morogo",
+        "description": "以野生或栽培綠葉菜煮成的蔬菜料理。",
+        "history": "南部非洲傳統飲食中重要的蔬菜來源，常搭配玉米粥。",
+        "wiki": "Morogo"
+      },
+      {
+        "name": "炸麵包",
+        "localName": "Magwinya",
+        "description": "將麵團油炸成圓球狀的炸麵包，常當早餐或點心。",
+        "history": "與南非的炸麵包（vetkoek）相同，是南部非洲常見的街頭小吃。",
+        "wiki": "Vetkoek"
+      }
+    ]
+  }
+}

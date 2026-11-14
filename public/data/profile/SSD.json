@@ -1,0 +1,98 @@
+{
+  "iso": "SSD",
+  "capital": "朱巴",
+  "summary": "位於東北非的內陸國，2011年經公投脫離蘇丹獨立，是世界上最年輕的國家之一，境內白尼羅河流經，以畜牧文化聞名。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "基督教",
+        "percent": 60,
+        "description": "以天主教與聖公會為主，在內戰期間快速發展。"
+      },
+      {
+        "name": "傳統信仰",
+        "percent": 33,
+        "description": "丁卡、努爾等民族的傳統宗教，崇拜神靈與祖先。"
+      },
+      {
+        "name": "伊斯蘭教",
+        "percent": 6,
+        "description": "主要分布於北部邊境與城市。"
+      }
+    ],
+    "background": "19世紀末起天主教與新教傳教士在南蘇丹傳教，英國殖民時期的「南方政策」讓教會主導教育。蘇丹獨立後北方政府推行伊斯蘭化與阿拉伯化，反而促使南方人以基督教作為身分認同，內戰期間基督教迅速擴展。"
+  },
+  "language": {
+    "official": "官方語言為英語。",
+    "ranking": [
+      {
+        "name": "丁卡語",
+        "percent": 35,
+        "description": "最大民族丁卡人的語言，屬尼羅語族。",
+        "greeting": "Cɛ yi bak",
+        "pronunciation": "che yi bak"
+      },
+      {
+        "name": "努爾語",
+        "percent": 15,
+        "description": "第二大民族努爾人的語言。",
+        "greeting": "Male",
+        "pronunciation": "ma-le"
+      },
+      {
+        "name": "朱巴阿拉伯語",
+        "percent": 10,
+        "description": "以阿拉伯語為基礎的通用語，在朱巴等城市普遍使用（多為第二語言）。",
+        "greeting": "Salaam",
+        "pronunciation": "sa-laam"
+      },
+      {
+        "name": "英語",
+        "percent": 2,
+        "description": "官方與教育語言。",
+        "greeting": "Hello",
+        "pronunciation": "heh-loh"
+      }
+    ],
+    "history": "南蘇丹有六十多種本土語言，多屬尼羅－撒哈拉語系。英國殖民時期教會學校使用英語與本土語言；蘇丹統治時期推行阿拉伯語，城市中則形成朱巴阿拉伯語作為通用語。獨立後選擇英語為官方語言。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "高粱薄餅",
+        "localName": "Kisra",
+        "description": "以發酵高粱麵糊攤成的薄餅，配燉菜食用。",
+        "history": "與蘇丹共享的主食，在南蘇丹北部地區普遍。",
+        "wiki": "Kisra"
+      },
+      {
+        "name": "阿西達糊",
+        "localName": "Asida",
+        "description": "以高粱或小麥粉攪成的稠糊，搭配肉醬或秋葵湯。",
+        "history": "蘇丹、南蘇丹與阿拉伯半島共有的主食。",
+        "wiki": "Asida"
+      },
+      {
+        "name": "燉蠶豆",
+        "localName": "Ful medames",
+        "description": "以蠶豆燉煮後加油、香料調味，常配麵包。",
+        "history": "源自埃及的古老料理，隨尼羅河貿易傳入南方。",
+        "wiki": "Ful medames"
+      },
+      {
+        "name": "炸豆餅",
+        "localName": "Ta'amia",
+        "description": "以豆泥加香料油炸的小餅，與法拉費相同。",
+        "history": "經由蘇丹傳入的阿拉伯街頭小吃。",
+        "wiki": "Falafel"
+      },
+      {
+        "name": "炸麵糰",
+        "localName": "Mandazi",
+        "description": "微甜的三角形或圓形炸麵團，常配茶吃。",
+        "history": "源自東非斯瓦希里海岸，隨東非貿易傳入南蘇丹。",
+        "wiki": "Mandazi"
+      }
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "iso": "AZE",
+  "capital": "巴庫",
+  "summary": "亞塞拜然位於高加索地區、裏海西岸，以石油資源與「火之國」稱號聞名，1991年自蘇聯獨立。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "伊斯蘭教（什葉派）",
+        "percent": 63,
+        "description": "亞塞拜然是什葉派比例最高的國家之一，但社會相當世俗化。"
+      },
+      {
+        "name": "伊斯蘭教（遜尼派）",
+        "percent": 33,
+        "description": "主要分布於北部地區。"
+      },
+      {
+        "name": "基督教",
+        "percent": 3,
+        "description": "包括俄羅斯東正教等。"
+      }
+    ],
+    "background": "古代當地流行祆教，七世紀阿拉伯人帶來伊斯蘭教。十六世紀薩非王朝以什葉派為國教，使什葉派成為多數。蘇聯時期宗教受到壓制，因此現今社會世俗化程度高。"
+  },
+  "language": {
+    "official": "亞塞拜然語是官方語言。",
+    "ranking": [
+      {
+        "name": "亞塞拜然語",
+        "percent": 92,
+        "description": "屬突厥語族，與土耳其語相近，現使用拉丁字母。",
+        "greeting": "Salam",
+        "pronunciation": "sa-LAM"
+      },
+      {
+        "name": "俄語",
+        "percent": 1,
+        "description": "蘇聯時期的通用語，至今在都市中仍廣泛使用。",
+        "greeting": "Здравствуйте",
+        "pronunciation": "ZDRAST-vuy-tye"
+      }
+    ],
+    "history": "亞塞拜然語在十一世紀塞爾柱突厥人遷入後逐漸形成。歷史上曾使用阿拉伯字母，蘇聯時期先後改用拉丁字母與西里爾字母，1991年獨立後又改回拉丁字母。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "抓飯",
+        "localName": "Plov",
+        "description": "以番紅花調味的米飯，搭配肉類、栗子與果乾。",
+        "history": "亞塞拜然料理之王，有數十種做法，婚禮與節慶必備。",
+        "wiki": "Plov"
+      },
+      {
+        "name": "多爾瑪",
+        "localName": "Dolma",
+        "description": "以葡萄葉或蔬菜包裹肉與米的料理。",
+        "history": "亞塞拜然的多爾瑪製作傳統已列入聯合國教科文組織非物質文化遺產。",
+        "wiki": "Dolma"
+      },
+      {
+        "name": "庫塔布",
+        "localName": "Qutab",
+        "description": "包入肉、香草或南瓜的薄煎餅。",
+        "history": "亞塞拜然常見的家常點心。",
+        "wiki": "Qutab"
+      },
+      {
+        "name": "小餛飩湯",
+        "localName": "Dushbara",
+        "description": "在羊肉清湯中加入極小的餛飩。",
+        "history": "據說手藝好的主婦能讓一湯匙裝下多顆餛飩。",
+        "wiki": "Dushbara"
+      },
+      {
+        "name": "皮蒂",
+        "localName": "Piti",
+        "description": "以羊肉、鷹嘴豆與栗子在陶罐中燉煮的湯。",
+        "history": "舍基地區的代表料理，分兩階段享用。",
+        "wiki": "Piti (food)"
+      }
+    ]
+  }
+}

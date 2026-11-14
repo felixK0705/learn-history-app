@@ -1,0 +1,103 @@
+{
+  "iso": "ISR",
+  "capital": "耶路撒冷（國際地位有爭議）",
+  "summary": "位於地中海東岸的國家，1948年建國，是猶太人的民族國家，耶路撒冷為猶太教、基督教與伊斯蘭教的聖城，以科技創新聞名。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "猶太教",
+        "percent": 73,
+        "description": "多數國民為猶太人，宗教實踐從世俗派到極端正統派不等。"
+      },
+      {
+        "name": "伊斯蘭教",
+        "percent": 18,
+        "description": "主要為阿拉伯裔以色列公民，多屬遜尼派。"
+      },
+      {
+        "name": "基督教",
+        "percent": 2,
+        "description": "多為阿拉伯基督徒及部分移民。"
+      },
+      {
+        "name": "德魯茲教",
+        "percent": 2,
+        "description": "源自伊斯蘭什葉派分支的獨立宗教，信徒多居於北部。"
+      }
+    ],
+    "background": "此地是古以色列王國所在，猶太人在羅馬時代後散居各地。7世紀起穆斯林統治，阿拉伯人成為多數居民。19世紀末錫安主義運動興起，猶太移民大量返回，1948年建國後世界各地猶太人移入，形成猶太教為主、阿拉伯少數族群並存的格局。"
+  },
+  "language": {
+    "official": "官方語言為希伯來語，阿拉伯語具特殊地位。",
+    "ranking": [
+      {
+        "name": "希伯來語",
+        "percent": 55,
+        "description": "現代希伯來語是國家主要語言，幾乎所有國民都能使用。",
+        "greeting": "שלום",
+        "pronunciation": "sha-lom"
+      },
+      {
+        "name": "阿拉伯語",
+        "percent": 20,
+        "description": "阿拉伯裔公民的母語。",
+        "greeting": "مرحبا",
+        "pronunciation": "mar-ha-ba"
+      },
+      {
+        "name": "俄語",
+        "percent": 15,
+        "description": "1990年代大量前蘇聯移民帶入。",
+        "greeting": "Привет",
+        "pronunciation": "pri-vyet"
+      },
+      {
+        "name": "英語",
+        "percent": 2,
+        "description": "廣泛作為第二語言與商業用語。",
+        "greeting": "Hello",
+        "pronunciation": "heh-loh"
+      }
+    ],
+    "history": "希伯來語在古代之後長期僅作為宗教與書面語言。19世紀末本－耶胡達等人推動其復興為日常口語，成為世界上少見成功復活的語言。建國後透過「烏爾潘」語言學校讓各地移民學習希伯來語。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "鷹嘴豆泥",
+        "localName": "חומוס (Hummus)",
+        "description": "以鷹嘴豆、芝麻醬、檸檬與大蒜打成的濃稠沾醬，配皮塔餅。",
+        "history": "黎凡特地區共享的古老料理，在以色列幾乎是國民美食。",
+        "wiki": "Hummus"
+      },
+      {
+        "name": "法拉費",
+        "localName": "פלאפל (Falafel)",
+        "description": "以鷹嘴豆泥加香草油炸的小丸子，夾皮塔餅食用。",
+        "history": "源自埃及與黎凡特，以色列建國後成為最普遍的街頭小吃。",
+        "wiki": "Falafel"
+      },
+      {
+        "name": "北非蛋",
+        "localName": "שקשוקה (Shakshouka)",
+        "description": "雞蛋在番茄、甜椒與香料醬汁中燉熟。",
+        "history": "源自北非馬格里布，由突尼西亞與利比亞猶太移民帶入。",
+        "wiki": "Shakshouka"
+      },
+      {
+        "name": "茄子皮塔",
+        "localName": "סביח (Sabich)",
+        "description": "皮塔餅夾炸茄子、水煮蛋、芝麻醬與沙拉。",
+        "history": "源自伊拉克猶太人安息日早餐，1940至50年代移民帶入後在拉馬特甘普及。",
+        "wiki": "Sabich"
+      },
+      {
+        "name": "以色列沙拉",
+        "localName": "סלט ישראלי (Israeli salad)",
+        "description": "切成細丁的番茄、小黃瓜，以橄欖油與檸檬調味。",
+        "history": "源自阿拉伯式碎沙拉，在基布茲集體農場時期普及。",
+        "wiki": "Israeli salad"
+      }
+    ]
+  }
+}

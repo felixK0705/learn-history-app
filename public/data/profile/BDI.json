@@ -1,0 +1,96 @@
+{
+  "iso": "BDI",
+  "capital": "基特加",
+  "summary": "蒲隆地是東非內陸小國，位於坦干伊加湖東北岸，1962年脫離比利時獨立，2019年將政治首都由布松布拉遷至基特加。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "天主教",
+        "percent": 62,
+        "description": "比利時殖民時期傳入的最大宗教。"
+      },
+      {
+        "name": "基督新教",
+        "percent": 24,
+        "description": "包括聖公會與五旬節派等。"
+      },
+      {
+        "name": "傳統信仰及其他",
+        "percent": 8,
+        "description": "包括崇拜至高神伊瑪納的傳統信仰。"
+      },
+      {
+        "name": "伊斯蘭教",
+        "percent": 3,
+        "description": "主要分布於都市地區。"
+      }
+    ],
+    "background": "傳統上蒲隆地人信仰至高神伊瑪納。十九世紀末德國殖民及一戰後比利時統治時期，天主教傳教士大規模傳教，使天主教成為多數人的信仰。伊斯蘭教則經由東非沿岸的商人傳入。"
+  },
+  "language": {
+    "official": "基隆迪語、法語與英語是官方語言。",
+    "ranking": [
+      {
+        "name": "基隆迪語",
+        "percent": 98,
+        "description": "屬班圖語族，幾乎全國人民的母語。",
+        "greeting": "Amahoro",
+        "pronunciation": "a-ma-HO-ro"
+      },
+      {
+        "name": "斯瓦希里語",
+        "percent": 1,
+        "description": "主要在都市與商業中使用。",
+        "greeting": "Habari",
+        "pronunciation": "ha-BAH-ree"
+      },
+      {
+        "name": "法語",
+        "percent": 1,
+        "description": "官方語言，用於政府與教育。",
+        "greeting": "Bonjour",
+        "pronunciation": "bon-ZHOOR"
+      }
+    ],
+    "history": "基隆迪語與盧安達語非常接近，是胡圖族與圖西族共同的語言。比利時殖民時期法語成為行政語言，2014年英語也被列為官方語言，以加強與東非共同體的連結。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "玉米糊",
+        "localName": "Ubugali",
+        "description": "以木薯或玉米粉煮成的糰狀主食。",
+        "history": "東非與中非普遍食用的主食。",
+        "wiki": "Ugali"
+      },
+      {
+        "name": "木薯葉燉菜",
+        "localName": "Isombe",
+        "description": "將木薯葉搗碎後與花生醬或棕櫚油燉煮。",
+        "history": "蒲隆地與盧安達共同的傳統料理。",
+        "wiki": "Isombe"
+      },
+      {
+        "name": "烤肉串",
+        "localName": "Brochette",
+        "description": "以山羊肉或牛肉串燒，常配炸香蕉。",
+        "history": "蒲隆地酒吧與餐廳最常見的料理。",
+        "wiki": "Brochette"
+      },
+      {
+        "name": "恩達加拉小魚",
+        "localName": "Ndagala",
+        "description": "坦干伊加湖產的小型沙丁魚，曬乾或油炸食用。",
+        "history": "坦干伊加湖漁業的重要漁獲，是平價的蛋白質來源。",
+        "wiki": "Stolothrissa tanganicae"
+      },
+      {
+        "name": "香蕉燉菜",
+        "localName": "Matoke",
+        "description": "以青香蕉燉煮成的主食，常配豆類。",
+        "history": "香蕉是蒲隆地最重要的作物之一。",
+        "wiki": "Matoke"
+      }
+    ]
+  }
+}

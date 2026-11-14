@@ -1,0 +1,98 @@
+{
+  "iso": "BOL",
+  "capital": "蘇克雷（憲法首都）；拉巴斯為政府所在地",
+  "summary": "玻利維亞位於南美洲中部內陸，擁有安地斯高原、的的喀喀湖與烏尤尼鹽沼，原住民人口比例在南美洲名列前茅。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "天主教",
+        "percent": 70,
+        "description": "西班牙殖民時期傳入，常與安地斯傳統信仰融合。"
+      },
+      {
+        "name": "基督新教／福音派",
+        "percent": 18,
+        "description": "近數十年快速成長。"
+      },
+      {
+        "name": "無宗教",
+        "percent": 6,
+        "description": "未認同任何宗教的人口。"
+      }
+    ],
+    "background": "西班牙征服印加帝國後，天主教傳入安地斯地區，並與崇敬大地之母帕查瑪瑪等原住民信仰融合。二十世紀後期福音派教會快速成長，2009年憲法確立國家世俗化。"
+  },
+  "language": {
+    "official": "西班牙語與36種原住民語言都是官方語言。",
+    "ranking": [
+      {
+        "name": "西班牙語",
+        "percent": 70,
+        "description": "全國通用語言。",
+        "greeting": "Hola",
+        "pronunciation": "OH-la"
+      },
+      {
+        "name": "克丘亞語",
+        "percent": 18,
+        "description": "印加帝國的語言，主要在高地與谷地使用。",
+        "greeting": "Imaynallan",
+        "pronunciation": "ee-my-NAH-yan"
+      },
+      {
+        "name": "艾馬拉語",
+        "percent": 11,
+        "description": "的的喀喀湖周邊與拉巴斯地區的語言。",
+        "greeting": "Kamisaki",
+        "pronunciation": "ka-mee-SA-kee"
+      },
+      {
+        "name": "瓜拉尼語",
+        "percent": 1,
+        "description": "東南部查科地區的語言。",
+        "greeting": "Mba'éichapa",
+        "pronunciation": "mba-AY-cha-pa"
+      }
+    ],
+    "history": "艾馬拉語與克丘亞語在西班牙人到來前即廣泛使用。殖民時期西班牙語成為行政語言，原住民語言長期處於弱勢；2009年新憲法將原住民語言列為官方語言，並推動雙語教育。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "薩爾特尼亞",
+        "localName": "Salteña",
+        "description": "包入肉、馬鈴薯與甜辣湯汁的烤餡餅。",
+        "history": "據傳十九世紀由來自阿根廷薩爾塔的人帶入，是玻利維亞人上午最愛的點心。",
+        "wiki": "Salteña"
+      },
+      {
+        "name": "西爾潘丘",
+        "localName": "Silpancho",
+        "description": "在米飯與馬鈴薯上鋪拍薄的炸肉排與荷包蛋。",
+        "history": "源自科恰班巴的代表料理。",
+        "wiki": "Silpancho"
+      },
+      {
+        "name": "大份炒肉",
+        "localName": "Pique macho",
+        "description": "將牛肉、香腸、薯條與辣椒、雞蛋一起拌炒的大盤料理。",
+        "history": "同樣源自科恰班巴，常與朋友分食。",
+        "wiki": "Pique macho"
+      },
+      {
+        "name": "烤牛心串",
+        "localName": "Anticucho",
+        "description": "以醃漬牛心串燒，配馬鈴薯與辣醬。",
+        "history": "安地斯地區自殖民時期流傳至今的街頭小吃。",
+        "wiki": "Anticucho"
+      },
+      {
+        "name": "花生湯",
+        "localName": "Sopa de maní",
+        "description": "以花生、牛肉與蔬菜熬煮的濃湯，上面撒薯條。",
+        "history": "花生原產於南美洲，此湯是玻利維亞家常湯品。",
+        "wiki": "Peanut soup"
+      }
+    ]
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "iso": "NAM",
+  "capital": "溫荷克",
+  "summary": "位於非洲西南部的國家，擁有納米布沙漠與骷髏海岸，曾為德國殖民地，後由南非統治，1990年獨立。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "路德宗",
+        "percent": 48,
+        "description": "19世紀德國與芬蘭傳教士傳入，是最大教派。"
+      },
+      {
+        "name": "天主教",
+        "percent": 20,
+        "description": "分布於北部與中部。"
+      },
+      {
+        "name": "其他基督教（聖公會、荷蘭歸正會、五旬節派等）",
+        "percent": 20,
+        "description": "包含南非系統教會與新興教會。"
+      },
+      {
+        "name": "傳統信仰",
+        "percent": 5,
+        "description": "部分社群保有祖先崇拜等傳統。"
+      },
+      {
+        "name": "無宗教",
+        "percent": 3,
+        "description": "比例較低。"
+      }
+    ],
+    "background": "19世紀德國萊茵傳道會與芬蘭傳教士在中北部傳教，特別是芬蘭傳教士在奧萬博地區建立教會與學校，使路德宗成為最大教派。德國殖民與南非統治時期，基督教進一步普及。"
+  },
+  "language": {
+    "official": "官方語言為英語。",
+    "ranking": [
+      {
+        "name": "奧萬博語（Oshiwambo）",
+        "percent": 49,
+        "description": "北部奧萬博人的語言，是母語人數最多的語言。",
+        "greeting": "Wa lele po（早安）",
+        "pronunciation": "wa le-le po"
+      },
+      {
+        "name": "科伊科伊語（納馬－達馬拉語）",
+        "percent": 11,
+        "description": "納馬人與達馬拉人使用，以吸氣音（嘖音）著稱。",
+        "greeting": "!Gâi tses（日安）",
+        "pronunciation": "gai tses"
+      },
+      {
+        "name": "南非語",
+        "percent": 10,
+        "description": "由荷蘭語演變而成，是許多族群間的通用語。",
+        "greeting": "Hallo",
+        "pronunciation": "ha-lo"
+      },
+      {
+        "name": "赫雷羅語（Otjiherero）",
+        "percent": 9,
+        "description": "中部與東部赫雷羅人的語言。",
+        "greeting": "Moro",
+        "pronunciation": "mo-ro"
+      },
+      {
+        "name": "英語",
+        "percent": 3,
+        "description": "雖是官方語言，作為母語者不多。",
+        "greeting": "Hello",
+        "pronunciation": "heh-loh"
+      }
+    ],
+    "history": "科伊桑語言是本地最古老的語言，班圖民族後來遷入帶來奧萬博語、赫雷羅語等。德國殖民時期德語流行，南非統治時期南非語成為主要通用語；1990年獨立時選擇英語為唯一官方語言，以避免偏袒任何民族。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "牛肉乾",
+        "localName": "Biltong",
+        "description": "以香料醃漬後風乾的牛肉或野味肉條。",
+        "history": "源自南部非洲荷蘭裔移民保存肉類的方法，在納米比亞極為普遍。",
+        "wiki": "Biltong"
+      },
+      {
+        "name": "卡帕納烤肉",
+        "localName": "Kapana",
+        "description": "在街頭攤以炭火烤的小塊牛肉，蘸香料與辣醬吃。",
+        "history": "起源於溫荷克的Katutura市集，是當地最具代表性的街頭小吃。",
+        "wiki": "Kapana"
+      },
+      {
+        "name": "鐵鍋燉菜",
+        "localName": "Potjiekos",
+        "description": "在三腳鑄鐵鍋中分層燉煮肉類與蔬菜。",
+        "history": "源自南部非洲的荷蘭裔先民，常於戶外聚會時料理。",
+        "wiki": "Potjiekos"
+      },
+      {
+        "name": "炸麵餅",
+        "localName": "Vetkoek",
+        "description": "油炸麵團，可夾肉末或抹果醬食用。",
+        "history": "源自荷蘭裔移民的油炸麵點，在南部非洲廣泛流傳。",
+        "wiki": "Vetkoek"
+      },
+      {
+        "name": "可樂豆木毛蟲",
+        "localName": "Mopane worm",
+        "description": "以可樂豆木蛾的幼蟲曬乾或炒製，富含蛋白質。",
+        "history": "北部地區長期的傳統食物，也是重要的季節性收入來源。",
+        "wiki": "Mopane worm"
+      }
+    ]
+  }
+}

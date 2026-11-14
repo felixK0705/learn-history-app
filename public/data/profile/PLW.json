@@ -1,0 +1,108 @@
+{
+  "iso": "PLW",
+  "capital": "恩吉魯穆德",
+  "summary": "位於西太平洋的島國，由三百多座島嶼組成，以洛克群島與潛水勝地聞名，1994年獨立並與美國締結自由聯合協定，是中華民國（台灣）的邦交國。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "天主教",
+        "percent": 47,
+        "description": "德國與西班牙統治時期傳入，是最大教派。"
+      },
+      {
+        "name": "福音派新教",
+        "percent": 26,
+        "description": "美國統治時期傳入。"
+      },
+      {
+        "name": "基督復臨安息日會",
+        "percent": 5,
+        "description": "辦有學校與診所。"
+      },
+      {
+        "name": "莫德克蓋教",
+        "percent": 5,
+        "description": "20世紀初興起、融合傳統信仰與基督教的本土宗教。"
+      },
+      {
+        "name": "伊斯蘭教",
+        "percent": 3,
+        "description": "主要為外籍勞工。"
+      }
+    ],
+    "background": "西班牙與德國統治時期天主教傳教士傳教，日本統治期間（1914–1945）亦有教會活動。二戰後美國託管使新教擴展。莫德克蓋教則於日本統治時期興起，被視為保存帛琉傳統文化的宗教運動。"
+  },
+  "language": {
+    "official": "官方語言為帛琉語與英語。",
+    "ranking": [
+      {
+        "name": "帛琉語",
+        "percent": 67,
+        "description": "屬南島語系，吸收了許多日語與英語借詞。",
+        "greeting": "Alii",
+        "pronunciation": "a-lee"
+      },
+      {
+        "name": "英語",
+        "percent": 16,
+        "description": "官方語言之一，用於政府與教育。",
+        "greeting": "Hello",
+        "pronunciation": "heh-loh"
+      },
+      {
+        "name": "菲律賓語",
+        "percent": 11,
+        "description": "菲律賓外籍勞工使用。",
+        "greeting": "Kumusta",
+        "pronunciation": "ku-mus-ta"
+      },
+      {
+        "name": "中文",
+        "percent": 2,
+        "description": "華人居民使用。",
+        "greeting": "你好",
+        "pronunciation": "nǐ hǎo"
+      }
+    ],
+    "history": "帛琉語是南島語系中較獨特的一支。日本統治時期日語教育普及，帛琉語中至今保留大量日語借詞，安加爾州甚至曾將日語列為官方語言。美國託管後英語成為教育與政府語言。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "芋頭",
+        "localName": "Taro",
+        "description": "煮或搗成泥的芋頭，是傳統主食。",
+        "history": "芋頭田由女性負責耕作，在帛琉傳統社會中具有重要的文化與身分意義。",
+        "wiki": "Taro"
+      },
+      {
+        "name": "椰子蟹",
+        "localName": "Coconut crab",
+        "description": "大型陸生蟹，常以椰奶烹調。",
+        "history": "帛琉的珍貴食材，常在特殊場合食用。",
+        "wiki": "Coconut crab"
+      },
+      {
+        "name": "生魚片",
+        "localName": "Sashimi",
+        "description": "新鮮鮪魚等生魚切片，配醬油與芥末。",
+        "history": "日本統治時期傳入，至今是帛琉日常飲食的一部分。",
+        "wiki": "Sashimi"
+      },
+      {
+        "name": "木薯",
+        "localName": "Tapioca",
+        "description": "煮或做成甜點的木薯，常加椰奶。",
+        "history": "木薯是帛琉重要的澱粉作物，也用於節慶糕點。",
+        "wiki": "Tapioca"
+      },
+      {
+        "name": "麵包果",
+        "localName": "Breadfruit",
+        "description": "烤或煮的麵包果。",
+        "history": "太平洋島民數千年來的主要澱粉來源。",
+        "wiki": "Breadfruit"
+      }
+    ]
+  }
+}

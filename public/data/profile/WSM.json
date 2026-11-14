@@ -1,0 +1,94 @@
+{
+  "iso": "WSM",
+  "capital": "阿庇亞",
+  "summary": "位於南太平洋的島國，由烏波盧島與薩瓦伊島等組成，1962年脫離紐西蘭獨立，是第一個獨立的玻里尼西亞國家，傳統文化「薩摩亞之道」保存完整。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "薩摩亞公理會",
+        "percent": 27,
+        "description": "由倫敦傳道會發展而來，是最大教派。"
+      },
+      {
+        "name": "天主教",
+        "percent": 19,
+        "description": "19世紀中期傳入。"
+      },
+      {
+        "name": "耶穌基督後期聖徒教會",
+        "percent": 17,
+        "description": "近數十年快速成長。"
+      },
+      {
+        "name": "衛理宗",
+        "percent": 12,
+        "description": "19世紀由東加傳入。"
+      },
+      {
+        "name": "神召會",
+        "percent": 7,
+        "description": "五旬節派教會。"
+      }
+    ],
+    "background": "1830年倫敦傳道會的約翰·威廉斯抵達薩摩亞，薩摩亞酋長迅速接受基督教，教會與傳統酋長制度（matai）緊密結合。此後天主教、衛理宗與摩門教相繼傳入，基督教成為國家認同的一部分。"
+  },
+  "language": {
+    "official": "官方語言為薩摩亞語與英語。",
+    "ranking": [
+      {
+        "name": "薩摩亞語",
+        "percent": 91,
+        "description": "屬南島語系玻里尼西亞語支，具有尊敬語體系。",
+        "greeting": "Talofa",
+        "pronunciation": "ta-lo-fa"
+      },
+      {
+        "name": "英語",
+        "percent": 3,
+        "description": "官方語言之一，廣泛用於教育與政府。",
+        "greeting": "Hello",
+        "pronunciation": "heh-loh"
+      }
+    ],
+    "history": "薩摩亞語是玻里尼西亞語中歷史最悠久者之一。19世紀傳教士以拉丁字母記錄並翻譯聖經；德國與紐西蘭統治時期英語逐漸普及，至今薩摩亞人多能雙語。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "芋葉椰奶包",
+        "localName": "Palusami",
+        "description": "以芋葉包裹濃椰奶（有時加洋蔥或鹹牛肉）烘烤而成。",
+        "history": "薩摩亞最具代表性的傳統料理，常在週日家庭午餐的地爐中製作。",
+        "wiki": "Palusami"
+      },
+      {
+        "name": "烏姆地爐",
+        "localName": "Umu",
+        "description": "在熱石上覆蓋食物與香蕉葉進行烘烤的傳統地爐烹調法。",
+        "history": "週日禮拜後的家庭聚餐（to'ona'i）多以烏姆製作食物。",
+        "wiki": "Umu"
+      },
+      {
+        "name": "薩摩亞可可",
+        "localName": "Koko Samoa",
+        "description": "以在地烘焙可可豆研磨後沖泡的熱飲。",
+        "history": "可可於19世紀殖民時期引入，現為日常與儀式飲品。",
+        "wiki": "Koko Samoa"
+      },
+      {
+        "name": "椰奶麵包",
+        "localName": "Panipopo",
+        "description": "淋上甜椰奶醬烘烤的軟麵包。",
+        "history": "受歐洲烘焙影響並結合在地椰子的甜點。",
+        "wiki": "Panipopo"
+      },
+      {
+        "name": "薩摩亞炒冬粉",
+        "localName": "Sapasui",
+        "description": "以冬粉、醬油、肉與蔬菜炒製的料理。",
+        "history": "20世紀初華人勞工引入的「雜碎」（chop suey），現為薩摩亞宴席常見菜色。",
+        "wiki": "Sapasui"
+      }
+    ]
+  }
+}

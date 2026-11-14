@@ -1,0 +1,103 @@
+{
+  "iso": "SRB",
+  "capital": "貝爾格勒",
+  "summary": "塞爾維亞位於巴爾幹半島中部的內陸國家，曾為南斯拉夫的核心，首都貝爾格勒位於多瑙河與薩瓦河交匯處。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "東正教",
+        "percent": 81,
+        "description": "塞爾維亞正教會是民族認同的核心。"
+      },
+      {
+        "name": "天主教",
+        "percent": 4,
+        "description": "主要為北部伏伊伏丁那的匈牙利裔與克羅埃西亞裔居民。"
+      },
+      {
+        "name": "伊斯蘭教",
+        "percent": 4,
+        "description": "主要為西南部桑賈克地區的波士尼亞裔居民。"
+      },
+      {
+        "name": "無宗教",
+        "percent": 1,
+        "description": "未認同任何宗教的人口。"
+      }
+    ],
+    "background": "塞爾維亞人在九世紀接受基督教，1219年聖薩瓦建立自主的塞爾維亞正教會。鄂圖曼帝國統治期間部分居民改信伊斯蘭教，北部伏伊伏丁那則在哈布斯堡統治下形成天主教與新教社群。"
+  },
+  "language": {
+    "official": "塞爾維亞語是官方語言，伏伊伏丁那另有多種少數民族官方語言。",
+    "ranking": [
+      {
+        "name": "塞爾維亞語",
+        "percent": 88,
+        "description": "同時使用西里爾字母與拉丁字母，憲法規定西里爾字母為官方文字。",
+        "greeting": "Здраво (Zdravo)",
+        "pronunciation": "ZDRAH-voh"
+      },
+      {
+        "name": "匈牙利語",
+        "percent": 3,
+        "description": "北部伏伊伏丁那匈牙利裔居民的語言。",
+        "greeting": "Szia",
+        "pronunciation": "SEE-ya"
+      },
+      {
+        "name": "波士尼亞語",
+        "percent": 2,
+        "description": "桑賈克地區波士尼亞裔居民的語言。",
+        "greeting": "Zdravo",
+        "pronunciation": "ZDRAH-voh"
+      },
+      {
+        "name": "羅姆語",
+        "percent": 1,
+        "description": "羅姆人社群使用。",
+        "greeting": "Sar san?",
+        "pronunciation": "sar SAN"
+      }
+    ],
+    "history": "十九世紀語言學家武克·卡拉季奇改革塞爾維亞語，提出「照說的寫」原則，並修訂西里爾字母。南斯拉夫時期塞爾維亞語與克羅埃西亞語統稱塞爾維亞—克羅埃西亞語，南斯拉夫解體後各自獨立稱呼。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "塞爾維亞漢堡排",
+        "localName": "Пљескавица (Pljeskavica)",
+        "description": "以香料調味的扁平絞肉排，夾在麵包中配洋蔥與卡伊馬克。",
+        "history": "塞爾維亞燒烤的代表，萊斯科瓦茨每年舉辦燒烤節。",
+        "wiki": "Pljeskavica"
+      },
+      {
+        "name": "切巴契契",
+        "localName": "Ћевапи (Ćevapi)",
+        "description": "炭烤的小絞肉條，配麵包與洋蔥。",
+        "history": "鄂圖曼時期傳入巴爾幹地區的燒烤料理。",
+        "wiki": "Ćevapi"
+      },
+      {
+        "name": "卡拉喬爾傑肉排",
+        "localName": "Карађорђева шницла (Karađorđeva šnicla)",
+        "description": "將小牛或豬肉片捲入卡伊馬克起司後裹粉油炸。",
+        "history": "1950年代由貝爾格勒廚師所創，以塞爾維亞起義領袖命名。",
+        "wiki": "Karađorđeva šnicla"
+      },
+      {
+        "name": "阿伊瓦爾",
+        "localName": "Ајвар (Ajvar)",
+        "description": "以烤紅椒與茄子熬成的抹醬。",
+        "history": "秋季家家戶戶自製，是巴爾幹地區的代表性醬料。",
+        "wiki": "Ajvar"
+      },
+      {
+        "name": "吉巴尼察",
+        "localName": "Гибаница (Gibanica)",
+        "description": "以薄麵皮層層夾入白乳酪與雞蛋的烤派。",
+        "history": "塞爾維亞節慶與早餐常見的傳統料理。",
+        "wiki": "Gibanica"
+      }
+    ]
+  }
+}

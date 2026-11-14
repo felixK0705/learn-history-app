@@ -1,0 +1,103 @@
+{
+  "iso": "QAT",
+  "capital": "杜哈",
+  "summary": "卡達位於阿拉伯半島東部的半島國家，擁有豐富的天然氣資源，是全球人均收入最高的國家之一，曾舉辦2022年世界盃足球賽。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "伊斯蘭教",
+        "percent": 66,
+        "description": "國教，以遜尼派為主。"
+      },
+      {
+        "name": "基督教",
+        "percent": 15,
+        "description": "主要為外籍勞工。"
+      },
+      {
+        "name": "印度教",
+        "percent": 15,
+        "description": "主要為南亞外籍勞工。"
+      },
+      {
+        "name": "佛教",
+        "percent": 3,
+        "description": "主要為外籍勞工。"
+      }
+    ],
+    "background": "伊斯蘭教自七世紀起即是阿拉伯半島東部的主要宗教，卡達王室奉行瓦哈比派。二十世紀後期石油與天然氣經濟吸引大量外籍勞工，外籍人口遠多於本國公民，因此帶來基督教、印度教與佛教。"
+  },
+  "language": {
+    "official": "阿拉伯語是官方語言，英語廣泛使用於商業。",
+    "ranking": [
+      {
+        "name": "阿拉伯語",
+        "percent": 40,
+        "description": "卡達國民與其他阿拉伯移民使用的語言。",
+        "greeting": "مرحبا",
+        "pronunciation": "MAR-ha-ba"
+      },
+      {
+        "name": "尼泊爾語",
+        "percent": 13,
+        "description": "尼泊爾外籍勞工社群使用。",
+        "greeting": "नमस्ते",
+        "pronunciation": "na-ma-STAY"
+      },
+      {
+        "name": "孟加拉語",
+        "percent": 12,
+        "description": "孟加拉外籍勞工社群使用。",
+        "greeting": "আসসালামু আলাইকুম",
+        "pronunciation": "as-sa-LA-mu a-LAI-kum"
+      },
+      {
+        "name": "馬拉雅拉姆語",
+        "percent": 10,
+        "description": "印度喀拉拉邦外籍勞工社群使用。",
+        "greeting": "നമസ്കാരം",
+        "pronunciation": "na-mas-KAA-ram"
+      }
+    ],
+    "history": "卡達本地人說海灣阿拉伯語方言。石油時代以後，大量來自南亞、東南亞與其他阿拉伯國家的移工湧入，使英語成為不同族群間的共通語言，社會呈現多語並存的狀態。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "馬奇布斯",
+        "localName": "مجبوس (Machboos)",
+        "description": "以香料、乾萊姆與雞肉或羊肉一同烹煮的香料飯。",
+        "history": "卡達國菜，反映過去海上貿易帶來的印度香料。",
+        "wiki": "Kabsa"
+      },
+      {
+        "name": "哈里斯",
+        "localName": "هريس (Harees)",
+        "description": "以小麥與肉長時間燉煮搗成的粥。",
+        "history": "齋戒月與節慶時的傳統料理。",
+        "wiki": "Harees"
+      },
+      {
+        "name": "盧蓋瑪特",
+        "localName": "لقيمات (Luqaimat)",
+        "description": "外酥內軟的小炸麵團球，淋上椰棗糖漿。",
+        "history": "齋戒月期間最受歡迎的甜點之一。",
+        "wiki": "Luqaimat"
+      },
+      {
+        "name": "沙里德",
+        "localName": "ثريد (Thareed)",
+        "description": "將薄麵包浸在肉與蔬菜燉湯中的料理。",
+        "history": "據傳是先知穆罕默德喜愛的料理，齋戒月時常見。",
+        "wiki": "Tharid"
+      },
+      {
+        "name": "巴拉利特",
+        "localName": "بلاليط (Balaleet)",
+        "description": "甜味細麵上覆蓋蛋餅的早餐料理。",
+        "history": "以番紅花與小豆蔻調味，是海灣地區傳統的節慶早餐。",
+        "wiki": "Balaleet"
+      }
+    ]
+  }
+}

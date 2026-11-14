@@ -1,0 +1,101 @@
+{
+  "iso": "CZE",
+  "capital": "布拉格",
+  "summary": "位於中歐的內陸國，曾為波希米亞王國與奧匈帝國的一部分，1993年與斯洛伐克和平分離，以啤酒與古城建築聞名。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "無宗教",
+        "percent": 48,
+        "description": "捷克是全世界無宗教比例最高的國家之一。"
+      },
+      {
+        "name": "未申報",
+        "percent": 30,
+        "description": "2021年普查中未回答宗教問題者。"
+      },
+      {
+        "name": "不屬特定教會的信仰者",
+        "percent": 10,
+        "description": "自認有信仰但不屬於任何教會。"
+      },
+      {
+        "name": "天主教",
+        "percent": 7,
+        "description": "歷史上最大的教會，但登記信徒大幅減少。"
+      },
+      {
+        "name": "其他基督教",
+        "percent": 2,
+        "description": "包含捷克弟兄福音教會、胡斯派教會等。"
+      }
+    ],
+    "background": "15世紀胡斯宗教改革運動使波希米亞成為新教重鎮，但1620年白山戰役後哈布斯堡王朝強制再天主教化，教會被視為外來統治的象徵。加上共產時期的無神論政策，捷克社會高度世俗化。"
+  },
+  "language": {
+    "official": "官方語言為捷克語。",
+    "ranking": [
+      {
+        "name": "捷克語",
+        "percent": 95,
+        "description": "屬西斯拉夫語支，與斯洛伐克語可相互理解。",
+        "greeting": "Ahoj / Dobrý den",
+        "pronunciation": "a-hoy / do-bree den"
+      },
+      {
+        "name": "斯洛伐克語",
+        "percent": 2,
+        "description": "斯洛伐克裔居民使用。",
+        "greeting": "Ahoj",
+        "pronunciation": "a-hoy"
+      },
+      {
+        "name": "烏克蘭語",
+        "percent": 2,
+        "description": "2022年後大量烏克蘭難民湧入。",
+        "greeting": "Привіт",
+        "pronunciation": "pry-vit"
+      }
+    ],
+    "history": "捷克語在中世紀已有書寫傳統，胡斯曾改革其拼寫法。哈布斯堡統治時期德語成為上層語言，18–19世紀「捷克民族復興運動」使捷克語重新成為文學與學術語言。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "奶油醬燉牛肉",
+        "localName": "Svíčková na smetaně",
+        "description": "醃漬牛腰肉配根莖蔬菜奶油醬，加上麵糰子、蔓越莓與鮮奶油。",
+        "history": "捷克最具代表性的節慶料理，常在週日與婚禮食用。",
+        "wiki": "Svíčková"
+      },
+      {
+        "name": "烤豬肉配麵糰子酸菜",
+        "localName": "Vepřo knedlo zelo",
+        "description": "烤豬肉、麵包麵糰子與酸白菜的組合，被視為國菜。",
+        "history": "名稱是「豬肉、麵糰子、酸菜」的縮寫，反映波希米亞農村飲食。",
+        "wiki": "Vepřo knedlo zelo"
+      },
+      {
+        "name": "炸起司",
+        "localName": "Smažený sýr",
+        "description": "厚片起司裹麵包粉油炸，配薯條與塔塔醬。",
+        "history": "共產時期普及的大眾料理，至今仍是餐館與小吃攤常見菜。",
+        "wiki": "Smažený sýr"
+      },
+      {
+        "name": "捷克燉牛肉",
+        "localName": "Guláš",
+        "description": "以紅椒粉與洋蔥燉煮的濃稠牛肉，配麵糰子與啤酒。",
+        "history": "源自匈牙利的燉肉，在奧匈帝國時期傳入並在地化。",
+        "wiki": "Goulash"
+      },
+      {
+        "name": "圓形甜餡餅",
+        "localName": "Koláč",
+        "description": "圓形發酵麵團中央填入罌粟籽、果醬或甜起司。",
+        "history": "波希米亞與摩拉維亞的傳統糕點，常見於婚禮與節慶。",
+        "wiki": "Kolach (cake)"
+      }
+    ]
+  }
+}

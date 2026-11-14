@@ -1,0 +1,96 @@
+{
+  "iso": "BHR",
+  "capital": "麥納瑪",
+  "summary": "巴林是波斯灣中的群島王國，古代為迪爾蒙文明中心，以珍珠採集歷史聞名，1932年成為海灣地區最早發現石油的國家之一。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "伊斯蘭教",
+        "percent": 70,
+        "description": "國教，本國公民中什葉派占多數，王室屬遜尼派。"
+      },
+      {
+        "name": "基督教",
+        "percent": 15,
+        "description": "主要為外籍居民。"
+      },
+      {
+        "name": "印度教",
+        "percent": 10,
+        "description": "主要為印度籍居民。"
+      },
+      {
+        "name": "佛教",
+        "percent": 3,
+        "description": "主要為外籍居民。"
+      }
+    ],
+    "background": "伊斯蘭教於七世紀傳入巴林，當地居民很早就有大量什葉派信徒。十八世紀末遜尼派的哈利法家族取得統治權，形成王室遜尼派、多數人民什葉派的格局。石油經濟帶來大量外籍勞工，使宗教更為多元。"
+  },
+  "language": {
+    "official": "阿拉伯語是官方語言。",
+    "ranking": [
+      {
+        "name": "阿拉伯語",
+        "percent": 50,
+        "description": "本國公民與阿拉伯移民的語言。",
+        "greeting": "مرحبا",
+        "pronunciation": "MAR-ha-ba"
+      },
+      {
+        "name": "馬拉雅拉姆語",
+        "percent": 10,
+        "description": "印度喀拉拉邦移民社群使用。",
+        "greeting": "നമസ്കാരം",
+        "pronunciation": "na-mas-KAA-ram"
+      },
+      {
+        "name": "烏爾都語",
+        "percent": 8,
+        "description": "巴基斯坦移民社群使用。",
+        "greeting": "السلام علیکم",
+        "pronunciation": "as-sa-LAA-mu a-LAI-kum"
+      }
+    ],
+    "history": "巴林傳統上通行巴林阿拉伯語方言，什葉派居民所說的方言與遜尼派略有不同。英國保護國時期英語普及，現今英語是商業與外籍社群間的通用語。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "馬奇布斯",
+        "localName": "مچبوس (Machboos)",
+        "description": "以香料、乾萊姆與肉或魚一同烹煮的香料飯。",
+        "history": "巴林國菜，反映過去印度洋香料貿易的影響。",
+        "wiki": "Kabsa"
+      },
+      {
+        "name": "穆哈馬爾",
+        "localName": "محمر (Muhammar)",
+        "description": "以椰棗糖漿或糖煮成的甜味米飯，常配烤魚。",
+        "history": "巴林傳統料理，與珍珠採集時代的飲食有關。",
+        "wiki": "Muhammar"
+      },
+      {
+        "name": "哈里斯",
+        "localName": "هريس (Harees)",
+        "description": "以小麥與肉長時間燉煮搗成的粥。",
+        "history": "齋戒月與節慶的傳統料理。",
+        "wiki": "Harees"
+      },
+      {
+        "name": "巴林哈爾瓦",
+        "localName": "حلوى (Halwa)",
+        "description": "以玉米澱粉、糖、玫瑰水與番紅花製成的Q軟甜點。",
+        "history": "巴林的傳統甜點，常作為伴手禮。",
+        "wiki": "Halva"
+      },
+      {
+        "name": "巴拉利特",
+        "localName": "بلاليط (Balaleet)",
+        "description": "甜味細麵上覆蓋蛋餅的早餐料理。",
+        "history": "海灣地區傳統的節慶早餐。",
+        "wiki": "Balaleet"
+      }
+    ]
+  }
+}

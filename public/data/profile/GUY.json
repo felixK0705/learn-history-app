@@ -1,0 +1,94 @@
+{
+  "iso": "GUY",
+  "capital": "喬治城",
+  "summary": "位於南美洲北部的國家，是南美洲唯一以英語為官方語言的國家，曾為英屬殖民地，近年因海上油田發現而經濟快速成長。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "新教（五旬節派、聖公會等）",
+        "percent": 56,
+        "description": "以五旬節派人數最多，另有聖公會、基督復臨安息日會等。"
+      },
+      {
+        "name": "印度教",
+        "percent": 25,
+        "description": "主要為印度裔居民。"
+      },
+      {
+        "name": "天主教",
+        "percent": 7,
+        "description": "葡萄牙裔與部分非裔居民信仰。"
+      },
+      {
+        "name": "伊斯蘭教",
+        "percent": 7,
+        "description": "主要為印度裔穆斯林。"
+      },
+      {
+        "name": "無宗教",
+        "percent": 3,
+        "description": "比例較低。"
+      }
+    ],
+    "background": "荷蘭與英國殖民時期引入非洲奴隸，廢奴後再從印度招募大量契約勞工，形成非裔與印度裔兩大族群。非裔居民多改信基督教，印度裔則帶來印度教與伊斯蘭教，造就多元宗教格局。"
+  },
+  "language": {
+    "official": "官方語言為英語。",
+    "ranking": [
+      {
+        "name": "英語（含蓋亞那克里奧爾英語）",
+        "percent": 95,
+        "description": "英語為官方語言，日常口語多為蓋亞那克里奧爾英語。",
+        "greeting": "Hello",
+        "pronunciation": "heh-loh"
+      },
+      {
+        "name": "西班牙語",
+        "percent": 3,
+        "description": "委內瑞拉移民社群使用。",
+        "greeting": "Hola",
+        "pronunciation": "o-la"
+      }
+    ],
+    "history": "原住民語言在殖民前已存在。荷蘭統治後由英國接手，英語成為官方語言；非裔奴隸與印度契約勞工後代在英語基礎上形成蓋亞那克里奧爾語，印度斯坦語則逐漸式微。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "胡椒燉肉",
+        "localName": "Pepperpot",
+        "description": "以肉類與木薯汁熬成的卡薩里普醬、肉桂與辣椒慢燉，為國菜。",
+        "history": "源自原住民的保存肉類方法，傳統上在聖誕節早晨食用。",
+        "wiki": "Pepperpot"
+      },
+      {
+        "name": "什錦豆飯",
+        "localName": "Cook-up rice",
+        "description": "米飯與豆類、椰奶、肉類一鍋燉煮。",
+        "history": "源自非裔奴隸利用剩餘食材的料理，常在週末與除夕食用。",
+        "wiki": "Cook-up rice"
+      },
+      {
+        "name": "羅提餅",
+        "localName": "Roti",
+        "description": "薄軟的印度式麵餅，配咖哩食用。",
+        "history": "19世紀印度契約勞工帶入，成為蓋亞那人共享的日常主食。",
+        "wiki": "Roti"
+      },
+      {
+        "name": "椰奶根莖燉菜",
+        "localName": "Metemgee",
+        "description": "以椰奶燉煮木薯、山藥、芭蕉、麵糰子與鹹魚的濃稠燉菜。",
+        "history": "非裔社群的傳統料理，充分運用熱帶根莖作物。",
+        "wiki": "Metemgee"
+      },
+      {
+        "name": "豆餡烙餅",
+        "localName": "Dhal puri",
+        "description": "包入黃豆仁粉餡的薄餅，配咖哩食用。",
+        "history": "源自印度比哈爾地區的麵餅，經契約勞工傳入加勒比海後發展出在地版本。",
+        "wiki": "Dhal puri"
+      }
+    ]
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "iso": "MMR",
+  "capital": "奈比多",
+  "summary": "位於中南半島西北部的國家，舊稱緬甸聯邦，以眾多佛塔（如仰光大金塔）聞名，1948年脫離英國獨立，境內民族多元，長期存在內部衝突。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "上座部佛教",
+        "percent": 88,
+        "description": "多數緬族與撣族、孟族等信仰，佛寺與僧侶在社會中地位崇高。"
+      },
+      {
+        "name": "基督教",
+        "percent": 6,
+        "description": "主要為克倫族、克欽族、欽族等少數民族。"
+      },
+      {
+        "name": "伊斯蘭教",
+        "percent": 4,
+        "description": "包含若開邦的羅興亞人及其他穆斯林社群。"
+      },
+      {
+        "name": "傳統信仰",
+        "percent": 1,
+        "description": "包含對納特（nat）神靈的崇拜，也廣泛融入佛教生活。"
+      },
+      {
+        "name": "印度教",
+        "percent": 1,
+        "description": "主要為印度裔居民。"
+      }
+    ],
+    "background": "11世紀蒲甘王朝阿奴律陀王自孟族引入上座部佛教並奉為國教，緬甸自此成為上座部佛教重鎮。19世紀英國殖民時期，美國浸信會傳教士在山區少數民族中傳教，使克倫、克欽、欽族多信奉基督教。"
+  },
+  "language": {
+    "official": "官方語言為緬甸語。",
+    "ranking": [
+      {
+        "name": "緬甸語",
+        "percent": 65,
+        "description": "屬漢藏語系藏緬語族，使用圓形的緬文字母。",
+        "greeting": "မင်္ဂလာပါ",
+        "pronunciation": "min-ga-la-ba"
+      },
+      {
+        "name": "撣語",
+        "percent": 6,
+        "description": "東部撣邦撣族的語言，屬壯侗語系，與泰語相近。",
+        "greeting": "Mai sung kha",
+        "pronunciation": "mai sung kha"
+      }
+    ],
+    "history": "緬甸語隨9世紀前後緬族南下而來，文字源自孟文。緬甸有一百多種語言，包括克倫語、克欽語、若開語、孟語等。英國殖民時期英語為行政語言，獨立後確立緬甸語為國語。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "魚湯米線",
+        "localName": "မုန့်ဟင်းခါး (Mohinga)",
+        "description": "以魚肉、香茅、香蕉樹芯熬成的濃湯配米線，被視為國菜。",
+        "history": "緬甸最普遍的早餐，在街頭與市場處處可見。",
+        "wiki": "Mohinga"
+      },
+      {
+        "name": "涼拌茶葉",
+        "localName": "လက်ဖက်သုပ် (Lahpet thoke)",
+        "description": "以發酵茶葉拌上炸豆、花生、芝麻、番茄與蒜片。",
+        "history": "緬甸人以茶入菜的獨特傳統，過去在王室中作為和平信物。",
+        "wiki": "Lahpet"
+      },
+      {
+        "name": "椰奶雞麵",
+        "localName": "အုန်းနို့ခေါက်ဆွဲ (Ohn no khao swè)",
+        "description": "以椰奶與雞肉熬成的濃湯配麵條。",
+        "history": "與泰國北部的金麵（khao soi）同源。",
+        "wiki": "Ohn no khao swè"
+      },
+      {
+        "name": "撣族米線",
+        "localName": "ရှမ်းခေါက်ဆွဲ (Shan khauk swè)",
+        "description": "米線拌上番茄雞肉或豬肉醬，配醃菜。",
+        "history": "源自東部撣邦，在全國普遍流行。",
+        "wiki": "Shan noodles"
+      },
+      {
+        "name": "緬甸咖哩",
+        "localName": "ဟင်း (Hin)",
+        "description": "以洋蔥、大蒜、薑與油慢燉的肉類或魚咖哩，油亮濃郁。",
+        "history": "受印度影響但不放太多香料，特色是表面浮著一層油。",
+        "wiki": "Burmese curry"
+      }
+    ]
+  }
+}

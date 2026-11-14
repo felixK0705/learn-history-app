@@ -1,0 +1,96 @@
+{
+  "iso": "HND",
+  "capital": "德古西加巴",
+  "summary": "位於中美洲的國家，北臨加勒比海、南接太平洋豐塞卡灣，擁有馬雅古城科潘遺址，以香蕉與咖啡出口著稱。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "新教（福音派）",
+        "percent": 43,
+        "description": "近數十年快速成長，已超過天主教成為最大群體。"
+      },
+      {
+        "name": "天主教",
+        "percent": 34,
+        "description": "殖民時期傳入，長期為主要宗教。"
+      },
+      {
+        "name": "無宗教",
+        "percent": 20,
+        "description": "近年比例上升。"
+      },
+      {
+        "name": "其他",
+        "percent": 2,
+        "description": "包含耶和華見證人、摩門教等。"
+      }
+    ],
+    "background": "16世紀西班牙殖民後天主教成為主要宗教。20世紀初美國香蕉公司與傳教士進入加勒比海沿岸，帶來新教；1980年代後五旬節派等福音派教會快速擴張，使宏都拉斯成為福音派比例最高的拉美國家之一。"
+  },
+  "language": {
+    "official": "官方語言為西班牙語。",
+    "ranking": [
+      {
+        "name": "西班牙語",
+        "percent": 98,
+        "description": "全國通用語言。",
+        "greeting": "Hola",
+        "pronunciation": "o-la"
+      },
+      {
+        "name": "加利富納語",
+        "percent": 1,
+        "description": "加勒比海沿岸加利富納人的語言，其語言、舞蹈與音樂列入聯合國教科文組織非物質文化遺產。",
+        "greeting": "Buiti binafi（早安）",
+        "pronunciation": "bwi-ti bi-na-fi"
+      },
+      {
+        "name": "英語（海灣群島克里奧爾英語）",
+        "percent": 1,
+        "description": "海灣群島居民使用。",
+        "greeting": "Hello",
+        "pronunciation": "heh-loh"
+      }
+    ],
+    "history": "西班牙語隨殖民成為主要語言。18世紀末英國將加勒比海聖文森島的加利富納人（非洲與原住民混血）遷往羅阿坦島，他們帶來加利富納語；海灣群島曾受英國控制，保留英語社群。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "巴里亞達",
+        "localName": "Baleada",
+        "description": "厚麵粉薄餅夾上紅豆泥、起司與酸奶油，對折食用。",
+        "history": "源自北部沿海的聖佩德羅蘇拉與拉塞瓦，是宏都拉斯最具代表性的街頭小吃。",
+        "wiki": "Baleada"
+      },
+      {
+        "name": "海螺湯",
+        "localName": "Sopa de caracol",
+        "description": "以海螺肉、椰奶、木薯與芭蕉熬成的濃湯。",
+        "history": "加勒比海沿岸加利富納料理，因1990年代一首同名歌曲而廣為人知。",
+        "wiki": "Sopa de caracol"
+      },
+      {
+        "name": "納卡塔馬利",
+        "localName": "Nacatamal",
+        "description": "以玉米麵團包入豬肉、米、馬鈴薯與醬汁，用香蕉葉包裹蒸熟。",
+        "history": "中美洲傳統的大型粽子，常在聖誕節與週末食用。",
+        "wiki": "Nacatamal"
+      },
+      {
+        "name": "椰奶海鮮燉湯",
+        "localName": "Tapado",
+        "description": "以魚、海鮮、芭蕉與木薯在椰奶中燉煮。",
+        "history": "加利富納人的傳統料理，展現加勒比海與非洲飲食傳統。",
+        "wiki": "Tapado"
+      },
+      {
+        "name": "炭烤牛肉",
+        "localName": "Carne asada",
+        "description": "醃漬牛肉炭烤，配豆泥、米飯與玉米餅。",
+        "history": "中美洲普遍的燒烤料理，週末家庭聚會常見。",
+        "wiki": "Carne asada"
+      }
+    ]
+  }
+}

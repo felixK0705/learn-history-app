@@ -1,0 +1,91 @@
+{
+  "iso": "MRT",
+  "capital": "努克少",
+  "summary": "位於西北非大西洋岸的國家，國土大部分為撒哈拉沙漠，是連接北非阿拉伯世界與西非的橋樑，1960年脫離法國獨立。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "伊斯蘭教（遜尼派）",
+        "percent": 99,
+        "description": "國教，屬馬立基學派，國名即為「茅利塔尼亞伊斯蘭共和國」。"
+      },
+      {
+        "name": "基督教",
+        "percent": 1,
+        "description": "主要為外籍人士，比例極低。"
+      },
+      {
+        "name": "無宗教及其他",
+        "percent": 1,
+        "description": "人數極少。"
+      }
+    ],
+    "background": "11世紀柏柏爾人建立的穆拉比特王朝由此地興起，將伊斯蘭教傳遍西北非。此後阿拉伯部落移入，申蓋提等沙漠城市成為伊斯蘭學術中心，宗教學者階層在社會中地位崇高。"
+  },
+  "language": {
+    "official": "官方語言為阿拉伯語。",
+    "ranking": [
+      {
+        "name": "哈桑尼亞阿拉伯語",
+        "percent": 80,
+        "description": "摩爾人的阿拉伯方言，是全國主要語言。",
+        "greeting": "السلام عليكم",
+        "pronunciation": "as-sa-lām ʿa-lay-kum"
+      },
+      {
+        "name": "普拉爾語（富拉語）",
+        "percent": 9,
+        "description": "南部塞內加爾河沿岸的哈爾普拉爾人使用。",
+        "greeting": "Jam waali",
+        "pronunciation": "jam waa-li"
+      },
+      {
+        "name": "沃洛夫語",
+        "percent": 1,
+        "description": "南部與首都部分社群使用。",
+        "greeting": "Nanga def",
+        "pronunciation": "nan-ga def"
+      }
+    ],
+    "history": "原住民柏柏爾人原說桑哈賈語，15–17世紀阿拉伯部落哈桑家族南遷後，哈桑尼亞阿拉伯語逐漸普及。法國殖民時期法語成為行政語言，至今仍廣泛用於商業與教育；南部則保留普拉爾語、索寧克語與沃洛夫語。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "魚香料飯",
+        "localName": "Thieboudienne",
+        "description": "以番茄醬汁燉魚與蔬菜，再用湯汁煮飯。",
+        "history": "源自塞內加爾的沃洛夫料理，在茅利塔尼亞南部與沿海地區常見。",
+        "wiki": "Thieboudienne"
+      },
+      {
+        "name": "烤全羊",
+        "localName": "Méchoui",
+        "description": "整隻羊以炭火慢烤，用手撕食。",
+        "history": "北非與撒哈拉游牧民族的節慶料理，常見於婚禮與宗教節日。",
+        "wiki": "Mechoui"
+      },
+      {
+        "name": "庫斯庫斯",
+        "localName": "Couscous / Lekhsel",
+        "description": "蒸熟的粗麥或小米粒配肉類燉菜。",
+        "history": "北非柏柏爾人的傳統主食，傳入茅利塔尼亞後成為家常料理。",
+        "wiki": "Couscous"
+      },
+      {
+        "name": "茅利塔尼亞薄荷茶",
+        "localName": "Atay",
+        "description": "以綠茶、薄荷與大量糖熬煮，倒出泡沫，按習俗連喝三杯。",
+        "history": "19世紀經摩洛哥傳入綠茶，泡茶儀式成為社交與待客的重要文化。",
+        "wiki": "Maghrebi mint tea"
+      },
+      {
+        "name": "駱駝奶",
+        "localName": "Camel milk",
+        "description": "新鮮或發酵的駱駝奶，是游牧民族的重要飲品。",
+        "history": "駱駝是撒哈拉游牧民族的生計核心，努克少甚至有大型駱駝乳品廠。",
+        "wiki": "Camel milk"
+      }
+    ]
+  }
+}

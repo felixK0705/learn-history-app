@@ -1,0 +1,84 @@
+{
+  "iso": "PAN",
+  "capital": "巴拿馬市",
+  "summary": "巴拿馬位於連接中美洲與南美洲的地峽，以1914年通航的巴拿馬運河聞名，是重要的國際航運與金融中心。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "天主教",
+        "percent": 63,
+        "description": "西班牙殖民時期傳入的主要宗教。"
+      },
+      {
+        "name": "福音派／基督新教",
+        "percent": 25,
+        "description": "近數十年快速成長。"
+      },
+      {
+        "name": "無宗教",
+        "percent": 7,
+        "description": "未認同任何宗教的人口。"
+      }
+    ],
+    "background": "西班牙殖民使天主教成為主流。十九世紀末至二十世紀初，修建鐵路與運河時從加勒比海引進的非裔勞工帶來新教，近年福音派教會在各地快速成長。"
+  },
+  "language": {
+    "official": "西班牙語是官方語言。",
+    "ranking": [
+      {
+        "name": "西班牙語",
+        "percent": 93,
+        "description": "全國通用語言。",
+        "greeting": "Hola",
+        "pronunciation": "OH-la"
+      },
+      {
+        "name": "英語",
+        "percent": 3,
+        "description": "加勒比海裔社群使用，在商業與運河相關產業中也十分普遍。",
+        "greeting": "Hello",
+        "pronunciation": "heh-LOH"
+      }
+    ],
+    "history": "殖民前當地有古納、恩加貝等原住民語言，至今仍在自治區中使用。西班牙殖民使西班牙語成為主流；修建運河時大量加勒比海勞工移入，加上美國管理運河區近百年，使英語在巴拿馬具有一定影響力。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "桑科丘湯",
+        "localName": "Sancocho",
+        "description": "以雞肉、山藥、玉米與香菜熬煮的湯。",
+        "history": "被視為巴拿馬國菜，常在週末與節慶時食用。",
+        "wiki": "Sancocho"
+      },
+      {
+        "name": "雞肉飯",
+        "localName": "Arroz con pollo",
+        "description": "將雞肉與米、蔬菜一同烹煮的料理。",
+        "history": "巴拿馬家庭聚會與生日宴的常見菜色。",
+        "wiki": "Arroz con pollo"
+      },
+      {
+        "name": "卡里馬尼奧拉",
+        "localName": "Carimañola",
+        "description": "以木薯泥包肉餡油炸的點心。",
+        "history": "巴拿馬常見的早餐小吃。",
+        "wiki": "Carimañola"
+      },
+      {
+        "name": "炸大蕉",
+        "localName": "Patacones",
+        "description": "將青大蕉切片壓扁後兩次油炸。",
+        "history": "加勒比海與中美洲常見的配菜。",
+        "wiki": "Tostones"
+      },
+      {
+        "name": "檸檬醃魚",
+        "localName": "Ceviche",
+        "description": "以檸檬汁醃漬生魚或海鮮，加入洋蔥與辣椒。",
+        "history": "巴拿馬市魚市場的招牌料理。",
+        "wiki": "Ceviche"
+      }
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "iso": "VCT",
+  "capital": "金石城",
+  "summary": "聖文森及格瑞那丁是位於加勒比海東部的島國，由聖文森島與格瑞那丁群島組成，以火山、遊艇勝地與葛粉產業聞名。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "基督新教",
+        "percent": 75,
+        "description": "包括五旬節派、聖公會、復臨安息日會、衛理宗等。"
+      },
+      {
+        "name": "天主教",
+        "percent": 6,
+        "description": "規模較小的天主教社群。"
+      },
+      {
+        "name": "拉斯塔法里教",
+        "percent": 2,
+        "description": "規模較小的宗教運動。"
+      },
+      {
+        "name": "無宗教",
+        "percent": 1,
+        "description": "未認同任何宗教的人口。"
+      }
+    ],
+    "background": "聖文森原為加勒比原住民（卡利納哥人與加利福納人）的家園，十八世紀英國取得統治權後帶來聖公會與衛理宗。二十世紀後五旬節派與福音派教會快速成長。"
+  },
+  "language": {
+    "official": "英語是官方語言。",
+    "ranking": [
+      {
+        "name": "文森克里奧爾英語",
+        "percent": 90,
+        "description": "以英語為基礎的克里奧爾語，是日常生活語言。",
+        "greeting": "Good mornin'",
+        "pronunciation": "gud MAW-nin"
+      },
+      {
+        "name": "英語",
+        "percent": 10,
+        "description": "官方語言，用於政府、教育與正式場合。",
+        "greeting": "Hello",
+        "pronunciation": "heh-LOH"
+      }
+    ],
+    "history": "殖民時期非洲奴隸與英國殖民者之間形成以英語為基礎的克里奧爾語。原住民加利福納人曾在此生活，但1797年遭英國流放至中美洲，其語言因此在本島消失。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "烤麵包果配炸鰺魚",
+        "localName": "Roasted breadfruit and fried jackfish",
+        "description": "將麵包果烤熟搭配炸鰺魚。",
+        "history": "聖文森的國菜，麵包果於1793年由布萊船長自大溪地引進。",
+        "wiki": "Breadfruit"
+      },
+      {
+        "name": "卡拉魯",
+        "localName": "Callaloo",
+        "description": "以芋頭葉、秋葵與椰奶燉煮的濃湯。",
+        "history": "源自西非飲食傳統的加勒比海湯品。",
+        "wiki": "Callaloo"
+      },
+      {
+        "name": "佩勞",
+        "localName": "Pelau",
+        "description": "將焦糖化雞肉與米、豆類一同烹煮的燉飯。",
+        "history": "加勒比海東部常見的一鍋料理。",
+        "wiki": "Pelau"
+      },
+      {
+        "name": "鹹魚",
+        "localName": "Saltfish",
+        "description": "以鹽醃鱈魚泡水去鹽後與蔬菜炒製。",
+        "history": "殖民時期自北美輸入的重要蛋白質來源。",
+        "wiki": "Salt cod"
+      },
+      {
+        "name": "葛粉",
+        "localName": "Arrowroot",
+        "description": "由竹芋根莖製成的澱粉，用於點心與餅乾。",
+        "history": "聖文森曾是世界最大的葛粉產地，至今仍是特色產品。",
+        "wiki": "Maranta arundinacea"
+      }
+    ]
+  }
+}

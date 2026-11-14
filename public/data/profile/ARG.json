@@ -1,0 +1,96 @@
+{
+  "iso": "ARG",
+  "capital": "布宜諾斯艾利斯",
+  "summary": "阿根廷位於南美洲南部，國土從亞熱帶延伸至南極附近的火地島，以探戈、足球、牛肉與彭巴草原聞名。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "天主教",
+        "percent": 63,
+        "description": "西班牙殖民傳入的主要宗教，出身阿根廷的教宗方濟各廣受愛戴。"
+      },
+      {
+        "name": "無宗教",
+        "percent": 19,
+        "description": "未認同任何宗教的人口快速增加。"
+      },
+      {
+        "name": "福音派",
+        "percent": 15,
+        "description": "近數十年快速成長的新教教會。"
+      },
+      {
+        "name": "其他宗教",
+        "percent": 1,
+        "description": "包括猶太教與伊斯蘭教等。"
+      }
+    ],
+    "background": "西班牙殖民使天主教成為主流，十九世紀末至二十世紀初大量義大利與西班牙移民進一步強化了天主教傳統。阿根廷也擁有拉丁美洲最大的猶太社群，近年福音派教會與無宗教人口則持續成長。"
+  },
+  "language": {
+    "official": "西班牙語是事實上的官方語言。",
+    "ranking": [
+      {
+        "name": "西班牙語",
+        "percent": 96,
+        "description": "帶有獨特的「里約布拉塔」口音，並使用vos代替tú。",
+        "greeting": "Hola, ¿qué tal?",
+        "pronunciation": "OH-la keh TAL"
+      },
+      {
+        "name": "瓜拉尼語",
+        "percent": 1,
+        "description": "東北部科連特斯省等地使用。",
+        "greeting": "Mba'éichapa",
+        "pronunciation": "mba-AY-cha-pa"
+      },
+      {
+        "name": "克丘亞語",
+        "percent": 1,
+        "description": "西北部聖地牙哥—德爾埃斯特羅省等地使用。",
+        "greeting": "Imaynallan",
+        "pronunciation": "ee-my-NAH-yan"
+      }
+    ],
+    "history": "西班牙殖民前當地有瓜拉尼語、克丘亞語、馬普切語等原住民語言。十九世紀末起大量義大利移民湧入，使阿根廷西班牙語的語調深受義大利語影響，並形成布宜諾斯艾利斯的俚語「隆法多」。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "阿薩多烤肉",
+        "localName": "Asado",
+        "description": "以炭火或木柴慢烤牛肋排、香腸與內臟。",
+        "history": "源自彭巴草原高喬牛仔的烤肉傳統，是阿根廷家庭聚會的核心。",
+        "wiki": "Asado"
+      },
+      {
+        "name": "恩潘納達",
+        "localName": "Empanada",
+        "description": "包入肉、洋蔥、雞蛋等餡料的烤或炸餡餅。",
+        "history": "隨西班牙殖民傳入，各省有不同口味。",
+        "wiki": "Empanada"
+      },
+      {
+        "name": "米蘭內薩",
+        "localName": "Milanesa",
+        "description": "裹粉油炸的薄肉排。",
+        "history": "十九世紀末由義大利移民帶來，現為最普遍的家常菜。",
+        "wiki": "Milanesa"
+      },
+      {
+        "name": "牛奶醬",
+        "localName": "Dulce de leche",
+        "description": "將牛奶與糖慢熬成的焦糖色抹醬。",
+        "history": "阿根廷甜點的基本食材，用於阿法赫雷斯餅等點心。",
+        "wiki": "Dulce de leche"
+      },
+      {
+        "name": "洛克羅燉菜",
+        "localName": "Locro",
+        "description": "以玉米、南瓜、豆類與肉燉煮的濃湯。",
+        "history": "源自安地斯原住民料理，常於5月25日五月革命紀念日食用。",
+        "wiki": "Locro"
+      }
+    ]
+  }
+}

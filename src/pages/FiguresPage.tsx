@@ -3,7 +3,7 @@ import { Link, useSearchParams } from "react-router-dom";
 import ForceGraph2D, { type ForceGraphMethods, type LinkObject, type NodeObject } from "react-force-graph-2d";
 import { Globe2, Maximize2, Search, SlidersHorizontal, X } from "lucide-react";
 import { figures, groups, relationColors, relations, type Figure, type RelationType } from "../data/figures";
-import { countryByIso } from "../data/countries";
+import { countryByIso } from "../data/world";
 import { formatYear } from "../lib/format";
 import { useReveal } from "../lib/motion";
 
@@ -134,7 +134,7 @@ export default function FiguresPage() {
   const filters = (
     <>
       <section>
-        <h3 className="mb-2 text-xs tracking-widest text-mute">時代群組</h3>
+        <h3 className="eyebrow mb-2">時代群組</h3>
         <div className="flex flex-wrap gap-1.5">
           {groups.map((g) => (
             <button
@@ -157,7 +157,7 @@ export default function FiguresPage() {
         </div>
       </section>
       <section className="mt-5">
-        <h3 className="mb-2 text-xs tracking-widest text-mute">關係類型</h3>
+        <h3 className="eyebrow mb-2">關係類型</h3>
         <div className="flex flex-wrap gap-1.5">
           {relationTypes.map((t) => (
             <button
@@ -177,8 +177,8 @@ export default function FiguresPage() {
   return (
     <div className="absolute inset-0 flex">
       {/* 左側控制面板 */}
-      <aside ref={asideRef} className="scroll-thin relative z-10 hidden w-72 shrink-0 overflow-y-auto border-r border-white/10 bg-deep-950/30 p-5 lg:block">
-        <h1 className="font-serif text-2xl font-bold">歷史人物關係圖</h1>
+      <aside ref={asideRef} className="glass scroll-thin absolute top-4 bottom-4 left-4 z-20 hidden w-72 overflow-y-auto rounded-[28px] p-6 lg:block">
+        <h1 className="text-2xl font-semibold tracking-tight">人物關係</h1>
         <p className="mt-1 text-sm text-mute">
           {figures.length} 位人物、{relations.length} 條關係。滑過人物可看到與其相連的人，點擊查看詳細介紹。
         </p>
@@ -206,7 +206,7 @@ export default function FiguresPage() {
           onBackgroundClick={() => focusNode(null)}
           linkColor={(l) => {
             const lit = !highlightId || endId(l.source) === highlightId || endId(l.target) === highlightId;
-            return lit ? relationColors[l.type] : "rgba(255,255,255,0.05)";
+            return lit ? relationColors[l.type] : "rgba(255,255,255,0.12)";
           }}
           linkWidth={(l) =>
             highlightId && (endId(l.source) === highlightId || endId(l.target) === highlightId) ? 2.5 : 1.2
@@ -222,7 +222,7 @@ export default function FiguresPage() {
             const r = isFocus ? 9 : 7;
             const x = node.x ?? 0;
             const y = node.y ?? 0;
-            ctx.globalAlpha = lit ? 1 : 0.15;
+            ctx.globalAlpha = lit ? 1 : 0.4;
             if (isFocus) {
               ctx.beginPath();
               ctx.arc(x, y, r + 5, 0, 2 * Math.PI);
@@ -231,12 +231,12 @@ export default function FiguresPage() {
             }
             ctx.beginPath();
             ctx.arc(x, y, r, 0, 2 * Math.PI);
-            ctx.fillStyle = node.color;
+            ctx.fillStyle = "rgba(255,255,255,0.96)";
             ctx.fill();
-            ctx.lineWidth = 1.5 / scale;
-            ctx.strokeStyle = "rgba(255,255,255,0.85)";
+            ctx.lineWidth = 2.2;
+            ctx.strokeStyle = node.color;
             ctx.stroke();
-            ctx.fillStyle = "#031033";
+            ctx.fillStyle = "#0d43ad";
             ctx.font = `bold ${r}px "Noto Serif TC", serif`;
             ctx.textAlign = "center";
             ctx.textBaseline = "middle";
@@ -244,7 +244,7 @@ export default function FiguresPage() {
             if (scale > 1.1 || isFocus || (highlightId && lit)) {
               const fs = Math.max(11 / scale, 3.2);
               ctx.font = `500 ${fs}px "Noto Sans TC", sans-serif`;
-              ctx.fillStyle = "rgba(232,243,255,0.95)";
+              ctx.fillStyle = "rgba(255,255,255,0.95)";
               ctx.fillText(node.name, x, y + r + fs * 0.9);
             }
             ctx.globalAlpha = 1;
@@ -258,7 +258,7 @@ export default function FiguresPage() {
         />
 
         {/* 搜尋 */}
-        <div className="absolute top-4 left-4 z-10 w-[min(280px,calc(100%-6rem))]">
+        <div className="absolute top-4 left-4 z-10 w-[min(280px,calc(100%-6rem))] lg:left-[320px]">
           <label className="glass flex h-10 items-center gap-2 rounded-full px-3">
             <Search className="size-4 text-mute" />
             <input
@@ -289,7 +289,7 @@ export default function FiguresPage() {
           )}
         </div>
 
-        <div className="absolute top-4 right-4 z-10 flex gap-2">
+        <div className="absolute top-4 left-[calc(min(280px,100%-6rem)+1.5rem)] z-10 flex gap-2 lg:left-[620px]">
           <button className="icon-btn lg:hidden" onClick={() => setFiltersOpen((v) => !v)} aria-label="篩選">
             <SlidersHorizontal className="size-4" />
           </button>
@@ -306,7 +306,7 @@ export default function FiguresPage() {
         {selected && (
           <aside
             ref={detailRef}
-            className="glass absolute z-20 flex flex-col rounded-3xl shadow-2xl max-md:inset-x-3 max-md:bottom-3 max-md:max-h-[55%] md:top-4 md:right-4 md:bottom-4 md:w-[340px]"
+            className="glass absolute z-20 flex flex-col overflow-hidden rounded-[28px] max-md:inset-x-3 max-md:bottom-3 max-md:max-h-[55%] md:top-4 md:right-4 md:bottom-4 md:w-[340px]"
           >
             <div className="relative shrink-0 p-5 pb-3">
               <button className="icon-btn absolute top-4 right-4 !size-8" onClick={() => focusNode(null)} aria-label="關閉">
@@ -320,7 +320,7 @@ export default function FiguresPage() {
                   {selected.name[0]}
                 </span>
                 <div className="min-w-0 pr-8">
-                  <h2 className="font-serif text-xl font-bold">{selected.name}</h2>
+                  <h2 className="text-xl font-semibold tracking-tight">{selected.name}</h2>
                   <p className="truncate text-xs text-mute">{selected.englishName}</p>
                 </div>
               </div>
@@ -335,7 +335,7 @@ export default function FiguresPage() {
               {countryByIso.has(selected.iso) && (
                 <Link to={`/?country=${selected.iso}`} className="mt-3 inline-flex items-center gap-1.5 text-sm text-glow hover:underline">
                   <Globe2 className="size-4" />
-                  在地球上看{countryByIso.get(selected.iso)!.name}的歷史
+                  在地球上看{countryByIso.get(selected.iso)!.zh}的歷史
                 </Link>
               )}
             </div>

@@ -1,0 +1,94 @@
+{
+  "iso": "MDG",
+  "capital": "安塔那那利佛",
+  "summary": "位於印度洋西南的世界第四大島國，因長期地理隔離擁有大量特有物種（如狐猴），居民兼具東南亞與東非血統。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "新教",
+        "percent": 41,
+        "description": "以耶穌基督教會（FJKM）與路德宗為主，在中部高地影響深遠。"
+      },
+      {
+        "name": "天主教",
+        "percent": 35,
+        "description": "19世紀法國傳教士傳入，分布廣泛。"
+      },
+      {
+        "name": "傳統信仰（祖靈崇拜）",
+        "percent": 7,
+        "description": "崇敬祖先的信仰普遍，許多基督徒也同時參與傳統儀式。"
+      },
+      {
+        "name": "無宗教",
+        "percent": 6,
+        "description": "部分人口不屬特定宗教。"
+      },
+      {
+        "name": "伊斯蘭教",
+        "percent": 3,
+        "description": "主要見於西北沿海與印巴裔社群。"
+      }
+    ],
+    "background": "19世紀初梅里納王國國王拉達瑪一世允許倫敦傳道會傳教，1869年女王拉納瓦洛娜二世受洗，使新教在高地普及。1896年法國殖民後天主教勢力擴展。祖靈崇拜則一直是社會核心，例如「翻屍節」（famadihana）。"
+  },
+  "language": {
+    "official": "官方語言為馬達加斯加語與法語。",
+    "ranking": [
+      {
+        "name": "馬達加斯加語",
+        "percent": 98,
+        "description": "屬南島語系，與婆羅洲的馬安延語關係最近，全國通用。",
+        "greeting": "Manao ahoana",
+        "pronunciation": "ma-now own"
+      },
+      {
+        "name": "法語",
+        "percent": 2,
+        "description": "官方語言之一，用於教育與行政，母語者少。",
+        "greeting": "Bonjour",
+        "pronunciation": "bon-zhoor"
+      }
+    ],
+    "history": "約1500年前來自婆羅洲一帶的南島民族渡海移居，帶來馬達加斯加語，並吸收了班圖語、阿拉伯語等詞彙。19世紀梅里納王國採用拉丁字母書寫，法國殖民後法語成為教育與行政語言。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "馬達加斯加牛肉菜湯",
+        "localName": "Romazava",
+        "description": "以牛肉與多種綠葉菜燉煮的湯，常配白飯，被視為國菜。",
+        "history": "馬達加斯加人以米為主食，此湯是高地地區典型的「配飯菜」（laoka）。",
+        "wiki": "Romazava"
+      },
+      {
+        "name": "木薯葉燉豬肉",
+        "localName": "Ravitoto",
+        "description": "搗碎的木薯葉與豬肉一同燉煮，配白飯食用。",
+        "history": "是馬達加斯加最受歡迎的家常菜之一。",
+        "wiki": "Ravitoto"
+      },
+      {
+        "name": "馬達加斯加米糕",
+        "localName": "Mofo gasy",
+        "description": "以米粉、椰奶與糖製成的小圓煎餅，是早餐常見食物。",
+        "history": "名稱意為「馬達加斯加麵包」，在街頭攤販普遍販售。",
+        "wiki": "Mofo gasy"
+      },
+      {
+        "name": "香蕉花生糕",
+        "localName": "Koba",
+        "description": "以花生、香蕉、米粉與糖包入香蕉葉蒸製的甜糕。",
+        "history": "傳統街頭點心，常見於市集與節慶。",
+        "wiki": "Koba (food)"
+      },
+      {
+        "name": "瑞布牛肉",
+        "localName": "Zebu",
+        "description": "以瘤牛（zebu）肉烤串或燉煮的料理。",
+        "history": "瘤牛在馬達加斯加象徵財富與地位，也是祭祀與葬禮中的重要牲畜。",
+        "wiki": "Zebu"
+      }
+    ]
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "iso": "TUV",
+  "capital": "富納富提",
+  "summary": "位於南太平洋的島國，由九座環礁與珊瑚島組成，是世界上人口最少的國家之一，因海拔極低而深受海平面上升威脅，1978年獨立。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "吐瓦魯教會",
+        "percent": 86,
+        "description": "公理宗傳統的國家教會，在社會生活中具核心地位。"
+      },
+      {
+        "name": "其他基督教（基督復臨安息日會、弟兄會、天主教等）",
+        "percent": 8,
+        "description": "規模較小的教派。"
+      },
+      {
+        "name": "巴哈伊教",
+        "percent": 2,
+        "description": "20世紀傳入的少數信仰。"
+      },
+      {
+        "name": "其他（伊斯蘭教等）",
+        "percent": 1,
+        "description": "人數極少。"
+      }
+    ],
+    "background": "1861年一名薩摩亞教會人士漂流抵達努庫萊萊島後開始傳教，隨後倫敦傳道會派遣薩摩亞籍牧師到各島傳教，使基督教迅速取代傳統信仰。吐瓦魯教會後來成為國家教會。"
+  },
+  "language": {
+    "official": "官方語言為吐瓦魯語與英語。",
+    "ranking": [
+      {
+        "name": "吐瓦魯語",
+        "percent": 87,
+        "description": "屬南島語系玻里尼西亞語支，與薩摩亞語相近。",
+        "greeting": "Talofa",
+        "pronunciation": "ta-lo-fa"
+      },
+      {
+        "name": "吉里巴斯語",
+        "percent": 11,
+        "description": "努伊島居民的語言，屬密克羅尼西亞語支。",
+        "greeting": "Mauri",
+        "pronunciation": "mau-ri"
+      },
+      {
+        "name": "英語",
+        "percent": 1,
+        "description": "政府與教育使用。",
+        "greeting": "Hello",
+        "pronunciation": "heh-loh"
+      }
+    ],
+    "history": "吐瓦魯人為玻里尼西亞人後代，語言與薩摩亞語、東加語相近；努伊島居民則是吉里巴斯人後裔。19世紀薩摩亞籍牧師帶來薩摩亞語聖經，影響了吐瓦魯語書面語；英國殖民時期英語成為行政語言。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "沼澤芋",
+        "localName": "Pulaka",
+        "description": "在挖掘的坑中種植的大型沼澤芋，煮或烤後食用，常配椰奶。",
+        "history": "在珊瑚島貧瘠土壤中，島民挖掘深坑累積堆肥種植沼澤芋，已有數百年歷史。",
+        "wiki": "Cyrtosperma merkusii"
+      },
+      {
+        "name": "椰子蟹",
+        "localName": "Coconut crab",
+        "description": "大型陸生蟹，常蒸煮或以椰奶烹調。",
+        "history": "太平洋島嶼的珍貴食材，常在節慶食用。",
+        "wiki": "Coconut crab"
+      },
+      {
+        "name": "麵包果",
+        "localName": "Breadfruit",
+        "description": "烤、煮或發酵保存的麵包果。",
+        "history": "太平洋島民的傳統澱粉來源。",
+        "wiki": "Breadfruit"
+      },
+      {
+        "name": "露兜樹果",
+        "localName": "Pandanus",
+        "description": "露兜樹果實可嚼食或製成果醬。",
+        "history": "在環礁乾旱環境中，露兜樹是重要的糧食作物。",
+        "wiki": "Pandanus tectorius"
+      },
+      {
+        "name": "椰花汁",
+        "localName": "Kaleve",
+        "description": "採集椰子花序汁液製成的甜飲，也可熬成糖漿。",
+        "history": "吐瓦魯人每日採集椰花汁，是傳統飲食的重要部分。",
+        "wiki": "Toddy"
+      }
+    ]
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "iso": "ATG",
+  "capital": "聖約翰",
+  "summary": "位於加勒比海東部背風群島的島國，由安地卡島與巴布達島組成，1981年脫離英國獨立，以號稱365處海灘聞名。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "聖公會",
+        "percent": 18,
+        "description": "英國殖民時期的國教會，是最大教派。"
+      },
+      {
+        "name": "基督復臨安息日會",
+        "percent": 12,
+        "description": "20世紀快速成長。"
+      },
+      {
+        "name": "五旬節派",
+        "percent": 12,
+        "description": "近年成長迅速。"
+      },
+      {
+        "name": "摩拉維亞弟兄會",
+        "percent": 8,
+        "description": "18世紀起向非裔奴隸傳教，歷史悠久。"
+      },
+      {
+        "name": "天主教",
+        "percent": 8,
+        "description": "主要信徒包括葡萄牙與多明尼加裔社群。"
+      },
+      {
+        "name": "無宗教",
+        "percent": 6,
+        "description": "比例較低。"
+      }
+    ],
+    "background": "1632年英國殖民後聖公會成為官方教會。18世紀摩拉維亞弟兄會與衛理宗積極向非裔奴隸傳教，在廢奴前後吸引大量信徒。20世紀後基督復臨安息日會與五旬節派快速成長，形成教派多元的格局。"
+  },
+  "language": {
+    "official": "官方語言為英語。",
+    "ranking": [
+      {
+        "name": "英語（含安地卡克里奧爾語）",
+        "percent": 95,
+        "description": "官方語言為英語，日常口語多為以英語為基礎的安地卡克里奧爾語。",
+        "greeting": "Hello / Wha' gwaan",
+        "pronunciation": "heh-loh / wa gwan"
+      },
+      {
+        "name": "西班牙語",
+        "percent": 3,
+        "description": "多明尼加移民社群使用。",
+        "greeting": "Hola",
+        "pronunciation": "o-la"
+      }
+    ],
+    "history": "英國殖民者自西非引入奴隸種植甘蔗，英語與西非語言接觸形成安地卡克里奧爾語。正式場合與教育使用標準英語，近年多明尼加與其他加勒比海移民帶來西班牙語。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "芬吉糊配辣燉菜",
+        "localName": "Fungee and pepperpot",
+        "description": "以玉米粉與秋葵攪成的糊狀主食，搭配蔬菜、鹹肉燉成的辣燉菜，為國菜。",
+        "history": "芬吉糊源自西非的糊狀主食，與巴貝多的古古糊相近。",
+        "wiki": "Fungee"
+      },
+      {
+        "name": "辣燉菜",
+        "localName": "Pepperpot",
+        "description": "以菠菜、茄子、南瓜等蔬菜與鹹肉燉煮的濃稠燉菜。",
+        "history": "源自加勒比原住民與西非飲食交融的燉菜傳統。",
+        "wiki": "Pepperpot"
+      },
+      {
+        "name": "杜卡納",
+        "localName": "Ducana",
+        "description": "以地瓜、椰子與香料包入香蕉葉蒸成的甜餃子，常配鹹魚。",
+        "history": "源自西非蒸糕傳統，是安地卡特色食物。",
+        "wiki": "Ducana"
+      },
+      {
+        "name": "鹹魚料理",
+        "localName": "Saltfish",
+        "description": "以鹹鱈魚炒番茄、洋蔥與甜椒，常作為早餐。",
+        "history": "殖民時期北美鹹鱈魚作為廉價蛋白質輸入，成為加勒比海普遍食材。",
+        "wiki": "Salted fish"
+      },
+      {
+        "name": "安地卡黑鳳梨",
+        "localName": "Antigua Black pineapple",
+        "description": "安地卡特有的小型極甜鳳梨品種，直接食用或做成果汁。",
+        "history": "據信由原住民自南美帶來，是國家象徵之一，出現在國徽上。",
+        "wiki": "Antigua Black"
+      }
+    ]
+  }
+}

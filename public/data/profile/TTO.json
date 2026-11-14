@@ -1,0 +1,94 @@
+{
+  "iso": "TTO",
+  "capital": "西班牙港",
+  "summary": "千里達及托巴哥是加勒比海南端的雙島國家，以石油與天然氣產業、嘉年華會、卡利普索與鋼鼓音樂聞名。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "基督新教",
+        "percent": 32,
+        "description": "包括五旬節派、聖公會、復臨安息日會、長老會等。"
+      },
+      {
+        "name": "天主教",
+        "percent": 22,
+        "description": "最大的單一基督教會。"
+      },
+      {
+        "name": "印度教",
+        "percent": 18,
+        "description": "主要為印度裔居民。"
+      },
+      {
+        "name": "伊斯蘭教",
+        "percent": 5,
+        "description": "主要為印度裔居民。"
+      },
+      {
+        "name": "無宗教",
+        "percent": 2,
+        "description": "未認同任何宗教的人口。"
+      }
+    ],
+    "background": "西班牙與法國殖民時期天主教傳入，英國統治後帶來聖公會等新教。1838年廢奴後，英國從印度引進大量契約勞工，帶來印度教與伊斯蘭教，使千里達成為加勒比海宗教最多元的國家之一。"
+  },
+  "language": {
+    "official": "英語是官方語言。",
+    "ranking": [
+      {
+        "name": "英語（含千里達克里奧爾英語）",
+        "percent": 95,
+        "description": "官方語言；日常生活使用帶有本地特色的千里達克里奧爾英語。",
+        "greeting": "Wah going on?",
+        "pronunciation": "wah GO-in ON"
+      },
+      {
+        "name": "千里達印度斯坦語",
+        "percent": 1,
+        "description": "印度契約勞工後代的語言，現多為年長者使用。",
+        "greeting": "नमस्ते (Namaste)",
+        "pronunciation": "na-ma-STAY"
+      }
+    ],
+    "history": "千里達先後由西班牙、法國與英國統治，曾通行以法語為基礎的克里奧爾語，十九世紀後逐漸被以英語為基礎的克里奧爾語取代。印度移民帶來的博傑普爾語系印度斯坦語也為當地英語貢獻了許多詞彙。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "雙餅",
+        "localName": "Doubles",
+        "description": "兩片炸餅夾咖哩鷹嘴豆與各式醬料。",
+        "history": "1930年代由印度裔小販所創，是千里達最受歡迎的早餐。",
+        "wiki": "Doubles (food)"
+      },
+      {
+        "name": "羅地",
+        "localName": "Roti",
+        "description": "以薄餅包裹咖哩雞、羊肉或馬鈴薯。",
+        "history": "源自印度契約勞工的飲食，成為千里達的國民美食。",
+        "wiki": "Roti"
+      },
+      {
+        "name": "卡拉魯",
+        "localName": "Callaloo",
+        "description": "以芋頭葉、秋葵與椰奶燉煮的濃湯。",
+        "history": "源自西非飲食傳統，是週日午餐的常見料理。",
+        "wiki": "Callaloo"
+      },
+      {
+        "name": "佩勞",
+        "localName": "Pelau",
+        "description": "將焦糖化雞肉與米、鴿豆一同烹煮的燉飯。",
+        "history": "融合非洲與印度飲食傳統的一鍋料理。",
+        "wiki": "Pelau"
+      },
+      {
+        "name": "鯊魚炸麵包",
+        "localName": "Bake and shark",
+        "description": "以炸麵包夾炸鯊魚肉與各式醬料。",
+        "history": "千里達北部馬拉卡斯海灘的代表小吃。",
+        "wiki": "Bake and shark"
+      }
+    ]
+  }
+}

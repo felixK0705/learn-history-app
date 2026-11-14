@@ -1,0 +1,101 @@
+{
+  "iso": "MYS",
+  "capital": "吉隆坡",
+  "summary": "馬來西亞位於東南亞，由馬來半島與婆羅洲北部的沙巴、砂拉越組成，馬來人、華人、印度人及原住民等多元族群共存；行政中心為布城。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "伊斯蘭教",
+        "percent": 63,
+        "description": "聯邦宗教，馬來人依憲法定義為穆斯林。"
+      },
+      {
+        "name": "佛教",
+        "percent": 19,
+        "description": "主要為華人信徒。"
+      },
+      {
+        "name": "基督教",
+        "percent": 9,
+        "description": "主要分布於沙巴與砂拉越的原住民及部分華人。"
+      },
+      {
+        "name": "印度教",
+        "percent": 6,
+        "description": "主要為印度裔居民。"
+      },
+      {
+        "name": "中國民間信仰／道教",
+        "percent": 1,
+        "description": "華人的傳統信仰。"
+      }
+    ],
+    "background": "十五世紀麻六甲蘇丹王朝的統治者皈依伊斯蘭教，使其在馬來半島廣泛傳播。英國殖民時期大量華人與印度人移入錫礦與橡膠園工作，帶來佛教、道教與印度教，傳教士則在婆羅洲傳播基督教。"
+  },
+  "language": {
+    "official": "馬來語是國語及官方語言。",
+    "ranking": [
+      {
+        "name": "馬來語",
+        "percent": 60,
+        "description": "國語，也是跨族群的通用語。",
+        "greeting": "Apa khabar",
+        "pronunciation": "AH-pa KAH-bar"
+      },
+      {
+        "name": "華語及漢語方言",
+        "percent": 23,
+        "description": "華人社群使用華語、粵語、閩南語、客家話等。",
+        "greeting": "你好",
+        "pronunciation": "nee HOW"
+      },
+      {
+        "name": "淡米爾語",
+        "percent": 6,
+        "description": "印度裔社群的主要語言。",
+        "greeting": "வணக்கம்",
+        "pronunciation": "va-NAK-kam"
+      }
+    ],
+    "history": "馬來語長期是東南亞海上貿易的通用語，過去以阿拉伯字母（爪夷文）書寫，殖民時期後改用拉丁字母。英國殖民使英語成為行政語言，獨立後推行馬來語為國語，英語仍廣泛使用於商業與高等教育。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "椰漿飯",
+        "localName": "Nasi lemak",
+        "description": "以椰奶煮的米飯，配參巴辣醬、炸小魚乾、花生與水煮蛋。",
+        "history": "被視為馬來西亞國民美食，傳統上作為早餐。",
+        "wiki": "Nasi lemak"
+      },
+      {
+        "name": "沙爹",
+        "localName": "Satay",
+        "description": "醃漬後炭烤的肉串，配花生醬。",
+        "history": "東南亞廣泛流行的燒烤料理，在馬來西亞是夜市必備小吃。",
+        "wiki": "Satay"
+      },
+      {
+        "name": "印度煎餅",
+        "localName": "Roti canai",
+        "description": "層層酥軟的煎餅，配咖哩醬食用。",
+        "history": "由印度穆斯林移民帶來，是嘛嘛檔最受歡迎的早餐。",
+        "wiki": "Roti canai"
+      },
+      {
+        "name": "仁當",
+        "localName": "Rendang",
+        "description": "以椰奶與香料長時間燉煮至收汁的牛肉。",
+        "history": "源自蘇門答臘米南佳保人，開齋節時常見。",
+        "wiki": "Rendang"
+      },
+      {
+        "name": "扁擔飯",
+        "localName": "Nasi kandar",
+        "description": "白飯淋上多種咖哩，搭配各式配菜。",
+        "history": "源自檳城的印度穆斯林小販，以扁擔挑飯沿街叫賣而得名。",
+        "wiki": "Nasi kandar"
+      }
+    ]
+  }
+}

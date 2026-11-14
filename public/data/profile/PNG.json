@@ -1,0 +1,96 @@
+{
+  "iso": "PNG",
+  "capital": "莫士比港",
+  "summary": "巴布亞紐幾內亞位於新幾內亞島東半部及周邊島嶼，是世界上語言最多樣的國家之一，擁有超過800種語言。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "基督新教",
+        "percent": 64,
+        "description": "包括路德宗、聯合教會、復臨安息日會與五旬節派等。"
+      },
+      {
+        "name": "天主教",
+        "percent": 26,
+        "description": "重要的基督教會，在教育與醫療方面貢獻良多。"
+      },
+      {
+        "name": "其他基督教派",
+        "percent": 5,
+        "description": "包括其他教會與宗派。"
+      },
+      {
+        "name": "傳統信仰及其他",
+        "percent": 2,
+        "description": "部分人保留祖靈與自然信仰，或與基督教融合。"
+      }
+    ],
+    "background": "十九世紀後期歐洲傳教士陸續抵達，德國殖民地區以路德宗為主，英國與澳洲管轄地區則有聖公會與倫敦傳道會。二十世紀高地地區接觸外界後也迅速基督教化，但傳統信仰觀念仍深植於社會。"
+  },
+  "language": {
+    "official": "英語、托克皮辛語、希里莫圖語與巴布亞紐幾內亞手語是官方語言。",
+    "ranking": [
+      {
+        "name": "托克皮辛語",
+        "percent": 50,
+        "description": "以英語為基礎的克里奧爾語，是全國最廣泛使用的通用語。",
+        "greeting": "Gude",
+        "pronunciation": "goo-DAY"
+      },
+      {
+        "name": "英語",
+        "percent": 2,
+        "description": "官方語言，用於政府、教育與商業。",
+        "greeting": "Hello",
+        "pronunciation": "heh-LOH"
+      },
+      {
+        "name": "希里莫圖語",
+        "percent": 1,
+        "description": "南部巴布亞地區的通用語。",
+        "greeting": "Daba namona",
+        "pronunciation": "DA-ba na-MO-na"
+      }
+    ],
+    "history": "巴紐的崎嶇地形使各群體長期分隔，發展出超過800種語言。十九世紀殖民與種植園勞動形成了托克皮辛語，並在獨立後成為國家認同的重要象徵。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "姆姆地爐烤",
+        "localName": "Mumu",
+        "description": "將豬肉、地瓜與蔬菜包葉後放在熱石頭上，以土覆蓋燜烤。",
+        "history": "太平洋島嶼常見的傳統烹調方式，在節慶與宴客時舉行。",
+        "wiki": "Earth oven"
+      },
+      {
+        "name": "西米",
+        "localName": "Saksak",
+        "description": "以西米棕櫚的澱粉製成的主食。",
+        "history": "低地與河流沿岸地區數千年來的重要主食。",
+        "wiki": "Sago"
+      },
+      {
+        "name": "地瓜",
+        "localName": "Kaukau",
+        "description": "以烤或燜煮方式食用的地瓜。",
+        "history": "高地地區最重要的主食，數百年來支撐高地人口。",
+        "wiki": "Sweet potato"
+      },
+      {
+        "name": "芋頭",
+        "localName": "Taro",
+        "description": "以煮或烤方式食用的芋頭。",
+        "history": "太平洋地區古老的主食作物，在傳統交換與儀式中有重要地位。",
+        "wiki": "Taro"
+      },
+      {
+        "name": "阿伊比卡菜",
+        "localName": "Aibika",
+        "description": "黃秋葵屬植物的嫩葉，常以椰奶煮食。",
+        "history": "巴紐最常見的綠葉蔬菜之一，營養豐富。",
+        "wiki": "Abelmoschus manihot"
+      }
+    ]
+  }
+}

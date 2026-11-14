@@ -1,0 +1,98 @@
+{
+  "iso": "AFG",
+  "capital": "喀布爾",
+  "summary": "位於中亞與南亞交界的內陸山國，自古為絲路要衝與多個帝國的交會之地。多民族組成，以普什圖人、塔吉克人、哈札拉人與烏茲別克人為主。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "伊斯蘭教（遜尼派）",
+        "percent": 85,
+        "description": "絕大多數普什圖人、塔吉克人與烏茲別克人信奉遜尼派，以哈乃斐學派為主。"
+      },
+      {
+        "name": "伊斯蘭教（什葉派）",
+        "percent": 14,
+        "description": "主要為中部山區的哈札拉人，多屬十二伊瑪目派。"
+      },
+      {
+        "name": "其他（錫克教、印度教等）",
+        "percent": 1,
+        "description": "錫克教與印度教社群歷史悠久，但因戰亂大量外移，人數已極少。"
+      }
+    ],
+    "background": "7世紀起阿拉伯穆斯林軍隊進入此地，至10世紀前後伊斯蘭教逐步取代祆教與佛教（巴米揚大佛即佛教時代遺跡）。遜尼派隨伽色尼王朝等政權鞏固，哈札拉人則在薩法維波斯影響下成為什葉派。"
+  },
+  "language": {
+    "official": "官方語言為普什圖語與達利語（阿富汗波斯語）。",
+    "ranking": [
+      {
+        "name": "達利語（阿富汗波斯語）",
+        "percent": 50,
+        "description": "波斯語的阿富汗變體，是各民族間的共通語，也是行政與文化常用語言。",
+        "greeting": "سلام",
+        "pronunciation": "salâm"
+      },
+      {
+        "name": "普什圖語",
+        "percent": 40,
+        "description": "普什圖人的母語，屬東伊朗語支，主要通行於南部與東部。",
+        "greeting": "سلام",
+        "pronunciation": "salām"
+      },
+      {
+        "name": "烏茲別克語",
+        "percent": 9,
+        "description": "北部烏茲別克人使用的突厥語。",
+        "greeting": "Salom",
+        "pronunciation": "salom"
+      },
+      {
+        "name": "土庫曼語",
+        "percent": 3,
+        "description": "西北部土庫曼人使用的突厥語。",
+        "greeting": "Salam",
+        "pronunciation": "salam"
+      }
+    ],
+    "history": "波斯語自中古時期即為此地宮廷與文學語言，喀布爾、赫拉特曾是波斯文化中心。普什圖語在18世紀杜蘭尼王朝建立後地位提升，1930年代起被推廣為國語。北部的突厥語則隨突厥民族遷徙而來。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "喀布爾抓飯",
+        "localName": "قابلی پلو (Kabuli palaw)",
+        "description": "以羊肉或牛肉燉煮後與長米同蒸，上面鋪滿炒過的胡蘿蔔絲與葡萄乾，被視為國菜。",
+        "history": "源自波斯與中亞的抓飯傳統，過去是富裕人家宴客的菜色，今日為婚禮與節慶必備。",
+        "wiki": "Kabuli palaw"
+      },
+      {
+        "name": "曼圖餃",
+        "localName": "منتو (Mantu)",
+        "description": "包入洋蔥牛絞肉的蒸餃，淋上優格醬與番茄豆醬。",
+        "history": "與中亞、土耳其的曼提同源，一般認為隨突厥、蒙古民族經絲路傳入。",
+        "wiki": "Manti (food)"
+      },
+      {
+        "name": "波蘭尼餡餅",
+        "localName": "بولانی (Bolani)",
+        "description": "薄麵皮包入馬鈴薯、韭蔥或南瓜後煎成的扁平餡餅，常配優格醬吃。",
+        "history": "是阿富汗家庭日常與節慶的常見點心，齋戒月開齋時尤其常見。",
+        "wiki": "Bolani"
+      },
+      {
+        "name": "阿沙克餃",
+        "localName": "آشک (Ashak)",
+        "description": "包著韭蔥餡的水餃，淋上優格與肉醬並撒上乾薄荷。",
+        "history": "屬於節慶菜餚，常在開齋節與諾魯孜節等場合製作。",
+        "wiki": "Ashak"
+      },
+      {
+        "name": "查普利烤肉餅",
+        "localName": "چپلی کباب (Chapli kebab)",
+        "description": "以碎肉混合香料與辣椒壓成扁平大餅後油煎。",
+        "history": "源自普什圖地區，在阿富汗東部與巴基斯坦白沙瓦一帶極受歡迎。",
+        "wiki": "Chapli kebab"
+      }
+    ]
+  }
+}

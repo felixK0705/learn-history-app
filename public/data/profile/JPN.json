@@ -1,0 +1,96 @@
+{
+  "iso": "JPN",
+  "capital": "東京",
+  "summary": "日本是位於東亞的島國，由北海道、本州、四國、九州等島嶼組成，融合悠久傳統與現代科技，是世界主要經濟體之一。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "無宗教",
+        "percent": 57,
+        "description": "多數人不自認屬於特定宗教，但仍參與神社參拜、佛教喪禮等習俗。"
+      },
+      {
+        "name": "佛教",
+        "percent": 36,
+        "description": "六世紀傳入，在喪葬與祭祖中扮演重要角色。"
+      },
+      {
+        "name": "神道及新宗教",
+        "percent": 4,
+        "description": "包括神社信仰與二十世紀興起的新宗教團體。"
+      },
+      {
+        "name": "基督教",
+        "percent": 2,
+        "description": "十六世紀傳入，戰後在教育與社福領域頗有影響。"
+      }
+    ],
+    "background": "神道是日本本土的自然與祖先崇拜，六世紀佛教自百濟傳入，之後兩者長期融合（神佛習合）。明治維新時期推行神佛分離。由於日本人普遍同時參與神道與佛教習俗，宗教歸屬多以「無宗教」自認。"
+  },
+  "language": {
+    "official": "日本法律未規定官方語言，日語為事實上的國家語言。",
+    "ranking": [
+      {
+        "name": "日語",
+        "percent": 98,
+        "description": "使用漢字、平假名與片假名混合書寫。",
+        "greeting": "こんにちは",
+        "pronunciation": "kon-NEE-chee-wa"
+      },
+      {
+        "name": "華語",
+        "percent": 1,
+        "description": "在日華人社群使用。",
+        "greeting": "你好",
+        "pronunciation": "nee HOW"
+      },
+      {
+        "name": "韓語",
+        "percent": 1,
+        "description": "在日韓國人與朝鮮人社群使用。",
+        "greeting": "안녕하세요",
+        "pronunciation": "an-nyeong-ha-SE-yo"
+      }
+    ],
+    "history": "日語自中國引入漢字後，於平安時代發展出平假名與片假名。明治時期以東京方言為基礎推行標準語，並大量創造翻譯西方概念的漢字詞。北海道的愛努語與沖繩等地的琉球諸語則面臨瀕危。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "壽司",
+        "localName": "寿司 (Sushi)",
+        "description": "以醋飯搭配生魚片、海鮮或其他食材的料理。",
+        "history": "源自古代以米發酵保存魚的方法，江戶時代發展出現代的握壽司。",
+        "wiki": "Sushi"
+      },
+      {
+        "name": "拉麵",
+        "localName": "ラーメン (Ramen)",
+        "description": "以豚骨、醬油、味噌或鹽味湯底搭配鹼水麵條的湯麵。",
+        "history": "源自中國的湯麵，二十世紀在日本發展成多樣的地方風味。",
+        "wiki": "Ramen"
+      },
+      {
+        "name": "天婦羅",
+        "localName": "天ぷら (Tempura)",
+        "description": "將海鮮或蔬菜裹上薄麵衣油炸。",
+        "history": "十六世紀由葡萄牙傳教士帶來的油炸技術發展而成。",
+        "wiki": "Tempura"
+      },
+      {
+        "name": "味噌湯",
+        "localName": "味噌汁 (Miso shiru)",
+        "description": "以味噌溶於高湯，加入豆腐、海帶芽等。",
+        "history": "日本傳統膳食「一汁三菜」中的湯品，是日常飲食的基礎。",
+        "wiki": "Miso soup"
+      },
+      {
+        "name": "大阪燒",
+        "localName": "お好み焼き (Okonomiyaki)",
+        "description": "以麵糊、高麗菜與肉或海鮮煎成的煎餅，淋上醬汁與美乃滋。",
+        "history": "二戰後在大阪與廣島普及，兩地發展出不同做法。",
+        "wiki": "Okonomiyaki"
+      }
+    ]
+  }
+}

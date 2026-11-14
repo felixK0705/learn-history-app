@@ -1,0 +1,115 @@
+{
+  "iso": "COD",
+  "capital": "金夏沙",
+  "summary": "剛果民主共和國位於中非，是非洲面積第二大的國家，擁有剛果河與廣大雨林，礦產資源豐富，但長期受衝突困擾。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "其他基督教派（含五旬節與復興教會）",
+        "percent": 36,
+        "description": "近數十年快速成長的獨立教會與福音派教會。"
+      },
+      {
+        "name": "天主教",
+        "percent": 30,
+        "description": "比利時殖民時期傳入，至今在社會中具重要影響力。"
+      },
+      {
+        "name": "基督新教",
+        "percent": 27,
+        "description": "以剛果基督教會為代表的新教教會。"
+      },
+      {
+        "name": "金邦古教會",
+        "percent": 3,
+        "description": "1921年由先知西蒙·金邦古創立的非洲獨立教會。"
+      },
+      {
+        "name": "伊斯蘭教",
+        "percent": 1,
+        "description": "主要分布於東部。"
+      }
+    ],
+    "background": "十五世紀末葡萄牙人已將天主教傳入剛果王國。比利時殖民時期天主教傳教士與殖民政府緊密合作，新教傳教團也廣泛設立。二十世紀興起的金邦古教會等獨立教會，以及近年的復興教會，使基督教呈現多元樣貌。"
+  },
+  "language": {
+    "official": "法語是官方語言，林加拉語、斯瓦希里語、基剛果語與契盧巴語是國語。",
+    "ranking": [
+      {
+        "name": "斯瓦希里語",
+        "percent": 35,
+        "description": "東部地區的通用語。",
+        "greeting": "Habari",
+        "pronunciation": "ha-BAH-ree"
+      },
+      {
+        "name": "林加拉語",
+        "percent": 30,
+        "description": "金夏沙與西北部的通用語，也是剛果流行音樂的語言。",
+        "greeting": "Mbote",
+        "pronunciation": "m-BOH-teh"
+      },
+      {
+        "name": "契盧巴語",
+        "percent": 12,
+        "description": "中南部開賽地區的語言。",
+        "greeting": "Moyo",
+        "pronunciation": "MOH-yo"
+      },
+      {
+        "name": "基剛果語",
+        "percent": 10,
+        "description": "西部下剛果地區的語言。",
+        "greeting": "Mbote",
+        "pronunciation": "m-BOH-teh"
+      },
+      {
+        "name": "法語",
+        "percent": 10,
+        "description": "官方語言，用於政府與教育，金夏沙是世界上法語人口最多的城市之一。",
+        "greeting": "Bonjour",
+        "pronunciation": "bon-ZHOOR"
+      }
+    ],
+    "history": "剛果民主共和國有超過200種語言。四種國語原本是不同地區的貿易與通用語，殖民時期被用於行政、軍隊與傳教，法語則是殖民遺留的官方語言。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "棕櫚醬燉雞",
+        "localName": "Moambe",
+        "description": "以棕櫚果醬燉煮雞肉，配米飯或木薯糰。",
+        "history": "被視為剛果民主共和國的國菜。",
+        "wiki": "Moambe"
+      },
+      {
+        "name": "富富",
+        "localName": "Fufu",
+        "description": "以木薯粉或玉米粉煮成的糰狀主食。",
+        "history": "中非最普遍的主食。",
+        "wiki": "Fufu"
+      },
+      {
+        "name": "木薯葉燉菜",
+        "localName": "Pondu",
+        "description": "將木薯葉搗碎後與棕櫚油、魚或肉燉煮。",
+        "history": "剛果家庭餐桌上最常見的蔬菜料理。",
+        "wiki": "Pondu"
+      },
+      {
+        "name": "利博克",
+        "localName": "Liboke",
+        "description": "將魚或肉與香料以葉子包裹後炭烤。",
+        "history": "剛果河流域的傳統料理。",
+        "wiki": "Liboke"
+      },
+      {
+        "name": "木薯棒",
+        "localName": "Chikwangue",
+        "description": "將發酵木薯泥以葉子包裹蒸成的長條狀主食。",
+        "history": "可長期保存，方便在旅途中攜帶。",
+        "wiki": "Chikwangue"
+      }
+    ]
+  }
+}

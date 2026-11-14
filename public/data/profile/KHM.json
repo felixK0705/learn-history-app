@@ -1,0 +1,84 @@
+{
+  "iso": "KHM",
+  "capital": "金邊",
+  "summary": "柬埔寨位於中南半島南部，是古代高棉帝國的發源地，以吳哥窟聞名，近代曾經歷赤柬統治的悲劇。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "上座部佛教",
+        "percent": 97,
+        "description": "國教，寺院與僧侶在社會生活中扮演重要角色。"
+      },
+      {
+        "name": "伊斯蘭教",
+        "percent": 2,
+        "description": "主要為占族穆斯林。"
+      },
+      {
+        "name": "基督教",
+        "percent": 1,
+        "description": "規模較小的天主教與新教社群。"
+      }
+    ],
+    "background": "高棉帝國早期深受印度教影響，吳哥窟最初為供奉毗濕奴的神廟。十三世紀後上座部佛教自斯里蘭卡經東南亞傳入並成為主流。1975至1979年赤柬政權曾大肆摧毀宗教，之後佛教逐漸復興。"
+  },
+  "language": {
+    "official": "高棉語是官方語言。",
+    "ranking": [
+      {
+        "name": "高棉語",
+        "percent": 95,
+        "description": "屬南亞語系，使用源自古印度字母的高棉字母。",
+        "greeting": "ជំរាបសួរ",
+        "pronunciation": "chum-RIEP SOO-a"
+      },
+      {
+        "name": "越南語",
+        "percent": 1,
+        "description": "越南裔社群使用。",
+        "greeting": "Xin chào",
+        "pronunciation": "sin CHOW"
+      }
+    ],
+    "history": "高棉語是東南亞最早有文字紀錄的語言之一，吳哥時期吸收大量梵語與巴利語詞彙。法國殖民時期法語成為行政語言，獨立後高棉語恢復主導地位。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "阿莫克魚",
+        "localName": "អាម៉ុកត្រី (Amok trey)",
+        "description": "以椰奶與香料醬蒸煮的魚肉，常盛在香蕉葉碗中。",
+        "history": "柬埔寨最具代表性的料理之一，香料醬kroeung是高棉料理的基礎。",
+        "wiki": "Amok trey"
+      },
+      {
+        "name": "高棉米線",
+        "localName": "នំបញ្ចុក (Num banh chok)",
+        "description": "米線淋上以魚肉與香茅熬成的綠色咖哩湯，配生菜。",
+        "history": "常作為早餐販售，被許多柬埔寨人視為國民早餐。",
+        "wiki": "Num banh chok"
+      },
+      {
+        "name": "粿條湯",
+        "localName": "គុយទាវ (Kuy teav)",
+        "description": "以豬骨湯底搭配米粉條與肉片的湯麵。",
+        "history": "受華人移民影響的料理，是柬埔寨常見的早餐。",
+        "wiki": "Kuy teav"
+      },
+      {
+        "name": "洛拉克牛肉",
+        "localName": "ឡុកឡាក់ (Lok lak)",
+        "description": "醃漬後快炒的牛肉塊，配生菜與胡椒檸檬醬。",
+        "history": "名稱可能來自廣東話，反映華人飲食的影響。",
+        "wiki": "Lok lak"
+      },
+      {
+        "name": "普拉霍魚醬",
+        "localName": "ប្រហុក (Prahok)",
+        "description": "以發酵魚製成的鹹香魚醬，用於調味。",
+        "history": "是高棉料理的重要調味品，傳統上在旱季大量製作保存。",
+        "wiki": "Prahok"
+      }
+    ]
+  }
+}

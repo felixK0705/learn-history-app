@@ -1,0 +1,96 @@
+{
+  "iso": "ERI",
+  "capital": "阿斯瑪拉",
+  "summary": "厄利垂亞位於非洲之角、紅海西岸，曾為義大利殖民地，1993年脫離衣索比亞獨立，首都阿斯瑪拉以現代主義建築列為世界遺產。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "伊斯蘭教（遜尼派）",
+        "percent": 50,
+        "description": "主要分布於低地與沿海地區。"
+      },
+      {
+        "name": "厄利垂亞正教",
+        "percent": 40,
+        "description": "主要分布於高地，以提格利尼亞人為主。"
+      },
+      {
+        "name": "天主教",
+        "percent": 5,
+        "description": "包括使用吉茲禮的東方禮天主教。"
+      },
+      {
+        "name": "基督新教",
+        "percent": 2,
+        "description": "以路德宗福音教會為主。"
+      }
+    ],
+    "background": "四世紀阿克蘇姆王國接受基督教，高地居民延續東正教傳統；七世紀伊斯蘭教經由紅海傳入沿海與低地。政府目前只正式承認正教、遜尼派伊斯蘭教、天主教與路德宗福音教會四個宗教團體。"
+  },
+  "language": {
+    "official": "厄利垂亞沒有法定官方語言，提格利尼亞語、阿拉伯語與英語是主要的工作語言。",
+    "ranking": [
+      {
+        "name": "提格利尼亞語",
+        "percent": 55,
+        "description": "高地提格利尼亞人的語言，使用吉茲字母。",
+        "greeting": "ሰላም (Selam)",
+        "pronunciation": "seh-LAM"
+      },
+      {
+        "name": "提格雷語",
+        "percent": 30,
+        "description": "北部與西部低地提格雷人的語言。",
+        "greeting": "ሰላም (Selam)",
+        "pronunciation": "seh-LAM"
+      },
+      {
+        "name": "阿拉伯語",
+        "percent": 2,
+        "description": "工作語言之一，在穆斯林社群中廣泛使用。",
+        "greeting": "السلام عليكم",
+        "pronunciation": "as-sa-LAA-mu a-LAI-kum"
+      }
+    ],
+    "history": "提格利尼亞語與提格雷語都是源自古代吉茲語的閃語族語言。義大利殖民時期留下許多義大利語詞彙，英國託管時期引入英語，之後在衣索比亞統治下推行阿姆哈拉語，獨立後則推行九種民族語言的母語教育。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "辛格尼燉肉",
+        "localName": "ዝግኒ (Zigni)",
+        "description": "以柏柏爾辣椒粉燉煮的辣味牛肉或羊肉。",
+        "history": "厄利垂亞最具代表性的燉菜，常配英傑拉食用。",
+        "wiki": "Zigni"
+      },
+      {
+        "name": "英傑拉",
+        "localName": "ጣይታ (Injera)",
+        "description": "以苔麩等穀物發酵製成的大片微酸薄餅。",
+        "history": "厄利垂亞與衣索比亞共同的主食。",
+        "wiki": "Injera"
+      },
+      {
+        "name": "鷹嘴豆糊",
+        "localName": "ሽሮ (Shiro)",
+        "description": "以鷹嘴豆粉燉煮成的濃稠醬糊。",
+        "history": "正教徒齋戒期間的重要素食料理。",
+        "wiki": "Shiro (food)"
+      },
+      {
+        "name": "燉蠶豆",
+        "localName": "ፉል (Ful)",
+        "description": "以蠶豆燉煮後加入洋蔥、辣椒與優格。",
+        "history": "常見的早餐料理，配麵包食用。",
+        "wiki": "Ful medames"
+      },
+      {
+        "name": "菲菲特",
+        "localName": "ፍትፍት (Fit-fit)",
+        "description": "將撕碎的英傑拉或麵包拌上香料奶油與辣醬。",
+        "history": "常見的早餐，利用剩餘的英傑拉製作。",
+        "wiki": "Fit-fit"
+      }
+    ]
+  }
+}

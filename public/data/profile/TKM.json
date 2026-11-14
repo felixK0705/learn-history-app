@@ -1,0 +1,91 @@
+{
+  "iso": "TKM",
+  "capital": "阿什哈巴德",
+  "summary": "位於中亞西南部的內陸國，國土八成為卡拉庫姆沙漠，擁有世界前列的天然氣儲量，1991年脫離蘇聯獨立後實行永久中立政策。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "伊斯蘭教（遜尼派）",
+        "percent": 93,
+        "description": "多數居民信仰，屬哈乃斐學派。"
+      },
+      {
+        "name": "俄羅斯正教",
+        "percent": 6,
+        "description": "主要為俄羅斯裔居民。"
+      },
+      {
+        "name": "其他",
+        "percent": 1,
+        "description": "包含少數其他宗教與無宗教者。"
+      }
+    ],
+    "background": "伊斯蘭教自7–8世紀阿拉伯人征服梅爾夫（古絲路名城）後傳入，並在塞爾柱王朝時期鞏固。土庫曼游牧部族將伊斯蘭教與部落習俗、祖先崇拜結合。俄帝國與蘇聯時期斯拉夫移民帶來東正教。"
+  },
+  "language": {
+    "official": "官方語言為土庫曼語。",
+    "ranking": [
+      {
+        "name": "土庫曼語",
+        "percent": 85,
+        "description": "屬突厥語族烏古斯語支，與亞塞拜然語、土耳其語相近，現以拉丁字母書寫。",
+        "greeting": "Salam",
+        "pronunciation": "sa-lam"
+      },
+      {
+        "name": "俄語",
+        "percent": 7,
+        "description": "仍在城市與商業中廣泛使用。",
+        "greeting": "Здравствуйте",
+        "pronunciation": "zdrast-vuy-tye"
+      },
+      {
+        "name": "烏茲別克語",
+        "percent": 5,
+        "description": "北部與東部烏茲別克人使用。",
+        "greeting": "Salom",
+        "pronunciation": "sa-lom"
+      }
+    ],
+    "history": "土庫曼語隨烏古斯突厥部族西遷而來，18世紀詩人馬赫圖姆庫里奠定其文學傳統。蘇聯時期先改用拉丁字母後改西里爾字母，獨立後於1990年代再改為拉丁字母。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "土庫曼抓飯",
+        "localName": "Palaw",
+        "description": "以米、羊肉、胡蘿蔔與洋蔥在大鍋燉煮，是節慶主菜。",
+        "history": "中亞共享的料理傳統，在土庫曼婚禮與節慶中不可或缺。",
+        "wiki": "Pilaf"
+      },
+      {
+        "name": "多格拉瑪",
+        "localName": "Dograma",
+        "description": "將麵包撕碎與羊肉、洋蔥、番茄拌入肉湯中。",
+        "history": "名稱意為「切碎」，傳統上在節慶與宗教儀式時製作。",
+        "wiki": "Dograma"
+      },
+      {
+        "name": "曼特餃",
+        "localName": "Manty",
+        "description": "以羊肉洋蔥為餡的蒸餃，配優格或酸奶。",
+        "history": "與中亞、土耳其等地的曼提同源，隨突厥民族遷徙傳播。",
+        "wiki": "Manti (food)"
+      },
+      {
+        "name": "古塔普餡餅",
+        "localName": "Gutap",
+        "description": "薄麵皮包入肉、菠菜或南瓜後煎成的半月形餡餅。",
+        "history": "土庫曼傳統家常點心。",
+        "wiki": "Gutap"
+      },
+      {
+        "name": "烤肉串",
+        "localName": "Şaşlyk",
+        "description": "以羊肉串在炭火上燒烤。",
+        "history": "中亞與高加索普遍的燒烤料理。",
+        "wiki": "Shashlik"
+      }
+    ]
+  }
+}

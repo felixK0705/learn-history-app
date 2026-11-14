@@ -1,0 +1,120 @@
+{
+  "iso": "USA",
+  "capital": "華盛頓特區",
+  "summary": "由50州組成的聯邦共和國，1776年宣布脫離英國獨立，是世界最大經濟體，以多元移民文化、科技與流行文化影響全球。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "新教",
+        "percent": 40,
+        "description": "包含福音派、主流新教與傳統黑人教會。"
+      },
+      {
+        "name": "無宗教",
+        "percent": 29,
+        "description": "自稱無神論、不可知論或「沒有特定宗教」，近年快速成長。"
+      },
+      {
+        "name": "天主教",
+        "percent": 19,
+        "description": "最大單一教會，信徒包含大量拉丁裔與愛爾蘭、義大利裔。"
+      },
+      {
+        "name": "其他基督教（摩門教、東正教等）",
+        "percent": 3,
+        "description": "包含耶穌基督後期聖徒教會、耶和華見證人與東正教。"
+      },
+      {
+        "name": "猶太教",
+        "percent": 2,
+        "description": "擁有以色列以外世界最大的猶太社群之一。"
+      },
+      {
+        "name": "伊斯蘭教",
+        "percent": 1,
+        "description": "包含移民與非裔美國穆斯林。"
+      }
+    ],
+    "background": "17世紀英國清教徒等宗教團體為追求信仰自由移居北美，奠定新教為主的基礎。憲法第一修正案確立政教分離與宗教自由，19–20世紀愛爾蘭、義大利、拉丁美洲移民帶來天主教，近數十年無宗教人口快速增加。"
+  },
+  "language": {
+    "official": "英語為官方語言（2025年由總統行政命令指定，聯邦法律未明文規定），長期以來即為事實上的國家語言。",
+    "ranking": [
+      {
+        "name": "英語",
+        "percent": 78,
+        "description": "全國通用語言，美式英語影響全球。",
+        "greeting": "Hello",
+        "pronunciation": "heh-loh"
+      },
+      {
+        "name": "西班牙語",
+        "percent": 13,
+        "description": "拉丁裔社群使用，是第二大語言。",
+        "greeting": "Hola",
+        "pronunciation": "o-la"
+      },
+      {
+        "name": "中文",
+        "percent": 1,
+        "description": "華人社群使用，含華語與粵語。",
+        "greeting": "你好",
+        "pronunciation": "nǐ hǎo"
+      },
+      {
+        "name": "他加祿語",
+        "percent": 1,
+        "description": "菲律賓裔社群使用。",
+        "greeting": "Kumusta",
+        "pronunciation": "ku-mus-ta"
+      },
+      {
+        "name": "越南語",
+        "percent": 1,
+        "description": "越南裔社群使用。",
+        "greeting": "Xin chào",
+        "pronunciation": "sin chow"
+      }
+    ],
+    "history": "英國殖民者帶來英語，並吸收原住民、荷蘭、法國、西班牙語詞彙。19世紀韋伯斯特編纂字典，確立美式拼寫。歷代移民帶來德語、義大利語等，第二代以後多改說英語；20世紀後期拉丁美洲移民使西班牙語成為第二大語言。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "漢堡",
+        "localName": "Hamburger",
+        "description": "烤牛肉餅夾在圓麵包中，配生菜、番茄、起司與醬料。",
+        "history": "源自德國漢堡的肉餅，19世紀末至20世紀初在美國發展成夾麵包的形式，隨速食連鎖店風行全球。",
+        "wiki": "Hamburger"
+      },
+      {
+        "name": "熱狗",
+        "localName": "Hot dog",
+        "description": "烤或水煮的香腸夾在長麵包中，加芥末與番茄醬。",
+        "history": "19世紀德國移民帶來法蘭克福香腸，在紐約康尼島與棒球場普及。",
+        "wiki": "Hot dog"
+      },
+      {
+        "name": "美式烤肉",
+        "localName": "Barbecue",
+        "description": "以低溫煙燻長時間烹調的豬肋排、牛胸肉或手撕豬肉。",
+        "history": "源自南方，結合原住民、非裔與歐洲傳統，德州、堪薩斯城等地各有風格。",
+        "wiki": "Barbecue in the United States"
+      },
+      {
+        "name": "南方炸雞",
+        "localName": "Fried chicken",
+        "description": "雞肉裹粉後油炸至外酥內嫩。",
+        "history": "融合蘇格蘭的油炸技法與西非的調味傳統，在美國南方發展成形。",
+        "wiki": "Fried chicken"
+      },
+      {
+        "name": "蘋果派",
+        "localName": "Apple pie",
+        "description": "酥皮中填入肉桂調味的蘋果餡烘烤。",
+        "history": "源自英國與歐洲，在美國成為國家象徵，有「像蘋果派一樣美國」的說法。",
+        "wiki": "Apple pie"
+      }
+    ]
+  }
+}

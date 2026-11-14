@@ -1,0 +1,89 @@
+{
+  "iso": "TCD",
+  "capital": "恩加美納",
+  "summary": "查德位於非洲中北部內陸，北部屬撒哈拉沙漠，南部為薩赫爾與草原地帶，國名來自查德湖。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "伊斯蘭教",
+        "percent": 52,
+        "description": "主要分布於北部與中部。"
+      },
+      {
+        "name": "基督新教",
+        "percent": 24,
+        "description": "主要分布於南部。"
+      },
+      {
+        "name": "天主教",
+        "percent": 20,
+        "description": "主要分布於南部。"
+      },
+      {
+        "name": "無宗教",
+        "percent": 3,
+        "description": "未認同任何宗教的人口。"
+      }
+    ],
+    "background": "伊斯蘭教自十一世紀起隨卡涅姆—博爾努帝國等薩赫爾王國傳入北部與中部。二十世紀法國殖民時期，基督教傳教士主要在南部活動，形成北部穆斯林、南部基督徒為主的分布。"
+  },
+  "language": {
+    "official": "法語與阿拉伯語是官方語言。",
+    "ranking": [
+      {
+        "name": "查德阿拉伯語",
+        "percent": 40,
+        "description": "北部與中部的通用語，也是市場與都市的共同語言。",
+        "greeting": "السلام عليكم",
+        "pronunciation": "as-sa-LAA-mu a-LAI-kum"
+      },
+      {
+        "name": "法語",
+        "percent": 20,
+        "description": "官方語言，用於教育與行政。",
+        "greeting": "Bonjour",
+        "pronunciation": "bon-ZHOOR"
+      }
+    ],
+    "history": "查德境內有超過100種語言，包括南部的薩拉語群。阿拉伯語隨伊斯蘭化與貿易傳播，演變為通用的查德阿拉伯語；法國殖民時期法語成為行政語言，獨立後兩者同為官方語言。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "布勒",
+        "localName": "Boule",
+        "description": "以小米、高粱或玉米粉煮成的糰狀主食，沾醬汁食用。",
+        "history": "查德人最主要的主食，與東非的烏咖哩相似。",
+        "wiki": "Ugali"
+      },
+      {
+        "name": "基斯拉",
+        "localName": "Kisra",
+        "description": "以高粱麵糊製成的發酵薄餅。",
+        "history": "薩赫爾地區與蘇丹等地廣泛食用的主食。",
+        "wiki": "Kisra"
+      },
+      {
+        "name": "秋葵燉湯",
+        "localName": "Gombo",
+        "description": "以秋葵燉煮的黏稠醬汁，搭配布勒食用。",
+        "history": "秋葵是薩赫爾地區重要的蔬菜。",
+        "wiki": "Okra soup"
+      },
+      {
+        "name": "達拉巴",
+        "localName": "Daraba",
+        "description": "以秋葵、番茄、地瓜與花生醬燉煮的蔬菜料理。",
+        "history": "查德南部的傳統家常菜。",
+        "wiki": "Daraba"
+      },
+      {
+        "name": "洛神花飲",
+        "localName": "Karkanji",
+        "description": "以洛神花萼泡製的紅色酸甜飲料。",
+        "history": "薩赫爾地區常見的消暑飲品，也在節慶時招待客人。",
+        "wiki": "Hibiscus tea"
+      }
+    ]
+  }
+}

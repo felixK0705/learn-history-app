@@ -1,0 +1,89 @@
+{
+  "iso": "SLV",
+  "capital": "聖薩爾瓦多",
+  "summary": "中美洲面積最小、人口最密集的國家，位於太平洋岸，以火山地形聞名，經歷1980年代內戰後重建。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "天主教",
+        "percent": 43,
+        "description": "殖民時期傳入，傳統上為主要宗教。"
+      },
+      {
+        "name": "新教（福音派）",
+        "percent": 35,
+        "description": "1980年代後快速成長，比例在拉丁美洲名列前茅。"
+      },
+      {
+        "name": "無宗教",
+        "percent": 19,
+        "description": "近年比例上升。"
+      },
+      {
+        "name": "其他",
+        "percent": 2,
+        "description": "包含耶和華見證人、摩門教等。"
+      }
+    ],
+    "background": "16世紀西班牙征服後天主教成為主要宗教。內戰期間總主教羅梅洛為窮人發聲於1980年遇刺，後被封為聖人。內戰與社會動盪期間，福音派教會快速擴張。"
+  },
+  "language": {
+    "official": "官方語言為西班牙語。",
+    "ranking": [
+      {
+        "name": "西班牙語",
+        "percent": 99,
+        "description": "全國通用語言。",
+        "greeting": "Hola",
+        "pronunciation": "o-la"
+      },
+      {
+        "name": "英語",
+        "percent": 1,
+        "description": "大量移民美國與回流人口使英語能力在部分地區普及。",
+        "greeting": "Hello",
+        "pronunciation": "heh-loh"
+      }
+    ],
+    "history": "殖民前本地居民主要使用納瓦特語（皮皮爾語）。西班牙殖民後西班牙語逐漸取代原住民語言，1932年屠殺事件後原住民為避免迫害放棄母語，納瓦特語目前僅剩少數年長者使用，正推動復振。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "普普薩",
+        "localName": "Pupusa",
+        "description": "以玉米麵團包入起司、豬肉或豆泥後煎烤的厚餅，配醃高麗菜，為國菜。",
+        "history": "源自前哥倫布時期的皮皮爾人，每年11月第二個星期日為「國家普普薩日」。",
+        "wiki": "Pupusa"
+      },
+      {
+        "name": "醃高麗菜",
+        "localName": "Curtido",
+        "description": "以醋醃漬高麗菜、胡蘿蔔與洋蔥，略帶發酵酸味。",
+        "history": "是普普薩的必備配菜。",
+        "wiki": "Curtido"
+      },
+      {
+        "name": "塔馬利粽",
+        "localName": "Tamales",
+        "description": "以玉米麵團包入肉或蔬菜，用香蕉葉包裹蒸熟。",
+        "history": "中美洲的古老食物，常在聖誕節與週末食用。",
+        "wiki": "Tamale"
+      },
+      {
+        "name": "薩爾瓦多香米飲",
+        "localName": "Horchata",
+        "description": "以莫羅籽、米、可可與香料磨粉調製的飲品。",
+        "history": "源自西班牙的飲品，在薩爾瓦多發展出加入莫羅籽的特色版本。",
+        "wiki": "Horchata"
+      },
+      {
+        "name": "甜玉米熱飲",
+        "localName": "Atol de elote",
+        "description": "以新鮮玉米、牛奶與肉桂煮成的濃稠熱飲。",
+        "history": "源自中美洲原住民的玉米飲品，在玉米收成季節特別常見。",
+        "wiki": "Atole"
+      }
+    ]
+  }
+}

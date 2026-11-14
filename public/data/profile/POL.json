@@ -1,0 +1,91 @@
+{
+  "iso": "POL",
+  "capital": "華沙",
+  "summary": "波蘭位於中歐，歷史上曾多次被瓜分，二戰中損失慘重，1989年起帶頭推動東歐民主化，以蕭邦與哥白尼聞名。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "天主教",
+        "percent": 71,
+        "description": "波蘭民族認同的重要支柱，出身波蘭的教宗若望保祿二世影響深遠。"
+      },
+      {
+        "name": "無宗教",
+        "percent": 7,
+        "description": "未認同任何宗教的人口，在年輕人中快速增加。"
+      },
+      {
+        "name": "東正教",
+        "percent": 1,
+        "description": "主要分布於東部與白俄羅斯裔社群。"
+      }
+    ],
+    "background": "966年梅什科一世受洗，波蘭成為天主教國家。十八世紀末波蘭遭瓜分後，天主教會成為維繫民族認同的支柱；共產時期教會也支持團結工聯運動。波蘭曾是歐洲最大的猶太社群所在地，但在二戰大屠殺中幾乎被消滅。"
+  },
+  "language": {
+    "official": "波蘭語是官方語言。",
+    "ranking": [
+      {
+        "name": "波蘭語",
+        "percent": 96,
+        "description": "屬西斯拉夫語支，使用加上特殊符號的拉丁字母。",
+        "greeting": "Cześć",
+        "pronunciation": "cheshch"
+      },
+      {
+        "name": "烏克蘭語",
+        "percent": 3,
+        "description": "近年大量烏克蘭移民與難民使用。",
+        "greeting": "Привіт",
+        "pronunciation": "pry-VEET"
+      },
+      {
+        "name": "卡舒比語",
+        "percent": 1,
+        "description": "北部格但斯克周邊卡舒比人的語言，具區域語言地位。",
+        "greeting": "Witôj",
+        "pronunciation": "VEE-toy"
+      }
+    ],
+    "history": "波蘭語在中世紀以拉丁字母書寫，十六世紀文藝復興時期發展出豐富的文學。波蘭遭瓜分期間，普魯士與俄國曾推行德語化與俄語化政策，但波蘭語在家庭與教會中得以保存，1918年復國後重新成為國家語言。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "波蘭餃子",
+        "localName": "Pierogi",
+        "description": "以麵皮包裹馬鈴薯起司、酸菜或肉餡的半月形餃子。",
+        "history": "波蘭最具代表性的料理，聖誕夜晚餐中也不可或缺。",
+        "wiki": "Pierogi"
+      },
+      {
+        "name": "獵人燉肉",
+        "localName": "Bigos",
+        "description": "以酸菜、新鮮高麗菜與多種肉類、香腸長時間燉煮。",
+        "history": "被視為波蘭國菜，傳統上是狩獵後的料理。",
+        "wiki": "Bigos"
+      },
+      {
+        "name": "酸麥湯",
+        "localName": "Żurek",
+        "description": "以發酵黑麥湯底加入白香腸與水煮蛋的酸湯。",
+        "history": "復活節早餐的傳統湯品。",
+        "wiki": "Żurek"
+      },
+      {
+        "name": "高麗菜捲",
+        "localName": "Gołąbki",
+        "description": "以高麗菜葉包裹肉與米，淋番茄醬燉煮。",
+        "history": "波蘭常見的家常菜與節慶料理。",
+        "wiki": "Gołąbki"
+      },
+      {
+        "name": "波蘭甜甜圈",
+        "localName": "Pączki",
+        "description": "以玫瑰果醬等為內餡的炸甜甜圈。",
+        "history": "大齋期前的「肥胖星期四」時大家會大量購買食用。",
+        "wiki": "Pączki"
+      }
+    ]
+  }
+}

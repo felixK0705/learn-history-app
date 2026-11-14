@@ -1,0 +1,103 @@
+{
+  "iso": "IRQ",
+  "capital": "巴格達",
+  "summary": "伊拉克位於西亞的美索不達米亞平原，底格里斯河與幼發拉底河流經其間，是蘇美、巴比倫等古文明的發源地。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "伊斯蘭教（什葉派）",
+        "percent": 62,
+        "description": "主要分布於南部與中部，納傑夫與卡爾巴拉是什葉派聖地。"
+      },
+      {
+        "name": "伊斯蘭教（遜尼派）",
+        "percent": 33,
+        "description": "包括遜尼派阿拉伯人與大多數庫德人。"
+      },
+      {
+        "name": "基督教",
+        "percent": 1,
+        "description": "包括亞述東方教會、迦勒底天主教等古老教會。"
+      },
+      {
+        "name": "雅茲迪教",
+        "percent": 1,
+        "description": "北部庫德族雅茲迪人的古老宗教。"
+      }
+    ],
+    "background": "七世紀伊斯蘭教隨阿拉伯人傳入，巴格達後來成為阿拔斯王朝首都。680年胡笙在卡爾巴拉殉難等事件使伊拉克成為什葉派的核心地區。當地的亞述基督徒與雅茲迪人歷史悠久，但近年因戰亂人數大幅減少。"
+  },
+  "language": {
+    "official": "阿拉伯語與庫德語是官方語言。",
+    "ranking": [
+      {
+        "name": "阿拉伯語（伊拉克方言）",
+        "percent": 75,
+        "description": "全國主要語言。",
+        "greeting": "شلونك (Shlonak)",
+        "pronunciation": "SHLO-nak"
+      },
+      {
+        "name": "庫德語",
+        "percent": 20,
+        "description": "北部庫德斯坦地區的主要語言。",
+        "greeting": "Silaw",
+        "pronunciation": "sih-LAHW"
+      },
+      {
+        "name": "伊拉克土庫曼語",
+        "percent": 3,
+        "description": "基爾庫克等地土庫曼人的突厥語言。",
+        "greeting": "Merhaba",
+        "pronunciation": "MER-ha-ba"
+      },
+      {
+        "name": "新亞蘭語",
+        "percent": 1,
+        "description": "亞述基督徒使用的語言。",
+        "greeting": "Shlama",
+        "pronunciation": "SHLA-ma"
+      }
+    ],
+    "history": "美索不達米亞是楔形文字的發源地，古代使用蘇美語與阿卡德語，後由亞蘭語成為通用語。伊斯蘭化後阿拉伯語成為主流，北部山區則保留庫德語，亞述人至今仍使用新亞蘭語。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "馬斯古夫烤魚",
+        "localName": "مسكوف (Masgouf)",
+        "description": "將鯉魚剖開後以柴火慢烤。",
+        "history": "被視為伊拉克國菜，傳統上在底格里斯河畔的餐廳烹製。",
+        "wiki": "Masgouf"
+      },
+      {
+        "name": "多爾瑪",
+        "localName": "دولمة (Dolma)",
+        "description": "以葡萄葉、洋蔥與蔬菜包裹肉與米燉煮。",
+        "history": "伊拉克家庭聚會的常見料理。",
+        "wiki": "Dolma"
+      },
+      {
+        "name": "克萊嘉餅",
+        "localName": "كليجة (Kleicha)",
+        "description": "以椰棗或堅果為餡的小餅乾。",
+        "history": "被視為伊拉克的國民點心，開齋節時家家戶戶製作。",
+        "wiki": "Kleicha"
+      },
+      {
+        "name": "烤羊肉飯",
+        "localName": "قوزي (Quzi)",
+        "description": "以香料慢烤的羊肉，配堅果與葡萄乾的米飯。",
+        "history": "伊拉克宴客時的隆重料理。",
+        "wiki": "Quzi"
+      },
+      {
+        "name": "庫巴",
+        "localName": "كبة (Kubba)",
+        "description": "以米、碎小麥或馬鈴薯外皮包裹肉餡的丸子，可煮可炸。",
+        "history": "伊拉克有多種地方版本，摩蘇爾的大型扁平庫巴尤其有名。",
+        "wiki": "Kibbeh"
+      }
+    ]
+  }
+}

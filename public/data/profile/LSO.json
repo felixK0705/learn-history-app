@@ -1,0 +1,96 @@
+{
+  "iso": "LSO",
+  "capital": "馬塞魯",
+  "summary": "賴索托是完全被南非包圍的內陸山國，全境海拔皆在1,000公尺以上，有「天空王國」之稱，1966年脫離英國獨立。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "基督新教",
+        "percent": 48,
+        "description": "包括五旬節派、賴索托福音教會與聖公會等。"
+      },
+      {
+        "name": "天主教",
+        "percent": 39,
+        "description": "天主教會在教育與醫療方面影響深遠。"
+      },
+      {
+        "name": "其他基督教派",
+        "percent": 9,
+        "description": "包括其他獨立教會。"
+      },
+      {
+        "name": "無宗教",
+        "percent": 2,
+        "description": "未認同任何宗教的人口。"
+      }
+    ],
+    "background": "十九世紀國王莫舒舒一世邀請法國新教傳教士進入，以協助抵禦外來威脅，之後天主教傳教士也陸續到來。傳教士興辦學校，使基督教迅速普及，祖先崇拜觀念則融入部分信仰實踐。"
+  },
+  "language": {
+    "official": "塞索托語與英語是官方語言。",
+    "ranking": [
+      {
+        "name": "塞索托語",
+        "percent": 95,
+        "description": "全國通用的母語，是國家認同的重要元素。",
+        "greeting": "Lumela",
+        "pronunciation": "loo-MEH-la"
+      },
+      {
+        "name": "祖魯語",
+        "percent": 2,
+        "description": "部分地區與移民使用。",
+        "greeting": "Sawubona",
+        "pronunciation": "sah-woo-BOH-na"
+      },
+      {
+        "name": "科薩語",
+        "percent": 1,
+        "description": "南部少數社群使用。",
+        "greeting": "Molo",
+        "pronunciation": "MOH-loh"
+      }
+    ],
+    "history": "塞索托語屬班圖語族，十九世紀傳教士以拉丁字母書寫並出版聖經與報刊。英國保護地時期英語成為行政語言，獨立後兩者同為官方語言，塞索托語在全國高度統一。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "玉米粥",
+        "localName": "Papa",
+        "description": "以玉米粉煮成的濃稠粥糊，是每日主食。",
+        "history": "南部非洲共同的主食，十九世紀玉米普及後取代高粱成為主要作物。",
+        "wiki": "Pap (food)"
+      },
+      {
+        "name": "莫羅霍野菜",
+        "localName": "Moroho",
+        "description": "以菠菜、高麗菜或野生綠葉菜煮成的蔬菜。",
+        "history": "常與玉米粥一同食用，是日常飲食的重要配菜。",
+        "wiki": "Morogo"
+      },
+      {
+        "name": "酸奶",
+        "localName": "Lebese",
+        "description": "發酵的酸牛奶，可直接飲用或配玉米粥。",
+        "history": "畜牧是巴蘇托人的傳統生計，牛奶製品在飲食中地位重要。",
+        "wiki": "Amasi"
+      },
+      {
+        "name": "恰卡拉卡",
+        "localName": "Chakalaka",
+        "description": "以豆類、番茄、洋蔥與辣椒做成的辣味蔬菜醬。",
+        "history": "源自南非礦區工人的料理，廣傳至南部非洲。",
+        "wiki": "Chakalaka"
+      },
+      {
+        "name": "高粱啤酒",
+        "localName": "Joala",
+        "description": "以高粱發酵釀製的傳統濁酒。",
+        "history": "在婚禮、祭祖等傳統儀式中具有重要地位。",
+        "wiki": "Umqombothi"
+      }
+    ]
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "iso": "ARM",
+  "capital": "葉里溫",
+  "summary": "位於南高加索的內陸國家，西元301年成為世界上第一個以基督教為國教的國家，擁有獨特的文字與悠久文化。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "亞美尼亞使徒教會",
+        "percent": 93,
+        "description": "亞美尼亞民族教會，屬東方正統教會，是國民認同的重要核心。"
+      },
+      {
+        "name": "其他基督教（天主教、新教等）",
+        "percent": 3,
+        "description": "包含亞美尼亞天主教會與福音派等。"
+      },
+      {
+        "name": "無宗教",
+        "percent": 2,
+        "description": "蘇聯時期無神論政策留下的影響。"
+      },
+      {
+        "name": "雅茲迪教等其他宗教",
+        "percent": 1,
+        "description": "雅茲迪人是境內最大少數民族，信奉古老的雅茲迪教。"
+      }
+    ],
+    "background": "西元301年，國王提里達特三世受聖額我略啟蒙者影響，定基督教為國教。此後在波斯、阿拉伯、鄂圖曼等外族統治下，教會成為維繫民族認同的支柱，使信仰高度集中於使徒教會。"
+  },
+  "language": {
+    "official": "官方語言為亞美尼亞語。",
+    "ranking": [
+      {
+        "name": "亞美尼亞語",
+        "percent": 97,
+        "description": "印歐語系中獨立的一支，使用5世紀創制的亞美尼亞字母。",
+        "greeting": "Բարև",
+        "pronunciation": "barev"
+      },
+      {
+        "name": "俄語",
+        "percent": 1,
+        "description": "母語者不多，但作為蘇聯時期通用語，多數成年人能以第二語言使用。",
+        "greeting": "Привет",
+        "pronunciation": "privet"
+      },
+      {
+        "name": "雅茲迪語（庫德語）",
+        "percent": 1,
+        "description": "雅茲迪社群使用的庫德語北部方言。",
+        "greeting": "Silav",
+        "pronunciation": "silav"
+      }
+    ],
+    "history": "西元405年左右，修士梅斯羅布·馬什托茨創制亞美尼亞字母，以翻譯聖經，開啟古典亞美尼亞語文學。近代分化為東、西亞美尼亞語，亞美尼亞共和國使用東亞美尼亞語；俄語則在俄帝國與蘇聯時期普及。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "亞美尼亞烤肉",
+        "localName": "Խորոված (Khorovats)",
+        "description": "以炭火燒烤的醃製豬肉、羊肉或蔬菜，是聚會的核心菜色。",
+        "history": "燒烤傳統在高加索地區歷史悠久，常見於節日、婚禮與戶外野餐。",
+        "wiki": "Khorovats"
+      },
+      {
+        "name": "多爾瑪",
+        "localName": "Տոլմա (Tolma)",
+        "description": "以葡萄葉或甘藍葉包裹肉末與米，或填入蔬菜中燉煮。",
+        "history": "此菜廣見於高加索、土耳其與中東，亞美尼亞人視之為重要傳統菜餚。",
+        "wiki": "Dolma"
+      },
+      {
+        "name": "拉瓦什薄餅",
+        "localName": "Լավաշ (Lavash)",
+        "description": "在陶製土窯中烤成的極薄軟餅，是日常主食。",
+        "history": "亞美尼亞拉瓦什的製作工藝於2014年列入聯合國教科文組織非物質文化遺產。",
+        "wiki": "Lavash"
+      },
+      {
+        "name": "哈什湯",
+        "localName": "Խաշ (Khash)",
+        "description": "以牛蹄長時間熬煮的清湯，搭配大蒜與乾拉瓦什食用。",
+        "history": "傳統上於寒冷冬季的清晨食用，常是男性朋友聚會的儀式性餐點。",
+        "wiki": "Khash (dish)"
+      },
+      {
+        "name": "南瓜鑲飯",
+        "localName": "Ղափամա (Ghapama)",
+        "description": "將南瓜挖空填入米飯、果乾、堅果與蜂蜜後烘烤。",
+        "history": "是冬季與新年、婚禮的節慶菜，並有專屬的民謠傳唱。",
+        "wiki": "Ghapama"
+      }
+    ]
+  }
+}

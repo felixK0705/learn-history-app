@@ -1,0 +1,89 @@
+{
+  "iso": "SVN",
+  "capital": "盧布爾雅那",
+  "summary": "斯洛維尼亞位於中歐南部，阿爾卑斯山與亞得里亞海在此交會，1991年率先自南斯拉夫獨立，以布萊德湖與洞穴景觀聞名。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "天主教",
+        "percent": 58,
+        "description": "斯洛維尼亞的主要宗教。"
+      },
+      {
+        "name": "無宗教",
+        "percent": 10,
+        "description": "包括無神論者。"
+      },
+      {
+        "name": "伊斯蘭教",
+        "percent": 2,
+        "description": "主要為前南斯拉夫其他地區移民。"
+      },
+      {
+        "name": "東正教",
+        "percent": 2,
+        "description": "主要為塞爾維亞裔居民。"
+      }
+    ],
+    "background": "斯洛維尼亞地區在八世紀接受基督教，長期受哈布斯堡王朝統治，屬於天主教文化圈。十六世紀宗教改革時新教一度傳播，對斯洛維尼亞語的發展貢獻良多，但後來在反宗教改革中式微。"
+  },
+  "language": {
+    "official": "斯洛維尼亞語是官方語言，部分地區另承認義大利語與匈牙利語。",
+    "ranking": [
+      {
+        "name": "斯洛維尼亞語",
+        "percent": 88,
+        "description": "屬南斯拉夫語支，保留古斯拉夫語的「雙數」語法。",
+        "greeting": "Živjo",
+        "pronunciation": "ZHEEV-yoh"
+      },
+      {
+        "name": "塞爾維亞—克羅埃西亞語",
+        "percent": 6,
+        "description": "來自前南斯拉夫其他地區的移民使用。",
+        "greeting": "Zdravo",
+        "pronunciation": "ZDRAH-voh"
+      }
+    ],
+    "history": "十六世紀新教改革者普里莫日·特魯巴爾出版第一本斯洛維尼亞語書籍，奠定書面語基礎。在哈布斯堡統治下德語長期是上層語言，十九世紀民族復興運動與詩人普列舍倫的作品則強化了斯洛維尼亞語的地位。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "波蒂查",
+        "localName": "Potica",
+        "description": "以薄麵團捲入核桃餡等烘烤的捲狀蛋糕。",
+        "history": "斯洛維尼亞最具代表性的節慶甜點，聖誕節與復活節必備。",
+        "wiki": "Potica"
+      },
+      {
+        "name": "卡尼鄂拉香腸",
+        "localName": "Kranjska klobasa",
+        "description": "以豬肉、培根與大蒜製成的煙燻香腸。",
+        "history": "源自卡尼鄂拉地區，受歐盟地理標示保護。",
+        "wiki": "Carniolan sausage"
+      },
+      {
+        "name": "普雷克穆列千層蛋糕",
+        "localName": "Prekmurska gibanica",
+        "description": "以罌粟籽、核桃、蘋果與起司層層堆疊的蛋糕。",
+        "history": "源自東北部普雷克穆列地區，受歐盟傳統特產保護。",
+        "wiki": "Prekmurska gibanica"
+      },
+      {
+        "name": "伊德里亞餃子",
+        "localName": "Idrijski žlikrofi",
+        "description": "包馬鈴薯餡的小餃子，形似小帽子。",
+        "history": "源自伊德里亞地區，受歐盟地理標示保護。",
+        "wiki": "Žlikrofi"
+      },
+      {
+        "name": "約塔燉湯",
+        "localName": "Jota",
+        "description": "以酸菜、豆子、馬鈴薯與煙燻肉燉煮的湯。",
+        "history": "斯洛維尼亞沿海與喀斯特地區的傳統湯品。",
+        "wiki": "Jota (food)"
+      }
+    ]
+  }
+}

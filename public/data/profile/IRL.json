@@ -1,0 +1,101 @@
+{
+  "iso": "IRL",
+  "capital": "都柏林",
+  "summary": "位於大西洋愛爾蘭島的國家，1922年脫離英國獨立，以文學、凱爾特音樂與聖派翠克節聞名，近年成為歐洲科技業重鎮。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "天主教",
+        "percent": 69,
+        "description": "歷史上與愛爾蘭民族認同緊密結合，至今仍為最大宗教。"
+      },
+      {
+        "name": "無宗教",
+        "percent": 14,
+        "description": "2022年普查中快速成長。"
+      },
+      {
+        "name": "新教（愛爾蘭教會等）",
+        "percent": 4,
+        "description": "包含聖公會系統的愛爾蘭教會與長老會。"
+      },
+      {
+        "name": "東正教",
+        "percent": 2,
+        "description": "主要來自東歐移民。"
+      },
+      {
+        "name": "伊斯蘭教",
+        "percent": 2,
+        "description": "主要來自移民社群。"
+      }
+    ],
+    "background": "5世紀聖派翠克將基督教傳入愛爾蘭。16世紀英國推動宗教改革，但多數愛爾蘭人堅守天主教，在英國統治下長期受到刑法壓迫，天主教因此成為民族認同核心。20世紀末教會醜聞與經濟發展使社會快速世俗化。"
+  },
+  "language": {
+    "official": "官方語言為愛爾蘭語（第一官方語言）與英語。",
+    "ranking": [
+      {
+        "name": "英語",
+        "percent": 93,
+        "description": "日常生活的主要語言，愛爾蘭英語帶有獨特腔調與詞彙。",
+        "greeting": "Hello",
+        "pronunciation": "heh-loh"
+      },
+      {
+        "name": "愛爾蘭語",
+        "percent": 2,
+        "description": "約四成人口具備能力，但每日在學校以外使用者約2%，主要在西部蓋爾語區（Gaeltacht）。",
+        "greeting": "Dia dhuit",
+        "pronunciation": "dee-a gwit"
+      },
+      {
+        "name": "波蘭語",
+        "percent": 2,
+        "description": "2004年後大量波蘭移民帶入。",
+        "greeting": "Cześć",
+        "pronunciation": "cheshch"
+      }
+    ],
+    "history": "愛爾蘭語是凱爾特語族的一支，曾是全島主要語言。英國殖民統治、19世紀大饑荒與移民潮使愛爾蘭語急劇衰退。19世紀末蓋爾語聯盟推動語言復興，獨立後憲法定其為第一官方語言。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "愛爾蘭燉菜",
+        "localName": "Irish stew",
+        "description": "以羊肉、馬鈴薯、洋蔥與胡蘿蔔燉煮的清燉菜。",
+        "history": "傳統農家料理，被視為國菜，反映愛爾蘭以羊與馬鈴薯為主的農業。",
+        "wiki": "Irish stew"
+      },
+      {
+        "name": "蘇打麵包",
+        "localName": "Soda bread",
+        "description": "以小蘇打代替酵母、加酪乳發酵的麵包。",
+        "history": "19世紀小蘇打傳入後普及，適合愛爾蘭的軟質小麥。",
+        "wiki": "Soda bread"
+      },
+      {
+        "name": "愛爾蘭全套早餐",
+        "localName": "Full Irish breakfast",
+        "description": "煎培根、香腸、蛋、黑白布丁、焗豆、番茄與蘇打麵包。",
+        "history": "源自農家為勞動提供熱量的豐盛早餐。",
+        "wiki": "Full breakfast"
+      },
+      {
+        "name": "甘藍馬鈴薯泥",
+        "localName": "Colcannon",
+        "description": "馬鈴薯泥拌入甘藍或羽衣甘藍與奶油。",
+        "history": "傳統上在萬聖節食用，有時藏入戒指或硬幣作為占卜。",
+        "wiki": "Colcannon"
+      },
+      {
+        "name": "馬鈴薯煎餅",
+        "localName": "Boxty",
+        "description": "以生馬鈴薯絲與薯泥混合煎成的薄餅。",
+        "history": "源自北部中部的傳統料理，有「不會做波克斯蒂就嫁不出去」的俗諺。",
+        "wiki": "Boxty"
+      }
+    ]
+  }
+}

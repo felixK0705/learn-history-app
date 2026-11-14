@@ -1,0 +1,101 @@
+{
+  "iso": "SWZ",
+  "capital": "墨巴本（行政首都）／洛班巴（王室與立法首都）",
+  "summary": "位於非洲南部的內陸君主國，2018年由史瓦濟蘭更名為史瓦帝尼，是世界上少數仍由國王掌握實權的國家。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "錫安派等非洲本土教會",
+        "percent": 40,
+        "description": "融合基督教與傳統信仰，是最大的宗教群體。"
+      },
+      {
+        "name": "新教",
+        "percent": 30,
+        "description": "包含循道宗、福音派、五旬節派等。"
+      },
+      {
+        "name": "天主教",
+        "percent": 20,
+        "description": "20世紀初傳入，辦有許多學校與醫院。"
+      },
+      {
+        "name": "其他（傳統信仰、巴哈伊教等）",
+        "percent": 3,
+        "description": "部分人保有傳統信仰。"
+      },
+      {
+        "name": "伊斯蘭教",
+        "percent": 2,
+        "description": "人數不多。"
+      }
+    ],
+    "background": "19世紀中期國王索布扎一世相傳夢見白人帶著書（聖經）到來，衛斯理宗傳教士隨後進入。20世紀初南非興起的錫安派教會傳入，因融合祖先崇拜與傳統儀式而大受歡迎。"
+  },
+  "language": {
+    "official": "官方語言為斯瓦帝語（siSwati）與英語。",
+    "ranking": [
+      {
+        "name": "斯瓦帝語",
+        "percent": 95,
+        "description": "屬班圖語族恩古尼語支，與祖魯語相近。",
+        "greeting": "Sawubona",
+        "pronunciation": "sa-wu-bo-na"
+      },
+      {
+        "name": "祖魯語",
+        "percent": 2,
+        "description": "部分居民使用，與斯瓦帝語可相互理解。",
+        "greeting": "Sawubona",
+        "pronunciation": "sa-wu-bo-na"
+      },
+      {
+        "name": "英語",
+        "percent": 2,
+        "description": "官方、教育與商業語言。",
+        "greeting": "Hello",
+        "pronunciation": "heh-loh"
+      }
+    ],
+    "history": "斯瓦帝人在18–19世紀由恩古尼族群南遷形成王國，斯瓦帝語因此與祖魯語、科薩語相近。英國保護時期英語成為行政語言，1968年獨立後兩者並列官方語言。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "玉米粥",
+        "localName": "Lipalishi",
+        "description": "以白玉米粉煮成的稠粥，是日常主食。",
+        "history": "南部非洲普遍的玉米糊主食，與南非的pap相同。",
+        "wiki": "Pap (food)"
+      },
+      {
+        "name": "酸奶",
+        "localName": "Emasi",
+        "description": "發酵濃稠的酸牛奶，常拌入玉米糊食用。",
+        "history": "牛在斯瓦帝文化中具重要地位，酸奶是傳統飲食的核心。",
+        "wiki": "Amasi"
+      },
+      {
+        "name": "辣味蔬菜醬",
+        "localName": "Chakalaka",
+        "description": "以洋蔥、番茄、甜椒、豆子與辣椒燉成的辣味醬菜。",
+        "history": "源自南非約翰尼斯堡一帶礦工的料理，流傳至周邊國家。",
+        "wiki": "Chakalaka"
+      },
+      {
+        "name": "牛肉乾",
+        "localName": "Umncweba",
+        "description": "以鹽與香料醃漬後風乾的肉乾。",
+        "history": "與南部非洲的牛肉乾（biltong）同類，是傳統保存肉類的方式。",
+        "wiki": "Biltong"
+      },
+      {
+        "name": "高粱啤酒",
+        "localName": "Umcombotsi",
+        "description": "以高粱與玉米釀製的混濁傳統啤酒。",
+        "history": "在祭祖、婚禮等傳統儀式中扮演重要角色。",
+        "wiki": "Umqombothi"
+      }
+    ]
+  }
+}

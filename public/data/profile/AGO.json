@@ -1,0 +1,96 @@
+{
+  "iso": "AGO",
+  "capital": "魯安達",
+  "summary": "位於非洲西南部大西洋岸的國家，曾為葡萄牙殖民地，1975年獨立後經歷長達27年的內戰，石油與鑽石為主要出口品。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "天主教",
+        "percent": 41,
+        "description": "葡萄牙殖民時期傳入，是最大教派。"
+      },
+      {
+        "name": "新教",
+        "percent": 38,
+        "description": "包含衛理宗、浸信會、五旬節派與本土教會。"
+      },
+      {
+        "name": "無宗教",
+        "percent": 12,
+        "description": "依2014年普查約有一成人口無宗教。"
+      },
+      {
+        "name": "其他（傳統信仰等）",
+        "percent": 8,
+        "description": "包含傳統信仰與其他宗教。"
+      }
+    ],
+    "background": "15世紀末葡萄牙人抵達剛果王國，國王恩津加·恩庫武受洗，天主教自此在本地生根。殖民時期天主教為官方支持的宗教，新教傳教團則在不同民族地區分別發展，如衛理宗在姆本杜人中、公理會在奧文本杜人中。"
+  },
+  "language": {
+    "official": "官方語言為葡萄牙語。",
+    "ranking": [
+      {
+        "name": "葡萄牙語",
+        "percent": 71,
+        "description": "官方語言，城市居民多以其為家庭語言，是全國通用語。",
+        "greeting": "Olá",
+        "pronunciation": "o-la"
+      },
+      {
+        "name": "剛果語",
+        "percent": 8,
+        "description": "北部剛果人使用。",
+        "greeting": "Mbote",
+        "pronunciation": "m-bo-teh"
+      },
+      {
+        "name": "金本杜語",
+        "percent": 8,
+        "description": "首都魯安達周邊姆本杜人的語言。",
+        "greeting": "Kiambote",
+        "pronunciation": "kyam-bo-teh"
+      }
+    ],
+    "history": "本地語言多屬班圖語族，人數最多的是中部高原的溫本杜語（約兩成人口的家庭語言）。葡萄牙統治近五百年，加上內戰時期人口大量湧入城市，使葡萄牙語成為多數人的家庭語言，比例在非洲葡語國家中最高。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "棕櫚油燉雞",
+        "localName": "Muamba de galinha",
+        "description": "以棕櫚油、秋葵、大蒜與南瓜燉煮的雞肉，配木薯糊，為國菜。",
+        "history": "融合中部非洲的棕櫚油燉菜與葡萄牙烹調技法。",
+        "wiki": "Muamba de galinha"
+      },
+      {
+        "name": "木薯糊",
+        "localName": "Funge",
+        "description": "以木薯粉或玉米粉攪成的黏稠主食，配燉菜食用。",
+        "history": "安哥拉最基本的主食，北部多用木薯，南部多用玉米。",
+        "wiki": "Funge"
+      },
+      {
+        "name": "卡魯魯燉魚",
+        "localName": "Calulu",
+        "description": "以魚乾、鮮魚、秋葵、番茄與棕櫚油燉煮的料理。",
+        "history": "源自安哥拉與聖多美普林西比的傳統料理。",
+        "wiki": "Calulu"
+      },
+      {
+        "name": "烤魚配豆",
+        "localName": "Mufete",
+        "description": "烤魚配上棕櫚油燉豆、炸芭蕉、木薯與地瓜。",
+        "history": "魯安達沿海地區的代表性週末料理。",
+        "wiki": "Mufete"
+      },
+      {
+        "name": "椰子糕",
+        "localName": "Cocada amarela",
+        "description": "以椰絲、蛋黃、糖與肉桂製成的黃色甜點。",
+        "history": "葡萄牙蛋黃甜點傳統與熱帶椰子結合的產物。",
+        "wiki": "Cocada amarela"
+      }
+    ]
+  }
+}

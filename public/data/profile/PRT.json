@@ -1,0 +1,89 @@
+{
+  "iso": "PRT",
+  "capital": "里斯本",
+  "summary": "位於伊比利半島西部的國家，大航海時代開闢通往印度與巴西的航路，建立橫跨各大洲的殖民帝國，以法朵音樂與磁磚藝術聞名。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "天主教",
+        "percent": 80,
+        "description": "2021年普查約八成國民為天主教徒，法蒂瑪是著名朝聖地。"
+      },
+      {
+        "name": "無宗教",
+        "percent": 14,
+        "description": "近年比例上升，年輕世代尤其明顯。"
+      },
+      {
+        "name": "其他基督教（新教、福音派等）",
+        "percent": 3,
+        "description": "包含巴西移民帶入的福音派教會。"
+      },
+      {
+        "name": "其他宗教",
+        "percent": 1,
+        "description": "包含伊斯蘭教、印度教與猶太教等。"
+      }
+    ],
+    "background": "葡萄牙王國在收復失地運動中建立，天主教長期與王室緊密結合。1497年驅逐或強迫猶太人改宗，宗教裁判所亦曾設立。薩拉查的「新國家」政權強化天主教色彩，1974年康乃馨革命後社會逐步世俗化。"
+  },
+  "language": {
+    "official": "官方語言為葡萄牙語，米蘭達語在當地亦具官方承認。",
+    "ranking": [
+      {
+        "name": "葡萄牙語",
+        "percent": 97,
+        "description": "全國通用語言，也是全球二億多人使用的國際語言。",
+        "greeting": "Olá",
+        "pronunciation": "o-la"
+      },
+      {
+        "name": "米蘭達語",
+        "percent": 1,
+        "description": "東北部米蘭達杜杜羅一帶使用的阿斯圖里亞斯－萊昂語，使用者不到全國1%。",
+        "greeting": "Buonas",
+        "pronunciation": "bwo-nas"
+      }
+    ],
+    "history": "葡萄牙語源自伊比利半島西北部的加利西亞－葡萄牙語。1290年國王迪尼什定葡萄牙語為宮廷正式語言。大航海時代葡萄牙語隨殖民傳播至巴西、非洲與亞洲，形成今日的葡語世界。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "鹹鱈魚料理",
+        "localName": "Bacalhau",
+        "description": "以鹽漬鱈魚泡水去鹽後料理，相傳有「365種做法」。",
+        "history": "大航海時代起葡萄牙人前往北大西洋捕撈鱈魚並鹽漬保存，鹹鱈魚成為國民食材。",
+        "wiki": "Bacalhau"
+      },
+      {
+        "name": "葡式蛋塔",
+        "localName": "Pastel de nata",
+        "description": "酥脆千層塔皮內盛滿焦糖化的蛋奶餡，撒肉桂粉食用。",
+        "history": "源自里斯本貝倫區熱羅尼莫斯修道院的修士，19世紀起由附近糕點店販售。",
+        "wiki": "Pastel de nata"
+      },
+      {
+        "name": "羽衣甘藍湯",
+        "localName": "Caldo verde",
+        "description": "以馬鈴薯泥湯底加入切細的甘藍菜絲與辣香腸片。",
+        "history": "源自北部米紐地區的農家湯，現為婚禮與節慶的必備湯品。",
+        "wiki": "Caldo verde"
+      },
+      {
+        "name": "小法國女人三明治",
+        "localName": "Francesinha",
+        "description": "夾著火腿、香腸與牛排的三明治，覆蓋融化起司並淋上啤酒番茄醬汁。",
+        "history": "1950至60年代由波多的一位移民返國廚師受法國吐司啟發而創製，是波多代表美食。",
+        "wiki": "Francesinha"
+      },
+      {
+        "name": "葡式燉肉",
+        "localName": "Cozido à portuguesa",
+        "description": "將多種肉類、香腸與蔬菜一同燉煮的大鍋菜。",
+        "history": "葡萄牙傳統的家庭團聚料理，各地有不同版本。",
+        "wiki": "Cozido à portuguesa"
+      }
+    ]
+  }
+}

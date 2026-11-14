@@ -1,0 +1,101 @@
+{
+  "iso": "HUN",
+  "capital": "布達佩斯",
+  "summary": "匈牙利位於中歐喀爾巴阡盆地，由九世紀遷入的馬札爾人建立，以溫泉、多瑙河畔的布達佩斯與匈牙利紅椒聞名。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "天主教",
+        "percent": 28,
+        "description": "最大的宗教團體。"
+      },
+      {
+        "name": "無宗教",
+        "percent": 16,
+        "description": "未認同任何宗教的人口，另有大量受訪者未回答宗教問題。"
+      },
+      {
+        "name": "歸正宗（喀爾文派）",
+        "percent": 10,
+        "description": "主要分布於東部，德布勒森被稱為「喀爾文派的羅馬」。"
+      },
+      {
+        "name": "路德宗",
+        "percent": 2,
+        "description": "規模較小的新教教會。"
+      },
+      {
+        "name": "希臘禮天主教",
+        "percent": 2,
+        "description": "主要分布於東北部。"
+      }
+    ],
+    "background": "西元1000年聖史蒂芬加冕為匈牙利首位國王，使匈牙利成為天主教國家。十六世紀宗教改革後喀爾文派在東部盛行，哈布斯堡王朝的反宗教改革則使天主教恢復主導。共產時期宗教受壓制，近年無宗教人口增加。"
+  },
+  "language": {
+    "official": "匈牙利語是官方語言。",
+    "ranking": [
+      {
+        "name": "匈牙利語",
+        "percent": 98,
+        "description": "屬烏拉爾語系，與周邊印歐語言截然不同。",
+        "greeting": "Szia",
+        "pronunciation": "SEE-ya"
+      },
+      {
+        "name": "德語",
+        "percent": 1,
+        "description": "德裔少數民族使用。",
+        "greeting": "Hallo",
+        "pronunciation": "HAH-loh"
+      },
+      {
+        "name": "羅姆語",
+        "percent": 1,
+        "description": "羅姆人社群使用。",
+        "greeting": "Sar san?",
+        "pronunciation": "sar SAN"
+      }
+    ],
+    "history": "匈牙利語由來自烏拉爾山區的馬札爾人帶入中歐，與芬蘭語、愛沙尼亞語同屬烏拉爾語系。哈布斯堡統治時期拉丁語與德語長期是行政語言，十九世紀語言改革運動後匈牙利語才在1844年成為官方語言。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "匈牙利燉牛肉湯",
+        "localName": "Gulyás",
+        "description": "以牛肉、馬鈴薯與大量紅椒粉燉煮的湯。",
+        "history": "源自中世紀牧牛人的料理，十九世紀成為匈牙利民族象徵。",
+        "wiki": "Goulash"
+      },
+      {
+        "name": "蘭戈斯",
+        "localName": "Lángos",
+        "description": "油炸麵餅抹上酸奶油、起司與大蒜。",
+        "history": "匈牙利最受歡迎的街頭小吃之一。",
+        "wiki": "Lángos"
+      },
+      {
+        "name": "紅椒燉雞",
+        "localName": "Paprikás csirke",
+        "description": "以紅椒粉與酸奶油燉煮的雞肉，配小麵疙瘩。",
+        "history": "匈牙利經典的家常菜。",
+        "wiki": "Chicken paprikash"
+      },
+      {
+        "name": "多博斯蛋糕",
+        "localName": "Dobos torta",
+        "description": "以多層海綿蛋糕夾巧克力奶油，頂層覆焦糖的蛋糕。",
+        "history": "1885年由糕點師多博斯·約瑟夫發明。",
+        "wiki": "Dobos torte"
+      },
+      {
+        "name": "漁夫湯",
+        "localName": "Halászlé",
+        "description": "以多種河魚與大量紅椒粉熬煮的辣味魚湯。",
+        "history": "多瑙河與蒂薩河沿岸的傳統料理，也是聖誕夜的經典菜色。",
+        "wiki": "Fisherman's soup"
+      }
+    ]
+  }
+}

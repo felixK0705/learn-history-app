@@ -1,0 +1,101 @@
+{
+  "iso": "ZWE",
+  "capital": "哈拉雷",
+  "summary": "位於非洲南部的內陸國，因中世紀石造遺址「大辛巴威」而得名，1980年脫離英國統治獨立，擁有維多利亞瀑布。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "非洲使徒教會",
+        "percent": 38,
+        "description": "融合基督教與非洲傳統的本土教會，在辛巴威人數最多。"
+      },
+      {
+        "name": "五旬節派",
+        "percent": 21,
+        "description": "近年快速成長。"
+      },
+      {
+        "name": "其他新教",
+        "percent": 16,
+        "description": "包含衛理宗、聖公會、歸正會等。"
+      },
+      {
+        "name": "無宗教",
+        "percent": 10,
+        "description": "約一成人口表示無宗教。"
+      },
+      {
+        "name": "天主教",
+        "percent": 7,
+        "description": "殖民時期傳入，辦有許多學校。"
+      }
+    ],
+    "background": "16世紀葡萄牙傳教士曾短暫到訪，19世紀末英國殖民後倫敦傳道會、衛理宗、天主教等大規模傳教。20世紀初融合非洲傳統信仰的使徒教會興起，至今成為最大宗教群體，祖先崇拜仍廣泛存在。"
+  },
+  "language": {
+    "official": "憲法承認16種官方語言，英語、紹納語與恩德貝勒語最為通用。",
+    "ranking": [
+      {
+        "name": "紹納語",
+        "percent": 70,
+        "description": "最大民族紹納人的語言，通行於中部與東部。",
+        "greeting": "Mhoro",
+        "pronunciation": "m-ho-ro"
+      },
+      {
+        "name": "恩德貝勒語",
+        "percent": 20,
+        "description": "西南部恩德貝勒人的語言，與祖魯語相近。",
+        "greeting": "Salibonani",
+        "pronunciation": "sa-li-bo-na-ni"
+      },
+      {
+        "name": "英語",
+        "percent": 2,
+        "description": "行政、教育與商業的主要語言。",
+        "greeting": "Hello",
+        "pronunciation": "heh-loh"
+      }
+    ],
+    "history": "紹納人祖先建立了大辛巴威與穆塔帕王國。19世紀恩德貝勒人自南非北遷建立王國，帶來恩德貝勒語。英國殖民後英語成為行政與教育語言，2013年憲法承認16種官方語言。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "薩扎玉米糊",
+        "localName": "Sadza",
+        "description": "以白玉米粉攪成的稠糊，配燉菜或烤肉，為國民主食。",
+        "history": "玉米於殖民時期普及前，傳統上以小米或高粱製作。",
+        "wiki": "Sadza"
+      },
+      {
+        "name": "可樂豆木毛蟲",
+        "localName": "Madora",
+        "description": "炒製或燉煮的可樂豆木蛾幼蟲。",
+        "history": "辛巴威傳統的季節性美食，富含蛋白質。",
+        "wiki": "Mopane worm"
+      },
+      {
+        "name": "小魚乾",
+        "localName": "Kapenta",
+        "description": "卡里巴湖小沙丁魚曬乾後與番茄洋蔥燉煮。",
+        "history": "1960年代引入卡里巴湖，成為重要的平價蛋白質來源。",
+        "wiki": "Kapenta"
+      },
+      {
+        "name": "牛肉乾",
+        "localName": "Biltong",
+        "description": "以香料醃漬後風乾的牛肉條。",
+        "history": "源自南部非洲的保存肉類方法。",
+        "wiki": "Biltong"
+      },
+      {
+        "name": "馬佑芙玉米粥",
+        "localName": "Bota",
+        "description": "以玉米粉煮成的稀粥，常加花生醬作為早餐。",
+        "history": "辛巴威家庭的傳統早餐。",
+        "wiki": "Maize porridge"
+      }
+    ]
+  }
+}

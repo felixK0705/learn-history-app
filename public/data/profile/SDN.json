@@ -1,0 +1,84 @@
+{
+  "iso": "SDN",
+  "capital": "喀土穆",
+  "summary": "位於東北非的國家，青尼羅河與白尼羅河在首都喀土穆匯流，擁有比埃及更多的古代金字塔（努比亞），2011年南蘇丹獨立後面積縮小，2023年起陷入內戰。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "伊斯蘭教（遜尼派）",
+        "percent": 91,
+        "description": "多數居民信仰，蘇非教團影響深遠。"
+      },
+      {
+        "name": "基督教",
+        "percent": 5,
+        "description": "主要分布於南部與努巴山區。"
+      },
+      {
+        "name": "傳統信仰",
+        "percent": 3,
+        "description": "部分南部與西部民族保有傳統信仰。"
+      }
+    ],
+    "background": "古代努比亞王國曾信奉埃及宗教，6世紀後改信基督教。14–16世紀伊斯蘭教隨阿拉伯部落南遷與芬吉蘇丹國建立而普及。19世紀末馬赫迪運動曾建立伊斯蘭國家，現代政府長期推動伊斯蘭化政策。"
+  },
+  "language": {
+    "official": "官方語言為阿拉伯語與英語。",
+    "ranking": [
+      {
+        "name": "阿拉伯語（蘇丹方言）",
+        "percent": 75,
+        "description": "全國主要語言與通用語。",
+        "greeting": "السلام عليكم",
+        "pronunciation": "as-sa-lām ʿa-lay-kum"
+      },
+      {
+        "name": "英語",
+        "percent": 1,
+        "description": "官方語言之一，用於教育與商業。",
+        "greeting": "Hello",
+        "pronunciation": "heh-loh"
+      }
+    ],
+    "history": "古代努比亞人使用麥羅埃語與古努比亞語。阿拉伯部落移入後阿拉伯語逐漸普及，形成蘇丹阿拉伯語。境內仍有貝札語、富爾語、努比亞語等數十種本土語言，在東部、達佛與北部地區使用。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "燉蠶豆",
+        "localName": "فول مدمس (Ful medames)",
+        "description": "以蠶豆燉煮後加油、香料、起司或蛋調味，配麵包，是日常早餐。",
+        "history": "源自古埃及的料理，經尼羅河傳入蘇丹，是最普及的平民食物。",
+        "wiki": "Ful medames"
+      },
+      {
+        "name": "高粱薄餅",
+        "localName": "كسرة (Kisra)",
+        "description": "以發酵高粱麵糊攤成的薄餅，配燉菜。",
+        "history": "蘇丹最重要的傳統主食之一。",
+        "wiki": "Kisra"
+      },
+      {
+        "name": "阿西達糊",
+        "localName": "عصيدة (Asida)",
+        "description": "以高粱或小麥粉攪成的稠糊，配肉醬或秋葵湯。",
+        "history": "蘇丹與阿拉伯半島共有的主食，齋戒月常吃。",
+        "wiki": "Asida"
+      },
+      {
+        "name": "炸豆餅",
+        "localName": "طعمية (Ta'amia)",
+        "description": "以豆泥與香料炸成的小餅。",
+        "history": "尼羅河流域常見的街頭早餐。",
+        "wiki": "Falafel"
+      },
+      {
+        "name": "卡卡迪",
+        "localName": "كركديه (Karkadeh)",
+        "description": "以洛神花萼泡成的酸甜紅色飲品，冷熱皆宜。",
+        "history": "蘇丹是洛神花的重要產地，此飲品在齋戒月與待客時常見。",
+        "wiki": "Roselle (plant)"
+      }
+    ]
+  }
+}

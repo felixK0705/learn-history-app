@@ -1,0 +1,89 @@
+{
+  "iso": "CUB",
+  "capital": "哈瓦那",
+  "summary": "古巴是加勒比海最大的島國，1959年革命後成為社會主義國家，以雪茄、蘭姆酒、古典老車與音樂文化聞名。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "天主教",
+        "percent": 54,
+        "description": "西班牙殖民時期傳入的主要宗教。"
+      },
+      {
+        "name": "無宗教",
+        "percent": 23,
+        "description": "革命後無神論政策影響下，無宗教人口增加。"
+      },
+      {
+        "name": "非裔古巴信仰（聖特里亞等）",
+        "percent": 17,
+        "description": "融合約魯巴信仰與天主教聖人崇拜的宗教，常與天主教並存。"
+      },
+      {
+        "name": "基督新教",
+        "percent": 5,
+        "description": "近年成長的福音派與五旬節派教會。"
+      }
+    ],
+    "background": "西班牙殖民使天主教成為主流，被帶來的非洲奴隸則將約魯巴信仰與天主教聖人結合，形成聖特里亞教。1959年革命後政府推行無神論，1990年代起放寬宗教限制，宗教活動逐漸恢復。"
+  },
+  "language": {
+    "official": "西班牙語是官方語言。",
+    "ranking": [
+      {
+        "name": "西班牙語",
+        "percent": 99,
+        "description": "全國通用語言，古巴口音以語速快聞名。",
+        "greeting": "Hola",
+        "pronunciation": "OH-la"
+      },
+      {
+        "name": "海地克里奧爾語",
+        "percent": 1,
+        "description": "海地移民後代使用。",
+        "greeting": "Bonjou",
+        "pronunciation": "bon-ZHOO"
+      }
+    ],
+    "history": "古巴原住民泰諾語在殖民後迅速消失，但留下「颶風」、「吊床」等詞彙。西班牙語隨殖民成為主流，並受到加那利群島移民與非洲語言的影響，形成獨特的古巴西班牙語。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "老衣服燉牛肉",
+        "localName": "Ropa vieja",
+        "description": "將牛肉燉軟撕成絲，以番茄、甜椒與洋蔥燉煮。",
+        "history": "名稱意為「舊衣服」，源自西班牙加那利群島，被視為古巴國菜。",
+        "wiki": "Ropa vieja"
+      },
+      {
+        "name": "黑豆飯",
+        "localName": "Moros y cristianos",
+        "description": "將黑豆與米一同烹煮的料理。",
+        "history": "名稱意為「摩爾人與基督徒」，源自西班牙的歷史記憶。",
+        "wiki": "Moros y cristianos"
+      },
+      {
+        "name": "烤乳豬",
+        "localName": "Lechón asado",
+        "description": "以酸橙汁與大蒜醃漬後烤製的豬肉。",
+        "history": "古巴聖誕夜與家族聚會的傳統料理。",
+        "wiki": "Lechon"
+      },
+      {
+        "name": "古巴肉末",
+        "localName": "Picadillo",
+        "description": "以絞肉、番茄、橄欖與葡萄乾燉煮的料理。",
+        "history": "西班牙與拉丁美洲常見的家常菜，在古巴常配米飯與黑豆。",
+        "wiki": "Picadillo"
+      },
+      {
+        "name": "炸大蕉",
+        "localName": "Tostones",
+        "description": "將青大蕉切片壓扁後兩次油炸。",
+        "history": "加勒比海地區最常見的配菜。",
+        "wiki": "Tostones"
+      }
+    ]
+  }
+}

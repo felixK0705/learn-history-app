@@ -1,0 +1,96 @@
+{
+  "iso": "SVK",
+  "capital": "布拉提斯拉瓦",
+  "summary": "斯洛伐克位於中歐內陸，擁有塔特拉山脈等自然景觀，1993年與捷克和平分離而獨立。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "天主教",
+        "percent": 56,
+        "description": "最主要的宗教，與斯洛伐克民族認同密切相關。"
+      },
+      {
+        "name": "無宗教",
+        "percent": 24,
+        "description": "不屬於任何宗教的人口。"
+      },
+      {
+        "name": "路德宗",
+        "percent": 5,
+        "description": "宗教改革以來延續的新教教會。"
+      },
+      {
+        "name": "希臘禮天主教",
+        "percent": 4,
+        "description": "主要分布於東部，使用拜占庭禮儀但與羅馬教廷共融。"
+      }
+    ],
+    "background": "九世紀聖西里爾與聖美多德在大摩拉維亞地區傳教，奠定基督教基礎。宗教改革時新教一度盛行，但哈布斯堡王朝推動反宗教改革使天主教恢復主導。共產時期宗教受壓制，1989年後宗教生活重新恢復。"
+  },
+  "language": {
+    "official": "斯洛伐克語是官方語言。",
+    "ranking": [
+      {
+        "name": "斯洛伐克語",
+        "percent": 82,
+        "description": "屬西斯拉夫語支，與捷克語高度互通。",
+        "greeting": "Ahoj",
+        "pronunciation": "AH-hoy"
+      },
+      {
+        "name": "匈牙利語",
+        "percent": 8,
+        "description": "南部匈牙利裔少數民族使用。",
+        "greeting": "Szia",
+        "pronunciation": "SEE-ya"
+      },
+      {
+        "name": "羅姆語",
+        "percent": 2,
+        "description": "羅姆人社群使用的語言。",
+        "greeting": "Sar san?",
+        "pronunciation": "sar SAN"
+      }
+    ],
+    "history": "斯洛伐克在匈牙利王國統治下近千年，拉丁語與匈牙利語長期是行政語言。十九世紀民族復興運動中，盧多維特·什圖爾以中部方言為基礎制定標準斯洛伐克語，成為現代斯洛伐克語的基礎。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "羊乳酪麵疙瘩",
+        "localName": "Bryndzové halušky",
+        "description": "小馬鈴薯麵疙瘩拌上綿羊乳酪與培根。",
+        "history": "斯洛伐克國菜，反映山區牧羊文化。",
+        "wiki": "Bryndzové halušky"
+      },
+      {
+        "name": "酸菜湯",
+        "localName": "Kapustnica",
+        "description": "以酸菜、香腸、蘑菇與梅乾熬煮的湯。",
+        "history": "斯洛伐克聖誕夜晚餐的傳統湯品。",
+        "wiki": "Kapustnica"
+      },
+      {
+        "name": "餃子",
+        "localName": "Pirohy",
+        "description": "包入乳酪或馬鈴薯餡的半月形水餃。",
+        "history": "中東歐廣泛流行的料理，在斯洛伐克常搭配羊乳酪。",
+        "wiki": "Pierogi"
+      },
+      {
+        "name": "洛克謝薄餅",
+        "localName": "Lokše",
+        "description": "以馬鈴薯麵團煎成的薄餅，可鹹可甜。",
+        "history": "斯洛伐克西部的傳統料理，常搭配烤鵝。",
+        "wiki": "Lokše"
+      },
+      {
+        "name": "布林札羊乳酪",
+        "localName": "Bryndza",
+        "description": "以綿羊奶製成、質地柔軟的鹹味乳酪。",
+        "history": "斯洛伐克牧羊傳統的代表，享有歐盟地理標示保護。",
+        "wiki": "Bryndza"
+      }
+    ]
+  }
+}

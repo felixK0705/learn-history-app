@@ -1,0 +1,96 @@
+{
+  "iso": "BGR",
+  "capital": "索非亞",
+  "summary": "保加利亞位於巴爾幹半島東部、黑海西岸，是西里爾字母的發源地之一，以玫瑰油與優格聞名。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "東正教",
+        "percent": 63,
+        "description": "保加利亞正教會是國家的傳統宗教。"
+      },
+      {
+        "name": "伊斯蘭教",
+        "percent": 10,
+        "description": "主要為土耳其裔與波馬克人。"
+      },
+      {
+        "name": "無宗教",
+        "percent": 5,
+        "description": "不認同任何宗教的人口。"
+      },
+      {
+        "name": "基督新教",
+        "percent": 1,
+        "description": "規模較小的新教社群。"
+      }
+    ],
+    "background": "864年鮑里斯一世接受基督教，使保加利亞成為東正教國家。十四世紀末起鄂圖曼帝國統治近五百年，部分居民改信伊斯蘭教。共產時期宗教受壓制，1989年後宗教生活逐漸恢復。"
+  },
+  "language": {
+    "official": "保加利亞語是官方語言。",
+    "ranking": [
+      {
+        "name": "保加利亞語",
+        "percent": 85,
+        "description": "屬南斯拉夫語支，使用西里爾字母。",
+        "greeting": "Здравей (Zdravey)",
+        "pronunciation": "zdra-VAY"
+      },
+      {
+        "name": "土耳其語",
+        "percent": 9,
+        "description": "土耳其裔少數民族使用。",
+        "greeting": "Merhaba",
+        "pronunciation": "MER-ha-ba"
+      },
+      {
+        "name": "羅姆語",
+        "percent": 4,
+        "description": "羅姆人社群使用。",
+        "greeting": "Sar san?",
+        "pronunciation": "sar SAN"
+      }
+    ],
+    "history": "九世紀聖西里爾與聖美多德的門徒在保加利亞發展出西里爾字母，古教會斯拉夫語成為斯拉夫世界的文學語言。鄂圖曼統治時期吸收大量土耳其語詞彙，十九世紀民族復興時期確立現代標準保加利亞語。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "巴尼察",
+        "localName": "Баница (Banitsa)",
+        "description": "以薄麵皮包裹雞蛋與白乳酪烘烤的派。",
+        "history": "保加利亞常見的早餐，新年時會在其中藏入寫有祝福的紙條。",
+        "wiki": "Banitsa"
+      },
+      {
+        "name": "肖普斯卡沙拉",
+        "localName": "Шопска салата (Shopska salata)",
+        "description": "以番茄、黃瓜、甜椒與白乳酪碎做成的沙拉。",
+        "history": "1950年代為推廣觀光而設計，紅白綠配色象徵國旗。",
+        "wiki": "Shopska salad"
+      },
+      {
+        "name": "塔拉托冷湯",
+        "localName": "Таратор (Tarator)",
+        "description": "以優格、黃瓜、大蒜與蒔蘿做成的冷湯。",
+        "history": "保加利亞夏季最受歡迎的消暑湯品。",
+        "wiki": "Tarator"
+      },
+      {
+        "name": "烤肉條",
+        "localName": "Кебапче (Kebapche)",
+        "description": "以香料調味的絞肉條，炭火燒烤。",
+        "history": "保加利亞燒烤店的經典菜色，常配薯條與啤酒。",
+        "wiki": "Kebapche"
+      },
+      {
+        "name": "柳特尼查",
+        "localName": "Лютеница (Lyutenitsa)",
+        "description": "以烤紅椒、番茄與茄子熬成的醬。",
+        "history": "秋季家家戶戶自製的醬料，常抹在麵包上。",
+        "wiki": "Lyutenitsa"
+      }
+    ]
+  }
+}

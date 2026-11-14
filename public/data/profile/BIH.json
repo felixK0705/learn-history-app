@@ -1,0 +1,96 @@
+{
+  "iso": "BIH",
+  "capital": "塞拉耶佛",
+  "summary": "位於巴爾幹半島西部的國家，由波士尼亞克人、塞爾維亞人與克羅埃西亞人三大民族組成，1990年代歷經慘烈戰爭，現由兩個實體組成。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "伊斯蘭教（遜尼派）",
+        "percent": 51,
+        "description": "主要為波士尼亞克人。"
+      },
+      {
+        "name": "塞爾維亞正教",
+        "percent": 31,
+        "description": "主要為塞爾維亞人。"
+      },
+      {
+        "name": "天主教",
+        "percent": 15,
+        "description": "主要為克羅埃西亞人。"
+      },
+      {
+        "name": "無宗教及其他",
+        "percent": 2,
+        "description": "包含無神論者與其他少數宗教。"
+      }
+    ],
+    "background": "中世紀波士尼亞曾有獨立的波士尼亞教會。1463年鄂圖曼帝國征服後，許多居民逐漸改信伊斯蘭教；而正教與天主教則分別與塞爾維亞、克羅埃西亞民族認同結合。宗教因此成為劃分民族的主要依據。"
+  },
+  "language": {
+    "official": "官方語言為波士尼亞語、塞爾維亞語與克羅埃西亞語。",
+    "ranking": [
+      {
+        "name": "波士尼亞語",
+        "percent": 53,
+        "description": "波士尼亞克人使用，以拉丁字母書寫。",
+        "greeting": "Zdravo",
+        "pronunciation": "zdra-vo"
+      },
+      {
+        "name": "塞爾維亞語",
+        "percent": 31,
+        "description": "塞爾維亞人使用，西里爾與拉丁字母並用。",
+        "greeting": "Здраво",
+        "pronunciation": "zdra-vo"
+      },
+      {
+        "name": "克羅埃西亞語",
+        "percent": 15,
+        "description": "克羅埃西亞人使用，以拉丁字母書寫。",
+        "greeting": "Bok",
+        "pronunciation": "bok"
+      }
+    ],
+    "history": "三種語言都源自南斯拉夫的什托卡維亞方言，彼此幾乎完全相通，過去統稱為塞爾維亞－克羅埃西亞語。南斯拉夫解體後，各民族以自身名稱稱呼語言，成為民族認同的一部分。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "切巴契契",
+        "localName": "Ćevapi",
+        "description": "炭烤的小型手指狀碎肉腸，配洋蔥與麵包，為國菜。",
+        "history": "源自鄂圖曼時代的烤肉傳統，塞拉耶佛與巴尼亞盧卡的版本最負盛名。",
+        "wiki": "Ćevapi"
+      },
+      {
+        "name": "布雷克肉餡捲餅",
+        "localName": "Burek",
+        "description": "以薄酥皮捲入絞肉後烤成螺旋狀的餡餅。",
+        "history": "鄂圖曼帝國時期傳入，在波士尼亞「burek」特指肉餡版本。",
+        "wiki": "Burek"
+      },
+      {
+        "name": "波士尼亞燉鍋",
+        "localName": "Bosanski lonac",
+        "description": "以多種肉類與蔬菜分層放入陶鍋慢燉。",
+        "history": "傳統上在壁爐中燉煮數小時，是古老的農家燉菜。",
+        "wiki": "Bosnian pot"
+      },
+      {
+        "name": "貝伊湯",
+        "localName": "Begova čorba",
+        "description": "以雞肉、秋葵與蔬菜熬成的濃湯，加入蛋黃與酸奶油。",
+        "history": "名稱意為「貝伊（鄂圖曼官員）的湯」，源自鄂圖曼時期的上層料理。",
+        "wiki": "Begova čorba"
+      },
+      {
+        "name": "糖漬鑲蘋果",
+        "localName": "Tufahija",
+        "description": "去核蘋果以糖水煮過後填入核桃餡，淋鮮奶油。",
+        "history": "鄂圖曼時期自波斯傳入的甜點，常配咖啡食用。",
+        "wiki": "Tufahija"
+      }
+    ]
+  }
+}

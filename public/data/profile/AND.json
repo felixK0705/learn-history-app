@@ -1,0 +1,103 @@
+{
+  "iso": "AND",
+  "capital": "安道爾城",
+  "summary": "安道爾是位於庇里牛斯山脈間、夾在法國與西班牙之間的內陸小國，由法國總統與西班牙烏赫爾主教共同擔任國家元首。以滑雪觀光與免稅購物聞名。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "天主教",
+        "percent": 80,
+        "description": "安道爾憲法承認天主教的特殊地位，教堂與宗教節慶是傳統生活的一部分。"
+      },
+      {
+        "name": "無宗教",
+        "percent": 12,
+        "description": "年輕世代與都市居民中，不屬於任何宗教的人逐漸增加。"
+      },
+      {
+        "name": "其他基督教派",
+        "percent": 4,
+        "description": "包括新教及耶和華見證人等，多與移民社群有關。"
+      },
+      {
+        "name": "伊斯蘭教",
+        "percent": 1,
+        "description": "主要為來自北非的移民及其後代。"
+      }
+    ],
+    "background": "安道爾自中世紀起由烏赫爾主教與法國伯爵（後由法國元首繼承）共治，天主教會因此深植於政治與社會。近代大量來自西班牙、葡萄牙與法國的移民多為天主教背景，加上歐洲世俗化趨勢，使無宗教人口逐年上升。"
+  },
+  "language": {
+    "official": "加泰隆尼亞語是安道爾唯一的官方語言。",
+    "ranking": [
+      {
+        "name": "西班牙語",
+        "percent": 43,
+        "description": "因大量西班牙移民及觀光業，西班牙語是最多人使用的母語。",
+        "greeting": "Hola",
+        "pronunciation": "OH-la"
+      },
+      {
+        "name": "加泰隆尼亞語",
+        "percent": 38,
+        "description": "國家唯一官方語言，用於政府、教育與公共標示。",
+        "greeting": "Bon dia",
+        "pronunciation": "bon DEE-a"
+      },
+      {
+        "name": "葡萄牙語",
+        "percent": 15,
+        "description": "來自葡萄牙的移民社群人數眾多，多從事服務與建築業。",
+        "greeting": "Olá",
+        "pronunciation": "oh-LAH"
+      },
+      {
+        "name": "法語",
+        "percent": 5,
+        "description": "與法國接壤，部分居民與學校使用法語。",
+        "greeting": "Bonjour",
+        "pronunciation": "bon-ZHOOR"
+      }
+    ],
+    "history": "安道爾在中世紀屬於加泰隆尼亞文化圈，加泰隆尼亞語長期是當地語言。二十世紀觀光與經濟起飛後，大量西班牙、葡萄牙與法國移民湧入，使西班牙語成為最常見的母語，而加泰隆尼亞語仍維持唯一官方語言地位。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "特林查",
+        "localName": "Trinxat",
+        "description": "以高麗菜、馬鈴薯與培根一起搗碎煎成的餅狀料理。",
+        "history": "源自庇里牛斯山區的農家菜，利用冬季耐寒蔬菜做成飽足的山區家常菜。",
+        "wiki": "Trinxat"
+      },
+      {
+        "name": "大鍋燉菜",
+        "localName": "Escudella i carn d'olla",
+        "description": "以肉類、香腸、豆類與蔬菜長時間燉煮的湯與燉肉。",
+        "history": "加泰隆尼亞地區傳統的冬季料理，常在節慶與聖誕節食用。",
+        "wiki": "Escudella i carn d'olla"
+      },
+      {
+        "name": "加泰隆尼亞香腸",
+        "localName": "Botifarra",
+        "description": "以豬肉與香料製成的加泰隆尼亞式香腸，常搭配豆子燒烤。",
+        "history": "其歷史可追溯至中世紀，是加泰隆尼亞文化圈最具代表性的肉品之一。",
+        "wiki": "Botifarra"
+      },
+      {
+        "name": "加泰隆尼亞焦糖布丁",
+        "localName": "Crema catalana",
+        "description": "表面撒糖後炙燒成焦脆糖殼的卡士達甜點。",
+        "history": "傳統上在3月19日聖若瑟節食用，是加泰隆尼亞地區的經典甜點。",
+        "wiki": "Crema catalana"
+      },
+      {
+        "name": "番茄麵包",
+        "localName": "Pa amb tomàquet",
+        "description": "在烤麵包上抹番茄、淋橄欖油並撒鹽的簡單料理。",
+        "history": "番茄自美洲傳入後在加泰隆尼亞地區發展出的日常吃法，常搭配火腿。",
+        "wiki": "Pa amb tomàquet"
+      }
+    ]
+  }
+}

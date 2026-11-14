@@ -1,0 +1,103 @@
+{
+  "iso": "ESP",
+  "capital": "馬德里",
+  "summary": "位於伊比利半島的君主立憲國，曾建立橫跨全球的殖民帝國，以多元的地區文化、藝術與飲食聞名。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "天主教",
+        "percent": 56,
+        "description": "歷史上的國教，仍影響節慶與傳統，但實際參與宗教活動者不到兩成。"
+      },
+      {
+        "name": "無宗教（含無神論、不可知論）",
+        "percent": 39,
+        "description": "自1975年民主轉型後快速增加，年輕世代尤其明顯。"
+      },
+      {
+        "name": "伊斯蘭教",
+        "percent": 3,
+        "description": "主要來自北非移民社群。"
+      },
+      {
+        "name": "其他（新教、東正教等）",
+        "percent": 2,
+        "description": "包含福音派與東歐移民的東正教。"
+      }
+    ],
+    "background": "西班牙在711年後部分地區受穆斯林統治，基督教王國透過「收復失地運動」於1492年攻下格拉納達，並驅逐不願改宗的猶太人與穆斯林，確立天主教的獨占地位。佛朗哥獨裁結束後實行政教分離，社會迅速世俗化。"
+  },
+  "language": {
+    "official": "官方語言為西班牙語（卡斯提亞語），加泰隆尼亞語、加利西亞語、巴斯克語在自治區內亦具官方地位。",
+    "ranking": [
+      {
+        "name": "西班牙語（卡斯提亞語）",
+        "percent": 80,
+        "description": "全國通用的官方語言。",
+        "greeting": "Hola",
+        "pronunciation": "o-la"
+      },
+      {
+        "name": "加泰隆尼亞語（含瓦倫西亞語）",
+        "percent": 10,
+        "description": "通行於加泰隆尼亞、瓦倫西亞與巴利亞利群島。",
+        "greeting": "Hola",
+        "pronunciation": "o-la"
+      },
+      {
+        "name": "加利西亞語",
+        "percent": 5,
+        "description": "通行於西北部加利西亞，與葡萄牙語關係密切。",
+        "greeting": "Ola",
+        "pronunciation": "o-la"
+      },
+      {
+        "name": "巴斯克語",
+        "percent": 2,
+        "description": "通行於巴斯克地區與納瓦拉，是與印歐語系無關的孤立語言。",
+        "greeting": "Kaixo",
+        "pronunciation": "kai-sho"
+      }
+    ],
+    "history": "羅馬統治期間通俗拉丁語取代多數原住民語言，但巴斯克語得以保存。中世紀各基督教王國分別發展出卡斯提亞語、加泰隆尼亞語、加利西亞語等；隨著卡斯提亞主導統一，西班牙語成為國家語言。佛朗哥時代壓制地方語言，民主化後各語言重獲官方地位。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "西班牙海鮮燉飯",
+        "localName": "Paella",
+        "description": "以平底大鍋烹煮米飯，加入番紅花、海鮮或雞肉與兔肉。",
+        "history": "源自瓦倫西亞地區的農民料理，原版以雞、兔與豆類為主，後演變出海鮮版本。",
+        "wiki": "Paella"
+      },
+      {
+        "name": "西班牙馬鈴薯烘蛋",
+        "localName": "Tortilla de patatas",
+        "description": "以馬鈴薯、雞蛋（常加洋蔥）煎成的厚圓烘蛋。",
+        "history": "19世紀起見於文獻，是西班牙酒館小菜（tapas）與家常的國民料理。",
+        "wiki": "Spanish omelette"
+      },
+      {
+        "name": "伊比利火腿",
+        "localName": "Jamón ibérico",
+        "description": "以伊比利黑豬後腿鹽漬風乾數年製成的生火腿。",
+        "history": "醃製火腿在伊比利半島有兩千年歷史，最高等級的豬隻在橡樹林以橡實放養。",
+        "wiki": "Jamón ibérico"
+      },
+      {
+        "name": "西班牙冷湯",
+        "localName": "Gazpacho",
+        "description": "以番茄、黃瓜、甜椒、大蒜、橄欖油與麵包打成的冷湯。",
+        "history": "源自安達魯西亞炎熱夏季的農民飲食，番茄於美洲傳入後成為主要材料。",
+        "wiki": "Gazpacho"
+      },
+      {
+        "name": "吉拿棒",
+        "localName": "Churros",
+        "description": "炸成長條的麵糊點心，常沾濃稠熱巧克力食用。",
+        "history": "西班牙早餐與節慶常見的點心，後傳入拉丁美洲並流行全球。",
+        "wiki": "Churro"
+      }
+    ]
+  }
+}

@@ -3,7 +3,7 @@ import { gsap, prefersReducedMotion, useGSAP, useReveal } from "../lib/motion";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { ChevronLeft, ChevronRight, Globe2, Info, Pause, Play, RotateCcw, Search } from "lucide-react";
 import { buildings } from "../data/buildings";
-import { countryByIso } from "../data/countries";
+import { countryByIso, flagOf } from "../data/world";
 
 const ModelViewer = lazy(() => import("../components/buildings/ModelViewer"));
 
@@ -53,11 +53,11 @@ export default function BuildingsPage() {
   return (
     <div className="absolute inset-0 flex">
       {/* 建築清單 */}
-      <aside className="relative z-10 hidden w-72 shrink-0 flex-col border-r border-white/10 bg-deep-950/30 lg:flex">
+      <aside className="glass absolute top-4 bottom-4 left-4 z-20 hidden w-72 flex-col overflow-hidden rounded-[28px] lg:flex">
         <div className="p-5 pb-3">
-          <h1 className="font-serif text-2xl font-bold">歷史建築 3D</h1>
+          <h1 className="text-2xl font-semibold tracking-tight">歷史建築</h1>
           <p className="mt-1 text-sm text-mute">依年代排列，拖曳旋轉、滾輪縮放、右鍵平移。</p>
-          <label className="mt-4 flex h-10 items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3">
+          <label className="glass-soft mt-4 flex h-10 items-center gap-2 rounded-full px-3">
             <Search className="size-4 text-mute" />
             <input
               value={q}
@@ -74,20 +74,20 @@ export default function BuildingsPage() {
             return (
               <li key={b.id}>
                 {showEra && !q && (
-                  <div className="px-2 pt-4 pb-1 text-[11px] tracking-[0.3em] text-glow/80">{eraLabel(b.sortYear)}</div>
+                  <div className="eyebrow px-2 pt-4 pb-1">{eraLabel(b.sortYear)}</div>
                 )}
                 <Link
                   to={`/buildings/${b.id}`}
                   className={`flex items-center gap-3 rounded-xl px-3 py-2 transition ${
-                    active ? "bg-white/12 text-white" : "text-ink/80 hover:bg-white/[0.06]"
+                    active ? "bg-white text-deep-800" : "text-white/85 hover:bg-white/10"
                   }`}
                 >
-                  <span className={`size-1.5 shrink-0 rounded-full ${active ? "bg-amber-300" : "bg-white/25"}`} />
+                  <span className={`size-1.5 shrink-0 rounded-full ${active ? "bg-deep-600" : "bg-white/40"}`} />
                   <span className="min-w-0 flex-1">
                     <span className="block truncate text-sm">{b.name}</span>
-                    <span className="block truncate text-[11px] text-mute">{b.era}</span>
+                    <span className={`block truncate text-[11px] ${active ? "text-deep-800/60" : "text-white/55"}`}>{b.era}</span>
                   </span>
-                  <span className="text-base">{countryByIso.get(b.iso)?.flag}</span>
+                  <span className="text-base">{flagOf(countryByIso.get(b.iso)?.iso2 ?? "")}</span>
                 </Link>
               </li>
             );
@@ -106,11 +106,11 @@ export default function BuildingsPage() {
         </div>
 
         {/* 標題 */}
-        <div ref={titleRef} className="pointer-events-none absolute top-5 left-5 right-24 md:top-8 md:left-8">
-          <p className="text-xs tracking-[0.3em] text-amber-200">
+        <div ref={titleRef} className="pointer-events-none absolute top-5 right-24 left-5 md:top-8 md:left-8 lg:left-[330px]">
+          <p className="eyebrow">
             {current.era}・{current.location}
           </p>
-          <h2 className="mt-2 font-serif text-3xl font-bold text-white drop-shadow md:text-4xl">{current.name}</h2>
+          <h2 className="mt-2 text-3xl font-semibold tracking-tight text-white drop-shadow md:text-[40px]">{current.name}</h2>
           <p className="mt-1 text-sm text-mute">{current.englishName}</p>
         </div>
 
@@ -136,14 +136,14 @@ export default function BuildingsPage() {
         {infoOpen && (
           <div
             ref={infoRef}
-            className="glass scroll-thin absolute bottom-20 left-4 z-10 max-h-[45%] w-[min(calc(100%-2rem),380px)] overflow-y-auto rounded-2xl p-5 md:bottom-8 md:left-8"
+            className="glass scroll-thin absolute bottom-20 left-4 z-10 max-h-[45%] w-[min(calc(100%-2rem),380px)] overflow-y-auto rounded-2xl p-5 md:bottom-8 md:left-8 lg:left-[330px]"
           >
             <div className="flex flex-wrap gap-1.5">
               <span className="chip !cursor-default">{current.style}</span>
-              {country && <span className="chip !cursor-default">{country.flag} {country.name}</span>}
+              {country && <span className="chip !cursor-default">{flagOf(country.iso2)} {country.zh}</span>}
             </div>
             <p className="mt-3 text-sm leading-relaxed text-ink/90">{current.description}</p>
-            <h3 className="mt-4 text-xs tracking-widest text-mute">你知道嗎？</h3>
+            <h3 className="eyebrow mt-4">你知道嗎</h3>
             <ul className="mt-2 space-y-2">
               {current.facts.map((f) => (
                 <li key={f} className="flex gap-2 text-sm leading-relaxed text-mute">
@@ -154,7 +154,7 @@ export default function BuildingsPage() {
             </ul>
             {country && (
               <Link to={`/?country=${current.iso}`} className="mt-4 inline-flex items-center gap-1.5 text-sm text-glow hover:underline">
-                <Globe2 className="size-4" /> 探索{country.name}的歷史
+                <Globe2 className="size-4" /> 探索{country.zh}的歷史
               </Link>
             )}
           </div>

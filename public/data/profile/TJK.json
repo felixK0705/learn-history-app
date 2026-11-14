@@ -1,0 +1,98 @@
+{
+  "iso": "TJK",
+  "capital": "杜尚別",
+  "summary": "位於中亞東南部的高山內陸國，帕米爾高原占國土大半，是中亞唯一以波斯語系語言為主要語言的國家，1991年脫離蘇聯獨立。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "伊斯蘭教（遜尼派）",
+        "percent": 95,
+        "description": "多數居民信仰，屬哈乃斐學派。"
+      },
+      {
+        "name": "伊斯蘭教（什葉派伊斯瑪儀派）",
+        "percent": 3,
+        "description": "主要分布於東部戈爾諾－巴達赫尚的帕米爾民族。"
+      },
+      {
+        "name": "其他（俄羅斯正教等）",
+        "percent": 2,
+        "description": "主要為俄羅斯裔居民。"
+      }
+    ],
+    "background": "此地古代屬粟特與巴克特里亞文化圈，曾信仰祆教與佛教。8世紀阿拉伯人征服後伊斯蘭教逐漸普及，9–10世紀薩曼王朝時期布哈拉成為伊斯蘭文化中心。帕米爾地區則在中世紀接受伊斯瑪儀派。"
+  },
+  "language": {
+    "official": "官方語言為塔吉克語，俄語為族際交流語言。",
+    "ranking": [
+      {
+        "name": "塔吉克語",
+        "percent": 84,
+        "description": "波斯語的中亞變體，以西里爾字母書寫。",
+        "greeting": "Салом",
+        "pronunciation": "sa-lom"
+      },
+      {
+        "name": "烏茲別克語",
+        "percent": 12,
+        "description": "北部與西部烏茲別克人使用。",
+        "greeting": "Salom",
+        "pronunciation": "sa-lom"
+      },
+      {
+        "name": "俄語",
+        "percent": 1,
+        "description": "母語者不多，但廣泛作為第二語言。",
+        "greeting": "Здравствуйте",
+        "pronunciation": "zdrast-vuy-tye"
+      },
+      {
+        "name": "吉爾吉斯語",
+        "percent": 1,
+        "description": "東部吉爾吉斯人使用。",
+        "greeting": "Салам",
+        "pronunciation": "sa-lam"
+      }
+    ],
+    "history": "塔吉克語源自薩曼王朝時期興起的新波斯語，詩人魯達基被視為塔吉克文學之父。蘇聯時期塔吉克語先後改用拉丁字母與西里爾字母，並吸收大量俄語詞彙。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "塔吉克抓飯",
+        "localName": "Оши палав (Oshi palav)",
+        "description": "以米、羊肉、胡蘿蔔與洋蔥在大鍋中燉煮，為國菜。",
+        "history": "「傳統抓飯及其社會文化背景」於2016年列入聯合國教科文組織非物質文化遺產。",
+        "wiki": "Pilaf"
+      },
+      {
+        "name": "酸乳麵包沙拉",
+        "localName": "Қурутоб (Qurutob)",
+        "description": "將烤餅撕碎浸入以乾酸乳（qurut）調製的醬汁，上鋪洋蔥與番茄。",
+        "history": "塔吉克代表性的國民料理，傳統上以手取食，共用一個木盤。",
+        "wiki": "Qurutob"
+      },
+      {
+        "name": "烤包子",
+        "localName": "Самбӯса (Sambusa)",
+        "description": "以麵皮包入羊肉洋蔥餡，在饢坑中烤成的三角形餅。",
+        "history": "中亞與南亞共享的點心，在塔吉克多以饢坑烘烤。",
+        "wiki": "Samsa (food)"
+      },
+      {
+        "name": "烤肉串",
+        "localName": "Шашлик (Shashlik)",
+        "description": "以羊肉或牛肉串在炭火上燒烤。",
+        "history": "中亞與高加索普遍的燒烤，隨俄羅斯影響名稱普及。",
+        "wiki": "Shashlik"
+      },
+      {
+        "name": "羊肉湯",
+        "localName": "Шӯрбо (Shurbo)",
+        "description": "以羊肉、馬鈴薯、胡蘿蔔熬煮的濃湯。",
+        "history": "中亞與中東共享的湯品，冬季尤受歡迎。",
+        "wiki": "Shurpa"
+      }
+    ]
+  }
+}

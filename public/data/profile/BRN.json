@@ -1,0 +1,96 @@
+{
+  "iso": "BRN",
+  "capital": "斯里巴卡旺市",
+  "summary": "位於婆羅洲北岸的伊斯蘭君主國，蘇丹掌握實權，憑藉石油與天然氣成為高所得國家。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "伊斯蘭教（遜尼派）",
+        "percent": 82,
+        "description": "國教，屬沙斐儀學派，國家奉行「馬來伊斯蘭君主制」。"
+      },
+      {
+        "name": "基督教",
+        "percent": 7,
+        "description": "主要為華人與原住民。"
+      },
+      {
+        "name": "佛教",
+        "percent": 7,
+        "description": "主要為華人，常與道教、民間信仰結合。"
+      },
+      {
+        "name": "其他（原住民信仰等）",
+        "percent": 4,
+        "description": "包含原住民傳統信仰與無宗教人口。"
+      }
+    ],
+    "background": "15世紀汶萊統治者皈依伊斯蘭教，汶萊蘇丹國一度控制婆羅洲北部與菲律賓南部。英國保護時期蘇丹保留宗教事務權力。1984年獨立後確立「馬來伊斯蘭君主制」國家理念，並於2014年起實施伊斯蘭刑法。"
+  },
+  "language": {
+    "official": "官方語言為馬來語。",
+    "ranking": [
+      {
+        "name": "馬來語（汶萊馬來語）",
+        "percent": 70,
+        "description": "國語，日常以汶萊馬來語方言為主。",
+        "greeting": "Apa khabar",
+        "pronunciation": "a-pa ka-bar"
+      },
+      {
+        "name": "中文（閩南語、客家語、華語等）",
+        "percent": 10,
+        "description": "華人社群使用。",
+        "greeting": "你好",
+        "pronunciation": "nǐ hǎo"
+      },
+      {
+        "name": "英語",
+        "percent": 5,
+        "description": "廣泛用於商業與教育。",
+        "greeting": "Hello",
+        "pronunciation": "heh-loh"
+      }
+    ],
+    "history": "汶萊馬來語是婆羅洲古老的馬來語方言，曾以爪夷文（阿拉伯字母）書寫。英國保護時期英語進入教育體系，1985年起實施馬來語與英語雙語教育；華人移民則帶來閩南語、客家語等方言。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "安布亞",
+        "localName": "Ambuyat",
+        "description": "以西谷米澱粉加熱水攪成的黏稠半透明糊，以竹叉捲起蘸酸辣醬食用，為國菜。",
+        "history": "西谷米是婆羅洲原住民的傳統主食，二戰期間米糧短缺時更為普及。",
+        "wiki": "Ambuyat"
+      },
+      {
+        "name": "加東飯",
+        "localName": "Nasi katok",
+        "description": "一份白飯配炸雞與辣椒醬，以紙包裝的平價便當。",
+        "history": "名稱源自顧客深夜「敲門」（katok）購買而得名，是汶萊最受歡迎的平民美食。",
+        "wiki": "Nasi katok"
+      },
+      {
+        "name": "椰漿飯",
+        "localName": "Nasi lemak",
+        "description": "以椰奶煮的米飯，配辣椒醬、小魚乾、花生與水煮蛋。",
+        "history": "馬來世界共享的傳統早餐。",
+        "wiki": "Nasi lemak"
+      },
+      {
+        "name": "沙爹",
+        "localName": "Satay",
+        "description": "竹籤串烤醃肉，配花生醬食用。",
+        "history": "東南亞海島地區普遍的街頭燒烤。",
+        "wiki": "Satay"
+      },
+      {
+        "name": "仁當牛肉",
+        "localName": "Rendang",
+        "description": "以椰奶與香料長時間燉煮至收乾的牛肉。",
+        "history": "源自蘇門答臘米南佳保人，是汶萊開齋節宴席的常見菜。",
+        "wiki": "Rendang"
+      }
+    ]
+  }
+}

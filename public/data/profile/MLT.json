@@ -1,0 +1,96 @@
+{
+  "iso": "MLT",
+  "capital": "瓦勒他",
+  "summary": "位於地中海中央的小型群島國家，曾受腓尼基、羅馬、阿拉伯、聖約翰騎士團、法國與英國統治，1964年獨立，首都瓦勒他為世界文化遺產。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "天主教",
+        "percent": 83,
+        "description": "憲法明定的國教，教堂與宗教節慶遍布全國。"
+      },
+      {
+        "name": "無宗教",
+        "percent": 8,
+        "description": "近年比例上升。"
+      },
+      {
+        "name": "其他基督教",
+        "percent": 4,
+        "description": "包含英國國教會、東正教等。"
+      },
+      {
+        "name": "伊斯蘭教",
+        "percent": 3,
+        "description": "主要來自北非與中東的移民。"
+      }
+    ],
+    "background": "相傳使徒保羅於西元60年在馬爾他遇船難並傳教。阿拉伯統治時期（870–1091）伊斯蘭教曾存在，諾曼人征服後天主教重新確立。1530年後聖約翰騎士團統治，馬爾他成為天主教對抗鄂圖曼帝國的前哨。"
+  },
+  "language": {
+    "official": "官方語言為馬爾他語與英語。",
+    "ranking": [
+      {
+        "name": "馬爾他語",
+        "percent": 84,
+        "description": "源自阿拉伯語方言，是歐盟唯一屬閃米語族並以拉丁字母書寫的官方語言。",
+        "greeting": "Bonġu / Merħba",
+        "pronunciation": "bon-ju / mer-ha-ba"
+      },
+      {
+        "name": "英語",
+        "percent": 10,
+        "description": "官方語言之一，用於教育、商業與政府。",
+        "greeting": "Hello",
+        "pronunciation": "heh-loh"
+      },
+      {
+        "name": "義大利語",
+        "percent": 1,
+        "description": "受歷史與電視影響，許多人能理解。",
+        "greeting": "Ciao",
+        "pronunciation": "chow"
+      }
+    ],
+    "history": "馬爾他語源自阿拉伯統治時期的西西里阿拉伯語，此後大量吸收西西里語、義大利語與英語詞彙。義大利語曾長期為行政與文化語言；英國統治時期英語地位提升，1934年馬爾他語成為官方語言。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "馬爾他起司酥餅",
+        "localName": "Pastizz",
+        "description": "鑽石形酥皮內包瑞可塔起司或豌豆泥。",
+        "history": "馬爾他最具代表性的街頭小吃，常配茶或咖啡作為早餐。",
+        "wiki": "Pastizz"
+      },
+      {
+        "name": "燉兔肉",
+        "localName": "Stuffat tal-fenek",
+        "description": "以紅酒、番茄與大蒜燉煮的兔肉，被視為國菜。",
+        "history": "據說在騎士團時期限制獵兔，後解禁後吃兔肉成為反抗的象徵；以兔肉為主的聚餐稱為fenkata。",
+        "wiki": "Fenkata"
+      },
+      {
+        "name": "馬爾他扁麵包",
+        "localName": "Ftira",
+        "description": "環狀扁麵包，夾鮪魚、番茄、橄欖與酸豆。",
+        "history": "「馬爾他扁麵包文化」於2020年列入聯合國教科文組織非物質文化遺產。",
+        "wiki": "Ftira"
+      },
+      {
+        "name": "焗烤通心粉派",
+        "localName": "Timpana",
+        "description": "酥皮內填入通心粉、肉醬與蛋烘烤。",
+        "history": "受西西里料理影響，是節慶時的經典菜。",
+        "wiki": "Timpana"
+      },
+      {
+        "name": "蠶豆泥",
+        "localName": "Bigilla",
+        "description": "以蠶豆搗成泥，加大蒜、辣椒與香草調味的沾醬。",
+        "history": "馬爾他傳統的農家前菜，常配餅乾或麵包。",
+        "wiki": "Bigilla"
+      }
+    ]
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "iso": "ESH",
+  "capital": "阿尤恩（主要城市；主權未定）",
+  "summary": "西撒哈拉是位於非洲西北部的爭議地區，聯合國列為非自治領土；大部分地區由摩洛哥控制，東部則由宣布成立撒拉威阿拉伯民主共和國的波利薩里奧陣線控制。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "伊斯蘭教（遜尼派）",
+        "percent": 98,
+        "description": "幾乎所有居民都信仰遜尼派伊斯蘭教，以馬立克學派為主。"
+      },
+      {
+        "name": "基督教",
+        "percent": 1,
+        "description": "主要為外籍人士。"
+      },
+      {
+        "name": "其他",
+        "percent": 1,
+        "description": "其他信仰或無宗教者。"
+      }
+    ],
+    "background": "伊斯蘭教隨阿拉伯人與柏柏人的遷徙與貿易傳入撒哈拉西部，當地遊牧民族撒拉威人早已信仰遜尼派伊斯蘭教。西班牙殖民時期（1884–1975）也曾帶來少數天主教徒。"
+  },
+  "language": {
+    "official": "摩洛哥控制區以阿拉伯語與柏柏語為官方語言；撒拉威阿拉伯民主共和國則以阿拉伯語為官方語言，西班牙語為第二語言。",
+    "ranking": [
+      {
+        "name": "哈桑尼亞阿拉伯語",
+        "percent": 50,
+        "description": "撒拉威人的母語，屬貝都因阿拉伯語方言。",
+        "greeting": "السلام عليكم",
+        "pronunciation": "as-sa-LAA-mu a-LAI-kum"
+      },
+      {
+        "name": "摩洛哥阿拉伯語",
+        "percent": 40,
+        "description": "來自摩洛哥本土的移居者使用。",
+        "greeting": "السلام (Salam)",
+        "pronunciation": "sa-LAAM"
+      },
+      {
+        "name": "西班牙語",
+        "percent": 1,
+        "description": "西班牙殖民遺留，許多撒拉威人作為第二語言使用。",
+        "greeting": "Hola",
+        "pronunciation": "OH-la"
+      }
+    ],
+    "history": "哈桑尼亞阿拉伯語源自中世紀遷入的貝尼哈桑阿拉伯部落，逐漸取代當地的柏柏語。西班牙殖民時期西班牙語成為行政語言，至今仍在撒拉威難民營與流亡社群中使用。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "薄荷茶",
+        "localName": "أتاي (Atay)",
+        "description": "以綠茶、新鮮薄荷與大量糖沖泡的甜茶，通常分三輪奉上。",
+        "history": "撒拉威人待客儀式的核心，三杯茶象徵人生的不同階段。",
+        "wiki": "Maghrebi mint tea"
+      },
+      {
+        "name": "庫斯庫斯",
+        "localName": "كسكس (Couscous)",
+        "description": "以粗粒小麥粉蒸成的小米粒狀主食，配肉與蔬菜。",
+        "history": "北非共同的傳統主食。",
+        "wiki": "Couscous"
+      },
+      {
+        "name": "烤全羊",
+        "localName": "مشوي (Méchoui)",
+        "description": "將整隻羊以炭火或地爐慢烤。",
+        "history": "撒哈拉遊牧民族在節慶與宴客時的傳統料理。",
+        "wiki": "Mechoui"
+      },
+      {
+        "name": "塔吉鍋",
+        "localName": "طاجين (Tajine)",
+        "description": "以圓錐蓋陶鍋慢燉的肉類與蔬菜。",
+        "history": "北非常見的燉煮料理。",
+        "wiki": "Tajine"
+      },
+      {
+        "name": "駱駝奶",
+        "localName": "حليب الإبل (Camel milk)",
+        "description": "直接飲用或發酵的駱駝奶。",
+        "history": "駱駝是撒哈拉遊牧生活的核心，駱駝奶是重要營養來源。",
+        "wiki": "Camel milk"
+      }
+    ]
+  }
+}

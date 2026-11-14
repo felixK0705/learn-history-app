@@ -1,0 +1,101 @@
+{
+  "iso": "VUT",
+  "capital": "維拉港",
+  "summary": "位於南太平洋的島國，由八十多座島嶼組成，曾由英法共管，1980年獨立，是全世界語言密度最高的國家之一。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "長老會",
+        "percent": 28,
+        "description": "最大教派，19世紀由蘇格蘭與加拿大傳教士傳入。"
+      },
+      {
+        "name": "聖公會",
+        "percent": 15,
+        "description": "主要分布於北部島嶼。"
+      },
+      {
+        "name": "基督復臨安息日會",
+        "percent": 13,
+        "description": "20世紀起快速成長。"
+      },
+      {
+        "name": "天主教",
+        "percent": 12,
+        "description": "法國共管時期傳入。"
+      },
+      {
+        "name": "傳統信仰（含約翰·弗魯姆運動等）",
+        "percent": 4,
+        "description": "包含塔納島的「船貨崇拜」運動與傳統習俗信仰。"
+      }
+    ],
+    "background": "19世紀起長老會、聖公會與天主教傳教士相繼到來，英法共管時期英國系教會與法國天主教分別發展。傳統「卡斯頓」（kastom）習俗至今仍與基督教並存，塔納島則有約翰·弗魯姆等獨特運動。"
+  },
+  "language": {
+    "official": "官方語言為比斯拉馬語、英語與法語。",
+    "ranking": [
+      {
+        "name": "比斯拉馬語",
+        "percent": 34,
+        "description": "以英語為基礎的克里奧爾語，是全國通用語。",
+        "greeting": "Halo / Gud moning",
+        "pronunciation": "ha-lo / gud mo-ning"
+      },
+      {
+        "name": "英語",
+        "percent": 2,
+        "description": "教育與政府語言之一。",
+        "greeting": "Hello",
+        "pronunciation": "heh-loh"
+      },
+      {
+        "name": "法語",
+        "percent": 1,
+        "description": "教育與政府語言之一。",
+        "greeting": "Bonjour",
+        "pronunciation": "bon-zhoor"
+      }
+    ],
+    "history": "萬那杜各島長期孤立，發展出一百多種本土語言，至今仍是約六成人口的家庭語言。19世紀島民被招募到澳洲與斐濟甘蔗園工作，在當地形成比斯拉馬語並帶回家鄉。英法共管使教育分為英語與法語兩套系統，獨立後三種語言並列官方。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "拉普拉普",
+        "localName": "Laplap",
+        "description": "將山藥、芋頭或香蕉磨成泥，加椰奶與肉以葉子包裹，在熱石上烘烤，為國菜。",
+        "history": "太平洋地區傳統的地爐烹調法，是節慶與家庭聚會的核心料理。",
+        "wiki": "Laplap"
+      },
+      {
+        "name": "卡瓦",
+        "localName": "Kava",
+        "description": "以胡椒科植物根部磨碎泡水製成的飲品，具放鬆效果。",
+        "history": "萬那杜被認為是卡瓦的發源地之一，傳統上用於儀式與社交，現在維拉港有許多卡瓦吧。",
+        "wiki": "Kava"
+      },
+      {
+        "name": "椰子蟹",
+        "localName": "Coconut crab",
+        "description": "大型陸生蟹，常以椰奶烹調。",
+        "history": "萬那杜北部的特色食材，因過度捕捉已受保育管制。",
+        "wiki": "Coconut crab"
+      },
+      {
+        "name": "芋頭",
+        "localName": "Taro",
+        "description": "煮、烤或做成拉普拉普的芋頭。",
+        "history": "芋頭是萬那杜的重要傳統作物，在交換儀式中具社會意義。",
+        "wiki": "Taro"
+      },
+      {
+        "name": "麵包果",
+        "localName": "Breadfruit",
+        "description": "烤或煮的麵包果，常配椰奶。",
+        "history": "太平洋島民的傳統澱粉來源。",
+        "wiki": "Breadfruit"
+      }
+    ]
+  }
+}

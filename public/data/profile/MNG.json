@@ -1,0 +1,94 @@
+{
+  "iso": "MNG",
+  "capital": "烏蘭巴托",
+  "summary": "蒙古位於東亞內陸，是成吉思汗建立的蒙古帝國故地，擁有廣闊草原與戈壁沙漠，至今仍保有遊牧文化。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "佛教（藏傳佛教）",
+        "percent": 52,
+        "description": "蒙古傳統的主要宗教。"
+      },
+      {
+        "name": "無宗教",
+        "percent": 40,
+        "description": "蘇聯影響下的社會主義時期，無宗教人口大幅增加。"
+      },
+      {
+        "name": "伊斯蘭教",
+        "percent": 3,
+        "description": "主要為西部的哈薩克人。"
+      },
+      {
+        "name": "薩滿信仰",
+        "percent": 3,
+        "description": "蒙古傳統的天神與自然崇拜。"
+      },
+      {
+        "name": "基督教",
+        "percent": 1,
+        "description": "1990年代後傳入的教會。"
+      }
+    ],
+    "background": "古代蒙古人信仰崇敬「長生天」的薩滿教。十六世紀阿勒坦汗引入藏傳佛教，使其成為主流宗教。1930年代社會主義政權大規模摧毀寺院、迫害僧侶，1990年民主化後佛教與薩滿信仰逐漸復興。"
+  },
+  "language": {
+    "official": "蒙古語是官方語言。",
+    "ranking": [
+      {
+        "name": "蒙古語（喀爾喀方言）",
+        "percent": 95,
+        "description": "國家語言，目前主要使用西里爾字母書寫。",
+        "greeting": "Сайн байна уу",
+        "pronunciation": "sain BAIN-oo"
+      },
+      {
+        "name": "哈薩克語",
+        "percent": 4,
+        "description": "西部巴彥烏列蓋省哈薩克人的語言。",
+        "greeting": "Сәлем",
+        "pronunciation": "sa-LEM"
+      }
+    ],
+    "history": "蒙古語在成吉思汗時期開始以回鶻式蒙古文書寫。1940年代在蘇聯影響下改用西里爾字母，近年政府推動恢復傳統蒙古文，計畫讓兩種文字並用。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "包子",
+        "localName": "Бууз (Buuz)",
+        "description": "以羊肉或牛肉為餡的蒸包子。",
+        "history": "農曆新年（白月）期間家家戶戶大量製作。",
+        "wiki": "Buuz"
+      },
+      {
+        "name": "炸肉餅",
+        "localName": "Хуушуур (Khuushuur)",
+        "description": "包肉餡的油炸麵餅。",
+        "history": "那達慕節期間最受歡迎的小吃。",
+        "wiki": "Khuushuur"
+      },
+      {
+        "name": "石頭烤肉",
+        "localName": "Хорхог (Khorkhog)",
+        "description": "將羊肉與燒熱的石頭一同放入密封容器中燜熟。",
+        "history": "遊牧民招待客人的傳統料理，熱石據說有益健康。",
+        "wiki": "Khorkhog"
+      },
+      {
+        "name": "炒麵",
+        "localName": "Цуйван (Tsuivan)",
+        "description": "將手工麵條與肉、蔬菜一起蒸炒。",
+        "history": "蒙古家庭常見的家常料理。",
+        "wiki": "Tsuivan"
+      },
+      {
+        "name": "烤全羊或旱獺",
+        "localName": "Боодог (Boodog)",
+        "description": "將熱石放入去骨的山羊或旱獺體內，從內部烤熟。",
+        "history": "古老的遊牧烹調方式，用於特殊場合。",
+        "wiki": "Boodog"
+      }
+    ]
+  }
+}

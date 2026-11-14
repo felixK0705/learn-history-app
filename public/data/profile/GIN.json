@@ -1,0 +1,91 @@
+{
+  "iso": "GIN",
+  "capital": "柯那克里",
+  "summary": "位於西非大西洋岸的國家，1958年率先脫離法國獨立，蘊藏全球最豐富的鋁土礦，並是尼日河等西非大河的發源地。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "伊斯蘭教（遜尼派）",
+        "percent": 89,
+        "description": "絕大多數居民信仰，多屬馬立基學派，蘇非派傳統深厚。"
+      },
+      {
+        "name": "基督教",
+        "percent": 7,
+        "description": "以天主教為主，多分布於南部森林地區。"
+      },
+      {
+        "name": "傳統信仰",
+        "percent": 2,
+        "description": "主要見於森林幾內亞地區的民族。"
+      }
+    ],
+    "background": "伊斯蘭教自中世紀透過跨撒哈拉貿易與馬利帝國傳入，18世紀富塔賈隆高原的富拉人建立伊斯蘭神權國家，使信仰廣泛深入。法國殖民時期天主教傳教士主要在南部森林地區傳教。"
+  },
+  "language": {
+    "official": "官方語言為法語。",
+    "ranking": [
+      {
+        "name": "普拉爾語（富拉語）",
+        "percent": 35,
+        "description": "富拉人的語言，通行於中部富塔賈隆高原。",
+        "greeting": "On jaraama",
+        "pronunciation": "on ja-raa-ma"
+      },
+      {
+        "name": "馬林克語",
+        "percent": 25,
+        "description": "上幾內亞地區的主要語言，屬曼丁語族。",
+        "greeting": "I ni ce",
+        "pronunciation": "i ni che"
+      },
+      {
+        "name": "法語",
+        "percent": 5,
+        "description": "官方、教育與行政語言，母語者少但為正式場合用語。",
+        "greeting": "Bonjour",
+        "pronunciation": "bon-zhoor"
+      }
+    ],
+    "history": "本地語言主要屬尼日－剛果語系，馬林克語隨馬利帝國擴張而普及，普拉爾語隨富拉人在富塔賈隆建國而成為區域強勢語言，沿海的蘇蘇語（約兩成人口的母語）則是首都的通用語。法國殖民後法語成為行政語言，獨立初期塞古·杜爾政府曾推廣本土語言教育。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "花生燉肉",
+        "localName": "Mafé / Tigadèguèna",
+        "description": "以花生醬、番茄與肉或魚燉成的濃稠醬汁，配米飯。",
+        "history": "源自馬利曼丁卡人的料理，廣泛流行於西非，在幾內亞名為tigadèguèna。",
+        "wiki": "Maafe"
+      },
+      {
+        "name": "檸檬洋蔥燉雞",
+        "localName": "Poulet yassa",
+        "description": "以檸檬汁、洋蔥與芥末醃漬後燉煮的雞肉，配米飯。",
+        "history": "源自塞內加爾南部卡薩芒斯地區，在幾內亞等西非國家也相當常見。",
+        "wiki": "Yassa (food)"
+      },
+      {
+        "name": "福尼奧米",
+        "localName": "Fonio",
+        "description": "以西非古老穀物福尼奧煮成的小粒穀飯，常配醬汁。",
+        "history": "福尼奧在西非種植已有數千年，幾內亞是全球最大產地，富塔賈隆地區尤其普遍。",
+        "wiki": "Fonio"
+      },
+      {
+        "name": "番茄香料飯",
+        "localName": "Riz gras / Jollof",
+        "description": "以番茄、洋蔥、香料與肉一起烹煮的紅色米飯。",
+        "history": "起源於塞內甘比亞的沃洛夫人，流傳整個西非，是節慶常見菜色。",
+        "wiki": "Jollof rice"
+      },
+      {
+        "name": "富富",
+        "localName": "Foufou",
+        "description": "以木薯或芭蕉搗成的黏稠麵團，搭配湯汁食用。",
+        "history": "西非與中非普遍的主食，在森林幾內亞地區尤其常見。",
+        "wiki": "Fufu"
+      }
+    ]
+  }
+}

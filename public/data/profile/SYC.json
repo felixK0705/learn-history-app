@@ -1,0 +1,101 @@
+{
+  "iso": "SYC",
+  "capital": "維多利亞",
+  "summary": "位於印度洋西部的群島國家，由115座島嶼組成，以海灘與珊瑚礁聞名，是非洲人口最少的國家，1976年脫離英國獨立。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "天主教",
+        "percent": 76,
+        "description": "法國殖民時期傳入，至今為最大宗教。"
+      },
+      {
+        "name": "其他基督教（五旬節派、基督復臨安息日會等）",
+        "percent": 8,
+        "description": "近年成長中。"
+      },
+      {
+        "name": "聖公會",
+        "percent": 6,
+        "description": "英國統治時期傳入。"
+      },
+      {
+        "name": "印度教",
+        "percent": 2,
+        "description": "主要為印度裔居民。"
+      },
+      {
+        "name": "伊斯蘭教",
+        "percent": 2,
+        "description": "主要為印度裔與阿拉伯裔居民。"
+      }
+    ],
+    "background": "18世紀中期法國人首度在無人島定居，帶來天主教與非洲奴隸。1814年英國取得塞席爾，聖公會隨之傳入，但天主教仍保持主導。19世紀後印度與中國移民帶來印度教等信仰。"
+  },
+  "language": {
+    "official": "官方語言為塞席爾克里奧爾語、英語與法語。",
+    "ranking": [
+      {
+        "name": "塞席爾克里奧爾語",
+        "percent": 91,
+        "description": "以法語為基礎的克里奧爾語，是絕大多數人的母語。",
+        "greeting": "Bonzour",
+        "pronunciation": "bon-zur"
+      },
+      {
+        "name": "英語",
+        "percent": 5,
+        "description": "政府與商業常用。",
+        "greeting": "Hello",
+        "pronunciation": "heh-loh"
+      },
+      {
+        "name": "法語",
+        "percent": 1,
+        "description": "受教育人口普遍能使用。",
+        "greeting": "Bonjour",
+        "pronunciation": "bon-zhoor"
+      }
+    ],
+    "history": "法國殖民者與非洲、馬達加斯加奴隸的語言接觸形成塞席爾克里奧爾語。英國統治後英語成為行政語言，但法語與克里奧爾語仍主導日常生活；1981年克里奧爾語成為官方語言，並用於基礎教育。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "魚咖哩",
+        "localName": "Kari pwason",
+        "description": "以椰奶、香料與在地鮮魚燉煮的咖哩，配白飯。",
+        "history": "融合印度、非洲與法國烹調傳統，是塞席爾最普遍的日常菜餚。",
+        "wiki": "Fish curry"
+      },
+      {
+        "name": "椰奶香蕉甜湯",
+        "localName": "Ladob",
+        "description": "以芭蕉或麵包果加椰奶、糖與肉豆蔻燉煮的甜點，也有鹹魚版本。",
+        "history": "塞席爾的傳統甜點，反映島上豐富的椰子與熱帶作物。",
+        "wiki": "Ladob"
+      },
+      {
+        "name": "鯊魚肉醬",
+        "localName": "Satini reken",
+        "description": "將煮熟的鯊魚肉碎與青木瓜、萊姆、香料拌炒。",
+        "history": "塞席爾特有的傳統菜，與印度酸辣醬（chutney）有淵源。",
+        "wiki": "Shark chutney"
+      },
+      {
+        "name": "麵包果",
+        "localName": "Fruit à pain",
+        "description": "烤、炸或煮成甜湯的麵包果。",
+        "history": "當地傳說吃過麵包果的人一定會回到塞席爾。",
+        "wiki": "Breadfruit"
+      },
+      {
+        "name": "炭烤魚",
+        "localName": "Grilled fish",
+        "description": "以辣椒、大蒜與萊姆醃漬的鮮魚炭烤，配辣醬。",
+        "history": "島國四面環海，鮮魚是塞席爾人最主要的蛋白質來源。",
+        "wiki": "Grilled fish"
+      }
+    ]
+  }
+}

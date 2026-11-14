@@ -1,0 +1,98 @@
+{
+  "iso": "GMB",
+  "capital": "班竹",
+  "summary": "非洲大陸面積最小的國家，沿甘比亞河兩岸狹長分布，三面被塞內加爾包圍，1965年脫離英國獨立。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "伊斯蘭教（遜尼派）",
+        "percent": 96,
+        "description": "絕大多數居民信仰，以馬立基學派與蘇非教團為主。"
+      },
+      {
+        "name": "基督教",
+        "percent": 3,
+        "description": "以天主教與聖公會為主，多分布於城市。"
+      },
+      {
+        "name": "傳統信仰",
+        "percent": 1,
+        "description": "常與伊斯蘭教並存。"
+      }
+    ],
+    "background": "伊斯蘭教自11世紀起經跨撒哈拉貿易傳入塞內甘比亞地區，19世紀的伊斯蘭聖戰運動（如索寧克－馬拉布特戰爭）使其廣泛普及。英國殖民時期傳教士在沿海城市傳播基督教。"
+  },
+  "language": {
+    "official": "官方語言為英語。",
+    "ranking": [
+      {
+        "name": "曼丁卡語",
+        "percent": 38,
+        "description": "最大民族曼丁卡人的語言。",
+        "greeting": "I be ñaadii?",
+        "pronunciation": "i be nya-dee"
+      },
+      {
+        "name": "富拉語",
+        "percent": 21,
+        "description": "富拉人的語言。",
+        "greeting": "Jam waali",
+        "pronunciation": "jam waa-li"
+      },
+      {
+        "name": "沃洛夫語",
+        "percent": 18,
+        "description": "首都班竹一帶的通用語，與塞內加爾相通。",
+        "greeting": "Nanga def",
+        "pronunciation": "nan-ga def"
+      },
+      {
+        "name": "英語",
+        "percent": 2,
+        "description": "官方、教育與行政語言。",
+        "greeting": "Hello",
+        "pronunciation": "heh-loh"
+      }
+    ],
+    "history": "塞內甘比亞地區自古為曼丁卡、沃洛夫、富拉等民族交會之地，曼丁卡語隨馬利帝國擴張而普及。英國於17世紀在甘比亞河口建立據點，英語成為官方語言，使甘比亞成為法語區包圍中的英語國家。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "花生燉肉",
+        "localName": "Domoda",
+        "description": "以花生醬、番茄與肉燉成的濃稠醬汁，配白飯，被視為國菜。",
+        "history": "與西非的花生燉肉同源，花生是甘比亞最重要的經濟作物。",
+        "wiki": "Domoda"
+      },
+      {
+        "name": "貝納欽飯",
+        "localName": "Benachin",
+        "description": "以番茄、魚或肉與蔬菜一鍋煮成的米飯。",
+        "history": "名稱源自沃洛夫語「一鍋」，與西非的喬洛夫飯同源。",
+        "wiki": "Jollof rice"
+      },
+      {
+        "name": "檸檬洋蔥燉雞",
+        "localName": "Yassa",
+        "description": "以檸檬汁與大量洋蔥燉煮的雞肉或魚，配白飯。",
+        "history": "源自塞內加爾南部卡薩芒斯，在甘比亞同樣普遍。",
+        "wiki": "Yassa (food)"
+      },
+      {
+        "name": "秋葵棕櫚油湯",
+        "localName": "Superkanja",
+        "description": "以秋葵、棕櫚油、魚與肉燉成的濃湯。",
+        "history": "甘比亞與塞內加爾的傳統料理，名稱源自沃洛夫語「秋葵湯」。",
+        "wiki": "Superkanja"
+      },
+      {
+        "name": "優格小米甜點",
+        "localName": "Chakery",
+        "description": "以小米粒或粗麥混合優格、糖與香草製成的甜點。",
+        "history": "塞內甘比亞地區的傳統點心，常在節慶時食用。",
+        "wiki": "Thiakry"
+      }
+    ]
+  }
+}

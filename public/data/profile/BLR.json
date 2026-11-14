@@ -1,0 +1,89 @@
+{
+  "iso": "BLR",
+  "capital": "明斯克",
+  "summary": "位於東歐的內陸國，曾為立陶宛大公國與波蘭－立陶宛聯邦的一部分，後併入俄帝國與蘇聯，1991年獨立，與俄羅斯關係密切。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "東正教",
+        "percent": 73,
+        "description": "以白俄羅斯正教會（隸屬莫斯科牧首區）為主。"
+      },
+      {
+        "name": "天主教",
+        "percent": 12,
+        "description": "主要分布於西部與西北部，許多信徒為波蘭裔。"
+      },
+      {
+        "name": "無宗教",
+        "percent": 11,
+        "description": "蘇聯時期無神論政策留下的影響。"
+      },
+      {
+        "name": "新教",
+        "percent": 2,
+        "description": "包含浸信會、五旬節派等。"
+      }
+    ],
+    "background": "10世紀末基輔羅斯接受東正教，此地隨之基督教化。14至18世紀屬立陶宛大公國與波蘭－立陶宛聯邦，天主教與東儀天主教會在西部擴展。俄帝國時期強化東正教，蘇聯時期則壓制宗教。"
+  },
+  "language": {
+    "official": "官方語言為白俄羅斯語與俄語。",
+    "ranking": [
+      {
+        "name": "俄語",
+        "percent": 71,
+        "description": "日常生活、媒體與政府中最常用的語言。",
+        "greeting": "Привет",
+        "pronunciation": "pri-vyet"
+      },
+      {
+        "name": "白俄羅斯語",
+        "percent": 26,
+        "description": "屬東斯拉夫語支，是國家語言，鄉村地區較常使用。",
+        "greeting": "Прывітанне",
+        "pronunciation": "pry-vi-tan-nye"
+      }
+    ],
+    "history": "白俄羅斯語源自立陶宛大公國時期的古魯塞尼亞語，曾是大公國的官方書面語。俄帝國與蘇聯時期推行俄語，1995年公投後俄語與白俄羅斯語並列官方語言，俄語在日常使用中占優勢。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "馬鈴薯煎餅",
+        "localName": "Дранікі (Draniki)",
+        "description": "以馬鈴薯泥煎成的金黃薄餅，配酸奶油食用，被視為國菜。",
+        "history": "馬鈴薯於18–19世紀在白俄羅斯普及，成為飲食核心，白俄羅斯人甚至被戲稱為「馬鈴薯人」。",
+        "wiki": "Draniki"
+      },
+      {
+        "name": "馬昌卡肉醬",
+        "localName": "Мачанка (Machanka)",
+        "description": "以豬肉、香腸與酸奶油燉成的濃醬，用煎餅沾食。",
+        "history": "名稱源自「沾」，是白俄羅斯傳統農家料理。",
+        "wiki": "Machanka"
+      },
+      {
+        "name": "馬鈴薯餡餃",
+        "localName": "Калдуны (Kalduny)",
+        "description": "以馬鈴薯或麵皮包入肉餡的餃子，水煮或煎製。",
+        "history": "源自立陶宛大公國時期，與鄰國的餃子料理同源。",
+        "wiki": "Kalduny"
+      },
+      {
+        "name": "馬鈴薯烤糕",
+        "localName": "Бабка (Babka)",
+        "description": "馬鈴薯泥加入培根與洋蔥烘烤成的鹹糕。",
+        "history": "白俄羅斯與立陶宛常見的家常菜。",
+        "wiki": "Potato babka"
+      },
+      {
+        "name": "克瓦斯",
+        "localName": "Квас (Kvass)",
+        "description": "以黑麥麵包發酵製成的低酒精飲料。",
+        "history": "東歐斯拉夫地區流傳上千年的傳統飲品。",
+        "wiki": "Kvass"
+      }
+    ]
+  }
+}

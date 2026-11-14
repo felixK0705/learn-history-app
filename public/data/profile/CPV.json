@@ -1,0 +1,84 @@
+{
+  "iso": "CPV",
+  "capital": "普拉亞",
+  "summary": "維德角是位於西非外海大西洋上的島國，曾為葡萄牙殖民地與奴隸貿易中繼站，1975年獨立，以民主穩定與莫爾納音樂聞名。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "天主教",
+        "percent": 77,
+        "description": "葡萄牙殖民時期傳入，至今是最主要的宗教。"
+      },
+      {
+        "name": "無宗教",
+        "percent": 11,
+        "description": "不屬於任何宗教的人口。"
+      },
+      {
+        "name": "基督新教",
+        "percent": 10,
+        "description": "包括拿撒勒人會、復臨安息日會等。"
+      }
+    ],
+    "background": "十五世紀葡萄牙人在無人居住的維德角群島建立殖民地，天主教隨之成為主要宗教。十九世紀後美國捕鯨船與移民往來帶來拿撒勒人會等新教教派。"
+  },
+  "language": {
+    "official": "葡萄牙語是官方語言，維德角克里奧爾語則是全民的日常語言。",
+    "ranking": [
+      {
+        "name": "維德角克里奧爾語",
+        "percent": 95,
+        "description": "以葡萄牙語為基礎並融合西非語言的克里奧爾語，各島有不同變體。",
+        "greeting": "Bon dia",
+        "pronunciation": "bon DEE-a"
+      },
+      {
+        "name": "葡萄牙語",
+        "percent": 5,
+        "description": "官方語言，用於政府、教育與媒體。",
+        "greeting": "Olá",
+        "pronunciation": "oh-LAH"
+      }
+    ],
+    "history": "十五世紀起葡萄牙殖民者與被帶來的西非人在此融合，形成最早的葡語克里奧爾語之一。葡萄牙語長期是行政與教育語言，獨立後克里奧爾語逐漸受到重視並推動標準化。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "卡丘帕",
+        "localName": "Cachupa",
+        "description": "以玉米、豆類、蔬菜與肉或魚慢燉的燉菜。",
+        "history": "維德角的國菜，反映殖民時期以玉米為主食的農業背景。",
+        "wiki": "Cachupa"
+      },
+      {
+        "name": "炸餃",
+        "localName": "Pastel",
+        "description": "以麵團包鮪魚等餡料油炸的小點心。",
+        "history": "受葡萄牙飲食影響的街頭小吃。",
+        "wiki": "Pastel (food)"
+      },
+      {
+        "name": "雞肉粥",
+        "localName": "Canja de galinha",
+        "description": "以雞肉與米熬煮的濃湯粥。",
+        "history": "葡語世界常見的料理，在維德角常於節慶或病後食用。",
+        "wiki": "Canja de galinha"
+      },
+      {
+        "name": "燉豆",
+        "localName": "Feijoada",
+        "description": "以豆類與各式肉類燉煮的料理。",
+        "history": "源自葡萄牙，在葡語國家發展出各自的版本。",
+        "wiki": "Feijoada"
+      },
+      {
+        "name": "格羅格酒",
+        "localName": "Grogue",
+        "description": "以甘蔗釀製的蒸餾酒。",
+        "history": "維德角傳統的甘蔗酒，聖安唐島的格羅格酒特別有名。",
+        "wiki": "Grogue"
+      }
+    ]
+  }
+}

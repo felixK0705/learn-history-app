@@ -1,0 +1,113 @@
+{
+  "iso": "NZL",
+  "capital": "威靈頓",
+  "summary": "位於西南太平洋的島國，主要由北島與南島組成，13世紀左右由毛利人最早定居，1840年簽訂《懷唐伊條約》後成為英國殖民地，以自然景觀與畜牧業聞名。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "無宗教",
+        "percent": 52,
+        "description": "2023年普查中過半數國民表示無宗教。"
+      },
+      {
+        "name": "其他基督教（長老會、衛理宗、五旬節派等）",
+        "percent": 16,
+        "description": "包含長老會、衛理宗與太平洋島民教會等。"
+      },
+      {
+        "name": "天主教",
+        "percent": 10,
+        "description": "最大的單一基督教教會。"
+      },
+      {
+        "name": "聖公會",
+        "percent": 6,
+        "description": "英國殖民時期傳入，歷史上曾為最大教派。"
+      },
+      {
+        "name": "印度教",
+        "percent": 3,
+        "description": "主要為印度裔居民。"
+      },
+      {
+        "name": "伊斯蘭教",
+        "percent": 2,
+        "description": "主要來自移民社群。"
+      }
+    ],
+    "background": "19世紀初英國傳教士抵達，許多毛利人改信基督教，並發展出拉塔納、林加圖等毛利本土教會。英國與蘇格蘭移民帶來聖公會與長老會。20世紀後期社會快速世俗化，移民則帶來印度教、伊斯蘭教等。"
+  },
+  "language": {
+    "official": "官方語言為毛利語與紐西蘭手語，英語為事實上的主要語言。",
+    "ranking": [
+      {
+        "name": "英語",
+        "percent": 90,
+        "description": "全國通用的主要語言。",
+        "greeting": "Hello / Kia ora",
+        "pronunciation": "heh-loh / kee-a o-ra"
+      },
+      {
+        "name": "毛利語",
+        "percent": 4,
+        "description": "毛利人的語言，近年積極復振。",
+        "greeting": "Kia ora",
+        "pronunciation": "kee-a o-ra"
+      },
+      {
+        "name": "薩摩亞語",
+        "percent": 2,
+        "description": "薩摩亞裔社群使用。",
+        "greeting": "Talofa",
+        "pronunciation": "ta-lo-fa"
+      },
+      {
+        "name": "華語",
+        "percent": 2,
+        "description": "華人社群使用。",
+        "greeting": "你好",
+        "pronunciation": "nǐ hǎo"
+      }
+    ],
+    "history": "毛利語屬南島語系玻里尼西亞語支。19世紀英國殖民後英語成為主導語言，學校曾禁止使用毛利語，使其大幅衰退。1970年代起毛利文藝復興運動推動語言復振，1987年毛利語成為官方語言。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "毛利地窖烤",
+        "localName": "Hāngī",
+        "description": "將肉類、馬鈴薯、地瓜放在燒熱的石頭上埋入地坑中蒸烤。",
+        "history": "毛利人的傳統烹調方式，用於部落聚會與慶典。",
+        "wiki": "Hāngī"
+      },
+      {
+        "name": "帕芙洛娃",
+        "localName": "Pavlova",
+        "description": "外脆內軟的蛋白霜蛋糕，鋪鮮奶油與奇異果等水果。",
+        "history": "以俄羅斯芭蕾舞者帕芙洛娃命名，紐澳兩國長期爭論其發源地。",
+        "wiki": "Pavlova"
+      },
+      {
+        "name": "紐西蘭肉派",
+        "localName": "Meat pie",
+        "description": "酥皮內填入碎肉與肉汁的小肉派，有牛排起司等口味。",
+        "history": "承襲英國傳統，是紐西蘭最普遍的小吃之一。",
+        "wiki": "Meat pie (Australia and New Zealand)"
+      },
+      {
+        "name": "蜂巢太妃冰淇淋",
+        "localName": "Hokey pokey",
+        "description": "香草冰淇淋中混合蜂巢狀的脆糖塊。",
+        "history": "紐西蘭獨特的冰淇淋口味，自20世紀中期流行至今。",
+        "wiki": "Hokey pokey (ice cream)"
+      },
+      {
+        "name": "炸魚薯條",
+        "localName": "Fish and chips",
+        "description": "裹麵糊油炸的白肉魚配粗薯條。",
+        "history": "隨英國移民傳入，是海灘與週末最受歡迎的外帶食物。",
+        "wiki": "Fish and chips"
+      }
+    ]
+  }
+}

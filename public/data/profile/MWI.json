@@ -1,0 +1,89 @@
+{
+  "iso": "MWI",
+  "capital": "里朗威",
+  "summary": "馬拉威位於非洲東南部內陸，馬拉威湖占國土約五分之一，有「非洲溫暖之心」的美稱，1964年脫離英國獨立。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "基督新教",
+        "percent": 60,
+        "description": "包括中非長老會、五旬節派、復臨安息日會等。"
+      },
+      {
+        "name": "天主教",
+        "percent": 17,
+        "description": "天主教會在教育與醫療方面影響深遠。"
+      },
+      {
+        "name": "伊斯蘭教",
+        "percent": 14,
+        "description": "主要分布於南部馬拉威湖沿岸，以堯族為主。"
+      },
+      {
+        "name": "無宗教",
+        "percent": 2,
+        "description": "未認同任何宗教的人口。"
+      }
+    ],
+    "background": "伊斯蘭教在十九世紀隨東非沿岸的阿拉伯與斯瓦希里商人傳入，堯族多皈依伊斯蘭教。同時期李文斯頓之後的蘇格蘭長老會傳教團進入，在北部與南部建立教會與學校，使基督教成為多數人的信仰。"
+  },
+  "language": {
+    "official": "英語是官方語言，奇切瓦語是國語。",
+    "ranking": [
+      {
+        "name": "奇切瓦語",
+        "percent": 57,
+        "description": "國語，也是最多人使用的語言。",
+        "greeting": "Moni",
+        "pronunciation": "MOH-nee"
+      },
+      {
+        "name": "通布卡語",
+        "percent": 9,
+        "description": "北部地區的主要語言。",
+        "greeting": "Monire",
+        "pronunciation": "moh-NEE-reh"
+      }
+    ],
+    "history": "馬拉威的語言多屬班圖語族。英國殖民時期英語成為行政語言；獨立後首任總統班達推行奇切瓦語為國語，1990年代民主化後其他語言如通布卡語也重新受到重視。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "恩希馬",
+        "localName": "Nsima",
+        "description": "以玉米粉煮成的濃稠糊狀主食，用手捏成團沾菜吃。",
+        "history": "馬拉威人最主要的主食，常說「沒吃恩希馬就不算吃過飯」。",
+        "wiki": "Nsima"
+      },
+      {
+        "name": "昌博魚",
+        "localName": "Chambo",
+        "description": "馬拉威湖特產的吳郭魚類，常整條炸或烤。",
+        "history": "馬拉威湖的代表性漁獲，被視為國民美食。",
+        "wiki": "Chambo"
+      },
+      {
+        "name": "曼達斯",
+        "localName": "Mandasi",
+        "description": "微甜的油炸麵團，常配茶當早餐。",
+        "history": "源自東非斯瓦希里沿岸，是常見的早餐點心。",
+        "wiki": "Mandazi"
+      },
+      {
+        "name": "番茄洋蔥沙拉",
+        "localName": "Kachumbari",
+        "description": "以番茄、洋蔥與辣椒拌成的清爽沙拉。",
+        "history": "東非與南部非洲常見的配菜，搭配烤肉或恩希馬。",
+        "wiki": "Kachumbari"
+      },
+      {
+        "name": "托布瓦",
+        "localName": "Thobwa",
+        "description": "以玉米或小米發酵製成的微酸無酒精飲料。",
+        "history": "馬拉威傳統的家庭飲品，常在聚會時分享。",
+        "wiki": "Thobwa"
+      }
+    ]
+  }
+}

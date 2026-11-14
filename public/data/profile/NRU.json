@@ -1,0 +1,94 @@
+{
+  "iso": "NRU",
+  "capital": "亞倫（政府所在地，無法定首都）",
+  "summary": "位於南太平洋的島國，面積約21平方公里，是世界上最小的共和國，曾因磷礦開採致富，1968年獨立。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "諾魯公理會",
+        "percent": 36,
+        "description": "最大教派，由19世紀末傳教士建立。"
+      },
+      {
+        "name": "天主教",
+        "percent": 33,
+        "description": "20世紀初德國統治時期傳入。"
+      },
+      {
+        "name": "神召會（五旬節派）",
+        "percent": 13,
+        "description": "近年成長迅速。"
+      },
+      {
+        "name": "諾魯獨立教會",
+        "percent": 10,
+        "description": "自公理會分出的本土教會。"
+      },
+      {
+        "name": "無宗教",
+        "percent": 2,
+        "description": "比例很低。"
+      }
+    ],
+    "background": "1888年德國併吞諾魯後，美國公理宗傳教士與天主教傳教士相繼到來，取代傳統信仰。基督教迅速成為社會生活核心，至今幾乎全體國民皆為基督徒。"
+  },
+  "language": {
+    "official": "官方語言為諾魯語與英語。",
+    "ranking": [
+      {
+        "name": "諾魯語",
+        "percent": 93,
+        "description": "南島語系密克羅尼西亞語支的語言，是多數家庭的語言。",
+        "greeting": "Ekamawir omo",
+        "pronunciation": "e-ka-ma-wir o-mo"
+      },
+      {
+        "name": "英語",
+        "percent": 5,
+        "description": "政府、商業與教育常用。",
+        "greeting": "Hello",
+        "pronunciation": "heh-loh"
+      }
+    ],
+    "history": "諾魯語是南島語族中一支獨特的語言。德國統治時期德語影響有限；一戰後由澳洲、英國與紐西蘭託管，英語成為行政與教育語言，獨立後與諾魯語並列官方語言。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "椰汁魚",
+        "localName": "Coconut fish",
+        "description": "以椰奶烹調的鮮魚或生魚，是島上常見料理。",
+        "history": "諾魯四面環海且椰子豐富，魚與椰奶是傳統飲食的基礎。",
+        "wiki": "Coconut milk"
+      },
+      {
+        "name": "露兜樹果",
+        "localName": "Pandanus",
+        "description": "露兜樹果實可直接嚼食或製成果膏。",
+        "history": "露兜樹是太平洋島民傳統的重要食物來源，曾是諾魯人的主食之一。",
+        "wiki": "Pandanus tectorius"
+      },
+      {
+        "name": "生魚片",
+        "localName": "Sashimi",
+        "description": "新鮮鮪魚切片，蘸醬油食用。",
+        "history": "二戰期間日本占領諾魯，加上近海鮪魚資源豐富，生魚片相當普遍。",
+        "wiki": "Sashimi"
+      },
+      {
+        "name": "麵包果",
+        "localName": "Breadfruit",
+        "description": "烤或煮的麵包果，是傳統澱粉來源。",
+        "history": "太平洋島嶼數千年來的主要作物之一。",
+        "wiki": "Breadfruit"
+      },
+      {
+        "name": "炒飯",
+        "localName": "Fried rice",
+        "description": "島上華人經營的餐館所供應的炒飯。",
+        "history": "磷礦時期引入的華人勞工與後來的華人商家，使中式炒飯成為諾魯最普遍的外食之一。",
+        "wiki": "Fried rice"
+      }
+    ]
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "iso": "GNB",
+  "capital": "比索",
+  "summary": "位於西非大西洋岸的國家，包含比熱戈斯群島，曾為葡萄牙殖民地，1973年宣布獨立，腰果是最重要的出口品。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "伊斯蘭教",
+        "percent": 46,
+        "description": "主要為富拉人與曼丁卡人。"
+      },
+      {
+        "name": "傳統信仰",
+        "percent": 31,
+        "description": "巴蘭塔人等沿海民族的祖靈與自然信仰。"
+      },
+      {
+        "name": "基督教",
+        "percent": 19,
+        "description": "以天主教為主，多分布於比索等城市。"
+      },
+      {
+        "name": "無宗教",
+        "percent": 4,
+        "description": "比例較低。"
+      }
+    ],
+    "background": "伊斯蘭教隨馬利帝國與富拉人的擴張傳入內陸東部，沿海民族則保留傳統信仰。葡萄牙自15世紀起在沿海建立據點並傳播天主教，但影響主要限於城市。"
+  },
+  "language": {
+    "official": "官方語言為葡萄牙語。",
+    "ranking": [
+      {
+        "name": "幾內亞比索克里奧爾語（Kriol）",
+        "percent": 44,
+        "description": "以葡萄牙語為基礎的克里奧爾語，是全國通用語。",
+        "greeting": "Kuma ku bu sta?",
+        "pronunciation": "ku-ma ku bu sta"
+      },
+      {
+        "name": "富拉語",
+        "percent": 16,
+        "description": "東部富拉人的語言。",
+        "greeting": "Jam waali",
+        "pronunciation": "jam waa-li"
+      },
+      {
+        "name": "葡萄牙語",
+        "percent": 2,
+        "description": "官方與教育語言，日常使用比例低。",
+        "greeting": "Olá",
+        "pronunciation": "o-la"
+      }
+    ],
+    "history": "15世紀起葡萄牙商人在沿海與非洲人通商，形成葡萄牙語為基礎的克里奧爾語，並成為各民族共通語。獨立戰爭期間克里奧爾語作為團結語言更加普及。境內另有巴蘭塔語、曼丁卡語等多種語言。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "棕櫚果湯",
+        "localName": "Caldo de chabéu",
+        "description": "以棕櫚果漿燉煮魚或雞肉，配米飯，被視為國菜。",
+        "history": "西非沿海傳統的棕櫚果料理，用於節慶與待客。",
+        "wiki": "Palm nut soup"
+      },
+      {
+        "name": "花生燉肉",
+        "localName": "Caldo de mancarra",
+        "description": "以花生醬燉煮的雞肉或魚，配米飯。",
+        "history": "西非常見的花生燉肉料理。",
+        "wiki": "Maafe"
+      },
+      {
+        "name": "番茄肉飯",
+        "localName": "Arroz jollof",
+        "description": "以番茄、洋蔥與肉一起煮成的米飯。",
+        "history": "屬於西非廣泛流傳的「喬洛夫飯」家族。",
+        "wiki": "Jollof rice"
+      },
+      {
+        "name": "檸檬洋蔥燉雞",
+        "localName": "Yassa",
+        "description": "以檸檬與洋蔥燉煮的雞肉或魚。",
+        "history": "源自鄰近塞內加爾卡薩芒斯地區的料理。",
+        "wiki": "Yassa (food)"
+      },
+      {
+        "name": "腰果",
+        "localName": "Caju",
+        "description": "腰果果實可製果汁與果酒，腰果仁則烘烤食用。",
+        "history": "腰果是幾內亞比索最主要的出口作物，採收季的腰果酒是重要的社交飲品。",
+        "wiki": "Cashew"
+      }
+    ]
+  }
+}

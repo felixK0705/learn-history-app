@@ -1,0 +1,96 @@
+{
+  "iso": "BEL",
+  "capital": "布魯塞爾",
+  "summary": "位於西歐的君主立憲國，北部荷語區與南部法語區並存，首都布魯塞爾是歐盟與北約總部所在地。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "天主教",
+        "percent": 50,
+        "description": "歷史上的主要宗教，至今仍是最大宗教，但定期上教堂人數已大幅下降。"
+      },
+      {
+        "name": "無宗教",
+        "percent": 33,
+        "description": "世俗化程度高，許多人自認無宗教或為人文主義者。"
+      },
+      {
+        "name": "伊斯蘭教",
+        "percent": 7,
+        "description": "主要來自1960年代後摩洛哥與土耳其移工社群。"
+      },
+      {
+        "name": "新教與其他基督教",
+        "percent": 3,
+        "description": "包含新教、東正教等。"
+      }
+    ],
+    "background": "比利時所在的南尼德蘭在16世紀宗教改革後由西班牙哈布斯堡統治，天主教勢力得以維持，與信奉新教的北尼德蘭分道揚鑣。20世紀後半起世俗化迅速，加上移民帶入伊斯蘭教，形成今日分布。"
+  },
+  "language": {
+    "official": "官方語言為荷蘭語、法語與德語。",
+    "ranking": [
+      {
+        "name": "荷蘭語（法蘭德斯方言）",
+        "percent": 59,
+        "description": "北部法蘭德斯地區的主要語言。",
+        "greeting": "Hallo",
+        "pronunciation": "ha-lo"
+      },
+      {
+        "name": "法語",
+        "percent": 40,
+        "description": "南部瓦隆區與首都布魯塞爾的主要語言。",
+        "greeting": "Bonjour",
+        "pronunciation": "bon-zhoor"
+      },
+      {
+        "name": "德語",
+        "percent": 1,
+        "description": "東部靠近德國的小型社群使用。",
+        "greeting": "Hallo",
+        "pronunciation": "ha-lo"
+      }
+    ],
+    "history": "羅曼語與日耳曼語的分界線自中世紀起便穿過比利時。1830年獨立後法語長期為上層與政府語言，引發法蘭德斯運動爭取荷語權利；20世紀劃定語言區界，最終形成聯邦制。德語區則是一戰後自德國劃入。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "淡菜薯條",
+        "localName": "Moules-frites",
+        "description": "白酒或芹菜洋蔥烹煮的一鍋淡菜，搭配炸薯條，被視為國菜。",
+        "history": "沿海地區的平民料理，19世紀起與薯條搭配流行，普遍被視為比利時代表菜。",
+        "wiki": "Moules-frites"
+      },
+      {
+        "name": "比利時鬆餅",
+        "localName": "Gaufre / Wafel",
+        "description": "有布魯塞爾鬆餅（長方輕脆）與列日鬆餅（含珍珠糖、較紮實）兩大類。",
+        "history": "鬆餅在低地國家已有數百年歷史，1960年代經世界博覽會推向國際。",
+        "wiki": "Belgian waffle"
+      },
+      {
+        "name": "啤酒燉牛肉",
+        "localName": "Carbonade flamande / Stoverij",
+        "description": "以比利時深色啤酒慢燉牛肉與洋蔥，常配薯條。",
+        "history": "源自法蘭德斯地區的傳統家常燉菜，展現比利時深厚的啤酒文化。",
+        "wiki": "Carbonade flamande"
+      },
+      {
+        "name": "根特奶油燉菜",
+        "localName": "Waterzooi",
+        "description": "以雞肉或魚肉加蔬菜、奶油與蛋黃燉成的濃湯。",
+        "history": "源自根特，最初以河魚製作，後來雞肉版本更普遍。",
+        "wiki": "Waterzooi"
+      },
+      {
+        "name": "蔬菜馬鈴薯泥",
+        "localName": "Stoemp",
+        "description": "馬鈴薯與胡蘿蔔、韭蔥等蔬菜一起搗成泥，常配香腸。",
+        "history": "布魯塞爾與法蘭德斯的平民家常料理。",
+        "wiki": "Stoemp"
+      }
+    ]
+  }
+}

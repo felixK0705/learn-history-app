@@ -1,0 +1,91 @@
+{
+  "iso": "TLS",
+  "capital": "帝力",
+  "summary": "位於東南亞帝汶島東半部的國家，曾為葡萄牙殖民地，1975年後遭印尼占領，2002年正式獨立，是21世紀第一個新獨立的國家。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "天主教",
+        "percent": 97,
+        "description": "葡萄牙殖民時期傳入，在印尼占領期間成為民族認同的支柱。"
+      },
+      {
+        "name": "新教",
+        "percent": 2,
+        "description": "少數信徒。"
+      },
+      {
+        "name": "伊斯蘭教",
+        "percent": 1,
+        "description": "人數不到1%，多為阿拉伯裔與印尼裔居民。"
+      }
+    ],
+    "background": "16世紀葡萄牙道明會士傳入天主教，但殖民時期改信者並不多。1975–1999年印尼占領期間，印尼要求國民信仰官方承認的宗教，而天主教會為東帝汶人發聲，使天主教徒比例急速上升，成為民族認同核心。"
+  },
+  "language": {
+    "official": "官方語言為德頓語與葡萄牙語，印尼語與英語為工作語言。",
+    "ranking": [
+      {
+        "name": "德頓語",
+        "percent": 37,
+        "description": "南島語系語言，吸收大量葡萄牙語詞彙，是全國通用語。",
+        "greeting": "Bondia",
+        "pronunciation": "bon-dee-a"
+      },
+      {
+        "name": "葡萄牙語",
+        "percent": 1,
+        "description": "官方語言之一，母語者少，主要用於法律與教育。",
+        "greeting": "Olá",
+        "pronunciation": "o-la"
+      },
+      {
+        "name": "印尼語",
+        "percent": 1,
+        "description": "占領時期的教育語言，許多中年人能流利使用。",
+        "greeting": "Halo",
+        "pronunciation": "ha-lo"
+      }
+    ],
+    "history": "東帝汶有十多種本土語言，分屬南島語系與巴布亞語系，如曼拜語、馬卡賽語等。德頓語作為通用語吸收了大量葡萄牙語詞彙；印尼占領時期推行印尼語，獨立後恢復葡萄牙語為官方語言。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "玉米南瓜燉菜",
+        "localName": "Batar da'an",
+        "description": "以玉米、南瓜與綠豆燉煮的傳統料理。",
+        "history": "「batar」在德頓語意為玉米，是山區農村的傳統主食。",
+        "wiki": "Batar da'an"
+      },
+      {
+        "name": "番茄香料魚",
+        "localName": "Ikan sabuko",
+        "description": "以羅望子、番茄與辣椒醃製後烹煮的鯖魚。",
+        "history": "沿海地區的代表性魚料理。",
+        "wiki": "Ikan sabuko"
+      },
+      {
+        "name": "燉豆",
+        "localName": "Feijoada",
+        "description": "以豆子與肉類燉煮的濃稠料理。",
+        "history": "葡萄牙殖民時期傳入，在葡語國家普遍可見。",
+        "wiki": "Feijoada"
+      },
+      {
+        "name": "帝汶咖啡",
+        "localName": "Kafé Timor",
+        "description": "以高地栽種的阿拉比卡咖啡沖泡。",
+        "history": "葡萄牙人於19世紀引入咖啡，至今是東帝汶最重要的出口作物，混血的「帝汶混種」咖啡品種對世界咖啡育種影響深遠。",
+        "wiki": "Timor Hybrid"
+      },
+      {
+        "name": "木薯",
+        "localName": "Ai-farina",
+        "description": "煮或烤的木薯，是常見的澱粉來源。",
+        "history": "在稻米不足的地區，木薯與玉米是重要主食。",
+        "wiki": "Cassava"
+      }
+    ]
+  }
+}

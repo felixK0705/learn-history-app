@@ -1,0 +1,101 @@
+{
+  "iso": "COG",
+  "capital": "布拉薩",
+  "summary": "位於中非西部、剛果河西岸的國家，曾為法屬赤道非洲一部分，1960年獨立，石油為主要出口品。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "天主教",
+        "percent": 33,
+        "description": "法國殖民時期傳教士帶入，仍是最大教派。"
+      },
+      {
+        "name": "新教與獨立教會",
+        "percent": 22,
+        "description": "包含福音派與非洲本土教會。"
+      },
+      {
+        "name": "覺醒教會及其他基督教",
+        "percent": 22,
+        "description": "五旬節派與覺醒運動教會近年快速成長。"
+      },
+      {
+        "name": "本土信仰與基督教融合教派（如基班古教會）",
+        "percent": 10,
+        "description": "包含基班古教會等融合傳統信仰的宗教。"
+      },
+      {
+        "name": "伊斯蘭教",
+        "percent": 2,
+        "description": "主要為西非移民與商人。"
+      }
+    ],
+    "background": "15世紀起葡萄牙人曾向剛果王國傳教，19世紀末法國殖民後天主教傳教士建立學校與教會，基督教逐漸普及。殖民時期亦興起融合非洲傳統的本土教會，近年五旬節派大幅成長。"
+  },
+  "language": {
+    "official": "官方語言為法語。",
+    "ranking": [
+      {
+        "name": "剛果語（基圖巴語）",
+        "percent": 45,
+        "description": "以剛果語為基礎的通用語，通行於南部與布拉薩一帶。",
+        "greeting": "Mbote",
+        "pronunciation": "m-bo-teh"
+      },
+      {
+        "name": "林加拉語",
+        "percent": 30,
+        "description": "通行於首都北部與剛果河流域，亦流行於音樂中。",
+        "greeting": "Mbote",
+        "pronunciation": "m-bo-teh"
+      },
+      {
+        "name": "法語",
+        "percent": 5,
+        "description": "官方、教育與行政語言，母語者少但城市居民普遍能使用。",
+        "greeting": "Bonjour",
+        "pronunciation": "bon-zhoor"
+      }
+    ],
+    "history": "境內民族多使用班圖語系語言。19世紀末法國殖民後法語成為行政與教育語言；剛果河上的貿易與殖民軍隊促成林加拉語與基圖巴語成為區域通用語，並列為國家語言。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "木薯糕",
+        "localName": "Chikwangue",
+        "description": "木薯發酵後搗成團，以葉子包裹蒸熟的主食。",
+        "history": "剛果河流域最普遍的主食之一，便於保存與攜帶。",
+        "wiki": "Chikwangue"
+      },
+      {
+        "name": "富富",
+        "localName": "Foufou",
+        "description": "以木薯粉加熱水攪成的黏稠麵團，搭配燉菜與醬汁食用。",
+        "history": "在中西非廣泛食用，是日常飲食的基礎。",
+        "wiki": "Fufu"
+      },
+      {
+        "name": "木薯葉燉菜",
+        "localName": "Saka-saka / Pondu",
+        "description": "木薯葉搗碎後加入棕櫚油、魚乾或花生燉煮。",
+        "history": "中非地區最具代表性的蔬菜料理之一。",
+        "wiki": "Cassava-based dishes"
+      },
+      {
+        "name": "棕櫚油燉雞",
+        "localName": "Poulet à la moambé",
+        "description": "以棕櫚果醬汁燉煮雞肉，濃郁鮮紅。",
+        "history": "流行於剛果兩國，常被視為代表性料理。",
+        "wiki": "Moambe chicken"
+      },
+      {
+        "name": "烤魚",
+        "localName": "Poisson braisé",
+        "description": "以炭火炙烤的剛果河河魚，搭配辣醬與木薯糕。",
+        "history": "依靠剛果河豐富的漁業資源，是布拉薩街頭常見美食。",
+        "wiki": "Grilled fish"
+      }
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "iso": "CRI",
+  "capital": "聖荷西",
+  "summary": "哥斯大黎加位於中美洲，1948年廢除軍隊，以穩定的民主、生態保育與豐富的生物多樣性聞名。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "天主教",
+        "percent": 47,
+        "description": "憲法定為國教，但宗教自由受到保障。"
+      },
+      {
+        "name": "基督新教／福音派",
+        "percent": 25,
+        "description": "近數十年快速成長。"
+      },
+      {
+        "name": "無宗教",
+        "percent": 20,
+        "description": "未認同任何宗教的人口快速增加。"
+      },
+      {
+        "name": "其他宗教",
+        "percent": 3,
+        "description": "包括耶和華見證人等。"
+      }
+    ],
+    "background": "西班牙殖民使天主教成為主流，並在憲法中保有國教地位。十九世紀加勒比海岸的牙買加移民帶來新教，二十世紀後期福音派教會成長迅速，近年無宗教人口亦明顯增加。"
+  },
+  "language": {
+    "official": "西班牙語是官方語言。",
+    "ranking": [
+      {
+        "name": "西班牙語",
+        "percent": 97,
+        "description": "全國通用語言。",
+        "greeting": "Hola",
+        "pronunciation": "OH-la"
+      },
+      {
+        "name": "利蒙克里奧爾英語",
+        "percent": 1,
+        "description": "加勒比海岸利蒙省非裔社群使用的語言。",
+        "greeting": "Wapin",
+        "pronunciation": "WAH-pin"
+      }
+    ],
+    "history": "殖民前當地有布里布里語等原住民語言。西班牙殖民後西班牙語成為主流；十九世紀末修建鐵路時從牙買加引進的勞工，在利蒙地區形成以英語為基礎的克里奧爾語。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "加洛平托",
+        "localName": "Gallo pinto",
+        "description": "將米飯與黑豆一起炒香，常配蛋與酸奶油。",
+        "history": "哥斯大黎加的國民早餐，與尼加拉瓜都視其為代表料理。",
+        "wiki": "Gallo pinto"
+      },
+      {
+        "name": "卡薩多",
+        "localName": "Casado",
+        "description": "包含米飯、豆子、沙拉、炸大蕉與肉或魚的套餐。",
+        "history": "名稱意為「已婚男人」，是最常見的午餐套餐。",
+        "wiki": "Casado (food)"
+      },
+      {
+        "name": "奇夫里霍",
+        "localName": "Chifrijo",
+        "description": "以米飯、豆子、炸豬肉與番茄莎莎醬疊成的料理。",
+        "history": "1990年代起源於聖荷西的酒館小吃。",
+        "wiki": "Chifrijo"
+      },
+      {
+        "name": "燉肉蔬菜湯",
+        "localName": "Olla de carne",
+        "description": "以牛肉與木薯、玉米、大蕉等根莖類燉煮的湯。",
+        "history": "傳統的週末家庭湯品。",
+        "wiki": "Olla de carne"
+      },
+      {
+        "name": "雞肉飯",
+        "localName": "Arroz con pollo",
+        "description": "將雞肉與米、蔬菜一同烹煮的料理。",
+        "history": "拉丁美洲常見的料理，在哥斯大黎加是聚會與生日宴的常客。",
+        "wiki": "Arroz con pollo"
+      }
+    ]
+  }
+}

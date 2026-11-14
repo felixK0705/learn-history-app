@@ -1,0 +1,91 @@
+{
+  "iso": "MLI",
+  "capital": "巴馬科",
+  "summary": "位於西非撒哈拉南緣的內陸國，曾是馬利帝國與桑海帝國的核心，廷巴克圖是中世紀伊斯蘭學術重鎮。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "伊斯蘭教（遜尼派）",
+        "percent": 95,
+        "description": "絕大多數居民信仰，多屬馬立基學派，蘇非派傳統深厚。"
+      },
+      {
+        "name": "基督教",
+        "percent": 2,
+        "description": "以天主教為主，多分布於南部。"
+      },
+      {
+        "name": "傳統信仰",
+        "percent": 2,
+        "description": "如多貢人的傳統宗教，常與伊斯蘭教並存。"
+      }
+    ],
+    "background": "伊斯蘭教自8世紀起經跨撒哈拉貿易傳入，13–14世紀馬利帝國皇帝如曼薩·穆薩信奉伊斯蘭教並前往麥加朝聖，使廷巴克圖、傑內成為伊斯蘭學術中心。19世紀聖戰運動與殖民時期的伊斯蘭擴張進一步普及。"
+  },
+  "language": {
+    "official": "2023年新憲法將13種本土語言列為官方語言，法語改為工作語言。",
+    "ranking": [
+      {
+        "name": "班巴拉語",
+        "percent": 51,
+        "description": "曼丁語族語言，作為母語的比例約一半，並是全國主要通用語。",
+        "greeting": "I ni ce",
+        "pronunciation": "i ni che"
+      },
+      {
+        "name": "富拉語",
+        "percent": 9,
+        "description": "富拉人的語言，通行於中部內陸三角洲。",
+        "greeting": "Jam waali",
+        "pronunciation": "jam waa-li"
+      },
+      {
+        "name": "桑海語",
+        "percent": 6,
+        "description": "尼日河中游廷巴克圖、加奧一帶使用。",
+        "greeting": "Fofo",
+        "pronunciation": "fo-fo"
+      }
+    ],
+    "history": "馬利帝國時期曼丁語隨帝國擴張成為區域語言，桑海帝國則推廣桑海語。法國殖民時期法語成為官方語言；獨立後班巴拉語作為通用語持續擴張，2023年憲法正式提升本土語言地位。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "花生燉肉",
+        "localName": "Tigadèguèna (Maafe)",
+        "description": "以花生醬、番茄與肉燉成的濃稠醬汁，配米飯食用。",
+        "history": "名稱源自班巴拉語「花生醬」，是馬利曼丁卡人的代表菜，流傳整個西非。",
+        "wiki": "Maafe"
+      },
+      {
+        "name": "圖糊",
+        "localName": "Tô",
+        "description": "以小米或高粱粉煮成的稠糊，搭配秋葵或猴麵包樹葉醬汁。",
+        "history": "薩赫爾地區農村最基本的主食。",
+        "wiki": "Tô"
+      },
+      {
+        "name": "番茄肉飯",
+        "localName": "Zamé / Riz au gras",
+        "description": "以番茄、洋蔥、肉與香料燉煮的米飯，常見於節慶。",
+        "history": "屬於西非廣泛流傳的「喬洛夫飯」家族。",
+        "wiki": "Jollof rice"
+      },
+      {
+        "name": "優格小米甜點",
+        "localName": "Dégué",
+        "description": "以小米顆粒混合優格或酸奶與糖製成的冰涼甜點。",
+        "history": "薩赫爾地區傳統的消暑點心，在街頭普遍販售。",
+        "wiki": "Dégué"
+      },
+      {
+        "name": "福尼奧米",
+        "localName": "Fonio",
+        "description": "以西非古老穀物福尼奧煮成的穀飯，搭配醬汁食用。",
+        "history": "西非種植福尼奧已有數千年歷史，多貢人視其為重要作物。",
+        "wiki": "Fonio"
+      }
+    ]
+  }
+}

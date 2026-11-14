@@ -1,0 +1,108 @@
+{
+  "iso": "ETH",
+  "capital": "阿迪斯阿貝巴",
+  "summary": "衣索比亞位於非洲之角，是非洲最古老的獨立國家之一，除短暫被義大利占領外從未被殖民，也是非洲聯盟總部所在地。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "衣索比亞正教",
+        "percent": 44,
+        "description": "非洲最古老的基督教會之一，擁有獨特的禮儀與曆法。"
+      },
+      {
+        "name": "伊斯蘭教",
+        "percent": 34,
+        "description": "主要為遜尼派，分布於東部與南部。"
+      },
+      {
+        "name": "基督新教（彭特派）",
+        "percent": 19,
+        "description": "近數十年快速成長的福音派與五旬節派教會。"
+      },
+      {
+        "name": "傳統信仰",
+        "percent": 3,
+        "description": "部分南部族群保留的傳統宗教。"
+      },
+      {
+        "name": "天主教",
+        "percent": 1,
+        "description": "規模較小的天主教社群。"
+      }
+    ],
+    "background": "四世紀阿克蘇姆王國的埃扎納國王皈依基督教，使衣索比亞成為最早接受基督教的國家之一。七世紀伊斯蘭教隨早期穆斯林避難者與紅海貿易傳入東部。二十世紀後新教教會在南部與西部迅速成長。"
+  },
+  "language": {
+    "official": "聯邦工作語言為阿姆哈拉語，2020年起另增列奧羅莫語、提格利尼亞語、索馬利語與阿法爾語為聯邦工作語言。",
+    "ranking": [
+      {
+        "name": "奧羅莫語",
+        "percent": 34,
+        "description": "人數最多的奧羅莫族的語言，使用拉丁字母書寫。",
+        "greeting": "Akkam",
+        "pronunciation": "ak-KAM"
+      },
+      {
+        "name": "阿姆哈拉語",
+        "percent": 29,
+        "description": "長期為國家行政語言，使用吉茲字母書寫。",
+        "greeting": "ሰላም (Selam)",
+        "pronunciation": "seh-LAM"
+      },
+      {
+        "name": "索馬利語",
+        "percent": 6,
+        "description": "東部索馬利州的主要語言。",
+        "greeting": "Is ka warran",
+        "pronunciation": "is ka WAR-ran"
+      },
+      {
+        "name": "提格利尼亞語",
+        "percent": 6,
+        "description": "北部提格雷州的主要語言。",
+        "greeting": "ሰላም (Selam)",
+        "pronunciation": "seh-LAM"
+      }
+    ],
+    "history": "衣索比亞有超過80種語言，古老的吉茲語是教會禮儀語言，並發展出獨特的吉茲字母。中世紀後阿姆哈拉語成為宮廷與行政語言，1991年後的聯邦制度則讓各族語言在地方獲得官方地位。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "英傑拉",
+        "localName": "እንጀራ (Injera)",
+        "description": "以苔麩粉發酵製成的大片微酸薄餅，用來包裹各種菜餚。",
+        "history": "苔麩是衣索比亞高原原生穀物，英傑拉是衣索比亞人最核心的主食。",
+        "wiki": "Injera"
+      },
+      {
+        "name": "辣燉雞",
+        "localName": "ዶሮ ወጥ (Doro wat)",
+        "description": "以柏柏爾辣椒粉長時間燉煮的雞肉與水煮蛋。",
+        "history": "被視為國菜，常於節慶尤其衣索比亞正教的聖誕節與復活節食用。",
+        "wiki": "Doro wat"
+      },
+      {
+        "name": "生牛肉末",
+        "localName": "ክትፎ (Kitfo)",
+        "description": "以香料奶油與辣椒粉調味的生或半生牛肉末。",
+        "history": "源自古拉吉族，是節慶時的珍貴料理。",
+        "wiki": "Kitfo"
+      },
+      {
+        "name": "鷹嘴豆糊",
+        "localName": "ሽሮ (Shiro)",
+        "description": "以鷹嘴豆或蠶豆粉燉煮成的濃稠醬糊。",
+        "history": "衣索比亞正教徒在齋戒期間的重要素食料理。",
+        "wiki": "Shiro (food)"
+      },
+      {
+        "name": "炒肉",
+        "localName": "ጥብስ (Tibs)",
+        "description": "將牛肉或羊肉切塊與洋蔥、辣椒拌炒。",
+        "history": "常於招待客人或特殊場合時上桌。",
+        "wiki": "Tibs"
+      }
+    ]
+  }
+}

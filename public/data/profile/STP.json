@@ -1,0 +1,94 @@
+{
+  "iso": "STP",
+  "capital": "聖多美",
+  "summary": "位於非洲幾內亞灣的島國，由聖多美島與普林西比島組成，曾是葡萄牙殖民的蔗糖與可可種植園，1975年獨立。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "天主教",
+        "percent": 56,
+        "description": "葡萄牙殖民時期傳入，是最大宗教。"
+      },
+      {
+        "name": "無宗教",
+        "percent": 21,
+        "description": "約兩成人口表示無宗教。"
+      },
+      {
+        "name": "其他基督教（新使徒教會等）",
+        "percent": 10,
+        "description": "包含新使徒教會、普世神國教會等。"
+      },
+      {
+        "name": "基督復臨安息日會",
+        "percent": 4,
+        "description": "規模次於天主教。"
+      },
+      {
+        "name": "神召會",
+        "percent": 3,
+        "description": "五旬節派教會。"
+      }
+    ],
+    "background": "15世紀末葡萄牙人在無人島上建立殖民地，從非洲大陸引入奴隸種植甘蔗，天主教隨之傳入，聖多美在1534年即設立主教區。20世紀後新教與新興教會陸續傳入。"
+  },
+  "language": {
+    "official": "官方語言為葡萄牙語。",
+    "ranking": [
+      {
+        "name": "葡萄牙語",
+        "percent": 70,
+        "description": "官方語言，也是多數居民的主要語言。",
+        "greeting": "Olá",
+        "pronunciation": "o-la"
+      },
+      {
+        "name": "維德角克里奧爾語",
+        "percent": 5,
+        "description": "20世紀維德角契約勞工後代使用。",
+        "greeting": "Modi ki bu sta?",
+        "pronunciation": "mo-di ki bu sta"
+      }
+    ],
+    "history": "殖民時期來自非洲各地的奴隸與葡萄牙人接觸，形成以葡萄牙語為基礎的克里奧爾語，包括福羅語（Forro）、安哥拉爾語與普林西比語。獨立後葡萄牙語因教育與媒體普及而成為主要語言，克里奧爾語使用者逐漸減少。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "卡魯魯燉菜",
+        "localName": "Calulu",
+        "description": "以魚乾或雞肉、秋葵、茄子與多種香草葉燉煮的料理，為國菜。",
+        "history": "融合非洲燉菜與在地香草，通常需燉煮數小時，常見於節慶。",
+        "wiki": "Calulu"
+      },
+      {
+        "name": "巧克力",
+        "localName": "Chocolate",
+        "description": "以島上可可製作的高品質巧克力。",
+        "history": "20世紀初聖多美普林西比曾是世界最大可可產地之一，至今仍以優質可可聞名。",
+        "wiki": "Chocolate"
+      },
+      {
+        "name": "麵包果",
+        "localName": "Fruta-pão",
+        "description": "烤、煮或炸的麵包果，是日常澱粉來源。",
+        "history": "殖民時期引入的熱帶作物，在島上廣泛種植。",
+        "wiki": "Breadfruit"
+      },
+      {
+        "name": "燉豆",
+        "localName": "Feijoada",
+        "description": "以豆子與肉類燉煮的濃稠料理。",
+        "history": "隨葡萄牙殖民傳入的燉豆料理，在葡語國家普遍可見。",
+        "wiki": "Feijoada"
+      },
+      {
+        "name": "煮食香蕉",
+        "localName": "Banana-pão",
+        "description": "以煮食香蕉蒸、煮或炸，搭配魚或燉菜。",
+        "history": "香蕉是島上的重要作物與主食。",
+        "wiki": "Cooking banana"
+      }
+    ]
+  }
+}

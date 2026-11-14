@@ -1,0 +1,89 @@
+{
+  "iso": "LCA",
+  "capital": "卡斯翠",
+  "summary": "位於東加勒比海向風群島的火山島國，在英法之間易手14次，1979年脫離英國獨立，以雙峰山（Pitons）聞名。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "天主教",
+        "percent": 61,
+        "description": "法國殖民時期傳入，至今仍是最大宗教。"
+      },
+      {
+        "name": "新教（基督復臨安息日會、五旬節派、聖公會等）",
+        "percent": 26,
+        "description": "英國統治後傳入並在近數十年成長。"
+      },
+      {
+        "name": "無宗教",
+        "percent": 6,
+        "description": "比例較低。"
+      },
+      {
+        "name": "拉斯塔法里教",
+        "percent": 2,
+        "description": "20世紀興起於牙買加的宗教運動。"
+      }
+    ],
+    "background": "法國殖民者最早在島上建立定居點並帶入天主教，雖然1814年後由英國統治，天主教仍深植於法語克里奧爾社群。英國統治期間聖公會與其他新教教派逐漸傳入。"
+  },
+  "language": {
+    "official": "官方語言為英語。",
+    "ranking": [
+      {
+        "name": "聖露西亞克里奧爾法語（Kwéyòl）",
+        "percent": 60,
+        "description": "以法語為基礎的克里奧爾語，是許多人的家庭語言。",
+        "greeting": "Bonjou",
+        "pronunciation": "bon-zhoo"
+      },
+      {
+        "name": "英語",
+        "percent": 38,
+        "description": "官方、教育與媒體語言。",
+        "greeting": "Hello",
+        "pronunciation": "heh-loh"
+      }
+    ],
+    "history": "法國人於17–18世紀引入非洲奴隸，法語與西非語言接觸形成克里奧爾法語（Kwéyòl）。1814年英國取得此島後英語成為官方與教育語言，但Kwéyòl至今仍為日常生活語言。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "青香蕉鹹魚",
+        "localName": "Green fig and saltfish",
+        "description": "以青香蕉（當地稱green fig）配上炒鹹鱈魚，為國菜。",
+        "history": "鹹鱈魚自殖民時期作為廉價蛋白質輸入，與在地香蕉結合成為代表菜。",
+        "wiki": "Green fig and saltfish"
+      },
+      {
+        "name": "卡拉魯湯",
+        "localName": "Callaloo",
+        "description": "以芋葉或莧菜葉加入椰奶、秋葵燉成的綠色濃湯。",
+        "history": "源自西非的葉菜料理，經奴隸貿易傳入加勒比海。",
+        "wiki": "Callaloo"
+      },
+      {
+        "name": "羅提捲餅",
+        "localName": "Roti",
+        "description": "以咖哩雞、馬鈴薯等內餡包入薄餅中食用。",
+        "history": "19世紀印度契約勞工帶入，成為加勒比海普遍的街頭食物。",
+        "wiki": "Roti"
+      },
+      {
+        "name": "可可茶",
+        "localName": "Cocoa tea",
+        "description": "以在地可可球加牛奶、肉桂與肉豆蔻煮成的熱飲，常在早餐飲用。",
+        "history": "聖露西亞長期種植可可，此飲品是傳統早餐的一部分。",
+        "wiki": "Cocoa tea"
+      },
+      {
+        "name": "炸鹹魚餅",
+        "localName": "Accra",
+        "description": "以鹹鱈魚與香草拌麵糊炸成的小餅。",
+        "history": "源自西非的油炸麵糊點心，在法語系加勒比地區廣受歡迎。",
+        "wiki": "Accra (food)"
+      }
+    ]
+  }
+}

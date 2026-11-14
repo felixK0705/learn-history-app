@@ -1,87 +1,116 @@
-"""產生 Timelore 建築 GLB 模型。
+"""產生 Timelore 寫實建築 GLB 模型。
 
-用法（需安裝 Blender 或 pip 的 bpy 模組）：
-    python blender/build.py                 # 全部
-    python blender/build.py giza parthenon  # 指定
-    python blender/build.py --preview DIR   # 另外以 Cycles 輸出預覽圖
+需求：Blender Python 模組（pip install bpy==5.3.0）、Pillow，以及先執行
+    python blender/fetch_textures.py <材質 id...>   # 下載 Poly Haven CC0 材質
+
+用法：
+    python blender/build.py                         # 全部
+    python blender/build.py parthenon colosseum     # 指定
+    python blender/build.py --preview DIR [--ref DIR]   # 另以 Cycles 輸出預覽；--ref 會與參考照並排
 """
 
 import math
 import os
 import sys
 
-sys.path.insert(0, os.path.dirname(__file__))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 import bpy  # noqa: E402
 from mathutils import Vector  # noqa: E402
 
-import models_ancient as A  # noqa: E402
-import models_later as B  # noqa: E402
-from lib import reset_scene, srgb  # noqa: E402
+import importlib  # noqa: E402
 
-MODELS = {
-    "stonehenge": A.stonehenge,
-    "giza": A.giza,
-    "parthenon": A.parthenon,
-    "chichen-itza": A.chichen_itza,
-    "angkor-wat": A.angkor_wat,
-    "colosseum": B.colosseum,
-    "great-wall": B.great_wall,
-    "taj-mahal": B.taj_mahal,
-    "himeji": B.himeji,
-    "eiffel": B.eiffel,
+from lib import HERE, reset_scene  # noqa: E402
+
+# 每座建築一個模組：blender/buildings/<模組>.py，內含同名函式
+_IDS = ["stonehenge", "giza", "parthenon", "chichen-itza", "angkor-wat", "colosseum", "great-wall", "taj-mahal", "himeji", "eiffel"]
+MODELS = {i: (lambda mod: (lambda path: getattr(importlib.import_module(f"buildings.{mod}"), mod)(path)))(i.replace("-", "_")) for i in _IDS}
+
+# 預覽相機：目標點、方位角（度，0 = 從 -Y 往 +Y 看）、仰角、距離（公尺）、焦距；盡量對應參考照的拍攝角度
+CAMS = {
+    "stonehenge": ((0, 0, 3.2), 215, 1.5, 48, 32),
+    "giza": ((-300, -350, 60), 40, 4, 1500, 50),
+    "parthenon": ((0, 0, 9), 222, 4, 92, 28),
+    "chichen-itza": ((0, 0, 12), 150, 8, 110, 35),
+    "angkor-wat": ((0, 0, 25), 270, 6, 420, 40),
+    "colosseum": ((0, 0, 22), 120, 6, 230, 35),
+    "great-wall": ((0, 0, 30), 200, 18, 420, 35),
+    "taj-mahal": ((0, 0, 32), 180, 4, 240, 40),
+    "himeji": ((0, 0, 35), 180, 10, 190, 40),
+    "eiffel": ((0, 0, 140), 180, 5, 620, 40),
 }
 
-OUT = os.path.join(os.path.dirname(__file__), "..", "public", "models")
+OUT = os.path.join(HERE, "..", "public", "models")
 
 
-def render_preview(png_path):
+def render_preview(name, png_path, ref_dir=None):
     scene = bpy.context.scene
-    objs = [o for o in scene.objects if o.type == "MESH"]
-    pts = [o.matrix_world @ Vector(c) for o in objs for c in o.bound_box]
-    lo = Vector((min(p.x for p in pts), min(p.y for p in pts), min(p.z for p in pts)))
-    hi = Vector((max(p.x for p in pts), max(p.y for p in pts), max(p.z for p in pts)))
-    center = (lo + hi) / 2
-    size = max(hi - lo)
-
+    target, az, el, dist, lens = CAMS[name]
+    t = Vector(target)
+    a, e = math.radians(az), math.radians(el)
+    loc = t + Vector((math.sin(a) * math.cos(e), -math.cos(a) * math.cos(e), math.sin(e))) * dist
     cam_data = bpy.data.cameras.new("cam")
-    cam_data.lens = 40
+    cam_data.lens = lens
+    cam_data.clip_end = dist * 10
     cam = bpy.data.objects.new("cam", cam_data)
+    cam.location = loc
+    cam.rotation_euler = (t - loc).to_track_quat("-Z", "Y").to_euler()
     scene.collection.objects.link(cam)
-    d = size * 1.25
-    cam.location = center + Vector((d * 0.75, -d * 0.95, d * 0.62))
-    direction = center - cam.location
-    cam.rotation_euler = direction.to_track_quat("-Z", "Y").to_euler()
     scene.camera = cam
-
-    sun_data = bpy.data.lights.new("sun", "SUN")
-    sun_data.energy = 3.5
-    sun_data.angle = math.radians(8)
-    sun = bpy.data.objects.new("sun", sun_data)
-    sun.rotation_euler = (math.radians(50), math.radians(10), math.radians(35))
-    scene.collection.objects.link(sun)
 
     world = bpy.data.worlds.new("w")
     world.use_nodes = True
-    world.node_tree.nodes["Background"].inputs["Color"].default_value = srgb("#1e5fc8")
-    world.node_tree.nodes["Background"].inputs["Strength"].default_value = 0.9
+    nt = world.node_tree
+    env = nt.nodes.new("ShaderNodeTexEnvironment")
+    env.image = bpy.data.images.load(os.path.join(HERE, "hdri", "sky_1k.hdr"))
+    nt.links.new(env.outputs["Color"], nt.nodes["Background"].inputs["Color"])
+    nt.nodes["Background"].inputs["Strength"].default_value = 1.0
     scene.world = world
 
+    sun_data = bpy.data.lights.new("sun", "SUN")
+    sun_data.energy = 4.0
+    sun_data.angle = math.radians(1.5)
+    sun = bpy.data.objects.new("sun", sun_data)
+    sun.rotation_euler = (math.radians(42), 0, math.radians(az + 35))
+    scene.collection.objects.link(sun)
+
     scene.render.engine = "CYCLES"
-    scene.cycles.samples = 24
+    scene.cycles.samples = 48
+    scene.cycles.use_denoising = True
     scene.cycles.device = "CPU"
-    scene.render.resolution_x = 800
-    scene.render.resolution_y = 600
+    scene.view_settings.view_transform = "AgX"
+    try:
+        scene.view_settings.look = "AgX - Medium High Contrast"
+    except TypeError:
+        pass
+    scene.view_settings.exposure = -0.35
+    scene.render.resolution_x = 1000
+    scene.render.resolution_y = 750
     scene.render.filepath = png_path
     bpy.ops.render.render(write_still=True)
+
+    if ref_dir and os.path.exists(os.path.join(ref_dir, f"{name}.jpg")):
+        from PIL import Image
+
+        ref = Image.open(os.path.join(ref_dir, f"{name}.jpg")).convert("RGB")
+        ref.thumbnail((1000, 750))
+        ren = Image.open(png_path).convert("RGB")
+        side = Image.new("RGB", (2000, 750), "white")
+        side.paste(ref, (0, 0))
+        side.paste(ren, (1000, 0))
+        side.save(png_path.replace(".png", "_compare.jpg"), quality=85)
 
 
 def main():
     args = sys.argv[1:]
-    preview_dir = None
+    preview_dir = ref_dir = None
     if "--preview" in args:
         i = args.index("--preview")
         preview_dir = args[i + 1]
+        del args[i : i + 2]
+    if "--ref" in args:
+        i = args.index("--ref")
+        ref_dir = args[i + 1]
         del args[i : i + 2]
     names = args or list(MODELS)
     os.makedirs(OUT, exist_ok=True)
@@ -89,12 +118,12 @@ def main():
         reset_scene()
         path = os.path.abspath(os.path.join(OUT, f"{name}.glb"))
         MODELS[name](path)
-        size = os.path.getsize(path) / 1024
+        size = os.path.getsize(path) / 1024 / 1024
         tris = sum(len(p.vertices) - 2 for o in bpy.context.scene.objects if o.type == "MESH" for p in o.data.polygons)
-        print(f"[ok] {name}: {size:.0f} KB, ~{tris} tris")
+        print(f"[ok] {name}: {size:.1f} MB, ~{tris} tris", flush=True)
         if preview_dir:
             os.makedirs(preview_dir, exist_ok=True)
-            render_preview(os.path.join(os.path.abspath(preview_dir), f"{name}.png"))
+            render_preview(name, os.path.join(os.path.abspath(preview_dir), f"{name}.png"), ref_dir)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,98 @@
+{
+  "iso": "MAR",
+  "capital": "拉巴特",
+  "summary": "摩洛哥位於非洲西北角，隔直布羅陀海峽與西班牙相望，融合阿拉伯、柏柏與歐洲文化，以古城、沙漠與料理聞名。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "伊斯蘭教（遜尼派）",
+        "percent": 98,
+        "description": "國教，國王兼具「信士的長官」宗教領袖身分。"
+      },
+      {
+        "name": "基督教",
+        "percent": 1,
+        "description": "主要為外籍居民。"
+      },
+      {
+        "name": "無宗教",
+        "percent": 1,
+        "description": "少數不認同宗教者。"
+      }
+    ],
+    "background": "七世紀末阿拉伯人征服北非後，伊斯蘭教逐漸在柏柏人之間傳播。摩洛哥歷代王朝以遜尼派馬立克學派為正統，現任阿拉維王朝以先知後裔自居。摩洛哥曾有北非最大的猶太社群，但大多在二十世紀中期移居以色列等地。"
+  },
+  "language": {
+    "official": "阿拉伯語與柏柏語（阿馬齊格語）是官方語言。",
+    "ranking": [
+      {
+        "name": "摩洛哥阿拉伯語（達利賈）",
+        "percent": 70,
+        "description": "融合柏柏語、法語與西班牙語詞彙的阿拉伯語方言。",
+        "greeting": "السلام (Salam)",
+        "pronunciation": "sa-LAAM"
+      },
+      {
+        "name": "塔什爾希特語",
+        "percent": 14,
+        "description": "南部蘇斯地區與阿特拉斯山區的柏柏語。",
+        "greeting": "Azul",
+        "pronunciation": "a-ZOOL"
+      },
+      {
+        "name": "中阿特拉斯塔馬齊格特語",
+        "percent": 8,
+        "description": "中阿特拉斯山區的柏柏語。",
+        "greeting": "Azul",
+        "pronunciation": "a-ZOOL"
+      },
+      {
+        "name": "塔里菲特語",
+        "percent": 4,
+        "description": "北部里夫地區的柏柏語。",
+        "greeting": "Azul",
+        "pronunciation": "a-ZOOL"
+      }
+    ],
+    "history": "柏柏語是北非原住民語言。阿拉伯人征服後，阿拉伯語隨伊斯蘭教傳播；二十世紀法國與西班牙的保護國統治使法語與西班牙語普及。2011年憲法將柏柏語列為官方語言，並推廣提非納字母。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "塔吉鍋",
+        "localName": "طاجين (Tajine)",
+        "description": "以圓錐蓋陶鍋慢燉的肉類與蔬菜，常加入果乾與香料。",
+        "history": "源自北非柏柏人的烹調方式，陶鍋設計能在缺水環境中保留水分。",
+        "wiki": "Tajine"
+      },
+      {
+        "name": "庫斯庫斯",
+        "localName": "كسكس (Couscous)",
+        "description": "以粗粒小麥粉蒸成的小米粒狀主食，配蔬菜與肉。",
+        "history": "北非柏柏人的傳統主食，2020年列入聯合國教科文組織非物質文化遺產。",
+        "wiki": "Couscous"
+      },
+      {
+        "name": "帕斯蒂亞派",
+        "localName": "بسطيلة (Pastilla)",
+        "description": "以薄酥皮包鴿肉或雞肉、杏仁，撒糖粉與肉桂的甜鹹派。",
+        "history": "與安達魯斯穆斯林的宮廷飲食有關，非斯的版本最著名。",
+        "wiki": "Pastilla"
+      },
+      {
+        "name": "哈利拉湯",
+        "localName": "حريرة (Harira)",
+        "description": "以番茄、扁豆、鷹嘴豆與肉熬煮的濃湯。",
+        "history": "齋戒月日落開齋時必備的湯品。",
+        "wiki": "Harira"
+      },
+      {
+        "name": "千層煎餅",
+        "localName": "مسمن (Msemen)",
+        "description": "反覆折疊塗油煎成的方形千層煎餅。",
+        "history": "常與蜂蜜和薄荷茶一起作為早餐或下午茶。",
+        "wiki": "Msemen"
+      }
+    ]
+  }
+}

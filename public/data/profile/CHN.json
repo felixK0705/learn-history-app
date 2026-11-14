@@ -1,0 +1,115 @@
+{
+  "iso": "CHN",
+  "capital": "北京",
+  "summary": "位於東亞的大國，即中華人民共和國，擁有數千年的文明史，人口僅次於印度，1978年改革開放後成為世界第二大經濟體。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "無宗教",
+        "percent": 52,
+        "description": "受官方無神論政策與傳統文化影響，多數人不認同特定宗教。"
+      },
+      {
+        "name": "民間信仰",
+        "percent": 22,
+        "description": "包含祖先崇拜、媽祖、關公等神祇信仰，常與佛教、道教交融。"
+      },
+      {
+        "name": "佛教",
+        "percent": 18,
+        "description": "以漢傳佛教為主，西藏、蒙古地區則為藏傳佛教。"
+      },
+      {
+        "name": "基督教",
+        "percent": 5,
+        "description": "包含新教與天主教，近數十年成長迅速。"
+      },
+      {
+        "name": "伊斯蘭教",
+        "percent": 2,
+        "description": "主要為回族與維吾爾族等。"
+      }
+    ],
+    "background": "中國傳統以儒、釋、道三教並存，民間則以祖先崇拜與多神信仰為主。佛教於東漢時期傳入；伊斯蘭教於唐代經海陸絲路傳入；基督教於明清時期由傳教士傳入。1949年後官方奉行無神論，文革期間宗教受到嚴重打壓，改革開放後部分恢復。"
+  },
+  "language": {
+    "official": "官方語言為現代標準漢語（普通話）。",
+    "ranking": [
+      {
+        "name": "官話（含北方各方言）",
+        "percent": 70,
+        "description": "包括北京、東北、西南等官話方言，普通話即以北京語音為標準。",
+        "greeting": "你好",
+        "pronunciation": "nǐ hǎo"
+      },
+      {
+        "name": "吳語",
+        "percent": 6,
+        "description": "通行於上海、江蘇南部與浙江。",
+        "greeting": "儂好",
+        "pronunciation": "nóng hō"
+      },
+      {
+        "name": "粵語",
+        "percent": 5,
+        "description": "通行於廣東、廣西與香港、澳門。",
+        "greeting": "你好",
+        "pronunciation": "néih hóu"
+      },
+      {
+        "name": "閩語",
+        "percent": 5,
+        "description": "通行於福建與廣東潮汕等地，包含閩南語與閩東語。",
+        "greeting": "你好",
+        "pronunciation": "lí hó"
+      },
+      {
+        "name": "客家話",
+        "percent": 3,
+        "description": "分布於廣東、福建、江西交界山區。",
+        "greeting": "你好",
+        "pronunciation": "ngì hó"
+      }
+    ],
+    "history": "漢語各方言都源自上古與中古漢語，長期以漢字統一書寫。明清時期以北方官話為官場用語；20世紀推動「國語運動」，1949年後推廣以北京音為標準的普通話，並推行簡化字與漢語拼音。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "北京烤鴨",
+        "localName": "北京烤鴨",
+        "description": "以果木烤製皮脆肉嫩的鴨子，片成薄片配薄餅、甜麵醬與蔥絲。",
+        "history": "可追溯至明代宮廷，全聚德、便宜坊等老字號使其聞名中外。",
+        "wiki": "Peking duck"
+      },
+      {
+        "name": "餃子",
+        "localName": "餃子",
+        "description": "麵皮包入肉與蔬菜餡後水煮或煎製。",
+        "history": "相傳東漢張仲景發明，北方人在除夕吃餃子象徵招財進寶。",
+        "wiki": "Jiaozi"
+      },
+      {
+        "name": "麻婆豆腐",
+        "localName": "麻婆豆腐",
+        "description": "豆腐與牛肉末以豆瓣醬、花椒燒製，麻辣鮮香。",
+        "history": "源自清代成都，相傳由一位臉上有麻子的陳姓婦人創製。",
+        "wiki": "Mapo tofu"
+      },
+      {
+        "name": "小籠包",
+        "localName": "小籠包",
+        "description": "薄皮包入豬肉餡與肉凍，蒸熟後湯汁飽滿。",
+        "history": "源自清代江蘇常州、上海南翔一帶。",
+        "wiki": "Xiaolongbao"
+      },
+      {
+        "name": "宮保雞丁",
+        "localName": "宮保雞丁",
+        "description": "雞丁與花生、乾辣椒、花椒快炒，酸甜微辣。",
+        "history": "以清代四川總督丁寶楨（官銜「宮保」）命名。",
+        "wiki": "Kung Pao chicken"
+      }
+    ]
+  }
+}

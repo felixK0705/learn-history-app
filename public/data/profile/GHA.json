@@ -1,0 +1,99 @@
+{
+  "iso": "GHA",
+  "capital": "阿克拉",
+  "summary": "迦納位於西非幾內亞灣沿岸，1957年成為撒哈拉以南非洲第一個脫離殖民統治獨立的國家，以政治穩定、黃金與可可聞名。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "五旬節派／靈恩派",
+        "percent": 32,
+        "description": "近數十年快速成長的基督教派。"
+      },
+      {
+        "name": "伊斯蘭教",
+        "percent": 20,
+        "description": "主要分布於北部。"
+      },
+      {
+        "name": "基督新教",
+        "percent": 17,
+        "description": "包括衛理宗、長老會、聖公會等。"
+      },
+      {
+        "name": "其他基督教派",
+        "percent": 12,
+        "description": "包括非洲獨立教會等。"
+      },
+      {
+        "name": "天主教",
+        "percent": 10,
+        "description": "重要的天主教社群。"
+      },
+      {
+        "name": "傳統信仰",
+        "percent": 3,
+        "description": "崇敬祖先與自然神靈的傳統宗教。"
+      }
+    ],
+    "background": "伊斯蘭教自十五世紀起經撒哈拉貿易路線傳入北部。十九世紀巴塞爾傳道會與衛理宗傳教士在南部沿海建立教會與學校，基督教隨之普及。近數十年五旬節派與靈恩派教會快速成長。"
+  },
+  "language": {
+    "official": "英語是官方語言。",
+    "ranking": [
+      {
+        "name": "阿坎語（契維語、芳蒂語）",
+        "percent": 47,
+        "description": "阿坎族的語言，是迦納最廣泛使用的本土語言。",
+        "greeting": "Ɛte sɛn?",
+        "pronunciation": "eh-TEH sen"
+      },
+      {
+        "name": "埃維語",
+        "percent": 13,
+        "description": "東南部沃爾特地區埃維人的語言。",
+        "greeting": "Woezɔ",
+        "pronunciation": "WAY-zo"
+      }
+    ],
+    "history": "迦納有約80種語言。十五世紀起葡萄牙人、荷蘭人與英國人在黃金海岸建立貿易據點，英國殖民後英語成為行政與教育語言。阿坎語則透過商業與都市化成為最普及的本土通用語。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "喬洛夫飯",
+        "localName": "Jollof rice",
+        "description": "以番茄、洋蔥與香料燉煮的紅色米飯。",
+        "history": "西非各國共同的代表料理，迦納與奈及利亞常為誰的版本較好而友善較勁。",
+        "wiki": "Jollof rice"
+      },
+      {
+        "name": "富富",
+        "localName": "Fufu",
+        "description": "以木薯與大蕉搗成的糰狀主食，配淡湯或花生湯。",
+        "history": "阿坎族的傳統主食。",
+        "wiki": "Fufu"
+      },
+      {
+        "name": "班庫",
+        "localName": "Banku",
+        "description": "以發酵玉米與木薯麵團煮成的微酸糰狀主食，常配烤魚與辣醬。",
+        "history": "迦納南部埃維人與加人的傳統主食。",
+        "wiki": "Banku"
+      },
+      {
+        "name": "瓦基",
+        "localName": "Waakye",
+        "description": "以米與豆子一同煮成的紅褐色飯，配多種配菜。",
+        "history": "源自迦納北部豪薩人的料理，現為全國流行的早餐。",
+        "wiki": "Waakye"
+      },
+      {
+        "name": "辣炸大蕉",
+        "localName": "Kelewele",
+        "description": "以薑與辣椒調味後油炸的熟大蕉丁。",
+        "history": "迦納最受歡迎的街頭小吃之一。",
+        "wiki": "Kelewele"
+      }
+    ]
+  }
+}

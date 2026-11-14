@@ -1,0 +1,89 @@
+{
+  "iso": "MHL",
+  "capital": "馬久羅",
+  "summary": "馬紹爾群島是位於中太平洋的島國，由29個環礁組成，二戰後美國曾在比基尼與埃尼威托克環礁進行核試爆。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "基督聯合教會",
+        "percent": 47,
+        "description": "源自美國公理會傳教的新教教會，是最大教派。"
+      },
+      {
+        "name": "神召會",
+        "percent": 16,
+        "description": "五旬節派教會。"
+      },
+      {
+        "name": "耶穌基督後期聖徒教會",
+        "percent": 9,
+        "description": "近數十年成長的教會。"
+      },
+      {
+        "name": "天主教",
+        "percent": 8,
+        "description": "規模較大的天主教社群。"
+      }
+    ],
+    "background": "1857年美國公理會傳教士抵達馬紹爾群島傳教，基督教迅速成為主流。二戰後美國託管時期，五旬節派與耶穌基督後期聖徒教會等教派陸續傳入。"
+  },
+  "language": {
+    "official": "馬紹爾語與英語是官方語言。",
+    "ranking": [
+      {
+        "name": "馬紹爾語",
+        "percent": 98,
+        "description": "屬南島語系密克羅尼西亞語支，是全民的母語。",
+        "greeting": "Iakwe",
+        "pronunciation": "YAH-kway"
+      },
+      {
+        "name": "英語",
+        "percent": 2,
+        "description": "官方語言，用於政府與教育。",
+        "greeting": "Hello",
+        "pronunciation": "heh-LOH"
+      }
+    ],
+    "history": "馬紹爾語是當地原住民語言，十九世紀傳教士以拉丁字母書寫。先後經歷德國、日本與美國統治，日語與英語都曾留下影響，現今英語用於政府與教育。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "麵包果",
+        "localName": "Mā",
+        "description": "以烤、煮或發酵保存方式食用的麵包果。",
+        "history": "馬紹爾群島傳統主食，可發酵製成可長期保存的食物。",
+        "wiki": "Breadfruit"
+      },
+      {
+        "name": "林投果",
+        "localName": "Bōb",
+        "description": "林投樹的果實，可直接嚼食或製成果乾。",
+        "history": "環礁上重要的傳統食物。",
+        "wiki": "Pandanus tectorius"
+      },
+      {
+        "name": "椰子",
+        "localName": "Ni",
+        "description": "椰肉、椰奶與椰子水廣泛用於烹調與飲用。",
+        "history": "椰子樹是環礁居民生活中最重要的植物。",
+        "wiki": "Coconut"
+      },
+      {
+        "name": "芋頭",
+        "localName": "Iaraj",
+        "description": "以煮或烤方式食用的芋頭。",
+        "history": "太平洋島嶼的古老主食作物。",
+        "wiki": "Taro"
+      },
+      {
+        "name": "椰子蟹",
+        "localName": "Barulep",
+        "description": "大型陸生寄居蟹，蒸煮後食用。",
+        "history": "太平洋島嶼的珍饈。",
+        "wiki": "Coconut crab"
+      }
+    ]
+  }
+}

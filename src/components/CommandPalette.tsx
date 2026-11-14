@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Globe2, Landmark, Search, User } from "lucide-react";
-import { countries } from "../data/countries";
+import { countries, flagOf } from "../data/world";
 import { useReveal } from "../lib/motion";
 import { figures } from "../data/figures";
 import { buildings } from "../data/buildings";
@@ -25,9 +25,9 @@ const allItems: Item[] = [
   ...countries.map((c) => ({
     kind: "country" as const,
     id: c.iso,
-    title: `${c.flag} ${c.name}`,
-    subtitle: `${c.englishName}・${c.capital}`,
-    keywords: `${c.name} ${c.englishName} ${c.capital} ${c.iso}`.toLowerCase(),
+    title: `${flagOf(c.iso2)} ${c.zh}`,
+    subtitle: `${c.en}・${c.continent}`,
+    keywords: `${c.zh} ${c.en} ${c.iso}`.toLowerCase(),
     to: `/?country=${c.iso}`,
   })),
   ...figures.map((f) => ({

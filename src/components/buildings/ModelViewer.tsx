@@ -1,20 +1,13 @@
 import { Component, Suspense, useEffect, useRef, useState, type ReactNode } from "react";
 import { Canvas } from "@react-three/fiber";
-import {
-  Bounds,
-  Center,
-  ContactShadows,
-  Environment,
-  Lightformer,
-  OrbitControls,
-  useBounds,
-  useGLTF,
-  useProgress,
-} from "@react-three/drei";
+import { Bounds, Center, Environment, OrbitControls, useBounds, useGLTF, useProgress } from "@react-three/drei";
+import { Box3, DirectionalLight, Sphere, Vector3 } from "three";
 import type { OrbitControls as OrbitControlsImpl } from "three-stdlib";
 
+/** 依模型實際大小設定太陽光與陰影範圍（模型從百公尺到兩公里不等） */
 function Model({ url }: { url: string }) {
   const { scene } = useGLTF(url);
+  const sun = useRef<DirectionalLight>(null);
   useEffect(() => {
     scene.traverse((o) => {
       const mesh = o as unknown as { isMesh?: boolean; castShadow: boolean; receiveShadow: boolean };
@@ -23,8 +16,30 @@ function Model({ url }: { url: string }) {
         mesh.receiveShadow = true;
       }
     });
+    const light = sun.current;
+    if (!light) return;
+    const sphere = new Box3().setFromObject(scene).getBoundingSphere(new Sphere());
+    const r = Math.max(sphere.radius, 1);
+    light.position.copy(sphere.center).add(new Vector3(r * 0.7, r * 1.1, r * 0.5));
+    light.target.position.copy(sphere.center);
+    light.target.updateMatrixWorld();
+    const cam = light.shadow.camera;
+    cam.left = -r;
+    cam.right = r;
+    cam.top = r;
+    cam.bottom = -r;
+    cam.near = r * 0.1;
+    cam.far = r * 4;
+    cam.updateProjectionMatrix();
+    light.shadow.bias = -0.0004;
+    light.shadow.normalBias = r * 0.0008;
   }, [scene]);
-  return <primitive object={scene} />;
+  return (
+    <>
+      <primitive object={scene} />
+      <directionalLight ref={sun} intensity={2.4} color="#fff4e2" castShadow shadow-mapSize={[4096, 4096]} />
+    </>
+  );
 }
 
 class ModelErrorBoundary extends Component<
@@ -92,25 +107,18 @@ export default function ModelViewer({
   return (
     <>
     <Overlay failed={failedUrl === url} />
-    <Canvas shadows dpr={[1, 2]} camera={{ position: [9, 8, 11], fov: 40 }} gl={{ antialias: true, alpha: true }}>
-      <ambientLight intensity={0.5} />
-      <directionalLight position={[8, 12, 6]} intensity={2.2} castShadow shadow-mapSize={[1024, 1024]} />
-      <directionalLight position={[-6, 4, -4]} intensity={0.6} color="#9cd7ff" />
-      <Environment resolution={256}>
-        <Lightformer form="rect" intensity={2} position={[0, 5, -9]} scale={[10, 5, 1]} />
-        <Lightformer form="rect" intensity={1.2} color="#bde7ff" position={[-6, 2, 2]} rotation-y={Math.PI / 2} scale={[8, 4, 1]} />
-        <Lightformer form="ring" intensity={1.5} position={[5, 5, 5]} scale={3} />
-      </Environment>
+    <Canvas shadows dpr={[1, 2]} camera={{ position: [9, 7, 11], fov: 35, near: 0.5, far: 30000 }} gl={{ antialias: true, alpha: true }}>
+      <Environment files="/hdri/sky.hdr" environmentIntensity={0.85} />
+      <hemisphereLight args={["#dff1ff", "#7a6a55", 0.35]} />
 
       <ModelErrorBoundary resetKey={url} onError={() => setFailedUrl(url)}>
       <Suspense fallback={null}>
-        <Bounds fit clip observe margin={1.1} maxDuration={0.8}>
+        <Bounds fit clip observe margin={0.9} maxDuration={0.8}>
           <Refit token={`${url}#${resetToken}`} />
           <Center top key={url}>
             <Model url={url} />
           </Center>
         </Bounds>
-        <ContactShadows position={[0, 0, 0]} opacity={0.45} scale={40} blur={2.4} far={20} color="#021038" />
       </Suspense>
       </ModelErrorBoundary>
 

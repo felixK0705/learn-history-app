@@ -1,0 +1,84 @@
+{
+  "iso": "EGY",
+  "capital": "開羅",
+  "summary": "埃及位於非洲東北角，坐擁尼羅河流域與古埃及文明遺產，是阿拉伯世界人口最多的國家之一。",
+  "religion": {
+    "ranking": [
+      {
+        "name": "伊斯蘭教（遜尼派）",
+        "percent": 90,
+        "description": "埃及的主要宗教，開羅的愛資哈爾大學是遜尼派學術重鎮。"
+      },
+      {
+        "name": "科普特正教",
+        "percent": 9,
+        "description": "埃及本土的古老基督教會，信徒稱為科普特人。"
+      },
+      {
+        "name": "其他基督教派",
+        "percent": 1,
+        "description": "包括天主教與新教等。"
+      }
+    ],
+    "background": "基督教在一世紀後傳入埃及，亞歷山卓成為早期教會中心，科普特教會由此發展。七世紀阿拉伯穆斯林征服埃及後，伊斯蘭教逐漸成為多數人的信仰，但科普特基督徒延續至今。"
+  },
+  "language": {
+    "official": "阿拉伯語是官方語言。",
+    "ranking": [
+      {
+        "name": "阿拉伯語（埃及方言）",
+        "percent": 68,
+        "description": "以開羅口音為代表，因埃及影視作品而在阿拉伯世界廣為人知。",
+        "greeting": "أهلاً",
+        "pronunciation": "AH-lan"
+      },
+      {
+        "name": "阿拉伯語（上埃及方言）",
+        "percent": 29,
+        "description": "南部上埃及地區使用的方言。",
+        "greeting": "السلام عليكم",
+        "pronunciation": "as-sa-LAA-mu a-LAI-kum"
+      }
+    ],
+    "history": "古埃及語歷經數千年演變，晚期形態為科普特語。七世紀阿拉伯征服後，阿拉伯語逐漸取代科普特語，後者如今只用於科普特教會禮拜。現代埃及阿拉伯語在媒體與流行文化中影響廣泛。"
+  },
+  "food": {
+    "ranking": [
+      {
+        "name": "庫莎莉",
+        "localName": "كشري (Koshari)",
+        "description": "將米飯、扁豆、通心粉混合，淋上番茄醬與炸洋蔥的平民料理。",
+        "history": "十九世紀時融合了印度、義大利等外來元素發展而成，被視為埃及國民美食。",
+        "wiki": "Koshary"
+      },
+      {
+        "name": "燉蠶豆",
+        "localName": "فول مدمس (Ful medames)",
+        "description": "以蠶豆慢燉後加入橄欖油、檸檬與香料。",
+        "history": "埃及歷史悠久的早餐料理，被視為庶民飲食的代表。",
+        "wiki": "Ful medames"
+      },
+      {
+        "name": "黃麻葉湯",
+        "localName": "ملوخية (Molokhia)",
+        "description": "以切碎的黃麻葉熬成的黏稠綠色湯品。",
+        "history": "在埃及流傳已久，常搭配米飯與雞肉或兔肉食用。",
+        "wiki": "Mulukhiyah"
+      },
+      {
+        "name": "塔美亞",
+        "localName": "طعمية (Ta'ameya)",
+        "description": "以蠶豆製成的埃及式炸豆丸子。",
+        "history": "埃及版本的法拉費，與西亞常見的鷹嘴豆版本不同。",
+        "wiki": "Falafel"
+      },
+      {
+        "name": "法塔",
+        "localName": "فتة (Fattah)",
+        "description": "在麵包與米飯上淋蒜醋番茄醬並鋪上肉塊的料理。",
+        "history": "傳統上在宰牲節等節慶時食用。",
+        "wiki": "Fattah"
+      }
+    ]
+  }
+}
