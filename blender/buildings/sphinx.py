@@ -9,7 +9,7 @@ from lib import TAU, Builder
 import os
 
 # 目標點、方位角、仰角、距離、焦距（對應參考照：東南側地面視角）
-CAMERA = ((2.0, 0.0, 9.0), 33.0, 1.5, 50.0, 20.0)
+CAMERA = ((0.0, 0.0, 8.5), 32.0, 1.0, 36.0, 20.0)
 
 if os.environ.get("TL_CAM"):  # 開發用：覆寫預覽相機
     CAMERA = eval(os.environ["TL_CAM"])
@@ -85,11 +85,11 @@ def lerp_table(tab, x):
 # ---------------------------------------------------------------- 主體
 def sphinx(path):
     b = Builder("Sphinx", seed=11)
-    body_m = b.tex("body", "rock_04", tile=3.0, tint="#c9974f", normal=1.6)
+    body_m = b.tex("body", "rock_04", tile=3.0, tint="#c98f48", normal=1.6)
     groove = b.tex("groove", "rock_04", tile=3.0, tint="#9a6e3c", normal=1.6)
-    head_m = b.tex("head", "rock_04", tile=2.0, tint="#c68f55", normal=1.2)
-    clad = b.tex("clad", "sandstone_blocks_05", tile=3.0, tint="#c99b5c", normal=1.0)
-    floor_m = b.tex("floor", "sand_01", tile=5.0, tint="#d9b47a", normal=0.8)
+    head_m = b.tex("head", "rock_04", tile=2.0, tint="#c98a4c", normal=1.2)
+    clad = b.tex("clad", "sandstone_blocks_05", tile=3.0, tint="#c99552", normal=1.0)
+    floor_m = b.tex("floor", "sand_01", tile=5.0, tint="#d6ab68", normal=0.8)
     bedrock = b.tex("bedrock", "rock_04", tile=6.0, tint="#c29a62", normal=1.3)
     granite = b.tex("granite", "rock_04", tile=1.5, tint="#8a5a4c", normal=0.6)
     dark = b.color("shade", "#7d6248", rough=0.95)
