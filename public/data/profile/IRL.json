@@ -7,30 +7,30 @@
    {
     "name": "天主教",
     "percent": 69,
-    "description": "歷史上與愛爾蘭民族認同緊密結合，至今仍為最大宗教。"
+    "description": "5世紀聖派翠克傳教後，基督教在愛爾蘭生根；16世紀英國推行新教改革時，多數愛爾蘭人仍堅守天主教，並在《刑法》壓迫下把信仰當成民族認同。1922年獨立後天主教會掌控多數學校與醫院，因此至今仍是最大宗教。不過比例已從1961年約95%持續下降。"
    },
    {
     "name": "無宗教",
     "percent": 14,
-    "description": "2022年普查中快速成長。"
+    "description": "1990年代起天主教會性侵與『抹大拉洗衣房』等醜聞陸續揭露，嚴重打擊教會威信；同時「凱爾特之虎」經濟起飛帶來都市化與高等教育普及。2022年普查中無宗教者比2016年增加約六成，以都柏林等城市的年輕人最多。"
    },
    {
     "name": "新教（愛爾蘭教會等）",
     "percent": 4,
-    "description": "包含聖公會系統的愛爾蘭教會與長老會。"
+    "description": "16–17世紀英國在愛爾蘭推行宗教改革，並在阿爾斯特殖民區安置大批英格蘭與蘇格蘭新教移民，形成聖公會的愛爾蘭教會與長老會社群。1921年分治時新教徒多集中在北部成為北愛爾蘭，留在共和國的新教徒因此只是少數，現多分布於都柏林與邊境各郡。"
    },
    {
     "name": "東正教",
     "percent": 2,
-    "description": "主要來自東歐移民。"
+    "description": "2004年歐盟東擴後，羅馬尼亞、保加利亞等東歐國家的移民大量來到愛爾蘭工作，把東正教帶入。都柏林等地已設立羅馬尼亞、俄羅斯與希臘東正教堂，信徒以年輕移工家庭為主。"
    },
    {
     "name": "伊斯蘭教",
     "percent": 2,
-    "description": "主要來自移民社群。"
+    "description": "1950年代起少量來自南非、馬來西亞等地的醫學生在愛爾蘭形成穆斯林社群，1976年都柏林設立第一座清真寺。1990年代經濟繁榮後，來自巴基斯坦、奈及利亞與中東的移民與難民增加，使伊斯蘭教成為成長最快的少數宗教之一。"
    }
   ],
-  "background": "5世紀聖派翠克將基督教傳入愛爾蘭。16世紀英國推動宗教改革，但多數愛爾蘭人堅守天主教，在英國統治下長期受到刑法壓迫，天主教因此成為民族認同核心。20世紀末教會醜聞與經濟發展使社會快速世俗化。"
+  "background": "傳說西元432年左右聖派翠克來到愛爾蘭傳教，6–8世紀愛爾蘭修道院成為歐洲學術重鎮，修士還遠赴蘇格蘭與歐陸傳教。16世紀英王亨利八世推動宗教改革，愛爾蘭多數人卻拒絕改宗，此後英國以《刑法》（Penal Laws）限制天主教徒的土地、教育與參政權，宗教因此與「愛爾蘭人對抗英國統治」的民族認同綁在一起。1829年天主教解放、1922年愛爾蘭自由邦成立後，天主教會長期主導教育與社會政策。1990年代起神職人員性侵醜聞曝光，加上經濟起飛與都市化，社會快速世俗化，2015年與2018年公投先後通過同性婚姻與墮胎合法化。"
  },
  "language": {
   "official": "官方語言為愛爾蘭語（第一官方語言）與英語。",
@@ -38,34 +38,34 @@
    {
     "name": "英語",
     "percent": 93,
-    "description": "日常生活的主要語言，愛爾蘭英語帶有獨特腔調與詞彙。",
+    "description": "12世紀諾曼人入侵後英語開始進入愛爾蘭，16–17世紀英國殖民與種植園政策讓英語成為行政、法律與商業語言。19世紀大饑荒與國家學校（1831年起）以英語教學，使父母為了讓子女移民或謀生而改說英語，到20世紀英語已成為絕大多數人的母語。",
     "greeting": "Hello",
     "pronunciation": "heh-loh"
    },
    {
     "name": "愛爾蘭語",
     "percent": 2,
-    "description": "約四成人口具備能力，但每日在學校以外使用者約2%，主要在西部蓋爾語區（Gaeltacht）。",
+    "description": "愛爾蘭語曾是全島通行語，但在英國統治與大饑荒後急遽衰退。獨立後政府把它列為必修科，約四成人口自稱會說，但校外每天使用者只剩約2%，集中在戈爾韋、多尼哥、凱里等西部沿海的蓋爾語區（Gaeltacht）。",
     "greeting": "Dia dhuit",
     "pronunciation": "dee-a gwit"
    },
    {
     "name": "波蘭語",
     "percent": 2,
-    "description": "2004年後大量波蘭移民帶入。",
+    "description": "2004年波蘭加入歐盟，愛爾蘭是少數立即開放勞動市場的國家之一，大量波蘭年輕人來到建築業與服務業工作，波蘭語因此成為愛爾蘭第二常用的家庭語言，都柏林等城市可見波蘭商店與彌撒。",
     "greeting": "Cześć",
     "pronunciation": "cheshch"
    }
   ],
-  "history": "愛爾蘭語是凱爾特語族的一支，曾是全島主要語言。英國殖民統治、19世紀大饑荒與移民潮使愛爾蘭語急劇衰退。19世紀末蓋爾語聯盟推動語言復興，獨立後憲法定其為第一官方語言。"
+  "history": "愛爾蘭語屬凱爾特語族，中世紀時已發展出豐富的文學，甚至被12世紀入侵的諾曼貴族採用。16–17世紀英國重新征服愛爾蘭並推行殖民，英語成為政治與商業語言；1845–1852年大饑荒造成約百萬人死亡、百萬人移民，受害最深的正是說愛爾蘭語的西部貧農，語言迅速崩落。1893年蓋爾語聯盟成立推動復興，1922年獨立後愛爾蘭語成為學校必修科，1937年憲法定為第一官方語言，但英語仍是絕大多數人的母語。"
  },
  "food": {
   "ranking": [
    {
     "name": "愛爾蘭燉菜",
     "localName": "Irish stew",
-    "description": "以羊肉、馬鈴薯、洋蔥與胡蘿蔔燉煮的清燉菜。",
-    "history": "傳統農家料理，被視為國菜，反映愛爾蘭以羊與馬鈴薯為主的農業。",
+    "description": "以羊肉（或羊頸肉）、馬鈴薯、洋蔥燉煮而成的清湯燉菜，有些家庭會加胡蘿蔔，味道樸實。",
+    "history": "愛爾蘭燉菜源自農家料理：牧羊人把老羊或羊頸等便宜部位與便宜的根莖類一起長時間燉煮。17世紀後馬鈴薯成為愛爾蘭窮人的主食，燉菜也以馬鈴薯為主角，因此常被視為馬鈴薯與牧羊經濟的縮影。19世紀已有文獻把它當作愛爾蘭代表菜，現今在聖派翠克節（3月17日）與酒館菜單上幾乎一定會出現。",
     "wiki": "Irish stew",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Irish_Beef_Stew_%2834046928633%29.jpg/960px-Irish_Beef_Stew_%2834046928633%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Irish_Beef_Stew_(34046928633).jpg",
@@ -74,8 +74,8 @@
    {
     "name": "蘇打麵包",
     "localName": "Soda bread",
-    "description": "以小蘇打代替酵母、加酪乳發酵的麵包。",
-    "history": "19世紀小蘇打傳入後普及，適合愛爾蘭的軟質小麥。",
+    "description": "以小蘇打取代酵母、加入酪乳（buttermilk）使麵團膨脹的快速麵包，外皮硬、內部紮實微酸。",
+    "history": "1830–1840年代小蘇打（碳酸氫鈉）開始在愛爾蘭販售，正好適合當地氣候種出的低筋軟質小麥——這種麵粉不易用酵母發酵。農家用鐵鍋在泥炭火上就能烤，因此迅速普及。圓麵包表面劃上十字，民間說法是「讓仙子出來」或祈求祝福；北愛爾蘭則常做成四等分的扁平「farl」。",
     "wiki": "Soda bread",
     "image": "https://upload.wikimedia.org/wikipedia/commons/2/29/Ben_W_Bell_Soda_Bread_Farl_05_June_2007.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Ben_W_Bell_Soda_Bread_Farl_05_June_2007.jpg",
@@ -84,8 +84,8 @@
    {
     "name": "愛爾蘭全套早餐",
     "localName": "Full Irish breakfast",
-    "description": "煎培根、香腸、蛋、黑白布丁、焗豆、番茄與蘇打麵包。",
-    "history": "源自農家為勞動提供熱量的豐盛早餐。",
+    "description": "煎培根、香腸、蛋、黑布丁與白布丁（血腸與燕麥腸），配焗豆、番茄、蘑菇與蘇打麵包，搭紅茶。",
+    "history": "這套豐盛早餐源於農家需在清晨下田前補充大量熱量的習慣，豬肉加工品則來自農家秋冬宰豬保存肉品的傳統。黑布丁以豬血和燕麥製成，是物盡其用的鄉村食物。19–20世紀它和英格蘭全套早餐一同發展，愛爾蘭版的特色在於白布丁與蘇打麵包，如今是旅館與咖啡館的招牌早餐，也被視為週末或宿醉後的家庭儀式。",
     "wiki": "Full breakfast",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Full_English_breakfast_%28cropped%29.jpg/960px-Full_English_breakfast_%28cropped%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Full_English_breakfast_(cropped).jpg",
@@ -94,8 +94,8 @@
    {
     "name": "甘藍馬鈴薯泥",
     "localName": "Colcannon",
-    "description": "馬鈴薯泥拌入甘藍或羽衣甘藍與奶油。",
-    "history": "傳統上在萬聖節食用，有時藏入戒指或硬幣作為占卜。",
+    "description": "把馬鈴薯泥拌入切碎的甘藍或羽衣甘藍、蔥與大量奶油，口感綿密。",
+    "history": "Colcannon 一名來自愛爾蘭語 cál ceannann，意指「白頭甘藍」。它在18世紀已見於文獻，是馬鈴薯普及後的家常菜。傳統上在萬聖節前夕（源自凱爾特的薩溫節）食用，人們會在裡面藏戒指、硬幣或頂針，吃到的人據說預示婚姻、財富或單身，19世紀民謠〈Colcannon〉也唱到這道菜。",
     "wiki": "Colcannon",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Colcannon.JPG/960px-Colcannon.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Colcannon.JPG",
@@ -104,8 +104,8 @@
    {
     "name": "馬鈴薯煎餅",
     "localName": "Boxty",
-    "description": "以生馬鈴薯絲與薯泥混合煎成的薄餅。",
-    "history": "源自北部中部的傳統料理，有「不會做波克斯蒂就嫁不出去」的俗諺。",
+    "description": "把生馬鈴薯絲擠乾水分，與馬鈴薯泥、麵粉、酪乳混合後煎成的薄餅，外脆內軟。",
+    "history": "Boxty 來自愛爾蘭語 arán bocht tí（窮人的麵包），流行於北中部的利特里姆、卡文、斯萊戈等郡，是18–19世紀馬鈴薯主食時代的產物。民間順口溜「Boxty on the griddle, boxty in the pan, if you can't make boxty, you'll never get a man」反映它曾是持家必會的料理。大饑荒後一度少見，近年因餐廳復興又成為愛爾蘭特色菜。",
     "wiki": "Boxty",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Boxty_triangle.jpg/960px-Boxty_triangle.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Boxty_triangle.jpg",

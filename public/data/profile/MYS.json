@@ -7,30 +7,30 @@
    {
     "name": "伊斯蘭教",
     "percent": 63,
-    "description": "聯邦宗教，馬來人依憲法定義為穆斯林。"
+    "description": "伊斯蘭教在13–15世紀經由阿拉伯、印度與波斯穆斯林商人傳入馬來半島，15世紀初麻六甲王國的統治者改信伊斯蘭教，隨著麻六甲成為東南亞最大港口，伊斯蘭教迅速傳遍各馬來蘇丹國。1957年獨立憲法規定伊斯蘭教為聯邦宗教，且將「信奉伊斯蘭教」列入馬來人的法律定義，因此佔人口約七成的馬來人幾乎全為穆斯林，加上沙巴、砂拉越的部分原住民，構成六成以上的人口。"
    },
    {
     "name": "佛教",
     "percent": 19,
-    "description": "主要為華人信徒。"
+    "description": "佛教徒絕大多數是華人，主要是19世紀至20世紀初英國殖民時期為開採錫礦、種植橡膠而從福建、廣東移入的勞工與商人後代。華人寺廟常將大乘佛教與道教、民間信仰融合；此外北部吉打、吉蘭丹也有少數泰裔南傳佛教社群。佛教徒集中在檳城、吉隆坡、怡保等華人聚居的城市。"
    },
    {
     "name": "基督教",
     "percent": 9,
-    "description": "主要分布於沙巴與砂拉越的原住民及部分華人。"
+    "description": "基督教在1511年葡萄牙占領麻六甲後傳入，其後荷蘭、英國統治時期新教也隨之而來。19世紀以後傳教士在沙巴與砂拉越的原住民（如卡達山杜順族、伊班族）中大規模傳教，使東馬基督徒比例遠高於西馬；在西馬則以華人與印度裔信徒為主。"
    },
    {
     "name": "印度教",
     "percent": 6,
-    "description": "主要為印度裔居民。"
+    "description": "印度教主要由19世紀末至20世紀初英國從南印度招募到橡膠園與鐵路工作的淡米爾勞工帶入。印度裔約佔人口7%，多數信仰印度教，集中在雪蘭莪、霹靂與森美蘭。每年大寶森節時，數十萬信徒到吉隆坡近郊的黑風洞朝聖。"
    },
    {
     "name": "中國民間信仰／道教",
     "percent": 1,
-    "description": "華人的傳統信仰。"
+    "description": "中國民間信仰與道教由華人移民帶入，供奉媽祖、關帝、大伯公等神明，19世紀起各地方言會館常以廟宇為中心。由於許多華人在普查中將自己登記為佛教徒，單獨填報民間信仰或道教的人數相對很少。"
    }
   ],
-  "background": "十五世紀麻六甲蘇丹王朝的統治者皈依伊斯蘭教，使其在馬來半島廣泛傳播。英國殖民時期大量華人與印度人移入錫礦與橡膠園工作，帶來佛教、道教與印度教，傳教士則在婆羅洲傳播基督教。"
+  "background": "馬來半島在1世紀起受印度文化影響，信仰印度教與佛教，7–13世紀屬佛教的室利佛逝勢力範圍。15世紀麻六甲王國改信伊斯蘭教後，伊斯蘭教成為馬來人的核心認同。葡萄牙、荷蘭、英國相繼殖民，19世紀英國引進大量華人與印度勞工，帶來佛教、道教與印度教，東馬原住民則多改信基督教。1957年獨立後，伊斯蘭教為聯邦宗教，但憲法保障其他宗教的信仰自由。"
  },
  "language": {
   "official": "馬來語是國語及官方語言。",
@@ -38,34 +38,34 @@
    {
     "name": "馬來語",
     "percent": 60,
-    "description": "國語，也是跨族群的通用語。",
+    "description": "馬來語是馬來半島與蘇門答臘的古老語言，15世紀麻六甲王國時期成為整個東南亞海上貿易的通用語。1957年獨立後被定為國語，1967年《國語法》規定其為唯一官方語言，1970年代起國立學校逐步改以馬來語授課。因此除了馬來人以母語使用外，各族群在學校與公務中都必須學習馬來語。",
     "greeting": "Apa khabar",
     "pronunciation": "AH-pa KAH-bar"
    },
    {
     "name": "華語及漢語方言",
     "percent": 23,
-    "description": "華人社群使用華語、粵語、閩南語、客家話等。",
+    "description": "華語及漢語方言源自19世紀至20世紀初從福建、廣東、海南等地移入的華人，因此各地通行不同方言：檳城以福建話為主、吉隆坡與怡保以粵語為主、古晉有客家話。華人社群自19世紀起自辦華文學校，1950年代起改以華語（普通話）教學，這套從小學到獨立中學的完整華文教育體系是中國以外最完整的之一。",
     "greeting": "你好",
     "pronunciation": "nee HOW"
    },
    {
     "name": "淡米爾語",
     "percent": 6,
-    "description": "印度裔社群的主要語言。",
+    "description": "淡米爾語由19世紀末起英國從南印度招募的橡膠園與鐵路勞工帶入，是馬來西亞印度裔最主要的語言。殖民時期園坵內設有淡米爾文學校，獨立後國民型淡米爾文小學保留至今，使淡米爾語得以在印度裔社群中傳承。",
     "greeting": "வணக்கம்",
     "pronunciation": "va-NAK-kam"
    }
   ],
-  "history": "馬來語長期是東南亞海上貿易的通用語，過去以阿拉伯字母（爪夷文）書寫，殖民時期後改用拉丁字母。英國殖民使英語成為行政語言，獨立後推行馬來語為國語，英語仍廣泛使用於商業與高等教育。"
+  "history": "古馬來語最早見於7世紀室利佛逝時期的碑文，當時以源自印度的帕拉瓦字母書寫。伊斯蘭教傳入後改用以阿拉伯字母為基礎的爪威文，麻六甲王國使馬來語成為區域貿易語。英國殖民時期引入羅馬字母拼寫，華人與印度移民也帶來各自的語言。1957年獨立後定馬來語為國語，1972年與印尼統一拼寫法，英語仍廣泛用於商業與高等教育。"
  },
  "food": {
   "ranking": [
    {
     "name": "椰漿飯",
     "localName": "Nasi lemak",
-    "description": "以椰奶煮的米飯，配參巴辣醬、炸小魚乾、花生與水煮蛋。",
-    "history": "被視為馬來西亞國民美食，傳統上作為早餐。",
+    "description": "以椰奶與香蘭葉煮成香濃的米飯，搭配參巴辣醬、炸江魚仔（小魚乾）、烤花生、黃瓜片與水煮蛋，傳統上以香蕉葉包裹。",
+    "history": "椰漿飯最早是馬來半島西海岸漁民與農民的早餐，椰子與小魚乾都是當地沿海的日常物產。英國殖民時期的文獻已有相關記載。如今它從路邊攤到高級餐廳都有，常加上咖哩雞或仁當，被普遍視為馬來西亞的國民美食，不分族群都會吃，華人版本有時也會搭配不同配菜。",
     "wiki": "Nasi lemak",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Nasi_Lemak_dengan_Chili_Nasi_Lemak_dan_Sotong_Pedas%2C_di_Penang_Summer_Restaurant.jpg/960px-Nasi_Lemak_dengan_Chili_Nasi_Lemak_dan_Sotong_Pedas%2C_di_Penang_Summer_Restaurant.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Nasi_Lemak_dengan_Chili_Nasi_Lemak_dan_Sotong_Pedas,_di_Penang_Summer_Restaurant.jpg",
@@ -74,8 +74,8 @@
    {
     "name": "沙爹",
     "localName": "Satay",
-    "description": "醃漬後炭烤的肉串，配花生醬。",
-    "history": "東南亞廣泛流行的燒烤料理，在馬來西亞是夜市必備小吃。",
+    "description": "將雞肉、牛肉或羊肉以薑黃、香茅等香料醃漬後串在竹籤上炭烤，蘸花生醬並搭配黃瓜、洋蔥與米糕食用。",
+    "history": "一般認為沙爹的作法受到中東烤肉串（kebab）啟發，由印度與阿拉伯穆斯林商人在19世紀前後傳入爪哇，再普及至馬來半島，名稱可能源自淡米爾語或閩南語「三塊肉」的說法，眾說紛紜。雪蘭莪州的加影以沙爹聞名，被稱為「沙爹之城」，沙爹也是開齋節等節慶的常見美食。",
     "wiki": "Satay",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Sate_Udang.JPG/960px-Sate_Udang.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Sate_Udang.JPG",
@@ -84,8 +84,8 @@
    {
     "name": "印度煎餅",
     "localName": "Roti canai",
-    "description": "層層酥軟的煎餅，配咖哩醬食用。",
-    "history": "由印度穆斯林移民帶來，是嘛嘛檔最受歡迎的早餐。",
+    "description": "將麵團甩成極薄的麵皮後折疊煎烤，形成層層酥軟的煎餅，搭配咖哩或扁豆醬食用。",
+    "history": "印度煎餅源自南印度的帕拉塔（paratha），由19至20世紀從南印度移民的穆斯林（稱為「嘛嘛」）帶入，名稱「canai」據說與印度的清奈或「揉麵」的動作有關。嘛嘛檔（印度穆斯林餐廳）24小時營業，是各族群深夜聚會、看足球賽的地方，印度煎餅配拉茶成了馬來西亞最具代表性的早餐與宵夜。",
     "wiki": "Roti canai",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/YosriRotiCanai.jpg/960px-YosriRotiCanai.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:YosriRotiCanai.jpg",
@@ -94,8 +94,8 @@
    {
     "name": "仁當",
     "localName": "Rendang",
-    "description": "以椰奶與香料長時間燉煮至收汁的牛肉。",
-    "history": "源自蘇門答臘米南佳保人，開齋節時常見。",
+    "description": "將牛肉以椰奶、辣椒、香茅、南薑與多種香料用小火燉煮數小時，直到湯汁收乾、香料緊裹在肉上，口味濃郁微辣。",
+    "history": "仁當源自印尼蘇門答臘的米南佳保族，長時間燉煮與收乾的做法可讓肉在炎熱氣候中保存多日。18–19世紀米南佳保人移居馬來半島，在今日的森美蘭州建立社群，把仁當帶入馬來西亞。如今它是開齋節與哈芝節必備的節慶菜，家家戶戶會在節前準備一大鍋。",
     "wiki": "Rendang",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Rendang_daging_sapi_asli_Padang.JPG/960px-Rendang_daging_sapi_asli_Padang.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Rendang_daging_sapi_asli_Padang.JPG",
@@ -104,8 +104,8 @@
    {
     "name": "扁擔飯",
     "localName": "Nasi kandar",
-    "description": "白飯淋上多種咖哩，搭配各式配菜。",
-    "history": "源自檳城的印度穆斯林小販，以扁擔挑飯沿街叫賣而得名。",
+    "description": "白飯上依個人選擇搭配炸雞、咖哩魚、秋葵、蛋等多種配菜，再淋上數種咖哩汁混合，稱為「淋汁」。",
+    "history": "扁擔飯起源於19世紀末的檳城，當時印度穆斯林小販用一根扁擔（kandar）挑著兩個裝滿飯與咖哩的籃子沿街叫賣，因此得名。後來小販開設固定店面，有些老字號已傳承數代。扁擔飯是檳城最具代表性的美食之一，反映了印度移民對北馬飲食文化的重要影響。",
     "wiki": "Nasi kandar",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/A_plate_of_Nasi_Kandar.jpg/960px-A_plate_of_Nasi_Kandar.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:A_plate_of_Nasi_Kandar.jpg",

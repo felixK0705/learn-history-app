@@ -7,30 +7,30 @@
    {
     "name": "冰島國教會（路德宗）",
     "percent": 56,
-    "description": "國家教會，但成員比例逐年下降。"
+    "description": "1550年丹麥統治者強制冰島改信路德宗並處死天主教主教約恩·阿拉松，此後冰島國教會成為國家教會，受憲法保障並由政府代收教會稅。過去幾乎全民在出生時就自動登記為會員，因此比例很高；但1990年代約九成，近年已降到約一半，多數人並不定期上教堂。"
    },
    {
     "name": "無宗教或未登記",
     "percent": 25,
-    "description": "近年快速成長。"
+    "description": "冰島是北歐世俗化最快的國家之一，教育程度高、都市化，再加上2008年金融危機前後對傳統機構信任下降，越來越多人退出國教會。2013年起新生兒不再自動隨母親登記為國教會成員，未登記或登記無宗教的人數因此快速增加。"
    },
    {
     "name": "其他路德宗自由教會",
     "percent": 5,
-    "description": "如雷克雅維克自由教會等。"
+    "description": "19世紀末起部分信徒因不滿國教會的地方牧師人選或教會管理而另組自由教會，例如雷克雅維克與哈夫納夫約杜爾的自由教會。它們神學上仍屬路德宗，但財務與組織獨立於國家教會之外。"
    },
    {
     "name": "天主教",
     "percent": 4,
-    "description": "主要來自波蘭等國移民。"
+    "description": "1550年宗教改革後天主教在冰島幾乎消失，19世紀末才由法國等地的傳教士重新建立教會。近年人數成長主要來自2004年後的波蘭與菲律賓等移民，因此天主教是冰島移民社群中最大的宗教。"
    },
    {
     "name": "北歐古信仰（阿薩特魯）",
     "percent": 2,
-    "description": "復興古代北歐神祇信仰的團體，1973年獲官方承認。"
+    "description": "阿薩特魯是重建維京時代北歐神信仰的新異教運動，1972年由詩人斯維恩比約恩·拜因泰恩松創立，次年獲官方承認。冰島人對自身的薩迦文學與維京祖先有強烈認同，使其在本國吸引了一定人數，雷克雅維克也建造了1000年來首座北歐神殿。"
    }
   ],
-  "background": "西元1000年，冰島阿爾庭決議全島改信基督教，同時允許私下保留異教習俗。1550年左右在丹麥國王推動下改行路德宗，路德宗自此成為國家教會。近數十年世俗化與移民使宗教多元化。"
+  "background": "冰島在9世紀末由挪威人移民定居，最初信奉北歐多神信仰。西元1000年左右，冰島議會（Althing）在挪威王壓力下決議全國接受基督教，但允許私下祭祀舊神。1550年丹麥國王強制推行路德宗改革，處決了最後一位天主教主教約恩·阿拉松，路德宗從此成為國教。20世紀後期起冰島快速世俗化，國教會人數逐年下降，1972年北歐古信仰也獲得官方承認。"
  },
  "language": {
   "official": "官方語言為冰島語。",
@@ -38,34 +38,34 @@
    {
     "name": "冰島語",
     "percent": 88,
-    "description": "源自古諾斯語，保守且純正，現代冰島人仍能讀懂中世紀薩迦文學。",
+    "description": "冰島語直接承襲9世紀維京移民的古諾斯語，因地理隔絕而保留了古老的文法與詞彙。19世紀獨立運動將冰島語視為民族認同核心，獨立後它是唯一的國家語言，學校、政府與媒體一律使用，2011年法律正式確認其官方地位。",
     "greeting": "Halló / Góðan daginn",
     "pronunciation": "hal-lo / go-than dai-in"
    },
    {
     "name": "波蘭語",
     "percent": 5,
-    "description": "冰島最大移民群體波蘭人的語言。",
+    "description": "2004年歐盟東擴後，波蘭人因冰島建築業、漁產加工業與鋁廠的勞力需求大量移入，波蘭人成為冰島最大的外國人社群。2008年金融危機時部分人返國，但之後觀光業興盛又吸引更多人前來，波蘭語因此成為冰島第二常見的母語。",
     "greeting": "Cześć",
     "pronunciation": "cheshch"
    },
    {
     "name": "英語",
     "percent": 2,
-    "description": "廣泛作為第二語言，觀光與商業常用。",
+    "description": "冰島人從小在學校學習英語，加上英美影視、網路與每年數百萬觀光客，大多數冰島人都能流利說英語，但以英語為母語者不多。英語的強勢也引發冰島政府對語言「數位滅絕」的擔憂，近年投入資金發展冰島語的語音與AI技術。",
     "greeting": "Hello",
     "pronunciation": "heh-loh"
    }
   ],
-  "history": "9世紀維京人移民帶來古諾斯語。由於地理孤立，冰島語變化很少，13世紀寫成的《埃達》與薩迦至今仍易於閱讀。冰島長期推行語言純化政策，傾向以固有詞根創造新詞而非借用外語。"
+  "history": "冰島語源自9世紀挪威移民帶來的古諾斯語，由於冰島孤懸北大西洋，語言變化很小，現代冰島人仍能大致讀懂12–13世紀的薩迦文學。丹麥統治時期（1380–1944年）丹麥語曾在商業與行政中佔優勢，但19世紀民族運動推動「語言純化主義」，以冰島語固有詞根創造新詞取代外來語。1944年獨立後，冰島語委員會持續為電腦、電話等新事物創造本土詞彙，例如電腦稱 tölva（數字＋女預言家）。"
  },
  "food": {
   "ranking": [
    {
     "name": "冰島優格",
     "localName": "Skyr",
-    "description": "質地濃稠、高蛋白低脂的發酵乳製品，常加莓果食用。",
-    "history": "維京移民自挪威帶來的製作傳統，在冰島延續逾千年。",
+    "description": "以脫脂牛奶發酵並濾除乳清製成的濃稠乳製品，質地像優格但蛋白質高、味道微酸。",
+    "history": "Skyr 的製作方法很可能是9–10世紀由挪威移民帶到冰島，在中世紀薩迦文學中就已提到。其他北歐地區後來不再製作，冰島則因寒冷氣候與畜牧經濟而持續保存，成為冬季重要的蛋白質來源。20世紀後期冰島乳品公司將它商品化，近年行銷到美國與歐洲，成為冰島代表性食品。",
     "wiki": "Skyr",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Skyr.is_me%C3%B0_vanillu.jpg/960px-Skyr.is_me%C3%B0_vanillu.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Skyr.is_me%C3%B0_vanillu.jpg",
@@ -74,8 +74,8 @@
    {
     "name": "煙燻羊肉",
     "localName": "Hangikjöt",
-    "description": "以樺木或羊糞燻製的羊肉，常配馬鈴薯與白醬。",
-    "history": "冰島的傳統聖誕節主菜，燻製法源自缺乏木材的環境。",
+    "description": "以樺木或乾羊糞燻製的羊肉，多半水煮後切片，配白醬馬鈴薯與青豆食用。",
+    "history": "Hangikjöt 意為「吊起來的肉」，因傳統上將羊肉掛在農舍的煙囪或燻房中燻製保存。冰島樹木稀少，人們以羊糞燻肉，這是適應無林地環境的做法。它是冰島聖誕節最重要的傳統菜，常與扁麵包、紅甘藍一起上桌。",
     "wiki": "Hangikjöt",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Hangikj%C3%B6t.jpg/960px-Hangikj%C3%B6t.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Hangikj%C3%B6t.jpg",
@@ -84,8 +84,8 @@
    {
     "name": "發酵鯊魚肉",
     "localName": "Hákarl",
-    "description": "格陵蘭鯊經發酵與風乾數月後製成，味道強烈。",
-    "history": "格陵蘭鯊鮮肉有毒，發酵處理是古代生存智慧，現為冬季索拉布洛特節的傳統食物。",
+    "description": "將格陵蘭鯊魚肉埋入碎石中發酵數週，再懸掛風乾四到五個月，切小塊食用，帶濃烈阿摩尼亞味。",
+    "history": "格陵蘭鯊魚的新鮮肉含有大量尿素與氧化三甲胺而具毒性，冰島先民發現經發酵與風乾後就能安全食用。這種保存法讓糧食匱乏的島民能利用珍貴的蛋白質。今天它主要在冬季的「托拉布洛特」（Þorrablót）節慶中與其他傳統食物一起食用，常配一口冰島烈酒 Brennivín。",
     "wiki": "Hákarl",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Hakarl_near_Bjarnah%C3%B6fn_in_Iceland.JPG/960px-Hakarl_near_Bjarnah%C3%B6fn_in_Iceland.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Hakarl_near_Bjarnah%C3%B6fn_in_Iceland.JPG",
@@ -94,8 +94,8 @@
    {
     "name": "冰島扁麵包",
     "localName": "Flatkaka",
-    "description": "以黑麥粉做成、在明火上烤出焦斑的扁圓薄餅，常配煙燻羊肉。",
-    "history": "冰島傳統麵包，適應過去缺乏烤爐的環境。",
+    "description": "以黑麥粉製成的圓形無酵薄餅，傳統直接放在熱煤上烤出焦痕，常塗奶油並配煙燻羊肉。",
+    "history": "冰島氣候寒冷，小麥難以種植，歷史上麵粉多需從丹麥進口，因此過去麵包是珍貴食物。Flatkaka 不需酵母、只用少量黑麥粉就能做，是節省資源的家常麵包。今天它常搭配 hangikjöt 片或燻鮭魚作為零食，也是聖誕節與 Þorrablót 節慶餐桌上的傳統食物。",
     "wiki": "Flatkaka",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/R%C3%BAgbrau%C3%B0_and_Flatbrau%C3%B0.jpg/960px-R%C3%BAgbrau%C3%B0_and_Flatbrau%C3%B0.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:R%C3%BAgbrau%C3%B0_and_Flatbrau%C3%B0.jpg",
@@ -104,8 +104,8 @@
    {
     "name": "魚乾",
     "localName": "Harðfiskur",
-    "description": "風乾的鱈魚或黑線鱈，常抹奶油當點心吃。",
-    "history": "冰島人自中世紀起以風乾方式保存漁獲，是長期的主要蛋白質來源。",
+    "description": "將鱈魚或狼魚在冷風中風乾數月而成的魚乾，通常塗奶油當零食吃。",
+    "history": "冰島自中世紀起以漁業為生，在寒冷乾燥的海風中晾乾的魚能保存數年，是古代冰島人的重要主食，鱈魚乾也是14世紀起出口歐洲的大宗商品。過去冰島人常把魚乾當麵包吃，今天它則是高蛋白零食，在超市與加油站都買得到。",
     "wiki": "Stockfish",
     "image": "https://upload.wikimedia.org/wikipedia/commons/3/32/Hjell-oversikt.arj.jpeg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Hjell-oversikt.arj.jpeg",

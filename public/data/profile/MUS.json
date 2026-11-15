@@ -7,30 +7,30 @@
    {
     "name": "印度教",
     "percent": 48,
-    "description": "主要為印度裔居民。"
+    "description": "1834年英國廢除奴隸制後，殖民當局從印度招募大量契約勞工到甘蔗園工作，1834–1920年間約有45萬人抵達，其中多數來自比哈爾等地並信仰印度教。他們的後代成為模里西斯人口最多的群體，因此印度教是最大宗教。每年濕婆節時，數十萬信徒步行到聖湖大盆地（Grand Bassin）朝聖。"
    },
    {
     "name": "天主教",
     "percent": 26,
-    "description": "克里奧爾人與部分其他族群信仰。"
+    "description": "18世紀法國統治時期，法國殖民者與從非洲、馬達加斯加運來的奴隸大多受洗為天主教徒，天主教隨之成為克里奧爾人與法裔居民的主要信仰。1810年英國占領後依投降條約保留了法國的宗教與法律，天主教會得以延續。1864年去世的賴瓦神父因照顧被解放的奴隸，被奉為「模里西斯的使徒」，其墓地是重要朝聖地。"
    },
    {
     "name": "伊斯蘭教",
     "percent": 17,
-    "description": "主要為印度裔穆斯林。"
+    "description": "伊斯蘭教主要由19世紀來自印度北部與古吉拉特的契約勞工和商人帶入，以遜尼派為主，也有少數什葉派。穆斯林是印度裔中的少數群體，集中在路易港等城市，在商業與政治上具影響力。"
    },
    {
     "name": "其他基督教",
     "percent": 6,
-    "description": "包含五旬節派、基督復臨安息日會等。"
+    "description": "其他基督教包括英國統治時期傳入的聖公會與長老會，以及1970年代後快速成長的五旬節派與福音派教會，信徒以克里奧爾人與華人為主。"
    },
    {
     "name": "佛教",
     "percent": 1,
-    "description": "主要為華裔居民。"
+    "description": "佛教主要由19世紀起從廣東梅縣等地移入的客家華人帶來，常與祖先崇拜及關帝等民間信仰結合。由於華人只佔人口約3%，且不少人已改信天主教，佛教徒比例很低。"
    }
   ],
-  "background": "法國殖民時期引入非洲與馬達加斯加奴隸，並帶來天主教。1835年英國廢奴後，從印度招募大量契約勞工，使印度教與伊斯蘭教成為主要宗教；華人移民則帶來佛教與民間信仰。"
+  "background": "模里西斯在17世紀前無人定居，宗教全由移民帶入。18世紀法國殖民者與非洲、馬達加斯加奴隸奠定了天主教基礎。1810年英國接手後，1834年廢奴並引進大量印度契約勞工，帶來印度教與伊斯蘭教，華人移民則帶來佛教與民間信仰。今日多元宗教並存，各大宗教節日都是國定假日。"
  },
  "language": {
   "official": "國會使用英語，法語與模里西斯克里奧爾語廣泛使用。",
@@ -38,34 +38,34 @@
    {
     "name": "模里西斯克里奧爾語",
     "percent": 87,
-    "description": "以法語為基礎的克里奧爾語，是多數家庭的語言。",
+    "description": "模里西斯克里奧爾語形成於18世紀法國殖民時期，是非洲與馬達加斯加奴隸與法國殖民者溝通時，以法語詞彙為基礎發展出的語言。19世紀抵達的印度勞工與其他移民也逐漸學會它，使它成為跨族群的共同母語，幾乎全國都能使用。2012年起它被納入小學選修課程，地位逐漸提升。",
     "greeting": "Bonzour",
     "pronunciation": "bon-zur"
    },
    {
     "name": "博傑普爾語",
     "percent": 5,
-    "description": "印度裔居民的傳統語言，使用者減少中。",
+    "description": "博傑普爾語是19世紀印度契約勞工從比哈爾與北方邦東部帶來的語言，曾是甘蔗園印度裔社群的主要口語。隨著克里奧爾語成為日常共同語，年輕世代改用克里奧爾語，博傑普爾語的使用者大幅減少，主要集中在農村與年長者之間。",
     "greeting": "प्रणाम",
     "pronunciation": "pra-naam"
    },
    {
     "name": "法語",
     "percent": 4,
-    "description": "媒體與上層社會常用。",
+    "description": "法語在1715–1810年法國統治期間成為上層社會的語言，1810年英國占領後並未強制改變，法語因此一直是媒體、報紙與文化的主要語言。以法語為家中主要語言的多為法裔與部分中產階級，但大多數人都能讀寫法語。",
     "greeting": "Bonjour",
     "pronunciation": "bon-zhoor"
    }
   ],
-  "history": "法國殖民時期奴隸與殖民者形成克里奧爾語。英國統治後英語成為官方與行政語言，但法語仍主導媒體與文化。印度勞工帶來博傑普爾語等，近年多數年輕人改以克里奧爾語為主要語言。"
+  "history": "模里西斯原無原住民，1598年荷蘭人首先登陸，1715年法國人占領並帶來法語與奴隸，克里奧爾語在此時形成。1810年英國占領後英語成為行政語言，但法語在社會與文化中仍佔主導。1834年後印度移民帶來博傑普爾語、淡米爾語等語言，華人帶來客家話。今日形成英語用於政府、法語用於媒體、克里奧爾語用於日常生活的獨特格局。"
  },
  "food": {
   "ranking": [
    {
     "name": "豆餡烙餅",
     "localName": "Dholl puri",
-    "description": "包入黃豌豆仁餡的薄餅，配咖哩豆、番茄醬與醃菜捲著吃。",
-    "history": "源自印度契約勞工，現為模里西斯最受歡迎的街頭小吃。",
+    "description": "以麵粉製成的薄餅，內層夾有煮熟磨碎的黃豌豆仁，搭配咖哩豆、番茄燉菜與醃菜捲起來吃，口感柔軟。",
+    "history": "豆餡烙餅源自19世紀印度契約勞工帶來的北印度「dal puri」，在模里西斯演變成更薄、更軟的版本。它是街頭最受歡迎的小吃，路易港等地的攤販每天要做上千張，被許多人視為模里西斯的國民小吃，象徵印度移民對當地飲食文化的深遠影響。",
     "wiki": "Dal puri",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/A_flicker_of_Bengali_tradition.jpg/960px-A_flicker_of_Bengali_tradition.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:A_flicker_of_Bengali_tradition.jpg",
@@ -74,8 +74,8 @@
    {
     "name": "番茄燉菜",
     "localName": "Rougaille",
-    "description": "以番茄、洋蔥、大蒜、百里香與辣椒燉煮魚、香腸或鹹魚。",
-    "history": "源自法國殖民時期的克里奧爾料理，是家常必備菜。",
+    "description": "以番茄、洋蔥、大蒜、薑、百里香與辣椒熬成的醬汁，燉煮鹹魚、香腸、魚或雞肉，酸甜微辣，配白飯食用。",
+    "history": "番茄燉菜是法國殖民時期在印度洋島嶼上發展出的克里奧爾料理，融合了法式燉煮技巧與非洲、印度的香料用法，留尼旺與塞席爾也有相似版本。番茄原產美洲，經歐洲人帶到印度洋。這道菜是模里西斯克里奧爾家庭最普遍的家常菜，幾乎每家都有自己的配方。",
     "wiki": "Rougaille",
     "image": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Rougail_saucisse.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Rougail_saucisse.jpg",
@@ -84,8 +84,8 @@
    {
     "name": "辣椒豆餅",
     "localName": "Gâteau piment",
-    "description": "以黃豆仁泥加辣椒與香草炸成的小圓餅。",
-    "history": "源自印度的豆餅，在街頭攤販常見。",
+    "description": "將浸泡過的黃豌豆仁磨成泥，加入青辣椒、蔥與香菜，捏成小圓餅後油炸，外酥內軟、帶有辣味。",
+    "history": "辣椒豆餅源自印度移民帶來的炸豆餅（vada），名稱卻是法語「gâteau piment」（辣椒蛋糕），反映了模里西斯多元文化的融合。它是街邊攤與學校門口最常見的平價點心，常夾在法國麵包裡當早餐，與豆餡烙餅並列為最具代表性的街頭小吃。",
     "wiki": "Vada (food)",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Medu_Vadas.JPG/960px-Medu_Vadas.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Medu_Vadas.JPG",
@@ -94,8 +94,8 @@
    {
     "name": "香料飯",
     "localName": "Briani",
-    "description": "以香料、肉與馬鈴薯與米飯分層燜煮。",
-    "history": "隨印度穆斯林移民傳入，常見於婚禮與節慶。",
+    "description": "將以優格、香料醃漬的雞肉或羊肉與炸過的馬鈴薯、米飯分層放入鍋中燜煮，香氣濃郁。",
+    "history": "香料飯源自蒙兀兒帝國宮廷的比利亞尼飯，由19世紀從印度北部來到模里西斯的穆斯林移民帶入。它是模里西斯穆斯林家庭在婚禮、開齋節等重要場合必備的宴客菜，如今各族群在聚會時也會訂購大鍋香料飯，成為全國共享的節慶料理。",
     "wiki": "Biryani",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/%22Hyderabadi_Dum_Biryani%22.jpg/960px-%22Hyderabadi_Dum_Biryani%22.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:%22Hyderabadi_Dum_Biryani%22.jpg",
@@ -104,8 +104,8 @@
    {
     "name": "阿露達冰飲",
     "localName": "Alouda",
-    "description": "以牛奶、洋菜凍與羅勒籽調製的甜冰飲。",
-    "history": "源自印度與波斯的法魯達（falooda），在路易港中央市場尤其著名。",
+    "description": "以牛奶加糖與香草調味，加入洋菜凍條與泡發的羅勒籽（或洋車前子），冰鎮後飲用，口感滑順。",
+    "history": "阿露達源自印度與波斯的甜冷飲法魯達（falooda），隨印度移民傳入模里西斯。路易港中央市場的阿露達攤已有數十年歷史，是遊客與當地人必訪的地方。在炎熱的熱帶氣候中，它是最受歡迎的消暑飲品，也象徵模里西斯飲食中印度文化的深厚影響。",
     "wiki": "Falooda",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Faluda.JPG/960px-Faluda.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Faluda.JPG",

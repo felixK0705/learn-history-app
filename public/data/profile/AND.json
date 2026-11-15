@@ -7,25 +7,25 @@
    {
     "name": "天主教",
     "percent": 80,
-    "description": "安道爾憲法承認天主教的特殊地位，教堂與宗教節慶是傳統生活的一部分。"
+    "description": "安道爾自中世紀起就由天主教烏赫爾主教與法國元首（原為富瓦伯爵）共同統治，1278年的「共治條約」確立這一制度，主教至今仍是兩位國家元首之一。天主教因此與國家制度密不可分，1993年憲法雖保障宗教自由，但仍特別承認天主教會的地位，約八成居民為天主教徒。"
    },
    {
     "name": "無宗教",
     "percent": 12,
-    "description": "年輕世代與都市居民中，不屬於任何宗教的人逐漸增加。"
+    "description": "20世紀後半安道爾從貧窮山區轉型為觀光與免稅購物中心，大量外來人口與西歐普遍的世俗化趨勢，使年輕一代上教堂的比例下降，約一成多人口自認無宗教。"
    },
    {
     "name": "其他基督教派",
     "percent": 4,
-    "description": "包括新教及耶和華見證人等，多與移民社群有關。"
+    "description": "其他基督教派多來自外籍居民，例如英國人與北歐人的新教教會，以及耶和華見證人等團體。他們大多是1960年代以後隨觀光業、滑雪場與金融業移入的工作者或退休人士。"
    },
    {
     "name": "伊斯蘭教",
     "percent": 1,
-    "description": "主要為來自北非的移民及其後代。"
+    "description": "伊斯蘭教信徒主要是來自摩洛哥等北非國家的移工，多在建築業與服務業工作。由於人數很少，安道爾至今沒有正式清真寺，信徒多在臨時禮拜場所聚會。"
    }
   ],
-  "background": "安道爾自中世紀起由烏赫爾主教與法國伯爵（後由法國元首繼承）共治，天主教會因此深植於政治與社會。近代大量來自西班牙、葡萄牙與法國的移民多為天主教背景，加上歐洲世俗化趨勢，使無宗教人口逐年上升。"
+  "background": "安道爾的基督教化可追溯到西哥德與加洛林時代，傳說查理曼在8世紀末賜予當地自治以回報協助對抗摩爾人。1278年烏赫爾主教與富瓦伯爵簽訂共治條約，天主教會從此成為國家權力的一部分。直到1993年憲法頒布前，天主教都具有半官方地位。近幾十年隨觀光業與外來移民增加，宗教多元化與世俗化逐漸明顯，但教會節日與聖母守護節仍是全國性的重要活動。"
  },
  "language": {
   "official": "加泰隆尼亞語是安道爾唯一的官方語言。",
@@ -33,41 +33,41 @@
    {
     "name": "西班牙語",
     "percent": 43,
-    "description": "因大量西班牙移民及觀光業，西班牙語是最多人使用的母語。",
+    "description": "安道爾的人口超過一半是外國人，其中西班牙人是最大的移民群體，多在1950年代以後隨商業與觀光業發展而來。由於西班牙是最主要的貿易夥伴，電視、商店與日常溝通大量使用西班牙語，使它成為最多人使用的母語。",
     "greeting": "Hola",
     "pronunciation": "OH-la"
    },
    {
     "name": "加泰隆尼亞語",
     "percent": 38,
-    "description": "國家唯一官方語言，用於政府、教育與公共標示。",
+    "description": "加泰隆尼亞語是安道爾唯一的官方語言，安道爾人本身就屬於加泰隆尼亞語文化圈，自中世紀即通行此語。1993年憲法確立它的地位，政府規定公共行政與商業標示須使用加泰隆尼亞語，但因外來人口眾多，以它為母語的比例只有三到四成。",
     "greeting": "Bon dia",
     "pronunciation": "bon DEE-a"
    },
    {
     "name": "葡萄牙語",
     "percent": 15,
-    "description": "來自葡萄牙的移民社群人數眾多，多從事服務與建築業。",
+    "description": "葡萄牙語使用者主要是1970–80年代大量移入的葡萄牙勞工，他們在建築、旅館與滑雪場工作，逐漸形成人數可觀的社群。他們的子女多在安道爾接受教育，第二代往往能同時使用葡語與加泰隆尼亞語。",
     "greeting": "Olá",
     "pronunciation": "oh-LAH"
    },
    {
     "name": "法語",
     "percent": 5,
-    "description": "與法國接壤，部分居民與學校使用法語。",
+    "description": "法語通行於與法國接壤的北部地區，安道爾的另一位共治元首就是法國總統。安道爾境內設有法國體系的學校，因此部分居民在學校學習法語，但以法語為母語的人約只有5%。",
     "greeting": "Bonjour",
     "pronunciation": "bon-ZHOOR"
    }
   ],
-  "history": "安道爾在中世紀屬於加泰隆尼亞文化圈，加泰隆尼亞語長期是當地語言。二十世紀觀光與經濟起飛後，大量西班牙、葡萄牙與法國移民湧入，使西班牙語成為最常見的母語，而加泰隆尼亞語仍維持唯一官方語言地位。"
+  "history": "安道爾位於庇里牛斯山區，中世紀時隨著加泰隆尼亞地區的發展而使用加泰隆尼亞語，1278年的共治制度也讓它長期受法國與西班牙兩側影響。20世紀中葉以前安道爾人口很少，幾乎全說加泰隆尼亞語。1950年代以後的觀光與免稅經濟吸引大量西班牙、葡萄牙與法國移民，語言組成急速多元化。1993年憲法確立加泰隆尼亞語為唯一官方語言，並在教育中並行安道爾、西班牙與法國三套學制。"
  },
  "food": {
   "ranking": [
    {
     "name": "特林查",
     "localName": "Trinxat",
-    "description": "以高麗菜、馬鈴薯與培根一起搗碎煎成的餅狀料理。",
-    "history": "源自庇里牛斯山區的農家菜，利用冬季耐寒蔬菜做成飽足的山區家常菜。",
+    "description": "把高麗菜與馬鈴薯煮熟後壓碎，與培根或豬五花一起在鍋中煎成扁圓形的餅，外脆內軟，是樸實的山區家常菜。",
+    "history": "特林查是庇里牛斯山區農家的冬季料理，名稱來自加泰隆尼亞語「trinxar」（切碎）。高麗菜耐寒，馬鈴薯則在18世紀後才在山區普及，兩者成為貧瘠高地居民度過嚴冬的重要食物。今天安道爾與鄰近的西班牙塞爾達尼亞地區都把它視為代表性的家鄉菜。",
     "wiki": "Trinxat",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Trinxat_1.jpg/960px-Trinxat_1.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Trinxat_1.jpg",
@@ -76,8 +76,8 @@
    {
     "name": "大鍋燉菜",
     "localName": "Escudella i carn d'olla",
-    "description": "以肉類、香腸、豆類與蔬菜長時間燉煮的湯與燉肉。",
-    "history": "加泰隆尼亞地區傳統的冬季料理，常在節慶與聖誕節食用。",
+    "description": "把肉丸、香腸、雞肉、豬骨與鷹嘴豆、蔬菜一同長時間燉煮，先以湯配麵食，再把肉和蔬菜分開上桌。",
+    "history": "這道燉鍋是加泰隆尼亞最古老的料理之一，14世紀的加泰隆尼亞食譜已有類似記載。在安道爾與加泰隆尼亞，它傳統上是聖誕節午餐的主角，稱為「聖誕湯」（escudella de Nadal），湯中會放入大型貝殼麵（galets）。它的「先喝湯、再吃肉」吃法也反映了舊時農家節省食材的智慧。",
     "wiki": "Escudella i carn d'olla",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Escudella_Catalana_-_Barcelona_%282011%29.JPG/960px-Escudella_Catalana_-_Barcelona_%282011%29.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Escudella_Catalana_-_Barcelona_(2011).JPG",
@@ -86,8 +86,8 @@
    {
     "name": "加泰隆尼亞香腸",
     "localName": "Botifarra",
-    "description": "以豬肉與香料製成的加泰隆尼亞式香腸，常搭配豆子燒烤。",
-    "history": "其歷史可追溯至中世紀，是加泰隆尼亞文化圈最具代表性的肉品之一。",
+    "description": "以豬肉為主、加入鹽與黑胡椒灌製的加泰隆尼亞生香腸，通常炭烤或煎熟後搭配白豆或麵包一起吃。",
+    "history": "Botifarra 是加泰隆尼亞地區的傳統香腸，與山區家家戶戶在冬天殺豬（matança del porc）的習俗有關，殺豬時會製作各種香腸以便保存過冬。在安道爾，烤香腸配白豆（botifarra amb mongetes）是常見的家常菜，也是夏季戶外烤肉的必備品。",
     "wiki": "Botifarra",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Grilled_sausages.jpg/960px-Grilled_sausages.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Grilled_sausages.jpg",
@@ -96,8 +96,8 @@
    {
     "name": "加泰隆尼亞焦糖布丁",
     "localName": "Crema catalana",
-    "description": "表面撒糖後炙燒成焦脆糖殼的卡士達甜點。",
-    "history": "傳統上在3月19日聖若瑟節食用，是加泰隆尼亞地區的經典甜點。",
+    "description": "以牛奶、蛋黃、砂糖與肉桂、檸檬皮煮成的卡士達，表面撒糖後用熱鐵烙出一層脆焦糖，冰涼香甜。",
+    "history": "加泰隆尼亞焦糖布丁常被認為是歐洲最古老的焦糖布丁之一，14世紀的加泰隆尼亞食譜中已有類似甜點。傳統上它在3月19日聖約瑟日食用，因此也叫「聖約瑟奶油」（crema de Sant Josep）。安道爾屬加泰隆尼亞文化圈，這道甜點也是當地餐廳的經典收尾。",
     "wiki": "Crema catalana",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Creme_catalane.jpg/960px-Creme_catalane.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Creme_catalane.jpg",
@@ -106,8 +106,8 @@
    {
     "name": "番茄麵包",
     "localName": "Pa amb tomàquet",
-    "description": "在烤麵包上抹番茄、淋橄欖油並撒鹽的簡單料理。",
-    "history": "番茄自美洲傳入後在加泰隆尼亞地區發展出的日常吃法，常搭配火腿。",
+    "description": "把熟透的番茄切半抹在烤過的麵包上，再淋上橄欖油、撒上鹽，做法簡單卻是加泰隆尼亞飲食的代表。",
+    "history": "番茄原產美洲，16世紀才傳入西班牙，番茄麵包的做法一般認為在18–19世紀的加泰隆尼亞鄉村出現，用番茄軟化放了幾天的硬麵包。它是加泰隆尼亞文化認同的象徵之一，幾乎每頓飯都會出現，搭配火腿、乳酪或香腸。在安道爾，它同樣是早餐與小吃的基本配角。",
     "wiki": "Pa amb tomàquet",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Pa_amb_tomaquet.jpg/960px-Pa_amb_tomaquet.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Pa_amb_tomaquet.jpg",

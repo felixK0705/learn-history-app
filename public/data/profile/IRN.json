@@ -7,20 +7,20 @@
    {
     "name": "伊斯蘭教（什葉派）",
     "percent": 90,
-    "description": "國教，以十二伊瑪目派為主。"
+    "description": "1501年薩法維王朝將十二伊瑪目什葉派定為國教，透過強制改宗、從黎巴嫩與伊拉克引進什葉派學者，使波斯從遜尼派為主轉為什葉派國家，並藉此與遜尼派的鄂圖曼帝國區隔。1979年伊斯蘭革命後，什葉派教士透過「教法學家監護」制度掌握最高權力，聖城庫姆與馬什哈德是宗教中心。"
    },
    {
     "name": "伊斯蘭教（遜尼派）",
     "percent": 9,
-    "description": "主要為庫德人、俾路支人與土庫曼人。"
+    "description": "薩法維王朝推行什葉化時，邊陲地區的部分民族保留了原本的遜尼派信仰，因此遜尼派今天主要集中在東南部的俾路支人、西部的庫德人及東北部的土庫曼人。在什葉派主導的政體下，他們的宗教職位與清真寺興建常受限制。"
    },
    {
     "name": "其他",
     "percent": 1,
-    "description": "包括巴哈伊信仰、基督教、祆教與猶太教。"
+    "description": "包括伊斯蘭化前的古老宗教瑣羅亞斯德教（集中於亞茲德與克爾曼）、自古就存在的猶太社群、亞美尼亞與亞述基督徒，以及19世紀在伊朗興起的巴哈伊信仰。前三者在國會有保障席次，巴哈伊信仰則不被承認並在1979年後遭受嚴重迫害。"
    }
   ],
-  "background": "古代波斯以祆教為國教。七世紀阿拉伯人征服後，伊斯蘭教逐漸普及。十六世紀薩非王朝將什葉派定為國教，使伊朗成為什葉派中心。亞美尼亞基督徒、祆教徒與猶太人等古老少數社群延續至今。"
+  "background": "伊朗古代以瑣羅亞斯德教（祆教）為國教，7世紀中葉阿拉伯穆斯林擊敗薩珊帝國後，伊斯蘭教在數百年間逐漸取代祆教，當時多數人屬遜尼派。1501年薩法維王朝伊斯瑪儀一世立十二伊瑪目什葉派為國教，強制改宗，使伊朗成為世界最大的什葉派國家。1979年伊斯蘭革命後，柯梅尼建立由教士監督的「伊斯蘭共和國」，宗教與政治高度結合。憲法承認祆教、猶太教、基督教為受保護的少數宗教，巴哈伊信仰則長期受到迫害。"
  },
  "language": {
   "official": "波斯語是官方語言。",
@@ -28,41 +28,41 @@
    {
     "name": "波斯語",
     "percent": 53,
-    "description": "伊朗的國家語言，使用阿拉伯字母書寫。",
+    "description": "新波斯語自9世紀起成為伊朗的文學與行政語言，20世紀巴勒維王朝推動中央集權，以波斯語作為學校與媒體的唯一語言。因此雖然母語者約只佔一半人口，幾乎所有伊朗人都通曉波斯語，它是各民族共同的國家語言。",
     "greeting": "سلام (Salâm)",
     "pronunciation": "sa-LAAM"
    },
    {
     "name": "亞塞拜然語",
     "percent": 18,
-    "description": "西北部亞塞拜然人的突厥語言。",
+    "description": "11世紀起塞爾柱等突厥部族進入伊朗西北部，當地居民逐漸改說突厥語，形成亞塞拜然語。1828年俄伊戰爭後，亞塞拜然地區被一分為二，北部歸俄國（今亞塞拜然共和國），南部留在伊朗，因此伊朗的亞塞拜然人數量甚至多於亞塞拜然本國，集中在大不里士一帶。",
     "greeting": "Salam",
     "pronunciation": "sa-LAM"
    },
    {
     "name": "庫德語",
     "percent": 10,
-    "description": "西部庫德人的語言。",
+    "description": "庫德語屬伊朗語族，與波斯語同源，使用者是生活在扎格羅斯山區的庫德人。16世紀鄂圖曼與薩法維帝國劃界，庫德人被分隔在今土耳其、伊拉克、敘利亞與伊朗，伊朗的庫德人集中在西部的庫德斯坦、克爾曼沙赫等省。",
     "greeting": "Silav",
     "pronunciation": "sih-LAHV"
    },
    {
     "name": "阿拉伯語",
     "percent": 2,
-    "description": "西南部胡齊斯坦地區阿拉伯人使用。",
+    "description": "7世紀阿拉伯征服後就有阿拉伯部族移入伊朗西南部，今天的阿拉伯語使用者主要居住在鄰近伊拉克的胡齊斯坦省。此外，阿拉伯語作為《古蘭經》語言，是伊朗學校的必修科目。",
     "greeting": "مرحبا",
     "pronunciation": "MAR-ha-ba"
    }
   ],
-  "history": "古波斯語以楔形文字記錄，後演變為中古波斯語。伊斯蘭化後新波斯語改用阿拉伯字母並吸收大量阿拉伯詞彙，十世紀菲爾多西的史詩《列王紀》奠定其文學地位，波斯語也曾是中亞與南亞宮廷的文化語言。"
+  "history": "波斯語是印歐語系伊朗語族的語言，古波斯語見於西元前6世紀阿契美尼德帝國的楔形銘文，薩珊時代使用中古波斯語（巴列維語）。阿拉伯征服後，9–10世紀以阿拉伯字母書寫、吸收大量阿拉伯詞彙的新波斯語興起，菲爾多西約在1010年完成的史詩《列王紀》刻意少用阿拉伯詞，被視為保存波斯語與民族認同的里程碑。波斯語曾是中亞、鄂圖曼與印度蒙兀兒宮廷的文化語言。20世紀巴勒維王朝推行以波斯語為唯一國家語言的政策，亞塞拜然語、庫德語等少數語言在教育上長期受限。"
  },
  "food": {
   "ranking": [
    {
     "name": "烤肉飯",
     "localName": "چلوکباب (Chelow kabab)",
-    "description": "以番紅花米飯搭配烤肉串與烤番茄。",
-    "history": "被視為伊朗國菜，十九世紀卡札爾王朝時期已十分流行。",
+    "description": "白飯（chelow）配上烤絞肉串或烤肉塊，搭烤番茄、奶油、生蛋黃與鹽膚木香料。",
+    "history": "Chelow kabab 一般認為在19世紀卡加王朝時期的德黑蘭市集流行起來，據說納賽爾丁沙阿時代已有供應這道菜的餐館。伊朗人自古重視米飯的蒸煮技巧，配上源自突厥游牧傳統的烤肉，成為最具代表性的餐館料理。今天它常被稱為伊朗的「國菜」，在婚禮與節慶中也常見。",
     "wiki": "Chelow kabab",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Kebab_Bakhtyari.jpg/960px-Kebab_Bakhtyari.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Kebab_Bakhtyari.jpg",
@@ -71,8 +71,8 @@
    {
     "name": "香草燉肉",
     "localName": "قورمه‌سبزی (Ghormeh sabzi)",
-    "description": "以大量香草、紅腰豆與羊肉燉煮的料理，配米飯食用。",
-    "history": "伊朗最受歡迎的燉菜之一。",
+    "description": "以韭菜、巴西里、香菜、葫蘆巴葉等大量香草炒過後，與羊肉、紅腰豆和乾萊姆慢燉，配白飯。",
+    "history": "Ghormeh sabzi 意為「燉香草」，歷史一般認為可追溯數百年以上。伊朗的燉菜（khoresh）講究酸味與香氣，乾萊姆（limoo amani）來自波斯灣沿岸，展現伊朗與阿曼等地的貿易。它被許多伊朗人視為最具家鄉味的菜，海外伊朗人社群常在聚會時煮來懷念故鄉。",
     "wiki": "Ghormeh sabzi",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Ghormeh_Sabzi.JPG/960px-Ghormeh_Sabzi.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Ghormeh_Sabzi.JPG",
@@ -81,8 +81,8 @@
    {
     "name": "石榴核桃燉雞",
     "localName": "فسنجان (Fesenjān)",
-    "description": "以石榴糖漿與核桃燉煮的雞肉或鴨肉，酸甜濃郁。",
-    "history": "源自北部吉蘭地區，是節慶與宴客料理。",
+    "description": "以磨碎的核桃與石榴糖漿燉煮雞肉或鴨肉，醬汁深褐、酸甜濃郁。",
+    "history": "Fesenjān 源自伊朗北部裏海沿岸的吉蘭省一帶，當地盛產石榴、核桃與野鴨。伊朗料理自古偏好以水果入菜、調出酸甜交織的味道，fesenjān 正是這種古老口味傳統的代表。它費工又用料昂貴，常出現在婚禮、亞爾達之夜（冬至）等節慶宴席上。",
     "wiki": "Fesenjān",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Khoresht-e_fesenjan.jpg/960px-Khoresht-e_fesenjan.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Khoresht-e_fesenjan.jpg",
@@ -91,8 +91,8 @@
    {
     "name": "鍋巴飯",
     "localName": "ته‌دیگ (Tahdig)",
-    "description": "鍋底烤得金黃酥脆的米飯鍋巴。",
-    "history": "伊朗餐桌上最受珍視的部分。",
+    "description": "煮伊朗米時刻意讓鍋底形成金黃酥脆的鍋巴，有時鋪上馬鈴薯片、麵餅或番紅花優格米。",
+    "history": "伊朗煮飯採先煮後蒸的方式（polow），鍋底的米會被油與熱度煎成酥脆的 tahdig（意為「鍋底」）。它在伊朗家庭中被視為一餐中最珍貴的部分，餐桌上常有人爭搶，主人把鍋巴分給客人也代表熱情。這種做法隨伊朗移民流傳到海外，近年在西方飲食界引起關注。",
     "wiki": "Tahdig",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Persianmom%27s_mother%27s_%28persiangrandma%29_perfect_tahdig_rice.png/960px-Persianmom%27s_mother%27s_%28persiangrandma%29_perfect_tahdig_rice.png",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Persianmom%27s_mother%27s_(persiangrandma)_perfect_tahdig_rice.png",
@@ -101,8 +101,8 @@
    {
     "name": "麵條濃湯",
     "localName": "آش رشته (Ash reshteh)",
-    "description": "以麵條、豆類與香草熬煮的濃湯，上面淋優格乳。",
-    "history": "波斯新年諾魯茲期間常見，象徵好運。",
+    "description": "以麵條、鷹嘴豆、扁豆、豆類與大量香草煮成的濃湯，上面淋炒洋蔥、薄荷油與發酵乳清（kashk）。",
+    "history": "Ash 在波斯語泛指濃湯，古時甚至衍生出「廚師」（ashpaz，煮湯的人）一詞，可見湯在伊朗飲食中的地位。Ash reshteh 的麵條（reshteh）象徵「抓住人生的線索」，因此常在諾魯茲新年前或親友遠行時煮來祈求好運。齋戒月開齋時與冬天也常見，是伊朗最普及的平民湯品之一。",
     "wiki": "Ash reshteh",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Ash_Reshteh.JPG/960px-Ash_Reshteh.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Ash_Reshteh.JPG",

@@ -7,25 +7,25 @@
    {
     "name": "伊斯蘭教（什葉派）",
     "percent": 62,
-    "description": "主要分布於南部與中部，納傑夫與卡爾巴拉是什葉派聖地。"
+    "description": "伊拉克南部是什葉派的發源地之一：第四任哈里發阿里葬於納傑夫，其子胡笙680年殉難於卡爾巴拉。18–19世紀南部許多遊牧部族在定居過程中改信什葉派，使什葉派成為多數。但長期被遜尼派統治者排除在權力之外，直到2003年海珊政權倒台後才主導政府。"
    },
    {
     "name": "伊斯蘭教（遜尼派）",
     "percent": 33,
-    "description": "包括遜尼派阿拉伯人與大多數庫德人。"
+    "description": "阿拔斯王朝與鄂圖曼帝國都以遜尼派為正統，遜尼派阿拉伯人長期是伊拉克的政治與軍事菁英，海珊政權也以遜尼派為核心。遜尼派主要分布在巴格達以西與以北的安巴爾、尼尼微、薩拉赫丁等省，北部的庫德人也大多是遜尼派。"
    },
    {
     "name": "基督教",
     "percent": 1,
-    "description": "包括亞述東方教會、迦勒底天主教等古老教會。"
+    "description": "伊拉克是世界最古老的基督教地區之一，迦勒底天主教會與東方亞述教會可追溯至1–3世紀。2003年前約有一百多萬基督徒，但戰後的教派暴力與2014年伊斯蘭國攻佔摩蘇爾與尼尼微平原，迫使大多數人逃往庫德地區或海外，人數銳減。"
    },
    {
     "name": "雅茲迪教",
     "percent": 1,
-    "description": "北部庫德族雅茲迪人的古老宗教。"
+    "description": "雅茲迪教是融合古伊朗信仰、伊斯蘭蘇非派與其他元素的庫德族宗教，聖地拉利什位於伊拉克北部，信徒集中在辛賈爾山區。他們歷史上屢遭迫害，2014年伊斯蘭國對辛賈爾發動屠殺並擄掠婦女，被聯合國認定為種族滅絕。"
    }
   ],
-  "background": "七世紀伊斯蘭教隨阿拉伯人傳入，巴格達後來成為阿拔斯王朝首都。680年胡笙在卡爾巴拉殉難等事件使伊拉克成為什葉派的核心地區。當地的亞述基督徒與雅茲迪人歷史悠久，但近年因戰亂人數大幅減少。"
+  "background": "伊拉克所在的美索不達米亞是蘇美、巴比倫等古文明的發源地，基督教在1–3世紀傳入，亞述教會曾在此繁盛。637年起阿拉伯穆斯林征服此地，762年阿拔斯王朝建都巴格達，使其成為伊斯蘭世界的中心。680年第三任伊瑪目胡笙在卡爾巴拉殉難，納傑夫與卡爾巴拉因而成為什葉派聖地。鄂圖曼帝國與1921年後的君主國、海珊的復興黨政權多由遜尼派菁英掌權；2003年美軍推翻海珊後什葉派取得政治主導，但教派衝突與2014年伊斯蘭國的崛起重創了遜尼派地區與基督徒、雅茲迪人等少數群體。"
  },
  "language": {
   "official": "阿拉伯語與庫德語是官方語言。",
@@ -33,41 +33,41 @@
    {
     "name": "阿拉伯語（伊拉克方言）",
     "percent": 75,
-    "description": "全國主要語言。",
+    "description": "7世紀阿拉伯穆斯林征服後，阿拉伯部族移入並與當地講亞蘭語的居民融合，阿拉伯語逐漸成為多數人的語言。伊拉克方言（美索不達米亞阿拉伯語）保留了亞蘭語、波斯語與土耳其語借詞，是全國通用語及官方語言。",
     "greeting": "شلونك (Shlonak)",
     "pronunciation": "SHLO-nak"
    },
    {
     "name": "庫德語",
     "percent": 20,
-    "description": "北部庫德斯坦地區的主要語言。",
+    "description": "庫德人自古生活在北部扎格羅斯與托魯斯山區，1991年波斯灣戰爭後北部取得自治，2005年憲法確立庫德斯坦地區與庫德語的官方地位。庫德語在艾比爾、蘇萊曼尼亞、杜胡克等地的學校與政府中使用，主要為索拉尼方言與庫爾曼吉方言。",
     "greeting": "Silaw",
     "pronunciation": "sih-LAHW"
    },
    {
     "name": "伊拉克土庫曼語",
     "percent": 3,
-    "description": "基爾庫克等地土庫曼人的突厥語言。",
+    "description": "土庫曼人的祖先是11世紀塞爾柱時代與鄂圖曼時期移入的突厥部族與士兵，他們的語言接近亞塞拜然語與土耳其語。主要居住在基爾庫克、塔勒阿費爾等北部城鎮，2005年憲法承認土庫曼語為其聚居區的官方語言。",
     "greeting": "Merhaba",
     "pronunciation": "MER-ha-ba"
    },
    {
     "name": "新亞蘭語",
     "percent": 1,
-    "description": "亞述基督徒使用的語言。",
+    "description": "亞蘭語曾是古代近東的國際通用語，伊拉克北部的亞述與迦勒底基督徒至今仍說其現代形式（新亞蘭語，又稱蘇雷特語）。因戰亂與移民，使用人口在21世紀大幅減少，主要集中在尼尼微平原與庫德地區。",
     "greeting": "Shlama",
     "pronunciation": "SHLA-ma"
    }
   ],
-  "history": "美索不達米亞是楔形文字的發源地，古代使用蘇美語與阿卡德語，後由亞蘭語成為通用語。伊斯蘭化後阿拉伯語成為主流，北部山區則保留庫德語，亞述人至今仍使用新亞蘭語。"
+  "history": "伊拉克地區最早使用蘇美語與阿卡德語，西元前1千紀起亞蘭語成為通用語，至今仍以新亞蘭語形式在基督徒社群中流傳。7世紀阿拉伯征服後阿拉伯語逐漸取代亞蘭語，阿拔斯王朝的巴格達更成為阿拉伯語學術翻譯運動的中心。北部山區的庫德人與鄂圖曼時期定居的土庫曼人則保留各自的語言。2005年新憲法將阿拉伯語與庫德語並列為官方語言，土庫曼語與亞蘭語（敘利亞語）在其集中地區也具官方地位。"
  },
  "food": {
   "ranking": [
    {
     "name": "馬斯古夫烤魚",
     "localName": "مسكوف (Masgouf)",
-    "description": "將鯉魚剖開後以柴火慢烤。",
-    "history": "被視為伊拉克國菜，傳統上在底格里斯河畔的餐廳烹製。",
+    "description": "把底格里斯河的鯉魚剖開攤平，以木樁插在炭火旁慢烤，配番茄、洋蔥與烤餅。",
+    "history": "Masgouf 被視為伊拉克國菜，靠的是兩河流域豐富的淡水魚。傳統做法是把魚立在燃燒的杏樹或檉柳木火堆旁烤數小時，有學者認為這種技術可追溯到古美索不達米亞。20世紀巴格達底格里斯河畔的阿布努瓦斯街以整排烤魚店聞名，夏夜河邊吃烤魚是巴格達人的生活風景，但河流污染與戰亂也讓這個傳統一度衰落。",
     "wiki": "Masgouf",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Masgouf.jpg/960px-Masgouf.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Masgouf.jpg",
@@ -76,8 +76,8 @@
    {
     "name": "多爾瑪",
     "localName": "دولمة (Dolma)",
-    "description": "以葡萄葉、洋蔥與蔬菜包裹肉與米燉煮。",
-    "history": "伊拉克家庭聚會的常見料理。",
+    "description": "以葡萄葉、洋蔥、茄子、櫛瓜或甜椒包入米飯、絞肉與香料，在酸味湯汁中燉煮。",
+    "history": "Dolma 一詞來自土耳其語「填塞」，隨鄂圖曼帝國統治（16–20世紀）在中東與巴爾幹流行。伊拉克版本特色是把各種蔬菜一起堆疊在鍋中，以番茄與石榴糖漿或檸檬調出酸味，鍋底還會鋪羊肋排。它費時費工，多為家族週五聚餐或節慶時由女性一起包製。",
     "wiki": "Dolma",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Speca_te_mbushura_me_mish.JPG/960px-Speca_te_mbushura_me_mish.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Speca_te_mbushura_me_mish.JPG",
@@ -86,8 +86,8 @@
    {
     "name": "克萊嘉餅",
     "localName": "كليجة (Kleicha)",
-    "description": "以椰棗或堅果為餡的小餅乾。",
-    "history": "被視為伊拉克的國民點心，開齋節時家家戶戶製作。",
+    "description": "以椰棗泥或核桃、芝麻為餡，加入小豆蔻與番紅花香料的圓形小餅乾。",
+    "history": "Kleicha 常被稱為伊拉克的國民點心，伊拉克盛產椰棗，自古就有以椰棗做甜點的傳統，有學者將它與古代美索不達米亞的祭祀糕點相連，但細節難考。今天伊拉克家庭會在開齋節前全家一起烤製大量 kleicha，用來招待來拜年的親友，基督徒也在聖誕節與復活節製作。",
     "wiki": "Kleicha",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Kleicha_%28%D9%83%D9%84%D9%8A%D8%AC%D8%A9%29.jpg/960px-Kleicha_%28%D9%83%D9%84%D9%8A%D8%AC%D8%A9%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Kleicha_(%D9%83%D9%84%D9%8A%D8%AC%D8%A9).jpg",
@@ -96,8 +96,8 @@
    {
     "name": "烤羊肉飯",
     "localName": "قوزي (Quzi)",
-    "description": "以香料慢烤的羊肉，配堅果與葡萄乾的米飯。",
-    "history": "伊拉克宴客時的隆重料理。",
+    "description": "整隻羊羔或羊腿慢烤至軟爛，鋪在加入堅果、葡萄乾與香料的米飯上。",
+    "history": "Quzi 源自阿拉伯半島與兩河流域貝都因人的宴客傳統，以整隻羊招待客人是游牧社會表現慷慨的方式。在伊拉克，它常出現在婚禮、葬禮與宗教節日的大型宴席，也是什葉派阿舒拉節（紀念胡笙殉難）時人們向公眾布施的食物之一。",
     "wiki": "Quzi",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Iraqi_Qoozi_.jpg/960px-Iraqi_Qoozi_.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Iraqi_Qoozi_.jpg",
@@ -106,8 +106,8 @@
    {
     "name": "庫巴",
     "localName": "كبة (Kubba)",
-    "description": "以米、碎小麥或馬鈴薯外皮包裹肉餡的丸子，可煮可炸。",
-    "history": "伊拉克有多種地方版本，摩蘇爾的大型扁平庫巴尤其有名。",
+    "description": "以碎小麥或米與絞肉製成外皮，包入肉餡後油炸或水煮的丸子，摩蘇爾版本特別大而扁。",
+    "history": "Kubba 在中東各地都有（黎巴嫩稱 kibbeh），伊拉克人則發展出許多變化：北部摩蘇爾的大型圓盤 kubba、巴格達的米皮 kubba，以及放入酸湯中的 kubba hamudh。伊拉克猶太人在20世紀中葉大量移居以色列後，也把 kubba 湯帶到耶路撒冷，成為當地流行的菜色。",
     "wiki": "Kibbeh",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Kibbeh3.jpg/960px-Kibbeh3.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Kibbeh3.jpg",

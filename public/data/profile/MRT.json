@@ -7,20 +7,20 @@
    {
     "name": "伊斯蘭教（遜尼派）",
     "percent": 99,
-    "description": "國教，屬馬立基學派，國名即為「茅利塔尼亞伊斯蘭共和國」。"
+    "description": "伊斯蘭教在8–9世紀經由跨撒哈拉商隊傳入，11世紀興起於今茅利塔尼亞一帶的阿爾摩拉維德運動以嚴格的馬立克派遜尼教義征服西北非，讓伊斯蘭教在當地紮根。此後卡迪里耶、提加尼耶等蘇非教團深入游牧社會，欣蓋提等古城成為伊斯蘭學術中心。1960年獨立後國號定為「茅利塔尼亞伊斯蘭共和國」，憲法規定伊斯蘭教為國教，公民幾乎全為遜尼派穆斯林。"
    },
    {
     "name": "基督教",
     "percent": 1,
-    "description": "主要為外籍人士，比例極低。"
+    "description": "基督教是隨20世紀法國殖民傳入的，但法國在當地的統治以間接管理為主，傳教活動有限。今日信徒主要是外籍人士與來自塞內加爾、馬利等鄰國的移民，集中在首都諾克少與努瓦迪布；法律禁止向穆斯林傳教，因此比例極低。"
    },
    {
     "name": "無宗教及其他",
     "percent": 1,
-    "description": "人數極少。"
+    "description": "茅利塔尼亞憲法以伊斯蘭教為國教，依伊斯蘭法叛教可處重刑，公開表明無宗教或信仰其他宗教在社會與法律上都有風險，因此這類人口在統計上極少，且多為外籍居民。"
    }
   ],
-  "background": "11世紀柏柏爾人建立的穆拉比特王朝由此地興起，將伊斯蘭教傳遍西北非。此後阿拉伯部落移入，申蓋提等沙漠城市成為伊斯蘭學術中心，宗教學者階層在社會中地位崇高。"
+  "background": "茅利塔尼亞的柏柏爾游牧民在8–9世紀透過跨撒哈拉貿易接觸伊斯蘭教。11世紀阿爾摩拉維德王朝從這片沙漠崛起，將馬立克派遜尼伊斯蘭推廣到整個西北非與伊比利半島。之後阿拉伯的哈桑部族遷入，蘇非教團與欣蓋提、瓦丹等學術古城使伊斯蘭教深植社會。1960年獨立後定國號為伊斯蘭共和國，伊斯蘭法是重要的法律來源。"
  },
  "language": {
   "official": "官方語言為阿拉伯語。",
@@ -28,34 +28,34 @@
    {
     "name": "哈桑尼亞阿拉伯語",
     "percent": 80,
-    "description": "摩爾人的阿拉伯方言，是全國主要語言。",
+    "description": "哈桑尼亞阿拉伯語源自15–17世紀從東方遷入的阿拉伯貝尼哈桑部族，他們在1644–1674年的沙爾布巴戰爭中擊敗柏柏爾人，取得政治主導權，其語言逐漸取代了當地的柏柏爾語。今日它是摩爾人（包括白摩爾人與黑摩爾人哈拉廷）的母語，也是全國的通用語。官方的標準阿拉伯語則用於宗教、政府與正式書寫。",
     "greeting": "السلام عليكم",
     "pronunciation": "as-sa-lām ʿa-lay-kum"
    },
    {
     "name": "普拉爾語（富拉語）",
     "percent": 9,
-    "description": "南部塞內加爾河沿岸的哈爾普拉爾人使用。",
+    "description": "普拉爾語是富拉尼族（在茅利塔尼亞稱為哈普拉爾人）的語言，主要分布在南部塞內加爾河沿岸。1966年起政府推行阿拉伯化教育，引發南部黑人族群抗議，1989年與塞內加爾的衝突更導致大量富拉尼人被驅逐，語言權利至今仍是敏感的族群議題。",
     "greeting": "Jam waali",
     "pronunciation": "jam waa-li"
    },
    {
     "name": "沃洛夫語",
     "percent": 1,
-    "description": "南部與首都部分社群使用。",
+    "description": "沃洛夫語是塞內加爾的主要語言，在茅利塔尼亞只由南部河岸與首都的少數沃洛夫族使用。它與普拉爾語、索寧克語同被列為國語，但使用人口很少，比例約1%。",
     "greeting": "Nanga def",
     "pronunciation": "nan-ga def"
    }
   ],
-  "history": "原住民柏柏爾人原說桑哈賈語，15–17世紀阿拉伯部落哈桑家族南遷後，哈桑尼亞阿拉伯語逐漸普及。法國殖民時期法語成為行政語言，至今仍廣泛用於商業與教育；南部則保留普拉爾語、索寧克語與沃洛夫語。"
+  "history": "茅利塔尼亞原本通行柏柏爾語族的澤納加語。15世紀起阿拉伯貝尼哈桑部族南遷，17世紀沙爾布巴戰爭後其哈桑尼亞阿拉伯語逐漸成為主流，澤納加語今已幾近消失。1903年起法國殖民，法語成為行政語言。1960年獨立後逐步推行阿拉伯化，1991年憲法定阿拉伯語為唯一官方語言，普拉爾語、索寧克語、沃洛夫語為國語，法語仍廣泛用於商業與高等教育。"
  },
  "food": {
   "ranking": [
    {
     "name": "魚香料飯",
     "localName": "Thieboudienne",
-    "description": "以番茄醬汁燉魚與蔬菜，再用湯汁煮飯。",
-    "history": "源自塞內加爾的沃洛夫料理，在茅利塔尼亞南部與沿海地區常見。",
+    "description": "以番茄醬汁燉煮魚塊與木薯、紅蘿蔔、茄子、高麗菜等蔬菜，再用燉魚的湯汁煮米飯，米飯吸飽魚鮮與番茄香。",
+    "history": "這道菜源自鄰國塞內加爾的聖路易一帶，傳說由19世紀當地廚師發明。茅利塔尼亞南部沿著塞內加爾河與沃洛夫、富拉尼族文化相連，大西洋沿岸又有豐富漁場，魚香料飯因此跨越國界成為茅利塔尼亞家常菜。法國殖民時期從印度支那引進的碎米，讓這道菜得以普及。",
     "wiki": "Thieboudienne",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Thieboudienne.JPG/960px-Thieboudienne.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Thieboudienne.JPG",
@@ -64,8 +64,8 @@
    {
     "name": "烤全羊",
     "localName": "Méchoui",
-    "description": "整隻羊以炭火慢烤，用手撕食。",
-    "history": "北非與撒哈拉游牧民族的節慶料理，常見於婚禮與宗教節日。",
+    "description": "將整隻羊抹鹽與香料後，在地坑或炭火上慢烤數小時，直到外皮酥脆、肉質軟嫩，用手直接撕下食用。",
+    "history": "烤全羊是馬格里布與撒哈拉游牧民族共同的宴客傳統，在茅利塔尼亞的摩爾人社會中，宰羊款客代表主人的慷慨與地位。它常在婚禮、迎接貴賓以及伊斯蘭的宰牲節時出現，宰牲節紀念先知易卜拉欣獻祭，家家戶戶會宰羊並分送給親友與窮人。",
     "wiki": "Mechoui",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Mechoui.jpg/960px-Mechoui.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Mechoui.jpg",
@@ -74,8 +74,8 @@
    {
     "name": "庫斯庫斯",
     "localName": "Couscous / Lekhsel",
-    "description": "蒸熟的粗麥或小米粒配肉類燉菜。",
-    "history": "北非柏柏爾人的傳統主食，傳入茅利塔尼亞後成為家常料理。",
+    "description": "將粗粒小麥或小米粉搓成小顆粒後蒸熟，鋪在盤底再淋上羊肉、駱駝肉或蔬菜燉煮的湯汁。",
+    "history": "庫斯庫斯是北非柏柏爾人的古老主食，一般認為起源於11–13世紀前後的馬格里布地區。茅利塔尼亞位於撒哈拉南緣，既吸收北方的小麥庫斯庫斯，也有以本地小米製作的版本，當地稱為「lekhsel」。全家圍坐共享一大盤、以右手取食，是游牧社會重要的飲食禮儀。",
     "wiki": "Couscous",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Moroccan_cuscus%2C_from_Casablanca%2C_September_2018.jpg/960px-Moroccan_cuscus%2C_from_Casablanca%2C_September_2018.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Moroccan_cuscus,_from_Casablanca,_September_2018.jpg",
@@ -84,8 +84,8 @@
    {
     "name": "茅利塔尼亞薄荷茶",
     "localName": "Atay",
-    "description": "以綠茶、薄荷與大量糖熬煮，倒出泡沫，按習俗連喝三杯。",
-    "history": "19世紀經摩洛哥傳入綠茶，泡茶儀式成為社交與待客的重要文化。",
+    "description": "以中國綠茶加新鮮薄荷與大量糖反覆熬煮，從高處倒入小玻璃杯中拉出泡沫，按習俗連續喝三杯。",
+    "history": "綠茶在18–19世紀經由英國商人輸入摩洛哥，再沿商隊路線傳入撒哈拉，成為游牧民族的日常飲品。泡茶是一種待客儀式，常由家中男性主持，可持續一個多小時。當地俗語形容三杯茶：「第一杯苦如生命，第二杯甜如愛情，第三杯柔如死亡」，拒絕喝茶被視為失禮。",
     "wiki": "Maghrebi mint tea",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Tunisian_Tea_with_pine_nuts.jpg/960px-Tunisian_Tea_with_pine_nuts.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Tunisian_Tea_with_pine_nuts.jpg",
@@ -94,8 +94,8 @@
    {
     "name": "駱駝奶",
     "localName": "Camel milk",
-    "description": "新鮮或發酵的駱駝奶，是游牧民族的重要飲品。",
-    "history": "駱駝是撒哈拉游牧民族的生計核心，努克少甚至有大型駱駝乳品廠。",
+    "description": "直接飲用新鮮擠出的駱駝奶，或讓它自然發酵成微酸的酸奶，營養豐富、脂肪含量比牛奶低。",
+    "history": "駱駝約在西元前後的數百年間被引入撒哈拉，徹底改變了當地的游牧生活與跨沙漠貿易。對茅利塔尼亞的游牧民而言，駱駝奶在缺水的沙漠中是重要的水分與營養來源，可長時間只靠它維生。1989年在諾克少成立的蒂維斯基乳品廠是非洲最早將駱駝奶工業化生產的工廠之一。",
     "wiki": "Camel milk",
     "image": "https://upload.wikimedia.org/wikipedia/commons/7/74/Fresh_camel_milk_%28Dubai%29_%28cropped%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Fresh_camel_milk_(Dubai)_(cropped).jpg",
