@@ -204,15 +204,7 @@ function HistoryTab({ events }: { events: HistoryEvent[] | null }) {
       {groups.map((g) => {
         const color = ERA_COLOR[g.name];
         return (
-          <section key={g.name} className="mt-5">
-            <header className="sticky top-0 z-10 -mx-6 mb-2 flex items-center gap-2.5 bg-[#06194a] px-6 py-2.5">
-              <span className="rounded-full px-2.5 py-0.5 text-[13px] font-bold text-[#06194a]" style={{ background: color }}>
-                {g.name}
-              </span>
-              <span className="text-[12px] text-white/70 tabular-nums">
-                {g.items[0].year.replace(/年$/, "")} – {g.items[g.items.length - 1].year.replace(/年$/, "")}・{g.items.length} 則
-              </span>
-            </header>
+          <section key={g.name} className="mt-4">
             {/* 時間軸：左欄年份、中間軸線與節點、右欄事件 */}
             <ol>
               {g.items.map((e, i) => {
@@ -247,9 +239,9 @@ function HistoryTab({ events }: { events: HistoryEvent[] | null }) {
   );
 }
 
-/** 圓餅圖色票（已用色盲檢查工具驗證，深色面板上可區分），依排名固定順序，第 7 項起併入「其他」灰色 */
-const PIE_COLORS = ["#0284c7", "#d97706", "#ec4899", "#8b5cf6", "#059669", "#ea580c"];
-const OTHER_COLOR = "#64748b";
+/** 圓餅圖色票：與藍色玻璃主題協調的柔和亮色，依排名固定順序；第 7 項起併入「其他」 */
+const PIE_COLORS = ["#7dd3fc", "#c4b5fd", "#f9a8d4", "#fde68a", "#86efac", "#fdba74"];
+const OTHER_COLOR = "#7c8db5";
 
 function Donut({ items, title }: { items: { name: string; percent: number }[]; title: string }) {
   const [hover, setHover] = useState<number | null>(null);
@@ -341,7 +333,7 @@ function RankingTab({ profile, kind }: { profile: CountryProfile | null | undefi
           return (
             <li key={r.name} data-reveal className="glass-soft rounded-2xl px-4 py-3">
               <div className="flex items-baseline gap-3">
-                <span className="grid size-6 shrink-0 place-items-center rounded-full text-[12px] font-bold text-white tabular-nums" style={{ background: PIE_COLORS[i] ?? OTHER_COLOR }}>{i + 1}</span>
+                <span className="grid size-6 shrink-0 place-items-center rounded-full text-[12px] font-bold text-[#06194a] tabular-nums" style={{ background: PIE_COLORS[i] ?? OTHER_COLOR }}>{i + 1}</span>
                 <span className="min-w-0 flex-1 text-[14.5px] font-medium">{r.name}</span>
                 <span className="text-[15px] font-semibold tabular-nums">{r.percent}%</span>
               </div>
