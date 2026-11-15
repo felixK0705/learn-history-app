@@ -127,7 +127,7 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
     const mat = g.globeMaterial() as MeshPhongMaterial;
     loader.load("/textures/earth-water.png", (tex) => {
       mat.specularMap = tex;
-      mat.specular = new Color("#a9d8ff");
+      mat.specular = new Color("#7fa6d6");
       mat.shininess = 18;
       mat.needsUpdate = true;
     });

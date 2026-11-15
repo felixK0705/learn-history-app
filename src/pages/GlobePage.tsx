@@ -30,13 +30,6 @@ export default function GlobePage() {
   const globeWrapRef = useRef<HTMLDivElement>(null);
   const placeholderRef = useRef<HTMLDivElement>(null);
   const menuRef = useRef<HTMLDivElement>(null);
-  const bokehRef = useRef<HTMLDivElement>(null);
-
-  // 柔光圓點緩慢漂浮
-  useGSAP(() => {
-    if (!bokehRef.current || prefersReducedMotion()) return;
-    gsap.to(bokehRef.current, { y: -14, x: 6, duration: 4.5, repeat: -1, yoyo: true, ease: "sine.inOut" });
-  }, { dependencies: [!!selected] });
   const buildingRef = useRef<HTMLDivElement>(null);
   const noticeRef = useRef<HTMLDivElement>(null);
 
@@ -143,8 +136,6 @@ export default function GlobePage() {
         </div>
       )}
 
-      {/* 左下柔光圓點（參考圖） */}
-      {!selected && <div ref={bokehRef} className="pointer-events-none absolute bottom-[12%] left-[15%] size-3.5 rounded-full bg-white/75 shadow-[0_0_14px_rgba(255,255,255,0.5)]" />}
 
       {/* 頂部列：探索進度文字與圓形選單（參考圖右上角） */}
       <HeaderSlot slot="header-meta">

@@ -89,17 +89,26 @@ export default function App() {
           <NavLink to="/" data-intro className="grid h-[62px] w-full place-items-center" aria-label="Timelore 首頁">
             <Logo className="size-10" />
           </NavLink>
-          <nav className="absolute top-[43%] flex flex-col items-center gap-[22px]" aria-label="主要導覽">
-            {nav.map(({ to, label }) => (
-              <NavLink key={to} to={to} end={to === "/"} aria-label={label} className="group relative grid size-5 place-items-center">
+          <nav className="absolute top-[36%] flex flex-col items-center gap-3" aria-label="主要導覽">
+            {nav.map(({ to, label, icon: Icon }) => (
+              <NavLink
+                key={to}
+                to={to}
+                end={to === "/"}
+                aria-label={label}
+                className={({ isActive }) =>
+                  `group relative grid size-11 place-items-center rounded-2xl transition ${
+                    isActive
+                      ? "bg-white/18 text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.45),0_6px_16px_-6px_rgba(0,20,80,0.6)]"
+                      : "text-white/60 hover:bg-white/10 hover:text-white"
+                  }`
+                }
+              >
                 {({ isActive }) => (
                   <>
-                    <span
-                      className={`rounded-full transition-all duration-300 ${
-                        isActive ? "size-3 border-[1.5px] border-white/90 bg-transparent" : "size-[5px] bg-white/85 group-hover:bg-white"
-                      }`}
-                    />
-                    <span className="pointer-events-none absolute left-8 rounded-full bg-white px-3 py-1 font-[Montserrat,Noto_Sans_TC,sans-serif] text-xs font-semibold whitespace-nowrap text-deep-800 opacity-0 shadow-lg transition group-hover:opacity-100 group-focus-visible:opacity-100">
+                    <Icon className="size-[21px]" strokeWidth={isActive ? 2.2 : 1.9} />
+                    <span className={`absolute -left-[10px] h-5 w-[3px] rounded-full bg-white transition ${isActive ? "opacity-100" : "opacity-0"}`} />
+                    <span className="pointer-events-none absolute left-14 rounded-full bg-white px-3 py-1 text-xs font-semibold whitespace-nowrap text-deep-800 opacity-0 shadow-lg transition group-hover:opacity-100 group-focus-visible:opacity-100">
                       {label}
                     </span>
                   </>

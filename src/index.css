@@ -29,10 +29,8 @@
 @layer components {
   /* 參考圖：中心偏青藍、外圍深藍的放射漸層＋左上暗角 */
   .stage {
-    background:
-      radial-gradient(34% 48% at 56% 52%, rgb(70 190 245 / 0.55) 0%, transparent 72%),
-      radial-gradient(70% 80% at 56% 54%, #1c8fde 0%, #1570d2 34%, #1052b8 62%, #0b3a92 86%, #0a307c 100%),
-      #0a307c;
+    /* 依參考圖取樣：中央偏青亮藍 #288bd1，往外快速變暗至 #0b3282 */
+    background: radial-gradient(ellipse 62% 78% at 50% 47%, #2a8fd4 0%, #2788cf 28%, #2075c4 50%, #1858ad 70%, #11449a 86%, #0b3282 100%);
   }
 
   /* 液態玻璃：多層漸層 + 背景模糊飽和 + 內外高光 */
