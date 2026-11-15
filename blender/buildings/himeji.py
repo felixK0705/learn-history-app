@@ -96,7 +96,7 @@ def _gen_window():
 
 def _gen_leaves(kind):
     """葉簇卡片貼圖（RGBA PNG）：數根小枝上互生的葉片組成的一叢枝葉，枝葉間有空隙；背後的葉片較暗"""
-    out = os.path.join(GEN, f"himeji_leaf4_{kind}.png")
+    out = os.path.join(GEN, f"himeji_leaf7_{kind}.png")
     if os.path.exists(out):
         return out
     from PIL import Image, ImageDraw
@@ -127,48 +127,49 @@ def _gen_leaves(kind):
         pal = {"broad": [(70, 104, 34), (84, 120, 40), (100, 136, 46), (60, 92, 30), (116, 150, 54)],
                "light": [(124, 160, 50), (142, 176, 58), (160, 190, 68), (108, 144, 44), (176, 200, 78)],
                "shrub": [(108, 146, 44), (126, 162, 52), (144, 176, 60), (94, 130, 38), (160, 188, 68)]}[kind]
-        Lr = (34, 54) if kind != "shrub" else (24, 38)
-        n_tw = 9 if kind != "shrub" else 13
-        sprays = []
-        for t in range(n_tw):
-            a = TAU * t / n_tw + rng.uniform(-0.25, 0.25)
-            ln = rng.uniform(0.28, 0.44) * S
-            sprays.append((a, ln))
-        # 由後往前三層：越前面越亮
+        Lr = (70, 110) if kind != "shrub" else (48, 72)
+        # 數個圓形小葉叢（下半部較暗＝自身陰影），葉片方向隨機、緊密堆疊；叢間有空隙
+        subs = []
+        for _ in range(7 if kind != "shrub" else 9):
+            a = rng.uniform(0, TAU)
+            r = S * rng.uniform(0.05, 0.3)
+            subs.append((S / 2 + r * math.cos(a), S / 2 + r * math.sin(a), S * rng.uniform(0.11, 0.17)))
+        for sx, sy, sr in subs:
+            dr.line([(S / 2, S / 2), (sx, sy)], fill=(84, 68, 50, 255), width=5)
+        # 葉叢內部的深色底（葉間陰影），使葉片之間不透光、明暗對比清楚
+        for sx, sy, sr in subs:
+            dk = tuple(int(v * 0.32) for v in pal[0]) + (255,)
+            pts = []
+            for j in range(24):
+                aa = TAU * j / 24
+                rr = sr * 0.86 * (1 + 0.12 * math.sin(aa * 5 + sx))
+                pts.append((sx + rr * math.cos(aa), sy + rr * math.sin(aa)))
+            dr.polygon(pts, fill=dk)
         for layer in range(3):
-            shade = (0.62, 0.82, 1.0)[layer]
-            for a, ln in sprays:
-                if layer == 0:
-                    dr.line([(S / 2, S / 2), (S / 2 + math.cos(a) * ln, S / 2 + math.sin(a) * ln)], fill=(84, 68, 50, 255), width=5)
+            for sx, sy, sr in subs:
                 base = pal[rng.integers(len(pal))]
-                nleaf = int(ln / 13)
-                for k in range(nleaf):
-                    if rng.random() < 0.45:
-                        continue
-                    t = (k + rng.uniform(0, 1)) / nleaf
-                    px = S / 2 + math.cos(a) * ln * t + rng.normal(0, 14)
-                    py = S / 2 + math.sin(a) * ln * t + rng.normal(0, 14)
-                    side = 1 if k % 2 else -1
-                    b = a + side * rng.uniform(0.5, 1.2)
-                    L = rng.uniform(*Lr) * (0.75 + 0.35 * (1 - t))
-                    W = L * rng.uniform(0.38, 0.5)
-                    lit = shade * (1 + 0.15 * (S / 2 - py) / (S / 2)) * rng.uniform(0.88, 1.12)
+                la = (Lr[0] + Lr[1]) / 2
+                nleaf = int(1.1 * math.pi * sr * sr / (la * la * 0.48 * 0.6) * (1.0 if layer < 2 else 0.7))
+                for _ in range(nleaf):
+                    rr = sr * math.sqrt(rng.uniform(0, 1))
+                    aa = rng.uniform(0, TAU)
+                    px, py = sx + rr * math.cos(aa), sy + rr * math.sin(aa)
+                    # 葉叢上方受光、下方與內部較暗；後層較暗
+                    lit = (0.5, 0.75, 1.0)[layer] * (1 + 0.35 * (sy - py) / sr + 0.15 * (px - sx) / sr)
+                    lit *= rng.uniform(0.75, 1.18)
                     col = tuple(int(min(255, max(0, v * lit))) for v in base) + (255,)
+                    L = rng.uniform(*Lr)
+                    W = L * rng.uniform(0.42, 0.55)
+                    b = rng.uniform(0, TAU)
                     ca, sa = math.cos(b), math.sin(b)
                     pts = []
-                    for j in range(12):
-                        u = j / 11
-                        lx = L * u
-                        ly = W / 2 * math.sin(math.pi * u) ** 0.8
-                        pts.append((px + lx * ca - ly * sa, py + lx * sa + ly * ca))
-                    for j in range(11, -1, -1):
-                        u = j / 11
-                        lx = L * u
-                        ly = -W / 2 * math.sin(math.pi * u) ** 0.8
-                        pts.append((px + lx * ca - ly * sa, py + lx * sa + ly * ca))
+                    for j in range(10):
+                        u = j / 9
+                        pts.append((px + L * u * ca - W / 2 * math.sin(math.pi * u) * sa, py + L * u * sa + W / 2 * math.sin(math.pi * u) * ca))
+                    for j in range(9, -1, -1):
+                        u = j / 9
+                        pts.append((px + L * u * ca + W / 2 * math.sin(math.pi * u) * sa, py + L * u * sa - W / 2 * math.sin(math.pi * u) * ca))
                     dr.polygon(pts, fill=col)
-                    # 葉脈（較暗的中線）
-                    dr.line([(px, py), (px + L * 0.9 * ca, py + L * 0.9 * sa)], fill=tuple(int(v * 0.8) for v in col[:3]) + (255,), width=2)
     im = im.resize((512, 512), Image.LANCZOS)
     arr = np.array(im).astype(np.float32)
     a = arr[..., 3:4] / 255.0
@@ -407,7 +408,7 @@ def himeji(path):
     bark = b.color("bark", "#4e4236", rough=0.95)
     pbark = b.color("pine_bark", "#5e5246", rough=0.95)
     core_b = b.img_mat("crown_core", _gen_dense_leaves(), 1.6, rough=0.9)
-    core_p = b.color("pine_core", "#1f3218", rough=0.95)
+    core_p = b.color("pine_core", "#26391d", rough=0.95)
     lf_broad = b.alpha_mat("leaf_broad", _gen_leaves("broad"))
     lf_light = b.alpha_mat("leaf_light", _gen_leaves("light"))
     lf_pine = b.alpha_mat("leaf_pine", _gen_leaves("pine"), rough=0.8)
@@ -921,11 +922,6 @@ def himeji(path):
         k = (j + 1) % NA
         face([edge[k], edge[j], bot[j], bot[k]], soil)
     face(list(reversed(bot)), soil)
-    for f in bm.faces:
-        if f.material_index == grass:
-            c = f.calc_center_median()
-            if noise.noise(Vector((c.x / 18, c.y / 18, 3.1))) > 0.35:
-                f.material_index = soil
 
     # 中庭石垣（扇之勾配）＋碎石頂面
     ishigaki_poly(court, 8.0, Z_COURT, batter=0.3, cap=gravel)
@@ -1029,16 +1025,16 @@ def himeji(path):
         """樹冠團塊：深色核心＋分布在橢球表層、大致朝外的葉簇卡片（數量依表面積與卡片大小）"""
         blob(core, (cx, cy, cz), rx * 0.82, rx * 0.82, rz * 0.8, lump=0.35)
         area = 4 * math.pi * ((2 * rx * rx + rz * rz) / 3)
-        n = int(min(380, density * 2.6 * area / (csize * csize)))
+        n = int(min(460, density * 2.6 * area / (csize * csize)))
         for _ in range(n):
             d = Vector((rng.gauss(0, 1), rng.gauss(0, 1), rng.gauss(0, 1) * 0.9 + 0.25)).normalized()
             rr = rng.uniform(0.8, 1.04)
             pnt = (cx + d.x * rx * rr, cy + d.y * rx * rr, cz + d.z * rz * rr)
-            nrm = (d + Vector((rng.uniform(-0.35, 0.35), rng.uniform(-0.35, 0.35), rng.uniform(-0.1, 0.45)))).normalized()
+            nrm = (d + Vector((rng.uniform(-0.22, 0.22), rng.uniform(-0.22, 0.22), rng.uniform(0.0, 0.35)))).normalized()
             mi = mats[0] if (d.z > 0.05 or rng.random() < 0.3) else mats[-1]
             card(mi, pnt, nrm, csize * rng.uniform(0.8, 1.2), rng.uniform(0, TAU))
 
-    def broadleaf(x, y, z, h, R_=None, light=False, detail=1.0, trunk=True):
+    def broadleaf(x, y, z, h, R_=None, light=False, detail=1.0, trunk=True, cs=None):
         """闊葉樹：樹冠由 6–9 個團塊組成、下緣低垂；R_ 為樹冠水平半徑；detail 控制葉片卡片大小與數量"""
         R_ = R_ or h * 0.36
         cz = z + h - R_ * 0.95
@@ -1047,7 +1043,7 @@ def himeji(path):
             tube([(x, y, z - 0.6), (x, y, z + (cz - z) * 0.5), (x, y, cz)], max(0.12, h * 0.028), max(0.06, h * 0.014), bark)
         mats = (lf_light, lf_broad) if light else (lf_broad, lf_broad)
         n = rng.randint(6, 9) if detail >= 1 else rng.randint(3, 5)
-        cs = 1.35 if detail >= 1 else (2.0 if detail >= 0.5 else 3.0)
+        cs = cs or (1.35 if detail >= 1 else (2.0 if detail >= 0.5 else 3.0))
         for i in range(n):
             a = rng.uniform(0, TAU)
             rr = R_ * math.sqrt(rng.uniform(0.0, 1)) * 0.6
@@ -1076,19 +1072,13 @@ def himeji(path):
             c = p0 + Vector((math.cos(a) * reach, math.sin(a) * reach, h * 0.03))
             tube([p0, (p0 + c) / 2 + Vector((0, 0, h * 0.03)), c], h * 0.016, h * 0.008, pbark, seg=5)
             rp = h * (0.24 - 0.09 * f) * rng.uniform(0.85, 1.15)
-            # 雲狀枝葉層：扁平核心＋傾斜的針葉卡片（上表面與邊緣）
-            blob(core_p, (c.x, c.y, c.z + rp * 0.12), rp * 0.85, rp * 0.8, rp * 0.32, lump=0.35)
-            for _ in range(int(22 + 26 * rp)):
-                a2 = rng.uniform(0, TAU)
-                r2 = rp * math.sqrt(rng.uniform(0.05, 1))
-                tilt = Vector((math.cos(a2), math.sin(a2), 0)) * (r2 / rp) * 0.9
-                card(lf_pine, (c.x + r2 * math.cos(a2), c.y + r2 * math.sin(a2), c.z + rp * rng.uniform(0.05, 0.3) * (1.2 - r2 / rp)),
-                     tilt + Vector((rng.uniform(-0.3, 0.3), rng.uniform(-0.3, 0.3), 1)), rp * rng.uniform(0.6, 0.9), rng.uniform(0, TAU))
+            # 雲狀枝葉層：扁平的深色核心＋朝外的針葉卡片
+            crown(c.x, c.y, c.z + rp * 0.12, rp, rp * 0.3, (lf_pine, lf_broad), core_p, max(0.7, rp * 0.7), density=0.6)
 
     def shrub(x, y, z, r, hgt=None, light=True):
         """修剪成圓團的灌木（杜鵑等）"""
         hgt = hgt or r * 1.2
-        crown(x, y, z + hgt * 0.5, r, hgt * 0.55, (lf_shrub, lf_light) if light else (lf_broad, lf_broad), core_b, min(1.2, r * 0.5))
+        crown(x, y, z + hgt * 0.5, r, hgt * 0.55, (lf_shrub, lf_light) if light else (lf_broad, lf_broad), core_b, min(0.75, r * 0.32))
 
     def at(depth, lateral):
         x, y = cam_pt(depth, lateral)
@@ -1101,8 +1091,8 @@ def himeji(path):
     for dep, lat, r, top in ((16, -6.2, 2.8, 4.6), (19, -3.0, 2.5, 4.2), (14, -8.8, 2.4, 3.8), (22, -9.0, 2.8, 5.0), (25, -5.0, 2.6, 5.2)):
         x, y, z = at(dep, lat)
         shrub(x, y, z, r, top - z)                                               # 左下前景杜鵑
-    for dep, lat, top, R_, lt in ((50, -17, 17.5, 4.8, True), (58, -9.5, 10.5, 4.2, True), (46, -21, 17.0, 5.5, False),
-                                 (64, -27, 19.5, 6.0, False), (40, -12, 10.0, 4.0, True), (72, -36, 21.0, 6.5, True)):
+    for dep, lat, top, R_, lt in ((50, -18, 17.5, 4.3, True), (58, -9.5, 10.5, 4.2, True), (46, -21, 17.0, 5.5, False),
+                                 (64, -27, 19.5, 6.0, False), (40, -15.5, 10.0, 3.8, True), (72, -36, 21.0, 6.5, True)):
         x, y, z = at(dep, lat)
         broadleaf(x, y, z, top - z, R_, light=lt)                                # 左側樹群
     for dep, lat, top, R_, lt in ((85, -4.6, 22.0, 5.8, True), (92, -14, 21.0, 5.5, False), (84, 6.5, 15.0, 4.0, True),
@@ -1112,7 +1102,7 @@ def himeji(path):
     for dep, lat, top, R_, lt in ((33, -6, 6.5, 3.8, True), (36, 1, 7.5, 4.2, True), (41, 8, 7.0, 4.0, True), (30, -12, 5.5, 3.4, True),
                                  (45, -3, 9.0, 4.5, True)):
         x, y, z = at(dep, lat)
-        broadleaf(x, y, z, top - z, R_, light=lt)                                # 中下方低樹叢
+        broadleaf(x, y, z, top - z, R_, light=lt, cs=1.0)                                # 中下方低樹叢
     x, y, z = at(40, 10.7)
     broadleaf(x, y, z, 12.0 - z, 5.8, light=False)                               # 右側深綠大樹
     x, y, z = at(36, 15.5)
@@ -1131,7 +1121,7 @@ def himeji(path):
         x, y, z = at(dep, lat)
         if court_dist(x, y) < 4 or (0 < lat < 20 and dep > 70):
             continue
-        broadleaf(x, y, z, rng.uniform(8, 13), rng.uniform(4, 5.5), light=rng.random() < 0.6, detail=0.6)
+        broadleaf(x, y, z, rng.uniform(5.5, 8.5), rng.uniform(3.5, 4.8), light=rng.random() < 0.6, detail=0.6)
     # 外圍林木（網站環視時的周邊樹林）
     pts = b.scatter(60, 70, 215, min_dist=14.0, avoid=lambda x, y: court_dist(x, y) < 6 or (C - Vector((x, y, 0))).length < 110)
     for x, y in pts:

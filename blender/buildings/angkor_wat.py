@@ -13,7 +13,6 @@
 
 import math
 
-import bmesh
 from mathutils import Matrix, Vector, noise
 from mathutils.geometry import delaunay_2d_cdt
 
@@ -74,7 +73,7 @@ def lotus_carpet():
 
     from lib import TEX
 
-    out_dir = os.path.join(TEX, "_gen", "angkor_v6")
+    out_dir = os.path.join(TEX, "_gen", "angkor_v8")
     names = [os.path.join(out_dir, f"lotus_{k}.jpg") for k in ("diff", "rough", "nor")]
     if all(os.path.exists(n) for n in names):
         return names
@@ -83,10 +82,9 @@ def lotus_carpet():
     N = 1024
     col = np.zeros((N, N, 3))
     col[:] = np.array([18, 24, 26], float)
-    rough = np.full((N, N), 14.0)
+    rough = np.full((N, N), 70.0)
     h = np.zeros((N, N))
     yy, xx = np.mgrid[0:N, 0:N]
-    cover = np.zeros((N, N), bool)
     for i in range(1300):
         cx, cy = rng.uniform(0, N, 2)
         r = rng.uniform(26, 70)
@@ -100,7 +98,7 @@ def lotus_carpet():
         notch = np.abs(((ang - a0 + np.pi) % (2 * np.pi)) - np.pi) < 0.22 * (d > 0.05)
         m = (d < 1.0) & ~notch
         old = rng.random() < 0.35
-        base = np.array([80, 72, 32], float) * rng.uniform(0.6, 1.15)
+        base = np.array([74, 80, 34], float) * rng.uniform(0.65, 1.15)
         if old:
             base = base * np.array([1.5, 1.15, 0.7]) * rng.uniform(0.8, 1.1)
         shade = (0.85 + 0.25 * (1 - d)) * (1 + 0.05 * np.cos(ang * 18))  # 葉脈
@@ -116,9 +114,9 @@ def lotus_carpet():
         hs[m] = np.maximum(hs[m], 1.0 + 0.6 * (1 - d[m]) ** 0.5 + rng.uniform(0, 0.5))
         h[np.ix_(ys, xs)] = hs
     # 粉紅花點
-    for i in range(30):
+    for i in range(35):
         cx, cy = rng.integers(0, N, 2)
-        r = rng.uniform(6, 12)
+        r = rng.uniform(5, 10)
         m = ((xx - cx) ** 2 + (yy - cy) ** 2) < r * r
         col[m] = np.array([215, 110, 140]) * rng.uniform(0.8, 1.1)
         rough[m] = 150
@@ -174,7 +172,7 @@ def water_mat(b):
     img.image = bpy.data.images.load(water_normal(), check_existing=True)
     img.image.colorspace_settings.name = "Non-Color"
     nm = nt.nodes.new("ShaderNodeNormalMap")
-    nm.inputs["Strength"].default_value = 0.35
+    nm.inputs["Strength"].default_value = 0.18
     nt.links.new(img.outputs["Color"], nm.inputs["Color"])
     nt.links.new(nm.outputs["Normal"], bsdf.inputs["Normal"])
     return b._register("water", m, 6.0)
@@ -299,13 +297,11 @@ def redent(k=3, s=0.085):
         q.append((1.0 - i * s, 1.0 - (k - i) * s))
     # q 由 (1,0) 走到 (1-ks, 1)；鏡射得到完整一圈
     quad1 = q
-    quad2 = [(-y, x) for x, y in quad1]
     pts = []
     for rot in range(4):
         c, s_ = [(1, 0), (0, 1), (-1, 0), (0, -1)][rot]
         for x, y in quad1:
             pts.append((x * c - y * s_, x * s_ + y * c))
-    del quad2
     # 凸角：每象限的 (1,1-ks) 與階梯外凸點
     convex = []
     n = len(quad1)
@@ -352,7 +348,7 @@ def prasat(b, mi, cx, cy, z0, H, w, tiers=6, ruined_at=None, porch=True, seed=0)
     verts = []
     prof = []
     # 台座：三層線腳
-    for sc, dz in ((1.32, 0.0), (1.32, 0.05), (1.26, 0.06), (1.26, 0.09), (1.2, 0.1), (1.2, 0.13), (1.12, 0.14)):
+    for sc, dz in ((1.3, 0.0), (1.3, 0.06), (1.2, 0.08), (1.2, 0.14)):
         prof.append((w * sc, z0 + H * dz * 0.6))
     zb = z0 + H * 0.084
     zt = z0 + H * 0.3  # 塔身頂
@@ -481,15 +477,16 @@ def gallery(b, mats, x0, y0, x1, y1, z0, kind="outer", hw=4.5, windows=True):
         vs += extrude(b, roof, [(-0.95, hw + 3.0), (-0.55, hw + 3.0), (-0.55, hw + 3.25), (-0.95, hw + 3.25)], x0, y0, x1, y1, z0)
         # 柱列 A 與楣樑
         vs += extrude(b, stone, [(0.55, hw - 0.55), (1.45, hw - 0.55), (1.45, hw), (0.55, hw)], x0, y0, x1, y1, z0)
-        n = int(L / 3.0)
+        n = int(L / 3.4)
         for i in range(n):
             p = at((i + 0.5) * L / n, 1.0)
             vs += b.box(stone, (0.75, 0.75, hw - 0.55), (p.x, p.y, z0 + (hw - 0.55) / 2), rot=(0, 0, math.atan2(d.y, d.x)))
         # 半廊：外柱列 B 與斜屋頂（半拱）
         hb = hw - 1.4
         vs += extrude(b, stone, [(3.2, hb - 0.45), (4.0, hb - 0.45), (4.0, hb), (3.2, hb)], x0, y0, x1, y1, z0)
-        for i in range(n):
-            p = at((i + 0.5) * L / n, 3.6)
+        nb = int(L / 4.6)
+        for i in range(nb):
+            p = at((i + 0.5) * L / nb, 3.6)
             vs += b.box(stone, (0.55, 0.55, hb - 0.45), (p.x, p.y, z0 + (hb - 0.45) / 2), rot=(0, 0, math.atan2(d.y, d.x)))
         vs += extrude(b, roof, [(1.3, hw - 0.1), (4.3, hb), (4.3, hb + 0.35), (2.6, hb + 1.1), (1.3, hw + 0.75)], x0, y0, x1, y1, z0)
     else:
@@ -528,7 +525,6 @@ def pavilion(b, mats, cx, cy, z0, w, hw, tower_h=None, ruined=0.55, rot=0.0, see
     """十字形門亭／角亭：兩段交叉的高拱頂＋三角山牆，可帶殘塔"""
     stone, roof = mats["stone"], mats["roof"]
     vs = []
-    c, s = math.cos(rot), math.sin(rot)
     for k in range(2):
         a = rot + k * math.pi / 2
         ca, sa = math.cos(a), math.sin(a)
@@ -664,7 +660,7 @@ def height(x, y):
     # 參考照拍攝處：北池西岸為接近水面的低平紅土岸
     x0, x1, y0, y1 = POND
     wb = smooth(30.0, 8.0, rect_dist(x, y, x0 - 40, x0 + 2, y0 - 25, y1 + 25))
-    z = z * (1 - wb) + (-0.42 + 0.06 * n2(x, y, 0.4, 2.0)) * wb
+    z = z * (1 - wb) + (-0.42 + 0.06 * n2(x, y, 0.4, 2.0) + 0.05 * n2(x, y, 1.6, 7.0)) * wb
     for p in ponds():
         d = rect_dist(x, y, *p)
         if d < 4:
@@ -690,7 +686,7 @@ def spacing(x, y):
         s = 0.05 * d
     else:
         s = 0.09 * d
-    s = min(max(s, 1.0), 120.0)
+    s = min(max(s, 0.8), 120.0)
     for p in ponds():
         dd = rect_dist(x, y, *p)
         if -2 < dd < 6:
@@ -746,14 +742,10 @@ def build_ground(b, P, mats):
         face.smooth = True
         cx = sum(v.co.x for v in vs) / 3
         cy = sum(v.co.y for v in vs) / 3
-        cz = sum(v.co.z for v in vs) / 3
         near_cam = math.hypot(cx - CAM_XY[0], cy - CAM_XY[1])
         pd = min(rect_dist(cx, cy, *p) for p in ponds())
         near_bank = (pd < 2.5 + 2.0 * n2(cx, cy, 0.15, 2.0) and cx < POND[0] + 4) or (cx < POND[0] + 1 and POND[2] - 30 < cy < POND[3] + 30 and cx > CAM_XY[0] - 25)
         is_soil = near_bank or near_cam < 13.0 + 4 * n2(cx, cy, 0.2, 5.0)
-        # 參道兩側的紅土小徑
-        if -512 < cx < -110 and 5.0 < abs(cy) < 8.5:
-            is_soil = True
         face.material_index = soil if is_soil else grass
         (sf if is_soil else gf).append(face)
 
@@ -761,16 +753,16 @@ def build_ground(b, P, mats):
         x, y = co.x, co.y
         a = fbm(x, y, 0.02, 3, 4.0)
         dry = smooth(-0.3, 0.6, fbm(x, y, 0.006, 3, 9.0))
-        r = 0.78 + 0.08 * a + 0.12 * dry
-        g = 0.8 + 0.06 * a - 0.03 * dry
+        r = 0.92 + 0.08 * a + 0.1 * dry
+        g = 0.92 + 0.06 * a - 0.03 * dry
         bb = 0.3 + 0.05 * a - 0.08 * dry
         k = smooth(0.75 * GROUND_R, GROUND_R, math.hypot(x, y))
         return (r * (1 - k) + 0.8 * k, g * (1 - k) + 0.85 * k, bb * (1 - k) + 0.9 * k)
 
     def scol(f, co):
-        a = n2(co.x, co.y, 0.3, 1.0)
+        a = n2(co.x, co.y, 0.3, 1.0) + 0.8 * n2(co.x, co.y, 1.3, 6.0) + 0.6 * n2(co.x, co.y, 0.08, 9.0)
         wet = smooth(-0.32, -0.62, co.z)
-        v = 0.95 + 0.08 * a
+        v = 0.92 + 0.09 * a
         return (0.8 * v * (1 - 0.35 * wet), 0.62 * v * (1 - 0.4 * wet), 0.12 * v * (1 - 0.4 * wet))
 
     P.paint_faces(gf, gcol)
@@ -783,7 +775,7 @@ def angkor_wat(path):
     P = Painter(b)
     rng = b.rng
     mats = {
-        "grass": b.tex("grass", "grass_ground", tile=5.0, tint="#5a600c", normal=0, rough=0.95),
+        "grass": b.tex("grass", "grass_ground", tile=5.0, tint="#6c6a0a", normal=0, rough=0.95),
         "soil": b.tex("soil", "dirt", tile=2.5, tint="#ff9800", normal=0, rough=0.95),
         "stone": b.tex("sandstone", "large_sandstone_blocks_01", tile=3.2, tint="#a89070", normal=1.0, rough=0.85),
         "roof": b.tex("roof", "grey_roof_tiles", tile=1.8, tint="#7e6040", normal=0, rough=0.85),
@@ -824,7 +816,7 @@ def angkor_wat(path):
     gallery(b, mats, -ex, 118, -ex, 18, 0.0, kind="inner", hw=4.2, windows=False)
     gallery(b, mats, -ex, -18, -ex, -118, 0.0, kind="inner", hw=4.2, windows=False)
     for yy, th in ((0, 18), (40, 13), (-40, 13)):
-        pavilion(b, mats, -ex, yy, 0.0, 9 if yy == 0 else 7, 5.0, tower_h=th, ruined=0.42, seed=yy)
+        pavilion(b, mats, -ex, yy, 0.0, 9 if yy == 0 else 7, 5.0, tower_h=th, ruined=0.3, seed=yy)
     # 參道（高 1.5 m、寬 9.5 m，兩側那伽欄杆）
     b.box_base(lat, (400, 9.5, 2.0), (-312, 0, -0.5))
     for sgn in (-1, 1):
@@ -855,7 +847,6 @@ def angkor_wat(path):
     pavilion(b, mats, -X3, 0, Z3, 11, 6.6, tower_h=24, ruined=0.5, seed=1)
     for sgn in (-1, 1):
         pavilion(b, mats, -X3, sgn * 34, Z3, 8, 6.0, tower_h=18, ruined=0.45, seed=2 + sgn)
-        gallery(b, mats, -X3, sgn * 48 if sgn < 0 else 11, -X3, sgn * 48 if sgn > 0 else -11, Z3, kind="outer", hw=5.4) if False else None
         ya, yb = (11, 26) if sgn > 0 else (-26, -11)
         gallery(b, mats, -X3, yb, -X3, ya, Z3, kind="outer", hw=5.4)
         ya, yb = (42, 48) if sgn > 0 else (-48, -42)
@@ -945,19 +936,12 @@ def stair(b, mi, cx, cy, z0, z1, width, side, start=None):
     dirs = {"W": (1, 0), "E": (-1, 0), "S": (0, 1), "N": (0, -1)}
     dx, dy = dirs[side]
     if start is not None:
-        # 中央層：自高台外緣 start 往內，cx/cy 為沿邊偏移
-        if side in "WE":
-            fx, fy = -dx * start, cy
-        else:
-            fx, fy = cx + 0.0 + cy * 0 + (cy if False else 0), -dy * start
-            fx = cy
-        bx0, by0 = fx, fy
+        # 中央層：梯腳位於高台外緣 start 處，cy 為沿邊的偏移量
+        bx0, by0 = (-dx * start, cy) if side in "WE" else (cy, -dy * start)
     else:
         bx0, by0 = cx, cy
-    ang = math.atan2(dy, dx)
-    M = Matrix.Translation((bx0, by0, z0)) @ Matrix.Rotation(ang, 4, "Z") @ Matrix.Rotation(math.pi / 2, 4, "Z")
-    # profile_wall：剖面在局部 XZ（u→X），沿局部 Y 擠出 width；先轉使 X 指向梯的前進方向
-    M = Matrix.Translation((bx0, by0, z0)) @ Matrix.Rotation(ang, 4, "Z")
+    # profile_wall：剖面在局部 XZ（u→X），沿局部 Y 擠出 width；旋轉使 X 指向登梯方向
+    M = Matrix.Translation((bx0, by0, z0)) @ Matrix.Rotation(math.atan2(dy, dx), 4, "Z")
     return b.profile_wall(mi, pts, width, M)
 
 
@@ -968,11 +952,11 @@ def lotus(b, P, rng):
     flower_m = b.color("lotus_flower", "#d96f8f", rough=0.5)
     for (x0, x1, y0, y1) in ponds():
         north = y0 > 0
-        n = 6000 if north else 300
+        n = 5600 if north else 300
         for _ in range(n):
             if north:
                 # 立體浮葉集中在預覽相機視野內的近中景（更遠處交給蓮葉地毯貼圖）
-                dcam = 13.0 + 45.0 * rng.random() ** 1.8
+                dcam = 13.0 + 60.0 * rng.random() ** 2.0
                 a = HEAD + math.radians(rng.uniform(-25, 25))
                 x, y = CAM_XY[0] + math.sin(a) * dcam, CAM_XY[1] + math.cos(a) * dcam
                 if not (x0 + 0.5 < x < x1 - 0.5 and y0 + 0.5 < y < y1 - 0.5):
@@ -982,7 +966,7 @@ def lotus(b, P, rng):
                 y = rng.uniform(y0 + 0.8, y1 - 0.8)
             # 參考照：近岸留出一片開闊水面（倒影），遠處蓮葉密集
             dist = x - x0
-            dens = smooth(4.5, 7.0, dist) * (1.0 - 0.4 * smooth(25, 50, dist)) + 0.03
+            dens = smooth(4.5, 7.0, dist) * (1.0 - 0.4 * smooth(25, 50, dist)) + 0.008
             if rng.random() > dens * (0.7 + 0.5 * max(0.0, n2(x, y, 0.08, 4.0))):
                 continue
             raised = dist > 6.2 and rng.random() < 0.08
@@ -1025,7 +1009,6 @@ def lotus(b, P, rng):
 def plant(b, P, rng):
     """依參考照擺放糖棕與林木；其餘散植於寺院外圍與護城河外"""
     fx, fy = math.sin(HEAD), math.cos(HEAD)
-    rx, ry = math.cos(HEAD), -math.sin(HEAD)
 
     def cam_pos(off_deg, d):
         a = HEAD + math.radians(off_deg)
@@ -1038,7 +1021,7 @@ def plant(b, P, rng):
     # 迴廊前的中型扇葉棕櫚群
     for off, d, h in ((-6.2, 300, 13.5), (-3.5, 302, 14.0), (-1.4, 306, 12.5), (-0.4, 304, 13.0), (3.6, 108, 9.0)):
         x, y = cam_pos(off, d)
-        sugar_palm(b, P, x, y, height(x, y), h, crown=3.6 if d > 200 else 4.0)
+        sugar_palm(b, P, x, y, height(x, y), h, crown=4.4 if d > 200 else 4.2)
     # 右側參道旁的棕櫚叢
     for k in range(9):
         off = rng.uniform(9.0, 17.0)
@@ -1076,7 +1059,7 @@ def plant(b, P, rng):
             broad_tree(b, P, x, y, height(x, y), rng.uniform(12, 22), blobs=4, sub=1)
         placed += 1
     # 護城河外的林帶（低面數）
-    for k in range(150):
+    for k in range(90):
         a = rng.uniform(0, TAU)
         r = rng.uniform(780, 1150)
         x, y = r * math.cos(a) * 1.05, r * math.sin(a) * 0.95

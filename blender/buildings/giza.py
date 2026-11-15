@@ -30,7 +30,7 @@ from lib import TAU, TEX, Builder
 # 依參考照（All Gizah Pyramids，西南方沙丘上平視東北）以特徵點反推相機位置約為 (-760, -1290, 30)；為看到王后金字塔腳下的沙地，改用略高的 42 m
 CAMERA = ((-458.7, -658.8, 54.2), 334.5, -1.0, 700.0, 78)
 
-GEN = os.path.join(TEX, "_gen", "giza_v3")
+GEN = os.path.join(TEX, "_gen", "giza_v4")
 
 
 # ====================================================================== 程式產生貼圖（numpy）
@@ -209,7 +209,7 @@ def gen_blocks(rng):
     m = top.mean()
     top = m * (top / m) ** 1.0
     yy = np.arange(256)[:, None]
-    band_shade = (1.0 - 0.42 * np.exp(-((255 - yy) / 16.0))) * (1.0 + 0.06 * np.exp(-(yy / 10.0)))
+    band_shade = (1.0 - 0.55 * np.exp(-((255 - yy) / 18.0))) * (1.0 + 0.06 * np.exp(-(yy / 10.0)))
     top = top * np.tile(band_shade, (4, 1)) / m
     # 階面：沙與碎石
     rub = _load("medieval_blocks_02", "diff", "L") / 255.0
@@ -772,7 +772,7 @@ def step_pyramid(A, rng, cx, cy, z0, bx, by, H, H_now, course, seg, amp, seed, t
         if top:  # 階面積沙
             r, g, b = r * 1.1, g * 1.07, b * 1.0
         else:
-            r, g, b = r * 0.86, g * 0.86, b * 0.86
+            r, g, b = r * 0.82, g * 0.81, b * 0.8
         if base_dark and zz < base_dark[0]:
             c = base_dark[1]
             kk = (1 - zz / base_dark[0]) * 0.8
@@ -1081,7 +1081,7 @@ def giza(path):
     # 孟卡拉（底部殘留紅色花崗岩外殼）
     pyr = Acc("GizaMenkaure", [m_block, m_casing])
     accs.append(pyr)
-    step_pyramid(pyr, rng, MK[0], MK[1], T.zMK, MK[2], MK[3], 65.5, 61.0, 1.1, 18, 0.9, 3.0, tone=(0.74, 0.68, 0.63),
+    step_pyramid(pyr, rng, MK[0], MK[1], T.zMK, MK[2], MK[3], 65.5, 61.0, 1.1, 18, 0.9, 3.0, tone=(0.78, 0.7, 0.61),
                  base_dark=(8.0, (0.55, 0.45, 0.4)))
     # 古夫的三座王后金字塔（G1-a/b/c，東側由北而南，已嚴重崩毀）
     for k, (qx, qy, qb, qh, now) in enumerate([(168, -12, 49.5, 30.2, 19.0), (163, -64, 49.0, 30.0, 17.5), (158, -113, 46.3, 29.6, 21.5)]):
@@ -1125,14 +1125,14 @@ def giza(path):
             else:
                 yield cx - hw - off, cy + t * hd, off
 
-    for (cx, cy, w, d), cnt, tone in ((KH, 200, (0.86, 0.8, 0.7)), (KF, 220, (0.84, 0.78, 0.68)), (MK, 420, (0.78, 0.68, 0.56))):
+    for (cx, cy, w, d), cnt, tone in ((KH, 130, (0.86, 0.8, 0.7)), (KF, 150, (0.84, 0.78, 0.68)), (MK, 420, (0.78, 0.68, 0.56))):
         for x, y, off in ring_pts(cx, cy, w / 2, d / 2, cnt, 30):
             block(x, y, rng.uniform(0.5, 1.6) * (1.5 if off < 5 else 1.0), tone)
     for qx, qy in MKQ:
         for x, y, off in ring_pts(qx, qy, 17, 17, 170, 14, inner=-1.0):
             block(x, y, rng.uniform(0.4, 1.3) * (1.4 if off < 4 else 1.0), (0.8, 0.68, 0.54))
     # 沙漠中散布的碎石
-    for _ in range(300):
+    for _ in range(120):
         a = rng.uniform(0, TAU)
         r = math.sqrt(rng.uniform(0, 1)) * 1400
         x, y = CX + r * math.cos(a), CY + r * math.sin(a)
@@ -1144,8 +1144,8 @@ def giza(path):
     def mastaba(x, y, w, d, h):
         z = ground(x, y) - 1.2
         vs = b.frustum(stone, (w, d), (w - h * 0.45, d - h * 0.45), h + 1.2, (x, y, z), rot_z=rng.uniform(-0.01, 0.01))
-        tone = rng.uniform(0.8, 0.95)
-        P.pv(vs, lambda f, co: (tone * (0.98 + 0.03 * n2(co.x, co.z, 0.5)), tone * 0.9, tone * 0.78))
+        tone = rng.uniform(0.66, 0.8)
+        P.pv(vs, lambda f, co: (tone * (0.98 + 0.03 * n2(co.x, co.z, 0.5)), tone * 0.88, tone * 0.74))
 
     for gx0, gy0, ni, nj in ((-175, -40, 7, 9), (205, -130, 4, 7)):
         for i in range(ni):
@@ -1195,8 +1195,6 @@ def giza(path):
         P.pv(vs, lambda f, co: (0.78 + 0.08 * n2(co.x, co.y, 0.2), 0.68 + 0.07 * n2(co.x, co.y, 0.2), 0.55))
 
     # 參考照右下：採石場廢料堆（沙丘上覆深色碎石）
-    fx, fy = math.sin(HEAD), math.cos(HEAD)
-    rx, ry = math.cos(HEAD), -math.sin(HEAD)
     for (x0, y0, R0, _), cnt in zip(HEAPS, (110, 90, 50)):
         for _ in range(cnt):
             a = rng.uniform(0, TAU)

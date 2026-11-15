@@ -140,6 +140,31 @@ def _canopy_textures():
 
 
 class _GB(Builder):
+    planar = set()
+
+    def _uv(self):
+        """植被（地形與樹叢）一律用俯視平面投影，使相鄰面共用 UV、頂點不被拆分；其他面用方塊投影"""
+        uv = self.bm.loops.layers.uv.verify()
+        for f in self.bm.faces:
+            mi = f.material_index
+            tile = self.tiles[mi] if mi < len(self.tiles) else 1.0
+            if mi in self.planar:
+                for l in f.loops:
+                    c = l.vert.co
+                    l[uv].uv = (c.x / tile, c.y / tile)
+                continue
+            n = f.normal
+            ax = max(range(3), key=lambda i: abs(n[i]))
+            for l in f.loops:
+                c = l.vert.co
+                if ax == 2:
+                    u, v = c.x, c.y
+                elif ax == 0:
+                    u, v = c.y, c.z
+                else:
+                    u, v = c.x, c.z
+                l[uv].uv = (u / tile, v / tile)
+
     def ptex(self, name, tex_id, tile, tint=None, gain=1.0, rough=0.85, normal=1.0, nsize=512, dsize=1024):
         """PBR 貼圖材質（縮小的法線貼圖、固定粗糙度）以控制 GLB 大小"""
         from PIL import Image
@@ -194,13 +219,15 @@ def great_wall(path):
     b = _GB("GreatWall", seed=21)
     bm = b.bm
     col_layer = bm.verts.layers.color.new("Col")
+    dome_layer = bm.verts.layers.float_vector.new("dome_n")  # 樹叢的圓頂法線（輸出時寫入自訂法線）
     cd, cn = _canopy_textures()
     veg = b.img_mat("vegetation", cd, cn, 30.0, 0.95, 1.0, vcol=True)
-    brick = b.ptex("brick", "brick_wall_006", 3.6, tint="#9a8a77", normal=0.8)
+    b.planar = {veg}
+    brick = b.ptex("brick", "brick_wall_006", 3.6, tint="#8c7d6b", normal=0.9)
     brick_far = b.color("brick_far", "#9a948a", rough=0.9)
     far_mats = [b.color("far_wall0", "#7e7d77", rough=0.95), b.color("far_wall1", "#6f777b", rough=0.95), b.color("far_wall2", "#66717c", rough=0.95)]
-    stone = b.ptex("stone", "large_sandstone_blocks", 3.0, tint="#aca393", rough=0.88, normal=0, dsize=512)
-    paving = b.ptex("walkway", "white_sandstone_bricks_03", 2.0, tint="#a8a092", rough=0.9, normal=0, dsize=512)
+    stone = b.ptex("stone", "large_sandstone_blocks", 3.0, tint="#9e9585", rough=0.88, normal=0, dsize=512)
+    paving = b.ptex("walkway", "white_sandstone_bricks_03", 2.0, tint="#9b9384", rough=0.9, normal=0, dsize=512)
     dark = b.color("opening", "#1f1c19", rough=1.0)
     roof_tile = b.ptex("roof_tile", "grey_roof_tiles", 1.5, tint="#5b5c5e", rough=0.7, normal=0, dsize=512)
     rng = b.rng
@@ -296,6 +323,7 @@ def great_wall(path):
     valley = np.array([(-520.0, 760.0, -28.0), (-380.0, 720.0, -24.0), (-260.0, 690.0, -22.0), (-170.0, 640.0, -16.0),
                        (-150.0, 520.0, -8.0), (-200.0, 380.0, 0.0), (-330.0, 300.0, 4.0)])
     valley2 = np.array([(-480.0, 560.0, -6.0), (-300.0, 520.0, -10.0), (-150.0, 560.0, -12.0), (-40.0, 600.0, -8.0)])
+    valley3 = np.array([(-470.0, 655.0, -36.0), (-330.0, 645.0, -33.0), (-200.0, 628.0, -28.0), (-110.0, 600.0, -20.0)])
 
     def height(X, Y, with_feat=False):
         X = np.asarray(X, np.float64)
@@ -313,6 +341,9 @@ def great_wall(path):
         dv, iv, tv = seg_query(X, Y, valley2[:, :2])
         vf = valley2[iv, 2] + (valley2[np.minimum(iv + 1, len(valley2) - 1), 2] - valley2[iv, 2]) * tv
         hb = np.minimum(hb, vf + 0.42 * dv + 6 * fbm(X / 70, Y / 70, 3, 33) * np.clip(dv / 40, 0, 1))
+        dv, iv, tv = seg_query(X, Y, valley3[:, :2])
+        vf = valley3[iv, 2] + (valley3[np.minimum(iv + 1, len(valley3) - 1), 2] - valley3[iv, 2]) * tv
+        hb = np.minimum(hb, vf + 0.38 * dv)
         h = hb
         wall_caps = []
         for P, crest, slope, w0, is_wall in feats:
@@ -382,15 +413,15 @@ def great_wall(path):
         # 背光的沖溝較暗、稜線較亮
         col *= np.clip(1 + 0.02 * curv, 0.62, 1.18)[:, None]
         # 裸土（黃褐小斑塊、小徑）與陡坡岩塊
-        bare = np.clip((fbm(X / 28, Y / 28, 4, 41) - 0.3) * 5, 0, 1) * np.clip((slope - 0.25) * 2, 0, 1) * 0.85
+        bare = np.clip((fbm(X / 26, Y / 26, 4, 41) - 0.22) * 4, 0, 1) * np.clip((slope - 0.2) * 2, 0, 1) * 0.9
         rockm = np.clip((slope - 1.05) * 2.5, 0, 1) * np.clip(fbm(X / 35, Y / 35, 3, 43) * 3 + 0.6, 0, 1)
         col = col * (1 - bare[:, None]) + np.array([0.66, 0.58, 0.46]) * bare[:, None]
         col = col * (1 - rockm[:, None] * 0.8) + np.array([0.56, 0.53, 0.48]) * rockm[:, None] * 0.8
         # 大氣透視
         d = np.sqrt(X * X + Y * Y + (Z - CAM.z) ** 2)
-        a = 1 - np.exp(-((d / 950.0) ** 1.4))
-        u = np.clip((d - 800) / 1400, 0, 1)[:, None]
-        haze = np.array([0.27, 0.39, 0.42]) * (1 - u) + np.array([0.22, 0.30, 0.45]) * u
+        a = 1 - np.exp(-((d / 1150.0) ** 1.8))
+        u = np.clip((d - 900) / 1100, 0, 1)[:, None]
+        haze = np.array([0.20, 0.40, 0.38]) * (1 - u) + np.array([0.21, 0.29, 0.44]) * u
         col = col * (1 - a[:, None]) + haze * a[:, None]
         return np.clip(col, 0, 1)
 
@@ -525,9 +556,15 @@ def great_wall(path):
                     zt = top[i] + (top[i + 1] - top[i]) * u + 1.15
                     c = p + nn * (Wt / 2 - 0.3)
                     ang = math.atan2(tang[i].y, tang[i].x)
-                    b.box_base(mtl, (1.6, 0.6, 0.8), (c.x, c.y, zt - 0.05), rot=(0, 0, ang))
+                    b.box_base(mtl, (1.6, 0.64, 0.8), (c.x, c.y, zt - 0.05), rot=(0, 0, ang))
                     s += 2.2
                 acc = s - L
+        # 牆端封口（斷面多邊形）
+        for i, sg in ((0, -1), (n - 1, 1)):
+            prof = [(-Wb / 2, base[i]), (Wb / 2, base[i]), (Wt / 2, top[i]), (Wt / 2, top[i] + 1.15), (Wt / 2 - 0.6, top[i] + 1.15),
+                    (Wt / 2 - 0.6, top[i]), (-Wt / 2 + 0.45, top[i]), (-Wt / 2 + 0.45, top[i] + 1.0), (-Wt / 2, top[i] + 1.0)]
+            vs = [V(i, o, z) for o, z in prof]
+            face([bm.verts.new(v) for v in (vs if sg > 0 else list(reversed(vs)))], mts)
         return P, top, tang, nrm, G
 
     # ------------------------------------------------------------------ 敵樓
@@ -569,7 +606,8 @@ def great_wall(path):
             af = ang + side * math.pi / 2
             ox, oy = math.cos(af - math.pi / 2), math.sin(af - math.pi / 2)
             tx, ty = math.cos(af), math.sin(af)
-            b.box_base(mtl, (S + 0.6, 0.55, 0.8), (p.x + ox * (S / 2 + 0.02), p.y + oy * (S / 2 + 0.02), zt), rot=(0, 0, af))
+            ln_ = S + 0.6 if side % 2 == 0 else S - 0.52  # 兩側較短，轉角不重疊
+            b.box_base(mtl, (ln_, 0.55, 0.8), (p.x + ox * (S / 2 + 0.02), p.y + oy * (S / 2 + 0.02), zt), rot=(0, 0, af))
             for k in range(5):
                 u = -S / 2 + 0.9 + k * (S - 1.8) / 4
                 b.box_base(mtl, (1.3, 0.55, 0.8), (p.x + ox * (S / 2 + 0.02) + tx * u, p.y + oy * (S / 2 + 0.02) + ty * u, zt + 0.8), rot=(0, 0, af))
@@ -634,19 +672,19 @@ def great_wall(path):
                     b.box_base(mfw, (8, 8, hgt + 9), (q[0], q[1], zg - 5), rot=(0, 0, math.atan2(t.y, t.x)))
             prev = cur
 
-    far_wall(0, -520, -150, w=4, hgt=3.5)
-    far_wall(0, 120, 520, w=4, hgt=3.5)
-    far_wall(1, -300, 40, w=4.5, hgt=4, every=9)
-    far_wall(1, 180, 480, w=4.5, hgt=4, every=9)
+    far_wall(0, -520, -150, w=3.2, hgt=3.0)
+    far_wall(0, 120, 520, w=3.2, hgt=3.0)
+    far_wall(1, -300, 40, w=3.6, hgt=3.4, every=9)
+    far_wall(1, 180, 480, w=3.6, hgt=3.4, every=9)
 
     # ------------------------------------------------------------------ 樹叢團塊（成群的低面數樹冠；頂點色隨地表植被、較深）
     near_arr = np.array(near_pts)
     rs = np.random.default_rng(5)
-    NC = 2500
-    dep = 105 + 950 * rs.uniform(0, 1, NC) ** 1.8
+    NC = 3600
+    dep = 105 + 680 * rs.uniform(0, 1, NC) ** 2.0
     lat = rs.uniform(-0.64, 0.64, NC) * dep
     grove = fbm(lat / 90, dep / 90, 3, 51)
-    keep = rs.uniform(0, 1, NC) < np.clip(0.45 + 1.4 * grove + 0.4 * (dep < 420), 0.08, 1)
+    keep = rs.uniform(0, 1, NC) < np.clip(0.5 + 1.4 * grove + 0.35 * (dep < 420), 0.3, 1)
     GXc, GYc = lat[keep], dep[keep]
     pts = []
     for gx_, gy_ in zip(GXc, GYc):
@@ -667,28 +705,29 @@ def great_wall(path):
     CX, CY, CZ, hx, hy, cv = CX[keep], CY[keep], CZ[keep], hx[keep], hy[keep], cv[keep]
     CC = veg_colors(CX, CY, CZ, hx, hy, cv)
     dd_all = np.sqrt(CX * CX + CY * CY + (CZ - CAM.z) ** 2)
-    hz = 1 - np.exp(-((dd_all / 950.0) ** 1.4))
+    hz = 1 - np.exp(-((dd_all / 1150.0) ** 1.8))
     for x, y, z, c, dd, hzv in zip(CX, CY, CZ, CC, np.hypot(CX, CY), hz):
         s_ = (1.0 + 1.5 * rs.uniform(0, 1) ** 1.5) * (1 + dd / 650)
-        hgt = s_ * rs.uniform(0.75, 1.1)
+        hgt = s_ * rs.uniform(0.55, 0.85)
         rot = rs.uniform(0, TAU)
         ring = []
         for k in range(6):
             a_ = rot + TAU * k / 6
             rr = s_ * rs.uniform(0.75, 1.15)
-            ring.append(bm.verts.new((x + rr * math.cos(a_), y + rr * math.sin(a_), z + hgt * 0.35)))
-        topv = bm.verts.new((x + rs.uniform(-0.3, 0.3) * s_, y + rs.uniform(-0.3, 0.3) * s_, z + hgt))
-        botv = bm.verts.new((x, y, z - hgt * 0.5))
+            ring.append(bm.verts.new((x + rr * math.cos(a_), y + rr * math.sin(a_), z - hgt * 0.25)))
+        topv = bm.verts.new((x + rs.uniform(-0.25, 0.25) * s_, y + rs.uniform(-0.25, 0.25) * s_, z + hgt))
+        for v in ring:
+            rd = Vector((v.co.x - x, v.co.y - y, 0)).normalized()
+            v[dome_layer] = (rd * 0.8 + Vector((0, 0, 0.6))).normalized()
+        topv[dome_layer] = Vector((rs.uniform(-0.15, 0.15), rs.uniform(-0.15, 0.15), 1)).normalized()
         # 喬木比灌叢深綠（霧化後差異變小）
         k_ = rs.uniform(0.62, 0.95) * (1 - hzv) + hzv
         cc = [float(min(1, v * k_)) for v in c]
         for v in ring:
             v[col_layer] = (c[0], c[1], c[2], 1.0)
         topv[col_layer] = (min(1, cc[0] * 1.15), min(1, cc[1] * 1.15), min(1, cc[2] * 1.1), 1.0)
-        botv[col_layer] = (cc[0] * 0.5, cc[1] * 0.5, cc[2] * 0.5, 1.0)
         for k in range(6):
             face([ring[k], ring[(k + 1) % 6], topv], veg, True)
-            face([ring[(k + 1) % 6], ring[k], botv], veg, True)
     print(f"  great-wall: {len(CX)} tree clumps")
 
     # 非植被面的頂點色設為白（不影響其他材質）
@@ -718,6 +757,14 @@ def _export(b, path, veg_mi):
     lt = np.zeros(len(me.polygons), np.int64)
     me.polygons.foreach_get("loop_total", lt)
     loop_mat = np.repeat(pm, lt)
+    # 樹叢：以圓頂法線取代（6 面錐體看起來圓潤）
+    if "dome_n" in me.attributes:
+        dn = np.zeros(len(me.vertices) * 3)
+        me.attributes["dome_n"].data.foreach_get("vector", dn)
+        dn = dn.reshape(-1, 3)[lv]
+        has = np.linalg.norm(dn, axis=1) > 0.5
+        ln = np.where(has[:, None], dn, ln)
+        me.attributes.remove(me.attributes["dome_n"])
     p = co[lv]
     d = np.sqrt(p[:, 0] ** 2 + p[:, 1] ** 2 + (p[:, 2] - CAM.z) ** 2)
     w = 0.85 * (1 - np.exp(-((d / 1100.0) ** 1.6))) * (loop_mat == veg_mi)
@@ -726,5 +773,17 @@ def _export(b, path, veg_mi):
     nn = ln * (1 - w[:, None]) + tgt[None, :] * w[:, None]
     nn /= np.linalg.norm(nn, axis=1, keepdims=True)
     me.normals_split_custom_set([tuple(v) for v in nn])
+    # 依材質分離物件，只有植被保留頂點色（減少 GLB 大小）
+    bpy.context.view_layer.objects.active = obj
+    obj.select_set(True)
+    bpy.ops.object.mode_set(mode="EDIT")
+    bpy.ops.mesh.select_all(action="SELECT")
+    bpy.ops.mesh.separate(type="MATERIAL")
+    bpy.ops.object.mode_set(mode="OBJECT")
+    for o in list(bpy.context.scene.objects):
+        if o.type != "MESH" or not o.data.polygons:
+            continue
+        if o.data.polygons[0].material_index != veg_mi and "Col" in o.data.color_attributes:
+            o.data.color_attributes.remove(o.data.color_attributes["Col"])
     bpy.ops.export_scene.gltf(filepath=path, export_format="GLB", export_apply=True, export_yup=True,
-                              export_image_format="JPEG", export_jpeg_quality=82)
+                              export_image_format="JPEG", export_jpeg_quality=82, export_all_vertex_colors=False)
