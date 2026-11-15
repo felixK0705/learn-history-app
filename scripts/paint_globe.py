@@ -97,27 +97,27 @@ temperate = np.exp(-(((alat - 47) / 13) ** 2))
 boreal = np.exp(-(((alat - 61) / 7) ** 2))
 ice = np.clip((alat - 66) / 6, 0, 1) + np.clip((elev - 0.62) * 5, 0, 1)
 
-col = np.ones((H, W, 3), np.float32) * hexc("#56664a")
-col = mix(col, np.ones_like(col) * hexc("#3e5a40"), np.clip(tropic * (0.8 + 0.4 * n2), 0, 1))
-col = mix(col, np.ones_like(col) * hexc("#5c6a4c"), np.clip(temperate * 0.7, 0, 1))
-col = mix(col, np.ones_like(col) * hexc("#4a5446"), np.clip(boreal * 0.8, 0, 1))
-col = mix(col, np.ones_like(col) * hexc("#7f6e5c"), np.clip(savanna * 0.85, 0, 1))
-col = mix(col, np.ones_like(col) * hexc("#a08272"), desert)
-col = mix(col, np.ones_like(col) * hexc("#8c5a4c"), np.clip((desert - 0.6) * 2.0 * n2 * 1.4, 0, 1))  # 紅色砂岩
-col = mix(col, np.ones_like(col) * hexc("#9a8a86"), np.clip((elev - 0.35) * 2.2, 0, 1) * 0.7)  # 山地
-col = mix(col, np.ones_like(col) * hexc("#d6dff0"), np.clip(ice, 0, 1))
+col = np.ones((H, W, 3), np.float32) * hexc("#5f9a3e")
+col = mix(col, np.ones_like(col) * hexc("#2f7d34"), np.clip(tropic * (0.8 + 0.4 * n2), 0, 1))
+col = mix(col, np.ones_like(col) * hexc("#6aa044"), np.clip(temperate * 0.7, 0, 1))
+col = mix(col, np.ones_like(col) * hexc("#3f6e3c"), np.clip(boreal * 0.8, 0, 1))
+col = mix(col, np.ones_like(col) * hexc("#b49a52"), np.clip(savanna * 0.85, 0, 1))
+col = mix(col, np.ones_like(col) * hexc("#dba25e"), desert)
+col = mix(col, np.ones_like(col) * hexc("#c4703c"), np.clip((desert - 0.6) * 2.0 * n2 * 1.4, 0, 1))  # 紅色砂岩
+col = mix(col, np.ones_like(col) * hexc("#a88e6c"), np.clip((elev - 0.35) * 2.2, 0, 1) * 0.7)  # 山地
+col = mix(col, np.ones_like(col) * hexc("#f2f6fb"), np.clip(ice, 0, 1))
 
 # 地形陰影（光源西北）
 gy, gx = np.gradient(blur(elev, 1.2))
-shade = np.clip(1.0 + (-gx * 0.9 + gy * 0.9) * 34, 0.5, 1.6)
+shade = np.clip(1.0 + (-gx * 0.9 + gy * 0.9) * 16, 0.65, 1.4)
 col *= shade[..., None]
 col *= (0.92 + 0.16 * n1)[..., None]
 
 # ---------- 海洋 ----------
 near = blur(land, 26) * 0.6 + blur(land, 8) * 0.4  # 越近陸地越淺
-deep = hexc("#183b73")
-mid = hexc("#36589a")
-shallow = hexc("#6b98d2")
+deep = hexc("#0f4fae")
+mid = hexc("#1f6cc8")
+shallow = hexc("#4fb0ea")
 ocean = mix(mix(np.ones((H, W, 3), np.float32) * deep, np.ones((H, W, 3), np.float32) * mid, np.clip(0.35 + fbm(seed=3) * 0.4, 0, 1)),
             np.ones((H, W, 3), np.float32) * shallow, np.clip(near * 1.8, 0, 1))
 # 白色流紋（扭曲的緯向條紋）
@@ -125,15 +125,15 @@ warp = fbm(seed=4, base=2) * 16 + fbm(seed=5, base=6) * 6 + fbm(seed=9, base=16)
 phase = lat * 0.16 + np.sin(np.radians(lon) * 3 + fbm(seed=10, base=3) * 6) * 2.2 + warp
 streak = np.sin(phase * np.pi)
 streak = np.clip((streak - 0.78) / 0.22, 0, 1) ** 1.3
-patch = np.clip(fbm(seed=6, base=8) * 2.6 - 0.95, 0, 1)
+patch = np.clip(fbm(seed=6, base=8) * 2.6 - 1.25, 0, 1)
 streak *= patch * (0.6 + 0.6 * np.clip(near * 3, 0, 1))
-ocean = mix(ocean, np.ones_like(ocean) * hexc("#c3d3ee"), np.clip(blur(streak, 1.4) * 0.85, 0, 1))
+ocean = mix(ocean, np.ones_like(ocean) * hexc("#dcecff"), np.clip(blur(streak, 2.2) * 0.55, 0, 1))
 # 海面明暗起伏
 ocean *= (0.9 + 0.2 * fbm(seed=12, base=6))[..., None]
 # 海岸白浪
 foam = np.clip(blur(land, 9) - land * 0.98, 0, 1)
 foam = np.clip(foam * 3.2, 0, 1)
-ocean = mix(ocean, np.ones_like(ocean) * hexc("#d3e0f4"), foam * 0.9)
+ocean = mix(ocean, np.ones_like(ocean) * hexc("#bfe6ff"), foam * 0.6)
 
 out = mix(ocean, col, np.clip(land_soft, 0, 1))
 out = np.clip(out, 0, 1)
@@ -163,7 +163,7 @@ def fbm_small(seed, base, octaves=6, persistence=0.55):
 
 bands = 0.25 * np.exp(-((clat / 9) ** 2)) + 0.3 * np.exp(-(((np.abs(clat) - 52) / 14) ** 2)) + 0.62
 c = fbm_small(31, 6, 7) * 0.6 + fbm_small(32, 24, 4) * 0.4
-alpha = np.clip((c * bands - 0.33) * 4.0, 0, 1) ** 1.2
+alpha = np.clip((c * bands - 0.33) * 4.0, 0, 1) ** 1.2 * np.clip((80 - np.abs(clat)) / 25, 0, 1)  # 兩極淡出，避免貼圖在極點收束成白色放射紋
 rgba = np.zeros((CH, CW, 4), np.uint8)
 rgba[..., :3] = 255
 rgba[..., 3] = (alpha * 235).astype(np.uint8)

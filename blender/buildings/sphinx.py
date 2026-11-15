@@ -13,7 +13,7 @@ from mathutils import Vector, noise
 from lib import TAU, Builder
 
 # 目標點、方位角、仰角、距離、焦距（對應參考照：東南側地面視角，頭朝右）
-CAMERA = ((-2.0, 0.0, 8.0), 16.0, 3.0, 44.0, 20.0)
+CAMERA = ((4.0, 0.0, 9.5), 33.0, 2.0, 35.0, 18.0)
 
 if os.environ.get("TL_CAM"):  # 開發用：覆寫預覽相機
     CAMERA = ast.literal_eval(os.environ["TL_CAM"])
@@ -568,8 +568,8 @@ def save_img(arr, path, quality=88):
 
 
 # ---------------------------------------------------------------- 獅身人面像 SDF
-HEAD_C = (10.6, 0.0, 14.3)   # 頭部局部原點（下巴底、耳朵平面）
-HEAD_H = 5.9                 # 下巴到頭頂
+HEAD_C = (10.4, 0.0, 14.0)   # 頭部局部原點（下巴底、耳朵平面）
+HEAD_H = 6.5                 # 下巴到頭頂（含頭巾約 6.7 m）
 
 
 def strata(X, Y, Z, amp=1.0):
@@ -581,18 +581,21 @@ def strata(X, Y, Z, amp=1.0):
     i = np.floor(zq / T)
     f = zq / T - i
     hard = 0.55 + 0.45 * _hash(i.astype(np.int64), i.astype(np.int64) * 0 + 3, i.astype(np.int64) * 0, 77)
+    # 同一層沿長度方向的崩缺：部分段落外凸、部分整段剝落
+    seg = fbm(X * 0.11 + i * 3.7, Y * 0.11 + i * 1.3, None, 3, seed=306)
+    hard = hard * np.clip(0.75 + 1.6 * seg, 0.15, 1.35)
     prof = np.sqrt(np.clip(1 - (2 * f - 1) ** 2, 0, 1)) ** 0.8 - 0.62
-    rough = 0.22 * fbm(X * 0.35, Y * 0.35, Z * 0.8, 3, seed=302) + 0.12 * fbm(X * 1.2, Y * 1.2, Z * 1.5, 2, seed=303)
-    # 局部崩落的凹洞
+    rough = 0.3 * fbm(X * 0.25, Y * 0.25, Z * 0.6, 3, seed=302) + 0.14 * fbm(X * 1.2, Y * 1.2, Z * 1.5, 2, seed=303)
+    # 局部崩落的凹洞與縱向裂隙
     pit = np.clip(fbm(X * 0.12, Z * 0.25, Y * 0.1, 3, seed=304) - 0.25, 0, 1) * 1.2
-    return amp * (hard * prof * 0.95 + rough - pit)
+    return amp * (hard * prof * 1.35 + rough - pit)
 
 
 def body_sdf(S):
     X, Y, Z = S.X, S.Y, S.Z
     xs = [-46.5, -45.0, -42.5, -38.0, -28.0, -15.0, -3.0, 5.0, 10.0, 13.5, 16.0, 17.6]
-    W = cr_interp(X, xs, [2.5, 5.2, 6.6, 7.0, 6.8, 6.6, 6.7, 7.0, 7.0, 6.6, 5.6, 3.4])
-    Hb = cr_interp(X, xs, [4.5, 7.4, 9.2, 9.8, 9.9, 9.9, 10.1, 10.6, 11.0, 10.8, 9.2, 5.5])
+    W = cr_interp(X, xs, [2.5, 5.2, 6.6, 7.0, 6.8, 6.6, 6.7, 7.0, 7.1, 6.8, 5.8, 3.6])
+    Hb = cr_interp(X, xs, [4.5, 7.6, 9.4, 10.0, 10.2, 10.4, 10.9, 11.6, 12.2, 12.0, 10.4, 6.0])
     hc = Hb / 2
     p = 3.2
     rn = (np.abs(Y / W) ** p + np.abs((Z - hc) / hc) ** p) ** (1 / p)
@@ -600,8 +603,9 @@ def body_sdf(S):
     d = smax(d, X - 17.8, 0.8)
     d = smax(d, -46.8 - X, 0.8)
     # 胸前（圓鼓的胸膛往上收成頸部）
-    d = smin(d, S.ell((11.5, 0, 6.8), (5.6, 6.6, 6.6)), 1.0)
-    d = smin(d, S.cap((10.2, 0, 9.0), (10.6, 0, 15.5), 3.0, 2.4), 1.2)
+    d = smin(d, S.ell((12.2, 0, 6.2), (5.4, 6.6, 6.0)), 1.0)
+    d = smin(d, S.ell((9.6, 0, 10.5), (3.2, 4.4, 2.2)), 1.0)
+    d = smin(d, S.cap((9.2, 0, 9.0), (9.0, 0, 12.8), 2.8, 2.2), 1.0)
     # 後腿（盤坐在臀側）
     for sy in (-1, 1):
         d = smin(d, S.ell((-36.5, sy * 6.6, 3.3), (8.5, 1.7, 3.4)), 0.8)
@@ -654,7 +658,7 @@ def nemes_head_sdf(S):
     rn = (np.abs(X / w) ** 4 + np.abs((Y - yc) / hd) ** 4) ** 0.25
     nem = (rn - 1.0) * np.minimum(w, hd)
     nem = smax(nem, Z - 0.98, 0.06)
-    nem = smax(nem, -0.72 - Z, 0.05)
+    nem = smax(nem, -0.5 - Z, 0.05)
     # 頭巾前緣：額上頭帶，眉上方切齊
     front = -(Y + 0.405 - 0.55 * np.clip(0.72 - Z, 0, 1) - 0.02 * np.clip((np.abs(X) - 0.3) / 0.1, 0, 1))
     top = smax(S.ell((0, 0.1, 0.7), (0.43, 0.53, 0.36)), front, 0.02)
@@ -692,30 +696,30 @@ def small_mat(name, tex_id, tint, nor_size=512, rough=0.9, nor_strength=1.0):
 
 def sphinx(path):
     b = Builder("Sphinx", seed=11)
-    m_body = small_mat("Sphinx_body", "cliff_side", "#c79f6b", nor_strength=1.4)
-    m_bodyd = small_mat("Sphinx_bodyd", "cliff_side", "#a47c50", nor_strength=1.4)
-    m_head = small_mat("Sphinx_head", "rock_04", "#bf9361", nor_strength=1.0)
-    m_clad = small_mat("Sphinx_clad", "sandstone_blocks_05", "#d3b07c", nor_strength=1.0)
-    clad = b.tex("clad", "sandstone_blocks_05", tile=2.2, tint="#d3b07c", normal=1.0, rough=0.9)
-    floor_m = b.tex("floor", "sand_01", tile=6.0, tint="#d5b07a", normal=0.8)
-    bedrock = b.tex("bedrock", "cliff_side", tile=8.0, tint="#c39b6a", normal=1.2)
-    wall_m = b.tex("wallm", "sandstone_blocks_05", tile=4.0, tint="#c39c6a", normal=0.9)
+    m_body = small_mat("Sphinx_body", "rock_04", "#c99a5e", nor_strength=1.6)
+    m_bodyd = small_mat("Sphinx_bodyd", "rock_04", "#9c7148", nor_strength=1.6)
+    m_head = small_mat("Sphinx_head", "rock_04", "#c0915a", nor_strength=1.0)
+    m_clad = small_mat("Sphinx_clad", "sandstone_blocks_05", "#d4ae76", nor_strength=1.0)
+    clad = b._register("clad", m_clad, 2.2)
+    floor_m = b._register("floor", small_mat("Sphinx_floor", "sand_01", "#d8b079", nor_strength=0.8), 6.0)
+    bedrock = b._register("bedrock", small_mat("Sphinx_bedrock", "cliff_side", "#c29766", nor_strength=1.2), 8.0)
+    wall_m = b._register("wallm", small_mat("Sphinx_wall", "sandstone_blocks_05", "#c39c6a", nor_strength=0.9), 4.0)
     granite = b.color("granite", "#5e463e", rough=0.5)
-    pyr_m = b.tex("pyr", "sandstone_blocks_05", tile=5.0, tint="#a5865f", normal=1.2, rough=0.95)
-    casing = b.tex("casing", "sandstone_blocks_05", tile=8.0, tint="#c4b08b", normal=0.3)
+    pyr_m = b._register("pyr", small_mat("Sphinx_pyr", "sandstone_blocks_05", "#9e8462", nor_strength=1.4, rough=0.95), 5.0)
+    casing = b._register("casing", small_mat("Sphinx_casing", "rock_04", "#c2ae8a", nor_strength=0.4), 8.0)
 
     # ---- 獅身（含前爪、後腿、尾巴）
-    S, o = grid3((-47.5, -9.6, -0.4), (34.0, 9.6, 16.5), 0.2)
+    S, o = grid3((-47.5, -9.6, -0.4), (34.0, 9.6, 16.5), 0.21)
     F = body_sdf(S)
-    V, Q = surface_nets(F, o, 0.2)
+    V, Q = surface_nets(F, o, 0.21)
     C = V[Q].mean(1)
     N = face_normals(V, Q)
     paw_zone = (C[:, 0] > 13.5) & (np.abs(C[:, 1]) > 2.0) & (C[:, 2] < 3.4)
     low = (C[:, 2] < 2.7) & (np.abs(N[:, 2]) < 0.8)
     rec = (strata(C[:, 0], C[:, 1], C[:, 2]) < -0.2)
     mi = np.where(paw_zone | low, 1, np.where(rec, 2, 0))
-    tiles = np.array([7.0, 2.2, 7.0])[mi]
-    mesh_object("SphinxBody", V, Q, [m_body, m_clad, m_bodyd], mi, box_uv(V, Q, tiles, N), decimate=0.42)
+    tiles = np.array([3.5, 2.2, 3.5])[mi]
+    mesh_object("SphinxBody", V, Q, [m_body, m_clad, m_bodyd], mi, box_uv(V, Q, tiles, N), decimate=0.36)
 
     # ---- 頭部（頭巾、臉）
     R = SDF.rot(math.pi / 2, 0.0)
@@ -725,7 +729,7 @@ def sphinx(path):
     S2, o2 = grid3(Wc.min(0), Wc.max(0), 0.07)
     F2 = nemes_head_sdf(S2.local(HEAD_C, R, H)) * H
     V2, Q2 = surface_nets(F2, o2, 0.07)
-    mesh_object("SphinxHead", V2, Q2, [m_head], None, box_uv(V2, Q2, 2.5), decimate=0.45)
+    mesh_object("SphinxHead", V2, Q2, [m_head], None, box_uv(V2, Q2, 2.5), decimate=0.4)
 
     # 兩爪之間的夢之碑（紅花崗岩）與祭壇
     b.box_base(granite, (0.8, 2.6, 3.6), (18.4, 0, 0))

@@ -23,10 +23,10 @@ from lib import TAU
 from .blue_mosque import CardBuilder, card_tree, gen_leaf_png, mk_face
 
 # 目標點、方位角（0 = 從南往北看）、仰角、距離、焦距
-CAMERA = ((-23.2, -13.2, 29.9), 39.8, -6.1, 280.0, 77)
+CAMERA = ((-15.2, -5.4, 29.0), 12.37, -8.94, 210.0, 66)
 
-GEN_DIR = "_gen/kremlin_v2"
-S0 = Vector((-113.0, 0.0, 0.0))                  # 救世主塔（與聖瓦西里同緯度，正西約 113 m）
+GEN_DIR = "_gen/kremlin_v6"
+S0 = Vector((-95.0, 75.0, 0.0))                   # 救世主塔（聖瓦西里西北方約 120 m）
 # 兩段牆：往西北（元老院塔方向）與往南南東（往別克列米舍夫塔）；V 皆指向牆外（廣場一側）
 FRAMES = {
     "nw": (Vector((-0.68, 0.733, 0)).normalized(), Vector((0.733, 0.68, 0)).normalized()),
@@ -83,13 +83,13 @@ def _gen_textures():
         return
     os.makedirs(d, exist_ok=True)
     N = 512
-    im = Image.new("RGB", (N, N), (196, 92, 62))
+    im = Image.new("RGB", (N, N), (178, 66, 38))
     dr = ImageDraw.Draw(im)
     rng = np.random.default_rng(5)
     for _ in range(4000):   # 磚面雜色
         x, y = rng.integers(0, N, 2)
         c = int(rng.integers(-18, 18))
-        dr.rectangle([x, y, x + 6, y + 3], fill=(196 + c, 92 + c // 2, 62 + c // 3))
+        dr.rectangle([x, y, x + 6, y + 3], fill=(178 + c, 66 + c // 2, 38 + c // 3))
     n = 4
     s = N // n
     for i in range(n + 1):
@@ -100,8 +100,8 @@ def _gen_textures():
             q = s * 0.18
             dr.polygon([(cx + s / 2, cy + s / 2 - q), (cx + s / 2 + q, cy + s / 2), (cx + s / 2, cy + s / 2 + q), (cx + s / 2 - q, cy + s / 2)], fill=col)
     for k in range(-n, 2 * n + 1):   # 白色斜格線
-        dr.line([(k * s, 0), (k * s + N, N)], fill=(236, 228, 214), width=9)
-        dr.line([(k * s, N), (k * s + N, 0)], fill=(236, 228, 214), width=9)
+        dr.line([(k * s, 0), (k * s + N, N)], fill=(214, 196, 170), width=3)
+        dr.line([(k * s, N), (k * s + N, 0)], fill=(214, 196, 170), width=3)
     im.save(os.path.join(d, "diff.jpg"), quality=88)
 
 
@@ -249,7 +249,7 @@ def kremlin(path):
     curb = b.ptex("curb", "large_sandstone_blocks", tile=3.0, tint="#a29d92", rough=0.85, normal=0.6, dsize=512)
     grass = b.ptex("grass", "grass_ground", tile=5.0, tint="#5f8a3a", gain=0.95, rough=0.95, dsize=512)
     plaster = b.ptex("plaster", "plastered_wall_04", tile=6.0, tint="#e2d3ad", rough=0.85, dsize=512)
-    tent_mi = b.ptex("tent", f"{GEN_DIR}/tent", tile=4.0, rough=0.6)
+    tent_mi = b.ptex("tent", f"{GEN_DIR}/tent", tile=6.0, rough=0.6)
     lf_light = b.alpha_mat("leaf_light", gen_leaf_png("light"))
     lf_broad = b.alpha_mat("leaf_broad", gen_leaf_png("broad"))
     core = b.color("leaf_core", "#2e4420", rough=0.9)
@@ -449,20 +449,21 @@ def kremlin(path):
         b.box_base(granite if k % 2 == 0 else granite_k, (w, d, h), (mx, my, z), rot=(0, 0, ANG_U))
         z += h
 
-    # ---------------------------------------------------------------- 古姆百貨（廣場東北側一段）
-    gu0, gu1 = 40.0, 175.0
-    c = W((gu0 + gu1) / 2, 75.0 + 30.0)
-    b.box_base(plaster, (gu1 - gu0, 60.0, 21.0), c, rot=(0, 0, ANG_U))
-    b.box_base(green_d, (gu1 - gu0 + 1.0, 61.0, 0.6), (c[0], c[1], 21.0), rot=(0, 0, ANG_U))
-    for k in range(int((gu1 - gu0) / 4.2)):
-        u = gu0 + 2.1 + 4.2 * k
+    # ---------------------------------------------------------------- 古姆百貨（紅場東側，南端在大教堂北方約 80 m）
+    gx0, gx1, gy0, gy1 = 38.0, 98.0, 80.0, 240.0
+    b.box_base(plaster, (gx1 - gx0, gy1 - gy0, 21.0), ((gx0 + gx1) / 2, (gy0 + gy1) / 2, 0))
+    b.box_base(green_d, (gx1 - gx0 + 1.0, gy1 - gy0 + 1.0, 0.6), ((gx0 + gx1) / 2, (gy0 + gy1) / 2, 21.0))
+    for k in range(int((gy1 - gy0) / 4.2)):
+        y = gy0 + 2.1 + 4.2 * k
         for z in (3.0, 9.0, 14.5):
-            q = W(u, 74.95)
-            b.box_base(win, (1.6, 0.12, 3.6 if z < 5 else 2.8), (q[0], q[1], z), rot=(0, 0, ANG_U))
-    for u in (60.0, 110.0, 160.0):
-        q = W(u, 76.0)
-        b.box_base(plaster, (12.0, 4.0, 27.0), (q[0], q[1], 0), rot=(0, 0, ANG_U))
-        tent(b, green_d, 5.0, 27.0, 6.0, q[0], q[1], sides=4, r_top=0.2, rot=ANG_U + math.pi / 4)
+            b.box_base(win, (0.12, 1.6, 3.6 if z < 5 else 2.8), (gx0 - 0.02, y, z))
+    for k in range(int((gx1 - gx0) / 4.2)):
+        x = gx0 + 2.1 + 4.2 * k
+        for z in (3.0, 9.0, 14.5):
+            b.box_base(win, (1.6, 0.12, 3.6 if z < 5 else 2.8), (x, gy0 - 0.02, z))
+    for y in (100.0, 160.0, 220.0):
+        b.box_base(plaster, (4.0, 12.0, 27.0), (gx0 + 1.0, y, 0))
+        tent(b, green_d, 5.0, 27.0, 6.0, gx0 + 1.0, y, sides=4, r_top=0.2, rot=math.pi / 4)
 
     # ---------------------------------------------------------------- 聖瓦西里主教座堂
     st_basil(b, brick_sb, white, cream, green, green_d, gold, tent_mi, win, curb, dm, T, Rz)
@@ -481,11 +482,8 @@ def kremlin(path):
         top = CAM.z + D * math.tan(math.radians(-el_) + math.atan(yt))
         return p.x, p.y, zg, top - zg
 
-    for px, py, D in ((360, 430, 300), (470, 545, 318), (880, 385, 262), (1120, 470, 250), (1200, 520, 238), (720, 505, 262), (790, 520, 258),
-                      (300, 560, 330)):
-        x, y, zg, h = at_screen(px, py, D)
-        card_tree(b, x, y, max(6.0, h), mats, core, trunk, z=zg)
-    for x, y, h in ((-40, 12, 14), (-44, 22, 12), (40, 14, 14), (34, 24, 12), (-36, -18, 13)):
+    for x, y, h in ((37, -13, 13.5), (44, 6, 14), (12, -24.0, 15.5), (52, -22, 12), (58, -4, 13), (-40, -16, 17), (-46, 8, 13), (-58, -12, 15), (-60, 4, 14),
+                    (-66, 18, 13), (34, 24, 12), (-36, 24, 12)):
         card_tree(b, x, y, h, mats, core, trunk, z=ground_h(x, y))
     use("sse")
     for u in (-120, -100, -46, -20):
@@ -597,7 +595,7 @@ def st_basil(b, brick, white, cream, green, green_d, gold, tent_mi, win, curb, d
     Z0 = 0.0
     PH = 6.0             # 台基（podklet）高
     GH = 10.5            # 迴廊外牆頂
-    a_c, a_d = 20.5, 19.5
+    a_c, a_d = 19.5, 18.5
 
     # 台基＋迴廊外輪廓：八邊形（四正向面寬、斜向面接小禮拜堂）
     s2 = math.sqrt(2)
@@ -605,6 +603,8 @@ def st_basil(b, brick, white, cream, green, green_d, gold, tent_mi, win, curb, d
     base = [(xk, -a_c), (a_c, -xk), (a_c, xk), (xk, a_c), (-xk, a_c), (-a_c, xk), (-a_c, -xk), (-xk, -a_c)]
     b.prism(brick, base, Z0 - 1.0, PH + 1.0)
     b.prism(white, [(x * 1.012, y * 1.012) for x, y in base], PH - 0.1, 0.45)
+    b.prism(white, [(x * 1.006, y * 1.006) for x, y in base], 4.2, 0.3)
+    b.prism(green_d, [(x * 1.03, y * 1.03) for x, y in base], PH + 0.35, 0.22)
     b.prism(brick, [(x * 0.985, y * 0.985) for x, y in base], PH + 0.35, GH - PH - 0.35)
     b.prism(white, [(x * 1.006, y * 1.006) for x, y in base], GH - 0.45, 0.45)
     b.prism(white, [(x * 1.008, y * 1.008) for x, y in base], Z0, 0.5)
@@ -618,8 +618,9 @@ def st_basil(b, brick, white, cream, green, green_d, gold, tent_mi, win, curb, d
             t = (k + 0.5) / n
             px, py = xa + (xb - xa) * t, ya + (yb - ya) * t
             M = T(px + nx * 0.02, py + ny * 0.02, Z0 + 0.6) @ Rz(ang)
-            b.profile_wall(white, [(-1.5, 0), (1.5, 0), (1.5, 2.9), (0, 4.4), (-1.5, 2.9)], 0.3, M)
-            b.profile_wall(win, [(-1.05, 0.1), (1.05, 0.1), (1.05, 2.7), (0, 3.8), (-1.05, 2.7)], 0.36, M)
+            b.profile_wall(white, [(-1.15, 0), (1.15, 0), (1.15, 2.1), (0, 3.3), (-1.15, 2.1)], 0.3, M)
+            b.profile_wall(brick, [(-0.95, 0.15), (0.95, 0.15), (0.95, 2.0), (0, 3.0), (-0.95, 2.0)], 0.34, M)
+            b.profile_wall(win, [(-0.6, 0.3), (0.6, 0.3), (0.6, 1.9), (0, 2.6), (-0.6, 1.9)], 0.38, M)
         # 迴廊：成對小窗＋白色壁柱
         n = max(1, int(L / 3.2))
         for k in range(n):
@@ -662,7 +663,7 @@ def st_basil(b, brick, white, cream, green, green_d, gold, tent_mi, win, curb, d
                     bar(b, white, p0, p1, 0.22)
         # 層疊山牆（白框＋綠／黃內面），上層錯開 22.5°
         z = top
-        inner = [dm["green"], dm["yellow"]]
+        inner = [dm["green"], brick, dm["green"], dm["yellow"]]
         for t in range(tiers):
             rr = ap * (1 - 0.16 * t) - 0.1
             w = 2 * R * math.sin(math.pi / 8) * (1.05 - 0.12 * t)
@@ -697,7 +698,7 @@ def st_basil(b, brick, white, cream, green, green_d, gold, tent_mi, win, curb, d
     diamond = lambda i, j: ((i + j) // 3 + (i - j) // 3) % 2  # noqa: E731
     scales = lambda i, j: ((i + (j % 2)) // 1 + j) % 2  # noqa: E731
 
-    D_BIG, D_SMALL = 15.0, 15.0
+    D_BIG, D_SMALL = 14.5, 14.5
     # 中央代禱教堂（先建，四周禮拜堂會遮住下段）
     RC = 7.2
     oct_prism(b, brick, RC, Z1, 30.5, 0, 0)
@@ -757,17 +758,17 @@ def st_basil(b, brick, white, cream, green, green_d, gold, tent_mi, win, curb, d
                                               ((-D_BIG, 0), 24.0, [dm["red"], dm["green"], dm["yellow"]], diamond, 5.4, 8.0),
                                               ((D_BIG, 0), 26.0, [dm["green"], dm["yellow"], dm["green"], dm["white"]], spiral(0.85, 2), 6.4, 8.8),
                                               ((0, D_BIG), 25.0, [dm["blue"], dm["white"]], spiral(-1.0, 2), 6.0, 8.6)):
-        chapel(dx, dy, 4.5, top, 2.7, dr_h, 3.5, dH, mats, pat, tiers=2)
+        chapel(dx, dy, 4.4, top, 2.7, dr_h, 4.0, dH + 0.6, mats, pat, tiers=2)
     # 四小禮拜堂（斜角）
     q = D_SMALL / math.sqrt(2)
     for (dx, dy), mats, pat in (((-q, -q), [dm["yellow"], dm["green"]], scales),
                                 ((q, -q), [dm["green"], dm["white"], dm["lgreen"]], spiral(0.6, 2)),
                                 ((q, q), [dm["blue"], dm["green"], dm["yellow"]], spiral(-0.8, 2)),
                                 ((-q, q), [dm["yellow"], dm["green"]], diamond)):
-        chapel(dx, dy, 3.2, 18.5, 2.0, 4.0, 2.6, 5.6, mats, pat, tiers=2, chevrons=False)
+        chapel(dx, dy, 3.1, 18.5, 2.0, 4.0, 2.9, 6.0, mats, pat, tiers=2, chevrons=False)
 
     # 鐘樓（東南角，台基外側）
-    bx, by = 24.0, -13.0
+    bx, by = 22.5, -12.0
     b.box_base(brick, (7.0, 7.0, GH + 2.5 + 1.0), (bx, by, -1.0))
     b.box_base(white, (7.5, 7.5, 0.5), (bx, by, GH + 2.5))
     for f in range(4):
@@ -801,11 +802,20 @@ def st_basil(b, brick, white, cream, green, green_d, gold, tent_mi, win, curb, d
     # 西南、西北階梯門廊：綠色雙帳篷頂
     for (px, py, sgn) in ((-11.5, -a_c, -1), (-11.5, a_c, 1)):
         cy = py + sgn * 2.4
-        b.box_base(brick, (9.0, 5.0, GH + 1.0), (px, cy, -1.0))
-        b.box_base(white, (9.4, 5.4, 0.4), (px, cy, GH))
+        # 下層：紅磚台基＋白框拱門；上層：開敞的白色拱廊（柱＋雙拱）
+        b.box_base(brick, (9.0, 5.0, PH + 1.0), (px, cy, -1.0))
         M = T(px, cy + sgn * 2.52, 0.0) @ Rz(0 if sgn < 0 else math.pi)
-        b.profile_wall(white, [(-2.2, 0), (2.2, 0), (2.2, 4.2), (0, 6.4), (-2.2, 4.2)], 0.3, M)
-        b.profile_wall(win, [(-1.6, 0), (1.6, 0), (1.6, 4.0), (0, 5.8), (-1.6, 4.0)], 0.36, M)
+        b.profile_wall(white, [(-1.7, 0), (1.7, 0), (1.7, 2.6), (0, 4.2), (-1.7, 2.6)], 0.3, M)
+        b.profile_wall(win, [(-1.2, 0), (1.2, 0), (1.2, 2.4), (0, 3.7), (-1.2, 2.4)], 0.36, M)
+        b.box_base(white, (9.4, 5.4, 0.4), (px, cy, PH))
+        b.box_base(brick, (8.6, 0.6, GH - PH - 0.4), (px, cy - sgn * 2.1, PH + 0.4))
+        b.box_base(win, (8.0, 3.6, GH - PH - 0.6), (px, cy, PH + 0.4))
+        for dx in (-4.2, 0.0, 4.2):
+            b.box_base(white, (0.7, 0.7, GH - PH - 0.4), (px + dx, cy + sgn * 2.15, PH + 0.4))
+        for dx in (-2.1, 2.1):
+            Mu = T(px + dx, cy + sgn * 2.3, PH + 0.4) @ Rz(0 if sgn < 0 else math.pi)
+            b.arch_frame(white, 4.2, GH - PH - 0.4, 2.0, 3.4, 0.5, Mu, kind="pointed")
+        b.box_base(white, (9.4, 5.4, 0.4), (px, cy, GH))
         for dx in (-2.2, 2.2):
             b.box_base(brick, (3.6, 3.6, 2.4), (px + dx, cy, GH + 0.4))
             b.box_base(white, (3.9, 3.9, 0.3), (px + dx, cy, GH + 2.8))

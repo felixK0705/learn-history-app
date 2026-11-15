@@ -86,21 +86,17 @@
 
 /* globe.gl 國家標籤：極簡白點＋文字 */
 .country-label {
-  @apply flex select-none items-center gap-1 whitespace-nowrap text-[10.5px] font-medium tracking-wide text-white/90 transition-[opacity,background-color] duration-300;
+  @apply select-none whitespace-nowrap text-[calc(10.5px*var(--label-scale,1))] font-medium tracking-wide text-white transition-[opacity,background-color] duration-300;
   transform: translate(-50%, -50%);
   /* 標籤不攔截滑鼠：拖曳地球時不會卡在標籤上；點國家本身即可選取 */
   pointer-events: none;
-  text-shadow: 0 1px 3px rgb(0 20 70 / 0.7);
+  /* 深藍描邊：在淺色沙漠、雪地上也看得清楚 */
+  text-shadow: 0 0 1px rgb(3 28 80), 0 0 2px rgb(3 28 80), 0 0 5px rgb(3 28 80 / 0.7);
 }
-.country-label .dot {
-  @apply inline-block size-[5px] rounded-full bg-white;
-  box-shadow: 0 0 6px rgb(255 255 255 / 0.9);
-}
+/* 人口前 25 名的國家字大一級，畫面有層次 */
+.country-label.major { @apply text-[calc(12.5px*var(--label-scale,1))] font-semibold; }
 .country-label.is-active {
-  @apply rounded-full px-2 py-0.5 text-deep-800;
+  @apply rounded-full bg-white px-2.5 py-0.5 text-[calc(12.5px*var(--label-scale,1))] font-semibold text-deep-800;
   text-shadow: none;
-  background: rgb(255 255 255 / 0.92);
-  transform: translate(-50%, -50%) scale(1.08);
+  box-shadow: 0 4px 14px rgb(0 30 90 / 0.35);
 }
-.country-label.is-active .dot { @apply bg-deep-600; box-shadow: none; }
-.country-label.visited .dot { @apply bg-glow; }

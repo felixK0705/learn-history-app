@@ -19,7 +19,6 @@ export interface GlobeHandle {
 
 interface Props {
   selectedIso: string | null;
-  visited: string[];
   autoRotate: boolean;
   onSelectCountry: (iso: string) => void;
   onReady?: () => void;
@@ -28,13 +27,16 @@ interface Props {
 // 關閉 CSS2DRenderer 依距離每格重排標籤疊放順序（重疊標籤會前後跳動，看起來像在閃），改由人口排名固定順序
 Object.defineProperty(CSS2DRenderer.prototype, "sortObjects", { get: () => false, set: () => {}, configurable: true });
 
+/** 地球上空間有限，長國名用常見簡稱 */
+const SHORT: Record<string, string> = {
+  ARE: "阿聯", ATG: "安地卡", TTO: "千里達", COD: "剛果（金）", CAF: "中非",
+  BIH: "波赫", KNA: "聖克里斯多福", VCT: "聖文森", STP: "聖多美", PNG: "巴紐",
+};
+
 const defaultAlt = () => (window.innerWidth < 640 ? 3.6 : window.innerWidth < 1024 ? 2.9 : 2.45);
 
-/** 依鏡頭高度決定顯示多少國家標籤（依人口排序），避免畫面雜亂 */
-
-
 const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
-  { selectedIso, visited, autoRotate, onSelectCountry, onReady },
+  { selectedIso, autoRotate, onSelectCountry, onReady },
   ref,
 ) {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -71,7 +73,6 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
       .backgroundColor("rgba(0,0,0,0)")
       // 國界已畫進貼圖（scripts/draw_borders.py），不再為每個國家建立 3D 物件，縮放旋轉才順
       .globeImageUrl("/textures/earth-map.jpg")
-      .bumpImageUrl("/textures/earth-topology.png")
       .showAtmosphere(true)
       .atmosphereColor("#e2f8ff")
       .atmosphereAltitude(0.3)
@@ -156,25 +157,28 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
     const widths = new Map<HTMLDivElement, number>();
     const v3 = new Vector3();
     let frame = 0;
+    let scale = 1;
+    // 標籤離地平線（地球邊緣）的相對距離：0 = 剛好在邊緣、1 = 正對鏡頭；放大縮小都一致
+    const margin = (dot: number, horizon: number) => (dot - horizon) / (1 - horizon);
     const declutter = (cam: Vector3, horizon: number, d: number) => {
       const w = el.clientWidth;
       const h = el.clientHeight;
       const R = g.getGlobeRadius() * 1.02;
       const items: { div: HTMLDivElement; x: number; y: number; w: number; pri: number }[] = [];
       labelVecs.current.forEach((u, div) => {
-        if ((u.x * cam.x + u.y * cam.y + u.z * cam.z) / d < horizon + 0.1) return;
+        if (margin((u.x * cam.x + u.y * cam.y + u.z * cam.z) / d, horizon) < 0.12) return;
         v3.set(u.x * R, u.y * R, u.z * R).project(g.camera());
         let bw = widths.get(div);
         if (!bw) widths.set(div, (bw = div.offsetWidth || 60));
         const rank = Number(div.dataset.rank);
         const pri = div.classList.contains("is-active") ? -1e4 : rank - (shown.has(div) ? 40 : 0);
-        items.push({ div, x: (v3.x + 1) * w * 0.5, y: (1 - v3.y) * h * 0.5, w: bw, pri });
+        items.push({ div, x: (v3.x + 1) * w * 0.5, y: (1 - v3.y) * h * 0.5, w: bw * scale, pri });
       });
       items.sort((a, b) => a.pri - b.pri);
       const boxes: number[][] = [];
       shown.clear();
       for (const it of items) {
-        const b = [it.x - it.w / 2 - 3, it.y - 9, it.x + it.w / 2 + 3, it.y + 9];
+        const b = [it.x - it.w / 2 - 6, it.y - 10 * scale, it.x + it.w / 2 + 6, it.y + 10 * scale];
         if (boxes.some((o) => b[0] < o[2] && b[2] > o[0] && b[1] < o[3] && b[3] > o[1])) continue;
         boxes.push(b);
         shown.add(it.div);
@@ -185,10 +189,13 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
       const cam = g.camera().position;
       const d = cam.length();
       const horizon = g.getGlobeRadius() / d;
+      // 放大時國名跟著變大（最多 1.35 倍），近看比較好讀
+      const s = Math.min(1.35, Math.max(1, 1 + (2.45 - (d / g.getGlobeRadius() - 1)) * 0.18));
+      if (Math.abs(s - scale) > 0.01) el.style.setProperty("--label-scale", String((scale = s)));
       if (frame++ % 10 === 0) declutter(cam, horizon, d);
       labelVecs.current.forEach((u, div) => {
         const dot = (u.x * cam.x + u.y * cam.y + u.z * cam.z) / d;
-        const o = shown.has(div) ? Math.min(1, Math.max(0, (dot - horizon - 0.1) / 0.15)) : 0;
+        const o = shown.has(div) ? Math.min(1, Math.max(0, (margin(dot, horizon) - 0.12) / 0.15)) : 0;
         const v = o.toFixed(2);
         if (div.style.opacity !== v) div.style.opacity = v;
       });
@@ -243,9 +250,8 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
         const p = g.getCoords(c.pos[0], c.pos[1], 0);
         const len = Math.hypot(p.x, p.y, p.z) || 1;
         labelVecs.current.set(div, { x: p.x / len, y: p.y / len, z: p.z / len });
-        const dot = document.createElement("span");
-        dot.className = "dot";
-        div.append(dot, c.zh);
+        if (c.rank < 25) div.classList.add("major");
+        div.textContent = SHORT[c.iso] ?? c.zh;
         div.title = c.en;
         if (c.iso === selectedRef.current) div.classList.add("is-active");
         labelEls.current.set(c.iso, div);
@@ -256,12 +262,11 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
 
   useEffect(() => {
     labelEls.current.forEach((div, iso) => {
-      div.classList.toggle("visited", visited.includes(iso));
       div.classList.toggle("is-active", iso === selectedIso);
       // 選取的國家疊在最上層
       div.style.zIndex = iso === selectedIso ? "3000" : String(2000 - (countryByIso.get(iso)?.rank ?? 999));
     });
-  }, [visited, selectedIso]);
+  }, [selectedIso]);
 
   useEffect(() => {
     selectedRef.current = selectedIso;

@@ -162,7 +162,7 @@ def head_sdf(P):
     # 眼窩與眼球
     for sx in (-1, 1):
         d = smax(d, -sph(q, (sx * 0.88, 2.75, 0.3), 0.62), 0.2)
-        d = smin(d, sph(q, (sx * 0.88, 2.25, 0.3), 0.6), 0.12)
+        d = smin(d, sph(q, (sx * 0.88, 2.45, 0.28), 0.58), 0.15)
     # 張開吶喊的口：口腔凹陷＋上下唇
     d = smax(d, -ell(q, (0, 2.6, -1.95), (0.82, 1.15, 0.72)), 0.15)
     d = smin(d, cone(q, (-0.75, 2.38, -1.32), (0.75, 2.38, -1.32), 0.26, 0.26), 0.25)
@@ -295,15 +295,15 @@ def dress_sdf(P):
     t = np.clip((27.0 - z) / 25.0, 0.0, 1.0)
     cx = 1.3 * np.sin(np.pi * t) * t - 0.6 * t ** 3
     cy = 0.6 + 5.0 * t ** 1.3
-    rx = 5.1 + 3.4 * t
-    ry = 3.3 + 6.2 * t ** 1.1
+    rx = 5.3 + 4.6 * t
+    ry = 3.3 + 6.8 * t ** 1.1
     qx, qy = (x - cx) / rx, (y - cy) / ry
     lobe = (np.sqrt(qx * qx + qy * qy) - 1.0) * np.minimum(rx, ry) * 0.9
     lobe = smax(lobe, z - 30.0, 1.5)
     d = smin(legs_sdf(P, 0.45), lobe, 1.9)
     d = smin(d, ell(P, (0.0, 0.8, 28.5), (5.6, 4.0, 4.2)), 1.2)
     # 下擺：前方約到腳踝、後方拖到地面
-    hem = 1.3 + 0.9 * np.clip(-(y + 2.0) / 6.0, 0, 1) - 0.8 * np.clip((y - 2.0) / 6.0, 0, 1)
+    hem = 1.3 + 0.9 * np.clip(-(y + 2.0) / 6.0, 0, 1) - 1.25 * np.clip((y - 1.0) / 4.0, 0, 1)
     d = smax(d, hem - z, 0.35)
     # 衣褶：環繞後移中心的角度，隨高度扭轉並以雜訊彎曲；下擺處更深
     phi = np.arctan2(x - cx, y - cy)
@@ -597,14 +597,14 @@ def sword(b, mi, fist, tip):
     loft([ring([(x, y, z) for x, y in oct_], M0) for z in (-3.6, 2.2)])
     loft([ring([(x * 1.5, y * 1.5, z) for x, y in oct_], M0) for z in (-4.3, -3.6)])
     # 護手：長方橫桿
-    g = [(-3.4, -0.55), (3.4, -0.55), (3.4, 0.55), (-3.4, 0.55)]
+    g = [(-3.8, -0.65), (3.8, -0.65), (3.8, 0.65), (-3.8, 0.65)]
     loft([ring([(x, y, z) for x, y in g], M0) for z in (2.2, 3.15)])
     # 劍身：菱形斷面帶中脊，底寬 2.1 m → 尖端
     L = (tip - fist).length - 3.15
     M1 = Matrix.Translation(fist + d * 3.15) @ R
     sec = lambda w, t: [(w, 0, 0), (w * 0.55, t, 0), (-w * 0.55, t, 0), (-w, 0, 0), (-w * 0.55, -t, 0), (-w * 0.55, -t, 0)]
     rings = []
-    for z, w, t in ((0.0, 1.05, 0.34), (L * 0.5, 0.95, 0.30), (L * 0.88, 0.8, 0.26)):
+    for z, w, t in ((0.0, 1.4, 0.38), (L * 0.5, 1.3, 0.34), (L * 0.9, 1.1, 0.28)):
         rings.append(ring([(x, y, zz + z) for x, y, zz in [(w, 0, 0), (w * 0.5, t, 0), (-w * 0.5, t, 0), (-w, 0, 0), (-w * 0.5, -t, 0), (w * 0.5, -t, 0)]], M1))
     apex = b.bm.verts.new(M1 @ Vector((0, 0, L)))
     loft(rings, close_top=False)
@@ -617,14 +617,14 @@ def sword(b, mi, fist, tip):
 # ====================================================================== 材質
 def gen_concrete():
     """略帶暖灰的混凝土：大片修補斑塊、細微斑駁與澆置接縫"""
-    out = os.path.join(GEN, "ml_concrete4")
+    out = os.path.join(GEN, "ml_concrete5")
     if os.path.exists(os.path.join(out, "diff.jpg")):
         return out
     from PIL import Image
 
     N = 1024
     rng = np.random.default_rng(11)
-    base = np.array((178, 170, 154), float)
+    base = np.array((184, 172, 152), float)
     lum = 1 + _cloud(rng, N, 128, 0.10) + _cloud(rng, N, 24, 0.07) + _cloud(rng, N, 4, 0.05)
     # 修補斑塊：圓角矩形，略深略灰
     yy, xx = np.mgrid[0:N, 0:N]
@@ -647,18 +647,17 @@ def gen_concrete():
 def motherland(path):
     b = AsiaBuilder("Motherland", seed=5)
     concrete = b.gtex("concrete", gen_concrete(), tile=16.0, rough=0.9, normal=0.5)
-    steel = b.color("sword", "#8a8276", rough=0.5, metal=0.35)
+    steel = b.color("sword", "#8a8276", rough=0.55, metal=0.1)
     base_c = b.ptex("base", "plastered_wall_04", tile=5.0, tint="#c9c4b8", rough=0.85, normal=0.4)
     path_c = b.ptex("path", "gravel_floor", tile=2.5, tint="#a8a296", rough=0.9, normal=0.3)
-    grass = b.ptex("grass", "grass_ground", tile=6.0, tint="#6b8a3c", gain=0.95, rough=0.95, normal=0.3)
+    grass = b.ptex("grass", "grass_ground", tile=6.0, tint="#7c9c42", gain=1.0, rough=0.95, normal=0.3)
     soil = b.color("soil", "#6b5a45", rough=0.95)
 
     # ---------------------------------------------------------------- 山崗頂草坪與基座
     b.ground_disc(grass, 150, soil, depth=25, rings=24, seg=96, height_fn=lambda x, y: -0.0009 * (x * x + y * y))
-    b.box_base(path_c, (44.0, 40.0, 0.35), (1.0, 1.5, -0.25))
-    b.box_base(base_c, (33.0, 29.0, 0.45), (1.0, 1.5, 0.0))
-    b.box_base(base_c, (30.0, 26.0, BASE_Z - 0.45), (1.0, 1.5, 0.45))
-    b.box_base(path_c, (5.0, 40.0, 0.3), (-1.0, -38.0, -0.0009 * 38 * 38 - 0.15), rot=(0.06, 0, 0.06))
+    b.box_base(path_c, (40.0, 38.0, 0.35), (0.5, 2.0, -0.25))
+    b.box_base(base_c, (30.0, 28.0, 0.45), (0.5, 2.0, 0.0))
+    b.box_base(base_c, (27.0, 25.0, BASE_Z - 0.45), (0.5, 2.0, 0.45))
 
     build_figure(b, concrete)
     # 身後被風吹起的披肩：上層（肩高、向後偏右平飛）與下層（腰高、向後下垂）
@@ -668,6 +667,6 @@ def motherland(path):
     cape(b, concrete, (-4.6, 2.8, Z + 35.0), [(-0.5, 0.8, -0.2), (-0.35, 0.9, -0.3), (-0.25, 0.9, -0.45)], 10.5, 4.6, (0.2, 0.0, 1.0),
          seed=2, thick=0.6, droop=0.5, rag=0.22)
     fist = Vector(FIST) + Vector((0, 0, Z))
-    tip = fist + Vector((0.52, -0.08, 0.85)).normalized() * 32.5
+    tip = fist + Vector((0.62, -0.1, 0.78)).normalized() * 31.0
     sword(b, steel, fist, tip)
     b.export_glb(path)
