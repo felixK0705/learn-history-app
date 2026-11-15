@@ -100,7 +100,7 @@ def gen_sand(rng):
     trample = np.clip(_pfbm((N, N), 40, rng, 3) - 0.3, 0, None)
     h -= trample * 0.6
     col_v = 1.0 + 0.035 * grain + 0.025 * _pnoise((N, N), 12, rng) + 0.035 * rip * np.clip(ripamp, 0, 1) - 0.05 * trample
-    base = np.array([238, 184, 112], float)
+    base = np.array([242, 196, 104], float)
     img = base[None, None, :] * col_v[..., None]
     # 彩色細砂粒（深、淺、偏紅）
     for frac, mul in ((0.006, (0.75, 0.7, 0.66)), (0.012, (1.05, 1.05, 1.07)), (0.004, (0.9, 0.78, 0.66))):
@@ -184,7 +184,7 @@ def gen_blocks(rng):
             hgt[y0 + a : y0 + b2] = h
         # 幾何石階上緣（磨圓、積沙較亮）與下緣（接縫陰影）
         yy = np.arange(256)[:, None]
-        img_v[y0 : y0 + 256] *= 1.0 - 0.28 * np.exp(-((255 - yy) / 7.0))
+        img_v[y0 : y0 + 256] *= 1.0 - 0.38 * np.exp(-((255 - yy) / 16.0))
         img_v[y0 : y0 + 256] *= 1.0 + 0.08 * np.exp(-(yy / 10.0))
     top = img_v[:1024] * (0.7 + 0.3 * det[:1024]) * (1 - 0.35 * pits[:1024]) * (1 + 0.06 * blot[:1024])
     # 階面：沙與碎石
@@ -194,7 +194,7 @@ def gen_blocks(rng):
     chip = np.clip((chips - 0.4) * 2, 0, 1)
     bot = sandv * (1 - chip) + chip * (0.78 + 0.25 * det[1024:]) * (0.85 + 0.1 * _pnoise((N2, W), 6, rng))
     gray = np.concatenate([top, bot], 0)
-    base_block = np.array([214, 190, 152], float)
+    base_block = np.array([208, 193, 168], float)
     base_sand = np.array([232, 204, 156], float)
     w_sand = np.zeros((W, W))
     w_sand[1024:] = 1 - chip
@@ -395,6 +395,16 @@ def trend(x, y):
     return -0.017 * (x + 0.35 * y) - 14.0 * smooth(250, 520, x) - 4.0 * smooth(-900, -1300, y)
 
 
+def heaps():
+    """參考照右下的採石場廢料堆：(x, y, 半徑, 高)"""
+    fx, fy = math.sin(HEAD), math.cos(HEAD)
+    rx, ry = math.cos(HEAD), -math.sin(HEAD)
+    return [(CAM_XY[0] + L * rx + F * fx, CAM_XY[1] + L * ry + F * fy, R, h) for L, F, R, h in ((45, 300, 28, 6.0), (95, 345, 24, 5.0), (-25, 265, 14, 2.5))]
+
+
+HEAPS = []
+
+
 def foot_dist(x, y):
     """到最近金字塔基座邊緣的距離（內部為負）"""
     best = 1e9
@@ -409,6 +419,7 @@ def foot_dist(x, y):
 class Terrain:
     def __init__(self, rng):
         self.rng = rng
+        HEAPS[:] = heaps()
         self.pads = []
         self.zKH = self.pad(KH[0], KH[1], 130, 130, 90)
         self.zKF = self.pad(KF[0], KF[1], 122, 122, 90, extra=3.0)
@@ -437,6 +448,10 @@ class Terrain:
             e = max(abs(x - qx), abs(y - qy)) - 21
             if -8 < e < 30:
                 t += 2.2 * math.exp(-((e - 2) / 8.0) ** 2) * (0.7 + 0.5 * n2(x, y, 0.08, 5.0))
+        for hx, hy, R, h in HEAPS:
+            d2 = ((x - hx) / (R * 1.6)) ** 2 + ((y - hy) / (R * 0.8)) ** 2
+            if d2 < 4:
+                t += h * math.exp(-d2 * 1.3) * (0.8 + 0.3 * n2(x, y, 0.1, 2.0))
         return t
 
     def height(self, x, y):
@@ -592,7 +607,8 @@ class Terrain:
             v = 0.93 + 0.07 * big + 0.03 * n2(x, y, 0.05, 3.0) + 0.02 * n2(x, y, 0.2, 5.0)
             r, g, b = v, v * (0.985 + 0.015 * big), v * (0.97 + 0.03 * big)
             # 碎石、礫石斑（灰褐）
-            grav = smooth(0.15, 0.75, fbm(x, y, 0.012, 3, 9.0) + 0.6 * math.exp(-max(0.0, foot_dist(x, y)) / 45.0))
+            hp = max([math.exp(-(((x - hx) / (R * 1.6)) ** 2 + ((y - hy) / (R * 0.8)) ** 2)) for hx, hy, R, _ in HEAPS] + [0.0])
+            grav = smooth(0.15, 0.75, fbm(x, y, 0.012, 3, 9.0) + 0.6 * math.exp(-max(0.0, foot_dist(x, y)) / 45.0) + 1.2 * hp)
             grav *= 0.55
             r, g, b = r * (1 - grav) + 0.8 * grav, g * (1 - grav) + 0.74 * grav, b * (1 - grav) + 0.66 * grav
             if rut:
@@ -653,7 +669,7 @@ def step_pyramid(A, rng, cx, cy, z0, bx, by, H, H_now, course, seg, amp, seed, t
         z += course * rng.uniform(0.8, 1.2)
     zs.append(H_now)
     if casing_from is not None:
-        zs = [zz for zz in zs if zz < casing_from + 6] + [casing_from + 6]
+        zs = [zz for zz in zs if zz < casing_from + 10] + [casing_from + 10]
     n = len(zs)
     per = []
     for s in range(4):
@@ -678,7 +694,7 @@ def step_pyramid(A, rng, cx, cy, z0, bx, by, H, H_now, course, seg, amp, seed, t
         e = amp * (0.55 + 0.45 * fbm(px, py + z * 2.0, 0.035, 2, seed))
         e += amp * 0.9 * max(0.0, fbm(px * 0.7, z, 0.06, 2, seed + 5)) ** 2 * 3
         dc = min(t, 1 - t) * sideL[s]
-        e += amp * 3.0 * max(0.0, 1 - dc / 12.0) ** 1.5 * (0.5 + 0.9 * rng.random())
+        e += amp * 4.5 * max(0.0, 1 - dc / 18.0) ** 1.5 * (0.4 + 1.0 * rng.random())
         return e
 
     D = [[0.0] * m for _ in range(n)]
@@ -687,7 +703,7 @@ def step_pyramid(A, rng, cx, cy, z0, bx, by, H, H_now, course, seg, amp, seed, t
         tread = max(tread, 0.05)
         for q, (s, t) in enumerate(per):
             d = erosion(k, s, t) + rng.uniform(0, 0.6) * course * slope_x
-            if rng.random() < 0.06:
+            if rng.random() < 0.1:
                 d += course * slope_x * rng.uniform(0.8, 2.0)
             if k < n - 1:
                 d = min(d, D[k + 1][q] + tread * 0.92)
@@ -731,7 +747,9 @@ def step_pyramid(A, rng, cx, cy, z0, bx, by, H, H_now, course, seg, amp, seed, t
         v *= 1 - streak
         r, g, b = tr * v, tg * v, tb * v
         if top:  # 階面積沙
-            r, g, b = r * 1.03, g * 1.0, b * 0.94
+            r, g, b = r * 1.1, g * 1.07, b * 1.0
+        else:
+            r, g, b = r * 0.9, g * 0.9, b * 0.9
         if base_dark and zz < base_dark[0]:
             c = base_dark[1]
             kk = (1 - zz / base_dark[0]) * 0.8
@@ -770,52 +788,61 @@ def step_pyramid(A, rng, cx, cy, z0, bx, by, H, H_now, course, seg, amp, seed, t
         return
 
     # 卡夫拉頂部原始外殼（平滑、偏亮），下緣不規則
-    V = 12
-    zl = [casing_from + 2.5 * fbm(s * 9.0 + t * 9.0, 0, 0.9, 2, seed + 3) + 1.2 * math.sin(t * TAU * 2 + s) + rng.uniform(-0.8, 0.8)
-          for s, t in per]
+    V = 10
+    cs = 40  # 外殼周長取樣（每邊），下緣較細碎
+    cper = [(sd, j / cs) for sd in range(4) for j in range(cs)]
+    cm = len(cper)
+    carc = [sum(sideL[:sd]) + t * sideL[sd] for sd, t in cper]
+    zl = []
+    for q, (sd, t) in enumerate(cper):
+        z = casing_from + 2.2 * fbm(sd * 9.0 + t * 7.0, 0, 0.9, 2, seed + 3) + 1.0 * math.sin(t * TAU * 1.5 + sd)
+        z += rng.uniform(-1.2, 1.2) + (course * rng.randint(1, 3) if rng.random() < 0.15 else 0)
+        zl.append(round(z / course) * course)  # 依石層高度量化，邊緣呈階梯狀崩落
     ztop = H_now
     cring = []
     for vv in range(V + 1):
+        f = (vv / V) ** 0.8
         ring = []
-        for q, (s, t) in enumerate(per):
-            z = zl[q] + (ztop - zl[q]) * vv / V
+        for q, (sd, t) in enumerate(cper):
+            z = zl[q] + (ztop - zl[q]) * f
             hx, hy = hx0 - slope_x * z, hy0 - slope_y * z
-            px, py = base_pt(s, t, hx, hy)
+            px, py = base_pt(sd, t, hx, hy)
             ring.append(A.v((cx + px, cy + py, z0 + z)))
         cring.append(ring)
 
     def ccol(co):
         x, y, z = co.x - cx, co.y - cy, co.z - z0
-        v = 0.95 + 0.05 * fbm(x, z, 0.08, 2, 4)
-        streak = 0.1 * max(0.0, fbm(x * 0.2 + y * 0.2, z * 0.02, 0.15, 2, 7))
-        r, g, b = v * (0.99 - streak), v * (0.96 - streak), v * (0.92 - streak * 1.2)
+        v = 0.86 + 0.08 * fbm(x + y, z, 0.05, 3, 4)
+        streak = 0.12 * max(0.0, fbm((x + y) * 0.25, z * 0.02, 0.2, 2, 7))
+        low = 0.1 * max(0.0, 1 - (z - casing_from) / 12.0)
+        r, g, b = v * (0.96 - streak - low), v * (0.92 - streak - low), v * (0.86 - streak * 1.2 - low * 1.2)
         if haze:
             r, g, b = r * (1 - haze) + 0.95 * haze, g * (1 - haze) + 0.95 * haze, b * (1 - haze) + 0.96 * haze
         return (r, g, b)
 
-    def cuv(q, co):
-        a = (arc[q] if q < m else arc_end) / 6.0
-        return (a, co.z / 6.0)
+    def cu(q):
+        return (carc[q] if q < cm else sum(sideL)) / 6.0
 
     for vv in range(V):
-        for q in range(m):
-            r = (q + 1) % m
+        for q in range(cm):
+            r = (q + 1) % cm
             vs = [cring[vv][q], cring[vv][r], cring[vv + 1][r], cring[vv + 1][q]]
-            qs = [q, r if r else m, r if r else m, q]
-            A.face(vs, MC, [cuv(qq, v.co) for qq, v in zip(qs, vs)], [ccol(v.co) for v in vs])
+            us = [cu(q), cu(r if r else cm), cu(r if r else cm), cu(q)]
+            A.face(vs, MC, [(u, v.co.z / 6.0) for u, v in zip(us, vs)], [ccol(v.co) for v in vs])
     A.face(cring[-1], MC, [(v.co.x / 6, v.co.y / 6) for v in cring[-1]], [ccol(v.co) for v in cring[-1]])
-    # 外殼下緣厚度（往內收到核心石階）
+    # 外殼下緣厚度：往內收到核心石階（斷面）
     lip = []
-    for q, (s, t) in enumerate(per):
+    for q, (sd, t) in enumerate(cper):
         z = zl[q]
-        hx, hy = hx0 - slope_x * z - inset - 1.0, hy0 - slope_y * z - inset - 1.0
-        px, py = base_pt(s, t, hx, hy)
+        hx, hy = hx0 - slope_x * z - inset - 1.2, hy0 - slope_y * z - inset - 1.2
+        px, py = base_pt(sd, t, hx, hy)
         lip.append(A.v((cx + px, cy + py, z0 + z)))
-    for q in range(m):
-        r = (q + 1) % m
+    for q in range(cm):
+        r = (q + 1) % cm
         vs = [lip[q], lip[r], cring[0][r], cring[0][q]]
-        A.face(vs, MC, [(arc[q] / 6, 0), ((arc[r] if r else arc_end) / 6, 0), ((arc[r] if r else arc_end) / 6, 0.2), (arc[q] / 6, 0.2)],
-               [tuple(c * 0.8 for c in ccol(v.co)) for v in vs])
+        A.face(vs, MC, [(cu(q), 0), (cu(r if r else cm), 0), (cu(r if r else cm), 0.2), (cu(q), 0.2)],
+               [tuple(c * 0.75 for c in ccol(v.co)) for v in vs])
+
 
 # ====================================================================== 獅身人面像
 def loft(b, mi, sections, cap_start=True, cap_end=True):
@@ -1022,31 +1049,31 @@ def giza(path):
     accs = [pyr]
     # 古夫（外殼全失，露出逐層石階；頂部約 10 m 平台）
     step_pyramid(pyr, rng, KH[0], KH[1], T.zKH, KH[2], KH[3], 146.6, 138.5, 1.4, 16, 1.0, 1.0,
-                 tone=(0.76, 0.73, 0.7), haze=0.25)
+                 tone=(0.84, 0.82, 0.8), haze=0.3)
     # 卡夫拉（頂部保留外殼）
     pyr = Acc("GizaKhafre", [m_block, m_casing])
     accs.append(pyr)
     step_pyramid(pyr, rng, KF[0], KF[1], T.zKF, KF[2], KF[3], 143.5, 136.4, 1.35, 16, 0.9, 2.0, casing_from=100.0, inset=1.2,
-                 tone=(0.7, 0.66, 0.62), haze=0.12)
+                 tone=(0.8, 0.76, 0.72), haze=0.12)
     # 孟卡拉（底部殘留紅色花崗岩外殼）
     pyr = Acc("GizaMenkaure", [m_block, m_casing])
     accs.append(pyr)
-    step_pyramid(pyr, rng, MK[0], MK[1], T.zMK, MK[2], MK[3], 65.5, 61.0, 1.1, 18, 0.9, 3.0, tone=(0.8, 0.7, 0.58),
+    step_pyramid(pyr, rng, MK[0], MK[1], T.zMK, MK[2], MK[3], 65.5, 61.0, 1.1, 18, 0.9, 3.0, tone=(0.74, 0.67, 0.6),
                  base_dark=(8.0, (0.55, 0.45, 0.4)))
     # 古夫的三座王后金字塔（G1-a/b/c，東側由北而南，已嚴重崩毀）
     for k, (qx, qy, qb, qh, now) in enumerate([(168, -12, 49.5, 30.2, 19.0), (163, -64, 49.0, 30.0, 17.5), (158, -113, 46.3, 29.6, 21.5)]):
         step_pyramid(pyr, rng, qx, qy, trend(qx, qy), qb, qb, qh, now, 1.4, 8, 1.4, 10.0 + k, tone=(0.88, 0.8, 0.7), haze=0.15)
     # 孟卡拉的三座王后金字塔：G3-a 為真金字塔（嚴重崩毀），G3-b / G3-c 為四層階梯
     qx, qy = MKQ[0]
-    step_pyramid(pyr, rng, qx, qy, T.zQ[0], 44.3, 44.3, 28.4, 20.5, 0.9, 10, 1.6, 20.0, tone=(0.82, 0.7, 0.55))
+    step_pyramid(pyr, rng, qx, qy, T.zQ[0], 44.3, 44.3, 28.4, 20.5, 0.9, 10, 1.6, 20.0, tone=(0.82, 0.72, 0.6))
     for k, (qx, qy) in enumerate(MKQ[1:]):
         zt = T.zQ[k + 1]
         tiers = [(33.0, 31.5, 5.2), (25.8, 24.6, 4.6), (19.0, 18.0, 4.2), (12.6, 11.8, 3.6)][: 4 if k else 4]
         for ti, (w, d, h) in enumerate(tiers):
             if k == 0 and ti == 3:
                 h *= 0.6  # G3-b 頂層殘缺
-            step_pyramid(pyr, rng, qx, qy, zt, w, d, h * 9.0, h, 0.72, 8, 0.7, 30.0 + k * 4 + ti, inset=0.0,
-                         tone=(0.84 - 0.02 * ti, 0.72 - 0.02 * ti, 0.57 - 0.02 * ti))
+            step_pyramid(pyr, rng, qx, qy, zt, w, d, h * 9.0, h, 0.72, 8, 1.3, 30.0 + k * 4 + ti, inset=0.0,
+                         tone=(0.84 - 0.02 * ti, 0.75 - 0.02 * ti, 0.63 - 0.02 * ti))
             zt += h
 
     # ------------------------------------------------------------ 碎石塊（崩落石塊堆）
@@ -1143,6 +1170,16 @@ def giza(path):
         z = ground(x, y)
         vs = b.rock(stone, (L, Wd, H * 2), (x, y, z - H * 0.55), rot=(0, 0, rot), rough=0.45, subdiv=3, seed=rng.randint(0, 9999), round_=0.2)
         P.pv(vs, lambda f, co: (0.78 + 0.08 * n2(co.x, co.y, 0.2), 0.68 + 0.07 * n2(co.x, co.y, 0.2), 0.55))
+
+    # 參考照右下：採石場廢料堆（沙丘上覆深色碎石）
+    fx, fy = math.sin(HEAD), math.cos(HEAD)
+    rx, ry = math.cos(HEAD), -math.sin(HEAD)
+    for (x0, y0, R0, _), cnt in zip(HEAPS, (160, 120, 90)):
+        for _ in range(cnt):
+            a = rng.uniform(0, TAU)
+            r = R0 * math.sqrt(rng.uniform(0, 1))
+            x, y = x0 + r * math.cos(a) * 1.6, y0 + r * math.sin(a) * 0.8
+            block(x, y, rng.uniform(0.4, 1.4), (0.72, 0.64, 0.54), sink=0.35)
 
     ter.finish()
     for a in accs:
