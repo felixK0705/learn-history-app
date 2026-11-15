@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
-import { Globe2, Minus, Plus, Scan, Search, X } from "lucide-react";
+import { ChevronDown, Globe2, Minus, Plus, Scan, Search, X } from "lucide-react";
 import { figures, groups, relationColors, relations, type RelationType } from "../data/figures";
 import { countryByIso } from "../data/world";
 import { formatYear } from "../lib/format";
@@ -117,6 +117,7 @@ export default function FiguresPage() {
   const focus = focusId ? figureById.get(focusId) ?? null : null;
   const [hover, setHover] = useState<string | null>(null);
   const [query, setQuery] = useState("");
+  const [filtersOpen, setFiltersOpen] = useState(false);
   const [types, setTypes] = useState<Set<RelationType>>(() => new Set(relationTypes));
 
   // 版面切換：以 GSAP 補間每個節點的位置
@@ -361,14 +362,13 @@ export default function FiguresPage() {
       </svg>
 
       {/* 左側：搜尋、時代星座、關係類型 */}
-      <aside ref={asideRef} className="glass scroll-thin absolute top-4 bottom-4 left-4 z-20 hidden w-64 overflow-y-auto rounded-[28px] p-6 lg:block">
-        <h1 data-reveal className="text-[26px] font-semibold tracking-tight">
-          人物關係
-        </h1>
-        <p data-reveal className="mt-1.5 text-[12.5px] leading-relaxed text-white/65">
-          {figures.length} 位人物・{relations.length} 條關係。點選人物，以他為中心展開關係網。
-        </p>
-        <label data-reveal className="glass-soft mt-5 flex h-9 items-center gap-2 rounded-full px-3.5">
+      <aside ref={asideRef} className="absolute top-4 left-4 z-20 w-[min(300px,calc(100%-2rem))]">
+        <div className="rounded-2xl border border-white/15 bg-[#06194a]/85 p-3 shadow-[0_20px_50px_-20px_rgba(0,10,40,0.7)] backdrop-blur-xl">
+        <div className="flex items-center justify-between gap-2 px-1">
+          <h1 className="text-[17px] font-semibold tracking-tight">人物關係</h1>
+          <span className="text-[11.5px] text-white/60 tabular-nums">{figures.length} 人・{relations.length} 條關係</span>
+        </div>
+        <label className="mt-2.5 flex h-9 items-center gap-2 rounded-full border border-white/15 bg-white/8 px-3.5">
           <Search className="size-[15px] text-white/55" />
           <input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="搜尋人物" className="min-w-0 flex-1 bg-transparent text-[13px] outline-none placeholder:text-white/40" />
         </label>
@@ -391,12 +391,22 @@ export default function FiguresPage() {
             ))}
           </ul>
         )}
-        <p data-reveal className="eyebrow mt-6 mb-2">
+        <button
+          onClick={() => setFiltersOpen((v) => !v)}
+          className="mt-2 flex w-full items-center justify-between rounded-xl px-2 py-1.5 text-[12.5px] text-white/80 hover:bg-white/8"
+          aria-expanded={filtersOpen}
+        >
+          時代與關係篩選
+          <ChevronDown className={`size-4 transition ${filtersOpen ? "rotate-180" : ""}`} />
+        </button>
+        {filtersOpen && (
+        <div className="scroll-thin max-h-[60vh] overflow-y-auto px-1 pb-1">
+        <p className="eyebrow mt-3 mb-2">
           時代星座
         </p>
         <ul className="space-y-0.5">
           {groupOrder.map((g) => (
-            <li key={g.id} data-reveal>
+            <li key={g.id}>
               <button
                 onClick={() => {
                   select(null);
@@ -412,10 +422,10 @@ export default function FiguresPage() {
             </li>
           ))}
         </ul>
-        <p data-reveal className="eyebrow mt-6 mb-2">
+        <p className="eyebrow mt-4 mb-2">
           關係類型
         </p>
-        <div data-reveal className="flex flex-wrap gap-1.5">
+        <div className="flex flex-wrap gap-1.5">
           {relationTypes.map((t) => (
             <button
               key={t}
@@ -433,6 +443,9 @@ export default function FiguresPage() {
               {t}
             </button>
           ))}
+        </div>
+        </div>
+        )}
         </div>
       </aside>
 
@@ -460,12 +473,15 @@ export default function FiguresPage() {
       {focus && (
         <aside
           ref={detailRef}
-          className="glass absolute top-4 right-4 bottom-4 z-20 flex w-[340px] flex-col overflow-hidden rounded-[28px] max-md:inset-x-3 max-md:top-auto max-md:max-h-[55%] max-md:w-auto"
+          className="absolute top-4 right-4 bottom-4 z-20 flex w-[300px] flex-col overflow-hidden rounded-[24px] border border-white/15 bg-[#06194a]/88 shadow-[0_24px_60px_-20px_rgba(0,10,40,0.75)] backdrop-blur-xl max-md:inset-x-3 max-md:top-auto max-md:max-h-[55%] max-md:w-auto"
         >
+          <button onClick={() => select(null)} className="absolute top-3 right-3 z-30 grid size-8 place-items-center rounded-full bg-[#06194a]/80 text-white/90 ring-1 ring-white/25 hover:bg-[#0a2766]" aria-label="關閉" title="關閉">
+            <X className="size-4" />
+          </button>
           {portraits[focus.id] && (
-            <figure className="relative h-48 shrink-0 overflow-hidden">
+            <figure className="relative h-40 shrink-0 overflow-hidden">
               <img src={portraits[focus.id].src} alt={focus.name} className="size-full object-cover object-top" />
-              <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_45%,rgba(16,70,170,0.85))]" />
+              <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_45%,rgba(6,25,74,0.95))]" />
               {portraits[focus.id].credit && (
                 <a href={portraits[focus.id].page} target="_blank" rel="noreferrer" className="absolute right-3 bottom-2 max-w-[80%] truncate text-[10px] text-white/60 hover:text-white">
                   {portraits[focus.id].credit}
@@ -473,10 +489,7 @@ export default function FiguresPage() {
               )}
             </figure>
           )}
-          <div className="relative shrink-0 p-6 pb-4">
-            <button onClick={() => select(null)} className="glass-soft absolute top-5 right-5 z-10 grid size-9 place-items-center rounded-full text-white/80 hover:bg-white/20" aria-label="關閉">
-              <X className="size-4" />
-            </button>
+          <div className="relative shrink-0 px-5 pt-4 pb-3">
             <p data-reveal className="eyebrow">
               {groupById.get(focus.group)?.name}
             </p>

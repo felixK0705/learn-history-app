@@ -23,7 +23,8 @@ import importlib  # noqa: E402
 from lib import HERE, reset_scene  # noqa: E402
 
 # 每座建築一個模組：blender/buildings/<模組>.py，內含同名函式
-_IDS = ["stonehenge", "giza", "parthenon", "chichen-itza", "angkor-wat", "colosseum", "great-wall", "taj-mahal", "himeji", "eiffel"]
+_IDS = ["stonehenge", "giza", "parthenon", "chichen-itza", "angkor-wat", "colosseum", "great-wall", "taj-mahal", "himeji", "eiffel",
+        "kremlin", "kinkakuji", "forbidden-city", "pisa", "louvre", "machu-picchu", "christ-redeemer", "statue-of-liberty", "sphinx", "sydney-opera", "moai", "callanish", "hagia-sophia", "rushmore", "deoksugung", "blue-mosque", "motherland", "wat-pho", "tikal", "belem-tower", "florence-duomo", "neuschwanstein"]
 MODELS = {i: (lambda mod: (lambda path: getattr(importlib.import_module(f"buildings.{mod}"), mod)(path)))(i.replace("-", "_")) for i in _IDS}
 
 # 預覽相機：目標點、方位角（度，0 = 從 -Y 往 +Y 看）、仰角、距離（公尺）、焦距；盡量對應參考照的拍攝角度
@@ -45,7 +46,9 @@ OUT = os.path.join(HERE, "..", "public", "models")
 
 def render_preview(name, png_path, ref_dir=None):
     scene = bpy.context.scene
-    target, az, el, dist, lens = CAMS[name]
+    # 建築模組可自帶 CAMERA 常數（目標點、方位角、仰角、距離、焦距），優先於 CAMS
+    mod = importlib.import_module(f"buildings.{name.replace('-', '_')}")
+    target, az, el, dist, lens = getattr(mod, "CAMERA", None) or CAMS.get(name, ((0, 0, 10), 200, 8, 120, 35))
     t = Vector(target)
     a, e = math.radians(az), math.radians(el)
     loc = t + Vector((math.sin(a) * math.cos(e), -math.cos(a) * math.cos(e), math.sin(e))) * dist
