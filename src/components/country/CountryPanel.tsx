@@ -2,7 +2,8 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { Landmark, Search, Volume2, X } from "lucide-react";
 import { gsap, prefersReducedMotion, useGSAP, useReveal } from "../../lib/motion";
-import { flagOf, loadHistory, loadProfile, type CountryMeta, type CountryProfile, type HistoryEvent } from "../../data/world";
+import Flag from "../ui/Flag";
+import { loadHistory, loadProfile, type CountryMeta, type CountryProfile, type HistoryEvent } from "../../data/world";
 import { buildings } from "../../data/buildings";
 import { figures, groups } from "../../data/figures";
 import { formatYear } from "../../lib/format";
@@ -92,9 +93,7 @@ export default function CountryPanel({ country, onClose }: { country: CountryMet
         </div>
         <div className="mt-1 flex items-center gap-3">
           <h2 className="text-[30px] leading-tight font-semibold tracking-tight">{country.zh}</h2>
-          <span className="text-2xl leading-none" aria-hidden="true">
-            {flagOf(country.iso2)}
-          </span>
+          <Flag iso2={country.iso2} className="text-[22px]" />
         </div>
         <p className="text-[13px] text-white/55">{country.en}</p>
         {profile?.summary && <p className="mt-3 text-[13.5px] leading-relaxed text-white/85">{profile.summary}</p>}

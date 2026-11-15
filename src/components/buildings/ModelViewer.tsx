@@ -1,7 +1,8 @@
 import { Component, Suspense, useEffect, useRef, useState, type ReactNode } from "react";
 import { Canvas } from "@react-three/fiber";
-import { Bounds, Center, Environment, OrbitControls, useBounds, useGLTF, useProgress } from "@react-three/drei";
-import { Box3, DirectionalLight, Sphere, Vector3 } from "three";
+import { Environment, OrbitControls, useGLTF, useProgress } from "@react-three/drei";
+import { useThree } from "@react-three/fiber";
+import { Box3, DirectionalLight, MathUtils, PerspectiveCamera, Sphere, Vector3 } from "three";
 import type { OrbitControls as OrbitControlsImpl } from "three-stdlib";
 
 /** 依模型實際大小設定太陽光與陰影範圍（模型從百公尺到兩公里不等） */
@@ -61,13 +62,48 @@ class ModelErrorBoundary extends Component<
   }
 }
 
-/** 切換模型或按重設時重新框選 */
-function Refit({ token }: { token: string }) {
-  const bounds = useBounds();
+export interface BuildingView {
+  target: [number, number, number];
+  position: [number, number, number];
+  hfov: number;
+}
+
+/** 依實景照片的拍攝位置擺放相機（與 Blender 比對圖同一個視角），並限制可環視的範圍，避免看到地景邊緣 */
+function ViewRig({ view, token, shift, controls }: { view: BuildingView; token: string; shift: number; controls: React.RefObject<OrbitControlsImpl | null> }) {
+  const { camera, size } = useThree();
   useEffect(() => {
-    const t = setTimeout(() => bounds.refresh().clip().fit(), 50);
-    return () => clearTimeout(t);
-  }, [token, bounds]);
+    const cam = camera as PerspectiveCamera;
+    const t = new Vector3(...view.target);
+    const p = new Vector3(...view.position);
+    const dist = p.distanceTo(t);
+    const shiftW = size.width + Math.abs(shift) * 2;
+    const aspect = shiftW / Math.max(size.height, 1);
+    const h = MathUtils.degToRad(view.hfov);
+    // Blender 以水平視角為準；網頁較窄時改以垂直方向保留同樣的畫面高度
+    cam.fov = MathUtils.radToDeg(2 * Math.atan(Math.tan(h / 2) / Math.max(aspect, 1.5)));
+    cam.near = Math.max(0.05, dist * 0.002);
+    cam.far = dist * 14;
+    // 往後退一些，讓建築完整入鏡
+    cam.position.copy(t).add(p.clone().sub(t).multiplyScalar(1.25));
+    // 桌機左側有建築清單，把畫面中心往右移，建築不會被清單遮住
+    if (shift) cam.setViewOffset(shiftW, size.height, shift > 0 ? 0 : -shift * 2, 0, size.width, size.height);
+    else cam.clearViewOffset();
+    cam.updateProjectionMatrix();
+    const c = controls.current;
+    if (!c) return;
+    c.target.copy(t);
+    const off = p.clone().sub(t);
+    const az = Math.atan2(off.x, off.z);
+    const polar = Math.acos(MathUtils.clamp(off.y / dist, -1, 1));
+    c.minAzimuthAngle = az - 0.6;
+    c.maxAzimuthAngle = az + 0.6;
+    c.minPolarAngle = Math.max(0.15, polar - 0.35);
+    c.maxPolarAngle = Math.min(Math.PI / 2 + 0.12, polar + 0.12);
+    c.minDistance = dist * 0.35;
+    c.maxDistance = dist * 1.25;
+    c.update();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [token, shift, size.width, size.height]);
   return null;
 }
 
@@ -95,10 +131,15 @@ function Overlay({ failed }: { failed: boolean }) {
 
 export default function ModelViewer({
   url,
+  view,
+  shift = 0,
   autoRotate,
   resetToken,
 }: {
   url: string;
+  view: BuildingView;
+  /** 畫面中心水平位移（像素，正值往右），避開側邊面板 */
+  shift?: number;
   autoRotate: boolean;
   resetToken: number;
 }) {
@@ -108,17 +149,13 @@ export default function ModelViewer({
     <>
     <Overlay failed={failedUrl === url} />
     <Canvas shadows dpr={[1, 2]} camera={{ position: [9, 7, 11], fov: 35, near: 0.5, far: 30000 }} gl={{ antialias: true, alpha: true }}>
-      <Environment files="/hdri/sky.hdr" environmentIntensity={0.85} />
+      <Environment files="/hdri/sky.hdr" environmentIntensity={0.85} background />
       <hemisphereLight args={["#dff1ff", "#7a6a55", 0.35]} />
 
       <ModelErrorBoundary resetKey={url} onError={() => setFailedUrl(url)}>
       <Suspense fallback={null}>
-        <Bounds fit clip observe margin={0.9} maxDuration={0.8}>
-          <Refit token={`${url}#${resetToken}`} />
-          <Center top key={url}>
-            <Model url={url} />
-          </Center>
-        </Bounds>
+        <Model key={url} url={url} />
+        <ViewRig view={view} shift={shift} token={`${url}#${resetToken}`} controls={controls} />
       </Suspense>
       </ModelErrorBoundary>
 
@@ -126,10 +163,8 @@ export default function ModelViewer({
         ref={controls}
         makeDefault
         autoRotate={autoRotate}
-        autoRotateSpeed={0.8}
+        autoRotateSpeed={0.4}
         enableDamping
-        minPolarAngle={0.1}
-        maxPolarAngle={Math.PI / 2.05}
       />
     </Canvas>
     </>
