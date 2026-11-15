@@ -1,0 +1,113 @@
+{
+ "iso": "XKX",
+ "capital": "普里什蒂納",
+ "summary": "位於巴爾幹半島中部的內陸地區，居民以阿爾巴尼亞人為主，1389年科索沃戰役與中世紀塞爾維亞修道院使它成為塞爾維亞民族記憶的核心；1998–1999年戰爭後由聯合國託管，2008年宣布脫離塞爾維亞獨立，至今國際承認仍有爭議。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "伊斯蘭教（遜尼派）",
+    "percent": 95,
+    "description": "14世紀末起鄂圖曼帝國逐步擴張到科索沃，1389年科索沃戰役後塞爾維亞諸侯淪為附庸，15世紀中葉此地正式併入帝國。改信伊斯蘭教可免繳非穆斯林的人頭稅（吉茲亞），並取得擔任官職與軍職的機會，17–18世紀阿爾巴尼亞人大量改宗，使遜尼派成為絕大多數人的信仰。2011年普查約95.6%人口登記為穆斯林，普里茲倫的錫南帕夏清真寺等鄂圖曼建築至今仍是城市地標。"
+   },
+   {
+    "name": "天主教",
+    "percent": 2,
+    "description": "天主教是阿爾巴尼亞人在鄂圖曼統治前的傳統信仰之一，改宗潮中仍有少數社群保留下來，主要集中在普里茲倫、賈科維察與萊特尼察一帶；部分家族曾表面改信伊斯蘭教、私下維持天主教信仰，被稱為「隱藏的天主教徒」。由於出身阿爾巴尼亞裔家庭的德蕾莎修女是民族象徵，2017年普里什蒂納落成以她命名的主教座堂。"
+   },
+   {
+    "name": "東正教",
+    "percent": 2,
+    "description": "東正教是科索沃塞爾維亞人的信仰。14世紀這裡是塞爾維亞王國的中心，1346年佩奇成為塞爾維亞牧首駐地，德查尼修道院等中世紀建築在2004年列入聯合國教科文組織世界遺產。1999年戰後大量塞爾維亞人離開，剩下的主要集中在北部米特羅維察一帶與零星飛地；由於北部塞族社區抵制2011年普查，普查中東正教比例只有約1.5%，實際人數應更多。"
+   }
+  ],
+  "background": "科索沃在羅馬與拜占庭時期已基督教化，12–14世紀屬於塞爾維亞王國，佩奇牧首區與大量修道院使它被塞爾維亞人視為「民族搖籃」。1389年科索沃戰役後鄂圖曼勢力進入，到19世紀阿爾巴尼亞穆斯林已成人口多數，宗教與民族界線大致重合：阿爾巴尼亞人多為穆斯林、塞爾維亞人為東正教。南斯拉夫共產時期（1945–1991）宗教受到國家壓抑，社會趨於世俗化，因此今天許多科索沃人雖自認穆斯林，日常生活仍相當世俗。1998–1999年戰爭期間清真寺與東正教堂都曾遭破壞，2004年3月的暴動中又有數十座東正教堂與修道院被焚毀，宗教遺產保護至今仍是敏感議題。"
+ },
+ "language": {
+  "official": "官方語言為阿爾巴尼亞語與塞爾維亞語；土耳其語、波士尼亞語與羅姆語在部分市鎮具有官方地位。",
+  "ranking": [
+   {
+    "name": "阿爾巴尼亞語",
+    "percent": 94,
+    "description": "阿爾巴尼亞人自鄂圖曼時期起逐漸成為科索沃人口多數，2011年普查約94%人口以阿爾巴尼亞語為母語。當地日常使用北部的蓋格方言，但1968年普里什蒂納語言學會議決定採用與阿爾巴尼亞共同的標準語（以南部托斯克方言為基礎）。1990年塞爾維亞政府關閉阿爾巴尼亞語學校後，科索沃人自辦「平行教育體系」在私人住宅中上課，語言因此成為民族抵抗的象徵。",
+    "greeting": "Përshëndetje",
+    "pronunciation": "pər-shən-det-ye"
+   },
+   {
+    "name": "塞爾維亞語",
+    "percent": 2,
+    "description": "塞爾維亞語是中世紀以來塞爾維亞人在此使用的語言，南斯拉夫時期也是行政與教育的主要語言。1999年戰爭結束後大批塞爾維亞人離開，使用者集中在北部米特羅維察、茲韋錢等地與南部的塞族飛地。2008年憲法仍將它與阿爾巴尼亞語並列為官方語言；北部塞族抵制2011年普查，因此普查中約1.6%的比例明顯低估了實際使用人數。",
+    "greeting": "Здраво (Zdravo)",
+    "pronunciation": "zdra-vo"
+   },
+   {
+    "name": "波士尼亞語",
+    "percent": 2,
+    "description": "波士尼亞語使用者主要是信仰伊斯蘭教的斯拉夫人（波士尼亞克人），集中在普里茲倫、佩奇一帶，以及南部多拉加什山區說相近方言的戈拉尼人。他們在宗教上與阿爾巴尼亞人同屬穆斯林、語言上卻接近塞爾維亞語，反映鄂圖曼時期斯拉夫人改宗的歷史。2006年的語言使用法讓它在人口達一定比例的市鎮享有官方地位。",
+    "greeting": "Zdravo",
+    "pronunciation": "zdra-vo"
+   },
+   {
+    "name": "土耳其語",
+    "percent": 1,
+    "description": "土耳其語是鄂圖曼統治近五百年留下的遺產，當時是行政、商業與城市菁英的語言，普里茲倫的上層家庭長期以土耳其語交談。今天以土耳其語為母語者約占1%，集中在普里茲倫與南部的馬穆沙（當地多數居民是土耳其裔）。它在這些市鎮具有官方地位，許多阿爾巴尼亞語詞彙也來自土耳其語。",
+    "greeting": "Merhaba",
+    "pronunciation": "mer-ha-ba"
+   }
+  ],
+  "history": "中世紀科索沃是塞爾維亞王國的核心，教會斯拉夫語與塞爾維亞語是當時宗教和書面文化的語言。鄂圖曼時期土耳其語成為行政語言，阿爾巴尼亞語則以口語為主；1878年在普里茲倫成立的「普里茲倫聯盟」推動阿爾巴尼亞民族運動，也帶動以本族語書寫與教育的訴求。南斯拉夫時期，科索沃在1974年憲法下取得自治，1970年成立的普里什蒂納大學以阿爾巴尼亞語授課，培養大批知識分子；1989年米洛塞維奇取消自治後，阿爾巴尼亞語教育被排擠。2008年獨立後的憲法規定阿爾巴尼亞語與塞爾維亞語同為官方語言，並保障其他少數民族語言。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "弗利亞",
+    "localName": "Flija",
+    "description": "把麵粉、水與鹽調成的稀麵糊一層層刷在大圓烤盤上，每層之間抹上鮮奶油或奶油，用炭火加熱的金屬蓋（saç）由上往下烤數小時，成品像多層薄餅，常配優格、醃菜或蜂蜜食用。",
+    "history": "弗利亞是科索沃與阿爾巴尼亞北部高地的傳統料理，製作方式反映山區牧民以麵粉和乳製品為主的飲食。它不用烤箱，而是在戶外以木炭加熱的金屬蓋一層層烘烤，一次要花上兩三個小時，因此常是親友、鄰居一起聚會時才做。由於做法費時又需要分工，弗利亞在科索沃被視為待客與團聚的象徵，夏季常舉辦以它為主角的戶外聚會，至今仍被許多人視為科索沃國菜。",
+    "wiki": "Flia",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Flia%CC%A0.jpg/960px-Flia%CC%A0.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Flia%CC%A0.jpg",
+    "imageCredit": "Arbenllapashtica・CC0・Wikimedia Commons"
+   },
+   {
+    "name": "皮特派",
+    "localName": "Pite",
+    "description": "以手工擀成的薄麵皮層層包入白乳酪、菠菜、肉末或南瓜等餡料，烤成大圓盤狀，外皮酥脆，常切塊搭配優格當早餐。",
+    "history": "皮特派屬於鄂圖曼帝國的「börek」酥皮點心家族，15世紀鄂圖曼統治巴爾幹後在當地普及。科索沃人稱它為「pite」或「burek」，用的麵皮講究擀得薄如紙，能否做好被視為家庭主婦的重要技藝。今天普里什蒂納與普里茲倫街頭到處有專賣店，早上配一杯優格吃皮特派是常見的日常早餐，齋戒月開齋時也常出現在餐桌上。",
+    "wiki": "Burek",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/13/Burek_trokut_1.png",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Burek_trokut_1.png",
+    "imageCredit": "CC BY-SA 2.5・Wikimedia Commons"
+   },
+   {
+    "name": "烤肉條",
+    "localName": "Qebapa",
+    "description": "以牛絞肉（有時混合羊肉）加鹽與香料捏成手指大小的小肉條，炭火燒烤後夾在麵包裡，配生洋蔥與奶油乳酪（kajmak）食用。",
+    "history": "烤肉條源自鄂圖曼帝國的燒烤肉食傳統，「qebapa」與波士尼亞的「ćevapi」都源自「kebab」一詞，15世紀以後隨鄂圖曼統治傳遍巴爾幹。由於伊斯蘭飲食戒律不吃豬肉，科索沃的版本以牛肉、羊肉為主。它是城市燒烤店（qebaptore）的招牌菜，從南斯拉夫時期到今天一直是最普及的平價外食之一。",
+    "wiki": "Ćevapi",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Cevapi_s_kajmakom.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Cevapi_s_kajmakom.jpg",
+    "imageCredit": "Christian Paul from Vancouver, Canada・CC BY-SA 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "燉白豆",
+    "localName": "Pasul",
+    "description": "白腰豆與洋蔥、紅椒粉一起慢燉成濃稠的豆湯，常加入煙燻肉增添香氣，配玉米麵包或白麵包食用。",
+    "history": "菜豆原產美洲，16世紀經西班牙與地中海貿易傳入歐洲，之後在巴爾幹成為便宜又耐放的蛋白質來源。燉白豆在南斯拉夫各地都很普遍，也是軍隊與學校食堂的常見菜；科索沃穆斯林家庭通常以牛肉乾或煙燻牛肉代替其他地區常用的豬肉。冬天家家戶戶都會煮一大鍋，被視為最日常的家常菜之一。",
+    "wiki": "Pasulj",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/%C5%A0areni_pasulj_obrok_%28pinto_beans%29.jpg/960px-%C5%A0areni_pasulj_obrok_%28pinto_beans%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:%C5%A0areni_pasulj_obrok_(pinto_beans).jpg",
+    "imageCredit": "Petar Milošević・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "三奶蛋糕",
+    "localName": "Trileçe",
+    "description": "海綿蛋糕浸泡在牛奶、煉乳與鮮奶油三種奶液中，表面再鋪上一層焦糖，冰涼後食用，口感濕潤香甜。",
+    "history": "三奶蛋糕源自拉丁美洲的「tres leches」，一般認為1990年代以後才傳入阿爾巴尼亞與科索沃，並迅速走紅。當地版本加上焦糖表層形成特色，「trileçe」即「三奶」之意。1999年戰後與2008年獨立後，大量僑民往返與外來文化湧入，新式甜點店在普里什蒂納林立，三奶蛋糕成為最受歡迎的招牌甜點，反映科索沃戰後社會快速全球化的飲食變化。",
+    "wiki": "Tres leches cake",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Pastel_de_Tres_Leches.jpg/960px-Pastel_de_Tres_Leches.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Pastel_de_Tres_Leches.jpg",
+    "imageCredit": "@joefoodie・CC BY 2.0・Wikimedia Commons"
+   }
+  ]
+ }
+}

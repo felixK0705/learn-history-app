@@ -249,6 +249,9 @@ def hagia_sophia(path):
         for z, n, w, h in ((3.5, 14, 2.0, 5.0), (12.5, 14, 2.2, 6.0)):
             window_row(b, win, n, XW + 3, XE - 3, z, w, h, s * (YS + 0.05), face_dir=s, depth=0.12)
 
+    for z, w, h in ((3.5, 2.0, 5.0), (12.5, 2.2, 6.0)):
+        for y0, y1 in ((-YS + 3, -10.5), (10.5, YS - 3)):
+            window_row(b, win, 4, y0, y1, z, w, h, XE + 0.05, face_dir=1, axis="y", depth=0.12)
     # 前廊（西側內外兩道），低於主體
     b.box_base(plaster, (6.0, 2 * YS - 6, 15.0), (XW - 3.0, 0, 0))
     b.box_base(plaster_d, (6.0, 2 * YS - 14, 11.0), (XW - 9.0, 0, 0))
