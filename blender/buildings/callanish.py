@@ -22,8 +22,8 @@ def callanish(path):
     b = Builder("Callanish", seed=23)
     gneiss = b.tex("gneiss", "rock_04", tile=1.3, tint="#6c6d66", normal=2.0, rough=0.85)
     gneiss2 = b.tex("gneiss2", "rock_04", tile=1.0, tint="#5f615c", normal=2.0, rough=0.9)
-    lichen = b.tex("lichen", "rock_04", tile=1.2, tint="#707256", normal=1.8, rough=0.9)
-    grass = b.tex("grass", "grass_ground", tile=3.0, gain=1.05, normal=0.8, rough=0.95)
+    lichen = b.tex("lichen", "rock_04", tile=1.2, tint="#6b6c5e", normal=1.8, rough=0.9)
+    grass = b.tex("grass", "grass_ground", tile=2.5, tint="#587230", normal=1.0, rough=0.95)
     soil = b.color("soil", "#4a3c2a", rough=0.95)
     r = b.rng
 

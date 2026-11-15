@@ -24,13 +24,13 @@ CAMERA = ((2, -2, 30), 20, -10, 118, 27)
 def blue_mosque(path):
     b = Builder("BlueMosque", seed=43)
     bm = b.bm
-    stone = b.tex("stone", "white_sandstone_blocks_02", tile=4.0, tint="#b3b2ad", rough=0.85, normal=0.6)
-    stone_d = b.color("stone_shade", "#a9a8a3", rough=0.85)
+    stone = b.tex("stone", "white_sandstone_blocks_02", tile=4.0, tint="#a3a29d", rough=0.85, normal=0.6)
+    stone_d = b.color("stone_shade", "#9a9994", rough=0.85)
     trim = b.color("trim", "#cfcdc6", rough=0.75)
-    lead = b.color("lead", "#7f8992", rough=0.45, metal=0.35)
+    lead = b.color("lead", "#848d95", rough=0.55, metal=0.15)
     win = b.color("window", "#2a2c30", rough=0.3)
     gold = b.color("gold", "#c9a14a", rough=0.3, metal=0.9)
-    pave = b.tex("pave", "gravel_floor", tile=4.0, tint="#958f84", rough=0.95, normal=0)
+    pave = b.tex("pave", "gravel_floor", tile=4.0, tint="#88837a", rough=0.95, normal=0)
     marble = b.color("court_marble", "#d9d6cf", rough=0.6)
     grass = b.tex("grass", "grass_ground", tile=8.0, tint="#5f7c3c", gain=0.92, rough=0.95, normal=0)
     soil = b.color("soil", "#6b5a45", rough=0.95)
@@ -61,6 +61,11 @@ def blue_mosque(path):
         for sx in (-1, 1):
             window_row(b, win, n, Y0 + 3, Y1 - 3, z, w, h, sx * (HX + 0.05), face_dir=sx, axis="y", depth=0.12)
         window_row(b, win, n, -HX + 3, HX - 3, z, w, h, Y0 - 0.05, face_dir=-1, depth=0.12)
+    # 外牆扶壁與女兒牆
+    for k in range(7):
+        u = -HX + 2 * HX * k / 6
+        b.box_base(stone_d, (1.8, 1.2, H_W - 0.5), (u, Y0 - 0.6, 0))
+    b.box_base(stone, (2 * HX + 1.2, Y1 - Y0 + 1.2, 1.4), (0, (Y0 + Y1) / 2, H_W - 1.4))
     # 兩側二層拱廊（側立面下半部的特徵）
     for sx in (-1, 1):
         x = sx * (HX + 3.0)

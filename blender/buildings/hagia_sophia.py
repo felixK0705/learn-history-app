@@ -144,8 +144,8 @@ def minaret(b, x, y, H, R, stone, cap, gold, balcony=None, shaft=None, balconies
         if i < len(zs) - 2:
             # 陽台：鐘乳石托座（外擴的錐台）＋欄杆
             zb_ = zb
-            b.lathe(balcony, [(r_here * 0.98, zb_ - 2.4), (r_here * 1.25, zb_ - 1.4), (r_here * 1.55, zb_ - 0.3), (r_here * 1.62, zb_),
-                              (r_here * 1.62, zb_ + 1.05), (r_here * 1.52, zb_ + 1.05), (r_here * 1.52, zb_ + 0.2), (0, zb_ + 0.2)],
+            b.lathe(balcony, [(r_here * 0.99, zb_ - 2.2), (r_here * 1.12, zb_ - 1.5), (r_here * 1.22, zb_ - 0.9), (r_here * 1.36, zb_ - 0.2),
+                              (r_here * 1.42, zb_), (r_here * 1.42, zb_ + 1.0), (r_here * 1.36, zb_ + 1.0), (r_here * 1.36, zb_ + 0.2), (0, zb_ + 0.2)],
                     (x, y, 0), seg=seg * 2, smooth=False)
     # 頂部：細環＋鉛錐頂
     r_top = radius * (1 - 0.06 * (len(zs) - 2)) * 0.985
@@ -174,20 +174,21 @@ def leaf_blob(b, mi, loc, rx, ry, rz, lump=0.3, subdiv=2):
 
 
 def broadleaf(b, x, y, h, leaves, trunk, z=0.0, spread=1.0):
-    """闊葉樹：主幹＋數個大葉團（上亮下暗、外輪廓起伏）"""
+    """闊葉樹：主幹＋12–16 個大小不一的葉團分佈在橢球殼上（上亮下暗、外輪廓破碎）"""
     rng = b.rng
-    R = h * rng.uniform(0.36, 0.44) * spread
-    cz = z + h - R * 0.85
+    R = h * rng.uniform(0.34, 0.42) * spread
+    Rz_ = R * rng.uniform(0.75, 0.9)
+    cz = z + h - Rz_
     b.cyl(trunk, h * 0.035, h * 0.022, (cz - z) * 0.9, (x, y, z), seg=6)
-    n = rng.randint(4, 6)
-    for i in range(n):
-        a = rng.uniform(0, TAU)
-        rr = R * (0.0 if i == 0 else rng.uniform(0.4, 0.62))
-        dz = (0.1 * R if i == 0 else rng.uniform(-0.45, 0.2) * R)
-        br = R * (0.72 if i == 0 else rng.uniform(0.48, 0.62))
-        mi = leaves[1] if i == 0 else leaves[rng.choice((0, 1, 2, 2))]
-        leaf_blob(b, mi, (x + rr * math.cos(a), y + rr * math.sin(a), cz + dz), br * rng.uniform(0.95, 1.15), br * rng.uniform(0.95, 1.15),
-                  br * 0.85, lump=0.42)
+    leaf_blob(b, leaves[2], (x, y, cz), R * 0.72, R * 0.72, Rz_ * 0.7, lump=0.3, subdiv=1)
+    n = rng.randint(12, 16)
+    for _ in range(n):
+        th = rng.uniform(0, TAU)
+        ph = rng.uniform(-0.5, 1.25)
+        px, py, pz = math.cos(th) * math.cos(ph), math.sin(th) * math.cos(ph), math.sin(ph)
+        br = R * rng.uniform(0.28, 0.42)
+        mi = leaves[0] if pz > 0.45 else (leaves[2] if pz < -0.1 else leaves[1])
+        leaf_blob(b, mi, (x + px * R * 0.78, y + py * R * 0.78, cz + pz * Rz_ * 0.75), br, br, br * 0.85, lump=0.35, subdiv=1)
 
 
 def conifer(b, x, y, h, mats, trunk, z=0.0):
