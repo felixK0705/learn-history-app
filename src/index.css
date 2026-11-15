@@ -19,7 +19,7 @@
   html, body, #root { height: 100%; }
   body {
     @apply bg-page font-sans text-ink antialiased;
-    background: linear-gradient(180deg, #cef4ff 0%, #b4ecff 45%, #98e5ff 100%);
+    background: #0b3282;
     font-feature-settings: "ss01", "cv11";
     letter-spacing: -0.005em;
   }

@@ -44,8 +44,8 @@ export default function App() {
         .timeline()
         .fromTo(
           shellRef.current,
-          { y: 40, autoAlpha: 0, scale: 0.98 },
-          { y: 0, autoAlpha: 1, scale: 1, duration: 1, ease: "expo.out", clearProps: "transform" },
+          { autoAlpha: 0 },
+          { autoAlpha: 1, duration: 0.8, ease: "power2.out" },
         )
         .fromTo(
           "[data-intro]",
@@ -78,11 +78,11 @@ export default function App() {
   }, []);
 
   return (
-    <div className="h-full p-0 md:px-[4.5vw] md:py-[10vh]">
-      {/* 主卡片：參考圖的圓角亮藍卡片與下方柔和藍色投影 */}
+    <div className="h-full">
+      {/* 主畫面：滿版亮藍舞台 */}
       <div
         ref={shellRef}
-        className="stage relative flex h-full overflow-hidden shadow-[0_70px_80px_-45px_rgba(25,120,220,0.65)] md:rounded-[18px]"
+        className="stage relative flex h-full overflow-hidden"
       >
         {/* 左側深色細條（寬約卡片 4.8%）：logo 在頂端、圓點導覽在 43% 高度 */}
         <aside className="relative z-30 hidden w-16 shrink-0 flex-col items-center bg-[linear-gradient(90deg,#082560_0%,#0a2c72_75%,rgba(10,44,114,0.85)_100%)] md:flex">
