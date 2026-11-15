@@ -211,7 +211,7 @@ def florence_duomo(path):
     # ---------------------------------------------------------------- 地面：廣場＋街道
     b.ground_disc(street, 235, soil, depth=3, rings=12, seg=72)
     b.box_base(pave, (230, 110, 0.12), (-60, -2, 0))
-    b.box_base(pave, (70, 150, 0.12), (10, 0, 0))
+    b.box_base(pave, (70, 150, 0.08), (10, 0, 0))
 
     # ---------------------------------------------------------------- 中殿與側廊
     XF, XC = -101.0, -24.0      # 立面、八角形起點
@@ -475,13 +475,13 @@ def florence_duomo(path):
 
     placed = []
     for _ in range(4000):
-        if len(placed) >= 150:
+        if len(placed) >= 230:
             break
         x, y = rng.uniform(-220, 220), rng.uniform(-200, 200)
         if math.hypot(x, y) > 225 or busy(x, y):
             continue
         w, d = rng.uniform(12, 26), rng.uniform(10, 18)
-        if any(abs(x - px) < (w + pw) / 2 + 2.5 and abs(y - py) < (d + pd) / 2 + 2.5 for px, py, pw, pd in placed):
+        if any(abs(x - px) < (w + pw) / 2 + 1.2 and abs(y - py) < (d + pd) / 2 + 1.2 for px, py, pw, pd in placed):
             continue
         placed.append((x, y, w, d))
         h = rng.uniform(10, 17)
@@ -490,8 +490,8 @@ def florence_duomo(path):
         rh = min(w, d) * 0.17
         b.frustum((tiles, tiles_d, roof_c)[rng.randrange(3)], (w + 1.0, d + 1.0), (max(0.3, w - d), max(0.3, d - w)) if w > d else
                   (max(0.3, w - d), max(0.3, d - w)), rh, (x, y, h))
-        # 立面窗列
-        for s in (-1, 1):
+        # 立面窗列（遠處省略以控制檔案大小）
+        for s in ((-1, 1) if math.hypot(x, y) < 150 else ()):
             for row in range(int(h // 3.6) - 1):
                 for j in range(max(1, int(w // 4))):
                     u = -w / 2 + w * (j + 0.5) / max(1, int(w // 4))

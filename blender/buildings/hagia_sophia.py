@@ -178,7 +178,7 @@ def foliage_mats(b, cols=("#5d7b33", "#43602a", "#2c431c"), tag=""):
     return [b.color(f"leaf{tag}_{k}", c, rough=0.88) for k, c in enumerate(cols)]
 
 
-def broadleaf(b, x, y, h, leaves, trunk, z=0.0, spread=1.0, blobs=None):
+def broadleaf(b, x, y, h, leaves, trunk, z=0.0, spread=1.0, blobs=None, sub=2):
     """闊葉樹：主幹＋分枝＋多個大小不一的不規則葉團（上亮下暗、外輪廓破碎）"""
     rng = b.rng
     R = h * rng.uniform(0.36, 0.44) * spread
@@ -190,7 +190,7 @@ def broadleaf(b, x, y, h, leaves, trunk, z=0.0, spread=1.0, blobs=None):
         L = R * 0.7
         b.cyl(trunk, h * 0.014, h * 0.008, L, (x, y, z + (cz - z) * 0.65), seg=4,
               rot=(math.cos(th) * 0.8, math.sin(th) * 0.8, 0))
-    leaf_blob(b, leaves[2], (x, y, cz), R * 0.75, R * 0.75, Rz_ * 0.72, lump=0.25, subdiv=2)
+    leaf_blob(b, leaves[2], (x, y, cz), R * 0.75, R * 0.75, Rz_ * 0.72, lump=0.25, subdiv=sub)
     n = blobs or rng.randint(10, 13)
     for _ in range(n):
         th = rng.uniform(0, TAU)
@@ -199,7 +199,7 @@ def broadleaf(b, x, y, h, leaves, trunk, z=0.0, spread=1.0, blobs=None):
         br = R * rng.uniform(0.28, 0.44)
         mi = leaves[0] if pz > 0.5 else (leaves[2] if pz < 0.0 else leaves[1])
         leaf_blob(b, mi, (x + px * R * 0.72, y + py * R * 0.72, cz + pz * Rz_ * 0.7), br, br * rng.uniform(0.85, 1.15), br * 0.8,
-                  lump=0.4, subdiv=2)
+                  lump=0.4, subdiv=sub)
 
 
 def cypress(b, x, y, h, mi, trunk, z=0.0):

@@ -97,6 +97,19 @@ def gen_caihua(name, seed=5):
 
 # ====================================================================== 中式殿堂工具
 class CnBuilder(AsiaBuilder):
+    def cyl(self, mi, r1, r2, h, base, seg=24, rot=(0, 0, 0), smooth=False):
+        """圓柱（自建頂點；避免 create_cone 釋放暫存頂點後 capture() 取錯頂點）"""
+        from mathutils import Euler
+        Mx = Matrix.Translation(Vector(base)) @ Euler(rot).to_matrix().to_4x4()
+        bot = [self.V(Mx @ Vector((r1 * math.cos(TAU * i / seg), r1 * math.sin(TAU * i / seg), 0))) for i in range(seg)]
+        top = [self.V(Mx @ Vector((r2 * math.cos(TAU * i / seg), r2 * math.sin(TAU * i / seg), h))) for i in range(seg)]
+        self.face(list(reversed(bot)), mi)
+        self.face(top, mi)
+        for i in range(seg):
+            j = (i + 1) % seg
+            self.face([bot[i], bot[j], top[j], top[i]], mi, smooth)
+        return bot + top
+
     def mats_cn(self, roof_rgb=(170, 108, 30), roof_name="cn_yellow4"):
         m = {}
         m["tile"] = self.gtex("tile", gen_tiles(roof_name, roof_rgb, kind="kawara", n_ch=10, n_rows=10, seed=7), tile=3.2,
@@ -121,8 +134,8 @@ class CnBuilder(AsiaBuilder):
         eave=(A,B) 簷口半寬半深、ze 簷口高；wall=(Aw,Bw) 牆線、zw 牆線高（簷下天花回接處）；zr 屋脊高（skirt 時為上緣高）"""
         A, B = eave
         Aw, Bw = wall
-        kw = dict(center=(cx, cy), U=U, P=P, K=(22, 14), rows=rows, soffit=M["blue"], wall=(Aw, Bw, zw), thick=0.45,
-                  fascia=M["ridge"], gamma=gamma, corner_len=min(A, B) * 0.55)
+        kw = dict(center=(cx, cy), U=U, P=P, K=(22, 14), rows=rows, soffit=M["blue"], wall=(Aw, Bw, zw), thick=M.get("thick", 0.45),
+                  fascia=M.get("fascia", M["ridge"]), gamma=gamma, corner_len=min(A, B) * 0.55)
         if kind == "skirt":
             top = (Aw + 0.3, Bw + 0.3)
             self.roof_skirt(M["tile"], eave, top, ze, zr, hips=M["ridge"], hip_w=hip_w, hip_h=hip_h, **kw)
@@ -284,6 +297,7 @@ def forbidden_city(path):
     b = CnBuilder("ForbiddenCity", seed=8)
     M = b.mats_cn()
     pave = b.gtex("pave", gen_paving("square3", (112, 101, 90), bw=8, bh=16), tile=4.0, rough=0.9, normal=0.5)
+    tpave = b.gtex("tpave", gen_paving("terrace", (178, 170, 154), bw=6, bh=10, seed=12), tile=5.0, rough=0.85, normal=0.4)
     slab = b.gtex("slab", gen_paving("slab3", (128, 120, 108), bw=2, bh=4, seed=9), tile=4.0, rough=0.8, normal=0.4)
 
     # ---------------- 廣場地面（矩形；中央御路）
@@ -307,6 +321,7 @@ def forbidden_city(path):
         b.prism(M["marble_d"], outline(hf, y0, yb, hw, y1), z0, z1 - z0 - 0.36)
         b.prism(M["marble"], outline(hf, y0, yb, hw, y1, 0.25), z0 + 0.15, 0.25)
         b.prism(M["marble"], outline(hf, y0, yb, hw, y1, 0.25), z1 - 0.36, 0.36)
+        b.prism(tpave, outline(hf, y0, yb, hw, y1, -0.15), z1, 0.03)
         pts = outline(hf, y0, yb, hw, y1, -0.3)
         b.balustrade(M, pts, z1, h=1.15, spacing=1.5,
                      skip=lambda x, y, y0=y0, y1=y1: (abs(x) < 11 and abs(y - y0) < 2) or (abs(abs(x) - 30) < 3.5 and abs(y - y0) < 2)
@@ -390,18 +405,15 @@ def forbidden_city(path):
         b.cn_roof(M, gx, 8.0, (17.4, 8.6), 11.1, (14.0, 6.0), 10.8, "hipgable", 18.6, ridge_len=10.0, U=0.7, P=0.5, rows=8)
 
     # ---------------- 東西廡（紅牆廊屋）＋體仁閣／弘義閣
-    def gallery(x, y0, y1, depth=9.0, h=6.0, face=1):
-        """face：面向廣場方向（+1 朝東、-1 朝西）"""
-        L = y1 - y0
-        ym = (y0 + y1) / 2
-        b.box_base(M["marble_d"], (depth + 1.0, L + 1.0, 0.9), (x, ym, 0))
-        b.box_base(M["red"], (depth - 2.0, L, h), (x - face * 1.0, ym, 0.9))
+    def gallery(L, depth=9.0, h=6.0):
+        """廊廡（局部座標：長邊沿 X、正面朝 -Y）"""
+        b.box_base(M["marble_d"], (L + 1.0, depth + 1.0, 0.9), (0, 0, 0))
+        b.box_base(M["red"], (L, depth - 2.0, h), (0, 1.0, 0.9))
         n = int(L / 4.2)
         for k in range(n + 1):
-            y = y0 + L * k / n
-            b.cyl(M["col"], 0.28, 0.26, h, (x + face * (depth / 2 - 0.4), y, 0.9), seg=8)
-        b.box_base(M["cai"], (depth + 0.2, L + 0.2, 0.9), (x, ym, 0.9 + h - 0.6))
-        b.cn_roof(M, x, ym, ((depth / 2 + 1.8), L / 2 + 1.8), 0.9 + h + 0.2, (depth / 2, L / 2), 0.9 + h, "hip",
+            b.cyl(M["col"], 0.28, 0.26, h, (-L / 2 + L * k / n, -(depth / 2 - 0.4), 0.9), seg=8)
+        b.box_base(M["cai"], (L + 0.2, depth + 0.2, 0.9), (0, 0, 0.9 + h - 0.6))
+        b.cn_roof(M, 0, 0, (L / 2 + 1.8, depth / 2 + 1.8), 0.9 + h + 0.2, (L / 2, depth / 2), 0.9 + h, "hip",
                   0.9 + h + 3.6, ridge_len=max(0.5, L / 2 - 2.0), U=0.3, P=0.2, rows=5, hip_w=0.3, hip_h=0.3, ridge_h=0.6)
 
     def pavilion():
@@ -432,8 +444,8 @@ def forbidden_city(path):
                   zf + 21.0, ridge_len=L / 2 - 2.0, U=0.8, P=0.6, rows=10)
 
     for s in (-1, 1):
-        gallery(s * 101.0, -205.0, -140.0, face=-s)
-        gallery(s * 101.0, -80.0, -8.0, face=-s)
+        for (y0, y1) in ((-205.0, -140.0), (-80.0, -8.0)):
+            b.place(lambda L=y1 - y0: gallery(L), Matrix.Translation((s * 101.0, (y0 + y1) / 2, 0)) @ Matrix.Rotation(-s * math.pi / 2, 4, "Z"))
         b.place(pavilion, Matrix.Translation((s * 98.0, -110.0, 0)) @ Matrix.Rotation(-s * math.pi / 2, 4, "Z"))
 
     b.export_glb(path)

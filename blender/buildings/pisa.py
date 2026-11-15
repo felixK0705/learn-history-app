@@ -13,7 +13,7 @@ from mathutils import Matrix, Vector, noise
 from lib import TAU, Builder
 
 # 目標點、方位角、仰角、距離、焦距（對應參考照：草地東側地面仰望，塔身向左＝南傾）
-CAMERA = ((0.0, -2.0, 27.0), 90.0, 4.0, 98.0, 32.0)
+CAMERA = ((0.0, -1.0, 28.0), 90.0, 5.0, 100.0, 40.0)
 if os.environ.get("TL_CAM"):  # 開發用：覆寫預覽相機
     CAMERA = ast.literal_eval(os.environ["TL_CAM"])
 
@@ -46,23 +46,21 @@ def arch_band(b, mi, r, z, n, h, opening_frac, depth, a0=0.0, seg=8):
 
 def pisa(path):
     b = Builder("Pisa", seed=7)
-    marble = b.tex("marble", "marble_01", tile=2.4, tint="#ece6d8", normal=0.6, rough=0.45)
-    wall = b.tex("wall", "white_sandstone_blocks_02", tile=3.0, tint="#ddd6c6", normal=0.6, rough=0.6)
+    marble = b.tex("marble", "marble_01", tile=2.4, tint="#dbd2bf", normal=0.7, rough=0.45)
+    wall = b.tex("wall", "marble_01", tile=1.8, tint="#cbc2ae", normal=0.8, rough=0.55)
     grey = b.tex("grey", "marble_01", tile=1.2, tint="#b9b6ae", normal=0.5, rough=0.5)
-    col = b.color("column", "#efe9dc", rough=0.4)
+    col = b.color("column", "#ddd6c6", rough=0.4)
     dark = b.color("dark", "#2f2c28", rough=0.9)
     bronze = b.color("bronze", "#5b4a33", rough=0.5, metal=0.6)
-    lawn = b.tex("lawn", "grass_ground", tile=3.0, tint="#5f8a36", gain=1.0, normal=0.6, rough=0.95)
+    lawn = b.tex("lawn", "grass_ground", tile=3.0, tint="#4a7428", gain=0.85, normal=0.8, rough=0.95)
     pave = b.tex("pave", "marble_01", tile=1.6, tint="#d8d2c4", normal=0.4, rough=0.6)
     gravel = b.tex("gravel", "gravel_floor", tile=3.0, tint="#cbbfa8", normal=0.6, rough=0.9)
     soil = b.color("soil", "#5a4a36", rough=0.95)
 
     # ---- 地面：周邊草坪、塔基下陷的大理石環形步道
-    b.ground_disc(lawn, 62, soil, depth=2.0, seg=96, rings=12)
-    b.ering(pave, (9.2, 9.2), (12.2, 12.2), -0.25, 0.02, seg=96)
+    b.ground_disc(lawn, 125, soil, depth=2.0, seg=96, rings=16)
+    b.ering(pave, (9.2, 9.2), (12.2, 12.2), -0.25, 0.04, seg=96)
     b.ering(marble, (12.2, 12.2), (12.6, 12.6), -0.25, 0.25, seg=96)  # 環形矮牆
-    b.box_base(gravel, (60, 6, 0.04), (-10, 22, 0.0))  # 北側通往主教座堂的步道
-    b.box_base(gravel, (6, 40, 0.04), (19, 3, 0.0))
 
     tower_start = len(b.bm.verts)
     # ---- 基座台階
@@ -94,7 +92,7 @@ def pisa(path):
         b.ering(grey, (7.9, 7.9), (8.05, 8.05), z0 + 0.12, z0 + 0.3, seg=90)
         # 內牆（灰白相間的帶狀石材）與暗色門窗
         b.cyl(wall, 6.35, 6.35, FH, (0, 0, z0), seg=72)
-        for i in range(0, 30, 5):
+        for i in range(0, 30, 10):
             a = TAU * (i + 0.5 + f) / 30
             M = bay_matrix(6.38, a, z0 + 0.42)
             b.profile_wall(dark, [(-0.45, 0), (0.45, 0), (0.45, 2.2), (-0.45, 2.2)], 0.1, M)
@@ -116,9 +114,6 @@ def pisa(path):
     RB = 5.0
     b.cyl(dark, RB - 0.6, RB - 0.6, 4.4, (0, 0, ztop + 0.5), seg=48)
     zb = ztop + 0.5
-    for i in range(16):
-        a = TAU * (i + 0.5) / 16
-        x, y = RB * math.cos(a), RB * math.sin(a)
     # 拱窗之間的牆墩
     chord = 2 * RB * math.tan(math.pi / 16)
     for i in range(16):
@@ -147,7 +142,4 @@ def pisa(path):
     for v in b.bm.verts[tower_start:]:
         v.co = R @ v.co
 
-    # ---- 草坪旁的幾棵樹（樹冠以多個不規則團塊組成）
-    for x, y, h in ((-40, 34, 9), (-46, 26, 8), (40, -40, 8.5), (-30, -44, 9.5)):
-        b.tree(x, y, 0, h)
     b.export(path)
