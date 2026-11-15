@@ -13,15 +13,15 @@ from mathutils import Vector, noise
 from lib import TAU, Builder
 
 # 目標點、方位角、仰角、距離、焦距（對應參考照：由南側低角度望向石圈與北石道）
-CAMERA = ((0.0, 2.0, 2.4), 12.0, 1.0, 13.5, 22.0)
+CAMERA = ((0.0, 1.0, 2.2), 15.0, 2.0, 19.0, 24.0)
 if os.environ.get("TL_CAM"):  # 開發用：覆寫預覽相機
     CAMERA = ast.literal_eval(os.environ["TL_CAM"])
 
 
 def callanish(path):
     b = Builder("Callanish", seed=23)
-    gneiss = b.tex("gneiss", "marble_rock_01", tile=2.2, tint="#5d5f5b", normal=1.6, rough=0.85)
-    gneiss2 = b.tex("gneiss2", "marble_rock_01", tile=1.6, tint="#4f524f", normal=1.6, rough=0.9)
+    gneiss = b.tex("gneiss", "rock_ground", tile=2.0, tint="#5b5d58", normal=2.2, rough=0.85)
+    gneiss2 = b.tex("gneiss2", "rock_04", tile=1.4, tint="#545650", normal=2.2, rough=0.9)
     lichen = b.tex("lichen", "rock_04", tile=1.2, tint="#62645a", normal=2.0, rough=0.9)
     grass = b.tex("grass", "rocky_terrain_02", tile=4.0, gain=0.95, normal=0.6, rough=0.95)
     soil = b.color("soil", "#4a3c2a", rough=0.95)
@@ -53,7 +53,7 @@ def callanish(path):
             if k > 0.7:  # 斜切、不規則的頂面
                 v.co.z -= (k - 0.7) * h * (0.6 * along / max(w, 0.1) * slant)
             # 片麻岩的縱向節理：沿高度拉長的雜訊形成直條凹凸
-            g = 1 + 0.08 * noise.noise(Vector((v.co.x * 1.5 + seed, v.co.y * 1.5, v.co.z * 0.6))) + 0.07 * noise.noise(Vector((v.co.x * 4.0 + seed, v.co.y * 4.0, v.co.z * 0.15)))
+            g = 1 + 0.08 * noise.noise(Vector((v.co.x * 1.5 + seed, v.co.y * 1.5, v.co.z * 0.6))) + 0.07 * noise.noise(Vector((v.co.x * 4.0 + seed, v.co.y * 4.0, v.co.z * 0.15))) + 0.16 * noise.noise(Vector((seed, along * 0.6, v.co.z * 0.9)))
             v.co = Vector((x, y, v.co.z)) + (side * along + perp * (1 - 0.3 * k)) * g
 
     # ---- 中央巨石（4.8 m）
