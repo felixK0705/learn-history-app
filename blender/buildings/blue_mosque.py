@@ -138,7 +138,7 @@ def gen_frond_png():
     im = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     dr = ImageDraw.Draw(im)
     pal = [(96, 124, 48), (110, 138, 54), (84, 110, 42), (122, 148, 60)]
-    n = 14
+    n = 11
     for k in range(n):
         x0 = W * (k + rng.uniform(-0.15, 0.15)) / n
         c = pal[rng.integers(len(pal))]
@@ -147,12 +147,12 @@ def gen_frond_png():
             pts = []
             for j in range(9):
                 t = j / 8
-                x = x0 + off + 70 * t + 12 * t * t
+                x = x0 + off + 120 * t + 30 * t * t
                 y = H - 4 - (H - 10) * t * L
                 pts.append((x, y))
             for j in range(8, -1, -1):
                 t = j / 8
-                wdt = 9 * math.sin(math.pi * min(1, t * 1.1 + 0.05))
+                wdt = 30 * math.sin(math.pi * min(1, t * 1.05 + 0.08))
                 pts.append((pts[j][0] + wdt, pts[j][1] + wdt * 0.3))
             dr.polygon(pts, fill=c + (255,))
     dr.rectangle([0, H - 6, W, H], fill=(124, 120, 72, 255))
@@ -265,8 +265,8 @@ def crown(b, cx, cy, cz, rx, rz, mats, core, csize, density=1.0):
 def card_tree(b, x, y, h, mats, core, trunk, R_=None, z=0.0, cs=1.6, nblob=None):
     """闊葉樹：樹幹＋分枝＋ 5–8 個葉簇團塊（下緣低垂、外輪廓破碎）"""
     rng = b.rng
-    R_ = R_ or h * rng.uniform(0.32, 0.4)
-    cz = z + h - R_ * 0.95
+    R_ = R_ or h * rng.uniform(0.4, 0.48)
+    cz = z + h - R_ * 0.78
     rz = min(R_ * 0.95, (cz - z) * 0.95 + R_ * 0.3)
     b.cyl(trunk, max(0.14, h * 0.028), max(0.08, h * 0.016), (cz - z) * 0.95, (x, y, z), seg=6)
     for _ in range(3):
@@ -275,10 +275,10 @@ def card_tree(b, x, y, h, mats, core, trunk, R_=None, z=0.0, cs=1.6, nblob=None)
     n = nblob or rng.randint(5, 8)
     for _ in range(n):
         a = rng.uniform(0, TAU)
-        rr = R_ * math.sqrt(rng.uniform(0.0, 1)) * 0.6
-        dz = rng.uniform(-0.45, 0.45) * rz
-        br = R_ * rng.uniform(0.42, 0.6)
-        crown(b, x + rr * math.cos(a), y + rr * math.sin(a), cz + dz, br, br * 0.85, mats, core, min(cs, br * 0.9))
+        rr = R_ * math.sqrt(rng.uniform(0.15, 1)) * 0.62
+        dz = rng.uniform(-0.4, 0.35) * rz
+        br = R_ * rng.uniform(0.45, 0.62)
+        crown(b, x + rr * math.cos(a), y + rr * math.sin(a), cz + dz, br, br * 0.72, mats, core, min(cs, br * 0.9))
 
 
 # ====================================================================== 共用造型
@@ -442,11 +442,13 @@ def palm(b, x, y, h, frond, frond_d, trunk):
     """加那利海棗：粗幹（葉痕環紋）＋球狀樹冠，三層羽狀葉（中肋 V 形折、葉尖下垂、葉緣鋸齒）"""
     rng = b.rng
     bm = b.bm
-    n_ring = 10
-    for k in range(n_ring):
+    n_ring = 14
+    prof = []
+    for k in range(n_ring + 1):
         z0 = h * k / n_ring
-        r0 = 0.62 - 0.12 * k / n_ring
-        b.lathe(trunk, [(r0 * 0.97, z0), (r0 * 1.03, z0 + h / n_ring * 0.6), (r0 * 0.97, z0 + h / n_ring)], (x, y, 0), seg=10, smooth=True)
+        r0 = 0.6 - 0.14 * k / n_ring + (0.12 if k == 0 else 0)
+        prof += [(r0 * 0.98, z0), (r0 * 1.02, z0 + h / n_ring * 0.5)] if k < n_ring else [(r0, z0)]
+    b.lathe(trunk, prof, (x, y, 0), seg=10, smooth=True)
     b.ico(trunk, 1.0, (x, y, h + 0.2), subdiv=1)
     for tier, (n, lift, dr) in enumerate(((9, 1.8, 0.2), (13, 0.9, 0.5), (15, 0.0, 0.95), (12, -0.6, 1.3))):
         for k in range(n):
@@ -454,12 +456,12 @@ def palm(b, x, y, h, frond, frond_d, trunk):
             droop = dr + rng.uniform(-0.1, 0.15)
             L = rng.uniform(4.8, 6.2)
             mid, lft, rgt = [], [], []
-            ns = 10
+            ns = 6
             for i in range(ns):
                 u = i / (ns - 1)
                 r = L * u * math.cos(droop * u * 0.8)
                 z = h + 0.4 + lift * (1 - u) + 1.2 * math.sin(math.pi * u * 0.5) * (1 - droop * 0.7) - droop * 3.0 * u * u
-                w = 0.8 * math.sin(math.pi * min(1.0, u * 1.05 + 0.04)) * (0.75 if i % 2 else 1.0)
+                w = 1.25 * math.sin(math.pi * min(1.0, u * 0.9 + 0.12))
                 cx, cy = x + math.cos(a) * r, y + math.sin(a) * r
                 mid.append(bm.verts.new((cx, cy, z)))
                 lft.append(bm.verts.new((cx - math.sin(a) * w, cy + math.cos(a) * w, z - 0.4 * w)))
@@ -474,10 +476,10 @@ def palm(b, x, y, h, frond, frond_d, trunk):
 def blue_mosque(path):
     _gen_textures()
     b = CardBuilder("BlueMosque", seed=43)
-    stone = b.ptex("stone", "white_sandstone_blocks_02", tile=3.0, tint="#928f87", rough=0.85, normal=0.7)
-    stone_w = b.color("stone_w", "#a6a39a", rough=0.8)
-    stone_d = b.color("stone_d", "#85827a", rough=0.85)
-    wall_old = b.ptex("wall_old", "stone_wall_04", tile=4.0, tint="#9a958a", rough=0.9, normal=0.8, dsize=512)
+    stone = b.ptex("stone", "white_sandstone_blocks_02", tile=3.0, tint="#827f78", rough=0.85, normal=0.7)
+    stone_w = b.color("stone_w", "#95928a", rough=0.8)
+    stone_d = b.color("stone_d", "#77746d", rough=0.85)
+    wall_old = b.ptex("wall_old", "stone_wall_04", tile=4.0, tint="#8a857b", rough=0.9, normal=0.8, dsize=512)
     lead = b.color("lead", "#6c757c", rough=0.62, metal=0.08)
     lead_d = b.color("lead_d", "#60686e", rough=0.65, metal=0.08)
     win = b.color("window", "#2b2f36", rough=0.3)
@@ -524,8 +526,8 @@ def blue_mosque(path):
     # 公園步道與廣場（院牆外）
     b.box_base(pave, (20.0, PY1 - PY0 + 40, 0.1), (PX1 + 12, (PY0 + PY1) / 2, 0))
     b.box_base(asphalt, (12.0, 340, 0.08), (PX0 - 10, 30, 0))
-    for (cx, cy, w, d) in ((120, 30, 7, 230), (95, -20, 60, 6), (95, 75, 60, 6), (150, 30, 6, 200)):
-        b.box_base(pave, (w, d, 0.1), (cx, cy, 0))
+    for k, (cx, cy, w, d) in enumerate(((120, 30, 7, 230), (95, -20, 60, 6), (95, 75, 60, 6), (150, 30, 6, 200))):
+        b.box_base(pave, (w, d, 0.11 + 0.015 * k), (cx, cy, 0))
     # ---------------------------------------------------------------- 外院院牆（帶方窗的低牆）
     for (x0, y0, x1, y1, nrm) in ((PX1, PY0, PX1, PY1, (1, 0)), (PX0, PY0, PX0, PY1, (-1, 0)), (PX0, PY0, PX1, PY0, (0, -1)),
                                   (PX0, PY1, PX1, PY1, (0, 1))):
@@ -669,7 +671,7 @@ def blue_mosque(path):
             finial(b, gold, cx, cy, Z_DR + 2.2, 0.8)
 
     # 鼓座（28 窗、扶壁）與主圓頂
-    H_DR = 4.6
+    H_DR = 4.0
     RD = A + 0.6
     b.lathe(stone, [(RD, Z_DR), (RD, Z_DR + H_DR)], (0, 0, 0), seg=56, smooth=False)
     for k in range(28):
@@ -779,11 +781,10 @@ def blue_mosque(path):
         p = cam + fwd * D + rgt * (s_ * D)
         return p.x, p.y
 
-    for D, s_, h in ((116, -0.27, 11), (112, -0.15, 18), (104, -0.02, 17), (122, 0.04, 12), (114, 0.1, 13), (110, 0.18, 12),
-                     (104, 0.26, 14), (96, 0.33, 12), (128, -0.33, 13), (134, 0.22, 11)):
+    for D, s_, h in ((116, -0.28, 9), (104, -0.17, 11.5), (110, 0.07, 8.5), (106, 0.2, 9), (98, 0.3, 10.5), (126, -0.34, 10)):
         x, y = at(D, s_)
         card_tree(b, x, y, h, mats_a, core, trunk)
-    for D, s_, h in ((62, -0.06, 9.5), (88, 0.14, 8.0), (96, -0.21, 8.5)):
+    for D, s_, h in ((60, -0.115, 8.6), (90, 0.135, 7.0), (98, -0.25, 7.5)):
         x, y = at(D, s_)
         palm(b, x, y, h, frond, frond_d, palm_tr)
     for x, y in ((62, -70), (-60, -60), (-62, 30), (-58, 100), (60, 130)):

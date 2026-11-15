@@ -13,7 +13,7 @@ from mathutils import Vector, noise
 from lib import TAU, Builder
 
 # 目標點、方位角、仰角、距離、焦距（對應參考照：東南側地面視角，頭朝右）
-CAMERA = ((-1.0, 0.0, 7.5), 32.0, 3.0, 38.0, 18.0)
+CAMERA = ((-2.0, 0.0, 8.0), 16.0, 3.0, 44.0, 20.0)
 
 if os.environ.get("TL_CAM"):  # 開發用：覆寫預覽相機
     CAMERA = ast.literal_eval(os.environ["TL_CAM"])
@@ -567,167 +567,172 @@ def save_img(arr, path, quality=88):
     return path
 
 
-# ---------------------------------------------------------------- 主體
+# ---------------------------------------------------------------- 獅身人面像 SDF
+HEAD_C = (10.6, 0.0, 14.3)   # 頭部局部原點（下巴底、耳朵平面）
+HEAD_H = 5.9                 # 下巴到頭頂
+
+
+def strata(X, Y, Z, amp=1.0):
+    """水平岩層侵蝕：每層中段外凸、層界內凹（像疊起的軟墊），各層強度不同；回傳外凸量（公尺）"""
+    zw = Z + 0.45 * fbm(X * 0.04, Y * 0.04, None, 3, seed=301)
+    # 層厚不一：以單調扭曲讓層距在 0.6–1.8 m 之間變化
+    zq = zw + 0.55 * np.sin(zw * 0.83 + 0.4) + 0.3 * np.sin(zw * 2.1 + 1.7)
+    T = 1.15
+    i = np.floor(zq / T)
+    f = zq / T - i
+    hard = 0.55 + 0.45 * _hash(i.astype(np.int64), i.astype(np.int64) * 0 + 3, i.astype(np.int64) * 0, 77)
+    prof = np.sqrt(np.clip(1 - (2 * f - 1) ** 2, 0, 1)) ** 0.8 - 0.62
+    rough = 0.22 * fbm(X * 0.35, Y * 0.35, Z * 0.8, 3, seed=302) + 0.12 * fbm(X * 1.2, Y * 1.2, Z * 1.5, 2, seed=303)
+    # 局部崩落的凹洞
+    pit = np.clip(fbm(X * 0.12, Z * 0.25, Y * 0.1, 3, seed=304) - 0.25, 0, 1) * 1.2
+    return amp * (hard * prof * 0.95 + rough - pit)
+
+
+def body_sdf(S):
+    X, Y, Z = S.X, S.Y, S.Z
+    xs = [-46.5, -45.0, -42.5, -38.0, -28.0, -15.0, -3.0, 5.0, 10.0, 13.5, 16.0, 17.6]
+    W = cr_interp(X, xs, [2.5, 5.2, 6.6, 7.0, 6.8, 6.6, 6.7, 7.0, 7.0, 6.6, 5.6, 3.4])
+    Hb = cr_interp(X, xs, [4.5, 7.4, 9.2, 9.8, 9.9, 9.9, 10.1, 10.6, 11.0, 10.8, 9.2, 5.5])
+    hc = Hb / 2
+    p = 3.2
+    rn = (np.abs(Y / W) ** p + np.abs((Z - hc) / hc) ** p) ** (1 / p)
+    d = (rn - 1.0) * np.minimum(W, hc) * 0.85
+    d = smax(d, X - 17.8, 0.8)
+    d = smax(d, -46.8 - X, 0.8)
+    # 胸前（圓鼓的胸膛往上收成頸部）
+    d = smin(d, S.ell((11.5, 0, 6.8), (5.6, 6.6, 6.6)), 1.0)
+    d = smin(d, S.cap((10.2, 0, 9.0), (10.6, 0, 15.5), 3.0, 2.4), 1.2)
+    # 後腿（盤坐在臀側）
+    for sy in (-1, 1):
+        d = smin(d, S.ell((-36.5, sy * 6.6, 3.3), (8.5, 1.7, 3.4)), 0.8)
+        d = smin(d, S.ell((-28.5, sy * 7.6, 1.0), (4.5, 1.3, 1.1)), 0.5)
+    # 尾巴：沿南側（-y）臀部繞到身側
+    d = smin(d, S.cap((-45.5, -4.5, 1.6), (-40.0, -7.7, 1.0), 0.55, 0.5), 0.3)
+    d = smin(d, S.cap((-40.0, -7.7, 1.0), (-31.0, -8.0, 0.85), 0.5, 0.45), 0.3)
+    # 岩層侵蝕（下段 2.8 m 為修補石塊包覆 → 平整）
+    clad = np.clip((Z - 2.4) / 1.0, 0, 1)
+    top = np.clip((Hb - Z) / 1.6, 0, 1)
+    d = d - strata(X, Y, Z, 1.0) * clad * (0.3 + 0.7 * top)
+    # 前爪（後世小石塊包覆，圓角長方體）
+    for sy in (-1, 1):
+        paw = S.box((22.0, sy * 4.5, 1.45), (10.8, 2.25, 1.45), 1.1)
+        paw = smin(paw, S.ell((12.5, sy * 4.6, 3.0), (4.5, 2.6, 3.2)), 0.8)
+        d = smin(d, paw, 0.6)
+    d = smax(d, -Z - 0.2, 0.1)
+    return d
+
+
+def nemes_head_sdf(S):
+    """頭部：寫實臉（斷鼻）＋條紋頭巾（nemes）；局部單位頭高 = 1，臉朝 -y"""
+    X, Y, Z = S.X, S.Y, S.Z
+    P = dict(FACE_DEFAULT)
+    P["wf"] = [(z, w * 1.08) for z, w in P["wf"]]
+    P["nose"] = (0.025, 0.36, 0.05, 0.075, 0.08)       # 鼻頭已斷
+    P["mouth"] = (0.215, 0.13, 0.03)
+    P["lips"] = (0.035, 0.035)
+    P["eye"] = (0.135, 0.5, 0.075, 0.07)
+    P["brow"] = 0.015
+    P["pupil"] = 0.0
+    P["ears"] = False
+    P["cranium"] = ((0, 0.12, 0.58), (0.36, 0.44, 0.4))
+    P["neck"] = ((0, 0.1, 0.25), (0, 0.15, -0.6), 0.26, 0.34)
+    d = face_head(S, P)
+    # 斷鼻的粗糙斷面
+    d = d + 0.012 * np.exp(-((X / 0.07) ** 2 + ((Z - 0.4) / 0.08) ** 2)) * fbm(X * 40, Z * 40, None, 2, seed=311)
+    # 大耳朵（位於頭巾垂片前方）
+    for sx in (-1, 1):
+        ear = S.ell((sx * 0.37, -0.02, 0.47), (0.05, 0.1, 0.15))
+        ear = smax(ear, -S.ell((sx * 0.4, -0.04, 0.47), (0.03, 0.06, 0.1)), 0.01)
+        d = smin(d, ear, 0.02)
+    # 頭巾（nemes）：側視為三角形──平頂、前緣在臉頰後方垂直落到胸前、後緣自頭頂斜向後下到肩背；
+    # 正視時自太陽穴向外張開到肩膀。水平截面為圓角矩形。
+    zc = np.clip(Z, -0.7, 1.0)
+    w = 0.41 + 0.40 * np.clip((0.62 - zc) / 1.0, 0, 1) ** 1.2
+    yf = -0.2 + 0.08 * np.clip((0.5 - zc) / 1.0, 0, 1)
+    yb = 0.46 + 0.5 * np.clip((0.9 - zc) / 1.6, 0, 1)
+    yc, hd = (yf + yb) / 2, (yb - yf) / 2
+    rn = (np.abs(X / w) ** 4 + np.abs((Y - yc) / hd) ** 4) ** 0.25
+    nem = (rn - 1.0) * np.minimum(w, hd)
+    nem = smax(nem, Z - 0.98, 0.06)
+    nem = smax(nem, -0.72 - Z, 0.05)
+    # 頭巾前緣：額上頭帶，眉上方切齊
+    front = -(Y + 0.405 - 0.55 * np.clip(0.72 - Z, 0, 1) - 0.02 * np.clip((np.abs(X) - 0.3) / 0.1, 0, 1))
+    top = smax(S.ell((0, 0.1, 0.7), (0.43, 0.53, 0.36)), front, 0.02)
+    nem = smin(nem, top, 0.06)
+    band = smax(S.ell((0, -0.04, 0.715), (0.425, 0.385, 0.035)), -(Y + 0.415), 0.01)
+    nem = smin(nem, band, 0.015)
+    # 條紋（側面垂片上較明顯，已嚴重風化）
+    stripes = 0.003 * np.sin(Z * TAU / 0.08) * np.clip((np.abs(X) - 0.42) / 0.08, 0, 1) * np.clip((Y - yf - 0.04) / 0.06, 0, 1)
+    nem = nem + stripes
+    # 臉的區域挖空頭巾（臉在頭巾開口中）
+    hole = smax(np.abs(X) - 0.33, Z - 0.7, 0.05)
+    hole = smax(hole, -(Y + 0.6), 0.02)
+    hole = smax(hole, Y + 0.05, 0.05)
+    nem = smax(nem, -hole, 0.04)
+    d = smin(d, nem, 0.025)
+    # 風化
+    d = d + 0.004 * fbm(X * 18, Y * 18, Z * 18, 3, seed=312)
+    return d
+
+
+def small_mat(name, tex_id, tint, nor_size=512, rough=0.9, nor_strength=1.0):
+    """自訂材質：調色漫反射（1K）＋縮小的法線貼圖（控制 GLB 大小）"""
+    from PIL import Image
+
+    from lib import TEX, tinted_texture
+
+    diff = tinted_texture(tex_id, tint)
+    out = os.path.join(TEX, "_gen", "small")
+    os.makedirs(out, exist_ok=True)
+    nor = os.path.join(out, f"{tex_id}_nor{nor_size}.jpg")
+    if not os.path.exists(nor):
+        Image.open(os.path.join(TEX, tex_id, "nor.jpg")).resize((nor_size, nor_size), Image.LANCZOS).save(nor, quality=85)
+    return img_mat(name, diff, nor, rough=rough, nor_strength=nor_strength)
+
+
 def sphinx(path):
     b = Builder("Sphinx", seed=11)
-    body_m = b.tex("body", "rock_04", tile=3.5, tint="#bf8c4c", normal=1.6)
-    groove = b.tex("groove", "rock_04", tile=3.0, tint="#8f6a40", normal=1.6)
-    head_m = b.tex("head", "rock_04", tile=2.5, tint="#bd8b52", normal=1.2)
-    clad = b.tex("clad", "sandstone_blocks_05", tile=2.4, tint="#c99d63", normal=1.0)
-    floor_m = b.tex("floor", "sand_01", tile=6.0, tint="#cfa870", normal=0.8)
-    bedrock = b.tex("bedrock", "rock_04", tile=6.0, tint="#c39a62", normal=1.2)
-    wall_m = b.tex("wallm", "sandstone_blocks_05", tile=4.0, tint="#c9a26c", normal=0.9)
-    granite = b.tex("granite", "rock_04", tile=1.5, tint="#7d5a4e", normal=0.6)
+    m_body = small_mat("Sphinx_body", "cliff_side", "#c79f6b", nor_strength=1.4)
+    m_bodyd = small_mat("Sphinx_bodyd", "cliff_side", "#a47c50", nor_strength=1.4)
+    m_head = small_mat("Sphinx_head", "rock_04", "#bf9361", nor_strength=1.0)
+    m_clad = small_mat("Sphinx_clad", "sandstone_blocks_05", "#d3b07c", nor_strength=1.0)
+    clad = b.tex("clad", "sandstone_blocks_05", tile=2.2, tint="#d3b07c", normal=1.0, rough=0.9)
+    floor_m = b.tex("floor", "sand_01", tile=6.0, tint="#d5b07a", normal=0.8)
+    bedrock = b.tex("bedrock", "cliff_side", tile=8.0, tint="#c39b6a", normal=1.2)
+    wall_m = b.tex("wallm", "sandstone_blocks_05", tile=4.0, tint="#c39c6a", normal=0.9)
+    granite = b.color("granite", "#5e463e", rough=0.5)
+    pyr_m = b.tex("pyr", "sandstone_blocks_05", tile=5.0, tint="#a5865f", normal=1.2, rough=0.95)
+    casing = b.tex("casing", "sandstone_blocks_05", tile=8.0, tint="#c4b08b", normal=0.3)
 
-    # ---- 水平岩層侵蝕：每層上緣硬層外凸、下緣軟層內凹（階梯狀）
-    def strata(v, amp, keep_top=0.0):
-        z = v.z
-        wob = 0.35 * noise.noise(Vector((v.x * 0.06, 0.3, 0.0)))
-        layer = 1.15
-        ph = (z + wob) / layer
-        fr = ph - math.floor(ph)
-        step = -1.0 + 2.0 * smooth01(0.05, 0.7, fr)  # 下凹 → 上凸，頂端急收
-        if fr > 0.88:
-            step = 1.0 - (fr - 0.88) / 0.12 * 1.6
-        lid = math.floor(ph)
-        strength = 0.7 + 0.6 * (0.5 + 0.5 * noise.noise(Vector((lid * 1.7, v.x * 0.05, 0.0))))
-        rnd = noise.noise(Vector((v.x * 0.3, v.y * 0.3, z * 0.7))) * 0.35 + noise.noise(Vector((v.x * 0.08, v.y * 0.1 + 5, z * 0.15))) * 0.6 + noise.noise(Vector((v.x * 0.7, v.y * 0.2, lid * 3.1))) * 0.45 * (abs(noise.noise(Vector((v.x * 0.15, lid * 2.3, 1.0)))) > 0.15)
-        d = (step * strength * 0.75 + rnd) * amp * (1.0 - keep_top) * (0.25 + 0.75 * smooth01(2.6, 4.5, z))
-        out = Vector((0, v.y, 0))
-        if out.length > 1e-6:
-            out.normalize()
-        return v + out * d
+    # ---- 獅身（含前爪、後腿、尾巴）
+    S, o = grid3((-47.5, -9.6, -0.4), (34.0, 9.6, 16.5), 0.2)
+    F = body_sdf(S)
+    V, Q = surface_nets(F, o, 0.2)
+    C = V[Q].mean(1)
+    N = face_normals(V, Q)
+    paw_zone = (C[:, 0] > 13.5) & (np.abs(C[:, 1]) > 2.0) & (C[:, 2] < 3.4)
+    low = (C[:, 2] < 2.7) & (np.abs(N[:, 2]) < 0.8)
+    rec = (strata(C[:, 0], C[:, 1], C[:, 2]) < -0.2)
+    mi = np.where(paw_zone | low, 1, np.where(rec, 2, 0))
+    tiles = np.array([7.0, 2.2, 7.0])[mi]
+    mesh_object("SphinxBody", V, Q, [m_body, m_clad, m_bodyd], mi, box_uv(V, Q, tiles, N), decimate=0.42)
 
-    # ---- 獅身：X 方向放樣（臀部 → 胸前）；高度為背脊高
-    tab = [  # x, 半寬, 高
-        (-46.0, 3.4, 4.4), (-45.0, 5.6, 7.6), (-43.0, 6.8, 9.4), (-40.0, 7.1, 10.0), (-30.0, 6.8, 10.1),
-        (-18.0, 6.5, 9.9), (-8.0, 6.6, 10.0), (-1.0, 6.9, 10.3), (4.0, 7.3, 10.9), (9.0, 7.4, 11.4),
-        (12.0, 7.1, 11.2), (14.0, 6.8, 10.8), (15.8, 6.2, 9.2), (16.9, 5.0, 7.0), (17.3, 2.6, 4.0),
-    ]
-    rings = []
-    N = 260
-    xs = [tab[0][0] + (tab[-1][0] - tab[0][0]) * i / 90 for i in range(91)]
-    for x in xs:
-        W, H = lerp_table(tab, x)
-        # 背脊頂面保留較平整，側面與胸前層理明顯
-        rings.append(section_x(x, W, H, n=N, p=6.0, warp=lambda v, H=H: strata(v, 0.8, 0.6 * smooth01(H * 0.9, H, v.z))))
-    faces = loft(b, body_m, rings)
-    for f in faces:
-        c = f.calc_center_median()
-        if c.z < 3.2 and abs(f.normal.z) < 0.8 and c.x > -44:
-            f.material_index = clad  # 下層修補石塊
-    # 胸前胸甲般的層疊（前胸更明顯的凸出岩層）
-    for k, z in enumerate((5.6, 7.0, 8.4)):
-        b.rock(body_m, (2.2, 10.5 - k * 0.8, 0.8), (16.2 - k * 0.7, 0, z), rough=0.08, subdiv=3, seed=31 + k, round_=0.6)
-
-    # ---- 頸部（下巴下方）
-    hx = 8.6  # 頭部中心 x
-    neck = []
-    for z, W, D in ((10.0, 3.3, 3.0), (11.5, 2.9, 2.4), (13.0, 2.6, 2.0), (14.6, 2.5, 1.9)):
-        neck.append(section_z(z, hx + 0.4, W, D, n=32, p=2.6))
-    loft(b, head_m, neck)
-    # 胸部隆起：由前胸往上收成頸部（頭部底下不留台階）
-    chest = []
-    for z, cx, W, D in ((5.0, hx + 2.6, 6.6, 5.6), (8.0, hx + 2.4, 6.5, 5.2), (10.0, hx + 1.9, 5.9, 4.5),
-                        (11.4, hx + 1.3, 4.6, 3.5), (12.6, hx + 0.9, 3.2, 2.5), (13.8, hx + 0.8, 2.6, 2.0)):
-        chest.append(section_z(z, cx, W, D, n=120, p=2.4, warp=lambda v: strata(v, 0.45)))
-    loft(b, body_m, chest)
-    b.bm.verts.ensure_lookup_table()
-    head_start = len(b.bm.verts)
-
-    # ---- 頭巾（nemes）：水平截面放樣；下方張開到肩膀、上方收成圓頂
-    ntab = [  # z, 中心x, 半寬, 半深
-        (10.6, hx - 1.6, 5.4, 4.1), (12.0, hx - 1.4, 5.25, 3.5), (13.5, hx - 1.3, 4.75, 3.0),
-        (15.0, hx - 1.2, 4.2, 2.6), (16.5, hx - 1.0, 3.65, 2.35), (17.9, hx - 0.8, 3.2, 2.25), (18.4, hx - 0.2, 3.0, 2.75),
-        (18.75, hx + 0.2, 2.9, 3.05), (19.5, hx + 0.15, 2.6, 2.8), (20.0, hx - 0.1, 2.0, 2.1), (20.3, hx - 0.3, 1.0, 1.1),
-    ]
-    nr = []
-    for z, cx, W, D in ntab:
-        def nw(v, z=z):
-            # 頭巾橫條紋（淺凹槽）
-            g = 0.06 * math.sin(v.z * TAU / 0.55)
-            o = Vector((v.x - hx, v.y, 0))
-            return v + (o.normalized() * g if o.length > 1e-6 else Vector())
-        nr.append(section_z(z, cx, W, D, n=56, p=3.2, warp=nw))
-    loft(b, head_m, nr)
-
-    # ---- 臉：水平截面放樣；中線剖面（下顎→下巴→唇→斷鼻→眉→額）決定前緣，再刻眼窩
-    xc_tab = [(13.4, 1.6), (14.1, 3.3), (14.6, 3.6), (15.4, 3.7), (16.5, 3.75), (17.6, 3.8), (18.4, 3.65), (19.15, 3.45)]
-    w_tab = [(13.5, 1.25), (14.15, 1.45), (14.8, 1.8), (15.6, 2.0), (19.15, 2.05)]
-
-    def face_x(y, z):
-        (xc,) = lerp_table(xc_tab, z)
-        (W,) = lerp_table(w_tab, z)
-        a = min(1.0, abs(y) / W)
-        x = xc - 1.6 * a ** 2.6  # 臉頰往兩側圓弧後收
-        eye = math.exp(-((abs(y) - 0.95) / 0.36) ** 2) * math.exp(-((z - 17.2) / 0.3) ** 2)
-        x -= 0.42 * eye
-        x += 0.12 * math.exp(-((z - 17.72) / 0.14) ** 2) * (1 - a ** 2)  # 眉骨
-        nose = math.exp(-(y / 0.45) ** 4) * smooth01(15.6, 15.85, z) * (1 - smooth01(16.9, 17.5, z))
-        x += 0.55 * nose  # 鼻樑殘部（鼻頭已斷，斷面平整）
-        mouth = math.exp(-(y / 1.05) ** 6)
-        x += 0.14 * mouth * math.exp(-((z - 15.3) / 0.15) ** 2) + 0.12 * mouth * math.exp(-((z - 14.9) / 0.15) ** 2)
-        x -= 0.12 * mouth * math.exp(-((z - 15.1) / 0.06) ** 2)
-        x += 0.07 * math.exp(-((abs(y) - 1.25) / 0.4) ** 2) * math.exp(-((z - 16.3) / 0.5) ** 2)  # 顴骨
-        return hx + x
-
-    fr = []
-    M = 40
-    for k in range(25):
-        z = 13.5 + (19.15 - 13.5) * k / 24
-        (W,) = lerp_table(w_tab, z)
-        ring = [Vector((face_x(-W + 2 * W * i / (M - 1), z), -W + 2 * W * i / (M - 1), z)) for i in range(M)]
-        ring.append(Vector((hx + 0.4, W, z)))
-        ring.append(Vector((hx + 0.4, -W, z)))
-        fr.append(list(reversed(ring)))
-    loft(b, head_m, fr)
-    # 耳：位於頭巾垂片前、臉兩側
-    for sgn in (-1, 1):
-        b.rock(head_m, (0.7, 0.35, 1.2), (hx + 1.95, sgn * 2.2, 16.3), rough=0.08, subdiv=2, seed=40 + sgn, round_=0.6)
-    # 頭巾垂片（lappets）前緣：自太陽穴到肩膀的厚板
-    for sgn in (-1, 1):
-        lp = []
-        for z, W in ((11.2, 5.1), (13.0, 4.55), (15.0, 3.75), (17.0, 3.0), (18.8, 2.55)):
-            x0 = hx + 1.15 + (0.3 if z > 16 else 0.0)
-            lp.append([Vector((x0 - 1.6, sgn * (W - 1.5), z)), Vector((x0 + 0.35, sgn * (W - 1.5), z)),
-                       Vector((x0 + 0.35, sgn * W, z)), Vector((x0 - 1.6, sgn * (W + 0.05), z))])
-        loft(b, head_m, lp, smooth=False)
-
-    # 頭部整體略放大（以頭頂為基準，臉寬約 4.3 m）
-    b.bm.verts.ensure_lookup_table()
-    top = Vector((hx, 0, 20.3))
-    for v in b.bm.verts[head_start:]:
-        v.co = top + (v.co - top) * 1.08
-    # ---- 前爪（現代小石塊包覆，長約 15 m）與後腿
-    for s in (-1, 1):
-        ptab = [(10.0, 2.3, 3.2), (16.0, 2.25, 3.1), (28.0, 2.2, 2.9), (30.5, 2.0, 2.6), (31.6, 1.5, 2.0), (32.2, 0.6, 1.0)]
-        pr = []
-        for i in range(31):
-            x = 10.0 + 22.2 * i / 30
-            W, H = lerp_table(ptab, x)
-            pr.append(section_x(x, W, H, n=32, p=5.0, warp=lambda v, s=s: v + Vector((0, s * 4.6, 0))))
-        loft(b, clad, pr)
-        # 爪尖的趾縫
-        for t in (-0.75, 0.0, 0.75):
-            b.box_base(groove, (1.2, 0.12, 1.4), (31.4, s * 4.6 + t, 0.0))
-        # 後腿（盤坐於臀側）
-        hr2 = []
-        for i in range(15):
-            x = -44.5 + 20.0 * i / 14
-            W, H = lerp_table([(-44.5, 0.8, 2.0), (-41.0, 1.9, 5.0), (-34.0, 1.8, 4.2), (-28.0, 1.2, 2.2), (-24.5, 0.6, 1.2)], x)
-            hr2.append(section_x(x, W, H, n=28, p=3.0, warp=lambda v, s=s: strata(v + Vector((0, s * 6.4, 0)), 0.18)))
-        loft(b, body_m, hr2)
-        # 後爪
-        b.rock(clad, (6.0, 2.0, 1.6), (-27.0, s * 7.9, 0.75), rough=0.05, subdiv=2, seed=60 + s, round_=0.5)
-    # 尾巴：繞南側臀部
-    b.rock(body_m, (10.0, 0.9, 0.7), (-38.0, -7.6, 1.3), rot=(0, 0, 0.1), rough=0.1, subdiv=3, seed=21)
-    # 南側下方的修補扶壁石塊（參考照中可見）
-    for x, w, h in ((-31.0, 5.5, 2.6), (-16.0, 4.0, 2.2), (-3.0, 4.5, 3.0)):
-        b.box_base(clad, (w, 1.6, h), (x, -6.9, 0.0))
+    # ---- 頭部（頭巾、臉）
+    R = SDF.rot(math.pi / 2, 0.0)
+    H = HEAD_H
+    corners = np.array([[x, y, z] for x in (-0.88, 0.88) for y in (-0.6, 1.3) for z in (-0.75, 1.08)]) * H
+    Wc = corners @ R.T + np.asarray(HEAD_C)
+    S2, o2 = grid3(Wc.min(0), Wc.max(0), 0.07)
+    F2 = nemes_head_sdf(S2.local(HEAD_C, R, H)) * H
+    V2, Q2 = surface_nets(F2, o2, 0.07)
+    mesh_object("SphinxHead", V2, Q2, [m_head], None, box_uv(V2, Q2, 2.5), decimate=0.45)
 
     # 兩爪之間的夢之碑（紅花崗岩）與祭壇
-    b.box_base(granite, (0.7, 2.6, 3.6), (17.6, 0, 0))
-    b.box_base(clad, (3.0, 4.0, 0.9), (24.0, 0, 0))
+    b.box_base(granite, (0.8, 2.6, 3.6), (18.4, 0, 0))
+    b.box_base(clad, (3.0, 4.0, 0.9), (25.0, 0, 0))
+    # 南側下方的修補扶壁石塊（參考照中可見）
+    for x, w, h in ((-31.0, 5.5, 2.6), (-16.0, 4.0, 2.2), (-3.0, 4.5, 3.0)):
+        b.box_base(clad, (w, 1.8, h), (x, -7.2, 0.0))
 
     # ---- 圍場：岩床地面、三面岩壁與上方台地（只做適量周邊）
     b.box_base(floor_m, (150, 128, 1.0), (5, -2, -1.0))
@@ -741,16 +746,18 @@ def sphinx(path):
             k = (i + 0.5) / n
             cx, cy = x0 + (x1 - x0) * k, y0 + (y1 - y0) * k
             hh = h * (0.92 + 0.12 * b.rng.random())
-            b.rock(bedrock, (L / n * 1.3, 6.0, hh + 1.0), (cx, cy, hh / 2 - 0.5), rot=(0, 0, ang), rough=0.1, subdiv=3, seed=seed + i, round_=0.1)
+            b.rock(bedrock, (L / n * 1.3, 6.0, hh + 1.0), (cx, cy, hh / 2 - 0.5), rot=(0, 0, ang), rough=0.06, subdiv=3, seed=seed + i, round_=0.05)
 
     cliff(-62, -58, -62, 56, wall_h, 100)       # 西側
     cliff(-62, 52, 30, 52, wall_h - 0.5, 200)    # 北側
     cliff(-62, -58, -14, -58, wall_h - 1.0, 300)  # 南側（東段較開闊）
-    # 北側岩壁上的現代石砌護牆（參考照背景的長牆）
     b.box_base(wall_m, (92, 1.2, 2.4), (-16, 55.5, wall_h - 1.4))
-    # 上方台地（實心）
-    for sx, sy, w, d, h in ((-79, -2, 30, 124, wall_h - 0.8), (-16, 65, 102, 24, wall_h - 1.2), (-38, -66, 50, 12, wall_h - 1.6)):
+    for sx, sy, w, d, h in ((-79, -2, 30, 124, wall_h - 0.8), (-16, 72, 102, 38, wall_h - 1.2), (-38, -66, 50, 12, wall_h - 1.6)):
         b.box_base(floor_m, (w, d, h + 1.0), (sx, sy, -1.0))
+    # ---- 背景：卡夫拉金字塔（縮小置於圍場西北方作為剪影，頂端保留外殼石）
+    px, py, base, ph = 2.0, 76.0, 46.0, 30.0
+    b.frustum(pyr_m, (base, base), (base * 0.18, base * 0.18), ph * 0.82, (px, py, wall_h - 1.2))
+    b.frustum(casing, (base * 0.18, base * 0.18), (0.05, 0.05), ph * 0.18, (px, py, wall_h - 1.2 + ph * 0.82))
     # 地面散落石塊
     for i in range(26):
         x, y = b.rng.uniform(-55, 50), b.rng.choice([-1, 1]) * b.rng.uniform(14, 40)
