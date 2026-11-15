@@ -1,12 +1,8 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import { Link } from "react-router-dom";
-import { Landmark, Search, Volume2, X } from "lucide-react";
+import { Search, Volume2, X } from "lucide-react";
 import { gsap, prefersReducedMotion, useGSAP, useReveal } from "../../lib/motion";
 import Flag from "../ui/Flag";
 import { loadHistory, loadProfile, type CountryMeta, type CountryProfile, type HistoryEvent } from "../../data/world";
-import { buildings } from "../../data/buildings";
-import { figures, groups } from "../../data/figures";
-import { formatYear } from "../../lib/format";
 import { canSpeak, langCodeFor, speak } from "../../lib/speech";
 
 const tabs = [
@@ -14,7 +10,6 @@ const tabs = [
   { id: "religion", label: "宗教" },
   { id: "language", label: "語言" },
   { id: "food", label: "美食" },
-  { id: "more", label: "建築・人物" },
 ] as const;
 type TabId = (typeof tabs)[number]["id"];
 
@@ -78,7 +73,7 @@ export default function CountryPanel({ country, onClose }: { country: CountryMet
   return (
     <aside
       ref={panelRef}
-      className="glass absolute z-30 flex flex-col overflow-hidden max-lg:inset-x-2 max-lg:bottom-2 max-lg:h-[64%] max-lg:rounded-[28px] lg:top-4 lg:right-4 lg:bottom-4 lg:w-[440px] lg:rounded-[32px]"
+      className="absolute z-30 flex flex-col overflow-hidden border border-white/15 bg-[#06194a]/88 shadow-[0_30px_70px_-25px_rgba(0,10,40,0.8),inset_0_1px_0_rgba(255,255,255,0.18)] backdrop-blur-2xl max-lg:inset-x-2 max-lg:bottom-2 max-lg:h-[64%] max-lg:rounded-[28px] lg:top-4 lg:right-4 lg:bottom-4 lg:w-[440px] lg:rounded-[32px]"
       aria-label={`${country.zh}的歷史與文化`}
     >
       <header ref={headerRef} className="shrink-0 px-6 pt-6 pb-4">
@@ -124,7 +119,6 @@ export default function CountryPanel({ country, onClose }: { country: CountryMet
         {tab === "religion" && <RankingTab profile={profile} kind="religion" />}
         {tab === "language" && <RankingTab profile={profile} kind="language" />}
         {tab === "food" && <FoodTab profile={profile} />}
-        {tab === "more" && <MoreTab iso={country.iso} />}
       </div>
     </aside>
   );
@@ -145,6 +139,8 @@ function Empty({ text }: { text: string }) {
 }
 
 const ERA_ORDER = ["上古", "中世紀", "近世", "近代", "當代"];
+/** 每個時代一個辨識色，時間軸、總覽條與標題都用同一色 */
+const ERA_COLOR: Record<string, string> = { 上古: "#fbbf24", 中世紀: "#c084fc", 近世: "#34d399", 近代: "#fb7185", 當代: "#38bdf8" };
 
 function HistoryTab({ events }: { events: HistoryEvent[] | null }) {
   const [era, setEra] = useState<string | null>(null);
@@ -168,77 +164,153 @@ function HistoryTab({ events }: { events: HistoryEvent[] | null }) {
   if (!events.length) return <Empty text="這個國家的歷史資料整理中。" />;
   return (
     <div>
-      {/* 時代總覽：依事件數比例分段，點擊篩選 */}
-      <div data-reveal>
-        <div className="flex h-2 gap-[3px] overflow-hidden rounded-full">
-          {counts.map((c) => (
+      {/* 時代總覽：依事件數比例分段、各時代不同顏色，點擊篩選 */}
+      <div data-reveal className="flex gap-1">
+        {counts.map((c) => {
+          const on = era === null || era === c.era;
+          return (
             <button
               key={c.era}
               onClick={() => setEra(era === c.era ? null : c.era)}
-              style={{ flexGrow: c.n / total }}
-              className={`h-full rounded-full transition-colors ${era === null || era === c.era ? "bg-white/90" : "bg-white/25"}`}
-              aria-label={`${c.era}（${c.n} 則）`}
-            />
-          ))}
-        </div>
-        <div className="mt-2 flex gap-[3px]">
-          {counts.map((c) => (
-            <button
-              key={c.era}
-              onClick={() => setEra(era === c.era ? null : c.era)}
-              style={{ flexGrow: c.n / total, flexBasis: 0 }}
-              className={`min-w-0 truncate text-left text-[11px] transition-colors ${era === c.era ? "font-semibold text-white" : "text-white/55 hover:text-white"}`}
+              style={{ flexGrow: Math.max(c.n / total, 0.12), flexBasis: 0 }}
+              className={`min-w-0 text-left transition-opacity ${on ? "opacity-100" : "opacity-35 hover:opacity-70"}`}
+              aria-pressed={era === c.era}
             >
-              {c.era}
+              <span className="block h-2 rounded-full" style={{ background: ERA_COLOR[c.era] }} />
+              <span className="mt-1.5 block truncate text-[11.5px] font-semibold" style={{ color: ERA_COLOR[c.era] }}>
+                {c.era}
+              </span>
+              <span className="block text-[10.5px] text-white/55 tabular-nums">{c.n} 則</span>
             </button>
-          ))}
-        </div>
+          );
+        })}
       </div>
 
-      <div data-reveal className="glass-soft mt-4 flex h-9 items-center gap-2 rounded-full px-3.5">
-        <Search className="size-[15px] text-white/55" />
+      <div data-reveal className="mt-4 flex h-9 items-center gap-2 rounded-full border border-white/15 bg-white/8 px-3.5">
+        <Search className="size-[15px] text-white/60" />
         <input
           value={q}
           onChange={(e) => setQ(e.target.value)}
           placeholder={`搜尋 ${events.length} 則事件`}
-          className="min-w-0 flex-1 bg-transparent text-[13px] text-white outline-none placeholder:text-white/40"
+          className="min-w-0 flex-1 bg-transparent text-[13px] text-white outline-none placeholder:text-white/45"
         />
         {(q || era) && (
-          <button onClick={() => { setQ(""); setEra(null); }} className="text-[11px] text-white/60 hover:text-white">
+          <button onClick={() => { setQ(""); setEra(null); }} className="text-[11px] text-white/70 hover:text-white">
             清除
           </button>
         )}
       </div>
 
-      {groups.map((g) => (
-        <section key={g.name} className="mt-5">
-          <header className="sticky top-0 z-10 -mx-6 mb-1 flex items-baseline gap-2 bg-[linear-gradient(180deg,rgba(18,80,175,0.92),rgba(18,80,175,0.55)_75%,transparent)] px-6 pt-1 pb-3 backdrop-blur-sm">
-            <h3 className="text-[19px] font-semibold tracking-tight">{g.name}</h3>
-            <span className="text-[11.5px] text-white/55">
-              {g.items.length} 則・{g.items[0].year.replace(/年$/, "")} – {g.items[g.items.length - 1].year.replace(/年$/, "")}
-            </span>
-          </header>
-          <ol className="relative ml-[5px] border-l border-white/20">
-            {g.items.map((e, i) => {
-              const key = `${e.year}-${e.title}`;
-              const isOpen = open === key;
-              return (
-                <li key={key} data-reveal={i < 8 ? "" : undefined} className="relative pb-5 pl-5 last:pb-1">
-                  <span
-                    className={`absolute top-[5px] -left-[5px] size-[9px] rounded-full border-[1.5px] border-white transition-colors ${isOpen ? "bg-white" : "bg-[#1557c0]"}`}
-                  />
-                  <button className="block w-full text-left" onClick={() => setOpen(isOpen ? null : key)} aria-expanded={isOpen}>
-                    <span className="inline-block rounded-full bg-white/12 px-2 py-[1px] text-[11px] font-medium text-white/80 tabular-nums">{e.year}</span>
-                    <span className="mt-1.5 block text-[15px] leading-snug font-semibold">{e.title}</span>
-                    <span className={`mt-1 block text-[13px] leading-[1.7] text-white/72 ${isOpen ? "" : "line-clamp-2"}`}>{e.description}</span>
-                  </button>
-                </li>
-              );
-            })}
-          </ol>
-        </section>
-      ))}
+      {groups.map((g) => {
+        const color = ERA_COLOR[g.name];
+        return (
+          <section key={g.name} className="mt-5">
+            <header className="sticky top-0 z-10 -mx-6 mb-2 flex items-center gap-2.5 bg-[#06194a] px-6 py-2.5">
+              <span className="rounded-full px-2.5 py-0.5 text-[13px] font-bold text-[#06194a]" style={{ background: color }}>
+                {g.name}
+              </span>
+              <span className="text-[12px] text-white/70 tabular-nums">
+                {g.items[0].year.replace(/年$/, "")} – {g.items[g.items.length - 1].year.replace(/年$/, "")}・{g.items.length} 則
+              </span>
+            </header>
+            {/* 時間軸：左欄年份、中間軸線與節點、右欄事件 */}
+            <ol>
+              {g.items.map((e, i) => {
+                const key = `${e.year}-${e.title}`;
+                const isOpen = open === key;
+                const last = i === g.items.length - 1;
+                return (
+                  <li key={key} data-reveal={i < 8 ? "" : undefined} className="grid grid-cols-[74px_18px_1fr] gap-x-2">
+                    <div className="pt-[1px] text-right text-[12.5px] leading-tight font-bold tabular-nums" style={{ color }}>
+                      {e.year}
+                    </div>
+                    <div className="relative flex justify-center">
+                      {!last && <span className="absolute top-3 bottom-0 w-[2px] rounded-full" style={{ background: `${color}55` }} />}
+                      <span
+                        className="relative z-[1] mt-[3px] size-[11px] rounded-full border-2"
+                        style={{ borderColor: color, background: isOpen ? color : "#06194a" }}
+                      />
+                    </div>
+                    <button className="block pb-5 text-left" onClick={() => setOpen(isOpen ? null : key)} aria-expanded={isOpen}>
+                      <span className="block text-[15px] leading-snug font-semibold text-white">{e.title}</span>
+                      <span className={`mt-1 block text-[13px] leading-[1.7] text-white/75 ${isOpen ? "" : "line-clamp-2"}`}>{e.description}</span>
+                    </button>
+                  </li>
+                );
+              })}
+            </ol>
+          </section>
+        );
+      })}
       {!groups.length && <Empty text="找不到符合的事件" />}
+    </div>
+  );
+}
+
+/** 圓餅圖色票（已用色盲檢查工具驗證，深色面板上可區分），依排名固定順序，第 7 項起併入「其他」灰色 */
+const PIE_COLORS = ["#0284c7", "#d97706", "#ec4899", "#8b5cf6", "#059669", "#ea580c"];
+const OTHER_COLOR = "#64748b";
+
+function Donut({ items, title }: { items: { name: string; percent: number }[]; title: string }) {
+  const [hover, setHover] = useState<number | null>(null);
+  const top = items.slice(0, 6).map((it, i) => ({ ...it, color: PIE_COLORS[i] }));
+  const used = top.reduce((s, it) => s + it.percent, 0);
+  const rest = Math.max(0, 100 - used);
+  const slices = rest >= 0.5 ? [...top, { name: "其他／未統計", percent: rest, color: OTHER_COLOR }] : top;
+  const sum = slices.reduce((s, it) => s + it.percent, 0) || 1;
+  const R = 62, r = 40, C = 80;
+  let acc = 0;
+  const arc = (a0: number, a1: number) => {
+    const p = (a: number, rad: number) => [C + rad * Math.sin(a), C - rad * Math.cos(a)];
+    const large = a1 - a0 > Math.PI ? 1 : 0;
+    const [x0, y0] = p(a0, R), [x1, y1] = p(a1, R), [x2, y2] = p(a1, r), [x3, y3] = p(a0, r);
+    return `M${x0} ${y0}A${R} ${R} 0 ${large} 1 ${x1} ${y1}L${x2} ${y2}A${r} ${r} 0 ${large} 0 ${x3} ${y3}Z`;
+  };
+  const shown = hover !== null ? slices[hover] : slices[0];
+  return (
+    <div data-reveal className="mb-4 flex items-center gap-4 rounded-2xl border border-white/12 bg-white/6 p-4">
+      <svg viewBox="0 0 160 160" className="size-[150px] shrink-0" role="img" aria-label={`${title}比例圓餅圖`}>
+        {slices.map((sl, i) => {
+          const a0 = (acc / sum) * Math.PI * 2;
+          acc += sl.percent;
+          const a1 = (acc / sum) * Math.PI * 2;
+          const full = a1 - a0 >= Math.PI * 2 - 1e-3;
+          return full ? (
+            <circle key={sl.name} cx={C} cy={C} r={(R + r) / 2} fill="none" stroke={sl.color} strokeWidth={R - r} />
+          ) : (
+            <path
+              key={sl.name}
+              d={arc(a0, a1)}
+              fill={sl.color}
+              stroke="#06194a"
+              strokeWidth={2}
+              opacity={hover === null || hover === i ? 1 : 0.4}
+              onPointerEnter={() => setHover(i)}
+              onPointerLeave={() => setHover(null)}
+            >
+              <title>{`${sl.name} ${sl.percent}%`}</title>
+            </path>
+          );
+        })}
+        <text x={C} y={C - 2} textAnchor="middle" className="fill-white text-[22px] font-bold">{shown.percent}%</text>
+        <text x={C} y={C + 16} textAnchor="middle" className="fill-white/70 text-[10px]">
+          {shown.name.length > 7 ? shown.name.slice(0, 7) + "…" : shown.name}
+        </text>
+      </svg>
+      <ul className="min-w-0 flex-1 space-y-1.5">
+        {slices.map((sl, i) => (
+          <li
+            key={sl.name}
+            className="flex items-center gap-2 text-[12.5px]"
+            onPointerEnter={() => setHover(i)}
+            onPointerLeave={() => setHover(null)}
+          >
+            <span className="size-2.5 shrink-0 rounded-[3px]" style={{ background: sl.color }} />
+            <span className="min-w-0 flex-1 truncate text-white/85">{sl.name}</span>
+            <span className="font-semibold text-white tabular-nums">{sl.percent}%</span>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
@@ -258,6 +330,7 @@ function RankingTab({ profile, kind }: { profile: CountryProfile | null | undefi
           {profile.language.official}
         </p>
       )}
+      <Donut items={ranking} title={kind === "religion" ? "宗教" : "語言"} />
       <p data-reveal className="eyebrow mb-2">
         {kind === "religion" ? "信仰排名" : "使用人口排名"}
       </p>
@@ -268,12 +341,12 @@ function RankingTab({ profile, kind }: { profile: CountryProfile | null | undefi
           return (
             <li key={r.name} data-reveal className="glass-soft rounded-2xl px-4 py-3">
               <div className="flex items-baseline gap-3">
-                <span className="w-5 text-lg font-light text-white/50 tabular-nums">{i + 1}</span>
+                <span className="grid size-6 shrink-0 place-items-center rounded-full text-[12px] font-bold text-white tabular-nums" style={{ background: PIE_COLORS[i] ?? OTHER_COLOR }}>{i + 1}</span>
                 <span className="min-w-0 flex-1 text-[14.5px] font-medium">{r.name}</span>
                 <span className="text-[15px] font-semibold tabular-nums">{r.percent}%</span>
               </div>
               <div className="mt-2 ml-8 h-1 overflow-hidden rounded-full bg-white/12">
-                <div className="h-full rounded-full bg-white/85" style={{ width: `${(r.percent / max) * 100}%` }} />
+                <div className="h-full rounded-full" style={{ width: `${(r.percent / max) * 100}%`, background: PIE_COLORS[i] ?? OTHER_COLOR }} />
               </div>
               <p className="mt-2 ml-8 text-[12.5px] leading-relaxed text-white/70">{r.description}</p>
               {greet?.greeting && (
@@ -339,59 +412,3 @@ function FoodTab({ profile }: { profile: CountryProfile | null | undefined }) {
   );
 }
 
-function MoreTab({ iso }: { iso: string }) {
-  const bs = buildings.filter((b) => b.iso === iso);
-  const fs = figures.filter((f) => f.iso === iso).sort((a, b) => a.born - b.born);
-  return (
-    <div>
-      <p data-reveal className="eyebrow mb-2">
-        歷史建築 3D
-      </p>
-      {bs.length ? (
-        <ul className="space-y-2">
-          {bs.map((b) => (
-            <li key={b.id} data-reveal>
-              <Link to={`/buildings/${b.id}`} className="glass-soft flex items-center gap-3 rounded-2xl px-4 py-3 transition hover:bg-white/15">
-                <Landmark className="size-5 text-white/70" />
-                <span className="min-w-0 flex-1">
-                  <span className="block text-[14.5px] font-medium">{b.name}</span>
-                  <span className="block text-xs text-white/60">{b.era}</span>
-                </span>
-              </Link>
-            </li>
-          ))}
-        </ul>
-      ) : (
-        <p data-reveal className="text-[13px] text-white/55">
-          尚無此國家的建築模型。
-        </p>
-      )}
-      <p data-reveal className="eyebrow mt-6 mb-2">
-        歷史人物
-      </p>
-      {fs.length ? (
-        <ul className="space-y-2">
-          {fs.map((f) => (
-            <li key={f.id} data-reveal>
-              <Link to={`/figures?focus=${f.id}`} className="glass-soft flex items-center gap-3 rounded-2xl px-4 py-3 transition hover:bg-white/15">
-                <span className="grid size-9 shrink-0 place-items-center rounded-full text-sm font-semibold text-deep-900" style={{ background: groups.find((g) => g.id === f.group)?.color }}>
-                  {f.name[0]}
-                </span>
-                <span className="min-w-0 flex-1">
-                  <span className="block text-[14.5px] font-medium">{f.name}</span>
-                  <span className="block truncate text-xs text-white/60">
-                    {f.role}・{formatYear(f.born)}–{formatYear(f.died)}
-                  </span>
-                </span>
-              </Link>
-            </li>
-          ))}
-        </ul>
-      ) : (
-        <p data-reveal className="text-[13px] text-white/55">
-          人物關係圖中尚無此國家的人物。
-        </p>
-      )}
-    </div>
-  );
-}
