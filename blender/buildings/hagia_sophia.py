@@ -237,13 +237,13 @@ def hagia_sophia(path):
     XW, XE, YS = -36.0, 40.0, 35.5
     H_AISLE = 23.0
     b.box_base(plaster, (XE - XW, 2 * YS, H_AISLE), ((XW + XE) / 2, 0, 0))
-    b.box_base(trim, (XE - XW + 0.6, 2 * YS + 0.6, 0.6), ((XW + XE) / 2, 0, H_AISLE - 0.6))
+    b.box_base(lead, (XE - XW + 0.8, 2 * YS + 0.8, 0.45), ((XW + XE) / 2, 0, H_AISLE))
     # 側廊屋頂（鉛覆、緩坡）
     for s in (-1, 1):
         y0 = s * YS
         y1 = s * 22.0
         b.profile_wall(lead, [(y0, 0), (y1, 0), (y1, 3.0)] if s < 0 else [(y1, 0), (y0, 0), (y1, 3.0)], XE - XW,
-                       Matrix.Translation(((XW + XE) / 2, 0, H_AISLE)) @ Matrix.Rotation(-math.pi / 2, 4, "Z"))
+                       Matrix.Translation(((XW + XE) / 2, 0, H_AISLE + 0.45)) @ Matrix.Rotation(-math.pi / 2, 4, "Z"))
     # 側廊外牆兩層窗
     for s in (-1, 1):
         for z, n, w, h in ((3.5, 14, 2.0, 5.0), (12.5, 14, 2.2, 6.0)):

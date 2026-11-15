@@ -223,6 +223,48 @@ def gen_leaves(kind):
     return out
 
 
+def gen_canopy(name, color, seed=7):
+    """樹冠表面貼圖（無縫）：大量不規則葉叢印記，左上受光、右下落影；color 為平均色"""
+    out = os.path.join(GEN, f"asia_canopy_{name}")
+    if os.path.exists(os.path.join(out, "diff.jpg")):
+        return out
+    from PIL import Image, ImageDraw, ImageFilter
+
+    N = 1024
+    rng = np.random.default_rng(seed)
+    hgt = Image.new("L", (N, N), 0)
+    lum = Image.new("L", (N, N), 90)
+    dh, dl = ImageDraw.Draw(hgt), ImageDraw.Draw(lum)
+    for k in range(2600):
+        cx, cy = rng.uniform(0, N), rng.uniform(0, N)
+        r = rng.uniform(16, 42)
+        nlob = rng.integers(7, 12)
+        ph = rng.uniform(0, TAU)
+        def poly(scale, ox=0.0, oy=0.0):
+            return [(cx + ox + r * scale * (1 + 0.28 * math.sin(nlob * TAU * j / 40 + ph) + rng.uniform(-0.1, 0.1)) * math.cos(TAU * j / 40),
+                     cy + oy + r * scale * (1 + 0.28 * math.sin(nlob * TAU * j / 40 + ph) + rng.uniform(-0.1, 0.1)) * math.sin(TAU * j / 40)) for j in range(40)]
+        base = rng.uniform(0.75, 1.15)
+        h0 = int(40 + 200 * k / 2600)
+        for ox in (-N, 0, N):
+            for oy in (-N, 0, N):
+                if not (-60 < cx + ox < N + 60 and -60 < cy + oy < N + 60):
+                    continue
+                dl.polygon(poly(1.05, ox + r * 0.35, oy + r * 0.35), fill=int(35 * base))
+                for t in range(5):
+                    sc = 1.0 - t * 0.17
+                    dl.polygon(poly(sc, ox - r * 0.12 * t, oy - r * 0.12 * t), fill=int(min(255, (110 + 28 * t) * base)))
+                dh.polygon(poly(1.0, ox, oy), fill=h0)
+    lum = lum.filter(ImageFilter.GaussianBlur(1.2))
+    L = np.asarray(lum, dtype=float) / 160.0
+    L = L * (1 + _cloud(rng, N, 128, 0.25))
+    base = np.array(color, dtype=float)
+    hue = _cloud(rng, N, 96, 0.18)
+    diff = np.stack([base[0] * L * (1 + hue * 0.8), base[1] * L * (1 + hue * 0.3), base[2] * L * (1 - hue * 0.5)], -1)
+    H = np.asarray(hgt.filter(ImageFilter.GaussianBlur(2.0)), dtype=float) / 255.0 + np.asarray(lum, dtype=float) / 600.0
+    _save_maps(out, diff, _height_to_normal(H * 18, 1.0), size=512)
+    return out
+
+
 # ====================================================================== 共用：Builder 擴充
 class AsiaBuilder(Builder):
     """屋瓦材質依屋面下坡方向決定 UV（瓦溝順坡）；葉片卡片用 0–1 UV；小尺寸貼圖控制 GLB 大小"""
@@ -408,12 +450,12 @@ class AsiaBuilder(Builder):
     def crown(self, cx, cy, cz, rx, rz, mats, core, csize, density=1.0, cap=140):
         """樹冠團塊：深色核心＋分布在橢球表層、大致朝外的葉簇卡片"""
         rng = self.rng
-        self.blob(core, (cx, cy, cz), rx * 0.8, rx * 0.8, rz * 0.78, lump=0.35)
+        self.blob(core, (cx, cy, cz), rx * 0.92, rx * 0.92, rz * 0.9, lump=0.4, sub=2 if rx > 2.2 else 1)
         area = 4 * math.pi * ((2 * rx * rx + rz * rz) / 3)
-        n = int(min(cap, density * 2.2 * area / (csize * csize)))
+        n = int(min(cap, density * 1.2 * area / (csize * csize)))
         for _ in range(n):
             d = Vector((rng.gauss(0, 1), rng.gauss(0, 1), rng.gauss(0, 1) * 0.9 + 0.25)).normalized()
-            rr = rng.uniform(0.8, 1.04)
+            rr = rng.uniform(0.92, 1.08)
             p = (cx + d.x * rx * rr, cy + d.y * rx * rr, cz + d.z * rz * rr)
             nrm = (d + Vector((rng.uniform(-0.22, 0.22), rng.uniform(-0.22, 0.22), rng.uniform(0.0, 0.35)))).normalized()
             mi = mats[0] if (d.z > 0.05 or rng.random() < 0.3) else mats[-1]
@@ -630,8 +672,8 @@ def kinkakuji(path):
     lf_broad = b.alpha_mat("leaf_broad", gen_leaves("broad"))
     lf_light = b.alpha_mat("leaf_light", gen_leaves("light"))
     lf_maple = b.alpha_mat("leaf_maple", gen_leaves("maple"))
-    core_p = b.color("core_pine", "#2c3f22", rough=0.9)
-    core_b = b.color("core_broad", "#33481f", rough=0.9)
+    core_p = b.gtex("core_pine", gen_canopy("pine", (66, 92, 42), seed=3), tile=2.2, rough=0.9, normal=1.0)
+    core_b = b.gtex("core_broad", gen_canopy("broad", (104, 136, 50), seed=5), tile=3.0, rough=0.9, normal=1.0)
     bark = b.color("bark", "#5a4636", rough=0.9)
     bark_r = b.color("bark_pine", "#6b4a38", rough=0.9)
 
@@ -672,7 +714,7 @@ def kinkakuji(path):
     # ---------------- 建物尺寸（初層 5 間 × 4 間）
     HX, HY = 5.8, 4.4          # 初層・二層 牆線半寬（東西）、半深（南北）
     Z_F1, Z_W1 = 0.75, 3.55    # 初層 地板、天井
-    Z_F2, Z_W2 = 3.85, 6.15    # 二層 地板、牆頂
+    Z_F2, Z_W2 = 3.85, 6.05    # 二層 地板、牆頂
     H3 = 2.7                    # 三層半寬
     Z_F3, Z_W3 = 7.35, 9.05
 
@@ -797,12 +839,12 @@ def kinkakuji(path):
             for k in range(6):
                 b.box_base(gold_d, (0.05, y1 - y0, 0.04), (s * (HX + 0.03), (y0 + y1) / 2, Z_F2 + 0.45 + 1.5 * k / 5))
     # 斗栱帶（簡化為金色出挑方木）
-    b.box_base(gold_d, (2 * HX + 0.6, 2 * HY + 0.6, 0.25), (0, 0, Z_W2 - 0.05))
+    b.box_base(gold_d, (2 * HX + 0.5, 2 * HY + 0.5, 0.25), (0, 0, Z_W2 - 0.5))
 
     # ---------------- 二層屋頂（寄棟柿葺，上接三層縁）
     OV = 2.55
     b.roof_skirt(shingle, (HX + OV, HY + OV), (H3 + 0.75, H3 + 0.75), 5.75, Z_F3 - 0.12, U=0.55, P=0.5, K=(18, 14), rows=10,
-                 soffit=gold, wall=(HX + 0.3, HY + 0.3, Z_W2 + 0.2), thick=0.42, fascia=shingle_e, gamma=0.55,
+                 soffit=gold, wall=(HX + 0.3, HY + 0.3, Z_W2 - 0.25), thick=0.42, fascia=shingle_e, gamma=0.55,
                  hips=shingle_e, hip_w=0.22, hip_h=0.12, corner_len=3.2)
     # ---------------- 三層（究竟頂）
     b.box_base(wood, (2 * (H3 + 0.75), 2 * (H3 + 0.75), 0.18), (0, 0, Z_F3 - 0.18))
