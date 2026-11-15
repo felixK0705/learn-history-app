@@ -1,99 +1,238 @@
-"""himeji 姬路城（白鷺城）寫實模型（尺寸依實測資料，公尺）
+"""himeji 姬路城（白鷺城）寫實模型（尺寸依實測資料，公尺；+X 東、+Y 北）
 
-- 大天守：石垣高 14.85 m、建物高 31.5 m；外觀 5 重（內部 6 階＋地下 1 階），1 階約 26 × 21 m，逐層收分
-- 西小天守、乾小天守、東小天守位於大天守的西側、西北、北側，以 2 層的渡櫓連成「連立式天守」
-- 屋頂：自寫網格，多段弧線（反り）屋面、四角上翹、軒先厚度、白漆喰軒裏；瓦片紋理沿屋面坡向
-- 千鳥破風、唐破風、入母屋破風；白漆喰牆面上的格子窗
-- 石垣：扇之勾配（下部外張、上部近乎垂直的弧形曲線）
+- 大天守：石垣約 15 m、建物高 31.5 m；外觀 5 重（內部 6 階），1 階約 26 × 21 m，逐層收分
+- 屋頂全部自寫網格：屋面為多段弧線（下凹的「反り」：簷口平緩、往上漸陡）、四隅軒先上翹並外張、
+  軒先有瓦當線＋白漆喰茅負的厚度、白漆喰軒裏斜回牆面；瓦筋（丸瓦）方向一律順著屋面下坡
+- 千鳥破風（三角形山牆、破風板、懸魚）、唐破風（中央弓起的曲線山牆）、入母屋破風；大棟兩端有鯱
+- 窗為黑底白格子窗；2 階南面中央有出格子窗
+- 西小天守、乾小天守、東小天守以 2 層渡櫓連成連立式天守；前景為扇之勾配石垣上的白壁瓦頂櫓群
+- 樹木：枝幹＋大量帶透明葉片貼圖的葉簇卡片（alpha mask），內含深色樹冠核心
 
-座標先以地理方位建模（+Y 北、+X 東），最後整體旋轉 180°，讓南立面朝向預覽相機。
+預覽相機（參考照：自西南南方略仰視）：見 CAMERA。
 """
 
 import math
 import os
 
 import bmesh
+import bpy
 import numpy as np
 from mathutils import Matrix, Vector, noise
 
 from lib import TAU, TEX, Builder
 
-GEN_KAWARA = "_gen/kawara_v2"
+# build.py 的 CAMS 格式：(目標點, 方位角, 仰角, 距離, 焦距)
+CAMERA = ((5.8, -7.4, 40.3), -22.9, -14.0, 160, 50)
+
+GEN = os.path.join(TEX, "_gen")
 
 
-# ---------------------------------------------------------------- 程式產生的瓦片貼圖
+# ====================================================================== 程式產生的貼圖
 def _gen_kawara():
-    """本瓦葺：丸瓦（凸）＋平瓦（凹）交替，丸瓦兩側有白漆喰目地。貼圖 2.4 m 一循環、每列 0.3 m"""
-    out = os.path.join(TEX, GEN_KAWARA)
+    """本瓦葺：丸瓦（凸）＋平瓦（凹）交替，丸瓦兩側有白漆喰；貼圖 2.4 m 一循環（丸瓦間距 0.3 m）"""
+    out = os.path.join(GEN, "himeji_kawara3")
     if os.path.exists(os.path.join(out, "diff.jpg")):
-        return GEN_KAWARA
+        return out
     from PIL import Image
 
     N, P = 1024, 128
-    rng = np.random.default_rng(7)
+    rng = np.random.default_rng(11)
     yy, xx = np.mgrid[0:N, 0:N].astype(float)
-    dxr = ((xx + P / 2) % P) - P / 2  # 距最近丸瓦中心
+    dxr = ((xx + P / 2) % P) - P / 2
     col = np.floor((xx + P / 2) / P).astype(int) % (N // P)
-    cy = yy % P
-    course = np.floor(yy / P).astype(int)
-    rr, mw = 24.0, 5.0
+    RW = 120  # 每列瓦片 0.28 m
+    cy = yy % RW
+    course = np.floor(yy / RW).astype(int)
+    rr, mw = 25.0, 4.0
     a = np.abs(dxr)
-    h = 0.22 * (a / (P / 2)) ** 0.8 * 0 + 0.25 * (1 - a / (P / 2))  # 平瓦：靠近丸瓦處較高
-    h = h + 0.14 * (cy / P)  # 每列瓦片下緣微微翹起
+    h = 0.28 * (1 - a / (P / 2)) + 0.12 * (cy / RW)
     mortar = (a >= rr) & (a < rr + mw)
     rnd = np.clip(1 - (dxr / rr) ** 2, 0, 1)
     round_ = a < rr
-    h = np.where(round_, 0.42 + 0.58 * np.sqrt(rnd), h)
-    h = np.where(mortar, 0.36, h)
-    joint = (cy < 3) & ~mortar
-    h = np.where(joint, h - 0.1, h)
-    tone = rng.uniform(0.9, 1.1, size=(N // P + 1, N // P + 1))
+    h = np.where(round_, 0.45 + 0.55 * np.sqrt(rnd) + 0.1 * (cy / RW), h)
+    h = np.where(mortar, 0.38, h)
+    joint = cy < 4
+    h = np.where(joint, h - 0.12, h)
+    tone = rng.uniform(0.9, 1.08, size=(N // RW + 2, N // P + 1))
     t = tone[course % tone.shape[0], col]
-    fine = rng.normal(0, 4, size=(N, N))
-    base = np.stack([96 * t, 100 * t, 106 * t], -1) + fine[..., None]
-    base = np.where(round_[..., None], base * 0.93, base)
-    base = np.where(mortar[..., None], np.array([226, 225, 219]) + fine[..., None] * 0.5, base)
-    base = np.where(joint[..., None], base * 0.6, base)
+    fine = rng.normal(0, 3.5, size=(N, N))
+    base = np.stack([104 * t, 108 * t, 114 * t], -1) + fine[..., None]
+    base = np.where(round_[..., None], base * (0.9 + 0.16 * np.sqrt(rnd))[..., None], base)
+    base = np.where(mortar[..., None], np.array([214, 213, 207]) + fine[..., None] * 0.5, base)
+    base = np.where((joint & ~mortar)[..., None], base * 0.62, base)
     gy, gx = np.gradient(h)
-    s = 9.0
+    s = 10.0
     nx, ny, nz = -gx * s, gy * s, np.ones_like(h)
     ln = np.sqrt(nx * nx + ny * ny + nz * nz)
     nor = np.stack([(nx / ln * 0.5 + 0.5) * 255, (ny / ln * 0.5 + 0.5) * 255, (nz / ln * 0.5 + 0.5) * 255], -1)
-    ao = 255 * (0.62 + 0.38 * np.clip(h / 0.9, 0, 1))
-    rough = np.where(mortar, 0.85, 0.5) * 255
+    ao = 255 * (0.6 + 0.4 * np.clip(h / 0.9, 0, 1))
+    rough = np.where(mortar, 0.85, 0.42) * 255
     arm = np.stack([ao, rough, np.zeros_like(h)], -1)
     os.makedirs(out, exist_ok=True)
     for fn, arr in (("diff", base), ("nor", nor), ("arm", arm)):
         Image.fromarray(np.clip(arr, 0, 255).astype(np.uint8)).save(os.path.join(out, fn + ".jpg"), quality=88)
-    return GEN_KAWARA
+    return out
 
 
+def _gen_window():
+    """格子窗：黑底、白色直格子（每 0.8 m 貼圖 4 根）"""
+    out = os.path.join(GEN, "himeji_window.jpg")
+    if os.path.exists(out):
+        return out
+    from PIL import Image
+
+    N = 256
+    xx = np.arange(N)[None, :].repeat(N, 0)
+    yy = np.arange(N)[:, None].repeat(N, 1)
+    bar = (xx % 64) < 13
+    img = np.zeros((N, N, 3)) + np.array([24, 23, 22])
+    shade = 0.82 + 0.18 * ((xx % 64) / 13.0)
+    img = np.where(bar[..., None], np.array([232, 230, 224]) * np.clip(shade, 0, 1)[..., None], img)
+    img += np.random.default_rng(3).normal(0, 3, (N, N))[..., None] * (yy >= 0)[..., None]
+    os.makedirs(GEN, exist_ok=True)
+    Image.fromarray(np.clip(img, 0, 255).astype(np.uint8)).save(out, quality=90)
+    return out
+
+
+def _gen_leaves(kind):
+    """葉簇卡片貼圖（RGBA PNG）：許多小葉片疊成的一叢枝葉，邊緣不規則、透明"""
+    out = os.path.join(GEN, f"himeji_leaf_{kind}.png")
+    if os.path.exists(out):
+        return out
+    from PIL import Image, ImageDraw
+
+    S = 1024
+    rng = np.random.default_rng({"broad": 5, "light": 9, "pine": 13, "shrub": 17}[kind])
+    im = Image.new("RGBA", (S, S), (0, 0, 0, 0))
+    dr = ImageDraw.Draw(im)
+    if kind == "pine":
+        pal = [(36, 58, 30), (46, 72, 36), (58, 86, 42), (30, 48, 26), (70, 96, 50)]
+        # 枝條
+        for _ in range(7):
+            a = rng.uniform(0, TAU)
+            r = rng.uniform(0.25, 0.42) * S
+            dr.line([(S / 2, S / 2), (S / 2 + math.cos(a) * r, S / 2 + math.sin(a) * r)], fill=(70, 55, 40, 255), width=7)
+        for _ in range(1400):
+            r = S * 0.4 * math.sqrt(rng.uniform(0, 1))
+            a = rng.uniform(0, TAU)
+            cx, cy = S / 2 + r * math.cos(a), S / 2 + r * math.sin(a) * 0.8
+            c = pal[rng.integers(len(pal))]
+            k = rng.uniform(0.8, 1.15)
+            col = tuple(int(min(255, v * k)) for v in c) + (255,)
+            for _ in range(5):
+                b = rng.uniform(0, TAU)
+                L = rng.uniform(18, 34)
+                dr.line([(cx, cy), (cx + math.cos(b) * L, cy + math.sin(b) * L)], fill=col, width=3)
+    else:
+        pal = {"broad": [(52, 86, 30), (66, 102, 36), (82, 118, 42), (44, 72, 26), (98, 130, 50)],
+               "light": [(88, 128, 44), (106, 146, 52), (124, 160, 62), (76, 112, 38), (140, 170, 70)],
+               "shrub": [(70, 108, 36), (86, 126, 44), (104, 140, 52), (58, 92, 30), (120, 152, 60)]}[kind]
+        n = 2600 if kind != "shrub" else 3400
+        # 細枝
+        for _ in range(9):
+            a = rng.uniform(0, TAU)
+            r = rng.uniform(0.2, 0.4) * S
+            dr.line([(S / 2, S / 2), (S / 2 + math.cos(a) * r, S / 2 + math.sin(a) * r)], fill=(80, 64, 46, 255), width=5)
+        order = np.argsort(rng.uniform(0, 1, n))
+        for i in range(n):
+            r = S * 0.44 * math.sqrt(rng.uniform(0, 1)) * (1 + 0.15 * math.sin(i))
+            a = rng.uniform(0, TAU)
+            cx, cy = S / 2 + r * math.cos(a), S / 2 + r * math.sin(a)
+            # 上方（v 小）葉片較亮：模擬受光
+            lit = 1.0 + 0.18 * (S / 2 - cy) / (S / 2) + rng.uniform(-0.12, 0.12)
+            c = pal[(i * 7 + int(order[i])) % len(pal)]
+            col = tuple(int(min(255, max(0, v * lit))) for v in c) + (255,)
+            L = rng.uniform(22, 38) if kind != "shrub" else rng.uniform(14, 24)
+            W = L * rng.uniform(0.38, 0.55)
+            b = rng.uniform(0, TAU)
+            ca, sa = math.cos(b), math.sin(b)
+            pts = []
+            for k in range(10):
+                t = k / 9 * math.pi
+                lx = -L / 2 + L * k / 9
+                ly = W / 2 * math.sin(t)
+                pts.append((cx + lx * ca - ly * sa, cy + lx * sa + ly * ca))
+            for k in range(9, -1, -1):
+                t = k / 9 * math.pi
+                lx = -L / 2 + L * k / 9
+                ly = -W / 2 * math.sin(t)
+                pts.append((cx + lx * ca - ly * sa, cy + lx * sa + ly * ca))
+            dr.polygon(pts, fill=col)
+    im = im.resize((512, 512), Image.LANCZOS)
+    # 半透明邊緣→二值（alpha mask 0.5 門檻），顏色往外擴避免黑邊
+    arr = np.array(im).astype(np.float32)
+    a = arr[..., 3:4] / 255.0
+    rgb = np.where(a > 0.05, arr[..., :3] / np.maximum(a, 0.05), 0)
+    mean = rgb[a[..., 0] > 0.5].mean(0)
+    rgb = np.where(a > 0.05, rgb, mean)
+    alpha = np.where(a[..., 0] > 0.45, 255, 0)
+    os.makedirs(GEN, exist_ok=True)
+    Image.fromarray(np.dstack([np.clip(rgb, 0, 255), alpha]).astype(np.uint8), "RGBA").save(out)
+    return out
+
+
+# ====================================================================== Builder：屋瓦依屋面坡向決定 UV、葉片卡片用 0–1 UV
 class _HB(Builder):
-    """屋頂瓦材質依屋面坡向決定 UV（瓦筋一律沿著下坡方向），其他面用方塊投影"""
-
     def __init__(self, *a, **k):
         super().__init__(*a, **k)
         self.oriented = set()
+        self.cards = set()
+        self.rot_layer = self.bm.faces.layers.int.new("roofrot")
+        self.card_uv = {}
+
+    def alpha_mat(self, name, png, rough=0.75):
+        m = bpy.data.materials.new(f"{self.name}_{name}")
+        m.use_nodes = True
+        nt = m.node_tree
+        bsdf = nt.nodes["Principled BSDF"]
+        img = nt.nodes.new("ShaderNodeTexImage")
+        img.image = bpy.data.images.load(png, check_existing=True)
+        nt.links.new(img.outputs["Color"], bsdf.inputs["Base Color"])
+        r = nt.nodes.new("ShaderNodeMath")
+        r.operation = "ROUND"
+        nt.links.new(img.outputs["Alpha"], r.inputs[0])
+        nt.links.new(r.outputs[0], bsdf.inputs["Alpha"])
+        bsdf.inputs["Roughness"].default_value = rough
+        m.surface_render_method = "DITHERED"
+        idx = self._register(name, m, 1.0)
+        self.cards.add(idx)
+        return idx
+
+    def img_mat(self, name, path, tile, rough=0.8):
+        m = bpy.data.materials.new(f"{self.name}_{name}")
+        m.use_nodes = True
+        nt = m.node_tree
+        bsdf = nt.nodes["Principled BSDF"]
+        img = nt.nodes.new("ShaderNodeTexImage")
+        img.image = bpy.data.images.load(path, check_existing=True)
+        nt.links.new(img.outputs["Color"], bsdf.inputs["Base Color"])
+        bsdf.inputs["Roughness"].default_value = rough
+        return self._register(name, m, tile)
 
     def _uv(self):
         uv = self.bm.loops.layers.uv.verify()
+        rl = self.rot_layer
         for f in self.bm.faces:
             mi = f.material_index
             tile = self.tiles[mi] if mi < len(self.tiles) else 1.0
+            if mi in self.cards:
+                for l, c in zip(f.loops, self.card_uv.get(len(f.verts), ((0, 0), (1, 0), (1, 1), (0, 1)))):
+                    l[uv].uv = c
+                continue
             n = f.normal.copy()
             if n.z < 0:
                 n = -n
-            if mi in self.oriented and n.z > 0.2 and max(abs(n.x), abs(n.y)) > 0.06:
-                if abs(n.x) >= abs(n.y):
-                    sg = 1 if n.x > 0 else -1
-                    for l in f.loops:
-                        c = l.vert.co
-                        l[uv].uv = (-sg * c.y / tile, sg * c.x / tile)
-                else:
-                    sg = 1 if n.y > 0 else -1
-                    for l in f.loops:
-                        c = l.vert.co
-                        l[uv].uv = (sg * c.x / tile, sg * c.y / tile)
+            if mi in self.oriented and n.z > 0.15 and math.hypot(n.x, n.y) > 0.04:
+                # 下坡方向（平面）取最接近的建物主軸方向，瓦筋沿此方向
+                base = math.radians(f[rl])
+                ang = math.atan2(n.y, n.x)
+                k = round((ang - base) / (math.pi / 2))
+                a = base + k * math.pi / 2
+                d = Vector((math.cos(a), math.sin(a), 0))
+                t = Vector((-d.y, d.x, 0))
+                for l in f.loops:
+                    c = l.vert.co
+                    l[uv].uv = (c.dot(t) / tile, -c.dot(d) / tile)
                 continue
             ax = max(range(3), key=lambda i: abs(n[i]))
             for l in f.loops:
@@ -108,29 +247,37 @@ class _HB(Builder):
 
 
 def _g(s):
-    """屋面斷面（反り）：簷口較平、往上漸陡"""
-    return s * (0.4 + 0.6 * s)
+    """屋面斷面（反り）：簷口平緩、往上漸陡"""
+    return 0.38 * s + 0.62 * s * s
 
 
 # ====================================================================== 姬路城
 def himeji(path):
     b = _HB("Himeji", seed=23)
     bm = b.bm
-    grass = b.tex("grass", "grass_ground", tile=5.0, tint="#5f8a3a", rough=0.95, normal=0)
-    soil = b.color("soil", "#5d4a35", rough=0.95)
-    gravel = b.tex("gravel", "gravel_floor", tile=3.0, tint="#cbbfa6", rough=0.95, normal=0)
-    stone = b.tex("ishigaki", "japanese_stone_wall", tile=4.2, tint="#a49c8c", gain=1.05, normal=1.2)
-    plaster = b.tex("plaster", "plastered_wall_04", tile=4.0, tint="#f6f5f1", gain=1.02, rough=0.85, normal=0)
+    rl = b.rot_layer
+    # ---------------------------------------------------------------- 材質
+    grass = b.tex("grass", "grass_ground", tile=4.0, tint="#5d7f37", rough=0.95, normal=0.6)
+    soil = b.tex("soil", "rock_ground", tile=4.0, tint="#6f6150", rough=0.95, normal=0.5)
+    gravel = b.tex("gravel", "gravel_floor", tile=3.0, tint="#c9c0ad", rough=0.95, normal=0.4)
+    stone = b.tex("ishigaki", "japanese_stone_wall", tile=5.0, tint="#a39a8a", gain=1.0, normal=1.2)
+    plaster = b.tex("plaster", "plastered_wall_04", tile=5.0, tint="#f3f1ea", gain=1.03, rough=0.88, normal=0.25)
+    soffit = b.color("soffit", "#ecebe5", rough=0.9)
     roof = b.tex("roof", _gen_kawara(), tile=2.4, normal=1.0)
     b.oriented.add(roof)
-    noki = b.color("noki", "#55585d", rough=0.6)  # 軒瓦（簷口瓦當）
-    ridge = b.color("ridge", "#6a6d72", rough=0.55)
-    win = b.color("window", "#24221f", rough=0.9)
-    shachi_m = b.color("shachi", "#3e4145", rough=0.45, metal=0.2)
-    trunk_b = b.color("trunk", "#5b4b3b", rough=0.9)
-    trunk_p = b.color("pine_trunk", "#6a5241", rough=0.9)
-    leaf = [b.color("leaf_l", "#6f9b45", rough=0.8), b.color("leaf_m", "#557f34", rough=0.82), b.color("leaf_d", "#3d6427", rough=0.85)]
-    pine = [b.color("pine_l", "#4d6f3b", rough=0.85), b.color("pine_d", "#304e2b", rough=0.88)]
+    noki = b.color("noki", "#4a4d52", rough=0.5)  # 軒瓦（瓦當）與破風邊瓦
+    ridge = b.color("ridge", "#5c6066", rough=0.45)
+    win = b.img_mat("window", _gen_window(), 0.8, rough=0.6)
+    dark = b.color("dark", "#1e1d1b", rough=0.9)
+    shachi_m = b.color("shachi", "#45484c", rough=0.4, metal=0.3)
+    bark = b.color("bark", "#4e4236", rough=0.95)
+    pbark = b.color("pine_bark", "#5b4636", rough=0.95)
+    core_b = b.color("crown_core", "#2a4019", rough=0.95)
+    core_p = b.color("pine_core", "#1f3218", rough=0.95)
+    lf_broad = b.alpha_mat("leaf_broad", _gen_leaves("broad"))
+    lf_light = b.alpha_mat("leaf_light", _gen_leaves("light"))
+    lf_pine = b.alpha_mat("leaf_pine", _gen_leaves("pine"), rough=0.8)
+    lf_shrub = b.alpha_mat("leaf_shrub", _gen_leaves("shrub"))
 
     def V(p):
         return bm.verts.new(p)
@@ -148,19 +295,21 @@ def himeji(path):
                 j = (i + 1) % n
                 face([a[i], a[j], c[j], c[i]], mi, smooth)
 
-    def capture(fn):
+    def place(fn, x, y, z, rot=0.0):
+        """在局部座標建模後移到 (x,y,z) 並繞 Z 旋轉；記錄屋瓦的建物方向"""
         bm.verts.ensure_lookup_table()
         start = len(bm.verts)
-        fn()
+        out = fn()
         bm.verts.ensure_lookup_table()
-        return list(bm.verts[start:])
-
-    def place(fn, x, y, z, rot=0.0):
-        vs = capture(fn)
+        vs = list(bm.verts[start:])
         M = Matrix.Translation((x, y, z)) @ Matrix.Rotation(rot, 4, "Z")
         bmesh.ops.transform(bm, matrix=M, verts=vs)
+        deg = int(round(math.degrees(rot))) % 360
+        for f in {f for v in vs for f in v.link_faces}:
+            f[rl] = deg
+        return out
 
-    def sweep(path, w, h, mi, side=None, below=False):
+    def sweep(path, w, h, mi, side=None, below=False, caps=True):
         """沿折線掃出矩形斷面（屋脊、破風板）"""
         rings = []
         n = len(path)
@@ -178,10 +327,11 @@ def himeji(path):
             z0, z1 = (-h, 0.0) if below else (0.0, h)
             rings.append([V(p - s * w / 2 + u * z0), V(p + s * w / 2 + u * z0), V(p + s * w / 2 + u * z1), V(p - s * w / 2 + u * z1)])
         strip(rings, mi)
-        face(list(reversed(rings[0])), mi)
-        face(rings[-1], mi)
+        if caps:
+            face(list(reversed(rings[0])), mi)
+            face(rings[-1], mi)
 
-    # ------------------------------------------------------------ 屋頂：腰屋根（環狀弧形屋面）
+    # ---------------------------------------------------------------- 屋頂：環狀弧形屋面（腰屋根）
     def ring_pts(hx, hy, K):
         corners = [(-hx, -hy), (hx, -hy), (hx, hy), (-hx, hy)]
         nrm = [(0, -1), (1, 0), (0, 1), (-1, 0)]
@@ -193,157 +343,181 @@ def himeji(path):
                 t = 0.5 - 0.5 * math.cos(math.pi * j / K)
                 dc = min(t, 1 - t) * L
                 if j == 0:
-                    o = Vector((nrm[e][0] + nrm[e - 1][0], nrm[e][1] + nrm[e - 1][1], 0)).normalized()
+                    o = Vector((nrm[e][0] + nrm[e - 1][0], nrm[e][1] + nrm[e - 1][1], 0))
                 else:
                     o = Vector((nrm[e][0], nrm[e][1], 0))
                 pts.append((x0 + (x1 - x0) * t, y0 + (y1 - y0) * t, dc, o))
         return pts
 
-    def skirt(hx0, hy0, hx1, hy1, rise, U, wall_hx, wall_hy, thick=0.5, rows=7, K=12, s_end=1.0, lift_end=1.0):
-        """局部座標，簷口高 z=0。由簷口(hx0,hy0)以弧面升到內側(hx1,hy1)，四角上翹 U"""
-        Lc = min(7.5, 0.36 * min(2 * hx0, 2 * hy0) + 1.0)
-        P = U * 0.55
+    def skirt(wx, wy, ix, iy, ov, rise, U, rows=8, K=14, s_end=1.0, thick=0.55, hips=True, onigawara=True):
+        """局部座標：z=0 為下層牆頂。簷口（牆外 ov）由 z=-0.3 以下凹弧面升到內框 (ix,iy)。
+        四隅上翹 U、外張；含軒先厚度、白漆喰軒裏、隅棟與鬼瓦。回傳各列環"""
+        ex, ey = wx + ov, wy + ov
+        Lc = min(7.0, 0.42 * min(2 * ex, 2 * ey))
+        F = U * 0.7
+        ze = -0.3
         rings = []
         for i in range(rows + 1):
             s = s_end * i / rows
-            hx = hx0 + (hx1 - hx0) * s
-            hy = hy0 + (hy1 - hy0) * s
-            z = rise * _g(s)
-            fall = max(0.0, 1 - s / lift_end) ** 2
+            hx = ex + (ix - ex) * s
+            hy = ey + (iy - ey) * s
+            z = ze + rise * _g(s)
+            fall = max(0.0, 1 - s / max(s_end, 1e-6) * 1.15) ** 1.6
             ring = []
             for x, y, dc, o in ring_pts(hx, hy, K):
-                w = max(0.0, 1 - dc / Lc) ** 2.2 * fall
-                ring.append(V((x + o.x * P * w, y + o.y * P * w, z + U * w)))
+                w = max(0.0, 1 - dc / Lc) ** 2.0 * fall
+                ring.append(V((x + o.x * F * w, y + o.y * F * w, z + U * w)))
             rings.append(ring)
         strip(rings, roof)
-        # 軒先厚度
-        low = [V((v.co.x, v.co.y, v.co.z - thick)) for v in rings[0]]
-        strip([rings[0], low], noki)
-        # 白漆喰軒裏：由軒先下緣斜回牆面
-        inner = [V((x, y, 0.15 - thick * 0.2)) for x, y, dc, o in ring_pts(wall_hx, wall_hy, K)]
-        strip([low, inner], plaster)
-        # 隅棟（四條斜脊）＋鬼瓦
-        for e in range(4):
-            path = [(r[e * K].co.x, r[e * K].co.y, r[e * K].co.z + 0.05) for r in rings]
-            sweep(path, 0.42, 0.32, ridge)
-            p0 = rings[0][e * K].co
-            b.box(ridge, (0.55, 0.55, 0.75), (p0.x, p0.y, p0.z + 0.3), rot=(0, 0, math.pi / 4))
+        # 軒先：瓦當線（深灰）＋白漆喰茅負
+        tl = 0.2
+        low1 = [V((v.co.x, v.co.y, v.co.z - tl)) for v in rings[0]]
+        strip([rings[0], low1], noki)
+        low2 = []
+        for v, (x, y, dc, o) in zip(rings[0], ring_pts(ex, ey, K)):
+            low2.append(V((v.co.x - o.x * 0.06, v.co.y - o.y * 0.06, v.co.z - thick)))
+        strip([low1, low2], plaster)
+        # 軒裏：由軒先下緣斜回牆面（白漆喰）
+        inner = [V((x, y, 0.05)) for x, y, dc, o in ring_pts(wx, wy, K)]
+        strip([low2, inner], soffit)
+        if hips:
+            for e in range(4):
+                path = [(r[e * K].co.x, r[e * K].co.y, r[e * K].co.z + 0.02) for r in rings]
+                sweep(path, 0.55, 0.16, plaster, caps=False)
+                sweep([(x, y, z + 0.1) for x, y, z in path], 0.36, 0.34, ridge)
+                if onigawara:
+                    p0 = rings[0][e * K].co
+                    b.box(ridge, (0.5, 0.5, 0.75), (p0.x, p0.y, p0.z + 0.42), rot=(0, 0, math.atan2(p0.y, p0.x)))
         return rings
 
-    # ------------------------------------------------------------ 屋頂：入母屋（最上層與渡櫓）
-    def irimoya(hx0, hy0, rise, U, wall_hx, wall_hy, sg=0.5, thick=0.5, shachi=0.0, rows_h=5, rows_u=5):
-        """局部座標、屋脊沿 X；簷口高 z=0。下段四坡（寄棟），上段兩坡＋左右垂直的妻壁（入母屋破風）"""
-        skirt(hx0, hy0, hx0 - hy0 * sg, hy0 * (1 - sg), rise * _g(sg), U, wall_hx, wall_hy, thick=thick, rows=rows_h, K=12,
-              lift_end=1.0)
-        # 修正：skirt 以線性內縮產生 s∈[0,1]，此處高度曲線需與上段相接 → 上段由 _g 的 sg 起算
-        xg = hx0 - hy0 * sg
-        e = 0.7
-        xs = [-(xg + e)] + [-(xg) + 2 * xg * k / 6 for k in range(7)] + [xg + e]
-        z_at = lambda s: rise * _g(s)
-        # skirt 內的高度：rise*_g(sg)*_g(s')，與上段不同；改以上段 z 起點對齊
-        zb = rise * _g(sg) * _g(1.0)
-        tops = {}
+    def gable_wall(prof, x, depth, bottom, mi=None):
+        """垂直三角山牆（YZ 平面多邊形），prof=[(y,z)...] 由左到右的上緣"""
+        mi = plaster if mi is None else mi
+        poly = [(prof[0][0], bottom)] + list(prof) + [(prof[-1][0], bottom)]
+        fr = [V((x, y, z)) for y, z in poly]
+        bk = [V((x - depth, y, z)) for y, z in poly]
+        face(fr, mi)
+        face(list(reversed(bk)), mi)
+        n = len(poly)
+        for i in range(n):
+            j = (i + 1) % n
+            face([fr[i], bk[i], bk[j], fr[j]], mi)
+
+    def irimoya(wx, wy, ov, rise, U, sg=0.5, shachi=0.0, rows_h=6, rows_u=6, K=14, thick=0.55):
+        """入母屋：局部座標、屋脊沿 X；下段四坡＋上段兩坡、左右垂直妻壁（入母屋破風）"""
+        ex, ey = wx + ov, wy + ov
+        ridge_hx = max(0.6, ex - ey)
+        skirt(wx, wy, ridge_hx, 0.0, ov, rise, U, rows=rows_h, K=K, s_end=sg, thick=thick)
+        ze = -0.3
+        xg = ex + (ridge_hx - ex) * sg  # 妻壁位置
+        e = 0.9  # 上段屋面伸出妻壁
+        xs = [-(xg + e)] + [-xg + 2 * xg * k / 8 for k in range(9)] + [xg + e]
+        sides = {}
         for side in (-1, 1):
             rows = []
             for i in range(rows_u + 1):
                 s = sg + (1 - sg) * i / rows_u
-                yv = side * hy0 * (1 - s)
-                z = zb + (z_at(s) - z_at(sg))
+                yv = side * ey * (1 - s)
+                z = ze + rise * _g(s)
                 rows.append([V((x, yv, z)) for x in xs])
             strip(rows if side < 0 else list(reversed(rows)), roof, closed=False)
-            bot = [[V((v.co.x, v.co.y, v.co.z - 0.28)) for v in r] for r in rows]
-            strip(list(reversed(bot)) if side < 0 else bot, plaster, closed=False)
-            for r, rb in ((rows[0], bot[0]),):
-                strip([r, rb], noki, closed=False)
+            # 上段屋面下側（妻壁外伸出部分的白色軒裏）
+            bot = [[V((v.co.x, v.co.y, v.co.z - 0.3)) for v in r] for r in rows]
+            strip(list(reversed(bot)) if side < 0 else bot, soffit, closed=False)
             for idx in (0, -1):
                 strip([[r[idx] for r in rows], [r[idx] for r in bot]], noki, closed=False)
-            tops[side] = rows
-            # 破風板（白漆喰）沿山牆斜邊
-            for sx in (-1, 1):
-                pathb = [(sx * (xg + e - 0.18), r[0].co.y, r[0].co.z - 0.25) for r in rows]
-                sweep(pathb, 0.32, 0.62, plaster, side=(1, 0, 0), below=True)
-        # 妻壁（白漆喰三角面，略內縮）
+            strip([rows[0], bot[0]], noki, closed=False)
+            sides[side] = rows
+        # 妻壁（白漆喰）＋破風板＋懸魚
+        prof = []
+        for side in (-1, 1):
+            seq = sides[side] if side < 0 else list(reversed(sides[side]))
+            for r in seq:
+                prof.append((r[0].co.y, r[0].co.z - 0.42))
+        prof = sorted(set((round(y, 4), round(z, 4)) for y, z in prof))
+        zb = ze + rise * _g(sg) - 0.5
         for sx in (-1, 1):
-            pts = []
-            for side in (-1, 1):
-                seq = tops[side] if side < 0 else list(reversed(tops[side]))
-                for r in seq:
-                    pts.append((r[0].co.y, r[0].co.z - 0.35))
-            # 依 y 排序成多邊形（底邊在 zb）
-            pts = sorted(set((round(y, 4), round(z, 4)) for y, z in pts))
-            poly = [(pts[0][0], zb - 0.6)] + pts + [(pts[-1][0], zb - 0.6)]
-            front = [V((sx * xg, y, z)) for y, z in poly]
-            back = [V((sx * (xg - 0.4), y, z)) for y, z in poly]
             if sx > 0:
-                face(front, plaster)
-                face(list(reversed(back)), plaster)
+                gable_wall(prof, xg, 0.4, zb)
             else:
-                face(list(reversed(front)), plaster)
-                face(back, plaster)
-            n = len(poly)
-            for i in range(n):
-                j = (i + 1) % n
-                face([front[i], front[j], back[j], back[i]], plaster)
-            # 懸魚
-            b.box(shachi_m, (0.25, 1.0, 1.1), (sx * (xg + 0.1), 0, zb + (rise - zb) * 0.62))
-        # 大棟
-        zr = zb + (z_at(1.0) - z_at(sg))
-        sweep([(-(xg + e + 0.4), 0, zr - 0.15), ((xg + e + 0.4), 0, zr - 0.15)], 0.75, 0.95, ridge)
+                gable_wall([(y, z) for y, z in reversed(prof)], -xg + 0.4, 0.4, zb)
+                # 方向修正：-X 側的面法線由 recalc 處理
+            pb = [(sx * (xg + e - 0.12), y, z + 0.4) for y, z in prof]
+            sweep(pb, 0.3, 0.55, plaster, side=(1, 0, 0), below=True)
+            b.box(plaster, (0.3, 1.1, 1.0), (sx * (xg + e - 0.1), 0, prof[len(prof) // 2][1] - 0.8))
+        # 大棟：白漆喰の熨斗瓦＋灰色冠瓦
+        zr = ze + rise
+        L = xg + e + 0.3
+        b.box(plaster, (2 * L, 0.7, 0.45), (0, 0, zr + 0.12))
+        b.box(ridge, (2 * L + 0.1, 0.5, 0.45), (0, 0, zr + 0.5))
         if shachi > 0:
             for sx in (-1, 1):
-                x = sx * (xg + e + 0.1)
-                b.box(shachi_m, (0.5 * shachi, 0.32 * shachi, 1.0 * shachi), (x, 0, zr + 0.75 + 0.45 * shachi), rot=(0, -sx * 0.25, 0))
-                b.box(shachi_m, (0.35 * shachi, 0.22 * shachi, 0.65 * shachi), (x + sx * 0.25 * shachi, 0, zr + 0.8 + 1.1 * shachi), rot=(0, sx * 0.6, 0))
+                fish(sx * (L - 0.15), 0, zr + 0.7, sx, shachi)
         return zr
 
-    # ------------------------------------------------------------ 破風
-    def chidori(w, h, depth, ov=0.8, sideov=0.6, thick=0.32):
-        """千鳥破風：局部座標，妻面朝 -Y、底邊中點在原點"""
+    def fish(x, y, z, sx, sc):
+        """鯱：魚身向上彎、尾鰭朝天"""
+        pts = [(x, y, z), (x - sx * 0.15 * sc, y, z + 0.45 * sc), (x - sx * 0.1 * sc, y, z + 0.9 * sc), (x + sx * 0.2 * sc, y, z + 1.25 * sc)]
+        rs = []
+        for k, p in enumerate(pts):
+            r = sc * (0.28, 0.32, 0.22, 0.1)[k]
+            rs.append([V((p[0] + r * math.cos(TAU * i / 6), p[1] + r * math.sin(TAU * i / 6) * 0.75, p[2])) for i in range(6)])
+        strip(rs, shachi_m, smooth=True)
+        face(rs[-1], shachi_m)
+        tip = pts[-1]
+        for d in (-1, 1):
+            face([V(tip), V((tip[0] + sx * 0.45 * sc, tip[1] + d * 0.12 * sc, tip[2] + 0.35 * sc)),
+                  V((tip[0] + sx * 0.1 * sc, tip[1] + d * 0.05 * sc, tip[2] + 0.5 * sc))], shachi_m)
+
+    # ---------------------------------------------------------------- 破風
+    def chidori(w, h, depth, ov=0.9, sideov=0.7, thick=0.5):
+        """千鳥破風：局部座標，妻面朝 -Y、底邊中點在原點；屋面向 +Y 延伸 depth"""
         X = w / 2 + sideov
-        Ht = h * X / (w / 2) * 0.93 + 0.2
-        zf = lambda a: Ht * (1 - a) * (1 - 0.25 * a)
-        prof = [(X * a, zf(abs(a))) for a in [k / 7 - 1 for k in range(15)]]
+        zf = lambda u: h * (1 - u) ** 1.18 + 0.25 * max(0.0, u - 0.85) / 0.15
+        us = [k / 8 for k in range(9)]
+        prof = [(-X * u, zf(u)) for u in reversed(us)] + [(X * u, zf(u)) for u in us[1:]]
         front = [V((x, -ov, z)) for x, z in prof]
         back = [V((x, depth, z)) for x, z in prof]
         strip([back, front], roof, closed=False)
         fb = [V((x, -ov, z - thick)) for x, z in prof]
         bb = [V((x, depth, z - thick)) for x, z in prof]
-        strip([fb, bb], plaster, closed=False)
+        strip([fb, bb], soffit, closed=False)
         strip([front, fb], noki, closed=False)
-        strip([bb, back], noki, closed=False)
-        strip([[front[0], back[0]], [fb[0], bb[0]]], noki, closed=False)
-        strip([[back[-1], front[-1]], [bb[-1], fb[-1]]], noki, closed=False)
+        for i in (0, -1):
+            strip([[front[i], back[i]], [fb[i], bb[i]]], noki, closed=False)
+        # 破風板（白漆喰，沿兩斜邊，稍突出）
+        sweep([(x, -ov - 0.05, z - 0.18) for x, z in prof[1:-1]], 0.3, 0.6, plaster, side=(0, 1, 0), below=True)
         # 妻壁
-        tri = [(-w / 2, -1.2)] + [(x, zf(abs(x) / X) - thick - 0.05) for x in [w / 2 * (k / 5 - 1) for k in range(11)]] + [(w / 2, -1.2)]
-        fr = [V((x, 0, z)) for x, z in tri]
-        bk = [V((x, depth, z)) for x, z in tri]
+        tri = [(x, zf(abs(x) / X) - thick - 0.4) for x in [w / 2 * (k / 5 - 1) for k in range(11)]]
+        poly = [(-w / 2, -2.0)] + tri + [(w / 2, -2.0)]
+        fr = [V((x, 0, z)) for x, z in poly]
+        bk = [V((x, depth, z)) for x, z in poly]
         face(list(reversed(fr)), plaster)
         face(bk, plaster)
-        n = len(tri)
-        for i in range(n):
-            j = (i + 1) % n
+        for i in range(len(poly)):
+            j = (i + 1) % len(poly)
             face([fr[j], fr[i], bk[i], bk[j]], plaster)
-        # 破風板與懸魚
-        sweep([(x, -ov + 0.2, zf(abs(x) / X) - thick + 0.02) for x in [X * 0.97 * (k / 7 - 1) for k in range(15)]], 0.34, 0.5, plaster, side=(0, 1, 0), below=True)
-        b.box(shachi_m, (0.7, 0.2, 0.9), (0, -ov + 0.3, zf(0) - thick - 0.9))
+        # 懸魚與棟端
+        b.box(plaster, (0.9, 0.25, 1.0), (0, -ov - 0.08, zf(0) - thick - 0.95))
+        b.box(ridge, (0.45, 0.6, 0.55), (0, -ov + 0.2, zf(0) + 0.15))
 
-    def karahafu(w, hk, depth, ov=0.9, thick=0.32):
+    def karahafu(w, hk, depth, ov=0.7, thick=0.5):
         """唐破風：中央弓起、兩端反轉下垂的曲線山牆"""
-        X = w / 2 + 0.5
-        zc = lambda x: 0.55 + hk * ((1 + math.cos(math.pi * x / X)) / 2) ** 0.85
+        X = w / 2 + 0.6
+        zc = lambda x: hk * ((1 + math.cos(math.pi * min(1.0, abs(x) / X))) / 2) ** 0.8 + 0.15 * (abs(x) / X) ** 6
         xs = [X * (k / 10 - 1) for k in range(21)]
         front = [V((x, -ov, zc(x))) for x in xs]
         back = [V((x, depth, zc(x))) for x in xs]
         strip([back, front], roof, closed=False)
         fb = [V((x, -ov, zc(x) - thick)) for x in xs]
         bb = [V((x, depth, zc(x) - thick)) for x in xs]
-        strip([fb, bb], plaster, closed=False)
+        strip([fb, bb], soffit, closed=False)
         strip([front, fb], noki, closed=False)
-        strip([[front[0], back[0]], [fb[0], bb[0]]], noki, closed=False)
-        strip([[back[-1], front[-1]], [bb[-1], fb[-1]]], noki, closed=False)
-        sweep([(x, -ov + 0.22, zc(x) - thick + 0.02) for x in xs[1:-1]], 0.38, 0.62, plaster, side=(0, 1, 0), below=True)
-        poly = [(-w / 2, -1.0)] + [(x, zc(x) - thick - 0.62) for x in xs if abs(x) <= w / 2] + [(w / 2, -1.0)]
-        fr = [V((x, -0.1, z)) for x, z in poly]
+        for i in (0, -1):
+            strip([[front[i], back[i]], [fb[i], bb[i]]], noki, closed=False)
+        sweep([(x, -ov - 0.05, zc(x) - 0.18) for x in xs[1:-1]], 0.3, 0.62, plaster, side=(0, 1, 0), below=True)
+        poly = [(-w / 2, -1.5)] + [(x, zc(x) - thick - 0.5) for x in xs if abs(x) <= w / 2] + [(w / 2, -1.5)]
+        fr = [V((x, -0.05, z)) for x, z in poly]
         bk = [V((x, depth, z)) for x, z in poly]
         face(list(reversed(fr)), plaster)
         face(bk, plaster)
@@ -351,210 +525,328 @@ def himeji(path):
             j = (i + 1) % len(poly)
             face([fr[j], fr[i], bk[i], bk[j]], plaster)
 
-    # ------------------------------------------------------------ 牆與窗
-    def window(cx, cy, z, nx, ny, w, h, bars=None):
-        rot = math.atan2(-nx, ny)  # 局部 +Y = 牆外法線
-        def mk():
-            b.box_base(win, (w, 0.12, h), (0, -0.0, 0))
-            nb = bars or max(3, int(w / 0.2))
-            for k in range(nb):
-                x = -w / 2 + w * (k + 0.5) / nb
-                b.box_base(plaster, (0.07, 0.1, h), (x, 0.05, 0))
-            b.box_base(plaster, (w + 0.3, 0.14, 0.12), (0, 0.02, -0.12))
-        place(mk, cx, cy, z, rot)
+    # ---------------------------------------------------------------- 牆與窗
+    def window(w, h):
+        """局部：窗面朝 -Y，底邊中點在原點"""
+        b.box_base(win, (w, 0.14, h), (0, 0, 0))
+        b.box_base(plaster, (w + 0.24, 0.2, 0.12), (0, -0.02, -0.12))
 
-    def walls(cx, cy, z, w, d, h, n_ns, n_ew, wz=0.42, ww=1.0, wh=0.9, skip_ns=0.0, skip_ew=0.0):
-        b.box_base(plaster, (w, d, h), (cx, cy, z))
+    def walls(w, d, h, z, n_ns, n_ew, wz=0.36, ww=1.0, wh=0.95, pair=False, skip=0.0, skip_sides=()):
+        """局部：中心原點、底面 z；白漆喰牆＋各面格子窗"""
+        b.box_base(plaster, (w, d, h), (0, 0, z))
         for side in range(4):
             nx, ny = [(0, -1), (1, 0), (0, 1), (-1, 0)][side]
             L = w if side % 2 == 0 else d
             n = n_ns if side % 2 == 0 else n_ew
-            skip = skip_ns if side % 2 == 0 else skip_ew
+            if n <= 0:
+                continue
             for i in range(n):
-                off = -L / 2 + 1.4 + (L - 2.8) * (i + 0.5) / n
-                if abs(off) < skip:
+                off = -L / 2 + 1.3 + (L - 2.6) * (i + 0.5) / n
+                if abs(off) < skip and side in skip_sides:
                     continue
-                px = cx + nx * (w / 2) + (-ny) * off
-                py = cy + ny * (d / 2) + nx * off
-                window(px, py, z + h * wz, nx, ny, ww, wh)
+                offs = (off - 0.62, off + 0.62) if pair else (off,)
+                for o in offs:
+                    px = nx * (w / 2 + 0.02) + (-ny) * o
+                    py = ny * (d / 2 + 0.02) + nx * o
+                    rot = math.atan2(-nx, ny) + math.pi
+                    M = Matrix.Translation((px, py, z + h * wz)) @ Matrix.Rotation(rot, 4, "Z")
+                    bm.verts.ensure_lookup_table()
+                    st = len(bm.verts)
+                    window(ww, wh)
+                    bm.verts.ensure_lookup_table()
+                    bmesh.ops.transform(bm, matrix=M, verts=list(bm.verts[st:]))
 
-    def lattice_bay(cx, cy, z, nx, ny, w, h):
-        rot = math.atan2(-nx, ny)
-        def mk():
-            b.box_base(plaster, (w + 0.5, 0.75, h + 0.7), (0, 0.3, -0.45))
-            b.box_base(win, (w, 0.1, h), (0, 0.7, 0))
-            nb = int(w / 0.17)
-            for k in range(nb):
-                b.box_base(plaster, (0.06, 0.1, h), (-w / 2 + w * (k + 0.5) / nb, 0.76, 0))
-        place(mk, cx, cy, z, rot)
+    def lattice_bay(w, h, z, y_face):
+        """出格子：白漆喰外框＋格子（局部，朝 -Y）"""
+        b.box_base(plaster, (w + 0.6, 0.9, h + 0.9), (0, y_face - 0.35, z - 0.5))
+        b.box_base(win, (w, 0.12, h), (0, y_face - 0.82, z))
 
-    # ------------------------------------------------------------ 石垣（扇之勾配）
-    def ishigaki(cx, cy, w, d, h, zb, batter=0.3, p=2.2, rows=10, ring=False, lip=1.0):
+    # ---------------------------------------------------------------- 石垣（扇之勾配）
+    def ishigaki_poly(poly, z_bot, z_top, batter=0.3, p=2.4, rows=9, cap=None, inset_top=0.0):
+        """沿逆時針多邊形的外側做扇形弧線石垣，cap 指定頂面材質"""
+        n = len(poly)
+        H = z_top - z_bot
+        # 各頂點的外法線（角平分）
+        outs = []
+        for i in range(n):
+            a, c, d = Vector((*poly[i - 1], 0)), Vector((*poly[i], 0)), Vector((*poly[(i + 1) % n], 0))
+            e1 = (c - a).normalized()
+            e2 = (d - c).normalized()
+            n1 = Vector((e1.y, -e1.x, 0))
+            n2 = Vector((e2.y, -e2.x, 0))
+            m = (n1 + n2).normalized()
+            outs.append(m / max(0.35, m.dot(n1)))
         rs = []
         for i in range(rows + 1):
             t = i / rows
-            o = batter * h * (1 - t) ** p
-            hx, hy = w / 2 + o, d / 2 + o
-            z = zb + h * t
-            # 角部（算木積）略為外張
-            rs.append([V((cx + sx * hx, cy + sy * hy, z)) for sx, sy in ((-1, -1), (1, -1), (1, 1), (-1, 1))])
+            o = batter * H * (1 - t) ** p
+            z = z_bot + H * t
+            rs.append([V((poly[k][0] + outs[k].x * o, poly[k][1] + outs[k].y * o, z)) for k in range(n)])
         strip(rs, stone)
-        top = rs[-1]
-        if ring:
-            inner_top = [V((cx + sx * (w / 2 - lip), cy + sy * (d / 2 - lip), zb + h)) for sx, sy in ((-1, -1), (1, -1), (1, 1), (-1, 1))]
-            inner_bot = [V((cx + sx * (w / 2 - lip), cy + sy * (d / 2 - lip), zb + h - 1.5)) for sx, sy in ((-1, -1), (1, -1), (1, 1), (-1, 1))]
-            strip([top, inner_top], stone)
-            strip([inner_top, inner_bot], stone)
-        else:
-            face(top, stone)
+        if cap is not None:
+            # 頂面（多邊形；以中心扇形三角化）
+            cx = sum(q[0] for q in poly) / n
+            cy = sum(q[1] for q in poly) / n
+            c = V((cx, cy, z_top))
+            for k in range(n):
+                face([rs[-1][k], rs[-1][(k + 1) % n], c], cap)
+        return rs
 
-    # ------------------------------------------------------------ 天守（多重塔）
-    def tower(cx, cy, z, levels, ov=2.1, U=0.85, top_U=1.05, top_rise_k=0.72, shachi=1.6, gables=None, lattice=None):
+    # ---------------------------------------------------------------- 天守（多重塔）
+    def tower(cx, cy, z, levels, ov=2.0, U=1.0, top_U=1.25, shachi=1.6, gables=None, lattice=None, rot=0.0, rise_k=0.6,
+              win_pair=None):
         """levels: [(w, d, h, n_ns, n_ew)]；gables: {level: [(side, kind, w, h, off)]}"""
         gables = gables or {}
-        for k, (w, d, h, n_ns, n_ew) in enumerate(levels):
-            last = k == len(levels) - 1
-            walls(cx, cy, z, w, d, h + 0.5, n_ns, n_ew, wz=0.38 if not last else 0.3, ww=1.0 if not last else 1.25,
-                  wh=0.9 if not last else 1.25)
-            if lattice and k in lattice:
-                for sgn in (-1, 1):
-                    lattice_bay(cx, cy + sgn * d / 2, z + h * 0.32, 0, sgn, lattice[k], 1.5)
-            z_e = z + h
-            hx0, hy0 = w / 2 + ov, d / 2 + ov
-            if not last:
-                w2, d2 = levels[k + 1][:2]
-                hx1, hy1 = w2 / 2 - 0.2, d2 / 2 - 0.2
-                M = min(hx0 - hx1, hy0 - hy1)
-                rise = 0.5 * M + 0.35
-                place(lambda: skirt(hx0, hy0, hx1, hy1, rise, U, w / 2, d / 2), cx, cy, z_e)
-                for side, kind, gw, gh, off in gables.get(k, []):
-                    Mx, My = hx0 - hx1, hy0 - hy1
-                    Ms = My if side in "SN" else Mx
-                    mf = Ms * 0.3
-                    zf = z_e + rise * _g(mf / Ms) - 0.25
-                    depth = Ms - mf + 0.8
-                    if side == "S":
-                        pos, rot = (cx + off, cy - (hy0 - mf)), 0.0
-                    elif side == "N":
-                        pos, rot = (cx - off, cy + (hy0 - mf)), math.pi
-                    elif side == "E":
-                        pos, rot = (cx + (hx0 - mf), cy + off), math.pi / 2
-                    else:
-                        pos, rot = (cx - (hx0 - mf), cy - off), -math.pi / 2
-                    if kind == "c":
-                        place(lambda gw=gw, gh=gh, depth=depth: chidori(gw, gh, depth), pos[0], pos[1], zf, rot)
-                    else:
-                        place(lambda gw=gw, gh=gh, depth=depth: karahafu(gw, gh, depth), pos[0], pos[1], zf, rot)
-                z = z_e + rise - 0.4
-            else:
-                if w >= d:
-                    zr = [0]
-                    place(lambda: zr.__setitem__(0, irimoya(hx0, hy0, top_rise_k * hy0 * 1.0, top_U, w / 2, d / 2, shachi=shachi)), cx, cy, z_e)
+        win_pair = win_pair or set()
+
+        def build():
+            zz = z
+            for k, (w, d, h, n_ns, n_ew) in enumerate(levels):
+                last = k == len(levels) - 1
+                walls(w, d, h + 0.45, zz - 0.45, n_ns, n_ew, wz=0.4 if not last else 0.33, ww=0.95 if not last else 1.2,
+                      wh=0.95 if not last else 1.3, pair=k in win_pair, skip=3.2 if lattice and k in lattice else 0.0,
+                      skip_sides=(0, 2))
+                if lattice and k in lattice:
+                    for sgn in (-1, 1):
+                        def lb(sgn=sgn):
+                            lattice_bay(lattice[k], 1.5, 0, 0)
+                        place(lb, 0, sgn * (d / 2 + 0.02), zz + h * 0.3, 0.0 if sgn < 0 else math.pi)
+                z_e = zz + h
+                if not last:
+                    w2, d2 = levels[k + 1][:2]
+                    ix, iy = w2 / 2 + 0.03, d2 / 2 + 0.03
+                    run = min(w / 2 + ov - ix, d / 2 + ov - iy)
+                    rise = rise_k * run + 0.3
+                    place(lambda: skirt(w / 2, d / 2, ix, iy, ov, rise, U), 0, 0, z_e)
+                    for side, kind, gw, gh, off in gables.get(k, []):
+                        runs = (d / 2 + ov - iy) if side in "SN" else (w / 2 + ov - ix)
+                        mf = 0.3
+                        zf = z_e - 0.3 + rise * _g(mf) + 0.1
+                        depth = runs * (1 - mf) + 0.6
+                        half = (d / 2 + ov) if side in "SN" else (w / 2 + ov)
+                        rr = half - runs * mf
+                        if side == "S":
+                            pos, rr_ = (off, -rr), 0.0
+                        elif side == "N":
+                            pos, rr_ = (-off, rr), math.pi
+                        elif side == "E":
+                            pos, rr_ = (rr, off), math.pi / 2
+                        else:
+                            pos, rr_ = (-rr, -off), -math.pi / 2
+                        if kind == "c":
+                            place(lambda gw=gw, gh=gh, depth=depth: chidori(gw, gh, depth), pos[0], pos[1], zf, rr_)
+                        elif kind == "k":
+                            # 唐破風在簷口
+                            half_e = half
+                            pe = {"S": (off, -half_e), "N": (-off, half_e), "E": (half_e, off), "W": (-half_e, -off)}[side]
+                            place(lambda gw=gw, gh=gh: karahafu(gw, gh, runs * 0.55), pe[0], pe[1], z_e - 0.3, rr_)
+                        else:  # 大入母屋破風
+                            place(lambda gw=gw, gh=gh, depth=depth: chidori(gw, gh, depth * 1.2, ov=1.2, sideov=1.0, thick=0.6),
+                                  pos[0], pos[1], zf - 0.4, rr_)
+                    zz = z_e - 0.3 + rise
                 else:
-                    place(lambda: irimoya(hy0, hx0, top_rise_k * hx0, top_U, d / 2, w / 2, shachi=shachi), cx, cy, z_e, math.pi / 2)
-                return z_e
+                    if w >= d:
+                        place(lambda: irimoya(w / 2, d / 2, ov + 0.2, rise_k * 1.25 * (d / 2 + ov), top_U, shachi=shachi), 0, 0, z_e)
+                    else:
+                        place(lambda: irimoya(d / 2, w / 2, ov + 0.2, rise_k * 1.25 * (w / 2 + ov), top_U, shachi=shachi), 0, 0, z_e,
+                              math.pi / 2)
+                    return z_e
 
-    def corridor(x0, y0, x1, y1, wd, zb, base_h, h1=3.6, h2=3.2):
-        """渡櫓：石垣上 2 層，入母屋屋頂"""
-        L = math.hypot(x1 - x0, y1 - y0)
-        mx, my = (x0 + x1) / 2, (y0 + y1) / 2
-        along_x = abs(x1 - x0) >= abs(y1 - y0)
-        w, d = (L, wd) if along_x else (wd, L)
-        ishigaki(mx, my, w, d, base_h, zb, batter=0.25)
-        z = zb + base_h
-        walls(mx, my, z, w, d, h1 + 0.5, max(1, int(w / 3.2)), max(1, int(d / 3.2)))
-        hx0, hy0 = w / 2 + 1.6, d / 2 + 1.6
-        w2, d2 = w - 0.8, d - 0.8
-        rise = 0.5 * 1.8 + 0.3
-        place(lambda: skirt(hx0, hy0, w2 / 2 - 0.2, d2 / 2 - 0.2, rise, 0.5, w / 2, d / 2, K=10), mx, my, z + h1)
-        z2 = z + h1 + rise - 0.4
-        walls(mx, my, z2, w2, d2, h2 + 0.5, max(1, int(w2 / 3.0)), max(1, int(d2 / 3.0)))
-        if along_x:
-            place(lambda: irimoya(w2 / 2 + 1.7, d2 / 2 + 1.7, 0.7 * (d2 / 2 + 1.7), 0.6, w2 / 2, d2 / 2, sg=0.45), mx, my, z2 + h2)
+        return place(build, cx, cy, 0, rot)
+
+    def yagura(cx, cy, z, L, D, h1, rot, h2=None, L2=None, front_chidori=(), ov=1.5, n_win=None, base_z=None):
+        """櫓／多聞櫓：1–2 層白壁＋入母屋頂；front_chidori 在正面屋頂加千鳥破風；base_z 時下方加石垣台"""
+        if base_z is not None:
+            c0, s0 = math.cos(rot), math.sin(rot)
+            hw, hd = L / 2 + 0.3, D / 2 + 0.3
+            poly = [(cx + c0 * u - s0 * v, cy + s0 * u + c0 * v) for u, v in ((-hw, -hd), (hw, -hd), (hw, hd), (-hw, hd))]
+            ishigaki_poly(poly, base_z, z, batter=0.22, cap=gravel)
+
+        # irimoya 以 z=0 為牆頂，因此分兩段放置
+        if not h2:
+            def b1():
+                nw = n_win or max(2, int(L / 4.2))
+                walls(L, D, h1 + 0.45, -h1 - 0.45, nw, max(1, int(D / 4)), wz=0.42, ww=1.0, wh=0.85, pair=True)
+                irimoya(L / 2, D / 2, ov, 0.62 * (D / 2 + ov), 0.75)
+            place(b1, cx, cy, z + h1, rot)
         else:
-            place(lambda: irimoya(d2 / 2 + 1.7, w2 / 2 + 1.7, 0.7 * (w2 / 2 + 1.7), 0.6, d2 / 2, w2 / 2, sg=0.45), mx, my, z2 + h2, math.pi / 2)
+            L2_ = L2 or L * 0.6
+            D2 = D - 1.2
+            xo = (L - L2_) / 2
+            run = D / 2 + ov - (D2 / 2 + 0.03)
+            rise = 0.55 * run + 0.3
 
-    def dobei(x0, y0, x1, y1, z, h=2.3):
-        """土塀：白壁＋瓦屋根"""
+            def b1():
+                nw = n_win or max(2, int(L / 4.2))
+                walls(L, D, h1 + 0.45, -h1 - 0.45, nw, max(1, int(D / 4)), wz=0.42, ww=1.0, wh=0.85, pair=True)
+                rs = skirt(L / 2, D / 2, L / 2 - 0.4, D2 / 2 + 0.03, ov, rise, 0.6, rows=6, K=12)
+                face(list(rs[-1]), roof)
+            place(b1, cx, cy, z + h1, rot)
+            c, s_ = math.cos(rot), math.sin(rot)
+
+            def b2():
+                walls(L2_, D2, h2 + 0.45, -h2 - 0.45, max(2, int(L2_ / 4)), 1, wz=0.42, ww=1.0, wh=0.85, pair=True)
+                irimoya(L2_ / 2, D2 / 2, ov, 0.62 * (D2 / 2 + ov), 0.85, shachi=0.9)
+            place(b2, cx + c * xo, cy + s_ * xo, z + h1 - 0.3 + rise + h2, rot)
+        for (u, gw, gh) in front_chidori:
+            c, s_ = math.cos(rot), math.sin(rot)
+            run = D / 2 + ov
+            mf = 0.3
+            zf = z + h1 - 0.3 + 0.62 * (D / 2 + ov) * _g(mf) + 0.1
+            px, py = u, -(D / 2 + ov) + run * mf
+            place(lambda gw=gw, gh=gh: chidori(gw, gh, run * 0.6, ov=0.8, sideov=0.6), cx + c * px - s_ * py, cy + s_ * px + c * py, zf, rot)
+
+    def dobei(p0, p1, z, h=2.4):
+        """土塀：白壁＋小瓦頂（兩坡）"""
+        x0, y0 = p0
+        x1, y1 = p1
         L = math.hypot(x1 - x0, y1 - y0)
         ang = math.atan2(y1 - y0, x1 - x0)
-        mx, my = (x0 + x1) / 2, (y0 + y1) / 2
-        b.box_base(plaster, (L, 0.6, h), (mx, my, z - 0.3), rot=(0, 0, ang))
-        b.tri_prism(roof, L + 0.4, 1.7, 0.55, (mx, my, z - 0.3 + h - 0.05), rot_z=ang)
-        b.box_base(ridge, (L + 0.4, 0.25, 0.22), (mx, my, z - 0.3 + h + 0.45), rot=(0, 0, ang))
 
-    # ================================================================ 地形
-    ZP, Z1 = 12.0, 3.0  # 本丸台地、周圍地面
-    PX0, PX1, PY0, PY1 = -58.0, 30.0, -32.0, 50.0
+        def mk():
+            b.box_base(plaster, (L, 0.55, h), (0, 0, -0.3))
+            # 兩坡瓦頂
+            for sgn in (-1, 1):
+                a = [V((-L / 2 - 0.2, 0, h + 0.35)), V((L / 2 + 0.2, 0, h + 0.35))]
+                c2 = [V((-L / 2 - 0.2, sgn * 0.95, h - 0.15)), V((L / 2 + 0.2, sgn * 0.95, h - 0.15))]
+                face([a[0], a[1], c2[1], c2[0]], roof)
+                c3 = [V((-L / 2 - 0.2, sgn * 0.95, h - 0.3)), V((L / 2 + 0.2, sgn * 0.95, h - 0.3))]
+                face([c2[0], c2[1], c3[1], c3[0]], noki)
+                c4 = [V((-L / 2 - 0.2, sgn * 0.28, h - 0.3)), V((L / 2 + 0.2, sgn * 0.28, h - 0.3))]
+                face([c3[0], c3[1], c4[1], c4[0]], soffit)
+            b.box(ridge, (L + 0.5, 0.36, 0.3), (0, 0, h + 0.42))
+        place(mk, (x0 + x1) / 2, (y0 + y1) / 2, z, ang)
 
-    def hill(x, y):
-        dx = max(PX0 - x, 0, x - PX1)
-        dy = max(PY0 - y, 0, y - PY1)
-        d = math.hypot(dx, dy)
-        t = min(1.0, max(0.0, (d - 6) / 120))
-        base = Z1 * (0.5 + 0.5 * math.cos(math.pi * t))
-        return base + 0.8 * noise.noise(Vector((x / 35, y / 35, 0.3))) * min(1, d / 15)
+    # ================================================================ 地形與台地
+    Z_COURT = 24.5   # 備前丸（中庭）
+    Z_UP = 40.3      # 小天守群所在的上段
+    # 中庭外圍（逆時針），南緣即前景石垣線
+    court = [(-36.0, -25.0), (26.0, -52.0), (48.0, 8.0), (22.0, 64.0), (-62.0, 62.0), (-60.0, -14.0)]
+    beta = math.radians(22.9)
 
-    b.ground_disc(grass, 190, soil, depth=6, height_fn=hill, rings=40, seg=128)
-    # 台地：扇之勾配石垣（中空環）＋碎石廣場
-    ishigaki((PX0 + PX1) / 2, (PY0 + PY1) / 2, PX1 - PX0, PY1 - PY0, ZP + 0.4 - (Z1 - 1.5), Z1 - 1.5, batter=0.28, ring=True)
-    b.box_base(gravel, (PX1 - PX0 - 1.5, PY1 - PY0 - 1.5, 0.3), ((PX0 + PX1) / 2, (PY0 + PY1) / 2, ZP - 0.3))
+    def court_dist(x, y):
+        """點到中庭多邊形的距離（外為正）"""
+        p = Vector((x, y))
+        inside = True
+        best = 1e9
+        n = len(court)
+        for i in range(n):
+            a, c = Vector(court[i]), Vector(court[(i + 1) % n])
+            e = c - a
+            t = max(0.0, min(1.0, (p - a).dot(e) / e.length_squared))
+            best = min(best, (a + e * t - p).length)
+            if (e.x * (p.y - a.y) - e.y * (p.x - a.x)) < 0:
+                inside = False
+        return -best if inside else best
+
+    def terrain_h(x, y):
+        d = court_dist(x, y)
+        if d < 0:
+            return Z_COURT - 6.0
+        t = min(1.0, d / 115.0)
+        h = 12.6 * (1 - t) ** 1.25 - 1.0
+        h += 0.8 * noise.noise(Vector((x / 30, y / 30, 0.7))) * min(1.0, d / 20)
+        return h
+
+    # 地形網格（相機前方較密）
+    R = 230.0
+    NR, NA = 46, 140
+    grid = []
+    for i in range(NR + 1):
+        r = R * (i / NR) ** 1.25
+        row = []
+        for j in range(NA if i else 1):
+            a = TAU * j / NA
+            x, y = r * math.cos(a), r * math.sin(a)
+            row.append(V((x, y, terrain_h(x, y))))
+        grid.append(row)
+    for j in range(NA):
+        face([grid[0][0], grid[1][j], grid[1][(j + 1) % NA]], grass, True)
+    for i in range(1, NR):
+        for j in range(NA):
+            k = (j + 1) % NA
+            face([grid[i][j], grid[i + 1][j], grid[i + 1][k], grid[i][k]], grass, True)
+    edge = grid[-1]
+    bot = [V((v.co.x, v.co.y, -6)) for v in edge]
+    for j in range(NA):
+        k = (j + 1) % NA
+        face([edge[k], edge[j], bot[j], bot[k]], soil)
+    face(list(reversed(bot)), soil)
+    # 坡面上的裸土
+    for f in bm.faces:
+        if f.material_index == grass:
+            c = f.calc_center_median()
+            if noise.noise(Vector((c.x / 18, c.y / 18, 3.1))) > 0.35:
+                f.material_index = soil
+
+    # 中庭石垣（扇之勾配）＋碎石頂面
+    ishigaki_poly(court, 8.0, Z_COURT, batter=0.3, cap=gravel)
+    # 上段（小天守群）：L 形兩段
+    up1 = [(-56.0, -2.0), (-14.5, -4.0), (-14.5, 13.0), (-56.0, 14.0)]
+    up2 = [(-58.0, 13.0), (16.0, 13.0), (18.0, 56.0), (-58.0, 56.0)]
+    ishigaki_poly(up1, Z_COURT - 1.0, Z_UP, batter=0.28, cap=gravel)
+    ishigaki_poly(up2, Z_COURT - 1.0, Z_UP + 0.35, batter=0.28, cap=gravel)
 
     # ================================================================ 大天守（5 重 6 階）
     W1, D1 = 26.0, 21.0
-    fac = [1.0, 0.92, 0.8, 0.66, 0.47]
-    hts = [4.2, 4.3, 4.0, 3.9, 3.7]
-    nwin = [(8, 6), (7, 5), (6, 4), (5, 4), (6, 4)]
-    lv = [(W1 * f, D1 * f, h, a, c) for f, h, (a, c) in zip(fac, hts, nwin)]
-    zk = ZP + 14.85
-    ishigaki(0, 0, W1 + 0.4, D1 + 0.4, 14.85 + 0.6, ZP - 0.6, batter=0.3, p=2.3)
+    lv = [(26.0, 21.0, 4.7, 9, 7), (23.6, 18.6, 4.4, 8, 6), (20.2, 15.4, 4.0, 7, 5), (16.8, 12.4, 3.9, 6, 4), (13.0, 9.6, 3.9, 5, 4)]
+    ZK = Z_UP + 0.55  # 天守台石垣頂
+    ishigaki_poly([(-W1 / 2 - 0.3, -D1 / 2 - 0.3), (W1 / 2 + 0.3, -D1 / 2 - 0.3), (W1 / 2 + 0.3, D1 / 2 + 0.3), (-W1 / 2 - 0.3, D1 / 2 + 0.3)],
+                  Z_COURT - 1.0, ZK, batter=0.3, p=2.3, cap=gravel)
     gab = {
-        0: [("E", "c", 4.0, 2.2, 0.0), ("W", "c", 4.0, 2.2, 0.0)],
-        1: [("S", "k", 7.0, 1.7, 0.0), ("N", "k", 7.0, 1.7, 0.0), ("E", "c", D1 * 0.92 * 0.72, 5.2, 0.0), ("W", "c", D1 * 0.92 * 0.72, 5.2, 0.0)],
-        2: [("S", "c", 5.0, 2.6, -3.2), ("S", "c", 5.0, 2.6, 3.2), ("N", "c", 5.0, 2.6, -3.2), ("N", "c", 5.0, 2.6, 3.2),
-            ("E", "c", 5.5, 2.9, 0.0), ("W", "c", 5.5, 2.9, 0.0)],
-        3: [("S", "c", 7.2, 3.3, 0.0), ("N", "c", 7.2, 3.3, 0.0), ("E", "k", 4.6, 1.3, 0.0), ("W", "k", 4.6, 1.3, 0.0)],
+        0: [("S", "c", 5.0, 2.6, -6.0), ("S", "c", 5.0, 2.6, 6.0), ("N", "c", 5.0, 2.6, 0.0)],
+        1: [("S", "k", 6.6, 1.6, 0.0), ("N", "k", 6.6, 1.6, 0.0), ("E", "b", 13.0, 7.2, 0.0), ("W", "b", 13.0, 7.2, 0.0)],
+        2: [("S", "c", 5.4, 2.8, -4.4), ("S", "c", 5.4, 2.8, 4.4), ("N", "c", 5.4, 2.8, -4.4), ("N", "c", 5.4, 2.8, 4.4),
+            ("E", "k", 4.4, 1.3, 0.0), ("W", "k", 4.4, 1.3, 0.0)],
+        3: [("S", "c", 7.6, 3.6, 0.0), ("N", "c", 7.6, 3.6, 0.0), ("E", "c", 4.8, 2.5, 0.0), ("W", "c", 4.8, 2.5, 0.0)],
     }
-    ztop = tower(0, 0, zk, lv, gables=gab, lattice={1: 5.0}, shachi=1.9)
-    print(f"  himeji main keep: stone top {zk:.1f}, top-level eave {ztop:.1f}")
+    tower(0, 0, ZK, lv, ov=2.1, U=1.05, top_U=1.35, gables=gab, lattice={1: 5.2}, shachi=2.0, win_pair={0, 1, 2, 3})
 
     # ================================================================ 小天守與渡櫓
-    small = [  # (cx, cy, w, d, 石垣高, levels)
-        (-36.0, 3.0, 15.0, 12.5, 11.0, [(15.0, 12.5, 4.0, 5, 4), (12.6, 10.4, 3.8, 4, 3), (9.6, 8.0, 3.4, 3, 3)]),   # 西小天守
-        (-35.0, 31.0, 16.0, 13.5, 11.0, [(16.0, 13.5, 4.2, 5, 4), (13.4, 11.2, 4.0, 4, 3), (10.2, 8.6, 3.6, 3, 3)]),  # 乾小天守
-        (4.0, 32.0, 12.5, 10.5, 11.0, [(12.5, 10.5, 3.9, 4, 3), (10.4, 8.8, 3.6, 3, 3), (8.0, 6.8, 3.3, 3, 2)]),     # 東小天守
+    smalls = [
+        (-21.0, 22.0, Z_UP + 0.35, [(15.0, 12.6, 4.0, 4, 3), (12.4, 10.2, 3.8, 3, 3), (9.6, 7.8, 3.5, 3, 2)]),   # 西小天守
+        (-38.0, 40.0, Z_UP + 0.35, [(16.0, 13.4, 4.2, 4, 3), (13.2, 10.8, 3.9, 3, 3), (10.2, 8.2, 3.6, 3, 2)]),  # 乾小天守
+        (4.0, 38.0, Z_UP + 0.35, [(12.6, 10.6, 3.9, 3, 3), (10.4, 8.6, 3.6, 3, 2), (8.0, 6.6, 3.3, 2, 2)]),     # 東小天守
     ]
-    sg_small = {
-        0: [("S", "c", 4.2, 2.2, 0.0), ("E", "c", 3.6, 2.0, 0.0), ("N", "c", 4.2, 2.2, 0.0)],
-        1: [("S", "k", 3.6, 1.0, 0.0), ("W", "c", 3.4, 1.9, 0.0), ("E", "c", 3.4, 1.9, 0.0)],
+    sgab = {
+        0: [("S", "c", 4.4, 2.3, 0.0), ("E", "c", 3.8, 2.0, 0.0), ("W", "c", 3.8, 2.0, 0.0)],
+        1: [("S", "k", 3.8, 1.0, 0.0), ("W", "c", 3.4, 1.9, 0.0)],
     }
-    for cx, cy, w, d, bh, levels in small:
-        ishigaki(cx, cy, w + 0.4, d + 0.4, bh + 0.6, ZP - 0.6, batter=0.28)
-        tower(cx, cy, ZP + bh, levels, ov=1.8, U=0.7, top_U=0.85, shachi=1.2, gables=sg_small)
-    corridor(-13.0, 2.0, -28.5, 2.0, 8.0, ZP - 0.6, 11.6)     # イの渡櫓：大天守—西小天守
-    corridor(-36.0, 9.25, -36.0, 24.25, 8.0, ZP - 0.6, 11.6)  # ロの渡櫓：西小天守—乾小天守
-    corridor(-27.0, 31.5, -2.25, 31.5, 8.0, ZP - 0.6, 11.6)   # ハの渡櫓：乾小天守—東小天守
-    corridor(4.0, 10.5, 4.0, 26.75, 8.0, ZP - 0.6, 11.6)      # ニの渡櫓：東小天守—大天守
+    for cx, cy, zb, levels in smalls:
+        w, d = levels[0][:2]
+        ishigaki_poly([(cx - w / 2 - 0.3, cy - d / 2 - 0.3), (cx + w / 2 + 0.3, cy - d / 2 - 0.3), (cx + w / 2 + 0.3, cy + d / 2 + 0.3),
+                       (cx - w / 2 - 0.3, cy + d / 2 + 0.3)], zb - 1.0, zb + 2.2, batter=0.15, cap=gravel)
+        tower(cx, cy, zb + 2.2, levels, ov=1.8, U=0.8, top_U=1.0, shachi=1.25, gables=sgab, win_pair={0})
+    # 渡櫓（2 層）
+    yagura(-14.0, 14.5, Z_UP + 0.35, 10.0, 7.5, 3.6, math.radians(45), h2=3.2, L2=7.0, base_z=Z_COURT - 1.0)            # イ：大天守—西小天守
+    yagura(-29.5, 31.0, Z_UP + 0.35, 14.0, 7.5, 3.6, math.radians(64), h2=3.2, L2=10.0, base_z=Z_COURT - 1.0)           # ロ：西小天守—乾小天守
+    yagura(-17.0, 41.0, Z_UP + 0.35, 22.0, 7.5, 3.6, 0.0, h2=3.2, L2=16.0, base_z=Z_COURT - 1.0)                        # ハ：乾小天守—東小天守
+    yagura(3.0, 22.0, Z_UP + 0.35, 12.0, 7.5, 3.6, math.radians(90), h2=3.2, L2=8.0, base_z=Z_COURT - 1.0)              # ニ：東小天守—大天守
 
-    # ================================================================ 台地南緣的多聞櫓與土塀
-    corridor(-48.0, -28.0, -6.0, -28.0, 6.5, ZP - 0.4, 0.4, h1=3.4, h2=3.0)
-    tower(8.0, -26.5, ZP, [(9.5, 8.0, 3.8, 3, 3), (7.6, 6.4, 3.4, 2, 2)], ov=1.6, U=0.6, top_U=0.7, shachi=0.9)
-    dobei(14.0, -30.5, 28.5, -30.5, ZP)
-    dobei(28.5, -30.5, 28.5, 10.0, ZP)
-    dobei(-56.5, -24.0, -56.5, 30.0, ZP)
+    # ================================================================ 前景：前方石垣上的櫓群（面向相機）
+    rot_f = -beta
+    c_, s_ = math.cos(rot_f), math.sin(rot_f)
 
-    # ================================================================ 植栽：黑松與闊葉樹
-    def blob(mi, loc, rx, ry, rz, lump=0.3):
-        off = Vector((b.rng.uniform(0, 99), b.rng.uniform(0, 99), b.rng.uniform(0, 99)))
-        r = bmesh.ops.create_icosphere(bm, subdivisions=1, radius=1.0, matrix=Matrix.Identity(4))
-        for v in r["verts"]:
-            p = v.co.copy()
-            n = noise.noise(p * 1.6 + off) * 0.7 + noise.noise(p * 3.5 + off) * 0.3
-            k = 1 + lump * n
-            v.co = Vector((loc[0] + p.x * rx * k, loc[1] + p.y * ry * k, loc[2] + p.z * rz * k))
-        for f in {f for v in r["verts"] for f in v.link_faces}:
-            f.material_index = mi
-            f.smooth = True
+    def along(u, v=0.0):
+        """前景石垣線上的點：u 沿線、v 往內（北）"""
+        x0, y0 = court[0]
+        return (x0 + c_ * u - s_ * v, y0 + s_ * u + c_ * v)
+
+    # 左：長多聞櫓（1 層，左端千鳥破風）
+    p = along(14.0, 4.6)
+    yagura(p[0], p[1], Z_COURT, 26.0, 8.0, 4.6, rot_f, front_chidori=((-9.5, 4.2, 2.4),), n_win=6)
+    # 右：2 層櫓（右端入母屋破風）
+    p = along(43.0, 4.4)
+    yagura(p[0], p[1], Z_COURT, 30.0, 7.8, 4.4, rot_f, h2=3.8, L2=15.0)
+    # 土塀
+    dobei(along(0.5, 1.0), along(1.0, 1.0), Z_COURT)
+    # 石垣下方的低櫓（瓦頂線）
+    for u0, u1 in ((24.0, 48.0),):
+        a0, a1 = along(u0, -7.5), along(u1, -7.5)
+        dobei(a0, a1, terrain_h(*along((u0 + u1) / 2, -7.5)) + 0.2, h=2.8)
+
+    # ================================================================ 樹木（葉簇卡片）
+    rng = b.rng
 
     def tube(path, r0, r1, mi, seg=6):
         rings = []
@@ -569,62 +861,137 @@ def himeji(path):
         strip(rings, mi, smooth=True)
         face(rings[-1], mi)
 
-    def broadleaf(x, y, z, h):
-        R = h * b.rng.uniform(0.28, 0.36)
-        cz = z + h - R * 0.95
-        lean = Vector((b.rng.uniform(-1, 1), b.rng.uniform(-1, 1), 0)) * 0.06 * h
-        tube([(x, y, z - 0.5), (x + lean.x * 0.5, y + lean.y * 0.5, z + h * 0.3), (x + lean.x, y + lean.y, cz)], h * 0.035, h * 0.018, trunk_b)
-        cx, cy = x + lean.x, y + lean.y
-        n = b.rng.randint(8, 12)
+    def blob(mi, loc, rx, ry, rz, lump=0.3, sub=1):
+        off = Vector((rng.uniform(0, 99), rng.uniform(0, 99), rng.uniform(0, 99)))
+        r = bmesh.ops.create_icosphere(bm, subdivisions=sub, radius=1.0, matrix=Matrix.Identity(4))
+        for v in r["verts"]:
+            q = v.co.copy()
+            n = noise.noise(q * 1.6 + off) * 0.7 + noise.noise(q * 3.5 + off) * 0.3
+            k = 1 + lump * n
+            v.co = Vector((loc[0] + q.x * rx * k, loc[1] + q.y * ry * k, loc[2] + q.z * rz * k))
+        for f in {f for v in r["verts"] for f in v.link_faces}:
+            f.material_index = mi
+            f.smooth = True
+
+    def card(mi, c, nrm, size, spin):
+        """一片葉簇卡片：中心 c、法線 nrm、邊長 size"""
+        n = Vector(nrm).normalized()
+        a = n.orthogonal().normalized()
+        bb = n.cross(a)
+        ca, sa = math.cos(spin), math.sin(spin)
+        u = (a * ca + bb * sa) * size / 2
+        v = (bb * ca - a * sa) * size / 2
+        c = Vector(c)
+        face([V(c - u - v), V(c + u - v), V(c + u + v), V(c - u + v)], mi)
+
+    def crown(cx, cy, cz, rx, rz, mats, core, n_cards, csize, flat=1.0):
+        """樹冠：深色核心＋分布在橢球表層、大致朝外的葉簇卡片"""
+        blob(core, (cx, cy, cz), rx * 0.78, rx * 0.78, rz * 0.72 * flat, lump=0.35)
+        for _ in range(n_cards):
+            d = Vector((rng.gauss(0, 1), rng.gauss(0, 1), rng.gauss(0, 1) * 0.8 + 0.25)).normalized()
+            rr = rng.uniform(0.72, 1.02)
+            pnt = (cx + d.x * rx * rr, cy + d.y * rx * rr, cz + d.z * rz * rr * flat)
+            nrm = (d + Vector((rng.uniform(-0.5, 0.5), rng.uniform(-0.5, 0.5), rng.uniform(-0.2, 0.6)))).normalized()
+            mi = mats[0] if d.z > 0.25 or rng.random() < 0.3 else mats[min(1, len(mats) - 1)]
+            card(mi, pnt, nrm, csize * rng.uniform(0.8, 1.25), rng.uniform(0, TAU))
+
+    def broadleaf(x, y, z, h, light=False, spread=1.0, detail=1.0):
+        R_ = h * rng.uniform(0.3, 0.38) * spread
+        cz = z + h - R_ * 0.9
+        lean = Vector((rng.uniform(-1, 1), rng.uniform(-1, 1), 0)) * 0.05 * h
+        tube([(x, y, z - 0.6), (x + lean.x * 0.5, y + lean.y * 0.5, z + h * 0.3), (x + lean.x, y + lean.y, cz - R_ * 0.2)], h * 0.03, h * 0.016, bark)
+        # 主枝
+        for _ in range(4):
+            a = rng.uniform(0, TAU)
+            p0 = Vector((x + lean.x * 0.6, y + lean.y * 0.6, z + h * 0.42))
+            p1 = Vector((x + lean.x + math.cos(a) * R_ * 0.6, y + lean.y + math.sin(a) * R_ * 0.6, cz))
+            tube([p0, (p0 + p1) / 2 + Vector((0, 0, h * 0.04)), p1], h * 0.014, h * 0.007, bark, seg=5)
+        mats = (lf_light, lf_broad) if light else (lf_broad, lf_broad)
+        n = rng.randint(5, 8)
         for i in range(n):
-            a = b.rng.uniform(0, TAU)
-            rr = R * math.sqrt(b.rng.uniform(0.05, 1)) * 0.62
-            dz = b.rng.uniform(-0.45, 0.55) * R
-            br = R * b.rng.uniform(0.42, 0.62)
-            mi = leaf[0] if dz > 0.18 * R else (leaf[2] if dz < -0.15 * R else leaf[1])
-            if b.rng.random() < 0.25:
-                mi = leaf[b.rng.randint(0, 2)]
-            blob(mi, (cx + rr * math.cos(a), cy + rr * math.sin(a), cz + dz), br * 1.05, br * 1.05, br * 0.85)
+            a = rng.uniform(0, TAU)
+            rr = R_ * math.sqrt(rng.uniform(0.0, 1)) * 0.55
+            dz = rng.uniform(-0.35, 0.45) * R_
+            br = R_ * rng.uniform(0.45, 0.62)
+            nc = int(16 + 30 * (br / 3.0))
+            crown(x + lean.x + rr * math.cos(a), y + lean.y + rr * math.sin(a), cz + dz, br, br * 0.85, mats, core_b,
+                  int(min(nc, 60) * detail), br * (0.95 if detail >= 1 else 1.3))
 
     def pine_tree(x, y, z, h):
         pts = [(x, y, z - 0.5)]
         px, py = x, y
-        ang = b.rng.uniform(0, TAU)
+        ang = rng.uniform(0, TAU)
         for k in range(1, 5):
-            ang += b.rng.uniform(-0.9, 0.9)
-            px += math.cos(ang) * h * 0.07
-            py += math.sin(ang) * h * 0.07
-            pts.append((px, py, z + h * 0.82 * k / 4))
-        tube(pts, h * 0.04, h * 0.02, trunk_p)
-        npad = b.rng.randint(5, 7)
+            ang += rng.uniform(-0.9, 0.9)
+            px += math.cos(ang) * h * 0.08
+            py += math.sin(ang) * h * 0.08
+            pts.append((px, py, z + h * 0.85 * k / 4))
+        tube(pts, h * 0.04, h * 0.02, pbark)
+        npad = rng.randint(5, 7)
         for i in range(npad):
-            f = 0.42 + 0.58 * i / (npad - 1)
+            f = 0.35 + 0.65 * i / (npad - 1)
             k = min(3, int(f * 4))
             p0 = Vector(pts[k]).lerp(Vector(pts[k + 1]), f * 4 - k) if k < 4 else Vector(pts[-1])
-            a = b.rng.uniform(0, TAU)
-            reach = h * (0.32 - 0.22 * f) * b.rng.uniform(0.7, 1.2)
-            c = p0 + Vector((math.cos(a) * reach, math.sin(a) * reach, h * 0.04))
-            tube([p0, (p0 + c) / 2 + Vector((0, 0, h * 0.03)), c], h * 0.014, h * 0.008, trunk_p, seg=5)
-            rpad = h * (0.2 - 0.08 * f) * b.rng.uniform(0.85, 1.15)
-            blob(pine[0], (c.x, c.y, c.z + rpad * 0.15), rpad * 1.15, rpad * 1.0, rpad * 0.36, lump=0.35)
-            blob(pine[1], (c.x, c.y, c.z - rpad * 0.05), rpad * 1.05, rpad * 0.95, rpad * 0.3, lump=0.3)
-        top = Vector(pts[-1])
-        blob(pine[0], (top.x, top.y, top.z + h * 0.06), h * 0.15, h * 0.13, h * 0.07, lump=0.35)
+            a = rng.uniform(0, TAU)
+            reach = h * (0.34 - 0.22 * f) * rng.uniform(0.7, 1.2)
+            c = p0 + Vector((math.cos(a) * reach, math.sin(a) * reach, h * 0.03))
+            tube([p0, (p0 + c) / 2 + Vector((0, 0, h * 0.03)), c], h * 0.014, h * 0.008, pbark, seg=5)
+            rp = h * (0.22 - 0.09 * f) * rng.uniform(0.85, 1.15)
+            # 雲狀枝葉層：扁平核心＋大致水平的針葉卡片
+            blob(core_p, (c.x, c.y, c.z + rp * 0.05), rp * 0.85, rp * 0.8, rp * 0.22, lump=0.3)
+            for _ in range(int(10 + 10 * rp)):
+                a2 = rng.uniform(0, TAU)
+                r2 = rp * math.sqrt(rng.uniform(0, 1))
+                card(lf_pine, (c.x + r2 * math.cos(a2), c.y + r2 * math.sin(a2), c.z + rp * rng.uniform(0.0, 0.3)),
+                     (rng.uniform(-0.35, 0.35), rng.uniform(-0.35, 0.35), 1), rp * rng.uniform(0.7, 1.0), rng.uniform(0, TAU))
 
-    def in_plateau(x, y, m=6):
-        return PX0 - m < x < PX1 + m and PY0 - m < y < PY1 + m
+    def shrub(x, y, z, r):
+        crown(x, y, z + r * 0.45, r, r * 0.6, (lf_shrub, lf_light), core_b, int(14 + 10 * r), r * 0.9, flat=1.0)
 
-    pts = b.scatter(260, 20, 182, min_dist=7.5, avoid=lambda x, y: in_plateau(x, y, 7))
-    for i, (x, y) in enumerate(pts):
-        z = hill(x, y)
-        if b.rng.random() < 0.3:
-            pine_tree(x, y, z, b.rng.uniform(7, 11))
+    C = Vector((-54.7, -150.4, 0))
+    fwd = Vector((math.sin(beta), math.cos(beta), 0))
+    rgt = Vector((math.cos(beta), -math.sin(beta), 0))
+
+    def cam_pt(depth, lateral):
+        p = C + fwd * depth + rgt * lateral
+        return p.x, p.y
+
+    # 參考照中的主要樹木（相機座標：距離、橫向、樹高）
+    hero = [
+        (58, 15, 19, "b"), (52, 24, 16, "b"), (66, 6, 15, "l"),                # 右側大樹（樟樹）
+        (88, -4, 15, "l"), (95, -14, 14, "l"), (82, 4, 12, "b"),               # 中央闊葉樹（遮住石垣下部）
+        (40, -14, 9, "l"), (34, -22, 7, "l"), (46, -28, 11, "l"), (62, -36, 14, "l"),  # 左側
+        (75, -26, 13, "b"), (105, -30, 16, "b"), (100, 18, 12, "b"),
+    ]
+    for dep, lat, h, k in hero:
+        x, y = cam_pt(dep, lat)
+        broadleaf(x, y, terrain_h(x, y), h, light=(k == "l"), spread=1.15)
+    for dep, lat, h in ((38, 5, 6.0), (44, 10, 7.0), (35, -2, 5.0), (50, 1, 6.5)):
+        x, y = cam_pt(dep, lat)
+        pine_tree(x, y, terrain_h(x, y), h)
+    for dep, lat, r in ((22, -12, 2.2), (25, -8, 2.6), (28, -16, 2.4), (24, -3, 1.8), (30, 2, 2.0), (27, 8, 2.2), (32, 12, 2.4),
+                        (20, -18, 2.0), (35, -10, 2.8)):
+        x, y = cam_pt(dep, lat)
+        shrub(x, y, terrain_h(x, y), r)
+    # 外圍林木（網站環視時的周邊樹林）
+    pts = b.scatter(70, 70, 215, min_dist=13.0, avoid=lambda x, y: court_dist(x, y) < 6 or
+                    (C - Vector((x, y, 0))).length < 30)
+    for x, y in pts:
+        h = rng.uniform(9, 15)
+        if rng.random() < 0.25:
+            pine_tree(x, y, terrain_h(x, y), h * 0.6)
         else:
-            broadleaf(x, y, z, b.rng.uniform(8, 14))
-    # 台地上點綴的松樹
-    for x, y in [(-50, -18), (22, -18), (-50, 44), (20, 44), (-20, -18), (24, 20)]:
-        pine_tree(x, y, ZP, b.rng.uniform(6, 8))
+            broadleaf(x, y, terrain_h(x, y), h, light=rng.random() < 0.4, detail=0.35)
+    # 中庭與上段的松樹
+    for x, y in ((-30.0, -12.0), (14.0, -30.0), (30.0, -10.0)):
+        pine_tree(x, y, Z_COURT, 6.5)
 
-    # 地理座標 → 南立面朝向相機（+Y）
-    bmesh.ops.rotate(bm, verts=bm.verts[:], cent=(0, 0, 0), matrix=Matrix.Rotation(math.pi, 3, "Z"))
-    b.export(path)
+    # 卡片的 UV（四邊形 0–1）
+    b.card_uv[4] = ((0, 0), (1, 0), (1, 1), (0, 1))
+    _export(b, path)
+
+
+def _export(b, path):
+    b.build_object()
+    bpy.ops.export_scene.gltf(filepath=path, export_format="GLB", export_apply=True, export_yup=True,
+                              export_image_format="AUTO", export_jpeg_quality=82)
