@@ -17,10 +17,10 @@ from mathutils import Euler, Matrix, Quaternion, Vector
 
 from lib import Builder
 
-CAMERA = ((2, 0, 42), -14, -19, 128, 28)
+CAMERA = ((2, 0, 42), -14, -20, 98, 28)
 
 BASE_Z = 2.0
-K = 1.49   # metaball 半徑 → 實際表面半徑的換算（stiffness 2、threshold 0.6）
+K = 1.6    # metaball 半徑 → 實際表面半徑的換算（stiffness 2、threshold 0.45：(1-x²)³·s = t）
 
 
 def build_figure(b, mi):
@@ -28,7 +28,7 @@ def build_figure(b, mi):
     mb = bpy.data.metaballs.new("figure")
     mb.resolution = 0.42
     mb.render_resolution = 0.42
-    mb.threshold = 0.6
+    mb.threshold = 0.45
     obj = bpy.data.objects.new("figure", mb)
     bpy.context.scene.collection.objects.link(obj)
 
@@ -100,31 +100,37 @@ def build_figure(b, mi):
         d = (fdir + Vector((0, 0, spread * 0.6)) + side * spread * 0.2).normalized()
         cap(base, base + d * L, 0.36 if k else 0.42, stiff=1.6)
     cap(palm_c + Vector((0, 0, -0.9)), palm_c + Vector((0.4, -1.6, -1.9)), 0.45, stiff=1.6)   # 拇指
-    # ---------------- 腿（左腿前跨、右腿後蹬），透過裙子顯出膝蓋
-    cap((2.6, -0.5, Z + 24.0), (3.2, -5.2, Z + 14.0), 2.9)
-    cap((3.2, -5.2, Z + 14.0), (3.3, -6.6, Z + 2.2), 2.1)
-    cap((3.3, -7.0, Z + 1.0), (3.4, -10.4, Z + 0.7), 1.15)
-    cap((-2.6, 1.2, Z + 24.0), (-3.0, 3.4, Z + 13.0), 2.8)
-    cap((-3.0, 3.4, Z + 13.0), (-3.4, 6.2, Z + 2.6), 2.0)
-    cap((-3.4, 6.0, Z + 1.6), (-3.5, 3.6, Z + 0.6), 1.05)
-    # ---------------- 長裙（下擺漸寬、往身後鼓起）
-    for z, sx_, sy_, sz_, yoff in ((Z + 22.5, 6.2, 4.8, 3.6, 1.0), (Z + 17.0, 6.6, 5.4, 3.8, 2.0), (Z + 11.5, 6.9, 5.9, 3.8, 3.0),
-                                    (Z + 6.5, 7.3, 6.4, 3.4, 3.8), (Z + 2.4, 7.4, 6.6, 2.2, 4.4)):
-        ell((0.2, yoff, z), (sx_, sy_, sz_), stiff=1.8)
-    # 身後被風吹起的大片裙擺與披肩（多個扁長橢球形成衣褶）
-    for c, size, rot in (((-1.5, 8.5, Z + 8.0), (5.5, 2.4, 6.0), (0.25, 0, -0.2)),
-                         ((2.5, 9.5, Z + 12.0), (4.5, 2.0, 6.5), (0.35, 0, 0.3)),
-                         ((-4.5, 7.0, Z + 17.0), (3.0, 2.2, 6.0), (0.2, 0.3, -0.5)),
-                         ((0.0, 6.0, Z + 22.0), (5.0, 2.2, 4.5), (0.4, 0, 0)),
-                         ((4.5, 7.5, Z + 5.0), (3.0, 2.2, 4.0), (0.3, 0, 0.4))):
-        ell(c, size, rot=rot, stiff=1.7)
-    # 披肩：繞過右肩、在右臂下方鼓起
-    ell((-8.6, 2.0, Z + 33.0), (2.8, 3.2, 6.4), rot=(0.2, -0.25, 0), stiff=1.7)
-    ell((-7.0, 4.5, Z + 27.0), (2.4, 3.0, 5.5), rot=(0.4, -0.2, 0), stiff=1.7)
-    cap((-6.0, 1.0, Z + 41.0), (-8.6, 2.6, Z + 36.0), 1.8, stiff=1.7)
+    # ---------------- 腿（左腿前跨、右腿後蹬）：大多藏在裙內，只露出膝蓋起伏與腳
+    cap((2.6, -0.8, Z + 24.0), (3.0, -5.0, Z + 14.0), 2.6)
+    cap((3.0, -5.0, Z + 14.0), (3.1, -6.0, Z + 3.0), 1.8)
+    cap((3.0, -6.6, Z + 1.0), (3.2, -10.2, Z + 0.7), 1.1)
+    cap((-2.6, 1.2, Z + 24.0), (-3.0, 3.4, Z + 13.0), 2.5)
+    cap((-3.0, 3.4, Z + 13.0), (-3.3, 5.6, Z + 3.0), 1.7)
+    cap((-3.3, 5.8, Z + 1.4), (-3.4, 3.4, Z + 0.6), 1.0)
+    # ---------------- 長裙：一圈垂直衣褶（上窄下寬、身後被風吹起），褶間形成直向凹凸
+    ell((0.0, 1.0, Z + 20.0), (5.2, 4.2, 6.5), stiff=1.8)
+    n_f = 14
+    for k in range(n_f):
+        t = math.tau * k / n_f
+        ct, st = math.cos(t), math.sin(t)
+        back = max(0.0, st)                       # +Y 為身後
+        top = Vector((ct * 4.6, 0.8 + st * 3.6, Z + 26.0))
+        bot = Vector((ct * (7.4 + 0.8 * back), 1.6 + st * (6.2 + 3.5 * back) + 1.8 * back, Z + 1.4 + 1.5 * back))
+        if st < -0.5 and ct > 0:                  # 左腿前跨處，下擺被腿撐向前
+            bot += Vector((0.0, -1.6, 0.0))
+        cap(top, bot, 1.5 + 0.5 * (k % 2), stiff=1.7)
+    # 身後被風吹起的大片裙擺（扁長橢球形成大衣褶）
+    for c, size, rot in (((-1.5, 10.5, Z + 9.0), (5.0, 1.8, 6.5), (0.35, 0, -0.2)),
+                         ((3.0, 11.0, Z + 13.0), (4.0, 1.6, 6.0), (0.45, 0, 0.3)),
+                         ((0.5, 8.0, Z + 20.0), (4.5, 1.8, 5.0), (0.5, 0, 0)),
+                         ((5.0, 9.0, Z + 5.0), (3.0, 1.8, 4.0), (0.3, 0, 0.4))):
+        ell(c, size, rot=rot, stiff=1.6)
+    # 披肩：從右肩垂到右臀側，形成一大片衣褶
+    cap((-5.6, 0.8, Z + 40.5), (-7.6, 1.6, Z + 31.0), 2.0, stiff=1.7)
+    ell((-7.6, 1.8, Z + 28.5), (2.4, 3.0, 4.5), rot=(0.2, -0.15, 0), stiff=1.6)
+    cap((-7.0, 2.4, Z + 30.0), (-8.4, 5.0, Z + 20.0), 1.5, stiff=1.6)
     cap((5.0, 1.5, Z + 41.0), (2.0, 4.5, Z + 34.0), 1.4, stiff=1.6)
-    # 胸前斜披的衣帶
-    cap((-4.8, -2.6, Z + 41.0), (3.4, -3.4, Z + 30.0), 0.9, stiff=1.5)
+    cap((-4.6, -2.4, Z + 40.6), (3.4, -3.0, Z + 30.5), 1.0, stiff=1.6)     # 胸前斜披衣帶
 
     dg = bpy.context.evaluated_depsgraph_get()
     me = bpy.data.meshes.new_from_object(obj.evaluated_get(dg))
@@ -156,12 +162,12 @@ def sword(b, mi, fist, tip):
     vs = b.cyl(mi, 0.45, 0.45, 4.6, (0, 0, 0), seg=8)
     place(vs, Matrix.Translation(fist - d * 2.4) @ R)
     # 護手
-    vs = b.box(mi, (5.2, 0.9, 0.7), (0, 0, 0))
+    vs = b.box(mi, (6.0, 1.1, 0.9), (0, 0, 0))
     place(vs, Matrix.Translation(fist + d * 2.4) @ R)
     # 劍身（菱形斷面，底寬 1.9 m → 尖端）
     g = fist + d * 2.75
     Lb = (tip - g).length
-    ring0 = [Vector((0.95, 0, 0)), Vector((0, 0.24, 0)), Vector((-0.95, 0, 0)), Vector((0, -0.24, 0))]
+    ring0 = [Vector((1.3, 0, 0)), Vector((0, 0.32, 0)), Vector((-1.3, 0, 0)), Vector((0, -0.32, 0))]
     ring1 = [p * 0.55 + Vector((0, 0, Lb * 0.86)) for p in ring0]
     M = Matrix.Translation(g) @ R
     v0 = [b.bm.verts.new(M @ p) for p in ring0]
@@ -180,7 +186,7 @@ def sword(b, mi, fist, tip):
 
 def motherland(path):
     b = Builder("Motherland", seed=5)
-    concrete = b.tex("concrete", "plastered_wall_04", tile=7.0, tint="#d9d5ca", rough=0.85, normal=0.6)
+    concrete = b.tex("concrete", "plastered_wall_04", tile=7.0, tint="#cdc8bb", rough=0.85, normal=0.6)
     steel = b.tex("sword", "plastered_wall_04", tile=4.0, tint="#cbc6ba", rough=0.6, normal=0.3)
     base_c = b.tex("base", "white_sandstone_blocks_02", tile=3.0, tint="#cdc8bc", rough=0.8, normal=0.4)
     path_c = b.tex("path", "gravel_floor", tile=2.5, tint="#a8a296", rough=0.9, normal=0.3)
@@ -194,10 +200,10 @@ def motherland(path):
     b.box_base(base_c, (22.0, 17.0, 0.6), (0, 0.5, 0.0))
     b.box_base(base_c, (19.0, 14.5, BASE_Z - 0.6), (0, 0.5, 0.6))
     # 通往雕像的步道（前方蜿蜒小徑以直線近似）
-    for k in range(6):
+    for k in range(1):
         y = -18.0 - k * 14.0
         b.box_base(path_c, (5.0, 14.2, 0.3), (-1.0 - k * 1.2, y, -0.00042 * y * y - 0.2), rot=(0.0, 0, 0.08))
 
     fist = build_figure(b, concrete)
-    sword(b, steel, fist, (0.8, 13.0, 85.0))
+    sword(b, steel, fist, (11.5, 7.5, 85.0))
     b.export(path)
