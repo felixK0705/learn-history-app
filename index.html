@@ -11,14 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@500;600;800&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <!-- 液態玻璃折射濾鏡（Chromium 以 backdrop-filter: url() 套用；其他瀏覽器退回模糊玻璃） -->
-    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-      <filter id="lg-refract" x="0%" y="0%" width="100%" height="100%" color-interpolation-filters="sRGB">
-        <feTurbulence type="fractalNoise" baseFrequency="0.004 0.007" numOctaves="2" seed="11" result="noise" />
-        <feGaussianBlur in="noise" stdDeviation="3" result="soft" />
-        <feDisplacementMap in="SourceGraphic" in2="soft" scale="46" xChannelSelector="R" yChannelSelector="G" />
-      </filter>
-    </svg>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

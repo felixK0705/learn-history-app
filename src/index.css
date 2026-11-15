@@ -49,11 +49,6 @@
       0 30px 60px -28px rgb(2 22 80 / 0.55),
       0 2px 8px -2px rgb(2 22 80 / 0.25);
   }
-  /* Chromium：折射＋輕度模糊，玻璃更通透 */
-  .lg-refract .glass {
-    backdrop-filter: blur(10px) url(#lg-refract) saturate(185%) brightness(1.06);
-    -webkit-backdrop-filter: blur(10px) url(#lg-refract) saturate(185%) brightness(1.06);
-  }
   /* 左上角的鏡面反光 */
   .glass::before {
     content: "";
@@ -108,7 +103,6 @@
 }
 .country-label:hover .dot, .country-label.is-active .dot { @apply bg-deep-600; box-shadow: none; }
 .country-label.visited .dot { @apply bg-glow; }
-.country-label.zoom-hidden { opacity: 0 !important; pointer-events: none !important; }
 .landmark-pin {
   @apply flex cursor-pointer items-center gap-1 whitespace-nowrap rounded-full px-2 py-[3px] text-[10.5px] font-semibold;
   background: #fbbf24;

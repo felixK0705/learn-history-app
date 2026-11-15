@@ -45,7 +45,8 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
   const hoverRef = useRef<GeoFeature | null>(null);
   const selectedRef = useRef<string | null>(selectedIso);
   const labelEls = useRef(new Map<string, HTMLDivElement>());
-  const posEls = useRef(new Map<HTMLDivElement, { lat: number; lng: number }>());
+  /** 每個標籤在地球上的單位方向向量（建立時算一次，之後每格只做內積） */
+  const labelVecs = useRef(new Map<HTMLDivElement, { x: number; y: number; z: number }>());
 
 
   const cb = useRef({ onSelectCountry, onHoverCountry, onSelectBuilding, onReady });
@@ -88,7 +89,7 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
       .polygonSideColor(() => "rgba(255, 255, 255, 0.06)")
       // 國界線：清楚可見的白色細線，選取的國家更亮
       .polygonStrokeColor((f) => ((f as GeoFeature).properties.iso_a3 === selectedRef.current ? "rgba(255,255,255,0.95)" : "rgba(255,255,255,0.55)"))
-      .polygonsTransitionDuration(250)
+      .polygonsTransitionDuration(0)
       .onPolygonHover((f) => {
         hoverRef.current = (f as GeoFeature) ?? null;
         el.style.cursor = f ? "pointer" : "grab";
@@ -122,19 +123,14 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
       mat.shininess = 18;
       mat.needsUpdate = true;
     });
-    let raf = 0;
+    let clouds: Mesh | null = null;
     loader.load("/textures/clouds-painted.png", (tex) => {
       if (disposed) return;
-      const clouds = new Mesh(
+      clouds = new Mesh(
         new SphereGeometry(g.getGlobeRadius() * 1.006, 96, 64),
         new MeshPhongMaterial({ map: tex, transparent: true, opacity: 0.72, depthWrite: false }),
       );
       g.scene().add(clouds);
-      const spin = () => {
-        clouds.rotation.y += 0.00025;
-        raf = requestAnimationFrame(spin);
-      };
-      spin();
     });
 
     // 玻璃珠般的邊緣反光（菲涅耳效果），重現參考圖地球亮白的外緣
@@ -165,33 +161,25 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
 
     globeRef.current = g;
 
-    // 標籤顯示規則：所有國家名稱都顯示
-    // 1. 依與視線的夾角平滑淡出，背面完全隱藏（不會在邊緣忽亮忽滅）
-    // 2. 疊放順序固定依人口排名（覆蓋 CSS2DRenderer 每格依距離重排，那會讓重疊的標籤前後跳動、看起來在閃）
-    let fadeRaf = 0;
-    const fade = () => {
+    // 每格一次：雲層緩慢轉動＋標籤依與視線的夾角平滑淡出（背面隱藏，邊緣不會忽亮忽滅）
+    let raf = 0;
+    const tick = () => {
+      if (clouds) clouds.rotation.y += 0.00025;
       const cam = g.camera().position;
       const d = cam.length();
-      const R = g.getGlobeRadius();
-      const horizon = R / d;
-      posEls.current.forEach((ll, div) => {
-        const p = g.getCoords(ll.lat, ll.lng, 0);
-        const len = Math.hypot(p.x, p.y, p.z) || 1;
-        const dot = (p.x * cam.x + p.y * cam.y + p.z * cam.z) / (len * d);
-        const hz = Math.min(1, Math.max(0, (dot - horizon - 0.1) / 0.15));
-        const o = hz;
+      const horizon = g.getGlobeRadius() / d;
+      labelVecs.current.forEach((u, div) => {
+        const dot = (u.x * cam.x + u.y * cam.y + u.z * cam.z) / d;
+        const o = Math.min(1, Math.max(0, (dot - horizon - 0.1) / 0.15));
         const v = o.toFixed(2);
-        const iso = div.dataset.iso;
-        const z = iso === selectedRef.current ? "3000" : iso ? String(2000 - (countryByIso.get(iso)?.rank ?? 999)) : "2500";
-        if (div.style.zIndex !== z) div.style.zIndex = z;
         if (div.style.opacity !== v) {
           div.style.opacity = v;
           div.style.pointerEvents = o > 0.5 ? "" : "none";
         }
       });
-      fadeRaf = requestAnimationFrame(fade);
+      raf = requestAnimationFrame(tick);
     };
-    fadeRaf = requestAnimationFrame(fade);
+    raf = requestAnimationFrame(tick);
 
     fetch("/data/countries.json")
       .then((r) => r.json())
@@ -209,7 +197,6 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
     return () => {
       disposed = true;
       cancelAnimationFrame(raf);
-      cancelAnimationFrame(fadeRaf);
       ro.disconnect();
       g._destructor?.();
       el.replaceChildren();
@@ -226,7 +213,7 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
     const markers: Marker[] = countries.map((c) => ({ kind: "country", iso: c.iso, lat: c.pos[0], lng: c.pos[1] }));
     if (showLandmarks) buildings.forEach((b) => markers.push({ kind: "building", b, lat: b.position[0], lng: b.position[1] }));
     labelEls.current.clear();
-    posEls.current.clear();
+    labelVecs.current.clear();
     g.htmlElementsData(markers)
       .htmlLat("lat")
       .htmlLng("lng")
@@ -235,7 +222,9 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
         const marker = m as Marker;
         const div = document.createElement("div");
         div.style.opacity = "0";
-        posEls.current.set(div, { lat: marker.lat, lng: marker.lng });
+        const p = g.getCoords(marker.lat, marker.lng, 0);
+        const len = Math.hypot(p.x, p.y, p.z) || 1;
+        labelVecs.current.set(div, { x: p.x / len, y: p.y / len, z: p.z / len });
         if (marker.kind === "country") {
           const c = countryByIso.get(marker.iso)!;
           div.className = "country-label";
@@ -244,7 +233,7 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
           div.append(dot, c.zh);
           div.title = c.en;
           // globe.gl 會延遲建立元素，建立當下就套用縮放層級的顯示規則
-          div.dataset.iso = c.iso;
+          div.style.zIndex = String(2000 - c.rank);
           if (c.iso === selectedRef.current) div.classList.add("is-active");
           div.onclick = (e) => {
             e.stopPropagation();
@@ -273,6 +262,8 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
     labelEls.current.forEach((div, iso) => {
       div.classList.toggle("visited", visited.includes(iso));
       div.classList.toggle("is-active", iso === selectedIso);
+      // 選取的國家疊在最上層
+      div.style.zIndex = iso === selectedIso ? "3000" : String(2000 - (countryByIso.get(iso)?.rank ?? 999));
     });
   }, [visited, selectedIso, showLandmarks]);
 

@@ -105,7 +105,7 @@ export default function GlobePage() {
       <StarField />
       <div ref={shiftRef} className="absolute inset-0">
       {/* 地球後方光暈 */}
-      <div ref={glowRef} className="pointer-events-none absolute top-1/2 left-1/2 size-[64vmin] -translate-1/2 rounded-full bg-[radial-gradient(circle,rgba(170,230,255,0.55)_0%,rgba(110,200,255,0.25)_45%,transparent_70%)] blur-[30px]" />
+      <div ref={glowRef} className="pointer-events-none absolute top-1/2 left-1/2 size-[64vmin] -translate-1/2 rounded-full bg-[radial-gradient(circle,rgba(170,230,255,0.55)_0%,rgba(110,200,255,0.25)_45%,transparent_70%)]" />
       <div ref={globeWrapRef} className="absolute inset-0">
         {/* 地球右上緣的光斑（參考圖） */}
         <div
