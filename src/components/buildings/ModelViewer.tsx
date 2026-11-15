@@ -2,7 +2,7 @@ import { Component, Suspense, useEffect, useRef, useState, type ReactNode } from
 import { Canvas } from "@react-three/fiber";
 import { Environment, OrbitControls, useGLTF, useProgress } from "@react-three/drei";
 import { useThree } from "@react-three/fiber";
-import { Box3, DirectionalLight, MathUtils, PerspectiveCamera, Sphere, Vector3 } from "three";
+import { Box3, DirectionalLight, Fog, MathUtils, PerspectiveCamera, Sphere, Vector3 } from "three";
 import type { OrbitControls as OrbitControlsImpl } from "three-stdlib";
 
 /** 依模型實際大小設定太陽光與陰影範圍（模型從百公尺到兩公里不等） */
@@ -70,7 +70,7 @@ export interface BuildingView {
 
 /** 依實景照片的拍攝位置擺放相機（與 Blender 比對圖同一個視角），並限制可環視的範圍，避免看到地景邊緣 */
 function ViewRig({ view, token, shift, controls }: { view: BuildingView; token: string; shift: number; controls: React.RefObject<OrbitControlsImpl | null> }) {
-  const { camera, size } = useThree();
+  const { camera, size, scene } = useThree();
   useEffect(() => {
     const cam = camera as PerspectiveCamera;
     const t = new Vector3(...view.target);
@@ -92,15 +92,15 @@ function ViewRig({ view, token, shift, controls }: { view: BuildingView; token: 
     const c = controls.current;
     if (!c) return;
     c.target.copy(t);
-    const off = p.clone().sub(t);
-    const az = Math.atan2(off.x, off.z);
-    const polar = Math.acos(MathUtils.clamp(off.y / dist, -1, 1));
-    c.minAzimuthAngle = az - 0.6;
-    c.maxAzimuthAngle = az + 0.6;
-    c.minPolarAngle = Math.max(0.15, polar - 0.35);
-    c.maxPolarAngle = Math.min(Math.PI / 2 + 0.12, polar + 0.12);
-    c.minDistance = dist * 0.35;
-    c.maxDistance = dist * 1.25;
+    // 可 360 度環繞；可縮小到看見整個場景，但不能鑽到地面下
+    c.minAzimuthAngle = -Infinity;
+    c.maxAzimuthAngle = Infinity;
+    c.minPolarAngle = 0.05;
+    c.maxPolarAngle = Math.PI / 2 - 0.03;
+    c.minDistance = dist * 0.15;
+    c.maxDistance = dist * 4;
+    // 遠處地景淡入天空色，縮小時不會看到地面邊緣的硬邊
+    scene.fog = new Fog("#c9d5e2", dist * 2.2, dist * 7);
     c.update();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [token, shift, size.width, size.height]);
