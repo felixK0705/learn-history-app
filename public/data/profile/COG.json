@@ -7,30 +7,30 @@
    {
     "name": "天主教",
     "percent": 33,
-    "description": "法國殖民時期傳教士帶入，仍是最大教派。"
+    "description": "天主教在15世紀末隨葡萄牙人接觸剛果王國時首次傳入，但真正在今日剛果共和國扎根是在1880年代以後，法國探險家布拉薩建立法屬剛果殖民地，1883年聖靈會傳教士在洛安果建立傳教站。殖民時期天主教會掌握了大部分教育，培養了包括首任總統富爾貝・尤盧（本身是天主教神父）在內的政治精英。"
    },
    {
     "name": "新教與獨立教會",
     "percent": 22,
-    "description": "包含福音派與非洲本土教會。"
+    "description": "新教在1909年由瑞典傳道聯會傳入，在南部的普爾地區與剛果族中建立教會與學校，後來發展為剛果福音教會。瑞典傳教士以基剛果語傳教並翻譯聖經，使新教在南部剛果族中有深厚基礎；近年各種獨立教會也在城市中快速成長。"
    },
    {
     "name": "覺醒教會及其他基督教",
     "percent": 22,
-    "description": "五旬節派與覺醒運動教會近年快速成長。"
+    "description": "覺醒教會是1990年代以後快速成長的五旬節派與靈恩派教會，在1993–1999年剛果內戰期間及之後，許多人轉向強調神蹟、醫治與繁榮神學的新興教會。這些教會在布拉薩市與黑角等城市特別活躍，吸引了大量年輕信徒。"
    },
    {
     "name": "本土信仰與基督教融合教派（如基班古教會）",
     "percent": 10,
-    "description": "包含基班古教會等融合傳統信仰的宗教。"
+    "description": "這類教派融合基督教與本土信仰，包括源自剛果民主共和國的金邦古教會，以及1920年代由安德烈・馬特瓦在剛果發起的「馬特瓦運動」，後者以反殖民鬥爭著稱，馬特瓦在1942年死於獄中後被信徒視為救世主。這些教會反映了殖民時期非洲人自主的宗教與政治覺醒。"
    },
    {
     "name": "伊斯蘭教",
     "percent": 2,
-    "description": "主要為西非移民與商人。"
+    "description": "伊斯蘭教在殖民時期隨西非商人傳入，今日穆斯林大多是來自馬利、塞內加爾、茅利塔尼亞與西非其他國家的商人及其後代，集中在布拉薩市與黑角的商業區。由於傳入時間晚且多為外籍商人，穆斯林只占約2%。"
    }
   ],
-  "background": "15世紀起葡萄牙人曾向剛果王國傳教，19世紀末法國殖民後天主教傳教士建立學校與教會，基督教逐漸普及。殖民時期亦興起融合非洲傳統的本土教會，近年五旬節派大幅成長。"
+  "background": "剛果共和國在殖民前是剛果王國、洛安果王國與提奧王國等國家的所在地，宗教以祖靈與自然信仰為主。1880年代法國殖民後，天主教與新教傳教士相繼進入，殖民時期也出現了馬特瓦運動等融合基督教與反殖民思想的本土教派。1960年獨立後，1969–1991年剛果人民共和國實行馬列主義，宗教受到一定限制。1990年代民主化與內戰後，覺醒教會與各種新興教派快速成長。"
  },
  "language": {
   "official": "官方語言為法語。",
@@ -38,34 +38,34 @@
    {
     "name": "剛果語（基圖巴語）",
     "percent": 45,
-    "description": "以剛果語為基礎的通用語，通行於南部與布拉薩一帶。",
+    "description": "剛果語的通用形式「基圖巴語」（Kituba）是在19世紀末至殖民時期，以基剛果語為基礎、在河運商人與各地勞工之間發展出的簡化通用語，1921–1934年修建剛果－大洋鐵路時大批勞工聚集，更讓它沿著鐵路傳播。今天它是南部、黑角與布拉薩市南部的主要通用語，也是剛果共和國兩種國語之一。",
     "greeting": "Mbote",
     "pronunciation": "m-bo-teh"
    },
    {
     "name": "林加拉語",
     "percent": 30,
-    "description": "通行於首都北部與剛果河流域，亦流行於音樂中。",
+    "description": "林加拉語源自剛果河中游的班加拉語，19世紀末隨著河上貿易與殖民軍隊傳播，成為剛果河沿岸的通用語。首都布拉薩市與對岸的金夏沙隔河相望，兩地的流行音樂（如倫巴）都以林加拉語演唱，使它在北部與首都廣泛流行，是兩種國語之一。",
     "greeting": "Mbote",
     "pronunciation": "m-bo-teh"
    },
    {
     "name": "法語",
     "percent": 5,
-    "description": "官方、教育與行政語言，母語者少但城市居民普遍能使用。",
+    "description": "法語隨1880年代法國殖民而傳入，布拉薩市在1940–1943年二戰期間曾是「自由法國」的首都。1960年獨立後法語仍為唯一官方語言，用於政府、教育與媒體，但由於日常生活中多使用基圖巴語與林加拉語，以法語為母語者約只占5%。",
     "greeting": "Bonjour",
     "pronunciation": "bon-zhoor"
    }
   ],
-  "history": "境內民族多使用班圖語系語言。19世紀末法國殖民後法語成為行政與教育語言；剛果河上的貿易與殖民軍隊促成林加拉語與基圖巴語成為區域通用語，並列為國家語言。"
+  "history": "剛果共和國境內有約60種語言，大多屬於班圖語系，包括南部的剛果語、北部的姆博希語與中部的提凱語等。19世紀末以後，林加拉語隨剛果河上的貿易擴散，殖民時期鐵路建設則讓基圖巴語成為南部的通用語。1880年代法國殖民後，法語成為行政與教育語言，1960年獨立後為官方語言。今天剛果共和國呈現南部說基圖巴語、北部說林加拉語、全國以法語為官方語言的格局。"
  },
  "food": {
   "ranking": [
    {
     "name": "木薯糕",
     "localName": "Chikwangue",
-    "description": "木薯發酵後搗成團，以葉子包裹蒸熟的主食。",
-    "history": "剛果河流域最普遍的主食之一，便於保存與攜帶。",
+    "description": "將木薯泡水發酵後搗成泥，用香蕉葉或竹葉包成長條狀蒸熟，口感緊實有彈性、帶有微酸味。",
+    "history": "木薯原產南美洲，16世紀經葡萄牙人傳入剛果王國沿岸，再沿著剛果河傳入內陸，因耐旱、產量高而成為主食。發酵與包裹蒸煮能去除木薯中的氰化物，並讓木薯糕保存數天至數週，適合長途旅行與河上航行。今天在布拉薩市的市場隨處可見木薯糕，常配烤魚一起吃。",
     "wiki": "Chikwangue",
     "image": "https://upload.wikimedia.org/wikipedia/commons/0/07/Cassava_Bread_-_cassava_cooked_in_leaf_wrap_%28Kwanga%2C_Chikwangue%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Cassava_Bread_-_cassava_cooked_in_leaf_wrap_(Kwanga,_Chikwangue).jpg",
@@ -74,8 +74,8 @@
    {
     "name": "富富",
     "localName": "Foufou",
-    "description": "以木薯粉加熱水攪成的黏稠麵團，搭配燉菜與醬汁食用。",
-    "history": "在中西非廣泛食用，是日常飲食的基礎。",
+    "description": "將木薯粉加熱水攪拌成有彈性的糰狀主食，口感黏滑、味道清淡，用手捏成小團沾燉菜或醬汁吃。",
+    "history": "富富是剛果河流域與西非的共同主食，名稱在法語中拼寫為「foufou」。木薯在殖民時期因法國當局推廣種植以防饑荒而更加普及。在剛果共和國，富富幾乎每餐都會出現，與木薯葉燉菜、棕櫚油燉雞等菜餚搭配，是家庭飲食的基礎。",
     "wiki": "Fufu",
     "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Wrapped_fufu.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Wrapped_fufu.jpg",
@@ -84,8 +84,8 @@
    {
     "name": "木薯葉燉菜",
     "localName": "Saka-saka / Pondu",
-    "description": "木薯葉搗碎後加入棕櫚油、魚乾或花生燉煮。",
-    "history": "中非地區最具代表性的蔬菜料理之一。",
+    "description": "將木薯葉搗碎後與棕櫚油、花生醬、洋蔥、魚乾或煙燻魚一起長時間燉煮的綠色燉菜，口感濃稠。",
+    "history": "木薯葉燉菜在剛果共和國稱為「saka-saka」，在剛果民主共和國稱為「pondu」，反映了剛果河兩岸共同的飲食文化。木薯葉富含蛋白質與維生素，是許多家庭重要的營養來源。在剛果共和國，這道菜常在週末家庭聚餐與節慶中出現，搭配木薯糕或米飯。",
     "wiki": "Cassava-based dishes",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Cassava_on_the_Sawla_market.jpg/960px-Cassava_on_the_Sawla_market.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Cassava_on_the_Sawla_market.jpg",
@@ -94,8 +94,8 @@
    {
     "name": "棕櫚油燉雞",
     "localName": "Poulet à la moambé",
-    "description": "以棕櫚果醬汁燉煮雞肉，濃郁鮮紅。",
-    "history": "流行於剛果兩國，常被視為代表性料理。",
+    "description": "將雞肉與棕櫚果熬成的濃醬一起燉煮，加入洋蔥、大蒜與辣椒，色澤橘紅、醬汁濃郁，常配米飯吃。",
+    "history": "棕櫚油燉雞是中部非洲共同的傳統料理，「moambé」是剛果河流域對棕櫚醬的稱呼。油棕是中部非洲熱帶雨林的原生植物，當地人數千年來用棕櫚果製作烹飪油與醬汁。在剛果共和國，這道菜常在節慶與招待客人時出現，是展現誠意的家常名菜。",
     "wiki": "Moambe chicken",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Poulet_%C3%A0_la_moambe.JPG/960px-Poulet_%C3%A0_la_moambe.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Poulet_%C3%A0_la_moambe.JPG",
@@ -104,8 +104,8 @@
    {
     "name": "烤魚",
     "localName": "Poisson braisé",
-    "description": "以炭火炙烤的剛果河河魚，搭配辣醬與木薯糕。",
-    "history": "依靠剛果河豐富的漁業資源，是布拉薩街頭常見美食。",
+    "description": "將整條魚以香料、大蒜與辣椒醃過後炭烤，搭配炸大蕉、木薯糕與辣椒洋蔥醬汁一起吃，外焦內嫩。",
+    "history": "剛果河與大西洋沿岸盛產魚類，烤魚是剛果共和國最普遍的料理之一。布拉薩市沿著剛果河的露天酒吧與餐館在晚上常有烤魚攤，民眾邊吃烤魚邊聽林加拉語的倫巴音樂，是當地夜生活的重要部分。黑角則以大西洋海魚聞名，烤魚常配當地啤酒一起享用。",
     "wiki": "Fish as food",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Fish_stuffed_with_Thai_herbs.jpg/960px-Fish_stuffed_with_Thai_herbs.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Fish_stuffed_with_Thai_herbs.jpg",

@@ -7,20 +7,20 @@
    {
     "name": "天主教",
     "percent": 77,
-    "description": "葡萄牙殖民時期傳入，至今是最主要的宗教。"
+    "description": "維德角群島在1456–1462年間由葡萄牙人發現時是無人島，1462年葡萄牙人在聖地牙哥島建立大里貝拉（今舊城），天主教隨即傳入，1533年設立主教區，是撒哈拉以南非洲最早的天主教主教區之一。殖民者與被帶來的西非奴隸都受洗成為天主教徒，因此天主教成為維德角人的主要宗教。"
    },
    {
     "name": "無宗教",
     "percent": 11,
-    "description": "不屬於任何宗教的人口。"
+    "description": "無宗教人口約占一成，主要是城市年輕人與曾移居歐洲、美國的居民。維德角有大量海外移民，與葡萄牙、美國等國家的往來頻繁，受到西方世俗化的影響，加上教育普及，使一部分人不再參與宗教活動。"
    },
    {
     "name": "基督新教",
     "percent": 10,
-    "description": "包括拿撒勒人會、復臨安息日會等。"
+    "description": "新教主要包括拿撒勒人教會、基督復臨安息日會與五旬節派等。拿撒勒人教會在20世紀初由在美國麻薩諸塞州捕鯨船上工作的維德角人帶回，至今仍是維德角最大的新教教派。近年巴西傳來的五旬節派教會也在城市中快速成長。"
    }
   ],
-  "background": "十五世紀葡萄牙人在無人居住的維德角群島建立殖民地，天主教隨之成為主要宗教。十九世紀後美國捕鯨船與移民往來帶來拿撒勒人會等新教教派。"
+  "background": "維德角在葡萄牙人到來前無人居住，1462年葡萄牙人開始殖民，並把大量西非奴隸帶到群島，使維德角成為大西洋奴隸貿易的重要中轉站。天主教隨殖民傳入，與當地的克里奧爾文化融合，宗教節日如聖約翰節成為重要的民間慶典。19–20世紀大量維德角人移民美國，帶回了拿撒勒人教會等新教教派。1975年獨立後，維德角以天主教為主，宗教自由受到保障。"
  },
  "language": {
   "official": "葡萄牙語是官方語言，維德角克里奧爾語則是全民的日常語言。",
@@ -28,27 +28,27 @@
    {
     "name": "維德角克里奧爾語",
     "percent": 95,
-    "description": "以葡萄牙語為基礎並融合西非語言的克里奧爾語，各島有不同變體。",
+    "description": "維德角克里奧爾語（Kriolu）在15–16世紀由葡萄牙殖民者與被帶到群島的西非奴隸（主要來自今日幾內亞比索、塞內加爾一帶）接觸而形成，是最古老的葡語克里奧爾語之一。由於全體維德角人都以它為日常語言，約95%人口以它為母語，不同島嶼還有各自的方言，例如聖地牙哥島的巴迪烏方言與聖文森島的方言。",
     "greeting": "Bon dia",
     "pronunciation": "bon DEE-a"
    },
    {
     "name": "葡萄牙語",
     "percent": 5,
-    "description": "官方語言，用於政府、教育與媒體。",
+    "description": "葡萄牙語隨1462年葡萄牙殖民傳入，殖民時期是行政與教育語言，1975年獨立後仍為官方語言。政府、法律、學校與媒體使用葡萄牙語，但日常生活中多數人使用克里奧爾語，因此以葡萄牙語為母語者約只占5%，形成典型的雙層語言社會。",
     "greeting": "Olá",
     "pronunciation": "oh-LAH"
    }
   ],
-  "history": "十五世紀起葡萄牙殖民者與被帶來的西非人在此融合，形成最早的葡語克里奧爾語之一。葡萄牙語長期是行政與教育語言，獨立後克里奧爾語逐漸受到重視並推動標準化。"
+  "history": "維德角克里奧爾語在15世紀末至16世紀形成，是葡萄牙語與西非語言（如曼丁哥語、沃洛夫語）接觸的產物，也是現存最古老的克里奧爾語之一。殖民時期葡萄牙語是唯一的官方與教育語言，克里奧爾語被視為「不正確的葡萄牙語」。1975年獨立後，克里奧爾語在文化上得到更多肯定，1998年政府推出統一的書寫系統（ALUPEC）。今天政府正推動讓克里奧爾語與葡萄牙語同為官方語言。"
  },
  "food": {
   "ranking": [
    {
     "name": "卡丘帕",
     "localName": "Cachupa",
-    "description": "以玉米、豆類、蔬菜與肉或魚慢燉的燉菜。",
-    "history": "維德角的國菜，反映殖民時期以玉米為主食的農業背景。",
+    "description": "以玉米粒、豆類、木薯、番薯與魚或豬肉、香腸一起長時間燉煮的濃稠燉菜，被視為維德角國菜。",
+    "history": "卡丘帕的歷史與維德角乾旱的氣候息息相關，玉米與豆類是殖民時期從美洲引進、能在群島乾燥土地上生長的作物。「窮人版」（cachupa pobre）只有玉米與豆子，「富人版」（cachupa rica）則加入多種肉類。前一天剩下的卡丘帕會在隔天早上炒熱並配煎蛋，稱為「cachupa refogada」，是維德角人最常見的早餐。",
     "wiki": "Cachupa",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Cachupa_2.jpg/960px-Cachupa_2.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Cachupa_2.jpg",
@@ -57,15 +57,15 @@
    {
     "name": "炸餃",
     "localName": "Pastel",
-    "description": "以麵團包鮪魚等餡料油炸的小點心。",
-    "history": "受葡萄牙飲食影響的街頭小吃。",
+    "description": "以玉米粉或麵粉做成的麵皮包入鮪魚、洋蔥與辣椒等餡料，摺成半月形後油炸，外皮酥脆。",
+    "history": "炸餃源自葡萄牙的「pastel」，隨殖民時期傳入維德角，並以當地的玉米粉與海產調整做法。維德角周邊海域盛產鮪魚，鮪魚餡是最常見的版本。它是維德角街頭與市場上最受歡迎的小吃，也常在節慶、婚禮與派對中出現。",
     "wiki": "Pastel (food)"
    },
    {
     "name": "雞肉粥",
     "localName": "Canja de galinha",
-    "description": "以雞肉與米熬煮的濃湯粥。",
-    "history": "葡語世界常見的料理，在維德角常於節慶或病後食用。",
+    "description": "以雞肉與米一起熬煮成的濃稠粥湯，加入洋蔥、大蒜與香料，口味清淡溫和，常給病人或產婦食用。",
+    "history": "雞肉粥源自葡萄牙的傳統料理「canja」，葡萄牙人在殖民時期把這道湯帶到維德角、巴西等地。在維德角，它被視為具有療癒作用的料理，常給病人、產婦或在寒冷的夜晚食用。它也在節慶與家庭聚會中出現，是維德角人懷念家鄉的家常味道。",
     "wiki": "Canja de galinha",
     "image": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Canja_de_galinha.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Canja_de_galinha.jpg",
@@ -74,8 +74,8 @@
    {
     "name": "燉豆",
     "localName": "Feijoada",
-    "description": "以豆類與各式肉類燉煮的料理。",
-    "history": "源自葡萄牙，在葡語國家發展出各自的版本。",
+    "description": "以豆類與豬肉、香腸等肉類一起長時間燉煮的濃稠燉菜，口味鹹香，通常搭配米飯一起吃。",
+    "history": "維德角的燉豆與葡萄牙、巴西的「feijoada」同源，反映了葡萄牙殖民帝國在大西洋兩岸的飲食交流。由於維德角氣候乾旱，豆類是耐旱且能長期儲存的蛋白質來源。這道菜常在週末家庭聚餐與節慶中出現，與卡丘帕同為維德角的代表燉菜。",
     "wiki": "Feijoada",
     "image": "https://upload.wikimedia.org/wikipedia/commons/9/90/Feijoada_%C3%A0_transmontada.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Feijoada_%C3%A0_transmontada.jpg",
@@ -84,8 +84,8 @@
    {
     "name": "格羅格酒",
     "localName": "Grogue",
-    "description": "以甘蔗釀製的蒸餾酒。",
-    "history": "維德角傳統的甘蔗酒，聖安唐島的格羅格酒特別有名。",
+    "description": "以甘蔗汁發酵後蒸餾而成的烈酒，酒精度高、帶有甘蔗香氣，類似蘭姆酒，是維德角的傳統烈酒。",
+    "history": "甘蔗在15世紀末隨葡萄牙殖民者引進維德角，聖安唐島與聖地牙哥島的山谷是主要產地。傳統上以牛或人力推動的木製榨汁機（trapiche）壓榨甘蔗，再以銅製蒸餾器釀製格羅格酒。它在維德角社會中有重要地位，常在節慶、喪禮與音樂聚會中飲用，也被用來調製加入蜂蜜的「ponche」。",
     "wiki": "Grogue",
     "image": "https://upload.wikimedia.org/wikipedia/commons/7/72/Grogue%2C_uma_bebida_de_Cabo_Verde_03092007.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Grogue,_uma_bebida_de_Cabo_Verde_03092007.jpg",

@@ -7,30 +7,30 @@
    {
     "name": "新教（五旬節派、聖公會等）",
     "percent": 56,
-    "description": "以五旬節派人數最多，另有聖公會、基督復臨安息日會等。"
+    "description": "1814 年英國從荷蘭手中取得蓋亞那，1831 年合併成英屬蓋亞那。1808 年倫敦傳道會派遣傳教士到種植園向奴隸傳教，1823 年德梅拉拉奴隸起義後，傳教士約翰・史密斯被控煽動並死於獄中，引起英國廢奴運動關注。聖公會、衛理公會等在非裔居民中扎根，近數十年五旬節派教會快速成長，使新教成為最大的宗教群體。"
    },
    {
     "name": "印度教",
     "percent": 25,
-    "description": "主要為印度裔居民。"
+    "description": "1834 年英國廢除奴隸制後，種植園主為補充勞動力，1838–1917 年從印度引進約二十四萬名契約勞工，其中大多數信奉印度教。他們的後代印度裔蓋亞那人是全國最大的族群，排燈節與灑紅節（Phagwah）都是國定假日。但 1960 年代後大量印度裔移民到北美，使印度教比例下降。"
    },
    {
     "name": "天主教",
     "percent": 7,
-    "description": "葡萄牙裔與部分非裔居民信仰。"
+    "description": "1835 年起大批來自葡萄牙馬德拉群島的移民以契約勞工身分抵達，他們信奉天主教，後來多轉為商人。此外，耶穌會士在南部魯普努尼地區向美洲原住民傳教，使天主教在原住民社群中也有不少信徒。"
    },
    {
     "name": "伊斯蘭教",
     "percent": 7,
-    "description": "主要為印度裔穆斯林。"
+    "description": "伊斯蘭教主要由 1838–1917 年從印度來的契約勞工中的穆斯林帶來，約佔印度移民的一成多。他們在種植園附近建立清真寺，開齋節與宰牲節如今也是國定假日，使蓋亞那成為宗教節日最多元的國家之一。"
    },
    {
     "name": "無宗教",
     "percent": 3,
-    "description": "比例較低。"
+    "description": "無宗教者人數不多，主要是首都喬治城的年輕人。蓋亞那社會宗教活動活躍，不同宗教的節日都受到全國重視，因此完全不認同宗教的人比例很低。"
    }
   ],
-  "background": "荷蘭與英國殖民時期引入非洲奴隸，廢奴後再從印度招募大量契約勞工，形成非裔與印度裔兩大族群。非裔居民多改信基督教，印度裔則帶來印度教與伊斯蘭教，造就多元宗教格局。"
+  "background": "蓋亞那原為美洲原住民的土地，17 世紀起荷蘭人建立種植園並販運非洲奴隸，1814 年後英國接管並帶來聖公會與其他新教。1834 年廢奴後，英國殖民當局從印度、葡萄牙馬德拉群島與中國引進契約勞工，使蓋亞那成為宗教與族群高度多元的社會：非裔多為基督徒，印度裔多為印度教徒或穆斯林。1966 年獨立後，基督教、印度教與伊斯蘭教的節日都被定為國定假日，反映了多宗教並存的特色。"
  },
  "language": {
   "official": "官方語言為英語。",
@@ -38,34 +38,34 @@
    {
     "name": "英語（含蓋亞那克里奧爾英語）",
     "percent": 95,
-    "description": "英語為官方語言，日常口語多為蓋亞那克里奧爾英語。",
+    "description": "蓋亞那是南美洲唯一以英語為官方語言的國家。17–18 世紀荷蘭人在此殖民，1814 年英國接管後，英語成為行政與教育語言。種植園中的非裔奴隸與後來的印度勞工發展出以英語為基礎、吸收荷蘭語、非洲語言與印度語詞彙的「蓋亞那克里奧爾語」（Creolese），它是全國人民的日常口語，正式場合則使用標準英語。",
     "greeting": "Hello",
     "pronunciation": "heh-loh"
    },
    {
     "name": "西班牙語",
     "percent": 3,
-    "description": "委內瑞拉移民社群使用。",
+    "description": "西班牙語使用者主要來自鄰國委內瑞拉。2015 年後委內瑞拉經濟崩潰，大批移民越過邊境到蓋亞那，加上兩國邊界長期存在領土爭議，西班牙語在邊境地區與首都的移民社群中越來越常見。",
     "greeting": "Hola",
     "pronunciation": "o-la"
    }
   ],
-  "history": "原住民語言在殖民前已存在。荷蘭統治後由英國接手，英語成為官方語言；非裔奴隸與印度契約勞工後代在英語基礎上形成蓋亞那克里奧爾語，印度斯坦語則逐漸式微。"
+  "history": "蓋亞那原住民說阿拉瓦克語、加勒比語等語系的語言，至今在內陸地區仍有使用。17 世紀荷蘭殖民帶來荷蘭語，許多地名（如埃塞奎博、德梅拉拉）至今仍保留荷蘭痕跡。1814 年後英國統治使英語成為官方語言，非洲奴隸、印度、中國與葡萄牙契約勞工在種植園中逐漸轉用以英語為基礎的克里奧爾語。1966 年獨立後英語維持官方語言地位，蓋亞那也因此與英語加勒比國家關係密切。"
  },
  "food": {
   "ranking": [
    {
     "name": "胡椒燉肉",
     "localName": "Pepperpot",
-    "description": "以肉類與木薯汁熬成的卡薩里普醬、肉桂與辣椒慢燉，為國菜。",
-    "history": "源自原住民的保存肉類方法，傳統上在聖誕節早晨食用。",
+    "description": "將牛肉、豬肉或羊肉以木薯提煉的黑色醬汁（cassareep）、肉桂、辣椒與紅糖長時間燉煮，醬汁深黑濃郁。",
+    "history": "胡椒燉肉源自蓋亞那的美洲原住民，他們用苦木薯汁煮成的「cassareep」來烹調與保存肉類，這種醬汁具有防腐作用，過去一鍋燉肉可以反覆加熱保存多日。殖民時期非裔與其他族群也採用這道菜，形成今天的版本。它被視為蓋亞那的國菜，傳統上在耶誕節早晨與家人一起吃，配厚片麵包。",
     "wiki": "Pepperpot"
    },
    {
     "name": "什錦豆飯",
     "localName": "Cook-up rice",
-    "description": "米飯與豆類、椰奶、肉類一鍋燉煮。",
-    "history": "源自非裔奴隸利用剩餘食材的料理，常在週末與除夕食用。",
+    "description": "將米與豆子或黑眼豆、椰奶以及雞肉、牛肉或鹹肉一起炊煮成的一鍋飯，口味濃郁。",
+    "history": "什錦豆飯源自非裔蓋亞那人的飲食傳統，名稱意為「煮成一鍋」，原本是把家中剩下的肉與豆類跟米一起煮的節儉料理，椰奶則反映了加勒比沿海的物產。它在週六的家庭午餐中很常見，也是蓋亞那人迎接新年的傳統料理，許多家庭會在元旦煮一大鍋與親友分享。",
     "wiki": "Rice and peas",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Rice_and_Peas.jpg/960px-Rice_and_Peas.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Rice_and_Peas.jpg",
@@ -74,8 +74,8 @@
    {
     "name": "羅提餅",
     "localName": "Roti",
-    "description": "薄軟的印度式麵餅，配咖哩食用。",
-    "history": "19世紀印度契約勞工帶入，成為蓋亞那人共享的日常主食。",
+    "description": "以麵粉製成的柔軟薄餅，在鐵板上烙熟並拍打出層次，常配咖哩雞肉、馬鈴薯或南瓜一起吃。",
+    "history": "羅提餅由 1838–1917 年從印度來到蓋亞那的契約勞工帶入，是印度裔家庭的日常主食。經過一百多年，它已成為蓋亞那全民的食物，與咖哩一起出現在餐館、婚禮與宗教儀式上。蓋亞那版本的羅提餅特別柔軟多層，被稱為「破布羅提」（oil roti 或 buss-up-shut），因為撕開後像破掉的襯衫。",
     "wiki": "Roti",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/2020-05-08_19_34_28_Chapati_being_made_in_a_pan_in_the_Franklin_Farm_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg/960px-2020-05-08_19_34_28_Chapati_being_made_in_a_pan_in_the_Franklin_Farm_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:2020-05-08_19_34_28_Chapati_being_made_in_a_pan_in_the_Franklin_Farm_section_of_Oak_Hill,_Fairfax_County,_Virginia.jpg",
@@ -84,8 +84,8 @@
    {
     "name": "炸豆球",
     "localName": "Pholourie",
-    "description": "以黃豆仁粉麵糊炸成的小球，配酸辣醬食用。",
-    "history": "源自印度契約勞工的點心，是排燈節等節慶的常見小吃。",
+    "description": "以黃豌豆粉加入香料調成的麵糊，炸成小圓球，外酥內軟，沾酸甜的芒果或羅望子醬食用。",
+    "history": "炸豆球源自印度契約勞工的飲食傳統，以豆類製作的炸點心在印度北部十分常見，移民到加勒比海後發展出在地版本。它是蓋亞那印度裔家庭在排燈節、灑紅節與婚禮等場合常見的點心，也在街頭與小吃店販售，成為不分族群喜愛的零食。",
     "wiki": "Pholourie",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/RK_1611_1012_Pholourie.jpg/960px-RK_1611_1012_Pholourie.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:RK_1611_1012_Pholourie.jpg",
@@ -94,8 +94,8 @@
    {
     "name": "豆餡烙餅",
     "localName": "Dhal puri",
-    "description": "包入黃豆仁粉餡的薄餅，配咖哩食用。",
-    "history": "源自印度比哈爾地區的麵餅，經契約勞工傳入加勒比海後發展出在地版本。",
+    "description": "在麵團中包入煮熟磨碎並以孜然、大蒜調味的黃豌豆餡，擀成薄餅在鐵板上烙熟，配咖哩食用。",
+    "history": "豆餡烙餅源自印度北部比哈爾與北方邦的類似食物，那裡正是大多數印度契約勞工的家鄉。移民到加勒比海後，這種餅發展成更大、更薄的版本，成為印度裔加勒比人的特色食物。由於製作較費工，它常在印度教祭祀、婚禮與節日的宴席中出現。",
     "wiki": "Dal puri",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/A_flicker_of_Bengali_tradition.jpg/960px-A_flicker_of_Bengali_tradition.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:A_flicker_of_Bengali_tradition.jpg",

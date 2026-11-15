@@ -7,20 +7,20 @@
    {
     "name": "伊斯蘭教（遜尼派）",
     "percent": 98,
-    "description": "國教，屬沙斐儀學派。"
+    "description": "伊斯蘭教在10–15世紀間隨阿拉伯、波斯（設拉子）與斯瓦希里商人經印度洋貿易傳入，葛摩群島在中世紀是斯瓦希里海岸貿易網絡的一部分，15世紀以後各島建立了多個蘇丹國。伊斯蘭教（遜尼派沙斐儀學派）成為葛摩人身分認同的核心，1975年獨立後憲法以伊斯蘭教為國教，因此約98%人口為穆斯林。"
    },
    {
     "name": "天主教",
     "percent": 1,
-    "description": "少數信徒。"
+    "description": "天主教在1841年法國占領馬約特島、1886年將其他三島納為保護國後隨法國殖民傳入，信徒多為法國人與來自馬達加斯加的移民。由於伊斯蘭教在葛摩社會中根深蒂固，天主教一直是極少數，主要集中在首都莫羅尼。"
    },
    {
     "name": "其他",
     "percent": 1,
-    "description": "人數極少。"
+    "description": "其他宗教包括新教、印度教與傳統信仰，信徒多為外籍居民，例如來自印度的商人與馬達加斯加移民。葛摩法律對改信伊斯蘭教以外宗教有嚴格限制，因此其他宗教的人數極少。"
    }
   ],
-  "background": "伊斯蘭教自10世紀前後隨阿拉伯與斯瓦希里商人傳入，15世紀起來自設拉子（波斯）的移民建立蘇丹國，使伊斯蘭教在各島扎根。法國殖民時期基督教影響有限。"
+  "background": "葛摩群島最早的居民可能是來自東南亞的南島民族與東非班圖民族，後來阿拉伯、波斯與斯瓦希里商人經印度洋貿易帶來伊斯蘭教，15世紀以後各島形成伊斯蘭蘇丹國。1841–1912年法國逐步殖民四島，1975年葛摩宣布獨立，但馬約特島選擇留在法國。獨立後伊斯蘭教成為國教，2018年修憲把遜尼派沙斐儀學派定為國家信仰，伊斯蘭文化深刻影響葛摩的法律、教育與日常生活。"
  },
  "language": {
   "official": "官方語言為葛摩語、法語與阿拉伯語。",
@@ -28,34 +28,34 @@
    {
     "name": "葛摩語",
     "percent": 96,
-    "description": "與斯瓦希里語相近的班圖語，各島有不同方言。",
+    "description": "葛摩語（Shikomori）屬班圖語系，與斯瓦希里語相近，但受到阿拉伯語、法語與馬達加斯加語的影響。葛摩語在四個島上有不同方言，例如大葛摩島的Shingazidja與昂儒昂島的Shindzuani，各島居民之間可大致互相理解。由於它是葛摩人共同的母語，約96%人口以它為主要語言，2001年起與法語、阿拉伯語同為官方語言。",
     "greeting": "Djedje?",
     "pronunciation": "je-je"
    },
    {
     "name": "法語",
     "percent": 2,
-    "description": "教育與行政語言。",
+    "description": "法語隨19世紀法國殖民傳入，殖民時期是行政與教育語言，1975年獨立後仍為官方語言。由於政府、法律、媒體與高等教育使用法語，受過教育的葛摩人多能使用法語，此外大量葛摩人移居法國馬賽等地，也讓法語在葛摩社會中保持重要地位。",
     "greeting": "Bonjour",
     "pronunciation": "bon-zhoor"
    },
    {
     "name": "阿拉伯語",
     "percent": 1,
-    "description": "宗教與官方用語，多數人在古蘭經學校學習。",
+    "description": "阿拉伯語是伊斯蘭教的宗教語言，葛摩兒童傳統上在古蘭經學校學習阿拉伯文讀寫，葛摩語過去也以阿拉伯字母書寫。1993年葛摩加入阿拉伯國家聯盟，阿拉伯語被列為官方語言，但以阿拉伯語為母語者極少，主要用於宗教與部分教育場合。",
     "greeting": "السلام عليكم",
     "pronunciation": "as-sa-lām ʿa-lay-kum"
    }
   ],
-  "history": "葛摩語屬斯瓦希里語的近親，吸收大量阿拉伯語詞彙，歷史上以阿拉伯字母書寫。法國殖民後法語成為教育與行政語言，獨立後葛摩語、法語與阿拉伯語並列官方語言。"
+  "history": "葛摩語源自東非沿岸的班圖語，與斯瓦希里語同屬一個語言群，中世紀以後吸收了大量阿拉伯語詞彙，並長期以阿拉伯字母書寫。19世紀法國殖民後，法語成為行政與教育語言，拉丁字母也逐漸被用來書寫葛摩語。1975年獨立後，葛摩語、法語與阿拉伯語共同構成葛摩的語言格局，2001年憲法將三者同列為官方語言。近年政府推動以拉丁字母標準化葛摩語，並在學校中加強母語教育。"
  },
  "food": {
   "ranking": [
    {
     "name": "香料抓飯",
     "localName": "Pilao",
-    "description": "以丁香、肉桂等香料與肉同煮的米飯，節慶常見。",
-    "history": "隨阿拉伯與印度洋貿易傳入，是東非沿岸共享的料理。",
+    "description": "以米飯與肉類（牛肉、雞肉或羊肉）一起燜煮，加入丁香、肉桂、小荳蔻等香料，香氣濃郁的抓飯。",
+    "history": "香料抓飯源自印度洋貿易時代，阿拉伯與印度商人把抓飯（pilau）的做法傳到東非沿岸與葛摩群島，名稱與東非斯瓦希里語的「pilau」相同。葛摩群島是世界重要的丁香與香草產地，這些香料讓當地的抓飯風味特別濃郁。它是婚禮與節慶時的必備料理，尤其在葛摩傳統的「大婚禮」（Grand Mariage）中更是不可或缺。",
     "wiki": "Pilaf",
     "image": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Afghan_Palo.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Afghan_Palo.jpg",
@@ -64,8 +64,8 @@
    {
     "name": "木薯葉椰奶燉菜",
     "localName": "Mataba",
-    "description": "木薯葉搗碎後以椰奶燉煮，常加魚乾。",
-    "history": "葛摩與東非沿岸常見的家常菜。",
+    "description": "將木薯葉搗碎後與椰奶、大蒜、洋蔥一起燉煮，有時加入魚或肉，口感綿密、帶有椰香，配米飯吃。",
+    "history": "木薯葉椰奶燉菜是葛摩最具代表性的家常菜，也在馬約特島、馬達加斯加與東非沿岸流行。木薯原產南美洲，16世紀以後經葡萄牙人傳入非洲，再傳到印度洋島嶼；椰子則是葛摩沿海最普遍的作物。這道菜結合兩者，是葛摩人日常餐桌上最常見的料理。",
     "wiki": "Matapa",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Matapa.jpg/960px-Matapa.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Matapa.jpg",
@@ -74,8 +74,8 @@
    {
     "name": "香草龍蝦",
     "localName": "Langouste à la vanille",
-    "description": "以在地香草調味的龍蝦料理。",
-    "history": "葛摩是世界重要的香草產地，此菜結合島上海鮮與香料特色。",
+    "description": "將龍蝦以葛摩出產的香草莢與奶油、鮮奶油一起烹調，帶有濃郁香草香氣，是葛摩最具代表性的高級料理。",
+    "history": "葛摩群島是世界主要的香草產地之一，19世紀法國殖民者從墨西哥引進香草，並在葛摩、馬達加斯加與留尼旺建立香草種植園。香草需要人工授粉，種植與加工過程非常費工。香草龍蝦結合了葛摩豐富的海產與香草，被視為葛摩的代表菜，常在餐廳與重要場合中出現。",
     "wiki": "Spiny lobster",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/California_spiny_lobster.JPG/960px-California_spiny_lobster.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:California_spiny_lobster.JPG",
@@ -84,8 +84,8 @@
    {
     "name": "椰奶飯",
     "localName": "Coconut rice",
-    "description": "以椰奶煮的米飯，搭配咖哩或燉魚。",
-    "history": "印度洋島嶼普遍的料理方式。",
+    "description": "以米與濃椰奶加少許鹽一起煮成的香甜米飯，米粒柔軟、帶有濃郁椰香，常搭配咖哩、燉魚或豆類料理一起吃。",
+    "history": "椰奶飯是印度洋沿岸各地的傳統料理，從東非斯瓦希里海岸到馬達加斯加與葛摩都很普遍。稻米在中世紀由南島民族與印度洋貿易傳入東非與馬達加斯加，而椰子在熱帶島嶼隨處可見。在葛摩，椰奶飯常在週五（伊斯蘭的聚禮日）與節慶時準備，是家庭聚餐的常見料理。",
     "wiki": "Coconut rice",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Nasi_Liwet_Solo.jpg/960px-Nasi_Liwet_Solo.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Nasi_Liwet_Solo.jpg",
@@ -94,8 +94,8 @@
    {
     "name": "三角炸餃",
     "localName": "Sambusa",
-    "description": "包入肉餡或蔬菜的三角形油炸點心。",
-    "history": "隨印度洋貿易傳入，齋戒月期間尤其常見。",
+    "description": "以薄麵皮包入絞肉、洋蔥與香料，摺成三角形後油炸，外皮酥脆，常在齋戒月開齋時食用。",
+    "history": "三角炸餃與印度的「samosa」同源，一般認為起源於中亞與中東，隨著中世紀的商人經印度洋貿易傳到東非沿岸。在葛摩與東非斯瓦希里地區，三角炸餃是齋戒月日落開齋時的必備點心。它也反映了葛摩作為印度洋貿易樞紐，融合阿拉伯、印度與非洲飲食文化的歷史。",
     "wiki": "Samosa",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Samosas%2C_snack_food_at_Wikipedia%27s_16th_Birthday_celebration_in_Chittagong_%2801%29.jpg/960px-Samosas%2C_snack_food_at_Wikipedia%27s_16th_Birthday_celebration_in_Chittagong_%2801%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Samosas,_snack_food_at_Wikipedia%27s_16th_Birthday_celebration_in_Chittagong_(01).jpg",

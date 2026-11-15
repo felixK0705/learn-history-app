@@ -7,25 +7,25 @@
    {
     "name": "天主教",
     "percent": 70,
-    "description": "西班牙殖民時期傳入，仍為最大宗教。"
+    "description": "天主教隨1499年西班牙人抵達哥倫比亞沿岸與1538年波哥大建城而傳入，殖民時期與西班牙王室緊密結合，卡塔赫納還設有宗教裁判所（1610年）。1886年憲法宣布天主教為國教，1887年與梵蒂岡簽訂協約，賦予教會在教育與婚姻上的特權。1991年新憲法確立宗教自由與政教分離，但天主教至今仍是最大宗教。"
    },
    {
     "name": "新教（福音派）",
     "percent": 17,
-    "description": "近數十年快速成長，以五旬節派為主。"
+    "description": "新教在19世紀中葉由美國長老會傳教士傳入，但在20世紀中葉的「暴力時期」（1948–1958年）曾受到迫害。1991年新憲法保障宗教自由後，五旬節派與福音派快速成長，特別在都市邊緣與受武裝衝突影響的地區，以社區互助與信仰醫治吸引信徒，比例已升至約17%。"
    },
    {
     "name": "無宗教",
     "percent": 11,
-    "description": "多見於都市年輕人。"
+    "description": "無宗教人口在近數十年增加，主要集中在波哥大、麥德林等大城市的年輕世代與受過高等教育的人。1991年憲法確立政教分離後，社會逐漸世俗化，2016年同性婚姻合法化等議題也使部分人疏遠教會。"
    },
    {
     "name": "其他",
     "percent": 2,
-    "description": "包含原住民信仰、猶太教等。"
+    "description": "其他宗教包括猶太教、伊斯蘭教、耶和華見證人與原住民的傳統信仰。穆斯林主要是19–20世紀移入加勒比海沿岸城市（如邁考、巴蘭基亞）的黎巴嫩與敘利亞移民後代；原住民如聖瑪爾塔內華達山脈的科吉人仍保持自己的宇宙觀與祭司傳統。"
    }
   ],
-  "background": "西班牙殖民時期天主教是新格拉納達的國家宗教，1886年憲法再度確立其特殊地位。1991年新憲法確立宗教自由與平等，福音派教會隨後迅速擴展。"
+  "background": "西班牙人到來前，哥倫比亞原住民如穆伊斯卡人崇拜太陽與月亮，著名的「黃金國」傳說就源自穆伊斯卡人在瓜塔維塔湖舉行的獻金儀式。16世紀西班牙征服後，天主教成為殖民地的官方宗教。1819年獨立後，自由派與保守派在教會角色上長期對立，1886年憲法確立天主教為國教。1991年新憲法實施政教分離，福音派與無宗教人口逐漸增加。"
  },
  "language": {
   "official": "官方語言為西班牙語，原住民語言在其領域內亦為官方語言。",
@@ -33,27 +33,27 @@
    {
     "name": "西班牙語",
     "percent": 99,
-    "description": "全國通用，波哥大口音被認為清晰標準。",
+    "description": "西班牙語隨16世紀西班牙殖民傳入，殖民時期是行政、教會與教育的語言，1819年獨立後成為國家語言。哥倫比亞的西班牙語，尤其是波哥大一帶的口音，常被認為發音清晰、用語正式。由於原住民人口在殖民時期大幅減少，西班牙語已成為約99%人口的母語。",
     "greeting": "Hola",
     "pronunciation": "o-la"
    },
    {
     "name": "原住民語言（瓦尤語等60餘種）",
     "percent": 1,
-    "description": "瓦尤語是使用人數最多的原住民語言，通行於瓜希拉半島。",
+    "description": "哥倫比亞有60多種原住民語言，以北部瓜希拉半島的瓦尤語使用者最多，約有數十萬人；其他還包括亞馬遜地區與安地斯山區的多種語言。1991年憲法承認原住民語言在其領域內為官方語言，2010年通過《母語法》保護原住民與克里奧爾語言，但許多語言仍因使用者稀少而面臨消失危機。",
     "greeting": "Jamaya pia（瓦尤語：你好嗎）",
     "pronunciation": "ha-ma-ya pia"
    }
   ],
-  "history": "西班牙語隨16世紀殖民傳入並成為主要語言。境內仍有60多種原住民語言，以及聖巴西里奧德帕倫克的帕倫克語與聖安德烈斯島的克里奧爾英語，1991年憲法保障其地位。"
+  "history": "西班牙人到來前，哥倫比亞有數百種原住民語言，穆伊斯卡人使用的奇布查語是安地斯東部高原的主要語言。16世紀西班牙殖民後，西班牙語成為主流語言，1770年西班牙國王卡洛斯三世下令推行西班牙語、限制原住民語言。1819年獨立後，西班牙語成為國家語言。1991年新憲法承認哥倫比亞是多民族、多文化的國家，原住民語言、聖安德列斯群島的克里奧爾英語與帕倫克的帕倫克語都受到保護。"
  },
  "food": {
   "ranking": [
    {
     "name": "派薩大拼盤",
     "localName": "Bandeja paisa",
-    "description": "一大盤包含米飯、紅豆、碎牛肉、炸豬皮、香腸、煎蛋、芭蕉與酪梨。",
-    "history": "源自安蒂奧基亞省的農工料理，提供高熱量以應付勞動，被視為國菜代表。",
+    "description": "一大盤包括米飯、紅豆、牛絞肉、炸豬皮、香腸、煎蛋、炸大蕉、酪梨與玉米餅的豐盛拼盤。",
+    "history": "派薩大拼盤源自安蒂奧基亞省（當地人稱為「派薩」）的農民與騾隊運輸工人，19世紀起他們在山區開墾咖啡園，需要高熱量的食物來應付繁重的勞動。拼盤中的食材幾乎都來自當地的農場。今天它被視為哥倫比亞的代表菜，2005年政府曾推動將它列為國菜，但因份量過大、代表性不足而引發爭議。",
     "wiki": "Bandeja paisa",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Bandeja_paisa%2C_plato_Colombiano.jpg/960px-Bandeja_paisa%2C_plato_Colombiano.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Bandeja_paisa,_plato_Colombiano.jpg",
@@ -62,8 +62,8 @@
    {
     "name": "阿瑞巴玉米餅",
     "localName": "Arepa",
-    "description": "以玉米麵團做成的圓餅，煎烤後夾起司或配菜食用。",
-    "history": "源自前哥倫布時期原住民，與委內瑞拉共享的主食。",
+    "description": "以白玉米粉做成的圓形扁平餅，在鐵板上烤熟，可以夾入起司、肉類或雞蛋，口感外脆內軟。",
+    "history": "阿瑞巴是哥倫比亞與委內瑞拉的原住民傳統食物，在西班牙人到來前就已存在，原住民以石磨研磨玉米製作。哥倫比亞各地有不同版本，例如加勒比海沿岸的炸蛋阿瑞巴（arepa de huevo）與安蒂奧基亞的白色薄阿瑞巴。它是哥倫比亞人早餐與點心的主食，與委內瑞拉之間也經常為誰是阿瑞巴的「發源地」爭論。",
     "wiki": "Arepa",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Arepitas_Food_Macro.jpg/960px-Arepitas_Food_Macro.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Arepitas_Food_Macro.jpg",
@@ -72,8 +72,8 @@
    {
     "name": "波哥大雞湯",
     "localName": "Ajiaco",
-    "description": "以三種馬鈴薯、雞肉、玉米與瓜卡斯香草燉成的濃湯，加奶油與酸豆。",
-    "history": "波哥大的代表菜，融合原住民食材與西班牙燉湯。",
+    "description": "以雞肉、三種不同的馬鈴薯、玉米與瓜斯卡香草燉成的濃湯，上桌時加入鮮奶油、酸豆與酪梨。",
+    "history": "波哥大雞湯是首都波哥大的代表菜，結合了原住民的馬鈴薯、玉米與西班牙人帶來的雞肉。波哥大位於海拔約2,600公尺的高原上，氣候涼爽，熱湯是當地人的日常飲食。瓜斯卡（guasca）是安地斯地區的野生香草，為這道湯增添獨特風味，被視為波哥大文化的象徵。",
     "wiki": "Ajiaco",
     "image": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Ajiaco.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Ajiaco.jpg",
@@ -82,8 +82,8 @@
    {
     "name": "什錦燉肉湯",
     "localName": "Sancocho",
-    "description": "以肉或魚、樹薯、芭蕉、玉米燉成的大鍋湯。",
-    "history": "哥倫比亞各地都有版本，常是週末家庭聚會料理。",
+    "description": "以肉類（雞肉、牛肉、魚等）與木薯、大蕉、山藥、玉米一起長時間燉煮的濃湯，各地版本不同。",
+    "history": "什錦燉肉湯在拉丁美洲各地都有，一般認為源自西班牙與加那利群島的燉菜傳統，16世紀以後隨西班牙殖民者傳入，並與非洲奴隸及原住民的根莖類食材結合。在哥倫比亞，加勒比海沿岸以魚做湯，內陸則用雞肉或牛肉。它是週末家庭聚會與河邊野餐的經典料理，常用大鍋在柴火上烹煮。",
     "wiki": "Sancocho",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Sancocho_de_espinazo_de_cerdo.jpg/960px-Sancocho_de_espinazo_de_cerdo.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Sancocho_de_espinazo_de_cerdo.jpg",
@@ -92,8 +92,8 @@
    {
     "name": "烤全豬",
     "localName": "Lechona",
-    "description": "將整隻豬塞滿米、豌豆與豬肉後長時間烘烤。",
-    "history": "托利馬省的節慶料理，常見於慶典與聖誕節。",
+    "description": "將整隻豬去骨後填入米飯、豌豆、洋蔥與豬肉，再放入土窯中烘烤十多個小時，外皮酥脆、內餡多汁。",
+    "history": "烤全豬是托利馬省的傳統料理，殖民時期西班牙人把豬帶到美洲，並與當地的米飯和香料結合。由於製作需要整隻豬與長時間烘烤，它通常在節慶、婚禮與聖誕節等大型聚會時準備。它在托利馬與周邊省份的節慶中特別常見，也被視為哥倫比亞內陸地區的代表節慶菜。",
     "wiki": "Lechona",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Cochinillos-Mercado_de_la_Cebada.jpg/960px-Cochinillos-Mercado_de_la_Cebada.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Cochinillos-Mercado_de_la_Cebada.jpg",
