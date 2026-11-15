@@ -7,35 +7,35 @@
    {
     "name": "新教",
     "percent": 33,
-    "description": "包含聖公會、長老會等主流教派。"
+    "description": "19世紀末英國殖民後，英國聖公會（CMS）、長老會與非洲內陸傳教會等新教團體深入肯亞內陸，以辦學作為傳教方式，受過教會教育的人成為殖民時期與獨立後的菁英。肯亞首任總統肯雅塔等許多政治人物都曾就讀教會學校，新教因此在中部與西部普及。"
    },
    {
     "name": "天主教",
     "percent": 21,
-    "description": "分布廣泛，是最大的單一教會。"
+    "description": "19世紀末起，聖靈會與康索拉塔會等天主教傳教團在肯亞中部與西部設立傳教站、學校與醫院，競爭新教的影響力。天主教在盧希亞人、盧奧人與吉庫尤人中都有大量信徒，並經營許多中學與醫療機構。"
    },
    {
     "name": "福音派",
     "percent": 20,
-    "description": "五旬節派與福音派教會近年快速成長。"
+    "description": "福音派與五旬節派在1970年代以後透過美國等地的傳教士、廣播與大型佈道會快速擴張，強調聖靈經驗、神醫與「成功神學」，特別吸引奈洛比等城市中的年輕人與新興中產階級。許多新教會由肯亞本地牧師創立，規模可達數萬人。"
    },
    {
     "name": "伊斯蘭教",
     "percent": 11,
-    "description": "集中於沿海地區與東北部。"
+    "description": "伊斯蘭教自8–9世紀起隨阿拉伯、波斯商人進入東非沿岸，蒙巴薩、拉穆等斯瓦希里城鎮自中世紀就以穆斯林為主。今天穆斯林主要分布在沿海地區與東北部的索馬利人地區，人數在全國屬少數。"
    },
    {
     "name": "非洲本土教會",
     "percent": 7,
-    "description": "融合基督教與非洲傳統的獨立教會。"
+    "description": "20世紀初起，部分肯亞人不滿傳教士禁止一夫多妻、割禮等傳統習俗，而另立融合非洲文化的獨立教會，例如1920年代吉庫尤人的獨立學校與教會運動，以及非洲以色列尼尼微教會等。這些教會在反殖民運動中也扮演重要角色。"
    },
    {
     "name": "無宗教",
     "percent": 2,
-    "description": "比例較低。"
+    "description": "肯亞社會宗教氣氛濃厚，明確自稱無宗教者極少，主要出現在奈洛比等大城市受高等教育的年輕人之中。"
    }
   ],
-  "background": "伊斯蘭教自8世紀起經阿拉伯商人傳入沿海斯瓦希里城邦。19世紀起英國與歐洲傳教士深入內陸，建立教會與學校，使基督教在殖民時期大量普及；20世紀亦興起許多非洲本土獨立教會。"
+  "background": "肯亞原住民各族群擁有各自的傳統信仰，例如吉庫尤人崇拜居住在肯亞山的神祇恩蓋（Ngai）。伊斯蘭教自8–9世紀起隨阿拉伯與波斯商人進入東非沿岸，形成斯瓦希里城邦文化。1844年德國傳教士克拉普抵達蒙巴薩，19世紀末英國殖民統治後，新教與天主教傳教會在內陸廣設學校與醫院，基督教隨著西式教育迅速擴散。20世紀起出現許多結合基督教與非洲文化的本土教會，近數十年五旬節與福音派教會快速成長。"
  },
  "language": {
   "official": "官方語言為斯瓦希里語與英語。",
@@ -43,48 +43,48 @@
    {
     "name": "吉庫尤語",
     "percent": 17,
-    "description": "最大民族吉庫尤人的語言，主要通行於中部高地。",
+    "description": "吉庫尤人是肯亞人數最多的民族，主要居住在肯亞山周圍的中部高地。殖民時期英國人在這片肥沃土地上設立「白人高地」，引發土地問題與1950年代的茅茅起義；獨立後肯雅塔等吉庫尤政治人物長期掌權，吉庫尤語也因此在商業與奈洛比日常生活中有很大影響力。",
     "greeting": "Wĩ mwega",
     "pronunciation": "wee mwe-ga"
    },
    {
     "name": "盧希亞語",
     "percent": 14,
-    "description": "西部盧希亞人的語言。",
+    "description": "盧希亞語是肯亞西部盧希亞人的語言，屬班圖語族，實際上包含十多種相近的方言。盧希亞人是肯亞第二大民族，主要分布在卡卡梅加、本戈馬等西部農業區。",
     "greeting": "Mulembe",
     "pronunciation": "mu-lem-be"
    },
    {
     "name": "卡倫金語",
     "percent": 13,
-    "description": "裂谷地區卡倫金人的語言，許多長跑選手出身於此族。",
+    "description": "卡倫金語屬尼羅語族，是肯亞西部裂谷地區卡倫金人多個相近族群的總稱，「卡倫金」一詞在1940–50年代才被用來統合這些族群。卡倫金人以出產世界級長跑選手聞名，前總統莫伊與魯托都是卡倫金人。",
     "greeting": "Chamge",
     "pronunciation": "cham-ge"
    },
    {
     "name": "盧奧語",
     "percent": 11,
-    "description": "維多利亞湖畔盧奧人的語言。",
+    "description": "盧奧語屬尼羅語族，盧奧人約在15–16世紀從今南蘇丹一帶沿尼羅河遷徙到維多利亞湖周圍，主要住在基蘇木等地。盧奧人在獨立運動與反對派政治中十分重要，例如歐丁加家族。",
     "greeting": "Misawa",
     "pronunciation": "mi-sa-wa"
    },
    {
     "name": "斯瓦希里語",
     "percent": 2,
-    "description": "母語者主要在沿海，但為全國通用語，多數國民都能使用。",
+    "description": "斯瓦希里語源自東非沿岸，以班圖語為基礎吸收大量阿拉伯語詞彙，以它為母語者主要是沿海的斯瓦希里人，人數不多。但它在19世紀成為商隊貿易語言，獨立後被定為國語並列為學校必修科，因此絕大多數肯亞人都把它當作第二語言，用來跨族群溝通。",
     "greeting": "Jambo / Habari",
     "pronunciation": "jam-bo / ha-ba-ri"
    }
   ],
-  "history": "肯亞有四十多個民族，語言分屬班圖語、尼羅語與庫希特語。斯瓦希里語在沿海融合班圖語與阿拉伯語形成，隨商隊貿易深入內陸。英國殖民時期英語成為行政與教育語言，獨立後斯瓦希里語被定為國語，加強國家認同。"
+  "history": "肯亞約有40多種語言，分屬班圖語族（吉庫尤、盧希亞、坎巴等）、尼羅語族（盧奧、卡倫金、馬賽等）與庫希特語族（索馬利等），反映數千年來不同族群的遷移。斯瓦希里語是東非沿岸班圖語與阿拉伯語長期接觸形成的貿易語言，19世紀隨商隊路線深入內陸。英國殖民時期（1895–1963年）英語成為行政與高等教育語言。獨立後斯瓦希里語被推廣為國語以團結各族，2010年憲法將英語與斯瓦希里語並列為官方語言。"
  },
  "food": {
   "ranking": [
    {
     "name": "烏咖哩",
     "localName": "Ugali",
-    "description": "以白玉米粉攪煮成的稠糊，配燉菜或烤肉，為國民主食。",
-    "history": "玉米於殖民時期普及，烏咖哩成為肯亞人最基本的主食。",
+    "description": "以白玉米粉加水煮成的硬粥糰，用手捏成小團沾著燉菜或蔬菜吃。",
+    "history": "玉米原產美洲，16世紀後由葡萄牙人傳入東非，但真正普及是在20世紀英國殖民時期：殖民政府與白人農場推廣玉米作為工人的口糧，使其逐步取代傳統的小米與高粱。今天 ugali 是肯亞人最常吃的主食，玉米價格漲跌常是政治議題，「沒有 ugali 就不算吃過飯」是常見說法。",
     "wiki": "Ugali",
     "image": "https://upload.wikimedia.org/wikipedia/commons/4/48/Ugali_%26_Sukuma_Wiki.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Ugali_%26_Sukuma_Wiki.jpg",
@@ -93,8 +93,8 @@
    {
     "name": "炭烤肉",
     "localName": "Nyama choma",
-    "description": "炭火烤的山羊肉或牛肉，配烏咖哩與番茄洋蔥沙拉。",
-    "history": "名稱在斯瓦希里語意為「烤肉」，是週末與聚會的核心料理。",
+    "description": "以炭火慢烤的山羊肉或牛肉，撒鹽調味，常配辣椒番茄沙拉（kachumbari）與 ugali。",
+    "history": "Nyama choma 在斯瓦希里語意為「烤肉」。肯亞許多牧業民族如馬賽人自古以牛羊為財富，宰牲是重要儀式。今天烤肉是肯亞社交生活的核心，週末朋友在酒吧或路邊烤肉店點一公斤羊肉一起分享，1963年12月12日獨立紀念日等節日也常以烤肉慶祝。",
     "wiki": "Nyama choma",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Goat_meat_being_roasted.jpg/960px-Goat_meat_being_roasted.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Goat_meat_being_roasted.jpg",
@@ -103,8 +103,8 @@
    {
     "name": "炒羽衣甘藍",
     "localName": "Sukuma wiki",
-    "description": "羽衣甘藍與番茄、洋蔥同炒的平價配菜。",
-    "history": "名稱意為「撐過一週」，反映其價格低廉、日常必備。",
+    "description": "把羽衣甘藍切細，與洋蔥、番茄一起炒或燉的家常蔬菜，常配 ugali。",
+    "history": "Sukuma wiki 在斯瓦希里語意為「撐過一週」或「把這週推過去」，反映它便宜、耐種，是一般家庭在發薪日前靠它度日的蔬菜。羽衣甘藍很可能在殖民時期由歐洲人引入，在肯亞高地涼爽氣候中容易生長，今天幾乎每個家庭菜園都種植。",
     "wiki": "Sukuma wiki",
     "image": "https://upload.wikimedia.org/wikipedia/commons/4/48/Ugali_%26_Sukuma_Wiki.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Ugali_%26_Sukuma_Wiki.jpg",
@@ -113,8 +113,8 @@
    {
     "name": "玉米豆燉菜",
     "localName": "Githeri",
-    "description": "玉米粒與豆子一起燉煮的料理。",
-    "history": "源自吉庫尤人的傳統主食，也常見於學校營養午餐。",
+    "description": "把玉米粒和豆類一起煮熟，有時加入馬鈴薯、洋蔥與蔬菜燉成一鍋。",
+    "history": "Githeri 源自中部高地的吉庫尤人，傳統上以本地豆類和玉米一起煮，營養互補又能長時間保存。殖民與獨立初期，它被大量用於學校午餐與寄宿學校，因此許多肯亞人對它有深刻的童年記憶。2017年大選時一名男子邊排隊投票邊吃 githeri 的照片在網路爆紅，被稱為「Githeri Man」。",
     "wiki": "Githeri",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Githeri_Meal.jpg/960px-Githeri_Meal.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Githeri_Meal.jpg",
@@ -123,8 +123,8 @@
    {
     "name": "恰帕提餅",
     "localName": "Chapati",
-    "description": "多層次的煎薄餅，配燉菜或茶食用。",
-    "history": "19世紀末隨修築鐵路的印度勞工傳入，成為節慶與日常食物。",
+    "description": "以麵粉、油與水揉成的多層薄餅，在鐵板上煎至金黃，柔軟有層次。",
+    "history": "Chapati 源自印度次大陸，19世紀末英國修建烏干達鐵路（1896–1901年）時從印度招募了大量勞工，部分人留在肯亞，帶來印度的烤餅文化。肯亞人在其中加入更多油並層層捲起，使口感更酥軟。今天它是聖誕節、婚禮等節慶時的特別食物，也是街頭常見的平價早餐。",
     "wiki": "Chapati",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/2_Chapati_warm_and_ready_to_be_eaten.jpg/960px-2_Chapati_warm_and_ready_to_be_eaten.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:2_Chapati_warm_and_ready_to_be_eaten.jpg",

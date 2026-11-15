@@ -7,20 +7,20 @@
    {
     "name": "伊斯蘭教（遜尼派）",
     "percent": 94,
-    "description": "絕大多數國民的信仰，為國教。"
+    "description": "吉布地位於紅海出口曼德海峽旁，7 世紀起阿拉伯商人經紅海與亞丁灣來此貿易，伊斯蘭教隨之傳入。14–16 世紀以鄰近澤拉港為中心的阿達爾蘇丹國，使當地的索馬利人（伊薩族）與阿法爾人全面伊斯蘭化，信奉遜尼派沙斐儀學派。伊斯蘭教是兩大民族共同的身分認同，憲法也明定伊斯蘭教為國教。"
    },
    {
     "name": "基督教",
     "percent": 5,
-    "description": "包括天主教與衣索比亞正教，多為外籍人士。"
+    "description": "1862 年法國購得奧博克，1880 年代起建立法屬索馬利蘭，天主教傳教會隨殖民而來，但當地居民改宗者極少。1917 年通車的吉布地–阿迪斯阿貝巴鐵路吸引衣索比亞人移居，帶來衣索比亞正教；今日基督徒主要是衣索比亞裔居民、歐洲僑民與駐軍。"
    },
    {
     "name": "其他",
     "percent": 1,
-    "description": "包括其他宗教與無宗教者。"
+    "description": "包括印度裔商人帶來的印度教、各國駐軍與外籍人士的其他信仰等。吉布地是法、美、中、日等多國海外基地所在地，外籍人口流動大，但長期定居的非穆斯林人數很少。"
    }
   ],
-  "background": "伊斯蘭教早在七世紀就經由紅海貿易傳入非洲之角，索馬利人與阿法爾人很早便皈依。法國殖民時期帶來天主教，但影響有限。"
+  "background": "吉布地自古是紅海與印度洋貿易的中繼站，伊斯蘭教在早期伊斯蘭時代便經海路傳入，並在中世紀阿達爾蘇丹國時期深植於索馬利人與阿法爾人社會。19 世紀末法國殖民帶來天主教，20 世紀初鐵路開通則引來信仰正教的衣索比亞人。1977 年獨立後伊斯蘭教成為國家認同核心，同時憲法保障宗教自由，各國駐軍與移民構成少數宗教群體。"
  },
  "language": {
   "official": "法語與阿拉伯語是官方語言。",
@@ -28,41 +28,41 @@
    {
     "name": "索馬利語",
     "percent": 60,
-    "description": "伊薩族等索馬利人的語言，是最多人使用的母語。",
+    "description": "索馬利語是伊薩族等索馬利人的母語，他們主要居住在首都與南部，人口最多，因此索馬利語是街頭最常聽到的語言。1972 年鄰國索馬利亞為索馬利語制定拉丁字母拼寫，促進了書面化；在吉布地它是國家語言，廣泛用於廣播與日常商業。",
     "greeting": "Is ka warran",
     "pronunciation": "is ka WAR-ran"
    },
    {
     "name": "阿法爾語",
     "percent": 35,
-    "description": "北部與西部阿法爾人的語言。",
+    "description": "阿法爾人居住在北部與西部，屬於橫跨衣索比亞、厄利垂亞的「阿法爾三角」游牧民族。殖民時期法國曾稱此地為「法屬阿法爾與伊薩領地」（1967–1977 年），反映兩大族群並立的格局；1991–1994 年阿法爾人反政府武裝與政府爆發內戰，語言與族群平衡至今仍是政治議題。",
     "greeting": "Assalamu alaykum",
     "pronunciation": "as-sa-LAA-mu a-LAI-kum"
    },
    {
     "name": "阿拉伯語",
     "percent": 4,
-    "description": "官方語言，用於宗教與部分行政。",
+    "description": "吉布地與阿拉伯半島隔海相望，長期有葉門商人移居，伊斯蘭教育也以阿拉伯語進行。1977 年獨立時定阿拉伯語為官方語言之一，並加入阿拉伯國家聯盟，但以阿拉伯語為母語者主要是葉門裔社群。",
     "greeting": "السلام عليكم",
     "pronunciation": "as-sa-LAA-mu a-LAI-kum"
    },
    {
     "name": "法語",
     "percent": 2,
-    "description": "官方語言，用於政府與教育。",
+    "description": "法國自 1862 年取得奧博克、1888 年建立吉布地市以來統治此地，直到 1977 年獨立。法語因此仍是官方語言，主導政府、法律與學校教育，但多數人是當作第二語言學習，以法語為母語者很少。",
     "greeting": "Bonjour",
     "pronunciation": "bon-ZHOOR"
    }
   ],
-  "history": "索馬利語與阿法爾語同屬亞非語系庫希特語族，是當地兩大族群的母語。十九世紀末法國建立法屬索馬利蘭，法語成為行政語言；伊斯蘭教的傳播則使阿拉伯語具有宗教地位。"
+  "history": "吉布地的兩大本土語言索馬利語與阿法爾語，同屬亞非語系庫希特語族，各自對應兩大民族。伊斯蘭教傳入後，阿拉伯語成為宗教與商業語言。19 世紀末法國殖民，法語成為行政與教育語言，1977 年獨立後法語與阿拉伯語並列官方語言，索馬利語與阿法爾語則被承認為國家語言。今日多數吉布地人能在母語、法語與阿拉伯語之間切換。"
  },
  "food": {
   "ranking": [
    {
     "name": "斯庫達卡里斯",
     "localName": "Skoudehkaris",
-    "description": "以羊肉、米飯、番茄與香料燉煮的飯。",
-    "history": "吉布地的國菜，融合了索馬利與阿拉伯、印度香料飲食傳統。",
+    "description": "以米飯和羊肉或山羊肉同煮，加入番茄、洋蔥與小荳蔻、孜然、丁香等香料，香氣濃郁，常配香蕉一起吃。",
+    "history": "這道菜被視為吉布地的國菜，它的香料米飯做法反映了吉布地作為紅海貿易港，長期受葉門與印度飲食文化影響；米與香料多是經海路輸入的商品。當地游牧民族飼養的羊則提供了主要肉類。它在開齋節、婚禮等場合必定上桌，是招待賓客的代表料理。",
     "wiki": "Skudahkharis",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Somalicamelmeat.jpg/960px-Somalicamelmeat.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Somalicamelmeat.jpg",
@@ -71,8 +71,8 @@
    {
     "name": "拉霍薄餅",
     "localName": "Lahoh",
-    "description": "以發酵麵糊煎成、帶有氣孔的薄餅。",
-    "history": "源自也門與索馬利地區，常當早餐搭配蜂蜜或茶。",
+    "description": "以麵粉加酵頭發酵後，在平底鍋上煎成表面布滿氣孔的薄餅，口感鬆軟微酸，常淋蜂蜜或酥油當早餐。",
+    "history": "拉霍薄餅源自葉門，隔著曼德海峽的葉門與非洲之角長期往來，使這種發酵薄餅在吉布地、索馬利亞普及，索馬利語稱為 laxoox 或 canjeero。它和衣索比亞的英傑拉相似但更薄小。吉布地人早餐常以它配甜奶茶，也會撕碎沾燉肉或湯一起吃，是日常最普遍的主食之一。",
     "wiki": "Lahoh",
     "image": "https://upload.wikimedia.org/wikipedia/commons/4/44/LahohS.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:LahohS.jpg",
@@ -81,8 +81,8 @@
    {
     "name": "法法湯",
     "localName": "Fah-fah",
-    "description": "以羊肉、蔬菜與辣椒熬煮的湯。",
-    "history": "吉布地傳統湯品，常搭配薄餅食用。",
+    "description": "以山羊肉或羊肉加馬鈴薯、紅蘿蔔、辣椒與大蒜燉成的辣味清湯，常配薄餅一起吃。",
+    "history": "法法湯是吉布地特有的家常湯品，反映了當地游牧民族以飼養山羊、綿羊為主的生活方式，一鍋燉肉湯可供全家食用。炎熱乾燥的氣候中，加入辣椒的熱湯被認為能開胃與補充體力。它常在家庭聚餐與齋月開齋時出現，是吉布地人心目中最具代表性的湯品之一。",
     "wiki": "Fah-fah",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Fahfah.jpg/960px-Fahfah.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Fahfah.jpg",
@@ -91,8 +91,8 @@
    {
     "name": "三角炸餃",
     "localName": "Sambusa",
-    "description": "包入肉末與香料的三角形油炸麵點。",
-    "history": "隨印度洋貿易傳入，齋戒月時特別常見。",
+    "description": "以薄麵皮包入調味的牛肉或羊肉末、洋蔥與香料，折成三角形後油炸，外皮酥脆。",
+    "history": "三角炸餃的祖先是中世紀波斯與阿拉伯世界的「sanbusak」，經由印度洋貿易網絡傳到東非與印度，各地發展出不同版本。吉布地的做法融合了阿拉伯與印度香料。它與齋月關係最密切，每天日落開齋時家家戶戶都會準備，也是街頭與咖啡館常見的點心。",
     "wiki": "Samosa",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Samosas%2C_snack_food_at_Wikipedia%27s_16th_Birthday_celebration_in_Chittagong_%2801%29.jpg/960px-Samosas%2C_snack_food_at_Wikipedia%27s_16th_Birthday_celebration_in_Chittagong_%2801%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Samosas,_snack_food_at_Wikipedia%27s_16th_Birthday_celebration_in_Chittagong_(01).jpg",
@@ -101,8 +101,8 @@
    {
     "name": "哈爾瓦甜糕",
     "localName": "Halwo",
-    "description": "以糖、奶油與香料製成的Q軟甜點。",
-    "history": "受阿拉伯與鄂圖曼飲食影響，常在婚禮與節慶時享用。",
+    "description": "以糖、玉米澱粉、酥油與小荳蔻、肉荳蔻熬煮而成的半透明果凍狀甜點，口感Q彈、香氣濃郁。",
+    "history": "名稱源自阿拉伯語「halwa」（甜食），這類甜點經由阿拉伯與鄂圖曼世界的貿易網絡傳入非洲之角，索馬利人發展出以澱粉與酥油熬煮的獨特版本。由於製作需要長時間攪拌，傳統上是在婚禮、開齋節與宰牲節等節慶時才做，並與咖啡或茶一起招待賓客。",
     "wiki": "Halva",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Orient_sweets_%28special_halva%29_Samarkand%2C_Siyab.jpg/960px-Orient_sweets_%28special_halva%29_Samarkand%2C_Siyab.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Orient_sweets_(special_halva)_Samarkand,_Siyab.jpg",

@@ -7,25 +7,25 @@
    {
     "name": "無宗教",
     "percent": 57,
-    "description": "荷蘭是歐洲最世俗化的國家之一。"
+    "description": "荷蘭在20世紀初仍是高度虔誠的國家，社會依天主教、新教、社會主義等「柱狀化」體系分隔，各有自己的學校、政黨與報紙。1960年代起，戰後經濟繁榮、教育普及與性革命讓這套體系迅速瓦解，教會出席率急遽下降，且大多數人選擇直接離開教會。2010年代無宗教人口已超過半數，荷蘭因此成為歐洲最世俗化的國家之一。"
    },
    {
     "name": "天主教",
     "percent": 17,
-    "description": "主要分布於南部各省。"
+    "description": "天主教在宗教改革後的荷蘭共和國曾受壓制，只能在不起眼的「隱藏教堂」中聚會，信徒集中在南部的北布拉邦與林堡。1853年教廷恢復荷蘭的主教體制，19世紀末天主教在柱狀化體制中取得與新教平等的地位。20世紀中天主教一度是最大教派，但1960年代後世俗化使信徒大量流失，今日仍集中在南部。"
    },
    {
     "name": "基督新教",
     "percent": 13,
-    "description": "以荷蘭新教教會為主。"
+    "description": "16世紀喀爾文派隨宗教改革傳入，1568年起的八十年戰爭中，北方以新教為號召反抗西班牙天主教統治，1648年獨立後荷蘭歸正會成為共和國的公共教會。新教徒集中在北部與中部，其中從西蘭省延伸到上艾瑟爾省的保守喀爾文派地區被稱為「聖經帶」。2004年數個主要新教教會合併為荷蘭新教教會，但信徒人數持續下降。"
    },
    {
     "name": "伊斯蘭教",
     "percent": 5,
-    "description": "主要為土耳其與摩洛哥裔移民及其後代。"
+    "description": "伊斯蘭教主要隨1960–1970年代荷蘭招募的土耳其與摩洛哥外籍勞工傳入，他們原本打算短期工作，後來家人依親定居。1975年蘇利南獨立前後也有穆斯林移民。穆斯林集中在阿姆斯特丹、鹿特丹、海牙與烏特勒支等大城市，伊斯蘭教相關議題自2000年代起成為政治辯論焦點。"
    }
   ],
-  "background": "十六世紀宗教改革後喀爾文派在北部成為主流，南部則保留天主教，二十世紀前社會曾依宗教與意識形態「柱化」分隔。1960年代後世俗化迅速，戰後來自土耳其與摩洛哥的勞工則帶來伊斯蘭教。"
+  "background": "荷蘭在中世紀屬天主教地區，16世紀喀爾文派宗教改革興起，並成為反抗西班牙統治的八十年戰爭的精神支柱，1648年獨立後歸正會成為主導教會，天主教則受到限制。19–20世紀社會依宗教與意識形態形成「柱狀化」體系。1960年代後快速世俗化，教會大量流失信徒。戰後移民則帶來伊斯蘭教與印度教，使荷蘭成為宗教多元但以無宗教為主的社會。"
  },
  "language": {
   "official": "荷蘭語是官方語言，弗里斯蘭語在弗里斯蘭省亦具官方地位。",
@@ -33,34 +33,34 @@
    {
     "name": "荷蘭語",
     "percent": 95,
-    "description": "屬西日耳曼語支，與德語和英語相近。",
+    "description": "荷蘭語屬日耳曼語族西支，由中世紀低地地區的法蘭克方言發展而來。16–17世紀荷蘭共和國的崛起，以及1637年完成的《國家譯本聖經》奠定了標準荷蘭語的基礎。教育、媒體與政府全面使用荷蘭語，因此幾乎所有居民都以它為母語或熟練使用。",
     "greeting": "Hallo",
     "pronunciation": "HAH-loh"
    },
    {
     "name": "西弗里斯蘭語",
     "percent": 2,
-    "description": "北部弗里斯蘭省的語言，是與英語最接近的語言之一。",
+    "description": "西弗里斯蘭語是與英語關係最近的語言之一，曾在中世紀通行於北海沿岸。隨著荷蘭語成為政治與文化主導語言，弗里斯蘭語被壓縮到北部的弗里斯蘭省。19世紀起興起保護弗里斯蘭語的運動，1951年「刀子星期五」抗議事件後，政府逐步承認它在法庭與學校中的地位，2014年法律正式確立其為弗里斯蘭省的官方語言。",
     "greeting": "Goeie",
     "pronunciation": "GOO-yeh"
    },
    {
     "name": "土耳其語",
     "percent": 1,
-    "description": "土耳其裔移民社群使用。",
+    "description": "土耳其語隨1960–1970年代荷蘭招募的土耳其外籍勞工及其家庭傳入，今日土耳其裔約有四十多萬人，集中在大城市。第二、三代移民多以荷蘭語為主，但在家庭與社區中仍保留土耳其語。",
     "greeting": "Merhaba",
     "pronunciation": "MER-ha-ba"
    }
   ],
-  "history": "荷蘭語由中世紀低地法蘭克方言發展而來，1637年出版的《國家譯本聖經》對標準荷蘭語影響深遠。荷蘭在海外殖民時代將荷蘭語帶至南非（演變為南非語）、蘇利南與印尼等地。"
+  "history": "荷蘭語源自中世紀的低地法蘭克方言，12世紀已出現書面文獻。16世紀起荷蘭共和國成為貿易強國，1637年《國家譯本聖經》統一了書面語。17世紀荷蘭語隨殖民傳到南非（演變為南非語）、蘇利南與印尼。1980年荷蘭與比利時成立荷蘭語聯盟，共同規範拼寫。今日荷蘭也是全世界英語能力最好的非英語國家之一。"
  },
  "food": {
   "ranking": [
    {
     "name": "什錦薯泥",
     "localName": "Stamppot",
-    "description": "將馬鈴薯泥與羽衣甘藍或酸菜拌勻，配煙燻香腸。",
-    "history": "荷蘭傳統的冬季家常菜。",
+    "description": "將馬鈴薯煮熟後與羽衣甘藍、酸菜或紅蘿蔔洋蔥一起搗成泥，中間挖個洞倒入肉汁，搭配煙燻香腸食用。",
+    "history": "馬鈴薯在17世紀從美洲傳入荷蘭，到18世紀末才普及成為主食。傳說1574年西班牙軍隊撤離萊登圍城時留下一鍋紅蘿蔔洋蔥燉菜，成為「hutspot」的由來，萊登人至今每年10月3日解放紀念日仍會吃這道菜。什錦薯泥是荷蘭冬季最典型的家常料理，便宜又能禦寒。",
     "wiki": "Stamppot",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Boerenkool_stamppot.jpg/960px-Boerenkool_stamppot.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Boerenkool_stamppot.jpg",
@@ -69,8 +69,8 @@
    {
     "name": "焦糖煎餅",
     "localName": "Stroopwafel",
-    "description": "兩片薄脆鬆餅夾焦糖糖漿。",
-    "history": "十九世紀源自豪達市的點心，現已風靡全球。",
+    "description": "兩片以模具烤成的薄脆鬆餅中間夾入焦糖糖漿，溫熱時糖漿柔軟，常放在熱咖啡或茶杯上加熱後再吃。",
+    "history": "焦糖煎餅據說起源於18世紀末至19世紀初的豪達，麵包師傅利用剩下的麵包屑與糖漿製成，是窮人的點心。19世紀起豪達已有多家烘焙坊專門生產。它是荷蘭最具代表性的甜點與伴手禮，市集上常有現烤現賣的攤位，豪達也因此被稱為焦糖煎餅之城。",
     "wiki": "Stroopwafel",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Stroopwafels_01.jpg/960px-Stroopwafels_01.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Stroopwafels_01.jpg",
@@ -79,8 +79,8 @@
    {
     "name": "生醃鯡魚",
     "localName": "Hollandse Nieuwe",
-    "description": "以鹽輕醃的生鯡魚，常配洋蔥生食。",
-    "history": "鯡魚貿易是荷蘭黃金時代經濟的基礎之一。",
+    "description": "將每年初夏捕獲的鯡魚去除內臟後以鹽輕醃，冷藏後生吃，常配切碎的洋蔥與醃黃瓜，口感柔軟油潤。",
+    "history": "中世紀起鯡魚貿易是荷蘭經濟的支柱，14世紀相傳由威廉·伯克爾松發明的「去鰓法」讓鯡魚可以在船上保存，荷蘭漁船因此能遠航北海。每年6月新季鯡魚上市時，荷蘭會舉行「國旗日」慶祝，第一桶鯡魚傳統上會拍賣作慈善。荷蘭人習慣抓著魚尾仰頭整條吃下。",
     "wiki": "Soused herring",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Haring_04.jpg/960px-Haring_04.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Haring_04.jpg",
@@ -89,8 +89,8 @@
    {
     "name": "炸肉丸",
     "localName": "Bitterballen",
-    "description": "外酥內軟的炸肉醬丸，配芥末醬。",
-    "history": "荷蘭酒館最經典的下酒小吃。",
+    "description": "將濃稠的肉醬（以牛肉高湯與麵粉製成）冷卻後揉成小球，裹上麵包粉油炸，外酥內軟，蘸芥末醬吃。",
+    "history": "炸肉丸由法式可樂餅演變而來，最初是家庭利用燉肉剩下的肉與湯汁製作的料理。20世紀它成為酒吧中搭配啤酒與琴酒的小點，名稱中的「bitter」指的是荷蘭人常配著喝的苦味草本酒。如今它是荷蘭酒館、生日派對與聚會時最普遍的下酒菜。",
     "wiki": "Bitterballen",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Bitterballen_mosterd_mayo.jpg/960px-Bitterballen_mosterd_mayo.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Bitterballen_mosterd_mayo.jpg",
@@ -99,8 +99,8 @@
    {
     "name": "小鬆餅",
     "localName": "Poffertjes",
-    "description": "以蕎麥與麵粉麵糊煎成的迷你蓬鬆鬆餅，撒糖粉。",
-    "history": "荷蘭市集與節慶常見的傳統點心。",
+    "description": "以蕎麥粉、麵粉與酵母調成的麵糊，倒入有許多小凹槽的鑄鐵烤盤煎成迷你蓬鬆鬆餅，趁熱加上奶油與糖粉。",
+    "history": "小鬆餅的作法在荷蘭已有數百年歷史，傳統上使用蕎麥粉，因為蕎麥在荷蘭東部貧瘠的沙質土地上比小麥更容易種植，是平民負擔得起的穀物。它與聖誕市集和遊樂園的關係密切，至今冬季市集與夏日的園遊會上仍常見小鬆餅攤，是荷蘭兒童最喜愛的甜點之一。",
     "wiki": "Poffertjes",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Poffertjes-Melkhuis_%28cropped%29.jpg/960px-Poffertjes-Melkhuis_%28cropped%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Poffertjes-Melkhuis_(cropped).jpg",

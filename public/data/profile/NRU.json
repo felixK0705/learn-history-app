@@ -7,30 +7,30 @@
    {
     "name": "諾魯公理會",
     "percent": 36,
-    "description": "最大教派，由19世紀末傳教士建立。"
+    "description": "1888年德國吞併諾魯後，1899年由美國人德拉莫特帶領的公理會傳教士抵達，他把聖經翻譯成諾魯語並建立學校。諾魯公理會繼承了這個傳統，1968年獨立時與國家建立了密切關係，至今是最大的教會，教堂集中在西部與南部的村落。"
    },
    {
     "name": "天主教",
     "percent": 33,
-    "description": "20世紀初德國統治時期傳入。"
+    "description": "天主教的聖心傳教會於1902年抵達，在東部建立傳教站與學校，與公理會形成兩大教派長期競爭的局面。二戰期間日本占領並將大批諾魯人遷往特魯克島，天主教神父與信徒同受苦難，這段經歷加深了天主教在社區中的地位。"
    },
    {
     "name": "神召會（五旬節派）",
     "percent": 13,
-    "description": "近年成長迅速。"
+    "description": "神召會是20世紀後期從澳洲與太平洋其他島嶼傳入的五旬節派教會，以熱烈的敬拜與音樂吸引年輕人，在1990年代後成長迅速。"
    },
    {
     "name": "諾魯獨立教會",
     "percent": 10,
-    "description": "自公理會分出的本土教會。"
+    "description": "諾魯獨立教會是1990年代由部分公理會信徒因教會內部爭議分裂出來的，反映了這個小國中教會與家族、政治的緊密關係。"
    },
    {
     "name": "無宗教",
     "percent": 2,
-    "description": "比例很低。"
+    "description": "諾魯社會以教會為生活中心，幾乎所有人都屬於某個教會，因此自認無宗教的人很少，主要是少數年輕人與外籍居民。"
    }
   ],
-  "background": "1888年德國併吞諾魯後，美國公理宗傳教士與天主教傳教士相繼到來，取代傳統信仰。基督教迅速成為社會生活核心，至今幾乎全體國民皆為基督徒。"
+  "background": "諾魯原住民信仰祖先與名為「Eijebong」的女神等神靈。1888年德國吞併諾魯，1899年公理會傳教士到來，1902年天主教傳入，兩大教派迅速讓島民改信基督教。一戰後諾魯由澳洲託管，二戰中被日本占領，許多居民被遷往外島。1968年獨立後基督教仍是社會核心，各教會分布於島上各區。"
  },
  "language": {
   "official": "官方語言為諾魯語與英語。",
@@ -38,27 +38,27 @@
    {
     "name": "諾魯語",
     "percent": 93,
-    "description": "南島語系密克羅尼西亞語支的語言，是多數家庭的語言。",
+    "description": "諾魯語屬南島語系密克羅尼西亞語支，是諾魯原住民的語言。由於島上人口只有約一萬多人且相對孤立，諾魯語一直是日常生活與家庭中的主要語言。1899年傳教士德拉莫特翻譯聖經並編寫字典，為諾魯語建立了書寫系統。",
     "greeting": "Ekamawir omo",
     "pronunciation": "e-ka-ma-wir o-mo"
    },
    {
     "name": "英語",
     "percent": 5,
-    "description": "政府、商業與教育常用。",
+    "description": "英語是1920年代起澳洲託管時期引入的行政與教育語言，1968年獨立後仍與諾魯語同為官方語言。中學以上教育多以英語授課，政府與商業文件也使用英語，但以英語為家庭語言的人口只約5%。",
     "greeting": "Hello",
     "pronunciation": "heh-loh"
    }
   ],
-  "history": "諾魯語是南島語族中一支獨特的語言。德國統治時期德語影響有限；一戰後由澳洲、英國與紐西蘭託管，英語成為行政與教育語言，獨立後與諾魯語並列官方語言。"
+  "history": "諾魯語是島上原住民的口語，19世紀前沒有文字。1899年德國統治時期，公理會傳教士德拉莫特以拉丁字母記錄諾魯語並翻譯聖經。一戰後由澳洲、英國、紐西蘭共同託管，英語成為行政與學校語言。二戰期間日本占領，部分居民也學過日語。1968年獨立後，諾魯語與英語並列為官方語言。"
  },
  "food": {
   "ranking": [
    {
     "name": "椰汁魚",
     "localName": "Coconut fish",
-    "description": "以椰奶烹調的鮮魚或生魚，是島上常見料理。",
-    "history": "諾魯四面環海且椰子豐富，魚與椰奶是傳統飲食的基礎。",
+    "description": "將新鮮魚肉切塊，以椰奶與萊姆汁醃漬生食，或與椰奶一起燉煮，口味清爽帶椰香。",
+    "history": "諾魯四面環海，捕魚一直是島民的主要生計，椰子則是島上少數能大量生長的作物，兩者結合成為傳統料理。過去諾魯人會在環礁潟湖中養殖遮目魚，作為穩定的魚類來源。如今雖然進口食品普遍，椰汁魚仍是家庭聚會與慶典上的代表性菜餚。",
     "wiki": "Coconut milk",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Cononut_milk.JPG/960px-Cononut_milk.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Cononut_milk.JPG",
@@ -67,8 +67,8 @@
    {
     "name": "露兜樹果",
     "localName": "Pandanus",
-    "description": "露兜樹果實可直接嚼食或製成果膏。",
-    "history": "露兜樹是太平洋島民傳統的重要食物來源，曾是諾魯人的主食之一。",
+    "description": "露兜樹的果實由許多楔形果瓣組成，可直接啃食果肉纖維，或煮熟後壓成果泥曬乾製成果膏保存。",
+    "history": "露兜樹耐鹽、耐旱，能在諾魯貧瘠的珊瑚土壤中生長，是島上傳統最重要的食物之一。在磷礦開採前，露兜樹果膏可保存很久，常在乾旱與缺糧時食用。20世紀的磷礦開採破壞了島上中部約八成的土地，傳統作物大幅減少，露兜樹因此更顯珍貴。",
     "wiki": "Pandanus tectorius",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Pandanus_tectorius.jpg/960px-Pandanus_tectorius.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Pandanus_tectorius.jpg",
@@ -77,8 +77,8 @@
    {
     "name": "生魚片",
     "localName": "Sashimi",
-    "description": "新鮮鮪魚切片，蘸醬油食用。",
-    "history": "二戰期間日本占領諾魯，加上近海鮪魚資源豐富，生魚片相當普遍。",
+    "description": "將新鮮捕獲的鮪魚切成薄片，蘸醬油與芥末生食，口感鮮甜。",
+    "history": "生魚片是在1942–1945年日本占領期間傳入諾魯的飲食習慣，日本人在島上興建機場與防禦工事，也帶來了日本料理。戰後諾魯人保留了這種吃法，由於周邊海域盛產鮪魚，生魚片成為島上相當普遍的料理，在聚會中常見。",
     "wiki": "Sashimi",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/241109_Shigaraki_ware_Koga_Shiga_pref_Japan01s3.jpg/960px-241109_Shigaraki_ware_Koga_Shiga_pref_Japan01s3.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:241109_Shigaraki_ware_Koga_Shiga_pref_Japan01s3.jpg",
@@ -87,8 +87,8 @@
    {
     "name": "麵包果",
     "localName": "Breadfruit",
-    "description": "烤或煮的麵包果，是傳統澱粉來源。",
-    "history": "太平洋島嶼數千年來的主要作物之一。",
+    "description": "將麵包果整顆烤熟或切塊煮熟，果肉口感類似馬鈴薯與麵包，帶淡淡甜味，可搭配魚與椰奶食用。",
+    "history": "麵包果是太平洋島嶼的傳統主食，數千年前隨南島語族航海者在各島之間傳播。在諾魯，麵包果與露兜樹是磷礦開採前的主要澱粉來源。20世紀磷礦帶來的財富使進口米飯與加工食品取代了傳統作物，造成嚴重的肥胖與糖尿病問題，近年政府鼓勵恢復種植傳統作物。",
     "wiki": "Breadfruit",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Artocarpus_altilis_%28fruit%29.jpg/960px-Artocarpus_altilis_%28fruit%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Artocarpus_altilis_(fruit).jpg",
@@ -97,8 +97,8 @@
    {
     "name": "炒飯",
     "localName": "Fried rice",
-    "description": "島上華人經營的餐館所供應的炒飯。",
-    "history": "磷礦時期引入的華人勞工與後來的華人商家，使中式炒飯成為諾魯最普遍的外食之一。",
+    "description": "將米飯與蛋、肉類、蔬菜一起大火翻炒，以醬油調味，份量大、價格便宜，是島上最常見的外食。",
+    "history": "20世紀磷礦公司從中國南方與香港招募勞工到諾魯工作，部分華人留下來經營餐館與商店。炒飯因此成為諾魯最普遍的外食之一，島上許多小餐館都由華人經營。由於可耕地極少、食物多仰賴進口，以進口米飯為主的炒飯成為諾魯人日常飲食的重要部分。",
     "wiki": "Fried rice",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Koh_Mak%2C_Thailand%2C_Fried_rice_with_seafood%2C_Thai_fried_rice.jpg/960px-Koh_Mak%2C_Thailand%2C_Fried_rice_with_seafood%2C_Thai_fried_rice.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Koh_Mak,_Thailand,_Fried_rice_with_seafood,_Thai_fried_rice.jpg",

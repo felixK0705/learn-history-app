@@ -7,25 +7,25 @@
    {
     "name": "天主教",
     "percent": 49,
-    "description": "西班牙殖民時期傳入，仍是最大宗教，影響節慶與社會生活。"
+    "description": "伊斯帕尼奧拉島是西班牙在美洲的第一個殖民地，1490 年代起天主教隨殖民傳入，聖多明哥建有美洲最早的主教座堂與大學（1538 年）；1511 年道明會士蒙特西諾斯更在此發表譴責虐待原住民的著名講道。1954 年獨裁者特魯希略與梵蒂岡簽訂政教協定，給予天主教特殊地位。主保「至高聖母」每年 1 月 21 日在伊圭吸引大批朝聖者，但信徒比例近數十年明顯下降。"
    },
    {
     "name": "新教（福音派）",
     "percent": 24,
-    "description": "20世紀後期快速成長，以五旬節派為主。"
+    "description": "1824 年海地統治期間，一批美國自由黑人移居薩馬納半島，帶來衛理公會等新教教會；1916–1924 年美國軍事佔領期間，美國差會進一步設立學校與教堂。1970 年代以後，五旬節派與其他福音派教會在貧窮社區與鄉村快速擴張，比例已接近四分之一。"
    },
    {
     "name": "無宗教",
     "percent": 22,
-    "description": "近年比例上升，尤其在年輕人之間。"
+    "description": "隨著都市化、海外移民與年輕人教育程度提高，越來越多多明尼加人雖保有基督教文化背景，卻不再認同特定教派，無宗教人口在 21 世紀快速增加，尤以聖多明哥與聖地牙哥等大城市為多。"
    },
    {
     "name": "其他",
     "percent": 3,
-    "description": "包含耶和華見證人、伊斯蘭教等。"
+    "description": "包括耶和華見證人、摩門教，以及融合天主教聖人與非洲神靈的多明尼加民間信仰（如「二十一分部」信仰），後者與海地巫毒教有歷史淵源，但多數信者同時自認為天主教徒，因此統計上的比例很低。"
    }
   ],
-  "background": "1492年哥倫布抵達後，西班牙在此建立美洲第一個主教區，天主教成為殖民社會核心，1954年與梵蒂岡簽訂協定確立其地位。20世紀後期美國福音派傳教活動帶動新教成長。"
+  "background": "多明尼加位於哥倫布 1492 年登陸的伊斯帕尼奧拉島東部，是天主教進入美洲的起點，殖民教會在此建立了新大陸最早的教區與大學。19 世紀海地統治與美國自由黑人移民帶來新教，20 世紀初美國佔領進一步擴大新教影響。特魯希略獨裁時期（1930–1961 年）天主教享有國家支持，但 20 世紀後期福音派興起、世俗化加速，使宗教結構日益多元。"
  },
  "language": {
   "official": "官方語言為西班牙語。",
@@ -33,27 +33,27 @@
    {
     "name": "西班牙語",
     "percent": 98,
-    "description": "全國通用，加勒比海西班牙語口音明顯。",
+    "description": "1492 年哥倫布抵達後，西班牙在島上建立美洲第一批殖民城市，原住民泰諾人因戰爭與疾病迅速消亡，西班牙語成為主流。1822–1844 年海地統治全島期間，西班牙語反而成為多明尼加人區別於海地人的認同標誌，1844 年獨立後地位更加穩固。多明尼加西語吞音明顯，北部錫瓦奧地區的口音尤具特色。",
     "greeting": "Hola",
     "pronunciation": "o-la"
    },
    {
     "name": "海地克里奧爾語",
     "percent": 2,
-    "description": "海地移民及其後代使用。",
+    "description": "20 世紀初美國資本的甘蔗園大量引進海地移工，他們聚居在稱為「batey」的蔗工營地，海地克里奧爾語因此在邊境與種植區延續。1937 年特魯希略下令屠殺邊境海地人的「香芹大屠殺」，以及 2013 年憲法法院剝奪海地裔後代公民權的判決，都讓海地裔社群長期處於邊緣地位。",
     "greeting": "Bonjou",
     "pronunciation": "bon-zhoo"
    }
   ],
-  "history": "原住民泰諾人的語言隨人口在殖民初期銳減而消失，僅留下如hamaca（吊床）、huracán（颶風）等詞彙。西班牙語隨殖民成為主要語言，與西鄰海地使用法語系克里奧爾語形成對比。"
+  "history": "泰諾人的語言隨原住民消失而絕跡，只留下 huracán、hamaca（吊床）、canoa 等借詞，後來甚至進入英語。西班牙語從 15 世紀末起成為島上主要語言，並受到非洲奴隸語言與加那利群島移民口音的影響。19 世紀海地統治與 20 世紀美國佔領（1916–1924 年）分別帶來法語系克里奧爾語與英語的影響。今日西班牙語是唯一官方語言，海地克里奧爾語則是最大的移民語言。"
  },
  "food": {
   "ranking": [
    {
     "name": "國旗餐",
     "localName": "La bandera dominicana",
-    "description": "白飯、紅豆燉菜與燉肉的組合，配上沙拉，是典型午餐。",
-    "history": "因白、紅、肉色組合被比喻為國旗而得名，是多明尼加人最日常的一餐。",
+    "description": "一盤由白飯、燉紅豆、燉肉（雞肉或牛肉）與生菜沙拉組成的午餐，常再配上炸大蕉。",
+    "history": "名稱意為「國旗」，因為白飯、紅豆與燉肉的顏色讓人聯想到國旗，象徵這道菜在多明尼加飲食中的國家地位。米來自西班牙殖民者引進的稻作，豆類與燉煮手法則融合了原住民與非洲奴隸的飲食傳統。它是多明尼加人中午最典型的一餐，幾乎每個家庭與小餐館每天都會供應。",
     "wiki": "Dominican Republic cuisine",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Chimichurri_burger.jpg/960px-Chimichurri_burger.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Chimichurri_burger.jpg",
@@ -62,8 +62,8 @@
    {
     "name": "芭蕉泥",
     "localName": "Mangú",
-    "description": "將青芭蕉煮熟搗成泥，配上醋漬紅洋蔥、炸起司、香腸與蛋。",
-    "history": "源自西非的搗泥傳統，隨奴隸貿易傳入，是代表性早餐。",
+    "description": "將青大蕉水煮後壓成泥，拌入奶油或油，上面鋪上醋漬炒紅洋蔥，常配炸鹹臘腸、炸起司與煎蛋。",
+    "history": "大蕉在 16 世紀由西班牙人引入加勒比海，成為種植園奴隸的主食，壓成泥的吃法與西非把澱粉作物搗成糊的傳統相近。民間流傳名稱來自 1916–1924 年美軍佔領時士兵吃了稱讚「Man, good!」，但學者認為更可能源自非洲剛果語系的詞彙。配上炸臘腸、炸起司、煎蛋的組合被稱為「三擊」（los tres golpes），是最經典的多明尼加早餐。",
     "wiki": "Mangú",
     "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/Mangu_dominicano_--Contenido-_-Lonjas_de_salami_fritas_-Lonjas_de_queso_blanco_-Mangu_o_pur%C3%A9_de_pl%C3%A1tano_verde_-Mantequilla_--Este_es_un_plato_t%C3%ADpico_en_el_desayuno_dominicano_--Rep%C3%BAblica_Dominicana_-_2013-10-08_14-28.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Mangu_dominicano_--Contenido-_-Lonjas_de_salami_fritas_-Lonjas_de_queso_blanco_-Mangu_o_pur%C3%A9_de_pl%C3%A1tano_verde_-Mantequilla_--Este_es_un_plato_t%C3%ADpico_en_el_desayuno_dominicano_--Rep%C3%BAblica_Dominicana_-_2013-10-08_14-28.jpg",
@@ -72,8 +72,8 @@
    {
     "name": "什錦燉肉湯",
     "localName": "Sancocho",
-    "description": "以多種肉類、根莖類與芭蕉燉成的濃湯，節慶時常見。",
-    "history": "源自西班牙的燉菜傳統並融合在地食材，多明尼加版本以「七種肉」最為隆重。",
+    "description": "以雞肉、牛肉、豬肉等多種肉類，加上大蕉、木薯、山藥、玉米等根莖類慢燉成濃稠的燉湯，配白飯與酪梨。",
+    "history": "什錦燉湯源自西班牙加那利群島的燉菜，殖民時期與原住民的根莖作物、非洲的燉煮方式結合，形成加勒比與拉美各地的版本。多明尼加最豪華的是加入七種肉類的「七肉燉湯」（sancocho de siete carnes）。它通常在節日、生日、新年或下雨天的家族聚會中大鍋熬煮，被視為多明尼加的國民料理之一。",
     "wiki": "Sancocho",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Sancocho_de_espinazo_de_cerdo.jpg/960px-Sancocho_de_espinazo_de_cerdo.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Sancocho_de_espinazo_de_cerdo.jpg",
@@ -82,8 +82,8 @@
    {
     "name": "炸芭蕉片",
     "localName": "Tostones",
-    "description": "將青芭蕉切片後壓扁兩次油炸，酥脆鹹香。",
-    "history": "加勒比海普遍的配菜，幾乎是多明尼加每餐必備。",
+    "description": "將青大蕉切段炸軟後壓扁再炸一次，外脆內鬆，撒鹽後當作配菜或點心。",
+    "history": "大蕉是 16 世紀經西班牙人從非洲與加那利群島引進加勒比海的作物，兩次油炸的做法在整個加勒比地區流傳，多明尼加人也稱它為「fritos verdes」（炸青蕉）。它是國旗餐、炸雞與炸魚旁最常見的配菜，也是海灘小吃攤的招牌，反映了非裔與西班牙飲食文化的交融。",
     "wiki": "Tostones",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Tostones.JPG/960px-Tostones.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Tostones.JPG",
@@ -92,8 +92,8 @@
    {
     "name": "甜豆奶羹",
     "localName": "Habichuelas con dulce",
-    "description": "以紅豆、椰奶、地瓜與香料煮成的甜湯，加上小餅乾。",
-    "history": "大齋期與復活節期間的傳統甜點，是多明尼加獨特的節慶食物。",
+    "description": "將紅豆煮爛過濾成濃稠的豆漿，加入椰奶、煉乳、地瓜、葡萄乾與肉桂、丁香，冷熱皆可，常配小餅乾。",
+    "history": "甜豆奶羹是多明尼加特有的甜點，與天主教的大齋期與聖週傳統密不可分：在不吃肉的四旬期間，各家會大量熬煮，並分送給鄰居與親友，形成互相分享的社區習俗。它結合了美洲的豆類、加勒比海的椰子與經殖民貿易輸入的香料，被視為多明尼加飲食認同的一部分。",
     "wiki": "Habichuelas con dulce",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Habichuelas_con_dulce_dominicana.jpg/960px-Habichuelas_con_dulce_dominicana.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Habichuelas_con_dulce_dominicana.jpg",

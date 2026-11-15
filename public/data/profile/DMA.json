@@ -7,25 +7,25 @@
    {
     "name": "天主教",
     "percent": 53,
-    "description": "法國殖民影響留下的主要宗教。"
+    "description": "18 世紀法國人從馬丁尼克與瓜德羅普移入多米尼克開墾，並帶來天主教傳教士，原住民卡里納戈人也有部分改宗。1763 年《巴黎條約》後島嶼雖改歸英國，但法裔居民與他們的非洲奴隸社群已形成穩固的天主教傳統，英國未加以禁絕，因此天主教至今仍是最大宗教。"
    },
    {
     "name": "基督新教",
     "percent": 30,
-    "description": "包括五旬節派、復臨安息日會、衛理宗等。"
+    "description": "英國統治確立後，聖公會成為殖民官方教會，1780 年代衛理公會傳教士也來到島上，在奴隸與獲得自由的非裔居民中發展。20 世紀起，基督復臨安息日會與來自美國的五旬節派教會快速成長，使新教比例接近三成。"
    },
    {
     "name": "無宗教",
     "percent": 6,
-    "description": "未認同任何宗教的人口。"
+    "description": "多米尼克社會宗教色彩濃厚，教會在教育與社區生活中扮演重要角色，因此無宗教者比例不高，主要是受都市化與海外生活影響的年輕人。"
    },
    {
     "name": "拉斯塔法里教",
     "percent": 1,
-    "description": "規模較小的宗教運動。"
+    "description": "拉斯塔法里教 1930 年代起源於牙買加，1970 年代傳入多米尼克並吸引不少年輕人。當時政府將其視為社會威脅，1974 年通過俗稱「長辮法」（Dread Act）的法律嚴厲打壓，引發長期爭議，信徒至今仍是少數。"
    }
   ],
-  "background": "十八世紀法國人最先在多米尼克建立殖民地並帶來天主教，之後英國取得統治權，帶來衛理宗等新教，近數十年五旬節派等福音派教會成長迅速。"
+  "background": "多米尼克在 17–18 世紀是英法兩國反覆爭奪的島嶼，法國移民帶來天主教，1763 年後改歸英國統治又帶來聖公會與衛理公會。奴隸制度下被販運來的非洲人在兩種殖民文化中接受基督教，原住民卡里納戈人也逐步受影響。1978 年獨立後，天主教仍居多數、新教各派並存，20 世紀後期傳入的拉斯塔法里教一度遭受政府打壓。"
  },
  "language": {
   "official": "英語是官方語言。",
@@ -33,27 +33,27 @@
    {
     "name": "英語",
     "percent": 70,
-    "description": "官方語言，用於政府與教育。",
+    "description": "多米尼克 1763 年起歸英國統治，1805 年後英國控制穩固，英語成為行政、法律與學校教育的語言。1978 年獨立時英語被定為官方語言，政府、媒體與正式場合都以英語運作，年輕一代與都市居民以英語為主要語言。",
     "greeting": "Hello",
     "pronunciation": "heh-LOH"
    },
    {
     "name": "多米尼克克里奧爾法語（Kwéyòl）",
     "percent": 30,
-    "description": "以法語為基礎的克里奧爾語，許多國民能說，常見於鄉村與日常生活。",
+    "description": "18 世紀法國種植園主與他們的西非奴隸在島上形成以法語為基礎的克里奧爾語。英國接管後雖然推行英語，但鄉村居民仍以克里奧爾語為日常語言，延續了兩百多年。1980 年代起民間推動保存運動，每年 10 月的「克里奧爾日」（Jounen Kwéyòl）會有廣播、音樂與飲食活動，但年輕人使用比例正逐漸下降。",
     "greeting": "Bonjou",
     "pronunciation": "bon-ZHOO"
    }
   ],
-  "history": "法國殖民時期形成了以法語為基礎的克里奧爾語。1763年後英國統治使英語成為官方語言，Kwéyòl則延續為民間語言，近年透過文化節慶推廣保存。"
+  "history": "原住民卡里納戈人原本說加勒比海島嶼的阿拉瓦克系語言，殖民後逐漸失傳。18 世紀法國移民與非洲奴隸在此形成克里奧爾法語，與馬丁尼克、瓜德羅普和聖露西亞的克里奧爾語相通。1763 年後英國統治使英語成為官方與教育語言，形成英語在上、克里奧爾語在下的雙語社會。獨立後政府逐漸承認克里奧爾語的文化價值，但英語仍是升學與就業的主要語言。"
  },
  "food": {
   "ranking": [
    {
     "name": "卡拉魯湯",
     "localName": "Callaloo",
-    "description": "以芋頭葉等綠葉菜與椰奶、秋葵燉煮的湯。",
-    "history": "源自西非的烹飪傳統，在加勒比海地區廣泛流行。",
+    "description": "以芋頭葉（dasheen）或莧菜葉，加上秋葵、椰奶、洋蔥與香料燉煮成綠色濃湯，有時加入螃蟹或鹹肉。",
+    "history": "這類綠葉濃湯源自西非，被販運到加勒比海的奴隸以當地的芋葉與秋葵重現家鄉的燉葉菜，各島都有不同版本。多米尼克原本的國菜是以巨型蛙製成的「山雞」料理，但 2002 年起壺菌病使這種蛙瀕臨滅絕，卡拉魯湯因此更常被視為代表性的國民料理。它是週日家庭午餐與節慶的代表菜。",
     "wiki": "Callaloo",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Callaloo.jpg/960px-Callaloo.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Callaloo.jpg",
@@ -62,8 +62,8 @@
    {
     "name": "炸麵餅",
     "localName": "Bakes",
-    "description": "以麵團油炸或烘烤成的小餅，常配鹹魚當早餐。",
-    "history": "加勒比海常見的早餐麵食。",
+    "description": "將麵粉、泡打粉、鹽與水揉成麵團，壓成小圓餅後油炸或烘烤，外酥內軟。",
+    "history": "炸麵餅的出現與英國殖民時期輸入的麵粉有關，殖民地居民用便宜的進口麵粉做成可以快速填飽肚子的餅，又稱「約翰尼餅」（johnny cake），一說源自旅途中攜帶的「journey cake」。它最經典的吃法是搭配鹹魚當早餐，至今仍是多米尼克人最常見的早餐與學校點心。",
     "wiki": "Johnnycake",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Johnnycakes.jpg/960px-Johnnycakes.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Johnnycakes.jpg",
@@ -72,8 +72,8 @@
    {
     "name": "鹹魚",
     "localName": "Saltfish",
-    "description": "以鹽醃鱈魚泡水去鹽後與洋蔥、番茄炒製。",
-    "history": "鹹鱈魚自殖民時期由北美輸入，成為加勒比海的重要食材。",
+    "description": "以鹽醃的乾鱈魚泡水去鹽後，與洋蔥、番茄、辣椒一起拌炒，常配炸麵餅或煮麵包果食用。",
+    "history": "鹹鱈魚來自北大西洋紐芬蘭等地，18 世紀在英國主導的三角貿易中大量運往加勒比海，因為便宜又耐存放，被種植園主用來當作奴隸的蛋白質配給。雖然加勒比海盛產新鮮魚類，這種殖民時期的進口食品卻深深融入了當地飲食。今天「鹹魚配炸麵餅」是多米尼克最具代表性的早餐。",
     "wiki": "Salt cod",
     "image": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Bacalhau_%28Porto%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Bacalhau_(Porto).jpg",
@@ -82,8 +82,8 @@
    {
     "name": "麵包果",
     "localName": "Breadfruit",
-    "description": "以烤或煮方式食用的麵包果，口感似馬鈴薯。",
-    "history": "十八世紀末由英國人從太平洋引進加勒比海，作為廉價的糧食。",
+    "description": "麵包果是一種澱粉含量高的大型果實，可以水煮、烤、炸或做成沙拉，口感類似馬鈴薯或麵包。",
+    "history": "麵包果原產於太平洋島嶼。1789 年英國船長布萊為了把它運到加勒比海當作奴隸的廉價食物，在「邦蒂號」上遭遇船員叛變；他之後再度出航，1793 年成功將樹苗運抵聖文森與牙買加，隨後傳到多米尼克等島。這種為了殖民經濟而引進的作物，後來成為島民在颶風等糧荒時期的重要主食。",
     "wiki": "Breadfruit",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Artocarpus_altilis_%28fruit%29.jpg/960px-Artocarpus_altilis_%28fruit%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Artocarpus_altilis_(fruit).jpg",
@@ -92,8 +92,8 @@
    {
     "name": "木薯餅",
     "localName": "Cassava bread",
-    "description": "以木薯粉製成的扁平麵餅。",
-    "history": "延續卡利納哥原住民的飲食傳統。",
+    "description": "將木薯磨碎、擠出有毒汁液後，把粉在鐵板上烤成大片薄餅，口感酥脆或略帶嚼勁。",
+    "history": "木薯麵包是原住民卡里納戈人的傳統食物，早在歐洲人到來之前，加勒比海原住民就懂得去除苦木薯中的氰化物並烤成餅。1903 年英國在島上東岸劃設卡里納戈保留區，當地居民至今仍以傳統方式製作木薯麵包並販售給遊客。它代表了多米尼克作為加勒比海少數仍有原住民社群的島嶼所保存的文化傳統。",
     "wiki": "Cassava bread",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Tortasdecasabe.JPG/960px-Tortasdecasabe.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Tortasdecasabe.JPG",

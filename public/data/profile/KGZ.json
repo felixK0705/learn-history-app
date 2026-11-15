@@ -7,20 +7,20 @@
    {
     "name": "伊斯蘭教（遜尼派）",
     "percent": 90,
-    "description": "多數居民信仰，屬哈乃斐學派，融合游牧傳統。"
+    "description": "伊斯蘭教先在費爾干納盆地的奧什等城市傳播，遊牧的吉爾吉斯人則在17–19世紀浩罕汗國統治期間逐漸伊斯蘭化。蘇聯時期宗教遭壓制，1991年獨立後在沙烏地、土耳其等國資助下大量興建清真寺，南部較保守、北部較世俗，伊斯蘭身分也成為吉爾吉斯民族認同的一部分。"
    },
    {
     "name": "俄羅斯正教",
     "percent": 7,
-    "description": "主要為俄羅斯裔居民。"
+    "description": "1876年俄羅斯帝國併吞浩罕汗國後，大量俄羅斯與烏克蘭農民移入北部的楚河谷地，蘇聯時期又有更多斯拉夫工人與技術人員遷入首都比什凱克。他們信仰東正教；1991年獨立後許多人移回俄羅斯，東正教比例因而下降。"
    },
    {
     "name": "其他",
     "percent": 3,
-    "description": "包含新教、無宗教等。"
+    "description": "包括新教各派（獨立後西方傳教士帶入）、天主教、巴哈伊信仰、佛教，以及蘇聯時期無神論教育下沒有宗教歸屬的人。此外許多吉爾吉斯人仍保有祖靈與聖地崇拜等傳統信仰元素。"
    }
   ],
-  "background": "伊斯蘭教自10世紀前後由喀喇汗王朝推廣於費爾干納谷地，吉爾吉斯游牧民族直到17–19世紀才在浩罕汗國影響下大量改信伊斯蘭教，並保有騰格里信仰等傳統習俗。俄帝國與蘇聯時期帶來東正教與斯拉夫移民。"
+  "background": "吉爾吉斯人傳統上信奉騰格里天神信仰與薩滿崇拜，8世紀阿拉伯人在怛羅斯之戰（751年）後擴大在中亞的影響，伊斯蘭教先在費爾干納盆地的定居城市傳播。遊牧的吉爾吉斯人則到17–19世紀才在浩罕汗國統治與蘇非派影響下普遍伊斯蘭化，且保留不少前伊斯蘭習俗。1876年俄羅斯帝國併吞此地，帶來俄羅斯移民與東正教。蘇聯時期推行無神論，1991年獨立後清真寺數量從數十座增加到數千座，伊斯蘭教快速復興。"
  },
  "language": {
   "official": "官方語言為吉爾吉斯語（國語）與俄語。",
@@ -28,34 +28,34 @@
    {
     "name": "吉爾吉斯語",
     "percent": 73,
-    "description": "突厥語族的語言，以西里爾字母書寫。",
+    "description": "吉爾吉斯語是吉爾吉斯族的母語，史詩《瑪納斯》以此傳承。1989年它被定為國語，獨立後吉爾吉斯族人口比例上升到七成以上，鄉村與南部地區幾乎都以吉爾吉斯語生活，政府也推動公務人員須通曉國語。",
     "greeting": "Саламатсызбы",
     "pronunciation": "sa-la-mat-syz-by"
    },
    {
     "name": "烏茲別克語",
     "percent": 14,
-    "description": "南部費爾干納谷地的烏茲別克人使用。",
+    "description": "烏茲別克人長期定居在費爾干納盆地的農業城鎮，1924年蘇聯劃分加盟共和國邊界時，奧什、賈拉拉巴德等烏茲別克人聚居區被劃入吉爾吉斯，因此南部有大量烏茲別克語使用者。1990年與2010年奧什曾發生吉爾吉斯人與烏茲別克人的流血衝突。",
     "greeting": "Salom",
     "pronunciation": "sa-lom"
    },
    {
     "name": "俄語",
     "percent": 9,
-    "description": "母語者約一成，但在城市與商業中廣泛使用。",
+    "description": "俄語在俄羅斯帝國與蘇聯時期成為行政與教育語言，獨立後仍是憲法承認的官方語言。雖然以俄語為母語者約一成，但比什凱克等城市的商業、學術與媒體大量使用俄語，許多人也到俄羅斯打工，因此俄語通曉程度很高。",
     "greeting": "Здравствуйте",
     "pronunciation": "zdrast-vuy-tye"
    }
   ],
-  "history": "吉爾吉斯語屬突厥語族，口傳史詩《瑪納斯》是其文化瑰寶。蘇聯時期吉爾吉斯語先改用拉丁字母再改為西里爾字母，俄語成為行政與教育語言。獨立後吉爾吉斯語成為國語，俄語保有官方地位。"
+  "history": "吉爾吉斯語屬突厥語族，吉爾吉斯人在16世紀左右定居天山地區，傳統以口傳文學為主，長達數十萬行的史詩《瑪納斯》是其民族文化象徵。1924年起蘇聯為吉爾吉斯語制定書面語，1928年改用拉丁字母，1940年再改為西里爾字母。蘇聯時期俄語成為教育、行政與城市生活的主要語言。1989年吉爾吉斯語成為國語，獨立後俄語仍保有官方語言地位，兩種語言並行使用。"
  },
  "food": {
   "ranking": [
    {
     "name": "別什巴爾馬克",
     "localName": "Бешбармак (Beshbarmak)",
-    "description": "水煮羊肉或馬肉鋪在寬麵片上，配肉湯與洋蔥，為國菜。",
-    "history": "游牧民族待客的傳統料理，名稱意為「五根手指」。",
+    "description": "將水煮的羊肉或馬肉切碎，與寬麵片拌在一起，淋上肉湯與洋蔥，傳統用手抓食。",
+    "history": "Beshbarmak 在突厥語中意為「五根手指」，是吉爾吉斯與哈薩克遊牧民共同的宴客料理。傳統宴席上，主人會依賓客的年齡與地位分配羊頭、羊腿等不同部位，體現遊牧社會的禮儀與長幼秩序。它是婚禮、喪禮、紀念宴與重要節日的主菜。",
     "wiki": "Beshbarmak",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/%D0%91%D0%B5%D1%88%D0%B1%D0%B0%D1%80%D0%BC%D0%B0%D0%BA_%D0%B8%D0%B7_%D0%B3%D0%BE%D0%B2%D1%8F%D0%B4%D0%B8%D0%BD%D1%8B_01.jpg/960px-%D0%91%D0%B5%D1%88%D0%B1%D0%B0%D1%80%D0%BC%D0%B0%D0%BA_%D0%B8%D0%B7_%D0%B3%D0%BE%D0%B2%D1%8F%D0%B4%D0%B8%D0%BD%D1%8B_01.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:%D0%91%D0%B5%D1%88%D0%B1%D0%B0%D1%80%D0%BC%D0%B0%D0%BA_%D0%B8%D0%B7_%D0%B3%D0%BE%D0%B2%D1%8F%D0%B4%D0%B8%D0%BD%D1%8B_01.jpg",
@@ -64,8 +64,8 @@
    {
     "name": "中亞抓飯",
     "localName": "Палоо (Plov)",
-    "description": "以米、羊肉、胡蘿蔔與洋蔥在大鍋燉煮。",
-    "history": "在南部奧什一帶尤其普遍，是婚禮與節慶主菜。",
+    "description": "以米、羊肉、胡蘿蔔與洋蔥在大鐵鍋（kazan）中燜煮，以孜然調味。",
+    "history": "抓飯是中亞定居農業文化的代表料理，起源於布哈拉、撒馬爾罕等古城，吉爾吉斯南部費爾干納盆地的烏茲別克社群將其傳入，奧什的抓飯以使用當地紅色米種聞名。蘇聯時期它隨人口流動成為全中亞的節慶菜，今天在婚禮、割禮宴與喪禮上，常由男性在大鍋中為上百位賓客烹煮。",
     "wiki": "Pilaf",
     "image": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Afghan_Palo.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Afghan_Palo.jpg",
@@ -74,8 +74,8 @@
    {
     "name": "拉條子",
     "localName": "Лагман (Lagman)",
-    "description": "手拉麵條配上羊肉、蔬菜炒製或燉煮的醬汁。",
-    "history": "源自東干人與維吾爾人的麵食，傳入中亞後成為各國共享的料理。",
+    "description": "手拉的長條麵條，淋上以羊肉、甜椒、番茄與蔬菜炒成的濃稠醬汁。",
+    "history": "Lagman 源自新疆維吾爾人與回族（中亞稱東干人）的拉麵，名稱可能來自漢語「拉麵」。19世紀末清朝平定陝甘回變後，一批回族人逃到俄屬中亞（今吉爾吉斯與哈薩克），維吾爾人也陸續移入，把手拉麵的技術帶來。今天它已成為吉爾吉斯全國普遍的日常麵食。",
     "wiki": "Laghman (food)",
     "image": "https://upload.wikimedia.org/wikipedia/commons/7/74/%D0%9B%D0%B0%D0%B3%D0%BC%D0%B0%D0%BD.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:%D0%9B%D0%B0%D0%B3%D0%BC%D0%B0%D0%BD.jpg",
@@ -84,8 +84,8 @@
    {
     "name": "曼提餃",
     "localName": "Манты (Manty)",
-    "description": "以羊肉、洋蔥為餡的大型蒸餃。",
-    "history": "隨突厥與蒙古民族遷徙流傳於中亞。",
+    "description": "以薄麵皮包入切碎的羊肉、洋蔥與羊油，用多層蒸籠蒸熟的大餃子，常配酸奶油。",
+    "history": "Manty 一般認為與蒙古帝國時期的包子、饅頭類麵食有關，隨著13世紀蒙古西征在中亞、土耳其與高加索地區傳播，各地發展出不同版本。在吉爾吉斯，蒸 manty 需要專用的多層蒸鍋（kaskan），家庭聚會時常由全家女性一起包製。",
     "wiki": "Manti (food)",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Kayseride_bir_restoranda_Kayseri_mant%C4%B1s%C4%B1_%28cropped%29.jpg/960px-Kayseride_bir_restoranda_Kayseri_mant%C4%B1s%C4%B1_%28cropped%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Kayseride_bir_restoranda_Kayseri_mant%C4%B1s%C4%B1_(cropped).jpg",
@@ -94,8 +94,8 @@
    {
     "name": "馬奶酒",
     "localName": "Кымыз (Kymyz)",
-    "description": "發酵馬奶製成的微酸低酒精飲品。",
-    "history": "游牧民族夏季牧場的傳統飲品，被視為國飲。",
+    "description": "以母馬奶在皮囊或木桶中攪拌發酵製成的微酸飲料，含少量酒精。",
+    "history": "吉爾吉斯人在夏季會把馬群趕到高山牧場（jailoo），擠出母馬奶製作 kymyz，這種做法在歐亞草原已流傳數千年。夏季的 kymyz 是遊牧民的主要營養來源，傳統上用皮囊（kökör）盛裝。今天春夏之交各地仍會舉辦慶祝第一批馬奶酒的活動，史詩《瑪納斯》中也常以馬奶酒象徵款待與豐收。",
     "wiki": "Kumis",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Kumys-bottle.jpg/960px-Kumys-bottle.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Kumys-bottle.jpg",

@@ -7,25 +7,25 @@
    {
     "name": "路德宗（丹麥國教會）",
     "percent": 72,
-    "description": "憲法規定的國教會，多數國民為其成員。"
+    "description": "約 965 年國王哈拉爾藍牙在耶靈石碑上宣告「使丹麥人成為基督徒」。1536 年克里斯蒂安三世推行宗教改革，沒收天主教會財產，把路德宗定為國教。1849 年憲法將其定為「人民教會」，由國家支持；國民出生受洗即成為會員並繳交教會稅，因此登記比例很高，但實際上教堂的人很少。"
    },
    {
     "name": "無宗教",
     "percent": 20,
-    "description": "未加入任何宗教團體的人口。"
+    "description": "丹麥是高度世俗化的北歐福利國家，教育、醫療與社會救助早已由國家而非教會提供。許多人雖然留在國教會，生活中卻很少涉及宗教；也有人為了免繳教會稅而正式退出，退會者與移民後代中的非信徒構成無宗教人口。"
    },
    {
     "name": "伊斯蘭教",
     "percent": 5,
-    "description": "主要為移民及其後代。"
+    "description": "1960 年代末起丹麥從土耳其、巴基斯坦、南斯拉夫等地招募外籍勞工，1980–90 年代又接收來自黎巴嫩、伊朗、伊拉克、索馬利亞與波士尼亞的難民，使穆斯林成為最大的少數宗教群體。2005 年《日德蘭郵報》刊登先知漫畫引發國際爭議，宗教與移民議題至今仍在丹麥政治中舉足輕重。"
    },
    {
     "name": "天主教",
     "percent": 1,
-    "description": "規模較小的天主教社群。"
+    "description": "1536 年宗教改革後天主教在丹麥遭到禁止，直到 1849 年憲法保障宗教自由才恢復合法。今天的天主教徒多是來自波蘭、菲律賓、越南等地的移民及其後代。"
    }
   ],
-  "background": "十世紀國王「藍牙」哈拉爾受洗，丹麥逐漸基督教化。1536年宗教改革後路德宗成為國教，至今仍是丹麥國教會。不過丹麥社會高度世俗化，許多教會成員並不常參與宗教活動。"
+  "background": "丹麥在 10 世紀維京時代末期由哈拉爾藍牙國王引入基督教，中世紀天主教會擁有龐大土地與權力。1536 年宗教改革把路德宗確立為國教，此後國家與教會密不可分。1849 年民主憲法保障宗教自由並設立人民教會，19 世紀神學家格倫特維推動的民間高等學校運動也深刻影響了丹麥的宗教與教育。20 世紀後期丹麥高度世俗化，而移民則帶來伊斯蘭教等新宗教。"
  },
  "language": {
   "official": "丹麥語是官方語言，法羅群島與格陵蘭另有各自的官方語言。",
@@ -33,34 +33,34 @@
    {
     "name": "丹麥語",
     "percent": 92,
-    "description": "屬北日耳曼語支，與瑞典語、挪威語可部分互通。",
+    "description": "丹麥語屬北日耳曼語支，由維京時代的古諾斯語發展而來。中世紀漢薩同盟時期大量吸收低地德語詞彙，1550 年出版的克里斯蒂安三世聖經奠定書面語基礎。1380–1814 年丹麥與挪威共主，丹麥語也是挪威的書面語；今日丹麥語是全國的官方語言與教育語言，也通行於法羅群島與格陵蘭的部分場合。",
     "greeting": "Hej",
     "pronunciation": "hai"
    },
    {
     "name": "土耳其語",
     "percent": 1,
-    "description": "土耳其裔移民社群使用。",
+    "description": "1960 年代末丹麥招募土耳其外籍勞工，1970 年代後透過家庭團聚，土耳其裔社群在哥本哈根、奧胡斯等城市定居，成為最大的移民語言群體之一，第二代以後多數同時使用丹麥語與土耳其語。",
     "greeting": "Merhaba",
     "pronunciation": "MER-ha-ba"
    },
    {
     "name": "德語",
     "percent": 1,
-    "description": "南日德蘭地區德裔少數民族使用。",
+    "description": "南日德蘭（北石勒蘇益格）曾屬德意志邦國，1864 年普丹戰爭後歸普魯士，1920 年公投後北部回歸丹麥，留下一群德語少數民族。1955 年丹德兩國發表《波昂–哥本哈根宣言》保障雙方少數民族權利，當地至今設有德語學校與報紙。",
     "greeting": "Hallo",
     "pronunciation": "HAH-loh"
    }
   ],
-  "history": "丹麥語源自維京時代的古諾斯語。中世紀漢薩同盟時期吸收大量低地德語詞彙。丹麥曾統治挪威數百年，使丹麥語長期是挪威的書面語。現代丹麥語以發音中的「喉塞音」聞名。"
+  "history": "丹麥語源自古諾斯語，維京時代以盧恩字母刻寫碑文，約 12 世紀後與瑞典語、挪威語逐漸分化。中世紀受低地德語強烈影響，宗教改革後的丹麥語聖經與印刷品確立了書面語。丹麥–挪威聯合王國時期丹麥語是兩國的行政語言，1814 年挪威脫離後各自發展。19 世紀民族浪漫主義推動丹麥語文學與教育，20 世紀後期移民帶來土耳其語、阿拉伯語等語言。"
  },
  "food": {
   "ranking": [
    {
     "name": "開放式三明治",
     "localName": "Smørrebrød",
-    "description": "在黑麥麵包上鋪醃鯡魚、肝醬、蝦或烤牛肉等配料。",
-    "history": "十九世紀工人午餐演變而來的丹麥經典料理。",
+    "description": "在塗上奶油的黑麥麵包上鋪滿醃鯡魚、肝醬、烤牛肉、小蝦或雞蛋等配料，層層堆疊、用刀叉食用。",
+    "history": "名稱意為「奶油和麵包」，原本是農民與工人在田間午餐吃的黑麥麵包配剩菜。19 世紀末哥本哈根的餐廳開始把它精緻化，1888 年開業的奧斯卡・大衛森餐廳以上百種組合的超長菜單聞名。它是丹麥午餐文化的核心，耶誕節前的「聖誕午宴」（julefrokost）更少不了各式開放式三明治與烈酒。",
     "wiki": "Smørrebrød",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Ida_Davidsen_udsnit_af_glasmontren.JPG/960px-Ida_Davidsen_udsnit_af_glasmontren.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Ida_Davidsen_udsnit_af_glasmontren.JPG",
@@ -69,8 +69,8 @@
    {
     "name": "酥炸豬五花",
     "localName": "Stegt flæsk",
-    "description": "將豬五花片煎得酥脆，配馬鈴薯與巴西里白醬。",
-    "history": "2014年被票選為丹麥國菜。",
+    "description": "將厚片豬五花煎到酥脆，配上水煮馬鈴薯與大量香芹白醬，口感鹹香濃郁。",
+    "history": "丹麥自 19 世紀末透過農民合作社運動發展出強大的養豬與豬肉出口產業，1887 年第一家合作社屠宰場在霍森斯成立，豬肉從此成為丹麥人最普遍的肉類。2014 年丹麥食品部舉辦的國菜票選中，這道平民家常菜脫穎而出，被正式選為國菜，反映了丹麥農業社會的飲食傳統。",
     "wiki": "Stegt flæsk",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Stegt_fl%C3%A6sk.jpg/960px-Stegt_fl%C3%A6sk.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Stegt_fl%C3%A6sk.jpg",
@@ -79,8 +79,8 @@
    {
     "name": "丹麥肉丸",
     "localName": "Frikadeller",
-    "description": "以豬肉與小牛肉絞肉煎成的扁圓肉丸。",
-    "history": "丹麥最常見的家常菜之一。",
+    "description": "以豬絞肉或豬與小牛混合絞肉，加洋蔥、雞蛋與麵包粉做成橢圓扁肉丸，用奶油煎至金黃。",
+    "history": "名稱一般認為經由德語借入，類似的肉丸在北歐與德國各地都有。丹麥版肉丸是最典型的家常晚餐，常配馬鈴薯、褐醬與醃紫甘藍，冷了也可切片放在開放式三明治上。它出現在家庭餐桌、學校便當與聚會中，是許多丹麥人記憶中「媽媽的味道」，也是丹麥人在海外最常懷念的家鄉菜之一。",
     "wiki": "Frikadeller",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Frikadeller.jpg/960px-Frikadeller.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Frikadeller.jpg",
@@ -89,8 +89,8 @@
    {
     "name": "球形鬆餅",
     "localName": "Æbleskiver",
-    "description": "以專用鍋煎成的圓球形鬆餅，沾果醬與糖粉。",
-    "history": "丹麥聖誕季節的傳統點心，常配熱紅酒。",
+    "description": "以麵糊在有半球形凹槽的特製鐵鍋中煎成圓球狀的小鬆餅，外皮微脆、內部鬆軟，沾果醬與糖粉食用。",
+    "history": "名稱意為「蘋果片」，因為早期做法是在麵糊中包入蘋果片，現在大多已不加。它是丹麥將臨期與耶誕季節的代表點心，傳統上與熱香料紅酒（gløgg）一起享用，學校、公司與家庭的耶誕聚會常會準備。專用的煎鍋是許多丹麥家庭代代相傳的廚具。",
     "wiki": "Æbleskiver",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/%C3%86bleskriver_%2854997580931%29.jpg/960px-%C3%86bleskriver_%2854997580931%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:%C3%86bleskriver_(54997580931).jpg",
@@ -99,8 +99,8 @@
    {
     "name": "丹麥酥",
     "localName": "Wienerbrød",
-    "description": "多層酥皮麵包，加入卡士達或果醬。",
-    "history": "丹麥語稱「維也納麵包」，源於十九世紀奧地利麵包師傅帶來的技術。",
+    "description": "以多層奶油與麵團反覆擀折製成的酥皮甜點，加入杏仁醬、卡士達或果醬，烤後表面淋上糖霜。",
+    "history": "丹麥人把它稱為「維也納麵包」，因為 1850 年哥本哈根麵包師傅罷工時，店家改雇來自奧地利等地的師傅，帶來了維也納的折疊酥皮技術。罷工結束後丹麥師傅學會並改良做法，加入更多奶油與內餡，形成獨特風格。19 世紀末這種甜點隨移民與麵包師傳到世界各地，英語因此稱為「丹麥酥」（Danish pastry）。",
     "wiki": "Danish pastry",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Glazed_apple_Danish.jpg/960px-Glazed_apple_Danish.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Glazed_apple_Danish.jpg",

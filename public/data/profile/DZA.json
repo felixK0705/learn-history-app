@@ -7,20 +7,20 @@
    {
     "name": "伊斯蘭教（遜尼派）",
     "percent": 98,
-    "description": "國教，屬馬立基學派。"
+    "description": "7 世紀末阿拉伯軍隊征服北非，雖遭柏柏爾女王卡希娜等人抵抗，柏柏爾人仍在數代內逐漸改信伊斯蘭教，並以馬立克學派為主流。1830–1962 年法國殖民期間未能改變民眾信仰，1931 年伊本・巴迪斯創立「阿爾及利亞穆斯林學者協會」，把伊斯蘭教與民族認同結合，成為獨立運動的重要支柱。1990 年代政府與伊斯蘭武裝團體爆發內戰，造成約十五萬人死亡，但伊斯蘭教仍是全國共同的信仰與國教。"
    },
    {
     "name": "伊斯蘭教（伊巴德派）",
     "percent": 1,
-    "description": "主要分布於撒哈拉北部的姆扎布谷地。"
+    "description": "伊巴德派源自早期伊斯蘭的哈瓦利吉運動，776–909 年曾在提亞雷特建立魯斯塔姆王朝。王朝被法蒂瑪王朝滅亡後，信徒南遷到撒哈拉邊緣，11 世紀起在姆扎卜河谷（今蓋爾達耶一帶）建立五座綠洲城鎮，形成以姆扎卜柏柏爾人為主的獨特社群，該河谷已列為世界遺產。"
    },
    {
     "name": "基督教與其他",
     "percent": 1,
-    "description": "人數極少。"
+    "description": "古代北非曾是基督教重鎮，354 年出生於今蘇克阿赫拉斯的聖奧古斯丁即是代表，但伊斯蘭化後基督教逐漸消失。法國殖民時期約百萬歐洲移民（黑腳）信奉天主教，1962 年獨立後幾乎全數離開。今日的少數基督徒主要是 1990 年代起在卡拜爾地區改宗的福音派信徒，以及外籍人士。"
    }
   ],
-  "background": "7世紀末阿拉伯人征服北非，柏柏爾人逐漸改信伊斯蘭教，但也曾支持哈瓦利吉派等派別，留下今日的伊巴德派社群。法國殖民時期雖有歐洲移民帶入天主教，但獨立後大多數歐裔居民離開。"
+  "background": "北非在羅馬時代是基督教重鎮，7 世紀阿拉伯征服後伊斯蘭教逐步取代基督教，柏柏爾人經數世紀成為穆斯林，並出現伊巴德派等教派。16 世紀起鄂圖曼帝國統治阿爾及爾，1830 年法國入侵後帶來大量天主教移民，但殖民政府對伊斯蘭教的壓制反而強化了穆斯林的民族意識。1962 年獨立後伊斯蘭教被定為國教，1990 年代的內戰則是伊斯蘭主義政治與世俗軍方的激烈衝突。"
  },
  "language": {
   "official": "官方語言為阿拉伯語與柏柏爾語（塔馬齊格特語）。",
@@ -28,34 +28,34 @@
    {
     "name": "阿拉伯語（阿爾及利亞方言）",
     "percent": 72,
-    "description": "日常口語為阿爾及利亞阿拉伯語（Darja），混有柏柏爾語與法語詞彙。",
+    "description": "7 世紀阿拉伯征服帶來阿拉伯語，11 世紀巴努希拉勒等貝都因部落大舉西遷，使鄉村地區進一步阿拉伯化。阿爾及利亞方言（Darja）以阿拉伯語為基礎，混合了大量柏柏爾語、法語、土耳其語與西班牙語詞彙。1962 年獨立後政府推行「阿拉伯化」政策，以標準阿拉伯語取代法語作為教育與行政語言，但日常生活通行的是方言。",
     "greeting": "السلام عليكم",
     "pronunciation": "as-sa-lām ʿa-lay-kum"
    },
    {
     "name": "柏柏爾語（卡拜爾語、沙威語等）",
     "percent": 27,
-    "description": "北非原住民語言，2016年成為官方語言。",
+    "description": "柏柏爾語（Tamazight）是北非原住民的語言，遠早於阿拉伯人到來，主要分布在卡拜爾地區、奧雷斯山區（沙威語）、姆扎卜河谷與南部圖瓦雷克地區。獨立後的阿拉伯化政策曾壓抑柏柏爾語，引發 1980 年「柏柏爾之春」與 2001 年「黑色之春」抗爭，柏柏爾語終於在 2002 年成為國家語言、2016 年成為官方語言。",
     "greeting": "Azul",
     "pronunciation": "a-zul"
    },
    {
     "name": "法語",
     "percent": 1,
-    "description": "母語者不多，但在行政、商業與高等教育中廣泛使用。",
+    "description": "1830–1962 年法國殖民統治讓法語成為行政、教育與上層社會的語言。雖然獨立後政府推行阿拉伯化，法語至今仍廣泛用於高等教育、商業與媒體，許多人能流利使用，但以法語為母語者只佔極少數。",
     "greeting": "Bonjour",
     "pronunciation": "bon-zhoor"
    }
   ],
-  "history": "柏柏爾語是北非最古老的語言。7世紀後隨伊斯蘭教傳入的阿拉伯語逐漸成為主要語言。法國殖民時期推行法語，獨立後政府推動阿拉伯化，柏柏爾人則長期爭取語言權利，2002年與2016年分別獲得國家語言與官方語言地位。"
+  "history": "阿爾及利亞最早的語言是柏柏爾語，古代曾有提菲納格字母。7 世紀阿拉伯征服與 11 世紀貝都因部落遷入，使阿拉伯語逐漸成為多數人的語言，柏柏爾語退守山區與沙漠。鄂圖曼時期留下土耳其語借詞，1830 年起法國殖民使法語成為精英語言。獨立後的阿拉伯化政策與柏柏爾文化運動長期拉鋸，最終形成阿拉伯語與柏柏爾語並列官方語言、法語仍廣泛使用的格局。"
  },
  "food": {
   "ranking": [
    {
     "name": "庫斯庫斯",
     "localName": "Couscous / Seksu",
-    "description": "蒸熟的粗麥粒配上蔬菜、羊肉或雞肉燉湯。",
-    "history": "源自柏柏爾人的古老主食，2020年由北非四國共同列入聯合國教科文組織非物質文化遺產。",
+    "description": "將粗粒小麥粉以專用蒸鍋反覆蒸成鬆散的小粒，淋上以羊肉或雞肉、鷹嘴豆與南瓜、蘿蔔等蔬菜燉成的湯汁。",
+    "history": "庫斯庫斯起源於北非柏柏爾人，考古與文獻顯示至遲在 11–13 世紀已廣泛食用，阿爾及利亞人稱之為「seksu」。它隨伊斯蘭世界的交流傳到西西里與伊比利半島，法國殖民後更傳入法國成為大眾料理。2020 年阿爾及利亞與摩洛哥、突尼西亞、茅利塔尼亞共同將庫斯庫斯相關知識與習俗列入聯合國教科文組織非物質文化遺產。它是週五家庭聚餐、婚禮與喪禮上不可少的料理。",
     "wiki": "Couscous",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Moroccan_cuscus%2C_from_Casablanca%2C_September_2018.jpg/960px-Moroccan_cuscus%2C_from_Casablanca%2C_September_2018.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Moroccan_cuscus,_from_Casablanca,_September_2018.jpg",
@@ -64,8 +64,8 @@
    {
     "name": "碎餅燉菜",
     "localName": "Chakhchoukha",
-    "description": "將薄餅撕碎後淋上番茄羊肉燉湯。",
-    "history": "源自東部奧雷斯山區沙威柏柏爾人的節慶料理。",
+    "description": "將薄麵餅撕成碎片，淋上以羊肉、鷹嘴豆、番茄與辣椒燉成的濃醬汁，讓餅吸飽湯汁。",
+    "history": "碎餅燉菜源自阿爾及利亞東部奧雷斯山區與比斯克拉一帶的沙威柏柏爾人，名稱與撕碎麵餅的動作有關。當地游牧與農耕社會以小麥麵餅與羊肉為主食，這道菜是把日常麵餅變成盛宴的做法。它在婚禮、先知誕辰節與家族慶典上大鍋製作，被視為阿爾及利亞東部的代表料理。",
     "wiki": "Chakhchoukha",
     "image": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Algerian_Chakhchoukha.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Algerian_Chakhchoukha.jpg",
@@ -74,8 +74,8 @@
    {
     "name": "雷什塔麵",
     "localName": "Rechta",
-    "description": "細長的手工麵條，配上雞肉與白蘿蔔白醬湯汁。",
-    "history": "阿爾及爾的傳統料理，常在開齋節與婚禮食用。",
+    "description": "將手工擀製的極細麵條蒸熟，淋上以雞肉、蕪菁、鷹嘴豆與肉桂調味的白色清湯醬汁。",
+    "history": "名稱源自波斯語「reshteh」（細線），這種細麵經由中世紀伊斯蘭世界的交流傳入北非，在鄂圖曼統治時期的阿爾及爾城市飲食中定型。手工擀麵費時費力，因此雷什塔是阿爾及爾人在先知誕辰節、阿舒拉節及慶祝嬰兒出生等場合才會準備的傳統料理，代表首都一帶的城市飲食文化。",
     "wiki": "Rechta",
     "image": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Rechtaalgeroise.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Rechtaalgeroise.jpg",
@@ -84,8 +84,8 @@
    {
     "name": "肉湯",
     "localName": "Chorba frik",
-    "description": "以碾碎的青麥、羊肉、番茄與香草熬成的濃湯。",
-    "history": "齋戒月開齋時最常見的湯品。",
+    "description": "以羊肉、番茄、洋蔥與烘烤過的綠色碎小麥（frik）熬成的濃湯，加入香菜、薄荷與香料。",
+    "history": "「肖爾巴」一詞源自波斯語，經鄂圖曼土耳其語傳入北非。綠小麥是在麥子未完全成熟時收割再烘烤的古老做法，在地中海東部與北非流傳已久。這道湯是阿爾及利亞齋月的象徵，每天日落開齋時幾乎家家戶戶都以一碗肖爾巴作為第一道菜，搭配椰棗與麵包。",
     "wiki": "Shorba",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Bean_soup_with_tomatoes_and_red_peppers.jpeg/960px-Bean_soup_with_tomatoes_and_red_peppers.jpeg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Bean_soup_with_tomatoes_and_red_peppers.jpeg",
@@ -94,8 +94,8 @@
    {
     "name": "椰棗粗麥糕",
     "localName": "Makroud",
-    "description": "以粗麥粉包入椰棗泥，油炸或烘烤後浸蜂蜜。",
-    "history": "北非馬格里布地區共享的傳統甜點，常見於節慶。",
+    "description": "以粗粒小麥粉做成外皮，包入椰棗泥後切成菱形，油炸或烘烤後浸入蜂蜜糖漿。",
+    "history": "椰棗粗麥糕流行於整個馬格里布地區，阿爾及利亞東部的君士坦丁版本尤為著名。阿爾及利亞南部比斯克拉等綠洲盛產「德格萊特努爾」等優質椰棗，使椰棗成為甜點的重要原料。它是開齋節、婚禮與家族喜慶時一定會準備的點心，傳統上由家中婦女一起製作，再配上薄荷茶招待客人。",
     "wiki": "Makroudh",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Makrouds.JPG/960px-Makrouds.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Makrouds.JPG",
