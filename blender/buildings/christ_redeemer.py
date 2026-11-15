@@ -106,12 +106,18 @@ def statue_sdf(S):
     # 斗篷前片：胸前橫向垂褶線以下、右側衣緣以左的布層較厚（重疊布料形成階差與陰影）
     swag_z = 19.75 + 0.22 * X ** 2 / 4.0 + 0.25 * X / 3.0
     edge_x = 1.3 + 0.1 * (21 - Z)
-    layer = np.clip((swag_z - Z) / 0.25, 0, 1) * np.clip((edge_x - X) / 0.2, 0, 1) * np.clip((Z - hem + 0.5) / 0.5, 0, 1)
+    layer = np.clip((swag_z - Z) / 0.25, 0, 1) * np.clip((edge_x - X) / 0.2, 0, 1) * np.clip((Z - hem + 0.5) / 0.5, 0, 1) * np.clip((3.0 + X) / 1.2, 0, 1)
     layer = layer * (Y < 0)
     body = body - 0.2 * layer
     # 垂褶本身：沿弧線的圓鼓布卷
-    swag = chain(S, [(-3.1, -1.95, 21.6), (-1.8, -2.25, 20.35), (0.0, -2.35, 19.85), (1.6, -2.3, 19.95), (3.1, -2.0, 20.6)], 0.34)
-    body = smin(body, swag, 0.3)
+    swag = None
+    for t in np.linspace(-1, 1, 13):
+        xx = 3.4 * t
+        zz = 19.9 + 2.0 * t ** 4 + 0.3 * t
+        yy = -2.0 - 0.25 * (1 - t * t)
+        q = S.ell((xx, yy, zz), (0.7, 0.22, 0.4 + 0.15 * t * t))
+        swag = q if swag is None else smin(swag, q, 0.25)
+    body = smin(body, swag, 0.5)
     # 衣緣自胸前直落下襬，邊緣略捲
     edge = chain(S, [(1.3, -2.3, 20.8), (1.65, -2.35, 16.0), (2.0, -2.2, 10.0), (2.35, -2.05, 6.6)], 0.13)
     body = smin(body, edge, 0.1)
@@ -180,15 +186,16 @@ def mosaic_tex():
     N = 1024
     u = (np.arange(N) + 0.5) / N * 1.6
     U, V = np.meshgrid(u, u)
-    P = 44
+    P = 45
     cell = 1.6 / P
     f1, f2, tile_v = worley(U / cell, V / cell, seed=51, return_id=True, period=P)
-    T = TAU / 1.6
-    jit = 0.5 * np.sin(T * 7 * U + 1.3) * np.sin(T * 5 * V + 0.4) + 0.3 * np.sin(T * (13 * U + 9 * V))
+    _, _, jit = worley(U / (cell * 5), V / (cell * 5), seed=54, return_id=True, period=P // 5 if P % 5 == 0 else None)
+    jit = jit - 0.5
     grout = np.clip((f2 - f1) / 0.07, 0, 1)
     base = np.array([0.70, 0.69, 0.61], np.float32)
     g = 0.86 + 0.16 * (tile_v - 0.5) + 0.05 * jit
-    stain = np.clip((np.sin(T * (3 * U + V) + 0.7) * 0.5 + np.sin(T * (2 * U - 3 * V) + 2.1) * 0.35 + np.sin(T * 9 * U + 1) * 0.15) * 1.2 - 0.2, 0, 1)
+    _, _, st = worley(U / 0.4, V / 0.4, seed=55, return_id=True, period=4)
+    stain = np.clip(st * 1.4 - 0.9, 0, 1) * 0.6
     g = g * (0.75 + 0.25 * grout) * (1 - 0.15 * stain)
     tint = np.stack([g * base[0], g * base[1] * (1 + 0.02 * jit), g * base[2] * (1 - 0.03 * stain)], -1)
     save_img(np.clip(tint, 0, 1), p, quality=88)
@@ -196,33 +203,34 @@ def mosaic_tex():
     return p, pn
 
 
-def canopy_tex(height, gap, cid, mask_rock, size=2048, extent=90.0):
-    """雨林樹冠俯視貼圖：每棵樹冠不同綠色，冠間深色陰影，零星淺色/開花樹冠；岩壁處為深灰花崗岩"""
+def canopy_tex(crowns, mask_rock, size=2048, extent=82.0):
+    """雨林樹冠俯視貼圖：每棵樹冠不同綠色、冠頂亮冠緣暗、葉團細節，零星淺色開花樹冠；岩壁處為深灰花崗岩"""
     os.makedirs(GEN, exist_ok=True)
     p = os.path.join(GEN, "canopy.jpg")
     pn = os.path.join(GEN, "canopy_nor.jpg")
     u = (np.arange(size) + 0.5) / size * 2 * extent - extent
     Xg, Yg = np.meshgrid(u, -u)
-    h = height(Xg, Yg)
-    gp = gap(Xg, Yg)
-    c = cid(Xg, Yg)
-    leaf = fbm(Xg * 1.6, Yg * 1.6, None, 3, seed=61) * 0.5 + fbm(Xg * 5, Yg * 5, None, 2, seed=62) * 0.5
-    r1 = c
-    r2 = (c * 7.31) % 1.0
-    greens = np.array([[0.13, 0.22, 0.09], [0.17, 0.27, 0.11], [0.21, 0.30, 0.13], [0.11, 0.19, 0.10], [0.24, 0.31, 0.16]], np.float32)
-    gi = np.floor(r1 * len(greens)).astype(int) % len(greens)
+    h, top, c = crowns(Xg, Yg)
+    # 葉團：高頻、凹凸分明的雜訊（花椰菜狀）
+    l1 = np.abs(fbm(Xg * 2.2, Yg * 2.2, None, 3, seed=61))
+    l2 = fbm(Xg * 6.0, Yg * 6.0, None, 2, seed=62)
+    leaf = 1.0 - 1.4 * l1 + 0.35 * l2
+    greens = np.array([[0.10, 0.17, 0.07], [0.14, 0.22, 0.08], [0.18, 0.26, 0.10], [0.09, 0.15, 0.08], [0.22, 0.29, 0.12],
+                       [0.16, 0.21, 0.09], [0.12, 0.20, 0.11], [0.24, 0.27, 0.12]], np.float32)
+    gi = np.floor(c * len(greens) * 0.999).astype(int)
     col = greens[gi]
-    bright = (0.75 + 0.5 * (leaf + 0.5)) * (0.55 + 0.45 * gp)[..., None][..., 0]
+    lit = 0.25 + 0.75 * np.clip(top, 0, 1) ** 0.7
+    bright = np.clip(lit * (0.75 + 0.45 * leaf), 0.08, 1.6)
     col = col * bright[..., None]
-    flower = (r2 > 0.965)[..., None]
-    col = np.where(flower, np.array([0.55, 0.55, 0.5]) * bright[..., None], col)
+    flower = ((c * 13.7) % 1.0 > 0.975)[..., None] & (top[..., None] > 0.05)
+    col = np.where(flower, np.array([0.5, 0.5, 0.45]) * bright[..., None], col)
     rock = mask_rock(Xg, Yg)
     grain = tile_sample(gray_tex("rock_face_03", 512), Xg / 8, Yg / 8)
     rk = np.stack([0.33 * grain, 0.32 * grain, 0.30 * grain], -1) * (0.8 + 0.4 * fbm(Xg * 0.2, Yg * 0.05, None, 3, seed=63))[..., None]
     col = col * (1 - rock[..., None]) + rk * rock[..., None]
     save_img(np.clip(col, 0, 1), p, quality=86)
-    hh = leaf * 0.6 + gp * 1.5
-    save_img(normal_from_height(blur(hh, 1), 3.0), pn, quality=82)
+    hh = leaf * 0.8 + h * 0.6
+    save_img(normal_from_height(hh, 2.5), pn, quality=82)
     return p, pn
 
 
@@ -296,7 +304,7 @@ def christ_redeemer(path):
     railing(low, -3.95, closed=False)
 
     # ---- 山頂地形：花崗岩山體＋雨林樹冠（連續高度場）
-    R0 = 90.0
+    R0 = 82.0
 
     def ground(x, y):
         rr = np.hypot(x * 1.05, y)
@@ -314,24 +322,29 @@ def christ_redeemer(path):
         return np.clip(m * np.clip((rr - 15) / 4, 0, 1), 0, 1)
 
     def crowns(x, y):
-        f1, f2 = worley(x / 5.0, y / 5.0, seed=73, jitter=1.0)
-        g1, g2_ = worley(x / 2.2 + 3.1, y / 2.2, seed=74, jitter=1.0)
-        dome = np.sqrt(np.clip(1 - (f1 / 0.72) ** 2, 0, 1)) * 3.2 + np.sqrt(np.clip(1 - (g1 / 0.8) ** 2, 0, 1)) * 1.0
-        return dome, np.clip((f2 - f1) / 0.25, 0, 1)
+        """多層圓頂樹冠（取最大值 → 彼此重疊、冠間留陰影）：回傳 (高度, 冠頂比例 0..1, 樹冠編號亂數)"""
+        wx = x + 1.6 * fbm(x * 0.12, y * 0.12, None, 2, seed=81)
+        wy = y + 1.6 * fbm(x * 0.12 + 5, y * 0.12, None, 2, seed=82)
+        best = np.zeros(np.shape(x))
+        top = np.zeros(np.shape(x))
+        cid = np.zeros(np.shape(x))
+        for size, seed, rad, hh in ((4.4, 73, 0.62, 3.0), (3.3, 77, 0.6, 2.4), (8.0, 76, 0.5, 5.0), (2.2, 78, 0.6, 1.5)):
+            f1, _, idv = worley(wx / size + seed * 0.37, wy / size, seed=seed, jitter=1.0, return_id=True)
+            k = np.clip(1 - (f1 / rad) ** 2, 0, 1)
+            h = np.sqrt(k) * hh * (0.75 + 0.5 * idv)
+            win = h > best
+            best = np.where(win, h, best)
+            top = np.where(win, np.sqrt(k), top)
+            cid = np.where(win, idv + seed, cid)
+        return best, top, cid % 1.0
 
     def canopy_h(x, y):
-        dome, _ = crowns(x, y)
+        dome = crowns(x, y)[0]
         rr = np.hypot(x, y)
         veg = (1 - rock_mask(x, y)) * np.clip((rr - 14.5) / 3, 0, 1)
-        return ground(x, y) + veg * (4.5 + dome + 1.5 * fbm(x * 0.05, y * 0.05, None, 2, seed=75))
+        return ground(x, y) + veg * (4.0 + dome + 1.5 * fbm(x * 0.05, y * 0.05, None, 2, seed=75))
 
-    def gap(x, y):
-        return crowns(x, y)[1]
-
-    def cid(x, y):
-        return worley(x / 5.0, y / 5.0, seed=73, jitter=1.0, return_id=True)[2]
-
-    n = 241
+    n = 329
     g = np.linspace(-R0, R0, n)
     Xg, Yg = np.meshgrid(g, g, indexing="ij")
     rr = np.hypot(Xg, Yg)
@@ -343,7 +356,7 @@ def christ_redeemer(path):
     Qt = np.stack([I[:-1, :-1], I[1:, :-1], I[1:, 1:], I[:-1, 1:]], -1).reshape(-1, 4)
     # 平台內部不需要地形（被平台覆蓋）→ 保留，作為平台下的岩體
     uvt = np.stack([(Vt[:, 0] + R0) / (2 * R0), (Vt[:, 1] + R0) / (2 * R0)], -1)[Qt]
-    cdiff, cnor = canopy_tex(canopy_h, gap, cid, rock_mask)
+    cdiff, cnor = canopy_tex(crowns, rock_mask)
     cmat = img_mat("Christ_canopy", cdiff, cnor, rough=0.9, nor_strength=1.0)
-    mesh_object("Forest", Vt, Qt, [cmat], None, uvt, decimate=0.45)
+    mesh_object("Forest", Vt, Qt, [cmat], None, uvt, decimate=0.34)
     b.export(path)

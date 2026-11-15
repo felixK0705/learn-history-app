@@ -20,7 +20,7 @@ from mathutils import Matrix, Vector, noise
 from lib import TAU, TEX, Builder, tinted_texture
 
 # (目標點, 方位角, 仰角, 距離, 焦距)：參考照自池南岸（東南南）隔水眺望
-CAMERA = ((1.5, 0.0, 5.6), 22.0, -3.0, 38.0, 28)
+CAMERA = ((0.5, 0.0, 5.0), 24.0, -1.5, 37.0, 27)
 
 GEN = os.path.join(TEX, "_gen")
 
@@ -685,19 +685,23 @@ def kinkakuji(path):
     grass = b.gtex("moss", gen_ground("kinkaku", (98, 116, 56), (150, 128, 96), earth_frac=0.35), tile=9.0, rough=0.95, normal=0.6)
     soil = b.ptex("soil", "gravel_floor", tile=3.0, tint="#9a8466", rough=0.95, normal=0.6)
     bank = b.color("bank", "#5d5140", rough=0.95)
-    water = b.color("water", "#7a7a52", rough=0.02)
+    water = b.color("water", "#1d3c34", rough=0.03)
     rockm = b.ptex("rock", "rock_04", tile=2.5, tint="#8b7f74", rough=0.85, normal=1.0)
     rockp = b.ptex("rock_p", "rock_04", tile=2.5, tint="#9a7c78", rough=0.85, normal=1.0)
     stone = b.ptex("stone", "gray_rocks", tile=2.0, tint="#a39f96", rough=0.85, normal=0.6)
-    gold = b.color("gold", "#fbd35a", rough=0.3, metal=0.3)
-    gold_d = b.color("gold_shade", "#e2b245", rough=0.38, metal=0.3)
+    gold = b.color("gold", "#ffcf45", rough=0.28, metal=0.5)
+    gold_d = b.color("gold_shade", "#f5b42a", rough=0.34, metal=0.45)
+    for gi, es in ((gold, 0.22), (gold_d, 0.16)):  # 金箔在日光下的亮度（微弱自發光補足漫反射）
+        bs = b.mats[gi].node_tree.nodes["Principled BSDF"]
+        bs.inputs["Emission Color"].default_value = bs.inputs["Base Color"].default_value
+        bs.inputs["Emission Strength"].default_value = es
     wood = b.color("wood", "#3e2b20", rough=0.75)
     wood_l = b.color("wood_light", "#5b4433", rough=0.75)
     plaster = b.color("plaster", "#ece7da", rough=0.85)
     dark = b.color("dark", "#1d1612", rough=0.9)
-    shingle = b.gtex("shingle", gen_tiles("kokera2", (84, 54, 48), kind="shingle", n_rows=24, seed=5), tile=3.0,
+    shingle = b.gtex("shingle", gen_tiles("kokera3", (66, 44, 34), kind="shingle", n_rows=24, seed=5), tile=3.0,
                      rough=0.85, normal=0.7, oriented=True)
-    shingle_e = b.color("shingle_edge", "#4c342c", rough=0.85)
+    shingle_e = b.color("shingle_edge", "#3a2820", rough=0.85)
     lf_pine = b.alpha_mat("leaf_pine", gen_leaves("pine"), rough=0.8)
     lf_dark = b.alpha_mat("leaf_dark", gen_leaves("dark"), rough=0.8)
     lf_broad = b.alpha_mat("leaf_broad", gen_leaves("broad"))
@@ -995,16 +999,50 @@ def kinkakuji(path):
         occupied.append((x, y))
         z = terrain_h(x, y)
         k = rng.random()
-        if k < 0.15:
+        if k < 0.04:
             b.conifer(x, y, z, rng.uniform(12, 16), (lf_dark, lf_dark), core_p, bark)
         elif k < 0.55:
             b.pine(x, y, z, rng.uniform(8, 12), pine_m, core_p, bark_r, spread=1.0)
         elif k < 0.75:
             hh = rng.uniform(8, 12)
-            b.broadleaf(x, y, z, hh, (lf_maple, lf_light), core_b, bark, R=hh * 0.48, n_blobs=7, cap=70)
+            b.broadleaf(x, y, z, hh, (lf_maple, lf_light), core_b, bark, R=hh * 0.34, n_blobs=9, cs=0.9, cap=90)
         else:
             hh = rng.uniform(10, 15)
-            b.broadleaf(x, y, z, hh, (lf_light, lf_broad), core_b, bark, R=hh * 0.45, n_blobs=7, cap=70)
+            b.broadleaf(x, y, z, hh, (lf_light, lf_broad), core_b, bark, R=hh * 0.34, n_blobs=9, cs=0.9, cap=90)
+    # 背景林冠帶（北・東・西的山坡林，茂密樹冠表面）
+    forest = b.gtex("forest_canopy", gen_canopy("kinkaku_bg3", (126, 160, 58), seed=21), tile=7.0, rough=0.9, normal=1.0)
+    forest_d = b.gtex("forest_canopy_d", gen_canopy("kinkaku_bg_d3", (92, 124, 48), seed=22), tile=6.0, rough=0.9, normal=1.0)
+    NA, NR = 150, 14
+    a0, a1 = math.radians(-35), math.radians(215)
+    r0, r1 = 23.0, R_G - 0.6
+
+    def canopy_h(x, y, r):
+        t = min(1.0, max(0.0, (r - r0) / (r1 - r0)))
+        bump = 2.2 * (noise.noise(Vector((x * 0.28, y * 0.28, 1.3))) + 0.5 * noise.noise(Vector((x * 0.7, y * 0.7, 4.1))))
+        bump += 1.6 * (1 - abs(noise.noise(Vector((x * 0.16, y * 0.16, 7.7)))))
+        return terrain_h(x, y) + (min(1.0, t * 4.0) ** 0.6) * (5.5 + 8.0 * t + bump)
+    grid = []
+    for i in range(NA + 1):
+        a = a0 + (a1 - a0) * i / NA
+        row = []
+        for j in range(NR + 1):
+            r = r0 + (r1 - r0) * j / NR
+            x, y = r * math.cos(a), r * math.sin(a)
+            row.append((x, y, canopy_h(x, y, r) if j > 0 else terrain_h(x, y) - 0.3))
+        grid.append(row)
+    vg = [[V(p) for p in row] for row in grid]
+    for i in range(NA):
+        for j in range(NR):
+            ps = (grid[i][j], grid[i + 1][j], grid[i + 1][j + 1], grid[i][j + 1])
+            if any(pond_d(p[0], p[1]) > -2.0 for p in ps):
+                continue
+            mi = forest if noise.noise(Vector((ps[0][0] * 0.09, ps[0][1] * 0.09, 2.0))) > -0.15 else forest_d
+            face([vg[i][j], vg[i][j + 1], vg[i + 1][j + 1], vg[i + 1][j]], mi, smooth=True)
+    # 外緣：林冠垂下至地面
+    for i in range(NA):
+        p, q = grid[i][NR], grid[i + 1][NR]
+        face([vg[i][NR], vg[i][NR] if False else V((p[0], p[1], terrain_h(p[0], p[1]) - 0.3)), V((q[0], q[1], terrain_h(q[0], q[1]) - 0.3)), vg[i + 1][NR]], forest_d)
+
     # 低灌木（刈込）
     for _ in range(70):
         a = rng.uniform(-0.3 * math.pi, 1.3 * math.pi)
