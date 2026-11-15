@@ -47,3 +47,36 @@ export function findPortrait(name: string): Promise<string | null> {
   }
   return p;
 }
+
+/** 一次查詢多位人物的中文維基百科代表圖（以條目名稱精確比對，比搜尋準確，也只需一次請求） */
+export async function findPortraits(names: string[]): Promise<Record<string, string>> {
+  const uniq = [...new Set(names.map((n) => n.trim()).filter(Boolean))].slice(0, 50);
+  if (!uniq.length) return {};
+  const url =
+    "https://zh.wikipedia.org/w/api.php?action=query&format=json&origin=*&redirects=1&prop=pageimages&piprop=thumbnail&pithumbsize=240" +
+    `&titles=${encodeURIComponent(uniq.join("|"))}`;
+  try {
+    const r = await fetch(url, { signal: AbortSignal.timeout(9000) });
+    if (!r.ok) return {};
+    const d: {
+      query?: {
+        normalized?: { from: string; to: string }[];
+        redirects?: { from: string; to: string }[];
+        pages?: Record<string, { title: string; thumbnail?: { source: string } }>;
+      };
+    } = await r.json();
+    const byTitle = new Map(Object.values(d.query?.pages ?? {}).map((p) => [p.title, p.thumbnail?.source]));
+    const norm = new Map((d.query?.normalized ?? []).map((x) => [x.from, x.to]));
+    const redir = new Map((d.query?.redirects ?? []).map((x) => [x.from, x.to]));
+    const out: Record<string, string> = {};
+    for (const n of uniq) {
+      let t = norm.get(n) ?? n;
+      t = redir.get(t) ?? t;
+      const src = byTitle.get(t);
+      if (src && !/\.svg/i.test(src)) out[n] = src;
+    }
+    return out;
+  } catch {
+    return {};
+  }
+}

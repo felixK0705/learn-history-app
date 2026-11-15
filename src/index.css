@@ -110,10 +110,11 @@
 .country-label.visited .dot { @apply bg-glow; }
 .country-label.zoom-hidden { opacity: 0 !important; pointer-events: none !important; }
 .landmark-pin {
-  @apply size-[7px] cursor-pointer rounded-full;
-  background: #7fe6ff;
+  @apply flex cursor-pointer items-center gap-1 whitespace-nowrap rounded-full px-2 py-[3px] text-[10.5px] font-semibold;
+  background: #fbbf24;
+  color: #3b2400;
   transform: translate(-50%, -50%);
-  box-shadow: 0 0 0 3px rgb(127 230 255 / 0.25), 0 0 10px rgb(127 230 255 / 0.9);
+  box-shadow: 0 2px 8px rgb(0 20 70 / 0.45);
   pointer-events: auto;
 }
-.landmark-pin:hover { transform: translate(-50%, -50%) scale(1.6); }
+.landmark-pin:hover { background: #fff; transform: translate(-50%, -50%) scale(1.08); }

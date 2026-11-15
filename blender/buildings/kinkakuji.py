@@ -125,7 +125,7 @@ def gen_tiles(name, color, kind="kawara", seed=3, n_ch=8, n_rows=8, extra=None):
 
 def gen_leaves(kind):
     """葉簇卡片貼圖（RGBA PNG）：kind=broad/light/pine/maple/palm/shrub/dark"""
-    out = os.path.join(GEN, f"asia_leaf3_{kind}.png")
+    out = os.path.join(GEN, f"asia_leaf4_{kind}.png")
     if os.path.exists(out):
         return out
     from PIL import Image, ImageDraw
@@ -141,18 +141,26 @@ def gen_leaves(kind):
             a = rng.uniform(0, TAU)
             r = rng.uniform(0.25, 0.42) * S
             dr.line([(S / 2, S / 2), (S / 2 + math.cos(a) * r, S / 2 + math.sin(a) * r)], fill=(84, 64, 48, 255), width=8)
+        tufts = []
+        for _ in range(11):
+            a = rng.uniform(0, TAU)
+            r = S * rng.uniform(0.03, 0.33)
+            tufts.append((S / 2 + r * math.cos(a), S / 2 + r * math.sin(a) * 0.8, S * rng.uniform(0.07, 0.12)))
+        for tx, ty, tr in tufts:
+            dr.line([(S / 2, S / 2), (tx, ty)], fill=(84, 64, 48, 255), width=6)
         for layer in range(3):
-            for _ in range(800):
-                r = S * 0.43 * math.sqrt(rng.uniform(0, 1))
-                a = rng.uniform(0, TAU)
-                cx, cy = S / 2 + r * math.cos(a), S / 2 + r * math.sin(a) * 0.8
-                c = pal[rng.integers(len(pal))]
-                k = (0.68 + 0.2 * layer) * rng.uniform(0.85, 1.15) * (1 + 0.25 * (S / 2 - cy) / S)
-                col = tuple(int(min(255, v * k)) for v in c) + (255,)
-                for _ in range(8):
-                    b = rng.uniform(0, TAU)
-                    L = rng.uniform(26, 48)
-                    dr.line([(cx, cy), (cx + math.cos(b) * L, cy + math.sin(b) * L)], fill=col, width=3)
+            for tx, ty, tr in tufts:
+                for _ in range(130):
+                    r = tr * math.sqrt(rng.uniform(0, 1))
+                    a = rng.uniform(0, TAU)
+                    cx, cy = tx + r * math.cos(a), ty + r * math.sin(a) * 0.75
+                    c = pal[rng.integers(len(pal))]
+                    k = (0.62 + 0.22 * layer) * rng.uniform(0.85, 1.15) * (1 + 0.35 * (ty - cy) / tr)
+                    col = tuple(int(min(255, max(0, v * k))) for v in c) + (255,)
+                    for _ in range(6):
+                        bb = rng.uniform(0, TAU)
+                        L = rng.uniform(18, 34)
+                        dr.line([(cx, cy), (cx + math.cos(bb) * L, cy + math.sin(bb) * L)], fill=col, width=3)
     elif kind == "palm":
         pal = [(70, 110, 40), (86, 126, 46), (60, 96, 34), (100, 138, 52)]
         for _ in range(9):
@@ -491,7 +499,7 @@ class AsiaBuilder(Builder):
         self.tube([(x, y, z - 0.4), (x + rng.uniform(-0.3, 0.3), y + rng.uniform(-0.3, 0.3), z + (cz - z) * 0.5), (x, y, cz)],
                   max(0.1, h * 0.028), max(0.05, h * 0.014), bark)
         n = n_blobs or rng.randint(5, 8)
-        cs = cs or 0.85
+        cs = cs or 0.65
         for i in range(n):
             a = rng.uniform(0, TAU)
             rr = R * math.sqrt(rng.uniform(0.0, 1)) * 0.6
@@ -929,7 +937,7 @@ def kinkakuji(path):
     SX0, SX1, SY0, SY1 = -HX - 3.4, -HX, -2.6, 0.2
     for x in (SX0, (SX0 + SX1) / 2, SX1 - 0.3):
         for y in (SY0, SY1):
-            b.box_base(wood, (0.2, 0.2, Z_F1 + 2.6 - W_Z), (x, y, W_Z - 0.05))
+            b.box_base(wood, (0.2, 0.2, Z_F1 + 1.9 - W_Z), (x, y, W_Z - 0.05))
             b.rock(rockm, (0.7, 0.7, 0.45), (x, y, W_Z - 0.05), seed=rng.randint(0, 999), round_=0.6)
     b.box_base(wood_l, (SX1 - SX0 + 0.3, SY1 - SY0 + 0.3, 0.15), ((SX0 + SX1) / 2, (SY0 + SY1) / 2, Z_F1 - 0.15))
     for y in (SY0, SY1):
@@ -937,10 +945,10 @@ def kinkakuji(path):
         b.box_base(wood_l, (SX1 - SX0, 0.04, 0.5), ((SX0 + SX1) / 2, y, Z_F1 + 0.2))
     b.box_base(wood, (0.08, SY1 - SY0, 0.08), (SX0, (SY0 + SY1) / 2, Z_F1 + 0.8))
     b.box_base(wood_l, (0.04, SY1 - SY0, 0.5), (SX0, (SY0 + SY1) / 2, Z_F1 + 0.2))
-    b.roof_skirt(shingle, ((SX1 - SX0) / 2 + 1.1, (SY1 - SY0) / 2 + 1.1), ((SX1 - SX0) / 2 - 0.4, 0.05), Z_F1 + 2.45, Z_F1 + 3.6,
+    b.roof_skirt(shingle, ((SX1 - SX0) / 2 + 1.1, (SY1 - SY0) / 2 + 1.1), ((SX1 - SX0) / 2 - 0.4, 0.05), Z_F1 + 1.75, Z_F1 + 2.75,
                  center=((SX0 + SX1) / 2 - 0.2, (SY0 + SY1) / 2), U=0.3, P=0.2, K=(10, 8), rows=6, soffit=wood,
-                 wall=((SX1 - SX0) / 2, (SY1 - SY0) / 2, Z_F1 + 2.65), thick=0.3, fascia=shingle_e, gamma=0.5, corner_len=1.2)
-    b.box_base(shingle_e, (SX1 - SX0 - 0.6, 0.3, 0.25), ((SX0 + SX1) / 2 - 0.2, (SY0 + SY1) / 2, Z_F1 + 3.55))
+                 wall=((SX1 - SX0) / 2, (SY1 - SY0) / 2, Z_F1 + 1.95), thick=0.3, fascia=shingle_e, gamma=0.5, corner_len=1.2)
+    b.box_base(shingle_e, (SX1 - SX0 - 0.6, 0.3, 0.22), ((SX0 + SX1) / 2 - 0.2, (SY0 + SY1) / 2, Z_F1 + 2.68))
 
     # ---------------- 池岸石組・岩島
     def shore_rocks(n, test):

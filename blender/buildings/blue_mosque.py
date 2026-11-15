@@ -18,19 +18,19 @@ from lib import TAU, Builder
 
 from .hagia_sophia import arched_window, broadleaf, capture, dome, half_dome, minaret, window_row
 
-CAMERA = ((2, -6, 30), 20, 3, 185, 33)
+CAMERA = ((2, -4, 29), 22, -9, 150, 30)
 
 
 def blue_mosque(path):
     b = Builder("BlueMosque", seed=43)
     bm = b.bm
-    stone = b.tex("stone", "white_sandstone_blocks_02", tile=4.0, tint="#bebdb8", rough=0.85, normal=0.6)
+    stone = b.tex("stone", "white_sandstone_blocks_02", tile=4.0, tint="#b3b2ad", rough=0.85, normal=0.6)
     stone_d = b.color("stone_shade", "#a9a8a3", rough=0.85)
     trim = b.color("trim", "#cfcdc6", rough=0.75)
     lead = b.color("lead", "#7f8992", rough=0.45, metal=0.35)
     win = b.color("window", "#2a2c30", rough=0.3)
     gold = b.color("gold", "#c9a14a", rough=0.3, metal=0.9)
-    pave = b.tex("pave", "gravel_floor", tile=4.0, tint="#a7a196", rough=0.95, normal=0)
+    pave = b.tex("pave", "gravel_floor", tile=4.0, tint="#958f84", rough=0.95, normal=0)
     marble = b.color("court_marble", "#d9d6cf", rough=0.6)
     grass = b.tex("grass", "grass_ground", tile=8.0, tint="#5f7c3c", gain=0.92, rough=0.95, normal=0)
     soil = b.color("soil", "#6b5a45", rough=0.95)
@@ -51,8 +51,8 @@ def blue_mosque(path):
         b.box_base(trim, (w + 0.6, d + 0.6, 0.4), (cx, cy, 4.5))
 
     # ---------------------------------------------------------------- 禮拜殿本體
-    HX, Y0, Y1 = 32.0, -36.0, 30.0       # 殿寬 64、深 66（+前廊）
-    H_W = 20.0
+    HX, Y0, Y1 = 27.0, -28.0, 26.0       # 殿身 54 × 54，兩側另有拱廊（總寬約 64 m）
+    H_W = 17.0
     b.box_base(stone, (2 * HX, Y1 - Y0, H_W), (0, (Y0 + Y1) / 2, 0))
     b.box_base(trim, (2 * HX + 0.8, Y1 - Y0 + 0.8, 0.6), (0, (Y0 + Y1) / 2, H_W))
     b.box_base(lead, (2 * HX - 2, Y1 - Y0 - 2, 0.8), (0, (Y0 + Y1) / 2, H_W + 0.6))
@@ -76,9 +76,10 @@ def blue_mosque(path):
 
     # ---------------------------------------------------------------- 中央方形：四座半圓頂＋重力塔＋主圓頂
     A = 11.75             # 圓頂半徑（直徑 23.5 m）
-    Z_HD = 25.0           # 半圓頂起拱
+    Z_HD = 21.5           # 半圓頂起拱
+    Z_DR = Z_HD + 8.6
     # 中央方形下部量體（半圓頂與鼓座的支座）
-    b.box_base(stone_d, (2 * A + 6, 2 * A + 6, Z_HD + 3.5 - H_W), (0, 0, H_W))
+    b.box_base(stone_d, (2 * A + 4, 2 * A + 4, Z_DR - H_W), (0, 0, H_W))
     for ang in (0, 90, 180, 270):
         a = math.radians(ang)
         c, s = round(math.cos(a)), round(math.sin(a))
@@ -90,7 +91,7 @@ def blue_mosque(path):
             t = t0 + math.pi * (k + 0.5) / 7
             M = T(cx + math.cos(t) * (A + 0.52), cy + math.sin(t) * (A + 0.52), Z_HD - 3.6) @ Rz(t + math.pi / 2)
             arched_window(b, win, 1.2, 2.6, M, depth=0.1)
-        half_dome(b, lead, A + 0.6, A * 0.82, (cx, cy, Z_HD), facing=a + math.pi, seg=32, n=8, ribs=14, flat_mi=stone_d)
+        half_dome(b, lead, A + 0.6, 9.0, (cx, cy, Z_HD), facing=a + math.pi, seg=32, n=8, ribs=14, flat_mi=stone_d)
         # 三座小半圓頂（exedra）沿半圓頂外緣
         for k, dt in enumerate((-0.62, 0.0, 0.62)):
             t = a + dt * 1.15
@@ -114,7 +115,7 @@ def blue_mosque(path):
     for sx in (-1, 1):
         for sy in (-1, 1):
             cx, cy = sx * (A + 1.2), sy * (A + 1.2)
-            b.lathe(stone, [(2.6, Z_HD), (2.6, Z_HD + 9.5), (2.9, Z_HD + 9.9), (2.5, Z_HD + 10.1)], (cx, cy, 0), seg=8, smooth=False)
+            b.lathe(stone, [(2.6, H_W), (2.6, Z_HD + 9.5), (2.9, Z_HD + 9.9), (2.5, Z_HD + 10.1)], (cx, cy, 0), seg=8, smooth=False)
             for k in range(8):
                 t = TAU * (k + 0.5) / 8
                 arched_window(b, win, 0.7, 1.6, T(cx + math.cos(t) * 2.42, cy + math.sin(t) * 2.42, Z_HD + 6.8) @ Rz(t + math.pi / 2), depth=0.08)
@@ -123,7 +124,6 @@ def blue_mosque(path):
             b.lathe(gold, [(0.12, zf), (0.25, zf + 0.6), (0.08, zf + 1.1), (0.18, zf + 1.5), (0.0, zf + 2.4)], (cx, cy, 0), seg=6)
 
     # 鼓座（28 窗）與主圓頂
-    Z_DR = Z_HD + 3.5
     H_DR = 4.5
     b.lathe(stone, [(A + 0.6, Z_DR), (A + 0.6, Z_DR + H_DR)], (0, 0, 0), seg=56, smooth=False)
     for k in range(28):
@@ -133,13 +133,13 @@ def blue_mosque(path):
         b.frustum(stone, (1.1, 0.9), (0.6, 0.8), H_DR, (math.cos(t2) * (A + 1.0), math.sin(t2) * (A + 1.0), Z_DR), rot_z=t2)
     b.lathe(trim, [(A + 1.2, Z_DR + H_DR), (A + 1.4, Z_DR + H_DR + 0.4), (A + 0.4, Z_DR + H_DR + 0.4)], (0, 0, 0), seg=56, smooth=False)
     Z_DM = Z_DR + H_DR + 0.4
-    dome(b, lead, A + 0.9, 43.0 - Z_DM, (0, 0, Z_DM), seg=128, ribs=32, rib_amp=0.008, n=12)
+    dome(b, lead, A + 0.9, 43.0 - Z_DM, (0, 0, Z_DM), seg=128, ribs=32, rib_amp=0.008, n=12, power=0.9)
     b.lathe(gold, [(0.0, 42.8), (0.5, 43.0), (0.7, 43.6), (0.25, 44.2), (0.55, 45.0), (0.15, 45.8), (0.35, 46.4), (0.08, 47.3), (0.0, 48.6)],
             (0, 0, 0), seg=10)
 
     # ---------------------------------------------------------------- 前庭（+Y）：拱廊＋小圓頂＋淨身亭
     CY0, CY1 = Y1, Y1 + 64.0
-    CW = HX
+    CW = 32.0
     b.box_base(marble, (2 * CW, CY1 - CY0, 0.5), (0, (CY0 + CY1) / 2, 0))
     # 外牆
     for (cx, cy, w, d) in ((0, CY1 - 0.9, 2 * CW, 1.8), (-CW + 0.9, (CY0 + CY1) / 2, 1.8, CY1 - CY0), (CW - 0.9, (CY0 + CY1) / 2, 1.8, CY1 - CY0)):
@@ -186,8 +186,8 @@ def blue_mosque(path):
 
     # ---------------------------------------------------------------- 六座宣禮塔
     for sx in (-1, 1):
-        for y in (Y0 - 1.0, Y1 + 1.0):
-            minaret(b, sx * (HX + 4.0), y, 64.0, 2.3, stone, lead, gold, balcony=trim, balconies=(0.47, 0.64, 0.80), base_h=9.0,
+        for y in (Y0 - 2.0, Y1 + 0.5):
+            minaret(b, sx * (HX + 7.0), y, 64.0, 2.3, stone, lead, gold, balcony=trim, balconies=(0.47, 0.64, 0.80), base_h=9.0,
                     seg=16, cap_h=12.0)
         minaret(b, sx * (CW + 3.0), CY1 + 2.0, 58.0, 2.1, stone, lead, gold, balcony=trim, balconies=(0.55, 0.76), base_h=8.0,
                 seg=16, cap_h=11.0)

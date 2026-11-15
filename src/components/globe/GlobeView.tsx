@@ -178,7 +178,7 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
         const p = g.getCoords(ll.lat, ll.lng, 0);
         const len = Math.hypot(p.x, p.y, p.z) || 1;
         const dot = (p.x * cam.x + p.y * cam.y + p.z * cam.z) / (len * d);
-        const hz = Math.min(1, Math.max(0, (dot - horizon - 0.04) / 0.16));
+        const hz = Math.min(1, Math.max(0, (dot - horizon - 0.1) / 0.15));
         const o = hz;
         const v = o.toFixed(2);
         const iso = div.dataset.iso;
@@ -252,8 +252,12 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
           };
           labelEls.current.set(c.iso, div);
         } else {
+          // 建築標記：建築圖示＋名稱，一看就知道是可點開的 3D 建築
           div.className = "landmark-pin";
-          div.title = marker.b.name;
+          div.innerHTML =
+            '<svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 22h18M6 18v-7M10 18v-7M14 18v-7M18 18v-7M12 2l8 5H4z"/></svg>';
+          div.append(marker.b.name);
+          div.title = `${marker.b.name}（點擊觀看 3D 模型）`;
           div.setAttribute("aria-label", marker.b.name);
           div.onclick = (e) => {
             e.stopPropagation();

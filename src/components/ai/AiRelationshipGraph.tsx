@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { AlertTriangle, LoaderCircle, Search, Sparkles, UserRound, X } from "lucide-react";
 import { gsap, prefersReducedMotion, useGSAP, useReveal } from "../../lib/motion";
 import { AiError, postAi } from "../../lib/ai";
-import { findPortrait } from "../../lib/wikiImage";
+import { findPortrait, findPortraits } from "../../lib/wikiImage";
 
 export type AiRelType = "敵對" | "盟友" | "師徒" | "親屬" | "君臣" | "影響" | "戀人";
 export type AiNode = { id: string; name: string; group: string; val: number; description: string };
@@ -24,7 +24,7 @@ const PANEL =
   "border border-white/15 bg-[#071d4f]/78 shadow-[0_24px_60px_-20px_rgba(0,10,40,0.7),inset_0_1px_0_rgba(255,255,255,0.18)] backdrop-blur-xl";
 
 /** 勢力／陣營配色（柔和亮色，與主題協調） */
-const GROUP_COLORS = ["#7dd3fc", "#f9a8d4", "#fde68a", "#86efac", "#c4b5fd", "#fdba74"];
+const GROUP_COLORS = ["#38bdf8", "#f472b6", "#fbbf24", "#34d399", "#a78bfa", "#fb923c"];
 
 const EXAMPLES = ["諸葛亮", "凱撒", "拿破崙", "武則天", "織田信長", "伊莉莎白一世"];
 
@@ -113,11 +113,20 @@ export default function AiRelationshipGraph({ initialQuery = "" }: { initialQuer
     if (!graph) return;
     let alive = true;
     setPortraits({});
-    graph.nodes.forEach((n) =>
-      findPortrait(n.name).then((src) => {
-        if (alive && src) setPortraits((m) => ({ ...m, [n.id]: src }));
-      }),
-    );
+    // 先以條目名稱一次批次查詢；查不到的再個別搜尋
+    findPortraits(graph.nodes.map((n) => n.name)).then((byName) => {
+      if (!alive) return;
+      const found: Record<string, string> = {};
+      graph.nodes.forEach((n) => byName[n.name] && (found[n.id] = byName[n.name]));
+      setPortraits(found);
+      graph.nodes
+        .filter((n) => !found[n.id])
+        .forEach((n) =>
+          findPortrait(n.name).then((src) => {
+            if (alive && src) setPortraits((m) => ({ ...m, [n.id]: src }));
+          }),
+        );
+    });
     return () => {
       alive = false;
     };
@@ -237,6 +246,10 @@ export default function AiRelationshipGraph({ initialQuery = "" }: { initialQuer
           {graph && (
             <svg ref={svgRef} viewBox={`0 0 ${W} ${H}`} preserveAspectRatio="xMidYMid meet" className="absolute inset-0 size-full select-none" onClick={(e) => e.target === e.currentTarget && setPicked(null)}>
               <defs>
+                <radialGradient id="ai-disc" cx="50%" cy="30%" r="75%">
+                  <stop offset="0%" stopColor="#ffffff" />
+                  <stop offset="100%" stopColor="#d6ecff" />
+                </radialGradient>
                 <radialGradient id="ai-center" cx="50%" cy="35%" r="70%">
                   <stop offset="0%" stopColor="#ffffff" />
                   <stop offset="100%" stopColor="#a6e1ff" />
@@ -251,7 +264,7 @@ export default function AiRelationshipGraph({ initialQuery = "" }: { initialQuer
                 const touchesCenter = l.source === center?.id || l.target === center?.id;
                 const { d } = path(a, b, touchesCenter ? 0 : 0.18);
                 const on = !lit || (lit.has(l.source) && lit.has(l.target) && (l.source === key || l.target === key));
-                return <path key={i} data-link d={d} fill="none" stroke={AI_REL_COLORS[l.type]} strokeWidth={on && lit ? 3 : 2} strokeOpacity={on ? 0.9 : 0.12} strokeLinecap="round" className="transition-[stroke-opacity]" />;
+                return <path key={i} data-link d={d} fill="none" stroke={lit && on ? AI_REL_COLORS[l.type] : "#ffffff"} strokeWidth={on && lit ? 2.5 : 1.5} strokeOpacity={lit ? (on ? 0.95 : 0.08) : 0.45} strokeLinecap="round" className="transition-[stroke-opacity]" />;
               })}
               {/* 連線標籤 */}
               {graph.links.map((l, i) => {
@@ -299,11 +312,12 @@ export default function AiRelationshipGraph({ initialQuery = "" }: { initialQuer
                         <circle r={r - 2} />
                       </clipPath>
                       {(isCenter || picked === n.id) && <circle r={r + 7} fill="none" stroke="#ffffff" strokeOpacity={0.55} strokeWidth={2} />}
-                      <circle r={r} fill={groupColor.get(n.group) ?? "#7dd3fc"} stroke={groupColor.get(n.group) ?? "#fff"} strokeWidth={isCenter ? 4 : 3} />
+                      <circle r={r + 3} fill="none" stroke={groupColor.get(n.group) ?? "#fff"} strokeWidth={2.5} />
+                      <circle r={r} fill="url(#ai-disc)" />
                       {portraits[n.id] ? (
                         <image href={portraits[n.id]} x={-(r - 2)} y={-(r - 2)} width={(r - 2) * 2} height={(r - 2) * 2} preserveAspectRatio="xMidYMin slice" clipPath={`url(#ai-clip-${i})`} />
                       ) : (
-                        <text textAnchor="middle" dy={isCenter ? 9 : 6} fontSize={isCenter ? 26 : 16} fontWeight={800} fill="#06194a">
+                        <text textAnchor="middle" dy={isCenter ? 10 : 6} fontSize={isCenter ? 28 : 17} fontWeight={700} fill="#0b3a8f">
                           {n.name.slice(0, 1)}
                         </text>
                       )}
