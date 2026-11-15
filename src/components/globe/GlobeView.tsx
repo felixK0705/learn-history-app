@@ -1,6 +1,7 @@
 import { forwardRef, useEffect, useImperativeHandle, useRef } from "react";
 import Globe, { type GlobeInstance } from "globe.gl";
 import { AdditiveBlending, Color, Mesh, MeshPhongMaterial, ShaderMaterial, SphereGeometry, TextureLoader } from "three";
+import { CSS2DRenderer } from "three/examples/jsm/renderers/CSS2DRenderer.js";
 import { countries, countryByIso } from "../../data/world";
 import { buildings, type Building } from "../../data/buildings";
 
@@ -27,10 +28,13 @@ interface Props {
   onReady?: () => void;
 }
 
+// 關閉 CSS2DRenderer 依距離每格重排標籤疊放順序（重疊標籤會前後跳動，看起來像在閃），改由人口排名固定順序
+Object.defineProperty(CSS2DRenderer.prototype, "sortObjects", { get: () => false, set: () => {}, configurable: true });
+
 const defaultAlt = () => (window.innerWidth < 640 ? 3.6 : window.innerWidth < 1024 ? 2.9 : 2.45);
 
 /** 依鏡頭高度決定顯示多少國家標籤（依人口排序），避免畫面雜亂 */
-const labelLimit = (alt: number) => (alt > 2.2 ? 0 : alt > 1.6 ? 25 : alt > 1.2 ? 70 : alt > 0.9 ? 140 : 999);
+
 
 const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
   { selectedIso, visited, autoRotate, showLandmarks, onSelectCountry, onHoverCountry, onSelectBuilding, onReady },
@@ -42,19 +46,12 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
   const selectedRef = useRef<string | null>(selectedIso);
   const labelEls = useRef(new Map<string, HTMLDivElement>());
   const posEls = useRef(new Map<HTMLDivElement, { lat: number; lng: number }>());
-  const limitRef = useRef(labelLimit(defaultAlt()));
+
 
   const cb = useRef({ onSelectCountry, onHoverCountry, onSelectBuilding, onReady });
   cb.current = { onSelectCountry, onHoverCountry, onSelectBuilding, onReady };
 
-  const applyLabelVisibility = () => {
-    const limit = limitRef.current;
-    labelEls.current.forEach((div, iso) => {
-      const c = countryByIso.get(iso);
-      const show = !!c && (c.rank < limit || iso === selectedRef.current);
-      div.classList.toggle("zoom-hidden", !show);
-    });
-  };
+
 
   useImperativeHandle(ref, () => ({
     flyTo: (lat, lng, altitude = 1.7) => globeRef.current?.pointOfView({ lat, lng, altitude }, 1400),
@@ -89,7 +86,8 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
       .polygonAltitude((f) => ((f as GeoFeature).properties.iso_a3 === selectedRef.current ? 0.018 : 0.005))
       .polygonCapColor(capColor)
       .polygonSideColor(() => "rgba(255, 255, 255, 0.06)")
-      .polygonStrokeColor((f) => ((f as GeoFeature).properties.iso_a3 === selectedRef.current ? "rgba(255,255,255,0.7)" : "rgba(0,0,0,0)"))
+      // 國界線：清楚可見的白色細線，選取的國家更亮
+      .polygonStrokeColor((f) => ((f as GeoFeature).properties.iso_a3 === selectedRef.current ? "rgba(255,255,255,0.95)" : "rgba(255,255,255,0.55)"))
       .polygonsTransitionDuration(250)
       .onPolygonHover((f) => {
         hoverRef.current = (f as GeoFeature) ?? null;
@@ -113,13 +111,7 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
     controls.dampingFactor = 0.08;
     controls.minDistance = 150;
     controls.maxDistance = 650;
-    controls.addEventListener("change", () => {
-      const limit = labelLimit(g.pointOfView().altitude);
-      if (limit !== limitRef.current) {
-        limitRef.current = limit;
-        applyLabelVisibility();
-      }
-    });
+
 
     // 海面反光（依海洋遮罩）與緩慢轉動的雲層，呈現參考圖中光滑明亮的地球
     const loader = new TextureLoader();
@@ -173,7 +165,9 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
 
     globeRef.current = g;
 
-    // 依標籤與視線的夾角平滑淡出：越接近地球邊緣越透明，背面完全隱藏
+    // 標籤顯示規則：所有國家名稱都顯示
+    // 1. 依與視線的夾角平滑淡出，背面完全隱藏（不會在邊緣忽亮忽滅）
+    // 2. 疊放順序固定依人口排名（覆蓋 CSS2DRenderer 每格依距離重排，那會讓重疊的標籤前後跳動、看起來在閃）
     let fadeRaf = 0;
     const fade = () => {
       const cam = g.camera().position;
@@ -184,8 +178,12 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
         const p = g.getCoords(ll.lat, ll.lng, 0);
         const len = Math.hypot(p.x, p.y, p.z) || 1;
         const dot = (p.x * cam.x + p.y * cam.y + p.z * cam.z) / (len * d);
-        const o = Math.min(1, Math.max(0, (dot - horizon - 0.04) / 0.16));
+        const hz = Math.min(1, Math.max(0, (dot - horizon - 0.04) / 0.16));
+        const o = hz;
         const v = o.toFixed(2);
+        const iso = div.dataset.iso;
+        const z = iso === selectedRef.current ? "3000" : iso ? String(2000 - (countryByIso.get(iso)?.rank ?? 999)) : "2500";
+        if (div.style.zIndex !== z) div.style.zIndex = z;
         if (div.style.opacity !== v) {
           div.style.opacity = v;
           div.style.pointerEvents = o > 0.5 ? "" : "none";
@@ -246,7 +244,7 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
           div.append(dot, c.zh);
           div.title = c.en;
           // globe.gl 會延遲建立元素，建立當下就套用縮放層級的顯示規則
-          if (!(c.rank < limitRef.current || c.iso === selectedRef.current)) div.classList.add("zoom-hidden");
+          div.dataset.iso = c.iso;
           if (c.iso === selectedRef.current) div.classList.add("is-active");
           div.onclick = (e) => {
             e.stopPropagation();
@@ -264,7 +262,6 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
         }
         return div;
       });
-    applyLabelVisibility();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [showLandmarks]);
 
@@ -277,7 +274,6 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
 
   useEffect(() => {
     selectedRef.current = selectedIso;
-    applyLabelVisibility();
     const g = globeRef.current;
     if (!g) return;
     g.polygonCapColor(g.polygonCapColor());
