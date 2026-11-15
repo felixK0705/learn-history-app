@@ -1,0 +1,422 @@
+{
+ "socrates": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Socrates_Louvre.jpg/330px-Socrates_Louvre.jpg",
+  "file": "Socrates_Louvre.jpg",
+  "page": "https://en.wikipedia.org/wiki/Socrates",
+  "credit": "Copy of Lysippos (?)・Public domain・Wikimedia Commons"
+ },
+ "plato": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Plato_Silanion_Musei_Capitolini_MC1377.png/330px-Plato_Silanion_Musei_Capitolini_MC1377.png",
+  "file": "Plato_Silanion_Musei_Capitolini_MC1377.png",
+  "page": "https://en.wikipedia.org/wiki/Plato",
+  "credit": "Marie-Lan Nguyen・Public domain・Wikimedia Commons"
+ },
+ "aristotle": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Aristotle_Altemps_Inv8575.jpg/330px-Aristotle_Altemps_Inv8575.jpg",
+  "file": "Aristotle_Altemps_Inv8575.jpg",
+  "page": "https://en.wikipedia.org/wiki/Aristotle",
+  "credit": "After Lysippos・Public domain・Wikimedia Commons"
+ },
+ "alexander": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Alexander_Mosaic_detail_of_Alexander_the_Great_%283x4_cropped%29.jpg/330px-Alexander_Mosaic_detail_of_Alexander_the_Great_%283x4_cropped%29.jpg",
+  "file": "Alexander_Mosaic_detail_of_Alexander_the_Great_(3x4_cropped).jpg",
+  "page": "https://en.wikipedia.org/wiki/Alexander_the_Great",
+  "credit": "Unknown authorUnknown author・Public domain・Wikimedia Commons"
+ },
+ "philip2": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Phillip_II%2C_king_of_Macedonia%2C_Roman_copy_of_Greek_original%2C_Ny_Carlsberg_Glyptotek%2C_Copenhagen_%2836420294055%29.jpg/330px-Phillip_II%2C_king_of_Macedonia%2C_Roman_copy_of_Greek_original%2C_Ny_Carlsberg_Glyptotek%2C_Copenhagen_%2836420294055%29.jpg",
+  "file": "Phillip_II,_king_of_Macedonia,_Roman_copy_of_Greek_original,_Ny_Carlsberg_Glyptotek,_Copenhagen_(36420294055).jpg",
+  "page": "https://en.wikipedia.org/wiki/Philip_II_of_Macedon",
+  "credit": "Richard Mortel from Riyadh, Saudi Arabia・CC BY 2.0・Wikimedia Commons"
+ },
+ "darius3": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Darius_III_mosaic.jpg/330px-Darius_III_mosaic.jpg",
+  "file": "Darius_III_mosaic.jpg",
+  "page": "https://en.wikipedia.org/wiki/Darius_III",
+  "credit": "Carole Raddato from FRANKFURT, Germany・CC BY-SA 2.0・Wikimedia Commons"
+ },
+ "caesar": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Retrato_de_Julio_C%C3%A9sar_%2826724093101%29_%28cropped%29.jpg/330px-Retrato_de_Julio_C%C3%A9sar_%2826724093101%29_%28cropped%29.jpg",
+  "file": "Retrato_de_Julio_César_(26724093101)_(cropped).jpg",
+  "page": "https://en.wikipedia.org/wiki/Julius_Caesar",
+  "credit": "Ángel M. Felicísimo from Mérida, España・Public domain・Wikimedia Commons"
+ },
+ "pompey": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/%28Venice%29_Pompey_the_Great%2C_Museo_Archeologico_Nazionale.jpg/330px-%28Venice%29_Pompey_the_Great%2C_Museo_Archeologico_Nazionale.jpg",
+  "file": "(Venice)_Pompey_the_Great,_Museo_Archeologico_Nazionale.jpg",
+  "page": "https://en.wikipedia.org/wiki/Pompey",
+  "credit": "Didier Descouens・Public domain・Wikimedia Commons"
+ },
+ "crassus": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Bust_of_a_Roman%2C_Ny_Carlsberg_Glyptotek.jpg/330px-Bust_of_a_Roman%2C_Ny_Carlsberg_Glyptotek.jpg",
+  "file": "Bust_of_a_Roman,_Ny_Carlsberg_Glyptotek.jpg",
+  "page": "https://en.wikipedia.org/wiki/Marcus_Licinius_Crassus",
+  "credit": "Sergey Sosnovskiy・CC BY-SA 4.0・Wikimedia Commons"
+ },
+ "brutus": {
+  "src": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Brutusidesobv.gif",
+  "file": "Brutusidesobv.gif",
+  "page": "https://en.wikipedia.org/wiki/Marcus_Junius_Brutus",
+  "credit": "CNG・CC BY-SA 2.5・Wikimedia Commons"
+ },
+ "augustus": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Augustus_of_Prima_Porta.jpg/330px-Augustus_of_Prima_Porta.jpg",
+  "file": "Augustus_of_Prima_Porta.jpg",
+  "page": "https://en.wikipedia.org/wiki/Augustus",
+  "credit": "Justin Benttinen・CC BY-SA 4.0・Wikimedia Commons"
+ },
+ "antony": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Marble_bust_of_Mark_Antony_%28Vatican_Museums%29.jpg/330px-Marble_bust_of_Mark_Antony_%28Vatican_Museums%29.jpg",
+  "file": "Marble_bust_of_Mark_Antony_(Vatican_Museums).jpg",
+  "page": "https://en.wikipedia.org/wiki/Mark_Antony",
+  "credit": "Bust: unknown ancient Roman artist of the 1st cent・CC BY-SA 4.0・Wikimedia Commons"
+ },
+ "cleopatra": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Kleopatra-VII.-Altes-Museum-Berlin1.jpg/330px-Kleopatra-VII.-Altes-Museum-Berlin1.jpg",
+  "file": "Kleopatra-VII.-Altes-Museum-Berlin1.jpg",
+  "page": "https://en.wikipedia.org/wiki/Cleopatra",
+  "credit": "Louis le Grand・Public domain・Wikimedia Commons"
+ },
+ "confucius": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Confucius%2C_fresco_from_a_Western_Han_tomb_of_Dongping_County%2C_Shandong_province%2C_China_%28cropped%29.jpg/330px-Confucius%2C_fresco_from_a_Western_Han_tomb_of_Dongping_County%2C_Shandong_province%2C_China_%28cropped%29.jpg",
+  "file": "Confucius,_fresco_from_a_Western_Han_tomb_of_Dongping_County,_Shandong_province,_China_(cropped).jpg",
+  "page": "https://en.wikipedia.org/wiki/Confucius",
+  "credit": "Anonymous Chinese painter of the Western Han perio・Public domain・Wikimedia Commons"
+ },
+ "mencius": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Half_Portraits_of_the_Great_Sage_and_Virtuous_Men_of_Old_-_Meng_Ke_%28%E5%AD%9F%E8%BB%BB%29.jpg/330px-Half_Portraits_of_the_Great_Sage_and_Virtuous_Men_of_Old_-_Meng_Ke_%28%E5%AD%9F%E8%BB%BB%29.jpg",
+  "file": "Half_Portraits_of_the_Great_Sage_and_Virtuous_Men_of_Old_-_Meng_Ke_(孟軻).jpg",
+  "page": "https://en.wikipedia.org/wiki/Mencius",
+  "credit": "anonymous・Public domain・Wikimedia Commons"
+ },
+ "xunzi": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Portrait_of_Xun_Zi.jpg/330px-Portrait_of_Xun_Zi.jpg",
+  "file": "Portrait_of_Xun_Zi.jpg",
+  "page": "https://en.wikipedia.org/wiki/Xunzi_%28philosopher%29",
+  "credit": "Unknown authorUnknown author・Public domain・Wikimedia Commons"
+ },
+ "hanfei": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Statue_Of_Han_Fei.png/330px-Statue_Of_Han_Fei.png",
+  "file": "Statue_Of_Han_Fei.png",
+  "page": "https://en.wikipedia.org/wiki/Han_Fei",
+  "credit": "Sabinowitz・CC BY-SA 4.0・Wikimedia Commons"
+ },
+ "qinshihuang": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/QinShiHuang19century.jpg/330px-QinShiHuang19century.jpg",
+  "file": "QinShiHuang19century.jpg",
+  "page": "https://en.wikipedia.org/wiki/Qin_Shi_Huang",
+  "credit": "Unknown (18??–18??)・Public domain・Wikimedia Commons"
+ },
+ "xiangyu": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Portraits_of_Famous_Men_-_Xiang_Wang.jpg/330px-Portraits_of_Famous_Men_-_Xiang_Wang.jpg",
+  "file": "Portraits_of_Famous_Men_-_Xiang_Wang.jpg",
+  "page": "https://en.wikipedia.org/wiki/Xiang_Yu",
+  "credit": "Unknown Chinese artist・Public domain・Wikimedia Commons"
+ },
+ "liubang": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Liu-bang.jpg/330px-Liu-bang.jpg",
+  "file": "Liu-bang.jpg",
+  "page": "https://en.wikipedia.org/wiki/Emperor_Gaozu_of_Han",
+  "credit": "Unknown authorUnknown author・Public domain・Wikimedia Commons"
+ },
+ "hanxin": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/%E6%B1%89%E6%B7%AE%E9%98%B4%E4%BE%AF%E9%9F%A9%E4%BF%A1.jpg/330px-%E6%B1%89%E6%B7%AE%E9%98%B4%E4%BE%AF%E9%9F%A9%E4%BF%A1.jpg",
+  "file": "汉淮阴侯韩信.jpg",
+  "page": "https://en.wikipedia.org/wiki/Han_Xin",
+  "credit": "Unknown authorUnknown author・Public domain・Wikimedia Commons"
+ },
+ "zhangliang": {
+  "src": "https://upload.wikimedia.org/wikipedia/commons/9/93/%E5%BC%A0%E8%89%AF%E5%83%8F.jpg",
+  "file": "张良像.jpg",
+  "page": "https://en.wikipedia.org/wiki/Zhang_Liang_%28Western_Han%29",
+  "credit": "西汉画家・CC BY-SA 4.0・Wikimedia Commons"
+ },
+ "caocao": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Cao_Cao_scth.jpg/330px-Cao_Cao_scth.jpg",
+  "file": "Cao_Cao_scth.jpg",
+  "page": "https://en.wikipedia.org/wiki/Cao_Cao",
+  "credit": "Wang Qi・Public domain・Wikimedia Commons"
+ },
+ "liubei": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Liu_Bei_Tang.jpg/330px-Liu_Bei_Tang.jpg",
+  "file": "Liu_Bei_Tang.jpg",
+  "page": "https://en.wikipedia.org/wiki/Liu_Bei",
+  "credit": "Yan Liben (閻立本)・Public domain・Wikimedia Commons"
+ },
+ "sunquan": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Sun_Quan_Tang.jpg/330px-Sun_Quan_Tang.jpg",
+  "file": "Sun_Quan_Tang.jpg",
+  "page": "https://en.wikipedia.org/wiki/Sun_Quan",
+  "credit": "Yan Liben・Public domain・Wikimedia Commons"
+ },
+ "zhugeliang": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/%E6%98%8E%E4%BA%BA%E7%BB%98_%E3%80%8A%E8%AF%B8%E8%91%9B%E4%BA%AE%E5%83%8F%E3%80%8B%EF%BC%88%E5%8D%97%E8%96%B0%E6%AE%BF%E6%9C%AC%EF%BC%89.jpg/330px-%E6%98%8E%E4%BA%BA%E7%BB%98_%E3%80%8A%E8%AF%B8%E8%91%9B%E4%BA%AE%E5%83%8F%E3%80%8B%EF%BC%88%E5%8D%97%E8%96%B0%E6%AE%BF%E6%9C%AC%EF%BC%89.jpg",
+  "file": "明人绘_《诸葛亮像》（南薰殿本）.jpg",
+  "page": "https://en.wikipedia.org/wiki/Zhuge_Liang",
+  "credit": "Unknown authorUnknown author・Public domain・Wikimedia Commons"
+ },
+ "guanyu": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Guanyu-1.jpg/330px-Guanyu-1.jpg",
+  "file": "Guanyu-1.jpg",
+  "page": "https://en.wikipedia.org/wiki/Guan_Yu",
+  "credit": "UnknownUnknown , uploaded by Tiangong83 on zh.wiki・Public domain・Wikimedia Commons"
+ },
+ "zhouyu": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/ZhouYu.jpg/330px-ZhouYu.jpg",
+  "file": "ZhouYu.jpg",
+  "page": "https://en.wikipedia.org/wiki/Zhou_Yu",
+  "credit": "Unknown authorUnknown author・Public domain・Wikimedia Commons"
+ },
+ "simayi": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/%E9%AD%8F%C2%B7%E5%A4%AA%E5%82%85_%E5%8F%B8%E9%A6%AC%E6%87%BF.jpg/330px-%E9%AD%8F%C2%B7%E5%A4%AA%E5%82%85_%E5%8F%B8%E9%A6%AC%E6%87%BF.jpg",
+  "file": "魏·太傅_司馬懿.jpg",
+  "page": "https://en.wikipedia.org/wiki/Sima_Yi",
+  "credit": "Ming Zhu Tianran・Public domain・Wikimedia Commons"
+ },
+ "lorenzo": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Lorenzo_de_Medici.jpg/330px-Lorenzo_de_Medici.jpg",
+  "file": "Lorenzo_de_Medici.jpg",
+  "page": "https://en.wikipedia.org/wiki/Lorenzo_de%27_Medici",
+  "credit": "Workshop of Bronzino・Public domain・Wikimedia Commons"
+ },
+ "verrocchio": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Andrea_del_Castagno%2C_portrait_de_Verrocchio%2C_vers_1470.jpg/330px-Andrea_del_Castagno%2C_portrait_de_Verrocchio%2C_vers_1470.jpg",
+  "file": "Andrea_del_Castagno,_portrait_de_Verrocchio,_vers_1470.jpg",
+  "page": "https://en.wikipedia.org/wiki/Andrea_del_Verrocchio",
+  "credit": "Crijam・CC BY-SA 4.0・Wikimedia Commons"
+ },
+ "davinci": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Francesco_Melzi_-_Portrait_of_Leonardo_%28colour_correction%29.png/330px-Francesco_Melzi_-_Portrait_of_Leonardo_%28colour_correction%29.png",
+  "file": "Francesco_Melzi_-_Portrait_of_Leonardo_(colour_correction).png",
+  "page": "https://en.wikipedia.org/wiki/Leonardo_da_Vinci",
+  "credit": "Attributed to Francesco Melzi・Public domain・Wikimedia Commons"
+ },
+ "michelangelo": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Michelangelo_Daniele_da_Volterra_%28dettaglio%29.jpg/330px-Michelangelo_Daniele_da_Volterra_%28dettaglio%29.jpg",
+  "file": "Michelangelo_Daniele_da_Volterra_(dettaglio).jpg",
+  "page": "https://en.wikipedia.org/wiki/Michelangelo",
+  "credit": "Attributed to Daniele da Volterra・Public domain・Wikimedia Commons"
+ },
+ "raphael": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Raffaello_Sanzio.jpg/330px-Raffaello_Sanzio.jpg",
+  "file": "Raffaello_Sanzio.jpg",
+  "page": "https://en.wikipedia.org/wiki/Raphael",
+  "credit": "Raphael・Public domain・Wikimedia Commons"
+ },
+ "machiavelli": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Portrait_of_Niccol%C3%B2_Machiavelli_by_Santi_di_Tito.jpg/330px-Portrait_of_Niccol%C3%B2_Machiavelli_by_Santi_di_Tito.jpg",
+  "file": "Portrait_of_Niccolò_Machiavelli_by_Santi_di_Tito.jpg",
+  "page": "https://en.wikipedia.org/wiki/Niccol%C3%B2_Machiavelli",
+  "credit": "Santi di Tito・Public domain・Wikimedia Commons"
+ },
+ "julius2": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Pope_Julius_II.jpg/330px-Pope_Julius_II.jpg",
+  "file": "Pope_Julius_II.jpg",
+  "page": "https://en.wikipedia.org/wiki/Pope_Julius_II",
+  "credit": "Raphael・Public domain・Wikimedia Commons"
+ },
+ "nobunaga": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Odanobunaga.jpg/330px-Odanobunaga.jpg",
+  "file": "Odanobunaga.jpg",
+  "page": "https://en.wikipedia.org/wiki/Oda_Nobunaga",
+  "credit": "狩野宗秀 (Kanō Sōshū, 1551 - 1601)・Public domain・Wikimedia Commons"
+ },
+ "hideyoshi": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Toyotomi_Hideyoshi_c1598_Kodai-ji_Temple.png/330px-Toyotomi_Hideyoshi_c1598_Kodai-ji_Temple.png",
+  "file": "Toyotomi_Hideyoshi_c1598_Kodai-ji_Temple.png",
+  "page": "https://en.wikipedia.org/wiki/Toyotomi_Hideyoshi",
+  "credit": "Kanō Mitsunobu (狩野 光信, 1565–1608)・Public domain・Wikimedia Commons"
+ },
+ "ieyasu": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Tokugawa_Ieyasu2.JPG/330px-Tokugawa_Ieyasu2.JPG",
+  "file": "Tokugawa_Ieyasu2.JPG",
+  "page": "https://en.wikipedia.org/wiki/Tokugawa_Ieyasu",
+  "credit": "Kanō Tan'yū・Public domain・Wikimedia Commons"
+ },
+ "yisunsin": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Bust_of_Yi_Sun-sin_01.jpg/330px-Bust_of_Yi_Sun-sin_01.jpg",
+  "file": "Bust_of_Yi_Sun-sin_01.jpg",
+  "page": "https://en.wikipedia.org/wiki/Yi_Sun-sin",
+  "credit": "Unknown, War Memorial of Korea・KOGL Type 1・Wikimedia Commons"
+ },
+ "shingen": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Takeda_Harunobu.jpg/330px-Takeda_Harunobu.jpg",
+  "file": "Takeda_Harunobu.jpg",
+  "page": "https://en.wikipedia.org/wiki/Takeda_Shingen",
+  "credit": "Unknown・Public domain・Wikimedia Commons"
+ },
+ "kenshin": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Uesugi_Kenshin_Portrait_from_Uesugi_Shrine.png/330px-Uesugi_Kenshin_Portrait_from_Uesugi_Shrine.png",
+  "file": "Uesugi_Kenshin_Portrait_from_Uesugi_Shrine.png",
+  "page": "https://en.wikipedia.org/wiki/Uesugi_Kenshin",
+  "credit": "Unknown authorUnknown author・Public domain・Wikimedia Commons"
+ },
+ "copernicus": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Nikolaus_Kopernikus_MOT.jpg/330px-Nikolaus_Kopernikus_MOT.jpg",
+  "file": "Nikolaus_Kopernikus_MOT.jpg",
+  "page": "https://en.wikipedia.org/wiki/Nicolaus_Copernicus",
+  "credit": "Unknown authorUnknown author・Public domain・Wikimedia Commons"
+ },
+ "galileo": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Galileo_Galilei_%281564-1642%29_RMG_BHC2700.tiff/lossy-page1-330px-Galileo_Galilei_%281564-1642%29_RMG_BHC2700.tiff.jpg",
+  "file": "Galileo_Galilei_(1564-1642)_RMG_BHC2700.tiff",
+  "page": "https://en.wikipedia.org/wiki/Galileo_Galilei",
+  "credit": "Justus Sustermans・Public domain・Wikimedia Commons"
+ },
+ "kepler": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/JKepler.jpg/330px-JKepler.jpg",
+  "file": "JKepler.jpg",
+  "page": "https://en.wikipedia.org/wiki/Johannes_Kepler",
+  "credit": "August Köhler [1]・Public domain・Wikimedia Commons"
+ },
+ "tycho": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Portr%C3%A4tt_av_Tycho_Brahe_-_Skoklosters_slott_-_90153.tif/lossy-page1-330px-Portr%C3%A4tt_av_Tycho_Brahe_-_Skoklosters_slott_-_90153.tif.jpg",
+  "file": "Porträtt_av_Tycho_Brahe_-_Skoklosters_slott_-_90153.tif",
+  "page": "https://en.wikipedia.org/wiki/Tycho_Brahe",
+  "credit": "Unknown authorUnknown author・Public domain・Wikimedia Commons"
+ },
+ "newton": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Portrait_of_Sir_Isaac_Newton%2C_1689_%28brightened%29.jpg/330px-Portrait_of_Sir_Isaac_Newton%2C_1689_%28brightened%29.jpg",
+  "file": "Portrait_of_Sir_Isaac_Newton,_1689_(brightened).jpg",
+  "page": "https://en.wikipedia.org/wiki/Isaac_Newton",
+  "credit": "Godfrey Kneller・Public domain・Wikimedia Commons"
+ },
+ "leibniz": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Christoph_Bernhard_Francke_-_Bildnis_des_Philosophen_Leibniz_%28ca._1695%29.jpg/330px-Christoph_Bernhard_Francke_-_Bildnis_des_Philosophen_Leibniz_%28ca._1695%29.jpg",
+  "file": "Christoph_Bernhard_Francke_-_Bildnis_des_Philosophen_Leibniz_(ca._1695).jpg",
+  "page": "https://en.wikipedia.org/wiki/Gottfried_Wilhelm_Leibniz",
+  "credit": "Christoph Bernhard Francke・Public domain・Wikimedia Commons"
+ },
+ "darwin": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Charles_Darwin_seated_crop.jpg/330px-Charles_Darwin_seated_crop.jpg",
+  "file": "Charles_Darwin_seated_crop.jpg",
+  "page": "https://en.wikipedia.org/wiki/Charles_Darwin",
+  "credit": "Charles_Darwin_seated.jpg: Henry Maull (1829–1914)・Public domain・Wikimedia Commons"
+ },
+ "einstein": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Albert_Einstein_Head_cleaned.jpg/330px-Albert_Einstein_Head_cleaned.jpg",
+  "file": "Albert_Einstein_Head_cleaned.jpg",
+  "page": "https://en.wikipedia.org/wiki/Albert_Einstein",
+  "credit": "Oren Jack Turner・Public domain・Wikimedia Commons"
+ },
+ "washington": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg/330px-Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg",
+  "file": "Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg",
+  "page": "https://en.wikipedia.org/wiki/George_Washington",
+  "credit": "Gilbert Stuart・Public domain・Wikimedia Commons"
+ },
+ "lafayette": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Gilbert_du_Motier_Marquis_de_Lafayette.PNG/330px-Gilbert_du_Motier_Marquis_de_Lafayette.PNG",
+  "file": "Gilbert_du_Motier_Marquis_de_Lafayette.PNG",
+  "page": "https://en.wikipedia.org/wiki/Marquis_de_Lafayette",
+  "credit": "Joseph-Désiré Court・Public domain・Wikimedia Commons"
+ },
+ "jefferson": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Official_Presidential_portrait_of_Thomas_Jefferson_%28by_Rembrandt_Peale%2C_1800%29.jpg/330px-Official_Presidential_portrait_of_Thomas_Jefferson_%28by_Rembrandt_Peale%2C_1800%29.jpg",
+  "file": "Official_Presidential_portrait_of_Thomas_Jefferson_(by_Rembrandt_Peale,_1800).jpg",
+  "page": "https://en.wikipedia.org/wiki/Thomas_Jefferson",
+  "credit": "Rembrandt Peale・Public domain・Wikimedia Commons"
+ },
+ "louis16": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Antoine-Fran%C3%A7ois_Callet_-_Louis_XVI%2C_roi_de_France_et_de_Navarre_%281754-1793%29%2C_rev%C3%AAtu_du_grand_costume_royal_en_1779_-_Google_Art_Project.jpg/330px-Antoine-Fran%C3%A7ois_Callet_-_Louis_XVI%2C_roi_de_France_et_de_Navarre_%281754-1793%29%2C_rev%C3%AAtu_du_grand_costume_royal_en_1779_-_Google_Art_Project.jpg",
+  "file": "Antoine-François_Callet_-_Louis_XVI,_roi_de_France_et_de_Navarre_(1754-1793),_revêtu_du_grand_costume_royal_en_1779_-_Google_Art_Project.jpg",
+  "page": "https://en.wikipedia.org/wiki/Louis_XVI",
+  "credit": "Antoine-François Callet・Public domain・Wikimedia Commons"
+ },
+ "marie": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Louise_Elisabeth_Vig%C3%A9e-Lebrun_-_Marie-Antoinette_dit_%C2%AB_%C3%A0_la_Rose_%C2%BB_-_Google_Art_Project.jpg/330px-Louise_Elisabeth_Vig%C3%A9e-Lebrun_-_Marie-Antoinette_dit_%C2%AB_%C3%A0_la_Rose_%C2%BB_-_Google_Art_Project.jpg",
+  "file": "Louise_Elisabeth_Vigée-Lebrun_-_Marie-Antoinette_dit_«_à_la_Rose_»_-_Google_Art_Project.jpg",
+  "page": "https://en.wikipedia.org/wiki/Marie_Antoinette",
+  "credit": "Élisabeth Louise Vigée Le Brun・Public domain・Wikimedia Commons"
+ },
+ "robespierre": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Robespierre.jpg/330px-Robespierre.jpg",
+  "file": "Robespierre.jpg",
+  "page": "https://en.wikipedia.org/wiki/Maximilien_Robespierre",
+  "credit": "Unidentified painter・CC0・Wikimedia Commons"
+ },
+ "napoleon": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg/330px-Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg",
+  "file": "Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg",
+  "page": "https://en.wikipedia.org/wiki/Napoleon",
+  "credit": "Jacques-Louis David・Public domain・Wikimedia Commons"
+ },
+ "wellington": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Sir_Arthur_Wellesley%2C_1st_Duke_of_Wellington.jpg/330px-Sir_Arthur_Wellesley%2C_1st_Duke_of_Wellington.jpg",
+  "file": "Sir_Arthur_Wellesley,_1st_Duke_of_Wellington.jpg",
+  "page": "https://en.wikipedia.org/wiki/Arthur_Wellesley%2C_1st_Duke_of_Wellington",
+  "credit": "Thomas Lawrence・Public domain・Wikimedia Commons"
+ },
+ "alexander1": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Alexander_I_of_Russia_by_G.Dawe_%281826%2C_Peterhof%29-crop.jpg/330px-Alexander_I_of_Russia_by_G.Dawe_%281826%2C_Peterhof%29-crop.jpg",
+  "file": "Alexander_I_of_Russia_by_G.Dawe_(1826,_Peterhof)-crop.jpg",
+  "page": "https://en.wikipedia.org/wiki/Alexander_I_of_Russia",
+  "credit": "George Dawe・Public domain・Wikimedia Commons"
+ },
+ "beethoven": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Joseph_Karl_Stieler%27s_Beethoven_mit_dem_Manuskript_der_Missa_solemnis.jpg/330px-Joseph_Karl_Stieler%27s_Beethoven_mit_dem_Manuskript_der_Missa_solemnis.jpg",
+  "file": "Joseph_Karl_Stieler's_Beethoven_mit_dem_Manuskript_der_Missa_solemnis.jpg",
+  "page": "https://en.wikipedia.org/wiki/Ludwig_van_Beethoven",
+  "credit": "Joseph Karl Stieler・Public domain・Wikimedia Commons"
+ },
+ "sunyatsen": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/%E5%AD%99%E4%B8%AD%E5%B1%B1%E8%82%96%E5%83%8F.jpg/330px-%E5%AD%99%E4%B8%AD%E5%B1%B1%E8%82%96%E5%83%8F.jpg",
+  "file": "孙中山肖像.jpg",
+  "page": "https://en.wikipedia.org/wiki/Sun_Yat-sen",
+  "credit": "上海波尔照相馆・Public domain・Wikimedia Commons"
+ },
+ "chiangkaishek": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/%E8%94%A3%E4%B8%AD%E6%AD%A3%E7%B8%BD%E7%B5%B1%E7%8E%89%E7%85%A7.png/330px-%E8%94%A3%E4%B8%AD%E6%AD%A3%E7%B8%BD%E7%B5%B1%E7%8E%89%E7%85%A7.png",
+  "file": "蔣中正總統玉照.png",
+  "page": "https://en.wikipedia.org/wiki/Chiang_Kai-shek",
+  "credit": "Unknown photographer・Attribution・Wikimedia Commons"
+ },
+ "maozedong": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Mao_Zedong_1950_Portrait_%283x4_cropped%29%282%29.jpg/330px-Mao_Zedong_1950_Portrait_%283x4_cropped%29%282%29.jpg",
+  "file": "Mao_Zedong_1950_Portrait_(3x4_cropped)(2).jpg",
+  "page": "https://en.wikipedia.org/wiki/Mao_Zedong",
+  "credit": "Chen Zhengqing (1917–1966)・Public domain・Wikimedia Commons"
+ },
+ "churchill": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Sir_Winston_Churchill_-_19086236948_%28restored%29.jpg/330px-Sir_Winston_Churchill_-_19086236948_%28restored%29.jpg",
+  "file": "Sir_Winston_Churchill_-_19086236948_(restored).jpg",
+  "page": "https://en.wikipedia.org/wiki/Winston_Churchill",
+  "credit": "Public domain・Wikimedia Commons"
+ },
+ "fdr": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/FDR-1944-Campaign-Portrait_%283x4_retouched%2C_cropped%29.jpg/330px-FDR-1944-Campaign-Portrait_%283x4_retouched%2C_cropped%29.jpg",
+  "file": "FDR-1944-Campaign-Portrait_(3x4_retouched,_cropped).jpg",
+  "page": "https://en.wikipedia.org/wiki/Franklin_D._Roosevelt",
+  "credit": "Leon Perskie・CC BY 2.0・Wikimedia Commons"
+ },
+ "stalin": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/StalinCropped1943.jpg/330px-StalinCropped1943.jpg",
+  "file": "StalinCropped1943.jpg",
+  "page": "https://en.wikipedia.org/wiki/Joseph_Stalin",
+  "credit": "Franklin D. Roosevelt Library Public Domain Photog・Public domain・Wikimedia Commons"
+ },
+ "hitler": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Hitler_portrait_crop_%28cropped%29%282%29.jpg/330px-Hitler_portrait_crop_%28cropped%29%282%29.jpg",
+  "file": "Hitler_portrait_crop_(cropped)(2).jpg",
+  "page": "https://en.wikipedia.org/wiki/Adolf_Hitler",
+  "credit": "Heinrich Hoffmann・CC BY-SA 3.0 de・Wikimedia Commons"
+ },
+ "gandhi": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Mahatma-Gandhi%2C_studio%2C_1931.jpg/330px-Mahatma-Gandhi%2C_studio%2C_1931.jpg",
+  "file": "Mahatma-Gandhi,_studio,_1931.jpg",
+  "page": "https://en.wikipedia.org/wiki/Mahatma_Gandhi",
+  "credit": "Elliott & Fry・Public domain・Wikimedia Commons"
+ },
+ "mlk": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Martin_Luther_King%2C_Jr._and_Lyndon_Johnson_%28cropped%29.jpg/330px-Martin_Luther_King%2C_Jr._and_Lyndon_Johnson_%28cropped%29.jpg",
+  "file": "Martin_Luther_King,_Jr._and_Lyndon_Johnson_(cropped).jpg",
+  "page": "https://en.wikipedia.org/wiki/Martin_Luther_King_Jr.",
+  "credit": "Yoichi Okamoto・Public domain・Wikimedia Commons"
+ },
+ "mandela": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Nelson_Mandela_1994.jpg/330px-Nelson_Mandela_1994.jpg",
+  "file": "Nelson_Mandela_1994.jpg",
+  "page": "https://en.wikipedia.org/wiki/Nelson_Mandela",
+  "credit": "Kingkongphoto & www.celebrity-photos.com from Laur・CC BY-SA 2.0・Wikimedia Commons"
+ }
+}

@@ -5,6 +5,9 @@ import { figures, groups, relationColors, relations, type RelationType } from ".
 import { countryByIso } from "../data/world";
 import { formatYear } from "../lib/format";
 import { gsap, prefersReducedMotion, useGSAP, useReveal } from "../lib/motion";
+import portraitData from "../data/portraits.json";
+
+const portraits = portraitData as Record<string, { src: string; page: string; credit?: string }>;
 
 /*
  * 人物關係圖
@@ -37,12 +40,17 @@ function medianBorn(gid: string) {
   return ys[Math.floor(ys.length / 2)] ?? 0;
 }
 const groupOrder = [...groups].sort((a, b) => medianBorn(a.id) - medianBorn(b.id));
+// 兩列蛇形時間排列：上列由左而右（古代→中世）、下列由右而左（近世→現代）
 const groupCenters = new Map<string, Pt>(
   groupOrder.map((g, i) => {
-    const t = i / (groupOrder.length - 1);
-    return [g.id, { x: 400 + t * (W - 560), y: H / 2 - 20 + Math.sin(t * Math.PI * 2.1) * 165 }];
+    const top = i < 5;
+    const col = top ? i : 8 - i;
+    const x = 470 + col * 255 + (top ? 0 : 128);
+    return [g.id, { x, y: top ? 255 : 625 }];
   }),
 );
+const degree = new Map(figures.map((f) => [f.id, relations.filter((r) => r.source === f.id || r.target === f.id).length]));
+const nodeR = (id: string) => 13 + Math.min(degree.get(id) ?? 0, 8) * 1.6;
 const overview = new Map<string, Pt>();
 groupOrder.forEach((g) => {
   const c = groupCenters.get(g.id)!;
@@ -50,7 +58,7 @@ groupOrder.forEach((g) => {
     .filter((f) => f.group === g.id)
     .sort((a, b) => a.born - b.born)
     .forEach((f, k) => {
-      const r = 24 * Math.sqrt(k + 0.6);
+      const r = 34 * Math.sqrt(k + 0.4);
       const a = k * 2.39996;
       overview.set(f.id, { x: c.x + r * Math.cos(a), y: c.y + r * Math.sin(a) });
     });
@@ -203,6 +211,9 @@ export default function FiguresPage() {
         }}
       >
         <defs>
+          <clipPath id="node-clip" clipPathUnits="objectBoundingBox">
+            <circle cx="0.5" cy="0.5" r="0.5" />
+          </clipPath>
           <radialGradient id="star-glow">
             <stop offset="0%" stopColor="#ffffff" stopOpacity="0.9" />
             <stop offset="45%" stopColor="#bfe9ff" stopOpacity="0.25" />
@@ -210,6 +221,32 @@ export default function FiguresPage() {
           </radialGradient>
         </defs>
         <g transform={`translate(${W / 2 + view.x} ${H / 2 + view.y}) scale(${view.k}) translate(${-W / 2} ${-H / 2})`}>
+          {/* 時間路徑：依年代串起各星座（蛇形） */}
+          {!egoMode && (
+            <path
+              d={(() => {
+                const pts = groupOrder.map((g) => groupCenters.get(g.id)!);
+                let d = `M${pts[0].x - 140},${pts[0].y}`;
+                pts.forEach((p, i) => {
+                  if (i === 0) {
+                    d += ` L${p.x},${p.y}`;
+                    return;
+                  }
+                  const q = pts[i - 1];
+                  if (q.y !== p.y) d += ` C${q.x + 260},${q.y} ${p.x + 260},${p.y} ${p.x},${p.y}`;
+                  else d += ` L${p.x},${p.y}`;
+                });
+                const last = pts[pts.length - 1];
+                return d + ` L${last.x - 140},${last.y}`;
+              })()}
+              fill="none"
+              stroke="#ffffff"
+              strokeOpacity={0.16}
+              strokeWidth={1.5}
+              strokeDasharray="1 9"
+              strokeLinecap="round"
+            />
+          )}
           {/* 星座名稱與年代（總覽） */}
           {!egoMode &&
             groupOrder.map((g) => {
@@ -219,11 +256,11 @@ export default function FiguresPage() {
               const faded = lit && !members.some((m) => lit.has(m.id));
               return (
                 <g key={g.id} opacity={faded ? 0.3 : 1} className="transition-opacity duration-500">
-                  <circle cx={c.x} cy={c.y} r={110} fill="url(#star-glow)" opacity={0.18} />
-                  <text x={c.x} y={c.y + 122} textAnchor="middle" fill="#ffffff" fontSize={15} fontWeight={600} letterSpacing="0.02em">
+                  <circle cx={c.x} cy={c.y} r={135} fill="url(#star-glow)" opacity={0.16} />
+                  <text x={c.x} y={c.y + 142} textAnchor="middle" fill="#ffffff" fontSize={15} fontWeight={600} letterSpacing="0.02em">
                     {g.name}
                   </text>
-                  <text x={c.x} y={c.y + 141} textAnchor="middle" fill="rgba(255,255,255,0.5)" fontSize={11}>
+                  <text x={c.x} y={c.y + 161} textAnchor="middle" fill="rgba(255,255,255,0.5)" fontSize={11}>
                     {formatYear(Math.min(...yrs))} – {formatYear(Math.max(...yrs))}
                   </text>
                 </g>
@@ -252,9 +289,9 @@ export default function FiguresPage() {
                   <path
                     d={d}
                     fill="none"
-                    stroke={on ? relationColors[r.type] : "#ffffff"}
-                    strokeOpacity={on ? 0.95 : key ? (egoMode && ring2 && ((ring2.has(r.source) && lit?.has(r.target)) || (ring2.has(r.target) && lit?.has(r.source))) ? 0.28 : 0.05) : 0.18}
-                    strokeWidth={on ? 2.2 : 1}
+                    stroke={relationColors[r.type]}
+                    strokeOpacity={on ? 0.95 : key ? (egoMode && ring2 && ((ring2.has(r.source) && lit?.has(r.target)) || (ring2.has(r.target) && lit?.has(r.source))) ? 0.3 : 0.05) : 0.38}
+                    strokeWidth={on ? 2.6 : 1.3}
                     strokeDasharray={r.type === "影響" ? "4 5" : undefined}
                     strokeLinecap="round"
                   />
@@ -279,7 +316,7 @@ export default function FiguresPage() {
             const isFocus = f.id === focusId;
             const inRing = egoMode && !!lit?.has(f.id);
             const dim = lit && !lit.has(f.id);
-            const r = isFocus ? 36 : inRing ? 20 : 8;
+            const r = isFocus ? 58 : inRing ? 32 : nodeR(f.id);
             const showName = isFocus || inRing || f.id === hover || (!!lit && lit.has(f.id)) || !!ring2?.has(f.id) || view.k > 1.4;
             return (
               <g
@@ -295,17 +332,20 @@ export default function FiguresPage() {
                   drag.current = null;
                 }}
               >
-                <circle r={r * 2.6} fill="url(#star-glow)" opacity={isFocus ? 0.55 : 0.35} />
-                <circle r={r} fill="#ffffff" stroke={g.color} strokeWidth={isFocus ? 4 : r > 10 ? 3 : 2.2} />
-                {r >= 20 && (
-                  <text textAnchor="middle" y={r * 0.35} fontWeight={600} fill="#0d43ad" fontSize={r * 0.95}>
+                <circle r={r * 1.9} fill="url(#star-glow)" opacity={isFocus ? 0.6 : 0.3} />
+                <circle r={r + (isFocus ? 4 : 2.5)} fill={g.color} />
+                <circle r={r} fill="#dbe9ff" />
+                {portraits[f.id] ? (
+                  <image href={portraits[f.id].src} x={-r} y={-r} width={r * 2} height={r * 2} preserveAspectRatio="xMidYMin slice" clipPath="url(#node-clip)" />
+                ) : (
+                  <text textAnchor="middle" y={r * 0.36} fontWeight={600} fill="#0d43ad" fontSize={r * 0.95}>
                     {f.name[0]}
                   </text>
                 )}
                 {showName && (
                   <text
                     textAnchor="middle"
-                    y={r + (isFocus ? 26 : 19)}
+                    y={r + (isFocus ? 30 : 20)}
                     fill="#ffffff"
                     fontSize={isFocus ? 21 : inRing ? 16 : 14}
                     fontWeight={isFocus ? 600 : 500}
@@ -422,8 +462,19 @@ export default function FiguresPage() {
           ref={detailRef}
           className="glass absolute top-4 right-4 bottom-4 z-20 flex w-[340px] flex-col overflow-hidden rounded-[28px] max-md:inset-x-3 max-md:top-auto max-md:max-h-[55%] max-md:w-auto"
         >
+          {portraits[focus.id] && (
+            <figure className="relative h-48 shrink-0 overflow-hidden">
+              <img src={portraits[focus.id].src} alt={focus.name} className="size-full object-cover object-top" />
+              <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_45%,rgba(16,70,170,0.85))]" />
+              {portraits[focus.id].credit && (
+                <a href={portraits[focus.id].page} target="_blank" rel="noreferrer" className="absolute right-3 bottom-2 max-w-[80%] truncate text-[10px] text-white/60 hover:text-white">
+                  {portraits[focus.id].credit}
+                </a>
+              )}
+            </figure>
+          )}
           <div className="relative shrink-0 p-6 pb-4">
-            <button onClick={() => select(null)} className="glass-soft absolute top-5 right-5 grid size-9 place-items-center rounded-full text-white/80 hover:bg-white/20" aria-label="關閉">
+            <button onClick={() => select(null)} className="glass-soft absolute top-5 right-5 z-10 grid size-9 place-items-center rounded-full text-white/80 hover:bg-white/20" aria-label="關閉">
               <X className="size-4" />
             </button>
             <p data-reveal className="eyebrow">
