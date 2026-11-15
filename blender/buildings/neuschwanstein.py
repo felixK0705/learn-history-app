@@ -243,7 +243,7 @@ def neuschwanstein(path):
         return -52 < x < 90 and -18 < y < 18
 
     pts = b.scatter(330, 18, 110, min_dist=5.0, avoid=lambda x, y: in_castle(x, y))
-    pts += b.scatter(190, 110, 228, min_dist=9.0, avoid=lambda x, y: in_castle(x, y))
+    pts += b.scatter(150, 110, 228, min_dist=9.5, avoid=lambda x, y: in_castle(x, y))
     for i, (x, y) in enumerate(pts):
         z = height(x, y)
         if z < -92:

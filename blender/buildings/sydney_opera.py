@@ -6,7 +6,7 @@
 - 西側音樂廳（Concert Hall）3 片朝北的帆＋1 片朝南的帆、東側瓊・蘇莎蘭劇院同樣配置但略小；
   西南角便利朗餐廳 2 片小帆；最高點約海拔 67 m
 - 帆口為傾斜的深茶色玻璃牆；殼下的大廳量體與玻璃帶
-- 周圍港灣水面（半徑 400 m 內），南側植物園樹林
+- 周圍港灣水面（半徑 450 m 內），南側植物園樹林
 """
 
 import math
@@ -20,7 +20,7 @@ from buildings.forbidden_city import CnBuilder, gen_paving
 from buildings.kinkakuji import GEN, _cloud, _height_to_normal, _save_maps, gen_canopy, gen_leaves
 
 # (目標點, 方位角, 仰角, 距離, 焦距)：參考照自西側港灣水面（北端在左）平視
-CAMERA = ((0.0, -6.0, 30.0), -88.0, 1.6, 600.0, 70)
+CAMERA = ((0.0, -8.0, 28.0), -86.0, -2.6, 400.0, 46)
 
 
 def gen_tiles_sail(name, seed=3):
@@ -77,19 +77,42 @@ class SailBuilder(CnBuilder):
         Bp = Vector((cx, B, zb))
         S1 = Vector((cx - half_w, front_y, zb))
         S2 = Vector((cx + half_w, front_y, zb))
-        C, R = circumsphere([tuple(Tp), tuple(Bp), tuple(S1), tuple(S2)])
-        f1 = facing < 0
-        e1 = self.sph_tri(tile, C, R, Tp, Bp, S1, flip=not f1)
-        e2 = self.sph_tri(tile, C, R, Tp, Bp, S2, flip=f1)
-        # 內面（殼的下側，較暗的肋拱混凝土）
-        self.sph_tri(under, C, R - thick, Tp, Bp, S1, flip=f1)
-        self.sph_tri(under, C, R - thick, Tp, Bp, S2, flip=not f1)
-        # 帆口邊緣厚度
-        for edge in (e1, e2):
-            for p, q in zip(edge, edge[1:]):
-                pi = C + (p - C).normalized() * (R - thick)
-                qi = C + (q - C).normalized() * (R - thick)
-                self.face([self.V(p), self.V(q), self.V(qi), self.V(pi)], tile)
+        def bez(p0, k, p1, t):
+            return p0 * (1 - t) ** 2 + k * 2 * t * (1 - t) + p1 * t * t
+        L = abs(T[0] - B)
+        Kr = Vector((cx, B + facing * 0.30 * L, T[1] * 0.97 + zb * 0.03))   # 脊線：自後方陡升、向前彎至尖端
+        edges = []
+        NU, NV = 26, 12
+        for S in (S1, S2):
+            side = -1 if S.x < cx else 1
+            mid = (Tp + S) / 2
+            Km = mid + Vector((side * 0.10 * half_w, facing * 0.10 * (Tp - S).length, 0))     # 帆口：略向前外凸
+            rows = []
+            for i in range(NU + 1):
+                u = i / NU
+                m = bez(Tp, Km, S, u)
+                r = bez(Tp, Kr, Bp, u)
+                row = []
+                for j in range(NV + 1):
+                    v = j / NV
+                    p = m * (1 - v) + r * v
+                    bulge = 4 * v * (1 - v) * u * (1 - 0.35 * u) * 0.16 * half_w
+                    p = p + Vector((side * bulge, 0, bulge * 0.35))
+                    row.append(p)
+                rows.append(row)
+            for (mi, off, flip) in ((tile, 0.0, side > 0), (under, -side * thick, side < 0)):
+                vr = [[self.V(Vector((p.x + off * (1 - j / NV), p.y, p.z))) for j, p in enumerate(row)] for row in rows]
+                for i in range(NU):
+                    for j in range(NV):
+                        q = [vr[i][j], vr[i + 1][j], vr[i + 1][j + 1], vr[i][j + 1]]
+                        if i == 0:
+                            q = [vr[0][0], vr[1][j], vr[1][j + 1]]
+                        self.face(list(reversed(q)) if flip else q, mi, smooth=True)
+            e = [row[0] for row in rows]
+            for p, q in zip(e, e[1:]):
+                self.face([self.V(p), self.V(q), self.V(q + Vector((-side * thick, 0, 0))), self.V(p + Vector((-side * thick, 0, 0)))], tile)
+            edges.append(e)
+        e1, e2 = edges
         # 帆口玻璃牆：自尖端扇形至底部（略內縮）
         inset = Vector((0, -facing * 3.0, 0))
         ring = [p + inset for p in e1[::-1][:-1]] + [p + inset for p in e2]
@@ -105,12 +128,12 @@ def sydney_opera(path):
     tile = b.gtex("tiles", gen_tiles_sail("a"), tile=2.4, rough=0.25, normal=0.3)
     under = b.color("rib", "#cfc6b4", rough=0.7)
     glass = b.color("glass", "#2a2018", rough=0.08, metal=0.3)
-    podium = b.gtex("podium", gen_paving("so_granite", (196, 160, 132), bw=3, bh=6, seed=8, joint=(0.8, 0.78, 0.76)), tile=4.0,
+    podium = b.gtex("podium", gen_paving("so_granite2", (190, 160, 128), bw=3, bh=6, seed=8, joint=(0.8, 0.78, 0.76)), tile=4.0,
                     rough=0.7, normal=0.3)
-    podium_d = b.color("podium_d", "#a98468", rough=0.7)
-    paving = b.gtex("pave", gen_paving("so_pave", (180, 160, 140), bw=6, bh=12, seed=9), tile=4.0, rough=0.8, normal=0.3)
+    podium_d = b.color("podium_d", "#a98a6c", rough=0.7)
+    paving = b.gtex("pave", gen_paving("so_pave2", (176, 160, 138), bw=6, bh=12, seed=9), tile=4.0, rough=0.8, normal=0.3)
     bronze = b.color("bronze", "#6a4a36", rough=0.5, metal=0.3)
-    water = b.color("water", "#1d4f78", rough=0.06)
+    water = b.color("water", "#0e2f4f", rough=0.38)
     lf_broad = b.alpha_mat("leaf_broad", gen_leaves("broad"))
     lf_dark = b.alpha_mat("leaf_dark", gen_leaves("dark"))
     core_b = b.gtex("core_broad", gen_canopy("broad", (70, 100, 44), seed=5), tile=3.0, rough=0.9, normal=1.0)
@@ -119,7 +142,7 @@ def sydney_opera(path):
 
     # ---------------- 港灣水面＋南岸
     n = 96
-    ring = [b.V((400 * math.cos(TAU * i / n), 400 * math.sin(TAU * i / n) - 20, 0.0)) for i in range(n)]
+    ring = [b.V((450 * math.cos(TAU * i / n), 450 * math.sin(TAU * i / n) - 20, 0.0)) for i in range(n)]
     b.face(ring, water)
     b.box_base(grass, (300.0, 140.0, 4.0), (60.0, -185.0, -1.0))
 
@@ -141,15 +164,26 @@ def sydney_opera(path):
         b.box_base(glass, (44.2, 118.0, 1.4), (cx, -4.0, 18.0))
         b.box_base(bronze, (44.4, 3.0, 2.0), (cx, 57.0, 19.0))
         b.box_base(glass, (40.0, 6.0, 4.0), (cx, 58.0, 13.2))
+    # 基座立面細部：玻璃帶、橫向分隔線、側面斜坡梯、北端階梯狀前廳
+    for s_ in (-1, 1):
+        b.box_base(glass, (0.4, 70.0, 2.6), (s_ * 56.1, -20.0, 5.0))
+        b.box_base(podium_d, (0.5, 130.0, 0.35), (s_ * 56.15, -16.0, 9.0))
+        b.box_base(glass, (0.4, 34.0, 2.2), (s_ * 56.1, 55.0, 5.2))
+        for k in range(14):
+            b.box_base(podium_d, (0.6, 0.4, 3.6), (s_ * 56.2, -54.0 + k * 5.0, 4.4))
+        # 斜坡式外梯（自步道升至平台）
+        L = math.hypot(30.0, 10.0)
+        b.place(lambda: b.box(podium_d, (2.6, L, 0.8), (0, 0, 0)),
+                Matrix.Translation((s_ * 57.4, 22.0, 8.0)) @ Matrix.Rotation(-math.atan2(10.0, 30.0), 4, "X"))
+    for k, (hw, y0, y1, z) in enumerate(((30.0, 62.0, 78.0, 16.0), (24.0, 66.0, 74.0, 18.5))):
+        for cx in (-24.0, 24.0):
+            b.box_base(podium, (2 * hw * 0.7, y1 - y0, z - 13.0), (cx, (y0 + y1) / 2, 13.0))
+            b.box_base(bronze, (2 * hw * 0.7 + 0.2, 1.0, 1.4), (cx, y1 + 0.3, z - 1.6))
     ZB = 21.0
-    # 側面的斜坡式量體（參考照中下方的斜線）
-    for cx in (-24.0, 24.0):
-        for s in (-1, 1):
-            b.tri_prism(podium, 2.0, 100.0, 0.01, (cx + s * 22, -4.0, 21.0))
 
     # ---------------- 帆（音樂廳：西；劇院：東，略小）
     def hall(cx, k, dy):
-        Z = lambda z: ZB + (z - ZB) * k  # noqa: E731
+        Z = lambda z: ZB + (z - ZB) * k * 1.1  # noqa: E731
         b.sail(tile, under, glass, (57.5 + dy, Z(46.5)), 18.0 + dy, 13.0 * k, 36.0 + dy, ZB, cx, 1)
         b.sail(tile, under, glass, (33.0 + dy, Z(55.5)), -4.0 + dy, 17.0 * k, 14.0 + dy, ZB, cx, 1)
         b.sail(tile, under, glass, (14.5 + dy, Z(66.0)), -27.0 + dy, 21.0 * k, -8.0 + dy, ZB, cx, 1)

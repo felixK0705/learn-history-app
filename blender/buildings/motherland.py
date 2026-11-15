@@ -72,9 +72,12 @@ def build_figure(b, mi):
     face = Vector((math.sin(math.radians(28)), -math.cos(math.radians(28)), 0.12)).normalized()
     hc = Vector((0.6, -1.0, Z + 49.0))
     ell(hc, (2.5, 2.9, 3.4), rot=(math.radians(-8), 0, math.radians(28)))
-    ball(hc + face * 2.75 + Vector((0, 0, -0.1)), 0.55, stiff=1.4)        # 鼻
-    ball(hc + face * 2.2 + Vector((0, 0, -1.9)), 1.05, stiff=1.6)         # 下巴（張口呼喊）
-    ball(hc - face * 2.0 + Vector((0, 0, 0.6)), 1.9, stiff=1.6)           # 後腦／髮髻
+    cap(hc + face * 2.4 + Vector((0, 0, 0.6)), hc + face * 3.25 + Vector((0, 0, -0.5)), 0.5, stiff=1.6)   # 鼻
+    cap(hc + face * 2.0 + Vector((-0.9, 0, 1.2)), hc + face * 2.0 + Vector((0.9, 0, 1.2)), 0.55, stiff=1.5)  # 眉弓
+    ball(hc + face * 2.15 + Vector((0, 0, -2.3)), 1.1, stiff=1.7)         # 下巴（張口呼喊）
+    ball(hc + face * 1.2 + Vector((0, 0, -2.9)), 1.2, stiff=1.6)          # 下顎
+    ball(hc - face * 2.0 + Vector((0, 0, 0.6)), 2.3, stiff=1.6)           # 後腦／髮髻
+    ell(hc - face * 2.6 + Vector((-0.8, 0.6, -1.6)), (1.8, 2.2, 2.6), stiff=1.5)   # 垂到頸後的頭髮
     ell(hc - face * 1.0 + Vector((0, 0, 2.2)), (2.4, 2.4, 1.0), stiff=1.4)  # 頭頂頭髮
     for k in range(5):                                                    # 飄起的髮束
         cap(hc - face * 1.6 + Vector((0, 0, 1.0 - k * 0.6)), hc - face * (4.0 + k * 0.6) + Vector((-1.2, 0.8, 0.2 - k * 0.8)), 0.55, stiff=1.4)
@@ -101,8 +104,8 @@ def build_figure(b, mi):
         cap(base, base + d * L, 0.36 if k else 0.42, stiff=1.6)
     cap(palm_c + Vector((0, 0, -0.9)), palm_c + Vector((0.4, -1.6, -1.9)), 0.45, stiff=1.6)   # 拇指
     # ---------------- 腿（左腿前跨、右腿後蹬）：大多藏在裙內，只露出膝蓋起伏與腳
-    cap((2.6, -0.8, Z + 24.0), (3.0, -5.0, Z + 14.0), 2.6)
-    cap((3.0, -5.0, Z + 14.0), (3.1, -6.0, Z + 3.0), 1.8)
+    cap((2.6, -0.8, Z + 24.0), (3.2, -6.4, Z + 14.0), 2.7)
+    cap((3.2, -6.4, Z + 14.0), (3.1, -6.6, Z + 3.0), 1.9)
     cap((3.0, -6.6, Z + 1.0), (3.2, -10.2, Z + 0.7), 1.1)
     cap((-2.6, 1.2, Z + 24.0), (-3.0, 3.4, Z + 13.0), 2.5)
     cap((-3.0, 3.4, Z + 13.0), (-3.3, 5.6, Z + 3.0), 1.7)
@@ -128,7 +131,7 @@ def build_figure(b, mi):
     # 披肩：從右肩垂到右臀側，形成一大片衣褶
     cap((-5.6, 0.8, Z + 40.5), (-7.6, 1.6, Z + 31.0), 2.0, stiff=1.7)
     ell((-7.6, 1.8, Z + 28.5), (2.4, 3.0, 4.5), rot=(0.2, -0.15, 0), stiff=1.6)
-    cap((-7.0, 2.4, Z + 30.0), (-8.4, 5.0, Z + 20.0), 1.5, stiff=1.6)
+    ell((-6.6, 2.0, Z + 25.0), (2.4, 3.6, 6.5), rot=(0.15, -0.1, 0), stiff=1.6)
     cap((5.0, 1.5, Z + 41.0), (2.0, 4.5, Z + 34.0), 1.4, stiff=1.6)
     cap((-4.6, -2.4, Z + 40.6), (3.4, -3.0, Z + 30.5), 1.0, stiff=1.6)     # 胸前斜披衣帶
 
@@ -151,8 +154,9 @@ def sword(b, mi, fist, tip):
     """長劍：握柄＋護手＋菱形斷面的錐形劍身"""
     fist, tip = Vector(fist), Vector(tip)
     d = (tip - fist).normalized()
-    q = d.to_track_quat("Z", "Y")
-    R = q.to_matrix().to_4x4()
+    xw = Vector((0, 1, 0)).cross(d).normalized()     # 劍身寬向：使劍面大致朝前（-Y）
+    yw = d.cross(xw)
+    R = Matrix((xw, yw, d)).transposed().to_4x4()
 
     def place(verts, M):
         bmesh.ops.transform(b.bm, matrix=M, verts=verts)
@@ -186,8 +190,8 @@ def sword(b, mi, fist, tip):
 
 def motherland(path):
     b = Builder("Motherland", seed=5)
-    concrete = b.tex("concrete", "plastered_wall_04", tile=7.0, tint="#cdc8bb", rough=0.85, normal=0.6)
-    steel = b.tex("sword", "plastered_wall_04", tile=4.0, tint="#cbc6ba", rough=0.6, normal=0.3)
+    concrete = b.tex("concrete", "plastered_wall_04", tile=7.0, tint="#bcb7aa", rough=0.85, normal=0.6)
+    steel = b.tex("sword", "plastered_wall_04", tile=4.0, tint="#b8b2a4", rough=0.6, normal=0.3)
     base_c = b.tex("base", "white_sandstone_blocks_02", tile=3.0, tint="#cdc8bc", rough=0.8, normal=0.4)
     path_c = b.tex("path", "gravel_floor", tile=2.5, tint="#a8a296", rough=0.9, normal=0.3)
     grass = b.tex("grass", "grass_ground", tile=6.0, tint="#6b8a3c", gain=0.95, rough=0.95, normal=0.3)
@@ -196,12 +200,12 @@ def motherland(path):
     # ---------------------------------------------------------------- 山崗頂草坪
     b.ground_disc(grass, 200, soil, depth=30, rings=24, seg=96, height_fn=lambda x, y: -0.00042 * (x * x + y * y))
     # 基座：兩層混凝土板
-    b.box_base(path_c, (34.0, 30.0, 0.35), (0, 0.5, -0.1))
-    b.box_base(base_c, (22.0, 17.0, 0.6), (0, 0.5, 0.0))
-    b.box_base(base_c, (19.0, 14.5, BASE_Z - 0.6), (0, 0.5, 0.6))
+    b.box_base(path_c, (40.0, 40.0, 0.35), (0, 2.5, -0.1))
+    b.box_base(base_c, (29.0, 28.0, 0.6), (0, 2.5, 0.0))
+    b.box_base(base_c, (26.0, 25.0, BASE_Z - 0.6), (0, 2.5, 0.6))
     # 通往雕像的步道（前方蜿蜒小徑以直線近似）
     for k in range(1):
-        y = -18.0 - k * 14.0
+        y = -24.0 - k * 14.0
         b.box_base(path_c, (5.0, 14.2, 0.3), (-1.0 - k * 1.2, y, -0.00042 * y * y - 0.2), rot=(0.0, 0, 0.08))
 
     fist = build_figure(b, concrete)
