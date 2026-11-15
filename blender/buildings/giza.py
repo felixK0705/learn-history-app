@@ -30,7 +30,7 @@ from lib import TAU, TEX, Builder
 # 依參考照（All Gizah Pyramids，西南方沙丘上平視東北）以特徵點反推相機位置約為 (-760, -1290, 30)；為看到王后金字塔腳下的沙地，改用略高的 42 m
 CAMERA = ((-458.7, -658.8, 54.2), 334.5, -1.0, 700.0, 78)
 
-GEN = os.path.join(TEX, "_gen", "giza_v1")
+GEN = os.path.join(TEX, "_gen", "giza_v3")
 
 
 # ====================================================================== 程式產生貼圖（numpy）
@@ -153,62 +153,85 @@ def _blocks_band(W, Hh, rng, detail, wmin, wmax, tone_var=0.1):
         dt = yy - 1 + 2.5 * np.sin(xs / w * 4 + nb[0])
         db = (Hh - 1 - yy) + 2.5 * np.sin(xs / w * 3.3 + nb[2])
         cols = (np.arange(x0, x0 + w) + off) % W
-        d = np.minimum(np.minimum(dl, dr), np.minimum(dt, db)) + en[:, cols]
-        prof = np.clip(d / rad, 0, 1)
-        prof = prof * (2 - prof)
+        # 上下（層縫）接縫明顯；左右（豎縫）多半緊密、只在部分石塊間留縫
+        dh = np.minimum(dt, db) + en[:, cols]
+        dv = np.minimum(dl, dr) + en[:, cols] * 0.6
+        ph = np.clip(dh / rad, 0, 1)
+        ph = ph * (2 - ph)
+        tight = rng.random() < 0.6
+        pv = np.clip(dv / (rad * (0.35 if tight else 0.8)), 0, 1)
+        pv = pv * (2 - pv)
         tone = 1.0 + rng.normal(0, tone_var)
         if rng.random() < 0.12:  # 部分石塊較深（剝落、缺損）
             tone *= rng.uniform(0.7, 0.85)
-        val[:, cols] = tone * (0.42 + 0.58 * prof)
-        hgt[:, cols] = prof * (0.9 + 0.2 * rng.random())
+        dark_v = 0.82 if tight else 0.55
+        val[:, cols] = tone * (0.4 + 0.6 * ph) * (dark_v + (1 - dark_v) * pv)
+        hgt[:, cols] = np.minimum(ph, 0.4 + 0.6 * pv) * (0.9 + 0.2 * rng.random())
         x0 += w
     return val, hgt
 
 
-def gen_blocks(rng):
-    """金字塔石材圖集（2048²）：上半 4 條豎面帶（每帶 = 一個幾何石階，內含兩排石塊），下半為階面碎石積沙"""
-    W = 2048
-    img_v = np.ones((W, W))
-    hgt = np.zeros((W, W))
-    det = _rock_detail((W, W))
-    pits = _pnoise((W, W), 3, rng)
-    pits = np.clip(pits - 1.6, 0, None)
-    blot = _pfbm((W, W), 200, rng, 3)
-    for r in range(4):
-        y0 = r * 256
-        # 一帶兩排：上排較矮
-        split = int(rng.uniform(110, 140))
-        for (a, b2) in ((0, split), (split, 256)):
-            v, h = _blocks_band(W, b2 - a, rng, det, 170, 430)
-            img_v[y0 + a : y0 + b2] = v
-            hgt[y0 + a : y0 + b2] = h
-        # 幾何石階上緣（磨圓、積沙較亮）與下緣（接縫陰影）
-        yy = np.arange(256)[:, None]
-        img_v[y0 : y0 + 256] *= 1.0 - 0.38 * np.exp(-((255 - yy) / 16.0))
-        img_v[y0 : y0 + 256] *= 1.0 + 0.08 * np.exp(-(yy / 10.0))
-    top = img_v[:1024] * (0.7 + 0.3 * det[:1024]) * (1 - 0.35 * pits[:1024]) * (1 + 0.06 * blot[:1024])
-    # 階面：沙與碎石
-    N2 = 1024
-    sandv = 1.0 + 0.05 * _pnoise((N2, W), 2, rng)
-    chips = _pfbm((N2, W), 18, rng, 3)
-    chip = np.clip((chips - 0.4) * 2, 0, 1)
-    bot = sandv * (1 - chip) + chip * (0.78 + 0.25 * det[1024:]) * (0.85 + 0.1 * _pnoise((N2, W), 6, rng))
-    gray = np.concatenate([top, bot], 0)
-    base_block = np.array([208, 193, 168], float)
-    base_sand = np.array([232, 204, 156], float)
-    w_sand = np.zeros((W, W))
-    w_sand[1024:] = 1 - chip
-    # 石面帶點淡黃、灰的色斑
-    hue = _pfbm((W, W), 120, rng, 3)
-    colb = base_block[None, None, :] * np.stack([1 + 0.015 * hue, 1 + 0.0 * hue, 1 - 0.02 * hue], -1)
-    col = colb * (1 - w_sand[..., None]) + base_sand[None, None, :] * w_sand[..., None]
-    img = col * gray[..., None]
-    _save(img, "block_diff.jpg")
-    hgt[:1024] += 0.15 * det[:1024] - 0.6 * pits[:1024]
-    hgt[1024:] = chip * 0.8 + 0.1 * _pnoise((N2, W), 3, rng)
+def _load(tex_id, kind, mode="RGB"):
     from PIL import Image
 
-    Image.fromarray(_normal_map(hgt * 6.0, 1.0)).resize((1024, 1024), Image.LANCZOS).save(os.path.join(GEN, "block_nor.jpg"), quality=88)
+    im = Image.open(os.path.join(TEX, tex_id, f"{kind}.jpg")).convert(mode)
+    if im.size != (1024, 1024):
+        im = im.resize((1024, 1024), Image.LANCZOS)
+    return np.asarray(im, dtype=np.float64)
+
+
+def gen_blocks(rng):
+    """金字塔石材圖集（2048²）。
+    上半：4 條豎面帶（每帶 = 一個幾何石階），取自 Poly Haven large_sandstone_blocks_01 的四排風化石塊
+    （照片紋理轉灰階後重新上石灰岩色）；下半：階面碎石積沙（medieval_blocks_02 的碎石 + 沙）"""
+    from PIL import Image
+
+    W = 2048
+    src = _load("large_sandstone_blocks_01", "diff", "L") / 255.0
+    srcn = _load("large_sandstone_blocks_01", "nor")
+    rows = [60, 322, 587, 847, 1084]  # 該貼圖中水平層縫的位置（週期 1024）
+    src2 = np.concatenate([src, src], 0)
+    srcn2 = np.concatenate([srcn, srcn], 0)
+    gray = np.ones((W, W))
+    nor = np.zeros((W, W, 3))
+    for r in range(4):
+        parts, nparts = [], []
+        for rr in (r, (r + 1) % 4):
+            a, b2 = rows[rr], rows[rr + 1]
+            band = Image.fromarray((src2[a:b2] * 255).astype(np.uint8)).resize((1024, 256), Image.LANCZOS)
+            nb = Image.fromarray(srcn2[a:b2].astype(np.uint8)).resize((1024, 256), Image.LANCZOS)
+            parts.append(np.asarray(band, float) / 255.0)
+            nparts.append(np.asarray(nb, float))
+        gray[r * 256 : (r + 1) * 256] = np.concatenate(parts, 1)
+        nor[r * 256 : (r + 1) * 256] = np.concatenate(nparts, 1)
+    top = gray[:1024]
+    # 壓低青苔深斑的對比、保留石面細節
+    m = top.mean()
+    top = m * (top / m) ** 1.0
+    yy = np.arange(256)[:, None]
+    band_shade = (1.0 - 0.42 * np.exp(-((255 - yy) / 16.0))) * (1.0 + 0.06 * np.exp(-(yy / 10.0)))
+    top = top * np.tile(band_shade, (4, 1)) / m
+    # 階面：沙與碎石
+    rub = _load("medieval_blocks_02", "diff", "L") / 255.0
+    rub = np.tile(rub, (1, 2))
+    rubn = np.tile(_load("medieval_blocks_02", "nor"), (1, 2, 1))
+    N2 = 1024
+    chips = _pfbm((N2, W), 30, rng, 3)
+    chip = np.clip((chips - 0.1) * 1.6, 0, 1)
+    sandv = 1.0 + 0.05 * _pnoise((N2, W), 2, rng)
+    bot = sandv * (1 - chip) + chip * (rub / rub.mean()) * 0.95
+    base_block = np.array([212, 196, 170], float)
+    base_sand = np.array([234, 206, 160], float)
+    hue = _pfbm((W, W), 160, rng, 3)
+    colb = base_block[None, None, :] * np.stack([1 + 0.015 * hue, 1 + 0.0 * hue, 1 - 0.02 * hue], -1)
+    img = np.zeros((W, W, 3))
+    img[:1024] = colb[:1024] * top[..., None]
+    w_s = (1 - chip)[..., None]
+    img[1024:] = (colb[1024:] * (1 - w_s) + base_sand[None, None, :] * w_s) * bot[..., None]
+    _save(img, "block_diff.jpg")
+    flat = np.array([128, 128, 255], float)
+    nor[1024:] = rubn * chip[..., None] + flat * (1 - chip[..., None])
+    Image.fromarray(np.clip(nor, 0, 255).astype(np.uint8)).resize((1024, 1024), Image.LANCZOS).save(os.path.join(GEN, "block_nor.jpg"), quality=88)
 
 
 def gen_casing(rng):
@@ -399,7 +422,7 @@ def heaps():
     """參考照右下的採石場廢料堆：(x, y, 半徑, 高)"""
     fx, fy = math.sin(HEAD), math.cos(HEAD)
     rx, ry = math.cos(HEAD), -math.sin(HEAD)
-    return [(CAM_XY[0] + L * rx + F * fx, CAM_XY[1] + L * ry + F * fy, R, h) for L, F, R, h in ((45, 300, 28, 6.0), (95, 345, 24, 5.0), (-25, 265, 14, 2.5))]
+    return [(CAM_XY[0] + L * rx + F * fx, CAM_XY[1] + L * ry + F * fy, R, h) for L, F, R, h in ((50, 310, 40, 7.0), (105, 360, 32, 6.0), (-25, 265, 14, 2.5))]
 
 
 HEAPS = []
@@ -604,7 +627,7 @@ class Terrain:
 
         def col(x, y, z, rut):
             big = fbm(x, y, 0.003, 3, 2.0)
-            v = 0.93 + 0.07 * big + 0.03 * n2(x, y, 0.05, 3.0) + 0.02 * n2(x, y, 0.2, 5.0)
+            v = 0.97 + 0.06 * big + 0.03 * n2(x, y, 0.05, 3.0) + 0.02 * n2(x, y, 0.2, 5.0)
             r, g, b = v, v * (0.985 + 0.015 * big), v * (0.97 + 0.03 * big)
             # 碎石、礫石斑（灰褐）
             hp = max([math.exp(-(((x - hx) / (R * 1.6)) ** 2 + ((y - hy) / (R * 0.8)) ** 2)) for hx, hy, R, _ in HEAPS] + [0.0])
@@ -734,7 +757,7 @@ def step_pyramid(A, rng, cx, cy, z0, bx, by, H, H_now, course, seg, amp, seed, t
         rings.append(ring)
 
     course_tone = [rng.uniform(0.88, 1.04) for _ in range(n)]
-    uoff = [rng.uniform(0, 8) for _ in range(n)]
+    uoff = [rng.uniform(0, 10) for _ in range(n)]
     vr = [[rng.uniform(0.86, 1.06) for _ in range(m)] for _ in range(n)]
     tr, tg, tb = tone
 
@@ -749,7 +772,7 @@ def step_pyramid(A, rng, cx, cy, z0, bx, by, H, H_now, course, seg, amp, seed, t
         if top:  # 階面積沙
             r, g, b = r * 1.1, g * 1.07, b * 1.0
         else:
-            r, g, b = r * 0.9, g * 0.9, b * 0.9
+            r, g, b = r * 0.86, g * 0.86, b * 0.86
         if base_dark and zz < base_dark[0]:
             c = base_dark[1]
             kk = (1 - zz / base_dark[0]) * 0.8
@@ -774,11 +797,11 @@ def step_pyramid(A, rng, cx, cy, z0, bx, by, H, H_now, course, seg, amp, seed, t
         cB = [col(k, q, x, y, z_b, False) for q, (x, y) in enumerate(rings[k])]
         tA = [col(k, q, x, y, z_b, True) for q, (x, y) in enumerate(rings[k])]
         tB = [col(k + 1, q, x, y, z_b, True) for q, (x, y) in enumerate(rings[k + 1])]
-        dd = [0.01 + min(math.hypot(x2 - x1, y2 - y1), 3.8) / 8 for (x1, y1), (x2, y2) in zip(rings[k], rings[k + 1])]
+        dd = [0.01 + min(math.hypot(x2 - x1, y2 - y1), 4.5) / 10 for (x1, y1), (x2, y2) in zip(rings[k], rings[k + 1])]
         for q in range(m):
             r = (q + 1) % m
-            a0 = arc[q] / 8 + uoff[k]
-            a1 = (arc[r] if r else arc_end) / 8 + uoff[k]
+            a0 = arc[q] / 10 + uoff[k]
+            a1 = (arc[r] if r else arc_end) / 10 + uoff[k]
             A.face([RA[q], RA[r], RB[r], RB[q]], MB, [(a0, v_lo), (a1, v_lo), (a1, v_hi), (a0, v_hi)], [cA[q], cA[r], cB[r], cB[q]], True)
             A.face([TA[q], TA[r], TB[r], TB[q]], MB, [(a0, 0.01), (a1, 0.01), (a1, dd[r]), (a0, dd[q])], [tA[q], tA[r], tB[r], tB[q]], True)
     if casing_from is None:
@@ -812,7 +835,7 @@ def step_pyramid(A, rng, cx, cy, z0, bx, by, H, H_now, course, seg, amp, seed, t
 
     def ccol(co):
         x, y, z = co.x - cx, co.y - cy, co.z - z0
-        v = 0.86 + 0.08 * fbm(x + y, z, 0.05, 3, 4)
+        v = 0.74 + 0.08 * fbm(x + y, z, 0.05, 3, 4)
         streak = 0.12 * max(0.0, fbm((x + y) * 0.25, z * 0.02, 0.2, 2, 7))
         low = 0.1 * max(0.0, 1 - (z - casing_from) / 12.0)
         r, g, b = v * (0.96 - streak - low), v * (0.92 - streak - low), v * (0.86 - streak * 1.2 - low * 1.2)
@@ -1058,14 +1081,14 @@ def giza(path):
     # 孟卡拉（底部殘留紅色花崗岩外殼）
     pyr = Acc("GizaMenkaure", [m_block, m_casing])
     accs.append(pyr)
-    step_pyramid(pyr, rng, MK[0], MK[1], T.zMK, MK[2], MK[3], 65.5, 61.0, 1.1, 18, 0.9, 3.0, tone=(0.74, 0.67, 0.6),
+    step_pyramid(pyr, rng, MK[0], MK[1], T.zMK, MK[2], MK[3], 65.5, 61.0, 1.1, 18, 0.9, 3.0, tone=(0.74, 0.68, 0.63),
                  base_dark=(8.0, (0.55, 0.45, 0.4)))
     # 古夫的三座王后金字塔（G1-a/b/c，東側由北而南，已嚴重崩毀）
     for k, (qx, qy, qb, qh, now) in enumerate([(168, -12, 49.5, 30.2, 19.0), (163, -64, 49.0, 30.0, 17.5), (158, -113, 46.3, 29.6, 21.5)]):
         step_pyramid(pyr, rng, qx, qy, trend(qx, qy), qb, qb, qh, now, 1.4, 8, 1.4, 10.0 + k, tone=(0.88, 0.8, 0.7), haze=0.15)
     # 孟卡拉的三座王后金字塔：G3-a 為真金字塔（嚴重崩毀），G3-b / G3-c 為四層階梯
     qx, qy = MKQ[0]
-    step_pyramid(pyr, rng, qx, qy, T.zQ[0], 44.3, 44.3, 28.4, 20.5, 0.9, 10, 1.6, 20.0, tone=(0.82, 0.72, 0.6))
+    step_pyramid(pyr, rng, qx, qy, T.zQ[0], 44.3, 44.3, 28.4, 20.5, 0.9, 10, 1.6, 20.0, tone=(0.88, 0.8, 0.7))
     for k, (qx, qy) in enumerate(MKQ[1:]):
         zt = T.zQ[k + 1]
         tiers = [(33.0, 31.5, 5.2), (25.8, 24.6, 4.6), (19.0, 18.0, 4.2), (12.6, 11.8, 3.6)][: 4 if k else 4]
@@ -1073,7 +1096,7 @@ def giza(path):
             if k == 0 and ti == 3:
                 h *= 0.6  # G3-b 頂層殘缺
             step_pyramid(pyr, rng, qx, qy, zt, w, d, h * 9.0, h, 0.72, 8, 1.3, 30.0 + k * 4 + ti, inset=0.0,
-                         tone=(0.84 - 0.02 * ti, 0.75 - 0.02 * ti, 0.63 - 0.02 * ti))
+                         tone=(0.9 - 0.02 * ti, 0.82 - 0.02 * ti, 0.72 - 0.02 * ti))
             zt += h
 
     # ------------------------------------------------------------ 碎石塊（崩落石塊堆）
@@ -1174,12 +1197,12 @@ def giza(path):
     # 參考照右下：採石場廢料堆（沙丘上覆深色碎石）
     fx, fy = math.sin(HEAD), math.cos(HEAD)
     rx, ry = math.cos(HEAD), -math.sin(HEAD)
-    for (x0, y0, R0, _), cnt in zip(HEAPS, (160, 120, 90)):
+    for (x0, y0, R0, _), cnt in zip(HEAPS, (110, 90, 50)):
         for _ in range(cnt):
             a = rng.uniform(0, TAU)
             r = R0 * math.sqrt(rng.uniform(0, 1))
             x, y = x0 + r * math.cos(a) * 1.6, y0 + r * math.sin(a) * 0.8
-            block(x, y, rng.uniform(0.4, 1.4), (0.72, 0.64, 0.54), sink=0.35)
+            block(x, y, rng.uniform(0.3, 1.0), (0.72, 0.64, 0.54), sink=0.45)
 
     ter.finish()
     for a in accs:
