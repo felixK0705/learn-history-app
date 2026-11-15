@@ -223,6 +223,28 @@ def gen_leaves(kind):
     return out
 
 
+def gen_ground(name, moss, earth, seed=9, earth_frac=0.4):
+    """地面貼圖：苔／草與裸土（斑駁混合），無縫"""
+    out = os.path.join(GEN, f"asia_ground_{name}")
+    if os.path.exists(os.path.join(out, "diff.jpg")):
+        return out
+    N = 1024
+    rng = np.random.default_rng(seed)
+
+    def tcloud(scale, amp):
+        a = _cloud(rng, N, scale, amp)
+        return a
+
+    m = tcloud(256, 1.0) + tcloud(64, 0.5) + tcloud(16, 0.25)
+    thr = np.quantile(m, earth_frac)
+    w = np.clip((m - thr) * 6 + 0.5, 0, 1)  # 1 = 苔
+    fine = tcloud(4, 0.35) + tcloud(2, 0.25)
+    mo, ea = np.array(moss, float), np.array(earth, float)
+    diff = (mo[None, None] * w[..., None] + ea[None, None] * (1 - w[..., None])) * (1 + fine[..., None] + tcloud(32, 0.2)[..., None])
+    _save_maps(out, diff, _height_to_normal(fine * 3 + w * 0.5, 1.0), size=512)
+    return out
+
+
 def gen_canopy(name, color, seed=7):
     """樹冠表面貼圖（無縫）：大量不規則葉叢印記，左上受光、右下落影；color 為平均色"""
     out = os.path.join(GEN, f"asia_canopy_{name}")
@@ -501,10 +523,10 @@ class AsiaBuilder(Builder):
             ex, ey, ez = bx + math.cos(a) * L, by + math.sin(a) * L, bz + rng.uniform(-0.05, 0.12) * h
             self.tube([(bx, by, bz), ((bx + ex) / 2, (by + ey) / 2, (bz + ez) / 2 + 0.2), (ex, ey, ez)], max(0.05, h * 0.012), 0.04, bark, seg=5, cap=False)
             pr = h * spread * rng.uniform(0.13, 0.2) * (1.2 - 0.45 * t)
-            self.crown(ex, ey, ez + pr * 0.15, pr, pr * 0.38, mats, core, min(pr * 0.4, 0.7), cap=90)
+            self.crown(ex, ey, ez + pr * 0.15, pr, pr * 0.38, mats, core, min(pr * 0.3, 0.5), cap=45)
         tx, ty, tz = pts[-1]
         pr = h * spread * 0.17
-        self.crown(tx, ty, tz + pr * 0.2, pr, pr * 0.45, mats, core, min(pr * 0.4, 0.7), cap=90)
+        self.crown(tx, ty, tz + pr * 0.2, pr, pr * 0.45, mats, core, min(pr * 0.3, 0.5), cap=45)
 
     def conifer(self, x, y, z, h, mats, core, bark, r=None):
         """杉／檜：細長圓錐樹冠"""
@@ -515,7 +537,7 @@ class AsiaBuilder(Builder):
         for i in range(n):
             t = i / (n - 1)
             rr = r * (1 - 0.8 * t)
-            self.crown(x + rng.uniform(-0.2, 0.2), y + rng.uniform(-0.2, 0.2), z + h * (0.32 + 0.6 * t), rr, h * 0.14, mats, core, min(1.0, rr * 0.5), cap=110)
+            self.crown(x + rng.uniform(-0.2, 0.2), y + rng.uniform(-0.2, 0.2), z + h * (0.32 + 0.6 * t), rr, h * 0.14, mats, core, min(0.6, rr * 0.4), cap=60)
 
     # ---------------------------------------------------------- 東亞曲面屋頂
     def roof_skirt(self, mi, eave, top, ze, zt, center=(0, 0), U=0.6, P=0.4, K=(16, 12), rows=8,
@@ -651,7 +673,7 @@ def kinkakuji(path):
     V, face = b.V, b.face
 
     # ---------------- 材質
-    grass = b.ptex("moss", "grass_ground", tile=4.0, tint="#6f8a3c", rough=0.95, normal=0.5)
+    grass = b.gtex("moss", gen_ground("kinkaku", (98, 116, 56), (150, 128, 96), earth_frac=0.35), tile=9.0, rough=0.95, normal=0.6)
     soil = b.ptex("soil", "gravel_floor", tile=3.0, tint="#9a8466", rough=0.95, normal=0.6)
     bank = b.color("bank", "#5d5140", rough=0.95)
     water = b.color("water", "#8c8a63", rough=0.07)
@@ -949,7 +971,7 @@ def kinkakuji(path):
     pine_m = (lf_pine, lf_dark)
     # 葦原島與池畔的松
     for (x, y, h) in ((-11.0, -12.5, 5.5), (-7.0, -13.8, 4.2), (-13.5, -14.0, 4.5), (-4.0, -12.8, 3.4), (7.5, -13.0, 3.6),
-                      (-17.0, -9.5, 4.0), (15.0, -21.0, 3.6), (10.5, -3.5, 4.5), (-12.0, 4.0, 5.0), (13.0, 2.0, 6.0)):
+                      (-17.0, -9.5, 4.0), (10.5, -3.5, 4.5), (-12.0, 4.0, 5.0), (13.0, 2.0, 6.0)):
         b.pine(x, y, terrain_h(x, y), h, pine_m, core_p, bark_r, spread=1.6, pads=rng.randint(6, 8))
     # 背後的林（北、東、西）
     occupied = []

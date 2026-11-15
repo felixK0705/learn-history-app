@@ -91,26 +91,20 @@ def moai_statue(b, mi, x, y, H, yaw=0.0, seed=0, lean=0.0, z0=0.0):
 
 def moai(path):
     b = Builder("Moai", seed=5)
-    tuff = b.tex("tuff", "rock_04", tile=2.0, tint="#5f5240", normal=1.7, rough=0.9)
-    scoria = b.tex("scoria", "rock_04", tile=1.2, tint="#6a2a1e", normal=1.8, rough=0.95)
+    tuff = b.tex("tuff", "rock_04", tile=2.0, tint="#4d3f2c", normal=1.8, rough=0.9)
+    scoria = b.tex("scoria", "rock_04", tile=1.2, tint="#4a1d14", normal=1.8, rough=0.95)
     basalt = b.tex("basalt", "gray_rocks", tile=3.0, tint="#403b35", normal=1.4, rough=0.9)
-    pave = b.tex("pave", "gray_rocks", tile=2.0, tint="#46403a", normal=1.2, rough=0.9)
-    grass = b.tex("grass", "grass_ground", tile=3.0, tint="#86744a", normal=0.0, rough=0.95)
+    pave = b.tex("pave", "gray_rocks", tile=2.0, tint="#36322d", normal=1.2, rough=0.9)
+    grass = b.tex("grass", "aerial_grass_rock", tile=13.0, gain=0.72, normal=0.0, rough=0.95)
     cobble = basalt
     r = b.rng
 
     # ---- 地面：微起伏的草地（約 220 × 130 m）
     def gh(x, y):
-        return 0.6 * noise.noise(Vector((x * 0.02, y * 0.02, 0.5))) + (0.012 * (y - 20) if y > 20 else 0.0)
+        return 0.6 * noise.noise(Vector((x * 0.02, y * 0.02, 0.5))) - (0.03 * (y - 25) if y > 25 else 0.0)
 
-    nx, ny = 56, 34
-    X0, X1, Y0, Y1 = -110, 110, -80, 50
-    grid = [[b.bm.verts.new((X0 + (X1 - X0) * i / nx, Y0 + (Y1 - Y0) * j / ny, gh(X0 + (X1 - X0) * i / nx, Y0 + (Y1 - Y0) * j / ny) - 0.4)) for j in range(ny + 1)] for i in range(nx + 1)]
-    for i in range(nx):
-        for j in range(ny):
-            f = b.bm.faces.new([grid[i][j], grid[i + 1][j], grid[i + 1][j + 1], grid[i][j + 1]])
-            f.material_index = grass
-            f.smooth = True
+    soil = b.color("soil", "#4a3f30", rough=0.95)
+    b.ground_disc(grass, 125, soil, depth=2.5, seg=96, rings=30, height_fn=lambda x, y: gh(x, y) - 0.4)
 
     # ---- 石台（ahu）：玄武岩砌石前牆、平台與前方鋪石坡道
     L, D, Hh = 98.0, 6.0, 1.6
@@ -125,9 +119,9 @@ def moai(path):
         x += w
     # 兩翼低矮石台
     for sgn in (-1, 1):
-        b.box_base(basalt, (40, 5.0, 0.9), (sgn * (L / 2 + 20), 0.5, -0.4))
+        b.box_base(basalt, (36, 4.0, 0.75), (sgn * (L / 2 + 18), 0.8, -0.4))
     # 前方鋪石坡道（poro 圓石）
-    RW = 11.0
+    RW = 6.5
     ramp_top = Hh * 0.35
 
     def ramp_z(py):
@@ -141,7 +135,7 @@ def moai(path):
         b.rock(cobble, (s, s * 0.8, s * 0.45), (px, py, ramp_z(py) + 0.04), rot=(0, 0, r.uniform(0, TAU)), rough=0.08, subdiv=1, seed=i, round_=0.8)
     # 草地上散落的黑色熔岩石
     for i in range(320):
-        px, py = r.uniform(-100, 100), r.uniform(-75, -D / 2 - RW - 1)
+        px, py = r.uniform(-100, 100), r.uniform(-70, -D / 2 - RW - 1)
         s = r.uniform(0.4, 1.3)
         b.rock(basalt, (s, s * 0.8, s * 0.3), (px, py, gh(px, py) - 0.4 + s * 0.06), rot=(0, 0, r.uniform(0, TAU)), rough=0.15, subdiv=1, seed=900 + i, round_=0.6)
 

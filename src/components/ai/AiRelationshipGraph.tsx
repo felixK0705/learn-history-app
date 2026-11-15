@@ -1,7 +1,8 @@
-import { useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { AlertTriangle, LoaderCircle, Search, Sparkles, UserRound, X } from "lucide-react";
 import { gsap, prefersReducedMotion, useGSAP, useReveal } from "../../lib/motion";
 import { AiError, postAi } from "../../lib/ai";
+import { findPortrait } from "../../lib/wikiImage";
 
 export type AiRelType = "敵對" | "盟友" | "師徒" | "親屬" | "君臣" | "影響" | "戀人";
 export type AiNode = { id: string; name: string; group: string; val: number; description: string };
@@ -21,6 +22,9 @@ const AI_REL_COLORS: Record<AiRelType, string> = {
 
 const PANEL =
   "border border-white/15 bg-[#071d4f]/78 shadow-[0_24px_60px_-20px_rgba(0,10,40,0.7),inset_0_1px_0_rgba(255,255,255,0.18)] backdrop-blur-xl";
+
+/** 勢力／陣營配色（柔和亮色，與主題協調） */
+const GROUP_COLORS = ["#7dd3fc", "#f9a8d4", "#fde68a", "#86efac", "#c4b5fd", "#fdba74"];
 
 const EXAMPLES = ["諸葛亮", "凱撒", "拿破崙", "武則天", "織田信長", "伊莉莎白一世"];
 
@@ -67,7 +71,7 @@ function path(a: Pt, b: Pt, bend: number) {
   return { d: `M${a.x},${a.y} Q${cx},${cy} ${b.x},${b.y}`, mid: { x: 0.25 * a.x + 0.5 * cx + 0.25 * b.x, y: 0.25 * a.y + 0.5 * cy + 0.25 * b.y } };
 }
 
-const radius = (n: AiNode, isCenter: boolean) => (isCenter ? 46 : 16 + Math.min(10, Math.max(1, n.val)) * 1.4);
+const radius = (n: AiNode, isCenter: boolean) => (isCenter ? 52 : 22 + Math.min(10, Math.max(1, n.val)) * 1.2);
 
 export default function AiRelationshipGraph({ initialQuery = "" }: { initialQuery?: string }) {
   const [query, setQuery] = useState(initialQuery);
@@ -104,6 +108,27 @@ export default function AiRelationshipGraph({ initialQuery = "" }: { initialQuer
     }
   };
 
+  const [portraits, setPortraits] = useState<Record<string, string>>({});
+  useEffect(() => {
+    if (!graph) return;
+    let alive = true;
+    setPortraits({});
+    graph.nodes.forEach((n) =>
+      findPortrait(n.name).then((src) => {
+        if (alive && src) setPortraits((m) => ({ ...m, [n.id]: src }));
+      }),
+    );
+    return () => {
+      alive = false;
+    };
+  }, [graph]);
+  const groupColor = useMemo(() => {
+    const m = new Map<string, string>();
+    (graph?.nodes ?? []).forEach((n) => {
+      if (!m.has(n.group)) m.set(n.group, GROUP_COLORS[m.size % GROUP_COLORS.length]);
+    });
+    return m;
+  }, [graph]);
   const pos = useMemo(() => (graph ? layout(graph) : new Map<string, Pt>()), [graph]);
   const byId = useMemo(() => new Map(graph?.nodes.map((n) => [n.id, n]) ?? []), [graph]);
   const center = graph?.nodes[0];
@@ -166,7 +191,7 @@ export default function AiRelationshipGraph({ initialQuery = "" }: { initialQuer
 
       <div className="flex min-h-0 flex-1 flex-col gap-3 lg:flex-row">
         {/* 圖 */}
-        <div className={`${PANEL} relative min-h-[300px] flex-1 overflow-hidden rounded-[26px]`}>
+        <div className="relative min-h-[300px] flex-1 overflow-hidden">
           {!graph && !loading && !error && (
             <div className="absolute inset-0 grid place-items-center p-6 text-center">
               <div>
@@ -237,12 +262,16 @@ export default function AiRelationshipGraph({ initialQuery = "" }: { initialQuer
                 const { mid } = path(a, b, touchesCenter ? 0 : 0.18);
                 // 與主角的連線：標籤放在靠外側，避開中央大圓
                 const p = touchesCenter ? { x: a.x + (b.x - a.x) * (l.source === center?.id ? 0.6 : 0.4), y: a.y + (b.y - a.y) * (l.source === center?.id ? 0.6 : 0.4) } : mid;
-                const on = !lit || (lit.has(l.source) && lit.has(l.target) && (l.source === key || l.target === key));
-                const w = l.label.length * 13 + 16;
+                const focusEdge = lit && (l.source === key || l.target === key);
+                // 預設只標示與主角的關係；滑過或點選人物時才顯示他的其他關係，避免標籤擠成一團
+                const show = lit ? focusEdge : touchesCenter;
+                if (!show) return null;
+                const w = l.label.length * 12 + 26;
                 return (
-                  <g key={i} data-label transform={`translate(${p.x},${p.y})`} opacity={on ? 1 : 0.15} className="pointer-events-none transition-opacity">
-                    <rect x={-w / 2} y={-11} width={w} height={22} rx={11} fill="#06194a" fillOpacity={0.92} stroke={AI_REL_COLORS[l.type]} strokeOpacity={0.7} />
-                    <text textAnchor="middle" dy={4.5} fontSize={12.5} fontWeight={600} fill="#fff">
+                  <g key={i} data-label transform={`translate(${p.x},${p.y})`} className="pointer-events-none">
+                    <rect x={-w / 2} y={-10.5} width={w} height={21} rx={10.5} fill="#ffffff" fillOpacity={0.95} />
+                    <circle cx={-w / 2 + 10} cy={0} r={3.5} fill={AI_REL_COLORS[l.type]} />
+                    <text x={6} textAnchor="middle" dy={4.2} fontSize={11.5} fontWeight={700} fill="#0b3282">
                       {l.label}
                     </text>
                   </g>
@@ -255,9 +284,6 @@ export default function AiRelationshipGraph({ initialQuery = "" }: { initialQuer
                 const isCenter = i === 0;
                 const r = radius(n, isCenter);
                 const dim = lit && !lit.has(n.id);
-                // 主角姓名寫在圓內（太長則縮小，超過 7 字改寫在下方）
-                const inside = isCenter && n.name.length <= 7;
-                const centerSize = n.name.length <= 3 ? 21 : n.name.length <= 5 ? 16 : 13;
                 return (
                   <g
                     key={n.id}
@@ -269,18 +295,23 @@ export default function AiRelationshipGraph({ initialQuery = "" }: { initialQuer
                     onClick={() => setPicked((v) => (v === n.id ? null : n.id))}
                   >
                     <g data-node>
-                      {(isCenter || picked === n.id) && <circle r={r + 8} fill="none" stroke="#a6e1ff" strokeOpacity={0.55} strokeWidth={2} />}
-                      <circle r={r} fill={isCenter ? "url(#ai-center)" : "#0d43ad"} stroke="#fff" strokeOpacity={isCenter ? 1 : 0.75} strokeWidth={isCenter ? 3 : 2} />
-                      <text textAnchor="middle" dy={inside ? centerSize * 0.36 : 6} fontSize={inside ? centerSize : 15} fontWeight={800} fill={isCenter ? "#062466" : "#fff"}>
-                        {inside ? n.name : n.name.slice(0, 1)}
-                      </text>
-                      {!inside && (
-                        <text textAnchor="middle" y={r + 19} fontSize={isCenter ? 17 : 14.5} fontWeight={700} fill="#fff" stroke="#06194a" strokeWidth={4} paintOrder="stroke">
-                          {n.name}
+                      <clipPath id={`ai-clip-${i}`}>
+                        <circle r={r - 2} />
+                      </clipPath>
+                      {(isCenter || picked === n.id) && <circle r={r + 7} fill="none" stroke="#ffffff" strokeOpacity={0.55} strokeWidth={2} />}
+                      <circle r={r} fill={groupColor.get(n.group) ?? "#7dd3fc"} stroke={groupColor.get(n.group) ?? "#fff"} strokeWidth={isCenter ? 4 : 3} />
+                      {portraits[n.id] ? (
+                        <image href={portraits[n.id]} x={-(r - 2)} y={-(r - 2)} width={(r - 2) * 2} height={(r - 2) * 2} preserveAspectRatio="xMidYMin slice" clipPath={`url(#ai-clip-${i})`} />
+                      ) : (
+                        <text textAnchor="middle" dy={isCenter ? 9 : 6} fontSize={isCenter ? 26 : 16} fontWeight={800} fill="#06194a">
+                          {n.name.slice(0, 1)}
                         </text>
                       )}
+                      <text textAnchor="middle" y={r + 18} fontSize={isCenter ? 18 : 14} fontWeight={700} fill="#fff" stroke="rgba(6,25,74,0.55)" strokeWidth={3} paintOrder="stroke">
+                        {n.name}
+                      </text>
                       {n.description && (
-                        <text textAnchor="middle" y={inside ? r + 20 : r + 36} fontSize={11.5} fill="rgba(255,255,255,0.75)" stroke="#06194a" strokeWidth={3} paintOrder="stroke">
+                        <text textAnchor="middle" y={r + (isCenter ? 36 : 33)} fontSize={11} fill="rgba(255,255,255,0.78)" stroke="rgba(6,25,74,0.5)" strokeWidth={2.5} paintOrder="stroke">
                           {n.description}
                         </text>
                       )}
@@ -292,7 +323,14 @@ export default function AiRelationshipGraph({ initialQuery = "" }: { initialQuer
           )}
 
           {graph && types.length > 0 && (
-            <div className="pointer-events-none absolute bottom-3 left-3 flex max-w-[calc(100%-1.5rem)] flex-wrap gap-x-3 gap-y-1 rounded-2xl bg-[#06194a]/80 px-3 py-2 text-[11.5px] text-white/85">
+            <div className="pointer-events-none absolute bottom-3 left-3 flex max-w-[calc(100%-1.5rem)] flex-wrap items-center gap-x-3 gap-y-1 rounded-2xl bg-[#06194a]/80 px-3 py-2 text-[11.5px] text-white/85">
+              {[...groupColor].map(([g, c]) => (
+                <span key={g} className="flex items-center gap-1.5">
+                  <span className="size-2.5 rounded-full" style={{ background: c }} />
+                  {g}
+                </span>
+              ))}
+              <span className="h-3 w-px bg-white/25" />
               {types.map((t) => (
                 <span key={t} className="flex items-center gap-1.5">
                   <span className="h-[3px] w-4 rounded-full" style={{ background: AI_REL_COLORS[t] }} />
@@ -305,7 +343,10 @@ export default function AiRelationshipGraph({ initialQuery = "" }: { initialQuer
 
         {/* 簡介／人物詳情 */}
         {graph && center && (
-          <aside ref={sideRef} className={`${PANEL} scroll-thin flex shrink-0 flex-col overflow-y-auto rounded-[26px] p-5 max-lg:max-h-[38%] lg:w-[320px]`}>
+          <aside ref={sideRef} className={`${PANEL} scroll-thin flex shrink-0 flex-col self-start overflow-y-auto rounded-[22px] p-5 max-lg:max-h-[38%] lg:max-h-full lg:w-[290px]`}>
+            {portraits[(pickedNode ?? center).id] && (
+              <img src={portraits[(pickedNode ?? center).id]} alt="" className="mb-4 h-36 w-full rounded-2xl object-cover object-top" />
+            )}
             {pickedNode ? (
               <>
                 <div data-reveal className="flex items-start justify-between gap-2">

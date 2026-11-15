@@ -316,7 +316,7 @@ def hagia_sophia(path):
     b.lathe(trim, [(R_DOME + 0.3, Z_DRUM + H_DRUM), (R_DOME + 0.45, Z_DRUM + H_DRUM + 0.35), (R_DOME - 0.2, Z_DRUM + H_DRUM + 0.35)],
             (0, 0, 0), seg=80, smooth=False)
     Z_DOME = Z_DRUM + H_DRUM + 0.35
-    dome(b, lead, R_DOME + 0.2, 55.6 - Z_DOME, (0, 0, Z_DOME), seg=160, ribs=40, rib_amp=0.012, n=12, power=1.0)
+    dome(b, lead, R_DOME + 0.2, 55.6 - Z_DOME, (0, 0, Z_DOME), seg=160, ribs=40, rib_amp=0.007, n=12, power=1.0)
     # 頂飾（金色新月）
     zt = 55.6
     b.lathe(gold, [(0.0, zt - 0.2), (0.6, zt), (0.25, zt + 0.8), (0.55, zt + 1.4), (0.15, zt + 2.0), (0.4, zt + 2.6), (0.0, zt + 3.4)],
