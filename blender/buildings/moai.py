@@ -14,18 +14,18 @@ from lib import TAU, Builder
 from buildings.sphinx import lerp_table, loft
 
 # 目標點、方位角、仰角、距離、焦距（對應參考照：石台東北端前方低角度）
-CAMERA = ((22.0, 0.0, 5.0), 62.0, -2.0, 48.0, 24.0)
+CAMERA = ((27.0, 0.0, 5.5), 64.0, -3.0, 38.0, 24.0)
 if os.environ.get("TL_CAM"):  # 開發用：覆寫預覽相機
     CAMERA = ast.literal_eval(os.environ["TL_CAM"])
 
 # 摩艾外形（以總高 H 正規化）：z, 半寬, 前深, 後深
 PROFILE = [
-    (0.00, 0.270, 0.175, 0.150), (0.25, 0.268, 0.180, 0.145), (0.40, 0.255, 0.185, 0.135),
-    (0.455, 0.225, 0.150, 0.130), (0.475, 0.205, 0.135, 0.130), (0.50, 0.200, 0.205, 0.132),
-    (0.525, 0.200, 0.200, 0.132), (0.545, 0.200, 0.168, 0.132), (0.60, 0.203, 0.158, 0.135),
-    (0.78, 0.210, 0.150, 0.142), (0.815, 0.214, 0.150, 0.143), (0.835, 0.215, 0.198, 0.143),
-    (0.87, 0.212, 0.180, 0.140), (0.93, 0.205, 0.120, 0.132), (0.975, 0.185, 0.065, 0.112),
-    (1.00, 0.140, 0.020, 0.075),
+    (0.00, 0.265, 0.175, 0.150), (0.25, 0.262, 0.180, 0.145), (0.40, 0.250, 0.185, 0.135),
+    (0.455, 0.232, 0.150, 0.130), (0.475, 0.222, 0.135, 0.130), (0.50, 0.220, 0.210, 0.135),
+    (0.525, 0.222, 0.205, 0.137), (0.545, 0.224, 0.172, 0.138), (0.60, 0.228, 0.162, 0.142),
+    (0.78, 0.235, 0.155, 0.150), (0.815, 0.238, 0.155, 0.150), (0.835, 0.240, 0.205, 0.150),
+    (0.87, 0.237, 0.188, 0.147), (0.93, 0.230, 0.125, 0.138), (0.975, 0.208, 0.068, 0.116),
+    (1.00, 0.160, 0.020, 0.078),
 ]
 
 
@@ -91,11 +91,11 @@ def moai_statue(b, mi, x, y, H, yaw=0.0, seed=0, lean=0.0, z0=0.0):
 
 def moai(path):
     b = Builder("Moai", seed=5)
-    tuff = b.tex("tuff", "rock_04", tile=2.0, tint="#75664f", normal=1.7, rough=0.9)
-    scoria = b.tex("scoria", "rock_04", tile=1.2, tint="#7e3a2a", normal=1.8, rough=0.95)
-    basalt = b.tex("basalt", "gray_rocks", tile=3.0, tint="#55504a", normal=1.4, rough=0.9)
-    pave = b.tex("pave", "gray_rocks", tile=2.0, tint="#4d4843", normal=1.2, rough=0.9)
-    grass = b.tex("grass", "grass_ground", tile=5.0, tint="#8f7d4e", normal=0.0, rough=0.95)
+    tuff = b.tex("tuff", "rock_04", tile=2.0, tint="#5f5240", normal=1.7, rough=0.9)
+    scoria = b.tex("scoria", "rock_04", tile=1.2, tint="#6a2a1e", normal=1.8, rough=0.95)
+    basalt = b.tex("basalt", "gray_rocks", tile=3.0, tint="#403b35", normal=1.4, rough=0.9)
+    pave = b.tex("pave", "gray_rocks", tile=2.0, tint="#46403a", normal=1.2, rough=0.9)
+    grass = b.tex("grass", "grass_ground", tile=3.0, tint="#86744a", normal=0.0, rough=0.95)
     cobble = basalt
     r = b.rng
 
@@ -128,7 +128,7 @@ def moai(path):
         b.box_base(basalt, (40, 5.0, 0.9), (sgn * (L / 2 + 20), 0.5, -0.4))
     # 前方鋪石坡道（poro 圓石）
     RW = 11.0
-    ramp_top = Hh * 0.7
+    ramp_top = Hh * 0.35
 
     def ramp_z(py):
         k = (-D / 2 - py) / RW
@@ -155,6 +155,6 @@ def moai(path):
         moai_statue(b, mi, x, 0.3, H, yaw=r.uniform(-0.06, 0.06), seed=k, z0=Hh + 0.3)
         if k == 13:  # 紅色火山渣頂髻
             top = Hh + 0.3 + H
-            b.cyl(scoria, H * 0.2, H * 0.18, H * 0.2, (x, 0.3 + H * 0.01, top - H * 0.035), seg=20, smooth=True)
+            b.rock(scoria, (H * 0.46, H * 0.42, H * 0.24), (x, 0.3 + H * 0.01, top + H * 0.08), rough=0.1, subdiv=3, seed=77, round_=0.55)
 
     b.export(path)

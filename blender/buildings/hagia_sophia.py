@@ -244,6 +244,13 @@ def hagia_sophia(path):
         y1 = s * 22.0
         b.profile_wall(lead, [(y0, 0), (y1, 0), (y1, 3.0)] if s < 0 else [(y1, 0), (y0, 0), (y1, 3.0)], XE - XW,
                        Matrix.Translation(((XW + XE) / 2, 0, H_AISLE + 0.45)) @ Matrix.Rotation(-math.pi / 2, 4, "Z"))
+    # 側廊外牆：壁柱與勒腳
+    for s in (-1, 1):
+        for k in range(9):
+            x = XW + 1.0 + (XE - XW - 2.0) * k / 8
+            b.box_base(plaster_d, (1.6, 0.8, H_AISLE), (x, s * (YS + 0.4), 0))
+        b.box_base(stone, (XE - XW + 1.2, 1.0, 2.2), ((XW + XE) / 2, s * (YS + 0.2), 0))
+        b.box_base(plaster_d, (XE - XW + 0.6, 0.9, 0.6), ((XW + XE) / 2, s * (YS + 0.25), 11.0))
     # 側廊外牆兩層窗
     for s in (-1, 1):
         for z, n, w, h in ((3.5, 14, 2.0, 5.0), (12.5, 14, 2.2, 6.0)):
@@ -309,7 +316,7 @@ def hagia_sophia(path):
     b.lathe(trim, [(R_DOME + 0.3, Z_DRUM + H_DRUM), (R_DOME + 0.45, Z_DRUM + H_DRUM + 0.35), (R_DOME - 0.2, Z_DRUM + H_DRUM + 0.35)],
             (0, 0, 0), seg=80, smooth=False)
     Z_DOME = Z_DRUM + H_DRUM + 0.35
-    dome(b, lead, R_DOME + 0.2, 55.6 - Z_DOME, (0, 0, Z_DOME), seg=96, ribs=40, rib_amp=0.004, n=12, power=1.0)
+    dome(b, lead, R_DOME + 0.2, 55.6 - Z_DOME, (0, 0, Z_DOME), seg=160, ribs=40, rib_amp=0.012, n=12, power=1.0)
     # 頂飾（金色新月）
     zt = 55.6
     b.lathe(gold, [(0.0, zt - 0.2), (0.6, zt), (0.25, zt + 0.8), (0.55, zt + 1.4), (0.15, zt + 2.0), (0.4, zt + 2.6), (0.0, zt + 3.4)],
@@ -354,9 +361,9 @@ def hagia_sophia(path):
     b.box_base(lead, (10.6, 9.6, 0.5), (XW - 4, -YS - 4, 9))
 
     # ---------------------------------------------------------------- 四座宣禮塔
-    minaret(b, 46.0, -39.0, 52.0, 2.0, trim, lead, gold, shaft=brick, balconies=(0.66,), base_h=12.0, flutes=0, seg=14,
+    minaret(b, 46.0, -39.0, 57.0, 2.0, trim, lead, gold, shaft=brick, balconies=(0.66,), base_h=12.0, flutes=0, seg=14,
             bands=1, band_mi=trim)   # 東南：紅磚
-    minaret(b, 47.0, 38.0, 55.0, 1.6, stone, lead, gold, balconies=(0.66,), base_h=8.0, seg=14)   # 東北：細白
+    minaret(b, 47.0, 38.0, 57.0, 1.6, stone, lead, gold, balconies=(0.66,), base_h=8.0, seg=14)   # 東北：細白
     for y in (-41.0, 41.0):      # 西南、西北：錫南設計，兩層陽台
         minaret(b, -46.0, y, 60.0, 2.2, stone, lead, gold, balconies=(0.50, 0.72), base_h=9.0, seg=16)
 
