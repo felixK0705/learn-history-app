@@ -33,21 +33,22 @@ const neighbors = (() => {
 })();
 
 // ---------- 總覽版面（固定座標系 1600 × 900） ----------
-const W = 1600;
-const H = 900;
+const W = 2000;
+const H = 1340;
 
 function medianBorn(gid: string) {
   const ys = figures.filter((f) => f.group === gid).map((f) => f.born).sort((a, b) => a - b);
   return ys[Math.floor(ys.length / 2)] ?? 0;
 }
 const groupOrder = [...groups].sort((a, b) => medianBorn(a.id) - medianBorn(b.id));
-// 兩列蛇形時間排列：上列由左而右（古代→中世）、下列由右而左（近世→現代）
+// 依年代由左至右、由上而下排成網格（每列 COLS 個時代）
+const COLS = 5;
+const ROWS = Math.ceil(groups.length / COLS);
 const groupCenters = new Map<string, Pt>(
   groupOrder.map((g, i) => {
-    const top = i < 5;
-    const col = top ? i : 8 - i;
-    const x = 470 + col * 255 + (top ? 0 : 128);
-    return [g.id, { x, y: top ? 255 : 625 }];
+    const col = i % COLS;
+    const row = Math.floor(i / COLS);
+    return [g.id, { x: (W / COLS) * (col + 0.5), y: (H / ROWS) * (row + 0.42) }];
   }),
 );
 const degree = new Map(figures.map((f) => [f.id, relations.filter((r) => r.source === f.id || r.target === f.id).length]));
@@ -59,44 +60,33 @@ groupOrder.forEach((g) => {
     .filter((f) => f.group === g.id)
     .sort((a, b) => a.born - b.born)
     .forEach((f, k) => {
-      const r = 34 * Math.sqrt(k + 0.4);
+      const r = 30 * Math.sqrt(k + 0.4);
       const a = k * 2.39996;
       overview.set(f.id, { x: c.x + r * Math.cos(a), y: c.y + r * Math.sin(a) });
     });
 });
 
-const ring2Of = new Map<string, Set<string>>();
 
 function egoLayout(center: string): Map<string, Pt> {
   const out = new Map<string, Pt>();
-  const cx = W / 2 - 40;
+  const cx = W / 2 - 120;
   const cy = H / 2;
   out.set(center, { x: cx, y: cy });
-  const ring1 = [...new Set((neighbors.get(center) ?? []).map((n) => n.id))];
-  ring1.forEach((id, i) => {
-    const a = -Math.PI / 2 + (i / ring1.length) * Math.PI * 2;
-    out.set(id, { x: cx + Math.cos(a) * 240, y: cy + Math.sin(a) * 240 });
+  // 只顯示直接相關的人物，圍成一圈；人數多時圈加大，避免重疊
+  const ring = [...new Set((neighbors.get(center) ?? []).map((n) => n.id))];
+  const R = Math.max(300, (ring.length * 95) / (2 * Math.PI));
+  ring.forEach((id, i) => {
+    const a = -Math.PI / 2 + (i / ring.length) * Math.PI * 2;
+    out.set(id, { x: cx + Math.cos(a) * R, y: cy + Math.sin(a) * R });
   });
-  const ring2: { id: string; a: number }[] = [];
-  ring1.forEach((id, i) => {
-    const a0 = -Math.PI / 2 + (i / ring1.length) * Math.PI * 2;
-    (neighbors.get(id) ?? []).forEach((n) => {
-      if (n.id === center || out.has(n.id) || ring2.some((r) => r.id === n.id)) return;
-      ring2.push({ id: n.id, a: a0 });
-    });
-  });
-  ring2Of.set(center, new Set(ring2.map((r) => r.id)));
-  ring2.forEach((r, k) => {
-    const spread = ((k % 5) - 2) * 0.1;
-    out.set(r.id, { x: cx + Math.cos(r.a + spread) * 400, y: cy + Math.sin(r.a + spread) * 380 });
-  });
+  // 其他人移到畫面外（淡出）
   figures.forEach((f) => {
     if (out.has(f.id)) return;
     const p = overview.get(f.id)!;
     const dx = p.x - cx;
     const dy = p.y - cy;
     const d = Math.hypot(dx, dy) || 1;
-    out.set(f.id, { x: cx + (dx / d) * 1150, y: cy + (dy / d) * 750 });
+    out.set(f.id, { x: cx + (dx / d) * 1600, y: cy + (dy / d) * 1100 });
   });
   return out;
 }
@@ -162,7 +152,12 @@ export default function FiguresPage() {
     gsap.to(st, { ...v, duration: 0.9, ease: "power3.inOut", onUpdate: () => setView({ ...st }) });
   }, []);
   useEffect(() => {
-    if (focusId) viewTo({ x: 0, y: 0, k: 1 });
+    if (!focusId) return;
+    // 聚焦時放大到關係圈約佔畫面高度的三分之二，圓心留在右側面板左邊
+    const n = new Set((neighbors.get(focusId) ?? []).map((x) => x.id)).size;
+    const R = Math.max(300, (n * 95) / (2 * Math.PI));
+    const k = Math.min(1.8, (H * 0.36) / R);
+    viewTo({ x: 120 * k - 120, y: 0, k });
   }, [focusId, viewTo]);
   const drag = useRef<{ x: number; y: number; vx: number; vy: number; moved: boolean } | null>(null);
 
@@ -183,7 +178,6 @@ export default function FiguresPage() {
   useReveal(detailRef, [focusId], { stagger: "[data-reveal]", x: 20, y: 0, each: 0.04, duration: 0.55 });
 
   const egoMode = !!focus;
-  const ring2 = focusId ? ring2Of.get(focusId) : undefined;
 
   return (
     <div className="absolute inset-0 overflow-hidden">
@@ -224,32 +218,6 @@ export default function FiguresPage() {
           </radialGradient>
         </defs>
         <g transform={`translate(${W / 2 + view.x} ${H / 2 + view.y}) scale(${view.k}) translate(${-W / 2} ${-H / 2})`}>
-          {/* 時間路徑：依年代串起各星座（蛇形） */}
-          {!egoMode && (
-            <path
-              d={(() => {
-                const pts = groupOrder.map((g) => groupCenters.get(g.id)!);
-                let d = `M${pts[0].x - 140},${pts[0].y}`;
-                pts.forEach((p, i) => {
-                  if (i === 0) {
-                    d += ` L${p.x},${p.y}`;
-                    return;
-                  }
-                  const q = pts[i - 1];
-                  if (q.y !== p.y) d += ` C${q.x + 260},${q.y} ${p.x + 260},${p.y} ${p.x},${p.y}`;
-                  else d += ` L${p.x},${p.y}`;
-                });
-                const last = pts[pts.length - 1];
-                return d + ` L${last.x - 140},${last.y}`;
-              })()}
-              fill="none"
-              stroke="#ffffff"
-              strokeOpacity={0.16}
-              strokeWidth={1.5}
-              strokeDasharray="1 9"
-              strokeLinecap="round"
-            />
-          )}
           {/* 星座名稱與年代（總覽） */}
           {!egoMode &&
             groupOrder.map((g) => {
@@ -270,14 +238,6 @@ export default function FiguresPage() {
               );
             })}
 
-          {/* 聚焦時的同心圓導引 */}
-          {egoMode && (
-            <g>
-              <circle cx={W / 2 - 40} cy={H / 2} r={240} fill="none" stroke="#fff" strokeOpacity={0.14} strokeDasharray="2 7" />
-              <circle cx={W / 2 - 40} cy={H / 2} r={392} fill="none" stroke="#fff" strokeOpacity={0.07} strokeDasharray="2 9" />
-            </g>
-          )}
-
           {/* 關係連線（曲線） */}
           {relations
             .filter((r) => types.has(r.type))
@@ -293,12 +253,12 @@ export default function FiguresPage() {
                     d={d}
                     fill="none"
                     stroke={relationColors[r.type]}
-                    strokeOpacity={on ? 0.95 : key ? (egoMode && ring2 && ((ring2.has(r.source) && lit?.has(r.target)) || (ring2.has(r.target) && lit?.has(r.source))) ? 0.3 : 0.05) : 0.38}
+                    strokeOpacity={on ? 0.95 : key ? 0.05 : 0.38}
                     strokeWidth={on ? 2.6 : 1.3}
                     strokeDasharray={r.type === "影響" ? "4 5" : undefined}
                     strokeLinecap="round"
                   />
-                  {egoMode && on && (
+                  {egoMode && on && hover !== null && (
                     <g transform={`translate(${mid.x} ${mid.y})`}>
                       <rect x={-27} y={-14} width={54} height={28} rx={14} fill="#ffffff" />
                       <circle cx={-13} cy={0} r={4.5} fill={relationColors[r.type]} />
@@ -320,12 +280,12 @@ export default function FiguresPage() {
             const inRing = egoMode && !!lit?.has(f.id);
             const dim = lit && !lit.has(f.id);
             const r = isFocus ? 58 : inRing ? 32 : nodeR(f.id);
-            const showName = isFocus || inRing || f.id === hover || (!!lit && lit.has(f.id)) || !!ring2?.has(f.id) || view.k > 1.4;
+            const showName = isFocus || inRing || f.id === hover || (!!lit && lit.has(f.id)) || view.k > 1.4;
             return (
               <g
                 key={f.id}
                 transform={`translate(${p.x} ${p.y})`}
-                opacity={dim ? (egoMode ? (ring2?.has(f.id) ? 0.55 : 0) : 0.25) : 1}
+                opacity={dim ? (egoMode ? 0 : 0.25) : 1}
                 className="cursor-pointer transition-opacity duration-300"
                 onPointerEnter={() => setHover(f.id)}
                 onPointerLeave={() => setHover(null)}
@@ -413,7 +373,7 @@ export default function FiguresPage() {
                 onClick={() => {
                   select(null);
                   const c = groupCenters.get(g.id)!;
-                  viewTo({ x: (W / 2 - c.x) * 1.9, y: (H / 2 - c.y) * 1.9, k: 1.9 });
+                  viewTo({ x: (W / 2 - c.x) * 2.2, y: (H / 2 - c.y) * 2.2, k: 2.2 });
                 }}
                 className="flex w-full items-center gap-2.5 rounded-xl px-2.5 py-2 text-left text-[13px] transition hover:bg-white/10"
               >
