@@ -96,7 +96,7 @@ def _gen_window():
 
 def _gen_leaves(kind):
     """葉簇卡片貼圖（RGBA PNG）：數根小枝上互生的葉片組成的一叢枝葉，枝葉間有空隙；背後的葉片較暗"""
-    out = os.path.join(GEN, f"himeji_leaf3_{kind}.png")
+    out = os.path.join(GEN, f"himeji_leaf4_{kind}.png")
     if os.path.exists(out):
         return out
     from PIL import Image, ImageDraw
@@ -124,9 +124,9 @@ def _gen_leaves(kind):
                     L = rng.uniform(26, 46)
                     dr.line([(cx, cy), (cx + math.cos(b) * L, cy + math.sin(b) * L)], fill=col, width=3)
     else:
-        pal = {"broad": [(58, 96, 32), (72, 112, 38), (88, 128, 44), (50, 84, 28), (104, 142, 52)],
-               "light": [(104, 146, 48), (122, 162, 56), (140, 176, 66), (90, 130, 42), (156, 186, 74)],
-               "shrub": [(84, 124, 40), (100, 142, 48), (118, 156, 56), (72, 108, 34), (134, 168, 64)]}[kind]
+        pal = {"broad": [(70, 104, 34), (84, 120, 40), (100, 136, 46), (60, 92, 30), (116, 150, 54)],
+               "light": [(124, 160, 50), (142, 176, 58), (160, 190, 68), (108, 144, 44), (176, 200, 78)],
+               "shrub": [(108, 146, 44), (126, 162, 52), (144, 176, 60), (94, 130, 38), (160, 188, 68)]}[kind]
         Lr = (34, 54) if kind != "shrub" else (24, 38)
         n_tw = 9 if kind != "shrub" else 13
         sprays = []
@@ -236,7 +236,7 @@ def _gen_ishigaki():
 
 def _gen_dense_leaves():
     """樹冠核心用的不透明密葉貼圖（可無縫重複、偏暗）"""
-    out = os.path.join(GEN, "himeji_leafdense2.jpg")
+    out = os.path.join(GEN, "himeji_leafdense3.jpg")
     if os.path.exists(out):
         return out
     from PIL import Image, ImageDraw
@@ -245,7 +245,7 @@ def _gen_dense_leaves():
     rng = np.random.default_rng(31)
     im = Image.new("RGB", (S, S), (22, 34, 16))
     dr = ImageDraw.Draw(im)
-    pal = [(40, 64, 24), (52, 80, 30), (64, 94, 34), (36, 56, 22), (76, 106, 40)]
+    pal = [(54, 78, 26), (68, 94, 32), (82, 110, 38), (48, 68, 24), (96, 124, 44)]
     for layer in range(4):
         for _ in range(1500):
             cx, cy = rng.uniform(0, S, 2)
@@ -930,15 +930,16 @@ def himeji(path):
     # 中庭石垣（扇之勾配）＋碎石頂面
     ishigaki_poly(court, 8.0, Z_COURT, batter=0.3, cap=gravel)
     # 上段（天守台）
+    Z_W = Z_UP - 3.0  # 小天守群所在（略低於天守台）
     up = [(-50.0, -13.0), (17.0, -14.0), (19.0, 44.0), (-52.0, 44.0)]
-    ishigaki_poly(up, Z_COURT - 1.0, Z_UP, batter=0.28, p=2.3, cap=gravel)
+    ishigaki_poly(up, Z_COURT - 1.0, Z_W, batter=0.28, p=2.3, cap=gravel)
 
     # ================================================================ 大天守（5 重 6 階）
     W1, D1 = 26.0, 21.0
     lv = [(26.0, 21.0, 4.4, 6, 5), (23.6, 18.6, 4.1, 6, 4), (20.2, 15.4, 3.7, 5, 4), (16.8, 12.4, 3.6, 4, 3), (13.0, 9.6, 3.6, 3, 2)]
     ZK = Z_UP + 0.55  # 天守台石垣頂
     ishigaki_poly([(-W1 / 2 - 0.3, -D1 / 2 - 0.3), (W1 / 2 + 0.3, -D1 / 2 - 0.3), (W1 / 2 + 0.3, D1 / 2 + 0.3), (-W1 / 2 - 0.3, D1 / 2 + 0.3)],
-                  Z_UP - 1.0, ZK, batter=0.05, p=2.0, cap=gravel)
+                  Z_W - 1.0, ZK, batter=0.12, p=2.0, cap=gravel)
     gab = {
         0: [("S", "c", 5.0, 2.5, -6.0), ("S", "c", 5.0, 2.5, 6.0), ("N", "c", 5.0, 2.5, 0.0)],
         1: [("S", "k", 6.6, 1.6, 0.0), ("N", "k", 6.6, 1.6, 0.0), ("E", "b", 13.0, 6.8, 0.0), ("W", "b", 13.0, 6.8, 0.0)],
@@ -959,15 +960,15 @@ def himeji(path):
         0: [("S", "c", 4.4, 2.3, 0.0), ("E", "c", 3.8, 2.0, 0.0), ("W", "c", 3.8, 2.0, 0.0)],
         1: [("S", "k", 3.8, 1.0, 0.0), ("W", "c", 3.4, 1.9, 0.0)],
     }
-    zs = Z_UP + 2.6
+    zs = Z_W + 2.6
     for cx, cy, dz, levels in smalls:
         w, d = levels[0][:2]
         ishigaki_poly([(cx - w / 2 - 0.3, cy - d / 2 - 0.3), (cx + w / 2 + 0.3, cy - d / 2 - 0.3), (cx + w / 2 + 0.3, cy + d / 2 + 0.3),
-                       (cx - w / 2 - 0.3, cy + d / 2 + 0.3)], Z_UP - 1.0, zs + dz, batter=0.12, cap=gravel)
+                       (cx - w / 2 - 0.3, cy + d / 2 + 0.3)], Z_W - 1.0, zs + dz, batter=0.12, cap=gravel)
         tower(cx, cy, zs + dz, levels, ov=1.6, U=0.75, top_U=0.95, shachi=1.1, gables=sgab, win_pair={0}, rise_k=0.6)
-    yagura(-16.0, 26.0, Z_UP, 16.0, 7.0, 3.2, 0.0, h2=2.8, L2=10.0)                       # ハの渡櫓：乾小天守—東小天守
-    yagura(-2.0, 18.5, Z_UP, 6.5, 7.0, 3.2, math.radians(90), h2=2.8, L2=4.5)              # ニの渡櫓：東小天守—大天守
-    yagura(-27.0, 11.0, Z_UP, 5.0, 6.0, 3.0, math.radians(90))                              # ロの渡櫓
+    yagura(-16.0, 26.0, Z_W + 1.0, 16.0, 7.0, 3.2, 0.0, h2=2.8, L2=10.0)                       # ハの渡櫓：乾小天守—東小天守
+    yagura(-2.0, 18.5, Z_W + 1.0, 6.5, 7.0, 3.2, math.radians(90), h2=2.8, L2=4.5)              # ニの渡櫓：東小天守—大天守
+    yagura(-27.0, 11.0, Z_W + 1.0, 5.0, 6.0, 3.0, math.radians(90))                              # ロの渡櫓
 
     # ================================================================ 前景：前方石垣上的櫓群（面向相機）
     rot_f = -beta
@@ -1100,8 +1101,8 @@ def himeji(path):
     for dep, lat, r, top in ((16, -6.2, 2.8, 4.6), (19, -3.0, 2.5, 4.2), (14, -8.8, 2.4, 3.8), (22, -9.0, 2.8, 5.0), (25, -5.0, 2.6, 5.2)):
         x, y, z = at(dep, lat)
         shrub(x, y, z, r, top - z)                                               # 左下前景杜鵑
-    for dep, lat, top, R_, lt in ((50, -15, 18.0, 5.8, True), (56, -9, 16.0, 5.0, True), (46, -21, 17.0, 5.5, False),
-                                 (64, -27, 19.5, 6.0, False), (40, -12, 11.0, 4.4, True), (72, -36, 21.0, 6.5, True)):
+    for dep, lat, top, R_, lt in ((50, -17, 17.5, 4.8, True), (58, -9.5, 10.5, 4.2, True), (46, -21, 17.0, 5.5, False),
+                                 (64, -27, 19.5, 6.0, False), (40, -12, 10.0, 4.0, True), (72, -36, 21.0, 6.5, True)):
         x, y, z = at(dep, lat)
         broadleaf(x, y, z, top - z, R_, light=lt)                                # 左側樹群
     for dep, lat, top, R_, lt in ((85, -4.6, 22.0, 5.8, True), (92, -14, 21.0, 5.5, False), (84, 6.5, 15.0, 4.0, True),
