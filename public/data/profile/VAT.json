@@ -7,10 +7,10 @@
    {
     "name": "天主教",
     "percent": 100,
-    "description": "梵蒂岡的居民幾乎全為神職人員、修會成員、瑞士近衛隊及其家屬，均屬天主教。"
+    "description": "梵蒂岡的位置相傳是使徒彼得殉道與埋葬之處，4 世紀君士坦丁大帝在此興建舊聖伯多祿大殿，教宗從此在羅馬建立權威。756 年起教宗統治義大利中部的教宗國，1870 年義大利王國攻佔羅馬後教宗自稱「梵蒂岡之囚」，直到 1929 年《拉特朗條約》才建立梵蒂岡城國。這個國家的居民幾乎全是神職人員、瑞士近衛隊與教廷人員，國家本身就是天主教會的中樞，因此天主教徒比例為百分之百。"
    }
   ],
-  "background": "梵蒂岡是天主教教宗的駐地，傳統上被視為使徒聖彼得的殉道與埋葬地。1929年教廷與義大利簽訂《拉特朗條約》，成立梵蒂岡城國，以保障教宗的獨立地位。"
+  "background": "梵蒂岡城國是全球天主教會的中心，教宗既是國家元首，也是全球天主教徒的精神領袖。教宗國曾統治義大利中部長達一千多年，1870 年被義大利王國吞併後，教宗與義大利政府對立長達半個世紀。1929 年教宗庇護十一世與墨索里尼政府簽訂《拉特朗條約》，建立面積僅約 0.44 平方公里的梵蒂岡城國。今天梵蒂岡的居民主要是神職人員與工作人員，國籍隨職務而定，並非由出生取得。"
  },
  "language": {
   "official": "梵蒂岡城國的官方語言為義大利語；教廷的正式語言為拉丁語。",
@@ -18,27 +18,27 @@
    {
     "name": "義大利語",
     "percent": 60,
-    "description": "梵蒂岡城國的行政與日常語言。",
+    "description": "梵蒂岡被羅馬城完全包圍，1929 年《拉特朗條約》建國以來，國家的行政、法律與日常事務都以義大利語進行。教廷的官方報紙《羅馬觀察報》以義大利語出版，大多數在梵蒂岡工作的平信徒職員也是義大利人，因此義大利語是最主要的日常語言。",
     "greeting": "Buongiorno",
     "pronunciation": "bwon-JOR-no"
    },
    {
     "name": "德語",
     "percent": 15,
-    "description": "瑞士近衛隊成員多以德語為母語，也是近衛隊的指揮語言。",
+    "description": "德語的地位主要來自瑞士近衛隊：自 1506 年教宗儒略二世招募瑞士傭兵以來，近衛隊一直負責保護教宗，隊員多來自瑞士德語區，指揮語言也是德語。此外教廷中也有不少來自德國、奧地利的神職人員，使德語成為梵蒂岡第二常用的語言。",
     "greeting": "Grüezi",
     "pronunciation": "GRÜ-et-see"
    }
   ],
-  "history": "拉丁語是天主教會的傳統語言，至今仍用於教廷的正式文件。梵蒂岡位於羅馬，日常行政使用義大利語；因教會的國際性，居民與工作人員來自世界各地，也使用法語、英語、西班牙語等多種語言。"
+  "history": "拉丁語自古羅馬時期起就是西方教會的語言，至今仍是教廷正式文件、教宗通諭與法律的官方語言。1962–1965 年第二次梵蒂岡大公會議允許彌撒以各地語言舉行，拉丁語在日常禮儀中的地位隨之下降。梵蒂岡城國的行政語言則是義大利語，瑞士近衛隊使用德語，教廷各部門因服務全球教會，也大量使用英語、法語與西班牙語。"
  },
  "food": {
   "ranking": [
    {
     "name": "培根蛋麵",
     "localName": "Carbonara",
-    "description": "以蛋黃、羅馬羊乳酪、醃豬頰肉與黑胡椒拌成的麵。",
-    "history": "羅馬料理的代表之一，一般認為在二十世紀中期發展成形。梵蒂岡沒有獨立的料理體系，日常飲食與羅馬相同。",
+    "description": "把義大利麵拌入以蛋黃、佩科里諾羊乳酪與黑胡椒調成的醬汁，再加入煎香的醃豬頰肉，口感滑順濃郁。",
+    "history": "培根蛋麵是羅馬料理的代表，但最早的文字記載直到 20 世紀中葉二戰後才出現，相對年輕。一種廣為流傳的說法是 1944 年盟軍解放羅馬後，美軍配給的培根與蛋粉啟發了當地廚師；名稱「carbonara」意為「燒炭工人」，也有人認為與亞平寧山區的燒炭工有關，但兩種說法都沒有定論。梵蒂岡本身沒有獨立的飲食傳統，教廷職員日常吃的就是這類羅馬家常菜。",
     "wiki": "Carbonara",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Espaguetis_carbonara.jpg/960px-Espaguetis_carbonara.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Espaguetis_carbonara.jpg",
@@ -47,8 +47,8 @@
    {
     "name": "起司胡椒麵",
     "localName": "Cacio e pepe",
-    "description": "僅以羅馬羊乳酪與黑胡椒調味的麵。",
-    "history": "源自羅馬周邊牧羊人的簡單料理。",
+    "description": "把義大利麵拌入大量磨碎的佩科里諾羅馬羊乳酪與現磨黑胡椒，利用煮麵水乳化成綿密醬汁，只有三種主要材料。",
+    "history": "「cacio e pepe」意為「乳酪與胡椒」，傳統上與拉齊奧和阿布魯佐山區的牧羊人有關。牧羊人在季節性遷徙放牧時，攜帶耐保存的乾麵、羊乳酪與黑胡椒，就能在野外快速煮出一頓熱食。佩科里諾羅馬羊乳酪的歷史可追溯到古羅馬時期，至今仍是羅馬料理最重要的乳酪之一。",
     "wiki": "Cacio e pepe",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Cacio_e_pepe.jpg/960px-Cacio_e_pepe.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Cacio_e_pepe.jpg",
@@ -57,8 +57,8 @@
    {
     "name": "阿瑪翠斯麵",
     "localName": "Amatriciana",
-    "description": "以番茄、醃豬頰肉與羊乳酪做成的麵醬。",
-    "history": "源自拉齊奧大區的阿馬特里切小鎮，是羅馬經典麵食。",
+    "description": "以醃豬頰肉、番茄、佩科里諾羊乳酪與辣椒調成醬汁，傳統上拌粗吸管麵或長麵，酸香鹹鮮。",
+    "history": "這道麵以拉齊奧山區小鎮阿瑪翠斯命名，該鎮在 1927 年以前屬於阿布魯佐地區。最早的版本是不加番茄的「格里夏麵」，18 世紀後期番茄普及後才加入番茄形成今天的樣貌，隨後經由在羅馬工作的阿瑪翠斯廚師傳入羅馬。2016 年阿瑪翠斯遭遇大地震，世界各地餐廳以販售這道麵為災區募款，使它成為團結與重建的象徵。",
     "wiki": "Amatriciana sauce",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Bucatini_allamatriciana.jpg/960px-Bucatini_allamatriciana.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Bucatini_allamatriciana.jpg",
@@ -67,8 +67,8 @@
    {
     "name": "跳進嘴裡",
     "localName": "Saltimbocca",
-    "description": "小牛肉片疊上生火腿與鼠尾草煎製。",
-    "history": "羅馬經典肉料理，名稱意為「跳進嘴裡」。",
+    "description": "把小牛肉片鋪上生火腿與鼠尾草葉，用牙籤固定後以奶油煎香，再淋上白酒收汁，鹹香多汁。",
+    "history": "「saltimbocca」意為「跳進嘴裡」，形容它美味到讓人忍不住一口接一口。1891 年義大利飲食作家佩萊格里諾·阿圖西在名著《廚房裡的科學與美好飲食藝術》中收錄了羅馬式的做法，使這道菜廣為人知。它是羅馬餐廳的經典主菜，也展現了羅馬料理善用簡單食材與香草的特色。",
     "wiki": "Saltimbocca",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Saltimbocca_01.jpg/960px-Saltimbocca_01.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Saltimbocca_01.jpg",
@@ -77,8 +77,8 @@
    {
     "name": "炸米球",
     "localName": "Supplì",
-    "description": "內含莫札瑞拉起司的炸米球。",
-    "history": "羅馬傳統街頭小吃，咬開時起司會拉絲。",
+    "description": "把以番茄醬汁或肉醬煮過的米飯捏成橢圓形，中心包入一塊莫札瑞拉乳酪，裹上麵包粉油炸，咬開時乳酪會拉絲。",
+    "history": "炸米球的名稱一般認為來自法語「surprise」（驚喜），與 19 世紀初拿破崙軍隊佔領羅馬時期的法國影響有關，指咬開後才看到中間的乳酪。因為拉出的乳酪絲像電話線，羅馬人也稱它為「電話炸米球」。它是羅馬披薩店與小吃店最典型的街頭點心，與西西里的炸飯糰屬於相似但不同的地方傳統。",
     "wiki": "Supplì",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Suppl%C3%AC.jpg/960px-Suppl%C3%AC.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Suppl%C3%AC.jpg",

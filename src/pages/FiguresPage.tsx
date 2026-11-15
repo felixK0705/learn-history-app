@@ -6,6 +6,7 @@ import { countryByIso } from "../data/world";
 import { formatYear } from "../lib/format";
 import { gsap, prefersReducedMotion, useGSAP, useReveal } from "../lib/motion";
 import portraitData from "../data/portraits.json";
+import AiFiguresMode from "../components/ai/AiFiguresMode";
 
 const portraits = portraitData as Record<string, { src: string; page: string; credit?: string }>;
 
@@ -186,6 +187,7 @@ export default function FiguresPage() {
 
   return (
     <div className="absolute inset-0 overflow-hidden">
+      <AiFiguresMode />
       <svg
         ref={svgRef}
         viewBox={`0 0 ${W} ${H}`}

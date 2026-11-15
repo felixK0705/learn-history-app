@@ -1,18 +1,21 @@
 import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import { gsap, prefersReducedMotion, useGSAP } from "./lib/motion";
 import { NavLink, Route, Routes, useLocation } from "react-router-dom";
-import { Globe2, Landmark, Network, Search } from "lucide-react";
+import { BookOpen, Globe2, Landmark, Network, Search } from "lucide-react";
 import CommandPalette from "./components/CommandPalette";
 import Logo from "./components/Logo";
+import GlobalChat from "./components/ai/GlobalChat";
 
 const GlobePage = lazy(() => import("./pages/GlobePage"));
 const FiguresPage = lazy(() => import("./pages/FiguresPage"));
 const BuildingsPage = lazy(() => import("./pages/BuildingsPage"));
+const StoriesPage = lazy(() => import("./pages/StoriesPage"));
 
 const nav = [
   { to: "/", label: "地球", icon: Globe2 },
   { to: "/figures", label: "人物關係", icon: Network },
   { to: "/buildings", label: "建築 3D", icon: Landmark },
+  { to: "/stories", label: "歷史故事", icon: BookOpen },
 ];
 
 function Loading() {
@@ -146,6 +149,7 @@ export default function App() {
                   <Route path="/figures" element={<FiguresPage />} />
                   <Route path="/buildings" element={<BuildingsPage />} />
                   <Route path="/buildings/:id" element={<BuildingsPage />} />
+                  <Route path="/stories" element={<StoriesPage />} />
                   <Route path="*" element={<GlobePage />} />
                 </Routes>
               </Suspense>
@@ -172,6 +176,7 @@ export default function App() {
       </div>
 
       <CommandPalette open={paletteOpen} onClose={() => setPaletteOpen(false)} />
+      <GlobalChat />
     </div>
   );
 }

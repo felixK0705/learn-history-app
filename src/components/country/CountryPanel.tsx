@@ -4,6 +4,7 @@ import { gsap, prefersReducedMotion, useGSAP, useReveal } from "../../lib/motion
 import Flag from "../ui/Flag";
 import { loadHistory, loadProfile, type CountryMeta, type CountryProfile, type HistoryEvent } from "../../data/world";
 import { canSpeak, langCodeFor, speak } from "../../lib/speech";
+import SelectionAsk from "../ai/SelectionAsk";
 
 const tabs = [
   { id: "history", label: "歷史" },
@@ -76,6 +77,7 @@ export default function CountryPanel({ country, onClose }: { country: CountryMet
       className="absolute z-30 flex flex-col overflow-hidden border border-white/15 bg-[#06194a]/88 shadow-[0_30px_70px_-25px_rgba(0,10,40,0.8),inset_0_1px_0_rgba(255,255,255,0.18)] backdrop-blur-2xl max-lg:inset-x-2 max-lg:bottom-2 max-lg:h-[64%] max-lg:rounded-[28px] lg:top-4 lg:right-4 lg:bottom-4 lg:w-[440px] lg:rounded-[32px]"
       aria-label={`${country.zh}的歷史與文化`}
     >
+      <SelectionAsk country={country.zh} />
       <header ref={headerRef} className="shrink-0 px-6 pt-6 pb-4">
         <div className="flex items-start justify-between gap-3">
           <p className="eyebrow pt-1">
