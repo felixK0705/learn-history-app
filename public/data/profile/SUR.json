@@ -7,35 +7,35 @@
    {
     "name": "新教",
     "percent": 24,
-    "description": "包含摩拉維亞弟兄會、五旬節派等。"
+    "description": "蘇利南自 1667 年《布雷達條約》後由荷蘭統治（荷蘭以紐阿姆斯特丹交換此地），荷蘭歸正教會是殖民菁英的教會。1735 年起德國摩拉維亞弟兄會傳教士深入種植園，向非洲奴隸及其後代傳教，因此今天的非裔克里奧人與部分馬龍人多屬摩拉維亞教會等新教派。近年五旬節派也在城市快速擴張。"
    },
    {
     "name": "印度教",
     "percent": 22,
-    "description": "主要為印度裔（興都斯坦人）居民。"
+    "description": "1863 年廢奴（1873 年結束過渡期）後種植園缺乏人手，荷蘭與英國協議從英屬印度招募契約勞工，1873 年第一艘運工船「拉拉魯克號」抵達，至 1916 年約有三萬四千名印度人來到蘇利南。他們多來自比哈爾與北方邦，把印度教帶到此地，後代至今約占人口兩成以上，形成永恆法派與雅利安社等宗教組織。"
    },
    {
     "name": "天主教",
     "percent": 22,
-    "description": "分布於各族群。"
+    "description": "天主教在 19 世紀起由荷蘭的傳教士有系統地傳入，著名的佩爾克·唐德斯神父在麻瘋病院服務直到 1887 年去世，後來被天主教會封為真福。天主教學校與醫療機構吸引了克里奧人、華人與部分原住民改宗，使天主教與新教的比例不相上下。"
    },
    {
     "name": "伊斯蘭教",
     "percent": 14,
-    "description": "主要為爪哇裔與印度裔居民。"
+    "description": "伊斯蘭教主要來自兩批契約勞工：一是英屬印度的印度斯坦穆斯林，二是 1890–1939 年間從荷屬東印度（今印尼）招募的約三萬三千名爪哇人。爪哇穆斯林保留了故鄉朝西禮拜的習慣，與改向東方麥加禮拜的信徒曾形成「西向派」與「東向派」之爭，是蘇利南獨特的宗教現象。"
    },
    {
     "name": "無宗教",
     "percent": 8,
-    "description": "比例較低。"
+    "description": "無宗教者多為首都巴拉馬利波的年輕人與受過高等教育者，受到前殖民母國荷蘭高度世俗化的影響。許多蘇利南家庭有成員移居荷蘭，雙方往來頻繁，使世俗化觀念也傳回蘇利南，但整體比例仍遠低於荷蘭。"
    },
    {
     "name": "其他（溫蒂教等）",
     "percent": 3,
-    "description": "溫蒂教是非裔蘇利南人的傳統宗教。"
+    "description": "溫蒂教是非洲奴隸把西非與中非的神靈信仰、祖先崇拜和占卜儀式帶到蘇利南後形成的宗教，透過附身與舞蹈和神靈溝通。荷蘭殖民政府長期以法律禁止溫蒂儀式，直到 1971 年才廢除禁令，因此許多信徒過去只能秘密進行，至今也常與基督教信仰並存。"
    }
   ],
-  "background": "荷蘭殖民時期引入非洲奴隸種植甘蔗，摩拉維亞弟兄會與天主教向非裔居民傳教。1863年廢奴後，荷蘭自印度與爪哇招募契約勞工，帶來印度教與伊斯蘭教；首都巴拉馬利波的清真寺與猶太會堂比鄰而立，象徵宗教共存。"
+  "background": "蘇利南的宗教版圖幾乎就是一部移民史：荷蘭殖民者帶來新教，非洲奴隸帶來溫蒂教並在 18 世紀起接受摩拉維亞弟兄會傳教。1863 年廢奴後，來自英屬印度的契約勞工帶來印度教與伊斯蘭教，荷屬東印度的爪哇勞工又加入伊斯蘭教，華人移民則帶來佛教與民間信仰。各宗教在小小國土上共存，首都巴拉馬利波的清真寺與猶太會堂比鄰而立，常被視為宗教和諧的象徵。"
  },
  "language": {
   "official": "官方語言為荷蘭語。",
@@ -43,34 +43,34 @@
    {
     "name": "荷蘭語",
     "percent": 47,
-    "description": "官方與教育語言，也是許多家庭的主要語言。",
+    "description": "荷蘭語在 1667 年荷蘭統治起成為行政與教育語言，1975 年獨立後仍保留為唯一官方語言，因為它是各族群共同的學校語言，也便於與荷蘭的大量移民社群往來。2004 年蘇利南加入荷蘭語聯盟，是美洲最大的荷語國家；約半數人在家中說荷語，其餘人則在學校和工作中使用。",
     "greeting": "Hallo",
     "pronunciation": "ha-lo"
    },
    {
     "name": "蘇利南語（Sranan Tongo）",
     "percent": 37,
-    "description": "以英語為基礎的克里奧爾語，是全國通用語。",
+    "description": "蘇利南語（Sranan Tongo）在 17 世紀英國短暫統治期間，由種植園的非洲奴隸以英語為基礎發展而成，荷蘭接管後又吸收了大量荷語與葡萄牙語詞彙。它長期被殖民者視為「低等語言」，但因為能跨越非裔、印度裔、爪哇裔等族群溝通，成為全國最通行的共通語，許多人把它當第二語言使用。",
     "greeting": "Fa waka?",
     "pronunciation": "fa wa-ka"
    },
    {
     "name": "沙納米語（蘇利南印度斯坦語）",
     "percent": 16,
-    "description": "印度裔居民的語言，源自博傑普爾語與阿瓦德語。",
+    "description": "沙納米語源自 1873 年後來到蘇利南的印度契約勞工所說的博傑普爾語與阿瓦德語，在當地融合後形成獨特的「蘇利南印度斯坦語」，也吸收了荷語與蘇利南語詞彙。它主要在印度裔家庭與社區中使用，透過印度教寺廟、寶萊塢電影與廣播維持活力。",
     "greeting": "Ram ram",
     "pronunciation": "ram ram"
    }
   ],
-  "history": "英國曾短暫統治蘇利南，1667年荷蘭以新阿姆斯特丹（紐約）與英國交換取得此地，留下以英語為基礎的蘇利南語。荷蘭語作為殖民與教育語言持續至今；契約勞工帶來沙納米語與爪哇語。"
+  "history": "蘇利南原住民說加勒比語與阿拉瓦克語。17 世紀英國與荷蘭相繼殖民，種植園中的非洲奴隸發展出以英語為基礎的蘇利南語，逃入內陸雨林的馬龍人則形成薩拉馬卡語、恩朱卡語等語言。1873 年起印度與爪哇契約勞工帶來沙納米語與爪哇語，華人移民帶來客家話。荷蘭語作為官方與教育語言，至今與這些語言並存，蘇利南因此是全球語言最多元的小國之一。"
  },
  "food": {
   "ranking": [
    {
     "name": "波姆",
     "localName": "Pom",
-    "description": "以芋頭類塊莖（pomtajer）、雞肉與柑橘汁烘烤的焗烤料理。",
-    "history": "源自當地猶太社群對歐洲馬鈴薯料理的在地化改良，是生日與節慶必備菜。",
+    "description": "將刨碎的塔耶芋（一種天南星科根莖）與醃過的雞肉、洋蔥、柑橘汁層層鋪好後烘烤，表面金黃、口感濕潤綿密。",
+    "history": "波姆一般認為源自 17 世紀來到蘇利南的塞法迪猶太人，他們曾在內陸建立「猶太人草原」種植園社區。傳統猶太菜原本用馬鈴薯製作，但在熱帶難以取得，於是改用當地的塔耶芋，後來非裔克里奧人也加入自己的口味。今天波姆是蘇利南生日派對與節日的必備菜，荷蘭的蘇利南移民社群還把它夾進麵包，成為廣受歡迎的「波姆三明治」。",
     "wiki": "Pom (dish)",
     "image": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Pom_gerecht.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Pom_gerecht.JPG",
@@ -79,8 +79,8 @@
    {
     "name": "羅提",
     "localName": "Roti",
-    "description": "薄軟的麵餅配咖哩雞、馬鈴薯與長豆。",
-    "history": "由印度契約勞工帶入，成為蘇利南人共享的日常料理。",
+    "description": "一張柔軟的印度式麵餅，搭配咖哩雞、馬鈴薯、長豇豆與醃辣椒，用麵餅撕下包裹配料食用。",
+    "history": "羅提由 1873 年後來到蘇利南的印度契約勞工帶入，原本是北印度家常麵餅，在種植園生活中與咖哩一起成為工人的主食。蘇利南版本常在餅中夾入磨碎的黃豌豆，稱為「達爾普里羅提」。隨著 1970 年代大批蘇利南人移居荷蘭，羅提店也開遍阿姆斯特丹與鹿特丹，成為荷蘭人最熟悉的蘇利南食物之一。",
     "wiki": "Roti",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/2020-05-08_19_34_28_Chapati_being_made_in_a_pan_in_the_Franklin_Farm_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg/960px-2020-05-08_19_34_28_Chapati_being_made_in_a_pan_in_the_Franklin_Farm_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:2020-05-08_19_34_28_Chapati_being_made_in_a_pan_in_the_Franklin_Farm_section_of_Oak_Hill,_Fairfax_County,_Virginia.jpg",
@@ -89,8 +89,8 @@
    {
     "name": "花生湯",
     "localName": "Pindasoep",
-    "description": "以花生醬熬成的濃湯，常配麵團子或芭蕉。",
-    "history": "源自非裔蘇利南人的料理，反映西非飲食傳統。",
+    "description": "以花生醬與雞肉、辣椒長時間熬煮的濃稠湯品，口味香濃微辣，常搭配以煮食香蕉搗成的「湯湯」糰子一起吃。",
+    "history": "花生原產南美，16 世紀被葡萄牙人帶到非洲並成為西非主要作物，後來非洲奴隸又把花生燉湯的烹調方式帶回美洲。在蘇利南，它是非裔克里奧人的代表菜，「湯湯」糰子的做法也與西非把澱粉類搗成糰的富富相近。花生湯常在週末或家族聚會時製作，是克里奧飲食文化的重要象徵。",
     "wiki": "Peanut soup",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Fufu.jpg/960px-Fufu.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Fufu.jpg",
@@ -99,8 +99,8 @@
    {
     "name": "爪哇炒麵",
     "localName": "Bami",
-    "description": "以醬油炒製的雞蛋麵，配雞肉與蔬菜。",
-    "history": "爪哇移民帶來的料理，成為蘇利南常見外食。",
+    "description": "以雞蛋麵與雞肉、高麗菜、豆芽、甜醬油大火拌炒的麵食，口味鹹中帶甜，常配辣椒醬、煎蛋或醃黃瓜。",
+    "history": "「巴米」一名源自閩南語「肉麵」（bakmi），由華人移民傳到印尼後在爪哇普及。1890–1939 年間荷蘭從荷屬東印度招募爪哇契約勞工來到蘇利南，把爪哇式炒麵一起帶來；而 1853 年起陸續抵達的華人移民也經營餐館推廣類似麵食。今天在蘇利南的爪哇小吃攤「瓦隆」裡，巴米是最受歡迎的平價餐點。",
     "wiki": "Bami goreng",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Mi_Goreng_GM.jpg/960px-Mi_Goreng_GM.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Mi_Goreng_GM.jpg",
@@ -109,8 +109,8 @@
    {
     "name": "沙奧托湯",
     "localName": "Saoto",
-    "description": "以雞湯、米粉、豆芽、炸馬鈴薯與水煮蛋組成的湯品。",
-    "history": "源自爪哇的蘇托湯（soto），是爪哇裔蘇利南人的代表料理。",
+    "description": "以雞湯為底，加入雞絲、豆芽、水煮蛋與炸馬鈴薯或米飯，再淋上辣椒醬，湯頭清香帶有香茅與大蒜味。",
+    "history": "沙奧托湯源自印尼的「索托湯」，由 1890 年後來到蘇利南的爪哇契約勞工帶入，名稱拼法則依當地荷語習慣改寫。它原是爪哇人的家常湯品，後來在蘇利南各族群間都大受歡迎，常被當作週末早午餐或醒酒湯。荷蘭的蘇利南與爪哇餐館也普遍供應，是蘇利南多元移民飲食的代表之一。",
     "wiki": "Soto (food)",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Soto_Ayam_Savoy_Homann_Hotel.JPG/960px-Soto_Ayam_Savoy_Homann_Hotel.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Soto_Ayam_Savoy_Homann_Hotel.JPG",

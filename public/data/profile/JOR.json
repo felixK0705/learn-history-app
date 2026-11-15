@@ -7,20 +7,20 @@
    {
     "name": "伊斯蘭教（遜尼派）",
     "percent": 95,
-    "description": "國教，哈希姆王室自稱為先知穆罕默德的後裔。"
+    "description": "7世紀阿拉伯征服後，此地居民逐漸改信伊斯蘭教，並以遜尼派為主流。約旦人口中大多數是貝都因部族與1948、1967年戰爭後湧入的巴勒斯坦難民，兩者都以遜尼派為主。哈希姆王室自稱先知後裔，並以溫和伊斯蘭作為國家認同的一部分。"
    },
    {
     "name": "基督教",
     "percent": 3,
-    "description": "古老的基督教社群，以希臘正教為主。"
+    "description": "約旦的基督徒是阿拉伯世界最古老的基督教社群之一，可追溯到伊斯蘭出現之前，以希臘正教為主，集中在馬代巴、薩勒特、富海斯與安曼。由於移民西方與生育率較低，比例從20世紀初約一成降到現在的約3%，但他們在國會有保障席次並在商業與教育上有影響力。"
    },
    {
     "name": "其他",
     "percent": 1,
-    "description": "包括什葉派、德魯茲派等。"
+    "description": "包括少數什葉派、德魯茲人，以及19世紀末自高加索逃離俄羅斯帝國的切爾克斯人與車臣人中的部分群體（他們大多仍是遜尼派），還有隨難民與外籍勞工而來的其他信仰。"
    }
   ],
-  "background": "約旦地區在一世紀即有基督教社群，七世紀阿拉伯穆斯林征服後伊斯蘭教逐漸成為多數。約旦的阿拉伯基督徒是世界上最古老的基督教社群之一，至今在社會中仍有重要地位。"
+  "background": "約旦河是《聖經》中耶穌受洗之處，約旦境內有尼波山、馬代巴等早期基督教遺址，基督教在1–4世紀已在此傳播。7世紀阿拉伯穆斯林征服後，伊斯蘭教逐漸成為多數，16世紀起鄂圖曼帝國統治此地。1921年英國扶植的哈希姆家族建立外約旦酋長國，1946年獨立；王室自稱是先知穆罕默德的後裔，統治正當性與伊斯蘭密切相關。約旦憲法以伊斯蘭教為國教，但保障基督教社群的禮拜自由並在國會保留席次。"
  },
  "language": {
   "official": "阿拉伯語是官方語言。",
@@ -28,27 +28,27 @@
    {
     "name": "阿拉伯語（約旦方言）",
     "percent": 97,
-    "description": "屬黎凡特阿拉伯語，英語在教育與商業中也十分普遍。",
+    "description": "阿拉伯語自7世紀伊斯蘭征服後成為此地居民的語言，憲法定為官方語言。約旦方言屬黎凡特阿拉伯語，因大量巴勒斯坦難民移入，安曼等城市的口音與巴勒斯坦方言非常接近，而鄉村與貝都因部族則說較傳統的方言。",
     "greeting": "مرحبا",
     "pronunciation": "MAR-ha-ba"
    },
    {
     "name": "切爾克斯語（阿迪格語）",
     "percent": 1,
-    "description": "十九世紀自高加索遷入的切爾克斯人後代使用。",
+    "description": "1860年代起，被俄羅斯帝國征服高加索而被迫遷離的切爾克斯人，在鄂圖曼帝國安置下定居安曼一帶，事實上他們是現代安曼城市的早期建立者之一。他們的阿迪格語因與阿拉伯語同化而逐漸衰退，但切爾克斯人至今仍擔任王室衛隊並在國會有保障席次。",
     "greeting": "Уимафэ шӀу",
     "pronunciation": "wee-ma-FEH shu"
    }
   ],
-  "history": "古代約旦地區曾使用納巴泰語等亞蘭語系語言，伊斯蘭化後阿拉伯語成為主流。英國託管時期英語普及，十九世紀鄂圖曼帝國安置的切爾克斯與車臣移民保留了自己的語言。"
+  "history": "約旦地區古代曾使用納巴泰語（佩特拉的建造者）、亞蘭語與希臘語，7世紀伊斯蘭征服後阿拉伯語成為主要語言。約旦方言屬黎凡特阿拉伯語，城市方言與巴勒斯坦方言相近，貝都因部族則保留較保守的方言。正式場合與書寫使用現代標準阿拉伯語。英國託管時代（1921–1946年）留下的英語影響深遠，今天英語在教育與商業中普遍使用。"
  },
  "food": {
   "ranking": [
    {
     "name": "曼薩夫",
     "localName": "منسف (Mansaf)",
-    "description": "以發酵乾優格（傑米德）醬燉煮羊肉，鋪在米飯與薄餅上。",
-    "history": "約旦國菜，象徵貝都因人的好客，2022年列入聯合國教科文組織非物質文化遺產。",
+    "description": "把羊肉放在發酵乾酪（jameed）熬成的酸鹹醬汁中燉煮，鋪在薄餅與米飯上，撒杏仁與松子，傳統以右手捏著吃。",
+    "history": "Mansaf 源於約旦貝都因部族的游牧飲食：羊是主要財產，jameed 則是把羊奶發酵曬乾以便在沙漠中保存。20世紀初米飯取代過去的碎小麥，成為現今的樣貌。它被視為約旦國菜，在婚禮、喪禮、節日與部族和解儀式中都會出現，與主人一同圍著大盤吃代表慷慨與信任。",
     "wiki": "Mansaf",
     "image": "https://upload.wikimedia.org/wikipedia/commons/8/86/Mansaf%2C_the_traditional_dish_of_Jordan.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Mansaf,_the_traditional_dish_of_Jordan.jpg",
@@ -57,8 +57,8 @@
    {
     "name": "馬克盧巴",
     "localName": "مقلوبة (Maqluba)",
-    "description": "將肉、米飯與炸蔬菜燜煮後整鍋倒扣上桌。",
-    "history": "名稱意為「翻轉」，是黎凡特地區的家庭料理。",
+    "description": "把肉、炸茄子或花椰菜等蔬菜與米飯層層放入鍋中煮熟，上桌時整鍋倒扣在大盤上。",
+    "history": "Maqluba 在阿拉伯語意為「倒過來的」，名稱就來自上桌時倒扣的動作。有文獻將類似料理追溯至13世紀巴格達的食譜書，但現代版本主要流行於巴勒斯坦與約旦。在約旦，它與大量巴勒斯坦移民的飲食文化密切相關，常在週五家庭聚餐時製作，倒扣時全家人一起鼓掌是常見的歡樂場面。",
     "wiki": "Maqluba",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Makluba.JPG/960px-Makluba.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Makluba.JPG",
@@ -67,8 +67,8 @@
    {
     "name": "穆薩汗",
     "localName": "مسخن (Musakhan)",
-    "description": "在塔崩麵包上鋪洋蔥、鹽膚木與烤雞。",
-    "history": "源自巴勒斯坦的料理，在約旦也非常普遍。",
+    "description": "把烤雞放在塔布恩烤餅上，鋪滿以鹽膚木與橄欖油炒過的大量洋蔥，再撒松子。",
+    "history": "Musakhan 源自巴勒斯坦北部的農村，傳統上在每年秋天橄欖收成、榨出第一批新油時製作，用來慶祝豐收並試新油的味道。1948年與1967年戰爭後大批巴勒斯坦人移居約旦，把這道菜帶入約旦日常飲食中。它被許多人視為巴勒斯坦國菜，在約旦也極為普遍。",
     "wiki": "Musakhan",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Mushakhan_Dish.jpg/960px-Mushakhan_Dish.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Mushakhan_Dish.jpg",
@@ -77,8 +77,8 @@
    {
     "name": "法拉費",
     "localName": "فلافل (Falafel)",
-    "description": "以鷹嘴豆泥製成的炸豆丸子，常包在皮塔餅中。",
-    "history": "黎凡特地區最常見的街頭小吃。",
+    "description": "以鷹嘴豆磨碎加入香菜、巴西里與香料捏成小球油炸，夾在麵餅中配芝麻醬與醃菜。",
+    "history": "Falafel 一般認為起源於埃及（當地多用蠶豆），後來傳遍黎凡特地區改用鷹嘴豆。在約旦它是最常見的平民早餐與宵夜，安曼市中心的老牌小吃店 Hashem（創立於1950年代）連王室成員都曾光顧。便宜、素食又飽足，使它成為各階層都吃的國民食物。",
     "wiki": "Falafel",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Falafels_2.jpg/960px-Falafels_2.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Falafels_2.jpg",
@@ -87,8 +87,8 @@
    {
     "name": "庫納法",
     "localName": "كنافة (Knafeh)",
-    "description": "以細麵絲或粗粒麥粉包裹起司，烘烤後淋糖漿。",
-    "history": "黎凡特地區經典甜點，常在齋戒月享用。",
+    "description": "以細麵絲或粗粒小麥麵團包覆有彈性的白乳酪，烤至金黃後淋上糖漿，撒開心果碎。",
+    "history": "Knafeh 的起源眾說紛紜，有說法認為源自中世紀法蒂瑪或馬木路克時期的埃及與黎凡特，巴勒斯坦的納布盧斯（Nablus）以乳酪 knafeh 最為有名。巴勒斯坦移民把它帶到約旦，在安曼的知名甜點店前常大排長龍。它在齋戒月夜間開齋後特別受歡迎，也是婚禮與慶祝考試合格的甜點。",
     "wiki": "Knafeh",
     "image": "https://upload.wikimedia.org/wikipedia/commons/c/c8/K%C3%BCnefe.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:K%C3%BCnefe.jpg",

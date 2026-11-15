@@ -7,25 +7,25 @@
    {
     "name": "天主教",
     "percent": 74,
-    "description": "歷史上的主要宗教，梵蒂岡位於羅馬，影響深遠。"
+    "description": "羅馬是天主教的中心，教廷位於羅馬城內的梵蒂岡，義大利文化、節慶與城鎮生活都深受天主教影響。1929年《拉特朗條約》確立天主教為國教，學校設有天主教宗教課，雖然1984年取消國教地位，大多數義大利人仍受洗為天主教徒，但每週望彌撒的人已降到約兩成以下。"
    },
    {
     "name": "無宗教",
     "percent": 20,
-    "description": "近年比例上升，北部較明顯。"
+    "description": "二戰後經濟奇蹟帶來都市化與教育普及，1970年代離婚與墮胎合法化公投（1974、1981年）都顯示社會價值觀與教會漸行漸遠。近年無宗教者增加最快的是北部大城市與年輕世代，教會性侵醜聞也加速了脫離教會的趨勢。"
    },
    {
     "name": "伊斯蘭教",
     "percent": 3,
-    "description": "主要來自北非與南亞移民。"
+    "description": "義大利的穆斯林幾乎都來自近數十年的移民，1980年代起摩洛哥、阿爾巴尼亞、突尼西亞、埃及、孟加拉與巴基斯坦人陸續到義大利工作。他們多集中在北部工業城市如米蘭、杜林與波隆那，但伊斯蘭教尚未與政府簽訂正式協議，正式清真寺數量很少。"
    },
    {
     "name": "其他基督教（東正教、新教等）",
     "percent": 2,
-    "description": "包含羅馬尼亞等東歐移民的東正教與瓦勒度派等。"
+    "description": "東正教信徒多來自2000年代後移入的羅馬尼亞、烏克蘭與摩爾多瓦移民，其中羅馬尼亞人是義大利最大的外國人社群。新教則有歷史悠久的瓦勒度派——12世紀興起的改革運動，長期在皮埃蒙特山谷遭受迫害，1848年才獲得公民權利——以及近代傳入的五旬節派。"
    }
   ],
-  "background": "羅馬帝國於4世紀將基督教定為國教，羅馬主教（教宗）成為西方教會領袖。教宗國曾統治義大利中部直到1870年，1929年《拉特蘭條約》建立梵蒂岡城國。近數十年社會世俗化，移民帶入伊斯蘭教與東正教。"
+  "background": "基督教在1世紀傳入羅馬，經歷迫害後，313年君士坦丁大帝頒布《米蘭敕令》給予合法地位，380年成為羅馬帝國國教。羅馬主教發展為教宗，中世紀時教宗國統治義大利中部上千年。1870年義大利王國攻佔羅馬、終結教宗國，政教關係緊張，直到1929年墨索里尼與教廷簽訂《拉特朗條約》，承認梵蒂岡城國並以天主教為國教。1984年新協約取消國教地位，近數十年世俗化與移民使宗教組成更為多元。"
  },
  "language": {
   "official": "官方語言為義大利語，部分地區另有德語、法語、斯洛維尼亞語等官方語言。",
@@ -33,34 +33,34 @@
    {
     "name": "義大利語",
     "percent": 93,
-    "description": "源自托斯卡尼方言，全國通用。",
+    "description": "義大利語以14世紀但丁使用的佛羅倫斯托斯卡納方言為基礎，1861年統一後政府以它作為學校、軍隊與行政的語言。1954年開播的國營電視台RAI讓全國人每天聽到同一種標準語，使義大利語成為幾乎所有人的共同語言，不過許多人仍同時使用拿坡里語、西西里語等地方語言。",
     "greeting": "Ciao / Buongiorno",
     "pronunciation": "chow / bwon-jor-no"
    },
    {
     "name": "德語",
     "percent": 1,
-    "description": "北部南提洛（上阿迪傑）的主要語言。",
+    "description": "德語集中在北部的南提洛爾（上阿迪傑），該地原屬奧匈帝國，1919年第一次世界大戰後割讓給義大利。墨索里尼時期曾強制推行義大利化，1972年第二次自治條例後德語與義大利語在當地享有同等官方地位，學校也分語言教學。",
     "greeting": "Grüß Gott",
     "pronunciation": "grüs got"
    },
    {
     "name": "羅馬尼亞語",
     "percent": 1,
-    "description": "最大移民群體羅馬尼亞人使用。",
+    "description": "2007年羅馬尼亞加入歐盟後，大批羅馬尼亞人到義大利從事建築、看護與農業工作，羅馬尼亞人成為義大利最大的外國人社群。羅馬尼亞語同屬拉丁語系，與義大利語相近，移民學習義大利語相對容易。",
     "greeting": "Bună ziua",
     "pronunciation": "bu-nuh zi-wa"
    }
   ],
-  "history": "拉丁語在羅馬帝國崩潰後分化為各地方言。14世紀但丁、佩脫拉克、薄伽丘以托斯卡尼方言創作，奠定標準義大利語的基礎。1861年統一時只有少數人說標準義大利語，20世紀透過教育與電視才普及全國，方言至今仍廣泛存在。"
+  "history": "義大利語源自拉丁語，羅馬帝國崩潰後各地發展出差異很大的方言。14世紀但丁以托斯卡納方言寫成《神曲》，佩脫拉克與薄伽丘也以此創作，托斯卡納語因此成為文學語言的標準。1861年義大利統一時，能說標準義大利語的人據估計僅約2.5%到10%，多數人說各地方言。統一後的義務教育、二戰後的國內移民，以及1950年代起的電視廣播，使標準義大利語普及到全國，但方言至今仍在家庭中使用。"
  },
  "food": {
   "ranking": [
    {
     "name": "拿坡里披薩",
     "localName": "Pizza napoletana",
-    "description": "薄餅皮鋪上番茄、莫札瑞拉起司與羅勒，以柴窯高溫烤製。",
-    "history": "18–19世紀在拿坡里發展成形，「拿坡里披薩師傅的技藝」於2017年列入聯合國教科文組織非物質文化遺產。",
+    "description": "以手揉成的薄餅皮，在攝氏約450度的柴窯中烤60–90秒，餅緣膨脹、中央柔軟，經典口味為瑪格麗特。",
+    "history": "在麵餅上加料的食物自古就有，但番茄要到16世紀才從美洲傳入，18世紀拿坡里的窮人開始在麵餅上放番茄販售，形成現代披薩。傳說1889年廚師拉斐爾·埃斯波西托為來訪的瑪格麗特王后製作了紅（番茄）、白（莫札瑞拉起司）、綠（羅勒）三色、象徵義大利國旗的披薩，命名為「瑪格麗特」（此故事的真實性有爭議）。19世紀末至20世紀初，義大利移民把披薩帶到美國，二戰後風靡全球；2017年拿坡里披薩製作技藝被列入聯合國教科文組織非物質文化遺產。",
     "wiki": "Neapolitan pizza",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Neapolitan_pizza_at_Trappica_%2848701940197%29.jpg/960px-Neapolitan_pizza_at_Trappica_%2848701940197%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Neapolitan_pizza_at_Trappica_(48701940197).jpg",
@@ -69,8 +69,8 @@
    {
     "name": "培根蛋麵",
     "localName": "Spaghetti alla carbonara",
-    "description": "義大利麵拌入蛋黃、佩科里諾起司、醃豬頰肉與黑胡椒。",
-    "history": "羅馬代表性料理，一般認為於二戰後期至戰後才出現。",
+    "description": "以義大利麵拌入蛋黃、佩科里諾羊奶起司、醃豬頰肉（guanciale）與黑胡椒，不加鮮奶油。",
+    "history": "Carbonara 是羅馬菜，最早的文獻出現在1950年代初，因此歷史並不悠久。一說是二戰結束時駐義美軍帶來雞蛋粉與培根，羅馬廚師以此做出這道麵；另一說是源自亞平寧山區燒炭工人（carbonari）的料理，名稱意為「燒炭工式」。它與 cacio e pepe、amatriciana 並列為羅馬經典麵食，義大利人對「不能加鮮奶油」十分堅持。",
     "wiki": "Carbonara",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Espaguetis_carbonara.jpg/960px-Espaguetis_carbonara.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Espaguetis_carbonara.jpg",
@@ -79,8 +79,8 @@
    {
     "name": "千層麵",
     "localName": "Lasagne",
-    "description": "多層麵皮夾肉醬、白醬與起司烘烤。",
-    "history": "源自艾米利亞－羅馬涅地區（波隆那）的傳統料理。",
+    "description": "以寬片麵皮層層疊上肉醬（ragù）、白醬與起司焗烤而成，以艾米利亞-羅馬涅地區的波隆那式最有名。",
+    "history": "Lasagne 一名可追溯到古希臘的 laganon 與拉丁語的 lasanum，中世紀14世紀的拿坡里食譜已記載以麵皮與起司分層的料理。番茄傳入後，南部發展出番茄醬汁版本，北部波隆那則以肉醬與白醬層疊為代表。它在義大利常是週日家庭午餐與狂歡節的節慶菜，需要長時間準備。",
     "wiki": "Lasagna",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Lasagne_-_stonesoup.jpg/960px-Lasagne_-_stonesoup.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Lasagne_-_stonesoup.jpg",
@@ -89,8 +89,8 @@
    {
     "name": "燉飯",
     "localName": "Risotto",
-    "description": "以短粒米慢慢加入高湯攪拌熬煮，成品濃稠滑順。",
-    "history": "源自北部倫巴底與皮埃蒙特的稻作地區，米蘭番紅花燉飯最為著名。",
+    "description": "用高澱粉的短粒米（如阿爾博里奧、卡納羅利）以高湯慢慢拌煮，最後拌入奶油與帕馬森起司，呈綿密濃稠狀。",
+    "history": "稻米可能在中世紀經由阿拉伯人傳入西西里與西班牙，15世紀起義大利北部波河平原開始大規模種稻，倫巴底與皮埃蒙特至今是歐洲最大的稻米產區。燉飯因此成為北義特色菜，與南義以麵食為主形成對比。最有名的米蘭番紅花燉飯，傳說源於16世紀米蘭大教堂玻璃工匠以番紅花染色的故事。",
     "wiki": "Risotto",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Risotto_with_speck_and_goat_cheese_%286101067436%29.jpg/960px-Risotto_with_speck_and_goat_cheese_%286101067436%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Risotto_with_speck_and_goat_cheese_(6101067436).jpg",
@@ -99,8 +99,8 @@
    {
     "name": "提拉米蘇",
     "localName": "Tiramisù",
-    "description": "以浸過咖啡的手指餅乾與馬斯卡彭起司層疊，撒可可粉。",
-    "history": "一般認為1960至70年代於威尼托地區誕生，名稱意為「帶我走／提振我」。",
+    "description": "以手指餅乾浸泡濃縮咖啡，層層疊上馬斯卡彭起司、蛋黃與糖打成的奶醬，表面撒可可粉。",
+    "history": "提拉米蘇是很年輕的甜點，一般認為1960–70年代誕生於義大利東北部威尼托大區的特雷維索，當地的 Le Beccherie 餐廳常被認為是發源地，但弗留利地區也有競爭說法。名稱在威尼斯方言中意為「提振我」，指咖啡與糖帶來的精神。1980年代它傳遍全球，成為最受歡迎的義大利甜點之一。",
     "wiki": "Tiramisu",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Tiramisu_-_Raffaele_Diomede.jpg/960px-Tiramisu_-_Raffaele_Diomede.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Tiramisu_-_Raffaele_Diomede.jpg",

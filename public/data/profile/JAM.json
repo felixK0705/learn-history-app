@@ -7,25 +7,25 @@
    {
     "name": "基督新教",
     "percent": 64,
-    "description": "包括復臨安息日會、五旬節派、浸信會等，教會數量居世界前列。"
+    "description": "1655年英國統治後，聖公會成為國教，18世紀末起浸信會、衛理公會等傳教士深入奴隸社群，傳道與爭取廢奴結合，基督教因此在黑人間普及。20世紀美國傳入的五旬節派、上帝會與基督復臨安息日會快速成長，今天這些教會人數已超過聖公會。"
    },
    {
     "name": "無宗教",
     "percent": 21,
-    "description": "未認同任何宗教的人口。"
+    "description": "牙買加無宗教者比例近年上升，部分原因是都市化、年輕人受網路與西方文化影響，以及對教會權威的質疑。不過許多自稱無宗教的人仍相信上帝或參與民間信仰，與歐洲式的世俗化並不完全相同。"
    },
    {
     "name": "天主教",
     "percent": 2,
-    "description": "規模較小的天主教社群。"
+    "description": "1494–1655年西班牙統治期間天主教曾是官方宗教，但英國接管後天主教受到壓制。19世紀後期耶穌會等修會重返，主要在教育上發揮影響力，信徒包括部分黎巴嫩、華人與印度裔社群，但整體僅是少數。"
    },
    {
     "name": "拉斯塔法里教",
     "percent": 1,
-    "description": "1930年代起源於牙買加的宗教運動。"
+    "description": "拉斯塔法里教於1930年代在牙買加興起，受馬科斯·加維「回歸非洲」思想影響，信徒視1930年加冕的衣索比亞皇帝海爾·塞拉西一世為救世主。它反抗殖民與種族壓迫，因1970年代雷鬼歌手巴布·馬利而聞名世界，但真正的信徒在人口中只是少數，早期還受到政府打壓。"
    }
   ],
-  "background": "英國殖民時期聖公會為主流，十八至十九世紀浸信會與衛理宗傳教士在被奴役的非洲人中傳教，並參與廢奴運動。二十世紀後五旬節派與復臨安息日會快速成長，而拉斯塔法里教則在1930年代從反殖民思想中誕生。"
+  "background": "原住民泰諾人的信仰在1494年哥倫布抵達與西班牙殖民後隨人口滅絕而消失，西班牙帶來天主教。1655年英國奪取牙買加，聖公會成為官方教會，但它主要服務白人種植園主。18–19世紀摩拉維亞弟兄會、浸信會與衛理公會傳教士向被奴役的非洲人傳教，黑人浸信會牧師山姆·夏普領導的1831年起義更加速了1834年廢奴。非洲傳統信仰與基督教融合出 Revival 等宗教，1930年代又興起拉斯塔法里教。今天牙買加以新教為主，是全球人均教堂密度最高的國家之一。"
  },
  "language": {
   "official": "英語是官方語言。",
@@ -33,27 +33,27 @@
    {
     "name": "牙買加克里奧爾語（帕托瓦語）",
     "percent": 90,
-    "description": "以英語為基礎並融合西非語言的克里奧爾語，是日常生活語言。",
+    "description": "17–18世紀從西非被運到牙買加的奴隸來自不同族群，彼此語言不通，只能以種植園主的英語詞彙溝通，再加入阿坎語等非洲語言的發音與詞彙，形成帕托瓦語。它是絕大多數牙買加人在家中與日常生活的母語，透過雷鬼與舞廳音樂傳遍世界。",
     "greeting": "Wah gwaan",
     "pronunciation": "wah GWAAN"
    },
    {
     "name": "英語",
     "percent": 10,
-    "description": "官方語言，用於政府、教育與正式場合。",
+    "description": "英語自1655年英國統治起就是牙買加的官方語言，政府、法院、學校與報紙都使用標準英語。多數牙買加人在帕托瓦語與英語之間形成連續的語言光譜，視場合切換，因此單純以英語為主要語言的人反而是少數。",
     "greeting": "Hello",
     "pronunciation": "heh-LOH"
    }
   ],
-  "history": "十七世紀英國從西班牙手中奪取牙買加後，從西非帶來大量奴隸，在種植園中形成以英語為基礎的克里奧爾語。牙買加帕托瓦語藉著雷鬼音樂傳遍世界，與標準英語形成語言連續體。"
+  "history": "1655年英國奪取牙買加後，種植園主自西非輸入大量奴隸（主要來自阿坎、伊博、約魯巴等族群），他們在種植園中以英語詞彙為基礎、融合西非語言的文法與發音，發展出牙買加克里奧爾語（帕托瓦語）。英語則是殖民政府、學校與教會的語言，帕托瓦語長期被視為「破英語」而受到歧視。1962年獨立後英語仍是唯一官方語言，但雷鬼音樂、文學與廣播使帕托瓦語成為牙買加認同的象徵，2000年代起有團體推動將其列為官方語言。"
  },
  "food": {
   "ranking": [
    {
     "name": "阿開果鹹魚",
     "localName": "Ackee and saltfish",
-    "description": "以阿開果與鹹鱈魚、洋蔥、辣椒拌炒。",
-    "history": "牙買加國菜，阿開果於十八世紀自西非傳入，鹹魚則來自與北美的貿易。",
+    "description": "以阿開果（ackee）果肉與泡水去鹽的鹹鱈魚，加洋蔥、番茄、蘇格蘭圓帽辣椒一起炒，外觀像炒蛋。",
+    "history": "阿開果原產西非，一般認為約在1778年前後隨奴隸船傳入牙買加；鹹鱈魚則是從加拿大紐芬蘭進口、用來餵養奴隸的便宜蛋白質，而牙買加的蘭姆酒與糖則反向輸出。兩者的結合因此是大西洋三角貿易與奴隸制度的產物。未成熟的阿開果有毒，必須等果實自然裂開才能食用。它被視為牙買加國菜，常作為週日早餐。",
     "wiki": "Ackee and saltfish",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Ackee_and_Saltfish.jpg/960px-Ackee_and_Saltfish.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Ackee_and_Saltfish.jpg",
@@ -62,8 +62,8 @@
    {
     "name": "牙買加烤肉",
     "localName": "Jerk",
-    "description": "以多香果與蘇格蘭帽辣椒醃漬後燻烤的雞肉或豬肉。",
-    "history": "源自原住民泰諾人與逃亡黑奴（馬龍人）的烹調技術。",
+    "description": "以多香果（牙買加胡椒）、蘇格蘭圓帽辣椒、百里香與蔥醃製雞肉或豬肉，再以多香果木慢烤，香辣帶煙燻味。",
+    "history": "Jerk 的技術源自原住民泰諾人以木架燻烤肉類的方法，17世紀逃離種植園、躲入山區的「馬龍人」（Maroons）把這種方法用於烤野豬，並以辛香料醃製以便保存。馬龍人曾與英國殖民者長期作戰，1739年迫使英國簽約承認其自治，jerk 因此也象徵抵抗。今天路邊的鐵桶烤爐（jerk pan）隨處可見，牙買加西岸的波士頓灣被視為發源地。",
     "wiki": "Jerk (cooking)",
     "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/BBQJerk_Chicken.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:BBQJerk_Chicken.jpg",
@@ -72,8 +72,8 @@
    {
     "name": "牙買加餡餅",
     "localName": "Jamaican patty",
-    "description": "以金黃色酥皮包裹咖哩牛肉等餡料烘烤的餡餅。",
-    "history": "融合英國餡餅與印度、非洲香料的街頭小吃。",
+    "description": "以加入咖哩粉或薑黃的金黃色酥皮，包入辣味牛絞肉、雞肉或蔬菜餡烤成的半月形餡餅。",
+    "history": "Jamaican patty 融合了英國的康瓦爾肉餡餅、印度契約勞工帶來的咖哩與香料、以及非洲人喜愛的辣椒。1838年奴隸完全解放後，英國自1845年起從印度招募契約勞工到牙買加，咖哩粉因此融入當地飲食。今天它是牙買加最常見的平價午餐，也隨1960年代後的移民流行於英國與加拿大多倫多。",
     "wiki": "Jamaican patty",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Jamaican_patties_and_redstripe.jpg/960px-Jamaican_patties_and_redstripe.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Jamaican_patties_and_redstripe.jpg",
@@ -82,8 +82,8 @@
    {
     "name": "米豆飯",
     "localName": "Rice and peas",
-    "description": "以椰奶煮米與紅腰豆的飯。",
-    "history": "牙買加週日家庭餐的必備主食。",
+    "description": "以白米和紅腰豆（牙買加人稱 peas）在椰奶中煮成，加入百里香、蔥與整顆辣椒增添香氣。",
+    "history": "米與豆一起煮的做法來自西非，奴隸把這種飲食方式帶到加勒比地區，並以當地的豆類與椰子取代非洲食材。名字雖稱「peas」，實際多用紅腰豆或木豆。它是牙買加傳統週日午餐的必備配菜，常與烤雞或咖哩羊肉一起上桌。",
     "wiki": "Rice and peas",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Rice_and_Peas.jpg/960px-Rice_and_Peas.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Rice_and_Peas.jpg",
@@ -92,8 +92,8 @@
    {
     "name": "咖哩羊肉",
     "localName": "Curry goat",
-    "description": "以咖哩香料燉煮的山羊肉。",
-    "history": "十九世紀印度契約勞工帶來咖哩，成為牙買加節慶與聚會的代表菜。",
+    "description": "以咖哩粉、多香果與辣椒醃製山羊肉，連骨慢燉至軟爛，配白飯或米豆飯。",
+    "history": "1845年起，英國殖民政府為了填補廢奴後種植園的勞力缺口，從印度招募數萬名契約勞工到牙買加，他們帶來了咖哩料理。牙買加人以容易飼養的山羊取代羊羔，並加入當地的辣椒與多香果，發展出獨特的咖哩羊肉。它是婚禮、生日派對與「守夜」喪禮聚會中不可缺少的大菜。",
     "wiki": "Curry goat",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Curry_Goat_and_Rice.jpg/960px-Curry_Goat_and_Rice.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Curry_Goat_and_Rice.jpg",

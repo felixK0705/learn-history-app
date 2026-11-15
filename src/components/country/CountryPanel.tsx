@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import { Search, Volume2, X } from "lucide-react";
+import { Search, UtensilsCrossed, Volume2, X } from "lucide-react";
 import { gsap, prefersReducedMotion, useGSAP, useReveal } from "../../lib/motion";
 import Flag from "../ui/Flag";
 import { loadHistory, loadProfile, type CountryMeta, type CountryProfile, type HistoryEvent } from "../../data/world";
@@ -317,15 +317,17 @@ function RankingTab({ profile, kind }: { profile: CountryProfile | null | undefi
   const note = kind === "religion" ? profile.religion.background : profile.language.history;
   return (
     <div>
-      {kind === "language" && (
-        <p data-reveal className="mb-4 text-[13.5px] leading-relaxed text-white/85">
-          {profile.language.official}
-        </p>
-      )}
+      <h3 data-reveal className="mb-3 text-[17px] font-semibold text-white">{kind === "religion" ? "宗教信仰分布" : "語言分布"}</h3>
       <Donut items={ranking} title={kind === "religion" ? "宗教" : "語言"} />
-      <p data-reveal className="eyebrow mb-2">
-        {kind === "religion" ? "信仰排名" : "使用人口排名"}
-      </p>
+      {kind === "language" && (
+        <section data-reveal className="mb-5">
+          <h4 className="mb-1.5 text-[14px] font-semibold text-glow">官方語言</h4>
+          <p className="text-[13.5px] leading-relaxed text-white/85">{profile.language.official}</p>
+        </section>
+      )}
+      <h4 data-reveal className="mb-2 text-[14px] font-semibold text-glow">
+        {kind === "religion" ? "信仰排名與成因" : "語言排名與成因"}
+      </h4>
       <ol className="space-y-2">
         {ranking.map((r, i) => {
           const greet = kind === "language" ? (r as CountryProfile["language"]["ranking"][number]) : null;
@@ -340,7 +342,7 @@ function RankingTab({ profile, kind }: { profile: CountryProfile | null | undefi
               <div className="mt-2 ml-8 h-1 overflow-hidden rounded-full bg-white/12">
                 <div className="h-full rounded-full" style={{ width: `${(r.percent / max) * 100}%`, background: PIE_COLORS[i] ?? OTHER_COLOR }} />
               </div>
-              <p className="mt-2 ml-8 text-[12.5px] leading-relaxed text-white/70">{r.description}</p>
+              <p className="mt-2 ml-8 text-[13px] leading-relaxed text-white/80">{r.description}</p>
               {greet?.greeting && (
                 <div className="mt-2 ml-8 flex items-center gap-2">
                   <span className="text-[15px]">{greet.greeting}</span>
@@ -357,7 +359,7 @@ function RankingTab({ profile, kind }: { profile: CountryProfile | null | undefi
         })}
       </ol>
       <div data-reveal className="mt-5">
-        <p className="eyebrow mb-2">{kind === "religion" ? "信仰背景" : "語言的歷史"}</p>
+        <h4 className="mb-1.5 text-[14px] font-semibold text-glow">{kind === "religion" ? "信仰的歷史背景" : "語言的歷史背景"}</h4>
         <p className="text-[13.5px] leading-relaxed text-white/85">{note}</p>
       </div>
     </div>
@@ -368,23 +370,42 @@ function FoodTab({ profile }: { profile: CountryProfile | null | undefined }) {
   if (profile === undefined) return <Skeleton rows={3} />;
   if (!profile) return <Empty text="資料整理中。" />;
   return (
+    <>
+    <h3 data-reveal className="mb-3 text-[17px] font-semibold text-white">傳統美食</h3>
     <ol className="space-y-4">
       {profile.food.ranking.map((f, i) => (
         <li key={f.name} data-reveal className="glass-soft overflow-hidden rounded-3xl">
-          {f.image ? (
-            <figure className="relative aspect-[16/10] bg-white/5">
-              <img src={f.image} alt={f.name} loading="lazy" className="size-full object-cover" />
-              <span className="glass absolute top-3 left-3 grid size-9 place-items-center rounded-full text-sm font-semibold">{i + 1}</span>
-            </figure>
-          ) : null}
+          <figure className="relative aspect-[16/10] bg-white/5">
+            {f.image ? (
+              <img
+                src={f.image}
+                alt={f.name}
+                loading="lazy"
+                className="size-full object-cover"
+                onError={(e) => {
+                  e.currentTarget.style.display = "none";
+                  e.currentTarget.nextElementSibling?.classList.remove("hidden");
+                }}
+              />
+            ) : null}
+            {/* 沒有圖片或載入失敗時的替代畫面 */}
+            <div className={`${f.image ? "hidden" : ""} absolute inset-0 grid place-items-center text-white/45`}>
+              <UtensilsCrossed className="size-10" />
+            </div>
+            <span className="absolute top-3 left-3 grid size-9 place-items-center rounded-full bg-[#06194a]/80 text-sm font-semibold">{i + 1}</span>
+          </figure>
           <div className="px-4 pt-3 pb-4">
             <div className="flex items-baseline gap-2">
-              {!f.image && <span className="text-lg font-light text-white/50 tabular-nums">{i + 1}</span>}
               <h4 className="text-[15.5px] font-semibold">{f.name}</h4>
               {f.localName && <span className="truncate text-xs text-white/55">{f.localName}</span>}
             </div>
             <p className="mt-1.5 text-[13px] leading-relaxed text-white/80">{f.description}</p>
-            <p className="mt-2 text-[12.5px] leading-relaxed text-white/62">{f.history}</p>
+            {f.history && (
+              <div className="mt-3 rounded-xl border border-white/10 bg-white/5 p-3">
+                <p className="mb-1 text-[12px] font-semibold text-glow">歷史與文化</p>
+                <p className="text-[13px] leading-relaxed text-white/80">{f.history}</p>
+              </div>
+            )}
             {f.imageCredit && (
               <p className="mt-2 text-[10.5px] text-white/40">
                 圖片：
@@ -401,6 +422,7 @@ function FoodTab({ profile }: { profile: CountryProfile | null | undefined }) {
         </li>
       ))}
     </ol>
+    </>
   );
 }
 

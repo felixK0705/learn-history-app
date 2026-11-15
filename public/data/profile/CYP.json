@@ -7,25 +7,25 @@
    {
     "name": "希臘正教（塞浦路斯正教會）",
     "percent": 89,
-    "description": "希臘裔塞浦路斯人的主要信仰，教會在歷史上具政治影響力。"
+    "description": "據傳西元 45 年使徒保羅與出身賽普勒斯的巴拿巴來島傳教，塞浦路斯教會因此是最古老的基督教會之一，431 年以弗所大公會議承認其自主地位。1571 年鄂圖曼帝國征服後，以宗教區分族群的「米利特制」讓大主教成為希臘裔居民的政治領袖，1960 年獨立時馬卡里奧斯三世大主教更出任首任總統。正教因此與希臘裔民族認同緊密結合，信徒比例極高。"
    },
    {
     "name": "其他基督教（天主教、新教、亞美尼亞教會、馬龍派）",
     "percent": 5,
-    "description": "包含馬龍派、亞美尼亞人與外籍居民。"
+    "description": "亞美尼亞人自拜占庭時代就在島上，1915 年亞美尼亞大屠殺後又有一批難民移入；馬龍派信徒約在 8–12 世紀從黎巴嫩遷來；天主教（拉丁禮）可追溯到 1192–1489 年的呂西尼昂王朝與後來的威尼斯統治，英國殖民（1878–1960 年）則帶來聖公會。近年來自菲律賓等地的外籍勞工也增加了天主教徒人數。"
    },
    {
     "name": "伊斯蘭教",
     "percent": 2,
-    "description": "共和國控制區內的穆斯林（北部土耳其裔多為穆斯林，未計入）。"
+    "description": "1571 年鄂圖曼征服後，土耳其移民與部分改宗的居民形成土耳其裔賽普勒斯人，信奉遜尼派伊斯蘭教，約佔全島人口近兩成。1974 年土耳其出兵、全島分裂後，土裔多集中在北部，因此在賽普勒斯共和國實際管轄的南部，穆斯林只剩少數，主要是土裔居民與來自中東、南亞的移民。"
    },
    {
     "name": "無宗教",
     "percent": 2,
-    "description": "比例較低。"
+    "description": "由於正教長期與民族認同和國家節慶綁在一起，宣稱無宗教的人比例很低。近年隨著都市化、留學與歐盟化（2004 年入盟），年輕人中較少上教堂的人逐漸增加，但多數仍在洗禮、婚禮與復活節等場合參與宗教儀式。"
    }
   ],
-  "background": "使徒巴拿巴與保羅在1世紀到此傳教，塞浦路斯教會於431年獲得自主地位。鄂圖曼時期透過米勒特制度，正教會成為希臘裔社群代表；鄂圖曼移民則形成土耳其裔穆斯林社群。"
+  "background": "賽普勒斯在使徒時代就接受基督教，拜占庭統治使正教深植人心。1191 年十字軍時代後，法蘭克人的呂西尼昂王朝與威尼斯人帶來天主教並壓制正教，1571 年鄂圖曼征服反而恢復了正教會的地位，同時引入伊斯蘭教。英國殖民期間，正教會領導了爭取與希臘合併的運動。1974 年分裂後，南部以希臘正教為主、北部以伊斯蘭教為主，宗教與族群界線大致重疊。"
  },
  "language": {
   "official": "官方語言為希臘語與土耳其語。",
@@ -33,41 +33,41 @@
    {
     "name": "希臘語（塞浦路斯方言）",
     "percent": 80,
-    "description": "多數居民使用，日常以塞浦路斯希臘語方言為主。",
+    "description": "約西元前 12–11 世紀，邁錫尼希臘人移居賽普勒斯，帶來希臘語，古代甚至發展出獨特的賽普勒斯音節文字。歷經拜占庭、法蘭克、威尼斯與鄂圖曼統治，當地口語形成保留許多古音與外來詞的塞浦路斯方言，正式場合與學校則使用標準現代希臘語。南部希臘裔佔人口絕大多數，因此希臘語是最主要的語言。",
     "greeting": "Γεια σου",
     "pronunciation": "ya su"
    },
    {
     "name": "土耳其語",
     "percent": 10,
-    "description": "土耳其裔塞浦路斯人使用，主要在北部。",
+    "description": "1571 年鄂圖曼帝國征服後，土耳其移民在島上定居，形成說土耳其語的土裔社群。1960 年憲法把土耳其語與希臘語並列為官方語言；1974 年分裂後土裔幾乎全遷往北部，北部又有來自土耳其本土的移民，因此土耳其語主要通行於北賽普勒斯。",
     "greeting": "Merhaba",
     "pronunciation": "mer-ha-ba"
    },
    {
     "name": "俄語等其他語言",
     "percent": 5,
-    "description": "外籍居民社群使用。",
+    "description": "1990 年代蘇聯解體後，大批俄羅斯人與烏克蘭人移居利馬索爾等地，經營航運、金融與房地產，利馬索爾一度被戲稱為「利馬索爾格勒」；2022 年俄烏戰爭後又有新一波移民。加上 2004 年加入歐盟後的保加利亞、羅馬尼亞移工，以及來自菲律賓、斯里蘭卡的家庭幫傭，形成多元的少數語言群體。",
     "greeting": "Привет",
     "pronunciation": "privet"
    },
    {
     "name": "英語",
     "percent": 4,
-    "description": "母語者不多，但作為英國殖民遺產，多數居民能流利使用。",
+    "description": "1878 年英國從鄂圖曼帝國取得賽普勒斯的管理權，1925 年改為直轄殖民地，直到 1960 年獨立。英語因此長期是行政、法律與高等教育語言，今天仍在商業、觀光與路標上廣泛使用；島上的英國主權基地區與大批英國退休移民，也讓不少人以英語為母語。",
     "greeting": "Hello",
     "pronunciation": "heh-loh"
    }
   ],
-  "history": "希臘語自青銅時代晚期邁錫尼移民時期傳入。鄂圖曼於1571年征服後帶入土耳其語，1878–1960年英國統治使英語普及。兩大族群的語言分布在1974年後隨分治更加地理分隔。"
+  "history": "青銅器時代晚期希臘人來到賽普勒斯後，希臘語成為島上的主要語言，並曾以獨特的音節文字書寫。拜占庭時期希臘語地位穩固，法蘭克與威尼斯統治帶來法語與義大利語借詞，1571 年後鄂圖曼統治引入土耳其語。英國殖民時期（1878–1960 年）英語成為行政語言。1974 年分裂後，希臘語與土耳其語的使用區域大致按南北劃分，而近年的移民潮又讓俄語等語言在城市中日益常見。"
  },
  "food": {
   "ranking": [
    {
     "name": "哈魯米起司",
     "localName": "Χαλλούμι (Halloumi)",
-    "description": "以羊奶與山羊奶製成的半硬鹹起司，耐高溫，可直接煎烤。",
-    "history": "在塞浦路斯已有數百年歷史，2021年獲歐盟原產地名稱保護。",
+    "description": "以山羊奶與綿羊奶製成的半硬質鹽漬起司，熔點高，煎烤後外表金黃、內部有彈性，口感微鹹帶嚼勁。",
+    "history": "哈魯米在賽普勒斯已有數百年歷史，16 世紀威尼斯統治時期的文獻中便有記載。古時牧民需要能在炎熱氣候下長期保存的起司，因此把凝乳煮過再泡入鹽水，並以薄荷葉增添香氣。它是希臘裔與土裔賽普勒斯人共同的傳統食物（土耳其語稱 hellim），2021 年獲得歐盟原產地名稱保護，也是該國重要的出口品。",
     "wiki": "Halloumi",
     "image": "https://upload.wikimedia.org/wikipedia/commons/5/57/Halloumislice_zoom.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Halloumislice_zoom.jpg",
@@ -76,8 +76,8 @@
    {
     "name": "烤肉串",
     "localName": "Σουβλάκι (Souvlaki)",
-    "description": "炭烤肉塊串，常包皮塔餅搭配生菜與優格醬。",
-    "history": "與希臘世界共享的燒烤傳統，是塞浦路斯最普遍的街頭美食。",
+    "description": "把醃過的豬肉或雞肉切塊串起炭烤，夾入大片的皮塔餅，配番茄、黃瓜、洋蔥與香芹。",
+    "history": "以鐵叉烤肉的做法可追溯到古希臘，荷馬史詩中就有用肉叉烤祭肉的描寫。賽普勒斯的蘇夫拉基比希臘本土的更大塊，常以傳統的長方形炭爐「foukou」燒烤。週日或節日家族在戶外烤肉是當地重要的社交活動，復活節後的家庭聚會也常以它為主角。",
     "wiki": "Souvlaki",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/%CE%95%CE%BB%CE%BB%CE%B7%CE%BD%CE%B9%CE%BA%CF%8C_%CE%A3%CE%BF%CF%85%CE%B2%CE%BB%CE%AC%CE%BA%CE%B9_-_panoramio.jpg/960px-%CE%95%CE%BB%CE%BB%CE%B7%CE%BD%CE%B9%CE%BA%CF%8C_%CE%A3%CE%BF%CF%85%CE%B2%CE%BB%CE%AC%CE%BA%CE%B9_-_panoramio.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:%CE%95%CE%BB%CE%BB%CE%B7%CE%BD%CE%B9%CE%BA%CF%8C_%CE%A3%CE%BF%CF%85%CE%B2%CE%BB%CE%AC%CE%BA%CE%B9_-_panoramio.jpg",
@@ -86,8 +86,8 @@
    {
     "name": "陶罐烤羊肉",
     "localName": "Κλέφτικο (Kleftiko)",
-    "description": "以大蒜、檸檬與香草醃漬的羊肉，在密封土窯中長時間慢烤。",
-    "history": "名稱源自「盜匪」（klephts），相傳他們把肉埋在地洞中烤以免被發現。",
+    "description": "將帶骨羊肉與馬鈴薯、月桂葉、檸檬一同密封，放入傳統泥土窯爐中慢烤數小時，肉質軟爛脫骨。",
+    "history": "名稱來自希臘語「kleftis」（盜賊），典故是鄂圖曼統治時期的希臘「克萊夫特」游擊隊員，他們偷來羊隻後埋在密封的土坑中燜烤，以免炊煙洩露藏身處。賽普勒斯家家戶戶院子裡常有圓頂泥窯「fourni」，週末或宗教節日時便用來烤這道菜。它象徵了反抗統治的民間記憶，也是村莊宴席的招牌菜。",
     "wiki": "Kleftiko",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Kleftiko.JPG/960px-Kleftiko.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Kleftiko.JPG",
@@ -96,8 +96,8 @@
    {
     "name": "網油香腸",
     "localName": "Σιεφταλιά (Sheftalia)",
-    "description": "以網油包裹絞肉、洋蔥與香芹炭烤成的小香腸。",
-    "history": "塞浦路斯特有的燒烤料理，常出現在烤肉拼盤中。",
+    "description": "以豬絞肉混合洋蔥與香芹，用豬網油包成小香腸，再以炭火燒烤，油脂融入肉中香氣四溢。",
+    "history": "網油香腸是賽普勒斯獨有的燒烤料理，名稱一般認為與土耳其語有關，反映鄂圖曼統治時期的飲食交流；土裔賽普勒斯人也有類似的「şeftali kebabı」。以網油包肉是節儉利用豬隻每個部位的鄉村做法。它常與蘇夫拉基一起出現在烤肉攤與小酒館的梅澤套餐中，是當地人的日常美食。",
     "wiki": "Sheftalia",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Typical_Greek_Cypriot_plate%2C_sheftalia_%28in_greek%3B_%CF%83%CE%B5%CF%86%CF%84%CE%B1%CE%BB%CE%B9%CE%AC%29.jpg/960px-Typical_Greek_Cypriot_plate%2C_sheftalia_%28in_greek%3B_%CF%83%CE%B5%CF%86%CF%84%CE%B1%CE%BB%CE%B9%CE%AC%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Typical_Greek_Cypriot_plate,_sheftalia_(in_greek;_%CF%83%CE%B5%CF%86%CF%84%CE%B1%CE%BB%CE%B9%CE%AC).jpg",
@@ -106,8 +106,8 @@
    {
     "name": "梅澤小菜",
     "localName": "Μεζές (Meze)",
-    "description": "由數十道小菜依序上桌組成的套餐，包括沾醬、燒烤與海鮮。",
-    "history": "中東與地中海共同的小菜文化，在塞浦路斯是社交聚餐的主要形式。",
+    "description": "由二三十道小菜依序上桌組成的套餐，從橄欖、優格醬、沙拉到烤肉、海鮮，份量多到足以當一整餐。",
+    "history": "「梅澤」一詞源自波斯語，意為「品嘗」，經鄂圖曼土耳其語傳遍東地中海。鄂圖曼統治賽普勒斯的三百年間，配酒吃小菜的習慣深入當地酒館文化。賽普勒斯的梅澤以份量驚人著稱，常分為肉類與海鮮兩種，親友圍坐慢慢吃上幾個小時，是婚禮、命名日與週末聚會的典型用餐方式。",
     "wiki": "Meze",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Petra_metzes.jpg/960px-Petra_metzes.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Petra_metzes.jpg",

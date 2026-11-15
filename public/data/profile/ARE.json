@@ -7,25 +7,25 @@
    {
     "name": "伊斯蘭教",
     "percent": 77,
-    "description": "國教，本國公民多為遜尼派。"
+    "description": "7世紀伊斯蘭教在阿拉伯半島興起後不久，阿曼與今日阿聯一帶的部落便接受伊斯蘭教，當地阿聯酋公民幾乎全是穆斯林，以遜尼派的馬立克與罕百里學派為主，另有少數什葉派。1971年建國時憲法定伊斯蘭教為國教；不過由於外籍居民占總人口近九成，穆斯林在全體居民中只占約四分之三。"
    },
    {
     "name": "基督教",
     "percent": 13,
-    "description": "主要為外籍居民。"
+    "description": "基督徒幾乎都是外籍工作者，主要來自菲律賓、印度喀拉拉邦、歐美與黎巴嫩等地。1960年代石油出口後，各酋長國統治者陸續撥地興建教堂以吸引外籍專業人才，例如1965年阿布達比首座天主教堂落成；2019年教宗方濟各訪問阿布達比，是教宗首次踏上阿拉伯半島。"
    },
    {
     "name": "印度教",
     "percent": 7,
-    "description": "主要為印度籍居民。"
+    "description": "印度教徒來自印度的大量移工與商人。印度商人早在19世紀英國保護時期就在杜拜經商，1958年杜拜已有印度教寺廟；1970年代石油繁榮後印度移民激增，2024年阿布達比的大型石造印度教寺廟（BAPS寺）落成，反映這個社群的規模。"
    },
    {
     "name": "佛教",
     "percent": 2,
-    "description": "主要為南亞與東亞籍居民。"
+    "description": "佛教徒主要來自斯里蘭卡、泰國、尼泊爾與東亞的外籍勞工與專業人士，多在杜拜與阿布達比的私人場所或寺院聚會。由於他們多是短期合約工，社群流動性很大，比例約在2%左右。"
    }
   ],
-  "background": "伊斯蘭教自七世紀起即為阿拉伯半島的主要宗教。二十世紀後期石油經濟吸引大量外籍勞工，使外籍人口遠超過本國公民，因而形成多元的宗教組成，政府也允許興建教堂與印度教寺廟。"
+  "background": "伊斯蘭教在7世紀傳入以前，阿拉伯半島東南部的居民信奉多神信仰，也有少數基督教聚落，例如錫爾巴尼亞斯島就發現了7–8世紀的修道院遺址。伊斯蘭化後，當地部落以遜尼派為主，伊斯蘭教是部落社會與法律的基礎。1971年阿聯建國，憲法以伊斯蘭教為國教、伊斯蘭法為主要法源。石油經濟帶來大量外籍人口，使阿聯成為宗教組成高度多元的國家，政府也以「寬容」作為國家形象，2016年甚至設立寬容部。"
  },
  "language": {
   "official": "阿拉伯語是官方語言，英語廣泛用於商業與日常溝通。",
@@ -33,41 +33,41 @@
    {
     "name": "阿拉伯語",
     "percent": 20,
-    "description": "本國公民與阿拉伯移民的語言。",
+    "description": "阿拉伯語是阿聯的官方語言，也是公民的母語，當地口語屬海灣阿拉伯語。但阿聯酋公民只占全國人口約一成，再加上來自埃及、黎巴嫩、敘利亞等地的阿拉伯移民，以阿拉伯語為母語的人也只有約兩成；政府與法院使用標準阿拉伯語，日常商業則多用英語。",
     "greeting": "مرحبا",
     "pronunciation": "MAR-ha-ba"
    },
    {
     "name": "馬拉雅拉姆語",
     "percent": 15,
-    "description": "來自印度喀拉拉邦的大型移民社群使用。",
+    "description": "馬拉雅拉姆語是印度南部喀拉拉邦的語言。喀拉拉沿岸自古就與阿拉伯半島有香料貿易往來，1970年代石油繁榮後，大批喀拉拉人到海灣國家從事建築、商業與醫療工作，使馬拉雅拉姆語成為阿聯最大的移民語言之一。",
     "greeting": "നമസ്കാരം",
     "pronunciation": "na-mas-KAA-ram"
    },
    {
     "name": "烏爾都語",
     "percent": 12,
-    "description": "巴基斯坦移民社群使用。",
+    "description": "烏爾都語是巴基斯坦的國語，也是許多印度穆斯林的母語。巴基斯坦人自1970年代起大量到阿聯從事建築、運輸與服務業，烏爾都語與相近的印地語因寶萊塢電影普及，在移工之間成為常用的溝通語言。",
     "greeting": "السلام علیکم",
     "pronunciation": "as-sa-LAA-mu a-LAI-kum"
    },
    {
     "name": "塔加洛語",
     "percent": 6,
-    "description": "菲律賓移民社群使用。",
+    "description": "塔加洛語（菲律賓語）的使用者是在阿聯工作的數十萬菲律賓人。菲律賓自1970年代起推動海外勞工政策，大量護理師、家務工與服務業人員前往海灣地區，杜拜商場與餐廳中常可聽到塔加洛語。",
     "greeting": "Kumusta",
     "pronunciation": "koo-MOOS-ta"
    }
   ],
-  "history": "當地傳統上使用海灣阿拉伯語方言。石油開採後大量移民湧入，英語成為不同族群間的共通語言，南亞語言在街頭也十分常見，形成高度多語的社會。"
+  "history": "阿聯一帶的居民自伊斯蘭化以來就使用阿拉伯語，當地方言屬海灣阿拉伯語，與阿曼、卡達、巴林方言相近。19世紀起英國與當地酋長簽訂條約，形成「休戰諸國」保護體制，英語開始在行政與貿易中出現。1960年代石油出口後，大量南亞、東南亞與西方移民湧入，到21世紀外籍人口已占近九成，英語成為不同族群間的共通語。政府近年推動阿拉伯語教育與標示政策，以避免公民的母語在英語環境中邊緣化。"
  },
  "food": {
   "ranking": [
    {
     "name": "馬奇布斯",
     "localName": "مجبوس (Machboos)",
-    "description": "以香料、乾萊姆與肉一同烹煮的香料飯。",
-    "history": "海灣地區代表性的米飯料理，反映印度洋香料貿易的影響。",
+    "description": "以雞肉、羊肉或魚和長米一起燉煮，加入乾萊姆、番紅花、肉桂與巴哈拉特綜合香料，米飯吸飽肉汁、香氣濃郁。",
+    "history": "馬奇布斯是海灣地區的代表米飯料理，所用的稻米並非本地出產，而是透過長期的印度洋貿易從印度輸入，香料也來自印度與波斯，因此常被視為與印度比爾亞尼飯同源。乾萊姆（loomi）則是阿曼與波斯灣沿岸的特產。在石油時代前，漁民與採珠人以魚肉做馬奇布斯，如今它是阿聯家庭週五午餐與婚宴的主菜。",
     "wiki": "Kabsa",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Machboos_%28cropped%29.JPG/960px-Machboos_%28cropped%29.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Machboos_(cropped).JPG",
@@ -76,8 +76,8 @@
    {
     "name": "哈里斯",
     "localName": "هريس (Harees)",
-    "description": "以小麥與肉長時間燉煮搗成的粥。",
-    "history": "阿聯傳統的節慶料理，齋戒月與婚禮常見。",
+    "description": "將麥粒與肉（多用雞肉或羊肉）長時間燉煮後反覆攪打成稠粥，口感綿密，上桌時淋上酥油。",
+    "history": "哈里斯是阿拉伯半島歷史最悠久的料理之一，10世紀巴格達的阿拉伯食譜書已有記載。它在齋戒月開齋與開齋節、宰牲節時特別常見，富人家也會烹煮大鍋哈里斯分送鄰居與窮人。製作時要把麥與肉燉煮數小時並用木杵攪打，費工的過程讓它成為節慶與分享精神的象徵，也是阿聯婚宴上常見的傳統菜。",
     "wiki": "Harees",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Armenian_Harisa.JPG/960px-Armenian_Harisa.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Armenian_Harisa.JPG",
@@ -86,8 +86,8 @@
    {
     "name": "盧蓋瑪特",
     "localName": "لقيمات (Luqaimat)",
-    "description": "外酥內軟的小炸麵團球，淋上椰棗糖漿。",
-    "history": "齋戒月期間最受歡迎的甜點之一。",
+    "description": "將發酵麵糊舀成小球下鍋油炸，再淋上椰棗糖漿並撒上芝麻，外脆內軟，帶有番紅花與小荳蔻香氣。",
+    "history": "盧蓋瑪特意為「一小口」，與希臘的蜂蜜炸球、印度的炸甜球屬於同一類古老甜點，13世紀巴格達的阿拉伯食譜書中已有類似的「luqmat al-qadi」。椰棗是阿拉伯半島最重要的作物，用椰棗糖漿調味正是當地特色。它在齋戒月開齋時最受歡迎，也是婚禮與節慶招待客人的必備點心。",
     "wiki": "Luqaimat",
     "image": "https://upload.wikimedia.org/wikipedia/commons/1/15/Sam%27dan_lokma_tatlisi.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Sam%27dan_lokma_tatlisi.jpg",
@@ -96,8 +96,8 @@
    {
     "name": "巴拉利特",
     "localName": "بلاليط (Balaleet)",
-    "description": "甜味細麵上覆蓋蛋餅的早餐料理。",
-    "history": "以番紅花與小豆蔻調味，是傳統的節慶早餐。",
+    "description": "把細麵條（粉絲狀的義大利細麵）與糖、番紅花、玫瑰水和小荳蔻炒香，上面蓋一層蛋餅，甜鹹交融。",
+    "history": "巴拉利特是海灣地區傳統的早餐，特別在開齋節與宰牲節的早晨食用。細麵條、番紅花與玫瑰水的組合反映波斯灣與波斯、印度之間的貿易往來，甜麵配鹹蛋的吃法則是阿聯、巴林等地的特色。它過去是節慶時才捨得用糖與香料的奢侈早餐，如今在家庭與傳統餐廳中仍很常見。",
     "wiki": "Balaleet",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Homemade_Balaleet%2C_2023.jpg/960px-Homemade_Balaleet%2C_2023.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Homemade_Balaleet,_2023.jpg",
@@ -106,8 +106,8 @@
    {
     "name": "沙里德",
     "localName": "ثريد (Thareed)",
-    "description": "將薄麵包浸在肉與蔬菜燉湯中的料理。",
-    "history": "齋戒月開齋時常見的傳統料理。",
+    "description": "將薄餅撕碎鋪在盤底，淋上以羊肉或雞肉與馬鈴薯、南瓜等蔬菜燉成的濃湯，讓麵餅吸飽湯汁後食用。",
+    "history": "沙里德是阿拉伯世界最古老的菜餚之一，伊斯蘭傳統中記載先知穆罕默德喜愛這道菜，因此在穆斯林社會中有特殊地位。傳統做法使用當地的薄餅（regag），把剩餘麵包與肉湯結合，也體現了沙漠生活珍惜食物的習慣。在阿聯，它是齋戒月開齋晚餐的常見菜色。",
     "wiki": "Tharid",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Tharid._%28cropped%29.JPG/960px-Tharid._%28cropped%29.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Tharid._(cropped).JPG",

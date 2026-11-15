@@ -7,20 +7,20 @@
    {
     "name": "伊斯蘭教（遜尼派）",
     "percent": 98,
-    "description": "幾乎全體國民信仰遜尼派伊斯蘭教，以沙斐儀學派為主。"
+    "description": "7 世紀起，阿拉伯與波斯商人沿紅海與印度洋季風航線來到澤拉、柏培拉與摩加迪休等港口，伊斯蘭教隨貿易傳入沿岸城市，並採行東非與葉門常見的沙斐儀學派。19 世紀卡迪里、薩利希等蘇菲教團深入內陸遊牧氏族，使伊斯蘭教成為超越氏族分歧的共同認同；1899–1920 年穆罕默德·阿卜杜勒·哈桑更以宗教號召抵抗英國與義大利。正因社會幾乎由同一民族、同一信仰組成，伊斯蘭教比例接近全民。"
    },
    {
     "name": "基督教",
     "percent": 1,
-    "description": "規模極小的社群。"
+    "description": "基督教主要在 19 世紀末義大利殖民南部時由天主教傳教士傳入，1928 年殖民政府在摩加迪休興建大教堂，但信徒多為義大利人與少數改宗者。1989 年摩加迪休主教科倫坡遇刺，內戰爆發後大教堂遭毀，青年黨等武裝團體更把改宗視為叛教加以迫害，因此現存基督徒極少，多半只能秘密信仰。"
    },
    {
     "name": "其他",
     "percent": 1,
-    "description": "其他信仰或無宗教者。"
+    "description": "包含少數外籍居民的信仰，以及不願公開的無宗教者。索馬利亞社會把伊斯蘭教視為民族身分的一部分，放棄伊斯蘭教可能遭家族排斥甚至武裝團體追殺，因此其他信仰與無宗教者極難公開表態，實際人數無從精確統計。"
    }
   ],
-  "background": "伊斯蘭教早在七世紀就經由紅海與印度洋貿易傳入索馬利沿岸，澤拉與摩加迪休等港口城市成為伊斯蘭教的早期傳播中心。蘇菲教團在內陸遊牧社會中推廣伊斯蘭教，使其成為索馬利認同的核心。"
+  "background": "伊斯蘭教在 7 世紀經由紅海與印度洋貿易傳入索馬利沿岸，澤拉與摩加迪休成為早期伊斯蘭城市，13 世紀起摩加迪休蘇丹國與阿達爾蘇丹國都以伊斯蘭為國家基礎。19 世紀蘇菲教團把信仰推廣到內陸遊牧氏族，伊斯蘭教成為凝聚各氏族的共同紐帶。1991 年中央政府崩潰後，伊斯蘭法院聯盟與後來的青年黨試圖以宗教建立政權，宗教因此也捲入長年內戰。"
  },
  "language": {
   "official": "索馬利語與阿拉伯語是官方語言。",
@@ -28,27 +28,27 @@
    {
     "name": "索馬利語",
     "percent": 92,
-    "description": "全國通用語言，包括北部標準語與南部的馬伊語等變體。",
+    "description": "索馬利語屬亞非語系庫希特語族，是索馬利族的母語，北部與中部通行的「馬哈語」構成標準語，南部迪吉爾與拉汗文氏族則說差異頗大的「馬伊語」。1972 年西亞德·巴雷政府定拉丁字母為正式文字，隨後在 1973–1975 年發動全國掃盲運動，讓索馬利語成為行政與教育語言。由於全國幾乎是單一民族，索馬利語自然成為絕大多數人的第一語言。",
     "greeting": "Is ka warran?",
     "pronunciation": "is ka WAR-ran"
    },
    {
     "name": "阿拉伯語",
     "percent": 2,
-    "description": "官方語言，用於宗教與教育。",
+    "description": "阿拉伯語隨伊斯蘭教傳入，數百年來是可蘭經學校與宗教學者使用的語言，沿岸商人也因與阿拉伯半島貿易而通曉。索馬利亞在 1974 年加入阿拉伯國家聯盟，現行憲法也把阿拉伯語與索馬利語並列為官方語言，但以它為母語的人只有少數，多數人只在宗教場合或學校中學習。",
     "greeting": "السلام عليكم",
     "pronunciation": "as-sa-LAA-mu a-LAI-kum"
    }
   ],
-  "history": "索馬利語屬庫希特語族，長期以口傳詩歌為主要文學形式。1972年政府正式採用拉丁字母書寫索馬利語，並大力推廣識字運動。殖民時期北部受英國、南部受義大利統治，因此英語與義大利語也曾有一定影響。"
+  "history": "索馬利語屬庫希特語族，長期以口傳詩歌為主要文學形式，詩人與詩歌在氏族政治中地位崇高。1920 年代奧斯曼·尤素福·凱納迪德創造了奧斯曼亞字母，但未能普及；1972 年政府正式採用拉丁字母，並以大規模掃盲運動推廣書寫。殖民時期北部由英國、南部由義大利統治，英語與義大利語曾是行政語言，至今仍留下不少外來詞。1991 年內戰後大批難民散居世界各地，形成重要的海外索馬利語社群。"
  },
  "food": {
   "ranking": [
    {
     "name": "坎傑洛薄餅",
     "localName": "Canjeero",
-    "description": "以發酵麵糊煎成的薄餅，常配茶或燉菜。",
-    "history": "索馬利人最常見的早餐，與也門的拉霍薄餅相似。",
+    "description": "以高粱、小麥或玉米粉調成麵糊發酵後，在鐵板上煎成表面布滿氣孔的薄餅，口感微酸柔軟。早餐常抹上酥油、撒糖配茶，或搭配燉肉食用。",
+    "history": "坎傑洛與衣索比亞的英傑拉、葉門的拉霍薄餅屬於同一家族，反映非洲之角與阿拉伯半島隔著紅海數千年的往來。高粱是非洲之角耐旱的傳統作物，發酵麵糊不需烤爐，適合遊牧與半遊牧家庭在鐵板上煎製。在吉布地與索馬利蘭它也被稱為「拉霍」，至今仍是最普遍的家庭早餐，齋戒月時也常出現在開齋餐桌上。",
     "wiki": "Lahoh",
     "image": "https://upload.wikimedia.org/wikipedia/commons/4/44/LahohS.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:LahohS.jpg",
@@ -57,8 +57,8 @@
    {
     "name": "索馬利香料飯",
     "localName": "Bariis iskukaris",
-    "description": "以香料、葡萄乾與肉一同烹煮的香料飯。",
-    "history": "融合印度與阿拉伯香料傳統，常搭配羊肉或駱駝肉。",
+    "description": "以混合孜然、小豆蔻、肉桂、丁香的「哈瓦什」香料粉炊煮米飯，常配上羊肉或駱駝肉，旁邊附一根香蕉一起吃。",
+    "history": "索馬利亞本身產米不多，稻米與香料主要經由印度洋季風貿易從印度與阿拉伯輸入，摩加迪休等貝納迪爾海岸港口自中世紀起就與這些地區往來，香料飯因此帶有明顯的印度與阿拉伯風味。索馬利亞擁有世界上數量最多的駱駝群之一，駱駝肉配飯是遊牧文化的象徵。用手抓飯並搭配香蕉同吃是索馬利特有的習慣，婚禮與開齋節宴席上必定少不了這道飯。",
     "wiki": "Bariis iskukaris",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Somalicamelmeat.jpg/960px-Somalicamelmeat.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Somalicamelmeat.jpg",
@@ -67,8 +67,8 @@
    {
     "name": "三角炸餃",
     "localName": "Sambuus",
-    "description": "包入肉末與香料的三角形油炸麵點。",
-    "history": "在齋戒月開齋時特別常見。",
+    "description": "以麵皮包入香料調味的牛肉或羊肉末、洋蔥與辣椒，折成三角形後下鍋油炸，外皮酥脆、內餡辛香。",
+    "history": "三角炸餃源自中亞與中東的「桑布薩」，中世紀隨穆斯林商人傳入印度，再沿印度洋貿易網傳到東非海岸，各地名稱都相近。19–20 世紀殖民時期來到東非經商的印度移民也進一步推廣了這種點心。在索馬利亞，它是齋戒月日落開齋時最常見的食物，家家戶戶會事先大量包好冷凍，也是婚禮與節慶招待客人的小點。",
     "wiki": "Samosa",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Samosas%2C_snack_food_at_Wikipedia%27s_16th_Birthday_celebration_in_Chittagong_%2801%29.jpg/960px-Samosas%2C_snack_food_at_Wikipedia%27s_16th_Birthday_celebration_in_Chittagong_%2801%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Samosas,_snack_food_at_Wikipedia%27s_16th_Birthday_celebration_in_Chittagong_(01).jpg",
@@ -77,8 +77,8 @@
    {
     "name": "哈爾瓦甜糕",
     "localName": "Xalwo",
-    "description": "以糖、奶油與小豆蔻熬製的Q軟甜點。",
-    "history": "婚禮與開齋節等節慶的傳統甜點。",
+    "description": "用糖、玉米澱粉、酥油與小豆蔻、肉豆蔻等香料長時間熬煮攪拌，冷卻後成為晶亮Q彈、類似軟糖的甜點。",
+    "history": "「哈爾瓦」一詞源自阿拉伯語的「甜食」，中東與南亞多以芝麻醬或粗麥粉製作，索馬利版本則以澱粉與糖熬成凝膠狀，自成一格。傳統上需要數小時不停攪拌，因此多由專門師傅製作，被視為珍貴的待客甜點。索馬利婚禮、開齋節與宰牲節一定會端出哈爾瓦配咖啡或奶茶，海外索馬利社群也把它當作家鄉味的代表。",
     "wiki": "Halva",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Orient_sweets_%28special_halva%29_Samarkand%2C_Siyab.jpg/960px-Orient_sweets_%28special_halva%29_Samarkand%2C_Siyab.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Orient_sweets_(special_halva)_Samarkand,_Siyab.jpg",
@@ -87,8 +87,8 @@
    {
     "name": "索馬利奶茶",
     "localName": "Shaah",
-    "description": "加入小豆蔻、肉桂、丁香等香料的甜奶茶。",
-    "history": "喝茶是索馬利社交生活的重要部分。",
+    "description": "把紅茶與小豆蔻、肉桂、丁香等香料一起煮滾，加入大量糖與牛奶或駱駝奶，口味香甜濃郁。",
+    "history": "「沙赫」一詞與阿拉伯語、波斯語的「茶」同源，茶葉經由印度洋貿易以及 19 世紀末英國在索馬利蘭的殖民網絡普及開來，香料煮法則受到印度與阿拉伯影響。索馬利人一天會喝好幾回茶，街頭茶館是男性聚會、交換消息、討論政治與吟誦詩歌的場所。招待客人時奉上香料奶茶是基本禮節，下午茶時間也常搭配三角炸餃或小點心。",
     "wiki": "Masala chai",
     "image": "https://upload.wikimedia.org/wikipedia/commons/8/89/Chai_In_Sakora.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Chai_In_Sakora.jpg",

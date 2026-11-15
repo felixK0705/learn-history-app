@@ -7,25 +7,25 @@
    {
     "name": "天主教",
     "percent": 54,
-    "description": "西班牙殖民時期傳入的主要宗教。"
+    "description": "1511 年迪亞哥・貝拉斯奎茲率西班牙人征服古巴，天主教隨殖民成為唯一合法宗教，約 1612 年在東部科夫雷發現的「慈悲聖母」後來成為國家主保。1959 年革命後政府沒收教會學校、驅逐大批神職人員，教會一度萎縮；1992 年修憲改為世俗國家，1998 年教宗若望保祿二世訪古，信仰活動才逐步恢復。如今多數人受過洗禮，但定期上教堂者不多。"
    },
    {
     "name": "無宗教",
     "percent": 23,
-    "description": "革命後無神論政策影響下，無宗教人口增加。"
+    "description": "1959 年卡斯楚領導的革命建立社會主義政權，1976 年憲法以馬列主義無神論為國家意識形態，信徒長期被排除於共產黨與重要職位之外。數十年的無神論教育與宗教活動受限，使許多家庭不再傳承信仰；1991 年共產黨開放信徒入黨後雖有緩和，但無宗教者仍佔可觀比例。"
    },
    {
     "name": "非裔古巴信仰（聖特里亞等）",
     "percent": 17,
-    "description": "融合約魯巴信仰與天主教聖人崇拜的宗教，常與天主教並存。"
+    "description": "16–19 世紀為了甘蔗種植園，數十萬西非奴隸被運到古巴，其中大量是約魯巴人，他們的奧里莎（orisha）信仰與天主教聖人結合，形成聖特里亞（Regla de Ocha），例如雷神尚戈對應聖芭芭拉、愛神奧順對應慈悲聖母；剛果裔則發展出帕洛蒙特。由於可以與天主教並存，許多人同時信奉兩者，實際參與者遠比統計數字多。"
    },
    {
     "name": "基督新教",
     "percent": 5,
-    "description": "近年成長的福音派與五旬節派教會。"
+    "description": "1898 年美西戰爭後美國佔領古巴，美國的浸信會、衛理公會、長老會傳教士隨之而來，在各地設立學校與教會。革命後新教同樣受限制，但 1990 年代經濟危機的「特殊時期」裡，以家庭聚會為主的五旬節派教會快速成長。"
    }
   ],
-  "background": "西班牙殖民使天主教成為主流，被帶來的非洲奴隸則將約魯巴信仰與天主教聖人結合，形成聖特里亞教。1959年革命後政府推行無神論，1990年代起放寬宗教限制，宗教活動逐漸恢復。"
+  "background": "西班牙殖民四百年讓天主教成為古巴的主流信仰，而被販運來的西非奴隸則把約魯巴等傳統信仰融入天主教，形成獨特的非裔古巴宗教。1898 年後美國影響帶來新教。1959 年革命後政府奉行無神論，教會財產與學校被收歸國有，宗教長期退出公共生活；直到 1990 年代政策放寬、教宗相繼訪問，宗教才重新活躍，但混合信仰與無宗教並存成為今日特色。"
  },
  "language": {
   "official": "西班牙語是官方語言。",
@@ -33,27 +33,27 @@
    {
     "name": "西班牙語",
     "percent": 99,
-    "description": "全國通用語言，古巴口音以語速快聞名。",
+    "description": "1511 年西班牙征服後，原住民泰諾人因戰爭、強迫勞動與傳染病迅速消亡，西班牙語成為全島唯一的共同語言。古巴西語深受安達魯西亞與加那利群島移民影響，常吞掉音節尾的 s；「hurricane」源自的 huracán、tabaco 等詞則是泰諾語留下的痕跡。革命後全民掃盲運動（1961 年）進一步鞏固了標準西語的普及。",
     "greeting": "Hola",
     "pronunciation": "OH-la"
    },
    {
     "name": "海地克里奧爾語",
     "percent": 1,
-    "description": "海地移民後代使用。",
+    "description": "20 世紀初古巴糖業擴張，1910–20 年代從海地引進大批季節性甘蔗工人，部分人在東部的卡馬圭、謝戈德阿維拉等省落地生根，海地克里奧爾語因此延續下來。1930 年代經濟大蕭條時許多海地人遭遣返，留下的後裔逐漸轉用西語，如今主要是老一輩和東部鄉村社群使用。",
     "greeting": "Bonjou",
     "pronunciation": "bon-ZHOO"
    }
   ],
-  "history": "古巴原住民泰諾語在殖民後迅速消失，但留下「颶風」、「吊床」等詞彙。西班牙語隨殖民成為主流，並受到加那利群島移民與非洲語言的影響，形成獨特的古巴西班牙語。"
+  "history": "哥倫布 1492 年抵達前，島上通行泰諾語等阿拉瓦克語，殖民後隨原住民消失而絕跡，只留下 canoa、barbacoa 等借詞。西班牙語自 16 世紀起成為主流，並吸收了西非奴隸語言（如約魯巴語在宗教儀式中保存至今的詞彙）。20 世紀初的海地與牙買加移民帶來克里奧爾語，美國影響則留下不少英語借詞。1961 年革命政府的掃盲運動在一年內讓數十萬人學會讀寫，使標準西班牙語深入全國。"
  },
  "food": {
   "ranking": [
    {
     "name": "老衣服燉牛肉",
     "localName": "Ropa vieja",
-    "description": "將牛肉燉軟撕成絲，以番茄、甜椒與洋蔥燉煮。",
-    "history": "名稱意為「舊衣服」，源自西班牙加那利群島，被視為古巴國菜。",
+    "description": "將牛腹脅肉燉軟後撕成細絲，再與番茄、洋蔥、甜椒、大蒜做成的醬汁（sofrito）同燉，配白飯與黑豆食用。",
+    "history": "這道菜源自西班牙加那利群島，原本是把燉菜（cocido）剩下的肉撕碎再煮的節儉料理，隨移民傳到古巴。名稱意為「舊衣服」，因為肉絲看起來像破布條；民間傳說有個窮人買不起肉，把舊衣服丟進鍋裡祈禱，結果變成美味燉肉。革命後政府嚴格管制牛隻宰殺，1990 年代「特殊時期」牛肉更是稀缺，使它在島內成為珍貴料理，反而在邁阿密的古巴移民社群中廣為流傳，被視為古巴國菜。",
     "wiki": "Ropa vieja",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/RealRopaVieja.jpg/960px-RealRopaVieja.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:RealRopaVieja.jpg",
@@ -62,8 +62,8 @@
    {
     "name": "黑豆飯",
     "localName": "Moros y cristianos",
-    "description": "將黑豆與米一同烹煮的料理。",
-    "history": "名稱意為「摩爾人與基督徒」，源自西班牙的歷史記憶。",
+    "description": "將黑豆與米同鍋煮成深色的豆飯，以洋蔥、大蒜、孜然與月桂葉調味，常作為烤肉的配菜。",
+    "history": "名稱意為「摩爾人與基督徒」，以黑豆比喻摩爾人、白米比喻基督徒，典故來自 711–1492 年伊比利半島上的收復失地運動，由西班牙殖民者帶來這個說法。米豆同煮的做法則與西非奴隸的飲食傳統有關，豆類是種植園中便宜又耐飽的蛋白質來源。今天它是古巴家常飯桌上最基本的主食之一，在節慶大餐中也一定會出現。",
     "wiki": "Moros y cristianos",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Fil%C3%A0_Marraqueix.jpg/960px-Fil%C3%A0_Marraqueix.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Fil%C3%A0_Marraqueix.jpg",
@@ -72,8 +72,8 @@
    {
     "name": "烤乳豬",
     "localName": "Lechón asado",
-    "description": "以酸橙汁與大蒜醃漬後烤製的豬肉。",
-    "history": "古巴聖誕夜與家族聚會的傳統料理。",
+    "description": "將整隻乳豬以酸橙汁、大蒜、牛至調成的莫霍醬（mojo）醃過夜，再以炭火或地坑慢烤到皮脆肉嫩。",
+    "history": "豬是 16 世紀西班牙殖民者帶到加勒比海的牲畜，在古巴鄉間大量放養，烤全豬因此成為最重要的宴客菜。酸橙醃料則結合了西班牙的柑橘與大蒜調味。古巴人在平安夜（Nochebuena）的家族團聚中傳統上一定要烤乳豬；1969 年後耶誕節被取消為假日，直到 1997 年才恢復，但許多家庭一直私下保留這個習俗，流亡邁阿密的古巴人更以「中國箱」烤箱延續傳統。",
     "wiki": "Lechon",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Cochinillos-Mercado_de_la_Cebada.jpg/960px-Cochinillos-Mercado_de_la_Cebada.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Cochinillos-Mercado_de_la_Cebada.jpg",
@@ -82,8 +82,8 @@
    {
     "name": "古巴肉末",
     "localName": "Picadillo",
-    "description": "以絞肉、番茄、橄欖與葡萄乾燉煮的料理。",
-    "history": "西班牙與拉丁美洲常見的家常菜，在古巴常配米飯與黑豆。",
+    "description": "將牛絞肉與番茄醬汁、洋蔥、大蒜同炒，加入橄欖、葡萄乾與酸豆，鹹中帶甜，配白飯與炸大蕉食用。",
+    "history": "名稱來自西班牙語「picar」（剁碎），是西班牙殖民時期傳入拉丁美洲的家常菜，各國都有不同版本。加入葡萄乾、橄欖的甜鹹搭配，可追溯到伊斯蘭統治時期伊比利半島受阿拉伯飲食影響的風格。由於絞肉便宜、易於分量控制，它在古巴長期物資配給的年代中成為普遍的家常菜，至今仍是學校與家庭餐桌上的常見料理。",
     "wiki": "Picadillo",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Picadillo_and_rice.jpg/960px-Picadillo_and_rice.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Picadillo_and_rice.jpg",
@@ -92,8 +92,8 @@
    {
     "name": "炸大蕉",
     "localName": "Tostones",
-    "description": "將青大蕉切片壓扁後兩次油炸。",
-    "history": "加勒比海地區最常見的配菜。",
+    "description": "將青大蕉切段炸過後壓扁，再炸第二次，外脆內鬆，撒鹽或沾大蒜醬食用。",
+    "history": "大蕉原產東南亞，經非洲傳入伊比利半島，16 世紀初西班牙人把它帶到加勒比海，成為種植園奴隸的重要主食。兩次油炸的做法與西非處理澱粉作物的傳統有關，也在整個加勒比海與拉丁美洲流傳，名稱源自「tostar」（烘烤、炸脆）。在古巴，它是烤豬、燉肉旁不可缺的配菜，也常作為街頭小吃，代表了非裔與西班牙飲食文化的交融。",
     "wiki": "Tostones",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Tostones.JPG/960px-Tostones.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Tostones.JPG",

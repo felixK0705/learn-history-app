@@ -7,25 +7,25 @@
    {
     "name": "天主教",
     "percent": 63,
-    "description": "西班牙殖民傳入的主要宗教，出身阿根廷的教宗方濟各廣受愛戴。"
+    "description": "16世紀西班牙征服拉布拉他河流域，1536年與1580年兩度建立布宜諾斯艾利斯，天主教隨殖民傳入並成為殖民地唯一合法宗教。19世紀末至20世紀初，數百萬義大利與西班牙移民大量湧入，進一步鞏固天主教的主導地位；1853年憲法至今仍規定聯邦政府「支持」羅馬天主教。2013年阿根廷樞機主教貝爾格里奧當選教宗方濟各，是首位美洲出身的教宗。"
    },
    {
     "name": "無宗教",
     "percent": 19,
-    "description": "未認同任何宗教的人口快速增加。"
+    "description": "無宗教人口在近數十年快速增加，尤其集中在布宜諾斯艾利斯等大城市與年輕世代。教育普及、都市化，以及2010年同性婚姻合法化、2020年墮胎合法化等議題上社會與教會立場分歧，都使許多人脫離教會，2019年調查約有近兩成人自認無宗教。"
    },
    {
     "name": "福音派",
     "percent": 15,
-    "description": "近數十年快速成長的新教教會。"
+    "description": "福音派主要是五旬節派，1950年代美國佈道家在布宜諾斯艾利斯舉辦大型佈道會後開始成長，1980年代軍政府結束、民主化後快速擴張。它們在都市邊緣的貧民區與北部省份特別活躍，以社區互助與信仰醫治吸引信徒，比例已升至約15%。"
    },
    {
     "name": "其他宗教",
     "percent": 1,
-    "description": "包括猶太教與伊斯蘭教等。"
+    "description": "其他宗教包括猶太教與伊斯蘭教。19世紀末起許多東歐猶太移民來到阿根廷，形成拉丁美洲最大的猶太社群，1994年布宜諾斯艾利斯猶太互助協會（AMIA）爆炸案造成85人死亡；穆斯林則多是敘利亞、黎巴嫩移民後代。"
    }
   ],
-  "background": "西班牙殖民使天主教成為主流，十九世紀末至二十世紀初大量義大利與西班牙移民進一步強化了天主教傳統。阿根廷也擁有拉丁美洲最大的猶太社群，近年福音派教會與無宗教人口則持續成長。"
+  "background": "西班牙殖民前，阿根廷各原住民族有各自的自然與祖靈信仰，例如安地斯西北部的大地之母帕查瑪瑪信仰至今仍流傳。16世紀起天主教隨西班牙殖民與耶穌會傳教擴張，耶穌會在17–18世紀於東北部瓜拉尼人地區建立傳教村，直到1767年被西班牙國王驅逐。19世紀末大規模歐洲移民帶來大量天主教徒，也帶來猶太教、新教等少數宗教。20世紀後期起，福音派與無宗教人口都在增加，天主教比例逐漸下降。"
  },
  "language": {
   "official": "西班牙語是事實上的官方語言。",
@@ -33,34 +33,34 @@
    {
     "name": "西班牙語",
     "percent": 96,
-    "description": "帶有獨特的「里約布拉塔」口音，並使用vos代替tú。",
+    "description": "西班牙語隨16世紀西班牙殖民傳入。阿根廷的西語被稱為「里奧普拉塔西語」，以「vos」代替「tú」、把「ll」和「y」念成類似「sh」的音，並因19世紀末義大利移民大量湧入而帶有濃厚義大利語腔調與詞彙（如布宜諾斯艾利斯的俚語lunfardo）。由於原住民人口在殖民與19世紀「征服沙漠」戰爭中大幅減少，西語幾乎成為全民母語。",
     "greeting": "Hola, ¿qué tal?",
     "pronunciation": "OH-la keh TAL"
    },
    {
     "name": "瓜拉尼語",
     "percent": 1,
-    "description": "東北部科連特斯省等地使用。",
+    "description": "瓜拉尼語主要通行於東北部與巴拉圭接壤的科連特斯、米西奧內斯等省，17–18世紀耶穌會傳教村曾以瓜拉尼語傳教，使它在這一帶保存下來。2004年科連特斯省將瓜拉尼語列為省級官方語言，近年也有大量巴拉圭移民在布宜諾斯艾利斯使用。",
     "greeting": "Mba'éichapa",
     "pronunciation": "mba-AY-cha-pa"
    },
    {
     "name": "克丘亞語",
     "percent": 1,
-    "description": "西北部聖地牙哥—德爾埃斯特羅省等地使用。",
+    "description": "克丘亞語是印加帝國的語言，15世紀印加勢力擴張到阿根廷西北部，殖民時期西班牙傳教士也以克丘亞語傳教。今天主要在聖地亞哥－德爾埃斯特羅省與胡胡伊省等西北地區使用，另有玻利維亞移民帶來的使用者。",
     "greeting": "Imaynallan",
     "pronunciation": "ee-my-NAH-yan"
    }
   ],
-  "history": "西班牙殖民前當地有瓜拉尼語、克丘亞語、馬普切語等原住民語言。十九世紀末起大量義大利移民湧入，使阿根廷西班牙語的語調深受義大利語影響，並形成布宜諾斯艾利斯的俚語「隆法多」。"
+  "history": "西班牙人到來前，阿根廷境內有克丘亞語、瓜拉尼語、馬普切語等多種原住民語言。16世紀殖民後西班牙語成為行政與教會語言，1816年獨立後成為國家語言。1870–1930年間約有六百萬歐洲移民湧入，其中義大利人最多，深刻影響了阿根廷西語的語調與俚語。20世紀初政府以西語義務教育同化移民子女，原住民語言則持續萎縮，直到近年才有雙語教育計畫加以保存。"
  },
  "food": {
   "ranking": [
    {
     "name": "阿薩多烤肉",
     "localName": "Asado",
-    "description": "以炭火或木柴慢烤牛肋排、香腸與內臟。",
-    "history": "源自彭巴草原高喬牛仔的烤肉傳統，是阿根廷家庭聚會的核心。",
+    "description": "以炭火或柴火慢烤牛肋排、香腸、血腸與內臟，只用粗鹽調味，搭配青醬（chimichurri）一起吃。",
+    "history": "阿薩多源自18–19世紀潘帕斯草原的高喬人（gaucho），他們放牧野化的牛群，在野外以火烤牛肉為食。19世紀後期冷凍船與鐵路讓阿根廷成為牛肉出口大國，牛肉在國內也變得便宜普及。今天週日家庭阿薩多是重要的社交儀式，掌火的人稱為「asador」，賓客會為他鼓掌致意。",
     "wiki": "Asado",
     "image": "https://upload.wikimedia.org/wikipedia/commons/6/65/Asado_2005.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Asado_2005.jpg",
@@ -69,8 +69,8 @@
    {
     "name": "恩潘納達",
     "localName": "Empanada",
-    "description": "包入肉、洋蔥、雞蛋等餡料的烤或炸餡餅。",
-    "history": "隨西班牙殖民傳入，各省有不同口味。",
+    "description": "麵皮包入牛絞肉、洋蔥、橄欖與水煮蛋等餡料後烘烤或油炸的半月形餡餅，各省口味不同。",
+    "history": "恩潘納達的做法可追溯到西班牙加利西亞與更早的阿拉伯餡餅，16世紀隨西班牙殖民者傳入南美。阿根廷各省發展出不同風格，例如西北部圖庫曼與薩爾塔的版本以手切牛肉聞名，圖庫曼省的法馬伊亞每年還舉辦全國恩潘納達節。它是節慶、聚會與國慶日（5月25日、7月9日）常見的食物。",
     "wiki": "Empanada",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Tapa_de_empanadillitas.JPG/960px-Tapa_de_empanadillitas.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Tapa_de_empanadillitas.JPG",
@@ -79,8 +79,8 @@
    {
     "name": "米蘭內薩",
     "localName": "Milanesa",
-    "description": "裹粉油炸的薄肉排。",
-    "history": "十九世紀末由義大利移民帶來，現為最普遍的家常菜。",
+    "description": "將薄切牛肉片裹上蛋液與麵包粉後油炸或烘烤，常配薯泥或薯條，或做成加番茄醬與乳酪的拿坡里式。",
+    "history": "米蘭內薩源自義大利米蘭的炸小牛肉排（cotoletta alla milanese），19世紀末至20世紀初隨大批義大利移民傳入阿根廷，並改用本地便宜的牛肉。著名的「拿坡里米蘭內薩」據說是1940年代布宜諾斯艾利斯一家名為「Nápoli」的餐廳所創，與那不勒斯城本身無關。如今它是阿根廷家庭最常見的日常菜之一。",
     "wiki": "Milanesa",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Milanesa_con_fritas.png/960px-Milanesa_con_fritas.png",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Milanesa_con_fritas.png",
@@ -89,8 +89,8 @@
    {
     "name": "牛奶醬",
     "localName": "Dulce de leche",
-    "description": "將牛奶與糖慢熬成的焦糖色抹醬。",
-    "history": "阿根廷甜點的基本食材，用於阿法赫雷斯餅等點心。",
+    "description": "把牛奶與砂糖長時間慢火熬煮，糖與蛋白質焦化後成為焦糖色的濃稠甜醬，可抹麵包或做甜點內餡。",
+    "history": "類似的牛奶焦糖在拉丁美洲各地都有，阿根廷流傳一個傳說：1829年羅薩斯與拉瓦耶兩派政敵會談時，女僕忘了爐上的加糖牛奶，結果意外熬成牛奶醬，但這故事並無可靠史料。19世紀以後它在阿根廷普及，用於夾心餅乾阿爾法霍雷斯（alfajor）、可麗餅與冰淇淋。阿根廷人把它視為國家象徵，曾申請列入文化遺產。",
     "wiki": "Dulce de leche",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/DulceDeLeche.jpg/960px-DulceDeLeche.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:DulceDeLeche.jpg",
@@ -99,8 +99,8 @@
    {
     "name": "洛克羅燉菜",
     "localName": "Locro",
-    "description": "以玉米、南瓜、豆類與肉燉煮的濃湯。",
-    "history": "源自安地斯原住民料理，常於5月25日五月革命紀念日食用。",
+    "description": "以白玉米、豆類、南瓜與牛肉、豬肉、香腸長時間燉煮成的濃稠燉菜，口味醇厚，適合冬天食用。",
+    "history": "洛克羅源自安地斯原住民的玉米與南瓜燉菜，在印加時代前就已流傳，殖民後加入西班牙人帶來的豬肉與香腸。19世紀獨立戰爭期間，它成為愛國象徵，今天阿根廷人在5月25日五月革命紀念日（1810年）與7月9日獨立紀念日（1816年）傳統上會吃洛克羅。它也是北部省份冬季的家常菜。",
     "wiki": "Locro",
     "image": "https://upload.wikimedia.org/wikipedia/commons/2/22/Locro_argentino.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Locro_argentino.jpg",
