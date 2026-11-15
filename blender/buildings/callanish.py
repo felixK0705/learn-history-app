@@ -20,10 +20,10 @@ if os.environ.get("TL_CAM"):  # 開發用：覆寫預覽相機
 
 def callanish(path):
     b = Builder("Callanish", seed=23)
-    gneiss = b.tex("gneiss", "rock_04", tile=1.3, tint="#7f817b", normal=1.8, rough=0.85)
-    gneiss2 = b.tex("gneiss2", "rock_04", tile=1.0, tint="#6e706b", normal=1.8, rough=0.9)
-    lichen = b.tex("lichen", "rock_04", tile=1.2, tint="#878672", normal=1.6, rough=0.9)
-    grass = b.tex("grass", "rocky_terrain_02", tile=5.0, gain=0.9, normal=0.6, rough=0.95)
+    gneiss = b.tex("gneiss", "rock_04", tile=1.3, tint="#6c6d66", normal=2.0, rough=0.85)
+    gneiss2 = b.tex("gneiss2", "rock_04", tile=1.0, tint="#5f615c", normal=2.0, rough=0.9)
+    lichen = b.tex("lichen", "rock_04", tile=1.2, tint="#707256", normal=1.8, rough=0.9)
+    grass = b.tex("grass", "grass_ground", tile=3.0, gain=1.05, normal=0.8, rough=0.95)
     soil = b.color("soil", "#4a3c2a", rough=0.95)
     r = b.rng
 
@@ -40,6 +40,7 @@ def callanish(path):
         vs = b.rock(mi, (t, w, h + 0.4), (x, y, z0 + h / 2 - 0.2), rot=(lean[0], lean[1], face), rough=0.2, subdiv=4, seed=r.randint(0, 99999), round_=0.45)
         seed = r.random() * 50
         top_off = r.uniform(-0.5, 0.5)  # 尖端偏向一側
+        slant = r.uniform(-1.0, 1.0)
         for v in vs:
             k = max(0.0, (v.co.z - z0) / h)
             loc = v.co - Vector((x, y, v.co.z))
@@ -49,7 +50,10 @@ def callanish(path):
             along = loc.dot(side)
             perp = loc - side * along
             along = along * shrink + top_off * w * 0.5 * k ** 2
-            g = 1 + 0.08 * noise.noise(Vector((v.co.x * 1.5 + seed, v.co.y * 1.5, v.co.z * 0.6)))
+            if k > 0.75:  # 斜切、不規則的頂面
+                v.co.z -= (k - 0.75) * h * (0.35 * along / max(w, 0.1) * slant)
+            # 片麻岩的縱向節理：沿高度拉長的雜訊形成直條凹凸
+            g = 1 + 0.08 * noise.noise(Vector((v.co.x * 1.5 + seed, v.co.y * 1.5, v.co.z * 0.6))) + 0.07 * noise.noise(Vector((v.co.x * 4.0 + seed, v.co.y * 4.0, v.co.z * 0.15)))
             v.co = Vector((x, y, v.co.z)) + (side * along + perp * (1 - 0.3 * k)) * g
 
     # ---- 中央巨石（4.8 m）

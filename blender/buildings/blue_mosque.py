@@ -18,7 +18,7 @@ from lib import TAU, Builder
 
 from .hagia_sophia import arched_window, broadleaf, capture, dome, half_dome, minaret, window_row
 
-CAMERA = ((2, -4, 29), 22, -9, 150, 30)
+CAMERA = ((2, -2, 30), 20, -10, 118, 27)
 
 
 def blue_mosque(path):
@@ -187,9 +187,9 @@ def blue_mosque(path):
     # ---------------------------------------------------------------- 六座宣禮塔
     for sx in (-1, 1):
         for y in (Y0 - 2.0, Y1 + 0.5):
-            minaret(b, sx * (HX + 7.0), y, 64.0, 2.3, stone, lead, gold, balcony=trim, balconies=(0.47, 0.64, 0.80), base_h=9.0,
+            minaret(b, sx * (HX + 7.0), y, 64.0, 2.0, stone, lead, gold, balcony=stone_d, balconies=(0.47, 0.64, 0.80), base_h=9.0,
                     seg=16, cap_h=12.0)
-        minaret(b, sx * (CW + 3.0), CY1 + 2.0, 58.0, 2.1, stone, lead, gold, balcony=trim, balconies=(0.55, 0.76), base_h=8.0,
+        minaret(b, sx * (CW + 3.0), CY1 + 2.0, 58.0, 1.9, stone, lead, gold, balcony=stone_d, balconies=(0.55, 0.76), base_h=8.0,
                 seg=16, cap_h=11.0)
 
     # ---------------------------------------------------------------- 植栽：闊葉樹與棕櫚

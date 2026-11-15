@@ -541,11 +541,12 @@ class AsiaBuilder(Builder):
         rng = self.rng
         r = r or h * 0.2
         self.tube([(x, y, z - 0.3), (x, y, z + h * 0.9)], max(0.1, h * 0.02), 0.05, bark, seg=6)
-        n = 5
+        n = 9
         for i in range(n):
             t = i / (n - 1)
-            rr = r * (1 - 0.8 * t)
-            self.crown(x + rng.uniform(-0.2, 0.2), y + rng.uniform(-0.2, 0.2), z + h * (0.32 + 0.6 * t), rr, h * 0.14, mats, core, min(0.6, rr * 0.4), cap=60)
+            rr = r * (1 - 0.85 * t) * rng.uniform(0.85, 1.1)
+            self.crown(x + rng.uniform(-0.3, 0.3), y + rng.uniform(-0.3, 0.3), z + h * (0.3 + 0.64 * t), rr, h * 0.075 + rr * 0.15,
+                       mats, core, min(0.5, rr * 0.4), cap=30)
 
     # ---------------------------------------------------------- 東亞曲面屋頂
     def roof_skirt(self, mi, eave, top, ze, zt, center=(0, 0), U=0.6, P=0.4, K=(16, 12), rows=8,
