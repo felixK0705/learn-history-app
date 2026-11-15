@@ -41,6 +41,7 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
   const hoverRef = useRef<GeoFeature | null>(null);
   const selectedRef = useRef<string | null>(selectedIso);
   const labelEls = useRef(new Map<string, HTMLDivElement>());
+  const posEls = useRef(new Map<HTMLDivElement, { lat: number; lng: number }>());
   const limitRef = useRef(labelLimit(defaultAlt()));
 
   const cb = useRef({ onSelectCountry, onHoverCountry, onSelectBuilding, onReady });
@@ -99,10 +100,8 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
       })
       .onPolygonClick((f) => cb.current.onSelectCountry((f as GeoFeature).properties.iso_a3))
       .htmlTransitionDuration(0)
-      .htmlElementVisibilityModifier((elem, visible) => {
-        elem.style.opacity = visible ? "" : "0";
-        elem.style.pointerEvents = visible ? "" : "none";
-      })
+      // 可見度由下方的逐格淡入淡出計算接管，避免標籤在球體邊緣反覆閃爍
+      .htmlElementVisibilityModifier(() => {})
       .onGlobeReady(() => cb.current.onReady?.());
 
     g.pointOfView({ lat: 15, lng: 20, altitude: defaultAlt() });
@@ -174,6 +173,28 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
 
     globeRef.current = g;
 
+    // 依標籤與視線的夾角平滑淡出：越接近地球邊緣越透明，背面完全隱藏
+    let fadeRaf = 0;
+    const fade = () => {
+      const cam = g.camera().position;
+      const d = cam.length();
+      const R = g.getGlobeRadius();
+      const horizon = R / d;
+      posEls.current.forEach((ll, div) => {
+        const p = g.getCoords(ll.lat, ll.lng, 0);
+        const len = Math.hypot(p.x, p.y, p.z) || 1;
+        const dot = (p.x * cam.x + p.y * cam.y + p.z * cam.z) / (len * d);
+        const o = Math.min(1, Math.max(0, (dot - horizon - 0.04) / 0.16));
+        const v = o.toFixed(2);
+        if (div.style.opacity !== v) {
+          div.style.opacity = v;
+          div.style.pointerEvents = o > 0.5 ? "" : "none";
+        }
+      });
+      fadeRaf = requestAnimationFrame(fade);
+    };
+    fadeRaf = requestAnimationFrame(fade);
+
     fetch("/data/countries.json")
       .then((r) => r.json())
       .then((geo: { features: GeoFeature[] }) => {
@@ -190,6 +211,7 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
     return () => {
       disposed = true;
       cancelAnimationFrame(raf);
+      cancelAnimationFrame(fadeRaf);
       ro.disconnect();
       g._destructor?.();
       el.replaceChildren();
@@ -206,6 +228,7 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
     const markers: Marker[] = countries.map((c) => ({ kind: "country", iso: c.iso, lat: c.pos[0], lng: c.pos[1] }));
     if (showLandmarks) buildings.forEach((b) => markers.push({ kind: "building", b, lat: b.position[0], lng: b.position[1] }));
     labelEls.current.clear();
+    posEls.current.clear();
     g.htmlElementsData(markers)
       .htmlLat("lat")
       .htmlLng("lng")
@@ -213,6 +236,8 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
       .htmlElement((m) => {
         const marker = m as Marker;
         const div = document.createElement("div");
+        div.style.opacity = "0";
+        posEls.current.set(div, { lat: marker.lat, lng: marker.lng });
         if (marker.kind === "country") {
           const c = countryByIso.get(marker.iso)!;
           div.className = "country-label";

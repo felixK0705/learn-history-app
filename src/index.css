@@ -91,7 +91,7 @@
 
 /* globe.gl 國家標籤：極簡白點＋文字 */
 .country-label {
-  @apply flex cursor-pointer select-none items-center gap-1 whitespace-nowrap text-[10.5px] font-medium tracking-wide text-white/90 transition-[opacity,transform] duration-300;
+  @apply flex cursor-pointer select-none items-center gap-1 whitespace-nowrap text-[10.5px] font-medium tracking-wide text-white/90 transition-[background-color,transform] duration-200;
   transform: translate(-50%, -50%);
   pointer-events: auto;
   text-shadow: 0 1px 3px rgb(0 20 70 / 0.7);
