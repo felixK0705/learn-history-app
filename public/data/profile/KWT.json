@@ -7,20 +7,20 @@
    {
     "name": "伊斯蘭教",
     "percent": 75,
-    "description": "國教；科威特公民中遜尼派約占七成、什葉派約占三成。"
+    "description": "科威特公民幾乎全是穆斯林，多數為遜尼派，什葉派約佔公民的三成，其中不少是過去自波斯與巴林遷來的商人家族後代。由於外籍勞工中也有大量來自埃及、巴基斯坦、孟加拉等國的穆斯林，伊斯蘭教是全國最大宗教，但比例被非穆斯林移工稀釋到約四分之三。"
    },
    {
     "name": "基督教",
     "percent": 18,
-    "description": "主要為外籍勞工，也有少數科威特籍基督徒。"
+    "description": "科威特本地基督徒只有數百人，主要是20世紀初從伊拉克、土耳其與黎凡特遷來的家族。今天的大量基督徒幾乎都是外籍勞工，包括印度喀拉拉邦的天主教與東方禮教會信徒、菲律賓天主教徒，以及埃及科普特人，教堂主要集中在科威特城。"
    },
    {
     "name": "其他（印度教、佛教等）",
     "percent": 7,
-    "description": "主要為南亞與東南亞外籍勞工。"
+    "description": "科威特自1970年代石油繁榮後大量引進南亞與東南亞勞工，其中印度教徒來自印度、尼泊爾，佛教徒多來自斯里蘭卡與泰國等國。他們只能在私人場所或有限的設施內進行宗教活動，人數隨勞工政策而變動。"
    }
   ],
-  "background": "伊斯蘭教自7世紀起在阿拉伯半島普及。18世紀起阿拉伯部落在此建立港口城鎮，薩巴赫家族統治至今。20世紀中期石油開發後引進大量外籍勞工，帶來基督教、印度教等多元信仰。"
+  "background": "科威特所在的阿拉伯半島東北部在7世紀伊斯蘭興起後即伊斯蘭化，波斯灣中的費拉卡島則留有古希臘與早期基督教遺址。18世紀初阿拉伯半島的部族遷居此地，1756年左右薩巴赫家族成為統治者，1899年成為英國保護國，1961年獨立。憲法定伊斯蘭教為國教、伊斯蘭教法為立法主要來源之一。1938年發現石油後經濟起飛，大量外籍勞工移入，使今日外國人佔總人口約三分之二，也帶來基督教、印度教、佛教等多元宗教。"
  },
  "language": {
   "official": "官方語言為阿拉伯語。",
@@ -28,34 +28,34 @@
    {
     "name": "阿拉伯語（科威特方言）",
     "percent": 50,
-    "description": "科威特公民與阿拉伯移民的語言。",
+    "description": "阿拉伯語是科威特公民的母語與唯一官方語言，科威特方言屬海灣阿拉伯語，在採珠與海上貿易時代吸收了波斯語、印地語等詞彙。由於外國人佔人口多數，實際以阿拉伯語為母語者約只有一半，其餘多為其他阿拉伯國家的移工。",
     "greeting": "السلام عليكم",
     "pronunciation": "as-sa-lām ʿa-lay-kum"
    },
    {
     "name": "印度諸語言（馬拉雅拉姆語、印地語等）",
     "percent": 20,
-    "description": "大量印度外籍勞工使用。",
+    "description": "科威特與印度的貿易往來可追溯到採珠與帆船貿易時代，印度盧比甚至曾是科威特的流通貨幣（直到1961年）。1970年代石油繁榮後大量印度勞工移入，以喀拉拉邦的馬拉雅拉姆語使用者最多，印度人如今是科威特最大的外國人社群。",
     "greeting": "नमस्ते",
     "pronunciation": "na-ma-ste"
    },
    {
     "name": "他加祿語",
     "percent": 5,
-    "description": "菲律賓外籍勞工使用。",
+    "description": "1970年代後菲律賓勞工開始大量前往波斯灣國家，從事家務、醫護與服務業。他加祿語因此成為科威特的重要移民語言，主要在家庭幫傭與零售業工作者之間使用。",
     "greeting": "Kumusta",
     "pronunciation": "ku-mus-ta"
    }
   ],
-  "history": "科威特阿拉伯語屬海灣阿拉伯語方言，因航海貿易吸收波斯語、印度語與英語詞彙。石油時代後外籍人口大增，英語成為商業與跨族群交流的常用語言。"
+  "history": "科威特的語言屬於海灣阿拉伯語，與鄰近的沙烏地東部、巴林、卡達方言相近，並因長期的海上貿易吸收了波斯語、印地語、土耳其語與英語的詞彙。1899–1961年的英國保護國時期，英語進入教育與商業。1938年石油發現、1950年代石油出口後，政府大量引進外籍勞工，南亞語言與菲律賓語在日常生活中隨處可聞。憲法定阿拉伯語為官方語言，學校與政府使用現代標準阿拉伯語。"
  },
  "food": {
   "ranking": [
    {
     "name": "瑪奇布斯香料飯",
     "localName": "مجبوس (Machboos)",
-    "description": "以香料、乾萊姆燉煮的雞肉、羊肉或魚，與米飯同煮，為國菜。",
-    "history": "波斯灣地區共享的料理，與印度香飯有關，反映海上貿易帶來的香料文化。",
+    "description": "以香料（黑萊姆、肉桂、小豆蔻、番紅花等）燉煮的雞肉、羊肉或魚，與長米一起燜煮的香料飯，是科威特國菜。",
+    "history": "Machboos 與印度的比爾亞尼飯關係密切，反映了科威特與印度數百年來的海上貿易：科威特商人駕著帆船（dhow）把椰棗與馬匹運往印度，換回大米與香料。黑萊姆（乾燥萊姆）則來自阿曼。1950年代石油時代之前，machboos 是富裕商人家庭的宴客菜，今天則是科威特家庭週五午餐與節慶時的必備料理。",
     "wiki": "Kabsa",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Machboos_%28cropped%29.JPG/960px-Machboos_%28cropped%29.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Machboos_(cropped).JPG",
@@ -64,8 +64,8 @@
    {
     "name": "哈里斯麥粥",
     "localName": "هريس (Harees)",
-    "description": "以小麥與肉長時間燉煮搗成的濃稠粥。",
-    "history": "阿拉伯半島的古老料理，在齋戒月與節慶時特別常見。",
+    "description": "以碎小麥與肉（多為雞肉或羊肉）長時間燉煮並搗成粥狀，淋上奶油或撒肉桂。口感綿密如粥，味道溫和，常撒糖或配肉桂食用。",
+    "history": "Harees 是阿拉伯半島歷史悠久的料理，10世紀巴格達的食譜書《Kitab al-Tabikh》中已有類似的小麥肉粥。在波斯灣地區，它與伊斯蘭節日密切相關，尤其在齋戒月開齋時與開齋節、宰牲節期間大量製作，常由鄰居互相分送，也是招待客人的傳統料理。",
     "wiki": "Harees",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Armenian_Harisa.JPG/960px-Armenian_Harisa.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Armenian_Harisa.JPG",
@@ -74,8 +74,8 @@
    {
     "name": "巴拉利特甜麵",
     "localName": "بلاليط (Balaleet)",
-    "description": "以番紅花、小荳蔻調味的甜細麵，上鋪煎蛋。",
-    "history": "海灣地區的傳統早餐，常見於開齋節與節慶。",
+    "description": "以細麵條加糖、番紅花、小豆蔻與玫瑰水炒成甜味，上面鋪一層煎蛋，作為早餐。甜麵與鹹蛋的組合口感特殊，是海灣地區特有的早餐。",
+    "history": "Balaleet 是波斯灣地區特有的甜鹹早餐，麵條由貿易傳入，番紅花與小豆蔻則反映與波斯、印度的長期往來。這道料理在開齋節早晨特別常見，家人在清晨禮拜後一同享用，也被視為節慶的象徵食物之一。",
     "wiki": "Balaleet",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Homemade_Balaleet%2C_2023.jpg/960px-Homemade_Balaleet%2C_2023.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Homemade_Balaleet,_2023.jpg",
@@ -84,8 +84,8 @@
    {
     "name": "盧凱瑪特",
     "localName": "لقيمات (Luqaimat)",
-    "description": "炸成小球的甜麵團，淋上椰棗糖漿或蜂蜜。",
-    "history": "海灣地區傳統甜點，齋戒月開齋時尤其受歡迎。",
+    "description": "以酵母麵團炸成的小圓球，外脆內軟，淋上椰棗糖漿或蜂蜜，撒芝麻。外皮酥脆、內部鬆軟，帶有小豆蔻與番紅花的香氣。",
+    "history": "Luqaimat 意為「小口」，類似的炸麵團甜點在13世紀巴格達的食譜中已有記載，阿拉伯世界各地都有不同版本。在科威特與其他海灣國家，它是齋戒月傍晚開齋後最受歡迎的甜點，也常在婚禮與家庭聚會中招待客人。",
     "wiki": "Luqaimat",
     "image": "https://upload.wikimedia.org/wikipedia/commons/1/15/Sam%27dan_lokma_tatlisi.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Sam%27dan_lokma_tatlisi.jpg",
@@ -94,8 +94,8 @@
    {
     "name": "阿拉伯咖啡",
     "localName": "قهوة عربية (Gahwa)",
-    "description": "加入小荳蔻的淡色咖啡，以小杯招待客人。",
-    "history": "「阿拉伯咖啡」於2015年列入聯合國教科文組織非物質文化遺產，是好客的象徵。",
+    "description": "以淺焙咖啡豆加入大量小豆蔻煮成的淡金色咖啡，用小杯少量倒給客人，配椰棗食用。口味清淡帶香料味，與濃烈的土耳其咖啡完全不同。",
+    "history": "咖啡在15世紀從葉門的蘇非派修道者間傳開，隨後傳遍阿拉伯半島。貝都因人與海灣地區把招待咖啡當作待客的核心禮儀：主人右手倒咖啡，客人搖晃杯子表示不再續杯。科威特傳統的社交廳（diwaniya）中，男性聚會討論時事時總有阿拉伯咖啡；2015年阿聯、沙烏地、阿曼與卡達共同申報的「阿拉伯咖啡」被聯合國教科文組織列入非物質文化遺產，可見它是整個海灣地區共同的待客文化。",
     "wiki": "Arabic coffee",
     "image": "https://upload.wikimedia.org/wikipedia/commons/4/49/A_dallah_a_traditional_Arabic_coffee_pot_with_cups_and_coffee_beans.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:A_dallah_a_traditional_Arabic_coffee_pot_with_cups_and_coffee_beans.jpg",

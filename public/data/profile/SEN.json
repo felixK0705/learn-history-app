@@ -7,20 +7,20 @@
    {
     "name": "伊斯蘭教（遜尼派）",
     "percent": 96,
-    "description": "多數信徒隸屬穆里德、提加尼等蘇菲教團。"
+    "description": "伊斯蘭教在11世紀經由跨撒哈拉貿易傳入塞內加爾河流域，1040年前後的塔克魯爾王國統治者成為西非最早改信伊斯蘭教的君主之一。但伊斯蘭教真正深入民間是在19世紀末法國殖民期間，蘇非教團成為抵抗殖民與社會重組的核心：1883年阿馬杜·邦巴創立穆里德教團，提加尼耶、卡迪里耶等教團也迅速擴張。今日幾乎所有塞內加爾穆斯林都屬於某個蘇非教團，每年數百萬信徒前往圖巴參加馬加爾朝聖。"
    },
    {
     "name": "天主教",
     "percent": 3,
-    "description": "主要分布於沿海與南部卡薩芒斯地區。"
+    "description": "天主教在15世紀葡萄牙人抵達時曾短暫傳入，19世紀法國殖民時期在聖路易、戈雷島與達卡等城市發展。天主教徒主要是南部卡薩芒斯的朱拉族與西部的塞雷爾族，以及城市中的混血社群。塞內加爾首任總統桑戈爾就是天主教徒，卻在以穆斯林為主的國家執政二十年，體現了宗教寬容的傳統。"
    },
    {
     "name": "傳統信仰",
     "percent": 1,
-    "description": "部分族群保留的傳統宗教。"
+    "description": "在伊斯蘭教與基督教普及前，塞內加爾各族都有自己的傳統信仰，例如塞雷爾族崇拜至高神羅格（Roog）。由於伊斯蘭化與基督教化已有一百多年歷史，純粹信仰傳統宗教的人已很少，主要集中在東南部與卡薩芒斯的部分地區，但許多傳統習俗仍融入了伊斯蘭教的實踐中。"
    }
   ],
-  "background": "伊斯蘭教自十一世紀起經撒哈拉貿易傳入塞內加爾河流域，十九世紀蘇菲教團（如阿馬杜·邦巴創立的穆里德教團）在抵抗法國殖民的過程中迅速壯大。法國殖民時期天主教在沿海地區傳播，首任總統桑戈爾即為天主教徒。"
+  "background": "塞內加爾在11世紀接觸伊斯蘭教，但直到19世紀法國殖民期間，蘇非教團才使伊斯蘭教在民間普及，穆里德教團、提加尼耶教團等至今在社會與政治中影響深遠。天主教隨法國殖民在城市與南部發展。1960年獨立後塞內加爾是世俗國家，穆斯林與基督徒和平共處、相互通婚的傳統，使它被視為西非宗教寬容的典範。"
  },
  "language": {
   "official": "法語是官方語言，沃洛夫語等多種本土語言為國語。",
@@ -28,41 +28,41 @@
    {
     "name": "沃洛夫語",
     "percent": 40,
-    "description": "人數最多的民族語言，約八成人口會說，是全國通用語。",
+    "description": "沃洛夫語屬尼日－剛果語系大西洋語支，是14–16世紀沃洛夫帝國的語言。殖民時期達卡、聖路易等城市以沃洛夫人為主，城市化讓沃洛夫語成為各族群之間的共同語，約四成人口以它為母語，超過八成人口能說沃洛夫語。都市中常見混合法語詞彙的「城市沃洛夫語」。",
     "greeting": "Na nga def?",
     "pronunciation": "nahng-ga DEF"
    },
    {
     "name": "富拉語（普拉爾語）",
     "percent": 27,
-    "description": "富拉尼人的語言，分布於北部與東部。",
+    "description": "富拉語（普拉爾語）是富拉尼族與圖庫勒人的語言，分布在北部塞內加爾河流域與東部。富拉尼人以游牧與伊斯蘭學術著稱，11世紀塔克魯爾王國與18–19世紀的富塔托羅伊斯蘭國都以普拉爾語為主要語言。",
     "greeting": "No mbaddaa?",
     "pronunciation": "no m-BAD-da"
    },
    {
     "name": "朱拉語",
     "percent": 5,
-    "description": "南部卡薩芒斯地區朱拉人的語言。",
+    "description": "朱拉語是南部卡薩芒斯地區朱拉族的語言。卡薩芒斯被甘比亞與北部其他地區隔開，文化與北部差異較大，1982年起的卡薩芒斯分離運動與這種地區認同有關。",
     "greeting": "Kasumay",
     "pronunciation": "ka-soo-MAI"
    },
    {
     "name": "法語",
     "percent": 2,
-    "description": "官方語言，多數人作為第二語言使用。",
+    "description": "法語是1960年獨立後的官方語言，源自法國殖民統治，聖路易在1659年就成為法國在西非的據點。法語用於政府、教育與正式場合，但以法語為母語的人只約2%，多數人以沃洛夫語進行日常溝通。",
     "greeting": "Bonjour",
     "pronunciation": "bon-ZHOOR"
    }
   ],
-  "history": "塞內加爾語言屬尼日—剛果語系大西洋語支與曼德語支。法國殖民時期法語成為行政與教育語言，而沃洛夫語隨都市化與商業活動成為最主要的通用語，並大量吸收法語詞彙。"
+  "history": "塞內加爾有三十多種本土語言，伊斯蘭化後部分語言以改寫的阿拉伯字母「阿賈米」書寫。17世紀起法國在聖路易與戈雷島建立據點，19世紀後法語成為殖民地的行政與教育語言。1960年獨立後首任總統桑戈爾是著名的法語詩人，維持法語為官方語言。1971年起政府陸續將沃洛夫語、普拉爾語、朱拉語、塞雷爾語等定為國語。"
  },
  "food": {
   "ranking": [
    {
     "name": "魚飯",
     "localName": "Thiéboudienne (Ceebu jën)",
-    "description": "以番茄醬汁燉煮魚與蔬菜，搭配吸收湯汁的米飯。",
-    "history": "塞內加爾國菜，據傳源自聖路易，2021年列入聯合國教科文組織非物質文化遺產。",
+    "description": "以番茄醬汁燉煮石斑魚等鮮魚與木薯、紅蘿蔔、茄子、高麗菜等蔬菜，再用燉魚的湯汁煮碎米，米飯吸飽魚鮮，底部的鍋巴尤其受歡迎。",
+    "history": "魚飯相傳由19世紀聖路易的廚師彭達·姆貝耶發明，以碎米取代了傳統的小米。法國殖民時期從印度支那進口大量碎米，使米飯取代小米成為塞內加爾的主食。2021年聯合國教科文組織將魚飯列入人類非物質文化遺產，它被視為塞內加爾的國菜，名稱在沃洛夫語中意為「米飯與魚」。",
     "wiki": "Thieboudienne",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Thieboudienne.JPG/960px-Thieboudienne.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Thieboudienne.JPG",
@@ -71,8 +71,8 @@
    {
     "name": "亞撒雞",
     "localName": "Yassa",
-    "description": "以大量洋蔥與檸檬醃漬燉煮的雞肉或魚。",
-    "history": "源自南部卡薩芒斯地區，現流行於整個西非。",
+    "description": "將雞肉或魚以大量洋蔥、檸檬汁、芥末與香料醃漬後燒烤，再與醃料中的洋蔥一起燉煮，口味酸甜微辣，配米飯食用。",
+    "history": "亞撒雞源自南部卡薩芒斯地區的朱拉族，當地盛產萊姆與檸檬。這道料理隨著塞內加爾國內的移民與交流傳遍全國，並傳到西非各國與法國。由於做法簡單、食材容易取得，亞撒雞是塞內加爾家庭日常與招待客人的常見料理，也是塞內加爾餐廳在海外最受歡迎的菜色之一。",
     "wiki": "Yassa (food)",
     "image": "https://upload.wikimedia.org/wikipedia/commons/4/45/Poulet_Yassa_Chicken_rice_with_onion_sauce.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Poulet_Yassa_Chicken_rice_with_onion_sauce.jpg",
@@ -81,8 +81,8 @@
    {
     "name": "花生燉肉",
     "localName": "Mafé",
-    "description": "以花生醬燉煮肉類與蔬菜，配米飯食用。",
-    "history": "源自馬利曼德人的料理，花生在殖民時期成為塞內加爾的重要經濟作物。",
+    "description": "將牛肉、羊肉或雞肉與番茄、洋蔥、地瓜、木薯一起，用大量花生醬燉煮成濃稠的醬汁，口味濃郁，配白米飯食用。",
+    "history": "花生原產美洲，16世紀由葡萄牙人引入西非。19世紀法國殖民當局在塞內加爾大力推廣花生種植作為出口作物，塞內加爾一度成為全球最大的花生出口國之一，鐵路也沿著花生產區修建。花生燉肉源自馬利的曼丁哥人，在花生產業的推動下成為塞內加爾的日常料理。",
     "wiki": "Maafe",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Mafe.malien.jpg/960px-Mafe.malien.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Mafe.malien.jpg",
@@ -91,8 +91,8 @@
    {
     "name": "恰克里",
     "localName": "Thiakry",
-    "description": "以小米粒與優格或酸奶混合的甜點。",
-    "history": "西非常見的甜點，常在節慶時製作。",
+    "description": "將蒸熟的小米粒與優格或發酵牛奶、糖、香草與肉豆蔻混合，有時加入葡萄乾，口感酸甜清涼。",
+    "history": "小米是西非最古老的穀物之一，在稻米普及前一直是塞內加爾的主食。恰克里結合了小米與游牧民族富拉尼人的乳製品，反映了農民與牧民之間的交換關係。它是齋戒月開齋時與節慶時的常見甜點，也是炎熱天氣中受歡迎的冰涼點心。",
     "wiki": "Thiakry",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Gambia_Chakery_0001.jpg/960px-Gambia_Chakery_0001.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Gambia_Chakery_0001.jpg",
@@ -101,8 +101,8 @@
    {
     "name": "阿卡拉",
     "localName": "Accara",
-    "description": "以黑眼豆泥油炸而成的豆餅，常配洋蔥辣醬。",
-    "history": "西非廣泛流行的街頭小吃，也隨奴隸貿易傳至巴西等地。",
+    "description": "將去皮的黑眼豆浸泡後磨成泥，加入洋蔥與鹽，用湯匙舀成小團油炸，外酥內軟，常沾以洋蔥、番茄與辣椒熬成的醬汁。",
+    "history": "阿卡拉源自奈及利亞約魯巴族的「akara」，黑眼豆是西非原生作物，在西非各地都有類似的炸豆餅。它也隨著奴隸貿易傳到巴西，成為巴伊亞州的「acarajé」。在塞內加爾，阿卡拉是街頭小販傍晚販售的熱門小吃，也常在命名禮與宗教節日中作為分送賓客的食物。",
     "wiki": "Akara",
     "image": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Beans_Ball-Akara.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Beans_Ball-Akara.jpg",

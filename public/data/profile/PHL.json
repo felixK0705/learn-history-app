@@ -7,30 +7,30 @@
    {
     "name": "天主教",
     "percent": 79,
-    "description": "西班牙殖民時期傳入，深刻影響節慶與社會生活。"
+    "description": "1521年麥哲倫在宿霧為胡馬邦酋長受洗，1565年黎牙實比建立西班牙殖民統治，奧斯定會、方濟會、耶穌會、道明會等修會在各島推行改宗，使天主教在333年的殖民統治中深入社會。1898年後美國統治帶來政教分離，但天主教仍是主流。1986年天主教會支持的「人民力量革命」推翻馬可仕，顯示教會的社會影響力；菲律賓也是亞洲最大的天主教國家。"
    },
    {
     "name": "伊斯蘭教",
     "percent": 6,
-    "description": "主要分布於南部民答那峨與蘇祿群島。"
+    "description": "伊斯蘭教在14世紀經由阿拉伯與馬來商人傳入蘇祿群島，15世紀建立了蘇祿蘇丹國與馬京達瑙蘇丹國。西班牙人在16世紀抵達時，伊斯蘭教已傳到馬尼拉，但西班牙人從北部驅逐穆斯林勢力，南部的摩洛人則抵抗殖民三百多年。因此穆斯林集中在民答那峨西部與蘇祿群島，2019年成立了邦薩摩洛自治區。"
    },
    {
     "name": "新教（福音派等）",
     "percent": 5,
-    "description": "美國統治時期傳入，近年福音派持續成長。"
+    "description": "新教在1898年美國統治後由長老會、衛理公會、浸信會等美國傳教士傳入，透過學校與醫院傳播。1970年代後五旬節派與靈恩派快速成長，例如1978年成立的「耶穌是主」教會。由於天主教根基深厚，新教徒比例雖成長但仍只有約5%。"
    },
    {
     "name": "基督教會（Iglesia ni Cristo）",
     "percent": 3,
-    "description": "1914年在菲律賓創立的本土教會。"
+    "description": "基督教會（Iglesia ni Cristo）由菲律賓人菲力克斯·馬納洛於1914年在馬尼拉創立，主張自己是恢復原始基督教的真正教會，不承認三位一體。教會紀律嚴明、組織嚴密，信徒會依教會指示集體投票，因此在選舉中具有影響力，並在全國興建了大量具特色的尖塔教堂。"
    },
    {
     "name": "菲律賓獨立教會",
     "percent": 1,
-    "description": "1902年脫離羅馬天主教會成立的本土教會。"
+    "description": "菲律賓獨立教會（阿格利派教會）於1902年由格雷戈里奧·阿格利派與勞工領袖伊薩貝洛·德·洛斯·雷耶斯創立，源自菲律賓革命期間對西班牙籍神職人員壟斷教會的不滿。它保留天主教的禮儀，但不服從教宗，主要集中在伊洛戈斯等北部地區。"
    }
   ],
-  "background": "伊斯蘭教於14世紀經馬來商人傳入南部蘇祿與民答那峨。1565年起西班牙殖民，傳教士使北部與中部居民大規模改信天主教，但南部穆斯林長期抵抗。美國統治期間新教傳入，20世紀初亦興起本土教會。"
+  "background": "菲律賓原住民信仰祖靈與自然神靈（anito）。14世紀伊斯蘭教傳入南部，建立蘇祿與馬京達瑙蘇丹國。1565年起西班牙殖民三百多年，天主教成為絕大多數人的信仰。19世紀末菲律賓革命中出現本土的菲律賓獨立教會，1898年後美國統治帶來新教與政教分離，1914年基督教會成立。今日天主教佔約八成，南部則有穆斯林自治區。"
  },
  "language": {
   "official": "官方語言為菲律賓語（以他加祿語為基礎）與英語。",
@@ -38,41 +38,41 @@
    {
     "name": "他加祿語",
     "percent": 40,
-    "description": "呂宋島中南部的語言，菲律賓語即以其為基礎，全國通用。",
+    "description": "他加祿語是馬尼拉與呂宋島中南部他加祿族的語言，馬尼拉在西班牙與美國統治時期都是首都，使它成為政治與經濟中心的語言。1937年奎松總統選定他加祿語作為國語的基礎，1987年憲法稱之為「菲律賓語」。電視、電影與學校的推廣使它成為全國通用語，以它為母語的人約四成，多數國民都能使用。",
     "greeting": "Kumusta",
     "pronunciation": "ku-mus-ta"
    },
    {
     "name": "宿霧語（比薩亞語）",
     "percent": 21,
-    "description": "中部維薩亞斯與民答那峨的主要語言。",
+    "description": "宿霧語是比薩亞群島與民答那峨島最大的語言，以宿霧為中心。由於比薩亞人在20世紀大量移居民答那峨開墾，宿霧語也成為民答那峨的主要語言。在1937年選定國語時，比薩亞語系人口其實多於他加祿語，因此許多比薩亞人至今對他加祿語成為國語基礎有所不滿。",
     "greeting": "Maayong buntag（早安）",
     "pronunciation": "ma-a-yong bun-tag"
    },
    {
     "name": "伊洛卡諾語",
     "percent": 8,
-    "description": "呂宋島北部伊洛卡諾人的語言。",
+    "description": "伊洛卡諾語是呂宋島西北部伊洛戈斯地區的語言，伊洛卡諾人以勤儉與移民著稱，19世紀起大量移居呂宋中部、卡加延河谷，20世紀初更有許多人到夏威夷與加州的農場工作。因此伊洛卡諾語成為北呂宋的區域通用語。",
     "greeting": "Naimbag nga aldaw（日安）",
     "pronunciation": "na-im-bag nga al-dau"
    },
    {
     "name": "希利蓋農語",
     "percent": 7,
-    "description": "班乃島與西內格羅斯的語言。",
+    "description": "希利蓋農語（伊隆戈語）是班乃島與內格羅斯島西部的語言，以伊洛伊洛與巴科洛德為中心。19世紀內格羅斯島蔗糖產業興起，吸引大量班乃島居民移入，使希利蓋農語在西比薩亞地區擴展。",
     "greeting": "Maayong aga（早安）",
     "pronunciation": "ma-a-yong a-ga"
    }
   ],
-  "history": "菲律賓有一百多種南島語系語言。西班牙統治三百年間西班牙語留下大量詞彙但未普及；美國統治時期以英語推行公共教育，使英語普及至今。1937年選定他加祿語作為國語基礎，後稱為菲律賓語。"
+  "history": "菲律賓有一百七十多種南島語系語言，西班牙人到來前，他加祿人等使用名為「拜拜因」的古文字。1565年後西班牙語成為統治語言，但只有少數菁英能使用。1898年美國統治後推行英語公立教育，英語迅速普及。1937年政府選定他加祿語為國語基礎，1987年憲法定菲律賓語與英語為官方語言，2009年起推行以母語為基礎的多語教育。"
  },
  "food": {
   "ranking": [
    {
     "name": "菲律賓阿多波",
     "localName": "Adobo",
-    "description": "以醋、醬油、大蒜、月桂葉與胡椒燉煮的雞肉或豬肉，常被視為國菜。",
-    "history": "以醋保存食物的做法早於殖民時期，西班牙人以其醃漬料理之名稱呼此菜。",
+    "description": "將雞肉或豬肉以醋、醬油、大蒜、月桂葉與黑胡椒燉煮至入味收汁，口味酸鹹帶蒜香，配白飯食用。",
+    "history": "在西班牙人到來前，菲律賓人就以醋燉煮肉類，利用醋的酸性在熱帶氣候中保存食物。1565年後西班牙人看到這種料理，以西班牙語的「adobo」（醃漬）稱呼它，名稱就此沿用。醬油則來自與中國商人的長期貿易。阿多波沒有統一的食譜，幾乎每個家庭都有自己的版本，被普遍視為菲律賓國菜。",
     "wiki": "Philippine adobo",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Adobo_DSCF4391.jpg/960px-Adobo_DSCF4391.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Adobo_DSCF4391.jpg",
@@ -81,8 +81,8 @@
    {
     "name": "酸湯",
     "localName": "Sinigang",
-    "description": "以羅望子等酸味食材熬煮豬肉、蝦或魚與蔬菜的酸湯。",
-    "history": "菲律賓本土的傳統湯品，反映熱帶地區偏好酸味的飲食習慣。",
+    "description": "以羅望子、未熟番茄或卡拉蒙西酸橘製造酸味，熬煮豬肉、蝦或魚，加入空心菜、蘿蔔、長豆與秋葵，湯頭酸爽開胃。",
+    "history": "酸湯是菲律賓原生的料理，早在殖民前就以當地的酸味果實調味，羅望子則經由古代與南亞、東南亞的貿易傳入。酸味能幫助人在炎熱潮濕的氣候中開胃。它是菲律賓家庭最常見的湯品之一，在雨季時尤其受歡迎，也常在國際美食評選中名列前茅。",
     "wiki": "Sinigang",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/The_Best_Sinigang_Cuisine.jpg/960px-The_Best_Sinigang_Cuisine.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:The_Best_Sinigang_Cuisine.jpg",
@@ -91,8 +91,8 @@
    {
     "name": "烤乳豬",
     "localName": "Lechon",
-    "description": "整隻豬以炭火慢烤，外皮酥脆，是節慶宴席主角。",
-    "history": "隨西班牙殖民傳入的烤全豬傳統，宿霧的版本尤其著名。",
+    "description": "將整隻豬抹鹽、香料並在肚內塞入香茅與大蒜，串在竹竿上以炭火慢烤數小時，外皮酥脆、肉質多汁。",
+    "history": "烤乳豬的名稱來自西班牙語「lechón」（乳豬），西班牙殖民時期在節慶中普及。宿霧被認為是做得最好的地方，2009年美國名廚安東尼·波登曾讚譽宿霧烤乳豬為他吃過最好的烤豬。在菲律賓，烤乳豬是聖誕節、婚禮、生日與鎮上守護聖人節的必備主菜，象徵慶祝與豐盛。",
     "wiki": "Lechon",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Cochinillos-Mercado_de_la_Cebada.jpg/960px-Cochinillos-Mercado_de_la_Cebada.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Cochinillos-Mercado_de_la_Cebada.jpg",
@@ -101,8 +101,8 @@
    {
     "name": "鐵板豬頭肉",
     "localName": "Sisig",
-    "description": "將豬頭肉切碎與洋蔥、辣椒、卡拉蒙西酸橘在鐵板上炒製。",
-    "history": "源自邦板牙省安赫萊斯市，1970年代起在當地普及，成為下酒菜代表。",
+    "description": "將豬頭肉與豬耳煮熟後烤過，切成碎丁，與洋蔥、辣椒、卡拉蒙西酸橘與雞肝在熱鐵板上翻炒，常在上面打一顆蛋。",
+    "history": "鐵板豬頭肉發源於呂宋島中部的邦板牙省，一般認為源自當地利用美軍克拉克空軍基地丟棄的豬頭等部位製作的料理。1974年左右，邦板牙安赫萊斯市的露西亞·庫納安（人稱「Aling Lucing」）將其改良成以鐵板上桌的版本，廣受歡迎。如今它是菲律賓最常見的下酒菜之一。",
     "wiki": "Sisig",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Authentic_Kapampangan_Sisig.jpg/960px-Authentic_Kapampangan_Sisig.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Authentic_Kapampangan_Sisig.jpg",
@@ -111,8 +111,8 @@
    {
     "name": "哈囉哈囉剉冰",
     "localName": "Halo-halo",
-    "description": "剉冰上加入甜豆、水果、紫山藥、煉乳與冰淇淋混合食用。",
-    "history": "名稱意為「混合」，一般認為受二戰前日本移民的刨冰點心影響。",
+    "description": "在剉冰上加入甜紅豆、白豆、香蕉、菠蘿蜜、椰果、紫山藥泥、焦糖布丁與煉乳，最後放一球紫山藥冰淇淋，吃前全部攪拌混合。",
+    "history": "「halo-halo」在他加祿語中意為「混合」。一般認為它源自二戰前日本移民在馬尼拉販售的紅豆冰（mitsumame），菲律賓人加入了更多在地食材而演變成今日的樣子。美國統治時期引進的製冰技術與煉乳也是關鍵。它是菲律賓夏季最具代表性的冰品，從路邊攤到連鎖速食店都有販售。",
     "wiki": "Halo-halo",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Halo-Halo.jpg/960px-Halo-Halo.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Halo-Halo.jpg",

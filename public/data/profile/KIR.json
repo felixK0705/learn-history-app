@@ -7,30 +7,30 @@
    {
     "name": "天主教",
     "percent": 57,
-    "description": "信徒最多的教會。"
+    "description": "1888年法國聖心傳教會神父抵達吉爾伯特群島北部，以學校、教理問答與尊重當地習俗的方式傳教，迅速吸引大批信徒。天主教在北部與中部群島佔多數，今天是吉里巴斯最大的宗教，教會也經營許多中學。"
    },
    {
     "name": "吉里巴斯統一教會",
     "percent": 21,
-    "description": "源自倫敦傳道會的新教教會。"
+    "description": "吉里巴斯統一教會的前身是19世紀美國公理會與倫敦傳道會建立的新教教會，在南部群島最具影響力，並在殖民時期與英國行政關係密切。2014年教會更名為吉里巴斯統一教會時，一部分會眾反對而另立新教會。"
    },
    {
     "name": "吉里巴斯新教教會",
     "percent": 8,
-    "description": "自統一教會分出的新教教會。"
+    "description": "吉里巴斯新教教會是2014年前後因不同意原教會改名與方向而分出的團體，保留了「新教教會」的名稱與傳統，信徒主要來自原本公理會背景的南部群島。"
    },
    {
     "name": "耶穌基督後期聖徒教會",
     "percent": 5,
-    "description": "近數十年成長的教會。"
+    "description": "耶穌基督後期聖徒教會（摩門教）於1970年代透過在當地設立學校傳入，提供英語教育與到海外的就學機會，因此在年輕人中成長很快，是吉里巴斯成長最迅速的教會之一。"
    },
    {
     "name": "巴哈伊信仰",
     "percent": 2,
-    "description": "規模較小的宗教社群。"
+    "description": "巴哈伊信仰於1950年代由傳教者帶入吉爾伯特群島，此後在部分環礁建立地方靈理會。它在太平洋島國有一定的傳播，吉里巴斯是巴哈伊信徒比例相對較高的國家之一。"
    }
   ],
-  "background": "十九世紀中期起，美國公理會與倫敦傳道會的新教傳教士及法國天主教傳教士先後抵達，使基督教迅速普及。天主教傳教士主要在北部島嶼，新教則在南部島嶼較有影響力。"
+  "background": "吉里巴斯原住民傳統上崇拜祖先與神靈（anti）。1857年美國公理會傳教士海勒姆·賓漢二世來到阿拜昂環礁，19世紀後半夏威夷與倫敦傳道會的新教傳教士在吉爾伯特群島南部傳教；1888年法國聖心傳教會的天主教神父抵達北部群島，形成「北天主教、南新教」的分布。1892年起英國統治吉爾伯特群島，教會掌握學校與醫療。1979年獨立後，基督教各派與村落會堂（maneaba）制度共同構成社會生活的中心。"
  },
  "language": {
   "official": "英語與吉里巴斯語是官方語言。",
@@ -38,27 +38,27 @@
    {
     "name": "吉里巴斯語",
     "percent": 97,
-    "description": "屬南島語系密克羅尼西亞語支，是全民的母語。",
+    "description": "吉里巴斯人是相當單一的密克羅尼西亞民族，數千年來在環礁上使用吉里巴斯語，19世紀傳教士為它制定文字並翻譯《聖經》，教會與學校因此推廣了讀寫能力。由於島國人口幾乎全是吉里巴斯人，日常生活、廣播與議會辯論都以吉里巴斯語進行。",
     "greeting": "Mauri",
     "pronunciation": "MAO-ree"
    },
    {
     "name": "英語",
     "percent": 2,
-    "description": "官方語言，用於政府與教育。",
+    "description": "英語源於1892–1979年英國殖民統治，是官方語言之一，用於法律、政府公文與中學以上教育。但以英語為主要語言的人很少，鄉間外島居民的英語能力也有限，主要在首都塔拉瓦使用。",
     "greeting": "Hello",
     "pronunciation": "heh-LOH"
    }
   ],
-  "history": "吉里巴斯語又稱吉爾伯特語，十九世紀傳教士以拉丁字母書寫並翻譯聖經。英國殖民時期英語成為行政語言，1979年獨立後兩者並列官方語言。"
+  "history": "吉里巴斯語（又稱吉爾伯特語，Te taetae ni Kiribati）屬南島語系大洋洲語支，與馬紹爾語、諾魯語等密克羅尼西亞語言相近。19世紀中葉美國傳教士賓漢二世以拉丁字母為其制定書寫系統並翻譯《聖經》，使吉里巴斯語有了文字。英國殖民時期英語成為政府與中高等教育的語言。1979年獨立後吉里巴斯語與英語同為官方語言，但日常生活幾乎完全使用吉里巴斯語。"
  },
  "food": {
   "ranking": [
    {
     "name": "巴拜芋",
     "localName": "Te babai",
-    "description": "在坑中種植多年的大型沼澤芋，煮熟或烤熟食用。",
-    "history": "環礁上珍貴的作物，在婚禮與重要儀式中象徵地位。",
+    "description": "巨型沼澤芋（babai）在挖掘的坑池中栽培數年，收成後烤、煮或搗成泥，常拌入椰子糖漿。",
+    "history": "環礁土壤貧瘠多沙，吉里巴斯先民發展出在地下挖坑、引入淡水並以樹葉堆肥的方式栽培 babai，一株往往需要數年甚至十多年才能收成。擁有 babai 坑代表家族財富與土地權，因此它是婚禮、節慶與村落會堂宴會上最尊貴的食物。近年海平面上升導致鹹水滲入坑池，傳統種植正面臨威脅。",
     "wiki": "Cyrtosperma merkusii",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Babai.jpg/960px-Babai.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Babai.jpg",
@@ -67,8 +67,8 @@
    {
     "name": "麵包果",
     "localName": "Te mai",
-    "description": "以烤或煮方式食用的麵包果。",
-    "history": "太平洋島嶼的重要主食。",
+    "description": "麵包果烤熟或煮熟後口感像馬鈴薯，也可切片油炸或做成甜點。富含澱粉，是外島居民的重要主食。",
+    "history": "麵包果是太平洋島民的傳統主食，在數千年前隨南島民族的航海遷徙傳遍大洋洲。在吉里巴斯，麵包果樹只能在土壤較好的地方生長，因此十分珍貴，收成季節常拿來與親戚交換或在會堂宴會上分享。它富含澱粉、可以發酵保存，是補充進口米與麵粉之外的重要在地糧食。",
     "wiki": "Breadfruit",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Artocarpus_altilis_%28fruit%29.jpg/960px-Artocarpus_altilis_%28fruit%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Artocarpus_altilis_(fruit).jpg",
@@ -77,8 +77,8 @@
    {
     "name": "林投果",
     "localName": "Te kaina",
-    "description": "林投樹的果實，可直接嚼食或製成果醬乾。",
-    "history": "環礁上的傳統食物，可加工保存以度過乾旱。",
+    "description": "林投（露兜樹）果實可以生嚼吸取果汁，也可煮熟後製成糊狀或曬乾成長期保存的果乾（kabubu）。",
+    "history": "林投樹耐鹽、耐旱，是少數能在環礁貧瘠沙地上生長的植物，吉里巴斯人培育出數十種品種。過去航海與遠洋捕魚時，人們會攜帶林投果乾當作口糧，可以保存數年。它的葉子還可以編織蓆子與屋頂，是環礁生活不可或缺的植物，傳統知識由家族世代傳承。",
     "wiki": "Pandanus tectorius",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Pandanus_tectorius.jpg/960px-Pandanus_tectorius.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Pandanus_tectorius.jpg",
@@ -87,8 +87,8 @@
    {
     "name": "椰子蟹",
     "localName": "Te ai",
-    "description": "大型陸生寄居蟹，蒸煮後食用。",
-    "history": "太平洋島嶼的珍饈，現因過度捕撈而受到保育關注。",
+    "description": "巨型陸生寄居蟹，殼可長得很大，肉質鮮甜，常煮或烤後食用。蟹肉與腹部的脂肪帶有椰子香氣，被視為珍饈。",
+    "history": "椰子蟹棲息在熱帶太平洋與印度洋島嶼，能用強壯的鉗子剝開椰子，因此得名。在吉里巴斯，捕捉椰子蟹是傳統技能，常在夜間進行，被視為節慶或招待客人的佳餚。由於人口增加與過度捕撈，椰子蟹在許多有人居住的島嶼上已變得稀少。",
     "wiki": "Coconut crab",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Coconut_Crab_Birgus_latro.jpg/960px-Coconut_Crab_Birgus_latro.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Coconut_Crab_Birgus_latro.jpg",
@@ -97,8 +97,8 @@
    {
     "name": "椰奶生魚",
     "localName": "Raw fish in coconut",
-    "description": "以檸檬汁醃漬生魚，加入椰奶。",
-    "history": "太平洋地區常見的生魚料理，在漁業為主的吉里巴斯十分普遍。",
+    "description": "以新鮮生魚切塊，用檸檬汁或萊姆汁「醃熟」，再拌入椰奶、洋蔥與辣椒。口感清爽、帶椰奶香甜，常當作開胃菜或配飯食用。",
+    "history": "以椰奶與柑橘汁醃生魚的做法廣泛分布於太平洋島嶼，在環礁上漁業是主要的蛋白質來源，鮪魚等新鮮漁獲容易取得。吉里巴斯海域擁有世界重要的鮪魚漁場，政府主要收入來自外國漁船的捕魚權費。這道料理既是日常食物，也常見於婚禮、教會活動與會堂宴席。",
     "wiki": "Kokoda"
    }
   ]

@@ -7,35 +7,35 @@
    {
     "name": "聖公會",
     "percent": 17,
-    "description": "英國殖民時期的主要教會。"
+    "description": "1623年英國殖民聖克里斯多福後，英格蘭教會（聖公會）隨之而來，成為殖民地的官方教會，教區制度覆蓋全島。由於它長期代表殖民政府與種植園主階層，在奴隸中的影響力反而不如衛理宗，不過今天仍是最大的單一教派之一。"
    },
    {
     "name": "衛理宗",
     "percent": 16,
-    "description": "十八世紀後在被奴役者中廣泛傳播。"
+    "description": "1787年衛理公會創始人約翰·衛斯理的同工湯瑪斯·柯克抵達聖克里斯多福，衛理宗傳教士在奴隸中宣教，強調個人信仰與平等，吸引了大量黑人信徒。尼維斯與聖克里斯多福的許多村落都以衛理公會教堂為中心。"
    },
    {
     "name": "五旬節派",
     "percent": 8,
-    "description": "近年快速成長的教會。"
+    "description": "五旬節派在20世紀中後期由美國與其他加勒比國家傳入，強調聖靈經驗、方言禱告與熱烈的崇拜方式，吸引許多年輕人與勞工階層，是近幾十年成長最快的教派之一。"
    },
    {
     "name": "復臨安息日會",
     "percent": 7,
-    "description": "規模穩定成長的新教教會。"
+    "description": "基督復臨安息日會在19世紀末至20世紀初由美國傳教士帶入加勒比地區，以守週六安息日、重視健康飲食與教育為特色，在聖克里斯多福及尼維斯經營學校，信徒穩定增加。"
    },
    {
     "name": "天主教",
     "percent": 6,
-    "description": "規模較小的天主教社群。"
+    "description": "天主教在1623年英國殖民後長期受限制，因為英國殖民地以聖公會為正統。19世紀後天主教會才在當地逐步建立，信徒包括部分愛爾蘭與葡萄牙馬德拉移民後裔，以及近年來自其他加勒比國家的移民。"
    },
    {
     "name": "摩拉維亞弟兄會",
     "percent": 5,
-    "description": "十八世紀傳入的新教教會。"
+    "description": "摩拉維亞弟兄會源自今捷克地區，是最早向加勒比奴隸傳教的新教團體之一，1777年抵達聖克里斯多福。他們在奴隸中設立學校，教導讀寫，對黑人社群的宗教與教育有深遠影響，今天仍有多座歷史悠久的教堂。"
    }
   ],
-  "background": "聖克里斯多福是英國在加勒比海最早的殖民地之一，聖公會隨殖民者傳入。十八世紀起衛理宗與摩拉維亞弟兄會傳教士在被奴役的非洲人中傳教，二十世紀後五旬節派等教會快速成長。"
+  "background": "1623年英國在聖克里斯多福島建立加勒比海第一個英國殖民地，聖公會隨殖民者而來並長期為國教，主要服務白人種植園主。18世紀起，摩拉維亞弟兄會（1777年）與衛理公會（1787年）傳教士開始向被奴役的非洲人傳教，為他們提供讀寫教育，兩教派因此在黑人社群中迅速成長。1834年廢奴後，這些教會成為社區的核心。20世紀起美國傳入的五旬節派與基督復臨安息日會也快速擴張，使宗教版圖更加多元。"
  },
  "language": {
   "official": "英語是官方語言。",
@@ -43,27 +43,27 @@
    {
     "name": "聖克里斯多福克里奧爾英語",
     "percent": 90,
-    "description": "以英語為基礎的克里奧爾語，是日常生活語言。",
+    "description": "17–18世紀被運到甘蔗種植園的西非奴隸來自不同族群，只能以英語詞彙為基礎溝通，並融合西非語言的發音與句法，形成聖克里斯多福克里奧爾語。它是絕大多數居民在家中與朋友間使用的語言，尼維斯島的口音又略有不同。",
     "greeting": "Good mornin'",
     "pronunciation": "gud MAW-nin"
    },
    {
     "name": "英語",
     "percent": 10,
-    "description": "官方語言，用於政府與教育。",
+    "description": "英語自1623年英國殖民以來就是行政語言，1983年獨立後仍為唯一官方語言，學校、政府、法院與媒體都使用標準英語。多數居民能在克里奧爾語與標準英語之間依場合切換。",
     "greeting": "Hello",
     "pronunciation": "heh-LOH"
    }
   ],
-  "history": "殖民時期非洲奴隸與英國殖民者之間形成以英語為基礎的克里奧爾語。聖克里斯多福曾由英法兩國分治，因此部分地名保留法語。"
+  "history": "1623年英國人與1625年法國人先後在聖克里斯多福島殖民，1713年《烏得勒支條約》後全島歸英國。種植園主從西非輸入大量奴隸種植甘蔗，奴隸們以英語詞彙融合西非語言的文法，發展出聖克里斯多福克里奧爾英語。英語則是殖民政府、教會與學校的語言，1983年獨立後仍是唯一官方語言。克里奧爾語在日常生活中普遍使用，但長期被視為非正式語言。"
  },
  "food": {
   "ranking": [
    {
     "name": "鹹魚",
     "localName": "Saltfish",
-    "description": "以鹽醃鱈魚泡水去鹽後與番茄、洋蔥燉煮。",
-    "history": "國菜「燉鹹魚配椰子餃子、香辣大蕉與麵包果」的核心食材。",
+    "description": "把泡水去鹽的鹹鱈魚與洋蔥、番茄、甜椒、香草一起燉炒，常與麵包果、香辣大蕉和椰子麵疙瘩組成國菜。",
+    "history": "鹹鱈魚是殖民時期大西洋三角貿易的產物：北美紐芬蘭與新英格蘭將便宜的鹽漬鱈魚運到加勒比海作為奴隸的口糧，換取糖與糖蜜。島上不產鱈魚，鹹魚卻因此成為當地飲食的核心。今天燉鹹魚配麵包果與大蕉被定為聖克里斯多福及尼維斯的國菜，常見於週日早餐與節慶。",
     "wiki": "Salt cod",
     "image": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Bacalhau_%28Porto%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Bacalhau_(Porto).jpg",
@@ -72,8 +72,8 @@
    {
     "name": "麵包果",
     "localName": "Breadfruit",
-    "description": "以調味烘烤或煮熟方式食用的麵包果。",
-    "history": "十八世紀末自太平洋引進，是國菜的組成部分之一。",
+    "description": "麵包果可以烤、煮、炸，或與香料、奶油調味後做成鹹味配菜。口感像馬鈴薯，富含澱粉，常當作主食。",
+    "history": "麵包果原產太平洋，1793年英國船長威廉·布萊（「邦蒂號」事件主角）第二次航行時，將麵包果樹苗從大溪地運到加勒比海的聖文森與牙買加，目的是為種植園奴隸提供便宜的食物。之後麵包果傳遍西印度群島，在聖克里斯多福成為重要的澱粉來源，也是國菜的組成部分。",
     "wiki": "Breadfruit",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Artocarpus_altilis_%28fruit%29.jpg/960px-Artocarpus_altilis_%28fruit%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Artocarpus_altilis_(fruit).jpg",
@@ -82,8 +82,8 @@
    {
     "name": "香辣大蕉",
     "localName": "Spicy plantain",
-    "description": "以香料調味煎製的大蕉。",
-    "history": "國菜的配菜之一，大蕉是加勒比海的重要主食。",
+    "description": "把成熟的大蕉切塊，以辣椒、香料與少許糖調味後煎或燉，甜中帶辣。外焦內軟，常作為國菜的配菜之一。",
+    "history": "大蕉原產東南亞，15–16世紀經由非洲傳到美洲，奴隸貿易時期成為加勒比種植園的重要糧食。加勒比人喜歡以當地的蘇格蘭圓帽辣椒調味，形成香辣的風格。它是國菜的配菜之一，也常出現在家庭午餐中。",
     "wiki": "Cooking banana",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Mega_racimos_de_guineos.jpg/960px-Mega_racimos_de_guineos.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Mega_racimos_de_guineos.jpg",
@@ -92,8 +92,8 @@
    {
     "name": "山羊湯",
     "localName": "Goat water",
-    "description": "以山羊肉、麵包果與香料熬煮的濃湯。",
-    "history": "被視為國民美食，常在節慶與聚會中供應。",
+    "description": "以山羊肉、麵粉團、木瓜等蔬菜與香料燉成的濃稠湯品，帶有番茄與丁香的香氣。湯頭濃厚辛香，常配麵包或米飯食用。",
+    "history": "Goat water 被視為聖克里斯多福及尼維斯的另一道國民料理，名稱看似簡單，實際上是燉得很濃的羊肉湯。它源於奴隸與自由人以便宜、容易飼養的山羊烹煮營養湯品的傳統，受到愛爾蘭燉肉與非洲燉菜的雙重影響。今天在嘉年華、板球比賽、選舉與社區聚會中，人們常以大鍋烹煮 goat water 分享。",
     "wiki": "Goat water",
     "image": "https://upload.wikimedia.org/wikipedia/commons/3/35/Goat_Water.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Goat_Water.jpg",
@@ -102,8 +102,8 @@
    {
     "name": "康基",
     "localName": "Conkie",
-    "description": "以玉米粉、南瓜、地瓜與椰子拌勻後以香蕉葉包裹蒸熟。",
-    "history": "與西非的玉米糕有淵源，傳統上在解放日等節慶製作。",
+    "description": "以玉米粉、南瓜、地瓜、椰子、香料與糖混合後，用香蕉葉包起來蒸熟的甜糕。口感軟糯香甜，帶有椰子與香料的香氣。",
+    "history": "Conkie 一般認為源自西非以香蕉葉或玉米葉包裹蒸煮的玉米糕（如迦納的 kenkey），隨奴隸貿易傳入加勒比地區後，改用當地的南瓜、地瓜與椰子製作。殖民時期它是種植園奴隸在節日時才能吃到的甜食，今天在東加勒比各島與獨立紀念日、嘉年華等節慶連結在一起，在聖克里斯多福及尼維斯也是家庭聚會時的傳統點心。",
     "wiki": "Conkie",
     "image": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Conkie.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Conkie.jpg",

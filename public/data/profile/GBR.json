@@ -7,30 +7,30 @@
    {
     "name": "基督教",
     "percent": 46,
-    "description": "以英格蘭聖公會、蘇格蘭教會與天主教為主。"
+    "description": "基督教在羅馬統治時期傳入不列顛，597 年教宗派奧古斯丁到坎特伯里向盎格魯–撒克遜人傳教。1534 年亨利八世因離婚問題與教廷決裂，頒布《至尊法案》建立英格蘭國教會（聖公會），蘇格蘭則在 1560 年由約翰・諾克斯推動長老會改革；18 世紀約翰・衛斯理創立的衛理公會在工人階級中廣泛傳播。但 2021 年人口普查中，英格蘭與威爾斯自認基督徒的比例首次跌破一半。"
    },
    {
     "name": "無宗教",
     "percent": 38,
-    "description": "不認同任何宗教的人口快速增加。"
+    "description": "二戰後英國社會快速世俗化，教會出席率持續下降，教育普及、都市化與福利國家使宗教在生活中的角色淡化。2021 年普查中約有 37% 的英格蘭與威爾斯居民選擇「無宗教」，比十年前大幅增加，年輕世代中無宗教者更已成為多數。"
    },
    {
     "name": "伊斯蘭教",
     "percent": 6,
-    "description": "主要來自南亞與其他地區的移民及其後代。"
+    "description": "英國穆斯林的成長與大英帝國的歷史密切相關。1950–60 年代戰後勞力短缺，大批來自巴基斯坦、孟加拉（當時的東巴基斯坦）與印度的移民到英國紡織廠與工廠工作，集中在伯明罕、布拉德福、曼徹斯特與倫敦東區。今天英國穆斯林以南亞裔為主，也有來自索馬利亞、中東等地的移民。"
    },
    {
     "name": "印度教",
     "percent": 2,
-    "description": "多為印度裔社群。"
+    "description": "印度教徒主要來自 1950–60 年代的印度移民，以及 1972 年被烏干達總統阿敏驅逐的數萬名東非印度裔，許多人定居在萊斯特與倫敦西北部。1995 年在倫敦尼斯登落成的大型印度廟，是印度以外最大的傳統印度教寺廟之一。"
    },
    {
     "name": "錫克教",
     "percent": 1,
-    "description": "主要為旁遮普裔社群。"
+    "description": "錫克教徒多來自印度旁遮普，英屬印度時期大量錫克人在英軍中服役，1950–60 年代戰後移民潮中，他們到倫敦紹索爾、伯明罕等地工廠工作並建立錫克廟，使英國成為印度以外最大的錫克社群之一。"
    }
   ],
-  "background": "十六世紀亨利八世與羅馬教廷決裂，建立英格蘭聖公會，蘇格蘭則形成長老會傳統。二戰後來自前殖民地的移民帶來伊斯蘭教、印度教與錫克教，而近數十年世俗化使無宗教人口大幅成長。"
+  "background": "不列顛在羅馬時代與 6–7 世紀兩度基督教化，16 世紀亨利八世的宗教改革建立了以國王為首的英格蘭國教會，蘇格蘭則形成長老會國教，此後數百年天主教徒與不從國教者受到法律限制。18–19 世紀福音派復興與衛理公會影響深遠。二戰後大英帝國解體，來自南亞、加勒比海與非洲的移民帶來伊斯蘭教、印度教與錫克教，同時社會快速世俗化，形成今日基督教、無宗教與多元宗教並存的格局。"
  },
  "language": {
   "official": "英國沒有法定官方語言，英語為事實上的國家語言；威爾斯語在威爾斯具官方地位。",
@@ -38,34 +38,34 @@
    {
     "name": "英語",
     "percent": 92,
-    "description": "全國通用語言，也是世界上使用最廣的語言之一。",
+    "description": "英語源自 5 世紀移入不列顛的盎格魯、撒克遜等日耳曼部落，之後吸收了維京人的古諾斯語；1066 年諾曼征服後，法語成為上層語言長達三百年，使英語增加了大量法語詞彙。1476 年卡克斯頓引進印刷術、1755 年詹森出版《英語詞典》，推動了書面英語的標準化。隨著大英帝國擴張，英語成為全球通用語，在英國本土則是絕大多數人的母語。",
     "greeting": "Hello",
     "pronunciation": "heh-LOH"
    },
    {
     "name": "波蘭語",
     "percent": 1,
-    "description": "2004年波蘭加入歐盟後大量移民帶來的語言。",
+    "description": "二戰期間大批波蘭軍人隨流亡政府在英國作戰，1947 年《波蘭人安置法》讓約二十萬人留下定居。2004 年波蘭加入歐盟，英國立即開放勞動市場，數十萬波蘭人移入，2011 年普查中波蘭語已成為英格蘭第二大語言。2016 年脫歐公投後，部分波蘭人返回母國。",
     "greeting": "Cześć",
     "pronunciation": "cheshch"
    },
    {
     "name": "威爾斯語",
     "percent": 1,
-    "description": "威爾斯的凱爾特語言，約五分之一威爾斯居民會說。",
+    "description": "威爾斯語屬凱爾特語族的布立吞語支，比英語更早在不列顛使用。1536 與 1543 年的《威爾斯法案》規定公職須用英語，19 世紀學校甚至以「威爾斯禁語牌」懲罰說母語的學生，使其大幅衰落。1960 年代起語言運動興起，1982 年設立威爾斯語電視台，2011 年成為威爾斯的官方語言，目前約有五分之一的威爾斯人會說。",
     "greeting": "Shwmae",
     "pronunciation": "shoo-MY"
    }
   ],
-  "history": "英語源於五世紀移入的盎格魯—撒克遜人所說的日耳曼語，1066年諾曼征服後吸收大量法語詞彙。英國殖民擴張使英語傳播至全球；威爾斯語、蘇格蘭蓋爾語等凱爾特語言則一度式微，近年積極推動復振。"
+  "history": "羅馬時代不列顛的居民說凱爾特語，5 世紀盎格魯–撒克遜人入侵後，古英語取代了東南部的凱爾特語，凱爾特語退守威爾斯、蘇格蘭高地、康瓦爾等地。維京人與諾曼人的征服為英語帶來大量北歐語與法語詞彙，15–16 世紀的「母音大推移」形成現代英語的發音。工業革命與帝國擴張讓英語走向世界，20 世紀後期威爾斯語、蘇格蘭蓋爾語等凱爾特語言的保存運動興起，移民則帶來波蘭語、旁遮普語、烏爾都語等語言。"
  },
  "food": {
   "ranking": [
    {
     "name": "炸魚薯條",
     "localName": "Fish and chips",
-    "description": "酥炸裹粉鱈魚或黑線鱈，配粗薯條與醋。",
-    "history": "十九世紀中期隨工業城市興起而普及，是英國最具代表性的外食。",
+    "description": "將鱈魚或黑線鱈裹上麵糊油炸，配上粗切的炸薯條，淋上麥芽醋、撒鹽，常附豌豆泥。",
+    "history": "油炸裹粉魚的做法一般認為是 17 世紀從葡萄牙與西班牙移居英國的塞法迪猶太人帶來的，他們在安息日前把魚炸好以便冷吃。炸薯條則在 19 世紀流行於英格蘭北部，1860 年代倫敦與蘭開夏郡先後出現把兩者一起販售的店家。工業革命時期它成為工人階級便宜又飽足的晚餐，二戰期間政府刻意不對其實施配給以維持民心。如今英國仍有上萬家炸魚薯條店，是最具代表性的國民食物。",
     "wiki": "Fish and chips",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Fish_and_chips_blackpool.jpg/960px-Fish_and_chips_blackpool.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Fish_and_chips_blackpool.jpg",
@@ -74,8 +74,8 @@
    {
     "name": "全套英式早餐",
     "localName": "Full breakfast",
-    "description": "包含培根、香腸、蛋、焗豆、蘑菇與番茄的豐盛早餐。",
-    "history": "源自鄉村仕紳的早餐傳統，維多利亞時代後普及至各階層。",
+    "description": "一盤包含煎蛋、培根、香腸、焗豆、烤番茄、蘑菇與吐司的豐盛早餐，部分地區還加上黑布丁。",
+    "history": "全套早餐的傳統可追溯到維多利亞時代的鄉村士紳，他們以豐盛的早餐展現財富與好客。20 世紀初這種吃法普及到勞工階級，成為上工前補充體力的「煎炸早餐」（fry-up）。各地發展出不同版本，例如蘇格蘭加入羊雜布丁、北愛爾蘭加入馬鈴薯餅。今天它是英國咖啡館與旅館早餐的招牌，也是週末早午餐的代表。",
     "wiki": "Full breakfast",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Full_English_breakfast_%28cropped%29.jpg/960px-Full_English_breakfast_%28cropped%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Full_English_breakfast_(cropped).jpg",
@@ -84,8 +84,8 @@
    {
     "name": "週日烤肉",
     "localName": "Sunday roast",
-    "description": "烤牛肉等肉類搭配約克夏布丁、烤馬鈴薯與肉汁。",
-    "history": "傳統上在週日上教堂後全家一起享用。",
+    "description": "以烤牛肉、羊肉或雞肉為主菜，配烤馬鈴薯、約克夏布丁、蔬菜與肉汁，在週日中午享用。",
+    "history": "週日烤肉的習俗與英國人在週日上教堂的傳統有關，人們在出門前把肉放入烤爐，做完禮拜回家正好享用。18 世紀英國人以吃烤牛肉為傲，1731 年作家菲爾丁創作的歌曲《古老英格蘭的烤牛肉》成為愛國象徵。約克夏布丁的食譜在 18 世紀中葉的料理書中出現，原本用來接住烤肉滴下的油脂。至今它仍是英國家庭週末團聚的重要儀式。",
     "wiki": "Sunday roast",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Sunday_roast_lamb_Cock_Inn_Henham_Essex_England_01.jpg/960px-Sunday_roast_lamb_Cock_Inn_Henham_Essex_England_01.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Sunday_roast_lamb_Cock_Inn_Henham_Essex_England_01.jpg",
@@ -94,8 +94,8 @@
    {
     "name": "咖哩雞塊",
     "localName": "Chicken tikka masala",
-    "description": "以番茄奶油咖哩醬烹調的烤雞塊。",
-    "history": "普遍認為在二十世紀於英國的南亞裔餐廳發展出來，象徵多元文化。",
+    "description": "將優格香料醃過的烤雞塊放入以番茄、奶油與香料煮成的橘紅色濃醬中，配印度香米或烤餅。",
+    "history": "一般認為這道菜誕生於 1970 年代的英國，流行的說法是格拉斯哥一家印度餐廳的廚師為了迎合英國顧客要求「醬汁」，把烤雞塊加入番茄濃湯醬汁中。英國的「印度餐廳」大多由孟加拉錫爾赫特地區的移民經營，是戰後南亞移民史的縮影。2001 年外交大臣羅賓・庫克稱它是「真正的英國國菜」，象徵英國社會的多元文化。",
     "wiki": "Chicken tikka masala",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Chicken_tikka_masala_%28cropped%29.jpg/960px-Chicken_tikka_masala_%28cropped%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Chicken_tikka_masala_(cropped).jpg",
@@ -104,8 +104,8 @@
    {
     "name": "牧羊人派",
     "localName": "Shepherd's pie",
-    "description": "以羊絞肉為餡、表面鋪上馬鈴薯泥烘烤的派。",
-    "history": "起源於利用剩餘烤肉的家常料理，用牛肉製作的版本稱為農舍派。",
+    "description": "將羊絞肉與洋蔥、紅蘿蔔以肉汁燉煮，鋪在烤盤中，上面蓋一層馬鈴薯泥後烘烤至金黃。",
+    "history": "這類派源自 18 世紀後期，當時馬鈴薯成為英國窮人的平價主食，家庭主婦把週日烤肉剩下的肉剁碎，蓋上馬鈴薯泥再烤，避免浪費，起初稱為「農舍派」（cottage pie）。19 世紀起，以羊肉製作的版本被稱為「牧羊人派」，與英國北部及蘇格蘭的牧羊業有關。它至今是英國學校、酒館與家庭的經典家常菜。",
     "wiki": "Shepherd's pie",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Homerton_College_-_Shepherd%27s_pie_%28cropped%29.jpg/960px-Homerton_College_-_Shepherd%27s_pie_%28cropped%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Homerton_College_-_Shepherd%27s_pie_(cropped).jpg",

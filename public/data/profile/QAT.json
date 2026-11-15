@@ -7,25 +7,25 @@
    {
     "name": "伊斯蘭教",
     "percent": 66,
-    "description": "國教，以遜尼派為主。"
+    "description": "伊斯蘭教在7世紀傳入卡達半島。18世紀阿勒薩尼家族從內志遷入，信奉瓦哈比派的遜尼伊斯蘭教，1878年起統治卡達，並在1971年獨立後以伊斯蘭教為國教、伊斯蘭法為主要立法來源。卡達公民幾乎全為穆斯林，以遜尼派為主、什葉派約一成；外籍居民中也有大量來自南亞、中東與北非的穆斯林。由於外籍人口約佔九成，穆斯林在總人口中的比例約三分之二。"
    },
    {
     "name": "基督教",
     "percent": 15,
-    "description": "主要為外籍勞工。"
+    "description": "卡達的基督徒幾乎都是外籍勞工，主要來自菲律賓、印度喀拉拉邦、黎巴嫩與歐美，在1970年代石油、2000年代天然氣經濟起飛後大量湧入。2008年卡達政府在多哈郊外撥地建立「宗教園區」，興建了第一座天主教堂玫瑰聖母堂，天主教、聖公會、東正教等教會集中於此。"
    },
    {
     "name": "印度教",
     "percent": 15,
-    "description": "主要為南亞外籍勞工。"
+    "description": "印度教徒主要是來自印度與尼泊爾的外籍勞工，他們在2000年代後隨卡達天然氣產業、基礎建設與2022年世界盃足球賽的工程建設大量來到卡達。由於卡達不允許興建印度教寺廟，信徒多在私人場所進行宗教活動。"
    },
    {
     "name": "佛教",
     "percent": 3,
-    "description": "主要為外籍勞工。"
+    "description": "佛教徒主要是來自斯里蘭卡、泰國、尼泊爾與東亞的外籍勞工與專業人士，人數不多，主要在私人場所舉行活動。"
    }
   ],
-  "background": "伊斯蘭教自七世紀起即是阿拉伯半島東部的主要宗教，卡達王室奉行瓦哈比派。二十世紀後期石油與天然氣經濟吸引大量外籍勞工，外籍人口遠多於本國公民，因此帶來基督教、印度教與佛教。"
+  "background": "卡達半島在7世紀接受伊斯蘭教，傳統上以採珍珠與遊牧為生。18世紀阿勒薩尼家族遷入並在19世紀建立統治，信奉瓦哈比派伊斯蘭教。1971年獨立後伊斯蘭教為國教。1940年代發現石油、1971年發現世界最大的北方天然氣田後，大量外籍勞工湧入，使外籍人口佔約九成，帶來基督教、印度教與佛教。"
  },
  "language": {
   "official": "阿拉伯語是官方語言，英語廣泛使用於商業。",
@@ -33,41 +33,41 @@
    {
     "name": "阿拉伯語",
     "percent": 40,
-    "description": "卡達國民與其他阿拉伯移民使用的語言。",
+    "description": "阿拉伯語是卡達公民的母語，屬海灣阿拉伯語方言，與阿拉伯半島東部的方言相近。2019年卡達通過法律，規定政府機構、公立學校與官方文件必須使用阿拉伯語，以保護國家認同。由於卡達公民只佔總人口約一成，加上來自埃及、約旦、敘利亞等地的阿拉伯外籍勞工，阿拉伯語使用者約佔四成。",
     "greeting": "مرحبا",
     "pronunciation": "MAR-ha-ba"
    },
    {
     "name": "尼泊爾語",
     "percent": 13,
-    "description": "尼泊爾外籍勞工社群使用。",
+    "description": "尼泊爾語由大量來自尼泊爾的外籍勞工使用，他們在2000年代後隨卡達的建築熱潮大量到來，特別是2010年卡達獲得2022年世界盃主辦權後，興建球場、地鐵與飯店需要大量勞工。尼泊爾勞工的工作與生活條件曾引起國際人權組織的關注。",
     "greeting": "नमस्ते",
     "pronunciation": "na-ma-STAY"
    },
    {
     "name": "孟加拉語",
     "percent": 12,
-    "description": "孟加拉外籍勞工社群使用。",
+    "description": "孟加拉語由來自孟加拉的外籍勞工使用，他們主要從事建築、清潔與服務業。孟加拉自1970年代起就向海灣國家輸出勞工，海外匯款是孟加拉經濟的重要支柱。",
     "greeting": "আসসালামু আলাইকুম",
     "pronunciation": "as-sa-LA-mu a-LAI-kum"
    },
    {
     "name": "馬拉雅拉姆語",
     "percent": 10,
-    "description": "印度喀拉拉邦外籍勞工社群使用。",
+    "description": "馬拉雅拉姆語是印度南部喀拉拉邦的語言。喀拉拉邦與海灣地區自古透過阿拉伯海貿易往來，1970年代石油經濟起飛後，大量喀拉拉人前往卡達從事零售、醫療、工程與服務業，形成龐大的社群。",
     "greeting": "നമസ്കാരം",
     "pronunciation": "na-mas-KAA-ram"
    }
   ],
-  "history": "卡達本地人說海灣阿拉伯語方言。石油時代以後，大量來自南亞、東南亞與其他阿拉伯國家的移工湧入，使英語成為不同族群間的共通語言，社會呈現多語並存的狀態。"
+  "history": "卡達自古通行海灣阿拉伯語方言，以採珍珠為主的沿海社會與印度、波斯有密切往來，詞彙中有不少波斯語與印度語借詞。1916–1971年英國保護時期，英語成為對外與商業語言。1971年獨立後阿拉伯語為官方語言，但石油與天然氣經濟帶來大量外籍勞工，英語成為不同族群之間的共同語，2019年卡達立法加強阿拉伯語的使用。"
  },
  "food": {
   "ranking": [
    {
     "name": "馬奇布斯",
     "localName": "مجبوس (Machboos)",
-    "description": "以香料、乾萊姆與雞肉或羊肉一同烹煮的香料飯。",
-    "history": "卡達國菜，反映過去海上貿易帶來的印度香料。",
+    "description": "將米飯與以小豆蔻、肉桂、丁香、黑萊姆乾與巴哈拉特綜合香料燉煮的雞肉或羊肉一同烹煮，米飯吸收肉汁，色澤金黃。",
+    "history": "馬奇布斯是海灣地區的傳統料理，其香料與做法深受印度洋貿易的影響。卡達在發現石油前以採珍珠為主要經濟，珍珠商人與印度、波斯有密切的貿易往來，帶回了米、香料與印度比利亞尼飯的烹調方式。它是卡達家庭午餐的主食，也是婚禮與節慶時招待客人的必備料理。",
     "wiki": "Kabsa",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Machboos_%28cropped%29.JPG/960px-Machboos_%28cropped%29.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Machboos_(cropped).JPG",
@@ -76,8 +76,8 @@
    {
     "name": "哈里斯",
     "localName": "هريس (Harees)",
-    "description": "以小麥與肉長時間燉煮搗成的粥。",
-    "history": "齋戒月與節慶時的傳統料理。",
+    "description": "將小麥粒與雞肉或羊肉長時間燉煮，再反覆攪打成黏稠的粥狀，以酥油與肉桂調味，口感綿密。",
+    "history": "哈里斯是阿拉伯半島最古老的料理之一，10世紀巴格達的食譜書中已有記載。在卡達，它與伊斯蘭的宗教節日密切相關，在齋戒月期間是開齋晚餐的必備料理，家庭也會將哈里斯分送鄰居與窮人。在開齋節與宰牲節時也常見，象徵分享與團聚。",
     "wiki": "Harees",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Armenian_Harisa.JPG/960px-Armenian_Harisa.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Armenian_Harisa.JPG",
@@ -86,8 +86,8 @@
    {
     "name": "盧蓋瑪特",
     "localName": "لقيمات (Luqaimat)",
-    "description": "外酥內軟的小炸麵團球，淋上椰棗糖漿。",
-    "history": "齋戒月期間最受歡迎的甜點之一。",
+    "description": "將以酵母發酵的麵糊用湯匙舀入熱油中炸成小圓球，外皮金黃酥脆、內部鬆軟，淋上椰棗糖漿並撒芝麻。",
+    "history": "盧蓋瑪特在13世紀巴格達的阿拔斯王朝食譜書中已有記載，名稱意為「小口」。它在海灣地區流傳數百年，由於椰棗是阿拉伯半島最重要的作物，以椰棗糖漿調味是當地的特色。在卡達，它是齋戒月期間開齋時最受歡迎的甜點，家家戶戶都會製作。",
     "wiki": "Luqaimat",
     "image": "https://upload.wikimedia.org/wikipedia/commons/1/15/Sam%27dan_lokma_tatlisi.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Sam%27dan_lokma_tatlisi.jpg",
@@ -96,8 +96,8 @@
    {
     "name": "沙里德",
     "localName": "ثريد (Thareed)",
-    "description": "將薄麵包浸在肉與蔬菜燉湯中的料理。",
-    "history": "據傳是先知穆罕默德喜愛的料理，齋戒月時常見。",
+    "description": "將當地的薄麵包（regag）撕碎鋪在盤底，淋上以羊肉、馬鈴薯、南瓜、番茄與香料燉煮的濃湯，讓麵包吸飽湯汁。",
+    "history": "沙里德是阿拉伯半島最古老的料理之一，據聖訓記載，先知穆罕默德非常喜愛這道料理，曾以它比喻其他食物中最好的。由於與先知的關聯，它在齋戒月期間特別受歡迎，是卡達家庭開齋晚餐的傳統料理。它也是貝都因人將麵包與燉肉結合以節省食物的智慧。",
     "wiki": "Tharid",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Tharid._%28cropped%29.JPG/960px-Tharid._%28cropped%29.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Tharid._(cropped).JPG",
@@ -106,8 +106,8 @@
    {
     "name": "巴拉利特",
     "localName": "بلاليط (Balaleet)",
-    "description": "甜味細麵上覆蓋蛋餅的早餐料理。",
-    "history": "以番紅花與小豆蔻調味，是海灣地區傳統的節慶早餐。",
+    "description": "將細麵條以糖、小豆蔻、番紅花與玫瑰水炒成甜味，上面覆蓋一層薄蛋餅，鹹甜兼具，常作為節慶早晨的早餐。",
+    "history": "巴拉利特是海灣地區的傳統早餐，細麵條的使用反映了阿拉伯半島與波斯、印度之間的貿易交流，番紅花與玫瑰水則多來自波斯。它在卡達常作為週末早餐或節日早晨的料理，特別是在開齋節的早晨，家庭成員會一起享用這道甜鹹交融的料理。",
     "wiki": "Balaleet",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Homemade_Balaleet%2C_2023.jpg/960px-Homemade_Balaleet%2C_2023.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Homemade_Balaleet,_2023.jpg",

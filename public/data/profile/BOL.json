@@ -7,20 +7,20 @@
    {
     "name": "天主教",
     "percent": 70,
-    "description": "西班牙殖民時期傳入，常與安地斯傳統信仰融合。"
+    "description": "天主教隨1530年代西班牙征服印加帝國而傳入，1545年發現波托西銀礦後，西班牙在當地建立了大規模的殖民統治，天主教會與殖民政權緊密結合。傳教士在原住民社區推行天主教，但許多原住民把天主教聖人與大地之母帕查瑪瑪等傳統信仰結合，例如科帕卡巴納聖母即融合了的的喀喀湖一帶的古老信仰。2009年新憲法取消天主教的國教地位，宣布國家為世俗國家。"
    },
    {
     "name": "基督新教／福音派",
     "percent": 18,
-    "description": "近數十年快速成長。"
+    "description": "新教與福音派在20世紀由美國與歐洲傳教士傳入，1960年代以後在原住民與城市貧民中快速成長，特別是五旬節派。它們以社區互助、禁酒與信仰醫治吸引信徒，許多艾馬拉人與克丘亞人改信福音派，使其比例升至近兩成。"
    },
    {
     "name": "無宗教",
     "percent": 6,
-    "description": "未認同任何宗教的人口。"
+    "description": "無宗教人口在玻利維亞比例很低，約占6%，主要集中在聖克魯斯、拉巴斯等大城市的年輕世代與受過高等教育的人口。由於宗教與原住民傳統信仰在玻利維亞社會中仍非常重要，自認無宗教者相對較少。"
    }
   ],
-  "background": "西班牙征服印加帝國後，天主教傳入安地斯地區，並與崇敬大地之母帕查瑪瑪等原住民信仰融合。二十世紀後期福音派教會快速成長，2009年憲法確立國家世俗化。"
+  "background": "在西班牙人到來前，安地斯地區的原住民崇拜太陽神因蒂、大地之母帕查瑪瑪與山神阿普，的的喀喀湖畔的蒂瓦納科文化（約500–1000年）是重要的宗教中心。16世紀西班牙征服後，天主教成為殖民地的官方宗教，但原住民將傳統信仰融入天主教，形成獨特的宗教文化。19世紀獨立後天主教仍是國教，直到2009年莫拉萊斯政府頒布新憲法，確立國家為世俗國家，並尊重原住民信仰。近年福音派成長迅速，天主教比例逐漸下降。"
  },
  "language": {
   "official": "西班牙語與36種原住民語言都是官方語言。",
@@ -28,41 +28,41 @@
    {
     "name": "西班牙語",
     "percent": 70,
-    "description": "全國通用語言。",
+    "description": "西班牙語隨16世紀西班牙殖民傳入，殖民時期是行政與教會的語言，1825年獨立後成為國家語言。20世紀中葉以後，1952年革命推動土地改革與普及教育，大量原住民從鄉村移居城市，西班牙語的使用迅速擴大，今日約七成人口以它為主要語言。",
     "greeting": "Hola",
     "pronunciation": "OH-la"
    },
    {
     "name": "克丘亞語",
     "percent": 18,
-    "description": "印加帝國的語言，主要在高地與谷地使用。",
+    "description": "克丘亞語是印加帝國的官方語言，15世紀印加帝國擴張時傳入今日玻利維亞的高地與谷地。殖民時期西班牙傳教士也以克丘亞語傳教，使它進一步普及。今天主要分布在科恰班巴、波托西、丘基薩卡等省，2009年憲法將它與其他原住民語言列為官方語言。",
     "greeting": "Imaynallan",
     "pronunciation": "ee-my-NAH-yan"
    },
    {
     "name": "艾馬拉語",
     "percent": 11,
-    "description": "的的喀喀湖周邊與拉巴斯地區的語言。",
+    "description": "艾馬拉語的歷史比印加帝國更早，一般認為與的的喀喀湖畔的古代文明有關，至今仍集中在拉巴斯省與的的喀喀湖周邊。2006年首位原住民總統、艾馬拉族的埃沃・莫拉萊斯上任，艾馬拉語與原住民文化的地位大幅提升。",
     "greeting": "Kamisaki",
     "pronunciation": "ka-mee-SA-kee"
    },
    {
     "name": "瓜拉尼語",
     "percent": 1,
-    "description": "東南部查科地區的語言。",
+    "description": "瓜拉尼語主要分布在東南部的查科地區，使用者是瓜拉尼族原住民。19世紀末玻利維亞軍隊與瓜拉尼人發生衝突，1892年的庫魯尤基戰役後許多瓜拉尼人失去土地。今天它是官方語言之一，但使用者約只有1%。",
     "greeting": "Mba'éichapa",
     "pronunciation": "mba-AY-cha-pa"
    }
   ],
-  "history": "艾馬拉語與克丘亞語在西班牙人到來前即廣泛使用。殖民時期西班牙語成為行政語言，原住民語言長期處於弱勢；2009年新憲法將原住民語言列為官方語言，並推動雙語教育。"
+  "history": "玻利維亞在印加帝國之前就有艾馬拉語等多種語言，15世紀印加帝國擴張後克丘亞語成為高地的通用語。16世紀西班牙殖民後，西班牙語成為統治階層的語言，但原住民語言在鄉村持續使用。1952年革命後的普及教育推廣西班牙語，原住民語言一度被邊緣化。2009年新憲法承認西班牙語與36種原住民語言為官方語言，並要求公務員至少會說一種原住民語言，以落實「多民族國家」的理念。"
  },
  "food": {
   "ranking": [
    {
     "name": "薩爾特尼亞",
     "localName": "Salteña",
-    "description": "包入肉、馬鈴薯與甜辣湯汁的烤餡餅。",
-    "history": "據傳十九世紀由來自阿根廷薩爾塔的人帶入，是玻利維亞人上午最愛的點心。",
+    "description": "烘烤的半月形餡餅，酥皮內包著帶湯汁的牛肉或雞肉、馬鈴薯、豌豆、橄欖與水煮蛋，口味微甜微辣。",
+    "history": "薩爾特尼亞的名稱來自19世紀的胡安娜・曼努埃拉・戈里蒂，她是阿根廷薩爾塔省的政治流亡者，相傳她在玻利維亞製作這種餡餅維生，人們便稱它為「薩爾塔女人做的」（salteña）。它與西班牙傳入的恩潘納達同源，但玻利維亞版本的內餡含有大量湯汁。玻利維亞人習慣在上午10點左右當作點心吃，被視為國民小吃。",
     "wiki": "Salteña",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Salte%C3%B1as_de_Bolivia.jpg/960px-Salte%C3%B1as_de_Bolivia.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Salte%C3%B1as_de_Bolivia.jpg",
@@ -71,8 +71,8 @@
    {
     "name": "西爾潘丘",
     "localName": "Silpancho",
-    "description": "在米飯與馬鈴薯上鋪拍薄的炸肉排與荷包蛋。",
-    "history": "源自科恰班巴的代表料理。",
+    "description": "把牛肉拍成極薄的大片，裹麵包粉油炸後鋪在米飯與馬鈴薯上，再放上煎蛋與番茄洋蔥莎莎醬。",
+    "history": "西爾潘丘是科恰班巴的代表菜，名稱來自克丘亞語「silpa」（薄的），指牛肉被拍得非常薄。科恰班巴谷地在殖民時期就是重要的農業區，被稱為「玻利維亞的糧倉」，盛產稻米、馬鈴薯與玉米。這道菜在20世紀的科恰班巴發展起來，如今已成為全國普遍的家常菜。",
     "wiki": "Silpancho",
     "image": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Silpancho.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Silpancho.jpg",
@@ -81,8 +81,8 @@
    {
     "name": "大份炒肉",
     "localName": "Pique macho",
-    "description": "將牛肉、香腸、薯條與辣椒、雞蛋一起拌炒的大盤料理。",
-    "history": "同樣源自科恰班巴，常與朋友分食。",
+    "description": "把牛肉塊、香腸與炸薯條堆成一大盤，再鋪上洋蔥、番茄、辣椒與水煮蛋，份量驚人，適合多人分享。",
+    "history": "大份炒肉也是科恰班巴的名菜，名稱中的「macho」意為「男子漢」，暗示它的份量與辣度。關於起源有不同說法，常見的一種是20世紀後期科恰班巴一家餐廳為深夜飢餓的客人臨時做出這道菜。它是朋友聚會時配啤酒的人氣料理，也代表了玻利維亞對豐盛餐點的喜愛。",
     "wiki": "Pique macho",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Pique_macho.jpg/960px-Pique_macho.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Pique_macho.jpg",
@@ -91,8 +91,8 @@
    {
     "name": "烤牛心串",
     "localName": "Anticucho",
-    "description": "以醃漬牛心串燒，配馬鈴薯與辣醬。",
-    "history": "安地斯地區自殖民時期流傳至今的街頭小吃。",
+    "description": "把牛心切塊後用辣椒、孜然與醋醃漬，串在籤上炭烤，常配馬鈴薯與花生辣醬，是夜間街頭小吃。",
+    "history": "烤牛心串的起源與殖民時期的奴隸和原住民有關：西班牙主人吃牛肉的好部位，而把內臟等次級部位留給僕役，他們便以香料醃漬燒烤。這種料理在安地斯各國都很流行，名稱來自克丘亞語。在玻利維亞，它是夜晚街頭攤販的人氣小吃，特別在拉巴斯與科恰班巴的夜市最常見。",
     "wiki": "Anticucho",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Anticuchos_-_Grilled_Beef_Heart_skewers.jpg/960px-Anticuchos_-_Grilled_Beef_Heart_skewers.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Anticuchos_-_Grilled_Beef_Heart_skewers.jpg",
@@ -101,8 +101,8 @@
    {
     "name": "花生湯",
     "localName": "Sopa de maní",
-    "description": "以花生、牛肉與蔬菜熬煮的濃湯，上面撒薯條。",
-    "history": "花生原產於南美洲，此湯是玻利維亞家常湯品。",
+    "description": "以生花生磨成粉，與牛骨高湯、馬鈴薯、通心粉和蔬菜一起熬煮的濃湯，口感濃郁、帶有堅果香。",
+    "history": "花生原產於南美洲，一般認為最早在今日玻利維亞與阿根廷北部一帶被馴化，印加人與更早的安地斯民族就已食用花生。花生湯結合了原住民的花生與西班牙人帶來的牛肉、小麥麵食，是殖民後融合飲食的例子。它在科恰班巴與蘇克雷特別受歡迎，被視為玻利維亞最具代表性的湯品之一。",
     "wiki": "Peanut soup",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Fufu.jpg/960px-Fufu.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Fufu.jpg",

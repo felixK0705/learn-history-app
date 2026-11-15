@@ -59,7 +59,7 @@
    {
     "name": "壽司",
     "localName": "寿司 (Sushi)",
-    "description": "以醋調味的米飯搭配生魚片、海鮮或蔬菜，常見有握壽司、卷壽司等形式。",
+    "description": "以醋調味的米飯搭配生魚片、海鮮或蔬菜，常見有握壽司、卷壽司等形式。講究魚料新鮮與米飯的醋味及溫度，是日本料理的代表。",
     "history": "壽司源自東南亞與中國將魚與米一起發酵保存的「熟壽司」（nare-zushi），奈良時代已傳入日本，滋賀的鮒壽司至今仍保留這種古老形式。江戶時代人們改用米醋調味，縮短製作時間，約在1820年代江戶（今東京）出現了現捏現吃的握壽司，在路邊攤販售，是當時的速食。二戰後冷藏技術普及，生魚片壽司走向高級化；1958年大阪出現迴轉壽司，1970–80年代壽司更隨日本經濟崛起風行全球。",
     "wiki": "Sushi",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Sushi_platter.jpg/960px-Sushi_platter.jpg",
@@ -69,7 +69,7 @@
    {
     "name": "拉麵",
     "localName": "ラーメン (Ramen)",
-    "description": "以小麥麵條搭配豬骨、雞骨、醬油或味噌湯頭，加上叉燒、筍乾、蔥等配料。",
+    "description": "以小麥麵條搭配豬骨、雞骨、醬油或味噌湯頭，加上叉燒、筍乾、蔥等配料。湯頭與麵條種類因地區而異，是日本最受歡迎的國民美食之一。",
     "history": "拉麵源自中國的湯麵，明治時代開港後，橫濱等地的中華街開始販賣「支那蕎麥」或「南京蕎麥」，1910年東京淺草的「來來軒」被認為是第一家日本人經營的拉麵店。二戰後美國援助大量小麥麵粉，拉麵攤在糧食短缺時期迅速普及；1958年日清食品的安藤百福發明即食拉麵，使拉麵走入每個家庭。今天全日本各地有札幌味噌、博多豚骨等數十種地方拉麵。",
     "wiki": "Ramen",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Shoyu_Ramen%EF%BC%88Tokyo_Ramen%EF%BC%89_-_01.jpg/960px-Shoyu_Ramen%EF%BC%88Tokyo_Ramen%EF%BC%89_-_01.jpg",
@@ -79,7 +79,7 @@
    {
     "name": "天婦羅",
     "localName": "天ぷら (Tempura)",
-    "description": "把海鮮或蔬菜裹上以冷水調成的薄麵衣油炸，外皮酥脆，蘸天汁或鹽食用。",
+    "description": "把海鮮或蔬菜裹上以冷水調成的薄麵衣油炸，外皮酥脆，蘸天汁或鹽食用。講究麵衣輕薄與現炸現吃，常配白蘿蔔泥。",
     "history": "16世紀葡萄牙傳教士與商人來到長崎，帶來油炸食物的料理方法，「天婦羅」一詞一般認為來自葡萄牙語 têmporas，指天主教在四季齋期不吃肉、改吃炸魚的日子。江戶時代油價下降，天婦羅成為江戶街頭攤販的平民小吃，以東京灣的新鮮魚蝦製作；明治以後才發展為高級料亭料理。",
     "wiki": "Tempura",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Tempura_01.jpg/960px-Tempura_01.jpg",
@@ -89,7 +89,7 @@
    {
     "name": "味噌湯",
     "localName": "味噌汁 (Miso shiru)",
-    "description": "以昆布或柴魚熬出的高湯溶入味噌，加入豆腐、海帶芽、蔥等配料的湯品。",
+    "description": "以昆布或柴魚熬出的高湯溶入味噌，加入豆腐、海帶芽、蔥等配料的湯品。幾乎每餐都會出現，搭配白飯與配菜構成日本家庭的基本餐點。",
     "history": "味噌的原型可能在飛鳥、奈良時代由中國或朝鮮半島傳入，最初是貴族的調味品。鎌倉時代禪宗寺院把味噌溶在湯裡飲用，形成味噌湯，並發展出「一汁一菜」的簡素飲食形式。戰國時代味噌因可長期保存而成為軍糧，江戶時代普及到庶民，各地發展出米味噌、麥味噌、豆味噌等，今天仍是日本人日常餐桌上不可缺少的湯品。",
     "wiki": "Miso soup",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Miso_Soup_001.jpg/960px-Miso_Soup_001.jpg",

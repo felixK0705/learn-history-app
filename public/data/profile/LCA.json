@@ -7,25 +7,25 @@
    {
     "name": "天主教",
     "percent": 61,
-    "description": "法國殖民時期傳入，至今仍是最大宗教。"
+    "description": "17–18世紀法國殖民者在聖露西亞建立甘蔗種植園，並要求奴隸受洗為天主教徒。1814年英國取得聖露西亞後，天主教仍是島上絕大多數人的信仰，教會長期主導教育與社會生活。今天天主教的節日與彌撒仍是島上的重要文化活動。"
    },
    {
     "name": "新教（基督復臨安息日會、五旬節派、聖公會等）",
     "percent": 26,
-    "description": "英國統治後傳入並在近數十年成長。"
+    "description": "1814年英國統治後聖公會傳入，但信徒有限。20世紀中後期，基督復臨安息日會、五旬節派與浸信會等從美國與其他加勒比島嶼傳入，以活潑的崇拜方式、廣播與社區服務吸引信徒，使新教各派在近數十年持續成長。"
    },
    {
     "name": "無宗教",
     "percent": 6,
-    "description": "比例較低。"
+    "description": "聖露西亞的無宗教者比例逐漸上升，主要集中在首都卡斯翠等城市地區的年輕人，與全球化、教育普及及對傳統教會權威的質疑有關。"
    },
    {
     "name": "拉斯塔法里教",
     "percent": 2,
-    "description": "20世紀興起於牙買加的宗教運動。"
+    "description": "拉斯塔法里教在1930年代起源於牙買加，1970年代隨著雷鬼音樂與巴布·馬利的影響傳入聖露西亞等東加勒比島嶼，吸引年輕人認同其反殖民與非洲認同思想。早期信徒曾因吸食大麻等習俗與政府、社會發生衝突。"
    }
   ],
-  "background": "法國殖民者最早在島上建立定居點並帶入天主教，雖然1814年後由英國統治，天主教仍深植於法語克里奧爾社群。英國統治期間聖公會與其他新教教派逐漸傳入。"
+  "background": "原住民卡里納戈人（加勒比人）抵抗歐洲殖民長達一個多世紀。1660年起法國與英國為聖露西亞爭奪了十四次之多，法國殖民時期（主要在17–18世紀）帶入天主教，並以法國種植園主與從西非運來的奴隸建立了天主教社會。1814年英國正式取得聖露西亞，但未強制改變島民的宗教，天主教因此延續為多數信仰。20世紀起基督復臨安息日會、五旬節派等新教教派從美國與其他加勒比國家傳入，1979年聖露西亞獨立。"
  },
  "language": {
   "official": "官方語言為英語。",
@@ -33,27 +33,27 @@
    {
     "name": "聖露西亞克里奧爾法語（Kwéyòl）",
     "percent": 60,
-    "description": "以法語為基礎的克里奧爾語，是許多人的家庭語言。",
+    "description": "Kwéyòl 起源於17–18世紀法國殖民時期，奴隸以法語詞彙為基礎融合西非語言而形成，雖然英國1814年接管後推行英語，克里奧爾語仍是許多聖露西亞人在家庭與鄉村的母語。1979年獨立後社會對 Kwéyòl 的態度改變，政府也支持克里奧爾文化節，但它在學校與官方場合中仍不普遍。",
     "greeting": "Bonjou",
     "pronunciation": "bon-zhoo"
    },
    {
     "name": "英語",
     "percent": 38,
-    "description": "官方、教育與媒體語言。",
+    "description": "英語在1814年英國取得聖露西亞後成為官方語言，學校、政府、法院與媒體都使用英語。二十世紀以後英語教育普及，城市年輕人越來越多以英語為主要語言，使英語與克里奧爾語並行。",
     "greeting": "Hello",
     "pronunciation": "heh-loh"
    }
   ],
-  "history": "法國人於17–18世紀引入非洲奴隸，法語與西非語言接觸形成克里奧爾法語（Kwéyòl）。1814年英國取得此島後英語成為官方與教育語言，但Kwéyòl至今仍為日常生活語言。"
+  "history": "聖露西亞在17–18世紀主要由法國殖民，從西非運來的奴隸與法國種植園主接觸，發展出以法語詞彙為基礎、融合西非語法的克里奧爾語（Kwéyòl）。1814年英國取得聖露西亞後，英語成為官方語言並在學校中推行，克里奧爾語長期被禁止在學校使用。1979年獨立後，克里奧爾語逐漸獲得重視，每年10月舉辦克里奧爾日（Jounen Kwéyòl）慶祝文化，部分媒體與宗教活動也使用克里奧爾語。"
  },
  "food": {
   "ranking": [
    {
     "name": "青香蕉鹹魚",
     "localName": "Green fig and saltfish",
-    "description": "以青香蕉（當地稱green fig）配上炒鹹鱈魚，為國菜。",
-    "history": "鹹鱈魚自殖民時期作為廉價蛋白質輸入，與在地香蕉結合成為代表菜。",
+    "description": "把青香蕉（當地稱 green fig）水煮，配以洋蔥、番茄、甜椒炒過的鹹鱈魚，是聖露西亞國菜。",
+    "history": "鹹鱈魚是殖民時期大西洋貿易的產物：北美加拿大與新英格蘭以鹽漬鱈魚交換加勒比海的糖與蘭姆酒，作為奴隸廉價的蛋白質來源。香蕉則在20世紀成為聖露西亞的主要出口作物，未成熟的青香蕉被當作澱粉主食。兩者的結合反映了殖民種植園經濟的歷史，今天它是家庭早餐與週日餐桌上的常見菜色。",
     "wiki": "Dried and salted cod",
     "image": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Bacalhau_%28Porto%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Bacalhau_(Porto).jpg",
@@ -62,8 +62,8 @@
    {
     "name": "卡拉魯湯",
     "localName": "Callaloo",
-    "description": "以芋葉或莧菜葉加入椰奶、秋葵燉成的綠色濃湯。",
-    "history": "源自西非的葉菜料理，經奴隸貿易傳入加勒比海。",
+    "description": "以芋葉（dasheen 葉）或莧菜葉加椰奶、洋蔥、香料與鹹肉燉成的濃稠綠色湯。口感滑順，帶有椰奶與香料的香氣。",
+    "history": "Callaloo 源自西非的葉菜燉湯，奴隸被帶到加勒比海後，以當地的芋葉或莧菜代替非洲的綠葉蔬菜。在聖露西亞等東加勒比島嶼，callaloo 是週日午餐的傳統菜，也常在克里奧爾日等文化節慶中出現，被視為非裔加勒比文化的代表料理之一。",
     "wiki": "Callaloo",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Callaloo.jpg/960px-Callaloo.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Callaloo.jpg",
@@ -72,8 +72,8 @@
    {
     "name": "羅提捲餅",
     "localName": "Roti",
-    "description": "以咖哩雞、馬鈴薯等內餡包入薄餅中食用。",
-    "history": "19世紀印度契約勞工帶入，成為加勒比海普遍的街頭食物。",
+    "description": "以麵粉做成的薄餅，包入咖哩雞、咖哩羊肉或馬鈴薯、鷹嘴豆等餡料。餅皮柔軟、餡料香辣，是方便的外帶午餐。",
+    "history": "Roti 源自印度，1838年廢奴後英國從印度招募契約勞工到加勒比海，1859年起也有印度勞工被帶到聖露西亞的甘蔗種植園，他們帶來了印度烤餅與咖哩料理。這些食物逐漸融入當地飲食，roti 成為聖露西亞街頭與小吃店常見的午餐，反映印度裔加勒比人對當地文化的貢獻。",
     "wiki": "Roti",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/2020-05-08_19_34_28_Chapati_being_made_in_a_pan_in_the_Franklin_Farm_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg/960px-2020-05-08_19_34_28_Chapati_being_made_in_a_pan_in_the_Franklin_Farm_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:2020-05-08_19_34_28_Chapati_being_made_in_a_pan_in_the_Franklin_Farm_section_of_Oak_Hill,_Fairfax_County,_Virginia.jpg",
@@ -82,8 +82,8 @@
    {
     "name": "可可茶",
     "localName": "Cocoa tea",
-    "description": "以在地可可球加牛奶、肉桂與肉豆蔻煮成的熱飲，常在早餐飲用。",
-    "history": "聖露西亞長期種植可可，此飲品是傳統早餐的一部分。",
+    "description": "以本地可可塊磨碎後加入牛奶、肉桂、肉豆蔻與月桂葉熬煮的熱飲。口感濃郁香甜，帶有香料的溫暖氣息。",
+    "history": "可可原產中南美洲，18世紀法國殖民者在聖露西亞建立可可種植園，可可一度是重要的出口作物。島民在家中把可可豆曬乾、烘焙並搓成可可棒（cocoa stick），用來煮可可茶。今天可可茶常在早餐或寒冷的雨季早晨飲用，聖露西亞的可可種植也正在復興。",
     "wiki": "Hot chocolate",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/After_The_St._Patrick%27s_Parade_Late_Lunch_%40_Lemon%2C_Dawson_Street%2C_Dublin%2C_Rep._Of_Ireland_A_Fine_Tradition%21_%286992614913%29.jpg/960px-After_The_St._Patrick%27s_Parade_Late_Lunch_%40_Lemon%2C_Dawson_Street%2C_Dublin%2C_Rep._Of_Ireland_A_Fine_Tradition%21_%286992614913%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:After_The_St._Patrick%27s_Parade_Late_Lunch_@_Lemon,_Dawson_Street,_Dublin,_Rep._Of_Ireland_A_Fine_Tradition!_(6992614913).jpg",
@@ -92,8 +92,8 @@
    {
     "name": "炸鹹魚餅",
     "localName": "Accra",
-    "description": "以鹹鱈魚與香草拌麵糊炸成的小餅。",
-    "history": "源自西非的油炸麵糊點心，在法語系加勒比地區廣受歡迎。",
+    "description": "以泡過水的鹹鱈魚碎與麵糊、蔥、香草和辣椒混合後油炸成的小餅。外皮酥脆、內部鬆軟，帶有鹹魚與辣椒的鹹香。",
+    "history": "Accra 的名稱與西非迦納的首都阿克拉同名，一般認為源自西非約魯巴人等族群的炸豆餅（akara），奴隸把這種做法帶到加勒比海，並改用殖民時期的主要食材鹹鱈魚製作。它在法語加勒比區（瓜地洛普、馬丁尼克與聖露西亞）特別流行，是街頭小吃與節慶點心。",
     "wiki": "Akara",
     "image": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Beans_Ball-Akara.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Beans_Ball-Akara.jpg",

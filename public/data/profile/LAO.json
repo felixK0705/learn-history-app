@@ -7,25 +7,25 @@
    {
     "name": "上座部佛教",
     "percent": 65,
-    "description": "多數寮族人信仰，寺廟是社區生活中心。"
+    "description": "14世紀瀾滄王國的開國君主法昂從高棉迎回勃拉邦佛像並推廣上座部佛教，佛教從此成為寮族的國家宗教，16世紀塞塔提拉王又建造了永珍塔鑾寺。今天佛教信徒主要是居住在湄公河沿岸低地的寮族與泰族各族群，男子短期出家與每日向僧侶布施糯米仍是日常。1975年共產政權建立後曾限制佛教，1990年代後態度轉為支持。"
    },
    {
     "name": "民間信仰（萬物有靈論）",
     "percent": 31,
-    "description": "山區少數民族崇拜神靈（phi）與祖先，寮族人也普遍參與。"
+    "description": "寮國約有50個官方承認的民族，其中許多高地民族如赫蒙族、克木族、阿卡族等未曾接受佛教，仍信仰祖靈、自然神靈與薩滿治療。這些民族多居住在北部與南部山區，因交通不便、受國家與佛教文化影響較少，因此民間信仰的比例很高。"
    },
    {
     "name": "基督教",
     "percent": 2,
-    "description": "包含天主教與新教。"
+    "description": "天主教在1893–1953年法國殖民期間由傳教士傳入，信徒多在城市與越南裔社群中。新教則在20世紀於部分高地民族中傳播。共產政府對基督教相對警戒，鄉村地區曾發生強迫信徒放棄信仰的事件。"
    },
    {
     "name": "其他",
     "percent": 1,
-    "description": "包含伊斯蘭教、巴哈伊教等。"
+    "description": "包括少數的伊斯蘭教徒（多為南亞與占族後裔商人）、巴哈伊信仰以及華人的民間信仰與大乘佛教。"
    }
   ],
-  "background": "14世紀法昂建立瀾滄王國，自高棉迎請上座部佛教並奉為國教。佛教與對神靈（phi）的信仰長期並存。法國殖民時期天主教傳入，1975年後政府一度限制宗教，後逐步放寬。"
+  "background": "寮國低地的寮族在14世紀法昂建立瀾滄王國時，從吳哥引進上座部佛教並供奉勃拉邦佛像，佛教成為王權與民族認同的核心。高地少數民族則長期保有祖靈與萬物有靈的信仰，即使寮族佛教徒也普遍祭祀稱為「披」（phi）的精靈。1893–1953年法國殖民期間天主教傳入。1975年寮國人民革命黨建立共產政權後，一度限制僧侶活動，但1980年代末起政府轉而利用佛教凝聚國家認同，國徽上也放上了塔鑾寺。"
  },
  "language": {
   "official": "官方語言為寮語。",
@@ -33,27 +33,27 @@
    {
     "name": "寮語",
     "percent": 53,
-    "description": "屬壯侗語系，與泰語關係密切，以寮文字母書寫。",
+    "description": "寮族是寮國人數最多的民族，主要居住在湄公河沿岸的低地，寮語自瀾滄王國時期就是宮廷與佛教的語言。1975年後政府以寮語為唯一官方語言並推行到所有學校，因此即使只有約一半人口以它為母語，多數少數民族也能以寮語作為第二語言溝通。",
     "greeting": "ສະບາຍດີ",
     "pronunciation": "sa-bai-dee"
    },
    {
     "name": "赫蒙語（苗語）",
     "percent": 9,
-    "description": "北部山區赫蒙族使用。",
+    "description": "赫蒙族（苗族）在19世紀從中國西南遷入寮國北部山區。越戰期間許多赫蒙人被美國中情局招募參與「秘密戰爭」對抗共產勢力，1975年共產黨勝利後大批赫蒙人逃往泰國難民營，後再移民美國等地。留在寮國的赫蒙族仍以赫蒙語為主要語言，集中在川壙、琅勃拉邦等北部省份。",
     "greeting": "Nyob zoo",
     "pronunciation": "nyaw zhong"
    }
   ],
-  "history": "寮語隨傣－寮民族南遷而來，文字源自高棉文字系統。法國殖民時期法語為行政語言。寮國約有五十個民族，克木語、赫蒙語等少數民族語言在山區廣泛使用。"
+  "history": "寮語屬壯侗語系台語支，與泰語（尤其是泰國東北部的依善語）十分相近，寮族的祖先約在8–13世紀從今中國南方南遷至湄公河流域。寮文源自高棉文字，14世紀瀾滄王國時期後逐漸成形，最早用於書寫佛經。1893–1953年法國殖民期間法語成為行政語言；1975年共產政權建立後推行文字改革簡化拼寫，並以寮語作為國家語言推廣到各民族。今天山區少數民族仍廣泛使用自己的語言，寮語則作為全國通用語。"
  },
  "food": {
   "ranking": [
    {
     "name": "拉普肉末沙拉",
     "localName": "ລາບ (Larb)",
-    "description": "以剁碎的肉、魚露、萊姆汁、烤米粉與香草拌成的沙拉，被視為國菜。",
-    "history": "「拉普」在寮語中有「幸運」之意，常在節慶與重要場合食用。",
+    "description": "把切碎的肉或魚以萊姆汁、魚露、辣椒、烤米粉與薄荷、香菜拌勻的「肉末沙拉」。口味酸辣鹹香，常配糯米與生菜一起吃。",
+    "history": "Larb 被視為寮國國菜，在寮語中有「好運」的諧音，因此在婚禮、新年（4月的潑水節）、喬遷等喜慶場合必定出現。它源自寮族的飲食傳統，泰國東北部的依善地區（居民多為寮族後裔）也以 larb 聞名。傳統上可以生肉製作，加入烤米粉增加香氣與口感，是寮族獨特的調味手法。",
     "wiki": "Larb",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/LaoFood_LarbNeua.JPG/960px-LaoFood_LarbNeua.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:LaoFood_LarbNeua.JPG",
@@ -62,8 +62,8 @@
    {
     "name": "糯米飯",
     "localName": "ເຂົ້າໜຽວ (Khao niao)",
-    "description": "蒸熟的糯米裝在竹簍中，以手捏成團沾菜食用。",
-    "history": "寮國人均糯米消費量居世界之冠，寮族人甚至自稱「糯米之子」。",
+    "description": "把糯米浸泡後放入竹簍蒸熟，用手捏成小團沾菜吃，是寮國人每天的主食。口感Q彈有嚼勁，搭配各種醬料與菜餚食用。",
+    "history": "寮國是全世界糯米消費比例最高的國家，寮族種植糯米已有千年以上歷史，寮人甚至自稱「糯米之子」（luk khao niao）。糯米耐飢、便於攜帶，適合山區與農田勞動。每天清晨在琅勃拉邦等地，信徒把糯米放入僧侶的缽中布施，這個「托缽」儀式是寮國佛教文化最具代表性的景象。",
     "wiki": "Glutinous rice",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Chapssal_%28glutinous_rice%29.jpg/960px-Chapssal_%28glutinous_rice%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Chapssal_(glutinous_rice).jpg",
@@ -72,8 +72,8 @@
    {
     "name": "青木瓜沙拉",
     "localName": "ຕຳໝາກຫຸ່ງ (Tam mak hoong)",
-    "description": "青木瓜絲加辣椒、萊姆、魚露與發酵魚醬搗拌而成。",
-    "history": "寮國與泰國東北部共享的料理，寮式版本常加入濃郁的發酵魚醬（padaek）。",
+    "description": "把青木瓜刨成絲，在臼中與辣椒、大蒜、萊姆汁、魚露及發酵魚醬（padaek）一起搗拌的酸辣沙拉。",
+    "history": "木瓜原產美洲，約在16世紀後經由葡萄牙與西班牙的貿易傳入東南亞，寮族將其與傳統的搗拌料理方式結合。寮國版本特別加入味道強烈的發酵魚醬 padaek，與泰國的宋丹（som tam）相比更鹹更重口味。它是寮國人日常最常吃的配菜與零食，常搭配糯米與烤雞。",
     "wiki": "Green papaya salad",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/2013_Tam_Lao.jpg/960px-2013_Tam_Lao.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:2013_Tam_Lao.jpg",
@@ -82,8 +82,8 @@
    {
     "name": "寮式米苔目湯",
     "localName": "ເຂົ້າປຽກເສັ້ນ (Khao piak sen)",
-    "description": "以米粉與木薯粉製成的Q彈粗麵，配雞湯與香草。",
-    "history": "寮國最受歡迎的早餐湯麵。",
+    "description": "以米粉與木薯粉製成的Q彈粗麵條，放入以雞骨熬煮的濃稠湯頭中，配雞肉、炸蒜與香草。",
+    "history": "Khao piak sen 意為「濕米線」，因米漿麵條在湯中煮時釋出澱粉，使湯頭變得濃稠。它類似越南的 bánh canh，反映寮國與越南之間長期的文化往來。在寮國，這是常見的早餐與宵夜，尤其在涼爽的雨季與山區更受歡迎。",
     "wiki": "Khao piak sen",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Khao_piak_sen.jpg/960px-Khao_piak_sen.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Khao_piak_sen.jpg",
@@ -92,8 +92,8 @@
    {
     "name": "寮式燉菜",
     "localName": "ເອາະຫລາມ (Or lam)",
-    "description": "以肉類、蔬菜、茄子與帶辣味的胡椒木燉煮。",
-    "history": "源自古都龍坡邦的傳統料理。",
+    "description": "以水牛肉或野味與茄子、長豆、辣椒、蒔蘿與一種辛辣的木本植物（sakhan）燉煮的濃稠燉菜。",
+    "history": "Or lam 是琅勃拉邦的代表菜，被認為源自瀾滄王國的宮廷飲食。其中的 sakhan（胡椒藤的莖）切片後在口中會產生麻辣感，是琅勃拉邦料理的特色。過去它常以獵到的野味製作，反映寮國北部山林生活。琅勃拉邦在1995年被列為世界遺產後，這道菜也成為遊客認識寮國傳統料理的代表。",
     "wiki": "Or lam",
     "image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/O-lam.png",
     "imagePage": "https://commons.wikimedia.org/wiki/File:O-lam.png",

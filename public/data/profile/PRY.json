@@ -7,25 +7,25 @@
    {
     "name": "天主教",
     "percent": 85,
-    "description": "西班牙殖民與耶穌會傳教時期傳入，至今仍是主要宗教。"
+    "description": "1537年西班牙人建立亞松森，方濟會與耶穌會傳教士隨後傳教。1609年起耶穌會在瓜拉尼人中建立了數十個「傳教村」（reducciones），讓原住民集體生活、學習天主教並保護他們免受奴役，這是天主教在巴拉圭深入民間的關鍵。1767年西班牙國王驅逐耶穌會後傳教村瓦解，但天主教已成為瓜拉尼混血人口的主要信仰。1992年憲法雖政教分離，天主教仍佔八成以上。"
    },
    {
     "name": "新教（福音派等）",
     "percent": 10,
-    "description": "包含福音派與門諾會。"
+    "description": "新教在19世紀末隨歐洲移民傳入，1920年代起德裔門諾會信徒從加拿大與蘇聯移入西部查科地區，建立了自治殖民地。20世紀後期五旬節派與福音派教會在亞松森等城市與農村貧困地區快速擴張，使新教比例增至約一成。"
    },
    {
     "name": "無宗教",
     "percent": 3,
-    "description": "比例較低。"
+    "description": "巴拉圭是南美洲宗教性最強的國家之一，天主教與家庭、節慶緊密相連，因此無宗教人口只佔約3%，主要集中在亞松森受教育的年輕人中。"
    },
    {
     "name": "其他",
     "percent": 1,
-    "description": "包含原住民傳統信仰等。"
+    "description": "其他宗教包括少數原住民的傳統信仰、摩門教、耶和華見證人，以及東部東方市的穆斯林與佛教社群。東方市位於巴拉圭、巴西與阿根廷三國交界，20世紀後期吸引了大量黎巴嫩、台灣與韓國商人。"
    }
   ],
-  "background": "17–18世紀耶穌會在瓜拉尼人地區建立傳教村（reducciones），讓原住民集體改信天主教，並以瓜拉尼語傳教。20世紀門諾會信徒移居查科地區，帶來新教社群。"
+  "background": "瓜拉尼人原本信仰祖靈與自然神靈。16世紀西班牙殖民後，耶穌會在1609–1767年建立的瓜拉尼傳教村使天主教深植民間。1811年獨立後，獨裁者弗朗西亞一度限制教會權力。20世紀門諾會等移民帶來新教，五旬節派近年擴張。今日天主教仍是社會核心，每年12月8日卡亞昆聖母節有上百萬信徒朝聖。"
  },
  "language": {
   "official": "官方語言為西班牙語與瓜拉尼語。",
@@ -33,41 +33,41 @@
    {
     "name": "西班牙語與瓜拉尼語雙語",
     "percent": 42,
-    "description": "許多家庭同時使用兩種語言，並混合成稱為「Jopara」的口語。",
+    "description": "巴拉圭是美洲唯一大多數人口都使用原住民語言的國家。殖民時期西班牙男性與瓜拉尼女性通婚，混血後代在家中說瓜拉尼語、在公共事務中說西班牙語，雙語成為常態。1992年憲法定兩者同為官方語言，今日約四成人口在日常生活中混合使用兩種語言，城市中常見混合兩者的「若帕拉」（Jopara）。",
     "greeting": "Mba'éichapa / Hola",
     "pronunciation": "mba-ei-sha-pa / o-la"
    },
    {
     "name": "瓜拉尼語",
     "percent": 34,
-    "description": "原住民瓜拉尼人的語言，鄉村地區家庭多以其為主要語言。",
+    "description": "瓜拉尼語屬圖皮－瓜拉尼語系，是巴拉圭原住民的語言。耶穌會在傳教村中以瓜拉尼語傳教、編寫文法書與印刷書籍，使它成為書面語。1932–1935年查科戰爭中，巴拉圭軍隊以瓜拉尼語傳遞命令讓玻利維亞軍無法破譯，使它成為民族認同的象徵。只說瓜拉尼語的人集中在農村，約佔三分之一。",
     "greeting": "Mba'éichapa",
     "pronunciation": "mba-ei-sha-pa"
    },
    {
     "name": "西班牙語",
     "percent": 15,
-    "description": "都市地區較多僅使用西班牙語的家庭。",
+    "description": "只說西班牙語的人主要集中在亞松森等城市的中上階層。殖民時期西班牙語是行政與教育語言，長期以來被視為社會地位較高的語言。20世紀後的都市化與教育普及，使城市年輕人中只用西班牙語的比例增加。",
     "greeting": "Hola",
     "pronunciation": "o-la"
    },
    {
     "name": "葡萄牙語",
     "percent": 2,
-    "description": "巴西移民社群使用。",
+    "description": "葡萄牙語主要由東部與巴西接壤地區的「巴西巴拉圭人」（brasiguayos）使用。1970年代史托斯納爾政府開放東部土地，吸引大量巴西農民前來種植大豆，使阿托巴拉那等省分的葡萄牙語人口大增。",
     "greeting": "Olá",
     "pronunciation": "o-la"
    }
   ],
-  "history": "殖民時期西班牙男性與瓜拉尼女性通婚，加上耶穌會以瓜拉尼語傳教，使瓜拉尼語未被西班牙語取代，反而成為多數混血居民的語言。1992年憲法將瓜拉尼語與西班牙語並列為官方語言。"
+  "history": "瓜拉尼語是巴拉圭的原住民語言，16世紀西班牙殖民後，混血社會形成了瓜拉尼語與西班牙語並用的傳統，耶穌會更以瓜拉尼語出版書籍。19世紀三國同盟戰爭（1864–1870）後政府一度壓制瓜拉尼語，學校禁止使用。1932–1935年查科戰爭讓瓜拉尼語成為民族象徵，1992年憲法正式將其列為與西班牙語並列的官方語言，2010年通過《語言法》推動雙語教育。"
  },
  "food": {
   "ranking": [
    {
     "name": "巴拉圭玉米糕",
     "localName": "Sopa paraguaya",
-    "description": "以玉米粉、起司、洋蔥與牛奶烤成的鹹味玉米糕。",
-    "history": "名稱雖為「湯」，實為固態糕點；相傳是19世紀為總統烹調湯品時加了過多玉米粉而成。",
+    "description": "以玉米粉、起司、洋蔥、牛奶、蛋與豬油調成麵糊，放入烤盤烤成鬆軟的鹹味玉米糕，常作為烤肉的配菜。",
+    "history": "巴拉圭玉米糕的名稱意為「巴拉圭湯」，卻是固體的糕點。傳說19世紀獨裁者卡洛斯·安東尼奧·洛佩斯的廚師在煮湯時加入太多玉米粉，只好放進烤爐，意外成為美味的玉米糕。玉米是瓜拉尼人的傳統作物，起司與牛奶則來自西班牙人引進的牛。它在聖誕節、婚禮與家庭烤肉時必不可少。",
     "wiki": "Sopa paraguaya",
     "image": "https://upload.wikimedia.org/wikipedia/commons/5/58/Sopa_Paraguaya_2.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Sopa_Paraguaya_2.jpg",
@@ -76,8 +76,8 @@
    {
     "name": "奇帕起司麵包",
     "localName": "Chipá",
-    "description": "以木薯粉與起司製成的小圓麵包。",
-    "history": "源自瓜拉尼人的木薯烹調與耶穌會時期引入的乳製品，是巴拉圭國民點心。",
+    "description": "以木薯粉、起司、蛋與豬油或奶油揉成麵團，捏成小圓形或環形後烤成，外皮酥脆、內部Q彈，帶濃郁起司香。",
+    "history": "奇帕源自耶穌會傳教村時期，瓜拉尼人原本以木薯製作麵包，西班牙人引進牛之後加入了起司與蛋。在復活節前的聖週，許多家庭會用傳統的土窯（tatakua）烤製大量奇帕分送親友，因為聖週五不開伙。如今它是街頭與巴士上小販常見的早餐，配瑪黛茶或咖啡食用。",
     "wiki": "Chipa",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Chipa_Paraguay.jpg/960px-Chipa_Paraguay.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Chipa_Paraguay.jpg",
@@ -86,8 +86,8 @@
    {
     "name": "木薯煎餅",
     "localName": "Mbejú",
-    "description": "以木薯澱粉、起司與油脂煎成的扁餅。",
-    "history": "源自瓜拉尼原住民的傳統食物，常配咖啡或瑪黛茶。",
+    "description": "以木薯澱粉、起司、牛奶與豬油混合，在平底鍋中煎成圓形扁餅，外酥內軟Q，帶鹹味，常配牛奶或瑪黛茶當早餐。",
+    "history": "木薯煎餅是瓜拉尼原住民的傳統食物，早在西班牙人到來前，瓜拉尼人就以木薯澱粉煎餅，名稱即來自瓜拉尼語。殖民時期加入了西班牙人帶來的起司與豬油，變得更加香濃。它在三國同盟戰爭與查科戰爭期間是方便攜帶的戰地食物，至今是早餐與下午茶的常見點心。",
     "wiki": "Mbejú",
     "image": "https://upload.wikimedia.org/wikipedia/commons/3/31/Mbey%C3%BA_paraguayo.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Mbey%C3%BA_paraguayo.jpg",
@@ -96,8 +96,8 @@
    {
     "name": "冷瑪黛茶",
     "localName": "Tereré",
-    "description": "以冷水或果汁沖泡瑪黛葉，加入藥草飲用。",
-    "history": "源自瓜拉尼人，2020年列入聯合國教科文組織非物質文化遺產。",
+    "description": "將瑪黛茶葉放入牛角或木製杯中，以冰水或果汁沖泡，加入薄荷、檸檬草等藥草，用金屬吸管飲用，清涼解渴。",
+    "history": "瓜拉尼人早已飲用瑪黛茶，耶穌會在傳教村中大量種植瑪黛，使其成為主要經濟作物。一般認為冷瑪黛茶在1932–1935年查科戰爭中普及，士兵在炎熱的查科地區無法生火煮水，改用冷水沖泡。2020年聯合國教科文組織將冷瑪黛茶的文化列入人類非物質文化遺產，每年2月最後一個星期六是國家冷瑪黛茶日。",
     "wiki": "Tereré",
     "image": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Terere_%C3%B1ana.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Terere_%C3%B1ana.jpg",
@@ -106,8 +106,8 @@
    {
     "name": "雞肉丸子湯",
     "localName": "Vori vori",
-    "description": "以玉米粉與起司做成的小丸子放入雞湯中煮成。",
-    "history": "名稱源自瓜拉尼語，是寒冷時節的家常湯品。",
+    "description": "將玉米粉與起司揉成小丸子，放入以雞肉、洋蔥、甜椒與番茄熬煮的湯中煮熟，湯頭濃郁溫暖。",
+    "history": "雞肉丸子湯結合了瓜拉尼人的玉米與西班牙人引進的雞肉與起司，名稱一般認為是西班牙語「bolita」（小球）經瓜拉尼語發音轉化而成，正是雙語社會的縮影。它是巴拉圭冬季最受歡迎的湯品，被認為能補充體力，常在寒冷的日子或病後食用，也是家庭中代代相傳的經典料理。",
     "wiki": "Vori vori",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Vor%C3%AD_vor%C3%AD_paraguay.jpg/960px-Vor%C3%AD_vor%C3%AD_paraguay.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Vor%C3%AD_vor%C3%AD_paraguay.jpg",

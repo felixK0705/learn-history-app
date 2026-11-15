@@ -7,20 +7,20 @@
    {
     "name": "伊斯蘭教（遜尼派）",
     "percent": 98,
-    "description": "幾乎所有居民都信仰遜尼派伊斯蘭教，以馬立克學派為主。"
+    "description": "11 世紀起源於這片撒哈拉西部的穆拉比特運動，由桑哈賈柏柏爾部落發起，以馬立克學派的伊斯蘭教統一了北非與伊比利半島南部。13–17 世紀阿拉伯貝尼哈桑部落逐步南遷，進一步把伊斯蘭教與阿拉伯文化融入撒哈拉威人的游牧社會。蘇菲派道團與宗教學者家族在部落社會中地位崇高，伊斯蘭教因此是撒哈拉威人幾乎全民的信仰。"
    },
    {
     "name": "基督教",
     "percent": 1,
-    "description": "主要為外籍人士。"
+    "description": "1884 年西班牙宣布保護這片海岸，建立西屬撒哈拉，阿尤恩與達赫拉等城市因此出現天主教堂。1975 年西班牙撤離後大部分歐洲人隨之離開，今日只剩下零星的外籍人士與教堂，基督徒極少。"
    },
    {
     "name": "其他",
     "percent": 1,
-    "description": "其他信仰或無宗教者。"
+    "description": "其他信仰者主要是外籍人員與聯合國維和任務（1991 年成立的西撒哈拉公投特派團）的工作人員，在當地長期定居的人很少。"
    }
   ],
-  "background": "伊斯蘭教隨阿拉伯人與柏柏人的遷徙與貿易傳入撒哈拉西部，當地遊牧民族撒拉威人早已信仰遜尼派伊斯蘭教。西班牙殖民時期（1884–1975）也曾帶來少數天主教徒。"
+  "background": "西撒哈拉在中世紀前便有柏柏爾游牧民族活動，11 世紀穆拉比特運動從這裡興起，使伊斯蘭教成為整個西北非的主流。之後阿拉伯部落的遷入融合了柏柏爾人，形成信奉遜尼派、重視部落與宗教學者傳統的撒哈拉威社會。1884–1975 年西班牙殖民期間，天主教只在殖民城市中存在。1975 年後摩洛哥控制大部分地區，伊斯蘭教仍是當地唯一主要宗教。"
  },
  "language": {
   "official": "摩洛哥控制區以阿拉伯語與柏柏語為官方語言；撒拉威阿拉伯民主共和國則以阿拉伯語為官方語言，西班牙語為第二語言。",
@@ -28,34 +28,34 @@
    {
     "name": "哈桑尼亞阿拉伯語",
     "percent": 50,
-    "description": "撒拉威人的母語，屬貝都因阿拉伯語方言。",
+    "description": "哈桑尼亞阿拉伯語得名於 13–17 世紀從阿拉伯半島經北非南遷的貝尼哈桑部落。17 世紀「沙爾布巴戰爭」（1644–1674 年）後阿拉伯部落取得主導，原本說柏柏爾語的游牧民族逐漸改說哈桑尼亞語。它是撒哈拉威人的母語，也通行於茅利塔尼亞，在阿爾及利亞廷杜夫難民營中同樣使用。",
     "greeting": "السلام عليكم",
     "pronunciation": "as-sa-LAA-mu a-LAI-kum"
    },
    {
     "name": "摩洛哥阿拉伯語",
     "percent": 40,
-    "description": "來自摩洛哥本土的移居者使用。",
+    "description": "1975 年西班牙撤出、摩洛哥發動「綠色進軍」接管後，摩洛哥政府鼓勵本國居民移入阿尤恩等城市並提供補貼，摩洛哥阿拉伯語（Darija）因此在城市中普及，行政與教育也以摩洛哥體制運作，使其使用者接近半數。",
     "greeting": "السلام (Salam)",
     "pronunciation": "sa-LAAM"
    },
    {
     "name": "西班牙語",
     "percent": 1,
-    "description": "西班牙殖民遺留，許多撒拉威人作為第二語言使用。",
+    "description": "1884–1975 年西班牙殖民期間，西班牙語是行政與學校語言，老一輩撒哈拉威人多能使用。爭取獨立的波利薩里奧陣線至今仍將西班牙語作為第二語言，許多難民營的學生也曾赴古巴、西班牙留學，但在摩洛哥控制區內使用者已很少。",
     "greeting": "Hola",
     "pronunciation": "OH-la"
    }
   ],
-  "history": "哈桑尼亞阿拉伯語源自中世紀遷入的貝尼哈桑阿拉伯部落，逐漸取代當地的柏柏語。西班牙殖民時期西班牙語成為行政語言，至今仍在撒拉威難民營與流亡社群中使用。"
+  "history": "西撒哈拉早期居民說柏柏爾語，13 世紀後隨阿拉伯貝尼哈桑部落南遷，哈桑尼亞阿拉伯語逐漸取代柏柏爾語，成為撒哈拉威人的共同語言，但保留了不少柏柏爾語詞彙。1884 年西班牙殖民帶來西班牙語。1975 年後摩洛哥控制約三分之二的土地，大量移民使摩洛哥阿拉伯語與法語影響增加，而在阿爾及利亞難民營的撒哈拉威人則維持哈桑尼亞語與西班牙語並用。"
  },
  "food": {
   "ranking": [
    {
     "name": "薄荷茶",
     "localName": "أتاي (Atay)",
-    "description": "以綠茶、新鮮薄荷與大量糖沖泡的甜茶，通常分三輪奉上。",
-    "history": "撒拉威人待客儀式的核心，三杯茶象徵人生的不同階段。",
+    "description": "以中國綠茶加入大量新鮮薄荷與糖熬煮，從高處倒入小玻璃杯中產生泡沫，通常一次喝三杯。",
+    "history": "茶葉在 18–19 世紀經由英國商人輸入摩洛哥港口，1850 年代克里米亞戰爭期間英國商人轉向北非傾銷茶葉，喝茶的習慣便隨商隊傳入撒哈拉。撒哈拉威人的泡茶儀式講究慢慢沖泡三輪，俗語說「第一杯苦如人生，第二杯甜如愛情，第三杯柔如死亡」。泡茶與奉茶是待客與聊天的核心禮儀，在帳篷中常持續數小時。",
     "wiki": "Maghrebi mint tea",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Tunisian_Tea_with_pine_nuts.jpg/960px-Tunisian_Tea_with_pine_nuts.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Tunisian_Tea_with_pine_nuts.jpg",
@@ -64,8 +64,8 @@
    {
     "name": "庫斯庫斯",
     "localName": "كسكس (Couscous)",
-    "description": "以粗粒小麥粉蒸成的小米粒狀主食，配肉與蔬菜。",
-    "history": "北非共同的傳統主食。",
+    "description": "將粗粒小麥或大麥粉蒸成小顆粒，淋上以羊肉、駱駝肉或蔬菜燉成的湯汁。",
+    "history": "庫斯庫斯源自北非柏柏爾人，至遲在中世紀已廣泛食用，隨著貿易與部落遷徙傳入撒哈拉地區。在乾旱的西撒哈拉，人們常使用耐旱的大麥製作，並配上游牧民飼養的駱駝或山羊肉。它是週五聚禮後與宗教節日的家庭大餐，也是招待貴客時的重要料理。",
     "wiki": "Couscous",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Moroccan_cuscus%2C_from_Casablanca%2C_September_2018.jpg/960px-Moroccan_cuscus%2C_from_Casablanca%2C_September_2018.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Moroccan_cuscus,_from_Casablanca,_September_2018.jpg",
@@ -74,8 +74,8 @@
    {
     "name": "烤全羊",
     "localName": "مشوي (Méchoui)",
-    "description": "將整隻羊以炭火或地爐慢烤。",
-    "history": "撒哈拉遊牧民族在節慶與宴客時的傳統料理。",
+    "description": "將整隻羊以香料醃過後以炭火或地坑長時間燒烤，肉質酥軟，用手撕下沾孜然與鹽食用。",
+    "history": "烤全羊是北非與撒哈拉游牧民族最隆重的待客料理，對於以畜牧為生的撒哈拉威人，宰殺一整隻羊招待客人代表最高的敬意。它常在婚禮、宰牲節與部落聚會中出現，賓客圍坐在地毯上以手取食。法國殖民北非後，「méchoui」一詞也隨著歸國移民傳入法國。",
     "wiki": "Mechoui",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Mechoui.jpg/960px-Mechoui.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Mechoui.jpg",
@@ -84,8 +84,8 @@
    {
     "name": "塔吉鍋",
     "localName": "طاجين (Tajine)",
-    "description": "以圓錐蓋陶鍋慢燉的肉類與蔬菜。",
-    "history": "北非常見的燉煮料理。",
+    "description": "以肉類、蔬菜、橄欖、醃檸檬與香料放入圓錐形蓋子的陶鍋中慢燉，湯汁濃縮、肉質軟嫩。",
+    "history": "塔吉鍋源自北非柏柏爾人，圓錐形的鍋蓋能讓水蒸氣凝結後回流，在缺水的沙漠地區特別實用，只需少量水就能燉熟食物。1975 年摩洛哥接管西撒哈拉後，大量移入的摩洛哥居民讓塔吉鍋料理在當地城市中更加普及。它是日常家庭晚餐的主角，也能用駱駝肉製作出具有撒哈拉特色的版本。",
     "wiki": "Tajine",
     "image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Tajine-marocain-un-plat-varie-et-sain_%28cropped%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Tajine-marocain-un-plat-varie-et-sain_(cropped).jpg",
@@ -94,8 +94,8 @@
    {
     "name": "駱駝奶",
     "localName": "حليب الإبل (Camel milk)",
-    "description": "直接飲用或發酵的駱駝奶。",
-    "history": "駱駝是撒哈拉遊牧生活的核心，駱駝奶是重要營養來源。",
+    "description": "撒哈拉游牧民族飼養的駱駝所產的奶，味道微鹹帶酸，可以直接飲用或發酵後食用。",
+    "history": "撒哈拉威人世代以飼養駱駝在沙漠中逐水草而居，駱駝奶富含營養、可在高溫下供應水分，是游牧生活中最重要的食物之一，在缺糧時甚至能作為唯一的食物來源。傳統上它也用來招待遠道而來的客人，象徵慷慨好客。即使今天多數人已定居城市，駱駝奶仍被視為撒哈拉威人身分與游牧傳統的象徵。",
     "wiki": "Camel milk",
     "image": "https://upload.wikimedia.org/wikipedia/commons/7/74/Fresh_camel_milk_%28Dubai%29_%28cropped%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Fresh_camel_milk_(Dubai)_(cropped).jpg",

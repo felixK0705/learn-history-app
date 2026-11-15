@@ -7,25 +7,25 @@
    {
     "name": "伊斯蘭教",
     "percent": 86,
-    "description": "以伊巴德派為主，亦有遜尼派與什葉派。"
+    "description": "伊斯蘭教在7世紀先知穆罕默德在世時就傳入阿曼，據傳統記載當地統治者在630年前後接受伊斯蘭教。8世紀起阿曼成為伊巴德派的中心，這是一個既不屬遜尼派也不屬什葉派、以溫和寬容著稱的伊斯蘭派別，阿曼歷代伊瑪目與今日的賽義德王室都屬伊巴德派。今日阿曼公民中伊巴德派與遜尼派各佔約一半，什葉派是少數，伊斯蘭教為國教。"
    },
    {
     "name": "基督教",
     "percent": 6,
-    "description": "主要為外籍勞工。"
+    "description": "阿曼的基督徒幾乎都是外籍勞工，主要來自印度喀拉拉邦、菲律賓與歐美，在1970年蘇丹卡布斯即位、石油經濟起飛後大量來到。蘇丹政府撥地讓他們在馬斯喀特等地建立教堂，公民中則幾乎沒有基督徒。"
    },
    {
     "name": "印度教",
     "percent": 5,
-    "description": "主要為南亞外籍勞工。"
+    "description": "印度教在阿曼有悠久歷史，16世紀起來自古吉拉特信德一帶的印度商人就在馬斯喀特經商，馬斯喀特的印度教寺廟已有百年以上歷史。今日的印度教徒主要是1970年代後湧入的印度外籍勞工，佔人口一定比例。"
    },
    {
     "name": "佛教",
     "percent": 1,
-    "description": "主要為外籍勞工。"
+    "description": "佛教徒主要是來自斯里蘭卡、泰國、尼泊爾等地的外籍勞工，人數不多，在私人場所進行宗教活動。"
    }
   ],
-  "background": "伊斯蘭教在七世紀先知穆罕默德時代即傳入阿曼。伊巴德派是早期伊斯蘭教的一個派別，在阿曼發展成為主流，阿曼也是全世界唯一以伊巴德派為主的國家。現今大量外籍勞工帶來基督教與印度教。"
+  "background": "阿曼在7世紀接受伊斯蘭教，8世紀起成為伊巴德派的中心，伊巴德派伊瑪目長期領導內陸。17–19世紀阿曼建立了從東非桑吉巴到波斯灣的海洋帝國，與印度洋各地商人往來密切，形成寬容的宗教傳統。1970年卡布斯蘇丹即位後推動現代化，石油收入吸引大量南亞與東南亞外籍勞工，帶來基督教、印度教與佛教。"
  },
  "language": {
   "official": "阿拉伯語是官方語言。",
@@ -33,41 +33,41 @@
    {
     "name": "阿拉伯語",
     "percent": 60,
-    "description": "阿曼國民的母語，也是官方語言。",
+    "description": "阿拉伯語在伊斯蘭教傳入前就已是阿曼的主要語言，7世紀後隨伊斯蘭教成為宗教與政府語言。阿曼公民幾乎都以阿拉伯語為母語，但由於外籍人口約佔四成，阿拉伯語使用者的比例約六成。南部佐法爾省還保留了邁赫里語、傑巴里語等古老的南阿拉伯語言。",
     "greeting": "مرحبا",
     "pronunciation": "MAR-ha-ba"
    },
    {
     "name": "馬拉雅拉姆語",
     "percent": 8,
-    "description": "來自印度喀拉拉邦的勞工社群使用。",
+    "description": "馬拉雅拉姆語是印度南部喀拉拉邦的語言，1970年代石油經濟起飛後，大量喀拉拉人來到阿曼從事建築、零售與服務業，馬拉雅拉姆語因此成為阿曼最大的外籍人口語言之一。",
     "greeting": "നമസ്കാരം",
     "pronunciation": "na-mas-KAA-ram"
    },
    {
     "name": "烏爾都語",
     "percent": 6,
-    "description": "來自巴基斯坦的勞工社群使用。",
+    "description": "烏爾都語主要由巴基斯坦外籍勞工使用。此外，阿曼的俾路支人社群歷史悠久：1784–1958年阿曼統治巴基斯坦俾路支的瓜達爾港，許多俾路支人加入阿曼軍隊並定居，因此南亞語言在阿曼有深厚基礎。",
     "greeting": "السلام علیکم",
     "pronunciation": "as-sa-LAA-mu a-LAI-kum"
    }
   ],
-  "history": "阿拉伯語是阿曼的主要語言，南部另有梅赫里語等古老的南阿拉伯語。阿曼歷史上與東非、印度與俾路支斯坦往來密切，因此社會中也有斯瓦希里語與俾路支語使用者，現代則有大量南亞移工。"
+  "history": "阿曼自古是阿拉伯語地區，南部佐法爾則保留了伊斯蘭教以前的南阿拉伯語言，如邁赫里語、傑巴里語。17–19世紀阿曼的海洋帝國延伸至東非，斯瓦希里語至今仍在部分從桑吉巴返國的阿曼家庭中使用。1970年後石油經濟吸引大量南亞勞工，英語與印度、巴基斯坦語言在商業中十分普遍。"
  },
  "food": {
   "ranking": [
    {
     "name": "舒瓦烤羊",
     "localName": "شواء (Shuwa)",
-    "description": "將以香料醃漬的羊肉以香蕉葉包裹，埋入地下坑中慢烤一至兩天。",
-    "history": "阿曼開齋節與宰牲節最重要的節慶料理。",
+    "description": "將羊肉或山羊肉以辣椒、孜然、薑黃、大蒜、醋等醃漬後，用香蕉葉或棕櫚葉包好，放入地坑中與燒熱的炭火一起掩埋，慢烤一至兩天，肉質軟爛。",
+    "history": "舒瓦是阿曼最重要的節慶料理，傳統上在開齋節與宰牲節時製作，村莊會共用一個大地坑，各家把包好的肉放入一起烤製。宰牲節紀念先知易卜拉欣獻祭的故事，家庭會宰羊並分送親友與窮人。這種以地坑慢烤的做法源自古老的阿拉伯游牧傳統，體現了社區共享的精神。",
     "wiki": "Shuwa"
    },
    {
     "name": "哈里斯",
     "localName": "هريس (Harees)",
-    "description": "以小麥與肉長時間燉煮搗成的粥。",
-    "history": "阿拉伯半島歷史悠久的料理，齋戒月與婚禮常見。",
+    "description": "將小麥粒與雞肉或羊肉長時間燉煮，再用木杓反覆攪打成黏稠的粥狀，以奶油與肉桂調味，口感綿密。",
+    "history": "哈里斯是阿拉伯半島歷史悠久的料理，10世紀巴格達的食譜書中已有記載。在阿曼，它與伊斯蘭的宗教節日密切相關，在齋戒月的開齋晚餐與開齋節、婚禮時最常見。製作需要數小時不停攪拌，常由家族婦女合力完成，象徵團聚與分享。",
     "wiki": "Harees",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Armenian_Harisa.JPG/960px-Armenian_Harisa.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Armenian_Harisa.JPG",
@@ -76,8 +76,8 @@
    {
     "name": "馬奇布斯",
     "localName": "مجبوس (Majboos)",
-    "description": "以香料與肉類一同烹煮的香料飯。",
-    "history": "海灣地區代表性的米飯料理，反映印度洋香料貿易的影響。",
+    "description": "將米飯與以小豆蔻、肉桂、黑萊姆乾、番紅花等香料燉煮的羊肉或雞肉一起烹煮，米飯吸收肉汁與香料香氣。",
+    "history": "香料飯的做法與香料多半來自印度洋貿易，阿曼長期是印度、波斯與東非之間的海上貿易樞紐，印度的比利亞尼飯對其影響明顯。黑萊姆乾是將萊姆曬乾而成，是阿曼與海灣地區特有的香料。它是阿曼家庭午餐最常見的主食，也是招待客人的必備料理。",
     "wiki": "Kabsa",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Machboos_%28cropped%29.JPG/960px-Machboos_%28cropped%29.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Machboos_(cropped).JPG",
@@ -86,8 +86,8 @@
    {
     "name": "阿曼哈爾瓦",
     "localName": "حلوى عمانية (Omani halwa)",
-    "description": "以糖、玫瑰水、番紅花與堅果熬製的Q軟甜點。",
-    "history": "是阿曼招待客人時必備的傳統甜點，常配咖啡。",
+    "description": "以糖、玉米澱粉、酥油、玫瑰水、番紅花、小豆蔻與堅果在大銅鍋中熬煮數小時，製成棕色、帶彈性的Q軟甜點。",
+    "history": "阿曼哈爾瓦的製作需要長時間不斷攪拌，傳統上由男性工匠在大鍋中以柴火熬製，各地有世代相傳的老店。番紅花與玫瑰水分別來自波斯與海灣貿易，反映了阿曼的海洋貿易歷史。招待客人時，主人會先奉上哈爾瓦再奉咖啡，它也是婚禮與節慶不可少的甜點。",
     "wiki": "Halva",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Orient_sweets_%28special_halva%29_Samarkand%2C_Siyab.jpg/960px-Orient_sweets_%28special_halva%29_Samarkand%2C_Siyab.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Orient_sweets_(special_halva)_Samarkand,_Siyab.jpg",
@@ -96,8 +96,8 @@
    {
     "name": "阿拉伯咖啡",
     "localName": "قهوة (Qahwa)",
-    "description": "以小豆蔻調味的淺焙咖啡，以小杯招待。",
-    "history": "阿拉伯咖啡文化是阿曼待客禮儀的核心，已列入聯合國教科文組織非物質文化遺產。",
+    "description": "將淺焙咖啡豆磨碎後與小豆蔻一起煮，有時加入番紅花或玫瑰水，以無把手的小杯奉客，常配椰棗食用。",
+    "history": "咖啡在15世紀從葉門傳入阿拉伯半島，在阿曼成為待客禮儀的核心。主人以右手持壺倒咖啡，客人喝完若不想再續杯，就輕輕搖動杯子示意。2015年聯合國教科文組織將阿拉伯咖啡列為阿曼、沙烏地阿拉伯、阿聯與卡達共同的人類非物質文化遺產。",
     "wiki": "Arabic coffee",
     "image": "https://upload.wikimedia.org/wikipedia/commons/4/49/A_dallah_a_traditional_Arabic_coffee_pot_with_cups_and_coffee_beans.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:A_dallah_a_traditional_Arabic_coffee_pot_with_cups_and_coffee_beans.jpg",

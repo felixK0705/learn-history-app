@@ -7,30 +7,30 @@
    {
     "name": "天主教",
     "percent": 47,
-    "description": "德國與西班牙統治時期傳入，是最大教派。"
+    "description": "天主教在1891年由西班牙嘉布遣會傳教士傳入，當時帛琉屬於西屬加羅林群島。1899年德國購得帛琉後由德國嘉布遣會接手，一戰後日本統治期間則由西班牙耶穌會士繼續傳教。由於天主教傳教歷史最長，並在柯羅等地興辦學校，它成為帛琉最大的宗教。"
    },
    {
     "name": "福音派新教",
     "percent": 26,
-    "description": "美國統治時期傳入。"
+    "description": "新教最早在德國統治時期由德國利本采勒傳教會於1929年前後進入，日本統治時期傳教受限。1944年後美軍占領並由美國託管，美國的福音派教會隨之擴大影響，以帛琉福音教會為主，今日是第二大宗教群體。"
    },
    {
     "name": "基督復臨安息日會",
     "percent": 5,
-    "description": "辦有學校與診所。"
+    "description": "基督復臨安息日會在20世紀上半葉傳入，二戰後於美國託管時期擴展，以興辦學校聞名，柯羅的安息日會學校是帛琉重要的英語教育機構之一，也因此吸引了部分信徒。"
    },
    {
     "name": "莫德克蓋教",
     "percent": 5,
-    "description": "20世紀初興起、融合傳統信仰與基督教的本土宗教。"
+    "description": "莫德克蓋教是帛琉本土的宗教，約1915年日本統治時期由先知特梅達德等人創立，融合傳統祖靈信仰與基督教元素，起初帶有反抗日本殖民統治的色彩，曾遭日本當局鎮壓。它是保存帛琉傳統文化的重要力量，信徒集中在巴伯爾道布島。"
    },
    {
     "name": "伊斯蘭教",
     "percent": 3,
-    "description": "主要為外籍勞工。"
+    "description": "伊斯蘭教主要由來自孟加拉的外籍勞工帶入，他們在1990年代後到帛琉從事建築與服務業工作。帛琉公民中幾乎沒有穆斯林，因此比例很低，信徒主要集中在柯羅。"
    }
   ],
-  "background": "西班牙與德國統治時期天主教傳教士傳教，日本統治期間（1914–1945）亦有教會活動。二戰後美國託管使新教擴展。莫德克蓋教則於日本統治時期興起，被視為保存帛琉傳統文化的宗教運動。"
+  "background": "帛琉傳統上信仰祖先靈與村落守護神。19世紀末西班牙傳教士帶來天主教，之後德國、日本相繼統治，日本時期出現了結合傳統與基督教的本土宗教莫德克蓋教。1944年美軍占領帛琉，二戰後作為聯合國託管地由美國管理，新教與其他教派隨之擴大。1994年獨立後與美國簽有自由聯合協定，宗教以基督教為主。"
  },
  "language": {
   "official": "官方語言為帛琉語與英語。",
@@ -38,41 +38,41 @@
    {
     "name": "帛琉語",
     "percent": 67,
-    "description": "屬南島語系，吸收了許多日語與英語借詞。",
+    "description": "帛琉語屬南島語系，是帛琉原住民的語言，19世紀前沒有文字，傳教士以拉丁字母記錄。日本統治期間（1914–1944年）推行日語教育，帛琉語仍在家庭中延續；1994年獨立後帛琉語與英語同為官方語言，家庭與社區中主要使用帛琉語。帛琉語中保留了大量日語與英語借詞。",
     "greeting": "Alii",
     "pronunciation": "a-lee"
    },
    {
     "name": "英語",
     "percent": 16,
-    "description": "官方語言之一，用於政府與教育。",
+    "description": "英語在1947–1994年美國託管時期成為學校、政府與商業的語言。1994年獨立後與美國簽訂自由聯合協定，帛琉人可自由前往美國工作與求學，英語因此在帛琉十分普及，政府文件、法律與高等教育都以英語為主。",
     "greeting": "Hello",
     "pronunciation": "heh-loh"
    },
    {
     "name": "菲律賓語",
     "percent": 11,
-    "description": "菲律賓外籍勞工使用。",
+    "description": "菲律賓語主要由1980年代後大量來到帛琉的菲律賓外籍勞工使用，他們從事建築、觀光、家政與醫療工作。由於帛琉人口只有約兩萬人，外籍勞工比例很高，菲律賓人是最大的外籍群體。",
     "greeting": "Kumusta",
     "pronunciation": "ku-mus-ta"
    },
    {
     "name": "中文",
     "percent": 2,
-    "description": "華人居民使用。",
+    "description": "中文主要由來自中國大陸與台灣的外籍工作者與商人使用。帛琉自1999年與台灣建交，兩國往來密切，觀光、漁業與餐飲業中有不少說中文的人士。",
     "greeting": "你好",
     "pronunciation": "nǐ hǎo"
    }
   ],
-  "history": "帛琉語是南島語系中較獨特的一支。日本統治時期日語教育普及，帛琉語中至今保留大量日語借詞，安加爾州甚至曾將日語列為官方語言。美國託管後英語成為教育與政府語言。"
+  "history": "帛琉語屬南島語系，原為口傳語言。1885年起西班牙宣稱統治，1899年賣給德國，1914年日本占領並推行日語教育，帛琉語吸收了大量日語詞彙。1947年起美國託管，英語成為教育與行政語言。1994年獨立後，帛琉語與英語並列為官方語言，安加爾州還將日語列為州官方語言之一。"
  },
  "food": {
   "ranking": [
    {
     "name": "芋頭",
     "localName": "Taro",
-    "description": "煮或搗成泥的芋頭，是傳統主食。",
-    "history": "芋頭田由女性負責耕作，在帛琉傳統社會中具有重要的文化與身分意義。",
+    "description": "將芋頭整顆煮熟或蒸熟後去皮，切塊食用或搗成泥，有時加入椰奶，口感綿密，常配魚或肉一起吃。",
+    "history": "芋頭是帛琉最重要的傳統主食，種植在濕地芋頭田中，數千年前隨南島語族航海者帶入。在帛琉的母系社會中，芋頭田由婦女管理與耕種，種出好芋頭是婦女地位的象徵。在婚禮、喪禮與生產慶典等傳統儀式中，婦女會以大量芋頭作為交換禮物，象徵家族之間的財富與關係。",
     "wiki": "Taro",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Songe-R%C3%A9union.JPG/960px-Songe-R%C3%A9union.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Songe-R%C3%A9union.JPG",
@@ -81,8 +81,8 @@
    {
     "name": "椰子蟹",
     "localName": "Coconut crab",
-    "description": "大型陸生蟹，常以椰奶烹調。",
-    "history": "帛琉的珍貴食材，常在特殊場合食用。",
+    "description": "將大型陸生的椰子蟹清蒸或以椰奶燉煮，蟹肉與蟹黃帶有椰子香甜，被視為宴客用的珍貴佳餚。",
+    "history": "椰子蟹是太平洋島嶼的大型陸生甲殼類，能以強壯的大螯剝開椰子，因而得名。它在帛琉是傳統宴會上招待貴客的珍品。由於過度捕捉，帛琉政府已立法規定捕捉的大小限制與禁止捕捉抱卵母蟹，部分餐廳也限制販售，以保護這個生長緩慢的物種。",
     "wiki": "Coconut crab",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Coconut_Crab_Birgus_latro.jpg/960px-Coconut_Crab_Birgus_latro.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Coconut_Crab_Birgus_latro.jpg",
@@ -91,8 +91,8 @@
    {
     "name": "生魚片",
     "localName": "Sashimi",
-    "description": "新鮮鮪魚等生魚切片，配醬油與芥末。",
-    "history": "日本統治時期傳入，至今是帛琉日常飲食的一部分。",
+    "description": "將新鮮鮪魚等生魚切成薄片，蘸醬油與芥末生食，是帛琉餐廳、家庭與宴會中常見的料理。",
+    "history": "1914–1944年日本統治帛琉期間，大量日本移民來到帛琉，柯羅當時是日本南洋廳的行政中心，帛琉人因此吸收了許多日本飲食習慣。戰後這些習慣保留了下來，生魚片、味噌湯與飯糰至今仍在帛琉相當普遍，反映了日本統治對帛琉文化的深遠影響。",
     "wiki": "Sashimi",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/241109_Shigaraki_ware_Koga_Shiga_pref_Japan01s3.jpg/960px-241109_Shigaraki_ware_Koga_Shiga_pref_Japan01s3.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:241109_Shigaraki_ware_Koga_Shiga_pref_Japan01s3.jpg",
@@ -101,8 +101,8 @@
    {
     "name": "木薯",
     "localName": "Tapioca",
-    "description": "煮或做成甜點的木薯，常加椰奶。",
-    "history": "木薯是帛琉重要的澱粉作物，也用於節慶糕點。",
+    "description": "將木薯煮熟後食用，或磨成粉與椰奶、糖混合製成甜點，口感軟糯、帶椰香，是常見的家常點心。",
+    "history": "木薯原產南美洲，19世紀後由歐洲人與日本統治時期的開發引入太平洋島嶼。由於它耐旱、容易種植，在帛琉逐漸成為芋頭之外的重要澱粉來源。以木薯和椰奶製成的甜點常出現在家庭聚會、教會活動與傳統慶典中，是帛琉人日常的點心。",
     "wiki": "Tapioca",
     "image": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Tepung_casava.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Tepung_casava.jpg",
@@ -111,8 +111,8 @@
    {
     "name": "麵包果",
     "localName": "Breadfruit",
-    "description": "烤或煮的麵包果。",
-    "history": "太平洋島民數千年來的主要澱粉來源。",
+    "description": "將麵包果整顆放入火中烤熟或切塊煮熟，口感類似馬鈴薯或麵包，可配魚與椰奶食用，也可做成薯片。",
+    "history": "麵包果是太平洋島嶼的傳統主食，數千年前隨南島語族航海者在各島之間傳播。它結果量大，一棵樹每年可結上百顆果實，是重要的糧食來源。在帛琉，麵包果季節是家庭分享食物的時節，近年因飲食西化導致肥胖與糖尿病增加，政府與社區鼓勵恢復吃傳統作物。",
     "wiki": "Breadfruit",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Artocarpus_altilis_%28fruit%29.jpg/960px-Artocarpus_altilis_%28fruit%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Artocarpus_altilis_(fruit).jpg",

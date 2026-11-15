@@ -7,25 +7,25 @@
    {
     "name": "伊斯蘭教（遜尼派）",
     "percent": 85,
-    "description": "主流信仰，國家官方宗教詮釋以瓦哈比派（薩拉菲派）為主。"
+    "description": "伊斯蘭教在7世紀由先知穆罕默德在麥加與麥地那創立，阿拉伯半島因此成為伊斯蘭教的發源地，兩座聖城至今吸引全球穆斯林前來朝覲。1744年迪里耶的伊本·紹德與宗教學者穆罕默德·伊本·阿卜杜勒－瓦哈卜結盟，推行嚴格的瓦哈比派遜尼教義，此後沙烏地王國以此立國。1932年沙烏地阿拉伯王國建立，伊斯蘭法是國家的根本大法，公民依法必須是穆斯林。"
    },
    {
     "name": "伊斯蘭教（什葉派）",
     "percent": 8,
-    "description": "主要分布於東部省。"
+    "description": "什葉派主要集中在東部省，特別是卡提夫與阿赫薩綠洲，當地什葉派社群歷史悠久，可追溯到伊斯蘭教早期。1913年紹德家族征服東部後，什葉派在瓦哈比派主導的國家中長期處於邊緣地位。1979年伊朗革命後曾發生什葉派抗議，2011年阿拉伯之春期間東部也出現示威。南部的納吉蘭地區則有伊斯瑪儀派社群。"
    },
    {
     "name": "基督教",
     "percent": 4,
-    "description": "主要為外籍勞工，不得公開舉行宗教儀式。"
+    "description": "基督徒幾乎全是外籍勞工，主要來自菲律賓、印度、黎巴嫩與歐美國家，在1938年發現石油、1970年代石油經濟起飛後大量來到。沙烏地阿拉伯不允許公開舉行非伊斯蘭宗教儀式或興建教堂，信徒只能在私人場所禮拜。"
    },
    {
     "name": "印度教",
     "percent": 1,
-    "description": "主要為南亞外籍勞工。"
+    "description": "印度教徒主要是來自印度與尼泊爾的外籍勞工，從事建築、醫療與服務業。由於沙烏地阿拉伯禁止公開的非伊斯蘭宗教活動，他們只能在私人場所進行宗教活動。"
    }
   ],
-  "background": "伊斯蘭教於7世紀在麥加與麥地那興起。18世紀中期伊本·紹德與宗教學者穆罕默德·伊本·阿卜杜勒－瓦哈卜結盟，以嚴格的瓦哈比教義建立國家基礎，1932年沙烏地阿拉伯王國正式建立。"
+  "background": "阿拉伯半島在伊斯蘭教創立前有多神信仰，麥加的天房是朝聖中心。7世紀穆罕默德創立伊斯蘭教，阿拉伯軍隊將其傳播至世界各地。18世紀伊本·紹德與瓦哈卜結盟，建立以嚴格遜尼派教義為核心的國家。1932年沙烏地阿拉伯王國成立，石油經濟帶來大量外籍勞工。2016年起「2030願景」推動社會改革，宗教警察的權力被削減，但伊斯蘭教仍是國家的根本。"
  },
  "language": {
   "official": "官方語言為阿拉伯語。",
@@ -33,41 +33,41 @@
    {
     "name": "阿拉伯語",
     "percent": 80,
-    "description": "公民與阿拉伯移民的語言，包括內志、漢志等方言。",
+    "description": "阿拉伯語是《古蘭經》的語言，起源於阿拉伯半島，7世紀伊斯蘭教創立後隨阿拉伯征服傳遍中東與北非。沙烏地阿拉伯的公民幾乎都以阿拉伯語為母語，各地方言包括內志、漢志與海灣方言等。由於外籍人口約佔四成，阿拉伯語使用者約佔八成。",
     "greeting": "السلام عليكم",
     "pronunciation": "as-sa-lām ʿa-lay-kum"
    },
    {
     "name": "印度斯坦語（烏爾都語、印地語）",
     "percent": 7,
-    "description": "南亞外籍勞工使用。",
+    "description": "烏爾都語與印地語是南亞外籍勞工最常使用的語言，兩者口語相近。1970年代石油經濟起飛後，大量巴基斯坦與印度勞工來到沙烏地阿拉伯從事建築、服務與技術工作，他們是沙烏地阿拉伯最大的外籍勞工群體之一。",
     "greeting": "السلام علیکم / नमस्ते",
     "pronunciation": "as-sa-lām ʿa-lay-kum / na-ma-ste"
    },
    {
     "name": "孟加拉語",
     "percent": 4,
-    "description": "孟加拉外籍勞工使用。",
+    "description": "孟加拉語由孟加拉外籍勞工使用，沙烏地阿拉伯是孟加拉海外勞工最主要的目的地之一，他們主要從事建築、清潔與農業工作，匯款是孟加拉經濟的重要支柱。",
     "greeting": "নমস্কার / আসসালামু আলাইকুম",
     "pronunciation": "no-mosh-kar / as-sa-la-mu a-lai-kum"
    },
    {
     "name": "他加祿語",
     "percent": 2,
-    "description": "菲律賓外籍勞工使用。",
+    "description": "他加祿語由來自菲律賓的外籍勞工使用，他們在醫療、護理、家政、飯店與工程等行業工作。1970年代起菲律賓政府推動海外勞工輸出，沙烏地阿拉伯成為菲律賓海外勞工最大的目的地之一。",
     "greeting": "Kumusta",
     "pronunciation": "ku-mus-ta"
    }
   ],
-  "history": "阿拉伯半島是阿拉伯語的發源地，《古蘭經》以古典阿拉伯語寫成，奠定標準阿拉伯語的基礎。20世紀石油開發後引進大量外籍勞工，英語成為商業常用語言。"
+  "history": "阿拉伯語在伊斯蘭教創立前已是阿拉伯半島的語言，前伊斯蘭時期的詩歌傳統十分豐富。7世紀《古蘭經》的編纂奠定了古典阿拉伯語的標準，伊斯蘭擴張使阿拉伯語成為從西班牙到中亞的學術與宗教語言。今日沙烏地阿拉伯以現代標準阿拉伯語作為官方語言，日常生活則使用各地方言。英語在商業與高等教育中廣泛使用。"
  },
  "food": {
   "ranking": [
    {
     "name": "卡布薩香料飯",
     "localName": "كبسة (Kabsa)",
-    "description": "以香料、番茄與雞肉或羊肉燉煮的米飯，為國菜。",
-    "history": "源自阿拉伯半島，香料隨印度洋貿易而來，是家庭聚會與待客的主菜。",
+    "description": "將米飯與番茄、洋蔥、黑萊姆乾和巴哈拉特綜合香料一起燉煮，加入雞肉或羊肉，上桌時撒上杏仁、葡萄乾與炸洋蔥。",
+    "history": "卡布薩是阿拉伯半島的傳統料理，名稱源自阿拉伯語「按壓」，可能與烹調方式有關。米與香料多半透過與印度、波斯的貿易傳入，番茄則在20世紀才普及。卡布薩被視為沙烏地阿拉伯的國菜，在家庭聚會、宴會與節慶中，人們會圍坐在一個大托盤旁以右手取食，體現了阿拉伯人的熱情好客。",
     "wiki": "Kabsa",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Machboos_%28cropped%29.JPG/960px-Machboos_%28cropped%29.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Machboos_(cropped).JPG",
@@ -76,8 +76,8 @@
    {
     "name": "曼迪燜飯",
     "localName": "مندي (Mandi)",
-    "description": "肉類在地坑窯中燻烤，汁液滴落於下方米飯。",
-    "history": "源自葉門哈德拉毛地區，在沙烏地阿拉伯極受歡迎。",
+    "description": "將以香料醃漬的雞肉或羊肉吊在地坑窯（taboon）中燻烤，肉汁滴落到下方的米飯上，使米飯帶有煙燻香氣與肉汁。",
+    "history": "曼迪燜飯源自葉門南部的哈德拉毛地區，由哈德拉毛移民帶入沙烏地阿拉伯，在吉達與麥加等漢志地區尤其普遍。「mandi」一詞源自阿拉伯語「露水」，形容肉的濕潤口感。它是沙烏地阿拉伯餐廳最常見的料理之一，常在週末家庭聚餐時享用。",
     "wiki": "Mandi (food)",
     "image": "https://upload.wikimedia.org/wikipedia/commons/0/05/Mandi_pit_from_inside.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Mandi_pit_from_inside.jpg",
@@ -86,8 +86,8 @@
    {
     "name": "穆塔巴克煎餅",
     "localName": "مطبق (Mutabbaq)",
-    "description": "薄麵皮包入絞肉、蛋與蔥煎成的方形煎餅。",
-    "history": "漢志地區的街頭小吃，與東南亞的「瑪塔巴」同源。",
+    "description": "將極薄的麵皮包入絞肉、蛋、韭菜或蔥，折成方形後在大鐵板上煎至金黃酥脆，也有包香蕉或起司的甜味版本。",
+    "history": "穆塔巴克煎餅源自印度與東南亞的煎餅料理，由印度與東南亞的穆斯林商人與朝聖者帶到漢志地區，吉達與麥加的小吃攤尤其有名。名稱在阿拉伯語中意為「折疊」，它從阿拉伯半島又傳到東南亞，在馬來西亞與印尼也非常流行，反映了朝覲路線上的飲食交流。",
     "wiki": "Murtabak",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Murtabak.jpg/960px-Murtabak.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Murtabak.jpg",
@@ -96,8 +96,8 @@
    {
     "name": "沙利格奶飯",
     "localName": "سليق (Saleeg)",
-    "description": "以雞湯與牛奶煮成的濃稠米飯，配烤雞。",
-    "history": "源自西部塔伊夫地區的傳統料理。",
+    "description": "將米飯與雞湯、牛奶一起長時間燉煮，攪拌成濃稠綿密的奶飯，上面放烤雞，口味溫和，常在冬季與家庭聚會中享用。",
+    "history": "沙利格奶飯是漢志地區塔伊夫的傳統料理，塔伊夫位於高原、氣候涼爽，是漢志地區的避暑勝地。這道料理口味溫和，被認為適合病人與兒童食用。它是漢志地區家庭聚會與婚禮中常見的料理，在寒冷的冬季尤其受歡迎。",
     "wiki": "Saleeg",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/The_Hijazi_Saleeg.jpg/960px-The_Hijazi_Saleeg.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:The_Hijazi_Saleeg.jpg",
@@ -106,8 +106,8 @@
    {
     "name": "阿拉伯咖啡",
     "localName": "قهوة عربية (Gahwa)",
-    "description": "加入小荳蔻與番紅花的淡色咖啡，配椰棗招待客人。",
-    "history": "待客的重要禮儀，2015年「阿拉伯咖啡」列入聯合國教科文組織非物質文化遺產。",
+    "description": "將淺焙咖啡豆磨碎後與小荳蔻、番紅花一起煮，倒入無把手的小杯中，配椰棗招待客人，口味淡雅帶香料香氣。",
+    "history": "咖啡在15世紀從葉門傳入阿拉伯半島，蘇非派修士最早飲用它以保持夜間祈禱時的清醒。在沙烏地阿拉伯，招待客人喝阿拉伯咖啡是最重要的待客禮儀，主人以右手持壺倒咖啡，客人搖動杯子表示不再續杯。2015年聯合國教科文組織將阿拉伯咖啡列為人類非物質文化遺產，沙烏地阿拉伯政府也將2022年定為「沙烏地咖啡年」。",
     "wiki": "Arabic coffee",
     "image": "https://upload.wikimedia.org/wikipedia/commons/4/49/A_dallah_a_traditional_Arabic_coffee_pot_with_cups_and_coffee_beans.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:A_dallah_a_traditional_Arabic_coffee_pot_with_cups_and_coffee_beans.jpg",

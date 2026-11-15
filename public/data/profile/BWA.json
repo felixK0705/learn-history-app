@@ -7,25 +7,25 @@
    {
     "name": "基督新教（含非洲獨立教會）",
     "percent": 74,
-    "description": "包括錫安基督教會等非洲獨立教會、五旬節派及倫敦傳道會傳統的教會。"
+    "description": "新教在19世紀初由英國倫敦傳道會傳入，1841年傳教士李文斯頓來到茨瓦納地區，1848年為恩瓦凱策部落首領塞切萊施洗。1885年英國把波札那地區劃為貝專納保護地，許多茨瓦納族首領改信基督教並以教會為顧問，使新教迅速普及。20世紀以後非洲獨立教會（如錫安基督教會）快速成長，融合傳統治療與祖靈觀念，吸引大量信徒。"
    },
    {
     "name": "無宗教",
     "percent": 15,
-    "description": "不認同任何宗教的人口占相當比例。"
+    "description": "無宗教人口約占15%，主要是城市中的年輕人與受過高等教育的人。1966年獨立後波札那經濟快速發展，鑽石產業帶動都市化，加上教育普及，使一部分人遠離教會；也有人在普查中不認同任何宗教組織，但仍保有傳統信仰觀念。"
    },
    {
     "name": "天主教",
     "percent": 5,
-    "description": "天主教會在教育與醫療方面頗具影響力。"
+    "description": "天主教在19世紀末由德國與愛爾蘭傳教士傳入，但由於英國倫敦傳道會已在茨瓦納首領中建立影響力，天主教的發展較晚。今日天主教徒主要分布在城市地區，教會辦的學校與醫院在社會服務中扮演一定角色。"
    },
    {
     "name": "傳統信仰（巴迪莫）",
     "percent": 4,
-    "description": "崇敬祖先靈魂的茨瓦納傳統信仰。"
+    "description": "巴迪莫（Badimo）是茨瓦納族的傳統祖靈信仰，認為祖先的靈魂能保佑或懲罰在世的親人，並以祭祀、占卜與傳統治療師溝通。雖然基督教已成為主流，但許多人仍在婚喪、新生兒命名與農耕儀式中保留巴迪莫信仰的習俗。"
    }
   ],
-  "background": "十九世紀倫敦傳道會傳教士（如李文斯頓）進入茨瓦納地區，酋長卡馬三世等人皈依基督教，使基督教迅速傳播。二十世紀後結合非洲傳統元素的獨立教會快速成長，而祖先崇拜觀念仍融入許多人的生活。"
+  "background": "茨瓦納族在基督教傳入前信奉造物神莫迪莫（Modimo）與祖靈巴迪莫，首領兼具宗教角色。19世紀倫敦傳道會傳教士如羅伯特・莫法特與李文斯頓進入當地，部落首領的改宗帶動大規模基督教化。1885年起英國統治貝專納保護地，教會掌握了大部分教育。1966年獨立後，波札那成為民主穩定的國家，宗教自由受到保障，非洲獨立教會與五旬節派在近數十年快速成長。"
  },
  "language": {
   "official": "英語為官方語言，茨瓦納語為國語。",
@@ -33,34 +33,34 @@
    {
     "name": "茨瓦納語",
     "percent": 77,
-    "description": "國語，也是大多數人的母語與日常通用語。",
+    "description": "茨瓦納語屬於班圖語系的索托－茨瓦納語支，是全國最大民族茨瓦納族的語言，國名「波札那」即意為「茨瓦納人的土地」。19世紀倫敦傳道會傳教士羅伯特・莫法特把聖經翻譯成茨瓦納語（1857年完成全本聖經），奠定了書面語的基礎。1966年獨立後茨瓦納語被定為國語，約77%人口以它為母語，其他民族也普遍使用。",
     "greeting": "Dumela",
     "pronunciation": "doo-MEH-la"
    },
    {
     "name": "卡蘭加語",
     "percent": 8,
-    "description": "東北部弗朗西斯敦一帶卡蘭加人的語言。",
+    "description": "卡蘭加語是東北部卡蘭加族的語言，與辛巴威的紹納語相近，卡蘭加族是中世紀大辛巴威文化與托瓦王國（約1450–1683年）居民的後代之一，主要分布在法蘭西斯敦周邊。獨立後政府推行茨瓦納語單一國語政策，卡蘭加語長期未被列入學校教育，近年才有推動母語教學的運動。",
     "greeting": "Dumilani",
     "pronunciation": "doo-mee-LAH-nee"
    },
    {
     "name": "英語",
     "percent": 3,
-    "description": "官方語言，用於政府、商業與高等教育。",
+    "description": "英語在1885–1966年英國貝專納保護地時期成為行政與教育語言，獨立後成為官方語言。由於政府、法院、高等教育與商業都使用英語，大多數受過教育的波札那人都能說英語，但以英語為母語者只占約3%。",
     "greeting": "Hello",
     "pronunciation": "heh-LOH"
    }
   ],
-  "history": "茨瓦納語屬班圖語族，十九世紀傳教士以拉丁字母記錄並翻譯聖經，奠定其書面基礎。英國保護地時期英語成為行政語言，獨立後茨瓦納語則作為國家認同的象徵持續推廣。"
+  "history": "波札那最早的居民是使用含搭嘴音語言的桑人（布須曼人），他們的語言至今仍在喀拉哈里沙漠地區使用。約在西元一千年前後，說班圖語的民族南遷進入此地，17–18世紀茨瓦納族在今日波札那建立多個酋長國。19世紀英國傳教士為茨瓦納語創造拉丁字母書寫系統，1885年英國統治後英語成為行政語言。1966年獨立後，英語為官方語言、茨瓦納語為國語，但其他少數民族語言長期在教育中被忽略。"
  },
  "food": {
   "ranking": [
    {
     "name": "塞斯瓦燉肉",
     "localName": "Seswaa",
-    "description": "將牛肉或羊肉加鹽長時間燉煮後搗成絲狀的肉料理。",
-    "history": "波札那的國菜，傳統上由男性在婚禮、葬禮等重大場合以鐵鍋烹煮。",
+    "description": "把牛肉或羊肉加鹽在鐵鍋中燉煮數小時，直到肉軟爛，再用木杵搗成絲狀，常配玉米粥一起吃。",
+    "history": "塞斯瓦被視為波札那的國菜，傳統上由男性在婚禮、葬禮與重要節慶中用大型三腳鐵鍋烹煮。牛在茨瓦納社會中是財富與地位的象徵，過去聘禮也以牛隻計算。9月30日的獨立紀念日（1966年獨立）慶祝活動中，塞斯瓦是不可或缺的料理，象徵團聚與分享。",
     "wiki": "Seswaa",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Pounded_Beef_%28Seswaa%29.jpg/960px-Pounded_Beef_%28Seswaa%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Pounded_Beef_(Seswaa).jpg",
@@ -69,8 +69,8 @@
    {
     "name": "玉米粥",
     "localName": "Bogobe",
-    "description": "以高粱或玉米粉煮成的濃稠粥糊，是主食。",
-    "history": "南部非洲農牧社會的傳統主食，常搭配燉肉或蔬菜。",
+    "description": "以高粱粉或玉米粉加水煮成的濃稠粥狀主食，口感綿密，常搭配塞斯瓦燉肉或蔬菜一起吃。",
+    "history": "高粱是非洲南部本土最古老的穀物之一，在喀拉哈里沙漠周邊乾旱的氣候下比玉米更耐旱，因此是茨瓦納族的傳統主食。玉米在殖民時期才大量引進，逐漸取代部分高粱的地位。今天兩種穀物製成的玉米粥都在波札那普遍食用，是日常餐桌上的基本主食。",
     "wiki": "Bogobe",
     "image": "https://upload.wikimedia.org/wikipedia/commons/4/48/Ugali_%26_Sukuma_Wiki.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Ugali_%26_Sukuma_Wiki.jpg",
@@ -79,8 +79,8 @@
    {
     "name": "莫帕尼蟲",
     "localName": "Phane",
-    "description": "莫帕尼蛾的幼蟲，曬乾後煎炒或燉煮，富含蛋白質。",
-    "history": "是波札那與南部非洲傳統的重要季節性食物，採集也帶來經濟收入。",
+    "description": "將莫帕尼樹上的大型毛毛蟲去除內臟後煮過曬乾，可直接當零食或與番茄、洋蔥燉煮，富含蛋白質。",
+    "history": "莫帕尼蟲是帝王蛾的幼蟲，生長在莫帕尼樹上，是非洲南部數百年來的傳統食物，桑人與班圖民族都會採集。每年雨季後的採集季節，鄉村婦女會集體採集並曬乾販售，成為重要的收入來源。由於蛋白質含量高、易於保存，它也被視為應對乾旱與糧食短缺的重要食物。",
     "wiki": "Gonimbrasia belina",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Colophospermum_mopane_50D_0486.jpg/960px-Colophospermum_mopane_50D_0486.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Colophospermum_mopane_50D_0486.jpg",
@@ -89,8 +89,8 @@
    {
     "name": "莫羅戈野菜",
     "localName": "Morogo",
-    "description": "以野生或栽培綠葉菜煮成的蔬菜料理。",
-    "history": "南部非洲傳統飲食中重要的蔬菜來源，常搭配玉米粥。",
+    "description": "以莧菜、豇豆葉等野生綠葉蔬菜為主，與洋蔥、番茄一起炒或燉煮，口感軟嫩微苦，常與玉米粥一起吃。",
+    "history": "莫羅戈是非洲南部各民族都會採集的野生葉菜，在雨季時大量生長。過去在糧食短缺的季節，野菜是重要的營養來源，婦女會把多餘的野菜曬乾保存，以備乾季食用。今天它仍是波札那家庭常見的配菜，也象徵著傳統的採集文化。",
     "wiki": "Morogo",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Amaranthus_thunbergii_1DS-II_1-5841.jpg/960px-Amaranthus_thunbergii_1DS-II_1-5841.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Amaranthus_thunbergii_1DS-II_1-5841.jpg",
@@ -99,8 +99,8 @@
    {
     "name": "炸麵包",
     "localName": "Magwinya",
-    "description": "將麵團油炸成圓球狀的炸麵包，常當早餐或點心。",
-    "history": "與南非的炸麵包（vetkoek）相同，是南部非洲常見的街頭小吃。",
+    "description": "以麵粉、酵母與糖揉成麵團後油炸成的圓球麵包，外酥內軟，可以單吃或夾入肉餡、果醬。",
+    "history": "炸麵包在南部非洲各地都很普遍，與南非的「vetkoek」相似，一般認為源自荷蘭與阿非利卡人的炸麵團傳統，19世紀後隨著麵粉的普及傳入波札那。由於做法簡單、價格便宜，它是街頭小販最常見的早餐與點心，也是許多婦女的小生意來源。",
     "wiki": "Vetkoek",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Vetkoek_with_mince-001.jpg/960px-Vetkoek_with_mince-001.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Vetkoek_with_mince-001.jpg",

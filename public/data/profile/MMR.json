@@ -7,30 +7,30 @@
    {
     "name": "上座部佛教",
     "percent": 88,
-    "description": "多數緬族與撣族、孟族等信仰，佛寺與僧侶在社會中地位崇高。"
+    "description": "1057年蒲甘王朝阿奴律陀國王從孟族迎入上座部佛教經典與僧侶，並在蒲甘興建數千座佛塔，佛教從此成為緬族王權與民族認同的核心。殖民時期佛教僧侶參與反英運動，獨立後佛教在政治上地位崇高，男子一生中至少短期出家一次是常見習俗。信徒主要是緬族、孟族、撣族與若開族。"
    },
    {
     "name": "基督教",
     "percent": 6,
-    "description": "主要為克倫族、克欽族、欽族等少數民族。"
+    "description": "1813年美國浸信會傳教士耶德遜抵達緬甸，翻譯緬語《聖經》。19世紀浸信會在克倫、欽、克欽等山區少數民族中傳教成功，這些民族原本信仰萬物有靈，沒有接受緬族的佛教。基督教因此成為這些民族的認同象徵，也與他們對抗緬族中央政府的民族運動相連。"
    },
    {
     "name": "伊斯蘭教",
     "percent": 4,
-    "description": "包含若開邦的羅興亞人及其他穆斯林社群。"
+    "description": "伊斯蘭教在中世紀隨阿拉伯、波斯與印度商人傳入若開與沿海地區，殖民時期又有大量印度穆斯林移入仰光等城市。若開邦的羅興亞人是最大的穆斯林群體，但1982年《公民法》剝奪了他們的公民身分；2017年軍方的「清剿行動」迫使70多萬羅興亞人逃往孟加拉。"
    },
    {
     "name": "傳統信仰",
     "percent": 1,
-    "description": "包含對納特（nat）神靈的崇拜，也廣泛融入佛教生活。"
+    "description": "緬甸山區少數民族傳統上信仰萬物有靈與祖靈崇拜，緬族佛教徒也普遍崇拜被稱為「納」（nat）的神靈，蒲甘時期國王阿奴律陀曾將37位納神納入佛教體系。純粹的傳統信仰者主要在偏遠山區。"
    },
    {
     "name": "印度教",
     "percent": 1,
-    "description": "主要為印度裔居民。"
+    "description": "印度教隨19–20世紀英國殖民時期從印度移入的勞工、商人與士兵傳入，他們主要居住在仰光、曼德勒等城市。1962年後軍政府推行緬甸化政策，大批印度人被迫離開，印度教徒人數因而減少。"
    }
   ],
-  "background": "11世紀蒲甘王朝阿奴律陀王自孟族引入上座部佛教並奉為國教，緬甸自此成為上座部佛教重鎮。19世紀英國殖民時期，美國浸信會傳教士在山區少數民族中傳教，使克倫、克欽、欽族多信奉基督教。"
+  "background": "上座部佛教在緬甸的傳播可追溯至西元1千紀孟族與驃族的城邦。1057年蒲甘王朝阿奴律陀國王征服孟族的直通王國，帶回上座部佛教的經典與僧侶，把上座部佛教定為國教，並在蒲甘建造數千座佛塔。此後佛教與緬族王權緊密結合。1824–1885年英國經三次英緬戰爭征服緬甸，美國浸信會傳教士阿多尼拉姆·耶德遜等人在克倫、欽、克欽等少數民族中傳播基督教。1962年軍政府奪權後提倡佛教民族主義，2017年若開邦羅興亞穆斯林遭到大規模暴力驅逐。"
  },
  "language": {
   "official": "官方語言為緬甸語。",
@@ -38,27 +38,27 @@
    {
     "name": "緬甸語",
     "percent": 65,
-    "description": "屬漢藏語系藏緬語族，使用圓形的緬文字母。",
+    "description": "緬甸語是緬族的語言，自蒲甘王朝以來就是宮廷與佛教文化的語言。1948年獨立後成為官方語言，1962年後軍政府推行以緬甸語為唯一教學語言的政策，使其成為全國各民族的通用語。但緬甸有135個官方承認的民族，許多少數民族至今仍以自己的語言為母語。",
     "greeting": "မင်္ဂလာပါ",
     "pronunciation": "min-ga-la-ba"
    },
    {
     "name": "撣語",
     "percent": 6,
-    "description": "東部撣邦撣族的語言，屬壯侗語系，與泰語相近。",
+    "description": "撣語屬壯侗語系台語支，與泰語、寮語相近，是撣族的語言。撣族在13–16世紀曾建立多個撣邦土司國，16世紀後被緬族王朝征服。撣語主要分布在東部的撣邦高原，撣族也是緬甸第二大民族。",
     "greeting": "Mai sung kha",
     "pronunciation": "mai sung kha"
    }
   ],
-  "history": "緬甸語隨9世紀前後緬族南下而來，文字源自孟文。緬甸有一百多種語言，包括克倫語、克欽語、若開語、孟語等。英國殖民時期英語為行政語言，獨立後確立緬甸語為國語。"
+  "history": "緬甸語屬漢藏語系藏緬語族，緬族約在9世紀從今雲南一帶南下進入伊洛瓦底江流域，取代了驃族的地位。緬甸文字源自孟文，而孟文又源自南印度的婆羅米系文字，現存最早的緬文碑銘可追溯至12世紀初的妙齊提碑（Myazedi inscription），碑上同時刻有巴利文、孟文、驃文與緬文。英國殖民時期（1824–1948年）英語成為行政與高等教育語言。1948年獨立後緬甸語成為國語，1962年後軍政府推行緬甸化政策，強化緬甸語在教育中的地位，少數民族語言則受到限制。"
  },
  "food": {
   "ranking": [
    {
     "name": "魚湯米線",
     "localName": "မုန့်ဟင်းခါး (Mohinga)",
-    "description": "以魚肉、香茅、香蕉樹芯熬成的濃湯配米線，被視為國菜。",
-    "history": "緬甸最普遍的早餐，在街頭與市場處處可見。",
+    "description": "以米線搭配用鯰魚、香茅、薑、洋蔥與米粉熬煮的濃稠魚湯，配炸豆餅、水煮蛋與香蕉莖。",
+    "history": "Mohinga 被視為緬甸國菜，一般認為起源於伊洛瓦底江下游的孟族地區，以當地豐富的河魚製作。它在緬甸最常作為早餐，街頭小販從清晨開始販賣。在家中舉辦佛教布施儀式或喪禮後的供養時，主人也常煮一大鍋 mohinga 招待僧侶、親友與鄰居。",
     "wiki": "Mohinga",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Mohnga.jpg/960px-Mohnga.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Mohnga.jpg",
@@ -67,8 +67,8 @@
    {
     "name": "涼拌茶葉",
     "localName": "လက်ဖက်သုပ် (Lahpet thoke)",
-    "description": "以發酵茶葉拌上炸豆、花生、芝麻、番茄與蒜片。",
-    "history": "緬甸人以茶入菜的獨特傳統，過去在王室中作為和平信物。",
+    "description": "把醃漬發酵的茶葉與炸豆、花生、芝麻、乾蝦、大蒜與番茄拌成的沙拉。口感豐富，帶有茶葉的苦澀與堅果的香脆。",
+    "history": "緬甸是世界上少數把茶葉當作食物吃的國家，醃茶葉（lahpet）的歷史可追溯到古代。在緬甸王朝時期，醃茶葉是和平的象徵：當兩國或兩派發生爭端時，雙方共享醃茶葉表示和解。今天它在婚禮、佛教儀式等場合招待客人，是緬甸待客文化的核心食物。",
     "wiki": "Lahpet",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Green_tea_and_peanut_nibbles_%2810808703485%29.jpg/960px-Green_tea_and_peanut_nibbles_%2810808703485%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Green_tea_and_peanut_nibbles_(10808703485).jpg",
@@ -77,8 +77,8 @@
    {
     "name": "椰奶雞麵",
     "localName": "အုန်းနို့ခေါက်ဆွဲ (Ohn no khao swè)",
-    "description": "以椰奶與雞肉熬成的濃湯配麵條。",
-    "history": "與泰國北部的金麵（khao soi）同源。",
+    "description": "以雞肉與椰奶熬成的濃稠咖哩湯，加入雞蛋麵條，配洋蔥、炸麵條、魚露與檸檬。口味濃郁香甜，是緬甸常見的早餐與午餐。",
+    "history": "Ohn no khao swè 意為「椰奶麵」，一般認為與泰北清邁的 khao soi 椰奶咖哩麵有親緣關係，反映緬甸與泰國北部長期的人口與貿易往來。椰奶在緬甸南部沿海地區十分普遍，這道麵反映緬甸與東南亞鄰國的飲食交流。它常在佛教節日與家庭聚會中製作。",
     "wiki": "Ohn no khao swè",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Ohn_No_Khao_Swe_at_Sapphire_Asian_Cuisine_%2810988302274%29.jpg/960px-Ohn_No_Khao_Swe_at_Sapphire_Asian_Cuisine_%2810988302274%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Ohn_No_Khao_Swe_at_Sapphire_Asian_Cuisine_(10988302274).jpg",
@@ -87,8 +87,8 @@
    {
     "name": "撣族米線",
     "localName": "ရှမ်းခေါက်ဆွဲ (Shan khauk swè)",
-    "description": "米線拌上番茄雞肉或豬肉醬，配醃菜。",
-    "history": "源自東部撣邦，在全國普遍流行。",
+    "description": "以米線或扁米粉配番茄雞肉或豬肉醬汁，撒上花生、醃菜與香菜。口味清淡鮮香，是撣邦的日常主食。",
+    "history": "撣族米線源自緬甸東部的撣邦高原，撣族與中國雲南的傣族同屬台語族群，這道米線與雲南的米線料理有密切關係。撣邦是緬甸重要的稻米產區之一，米線是撣族日常的主食。今天它在仰光等大城市也很受歡迎，是緬甸最具代表性的地方麵食之一。",
     "wiki": "Nan gyi thoke",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Nan_gyi_thoke.png/960px-Nan_gyi_thoke.png",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Nan_gyi_thoke.png",
@@ -97,8 +97,8 @@
    {
     "name": "緬甸咖哩",
     "localName": "ဟင်း (Hin)",
-    "description": "以洋蔥、大蒜、薑與油慢燉的肉類或魚咖哩，油亮濃郁。",
-    "history": "受印度影響但不放太多香料，特色是表面浮著一層油。",
+    "description": "以大量油、洋蔥、大蒜、薑與香料燉煮的肉類或魚類咖哩，油在表面分離，配白飯食用。口味較印度咖哩溫和，以洋蔥與油的香氣為主。",
+    "history": "緬甸咖哩受到印度飲食的影響，英國殖民時期大量印度移民湧入緬甸，帶來各種咖哩與香料。但緬甸咖哩與印度咖哩不同，使用較少的香料、更多的洋蔥、大蒜與薑，並以油分離（see pyan，意為「油回來了」）作為完成的標誌。緬甸人一餐通常有多道咖哩與湯，搭配白飯一起吃。",
     "wiki": "Burmese curry",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Myanma_cuisine.jpg/960px-Myanma_cuisine.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Myanma_cuisine.jpg",

@@ -7,25 +7,25 @@
    {
     "name": "基督聯合教會",
     "percent": 47,
-    "description": "源自美國公理會傳教的新教教會，是最大教派。"
+    "description": "基督聯合教會源自1857年從夏威夷來的美國公理會傳教士所建立的教會，當地酋長改宗後新教在馬紹爾群島迅速普及。它是馬紹爾群島歷史最悠久、影響最大的教會，教會活動與社區生活、節慶緊密結合。"
    },
    {
     "name": "神召會",
     "percent": 16,
-    "description": "五旬節派教會。"
+    "description": "神召會是20世紀從美國傳入的五旬節派教會，強調聖靈經驗與熱烈的崇拜方式。二戰後美國的影響加深，神召會在馬朱羅等都市地區吸引許多信徒，成為第二大教派。"
    },
    {
     "name": "耶穌基督後期聖徒教會",
     "percent": 9,
-    "description": "近數十年成長的教會。"
+    "description": "耶穌基督後期聖徒教會（摩門教）在20世紀後期傳入馬紹爾群島，透過傳教士與教育計畫吸引信徒。由於馬紹爾群島居民可以依《自由聯合協定》自由移居美國，許多信徒與美國的摩門教社群建立聯繫。"
    },
    {
     "name": "天主教",
     "percent": 8,
-    "description": "規模較大的天主教社群。"
+    "description": "天主教在德國殖民時期（1885–1914年）由德國傳教士傳入，之後美國耶穌會接手。天主教會在馬朱羅等地經營中小學，對教育有重要貢獻，但信徒人數相對較少。"
    }
   ],
-  "background": "1857年美國公理會傳教士抵達馬紹爾群島傳教，基督教迅速成為主流。二戰後美國託管時期，五旬節派與耶穌基督後期聖徒教會等教派陸續傳入。"
+  "background": "馬紹爾群島原住民傳統上崇拜祖靈與自然神靈，酋長（iroij）具有宗教與政治雙重權威。1857年美國公理會傳教士從夏威夷來到艾邦環礁，開始傳播新教，當地酋長的改宗使基督教迅速普及。1885年起德國殖民、1914年後日本統治，二戰後成為美國託管的太平洋島嶼託管地。1946–1958年美國在比基尼與埃尼威托克環礁進行核試爆，對當地社會造成深遠影響。1986年獨立後，基督教是社會生活的核心，教會在社區中扮演重要角色。"
  },
  "language": {
   "official": "馬紹爾語與英語是官方語言。",
@@ -33,27 +33,27 @@
    {
     "name": "馬紹爾語",
     "percent": 98,
-    "description": "屬南島語系密克羅尼西亞語支，是全民的母語。",
+    "description": "馬紹爾語是馬紹爾群島原住民的語言，19世紀傳教士為它制定書寫系統後，教會與學校推廣讀寫。由於國民幾乎都是馬紹爾人，馬紹爾語在家庭、教會、社區與議會中普遍使用，是絕大多數人的母語。",
     "greeting": "Iakwe",
     "pronunciation": "YAH-kway"
    },
    {
     "name": "英語",
     "percent": 2,
-    "description": "官方語言，用於政府與教育。",
+    "description": "英語源自二戰後美國託管時期（1947–1986年），是官方語言之一，用於政府、法律與高等教育。依《自由聯合協定》，馬紹爾人可以自由移居美國，許多家庭在美國阿肯色州、夏威夷等地有親戚，因此英語能力日益重要。",
     "greeting": "Hello",
     "pronunciation": "heh-LOH"
    }
   ],
-  "history": "馬紹爾語是當地原住民語言，十九世紀傳教士以拉丁字母書寫。先後經歷德國、日本與美國統治，日語與英語都曾留下影響，現今英語用於政府與教育。"
+  "history": "馬紹爾語屬南島語系大洋洲語支的密克羅尼西亞語群，分為拉塔克（日出）與拉利克（日落）兩大方言，對應馬紹爾群島東西兩條環礁鏈。19世紀中葉美國傳教士以拉丁字母為馬紹爾語制定書寫系統並翻譯《聖經》。德國殖民時期（1885–1914年）與日本統治時期（1914–1944年）分別引入德語與日語，留下少量借詞；二戰後美國託管，英語成為教育與政府的語言。1986年獨立後馬紹爾語與英語同為官方語言。"
  },
  "food": {
   "ranking": [
    {
     "name": "麵包果",
     "localName": "Mā",
-    "description": "以烤、煮或發酵保存方式食用的麵包果。",
-    "history": "馬紹爾群島傳統主食，可發酵製成可長期保存的食物。",
+    "description": "麵包果可以烤、煮、炸，或發酵後製成糊狀保存，是傳統主食之一。口感像馬鈴薯，富含澱粉，是重要的傳統主食。",
+    "history": "麵包果在數千年前隨南島民族的航海遷徙傳遍太平洋，在馬紹爾群島是傳統主食之一。過去人們把麵包果發酵後埋在地下儲藏，作為颱風或乾旱時的備用糧食，也是遠航時的口糧。二戰後美國援助帶來大量進口米與罐頭食品，傳統食物比例下降，糖尿病等健康問題隨之增加，近年政府推動回歸傳統飲食。",
     "wiki": "Breadfruit",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Artocarpus_altilis_%28fruit%29.jpg/960px-Artocarpus_altilis_%28fruit%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Artocarpus_altilis_(fruit).jpg",
@@ -62,8 +62,8 @@
    {
     "name": "林投果",
     "localName": "Bōb",
-    "description": "林投樹的果實，可直接嚼食或製成果乾。",
-    "history": "環礁上重要的傳統食物。",
+    "description": "林投果（露兜樹果）可直接嚼食果肉，也可煮熟製成糊狀或曬乾成長期保存的果乾。果肉帶有甜味與纖維，是環礁上珍貴的食物來源。",
+    "history": "林投樹耐鹽耐旱，是少數能在環礁貧瘠沙地上生長的植物，馬紹爾人培育出許多品種。林投果可以加工成果乾（jāānkun），能保存很長時間，是傳統航海時的口糧。林投葉還可以編織蓆子、帆與屋頂，馬紹爾人傳統的航海技術就依賴林投葉編成的船帆。",
     "wiki": "Pandanus tectorius",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Pandanus_tectorius.jpg/960px-Pandanus_tectorius.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Pandanus_tectorius.jpg",
@@ -72,8 +72,8 @@
    {
     "name": "椰子",
     "localName": "Ni",
-    "description": "椰肉、椰奶與椰子水廣泛用於烹調與飲用。",
-    "history": "椰子樹是環礁居民生活中最重要的植物。",
+    "description": "椰子的果肉、椰汁、椰奶與椰子油在馬紹爾料理中無所不在，椰子樹汁還可製成糖漿。是環礁居民的重要食物與飲料來源。",
+    "history": "椰子樹被稱為「生命之樹」，在馬紹爾群島的環礁上，椰子是水分、食物、油脂與建材的來源。德國殖民時期（1885–1914年）開始大規模種植椰子並出口椰乾（copra），椰乾至今仍是外島居民重要的收入來源。椰子在馬紹爾人的傳統知識、歌謠與儀式中都佔有重要地位。",
     "wiki": "Coconut",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Cocos_nucifera_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-187.jpg/960px-Cocos_nucifera_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-187.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Cocos_nucifera_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-187.jpg",
@@ -82,8 +82,8 @@
    {
     "name": "芋頭",
     "localName": "Iaraj",
-    "description": "以煮或烤方式食用的芋頭。",
-    "history": "太平洋島嶼的古老主食作物。",
+    "description": "巨型沼澤芋在挖掘的坑池中栽培，收成後烤、煮或搗成泥食用。口感鬆軟，帶有淡淡的甜味，是節慶的尊貴食物。",
+    "history": "在環礁上栽種芋頭需要挖掘坑池以接近地下淡水層，並以樹葉堆肥改良土壤，這是太平洋島民適應環礁環境的智慧。芋頭在婚禮、葬禮與首生兒週歲（kemem）等重要儀式中是尊貴的食物。近年海平面上升與鹹水入侵坑池，使傳統芋頭種植面臨嚴重威脅。",
     "wiki": "Taro",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Songe-R%C3%A9union.JPG/960px-Songe-R%C3%A9union.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Songe-R%C3%A9union.JPG",
@@ -92,8 +92,8 @@
    {
     "name": "椰子蟹",
     "localName": "Barulep",
-    "description": "大型陸生寄居蟹，蒸煮後食用。",
-    "history": "太平洋島嶼的珍饈。",
+    "description": "巨型陸生寄居蟹，殼可長得很大，肉質鮮甜，常煮或烤後食用。蟹肉與腹部的脂肪帶有椰子香氣，被視為珍饈。",
+    "history": "椰子蟹能用強壯的鉗子剝開椰子，因此得名。在馬紹爾群島，捕捉椰子蟹是傳統技能，常在夜間進行，被視為節慶或招待客人的佳餚。由於人口增加與過度捕撈，椰子蟹在有人居住的環礁上越來越少，此外核試驗地區的椰子蟹也曾因放射性污染問題而不宜食用。",
     "wiki": "Coconut crab",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Coconut_Crab_Birgus_latro.jpg/960px-Coconut_Crab_Birgus_latro.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Coconut_Crab_Birgus_latro.jpg",

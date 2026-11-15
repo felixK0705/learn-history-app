@@ -7,25 +7,25 @@
    {
     "name": "天主教",
     "percent": 83,
-    "description": "憲法明定的國教，教堂與宗教節慶遍布全國。"
+    "description": "傳統認為使徒保羅約在西元60年於馬爾他船難後傳教，1091年諾曼人收復後天主教重新確立。1530–1798年聖約翰騎士團統治並在1565年擊退鄂圖曼大圍攻，天主教成為馬爾他人身分的核心。憲法定天主教為國教，各村莊的守護聖人節慶（festa）至今仍是社區生活中最重要的活動。"
    },
    {
     "name": "無宗教",
     "percent": 8,
-    "description": "近年比例上升。"
+    "description": "近數十年馬爾他加入歐盟（2004年）、經濟發展與教育普及，社會逐漸世俗化。2011年離婚合法化公投與2017年同性婚姻合法化，反映年輕世代與天主教會價值觀的距離拉大，無宗教者比例因而上升。"
    },
    {
     "name": "其他基督教",
     "percent": 4,
-    "description": "包含英國國教會、東正教等。"
+    "description": "包括英國統治時期留下的聖公會（如瓦萊塔的聖保羅聖公會座堂）、東正教（近年來自東歐與巴爾幹的移民），以及其他新教派。馬爾他作為歐盟成員，吸引了許多外籍工作者，宗教多元化增加。"
    },
    {
     "name": "伊斯蘭教",
     "percent": 3,
-    "description": "主要來自北非與中東的移民。"
+    "description": "870–1091年阿拉伯人統治馬爾他期間，伊斯蘭教是主要宗教，但諾曼人攻佔後穆斯林逐漸被驅逐或改宗。今天的穆斯林主要是近數十年來自利比亞、北非、中東與南亞的移民及難民，1970年代末在帕奧拉興建了馬爾他第一座現代清真寺。"
    }
   ],
-  "background": "相傳使徒保羅於西元60年在馬爾他遇船難並傳教。阿拉伯統治時期（870–1091）伊斯蘭教曾存在，諾曼人征服後天主教重新確立。1530年後聖約翰騎士團統治，馬爾他成為天主教對抗鄂圖曼帝國的前哨。"
+  "background": "根據《使徒行傳》，西元60年左右使徒保羅在前往羅馬途中於馬爾他遭遇船難，傳統認為他在島上傳播了基督教。870年阿拉伯人征服馬爾他，伊斯蘭統治約兩百年，1091年諾曼人攻佔後天主教重新確立。1530年神聖羅馬皇帝查理五世把馬爾他交給聖約翰騎士團（醫院騎士團），1565年騎士團擊退鄂圖曼帝國的大圍攻，馬爾他成為「天主教的堡壘」。1800–1964年英國統治期間天主教仍是多數人的信仰，1964年獨立後憲法定天主教為國教。2011年公投通過離婚合法化，顯示社會逐漸世俗化。"
  },
  "language": {
   "official": "官方語言為馬爾他語與英語。",
@@ -33,34 +33,34 @@
    {
     "name": "馬爾他語",
     "percent": 84,
-    "description": "源自阿拉伯語方言，是歐盟唯一屬閃米語族並以拉丁字母書寫的官方語言。",
+    "description": "馬爾他語源自中世紀阿拉伯統治時期的西西里阿拉伯語，之後吸收大量義大利語、西西里語與英語詞彙。1934年成為官方語言，1964年獨立後成為國語，2004年馬爾他加入歐盟後更成為歐盟的官方語言之一，絕大多數馬爾他人以它為母語。",
     "greeting": "Bonġu / Merħba",
     "pronunciation": "bon-ju / mer-ha-ba"
    },
    {
     "name": "英語",
     "percent": 10,
-    "description": "官方語言之一，用於教育、商業與政府。",
+    "description": "英語在1800–1964年英國統治期間引入，1934年與馬爾他語同為官方語言。英語在教育、商業與政府中廣泛使用，大多數馬爾他人能流利說英語，馬爾他也因此成為熱門的英語學習地點，但以英語為主要語言的人約一成。",
     "greeting": "Hello",
     "pronunciation": "heh-loh"
    },
    {
     "name": "義大利語",
     "percent": 1,
-    "description": "受歷史與電視影響，許多人能理解。",
+    "description": "義大利語在聖約翰騎士團時期（1530–1798年）是行政與文化語言，直到1934年都是官方語言。由於馬爾他離西西里很近，許多馬爾他人透過義大利電視節目學會義大利語，但今天以義大利語為主要語言的人很少。",
     "greeting": "Ciao",
     "pronunciation": "chow"
    }
   ],
-  "history": "馬爾他語源自阿拉伯統治時期的西西里阿拉伯語，此後大量吸收西西里語、義大利語與英語詞彙。義大利語曾長期為行政與文化語言；英國統治時期英語地位提升，1934年馬爾他語成為官方語言。"
+  "history": "馬爾他語是唯一以拉丁字母書寫的閃米語族語言，源自870–1091年阿拉伯統治時期的西西里阿拉伯語。諾曼人攻佔後馬爾他與西西里、義大利關係密切，語言吸收了大量西西里語與義大利語詞彙。聖約翰騎士團時期義大利語是行政與文化語言，1800年後英國統治帶來英語。19世紀末至20世紀初發生「語言問題」爭議：親義大利派主張以義大利語為官方語言，親英派與民族主義者支持馬爾他語與英語。1934年馬爾他語與英語成為官方語言，取代義大利語。"
  },
  "food": {
   "ranking": [
    {
     "name": "馬爾他起司酥餅",
     "localName": "Pastizz",
-    "description": "鑽石形酥皮內包瑞可塔起司或豌豆泥。",
-    "history": "馬爾他最具代表性的街頭小吃，常配茶或咖啡作為早餐。",
+    "description": "以酥皮包入瑞可塔起司或豌豆泥烤成的菱形小餡餅，外皮酥脆。價格便宜，是馬爾他人最常吃的平民點心。",
+    "history": "Pastizz 的起源可能與鄂圖曼與阿拉伯飲食中的酥皮點心有關，也與西班牙與義大利的類似點心相似，反映馬爾他位於地中海交會處的位置。它是馬爾他最受歡迎的街頭小吃，價格便宜，常在早餐或午後配一杯茶或咖啡。在馬爾他語中「pastizz」也是常用的俚語，可見它在日常生活中的地位。",
     "wiki": "Pastizz",
     "image": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Malta_Pastizzi.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Malta_Pastizzi.JPG",
@@ -69,8 +69,8 @@
    {
     "name": "燉兔肉",
     "localName": "Stuffat tal-fenek",
-    "description": "以紅酒、番茄與大蒜燉煮的兔肉，被視為國菜。",
-    "history": "據說在騎士團時期限制獵兔，後解禁後吃兔肉成為反抗的象徵；以兔肉為主的聚餐稱為fenkata。",
+    "description": "把兔肉用紅酒、大蒜與月桂葉醃製後慢燉，醬汁常拌義大利麵食用。肉質軟嫩、醬汁濃郁，常配薯條或義大利麵食用。",
+    "history": "燉兔肉被視為馬爾他國菜。聖約翰騎士團統治時期，獵兔是貴族的特權，一般百姓被禁止獵兔。1798年拿破崙佔領馬爾他並驅逐騎士團後，禁令解除，兔肉料理在民間普及，因此吃兔肉在馬爾他也帶有反抗壓迫的象徵意義。今天 fenkata（吃兔肉的聚會）是家族與朋友聚會的重要傳統。",
     "wiki": "Rabbit stew",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Civet_de_lapin_aux_USA.jpg/960px-Civet_de_lapin_aux_USA.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Civet_de_lapin_aux_USA.jpg",
@@ -79,8 +79,8 @@
    {
     "name": "馬爾他扁麵包",
     "localName": "Ftira",
-    "description": "環狀扁麵包，夾鮪魚、番茄、橄欖與酸豆。",
-    "history": "「馬爾他扁麵包文化」於2020年列入聯合國教科文組織非物質文化遺產。",
+    "description": "以酸麵團做成的扁平圓形麵包，切開後抹上番茄醬，夾入鮪魚、橄欖、酸豆與洋蔥。口感有嚼勁，帶有番茄與橄欖油的香氣。",
+    "history": "Ftira 是馬爾他戈佐島與本島的傳統麵包，製作方法與地中海的扁麵包有關，名稱可能來自阿拉伯語 fatira。2020年「ftira 的烹飪藝術與文化」被聯合國教科文組織列入非物質文化遺產，這是馬爾他第一個入選的項目，反映它在馬爾他人日常生活中的重要性。",
     "wiki": "Ftira",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Ftira_with_Tuna_in_Marsaxlokk_02.jpg/960px-Ftira_with_Tuna_in_Marsaxlokk_02.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Ftira_with_Tuna_in_Marsaxlokk_02.jpg",
@@ -89,8 +89,8 @@
    {
     "name": "焗烤通心粉派",
     "localName": "Timpana",
-    "description": "酥皮內填入通心粉、肉醬與蛋烘烤。",
-    "history": "受西西里料理影響，是節慶時的經典菜。",
+    "description": "以通心粉拌入肉醬、雞蛋與起司，包在酥皮中烤成的大型派。外皮酥脆、內餡濃郁，是份量十足的主菜。",
+    "history": "Timpana 的名稱與義大利西西里的 timballo 同源，反映馬爾他與西西里在諾曼與西班牙統治時期的密切關係。酥皮包麵的做法在義大利南部貴族料理中十分常見，傳入馬爾他後成為家常菜。今天它常在週日家庭聚餐與節日時製作。",
     "wiki": "Timpana",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Pastitsio_homemade.jpg/960px-Pastitsio_homemade.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Pastitsio_homemade.jpg",
@@ -99,8 +99,8 @@
    {
     "name": "蠶豆泥",
     "localName": "Bigilla",
-    "description": "以蠶豆搗成泥，加大蒜、辣椒與香草調味的沾醬。",
-    "history": "馬爾他傳統的農家前菜，常配餅乾或麵包。",
+    "description": "以乾蠶豆煮熟後搗成泥，加入大蒜、辣椒、香芹與橄欖油的抹醬，配麵包或餅乾食用。口感綿密，帶有大蒜與香草的香氣。",
+    "history": "蠶豆是地中海最古老的作物之一，在馬爾他的乾燥氣候中容易種植，過去是窮人的主要蛋白質來源。它與埃及的蠶豆泥 ful medames 相似，反映馬爾他飲食與北非、阿拉伯世界的淵源。它常在酒吧作為下酒小菜，也出現在馬爾他傳統的冷盤拼盤中。",
     "wiki": "Bigilla",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Homemade_Bigilla_from_Malta.jpg/960px-Homemade_Bigilla_from_Malta.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Homemade_Bigilla_from_Malta.jpg",

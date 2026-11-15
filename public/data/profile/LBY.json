@@ -7,20 +7,20 @@
    {
     "name": "伊斯蘭教（遜尼派）",
     "percent": 96,
-    "description": "以馬立克學派為主。"
+    "description": "7世紀阿拉伯征服北非後，伊斯蘭教在數百年間成為利比亞居民的信仰，11世紀巴努希拉勒等阿拉伯部族大規模西遷，使沿海與草原地區阿拉伯化並以遜尼派馬立克學派為主。19世紀賽努西教團在東部傳播並領導抗義戰爭，伊斯蘭教因此與利比亞的反殖民民族主義緊密結合。"
    },
    {
     "name": "伊斯蘭教（伊巴德派）",
     "percent": 2,
-    "description": "主要為西北部納富薩山區的柏柏人。"
+    "description": "伊巴德派是伊斯蘭教中獨立於遜尼與什葉之外的一支，8世紀從伊拉克傳入北非，被許多柏柏爾人接受，作為抗拒阿拉伯中央政權的象徵。今天利比亞的伊巴德派主要是西北部內富薩山區與祖瓦拉的阿馬齊格人，在格達費時期曾遭壓抑。"
    },
    {
     "name": "基督教",
     "percent": 1,
-    "description": "主要為外籍勞工與科普特人。"
+    "description": "羅馬與拜占庭時期利比亞曾有基督教社群，但伊斯蘭化後幾乎消失。義大利殖民時期（1911–1943年）大量義大利移民帶來天主教，1970年格達費驅逐義大利人後人數銳減。今天的基督徒主要是埃及科普特人與撒哈拉以南非洲的移工，經常面臨人身安全威脅。"
    }
   ],
-  "background": "七世紀阿拉伯人征服北非後伊斯蘭教逐漸普及。十九世紀賽努西教團在東部昔蘭尼加地區推廣伊斯蘭教，並領導抵抗義大利殖民，其領袖後來成為利比亞國王。"
+  "background": "利比亞古代有柏柏爾人的本土信仰，沿海的的黎波里塔尼亞與昔蘭尼加先後受腓尼基、希臘與羅馬影響，基督教在羅馬時期傳入。7世紀中葉阿拉伯穆斯林征服北非，伊斯蘭教逐漸取代基督教，部分柏柏爾人則接受了伊巴德派。19世紀興起的賽努西教團在東部昔蘭尼加建立宗教與政治網絡，領導抵抗1911年後的義大利殖民，其領袖伊德里斯在1951年成為利比亞國王。1969年格達費政變後推行以伊斯蘭為基礎的「第三世界理論」，2011年其政權垮台後國家陷入分裂。"
  },
  "language": {
   "official": "阿拉伯語是官方語言。",
@@ -28,27 +28,27 @@
    {
     "name": "利比亞阿拉伯語",
     "percent": 90,
-    "description": "全國主要語言，屬馬格里布阿拉伯語。",
+    "description": "阿拉伯語隨7世紀伊斯蘭征服傳入，11世紀阿拉伯部族大舉遷入後成為大多數居民的語言。利比亞方言屬馬格里布阿拉伯語的東部分支，吸收了柏柏語、土耳其語與義大利語詞彙。格達費政權以阿拉伯語為國家認同的核心，學校與媒體都使用阿拉伯語。",
     "greeting": "السلام عليكم",
     "pronunciation": "as-sa-LAA-mu a-LAI-kum"
    },
    {
     "name": "柏柏語（阿馬齊格語）",
     "percent": 8,
-    "description": "納富薩山區、祖瓦拉與南部圖阿雷格人等使用。",
+    "description": "柏柏語（阿馬齊格語）是利比亞最古老的語言，使用者主要在西北部的內富薩山區、祖瓦拉，以及南部撒哈拉的圖阿雷格人與圖布人地區。格達費時期否認阿馬齊格人的獨立身分並限制其語言，2011年革命後阿馬齊格社群積極復興語言，在其聚居區的學校開始教授提非納字母。",
     "greeting": "Azul",
     "pronunciation": "a-ZOOL"
    }
   ],
-  "history": "柏柏語是北非的原住民語言，阿拉伯人征服後阿拉伯語逐漸普及。義大利殖民時期（1911–1943）留下許多義大利語詞彙。格達費時期曾壓制柏柏語，2011年後柏柏文化與語言重獲重視。"
+  "history": "利比亞原住民柏柏爾人（阿馬齊格人）使用柏柏語，古代還有提非納字母。腓尼基人與希臘人在沿海殖民後帶來布匿語與希臘語，羅馬時期拉丁語也進入城市。7世紀阿拉伯征服後，11世紀巴努希拉勒與巴努蘇萊姆等阿拉伯部族大規模遷入，使利比亞大部分地區阿拉伯化。義大利殖民時期義大利語影響了部分詞彙。格達費政權推行泛阿拉伯主義，禁止柏柏語在公共場合使用；2011年後阿馬齊格語才重新出現在學校與媒體中。"
  },
  "food": {
   "ranking": [
    {
     "name": "巴辛",
     "localName": "بازين (Bazeen)",
-    "description": "以大麥粉製成的圓頂狀糰，周圍淋上番茄羊肉燉汁。",
-    "history": "利比亞的傳統料理，以手共食。",
+    "description": "以大麥粉煮成的硬麵糰堆成圓頂狀，四周淋上番茄羊肉醬汁，配水煮蛋與馬鈴薯，用右手抓食。",
+    "history": "Bazeen 被視為利比亞國菜，源於柏柏爾人以大麥為主食的傳統。大麥比小麥耐旱，適合利比亞乾燥的氣候，因此長期是鄉村居民的主要糧食。傳統上全家人圍坐在同一個大盤前，用右手捏著麵糰沾醬汁吃，這種共食方式在家族聚會與節慶時尤其常見。",
     "wiki": "Bazeen",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Bazin.jpg/960px-Bazin.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Bazin.jpg",
@@ -57,8 +57,8 @@
    {
     "name": "庫斯庫斯",
     "localName": "كسكسي (Couscous)",
-    "description": "以粗粒小麥粉蒸成的小米粒狀主食，配羊肉與蔬菜。",
-    "history": "北非共同的傳統主食。",
+    "description": "以粗粒小麥粉搓成細小顆粒蒸熟，配以羊肉、南瓜、鷹嘴豆等燉菜醬汁。口感鬆軟，吸收了燉菜醬汁的香氣。",
+    "history": "庫斯庫斯源自北非柏柏爾人，最早的文字紀錄見於13世紀的阿拉伯食譜，考古發現也顯示更早已存在。在利比亞，週五家庭午餐常吃庫斯庫斯，婚禮與節慶中也會大量製作。2020年阿爾及利亞、摩洛哥、突尼西亞與茅利塔尼亞聯合申報的「庫斯庫斯」被列入聯合國教科文組織非物質文化遺產，顯示它是整個馬格里布共同的飲食文化。",
     "wiki": "Couscous",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Moroccan_cuscus%2C_from_Casablanca%2C_September_2018.jpg/960px-Moroccan_cuscus%2C_from_Casablanca%2C_September_2018.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Moroccan_cuscus,_from_Casablanca,_September_2018.jpg",
@@ -67,8 +67,8 @@
    {
     "name": "阿西達",
     "localName": "عصيدة (Asida)",
-    "description": "以小麥粉煮成的濃稠糊，淋上椰棗糖漿或奶油。",
-    "history": "在開齋節與先知誕辰節等場合食用。",
+    "description": "以麵粉加水煮成的濃稠麵糊團，中間淋上椰棗糖漿（rub）與奶油，趁熱用手吃。口感綿密甜美，常在家庭聚會中全家共享。",
+    "history": "Asida 是阿拉伯半島與北非廣泛流傳的古老料理，以簡單的麵粉製作，熱量高又容易消化。在利比亞，它與慶祝生命的時刻緊密相連：嬰兒出生後的第七天、產婦坐月子期間，以及先知穆罕默德誕辰（Mawlid）時，家家戶戶都會製作 asida。",
     "wiki": "Asida",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/%D8%B9%D8%B5%D9%8A%D8%AF%D8%A9-%D9%82%D8%B7%D9%8A%D9%81%D9%8A%D8%A9.jpg/960px-%D8%B9%D8%B5%D9%8A%D8%AF%D8%A9-%D9%82%D8%B7%D9%8A%D9%81%D9%8A%D8%A9.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:%D8%B9%D8%B5%D9%8A%D8%AF%D8%A9-%D9%82%D8%B7%D9%8A%D9%81%D9%8A%D8%A9.jpg",
@@ -77,8 +77,8 @@
    {
     "name": "利比亞湯",
     "localName": "شربة ليبية (Sharba libiya)",
-    "description": "以羊肉、番茄、鷹嘴豆與細麵熬煮的香料湯。",
-    "history": "齋戒月開齋時必備的湯品。",
+    "description": "以羊肉、番茄、洋蔥、鷹嘴豆與細小麵粒（或米粒狀麵）煮成的紅色香料湯，加薄荷與檸檬。",
+    "history": "Sharba libiya 是利比亞齋戒月開齋時最重要的湯品，幾乎每個家庭在齋月期間每天傍晚都會煮。它使用的細麵粒（類似義大利的 orzo）一般認為受到1911–1943年義大利殖民時期的飲食影響。一碗熱湯配上椰棗與牛奶，是利比亞人結束一天齋戒的傳統方式。",
     "wiki": "Shurpa",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Bean_soup_with_tomatoes_and_red_peppers.jpeg/960px-Bean_soup_with_tomatoes_and_red_peppers.jpeg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Bean_soup_with_tomatoes_and_red_peppers.jpeg",
@@ -87,8 +87,8 @@
    {
     "name": "烏斯班",
     "localName": "عصبان (Usban)",
-    "description": "以香料米飯、香草與肉填入羊腸製成的香腸。",
-    "history": "宰牲節的傳統料理。",
+    "description": "把羊腸或羊胃填入米飯、切碎的羊肉與內臟、香草與香料，縫起來後燉煮或蒸熟的香腸。口味香濃，常配庫斯庫斯或米飯一起吃。",
+    "history": "Usban 是利比亞宰牲節（Eid al-Adha）的代表性料理：宰牲節時每個家庭宰殺羊隻，並把內臟、腸子都物盡其用。婦女們會在節日期間一起清洗羊腸、調製內餡，製作 usban 是需要團隊合作的家庭活動。突尼西亞與阿爾及利亞也有類似的料理。",
     "wiki": "Usban",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Tunisian_Osban_couscous.JPG/960px-Tunisian_Osban_couscous.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Tunisian_Osban_couscous.JPG",

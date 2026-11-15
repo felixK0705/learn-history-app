@@ -7,20 +7,20 @@
    {
     "name": "天主教",
     "percent": 63,
-    "description": "西班牙殖民時期傳入的主要宗教。"
+    "description": "1510年西班牙人在巴拿馬地峽建立聖瑪利亞拉安蒂瓜德爾達連，1513年巴爾博亞橫越地峽看見太平洋，巴拿馬成為西班牙運送秘魯白銀的轉運站，天主教隨殖民統治傳入。1519年建立的巴拿馬城是美洲太平洋岸最早的主教座堂所在地之一。獨立後天主教仍是主流，2019年巴拿馬主辦世界青年日，教宗方濟各到訪，但近年比例逐漸下降。"
    },
    {
     "name": "福音派／基督新教",
     "percent": 25,
-    "description": "近數十年快速成長。"
+    "description": "新教最早由19世紀來自牙買加、巴貝多等英屬加勒比地區的黑人勞工帶入，他們在1850年代興建巴拿馬鐵路、1904–1914年興建巴拿馬運河時大量移入，帶來聖公會、衛理宗與浸信會。1904–1999年美國管理運河區期間，美國教會也在當地活動。20世紀後期五旬節派與福音派大型教會迅速擴張，使新教比例升至四分之一。"
    },
    {
     "name": "無宗教",
     "percent": 7,
-    "description": "未認同任何宗教的人口。"
+    "description": "無宗教人口多見於巴拿馬城等都市中受高等教育的年輕人，反映了拉丁美洲近年的世俗化趨勢。巴拿馬作為國際航運與金融中心，城市化程度高，國際交流頻繁，也使部分年輕人遠離傳統教會。"
    }
   ],
-  "background": "西班牙殖民使天主教成為主流。十九世紀末至二十世紀初，修建鐵路與運河時從加勒比海引進的非裔勞工帶來新教，近年福音派教會在各地快速成長。"
+  "background": "巴拿馬原住民信仰祖靈與自然神靈，庫納族等至今保留傳統儀式。16世紀西班牙征服後天主教成為主流，巴拿馬城設有美洲大陸最早的主教區之一。19–20世紀興建鐵路與運河時，大量加勒比黑人勞工帶來新教。1904–1999年美國管理運河區，帶來美國教會的影響。今日天主教仍為最大宗教，但福音派快速成長。"
  },
  "language": {
   "official": "西班牙語是官方語言。",
@@ -28,27 +28,27 @@
    {
     "name": "西班牙語",
     "percent": 93,
-    "description": "全國通用語言。",
+    "description": "西班牙語在1510年代西班牙殖民後傳入，巴拿馬作為西班牙帝國的運輸要道，西班牙語成為行政、宗教與商業語言，原住民語言被壓縮至偏遠地區。1821年脫離西班牙後加入大哥倫比亞，1903年獨立，西班牙語始終是官方語言與絕大多數人的母語。",
     "greeting": "Hola",
     "pronunciation": "OH-la"
    },
    {
     "name": "英語",
     "percent": 3,
-    "description": "加勒比海裔社群使用，在商業與運河相關產業中也十分普遍。",
+    "description": "英語由1850年代興建巴拿馬鐵路、1904–1914年興建運河時移入的英屬加勒比黑人勞工帶入，形成講英語克里奧爾語的西印第安社群，集中在科隆與博卡斯德爾托羅。1904–1999年美國管理運河區，使英語在運河相關產業中十分重要。今日英語是商業與觀光的重要外語，但母語人口只約3%。",
     "greeting": "Hello",
     "pronunciation": "heh-LOH"
    }
   ],
-  "history": "殖民前當地有古納、恩加貝等原住民語言，至今仍在自治區中使用。西班牙殖民使西班牙語成為主流；修建運河時大量加勒比海勞工移入，加上美國管理運河區近百年，使英語在巴拿馬具有一定影響力。"
+  "history": "巴拿馬在西班牙征服前有庫納、恩格貝、恩貝拉等原住民語言，至今仍在自治區（comarca）中使用。16世紀起西班牙語成為主流語言。19–20世紀興建鐵路與運河時，加勒比勞工帶來英語克里奧爾語，運河區的美國管理也強化了英語的地位。1999年運河移交巴拿馬後，西班牙語仍是唯一官方語言，英語則是重要的商業語言。"
  },
  "food": {
   "ranking": [
    {
     "name": "桑科丘湯",
     "localName": "Sancocho",
-    "description": "以雞肉、山藥、玉米與香菜熬煮的湯。",
-    "history": "被視為巴拿馬國菜，常在週末與節慶時食用。",
+    "description": "以雞肉、山藥（ñame）、玉米、洋蔥與巴拿馬特有的香菜（culantro）熬煮的清湯，常配白飯一起吃，口味清爽。",
+    "history": "桑科丘湯源自西班牙加那利群島的燉菜，隨殖民者傳入加勒比與南美，各國都有不同版本。巴拿馬版本以雞肉與山藥為主，並使用一種葉片比香菜更寬、香氣更強的「culantro」，這是美洲原生的香草。它被視為巴拿馬的國湯，民間相信它能治療宿醉與感冒，在節慶或深夜派對後常吃。",
     "wiki": "Sancocho",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Sancocho_de_espinazo_de_cerdo.jpg/960px-Sancocho_de_espinazo_de_cerdo.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Sancocho_de_espinazo_de_cerdo.jpg",
@@ -57,8 +57,8 @@
    {
     "name": "雞肉飯",
     "localName": "Arroz con pollo",
-    "description": "將雞肉與米、蔬菜一同烹煮的料理。",
-    "history": "巴拿馬家庭聚會與生日宴的常見菜色。",
+    "description": "將雞肉與米、番茄醬汁、甜椒、豌豆、橄欖一起燉煮，用胭脂樹籽或番紅花染成黃色，米飯吸飽雞汁。",
+    "history": "雞肉飯源自西班牙，與海鮮燉飯有共同的根源，16世紀後隨西班牙殖民者傳入拉丁美洲。胭脂樹籽是美洲原生的染色香料，取代了昂貴的番紅花。在巴拿馬，雞肉飯是生日派對、婚禮與家庭聚會時最常見的料理，常以大鍋烹煮招待眾多賓客。",
     "wiki": "Arroz con pollo",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Arroz-con-Pollo.jpg/960px-Arroz-con-Pollo.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Arroz-con-Pollo.jpg",
@@ -67,8 +67,8 @@
    {
     "name": "卡里馬尼奧拉",
     "localName": "Carimañola",
-    "description": "以木薯泥包肉餡油炸的點心。",
-    "history": "巴拿馬常見的早餐小吃。",
+    "description": "將煮熟的木薯搗成泥，包入以番茄、洋蔥調味的碎牛肉餡，捏成兩頭尖的魚雷形後油炸，外酥內軟。",
+    "history": "木薯是美洲原住民數千年來種植的作物，而肉餡與油炸的做法則來自西班牙殖民者，卡里馬尼奧拉因此是兩種飲食文化的融合。它常見於巴拿馬與哥倫比亞的加勒比海沿岸，是巴拿馬人早餐與街頭攤販最常見的點心，常配咖啡食用。",
     "wiki": "Carimañola",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Barranquilla_-_Carima%C3%B1olas.jpg/960px-Barranquilla_-_Carima%C3%B1olas.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Barranquilla_-_Carima%C3%B1olas.jpg",
@@ -77,8 +77,8 @@
    {
     "name": "炸大蕉",
     "localName": "Patacones",
-    "description": "將青大蕉切片壓扁後兩次油炸。",
-    "history": "加勒比海與中美洲常見的配菜。",
+    "description": "將青色未熟的大蕉切成厚片，先炸軟後用木板或杯底壓扁，再炸一次至酥脆，撒鹽後當配菜或點心食用。",
+    "history": "大蕉原產東南亞，16世紀由葡萄牙與西班牙人經非洲引入加勒比與中美洲，非洲奴隸對大蕉的烹調方式影響了當地飲食。兩次油炸的炸大蕉在加勒比地區廣泛流行，在巴拿馬幾乎是每頓飯的標準配菜，也常搭配炸魚與檸檬醃魚一起食用。",
     "wiki": "Tostones",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Tostones.JPG/960px-Tostones.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Tostones.JPG",
@@ -87,8 +87,8 @@
    {
     "name": "檸檬醃魚",
     "localName": "Ceviche",
-    "description": "以檸檬汁醃漬生魚或海鮮，加入洋蔥與辣椒。",
-    "history": "巴拿馬市魚市場的招牌料理。",
+    "description": "將白肉魚、蝦或章魚切小塊，以萊姆汁醃漬，加入切碎的洋蔥、辣椒與香菜，酸味讓海鮮變得像煮熟一樣，口感清爽。",
+    "history": "檸檬醃魚源自秘魯，那裡的原住民早已用酸性果汁醃魚，西班牙人帶來萊姆與洋蔥後發展成今日的形式。巴拿馬位於兩大洋之間，海鮮豐富，檸檬醃魚在巴拿馬城的海鮮市場（Mercado de Mariscos）周邊攤位尤其有名，常以小杯盛裝販售，搭配餅乾或炸大蕉食用。",
     "wiki": "Ceviche",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Cebiche_de_corvina.JPG/960px-Cebiche_de_corvina.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Cebiche_de_corvina.JPG",

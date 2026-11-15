@@ -7,25 +7,25 @@
    {
     "name": "基督新教",
     "percent": 49,
-    "description": "包括五旬節派、復臨安息日會、聖公會等。"
+    "description": "1763 年《巴黎條約》後格瑞那達由法國割讓給英國，1783 年英國統治確立，聖公會成為殖民官方教會，之後衛理公會、長老會等也相繼傳入。20 世紀起基督復臨安息日會與五旬節派教會快速成長，使新教各派合計成為最大的宗教群體。"
    },
    {
     "name": "天主教",
     "percent": 36,
-    "description": "法國殖民時期留下的重要宗教。"
+    "description": "1649 年法國人從馬丁尼克來到格瑞那達，征服原住民卡里納戈人，建立甘蔗與可可種植園，天主教隨之傳入。英國接管後雖以聖公會為官方教會，但法裔居民與他們的非洲奴隸後代已形成穩固的天主教社群，天主教學校至今仍在教育中扮演重要角色。"
    },
    {
     "name": "無宗教",
     "percent": 6,
-    "description": "未認同任何宗教的人口。"
+    "description": "無宗教者多為城市中的年輕人，與教育普及、海外留學及網路文化影響有關。由於教會在社區生活中仍很重要，比例並不高。"
    },
    {
     "name": "拉斯塔法里教",
     "percent": 1,
-    "description": "規模較小的宗教運動。"
+    "description": "拉斯塔法里教 1930 年代起源於牙買加，1970 年代隨雷鬼音樂傳入格瑞那達，吸引了部分追求非洲認同的年輕人。1979 年莫里斯・畢曉普領導的革命時期，部分拉斯塔信徒曾參與其中，但信徒始終是少數。"
    }
   ],
-  "background": "格瑞那達先由法國殖民，天主教隨之傳入，1763年後英國取得統治權，帶來聖公會等新教。二十世紀後五旬節派與復臨安息日會等教派成長迅速。"
+  "background": "格瑞那達原為卡里納戈人居住，1651 年法軍征服時，許多卡里納戈人在北部的索特爾跳崖以免被俘，原住民信仰隨之消失。法國殖民帶來天主教，1763 年後英國統治帶來聖公會與各新教派別，被販運來的非洲奴隸在兩種殖民文化中接受基督教。1974 年獨立後宗教自由，今日新教與天主教合計超過八成，並有少量來自印度契約勞工的印度教與穆斯林後裔。"
  },
  "language": {
   "official": "英語是官方語言。",
@@ -33,34 +33,34 @@
    {
     "name": "格瑞那達克里奧爾英語",
     "percent": 90,
-    "description": "以英語為基礎的克里奧爾語，是日常生活語言。",
+    "description": "格瑞那達克里奧爾英語在英國殖民時期的種植園中形成，結合了英語詞彙與西非語言的語法特點，也保留不少法語借詞。它是絕大多數格瑞那達人在家中與日常生活中使用的語言，與標準英語之間形成連續的語言光譜。",
     "greeting": "Good mornin'",
     "pronunciation": "gud MAW-nin"
    },
    {
     "name": "英語",
     "percent": 9,
-    "description": "官方語言，用於政府與教育。",
+    "description": "1763 年格瑞那達歸英國統治後，英語成為行政、法律與學校語言，1974 年獨立後仍是唯一官方語言。正式場合、媒體與教育都使用標準英語，但以它為第一語言的人相對較少。",
     "greeting": "Hello",
     "pronunciation": "heh-LOH"
    },
    {
     "name": "格瑞那達克里奧爾法語",
     "percent": 1,
-    "description": "法國殖民時期形成的克里奧爾語，現多為年長者使用。",
+    "description": "1649–1763 年法國統治期間，種植園中形成了以法語為基礎的克里奧爾語（Patois）。英國接管後英語逐漸取代它，20 世紀時只剩鄉村地區的老人使用，如今已瀕臨消失，只在一些地名與詞彙中留下痕跡，例如格林維爾、索特爾等地名。",
     "greeting": "Bonjou",
     "pronunciation": "bon-ZHOO"
    }
   ],
-  "history": "法國殖民時期當地形成以法語為基礎的克里奧爾語。英國統治後英語逐漸取代法語系克里奧爾語，成為行政與日常語言的基礎。"
+  "history": "格瑞那達原住民卡里納戈人的語言隨著法國征服而消失。17 世紀中葉起法國殖民使法語克里奧爾語成為種植園的共同語，1763 年改歸英國統治後，英語逐步取代法語，並形成以英語為基礎的克里奧爾語。19 世紀中葉印度契約勞工的到來也帶入少量印度詞彙。今日英語是官方語言，克里奧爾英語是日常口語，法語克里奧爾語則幾近絕跡。"
  },
  "food": {
   "ranking": [
    {
     "name": "奧爾當",
     "localName": "Oil down",
-    "description": "以麵包果、鹹肉、雞肉、餃子與蔬菜在椰奶中燉煮的一鍋料理。",
-    "history": "格瑞那達國菜，名稱來自椰奶被完全吸收後鍋底留下的油。",
+    "description": "將麵包果、鹹肉、雞肉、麵糰子與卡拉魯葉放入椰奶中，以薑黃調味後慢煮，直到椰奶完全被吸收。",
+    "history": "名稱來自烹調過程：椰奶慢慢被食材吸收，最後鍋底只剩一層油（oil down）。麵包果是 1793 年布萊船長從太平洋運到加勒比海的作物，鹹肉則是殖民時期進口給奴隸的配給食品，這道菜因此濃縮了格瑞那達的殖民歷史。它被視為格瑞那達的國菜，常在海灘或社區聚會中以大鍋在柴火上集體烹煮，是分享與團聚的象徵。",
     "wiki": "Oil down",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Cooking_oil_down_03.jpg/960px-Cooking_oil_down_03.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Cooking_oil_down_03.jpg",
@@ -69,8 +69,8 @@
    {
     "name": "卡拉魯",
     "localName": "Callaloo",
-    "description": "以芋頭葉、秋葵與椰奶燉煮的濃湯。",
-    "history": "源自西非飲食傳統的加勒比海湯品。",
+    "description": "以芋頭葉（dasheen）、秋葵、椰奶與香料燉成的綠色濃湯，有時加入螃蟹或鹹肉。",
+    "history": "這類綠葉濃湯源自西非，被販運到加勒比海的奴隸以當地可取得的芋頭葉與秋葵重現家鄉的燉葉菜。在格瑞那達，卡拉魯也指芋頭葉本身，常加入奧爾當等料理中。它是週日家庭午餐的常見湯品，象徵非裔加勒比人的飲食傳統。",
     "wiki": "Callaloo",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Callaloo.jpg/960px-Callaloo.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Callaloo.jpg",
@@ -79,8 +79,8 @@
    {
     "name": "肉豆蔻",
     "localName": "Nutmeg",
-    "description": "格瑞那達特產的香料，用於甜點、飲品與果醬。",
-    "history": "十九世紀引進後成為主要出口作物，國旗上也繪有肉豆蔻。",
+    "description": "肉荳蔻是格瑞那達最著名的香料，果仁磨碎後用於甜點、飲料與醬汁，紅色的假種皮則製成肉荳蔻皮香料。",
+    "history": "肉荳蔻原產印尼的班達群島，19 世紀中葉（一般說法是 1843 年）由英國人引進格瑞那達，很快成為主要的經濟作物，使格瑞那達被稱為「香料之島」，一度是世界第二大肉荳蔻產地。1974 年獨立時，肉荳蔻被畫入國旗。2004 年伊凡颶風摧毀了大部分肉荳蔻樹，重創當地經濟。今天島上仍有許多以肉荳蔻製作的果醬、糖漿與萊姆酒。",
     "wiki": "Nutmeg",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Biji_Pala_Bubuk.jpg/960px-Biji_Pala_Bubuk.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Biji_Pala_Bubuk.jpg",
@@ -89,8 +89,8 @@
    {
     "name": "炸麵餅",
     "localName": "Bakes",
-    "description": "以麵團油炸或烘烤成的小餅，常配鹹魚。",
-    "history": "加勒比海常見的早餐麵食。",
+    "description": "將麵粉、泡打粉、鹽與水揉成麵團，壓成小圓餅後油炸或烘烤，外酥內軟。",
+    "history": "炸麵餅與英國殖民時期輸入的麵粉有關，殖民地居民以便宜的進口麵粉製作可以快速填飽肚子的餅。它最經典的吃法是搭配鹹魚當早餐，也常帶去學校或工作地點當便當。這種簡單的食物在英語加勒比海各島都很普遍，是格瑞那達人日常飲食的一部分。",
     "wiki": "Johnnycake",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Johnnycakes.jpg/960px-Johnnycakes.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Johnnycakes.jpg",
@@ -99,8 +99,8 @@
    {
     "name": "羅地",
     "localName": "Roti",
-    "description": "以薄餅包裹咖哩肉或蔬菜。",
-    "history": "由印度契約勞工後代帶來的料理，在格瑞那達十分普遍。",
+    "description": "以麵粉製成的薄餅，包入咖哩雞肉、馬鈴薯或鷹嘴豆，捲起來像捲餅一樣食用。",
+    "history": "1857 年起，英國殖民政府為了補充廢奴後的種植園勞動力，從印度引進契約勞工到格瑞那達，他們帶來了羅地與咖哩。雖然印度裔人口在格瑞那達比例不高，但羅地已融入當地飲食，成為快餐店與家庭常見的午餐，反映了加勒比海地區多元移民的歷史。",
     "wiki": "Roti",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/2020-05-08_19_34_28_Chapati_being_made_in_a_pan_in_the_Franklin_Farm_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg/960px-2020-05-08_19_34_28_Chapati_being_made_in_a_pan_in_the_Franklin_Farm_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:2020-05-08_19_34_28_Chapati_being_made_in_a_pan_in_the_Franklin_Farm_section_of_Oak_Hill,_Fairfax_County,_Virginia.jpg",

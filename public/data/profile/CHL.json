@@ -7,25 +7,25 @@
    {
     "name": "天主教",
     "percent": 50,
-    "description": "仍是最大宗教，但近二十年比例明顯下降。"
+    "description": "天主教隨1541年西班牙征服者佩德羅・德瓦爾迪維亞建立聖地亞哥而傳入，殖民時期是唯一合法宗教。1818年智利獨立後，天主教仍為國教，直到1925年憲法正式實行政教分離。1973–1990年皮諾契特軍政府時期，天主教會設立「團結代牧處」保護人權受害者，享有很高的社會聲望；但2018年爆發的神職人員性侵醜聞嚴重打擊教會，比例持續下降。"
    },
    {
     "name": "無宗教",
     "percent": 30,
-    "description": "年輕世代比例快速上升。"
+    "description": "無宗教人口在近數十年快速增加，尤其在年輕世代與大城市中。1990年民主化後社會逐漸自由化，2004年離婚合法化、2017年部分墮胎除罪化等議題上，社會與教會的立場分歧，加上2018年教會性侵醜聞，使許多人脫離教會，無宗教比例已升至約三成。"
    },
    {
     "name": "新教（福音派）",
     "percent": 17,
-    "description": "以五旬節派為主，在中下階層中影響深遠。"
+    "description": "新教在19世紀隨德國、英國移民與美國傳教士傳入，1909年衛理公會牧師威利斯・胡佛在瓦爾帕萊索發起五旬節派復興運動，成立智利五旬節衛理會，是拉丁美洲最早的五旬節運動之一。20世紀五旬節派在城市貧民與勞工階層中快速成長，2008年起智利把10月31日定為「福音派與新教教會日」國定假日。"
    },
    {
     "name": "其他",
     "percent": 3,
-    "description": "包含耶和華見證人、摩門教與馬普切傳統信仰等。"
+    "description": "其他宗教包括猶太教、伊斯蘭教、耶和華見證人與摩門教等，以及原住民馬普切人的傳統信仰。馬普切人崇拜祖靈與自然神靈，由女性薩滿「馬奇」主持宗教儀式，例如新年節慶「We Tripantu」（6月24日前後）。"
    }
   ],
-  "background": "16世紀西班牙征服後天主教成為殖民社會核心，獨立後仍長期為國教，1925年憲法實施政教分離。20世紀初五旬節運動在瓦爾帕萊索興起並向全國擴展。近年教會醜聞與社會變遷使天主教比例下滑。"
+  "background": "西班牙人到來前，智利原住民如馬普切人與艾馬拉人有自己的祖靈與自然信仰。1541年西班牙殖民後，天主教隨征服者與傳教士傳入，但南部的馬普切人長期抵抗西班牙統治，直到19世紀末智利政府發動「阿勞卡尼亞平定」戰爭才被併入。1925年憲法實行政教分離，20世紀五旬節派在勞工階層中擴張。1973–1990年軍政府時期教會成為人權保護的力量，1990年民主化後世俗化加速。"
  },
  "language": {
   "official": "官方語言事實上為西班牙語。",
@@ -33,27 +33,27 @@
    {
     "name": "西班牙語",
     "percent": 99,
-    "description": "全國通用，智利西班牙語語速快、俚語多。",
+    "description": "西班牙語隨1541年西班牙殖民傳入，殖民時期是行政與教會語言，1818年獨立後成為國家語言。智利西班牙語以說話速度快、大量使用俚語（如「cachai」、「po」）著稱。由於原住民語言在殖民、19世紀的戰爭與同化政策下大幅萎縮，西班牙語已成為約99%人口的母語。",
     "greeting": "Hola",
     "pronunciation": "o-la"
    },
    {
     "name": "馬普切語（馬普敦貢語）",
     "percent": 1,
-    "description": "南部馬普切原住民的語言。",
+    "description": "馬普切語（馬普敦貢語）是南部馬普切人的語言，馬普切人在殖民時期成功抵抗西班牙長達三百年，1641年西班牙與馬普切人簽訂《基林條約》承認比奧比奧河以南的自治。但19世紀末智利政府軍事占領阿勞卡尼亞後，馬普切人失去土地並被迫同化，馬普切語的使用者大幅減少，今日約只有1%的人口能流利使用。",
     "greeting": "Mari mari",
     "pronunciation": "ma-ri ma-ri"
    }
   ],
-  "history": "馬普切人曾長期抵抗西班牙與智利的征服，直至19世紀末「阿勞卡尼亞平定」後其土地才被併入。西班牙語隨殖民與國家教育普及，原住民語言使用者逐漸減少，近年推動復振。"
+  "history": "智利在西班牙人到來前有多種原住民語言，北部有艾馬拉語與克丘亞語，中南部有馬普切語，南端則有雅甘語等。1541年起西班牙殖民，西班牙語成為主流語言。19世紀智利政府推動以西班牙語為主的國家教育，並在19世紀末征服阿勞卡尼亞後加速同化馬普切人。1993年《原住民法》開始承認原住民語言與文化，並推動雙語教育計畫，但許多原住民語言已瀕臨消失，例如雅甘語的最後一位母語使用者在2022年去世。"
  },
  "food": {
   "ranking": [
    {
     "name": "智利肉餡餅",
     "localName": "Empanada de pino",
-    "description": "以牛絞肉、洋蔥、橄欖、葡萄乾與水煮蛋為餡烤製的大餡餅。",
-    "history": "隨西班牙殖民傳入，每年9月國慶節（Fiestas Patrias）家家必吃。",
+    "description": "烘烤的半月形餡餅，內餡為牛絞肉與大量洋蔥炒成的「pino」，加入一顆黑橄欖、水煮蛋與葡萄乾。",
+    "history": "智利肉餡餅源自西班牙的恩潘納達，隨16世紀西班牙殖民傳入，「pino」一詞可能源自馬普切語中的「pinu」（碎片）。它在9月18日的國慶節（Fiestas Patrias，紀念1810年成立第一屆執政委員會）期間最受歡迎，家家戶戶都會購買或自製。週日家庭午餐中，肉餡餅也是常見的開胃菜。",
     "wiki": "Empanada",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Tapa_de_empanadillitas.JPG/960px-Tapa_de_empanadillitas.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Tapa_de_empanadillitas.JPG",
@@ -62,8 +62,8 @@
    {
     "name": "玉米派",
     "localName": "Pastel de choclo",
-    "description": "以牛肉、雞肉餡鋪上甜玉米泥，在陶碗中烘烤。",
-    "history": "結合原住民的玉米與西班牙的肉餡烹調，是夏季代表菜。",
+    "description": "將甜玉米磨成泥後與羅勒混合，鋪在牛絞肉、雞肉、橄欖與水煮蛋上，放入陶碗烤至表面金黃。",
+    "history": "玉米派結合了原住民的玉米飲食與西班牙人帶來的肉類、橄欖與雞蛋，是殖民時期融合飲食的代表。「choclo」一詞源自克丘亞語，意為新鮮玉米。它是智利夏季玉米收成季節（1–3月）最受歡迎的家常菜，傳統上用陶碗（paila de greda）盛裝烘烤，智利中部的波麥爾陶器鎮生產的陶碗最有名。",
     "wiki": "Pastel de choclo",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Pastel_de_choclo.jpg/960px-Pastel_de_choclo.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Pastel_de_choclo.jpg",
@@ -72,8 +72,8 @@
    {
     "name": "智利燉湯",
     "localName": "Cazuela",
-    "description": "以牛肉或雞肉、馬鈴薯、南瓜與玉米燉成的清湯。",
-    "history": "融合馬普切人的燉菜與西班牙烹調，是家常料理。",
+    "description": "將牛肉、雞肉或豬肉與馬鈴薯、南瓜、玉米和米或細麵一起燉煮的清湯，每人碗中會有一大塊肉與完整的蔬菜。",
+    "history": "智利燉湯源自西班牙的燉菜傳統，名稱來自西班牙的「cazuela」（陶鍋），與原住民的玉米、馬鈴薯、南瓜等作物結合。由於材料豐富又耐飽，它是智利家庭冬季最常見的料理。在鄉村地區，它也是招待客人與節慶的傳統菜。",
     "wiki": "Cazuela",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Cazuela_ecuatoriana.jpg/960px-Cazuela_ecuatoriana.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Cazuela_ecuatoriana.jpg",
@@ -82,8 +82,8 @@
    {
     "name": "庫蘭托地坑烤",
     "localName": "Curanto",
-    "description": "在地坑中以熱石烘烤貝類、肉類與馬鈴薯，蓋上大葉片。",
-    "history": "南部奇洛埃島的傳統料理，起源可追溯至數千年前的原住民。",
+    "description": "在地上挖坑放入燒熱的石頭，鋪上貝類、肉類、香腸、馬鈴薯與麵餅，再蓋上大葉片與泥土悶熟。",
+    "history": "庫蘭托是南部奇洛埃島的傳統料理，名稱源自馬普切語「kurantu」（石頭）。奇洛埃島的原住民（丘諾人與威利切人）很早就以地坑燒石烹調海鮮，17–18世紀西班牙傳教士與移民到來後，又加入了豬肉、香腸與馬鈴薯麵餅。今天庫蘭托是奇洛埃島社區節慶的重要活動，常由社區成員集體準備。",
     "wiki": "Curanto",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Destape_de_curanto.JPG/960px-Destape_de_curanto.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Destape_de_curanto.JPG",
@@ -92,8 +92,8 @@
    {
     "name": "智利熱狗",
     "localName": "Completo",
-    "description": "熱狗上鋪滿番茄、酪梨泥與大量美乃滋。",
-    "history": "20世紀中期起在聖地牙哥流行，是最受歡迎的速食之一。",
+    "description": "加長的軟熱狗麵包夾入香腸，再鋪上大量番茄丁、酪梨泥與美乃滋，有時加德國酸菜，分量十足、口感濃郁。",
+    "history": "智利熱狗的典型版本「意大利式」（italiano）因番茄、酪梨與美乃滋的紅、綠、白三色對應義大利國旗而得名。據說它在1920年代由一位曾在美國工作的智利人愛德華多・布朗在聖地亞哥的「Quick Lunch Bahamondes」餐廳推出。智利是全世界最大的酪梨消費國之一，酪梨泥是智利熱狗不可或缺的配料，今天它是智利最受歡迎的速食。",
     "wiki": "Completo",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Completo_italiano.jpg/960px-Completo_italiano.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Completo_italiano.jpg",

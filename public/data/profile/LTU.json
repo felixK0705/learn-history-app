@@ -7,25 +7,25 @@
    {
     "name": "天主教",
     "percent": 74,
-    "description": "立陶宛民族認同的重要支柱。"
+    "description": "1387年大公約蓋拉為與波蘭聯合而率領立陶宛改信天主教，此後天主教與波蘭-立陶宛聯邦的文化緊密結合。俄羅斯帝國與蘇聯統治期間，天主教會成為保存立陶宛語言與民族認同的力量，1980年代教會也支持獨立運動，因此至今仍是絕大多數人的信仰。"
    },
    {
     "name": "無宗教",
     "percent": 6,
-    "description": "未認同任何宗教的人口。"
+    "description": "蘇聯統治的50年間推行無神論教育，關閉教堂並迫害神職人員，使部分人沒有宗教歸屬。不過與鄰國愛沙尼亞與拉脫維亞相比，立陶宛的天主教認同較強，無宗教者比例相對較低。"
    },
    {
     "name": "東正教",
     "percent": 4,
-    "description": "主要為俄羅斯裔與白俄羅斯裔居民。"
+    "description": "東正教信徒主要是俄羅斯人、白俄羅斯人與烏克蘭人，多為19世紀俄羅斯帝國統治時期與蘇聯時期遷入的移民後代，集中在維爾紐斯與東部的維薩吉納斯等工業城市。"
    },
    {
     "name": "舊禮儀派",
     "percent": 1,
-    "description": "十七世紀自俄羅斯東正教分出的教派。"
+    "description": "舊禮儀派是17世紀拒絕俄羅斯東正教尼康牧首禮儀改革的信徒，為逃避俄國政府的迫害而遷到當時屬於波蘭-立陶宛聯邦的立陶宛地區。他們保持獨特的傳統禮儀，至今仍有少數社群。"
    }
   ],
-  "background": "立陶宛是歐洲最晚接受基督教的國家，1387年大公約蓋拉為與波蘭聯姻而受洗，此前信仰波羅的多神教。天主教在沙俄與蘇聯統治時期成為抵抗外來壓迫的象徵。"
+  "background": "立陶宛是歐洲最晚接受基督教的國家。13世紀明道加斯曾短暫受洗，但大公國長期維持波羅的海多神信仰，並與條頓騎士團長期戰爭。1387年雅蓋沃（約蓋拉）大公為迎娶波蘭女王雅德維加而與波蘭聯合，立陶宛正式改信天主教。16世紀宗教改革曾一度影響貴族，但耶穌會在反宗教改革中使天主教重新鞏固。1795年起受俄羅斯帝國統治，東正教勢力擴張，天主教成為抵抗俄化的象徵；蘇聯時期（1940–1990年）宗教遭壓制，1972年的天主教地下刊物與十字架山成為反抗的象徵。"
  },
  "language": {
   "official": "立陶宛語是官方語言。",
@@ -33,34 +33,34 @@
    {
     "name": "立陶宛語",
     "percent": 85,
-    "description": "屬波羅的語族，被認為保留了許多古印歐語特徵。",
+    "description": "立陶宛語是立陶宛民族的語言，在俄羅斯帝國的出版禁令（1864–1904年）期間，靠書籍走私者與地下學校保存下來，成為19世紀民族復興的核心。1918年與1990年兩次獨立都以立陶宛語為國語，立陶宛族約佔人口八成以上，因此大部分人以其為母語。",
     "greeting": "Labas",
     "pronunciation": "LAH-bas"
    },
    {
     "name": "俄語",
     "percent": 7,
-    "description": "俄羅斯裔居民的語言，許多年長者也能說。",
+    "description": "俄語在俄羅斯帝國與蘇聯時期是行政與教育的優勢語言，蘇聯時期大量俄羅斯人移入維爾紐斯與克萊佩達等工業城市。1990年獨立後俄語地位下降，但許多中年以上的立陶宛人仍會說俄語，俄語族群主要集中在城市。",
     "greeting": "Здравствуйте",
     "pronunciation": "ZDRAST-vuy-tye"
    },
    {
     "name": "波蘭語",
     "percent": 5,
-    "description": "維爾紐斯周邊波蘭裔居民的語言。",
+    "description": "波蘭語使用者主要居住在維爾紐斯周邊地區。該地區在1920–1939年曾被波蘭佔領，戰間期維爾紐斯居民多為波蘭人與猶太人；二戰後許多波蘭人被遷往波蘭，但鄉村仍留下大量波蘭族群，他們擁有自己的學校與政黨。",
     "greeting": "Cześć",
     "pronunciation": "cheshch"
    }
   ],
-  "history": "立陶宛語是現存最古老的印歐語言之一。沙俄統治時期曾於1864至1904年禁止以拉丁字母出版立陶宛語書籍，人們冒險偷運書籍，形成著名的「書籍走私者」運動。獨立後立陶宛語成為唯一官方語言。"
+  "history": "立陶宛語屬印歐語系波羅的語族，與拉脫維亞語是現存僅有的兩種波羅的語言，因保留許多古老的印歐語特徵而備受語言學家重視。中世紀立陶宛大公國的書面語其實是古教會斯拉夫語、拉丁語與波蘭語，1547年才出版第一本立陶宛語書籍。1864–1904年俄羅斯帝國禁止以拉丁字母印刷立陶宛語書籍，立陶宛人便透過「書籍走私者」從東普魯士偷運書籍，保住了語言。1918年獨立後立陶宛語成為國語，蘇聯時期俄語影響擴大，1990年獨立後立陶宛語重新成為唯一官方語言。"
  },
  "food": {
   "ranking": [
    {
     "name": "齊柏林餃子",
     "localName": "Cepelinai",
-    "description": "以馬鈴薯泥包裹肉餡的大型餃子，配酸奶油與培根。",
-    "history": "因形似齊柏林飛艇而得名，被視為立陶宛國菜。",
+    "description": "以生馬鈴薯泥與熟馬鈴薯混合成外皮，包入絞肉或乳酪餡水煮成的大型橢圓餃子，淋上酸奶油與培根丁。",
+    "history": "Cepelinai 因形狀類似德國的齊柏林飛船而得名，這個名稱是20世紀初才出現的。馬鈴薯在18–19世紀才在立陶宛普及，逐漸取代了傳統的穀物成為主食，cepelinai 便是馬鈴薯文化的代表。它被視為立陶宛國菜，製作費時，常在週末與節日由家庭集體製作。",
     "wiki": "Cepelinai",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Cepelinai_2%2C_Vilnius%2C_Lithuania_-_Diliff.jpg/960px-Cepelinai_2%2C_Vilnius%2C_Lithuania_-_Diliff.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Cepelinai_2,_Vilnius,_Lithuania_-_Diliff.jpg",
@@ -69,8 +69,8 @@
    {
     "name": "冷甜菜湯",
     "localName": "Šaltibarščiai",
-    "description": "以甜菜根、克菲爾酸奶與黃瓜做成的粉紅色冷湯。",
-    "history": "立陶宛夏季最受歡迎的料理，維爾紐斯甚至有粉紅湯節。",
+    "description": "以醃甜菜、小黃瓜、蒔蘿與水煮蛋加入發酵牛奶（kefir）製成的亮粉紅色冷湯，配熱馬鈴薯食用。",
+    "history": "冷甜菜湯是立陶宛夏季的代表料理，源於東歐普遍以甜菜煮湯的傳統，加入發酵乳製品則是立陶宛的特色。夏季炎熱時人們喝冷湯消暑，配上熱騰騰的水煮馬鈴薯。近年維爾紐斯甚至舉辦「粉紅湯節」，冷甜菜湯成為立陶宛年輕人引以為傲的文化象徵。",
     "wiki": "Šaltibarščiai",
     "image": "https://upload.wikimedia.org/wikipedia/commons/3/37/Lurid_borscht.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Lurid_borscht.jpg",
@@ -79,8 +79,8 @@
    {
     "name": "基比奈",
     "localName": "Kibinai",
-    "description": "包有羊肉或其他肉餡的半月形烤餡餅。",
-    "history": "源自特拉凱地區的卡拉伊姆人。",
+    "description": "以酥皮麵團包入羊肉、牛肉或雞肉與洋蔥餡料烤成的半月形餡餅。外皮酥脆、內餡多汁，是特拉凱的代表性小吃。",
+    "history": "Kibinai 是卡拉伊姆人（Karaim）的傳統食物，卡拉伊姆人是信仰卡拉伊特猶太教的突厥民族，14世紀末立陶宛大公維陶塔斯從克里米亞將他們帶到特拉凱，擔任城堡守衛。他們把這種餡餅帶到立陶宛，至今特拉凱仍是品嚐 kibinai 最著名的地方，也是立陶宛多元民族歷史的見證。",
     "wiki": "Kibinai",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/02017_0065_Litauische_Kibinai_in_Schlesien.jpg/960px-02017_0065_Litauische_Kibinai_in_Schlesien.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:02017_0065_Litauische_Kibinai_in_Schlesien.jpg",
@@ -89,8 +89,8 @@
    {
     "name": "馬鈴薯布丁",
     "localName": "Kugelis",
-    "description": "以馬鈴薯泥、培根與洋蔥烘烤的布丁。",
-    "history": "立陶宛常見的家常菜。",
+    "description": "把馬鈴薯泥與培根、洋蔥、雞蛋混合後烤成的厚實布丁狀料理，配酸奶油食用。外皮焦香、內部軟嫩，口感濃郁飽足。",
+    "history": "Kugelis 的名稱可能來自意第緒語或德語的 kugel（布丁），反映東歐猶太人與德國飲食對立陶宛的影響。19世紀馬鈴薯普及後，kugelis 成為農家便宜又飽足的料理，用烤爐慢烤數小時。今天它是週日家庭聚餐與節日的常見菜色，也隨立陶宛移民流行於美國的立陶宛社群。",
     "wiki": "Kugelis",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Kugelis_2012.jpg/960px-Kugelis_2012.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Kugelis_2012.jpg",
@@ -99,8 +99,8 @@
    {
     "name": "樹蛋糕",
     "localName": "Šakotis",
-    "description": "在旋轉烤棒上逐層澆上麵糊烤成、形似樹枝的蛋糕。",
-    "history": "婚禮與節慶的傳統蛋糕。",
+    "description": "把麵糊一層層淋在旋轉的木棒上，在火上烤成有許多尖刺的樹狀蛋糕，切開有年輪般的紋路。",
+    "history": "Šakotis 與德國的樹幹蛋糕（Baumkuchen）有淵源，製作方式在波蘭-立陶宛聯邦時期與鄰近地區流傳，民間傳說它源自16世紀波娜女王的宮廷，但缺乏確切證據。它的製作需要大量雞蛋與奶油，過去是富裕家庭的節慶點心，今天則是立陶宛婚禮、生日與聖誕節的代表性蛋糕。",
     "wiki": "Šakotis",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/%C5%A0akotis_3799.jpg/960px-%C5%A0akotis_3799.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:%C5%A0akotis_3799.jpg",

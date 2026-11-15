@@ -7,20 +7,20 @@
    {
     "name": "伊斯蘭教（遜尼派）",
     "percent": 89,
-    "description": "絕大多數居民信仰，多屬馬立基學派，蘇非派傳統深厚。"
+    "description": "伊斯蘭教隨中世紀馬利帝國的貿易與學者網絡傳入幾內亞。1720 年代，富拉族穆斯林在富塔賈隆高原發動聖戰，建立以伊斯蘭法治理的富塔賈隆伊瑪目國；19 世紀後期薩摩里・杜爾建立的瓦蘇魯帝國（1878–1898 年）也以伊斯蘭為號召，抵抗法國殖民。富拉族、馬林克族與蘇蘇族因此幾乎全為穆斯林，伊斯蘭教成為全國主要信仰。"
    },
    {
     "name": "基督教",
     "percent": 7,
-    "description": "以天主教為主，多分布於南部森林地區。"
+    "description": "19 世紀末法國殖民幾內亞，天主教聖神會等差會隨之而來，信徒主要集中在東南部森林地區與首都柯那克里。1958 年獨立後，塞古・杜爾政權於 1967 年驅逐外籍傳教士，1970 年更以叛國罪逮捕柯那克里總主教琴迪姆博並監禁近九年，教會發展一度受挫。"
    },
    {
     "name": "傳統信仰",
     "percent": 2,
-    "description": "主要見於森林幾內亞地區的民族。"
+    "description": "東南部森林地區的基西人、蓋爾澤人與托馬人保留了祖靈與自然崇拜，「聖林」是成年禮與祕密社團儀式的場所。這些地區較晚接觸伊斯蘭教，傳統信仰常與基督教或伊斯蘭教並存。"
    }
   ],
-  "background": "伊斯蘭教自中世紀透過跨撒哈拉貿易與馬利帝國傳入，18世紀富塔賈隆高原的富拉人建立伊斯蘭神權國家，使信仰廣泛深入。法國殖民時期天主教傳教士主要在南部森林地區傳教。"
+  "background": "幾內亞的伊斯蘭化始於中世紀馬利帝國時期，18 世紀富塔賈隆伊瑪目國與 19 世紀薩摩里帝國使伊斯蘭教成為高原與內陸的主流。1890 年代法國殖民帶來天主教，但主要在森林地區與沿海城市發展。1958 年幾內亞在塞古・杜爾領導下脫離法國獨立，其馬克思主義政權一度壓制宗教，1984 年後宗教自由恢復，今日穆斯林佔絕大多數，森林地區仍保有傳統信仰與基督教。"
  },
  "language": {
   "official": "官方語言為法語。",
@@ -28,34 +28,34 @@
    {
     "name": "普拉爾語（富拉語）",
     "percent": 35,
-    "description": "富拉人的語言，通行於中部富塔賈隆高原。",
+    "description": "普拉爾語是富拉族的語言，主要通行於中部的富塔賈隆高原。18 世紀富塔賈隆伊瑪目國的學者以阿拉伯字母書寫普拉爾語（稱為 Ajami），創作宗教詩歌，使它成為西非少數有書面傳統的本土語言。富拉人是幾內亞最大的民族，普拉爾語因此擁有最多使用者。",
     "greeting": "On jaraama",
     "pronunciation": "on ja-raa-ma"
    },
    {
     "name": "馬林克語",
     "percent": 25,
-    "description": "上幾內亞地區的主要語言，屬曼丁語族。",
+    "description": "馬林克語通行於東北部的上幾內亞，以康康為中心，這裡是 13 世紀松迪亞塔建立的馬利帝國核心地帶。1949 年幾內亞人蘇勒馬納・康特發明了「N'Ko」字母，專門用來書寫曼丁語，成為曼丁文化復興的象徵。",
     "greeting": "I ni ce",
     "pronunciation": "i ni che"
    },
    {
     "name": "法語",
     "percent": 5,
-    "description": "官方、教育與行政語言，母語者少但為正式場合用語。",
+    "description": "1891 年法國建立法屬幾內亞，法語成為殖民行政語言。1958 年獨立後塞古・杜爾曾在 1968–1984 年推動以八種本土語言進行教育的「文化革命」，但成效有限，1984 年後學校恢復以法語教學。法語是官方語言，主要用於政府、高等教育與城市，母語使用者很少。",
     "greeting": "Bonjour",
     "pronunciation": "bon-zhoor"
    }
   ],
-  "history": "本地語言主要屬尼日－剛果語系，馬林克語隨馬利帝國擴張而普及，普拉爾語隨富拉人在富塔賈隆建國而成為區域強勢語言，沿海的蘇蘇語（約兩成人口的母語）則是首都的通用語。法國殖民後法語成為行政語言，獨立初期塞古·杜爾政府曾推廣本土語言教育。"
+  "history": "幾內亞的語言主要屬尼日–剛果語系，分為富拉語、曼丁語（馬林克語、蘇蘇語）以及森林地區的基西語、蓋爾澤語等。中世紀馬利帝國使曼丁語廣泛傳播，18 世紀富塔賈隆的伊斯蘭學者以阿拉伯字母書寫普拉爾語。法國殖民時期法語成為行政語言。獨立後塞古・杜爾的本土語言教育政策是非洲少見的嘗試，雖然 1984 年後撤回，但本土語言至今仍在廣播與日常生活中佔主導地位。"
  },
  "food": {
   "ranking": [
    {
     "name": "花生燉肉",
     "localName": "Mafé / Tigadèguèna",
-    "description": "以花生醬、番茄與肉或魚燉成的濃稠醬汁，配米飯。",
-    "history": "源自馬利曼丁卡人的料理，廣泛流行於西非，在幾內亞名為tigadèguèna。",
+    "description": "以花生醬、番茄與洋蔥燉煮牛肉、羊肉或雞肉，醬汁濃稠香醇，配白飯食用。",
+    "history": "花生原產南美洲，16 世紀由葡萄牙商人帶入西非，殖民時期又被法國當作主要經濟作物大量種植。曼丁族與班巴拉族將花生融入傳統燉菜，形成這道菜，在幾內亞馬林克語中稱為「tigadèguèna」。它流行於整個西非內陸，是日常與節慶都很常見的家常料理。",
     "wiki": "Maafe",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Mafe.malien.jpg/960px-Mafe.malien.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Mafe.malien.jpg",
@@ -64,8 +64,8 @@
    {
     "name": "檸檬洋蔥燉雞",
     "localName": "Poulet yassa",
-    "description": "以檸檬汁、洋蔥與芥末醃漬後燉煮的雞肉，配米飯。",
-    "history": "源自塞內加爾南部卡薩芒斯地區，在幾內亞等西非國家也相當常見。",
+    "description": "將雞肉以大量洋蔥、檸檬汁、芥末與辣椒醃製後燒烤，再與洋蔥醬汁一同燉煮，酸香開胃。",
+    "history": "檸檬洋蔥燉雞源自鄰國塞內加爾南部的卡薩芒斯地區，透過跨境的族群往來傳入幾內亞。柑橘與芥末的使用反映了殖民時期引進的食材。它是幾內亞宴客與節日的常見料理，酸味能在炎熱氣候中開胃。",
     "wiki": "Yassa (food)",
     "image": "https://upload.wikimedia.org/wikipedia/commons/4/45/Poulet_Yassa_Chicken_rice_with_onion_sauce.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Poulet_Yassa_Chicken_rice_with_onion_sauce.jpg",
@@ -74,8 +74,8 @@
    {
     "name": "福尼奧米",
     "localName": "Fonio",
-    "description": "以西非古老穀物福尼奧煮成的小粒穀飯，常配醬汁。",
-    "history": "福尼奧在西非種植已有數千年，幾內亞是全球最大產地，富塔賈隆地區尤其普遍。",
+    "description": "一種顆粒極細的古老非洲小米，煮熟後口感鬆軟，可做成粥、像庫斯庫斯一樣蒸食，或配燉菜。",
+    "history": "福尼奧米是西非最古老的栽培穀物之一，已在當地種植數千年，非常耐旱，可在貧瘠土壤中生長，成熟期也很短，能在其他作物收成前的「青黃不接期」提供糧食。幾內亞的富塔賈隆高原是主要產地，幾內亞也是世界最大的福尼奧米生產國。過去它被視為窮人的食物，近年因無麩質與營養價值高，重新受到重視。",
     "wiki": "Fonio",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/SEN_Village_Chief_Theodore.jpg/960px-SEN_Village_Chief_Theodore.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:SEN_Village_Chief_Theodore.jpg",
@@ -84,8 +84,8 @@
    {
     "name": "番茄香料飯",
     "localName": "Riz gras / Jollof",
-    "description": "以番茄、洋蔥、香料與肉一起烹煮的紅色米飯。",
-    "history": "起源於塞內甘比亞的沃洛夫人，流傳整個西非，是節慶常見菜色。",
+    "description": "以番茄、洋蔥、油與肉一起炊煮的米飯，米粒吸飽醬汁呈紅色，常配肉類與蔬菜。",
+    "history": "上尼日河流域是非洲稻（Oryza glaberrima）的馴化地區之一，稻作在幾內亞已有悠久歷史，幾內亞人也是世界上人均食米量很高的民族。這道油飯與塞內甘比亞沃洛夫人的喬洛夫飯同源，隨區域貿易傳入。它常在婚禮、宗教節日與家庭聚會中大量烹煮，是重要的宴客菜。",
     "wiki": "Jollof rice",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Jollof_Rice_with_Stew.jpg/960px-Jollof_Rice_with_Stew.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Jollof_Rice_with_Stew.jpg",
@@ -94,8 +94,8 @@
    {
     "name": "富富",
     "localName": "Foufou",
-    "description": "以木薯或芭蕉搗成的黏稠麵團，搭配湯汁食用。",
-    "history": "西非與中非普遍的主食，在森林幾內亞地區尤其常見。",
+    "description": "將木薯、山藥或大蕉煮熟後搗成柔軟有彈性的糰子，配花生醬、葉菜醬或棕櫚油燉菜食用。",
+    "history": "搗製澱粉糰是西非與中非共通的飲食傳統，在幾內亞的森林地區尤其普遍。木薯是 16 世紀經葡萄牙人從美洲引進的作物，因產量高而成為重要的原料。人們通常用手捏一小塊富富沾燉菜吃，它代表了西非地區以澱粉主食搭配醬汁的典型飲食方式。",
     "wiki": "Fufu",
     "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Wrapped_fufu.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Wrapped_fufu.jpg",

@@ -7,30 +7,30 @@
    {
     "name": "新教",
     "percent": 41,
-    "description": "以耶穌基督教會（FJKM）與路德宗為主，在中部高地影響深遠。"
+    "description": "1818年倫敦傳道會的威爾斯傳教士來到梅里納王國，創辦學校並將《聖經》譯成馬達加斯加語。女王拉納瓦洛娜一世（1828–1861年在位）曾嚴厲迫害基督徒，但1869年拉納瓦洛娜二世受洗並宣佈新教為國教，使新教在中部高原的梅里納人中普及。今天最大的新教教會是馬達加斯加耶穌基督教會（FJKM）。"
    },
    {
     "name": "天主教",
     "percent": 35,
-    "description": "19世紀法國傳教士傳入，分布廣泛。"
+    "description": "天主教在17世紀由法國傳教士在南部沿海傳入，但影響有限。1896年法國殖民馬達加斯加後，天主教會在殖民政府支持下迅速擴張，特別在中部貝特希萊奧人與沿海地區設立學校與教會。今天天主教與新教勢力相當。"
    },
    {
     "name": "傳統信仰（祖靈崇拜）",
     "percent": 7,
-    "description": "崇敬祖先的信仰普遍，許多基督徒也同時參與傳統儀式。"
+    "description": "馬達加斯加人普遍相信祖先（razana）的靈魂會影響生者，許多人雖然信仰基督教，仍參與翻屍節（famadihana）等祖先崇拜儀式。完全信奉傳統宗教者主要在南部與西部的鄉村地區。"
    },
    {
     "name": "無宗教",
     "percent": 6,
-    "description": "部分人口不屬特定宗教。"
+    "description": "明確自稱無宗教者主要是城市中的部分居民，但馬達加斯加社會宗教與祖先信仰觀念普遍，完全沒有任何信仰歸屬的人相對很少。"
    },
    {
     "name": "伊斯蘭教",
     "percent": 3,
-    "description": "主要見於西北沿海與印巴裔社群。"
+    "description": "伊斯蘭教在中世紀隨阿拉伯與斯瓦希里商人傳入西北部沿海，例如馬哈贊加等港口城市。今天穆斯林包括西北部的部分馬達加斯加人、來自科摩羅的移民，以及19–20世紀移入的印度與巴基斯坦裔商人社群。"
    }
   ],
-  "background": "19世紀初梅里納王國國王拉達瑪一世允許倫敦傳道會傳教，1869年女王拉納瓦洛娜二世受洗，使新教在高地普及。1896年法國殖民後天主教勢力擴展。祖靈崇拜則一直是社會核心，例如「翻屍節」（famadihana）。"
+  "background": "馬達加斯加的祖先約在1–2千年前從東南亞婆羅洲一帶跨越印度洋而來，後來又有來自東非的班圖人移入，形成以祖先崇拜為核心的傳統信仰，例如「翻屍節」（famadihana）。伊斯蘭教在中世紀隨阿拉伯與斯瓦希里商人傳入西北部沿海。1818年起倫敦傳道會傳教士在梅里納王國傳教，1869年女王拉納瓦洛娜二世受洗並宣佈新教為國教。1896年法國殖民後天主教大幅擴張。今天大部分人信仰基督教，但祖先崇拜仍與基督教並行。"
  },
  "language": {
   "official": "官方語言為馬達加斯加語與法語。",
@@ -38,27 +38,27 @@
    {
     "name": "馬達加斯加語",
     "percent": 98,
-    "description": "屬南島語系，與婆羅洲的馬安延語關係最近，全國通用。",
+    "description": "馬達加斯加語是全島共通的語言，雖然各地有不同方言，但基本上都源自同一種南島語言。1820年代起傳教士以梅里納方言為基礎制定書面標準，獨立後馬達加斯加語成為國語，1970年代曾推動「馬達加斯加化」以取代法語教育，因此幾乎全體國民都以它為母語。",
     "greeting": "Manao ahoana",
     "pronunciation": "ma-now own"
    },
    {
     "name": "法語",
     "percent": 2,
-    "description": "官方語言之一，用於教育與行政，母語者少。",
+    "description": "1896–1960年法國殖民期間法語是官方與教育語言，獨立後仍是政府、高等教育與商業的重要語言。不過以法語為主要語言的人只是城市菁英，多數鄉村居民的法語能力有限。",
     "greeting": "Bonjour",
     "pronunciation": "bon-zhoor"
    }
   ],
-  "history": "約1500年前來自婆羅洲一帶的南島民族渡海移居，帶來馬達加斯加語，並吸收了班圖語、阿拉伯語等詞彙。19世紀梅里納王國採用拉丁字母書寫，法國殖民後法語成為教育與行政語言。"
+  "history": "馬達加斯加語屬南島語系，與婆羅洲東南部的馬安彥語最為接近，證明馬達加斯加人的祖先約在1–2千年前從東南亞跨越印度洋而來；它也吸收了班圖語、阿拉伯語、法語與英語的詞彙。早期西南部曾以阿拉伯字母書寫（稱為 sorabe）。1820年代倫敦傳道會傳教士與梅里納國王拉達馬一世合作，以拉丁字母制定了馬達加斯加語的拼寫系統。1896–1960年法國殖民時期法語成為行政與教育語言。1960年獨立後馬達加斯加語成為國語，2010年憲法定馬達加斯加語與法語為官方語言。"
  },
  "food": {
   "ranking": [
    {
     "name": "馬達加斯加牛肉菜湯",
     "localName": "Romazava",
-    "description": "以牛肉與多種綠葉菜燉煮的湯，常配白飯，被視為國菜。",
-    "history": "馬達加斯加人以米為主食，此湯是高地地區典型的「配飯菜」（laoka）。",
+    "description": "以瑞布牛肉與當地綠葉菜（如會讓舌頭發麻的 brèdes mafana）慢燉成的清湯，配白飯食用。",
+    "history": "Romazava 被視為馬達加斯加國菜，「ro」在馬達加斯加語中指配飯的湯汁，反映馬達加斯加人以米飯為中心的飲食文化。馬達加斯加是非洲人均吃米最多的國家，米飯文化來自東南亞祖先的傳統。瑞布牛在馬達加斯加社會中象徵財富，因此加入牛肉的 romazava 常在節慶與招待客人時製作。",
     "wiki": "Romazava",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Madagaskar_stew_2019-10-01.jpg/960px-Madagaskar_stew_2019-10-01.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Madagaskar_stew_2019-10-01.jpg",
@@ -67,8 +67,8 @@
    {
     "name": "木薯葉燉豬肉",
     "localName": "Ravitoto",
-    "description": "搗碎的木薯葉與豬肉一同燉煮，配白飯食用。",
-    "history": "是馬達加斯加最受歡迎的家常菜之一。",
+    "description": "把木薯葉搗碎後與豬肉一起慢燉，加入大蒜與椰奶，配白飯食用。口感濃稠，帶有木薯葉的特殊香氣與豬肉的油香。",
+    "history": "木薯在18–19世紀由歐洲人經由東非與印度洋貿易傳入馬達加斯加，耐旱且產量高，葉子也被當作蔬菜食用。Ravitoto 意為「搗碎的葉子」，傳統由婦女用木臼搗葉子。它是馬達加斯加最受歡迎的家常菜之一，在中部高原尤其常見。",
     "wiki": "Ravitoto",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Ravitoto.jpg/960px-Ravitoto.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Ravitoto.jpg",
@@ -77,15 +77,15 @@
    {
     "name": "馬達加斯加米糕",
     "localName": "Mofo gasy",
-    "description": "以米粉、椰奶與糖製成的小圓煎餅，是早餐常見食物。",
-    "history": "名稱意為「馬達加斯加麵包」，在街頭攤販普遍販售。",
+    "description": "以米粉、椰奶與糖製成的小圓米糕，在特製的圓孔鐵模中烤成，外脆內軟。口味微甜，是常見的早餐點心。",
+    "history": "Mofo gasy 意為「馬達加斯加麵包」，用以區別殖民時期法國人帶來的長棍麵包（mofo vazaha，「外國人的麵包」）。它以米為原料，延續了東南亞祖先的米食文化，類似東南亞的米糕。清晨街頭小販在炭火上烤 mofo gasy，配咖啡當早餐，是馬達加斯加最常見的街頭景象之一。",
     "wiki": "Mofo gasy"
    },
    {
     "name": "香蕉花生糕",
     "localName": "Koba",
-    "description": "以花生、香蕉、米粉與糖包入香蕉葉蒸製的甜糕。",
-    "history": "傳統街頭點心，常見於市集與節慶。",
+    "description": "以米粉、花生、香蕉與糖混合後用香蕉葉包起來，長時間蒸煮成的長條狀甜糕。口感紮實香甜，帶有花生與香蕉的香氣。",
+    "history": "Koba 是馬達加斯加中部高原的傳統點心，使用米與香蕉葉包裹的做法反映了東南亞祖先的飲食傳統，與東南亞的粽子類食物相似。花生則是殖民時期以後普及的作物。它常在市集中切片販售，也是節慶與家庭聚會時的點心。",
     "wiki": "Koba (food)",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Kobandravina_dessert_snack_food_Antananarivo_Madagascar.jpg/960px-Kobandravina_dessert_snack_food_Antananarivo_Madagascar.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Kobandravina_dessert_snack_food_Antananarivo_Madagascar.jpg",
@@ -94,8 +94,8 @@
    {
     "name": "瑞布牛肉",
     "localName": "Zebu",
-    "description": "以瘤牛（zebu）肉烤串或燉煮的料理。",
-    "history": "瘤牛在馬達加斯加象徵財富與地位，也是祭祀與葬禮中的重要牲畜。",
+    "description": "瑞布牛（肩峰牛）的肉，以燒烤、燉煮或做成肉乾等方式食用。肉質較精瘦，帶有獨特的風味。",
+    "history": "瑞布牛約在一千年前隨東非移民傳入馬達加斯加，迅速成為島上最重要的家畜。瑞布牛在馬達加斯加社會中不只是食物，更是財富、地位與聘禮的象徵；在割禮、婚禮、葬禮與翻屍節等重要儀式上，人們會宰殺瑞布牛獻祭祖先並分享牛肉。南部地區甚至有牛隻搶奪的成年儀式傳統。",
     "wiki": "Zebu",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/A_well-fed_bull_in_Kuno_WS_AJTJ_P1070807.jpg/960px-A_well-fed_bull_in_Kuno_WS_AJTJ_P1070807.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:A_well-fed_bull_in_Kuno_WS_AJTJ_P1070807.jpg",

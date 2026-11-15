@@ -7,25 +7,25 @@
    {
     "name": "天主教",
     "percent": 76,
-    "description": "西班牙殖民時期傳入，常與安地斯傳統信仰融合。"
+    "description": "1532年皮薩羅率領西班牙人在卡哈馬卡俘虜印加皇帝阿塔瓦爾帕，隨後征服印加帝國，道明會、方濟會與耶穌會傳教士展開大規模改宗。1570年利馬設立宗教裁判所，17世紀初到1660年代又推行「根除偶像崇拜」運動，摧毀安地斯的神廟與聖物。天主教因此成為主流，但許多安地斯信仰被融入天主教節慶，例如庫斯科的「星雪節」朝聖與聖周遊行。"
    },
    {
     "name": "新教（福音派）",
     "percent": 14,
-    "description": "20世紀後期快速成長。"
+    "description": "新教在19世紀隨英國與美國商人、傳教士傳入，但1915年前秘魯憲法禁止天主教以外宗教的公開崇拜。20世紀後半，特別是1980–1990年代光明之路游擊隊與政府軍衝突期間，福音派與五旬節派教會在安地斯山區與利馬的移民聚落快速成長，它們提供互助網絡與禁酒等生活規範，吸引了許多貧困家庭。"
    },
    {
     "name": "無宗教",
     "percent": 5,
-    "description": "多見於都市地區。"
+    "description": "無宗教人口主要見於利馬等城市受高等教育的年輕人。秘魯整體世俗化程度低於鄰國智利與烏拉圭，但隨著都市化與網路普及，以及天主教會性侵醜聞（例如2010年代的「基督生命共同體」案）曝光，部分年輕人疏離教會。"
    },
    {
     "name": "其他",
     "percent": 5,
-    "description": "包含耶和華見證人、摩門教等。"
+    "description": "其他宗教包括耶和華見證人、摩門教，以及少數的佛教、猶太教與伊斯蘭教，佛教徒多為19世紀末起移民的日裔與華裔後代。此外，安地斯原住民對大地之母帕查瑪瑪與山神阿普的崇拜仍普遍存在，常與天主教並行。"
    }
   ],
-  "background": "1532年皮薩羅征服印加帝國後，西班牙傳教士推動原住民改宗天主教，利馬成為南美殖民宗教中心。原住民將大地之母（帕查瑪瑪）等信仰融入天主教儀式，福音派則在20世紀後期隨傳教活動成長。"
+  "background": "印加帝國信仰太陽神印蒂與大地之母帕查瑪瑪，皇帝被視為太陽之子。1532年西班牙征服後，天主教成為國教，傳教士透過強制改宗與「根除偶像崇拜」運動壓制安地斯信仰，但許多傳統融入了天主教節慶。1821年獨立後天主教仍是國教，直到1979年憲法才確立政教分離。20世紀後期福音派快速成長，安地斯傳統信仰至今仍與天主教融合並存。"
  },
  "language": {
   "official": "官方語言為西班牙語，克丘亞語、艾馬拉語等原住民語言在其通行地區亦為官方語言。",
@@ -33,34 +33,34 @@
    {
     "name": "西班牙語",
     "percent": 83,
-    "description": "全國通用語言。",
+    "description": "西班牙語在1532年西班牙征服後傳入，成為殖民地的行政、宗教與教育語言，利馬作為秘魯總督府首都，是西班牙在南美的統治中心。19–20世紀大量安地斯山區人口遷往利馬與沿海城市，為了就業與教育紛紛改說西班牙語，使西班牙語母語者從人口少數增至八成以上。",
     "greeting": "Hola",
     "pronunciation": "o-la"
    },
    {
     "name": "克丘亞語",
     "percent": 14,
-    "description": "印加帝國的通用語，主要通行於安地斯山區。",
+    "description": "克丘亞語是印加帝國的官方語言，印加人在15世紀擴張時把它推廣至整個安地斯山區。殖民初期傳教士以克丘亞語傳教，但1780年圖帕克·阿馬魯二世起義後，西班牙當局禁止使用克丘亞語。1975年貝拉斯科軍政府將克丘亞語列為官方語言，但它長期被視為貧窮與農村的象徵，使用者集中在庫斯科、阿亞庫喬、阿普里馬克等南部山區。",
     "greeting": "Allillanchu",
     "pronunciation": "a-yi-yan-chu"
    },
    {
     "name": "艾馬拉語",
     "percent": 2,
-    "description": "主要通行於南部的的喀喀湖一帶。",
+    "description": "艾馬拉語是南部的的喀喀湖周邊艾馬拉族的語言，早於印加帝國存在，與玻利維亞西部的艾馬拉語相同。艾馬拉族在印加與西班牙統治下都保留了自己的語言與習俗，集中在普諾省一帶。",
     "greeting": "Kamisaki",
     "pronunciation": "ka-mi-sa-ki"
    }
   ],
-  "history": "克丘亞語在印加帝國時期被推廣為帝國通用語。西班牙殖民初期傳教士曾用克丘亞語傳教，但18世紀圖帕克·阿馬魯二世起義後殖民當局加以壓制，西班牙語逐漸主導。1975年克丘亞語首度獲官方地位。"
+  "history": "秘魯在西班牙征服前有克丘亞語、艾馬拉語、莫奇卡語等多種語言，印加帝國以克丘亞語為通用語。1532年後西班牙語成為統治語言，1780年代圖帕克·阿馬魯二世起義後原住民語言受到壓制。1975年克丘亞語成為官方語言，1993年憲法規定原住民語言在其通行地區具官方地位。2003年起推行跨文化雙語教育，但西班牙語仍佔主導地位。"
  },
  "food": {
   "ranking": [
    {
     "name": "檸汁醃生魚",
     "localName": "Ceviche",
-    "description": "以萊姆汁醃漬生魚，加入紅洋蔥、辣椒與香菜，配地瓜與玉米。",
-    "history": "沿海居民自古即以酸性汁液處理魚肉，萊姆隨西班牙人傳入後形成現代做法，2023年列入聯合國非物質文化遺產。",
+    "description": "將新鮮白肉魚切塊，以萊姆汁、鹽、紅洋蔥與阿希辣椒醃漬數分鐘，酸汁讓魚肉表面變白，搭配煮地瓜與大顆玉米粒食用。",
+    "history": "秘魯北部沿海的莫切文化約在兩千年前就以酸性的香蕉百香果汁醃魚，西班牙人帶來萊姆與洋蔥後形成今日的做法。19世紀末日本移民加入縮短醃漬時間、強調鮮度的技巧。2004年秘魯將檸汁醃生魚列為國家文化遺產，每年6月28日為國家檸汁醃生魚日，2023年聯合國教科文組織更將其列入人類非物質文化遺產。",
     "wiki": "Ceviche",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Cebiche_de_corvina.JPG/960px-Cebiche_de_corvina.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Cebiche_de_corvina.JPG",
@@ -69,8 +69,8 @@
    {
     "name": "醬炒牛柳",
     "localName": "Lomo saltado",
-    "description": "牛肉條與洋蔥、番茄以醬油大火快炒，配薯條與白飯。",
-    "history": "19世紀華人移民帶來的炒菜技法（chifa料理）與秘魯食材結合的代表菜。",
+    "description": "將牛里肌切條，與紅洋蔥、番茄、黃辣椒以醬油與醋大火快炒，帶有鑊氣，搭配薯條與白飯一起吃。",
+    "history": "醬炒牛柳是秘魯「中華秘魯菜」（chifa）的代表，19世紀中葉起約十萬名華工以契約勞工身分來到秘魯的甘蔗園與鳥糞礦工作，後來在利馬開設中餐館，把快炒與醬油帶入秘魯料理。它同時使用安地斯的馬鈴薯與中國的炒鍋技法，是秘魯多元移民歷史在餐桌上的縮影，19世紀末已出現在利馬的餐館中。",
     "wiki": "Lomo saltado",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Lomo_Saltado_-_Lima%2C_Peru_Miraflores_%28Tiendecita_Blanca%29.jpg/960px-Lomo_Saltado_-_Lima%2C_Peru_Miraflores_%28Tiendecita_Blanca%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Lomo_Saltado_-_Lima,_Peru_Miraflores_(Tiendecita_Blanca).jpg",
@@ -79,8 +79,8 @@
    {
     "name": "黃辣椒奶醬雞",
     "localName": "Ají de gallina",
-    "description": "雞絲以黃辣椒、牛奶、麵包與核桃熬成的奶黃醬汁燉煮。",
-    "history": "據信源自殖民時期西班牙的雞肉濃醬料理，加入秘魯黃辣椒後在地化。",
+    "description": "將水煮雞肉撕成雞絲，以黃辣椒、洋蔥、大蒜、浸過牛奶的麵包、核桃與帕瑪森起司熬成的黃色奶醬燉煮，配白飯、水煮蛋與橄欖。",
+    "history": "黃辣椒奶醬雞的前身被認為是殖民時期從西班牙傳入的「manjar blanco」（以雞肉、杏仁、牛奶製成的白醬料理），後來加入秘魯原生的黃辣椒，演變成今日的口味。黃辣椒是秘魯料理最重要的香料，這道菜反映了西班牙與安地斯飲食的融合，是秘魯家庭常見的午餐。",
     "wiki": "Ají de gallina",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Aj%C3%AD_de_gallina.jpg/960px-Aj%C3%AD_de_gallina.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Aj%C3%AD_de_gallina.jpg",
@@ -89,8 +89,8 @@
    {
     "name": "烤牛心串",
     "localName": "Anticucho",
-    "description": "以醋與辣椒醃漬的牛心串炭烤，街頭常見。",
-    "history": "源自印加時期的燒烤，殖民時期非裔奴隸利用主人不吃的牛心發展出今日做法。",
+    "description": "將牛心切塊，以醋、孜然、大蒜與紅辣椒醬醃漬後串起炭烤，常配煮馬鈴薯與玉米，在街頭攤販販售。",
+    "history": "烤肉串的做法源自印加時期以駱馬肉製作的串烤，名稱來自克丘亞語。西班牙殖民時期，主人把較好的肉留給自己，非洲奴隸只能取得牛心等內臟，於是他們用醋與香料醃漬牛心炭烤，發展出今日的烤牛心串。它是利馬夜間街頭與10月「奇蹟之主」宗教遊行期間最受歡迎的小吃。",
     "wiki": "Anticucho",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Anticuchos_-_Grilled_Beef_Heart_skewers.jpg/960px-Anticuchos_-_Grilled_Beef_Heart_skewers.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Anticuchos_-_Grilled_Beef_Heart_skewers.jpg",
@@ -99,8 +99,8 @@
    {
     "name": "帕恰曼卡地窖烤",
     "localName": "Pachamanca",
-    "description": "在地坑中以燒熱的石頭烘烤肉類、馬鈴薯與玉米。",
-    "history": "名稱源自克丘亞語「大地之鍋」，是安地斯地區自印加時代流傳的節慶料理。",
+    "description": "在地上挖坑放入燒熱的石頭，將以香草醃漬的羊肉、豬肉、雞肉，連同馬鈴薯、地瓜、蠶豆與玉米分層放入，蓋上葉子與泥土燜烤數小時。",
+    "history": "「pachamanca」在克丘亞語中意為「大地之鍋」，這種烹調法可追溯到印加時期甚至更早，是安地斯山區獻給大地之母帕查瑪瑪的儀式性料理。開坑前人們常會向大地表示感謝。它是安地斯地區節慶、收成與社區聚會時的傳統料理，需要全村分工準備，至今在胡寧、阿亞庫喬等山區省分仍十分普遍。",
     "wiki": "Pachamanca",
     "image": "https://upload.wikimedia.org/wikipedia/commons/5/57/PachaComer.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:PachaComer.jpg",

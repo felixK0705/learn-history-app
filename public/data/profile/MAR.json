@@ -7,20 +7,20 @@
    {
     "name": "伊斯蘭教（遜尼派）",
     "percent": 98,
-    "description": "國教，國王兼具「信士的長官」宗教領袖身分。"
+    "description": "伊斯蘭教在7世紀末至8世紀隨阿拉伯征服傳入，789年伊德里斯王朝建立後在柏柏爾部族中普及。11–12世紀穆拉比特、穆瓦希德等柏柏爾王朝確立遜尼派馬立克學派為正統，蘇非教團與聖人崇拜也深入鄉村。今天國王作為「信士的長官」，是宗教的最高權威，憲法定伊斯蘭教為國教，幾乎全體公民都是穆斯林。"
    },
    {
     "name": "基督教",
     "percent": 1,
-    "description": "主要為外籍居民。"
+    "description": "羅馬時期北非曾有基督教社群，但伊斯蘭化後幾乎消失。1912–1956年法國與西班牙保護國時期，大量歐洲移民帶來天主教，獨立後大多離開。今天的基督徒主要是外籍居民與撒哈拉以南非洲的移民，摩洛哥公民改宗基督教在社會上仍受到壓力。"
    },
    {
     "name": "無宗教",
     "percent": 1,
-    "description": "少數不認同宗教者。"
+    "description": "摩洛哥社會宗教氣氛濃厚，公開表示無宗教在社會與法律上都有壓力，因此明確自稱無宗教的人很少，主要是城市受過高等教育的年輕人，近年民調顯示年輕世代的宗教性有所下降。"
    }
   ],
-  "background": "七世紀末阿拉伯人征服北非後，伊斯蘭教逐漸在柏柏人之間傳播。摩洛哥歷代王朝以遜尼派馬立克學派為正統，現任阿拉維王朝以先知後裔自居。摩洛哥曾有北非最大的猶太社群，但大多在二十世紀中期移居以色列等地。"
+  "background": "摩洛哥原住民柏柏爾人（阿馬齊格人）在羅馬時期部分接受基督教與猶太教。7世紀末至8世紀初阿拉伯軍隊征服北非，789年伊德里斯一世建立伊德里斯王朝，伊斯蘭教在柏柏爾部族中逐漸普及。11–12世紀柏柏爾人建立的穆拉比特與穆瓦希德王朝統一馬格里布與伊比利亞南部，確立遜尼派馬立克學派為正統。現今的阿拉維王朝自17世紀統治至今，國王兼具「信士的長官」（Amir al-Mu'minin）身分，是國家宗教權威。歷史上摩洛哥曾有北非最大的猶太社群，1948年以色列建國後多數移居以色列、法國與加拿大。"
  },
  "language": {
   "official": "阿拉伯語與柏柏語（阿馬齊格語）是官方語言。",
@@ -28,41 +28,41 @@
    {
     "name": "摩洛哥阿拉伯語（達利賈）",
     "percent": 70,
-    "description": "融合柏柏語、法語與西班牙語詞彙的阿拉伯語方言。",
+    "description": "摩洛哥阿拉伯語（Darija）是在阿拉伯語與柏柏語長期接觸中形成的方言，並吸收了法語與西班牙語詞彙，與中東的阿拉伯語差異很大。它是摩洛哥城市與平原地區最主要的日常語言，也是各民族之間的通用語，而正式書寫則使用現代標準阿拉伯語。",
     "greeting": "السلام (Salam)",
     "pronunciation": "sa-LAAM"
    },
    {
     "name": "塔什爾希特語",
     "percent": 14,
-    "description": "南部蘇斯地區與阿特拉斯山區的柏柏語。",
+    "description": "塔什爾希特語是摩洛哥使用人數最多的柏柏語，主要分布在西南部的蘇斯河谷、安蒂阿特拉斯山與大阿特拉斯山西部。這些山區地勢險峻，阿拉伯化影響較小，因此保存了柏柏語。2011年憲法承認阿馬齊格語為官方語言後，學校也開始教授提非納字母。",
     "greeting": "Azul",
     "pronunciation": "a-ZOOL"
    },
    {
     "name": "中阿特拉斯塔馬齊格特語",
     "percent": 8,
-    "description": "中阿特拉斯山區的柏柏語。",
+    "description": "中阿特拉斯塔馬齊格特語分布在摩洛哥中部的中阿特拉斯山與大阿特拉斯山東部，使用者多為傳統上以畜牧為生的柏柏爾部族。這些部族在1930年代曾激烈抵抗法國殖民軍。",
     "greeting": "Azul",
     "pronunciation": "a-ZOOL"
    },
    {
     "name": "塔里菲特語",
     "percent": 4,
-    "description": "北部里夫地區的柏柏語。",
+    "description": "塔里菲特語是北部里夫山區的柏柏語，里夫地區在1912–1956年屬於西班牙保護國，1921–1926年阿卜杜勒-克里姆曾在此領導里夫共和國抵抗西班牙與法國。獨立後當地與中央政府關係緊張，大量居民移民到荷蘭與比利時。",
     "greeting": "Azul",
     "pronunciation": "a-ZOOL"
    }
   ],
-  "history": "柏柏語是北非原住民語言。阿拉伯人征服後，阿拉伯語隨伊斯蘭教傳播；二十世紀法國與西班牙的保護國統治使法語與西班牙語普及。2011年憲法將柏柏語列為官方語言，並推廣提非納字母。"
+  "history": "摩洛哥最早的語言是柏柏語（阿馬齊格語），7世紀末阿拉伯征服後阿拉伯語隨伊斯蘭傳入城市；12世紀穆瓦希德王朝將阿拉伯部族遷入大西洋平原，阿拉伯化逐漸擴展到鄉村。1912–1956年法國與西班牙保護國時期，法語成為行政、教育與商業的語言，北部則使用西班牙語。獨立後推行「阿拉伯化」政策，柏柏語長期受到壓抑；2001年國王穆罕默德六世成立皇家阿馬齊格文化研究院，2011年新憲法將阿馬齊格語與阿拉伯語並列為官方語言。"
  },
  "food": {
   "ranking": [
    {
     "name": "塔吉鍋",
     "localName": "طاجين (Tajine)",
-    "description": "以圓錐蓋陶鍋慢燉的肉類與蔬菜，常加入果乾與香料。",
-    "history": "源自北非柏柏人的烹調方式，陶鍋設計能在缺水環境中保留水分。",
+    "description": "以圓錐形蓋子的陶鍋慢燉羊肉、雞肉或蔬菜，加入醃檸檬、橄欖、李子或杏桃，以番紅花、孜然與肉桂調味。",
+    "history": "Tajine 的名稱既指料理也指那個陶鍋，錐形蓋可讓蒸氣凝結回流，在缺水的北非能以少量水分燉煮。一般認為這種燉煮法源自柏柏爾人，9世紀起受阿拉伯與阿拔斯王朝的料理影響加入水果與香料，形成甜鹹交融的風格。15世紀後從安達魯斯回流的穆斯林與猶太人也帶來更多烹飪技法。今天 tajine 是摩洛哥家家戶戶的日常料理。",
     "wiki": "Tajine",
     "image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Tajine-marocain-un-plat-varie-et-sain_%28cropped%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Tajine-marocain-un-plat-varie-et-sain_(cropped).jpg",
@@ -71,8 +71,8 @@
    {
     "name": "庫斯庫斯",
     "localName": "كسكس (Couscous)",
-    "description": "以粗粒小麥粉蒸成的小米粒狀主食，配蔬菜與肉。",
-    "history": "北非柏柏人的傳統主食，2020年列入聯合國教科文組織非物質文化遺產。",
+    "description": "以粗粒小麥粉搓成細小顆粒蒸熟，鋪上燉煮的肉類與七種蔬菜。口感鬆軟，吸收了燉菜醬汁的香氣，常配發酵奶飲用。",
+    "history": "庫斯庫斯是柏柏爾人的傳統主食，最早的文字記載見於13世紀的食譜。在摩洛哥，週五是穆斯林的聚禮日，家家戶戶在禮拜後全家一起吃庫斯庫斯，也會送給清真寺與窮人。2020年摩洛哥、阿爾及利亞、突尼西亞與茅利塔尼亞聯合申報的庫斯庫斯被列入聯合國教科文組織非物質文化遺產。",
     "wiki": "Couscous",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Moroccan_cuscus%2C_from_Casablanca%2C_September_2018.jpg/960px-Moroccan_cuscus%2C_from_Casablanca%2C_September_2018.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Moroccan_cuscus,_from_Casablanca,_September_2018.jpg",
@@ -81,8 +81,8 @@
    {
     "name": "帕斯蒂亞派",
     "localName": "بسطيلة (Pastilla)",
-    "description": "以薄酥皮包鴿肉或雞肉、杏仁，撒糖粉與肉桂的甜鹹派。",
-    "history": "與安達魯斯穆斯林的宮廷飲食有關，非斯的版本最著名。",
+    "description": "以薄如紙的 warqa 酥皮包入鴿肉（或雞肉）、杏仁、雞蛋與香料烤成的派，表面撒上糖粉與肉桂，甜鹹兼具。",
+    "history": "Pastilla 一般認為與安達魯斯（中世紀伊斯蘭統治的西班牙）的宮廷料理有關，1492年格拉納達陷落後，大批穆斯林與猶太人逃到摩洛哥的非斯、得土安等城市，帶來了這類精緻料理。它是非斯的代表菜，製作費時，常在婚禮與重要節慶時出現，鴿肉版本被視為最正宗。",
     "wiki": "Pastilla",
     "image": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Bisteeya.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Bisteeya.jpg",
@@ -91,8 +91,8 @@
    {
     "name": "哈利拉湯",
     "localName": "حريرة (Harira)",
-    "description": "以番茄、扁豆、鷹嘴豆與肉熬煮的濃湯。",
-    "history": "齋戒月日落開齋時必備的湯品。",
+    "description": "以番茄、扁豆、鷹嘴豆、羊肉與香草煮成的濃稠湯品，以麵粉或雞蛋增稠。口感濃郁，帶有香草與香料的香氣，常配椰棗食用。",
+    "history": "Harira 是摩洛哥齋戒月開齋時最重要的湯品，太陽下山後的第一餐通常以椰棗、牛奶與一碗 harira 開始。它營養豐富，能在長時間禁食後補充能量。摩洛哥各地與各家庭的 harira 配方都不同，製作配方常是母女相傳的家族傳統。",
     "wiki": "Harira",
     "image": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Harira.png",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Harira.png",
@@ -101,8 +101,8 @@
    {
     "name": "千層煎餅",
     "localName": "مسمن (Msemen)",
-    "description": "反覆折疊塗油煎成的方形千層煎餅。",
-    "history": "常與蜂蜜和薄荷茶一起作為早餐或下午茶。",
+    "description": "以麵團反覆抹油摺疊後在鐵板上煎成的方形千層餅，常淋蜂蜜或配茶。外皮酥脆、內部有層次，可甜可鹹。",
+    "history": "Msemen 是摩洛哥最常見的早餐與下午茶點心之一，製作方式在北非流傳已久，阿爾及利亞與突尼西亞也有類似的煎餅。在齋戒月期間，它是開齋餐桌上常見的食物，街頭的小攤也從清晨開始販售，搭配摩洛哥薄荷茶一起享用。",
     "wiki": "Msemen",
     "image": "https://upload.wikimedia.org/wikipedia/commons/f/f5/%D9%85%D8%B3%D9%85%D9%86.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:%D9%85%D8%B3%D9%85%D9%86.jpg",

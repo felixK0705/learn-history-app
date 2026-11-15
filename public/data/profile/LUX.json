@@ -7,25 +7,25 @@
    {
     "name": "天主教",
     "percent": 55,
-    "description": "歷史上的主要宗教，2015年後政府與宗教團體關係改革。"
+    "description": "7世紀聖威利布羅德在埃希特納赫建立修道院後，天主教在盧森堡紮根。宗教改革時期盧森堡處在西班牙與奧地利哈布斯堡家族統治下，嚴格維持天主教信仰。天主教長期與盧森堡的國家認同、節慶與教育結合，1870年設立盧森堡教區，1988年升為總教區。"
    },
    {
     "name": "無宗教",
     "percent": 30,
-    "description": "近年世俗化程度提高。"
+    "description": "戰後盧森堡經濟繁榮、教育程度高，加上鋼鐵業與金融業帶動都市化，世俗化程度迅速上升。2015年政府與宗教團體協議取消學校宗教課、改以「生活與社會」課程，反映社會對宗教的態度轉變，年輕世代尤其多無宗教歸屬。"
    },
    {
     "name": "其他基督教（新教、東正教等）",
     "percent": 5,
-    "description": "包含新教與東歐移民的東正教。"
+    "description": "新教徒多為19世紀後從德國遷入的移民與在歐盟機構工作的外籍人士，東正教徒則多來自希臘、塞爾維亞與俄羅斯的移民。盧森堡作為歐盟機構所在地與國際金融中心，吸引了大量外國人，宗教也隨之多元化。"
    },
    {
     "name": "伊斯蘭教",
     "percent": 3,
-    "description": "主要來自巴爾幹半島移民。"
+    "description": "穆斯林主要來自1990年代南斯拉夫戰爭時逃到盧森堡的波士尼亞人與蒙特內哥羅人，以及北非與土耳其移民。2015年政府正式承認伊斯蘭教並與穆斯林團體簽訂協議。"
    }
   ],
-  "background": "盧森堡長期由天主教的勃艮第、西班牙與奧地利哈布斯堡統治，宗教改革未在此扎根，天主教一直占主導。近年大量外國居民與世俗化趨勢使宗教格局更加多元。"
+  "background": "盧森堡在羅馬時代後期接受基督教，7世紀聖威利布羅德在鄰近的埃希特納赫建立修道院，傳播基督教，今天的「跳躍遊行」仍紀念他。中世紀盧森堡屬於神聖羅馬帝國，宗教改革後在西班牙與奧地利哈布斯堡家族統治下保持天主教。1815年維也納會議後成為大公國，1867年中立。盧森堡長期政教合作，政府支付神職人員薪資；2015年政府與宗教團體簽約，取消學校宗教課並改革教會資金，邁向政教分離。"
  },
  "language": {
   "official": "官方語言為盧森堡語（國語）、法語與德語。",
@@ -33,48 +33,48 @@
    {
     "name": "盧森堡語",
     "percent": 49,
-    "description": "源自摩澤爾法蘭克方言，是國家認同的象徵。",
+    "description": "盧森堡語是由中世紀摩澤爾法蘭克方言發展而來，二戰時期納粹企圖將盧森堡德國化，盧森堡人以盧森堡語作為民族認同的象徵。1984年被定為國語。由於外國人約佔人口近一半，以盧森堡語為主要語言者約只有一半，但它是取得國籍必須通過的語言測驗。",
     "greeting": "Moien",
     "pronunciation": "moy-en"
    },
    {
     "name": "葡萄牙語",
     "percent": 15,
-    "description": "葡萄牙裔居民約占人口六分之一，是重要的家庭語言。",
+    "description": "1960–70年代盧森堡的鋼鐵業與建築業大量招募葡萄牙勞工，葡萄牙人逐漸成為最大的外國人社群，約佔總人口的一成五。葡萄牙語因此在盧森堡日常生活中十分常見，許多學校也提供葡萄牙語課程。",
     "greeting": "Olá",
     "pronunciation": "o-la"
    },
    {
     "name": "法語",
     "percent": 15,
-    "description": "立法與行政主要語言，也是跨國通勤者常用語。",
+    "description": "法語自中世紀起就是盧森堡貴族與行政的語言，1839年獨立後法語成為立法語言，至今法律條文以法語書寫。此外每天有大量來自法國與比利時的跨境通勤者，使法語成為職場與商業的通用語。",
     "greeting": "Bonjour",
     "pronunciation": "bon-zhoor"
    },
    {
     "name": "英語",
     "percent": 4,
-    "description": "金融與國際機構常用。",
+    "description": "盧森堡是歐盟法院、歐洲投資銀行等歐盟機構的所在地，也是國際金融中心，吸引大量英語系的專業人士。英語在金融業與國際機構中廣泛使用，以英語為主要語言者約佔人口的一小部分。",
     "greeting": "Hello",
     "pronunciation": "heh-loh"
    },
    {
     "name": "德語",
     "percent": 3,
-    "description": "媒體與基礎教育常用的書面語。",
+    "description": "德語在19世紀至20世紀是盧森堡學校的主要教學語言，報紙與媒體也多以德語書寫。今天學生在小學先以德語學習讀寫，但以德語為主要語言的人主要是來自德國的移民與跨境通勤者。",
     "greeting": "Hallo",
     "pronunciation": "ha-lo"
    }
   ],
-  "history": "盧森堡位於日耳曼語與羅曼語交界，本地口語屬德語方言，法語則自中世紀起為貴族與行政語言。二戰期間德國占領，1941年居民拒絕認同德國身分，戰後盧森堡語成為國家認同核心，1984年立法確立為國語。"
+  "history": "盧森堡語源自中世紀摩澤爾河流域的法蘭克方言，與德語密切相關，長期被視為德語的一種方言。1839年盧森堡獨立後法語與德語成為行政語言，法語是菁英與法律的語言。1941年納粹佔領期間進行人口調查，絕大多數人拒絕填寫德語作為母語，盧森堡語成為抵抗的象徵。1984年法律正式把盧森堡語定為國語，並與法語、德語並列行政語言；學校教育中三種語言依序學習，使大多數人成為多語者。"
  },
  "food": {
   "ranking": [
    {
     "name": "燻豬頸配蠶豆",
     "localName": "Judd mat Gaardebounen",
-    "description": "煙燻豬頸肉配上奶油醬蠶豆與馬鈴薯，為國菜。",
-    "history": "源自農村傳統，豬頸肉在冬季燻製保存，夏季配新鮮蠶豆食用。",
+    "description": "以鹽醃燻製的豬頸肉，與蠶豆、馬鈴薯一起燉煮，淋上奶油白醬，被視為國菜。口味鹹香，燻肉與蠶豆的香氣相互搭配。",
+    "history": "Judd mat Gaardebounen 是盧森堡傳統農家料理，使用燻豬肉與夏季收成的蠶豆，反映盧森堡農村的物產與保存肉類的傳統。它是盧森堡最具代表性的菜色，常在夏季的節慶與家庭聚會中出現，盧森堡人也以此作為表達民族認同的代表料理。",
     "wiki": "Judd mat Gaardebounen",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/JuddMatGaardebounen_Beer.JPG/960px-JuddMatGaardebounen_Beer.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:JuddMatGaardebounen_Beer.JPG",
@@ -83,8 +83,8 @@
    {
     "name": "馬鈴薯煎餅",
     "localName": "Gromperekichelcher",
-    "description": "以馬鈴薯絲、洋蔥與香草煎炸的薄餅，常配蘋果泥。",
-    "history": "盧森堡各地節慶與聖誕市集上的經典小吃。",
+    "description": "把馬鈴薯刨絲與洋蔥、雞蛋、麵粉混合後油炸成的煎餅，常配蘋果泥食用。外皮金黃酥脆，是節慶市集常見的熱食小吃。",
+    "history": "馬鈴薯在18世紀後成為盧森堡農家的主食，Gromperekichelcher（意為「馬鈴薯小餅」）是常見的家常料理。它是盧森堡各地節慶市集與聖誕市集的代表小吃，特別在冬季寒冷時節，人們會在戶外攤位買一份熱騰騰的薯餅。",
     "wiki": "Gromperekichelcher",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Latkas.jpg/960px-Latkas.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Latkas.jpg",
@@ -93,8 +93,8 @@
    {
     "name": "四季豆湯",
     "localName": "Bouneschlupp",
-    "description": "以四季豆、馬鈴薯、培根與洋蔥燉成的濃湯。",
-    "history": "盧森堡傳統的家庭湯品，被視為國民料理之一。",
+    "description": "以四季豆、馬鈴薯、洋蔥與培根或香腸煮成的濃湯。口感濃稠，帶有燻肉與四季豆的香氣，是冬季的家常湯品。",
+    "history": "Bouneschlupp 是盧森堡傳統的家常湯品，源於農家利用自家菜園中的四季豆製作的簡單料理。過去它是農村家庭在冬季的重要主食，加入燻肉增添風味。今天它仍是盧森堡人在寒冷季節的代表性湯品，也被視為盧森堡飲食文化的象徵之一。",
     "wiki": "Bouneschlupp",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Bouneschlupp16.jpg/960px-Bouneschlupp16.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Bouneschlupp16.jpg",
@@ -103,8 +103,8 @@
    {
     "name": "煮乳酪",
     "localName": "Kachkéis",
-    "description": "軟質的熟成乳酪醬，抹在麵包上食用。",
-    "history": "傳統農家利用脫脂牛奶製作的乳製品。",
+    "description": "以牛奶發酵製成的軟質乳酪，經加熱融化後成為可塗抹的濃稠乳酪醬，常抹在麵包上吃。口感滑順，帶有特殊的發酵香氣。",
+    "history": "Kachkéis 是盧森堡獨特的乳製品，源於農家利用剩餘牛奶製作可長期保存的乳酪。它的製作過程需要讓乳酪發酵數天再加熱融化，帶有獨特的香氣。傳統上它是農家的早餐與點心，今天則是盧森堡人引以為傲的地方特產。",
     "wiki": "Kachkéis",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Cancoillotte.jpg/960px-Cancoillotte.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Cancoillotte.jpg",
@@ -113,8 +113,8 @@
    {
     "name": "李子塔",
     "localName": "Quetschentaart",
-    "description": "以當地紫李子鋪滿塔皮烘烤的甜點。",
-    "history": "每年夏末李子成熟時的傳統甜點，常見於村莊節慶。",
+    "description": "以酵母麵團或酥皮為底，鋪上切半的李子烤成的水果塔。酸甜的李子汁滲入塔皮，常撒糖或配奶油食用。",
+    "history": "Quetschentaart 是盧森堡夏末秋初的季節甜點，此時正是摩澤爾河谷李子收成的季節。9月前後許多村莊的節慶與市集都會販售李子塔，家庭也趁產季大量烘烤分送親友。這道甜點反映盧森堡農業的季節性與鄉村傳統。",
     "wiki": "Quetschentaart",
     "image": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Quetschentaart_02.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Quetschentaart_02.jpg",

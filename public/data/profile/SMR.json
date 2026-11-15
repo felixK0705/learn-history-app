@@ -7,20 +7,20 @@
    {
     "name": "天主教",
     "percent": 90,
-    "description": "傳統上的主要宗教，與國家歷史緊密相連。"
+    "description": "根據傳說，聖馬利諾由來自達爾馬提亞阿爾貝島的石匠聖馬利努斯在301年建立，他是為了逃避羅馬皇帝戴克里先迫害基督徒而來到蒂塔諾山上隱居。因此聖馬利諾從建國起就與天主教密不可分，國名即來自這位聖人，每年9月3日的聖馬利諾節是國慶日。由於長期處於義大利的天主教環境中，天主教一直是絕大多數人的信仰。"
    },
    {
     "name": "無宗教",
     "percent": 7,
-    "description": "比例較低但逐漸增加。"
+    "description": "聖馬利諾與義大利相似，戰後的經濟發展、教育普及與世俗化使部分人不再認同宗教。聖馬利諾憲法保障宗教自由，但天主教在文化、節慶與國家儀式中仍佔核心地位，社會整體世俗化程度不如西歐大國，因此無宗教人口比例不高。"
    },
    {
     "name": "其他",
     "percent": 2,
-    "description": "包含新教、耶和華見證人等。"
+    "description": "其他宗教包括少數的新教、耶和華見證人與其他信仰，信徒主要是外籍居民。聖馬利諾憲法保障宗教自由，但由於人口只有約三萬多人，其他宗教的社群規模很小。"
    }
   ],
-  "background": "相傳西元301年石匠聖馬力諾為躲避羅馬帝國的基督徒迫害，在蒂塔諾山建立修道團體，聖馬利諾即由此發展而來。天主教因此與國家起源密不可分，國名即來自這位聖人。"
+  "background": "傳說聖馬利諾在301年由基督徒石匠聖馬利努斯建立，是世界上現存最古老的共和國之一，從建國起就以天主教為核心。數百年來聖馬利諾在義大利半島的動盪中保持獨立，1631年教宗承認其獨立地位。19世紀義大利統一時，聖馬利諾因曾庇護加里波底而得以保持獨立。天主教至今是國民的主要信仰，也深深融入國家的節慶與儀式之中。"
  },
  "language": {
   "official": "官方語言為義大利語。",
@@ -28,27 +28,27 @@
    {
     "name": "義大利語",
     "percent": 96,
-    "description": "全國通用的官方語言。",
+    "description": "義大利語是聖馬利諾的官方語言，因為聖馬利諾完全被義大利包圍，與義大利有共同的歷史與文化。19世紀義大利統一後，以托斯卡尼方言為基礎的標準義大利語透過教育與媒體普及，聖馬利諾也採用了義大利語作為官方語言與教育語言。",
     "greeting": "Ciao / Buongiorno",
     "pronunciation": "chow / bwon-jor-no"
    },
    {
     "name": "羅馬涅語",
     "percent": 3,
-    "description": "當地傳統方言，屬艾米利亞－羅馬涅語，年長者較常使用。",
+    "description": "羅馬涅語是義大利北部艾米利亞－羅馬涅大區的地方語言，屬於加洛－義大利語支，與標準義大利語差異頗大。聖馬利諾位於羅馬涅地區，傳統上居民在家中說羅馬涅語。20世紀標準義大利語普及後，羅馬涅語的使用者逐漸減少，主要集中在年長者之間。",
     "greeting": "Ciao",
     "pronunciation": "chow"
    }
   ],
-  "history": "聖馬利諾位於羅馬涅地區，傳統口語為羅馬涅方言。隨著義大利統一後標準義大利語的普及，以及媒體與教育的影響，義大利語已成為日常與正式場合的主要語言。"
+  "history": "聖馬利諾地區在羅馬時期通行拉丁語，中世紀後逐漸演變成羅馬涅方言。數百年來聖馬利諾人在日常生活中使用羅馬涅語，官方文件則使用拉丁語與後來的義大利語。19世紀義大利統一後，標準義大利語透過學校教育與媒體普及，羅馬涅語逐漸被取代，今日主要在年長者之間使用。"
  },
  "food": {
   "ranking": [
    {
     "name": "羅馬涅薄餅",
     "localName": "Piadina",
-    "description": "以麵粉、豬油製成的薄扁餅，夾火腿、起司與芝麻菜。",
-    "history": "羅馬涅地區的傳統平民食物，在聖馬利諾十分普遍。",
+    "description": "以麵粉、豬油、鹽與水揉成麵團，擀成薄圓餅後在陶盤或鐵板上烤熟，對折夾入生火腿、斯奎夸隆起司與芝麻菜食用。",
+    "history": "羅馬涅薄餅是義大利羅馬涅地區的傳統食物，歷史可追溯到中世紀，最初是農民的日常麵包，因為製作快速、不需要發酵。19–20世紀羅馬涅詩人帕斯科利曾稱其為「羅馬涅人的國民食物」。在聖馬利諾，它是最普遍的街頭小吃與家庭食物，也是遊客必嚐的美食。",
     "wiki": "Piadina",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Piadina_romagnola_2.jpg/960px-Piadina_romagnola_2.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Piadina_romagnola_2.jpg",
@@ -57,8 +57,8 @@
    {
     "name": "三塔威化蛋糕",
     "localName": "Torta Tre Monti",
-    "description": "多層薄威化餅夾榛果巧克力醬，外層裹巧克力。",
-    "history": "以國徽上蒂塔諾山的三座塔樓命名，1940年代創製，是聖馬利諾代表性甜點。",
+    "description": "以多層薄威化餅夾入榛果巧克力奶油餡，外層再裹上巧克力，切片後可見層層紋路，口感酥脆香甜。",
+    "history": "三塔威化蛋糕的名稱來自聖馬利諾蒂塔諾山上的三座塔樓（瓜伊塔、切斯塔與蒙塔萊），它們是聖馬利諾的國家象徵，也出現在國旗與國徽上。這款蛋糕約在20世紀上半葉由當地糕點店創製，如今是聖馬利諾最具代表性的伴手禮。",
     "wiki": "Torta Tre Monti",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/La_Serenissima_Torta_Tre_Monti.jpg/960px-La_Serenissima_Torta_Tre_Monti.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:La_Serenissima_Torta_Tre_Monti.jpg",
@@ -67,8 +67,8 @@
    {
     "name": "帽子餃",
     "localName": "Cappelletti",
-    "description": "形似小帽的包餡麵食，常在清湯中食用。",
-    "history": "羅馬涅地區的傳統聖誕節料理。",
+    "description": "以麵皮包入起司或肉餡，捏成小帽子的形狀，放入清燉雞湯或閹雞湯中煮熟，湯清味鮮，是冬季與節慶的傳統料理。",
+    "history": "帽子餃是義大利羅馬涅地區的傳統麵食，名稱意為「小帽子」，形狀類似中世紀的帽子。19世紀義大利美食家阿圖西在1891年出版的經典食譜書中記錄了帽子餃的做法。在聖馬利諾與羅馬涅地區，帽子餃湯是聖誕節午餐的必備料理，家家戶戶會在節前一起包製。",
     "wiki": "Cappelletti",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/02_Cappelletti_-_Cappellacci_-_Pasta_ripiena_-_Cucina_tipica_-_Ferrara.jpg/960px-02_Cappelletti_-_Cappellacci_-_Pasta_ripiena_-_Cucina_tipica_-_Ferrara.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:02_Cappelletti_-_Cappellacci_-_Pasta_ripiena_-_Cucina_tipica_-_Ferrara.jpg",
@@ -77,8 +77,8 @@
    {
     "name": "麵包屑麵",
     "localName": "Passatelli",
-    "description": "以麵包屑、帕瑪森起司與雞蛋壓成的粗麵條，放入高湯中煮。",
-    "history": "源自羅馬涅地區利用剩餘麵包的農家料理。",
+    "description": "以麵包屑、帕瑪森起司、雞蛋與肉豆蔻、檸檬皮揉成麵團，用特製的工具壓成粗短的麵條，放入高湯中煮熟。",
+    "history": "麵包屑麵起源於羅馬涅地區的農家，農民為了不浪費乾掉的麵包而發明這道料理，體現了「不浪費」的農村智慧。阿圖西在1891年的食譜書中也收錄了它。在聖馬利諾與羅馬涅地區，它是冬季與節慶時常見的湯麵，特別是在復活節期間。",
     "wiki": "Passatelli",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Passatelli.jpg/960px-Passatelli.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Passatelli.jpg",
@@ -87,8 +87,8 @@
    {
     "name": "布斯特倫戈蛋糕",
     "localName": "Bustrengo",
-    "description": "以麵包屑、玉米粉、蜂蜜、果乾製成的紮實蛋糕。",
-    "history": "聖馬利諾傳統的農家聖誕節甜點。",
+    "description": "以麵包屑、玉米粉、蜂蜜、牛奶、蛋與葡萄乾、無花果乾、蘋果等果乾混合烤成，口感紮實濕潤，香甜帶果香。",
+    "history": "布斯特倫戈蛋糕是聖馬利諾與羅馬涅地區的傳統農家甜點，農民利用家中剩下的麵包與當季水果製作，是「窮人的蛋糕」。由於材料容易取得，它在過去是聖誕節與冬季節慶時家家戶戶都會做的甜點，各家的配方略有不同，至今仍是聖馬利諾代表性的傳統甜點之一。",
     "wiki": "Bustrengo",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Bustrengo.jpg/960px-Bustrengo.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Bustrengo.jpg",

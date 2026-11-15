@@ -7,30 +7,30 @@
    {
     "name": "路德宗",
     "percent": 25,
-    "description": "歷史上拉脫維亞人的主要教會，盛行於西部與北部。"
+    "description": "16世紀宗教改革時，統治拉脫維亞的德意志貴族與里加等城市接受路德宗，北部與中部的拉脫維亞農民也隨之改信。路德宗與德國文化影響深遠，1689年《聖經》被譯成拉脫維亞語。但蘇聯時期無神論政策使信徒大量流失，今天路德宗比例已大幅下降。"
    },
    {
     "name": "無宗教",
     "percent": 25,
-    "description": "蘇聯時期無神論政策留下的影響。"
+    "description": "蘇聯統治50年間推行無神論，關閉教堂並迫害神職人員，許多家庭不再傳承宗教。拉脫維亞因此成為歐洲無宗教比例較高的國家之一，主要集中在里加等城市與年輕世代。"
    },
    {
     "name": "東正教",
     "percent": 24,
-    "description": "主要為俄羅斯裔居民，也有拉脫維亞正教會信徒。"
+    "description": "東正教主要由俄羅斯帝國統治時期（18–20世紀）與蘇聯時期移入的俄羅斯人、白俄羅斯人與烏克蘭人帶來，信徒集中在里加與東部的道加夫皮爾斯等城市。2022年俄烏戰爭後，拉脫維亞東正教會宣布脫離莫斯科牧首區獨立。"
    },
    {
     "name": "天主教",
     "percent": 21,
-    "description": "主要分布於東部拉特加萊地區。"
+    "description": "天主教在東南部的拉特加萊地區最為普遍，因該地區1561–1772年歸屬波蘭-立陶宛聯邦，未受路德宗改革影響。拉特加萊的阿格盧納大教堂是重要的天主教朝聖地，每年8月吸引大批信徒。"
    },
    {
     "name": "其他",
     "percent": 3,
-    "description": "包含舊禮儀派、浸信會等。"
+    "description": "包括舊禮儀派（17世紀逃避俄國宗教改革迫害而移入的俄羅斯人）、浸信會、新異教運動「迪耶夫圖里巴」（Dievturība，20世紀復興的波羅的海傳統信仰）等。"
    }
   ],
-  "background": "13世紀德意志十字軍征服此地並傳入天主教，16世紀宗教改革後庫爾蘭與利沃尼亞北部改信路德宗，而東部的拉特加萊因受波蘭－立陶宛統治而保留天主教。俄帝國與蘇聯時期東正教隨俄羅斯移民而來。"
+  "background": "拉脫維亞原住民信奉波羅的海多神信仰。12–13世紀德意志條頓騎士團與寶劍騎士團以「北方十字軍」征服此地，強迫當地人改信天主教，並建立利沃尼亞騎士團國家。16世紀宗教改革時，德意志貴族與城市接受路德宗，北部與中部的拉脫維亞人也隨之改信；東南部的拉特加萊地區則在1561年後歸屬波蘭-立陶宛，維持天主教。18世紀起俄羅斯帝國統治，東正教隨俄羅斯人移入。蘇聯時期（1940–1991年）推行無神論，大量俄羅斯人移入，使今天的宗教版圖分成路德宗、天主教、東正教與無宗教四大群體。"
  },
  "language": {
   "official": "官方語言為拉脫維亞語。",
@@ -38,27 +38,27 @@
    {
     "name": "拉脫維亞語",
     "percent": 61,
-    "description": "屬印歐語系波羅的語族，與立陶宛語相近。",
+    "description": "拉脫維亞語是拉脫維亞民族的語言，19世紀民族覺醒運動以它為核心，1918年獨立後成為國語。1991年恢復獨立後，政府以《國家語言法》（1999年）確立拉脫維亞語為唯一官方語言，並推動學校教學語言轉換，以扭轉蘇聯時期俄語的優勢地位。",
     "greeting": "Sveiki",
     "pronunciation": "svei-ki"
    },
    {
     "name": "俄語",
     "percent": 37,
-    "description": "俄羅斯裔與部分其他少數民族的家庭語言，在里加普遍使用。",
+    "description": "俄羅斯人自18世紀起陸續移入，但蘇聯時期（1940–1991年）工業化帶來大量俄語移民，使拉脫維亞族一度只佔人口略過半數。1991年後許多蘇聯時期移民未自動取得公民權，成為「非公民」，語言與公民權問題至今仍敏感；俄語主要使用於里加與東部城市。",
     "greeting": "Привет",
     "pronunciation": "pri-vyet"
    }
   ],
-  "history": "拉脫維亞語是現存兩種波羅的語之一，數百年間德語為上層語言。19世紀「青年拉脫維亞」民族覺醒運動推動拉脫維亞語文學。蘇聯時期大量俄語移民使俄語強勢，恢復獨立後確立拉脫維亞語為唯一官方語言。"
+  "history": "拉脫維亞語屬印歐語系波羅的語族，與立陶宛語相近。13世紀德意志騎士征服後，德語成為貴族與城市的語言，拉脫維亞語則是農民的語言。1585年出版第一本拉脫維亞語書籍（天主教教理問答），1689年路德宗牧師格律克完成《聖經》翻譯，奠定了書面語基礎。19世紀「青年拉脫維亞人」運動推動民族覺醒；1918年獨立後拉脫維亞語成為國語。蘇聯時期大量俄羅斯人移入，俄語成為優勢語言，1991年恢復獨立後拉脫維亞語重新成為唯一官方語言。"
  },
  "food": {
   "ranking": [
    {
     "name": "冷甜菜湯",
     "localName": "Aukstā zupa",
-    "description": "以甜菜、克菲爾、黃瓜、蒔蘿與水煮蛋製成的粉紅色冷湯。",
-    "history": "波羅的海地區夏季常見的傳統冷湯。",
+    "description": "以醃甜菜、小黃瓜、蒔蘿與水煮蛋加入發酵牛奶（kefir）製成的粉紅色冷湯，配熱馬鈴薯食用。",
+    "history": "冷甜菜湯是波羅的海與東歐夏季的傳統料理，加入發酵乳製品是拉脫維亞與立陶宛的特色。在沒有冷藏設備的時代，發酵乳是保存牛奶的方法，夏季炎熱時人們喝冷湯消暑。今天它是拉脫維亞夏季家庭餐桌上最常見的湯品。",
     "wiki": "Cold beet soup",
     "image": "https://upload.wikimedia.org/wikipedia/commons/3/37/Lurid_borscht.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Lurid_borscht.jpg",
@@ -67,8 +67,8 @@
    {
     "name": "培根小餡餅",
     "localName": "Pīrāgi",
-    "description": "新月形的小麵包，內包培根與洋蔥丁烘烤。",
-    "history": "節慶與聚會時必備，在拉脫維亞民族史詩中也有出現。",
+    "description": "以酵母麵團包入切碎的培根與洋蔥烤成的半月形小餡餅。外皮柔軟微甜、內餡鹹香，是節慶常見的點心。",
+    "history": "Pīrāgi 的名稱與俄羅斯的 pirozhki 同源，反映東歐普遍的餡餅傳統。拉脫維亞版本以培根為餡，源於農家冬季宰豬後保存肉品的傳統。它是聖誕節、仲夏節與各種家庭慶祝活動中不可缺少的點心，也是拉脫維亞移民在海外最常做的家鄉食物。",
     "wiki": "Speķrauši",
     "image": "https://upload.wikimedia.org/wikipedia/commons/c/c4/L%C4%ABgo_p%C4%ABr%C4%81dzi%C5%86i.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:L%C4%ABgo_p%C4%ABr%C4%81dzi%C5%86i.jpg",
@@ -77,8 +77,8 @@
    {
     "name": "胡蘿蔔馬鈴薯塔",
     "localName": "Sklandrausis",
-    "description": "黑麥塔皮中填入馬鈴薯泥與胡蘿蔔泥的甜塔。",
-    "history": "源自庫爾蘭地區，2013年獲歐盟「傳統特產保證」認證。",
+    "description": "以黑麥酥皮為底，鋪上馬鈴薯泥與胡蘿蔔泥，撒肉桂烤成的甜味小塔。口感鬆軟香甜，帶有肉桂與奶油的香氣。",
+    "history": "Sklandrausis 源自拉脫維亞西部的庫爾澤梅地區，是傳統的節慶點心，使用黑麥、馬鈴薯與胡蘿蔔等當地物產。2013年它獲得歐盟「傳統特產保證」（TSG）認證，成為拉脫維亞第一個獲得此認證的食品，反映其在拉脫維亞飲食文化中的重要地位。",
     "wiki": "Sklandrausis",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Suitu_sklandrau%C5%A1i.jpg/960px-Suitu_sklandrau%C5%A1i.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Suitu_sklandrau%C5%A1i.jpg",
@@ -87,8 +87,8 @@
    {
     "name": "仲夏起司",
     "localName": "Jāņu siers",
-    "description": "加入葛縷子籽的新鮮起司，形狀像太陽。",
-    "history": "在6月仲夏節（Jāņi）與啤酒一同享用，象徵太陽。",
+    "description": "以牛奶、凝乳、雞蛋與葛縷子籽製成的圓形新鮮乳酪，切片配啤酒食用。口感緊實，帶有葛縷子的獨特香氣。",
+    "history": "Jāņu siers 是拉脫維亞仲夏節（Jāņi，6月23–24日）的傳統食物，仲夏節源自前基督教時代慶祝夏至的波羅的海傳統信仰，人們在這天點燃篝火、唱歌、配戴花冠，並吃葛縷子乳酪配啤酒。圓形的乳酪象徵太陽，儘管經歷了基督教化與蘇聯時期，這個節日習俗仍完整保存下來。",
     "wiki": "Jāņu siers",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Caraway_cheese.jpg/960px-Caraway_cheese.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Caraway_cheese.jpg",
@@ -97,8 +97,8 @@
    {
     "name": "黑麥麵包",
     "localName": "Rupjmaize",
-    "description": "以黑麥製成的酸種深色麵包。",
-    "history": "黑麥是波羅的海地區傳統作物，拉脫維亞人視黑麥麵包為日常主食。",
+    "description": "以黑麥粉、酸麵種與葛縷子製成的深色、紮實、微酸的麵包。口感厚實、帶有酸味與焦香，常配奶油或燻魚食用。",
+    "history": "黑麥耐寒，適合拉脫維亞寒冷的氣候，自古就是當地主要的穀物，黑麥麵包在拉脫維亞文化中有神聖意義，傳統上掉落的麵包要撿起來親吻。過去農家每週在家中的大烤爐中烤製，用來度過漫長的冬季。今天 rupjmaize 仍是拉脫維亞人的日常主食，也是重要的文化象徵。",
     "wiki": "Rye bread",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Market_Bread%2C_Riga%2C_Latvia.jpg/960px-Market_Bread%2C_Riga%2C_Latvia.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Market_Bread,_Riga,_Latvia.jpg",

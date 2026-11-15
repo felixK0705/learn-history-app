@@ -7,20 +7,20 @@
    {
     "name": "東正教",
     "percent": 46,
-    "description": "馬其頓正教會是最大的宗教團體。"
+    "description": "9世紀末聖克萊門與聖瑙姆在奧赫里德建立斯拉夫基督教中心，東正教從此成為馬其頓斯拉夫人的信仰。鄂圖曼統治時期東正教會是維繫斯拉夫人認同的重要組織。1967年馬其頓東正教會宣布脫離塞爾維亞教會自主，長期不被其他東正教會承認，2022年才獲得承認。今天東正教徒主要是馬其頓族。"
    },
    {
     "name": "伊斯蘭教",
     "percent": 32,
-    "description": "主要為阿爾巴尼亞裔、土耳其裔與部分羅姆人。"
+    "description": "伊斯蘭教在14世紀末鄂圖曼帝國征服後傳入，大多數阿爾巴尼亞人與土耳其人、以及部分斯拉夫人（稱為托貝什人或馬其頓穆斯林）改信伊斯蘭教。今天穆斯林主要分布在西部的泰托沃、戈斯蒂瓦爾等阿爾巴尼亞族聚居區，並因較高的出生率使比例上升。"
    },
    {
     "name": "其他基督教",
     "percent": 14,
-    "description": "普查中未註明教派的基督徒。"
+    "description": "包括天主教（主要是阿爾巴尼亞族與部分東儀天主教徒）、新教等其他基督教派，以及未申報宗教者。"
    }
   ],
-  "background": "九世紀聖西里爾與聖美多德的門徒克萊門特與納烏姆在奧赫里德傳教，使當地成為斯拉夫基督教的重要中心。十四世紀末起鄂圖曼帝國統治五百多年，部分居民改信伊斯蘭教。"
+  "background": "基督教在1世紀使徒保羅時期就傳到馬其頓地區，9世紀聖西里爾與聖美多德的弟子聖克萊門與聖瑙姆在奧赫里德建立斯拉夫文學中心，奧赫里德成為東正教的重要中心。14世紀末鄂圖曼帝國征服馬其頓，統治長達五百多年，部分斯拉夫人與大多數阿爾巴尼亞人、土耳其人改信伊斯蘭教。1913年巴爾幹戰爭後馬其頓被塞爾維亞、希臘與保加利亞瓜分，北馬其頓所在地區歸屬塞爾維亞與後來的南斯拉夫。1967年馬其頓東正教會宣布自主，2022年才獲得普世牧首承認。2001年阿爾巴尼亞族武裝衝突後，《奧赫里德協議》保障了阿爾巴尼亞族的權利。"
  },
  "language": {
   "official": "馬其頓語是官方語言，阿爾巴尼亞語也是全國性官方語言。",
@@ -28,41 +28,41 @@
    {
     "name": "馬其頓語",
     "percent": 61,
-    "description": "屬南斯拉夫語支，使用西里爾字母。",
+    "description": "馬其頓語在1944年南斯拉夫的馬其頓共和國成立後正式標準化，成為國家與教育語言。由於保加利亞長期主張馬其頓語是保加利亞語的方言，語言問題至今仍是兩國關係的敏感議題，甚至影響北馬其頓加入歐盟的談判。",
     "greeting": "Здраво (Zdravo)",
     "pronunciation": "ZDRAH-voh"
    },
    {
     "name": "阿爾巴尼亞語",
     "percent": 24,
-    "description": "西部與西北部阿爾巴尼亞裔居民的語言。",
+    "description": "阿爾巴尼亞人自中世紀就生活在馬其頓西部，鄂圖曼時期人口增加。2001年阿爾巴尼亞族武裝衝突後，《奧赫里德協議》規定使用者超過兩成的語言可在地方成為官方語言，2019年法律更將阿爾巴尼亞語提升為全國官方語言。阿爾巴尼亞語主要使用於西部的泰托沃、戈斯蒂瓦爾等地。",
     "greeting": "Përshëndetje",
     "pronunciation": "pur-shun-DET-yeh"
    },
    {
     "name": "土耳其語",
     "percent": 3,
-    "description": "土耳其裔居民使用。",
+    "description": "土耳其語是鄂圖曼帝國五百多年統治留下的語言，土耳其族主要居住在城市與東部的部分村落。20世紀許多土耳其人移居土耳其，人數減少，但土耳其語在部分地區仍是地方官方語言之一。",
     "greeting": "Merhaba",
     "pronunciation": "MER-ha-ba"
    },
    {
     "name": "羅姆語",
     "percent": 2,
-    "description": "羅姆人社群使用，史高比耶的舒托奧里扎里區是羅姆人聚居地。",
+    "description": "羅姆人在中世紀晚期從印度經拜占庭與鄂圖曼帝國遷入巴爾幹。北馬其頓的舒托奧里扎里（Šuto Orizari）是全世界第一個以羅姆人為多數並由羅姆人擔任市長的自治市，羅姆語在當地具有官方地位。",
     "greeting": "Sar san?",
     "pronunciation": "sar SAN"
    }
   ],
-  "history": "奧赫里德是中世紀斯拉夫文字與文學的中心。現代馬其頓標準語在1945年才正式制定，以西部方言為基礎。2001年衝突後的《奧赫里德協議》提升了阿爾巴尼亞語的地位，2019年起成為全國官方語言。"
+  "history": "馬其頓語屬南斯拉夫語支，與保加利亞語非常接近。9世紀聖西里爾與聖美多德創造格拉哥里字母，其弟子在奧赫里德發展出早期的西里爾字母。鄂圖曼統治時期馬其頓地區使用多種語言，19世紀時保加利亞與塞爾維亞都主張馬其頓斯拉夫人屬於自己的民族。1944年南斯拉夫的馬其頓社會主義共和國成立後，馬其頓語以西部方言為基礎正式標準化，成為官方語言。2019年改名為北馬其頓後，阿爾巴尼亞語也在全國層級獲得官方地位。"
  },
  "food": {
   "ranking": [
    {
     "name": "烤豆",
     "localName": "Тавче гравче (Tavče gravče)",
-    "description": "以白豆、洋蔥與紅椒粉在陶鍋中烘烤的料理。",
-    "history": "被視為北馬其頓國菜。",
+    "description": "把白豆與洋蔥、紅椒粉一起在陶鍋中燉煮後放入烤爐烘烤，是北馬其頓國菜。口感綿密，帶有紅椒與洋蔥的香氣，常配麵包食用。",
+    "history": "Tavče gravče 意為「鍋中的豆子」，使用北馬其頓產的大白豆，在傳統的陶鍋（tavče）中烤製。豆類是巴爾幹農民的重要蛋白質來源，在東正教的齋期中，不能吃肉的信徒也常以豆類料理作為主食。今天它是北馬其頓家庭與餐廳的代表菜，常在週五與齋期時食用。",
     "wiki": "Tavče gravče",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/%D0%93%D1%80%D0%B0%D0%B2_%D0%B2%D0%BE_%D1%82%D0%B0%D0%B2%D0%B0%28%D1%82%D0%B0%D1%84%D1%87%D0%B5_%D0%B3%D1%80%D0%B0%D0%B2%D1%87%D0%B5%29_%283%29.jpg/960px-%D0%93%D1%80%D0%B0%D0%B2_%D0%B2%D0%BE_%D1%82%D0%B0%D0%B2%D0%B0%28%D1%82%D0%B0%D1%84%D1%87%D0%B5_%D0%B3%D1%80%D0%B0%D0%B2%D1%87%D0%B5%29_%283%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:%D0%93%D1%80%D0%B0%D0%B2_%D0%B2%D0%BE_%D1%82%D0%B0%D0%B2%D0%B0(%D1%82%D0%B0%D1%84%D1%87%D0%B5_%D0%B3%D1%80%D0%B0%D0%B2%D1%87%D0%B5)_(3).jpg",
@@ -71,8 +71,8 @@
    {
     "name": "阿伊瓦爾",
     "localName": "Ајвар (Ajvar)",
-    "description": "以烤紅椒與茄子熬成的抹醬。",
-    "history": "秋季家家戶戶自製的傳統醬料。",
+    "description": "把烤過的紅甜椒與茄子去皮後搗碎，加入大蒜、油與鹽慢慢熬煮成的抹醬，塗在麵包上吃。",
+    "history": "Ajvar 的名稱來自土耳其語 havyar（魚子醬），19世紀塞爾維亞人用這個名稱稱呼一種魚子醬，後來轉指紅椒醬。紅椒原產美洲，16世紀後經鄂圖曼帝國傳入巴爾幹。每年秋天甜椒收成時，北馬其頓家家戶戶在院子裡烤甜椒、熬製 ajvar 以便冬天食用，這是社區與家族共同參與的季節活動。",
     "wiki": "Ajvar",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Ajvar1_bright.jpg/960px-Ajvar1_bright.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Ajvar1_bright.jpg",
@@ -81,8 +81,8 @@
    {
     "name": "帕斯特馬伊利亞",
     "localName": "Пастрмајлија (Pastrmajlija)",
-    "description": "在船形麵包上鋪醃漬肉丁烘烤的料理。",
-    "history": "源自什蒂普地區，當地每年舉辦相關美食節。",
+    "description": "以發酵麵團做成橢圓形的餅，上面鋪上醃製豬肉或羊肉塊與雞蛋烤製。外皮酥脆、肉塊鹹香，是當地的特色小吃。",
+    "history": "Pastrmajlija 的名稱來自醃製的乾肉 pastrma，這種醃肉在鄂圖曼帝國時代流傳於巴爾幹與安納托利亞。它是北馬其頓中部施蒂普市的代表食物，施蒂普每年舉辦 pastrmajlija 節慶。它被稱為「馬其頓披薩」，常配醃辣椒與優格飲料。",
     "wiki": "Pastrmajlija",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/PastrmajlijaAngela.JPG/960px-PastrmajlijaAngela.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:PastrmajlijaAngela.JPG",
@@ -91,8 +91,8 @@
    {
     "name": "布雷克",
     "localName": "Бурек (Burek)",
-    "description": "以薄酥皮包裹肉、起司或菠菜烘烤的派。",
-    "history": "鄂圖曼時期傳入的料理，是常見早餐。",
+    "description": "以多層薄麵皮包入乳酪、絞肉或菠菜烤成的酥皮派，常配優格當早餐。外皮酥脆、內餡多樣，是北馬其頓最普遍的早餐。",
+    "history": "Burek 源自鄂圖曼帝國的 börek，一般認為與中亞突厥人的麵食傳統有關，隨鄂圖曼帝國14世紀後進入巴爾幹。在北馬其頓，burek 是最普遍的早餐，麵包店從清晨就開始販售，配上一杯優格飲料。它是鄂圖曼五百年統治留下的飲食遺產之一。",
     "wiki": "Burek",
     "image": "https://upload.wikimedia.org/wikipedia/commons/1/13/Burek_trokut_1.png",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Burek_trokut_1.png",
@@ -101,8 +101,8 @@
    {
     "name": "肖普斯卡沙拉",
     "localName": "Шопска салата (Shopska salata)",
-    "description": "以番茄、黃瓜、甜椒與白乳酪碎做成的沙拉。",
-    "history": "巴爾幹地區廣受歡迎的沙拉。",
+    "description": "以番茄、小黃瓜、洋蔥與甜椒切塊，上面撒滿刨碎的白乳酪的沙拉。口感清爽，乳酪的鹹味與蔬菜的清甜相互搭配。",
+    "history": "Shopska salata 一般認為是1950–60年代保加利亞國營旅遊公司為推廣觀光而設計的沙拉，紅、綠、白的配色象徵保加利亞國旗，名稱來自保加利亞西部的肖普人。它在社會主義時期透過觀光與南斯拉夫的交流傳遍巴爾幹，在北馬其頓同樣是餐前必點的沙拉，配烈酒拉基亞（rakija）食用。",
     "wiki": "Shopska salad",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Chopska.jpg/960px-Chopska.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Chopska.jpg",

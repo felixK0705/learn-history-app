@@ -7,25 +7,25 @@
    {
     "name": "天主教",
     "percent": 43,
-    "description": "殖民時期傳入，傳統上為主要宗教。"
+    "description": "1524年西班牙征服者佩德羅·德·阿爾瓦拉多入侵薩爾瓦多，征服了皮皮爾人的庫斯卡特蘭王國，天主教隨殖民統治傳入。殖民時期天主教是唯一合法的宗教，教會主導教育與社會生活。1970年代羅梅洛總主教公開批評軍政府的人權暴行，1980年在主持彌撒時遭暗殺，成為內戰的導火線之一，2018年被教宗方濟各封為聖人。天主教仍是最大宗教，但比例從過去的九成以上大幅下降。"
    },
    {
     "name": "新教（福音派）",
     "percent": 35,
-    "description": "1980年代後快速成長，比例在拉丁美洲名列前茅。"
+    "description": "新教最早在1896年由美國傳教士傳入，但長期只是少數。1980–1992年內戰期間，許多人在暴力與流離中轉向福音派與五旬節派教會，這些教會提供互助網絡與心靈慰藉，且不像天主教會那樣被捲入政治衝突。內戰後福音派持續快速成長，大型教會在聖薩爾瓦多興起，比例增至三成以上。"
    },
    {
     "name": "無宗教",
     "percent": 19,
-    "description": "近年比例上升。"
+    "description": "無宗教人口在1990年代後明顯增加，主要是城市中的年輕人。內戰期間宗教的政治化、教會醜聞，以及都市化與網路普及，都使部分年輕人疏離宗教機構。不過許多自認無宗教者仍相信上帝，只是不屬於任何教會。"
    },
    {
     "name": "其他",
     "percent": 2,
-    "description": "包含耶和華見證人、摩門教等。"
+    "description": "其他宗教包括耶和華見證人、摩門教，以及少數的猶太教、伊斯蘭教與原住民傳統信仰。19世紀末起也有來自巴勒斯坦的阿拉伯基督徒移民，他們在商業與政治上具有影響力。"
    }
   ],
-  "background": "16世紀西班牙征服後天主教成為主要宗教。內戰期間總主教羅梅洛為窮人發聲於1980年遇刺，後被封為聖人。內戰與社會動盪期間，福音派教會快速擴張。"
+  "background": "薩爾瓦多原住民皮皮爾人信仰與阿茲特克相近的多神教。1524年西班牙征服後天主教成為國教。19世紀獨立後自由派政府限制教會權力。1980年代內戰期間，羅梅洛總主教遭暗殺，解放神學與軍政府衝突激烈。內戰後福音派快速成長，薩爾瓦多從天主教國家轉變為天主教與福音派並存的社會。"
  },
  "language": {
   "official": "官方語言為西班牙語。",
@@ -33,27 +33,27 @@
    {
     "name": "西班牙語",
     "percent": 99,
-    "description": "全國通用語言。",
+    "description": "西班牙語在1524年西班牙征服後成為殖民地的行政、宗教與教育語言。原本通行的皮皮爾語（納瓦特語的一支）在殖民時期逐漸萎縮，1932年軍政府鎮壓農民起義的「大屠殺」（La Matanza）中有數千名原住民遇害，倖存者為了避免迫害而放棄原住民語言與服飾，加速了西班牙語的全面普及。今日幾乎全國都以西班牙語為母語。",
     "greeting": "Hola",
     "pronunciation": "o-la"
    },
    {
     "name": "英語",
     "percent": 1,
-    "description": "大量移民美國與回流人口使英語能力在部分地區普及。",
+    "description": "英語主要由在美國工作或居住後返國的薩爾瓦多人使用。1980年代內戰期間有大量薩爾瓦多人移民美國，今日海外僑民超過兩百萬人，與美國的密切聯繫使英語在年輕人與商業中越來越普遍，2001年薩爾瓦多更採用美元作為法定貨幣。",
     "greeting": "Hello",
     "pronunciation": "heh-loh"
    }
   ],
-  "history": "殖民前本地居民主要使用納瓦特語（皮皮爾語）。西班牙殖民後西班牙語逐漸取代原住民語言，1932年屠殺事件後原住民為避免迫害放棄母語，納瓦特語目前僅剩少數年長者使用，正推動復振。"
+  "history": "薩爾瓦多在西班牙征服前通行皮皮爾語、倫卡語等原住民語言。1524年西班牙征服後西班牙語成為主流語言，原住民語言逐漸萎縮。1932年大屠殺後，原住民語言遭到嚴重打壓，皮皮爾語瀕臨滅絕，今日只剩極少數年長者能使用。近年政府與學術機構推動皮皮爾語的復興計畫，在部分學校中教授。"
  },
  "food": {
   "ranking": [
    {
     "name": "普普薩",
     "localName": "Pupusa",
-    "description": "以玉米麵團包入起司、豬肉或豆泥後煎烤的厚餅，配醃高麗菜，為國菜。",
-    "history": "源自前哥倫布時期的皮皮爾人，每年11月第二個星期日為「國家普普薩日」。",
+    "description": "以玉米麵團包入起司、豬肉碎（chicharrón）或豆泥，壓成圓形厚餅後在平底鍋上煎烤，配醃高麗菜與番茄醬汁食用。",
+    "history": "普普薩源自前哥倫布時期的皮皮爾人，考古學家在霍亞德塞倫遺址（約西元600年被火山灰掩埋的村落，有「美洲的龐貝」之稱）中發現了製作玉米食物的器具。1960年代起普普薩從農村傳到城市，內戰期間更隨移民傳到美國。2005年薩爾瓦多國會將其定為國菜，每年11月第二個星期日為「國家普普薩日」。",
     "wiki": "Pupusa",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Pupusas_El_Salvador_Centro_America.JPG/960px-Pupusas_El_Salvador_Centro_America.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Pupusas_El_Salvador_Centro_America.JPG",
@@ -62,8 +62,8 @@
    {
     "name": "醃高麗菜",
     "localName": "Curtido",
-    "description": "以醋醃漬高麗菜、胡蘿蔔與洋蔥，略帶發酵酸味。",
-    "history": "是普普薩的必備配菜。",
+    "description": "將高麗菜、紅蘿蔔與洋蔥切絲，加入醋、奧勒岡與辣椒醃漬數天，帶有微微的發酵酸味，口感爽脆。",
+    "history": "醃高麗菜的做法類似德國酸菜，一般認為與西班牙人帶來的醋醃技術有關，高麗菜與紅蘿蔔也都是殖民時期才引入的作物。它是普普薩不可或缺的配菜，用來平衡普普薩的油膩感。在薩爾瓦多，每個普普薩攤都有自己的醃高麗菜配方，常放在大玻璃罐中讓客人自取。",
     "wiki": "Curtido",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Condiments_for_Pupusas_in_El_Salvador_2012.jpg/960px-Condiments_for_Pupusas_in_El_Salvador_2012.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Condiments_for_Pupusas_in_El_Salvador_2012.jpg",
@@ -72,8 +72,8 @@
    {
     "name": "塔馬利粽",
     "localName": "Tamales",
-    "description": "以玉米麵團包入肉或蔬菜，用香蕉葉包裹蒸熟。",
-    "history": "中美洲的古老食物，常在聖誕節與週末食用。",
+    "description": "以玉米麵團包入雞肉、豬肉、馬鈴薯與醬汁，用香蕉葉包裹後蒸煮數小時，口感軟嫩濕潤。",
+    "history": "玉米粽是中美洲原住民數千年來的傳統食物，馬雅與阿茲特克人在宗教儀式中以它作為祭品。西班牙人到來後加入了雞肉、豬肉等新的餡料。在薩爾瓦多，玉米粽是聖誕節與新年的必備食物，家家戶戶會在節前一起包製，並分送給親友。",
     "wiki": "Tamale",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Tamal_oaxaque%C3%B1o.jpg/960px-Tamal_oaxaque%C3%B1o.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Tamal_oaxaque%C3%B1o.jpg",
@@ -82,8 +82,8 @@
    {
     "name": "薩爾瓦多香米飲",
     "localName": "Horchata",
-    "description": "以莫羅籽、米、可可與香料磨粉調製的飲品。",
-    "history": "源自西班牙的飲品，在薩爾瓦多發展出加入莫羅籽的特色版本。",
+    "description": "以莫羅籽（一種葫蘆樹種子）、米、可可、肉桂、芝麻與花生磨成粉，加入水或牛奶與糖調製成冰涼的飲品，口感香濃。",
+    "history": "「horchata」源自西班牙瓦倫西亞以油莎豆製作的飲品，西班牙殖民者把這種飲品帶到美洲後，各地改用當地的食材。薩爾瓦多版本使用原住民食用已久的莫羅籽與可可，可可在前哥倫布時期甚至被當作貨幣。它是薩爾瓦多最受歡迎的飲品之一，常搭配普普薩飲用。",
     "wiki": "Horchata",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Horchata_de_chufa_2.jpg/960px-Horchata_de_chufa_2.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Horchata_de_chufa_2.jpg",
@@ -92,8 +92,8 @@
    {
     "name": "甜玉米熱飲",
     "localName": "Atol de elote",
-    "description": "以新鮮玉米、牛奶與肉桂煮成的濃稠熱飲。",
-    "history": "源自中美洲原住民的玉米飲品，在玉米收成季節特別常見。",
+    "description": "將新鮮的嫩玉米粒磨碎，與牛奶、糖、肉桂一起熬煮成濃稠的熱飲，口感香甜綿密，常撒上肉桂粉趁熱飲用。",
+    "history": "「atol」源自納瓦特語的「atolli」，是中美洲原住民數千年來以玉米製作的傳統飲品。在薩爾瓦多，甜玉米熱飲在每年8月至9月玉米收成的季節最常見，傳統上與玉米收成的慶祝活動有關。它也常在寒冷的早晨或傍晚飲用，搭配甜麵包或玉米粽。",
     "wiki": "Atole",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Atole.jpg/960px-Atole.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Atole.jpg",

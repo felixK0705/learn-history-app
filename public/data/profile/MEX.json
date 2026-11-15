@@ -7,20 +7,20 @@
    {
     "name": "天主教",
     "percent": 78,
-    "description": "西班牙殖民時期傳入，瓜達露佩聖母信仰是重要的民族象徵。"
+    "description": "1521年西班牙征服後，傳教士大規模推動原住民改宗，1531年瓜達露佩聖母顯現傳說把天主教與原住民文化融合，使天主教成為墨西哥民族認同的一部分。19–20世紀政府雖嚴格限制教會（1857年憲法與1917年憲法），甚至引發1926–1929年的基督戰爭，天主教仍是絕大多數人的信仰。不過比例從1950年的約98%逐年下降。"
    },
    {
     "name": "基督新教／福音派",
     "percent": 11,
-    "description": "近數十年在南部各州快速成長。"
+    "description": "19世紀美國新教傳教士開始進入墨西哥，但真正的成長是在20世紀後半：五旬節派與福音派教會在南部恰帕斯、塔巴斯科等原住民與貧窮地區快速擴張，提供社區互助與戒酒等支持。恰帕斯州是新教比例最高的州，也曾出現天主教與新教社群之間的衝突。"
    },
    {
     "name": "無宗教",
     "percent": 10,
-    "description": "不屬於任何宗教的人口逐年增加。"
+    "description": "墨西哥的無宗教者在近數十年明顯增加，主要集中在北部邊境州與大城市的年輕人中。都市化、教育普及、與美國的頻繁交流，以及對天主教會醜聞與政治立場的不滿，都是推動世俗化的原因。"
    }
   ],
-  "background": "十六世紀西班牙征服阿茲提克帝國後，天主教傳教士大規模傳教，並與原住民信仰融合，例如亡靈節與瓜達露佩聖母信仰。十九世紀改革運動推動政教分離，二十世紀後期福音派教會逐漸成長。"
+  "background": "阿茲特克、馬雅等中美洲文明信奉多神教，以太陽神、雨神等為中心並舉行人祭。1519–1521年科爾特斯征服阿茲特克帝國後，方濟會、道明會等傳教士大規模推動原住民改宗，並把天主教與原住民信仰融合。1531年原住民胡安·迪亞哥看見瓜達露佩聖母顯現的傳說，使天主教深植人心，瓜達露佩聖母成為墨西哥的民族象徵。19世紀改革戰爭與1917年憲法嚴格限制教會權力，1926–1929年爆發基督戰爭（Cristero War）。1992年墨西哥恢復與梵蒂岡的外交關係，近數十年新教與無宗教者逐漸增加。"
  },
  "language": {
   "official": "墨西哥聯邦法律未指定官方語言，西班牙語為事實上的國家語言，並承認68種原住民語言為國家語言。",
@@ -28,34 +28,34 @@
    {
     "name": "西班牙語",
     "percent": 94,
-    "description": "全國通用語言。",
+    "description": "西班牙語隨1521年西班牙征服傳入，殖民時期是行政、教會與菁英的語言。1821年獨立後，國家以西班牙語統一國民，20世紀革命後的教育政策更推動原住民學習西班牙語，使混血人口（Mestizo）以西班牙語為母語。今天墨西哥是全世界西班牙語人口最多的國家。",
     "greeting": "Hola",
     "pronunciation": "OH-la"
    },
    {
     "name": "納瓦特爾語",
     "percent": 1,
-    "description": "阿茲提克人的語言，是墨西哥使用人數最多的原住民語言。",
+    "description": "納瓦特爾語是阿茲特克帝國的語言，西班牙殖民初期仍廣泛使用，傳教士甚至用它書寫文獻。但隨著西班牙語的推廣與原住民語言受到歧視，使用人口大幅減少，今天主要集中在普埃布拉、伊達爾戈、韋拉克魯斯等中部州的鄉村。番茄（tomato）、巧克力（chocolate）等詞都源自納瓦特爾語。",
     "greeting": "Niltze",
     "pronunciation": "NEEL-tseh"
    },
    {
     "name": "猶加敦馬雅語",
     "percent": 1,
-    "description": "猶加敦半島馬雅人的語言。",
+    "description": "猶加敦馬雅語是古代馬雅文明的後裔語言，主要分布在猶加敦半島的猶加敦、坎佩切與金塔納羅奧州。19世紀猶加敦的馬雅人曾發動「種姓戰爭」（1847–1901年）反抗統治，當地馬雅語至今保存相對完整，是墨西哥使用人數第二多的原住民語言。",
     "greeting": "Ba'ax ka wa'alik",
     "pronunciation": "bash ka wa-a-LEEK"
    }
   ],
-  "history": "阿茲提克時期納瓦特爾語是中墨西哥的通用語，番茄、巧克力等字皆源於此。西班牙殖民後西班牙語逐漸成為主流，但許多原住民語言延續至今，2003年法律承認原住民語言與西班牙語同為國家語言。"
+  "history": "墨西哥在西班牙征服前有數百種原住民語言，阿茲特克帝國的納瓦特爾語是中部地區的通用語。1521年西班牙征服後，傳教士一度使用納瓦特爾語傳教並編寫字典，但西班牙語逐漸成為行政與教育的語言。1821年獨立後，19–20世紀的國家建設以西班牙語作為統一國家的工具，學校推行「卡斯提亞化」政策，原住民語言大幅萎縮。2003年《原住民語言權利法》承認68種原住民語言與西班牙語同為「國家語言」。今天墨西哥是全世界西班牙語人口最多的國家。"
  },
  "food": {
   "ranking": [
    {
     "name": "塔可",
     "localName": "Taco",
-    "description": "以玉米薄餅包裹肉類、洋蔥、香菜與莎莎醬。",
-    "history": "玉米餅是中美洲數千年的主食，塔可在十九世紀後於墨西哥城普及。",
+    "description": "以玉米餅包入各種餡料，例如烤肉、燉肉、魚或蔬菜，加上洋蔥、香菜與莎莎醬。餡料與醬汁變化多端，是墨西哥最普遍的街頭小吃。",
+    "history": "玉米在墨西哥被馴化已有約九千年歷史，阿茲特克人與馬雅人就以玉米餅包裹食物食用。塔可這個名稱可能源自18世紀墨西哥銀礦礦工，他們稱用來爆破的炸藥包為 taco，後來延伸到用玉米餅包裹的食物。20世紀初墨西哥移民把塔可帶到美國，之後風行全球。2010年墨西哥傳統料理被聯合國教科文組織列入非物質文化遺產。",
     "wiki": "Taco",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg/960px-001_Tacos_de_carnitas%2C_carne_asada_y_al_pastor.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:001_Tacos_de_carnitas,_carne_asada_y_al_pastor.jpg",
@@ -64,8 +64,8 @@
    {
     "name": "莫雷醬",
     "localName": "Mole",
-    "description": "以辣椒、香料、堅果與巧克力等數十種材料熬成的濃醬，常配雞肉。",
-    "history": "融合原住民與西班牙食材，普埃布拉與瓦哈卡的莫雷特別有名。",
+    "description": "以多種辣椒、可可、堅果、香料與麵包等數十種材料研磨熬成的濃稠醬汁，淋在雞肉或火雞肉上。",
+    "history": "Mole 一詞源自納瓦特爾語 mōlli（醬汁）。阿茲特克人原有以辣椒製作的醬汁，西班牙殖民後加入了來自歐洲與亞洲的香料、堅果與糖，形成融合料理。傳說17世紀普埃布拉的聖羅莎修道院修女為了迎接主教，用手邊的材料做出了普埃布拉 mole，但這只是傳說。今天 mole 是婚禮、受洗與亡靈節等重要節慶的料理，瓦哈卡州以擁有七種 mole 聞名。",
     "wiki": "Mole (sauce)",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/ChickRedMole.JPG/960px-ChickRedMole.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:ChickRedMole.JPG",
@@ -74,8 +74,8 @@
    {
     "name": "玉米粽",
     "localName": "Tamal",
-    "description": "以玉米麵團包餡料，用玉米葉或香蕉葉包好蒸熟。",
-    "history": "可追溯至前哥倫布時期，是節慶與聖燭節的傳統食物。",
+    "description": "以玉米麵團包入肉類、乳酪或辣椒醬，用玉米葉或香蕉葉包起來蒸熟。口感鬆軟，可甜可鹹，是節慶與早餐常見的食物。",
+    "history": "Tamal 源自前哥倫布時期的中美洲，阿茲特克與馬雅人在祭典與戰爭中就食用 tamal，因為它便於攜帶與保存。名稱來自納瓦特爾語 tamalli。今天每年2月2日聖燭節，墨西哥有一個習俗：在1月6日主顯節吃國王麵包時吃到小人偶的人，必須在聖燭節請大家吃 tamal，這是天主教與原住民傳統融合的例子。",
     "wiki": "Tamale",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Tamal_oaxaque%C3%B1o.jpg/960px-Tamal_oaxaque%C3%B1o.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Tamal_oaxaque%C3%B1o.jpg",
@@ -84,8 +84,8 @@
    {
     "name": "核桃醬鑲辣椒",
     "localName": "Chiles en nogada",
-    "description": "以肉餡鑲入辣椒，淋上白色核桃醬並撒石榴籽。",
-    "history": "紅、白、綠三色象徵墨西哥國旗，傳統上在獨立紀念月份食用。",
+    "description": "把烤過的波布拉諾辣椒填入肉、水果與堅果餡，淋上白色核桃醬並撒石榴籽，呈現綠、白、紅三色。",
+    "history": "Chiles en nogada 源自普埃布拉州，傳說1821年墨西哥獨立戰爭結束後，普埃布拉的修女為了慶祝阿古斯丁·德·伊圖爾維德將軍來訪而創造了這道菜，綠、白、紅三色象徵墨西哥國旗。它使用的核桃與石榴在8–9月收成，因此是9月16日獨立紀念日前後的季節性料理。",
     "wiki": "Chiles en nogada",
     "image": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Chile_en_nogada24.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Chile_en_nogada24.jpg",
@@ -94,8 +94,8 @@
    {
     "name": "玉米燉湯",
     "localName": "Pozole",
-    "description": "以大顆玉米粒與豬肉或雞肉燉煮的湯。",
-    "history": "源自前哥倫布時期的儀式料理，現常於國慶等節日食用。",
+    "description": "以大顆玉米粒（hominy）與豬肉或雞肉燉煮的湯，加入萵苣、蘿蔔、洋蔥、辣椒與萊姆。",
+    "history": "Pozole 源自前哥倫布時期，名稱來自納瓦特爾語。根據16世紀方濟會修士薩阿貢的紀錄，阿茲特克人在祭祀中會食用加入玉米的特殊燉湯，有學者認為與人祭儀式有關。西班牙征服後禁止人祭，改用豬肉取代。今天 pozole 是9月15日獨立紀念日晚上（「呼喊」紀念儀式）與新年聚會中最常吃的料理。",
     "wiki": "Pozole",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Green_pozole%2C_dressed_%2829161841908%29_%28cropped%29.jpg/960px-Green_pozole%2C_dressed_%2829161841908%29_%28cropped%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Green_pozole,_dressed_(29161841908)_(cropped).jpg",

@@ -7,20 +7,20 @@
    {
     "name": "喬治亞正教",
     "percent": 83,
-    "description": "喬治亞民族認同的核心。"
+    "description": "4 世紀初，據傳來自卡帕多奇亞的女傳教士聖妮諾使伊比利亞王國（東喬治亞）國王米里安三世改信基督教，喬治亞成為世界最早的基督教國家之一。中世紀喬治亞教會獲得自主地位，夾在波斯與鄂圖曼兩大伊斯蘭帝國之間，正教成為民族認同的核心。1811 年俄羅斯帝國廢除其自主地位，蘇聯時期又遭打壓；1991 年獨立後教會迅速復興，1977 年起在任的牧首伊利亞二世是全國最受信任的人物之一。"
    },
    {
     "name": "伊斯蘭教",
     "percent": 11,
-    "description": "主要為亞塞拜然裔與阿札爾地區居民。"
+    "description": "喬治亞的穆斯林主要有兩群：一是南部克維莫–卡特利地區的亞塞拜然人，信奉什葉派，與中世紀以來波斯薩非王朝的影響有關；二是西南部阿札爾地區的喬治亞人，16 世紀後在鄂圖曼帝國統治下改信遜尼派，直到 1878 年才併入俄羅斯。此外東北部潘基西峽谷的基斯特人也是穆斯林。"
    },
    {
     "name": "亞美尼亞使徒教會",
     "percent": 3,
-    "description": "亞美尼亞裔社群的教會。"
+    "description": "亞美尼亞人長期居住在喬治亞，19 世紀時首都提比里斯的商人與中產階級中亞美尼亞人比例很高。1828–1829 年俄土戰爭後，大批亞美尼亞人從鄂圖曼帝國的埃爾祖魯姆一帶遷入南部的札瓦赫季地區，今日亞美尼亞使徒教會信徒主要集中在那裡與提比里斯。"
    }
   ],
-  "background": "約四世紀時聖妮諾在此傳教，伊比利亞王國國王米里安三世皈依，使喬治亞成為最早接受基督教為國教的國家之一。歷史上受波斯與鄂圖曼帝國統治的地區則有穆斯林社群。"
+  "background": "喬治亞在 4 世紀接受基督教，獨特的喬治亞正教在中世紀黃金時代（11–13 世紀大衛四世與塔瑪爾女王時期）達到鼎盛，修建了大量修道院。此後波斯、鄂圖曼與蒙古的入侵帶來伊斯蘭教影響，使阿札爾等地區改信伊斯蘭教。1801 年起俄羅斯帝國併吞喬治亞，教會被併入俄羅斯正教體系，蘇聯時期更受迫害。1991 年獨立後，正教迅速復興並在國家認同中扮演核心角色。"
  },
  "language": {
   "official": "喬治亞語是官方語言，阿布哈茲語在阿布哈茲地區亦具官方地位。",
@@ -28,41 +28,41 @@
    {
     "name": "喬治亞語",
     "percent": 87,
-    "description": "屬南高加索語系，擁有獨特的喬治亞字母。",
+    "description": "喬治亞語屬卡特維利語系，與周邊的印歐語、突厥語都沒有關係，並擁有自創的獨特字母，最早的確切碑文可追溯到 5 世紀。12 世紀詩人魯斯塔韋利的史詩《虎皮武士》被視為喬治亞文學的巔峰。1978 年蘇聯當局試圖取消喬治亞語在憲法中的國家語言地位，引發首都大規模抗議而撤回，4 月 14 日因此成為「母語日」。",
     "greeting": "გამარჯობა",
     "pronunciation": "ga-mar-JO-ba"
    },
    {
     "name": "亞塞拜然語",
     "percent": 6,
-    "description": "東南部亞塞拜然裔居民使用。",
+    "description": "亞塞拜然語屬突厥語族，主要通行於東南部的克維莫–卡特利地區，當地亞塞拜然人的祖先自中世紀起就在此定居。許多亞塞拜然裔居民不太會說喬治亞語，政府自 2010 年起推動大學入學的特別配額與語言課程，幫助他們融入社會。",
     "greeting": "Salam",
     "pronunciation": "sa-LAM"
    },
    {
     "name": "亞美尼亞語",
     "percent": 4,
-    "description": "南部亞美尼亞裔居民使用。",
+    "description": "亞美尼亞語主要通行於南部的薩姆茨赫–札瓦赫季地區與首都提比里斯，19 世紀前期大批亞美尼亞人從鄂圖曼帝國遷入，形成以亞美尼亞人為多數的地區，當地學校至今仍有亞美尼亞語教學。",
     "greeting": "Բարեւ",
     "pronunciation": "ba-REV"
    },
    {
     "name": "俄語",
     "percent": 1,
-    "description": "蘇聯時期的通用語，至今仍有不少人能說。",
+    "description": "1801 年喬治亞併入俄羅斯帝國後，俄語成為行政語言，蘇聯時期更是跨民族通用語與升學、就業的必要語言。1991 年獨立後，特別是 2008 年俄喬戰爭後，俄語地位下降，學校改以英語為第一外語，以俄語為母語者只剩少數。",
     "greeting": "Здравствуйте",
     "pronunciation": "ZDRAST-vuy-tye"
    }
   ],
-  "history": "喬治亞語擁有約五世紀起的書寫傳統，十二世紀魯斯塔維利的史詩《虎皮騎士》是其文學代表。俄羅斯帝國與蘇聯時期俄語影響很大，獨立後喬治亞語的地位更加鞏固。"
+  "history": "喬治亞語是高加索地區最古老的書面語言之一，傳統說法認為字母由西元前 3 世紀的國王帕爾納瓦茲創造，現存最早的碑文則來自 5 世紀。中世紀喬治亞語隨著教會與王國發展出豐富的文學。19 世紀被俄羅斯帝國併吞後，俄語成為官方語言，但喬治亞知識分子推動語言保存。蘇聯時期喬治亞語保有加盟共和國語言地位，1978 年的抗議成功守住其憲法地位，1991 年獨立後成為唯一國家語言。"
  },
  "food": {
   "ranking": [
    {
     "name": "喬治亞起司麵包",
     "localName": "ხაჭაპური (Khachapuri)",
-    "description": "烤製的麵包中填入融化起司，阿札爾式還會加上蛋黃與奶油。",
-    "history": "喬治亞最具代表性的國民美食，各地有不同造型。",
+    "description": "在發酵麵團中包入大量鹹味起司烤成的麵包，阿札爾版本做成船形，中央放入生蛋黃與奶油拌著吃。",
+    "history": "名稱由喬治亞語「khacho」（凝乳起司）與「puri」（麵包）組成，是喬治亞最具代表性的食物。各地區發展出不同形狀：伊梅列季的圓餅、梅格列利亞的雙層起司，以及黑海沿岸阿札爾地區像船一樣的造型，據說象徵船隻與太陽。2019 年起司麵包被列為喬治亞的國家非物質文化遺產，喬治亞甚至有以它的價格衡量物價的「起司麵包指數」。",
     "wiki": "Khachapuri",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Old_Tbilisi%2C_Georgian_khachapuri%2C_Georgia.jpg/960px-Old_Tbilisi%2C_Georgian_khachapuri%2C_Georgia.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Old_Tbilisi,_Georgian_khachapuri,_Georgia.jpg",
@@ -71,8 +71,8 @@
    {
     "name": "欣卡利",
     "localName": "ხინკალი (Khinkali)",
-    "description": "包有肉餡與湯汁的大型餃子，咬開先吸湯汁。",
-    "history": "源自山區，是喬治亞最受歡迎的料理之一。",
+    "description": "以厚實麵皮包入加了香料的豬牛絞肉與湯汁，捏出許多褶後水煮，吃時先吸湯汁再咬肉餡。",
+    "history": "欣卡利源自喬治亞東北部的山區，例如普沙維、赫夫蘇雷蒂與圖舍季，當地牧民以羊肉製作。一般認為這類包餡麵食可能與 13 世紀蒙古西征帶來的餃子傳統有關。喬治亞人吃欣卡利用手拿著頂端的麵結，先咬小口吸湯，麵結通常不吃而是留在盤中計算數量。它是喬治亞人聚餐與配酒的經典菜。",
     "wiki": "Khinkali",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Khinkali%2C_Restaurant_Aragvi.jpg/960px-Khinkali%2C_Restaurant_Aragvi.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Khinkali,_Restaurant_Aragvi.jpg",
@@ -81,8 +81,8 @@
    {
     "name": "丘爾契赫拉",
     "localName": "ჩურჩხელა (Churchkhela)",
-    "description": "將核桃串起後反覆浸入濃縮葡萄汁而成的甜點。",
-    "history": "喬治亞傳統點心，與葡萄酒文化密切相關。",
+    "description": "將核桃串成長串，反覆浸入以葡萄汁加麵粉熬成的濃稠糖漿，風乾後成為像蠟燭一樣的長條甜點。",
+    "history": "喬治亞是世界上最古老的葡萄酒產地之一，考古發現當地釀酒史可追溯到約八千年前，以陶甕（qvevri）釀酒的技術已列入聯合國教科文組織非物質文化遺產。丘爾契赫拉是在秋季葡萄收成節（Rtveli）時利用葡萄汁製作的，營養豐富又耐保存，傳統上士兵與旅人會隨身攜帶當作能量食物。今天它是新年與節日的必備甜點，也是遊客最愛的伴手禮。",
     "wiki": "Churchkhela",
     "image": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Kakheti%2C_Georgia_%E2%80%94_Churchkhela.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Kakheti,_Georgia_%E2%80%94_Churchkhela.jpg",
@@ -91,8 +91,8 @@
    {
     "name": "普哈利",
     "localName": "ფხალი (Pkhali)",
-    "description": "將菠菜等蔬菜切碎拌入核桃醬做成的冷盤。",
-    "history": "喬治亞宴席上常見的開胃菜。",
+    "description": "將菠菜、甜菜、豆類或高麗菜等蔬菜切碎，拌入核桃醬、大蒜與香草，捏成小球並以石榴籽點綴。",
+    "history": "核桃在喬治亞廣泛種植，是許多料理的核心食材。喬治亞正教的守齋期與每週三、週五都不能吃動物性食品，因此發展出以蔬菜與核桃製成的豐富素食冷盤，普哈利便是代表。它常出現在喬治亞傳統宴席「蘇普拉」（supra）的開場冷盤中，搭配喬治亞葡萄酒一起享用。",
     "wiki": "Pkhali",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Pkhali%2C_Badrijani_and_Ajika.jpg/960px-Pkhali%2C_Badrijani_and_Ajika.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Pkhali,_Badrijani_and_Ajika.jpg",
@@ -101,8 +101,8 @@
    {
     "name": "核桃醬雞",
     "localName": "საცივი (Satsivi)",
-    "description": "以核桃醬冷食的雞肉或火雞。",
-    "history": "傳統的新年與節慶料理。",
+    "description": "將煮熟的雞肉或火雞肉浸在以核桃、大蒜與藍葫蘆巴等香料調成的濃稠白醬中，冷藏後食用。",
+    "history": "名稱源自喬治亞語「tsivi」，意為「冷的」，因為這道菜通常冷食。其中使用的藍葫蘆巴、金盞花等香料，反映了喬治亞作為絲路與高加索貿易交會處的位置。它是喬治亞新年與耶誕宴席上不可少的料理，傳統上以火雞製作，象徵節慶的豐盛。",
     "wiki": "Satsivi",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Satsivi_%282%29.jpg/960px-Satsivi_%282%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Satsivi_(2).jpg",

@@ -7,25 +7,25 @@
    {
     "name": "伊斯蘭教",
     "percent": 70,
-    "description": "國教，本國公民中什葉派占多數，王室屬遜尼派。"
+    "description": "巴林在7世紀先知穆罕默德在世時（約628年）就已接受伊斯蘭教。巴林公民中什葉派占多數，他們是當地古老的巴哈納人後代；1783年遜尼派的哈利法家族從卡達進入並統治巴林，形成遜尼派王室統治什葉派多數的局面，2011年的抗議運動也與此有關。由於外籍居民約占一半，穆斯林在全體人口中約占七成。"
    },
    {
     "name": "基督教",
     "percent": 15,
-    "description": "主要為外籍居民。"
+    "description": "基督徒大多是外籍工作者，來自印度、菲律賓與西方國家。巴林是海灣國家中宗教較為開放的國家，20世紀初美國改革宗傳教士開設了美國教會醫院，2021年巴林建成波斯灣最大的天主教座堂阿拉伯聖母座堂，2022年教宗方濟各也曾訪問巴林。"
    },
    {
     "name": "印度教",
     "percent": 10,
-    "description": "主要為印度籍居民。"
+    "description": "印度教徒主要來自印度的移工與商人。印度商人早在19世紀就在巴林經營珍珠與香料貿易，麥納瑪的斯里納特吉神廟據說已有約200年歷史，是海灣地區最古老的印度教寺廟之一。1930年代石油開採後，印度移民數量大幅增加。"
    },
    {
     "name": "佛教",
     "percent": 3,
-    "description": "主要為外籍居民。"
+    "description": "佛教徒主要是來自斯里蘭卡、泰國、尼泊爾等國的外籍勞工，多在服務業與家庭幫傭工作。他們以私人場所聚會為主，由於多為短期合約工，佛教社群規模約占總人口的3%。"
    }
   ],
-  "background": "伊斯蘭教於七世紀傳入巴林，當地居民很早就有大量什葉派信徒。十八世紀末遜尼派的哈利法家族取得統治權，形成王室遜尼派、多數人民什葉派的格局。石油經濟帶來大量外籍勞工，使宗教更為多元。"
+  "background": "古代巴林是迪爾蒙文明的中心，西元前3千年起就是兩河流域與印度河流域之間的貿易樞紐。伊斯蘭教在7世紀傳入以前，島上有基督教聶斯脫留派與祆教社群。巴林的什葉派傳統歷史悠久，1783年遜尼派哈利法家族掌權，王室與多數人口的教派差異至今仍影響政治。20世紀石油開採後，大量外籍勞工帶來多元宗教，巴林也以允許興建教堂與寺廟、相對包容的政策聞名。"
  },
  "language": {
   "official": "阿拉伯語是官方語言。",
@@ -33,34 +33,34 @@
    {
     "name": "阿拉伯語",
     "percent": 50,
-    "description": "本國公民與阿拉伯移民的語言。",
+    "description": "阿拉伯語是巴林的官方語言，也是公民的母語，當地口語有巴哈納什葉派居民的巴哈納方言，以及遜尼派居民接近海灣阿拉伯語的方言。由於外籍居民約占一半，以阿拉伯語為母語者約占五成，政府、法院與學校使用標準阿拉伯語。",
     "greeting": "مرحبا",
     "pronunciation": "MAR-ha-ba"
    },
    {
     "name": "馬拉雅拉姆語",
     "percent": 10,
-    "description": "印度喀拉拉邦移民社群使用。",
+    "description": "馬拉雅拉姆語是印度喀拉拉邦的語言，喀拉拉人在1930年代巴林發現石油後開始前往工作，1970年代石油價格上漲後移民大量增加。他們多從事建築、商業、醫療與教育工作，形成巴林最大的移民語言社群之一。",
     "greeting": "നമസ്കാരം",
     "pronunciation": "na-mas-KAA-ram"
    },
    {
     "name": "烏爾都語",
     "percent": 8,
-    "description": "巴基斯坦移民社群使用。",
+    "description": "烏爾都語使用者主要是巴基斯坦移民，巴林警察與安全部隊中也有不少巴基斯坦人，這一傳統可追溯到英國保護時期招募南亞人員擔任警衛的做法。烏爾都語與印地語相通，在南亞移工之間廣泛使用。",
     "greeting": "السلام علیکم",
     "pronunciation": "as-sa-LAA-mu a-LAI-kum"
    }
   ],
-  "history": "巴林傳統上通行巴林阿拉伯語方言，什葉派居民所說的方言與遜尼派略有不同。英國保護國時期英語普及，現今英語是商業與外籍社群間的通用語。"
+  "history": "巴林自伊斯蘭化後使用阿拉伯語，什葉派巴哈納人的方言保留了較古老的特徵，並受到波斯語與亞拉姆語的影響。1820年起英國與巴林統治者簽訂條約，1861年起巴林成為英國保護國，英語在行政與商業中出現。1932年巴林在波斯灣阿拉伯一側率先發現石油，引來大量印度、伊朗與其他國家的勞工。1971年獨立後阿拉伯語為官方語言，英語則在商業、教育與外籍社群間通用。"
  },
  "food": {
   "ranking": [
    {
     "name": "馬奇布斯",
     "localName": "مچبوس (Machboos)",
-    "description": "以香料、乾萊姆與肉或魚一同烹煮的香料飯。",
-    "history": "巴林國菜，反映過去印度洋香料貿易的影響。",
+    "description": "以雞肉、羊肉或魚和長米一起燉煮，加入乾萊姆、番紅花、肉桂與巴哈拉特香料，米飯香氣濃郁。",
+    "history": "馬奇布斯被視為巴林的國菜，米與香料過去都透過印度洋貿易從印度、波斯輸入，反映巴林作為波斯灣貿易樞紐的歷史。在石油時代前，巴林是重要的採珠中心，漁民與採珠人常以魚肉做馬奇布斯。今日它是家庭聚餐、婚禮與齋戒月開齋時最常見的主菜。",
     "wiki": "Kabsa",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Machboos_%28cropped%29.JPG/960px-Machboos_%28cropped%29.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Machboos_(cropped).JPG",
@@ -69,15 +69,15 @@
    {
     "name": "穆哈馬爾",
     "localName": "محمر (Muhammar)",
-    "description": "以椰棗糖漿或糖煮成的甜味米飯，常配烤魚。",
-    "history": "巴林傳統料理，與珍珠採集時代的飲食有關。",
+    "description": "將兔魚（safi）等魚類烤或炸，搭配用椰棗糖漿或糖與番紅花、小荳蔻煮成的甜米飯，甜鹹交融。",
+    "history": "穆哈馬爾意為「變紅的」，指米飯因椰棗糖漿而呈現紅褐色。椰棗是巴林島上最重要的作物，過去島上綠洲有大片椰棗林。它是巴林特有的傳統菜，與當地漁民和採珠人的生活息息相關，常在家庭聚餐與節慶中出現，搭配烤魚或炸魚食用。",
     "wiki": "Muhammar"
    },
    {
     "name": "哈里斯",
     "localName": "هريس (Harees)",
-    "description": "以小麥與肉長時間燉煮搗成的粥。",
-    "history": "齋戒月與節慶的傳統料理。",
+    "description": "將麥粒與雞肉或羊肉長時間燉煮後反覆攪打成黏稠粥狀，上桌時淋上酥油並撒上肉桂，口感綿密、味道溫和。",
+    "history": "哈里斯是阿拉伯半島最古老的料理之一，10世紀阿拉伯食譜已有記載。在巴林，它是齋戒月開齋與開齋節的傳統菜，鄰里間常互相分送。什葉派社群在阿舒拉節期間也會準備大鍋哈里斯，分給前來參加紀念活動的人，象徵分享與慈善精神。",
     "wiki": "Harees",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Armenian_Harisa.JPG/960px-Armenian_Harisa.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Armenian_Harisa.JPG",
@@ -86,8 +86,8 @@
    {
     "name": "巴林哈爾瓦",
     "localName": "حلوى (Halwa)",
-    "description": "以玉米澱粉、糖、玫瑰水與番紅花製成的Q軟甜點。",
-    "history": "巴林的傳統甜點，常作為伴手禮。",
+    "description": "以玉米澱粉、糖、番紅花、玫瑰水與小荳蔻熬煮成的半透明果凍狀甜點，加入堅果，口感軟Q。",
+    "history": "巴林哈爾瓦是巴林最具代表性的甜點，以麥納瑪附近的家族作坊最為有名，其中如「Showaiter」等老店已傳承數代。製作時需在大鍋中長時間攪拌，非常耗費體力。它是巴林人招待客人時與阿拉伯咖啡一起端上的甜點，也常作為伴手禮送給親友。",
     "wiki": "Halva",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Orient_sweets_%28special_halva%29_Samarkand%2C_Siyab.jpg/960px-Orient_sweets_%28special_halva%29_Samarkand%2C_Siyab.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Orient_sweets_(special_halva)_Samarkand,_Siyab.jpg",
@@ -96,8 +96,8 @@
    {
     "name": "巴拉利特",
     "localName": "بلاليط (Balaleet)",
-    "description": "甜味細麵上覆蓋蛋餅的早餐料理。",
-    "history": "海灣地區傳統的節慶早餐。",
+    "description": "把細麵條與糖、番紅花、玫瑰水和小荳蔻炒香，上面蓋一層煎蛋，甜鹹交融，是傳統早餐。",
+    "history": "巴拉利特是海灣地區的傳統早餐，特別在開齋節與宰牲節的早晨食用。細麵條、番紅花與玫瑰水的組合反映了海灣與波斯、印度之間的貿易往來。過去糖與香料價格昂貴，只有節慶時才捨得使用，如今則是巴林家庭與傳統餐廳的日常早餐選項。",
     "wiki": "Balaleet",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Homemade_Balaleet%2C_2023.jpg/960px-Homemade_Balaleet%2C_2023.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Homemade_Balaleet,_2023.jpg",

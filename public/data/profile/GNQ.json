@@ -7,25 +7,25 @@
    {
     "name": "天主教",
     "percent": 80,
-    "description": "西班牙殖民時期傳入，至今是最主要的宗教。"
+    "description": "1778 年葡萄牙依《埃爾帕爾多條約》把比奧科島與大陸部分權利讓給西班牙，19 世紀後期西班牙克拉雷特會傳教士大舉傳教，並主導殖民地教育。1968 年獨立後，獨裁者馬西亞斯・恩圭馬迫害教會，1978 年甚至禁止天主教；1979 年奧比昂發動政變後才恢復宗教自由，1982 年教宗若望保祿二世到訪。天主教至今是絕大多數人的信仰。"
    },
    {
     "name": "基督新教",
     "percent": 7,
-    "description": "包括長老會、衛理宗及福音派教會。"
+    "description": "19 世紀中葉美國長老會傳教士在科里斯科島與大陸的里奧穆尼傳教，比奧科島則有來自英國與獅子山的衛理公會。西班牙殖民時期天主教受到官方支持，新教發展受限，今日是較小的少數群體。"
    },
    {
     "name": "傳統信仰及其他",
     "percent": 5,
-    "description": "部分民眾保留傳統信仰，或將其與基督教融合。"
+    "description": "芳族保有祖先崇拜「比埃里」（Byeri）與布維蒂教傳統，比奧科島的布比人也有祭祀神靈的傳統儀式。這些信仰常與天主教並存，自認只信傳統宗教的人不多。"
    },
    {
     "name": "伊斯蘭教",
     "percent": 4,
-    "description": "主要為西非移民社群。"
+    "description": "伊斯蘭教主要由近代來自西非與喀麥隆的商人與移民帶入。1990 年代發現石油後，外籍勞工增加，穆斯林人數隨之成長，但本土穆斯林很少。"
    }
   ],
-  "background": "十八世紀末葡萄牙將此地割讓給西班牙，西班牙殖民與天主教傳教使天主教成為主流。1968年獨立後一度壓制宗教，之後恢復宗教自由，天主教會仍具重要影響力。"
+  "background": "赤道幾內亞原住民信奉祖靈與自然崇拜。15 世紀葡萄牙人發現比奧科島，1778 年後轉歸西班牙，19 世紀後期西班牙天主教傳教士與英美新教傳教士相繼到來，天主教在殖民教育的推動下成為主流。1968 年獨立後馬西亞斯政權打壓宗教，1979 年奧比昂上台後恢復宗教自由。今日天主教仍是絕大多數人的信仰，並與傳統習俗交織。"
  },
  "language": {
   "official": "西班牙語、法語與葡萄牙語是官方語言。",
@@ -33,27 +33,27 @@
    {
     "name": "芳語",
     "percent": 80,
-    "description": "大陸地區人數最多的芳族所使用的班圖語言。",
+    "description": "芳族是赤道幾內亞人口最多的民族，佔大陸地區里奧穆尼的絕大多數，約在 18–19 世紀從北方遷入。獨立後兩任總統馬西亞斯與奧比昂都是芳族人，芳族在政治與軍隊中佔主導地位，芳語因此是全國最主要的日常語言。",
     "greeting": "Mbolo",
     "pronunciation": "m-BOH-loh"
    },
    {
     "name": "西班牙語",
     "percent": 10,
-    "description": "官方語言及教育語言，多數人作為第二語言使用。",
+    "description": "西班牙從 1778 年起取得這片土地，19 世紀後期積極殖民，直到 1968 年獨立，使赤道幾內亞成為非洲唯一以西班牙語為官方語言的國家。西班牙語用於政府、教育與媒體，但以它為母語者較少。為了加強與周邊國家的聯繫，政府後來又將法語（1998 年）與葡萄牙語（2010 年）列為官方語言。",
     "greeting": "Hola",
     "pronunciation": "OH-la"
    }
   ],
-  "history": "當地原有芳語、布比語等班圖語言。西班牙殖民期間西班牙語成為行政與教育語言；獨立後為加強與周邊法語國家及葡語國家的連結，陸續增列法語與葡萄牙語為官方語言。"
+  "history": "赤道幾內亞的本土語言大多屬班圖語族，包括大陸的芳語、比奧科島的布比語，以及安諾本島上以葡萄牙語為基礎的克里奧爾語（法・達・安博語）。殖民時期比奧科島的可可種植園引進大批奈及利亞與獅子山勞工，形成以英語為基礎的「皮欽英語」。西班牙語自 19 世紀起成為行政與教育語言，獨立後保留為官方語言，並在 20 世紀末加入法語與葡萄牙語。"
  },
  "food": {
   "ranking": [
    {
     "name": "胡椒湯",
     "localName": "Pepesup",
-    "description": "以魚或肉加上大量辣椒與香料熬煮的辣湯。",
-    "history": "西非與中非沿海常見的湯品，在赤道幾內亞相當普遍。",
+    "description": "以魚或肉類加入大量辣椒、香料與蔬菜熬成的辛辣清湯，湯色紅亮、味道濃烈。",
+    "history": "胡椒湯在奈及利亞與喀麥隆十分常見，名稱來自英語的「pepper soup」。殖民時期比奧科島的可可種植園引進大批奈及利亞勞工，他們的皮欽英語與飲食也隨之傳入，胡椒湯因此在赤道幾內亞普及。它常被認為能驅寒治病，也是酒吧與夜間聚會的熱門料理。",
     "wiki": "Pepper soup",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Assorted_meat_pepper_soup_at_Lagos_Island.jpg/960px-Assorted_meat_pepper_soup_at_Lagos_Island.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Assorted_meat_pepper_soup_at_Lagos_Island.jpg",
@@ -62,8 +62,8 @@
    {
     "name": "富富",
     "localName": "Fufu",
-    "description": "以木薯或大蕉搗成的糰狀主食，搭配湯汁食用。",
-    "history": "中西非廣泛食用的主食，木薯在殖民時期自美洲傳入。",
+    "description": "將煮熟的木薯或大蕉搗成柔軟有彈性的糰子，配各種燉菜與湯汁食用。",
+    "history": "搗製澱粉糰是中非與西非的古老飲食傳統，16 世紀葡萄牙人從美洲引進木薯後，木薯成為重要原料。在赤道幾內亞，富富是芳族與其他民族的日常主食，通常用手捏取一小塊沾醬汁吃，代表了當地以根莖類搭配燉菜的飲食結構。",
     "wiki": "Fufu",
     "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Wrapped_fufu.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Wrapped_fufu.jpg",
@@ -72,8 +72,8 @@
    {
     "name": "棕櫚醬燉雞",
     "localName": "Moambe",
-    "description": "以棕櫚果醬燉煮雞肉的料理。",
-    "history": "中非地區的經典料理，常搭配米飯或木薯。",
+    "description": "以棕櫚果醬汁燉煮雞肉，加入洋蔥、番茄與辣椒，醬汁濃稠呈橘紅色，配米飯或木薯食用。",
+    "history": "棕櫚醬燉雞源自剛果盆地，是中非地區廣泛流傳的料理，被剛果民主共和國視為國菜。油棕原生於中非與西非，棕櫚果是當地重要的油脂來源。這道菜隨著中非各國的人口往來傳入赤道幾內亞，在家庭聚會與節日中經常出現。",
     "wiki": "Moambe",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Elaeis_guineensis_fruits_on_tree.jpg/960px-Elaeis_guineensis_fruits_on_tree.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Elaeis_guineensis_fruits_on_tree.jpg",
@@ -82,8 +82,8 @@
    {
     "name": "苦葉燉菜",
     "localName": "Ndolé",
-    "description": "以苦葉、花生醬與肉或蝦燉煮的料理。",
-    "history": "流行於喀麥隆與鄰近芳族地區的傳統菜餚。",
+    "description": "以苦葉（ndolé）與花生醬一起燉煮，加入蝦、牛肉或魚，口味微苦帶堅果香。",
+    "history": "苦葉燉菜源自喀麥隆沿海的杜阿拉人，被喀麥隆視為國菜。赤道幾內亞的芳族與喀麥隆南部的芳族同屬一個民族，邊境兩側往來密切，這道菜因此也成為赤道幾內亞常見的料理。苦葉需經多次清洗去除苦味，製作費時，常在週末或節日準備。",
     "wiki": "Ndolé",
     "image": "https://upload.wikimedia.org/wikipedia/commons/9/91/Ndol%C3%A8_%C3%A0_la_viande%2C_morue_et_crevettes.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Ndol%C3%A8_%C3%A0_la_viande,_morue_et_crevettes.jpg",
@@ -92,8 +92,8 @@
    {
     "name": "炸大蕉",
     "localName": "Plátano frito",
-    "description": "將大蕉切片油炸，作為配菜或點心。",
-    "history": "大蕉是中非常見的主食作物，炸大蕉是日常餐桌上的配菜。",
+    "description": "將熟大蕉切片油炸，外表焦香、內部軟甜，常作為配菜。",
+    "history": "大蕉在中非種植已有數百年歷史，是赤道幾內亞人日常的重要澱粉來源。名稱「plátano frito」是西班牙語，反映了西班牙殖民留下的語言影響。炸大蕉做法簡單，常與魚、雞肉或豆類一起吃，也是街頭攤販常見的小吃。",
     "wiki": "Fried plantain",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Vendeuses_de_bananes_plantain.jpg/960px-Vendeuses_de_bananes_plantain.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Vendeuses_de_bananes_plantain.jpg",

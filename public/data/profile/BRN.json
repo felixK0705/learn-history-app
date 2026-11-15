@@ -7,25 +7,25 @@
    {
     "name": "伊斯蘭教（遜尼派）",
     "percent": 82,
-    "description": "國教，屬沙斐儀學派，國家奉行「馬來伊斯蘭君主制」。"
+    "description": "伊斯蘭教一般認為在14–15世紀由阿拉伯、印度與中國穆斯林商人經海上貿易傳入婆羅洲北部，傳統上認為14世紀後期汶萊統治者改信伊斯蘭教、成為第一任蘇丹穆罕默德・沙，汶萊因此成為蘇丹國。16世紀汶萊蘇丹國勢力達到頂峰，伊斯蘭教在馬來族中扎根；1959年憲法定伊斯蘭教（遜尼派沙斐儀學派）為國教，2014年起分階段實施伊斯蘭刑法。"
    },
    {
     "name": "基督教",
     "percent": 7,
-    "description": "主要為華人與原住民。"
+    "description": "基督徒主要是華人、部分原住民與外籍工作者。19世紀英國人在婆羅洲的影響擴大後，聖公會與天主教傳教士開始在汶萊周邊地區傳教。由於汶萊對其他宗教的傳教活動有嚴格限制，基督徒人數一直較少，且不能公開慶祝聖誕節。"
    },
    {
     "name": "佛教",
     "percent": 7,
-    "description": "主要為華人，常與道教、民間信仰結合。"
+    "description": "佛教徒主要是華人社群，他們的祖先在19–20世紀從中國福建、廣東等地移居汶萊從事商業與勞動工作。華人通常融合佛教、道教與民間信仰，汶萊市內的騰雲殿是華人宗教生活的中心。"
    },
    {
     "name": "其他（原住民信仰等）",
     "percent": 4,
-    "description": "包含原住民傳統信仰與無宗教人口。"
+    "description": "其他宗教包括原住民的泛靈信仰，主要由伊班族、杜順族等婆羅洲原住民在內陸地區保存，崇拜自然神靈與祖靈。隨著伊斯蘭化政策與現代化，許多原住民已改信伊斯蘭教或基督教，傳統信仰的比例持續下降。"
    }
   ],
-  "background": "15世紀汶萊統治者皈依伊斯蘭教，汶萊蘇丹國一度控制婆羅洲北部與菲律賓南部。英國保護時期蘇丹保留宗教事務權力。1984年獨立後確立「馬來伊斯蘭君主制」國家理念，並於2014年起實施伊斯蘭刑法。"
+  "background": "汶萊在伊斯蘭教傳入前受印度教與佛教文化影響，中國史書記載的「渤泥」可能就是汶萊的前身。14–15世紀汶萊統治者改信伊斯蘭教，汶萊蘇丹國隨即崛起，16世紀時勢力遍及婆羅洲北部與菲律賓南部。1888年汶萊成為英國保護國，1929年發現石油後經濟迅速發展。1984年獨立後，汶萊以「馬來伊斯蘭君主制」（Melayu Islam Beraja）為國家理念，2014年起逐步實施伊斯蘭刑法，是東南亞宗教色彩最濃厚的國家之一。"
  },
  "language": {
   "official": "官方語言為馬來語。",
@@ -33,34 +33,34 @@
    {
     "name": "馬來語（汶萊馬來語）",
     "percent": 70,
-    "description": "國語，日常以汶萊馬來語方言為主。",
+    "description": "馬來語是汶萊的官方語言，汶萊馬來語是當地的方言，與標準馬來語在發音與詞彙上有差異。汶萊蘇丹國自14–15世紀起以馬來語為宮廷與行政語言，1959年憲法定為官方語言，政府推動以「馬來伊斯蘭君主制」為國家理念，馬來語是其中的核心。約七成人口以馬來語為主要語言。",
     "greeting": "Apa khabar",
     "pronunciation": "a-pa ka-bar"
    },
    {
     "name": "中文（閩南語、客家語、華語等）",
     "percent": 10,
-    "description": "華人社群使用。",
+    "description": "中文使用者主要是華人，他們的祖先在19世紀末至20世紀初從福建、廣東移居汶萊，最常見的方言是閩南語與客家語，華語則透過華文學校教育普及。汶萊的中華中學等華校創立於20世紀前半，至今仍是華人社群保存語言與文化的重要機構。",
     "greeting": "你好",
     "pronunciation": "nǐ hǎo"
    },
    {
     "name": "英語",
     "percent": 5,
-    "description": "廣泛用於商業與教育。",
+    "description": "英語在1888–1984年英國保護時期成為行政與商業語言，1985年起汶萊實施雙語教育政策，中學以上的數理科目以英語教學。因此英語在教育、商業與法律中廣泛使用，但以英語為母語者約只占5%。",
     "greeting": "Hello",
     "pronunciation": "heh-loh"
    }
   ],
-  "history": "汶萊馬來語是婆羅洲古老的馬來語方言，曾以爪夷文（阿拉伯字母）書寫。英國保護時期英語進入教育體系，1985年起實施馬來語與英語雙語教育；華人移民則帶來閩南語、客家語等方言。"
+  "history": "汶萊地區的原住民使用多種南島語言，例如杜順語、伊班語等。14–15世紀汶萊蘇丹國建立後，馬來語成為宮廷、貿易與伊斯蘭教的語言，並以爪夷文（阿拉伯字母拼寫的馬來文）書寫。1888年成為英國保護國後，英語進入行政與教育領域，羅馬字母的馬來文也逐漸普及。1984年獨立後，汶萊推行「雙語教育」，並保存爪夷文作為國家文化的象徵，路牌與招牌必須同時標示爪夷文。"
  },
  "food": {
   "ranking": [
    {
     "name": "安布亞",
     "localName": "Ambuyat",
-    "description": "以西谷米澱粉加熱水攪成的黏稠半透明糊，以竹叉捲起蘸酸辣醬食用，為國菜。",
-    "history": "西谷米是婆羅洲原住民的傳統主食，二戰期間米糧短缺時更為普及。",
+    "description": "以西米棕櫚的澱粉加熱水攪拌成透明黏稠的糊狀，用特製的竹叉捲起後蘸酸辣醬吃，口感滑溜。",
+    "history": "安布亞被視為汶萊的國菜，西米棕櫚是婆羅洲沼澤地區的原生植物，原住民數千年來以它的澱粉為主食。過去在稻米短缺時，安布亞是重要的糧食來源，據說二戰日本占領汶萊期間（1941–1945），許多人依靠安布亞度過糧食短缺。今天它是汶萊人與家人朋友分享的傳統料理，用竹叉「candas」捲起來吃的方式很有特色。",
     "wiki": "Ambuyat",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Ambuyat_in_Bandar_Seri_Begawan_Brunei.jpg/960px-Ambuyat_in_Bandar_Seri_Begawan_Brunei.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Ambuyat_in_Bandar_Seri_Begawan_Brunei.jpg",
@@ -69,8 +69,8 @@
    {
     "name": "加東飯",
     "localName": "Nasi katok",
-    "description": "一份白飯配炸雞與辣椒醬，以紙包裝的平價便當。",
-    "history": "名稱源自顧客深夜「敲門」（katok）購買而得名，是汶萊最受歡迎的平民美食。",
+    "description": "一份簡單的白飯配一塊炸雞或咖哩雞，再加上一點參巴辣醬，用紙包起來外帶，價格便宜。",
+    "history": "加東飯是1980年代起汶萊最受歡迎的平價便當，名稱「katok」在馬來語中意為「敲門」，據說源自早期人們深夜敲門向店家購買這種簡便餐點。由於份量剛好又便宜，它成為汶萊學生、上班族與家庭的日常餐點。汶萊人常把它視為最具代表性的「汶萊味道」。",
     "wiki": "Nasi katok",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Nasi_Katok.jpg/960px-Nasi_Katok.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Nasi_Katok.jpg",
@@ -79,8 +79,8 @@
    {
     "name": "椰漿飯",
     "localName": "Nasi lemak",
-    "description": "以椰奶煮的米飯，配辣椒醬、小魚乾、花生與水煮蛋。",
-    "history": "馬來世界共享的傳統早餐。",
+    "description": "以椰漿與香蘭葉煮成的香米飯，搭配參巴辣醬、炸小魚乾、花生、黃瓜與水煮蛋，鹹香微辣。",
+    "history": "椰漿飯是馬來世界共同的傳統料理，起源與馬來半島的漁村有關，漁民以椰漿飯作為早餐，提供下海工作的體力。汶萊、馬來西亞、新加坡與印尼都把它視為本地傳統。在汶萊，它是常見的早餐，常用香蕉葉包成三角形販售。",
     "wiki": "Nasi lemak",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Nasi_Lemak_dengan_Chili_Nasi_Lemak_dan_Sotong_Pedas%2C_di_Penang_Summer_Restaurant.jpg/960px-Nasi_Lemak_dengan_Chili_Nasi_Lemak_dan_Sotong_Pedas%2C_di_Penang_Summer_Restaurant.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Nasi_Lemak_dengan_Chili_Nasi_Lemak_dan_Sotong_Pedas,_di_Penang_Summer_Restaurant.jpg",
@@ -89,8 +89,8 @@
    {
     "name": "沙爹",
     "localName": "Satay",
-    "description": "竹籤串烤醃肉，配花生醬食用。",
-    "history": "東南亞海島地區普遍的街頭燒烤。",
+    "description": "將以香料醃漬過的雞肉或牛肉串在竹籤上用炭火燒烤，搭配濃郁的花生醬汁、黃瓜、洋蔥與米糕，香氣四溢。",
+    "history": "沙爹一般認為源自印尼爪哇，19世紀可能受到阿拉伯與印度商人帶來的烤肉串（kebab）影響，在當地發展出以花生醬調味的版本。隨著馬來世界的貿易與移民，沙爹傳到汶萊、馬來西亞與新加坡。在汶萊，它是夜市與節慶時最受歡迎的小吃之一。",
     "wiki": "Satay",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Sate_Udang.JPG/960px-Sate_Udang.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Sate_Udang.JPG",
@@ -99,8 +99,8 @@
    {
     "name": "仁當牛肉",
     "localName": "Rendang",
-    "description": "以椰奶與香料長時間燉煮至收乾的牛肉。",
-    "history": "源自蘇門答臘米南佳保人，是汶萊開齋節宴席的常見菜。",
+    "description": "將牛肉與椰漿、香茅、南薑、辣椒等香料長時間慢燉，直到湯汁收乾、肉質入味，顏色深褐。",
+    "history": "仁當源自印尼蘇門答臘的米南佳保人，他們的傳統是長途遷徙（merantau），仁當因為能保存數週而成為旅途中的食物。隨著米南佳保人的遷徙與貿易，仁當傳遍馬來世界。在汶萊，它是開齋節（Hari Raya Aidilfitri）時家家戶戶必備的節慶菜，與竹筒飯、馬來粽一起招待親友。",
     "wiki": "Rendang",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Rendang_daging_sapi_asli_Padang.JPG/960px-Rendang_daging_sapi_asli_Padang.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Rendang_daging_sapi_asli_Padang.JPG",

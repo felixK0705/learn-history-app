@@ -7,20 +7,20 @@
    {
     "name": "伊斯蘭教（遜尼派）",
     "percent": 98,
-    "description": "國教，依法公民須為穆斯林。"
+    "description": "1153年國王改信伊斯蘭教後，伊斯蘭教成為馬爾地夫的國教，佛教寺院被拆除或改建。之後歷代蘇丹以伊斯蘭教維繫各島社會，2008年憲法規定只有穆斯林才能成為公民，公開信仰其他宗教受到法律限制，因此幾乎全體公民都是遜尼派穆斯林。"
    },
    {
     "name": "印度教",
     "percent": 1,
-    "description": "主要為印度外籍勞工。"
+    "description": "印度教徒主要是來自印度的外籍勞工，從事觀光度假村、醫療與教育等行業。由於馬爾地夫法律禁止公開進行非伊斯蘭宗教活動，他們只能在私人場所進行宗教儀式。"
    },
    {
     "name": "其他（佛教、基督教等）",
     "percent": 1,
-    "description": "主要為外籍勞工，不得公開傳教。"
+    "description": "佛教徒主要來自斯里蘭卡與其他亞洲國家的外籍勞工，基督徒則包括來自印度、菲律賓等地的移工與外籍專業人士。馬爾地夫法律禁止非伊斯蘭宗教的公開活動與傳教。"
    }
   ],
-  "background": "馬爾地夫在古代信奉佛教，留有佛教遺址。相傳1153年國王在一位北非或波斯學者的勸導下改信伊斯蘭教，全國隨之伊斯蘭化，此後伊斯蘭教成為國家認同核心。"
+  "background": "馬爾地夫早期居民可能來自斯里蘭卡與南印度，在伊斯蘭化之前信仰佛教長達一千多年，島上留有佛塔與寺院遺跡。1153年國王多維米（Dhovemi）改信伊斯蘭教，相傳是受到一位來自北非或波斯的穆斯林旅人感化，此後伊斯蘭教成為國教。16世紀葡萄牙人曾短暫佔領馬列，1573年穆罕默德·塔庫魯法努率眾驅逐葡萄牙人，被尊為民族英雄。1887–1965年成為英國保護國，1968年成為共和國。2008年憲法規定所有公民必須是穆斯林，伊斯蘭教是國家認同的根本。"
  },
  "language": {
   "official": "官方語言為迪維希語。",
@@ -28,34 +28,34 @@
    {
     "name": "迪維希語",
     "percent": 95,
-    "description": "屬印度－雅利安語支，與僧伽羅語相近，以塔納文字（由右至左書寫）記錄。",
+    "description": "迪維希語是馬爾地夫人的母語，與僧伽羅語同源，但在數百年的伊斯蘭化與島嶼隔絕中發展出獨特的面貌，以塔安納字母書寫。憲法定迪維希語為國語，由於國民幾乎都是馬爾地夫人，因此它是絕大多數人的語言。",
     "greeting": "Kihineh?",
     "pronunciation": "ki-hi-neh"
    },
    {
     "name": "英語",
     "percent": 2,
-    "description": "教育、商業與觀光業的重要語言。",
+    "description": "英國保護國時期（1887–1965年）英語開始進入政府，1960年代後馬爾地夫逐步將英語作為學校教學語言。1972年第一座度假村開業後觀光業興起，英語在度假村、政府與商業中廣泛使用，但以英語為母語的人很少。",
     "greeting": "Hello",
     "pronunciation": "heh-loh"
    },
    {
     "name": "孟加拉語",
     "percent": 2,
-    "description": "孟加拉外籍勞工使用。",
+    "description": "孟加拉語使用者主要是來自孟加拉的外籍勞工，他們從事建築、清潔與度假村服務等工作，是馬爾地夫最大的外籍勞工群體之一，部分人沒有合法身分，生活條件也受到國際關注。",
     "greeting": "নমস্কার / আসসালামু আলাইকুম",
     "pronunciation": "no-mosh-kar / as-sa-la-mu a-lai-kum"
    }
   ],
-  "history": "迪維希語源自古代斯里蘭卡移民的語言，並吸收阿拉伯語、波斯語與印度語言詞彙。18世紀發展出獨特的塔納文字，以阿拉伯數字與迪維希文字母為基礎。英語自20世紀後期成為教育語言。"
+  "history": "迪維希語屬印歐語系印度-雅利安語支，與斯里蘭卡的僧伽羅語關係最近，顯示馬爾地夫早期移民可能來自斯里蘭卡。古代以源自婆羅米文的「埃維拉庫魯」字母書寫，伊斯蘭化後吸收了大量阿拉伯語詞彙。約16–17世紀發展出獨特的塔安納字母（Thaana），由右至左書寫，字母形狀部分源自阿拉伯數字。1887–1965年英國保護國時期英語進入政府與教育。今天迪維希語是國語，英語則是中學以上的教學語言。"
  },
  "food": {
   "ranking": [
    {
     "name": "鮪魚椰子沙拉",
     "localName": "Mas huni",
-    "description": "以碎鮪魚、椰絲、洋蔥與辣椒拌成的沙拉，配烤餅食用，是傳統早餐。",
-    "history": "鮪魚與椰子是馬爾地夫飲食的兩大基石。",
+    "description": "把鮪魚（多為煙燻或罐頭鮪魚）與椰子絲、洋蔥、辣椒與萊姆汁拌在一起，配羅希烤餅當早餐。",
+    "history": "Mas huni 是馬爾地夫最典型的早餐，反映了島國兩大物產：鮪魚與椰子。馬爾地夫人以傳統的竿釣方式捕捉鮪魚已有數百年歷史，煙燻乾燥的鮪魚（Maldive fish）在中世紀已是出口到斯里蘭卡與南印度的重要商品，14世紀旅行家伊本·巴圖塔也曾記載。",
     "wiki": "Mas huni",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Mas_huni-roshi087.JPG/960px-Mas_huni-roshi087.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Mas_huni-roshi087.JPG",
@@ -64,8 +64,8 @@
    {
     "name": "鮪魚清湯",
     "localName": "Garudhiya",
-    "description": "以鮪魚熬成的清湯，配米飯、萊姆與辣椒。",
-    "history": "馬爾地夫最傳統的料理之一，反映以捕魚為生的歷史。",
+    "description": "以新鮮鮪魚加水與鹽熬煮成的清澈魚湯，配米飯、萊姆、辣椒與洋蔥食用。湯頭清淡鮮甜，強調鮪魚的原味。",
+    "history": "Garudhiya 被視為馬爾地夫的國民湯品，數百年來是漁民家庭的日常食物。過去馬爾地夫人每天的飲食幾乎都圍繞著鮪魚，把當天捕到的新鮮魚直接煮湯，是最簡單也最基本的料理方式。濃縮的魚湯更可以進一步熬成 rihaakuru 魚醬保存。",
     "wiki": "Garudhiya",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Garudiya.jpg/960px-Garudiya.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Garudiya.jpg",
@@ -74,8 +74,8 @@
    {
     "name": "鮪魚炸球",
     "localName": "Gulha",
-    "description": "以麵團包入鮪魚、椰絲與洋蔥的小炸球。",
-    "history": "是馬爾地夫最常見的「hedhikaa」（午茶點心）之一。",
+    "description": "以麵團包入煙燻鮪魚、椰子、洋蔥與辣椒的小圓球，油炸成金黃色。外皮酥脆、內餡帶有椰子與辣椒的香氣。",
+    "history": "Gulha 是馬爾地夫最受歡迎的「短食」（hedhikaa），也就是午後配茶的小點心。馬爾地夫人有在下午喝紅茶配各式鹹甜點心的習慣，這與英國保護國時期的影響及南亞飲茶文化有關。在齋戒月開齋時，gulha 也是餐桌上常見的點心。",
     "wiki": "Gulha",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Maldivian_gulha33.JPG/960px-Maldivian_gulha33.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Maldivian_gulha33.JPG",
@@ -84,8 +84,8 @@
    {
     "name": "鮪魚醬",
     "localName": "Rihaakuru",
-    "description": "以鮪魚長時間熬煮成的濃稠魚醬。",
-    "history": "製作鮪魚乾的副產品，是馬爾地夫特有的調味料。",
+    "description": "以鮪魚湯長時間熬煮濃縮成的深褐色濃稠魚醬，鹹味強烈，配米飯或烤餅食用。味道濃郁，少量就能為飯菜增添鮮味。",
+    "history": "Rihaakuru 是馬爾地夫人保存鮪魚精華的傳統方式。在沒有冰箱的時代，魚獲過多時，人們把煮魚的湯汁不斷熬煮成濃稠魚醬，可以保存數月甚至更久。它被視為馬爾地夫獨特的調味品，也是旅外馬爾地夫人最想念的家鄉味之一。",
     "wiki": "Rihaakuru",
     "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Rihaakuru.JPEG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Rihaakuru.JPEG",
@@ -94,8 +94,8 @@
    {
     "name": "羅希烤餅",
     "localName": "Roshi",
-    "description": "以麵粉做成的薄圓餅，搭配咖哩或鮪魚沙拉。",
-    "history": "受南亞飲食影響，是日常主食之一。",
+    "description": "以麵粉、水與椰子油製成的薄圓餅，在鐵板上烤熟，類似印度的羅提餅。口感柔軟，常用來包著 mas huni 或咖哩食用。",
+    "history": "Roshi 源自南亞的烤餅（roti），透過馬爾地夫與印度、斯里蘭卡之間長期的貿易往來傳入。由於馬爾地夫的珊瑚礁島不適合種植小麥，麵粉需要進口，但烤餅仍融入當地飲食，成為每天早餐配 mas huni 的主食。",
     "wiki": "Roti",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/2020-05-08_19_34_28_Chapati_being_made_in_a_pan_in_the_Franklin_Farm_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg/960px-2020-05-08_19_34_28_Chapati_being_made_in_a_pan_in_the_Franklin_Farm_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:2020-05-08_19_34_28_Chapati_being_made_in_a_pan_in_the_Franklin_Farm_section_of_Oak_Hill,_Fairfax_County,_Virginia.jpg",

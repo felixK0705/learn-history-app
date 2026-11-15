@@ -7,20 +7,20 @@
    {
     "name": "天主教",
     "percent": 55,
-    "description": "主要分布於楚克與雅浦。"
+    "description": "1885 年西班牙與德國爭奪加羅林群島，經教宗良十三世仲裁後歸西班牙，西班牙嘉布遣會士隨即來此傳教。1899 年德國購得群島後天主教會持續發展，1914–1945 年日本統治期間，日本當局還邀請西班牙耶穌會士來南洋傳教。天主教因此在楚克州與雅浦州成為多數信仰。"
    },
    {
     "name": "新教（聯合基督教會等）",
     "percent": 40,
-    "description": "主要分布於波納佩與科斯雷。"
+    "description": "1852 年美國公理會差會（ABCFM）從夏威夷派傳教士抵達波納佩與科斯雷，以島民語言翻譯聖經、開辦學校。科斯雷的酋長與居民幾乎全體改信新教，至今科斯雷仍是以公理宗為主、星期日嚴守安息的島嶼；這些教會後來組成聯合基督教會。"
    },
    {
     "name": "其他（摩門教、基督復臨安息日會等）",
     "percent": 4,
-    "description": "規模較小。"
+    "description": "二戰後美國以聯合國託管名義治理密克羅尼西亞（1947–1986 年），摩門教、基督復臨安息日會、神召會、巴哈伊教等美國教派陸續傳入，規模不大但在城鎮中逐漸發展。"
    }
   ],
-  "background": "19世紀美國新教傳教士在科斯雷與波納佩傳教，西班牙與德國統治時期天主教傳教士則在雅浦與楚克傳播。日本統治期間也有教會活動，戰後美國託管進一步鞏固基督教。"
+  "background": "密克羅尼西亞各島原本信奉祖靈與自然神祇，19 世紀中葉美國新教傳教士首先抵達波納佩與科斯雷，19 世紀末西班牙與德國統治時期天主教傳入楚克與雅浦。日本統治時期雖帶入神道與佛教，但隨著 1945 年戰敗而消失。美國託管期間更多教派傳入，基督教從此成為幾乎全民的信仰，且教會與傳統酋長體制共同構成社會的支柱。"
  },
  "language": {
   "official": "官方語言為英語。",
@@ -28,48 +28,48 @@
    {
     "name": "楚克語",
     "percent": 48,
-    "description": "人口最多的楚克州使用。",
+    "description": "楚克語屬密克羅尼西亞語族，是人口最多的楚克州（約佔全國人口一半）的語言。楚克潟湖在二戰時是日本海軍的重要基地，戰後各州間的移居也讓楚克語在首都波納佩等地有不少使用者。",
     "greeting": "Ran annim（早安）",
     "pronunciation": "ran an-nim"
    },
    {
     "name": "波納佩語",
     "percent": 25,
-    "description": "波納佩州使用。",
+    "description": "波納佩語是首都帕利基爾所在的波納佩州語言，擁有複雜的敬語系統，用來對傳統最高酋長「南馬基」（Nahnmwarki）說話。19 世紀美國傳教士最早以拉丁字母為它制定書寫系統。",
     "greeting": "Kaselehlie",
     "pronunciation": "ka-se-le-lee"
    },
    {
     "name": "科斯雷語",
     "percent": 7,
-    "description": "科斯雷州使用。",
+    "description": "科斯雷語只通行於單一島嶼的科斯雷州，使用人口少但幾乎全島居民都會說。19 世紀傳教士以它翻譯聖經，教會在語言保存上扮演重要角色。",
     "greeting": "Len wo（日安）",
     "pronunciation": "len wo"
    },
    {
     "name": "雅浦語",
     "percent": 5,
-    "description": "雅浦州使用。",
+    "description": "雅浦語通行於雅浦本島，與其他密克羅尼西亞語言差異頗大，在語言分類上有爭議。雅浦以保存傳統文化著稱，例如巨大的石幣，雅浦外島則使用另外幾種語言。",
     "greeting": "Mogethin",
     "pronunciation": "mo-ge-thin"
    },
    {
     "name": "英語",
     "percent": 2,
-    "description": "官方、教育與政府語言。",
+    "description": "1947–1986 年美國以聯合國託管名義治理此地，英語成為學校與政府語言。1986 年獨立並與美國簽訂《自由聯合協定》後，英語仍是官方語言與四州之間的共通語，但以英語為母語的人很少。",
     "greeting": "Hello",
     "pronunciation": "heh-loh"
    }
   ],
-  "history": "各島語言多屬南島語系密克羅尼西亞語支，彼此差異大。西班牙、德國、日本與美國先後統治，各留下外來詞彙；美國託管時期英語成為教育與行政語言，獨立後成為官方語言。"
+  "history": "密克羅尼西亞聯邦四個州各有自己的南島語言，彼此無法直接溝通。19 世紀美國傳教士為波納佩語、科斯雷語等制定書寫系統。之後西班牙（1886–1899 年）、德國（1899–1914 年）、日本（1914–1945 年）相繼統治，日本時期推行日語教育，留下許多日語借詞。二戰後美國託管使英語成為教育與行政語言，1986 年獨立後英語成為各州之間的共通官方語言。"
  },
  "food": {
   "ranking": [
    {
     "name": "麵包果",
     "localName": "Breadfruit",
-    "description": "烤、煮或發酵保存的麵包果，是傳統主食。",
-    "history": "太平洋島民數千年來的主要澱粉來源，傳統上會在地坑中發酵保存。",
+    "description": "一種澱粉含量高的大型果實，可以烤、煮、炸，或埋入土坑中發酵保存，口感類似麵包或馬鈴薯。",
+    "history": "麵包果是數千年前南島語族航海者在太平洋擴散時隨船攜帶的作物，在密克羅尼西亞是最重要的主食之一。波納佩等島嶼的居民會把麵包果放入以葉子鋪墊的土坑中發酵，可保存數月甚至數年，用來度過颱風與饑荒。麵包果的收成季節也是島上舉行傳統祭典與向酋長獻禮的重要時刻。",
     "wiki": "Breadfruit",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Artocarpus_altilis_%28fruit%29.jpg/960px-Artocarpus_altilis_%28fruit%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Artocarpus_altilis_(fruit).jpg",
@@ -78,8 +78,8 @@
    {
     "name": "芋頭",
     "localName": "Taro",
-    "description": "煮熟或搗成泥的芋頭，是節慶與日常主食。",
-    "history": "大型芋頭在波納佩等地的宴席中是地位與財富的象徵。",
+    "description": "在濕地或特別挖掘的坑田中種植的根莖類作物，煮熟後口感綿密，可直接食用或搗成泥。",
+    "history": "芋頭是南島語族帶來的古老作物，在土壤貧瘠的珊瑚環礁上，島民挖出深坑、填入腐植土種植耐鹽的巨型沼澤芋頭，是重要的生存技術。在雅浦，芋頭田由婦女管理，擁有芋頭田與土地權利息息相關。芋頭也常在婚喪儀式與酋長祭典中作為獻禮。",
     "wiki": "Taro",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Songe-R%C3%A9union.JPG/960px-Songe-R%C3%A9union.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Songe-R%C3%A9union.JPG",
@@ -88,8 +88,8 @@
    {
     "name": "沙考（卡瓦）",
     "localName": "Sakau",
-    "description": "以胡椒科植物根部搗碎榨汁的儀式性飲品，具放鬆效果。",
-    "history": "波納佩的重要傳統飲品，在儀式與社交中扮演核心角色。",
+    "description": "將胡椒科植物卡瓦的根在石頭上搗碎，加水後用木槿樹皮纖維包裹擰出的汁液，有麻醉放鬆作用。",
+    "history": "沙考是波納佩傳統儀式的核心，在獻給最高酋長「南馬基」的祭典中，男性以石頭敲擊搗製，發出有節奏的聲響。飲用順序依照身分地位排列，象徵傳統社會的階層。今天波納佩到處都有販售沙考的小酒館，它仍是社交、調解紛爭與傳統儀式不可或缺的飲品。",
     "wiki": "Kava",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Starr_070515-7054_Piper_methysticum.jpg/960px-Starr_070515-7054_Piper_methysticum.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Starr_070515-7054_Piper_methysticum.jpg",
@@ -98,8 +98,8 @@
    {
     "name": "椰子蟹",
     "localName": "Coconut crab",
-    "description": "世界最大的陸生甲殼類，常蒸煮或以椰奶烹調。",
-    "history": "太平洋島嶼的珍貴食材，常在特殊場合食用。",
+    "description": "世界上最大的陸生節肢動物，蒸熟後蟹肉鮮甜，腹部的油脂尤其濃郁。",
+    "history": "椰子蟹生活在熱帶島嶼的海岸與林地，能用強壯的螯剝開椰子，在科斯雷、波納佩等島嶼是傳統的珍貴食物，常在節慶與宴客時出現。由於生長緩慢且長期被大量捕捉，族群數量下降，部分島嶼已訂定捕捉限制。它代表了島民就地取材的飲食方式，也面臨資源保育的課題。",
     "wiki": "Coconut crab",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Coconut_Crab_Birgus_latro.jpg/960px-Coconut_Crab_Birgus_latro.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Coconut_Crab_Birgus_latro.jpg",
@@ -108,8 +108,8 @@
    {
     "name": "生魚片",
     "localName": "Sashimi",
-    "description": "新鮮鮪魚等生魚切片，蘸醬油與芥末。",
-    "history": "日本統治時期（1914–1945）傳入，至今仍是密克羅尼西亞普遍的料理。",
+    "description": "將新鮮鮪魚等漁獲切成生魚片，沾醬油、芥末，或擠上當地檸檬食用。",
+    "history": "1914–1945 年日本統治南洋群島期間，大量日本移民來到密克羅尼西亞發展漁業與商業，把生魚片與醬油的吃法帶入當地。二戰後日本人撤離，但吃生魚片的習慣保留下來，並與島民原有的生食漁獲傳統結合。今天在婚禮、教會活動與節日宴席上，生魚片幾乎是必備的菜色，反映了日本統治留下的深遠影響。",
     "wiki": "Sashimi",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/241109_Shigaraki_ware_Koga_Shiga_pref_Japan01s3.jpg/960px-241109_Shigaraki_ware_Koga_Shiga_pref_Japan01s3.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:241109_Shigaraki_ware_Koga_Shiga_pref_Japan01s3.jpg",

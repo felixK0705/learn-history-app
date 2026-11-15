@@ -7,25 +7,25 @@
    {
     "name": "基督新教",
     "percent": 64,
-    "description": "包括路德宗、聯合教會、復臨安息日會與五旬節派等。"
+    "description": "新教在1871年由倫敦傳道會傳入南部的托雷斯海峽與巴布亞沿岸，1880年代起德國統治北部新幾內亞時，德國路德會與衛理公會也相繼進入。各差會依「禮讓協議」劃分傳教區域，使特定地區至今仍以某一教派為主，例如北部以路德會為主。1975年獨立時，憲法前言宣示以「基督教原則」立國，今日主要教派有路德會、聯合教會、五旬節派等。"
    },
    {
     "name": "天主教",
     "percent": 26,
-    "description": "重要的基督教會，在教育與醫療方面貢獻良多。"
+    "description": "天主教的聖言會與聖心傳教會在1880年代德國統治時期進入北部與新不列顛島。二戰後內陸高地被「發現」並開放，天主教與路德會爭相進入高地傳教，使天主教成為最大的單一教派，在東塞皮克、新不列顛與高地地區尤其集中。"
    },
    {
     "name": "其他基督教派",
     "percent": 5,
-    "description": "包括其他教會與宗派。"
+    "description": "其他基督教派包括基督復臨安息日會、浸信會、耶和華見證人等，以及近年來從國外傳入的各種福音派與靈恩派教會。安息日會在1908年前後傳入，在部分地區影響很深，例如部分村落集體信奉而遵守飲食規範。"
    },
    {
     "name": "傳統信仰及其他",
     "percent": 2,
-    "description": "部分人保留祖靈與自然信仰，或與基督教融合。"
+    "description": "巴布亞紐幾內亞有八百多個民族，傳統上信仰祖靈與神靈，並以巫術解釋疾病與災禍。高地地區直到1930年代才與外界接觸，但傳教士迅速進入，使純粹信仰傳統宗教的人口已很少。許多傳統觀念，例如對巫術的恐懼，仍與基督教並存，甚至引發針對被指控為巫師者的暴力事件。"
    }
   ],
-  "background": "十九世紀後期歐洲傳教士陸續抵達，德國殖民地區以路德宗為主，英國與澳洲管轄地區則有聖公會與倫敦傳道會。二十世紀高地地區接觸外界後也迅速基督教化，但傳統信仰觀念仍深植於社會。"
+  "background": "巴布亞紐幾內亞各族原本信仰祖靈與自然神靈，貨物崇拜運動在殖民時期也曾流行。1871年倫敦傳道會率先傳教，1880年代德國統治北部、英國與後來的澳洲統治南部時，各差會分區傳教。1930年代高地與外界接觸後，傳教士迅速進入。1975年獨立時憲法宣示基督教原則，2025年國會更修憲宣布為基督教國家，但傳統信仰觀念仍深深影響社會。"
  },
  "language": {
   "official": "英語、托克皮辛語、希里莫圖語與巴布亞紐幾內亞手語是官方語言。",
@@ -33,34 +33,34 @@
    {
     "name": "托克皮辛語",
     "percent": 50,
-    "description": "以英語為基礎的克里奧爾語，是全國最廣泛使用的通用語。",
+    "description": "托克皮辛語是以英語詞彙為基礎的克里奧爾語，19世紀末形成於太平洋島民被招募到薩摩亞、昆士蘭種植園工作時的共同語，返鄉的勞工把它帶回新幾內亞。德國與澳洲統治時期，它成為種植園、傳教與行政的通用語。由於巴布亞紐幾內亞有八百多種語言，托克皮辛語成為全國最重要的共同語，國會辯論也多使用它。",
     "greeting": "Gude",
     "pronunciation": "goo-DAY"
    },
    {
     "name": "英語",
     "percent": 2,
-    "description": "官方語言，用於政府、教育與商業。",
+    "description": "英語在1906年起澳洲統治巴布亞、一戰後統治新幾內亞期間成為行政與教育語言，1975年獨立後繼續作為官方語言，政府文件、法律與中學以上教育都使用英語。然而以英語為母語的人極少，主要是城市中的菁英家庭。",
     "greeting": "Hello",
     "pronunciation": "heh-LOH"
    },
    {
     "name": "希里莫圖語",
     "percent": 1,
-    "description": "南部巴布亞地區的通用語。",
+    "description": "希里莫圖語源自南部莫圖族與鄰近民族在傳統貿易航行（hiri）中使用的簡化語言。19世紀末英國與澳洲統治巴布亞時，警察部隊使用它作為溝通語言，因此又稱「警察莫圖語」。它主要在南部的莫士比港一帶使用，隨著托克皮辛語普及，使用者正在減少。",
     "greeting": "Daba namona",
     "pronunciation": "DA-ba na-MO-na"
    }
   ],
-  "history": "巴紐的崎嶇地形使各群體長期分隔，發展出超過800種語言。十九世紀殖民與種植園勞動形成了托克皮辛語，並在獨立後成為國家認同的重要象徵。"
+  "history": "巴布亞紐幾內亞擁有超過八百種語言，是世界上語言最多樣的國家，分屬南島語系與數十個巴布亞語系。19世紀末北部由德國、南部由英國統治，後由澳洲接管，托克皮辛語與希里莫圖語分別在北部與南部成為通用語。1975年獨立後英語、托克皮辛語與希里莫圖語並列官方語言，2015年手語也列入官方語言，但許多小語言正因年輕人轉用托克皮辛語而瀕危。"
  },
  "food": {
   "ranking": [
    {
     "name": "姆姆地爐烤",
     "localName": "Mumu",
-    "description": "將豬肉、地瓜與蔬菜包葉後放在熱石頭上，以土覆蓋燜烤。",
-    "history": "太平洋島嶼常見的傳統烹調方式，在節慶與宴客時舉行。",
+    "description": "在地上挖坑放入燒熱的石頭，將豬肉、雞肉、地瓜、芋頭與青菜用香蕉葉包好放入，再以泥土覆蓋燜烤數小時。",
+    "history": "姆姆地爐烤是巴布亞紐幾內亞各地共有的傳統烹調法，豬在當地社會中是財富與地位的象徵，用於婚禮聘金、和解賠償與重要儀式。在高地社會中，「大人物」會舉辦大型宴會宰殺數十頭豬以展現實力。姆姆至今仍是村落慶典、教會活動與政治聚會中必備的料理。",
     "wiki": "Earth oven",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Samoa_umu.JPG/960px-Samoa_umu.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Samoa_umu.JPG",
@@ -69,8 +69,8 @@
    {
     "name": "西米",
     "localName": "Saksak",
-    "description": "以西米棕櫚的澱粉製成的主食。",
-    "history": "低地與河流沿岸地區數千年來的重要主食。",
+    "description": "從西米棕櫚的樹幹中刮出含澱粉的木髓，以水搓洗沉澱出澱粉後曬乾，可煮成透明的膠狀糊或烤成餅，口感黏軟。",
+    "history": "西米是新幾內亞低地與沼澤地區數千年來的主食，在塞皮克河流域與海灣省尤其重要。一棵西米棕櫚可提供一個家庭數週的食物，製作過程通常由婦女與家人分工完成。在不適合農耕的濕地環境中，西米讓人們得以定居，也是當地神話與儀式中的重要元素。",
     "wiki": "Sago",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Sago_%28Metroxylon_sagu%29_in_New_Guinea.jpg/960px-Sago_%28Metroxylon_sagu%29_in_New_Guinea.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Sago_(Metroxylon_sagu)_in_New_Guinea.jpg",
@@ -79,8 +79,8 @@
    {
     "name": "地瓜",
     "localName": "Kaukau",
-    "description": "以烤或燜煮方式食用的地瓜。",
-    "history": "高地地區最重要的主食，數百年來支撐高地人口。",
+    "description": "將地瓜埋在火堆灰燼中烤熟，或放進姆姆地坑中燜熟，口感香甜鬆軟，是高地居民的日常主食。",
+    "history": "地瓜原產美洲，約在17世紀經由東南亞的貿易路線傳入新幾內亞高地，帶來所謂的「地瓜革命」：它能在高海拔與較貧瘠的土地上生長，使高地人口大幅增加，並能大量飼養豬隻。「kaukau」是托克皮辛語的名稱，如今地瓜是高地人每天的主食，也用來餵豬。",
     "wiki": "Sweet potato",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Ipomoea_batatas_006.JPG/960px-Ipomoea_batatas_006.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Ipomoea_batatas_006.JPG",
@@ -89,8 +89,8 @@
    {
     "name": "芋頭",
     "localName": "Taro",
-    "description": "以煮或烤方式食用的芋頭。",
-    "history": "太平洋地區古老的主食作物，在傳統交換與儀式中有重要地位。",
+    "description": "將芋頭整顆煮熟、烤熟或放入姆姆中燜熟，有時與椰奶一起烹煮，口感綿密帶淡淡甜味，是沿海與島嶼地區的主食。",
+    "history": "芋頭在新幾內亞的利用與栽培史可追溯到七千至一萬年前，考古學家在高地的庫克早期農業遺址發現了芋頭與香蕉的栽培證據，使新幾內亞成為世界上最早獨立發展農業的地區之一。在許多沿海與島嶼社會中，芋頭在交換儀式與節慶中具有重要的地位。",
     "wiki": "Taro",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Songe-R%C3%A9union.JPG/960px-Songe-R%C3%A9union.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Songe-R%C3%A9union.JPG",
@@ -99,8 +99,8 @@
    {
     "name": "阿伊比卡菜",
     "localName": "Aibika",
-    "description": "黃秋葵屬植物的嫩葉，常以椰奶煮食。",
-    "history": "巴紐最常見的綠葉蔬菜之一，營養豐富。",
+    "description": "將阿伊比卡的嫩葉與椰奶、洋蔥一起煮，有時加入魚或肉，口感滑嫩帶點黏性，類似菠菜。",
+    "history": "阿伊比卡（黃秋葵屬的Abelmoschus manihot）是巴布亞紐幾內亞最重要的綠葉蔬菜，在各地家庭菜園中普遍種植，富含維生素與蛋白質。由於它容易以扦插繁殖、四季都能採收，自古就是當地飲食中的重要蔬菜，常與芋頭、地瓜等主食一起食用，在市場上也隨處可見。",
     "wiki": "Abelmoschus manihot",
     "image": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Abelmoschus_manihot_ssp_tetraphyllus_W_IMG_2157.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Abelmoschus_manihot_ssp_tetraphyllus_W_IMG_2157.jpg",

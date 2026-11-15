@@ -7,25 +7,25 @@
    {
     "name": "天主教",
     "percent": 74,
-    "description": "西班牙殖民時期傳入，仍為主要宗教。"
+    "description": "1534 年西班牙人征服原屬印加帝國的基多，方濟會、道明會等修會隨即展開傳教，原住民的安地斯信仰與天主教聖人崇拜逐漸融合，基多更以殖民時期的宗教藝術聞名。19 世紀總統加西亞・莫雷諾使天主教成為國家支柱，1873 年將國家奉獻給耶穌聖心；1895 年埃洛伊・阿爾法羅領導的自由革命才實行政教分離。天主教至今仍是多數，但比例逐年下降。"
    },
    {
     "name": "新教（福音派）",
     "percent": 13,
-    "description": "近數十年快速成長，原住民社群中尤多。"
+    "description": "20 世紀起美國福音派差會進入厄瓜多，1931 年在基多開播的福音廣播電台 HCJB 影響深遠；1956 年五名美國傳教士在亞馬遜地區遭瓦奧拉尼族殺害，事件轟動國際。1960 年代後，福音派在欽博拉索等高地原住民社群中大量發展，部分原因是對傳統天主教莊園體制的反彈。"
    },
    {
     "name": "無宗教",
     "percent": 8,
-    "description": "多見於都市地區。"
+    "description": "無宗教者主要分布在基多、瓜亞基爾等大城市，與高等教育普及、年輕世代受全球世俗文化影響有關，自 21 世紀以來逐漸增加。"
    },
    {
     "name": "其他",
     "percent": 3,
-    "description": "包含耶和華見證人、摩門教等。"
+    "description": "包括耶和華見證人、後期聖徒教會（摩門教）等 20 世紀傳入的教派，以及亞馬遜與安地斯原住民仍保有的傳統信仰，例如祭祀太陽的「太陽祭」（Inti Raymi）至今仍在高地舉行。"
    }
   ],
-  "background": "16世紀西班牙征服印加帝國北部後，天主教隨殖民傳入，基多成為重要的宗教藝術中心（基多畫派）。20世紀後期福音派教會在安地斯原住民社群中迅速擴展。"
+  "background": "印加帝國在 15 世紀末征服厄瓜多高地，帶來太陽崇拜；1530 年代西班牙征服後，天主教取代國家宗教並與原住民信仰交融。19 世紀獨立後，保守派與自由派圍繞教會地位激烈鬥爭，加西亞・莫雷諾時期政教一體，1895 年自由革命後則確立世俗國家。20 世紀美國福音派傳教進入高地與亞馬遜地區，使新教成為第二大宗教，近年無宗教人口也在城市中增加。"
  },
  "language": {
   "official": "官方語言為西班牙語，克丘亞語（Kichwa）與舒阿爾語為跨文化關係官方語言。",
@@ -33,27 +33,27 @@
    {
     "name": "西班牙語",
     "percent": 94,
-    "description": "全國通用語言。",
+    "description": "1530 年代西班牙征服後，西班牙語成為行政、教會與商業語言，混血的梅斯蒂索人口逐漸成為多數。19 世紀獨立後西班牙語是唯一的國家語言，沿海的瓜亞基爾與高地的基多發展出明顯不同的口音。今日政府、教育與媒體都以西班牙語運作。",
     "greeting": "Hola",
     "pronunciation": "o-la"
    },
    {
     "name": "克丘亞語（Kichwa）",
     "percent": 4,
-    "description": "安地斯山區與亞馬遜原住民使用。",
+    "description": "克丘亞語在 15 世紀末隨印加帝國向北擴張傳入厄瓜多，殖民時期西班牙傳教士又以它作為向原住民傳教的通用語，使它在高地進一步普及，當地變體稱為 Kichwa。1980 年代起原住民運動推動雙語跨文化教育，2008 年憲法承認 Kichwa 與舒阿爾語為跨文化關係的官方語言。使用者集中在因巴布拉、欽博拉索、科托帕希等高地省份，但年輕人轉用西語使比例下降。",
     "greeting": "Alli puncha（早安）",
     "pronunciation": "a-yi pun-cha"
    }
   ],
-  "history": "15世紀末印加帝國征服此地，帶來克丘亞語作為帝國通用語。西班牙殖民後西班牙語成為主要語言，但安地斯原住民社群仍保存克丘亞語；2008年憲法承認原住民語言的地位。"
+  "history": "印加人到來之前，厄瓜多有卡尼亞里語、普魯哈語等多種地方語言，後來都被克丘亞語取代而消失。西班牙殖民後，西班牙語成為主流，克丘亞語則在鄉村與原住民社群中延續，並吸收了大量西語詞彙。亞馬遜地區至今仍有舒阿爾語、瓦奧拉尼語等十多種原住民語言。20 世紀後期原住民組織崛起，推動原住民語言的官方承認與雙語教育。"
  },
  "food": {
   "ranking": [
    {
     "name": "鮪魚洋蔥湯",
     "localName": "Encebollado",
-    "description": "以鮪魚、樹薯與醃紅洋蔥熬成的湯，配香蕉片與爆米花。",
-    "history": "源自沿海瓜亞基爾一帶，被視為解酒良方，常作早餐。",
+    "description": "以長鰭鮪魚、木薯與番茄、香料熬成的魚湯，上桌前加入大量醋醃紫洋蔥，常配香蕉片或爆米花。",
+    "history": "鮪魚洋蔥湯源自厄瓜多太平洋沿岸的瓜亞基爾與馬納比省，當地漁業發達，曼塔港是重要的鮪魚捕撈與加工中心。這道湯最初是漁民與港口工人的平價早餐，後來被認為能解宿醉，週末早晨的小吃店總是大排長龍。它常被沿海居民視為國民料理，在全國都有比賽評選最佳的鮪魚洋蔥湯。",
     "wiki": "Encebollado",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Semifinal_del_Campeonato_del_Encebollado_en_Esmeraldas_2015_%2818062294436%29.jpg/960px-Semifinal_del_Campeonato_del_Encebollado_en_Esmeraldas_2015_%2818062294436%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Semifinal_del_Campeonato_del_Encebollado_en_Esmeraldas_2015_(18062294436).jpg",
@@ -62,8 +62,8 @@
    {
     "name": "厄瓜多檸汁醃海鮮",
     "localName": "Ceviche",
-    "description": "以萊姆汁、番茄醬汁醃漬蝦或魚，帶湯汁，配爆米花或芭蕉片。",
-    "history": "厄瓜多版本多以煮熟的蝦製作，帶有較多湯汁，與秘魯版本不同。",
+    "description": "以檸檬汁與柳橙汁醃漬鮮蝦或魚，加入番茄、紫洋蔥與香菜，湯汁偏多，配爆米花或炸大蕉片食用。",
+    "history": "沿海原住民早在西班牙人到來前便以果汁與辣椒處理生魚，殖民者引進的萊姆與洋蔥讓這道菜成形。厄瓜多版本與鄰國秘魯不同，通常把蝦子先燙熟，並加入番茄醬汁，湯汁多得可以用湯匙喝。厄瓜多是世界主要的白蝦出口國之一，豐富的海產讓這道菜成為沿海地區週末與海灘度假的代表美食。",
     "wiki": "Ceviche",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Cebiche_de_corvina.JPG/960px-Cebiche_de_corvina.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Cebiche_de_corvina.JPG",
@@ -72,8 +72,8 @@
    {
     "name": "馬鈴薯煎餅",
     "localName": "Llapingacho",
-    "description": "以馬鈴薯泥包起司煎成的圓餅，配花生醬、香腸與煎蛋。",
-    "history": "源自安地斯山區的傳統料理。",
+    "description": "將馬鈴薯泥包入起司後煎成金黃的小圓餅，配花生醬汁、煎蛋、香腸與酪梨。",
+    "history": "馬鈴薯原產於安地斯山區，數千年來是高地原住民的主食。馬鈴薯煎餅源自中部高地的安巴托與通古拉瓦一帶，名稱來自克丘亞語，結合了本土的馬鈴薯與殖民時期引進的起司、雞蛋與豬肉製品。它常在高地市集與家庭午餐中出現，展現了原住民與西班牙飲食的融合。",
     "wiki": "Llapingacho",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Llapingachos._%2840491622163%29.jpg/960px-Llapingachos._%2840491622163%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Llapingachos._(40491622163).jpg",
@@ -82,8 +82,8 @@
    {
     "name": "聖週濃湯",
     "localName": "Fanesca",
-    "description": "以南瓜、多種豆類、穀物與鹹鱈魚煮成的濃湯。",
-    "history": "僅在復活節前聖週食用，據說12種穀豆象徵耶穌十二門徒。",
+    "description": "以南瓜、多種豆類與穀物，加上泡軟的鹹鱈魚和牛奶熬成的濃湯，上面點綴水煮蛋、炸麵團與大蕉。",
+    "history": "聖週濃湯只在復活節前的聖週製作，傳統上加入十二種豆類與穀物，象徵耶穌的十二門徒，鹹鱈魚則代表基督徒在四旬期守齋不吃紅肉的戒律。它結合了安地斯原生的南瓜、玉米、豆類與西班牙殖民帶來的鹹魚，是天主教傳入後融合在地物產的典型例子。製作十分費工，家族往往一起動手並分送親友，基多的家庭尤其重視這項傳統。",
     "wiki": "Fanesca",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/SEMANA_SANTA_QUITE%C3%91A_%2833852581341%29.jpg/960px-SEMANA_SANTA_QUITE%C3%91A_%2833852581341%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:SEMANA_SANTA_QUITE%C3%91A_(33852581341).jpg",
@@ -92,8 +92,8 @@
    {
     "name": "馬鈴薯起司濃湯",
     "localName": "Locro de papa",
-    "description": "以馬鈴薯、起司與酪梨熬成的濃湯。",
-    "history": "源自安地斯原住民的傳統湯品，馬鈴薯原產於此地區。",
+    "description": "將馬鈴薯煮到半化成濃稠的湯，拌入起司與牛奶，上桌時配上酪梨片。",
+    "history": "名稱源自克丘亞語「ruqru」，原指安地斯原住民以馬鈴薯、玉米與南瓜燉煮的濃湯。西班牙人帶來乳牛後，湯裡加入了牛奶與起司，形成今天的版本。在寒冷的安地斯高地，這道暖胃的濃湯是家庭與學校最常見的午餐湯品，也代表了厄瓜多高地「馬鈴薯文化」的延續。",
     "wiki": "Locro",
     "image": "https://upload.wikimedia.org/wikipedia/commons/2/22/Locro_argentino.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Locro_argentino.jpg",

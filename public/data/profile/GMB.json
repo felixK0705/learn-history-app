@@ -7,20 +7,20 @@
    {
     "name": "伊斯蘭教（遜尼派）",
     "percent": 96,
-    "description": "絕大多數居民信仰，以馬立基學派與蘇非教團為主。"
+    "description": "伊斯蘭教在 11–13 世紀隨商人與馬利帝國的勢力傳入甘比亞河流域，但起初多為統治者與商人信奉。19 世紀中葉至 1890 年代的「索寧克–馬拉布特戰爭」中，穆斯林宗教領袖（馬拉布特）推翻了傳統的非穆斯林統治者，使伊斯蘭教在全國普及。今日多數人隸屬提加尼、卡迪里等蘇菲教團，宗教領袖在社會中有很大影響力。"
    },
    {
     "name": "基督教",
     "percent": 3,
-    "description": "以天主教與聖公會為主，多分布於城市。"
+    "description": "1816 年英國在甘比亞河口建立巴瑟斯特（今班竹），1821 年衛理公會傳教士隨之而來，天主教會也相繼設立學校。基督徒主要是班竹一帶的阿庫人（獲釋奴隸後裔）、部分塞雷爾人與朱拉人，雖然人數少，但教會學校在教育上影響深遠。"
    },
    {
     "name": "傳統信仰",
     "percent": 1,
-    "description": "常與伊斯蘭教並存。"
+    "description": "傳統信仰主要見於西部的朱拉人等族群，其中曼丁卡人的「坎庫朗」面具成年儀式在 2005 年被聯合國教科文組織列為人類口述與非物質遺產代表作，這類傳統習俗也常被穆斯林保留。"
    }
   ],
-  "background": "伊斯蘭教自11世紀起經跨撒哈拉貿易傳入塞內甘比亞地區，19世紀的伊斯蘭聖戰運動（如索寧克－馬拉布特戰爭）使其廣泛普及。英國殖民時期傳教士在沿海城市傳播基督教。"
+  "background": "甘比亞河流域在中世紀屬於馬利帝國的影響範圍，伊斯蘭教隨商人與學者傳入，但直到 19 世紀的宗教戰爭才成為多數人的信仰。英國於 1816 年在河口建立殖民據點，帶來基督教傳教與教會學校。1965 年獨立後甘比亞實行世俗憲法，2015 年前總統賈梅曾宣布為伊斯蘭共和國，但 2017 年新政府撤回，伊斯蘭教、基督教與傳統習俗長期和睦共存。"
  },
  "language": {
   "official": "官方語言為英語。",
@@ -28,41 +28,41 @@
    {
     "name": "曼丁卡語",
     "percent": 38,
-    "description": "最大民族曼丁卡人的語言。",
+    "description": "曼丁卡人在 13 世紀隨馬利帝國向西擴張進入甘比亞河流域，之後建立了卡布王國等政權。曼丁卡人是甘比亞最大的民族，曼丁卡語因此是使用最廣的語言之一，格里奧（世襲說唱藝人）以科拉琴吟唱的史詩也以它傳承。",
     "greeting": "I be ñaadii?",
     "pronunciation": "i be nya-dee"
    },
    {
     "name": "富拉語",
     "percent": 21,
-    "description": "富拉人的語言。",
+    "description": "富拉人原為西非草原上的游牧民族，19 世紀富拉領袖阿爾法・莫洛在甘比亞河上游建立富拉杜王國，使富拉語在東部地區普及。富拉人至今仍有不少從事畜牧業。",
     "greeting": "Jam waali",
     "pronunciation": "jam waa-li"
    },
    {
     "name": "沃洛夫語",
     "percent": 18,
-    "description": "首都班竹一帶的通用語，與塞內加爾相通。",
+    "description": "沃洛夫語源自鄰國塞內加爾，14–16 世紀的喬洛夫帝國使其成為區域強勢語言。在甘比亞，沃洛夫人人數雖不是最多，但沃洛夫語是首都班竹與城市地區的通用語，許多不同民族的人在市場與日常生活中都使用它。",
     "greeting": "Nanga def",
     "pronunciation": "nan-ga def"
    },
    {
     "name": "英語",
     "percent": 2,
-    "description": "官方、教育與行政語言。",
+    "description": "1816 年英國在甘比亞河口建立殖民地，1888 年成為獨立的殖民地，直到 1965 年獨立。英語因此成為官方語言與教育、政府、媒體的語言，但多數人是在學校習得，以英語為母語者很少。",
     "greeting": "Hello",
     "pronunciation": "heh-loh"
    }
   ],
-  "history": "塞內甘比亞地區自古為曼丁卡、沃洛夫、富拉等民族交會之地，曼丁卡語隨馬利帝國擴張而普及。英國於17世紀在甘比亞河口建立據點，英語成為官方語言，使甘比亞成為法語區包圍中的英語國家。"
+  "history": "甘比亞的本土語言屬尼日–剛果語系大西洋語支與曼丁語支，包括曼丁卡語、富拉語、沃洛夫語、朱拉語、塞雷爾語等。中世紀馬利帝國使曼丁卡語成為流域的主要語言，19 世紀富拉人與沃洛夫人的勢力擴張改變了語言分布。英國殖民使英語成為行政語言，而周圍被法語國家塞內加爾包圍，使甘比亞成為法語區中的英語孤島。今日沃洛夫語在城市中影響力日增，成為事實上的通用語。"
  },
  "food": {
   "ranking": [
    {
     "name": "花生燉肉",
     "localName": "Domoda",
-    "description": "以花生醬、番茄與肉燉成的濃稠醬汁，配白飯，被視為國菜。",
-    "history": "與西非的花生燉肉同源，花生是甘比亞最重要的經濟作物。",
+    "description": "以花生醬、番茄、洋蔥與南瓜等蔬菜燉煮雞肉或牛肉的濃稠燉菜，配白飯食用。",
+    "history": "花生原產南美洲，16 世紀由葡萄牙人帶入西非。19 世紀 1830 年代起，英國殖民地甘比亞開始大量出口花生，花生成為最重要的經濟作物，至今仍是甘比亞主要出口品之一。花生燉肉因此成為甘比亞的國菜，在曼丁卡語中稱為 domoda，是家家戶戶最常見的午餐。",
     "wiki": "Domoda",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Domoda_Senegal.jpg/960px-Domoda_Senegal.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Domoda_Senegal.jpg",
@@ -71,8 +71,8 @@
    {
     "name": "貝納欽飯",
     "localName": "Benachin",
-    "description": "以番茄、魚或肉與蔬菜一鍋煮成的米飯。",
-    "history": "名稱源自沃洛夫語「一鍋」，與西非的喬洛夫飯同源。",
+    "description": "將米與魚或肉、番茄、洋蔥、蔬菜在同一鍋中炊煮，米飯呈紅色，味道濃郁。",
+    "history": "名稱在沃洛夫語中意為「一鍋」，與塞內加爾的喬洛夫飯同源，可追溯到 14–16 世紀沃洛夫人建立的喬洛夫帝國。它反映了塞內甘比亞地區以稻米為主食的飲食傳統，並隨貿易與移民傳遍西非。在甘比亞，它常在宗教節日、婚禮與家庭聚會中大鍋製作。",
     "wiki": "Jollof rice",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Jollof_Rice_with_Stew.jpg/960px-Jollof_Rice_with_Stew.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Jollof_Rice_with_Stew.jpg",
@@ -81,8 +81,8 @@
    {
     "name": "檸檬洋蔥燉雞",
     "localName": "Yassa",
-    "description": "以檸檬汁與大量洋蔥燉煮的雞肉或魚，配白飯。",
-    "history": "源自塞內加爾南部卡薩芒斯，在甘比亞同樣普遍。",
+    "description": "將雞肉或魚以大量洋蔥、檸檬汁與芥末醃製燒烤後，與洋蔥醬汁一起燉煮，酸香開胃。",
+    "history": "檸檬洋蔥燉雞源自鄰近的塞內加爾南部卡薩芒斯地區，當地朱拉人以柑橘與洋蔥調味，而甘比亞與卡薩芒斯之間有密切的族群往來，這道菜因此成為甘比亞的家常菜。它在節日與宴客時常見，以魚製作的版本則是沿海地區的特色。",
     "wiki": "Yassa (food)",
     "image": "https://upload.wikimedia.org/wikipedia/commons/4/45/Poulet_Yassa_Chicken_rice_with_onion_sauce.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Poulet_Yassa_Chicken_rice_with_onion_sauce.jpg",
@@ -91,8 +91,8 @@
    {
     "name": "秋葵棕櫚油湯",
     "localName": "Superkanja",
-    "description": "以秋葵、棕櫚油、魚與肉燉成的濃湯。",
-    "history": "甘比亞與塞內加爾的傳統料理，名稱源自沃洛夫語「秋葵湯」。",
+    "description": "以秋葵、棕櫚油、魚乾或燻魚與辣椒熬成的黏稠湯品，配白飯食用。",
+    "history": "秋葵原產於非洲，棕櫚油則是西非傳統的烹調用油，兩者的結合是西非料理的古老特色。名稱中的「kanja」在沃洛夫語中就是秋葵，前半則源自「湯」（法語 soupe），反映了當地語言與殖民語言的交融。這道湯在曼丁卡與朱拉族家庭中很常見，代表了甘比亞以魚與蔬菜為主的日常飲食。",
     "wiki": "Okra soup",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Sayur_oyong.JPG/960px-Sayur_oyong.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Sayur_oyong.JPG",
@@ -101,8 +101,8 @@
    {
     "name": "優格小米甜點",
     "localName": "Chakery",
-    "description": "以小米粒或粗麥混合優格、糖與香草製成的甜點。",
-    "history": "塞內甘比亞地區的傳統點心，常在節慶時食用。",
+    "description": "將小米蒸成小顆粒，拌入加糖的優格或酸奶，並以肉荳蔻、香草和葡萄乾調味的甜點。",
+    "history": "小米是西非薩赫勒地區最古老的主糧之一，耐旱的特性使它適合當地氣候。這道甜點與塞內加爾的「thiakry」同源，傳統上在宰牲節（Tobaski）、嬰兒命名禮與婚禮等場合製作，招待前來祝賀的賓客。它是甘比亞人在炎熱天氣中最受歡迎的清涼甜點之一。",
     "wiki": "Thiakry",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Gambia_Chakery_0001.jpg/960px-Gambia_Chakery_0001.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Gambia_Chakery_0001.jpg",

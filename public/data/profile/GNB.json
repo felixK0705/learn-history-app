@@ -7,25 +7,25 @@
    {
     "name": "伊斯蘭教",
     "percent": 46,
-    "description": "主要為富拉人與曼丁卡人。"
+    "description": "伊斯蘭教主要由東部的富拉人與曼丁卡人信奉。13 世紀起曼丁卡人在此建立隸屬馬利帝國的卡布王國，19 世紀富塔賈隆的富拉伊斯蘭國家逐漸擴張，1867 年在坎薩拉之戰擊敗卡布王國，使伊斯蘭教在東部的加布、巴法塔一帶成為主流。近年穆斯林比例因人口成長與改宗而上升，已接近半數。"
    },
    {
     "name": "傳統信仰",
     "percent": 31,
-    "description": "巴蘭塔人等沿海民族的祖靈與自然信仰。"
+    "description": "沿海的巴蘭塔人、帕佩爾人、曼雅科人與比熱戈斯群島居民長期保留祖靈與神靈崇拜，以「伊朗」（iran）神龕進行祭祀。這些民族抗拒伊斯蘭化，葡萄牙人也到 1930 年代才真正完成「綏靖」征服，傳統信仰因而延續至今，比熱戈斯群島還保有母系社會與女祭司傳統。"
    },
    {
     "name": "基督教",
     "percent": 19,
-    "description": "以天主教為主，多分布於比索等城市。"
+    "description": "1446 年葡萄牙航海家首次抵達此地沿海，1588 年在卡謝烏建立貿易據點，天主教在說克里奧爾語的混血與城市居民中傳播。殖民時期葡萄牙對內陸影響有限，天主教始終以比紹、卡謝烏等城鎮為主；近年福音派教會也在年輕人中成長。"
    },
    {
     "name": "無宗教",
     "percent": 4,
-    "description": "比例較低。"
+    "description": "無宗教者多分布在首都比紹，受都市生活與教育影響。由於傳統信仰在日常生活中仍很普遍，完全不認同任何宗教的人比例不高。"
    }
   ],
-  "background": "伊斯蘭教隨馬利帝國與富拉人的擴張傳入內陸東部，沿海民族則保留傳統信仰。葡萄牙自15世紀起在沿海建立據點並傳播天主教，但影響主要限於城市。"
+  "background": "幾內亞比索位於曼丁卡卡布王國與沿海民族的交界，東部在中世紀起逐漸伊斯蘭化，沿海民族則長期維持傳統信仰。15 世紀中葉葡萄牙人抵達後，在沿海建立奴隸與商品貿易據點，帶來天主教，但直到 20 世紀初才控制內陸。1963–1974 年阿米爾卡・卡布拉爾領導的獨立戰爭後，國家實行世俗體制，形成伊斯蘭教、傳統信仰與基督教三分天下的局面。"
  },
  "language": {
   "official": "官方語言為葡萄牙語。",
@@ -33,34 +33,34 @@
    {
     "name": "幾內亞比索克里奧爾語（Kriol）",
     "percent": 44,
-    "description": "以葡萄牙語為基礎的克里奧爾語，是全國通用語。",
+    "description": "幾內亞比索克里奧爾語以葡萄牙語為基礎，16–17 世紀在卡謝烏等貿易據點中，由葡萄牙商人、混血居民與非洲各族群溝通而形成。1963–1974 年獨立戰爭期間，幾內亞比索與維德角獨立黨（PAIGC）以克里奧爾語團結不同民族，使它成為國家認同的象徵。今日它是全國的通用語，大多數人都會說。",
     "greeting": "Kuma ku bu sta?",
     "pronunciation": "ku-ma ku bu sta"
    },
    {
     "name": "富拉語",
     "percent": 16,
-    "description": "東部富拉人的語言。",
+    "description": "富拉語是東部富拉人的語言，富拉人原為游牧民族，19 世紀隨富塔賈隆伊斯蘭勢力擴張進入此地，在加布與巴法塔等地區成為主要民族之一。",
     "greeting": "Jam waali",
     "pronunciation": "jam waa-li"
    },
    {
     "name": "葡萄牙語",
     "percent": 2,
-    "description": "官方與教育語言，日常使用比例低。",
+    "description": "葡萄牙自 15 世紀起在沿海活動，19 世紀末正式殖民，直到 1974 年承認獨立。葡萄牙語是官方語言，用於政府、教育與媒體，但只有少數城市菁英以它為母語，多數人日常使用克里奧爾語或民族語言。",
     "greeting": "Olá",
     "pronunciation": "o-la"
    }
   ],
-  "history": "15世紀起葡萄牙商人在沿海與非洲人通商，形成葡萄牙語為基礎的克里奧爾語，並成為各民族共通語。獨立戰爭期間克里奧爾語作為團結語言更加普及。境內另有巴蘭塔語、曼丁卡語等多種語言。"
+  "history": "幾內亞比索有二十多個民族，語言多屬尼日–剛果語系大西洋語支與曼丁語支，例如巴蘭塔語、富拉語、曼丁卡語、帕佩爾語。15 世紀葡萄牙人抵達後，沿海貿易據點中形成了葡萄牙語克里奧爾語，與維德角克里奧爾語相近。殖民時期葡萄牙語是官方與教育語言，獨立戰爭則提升了克里奧爾語的地位，使它成為跨民族的國家通用語。"
  },
  "food": {
   "ranking": [
    {
     "name": "棕櫚果湯",
     "localName": "Caldo de chabéu",
-    "description": "以棕櫚果漿燉煮魚或雞肉，配米飯，被視為國菜。",
-    "history": "西非沿海傳統的棕櫚果料理，用於節慶與待客。",
+    "description": "以棕櫚果（chabéu）熬成橘紅色的濃稠湯汁，加入魚、蝦或雞肉燉煮，配白飯食用。",
+    "history": "油棕原生於西非，數千年來是當地重要的油脂與食物來源，幾內亞比索的沿海與森林地區盛產棕櫚果。「chabéu」是克里奧爾語中對棕櫚果的稱呼，這道湯被視為幾內亞比索的國菜，在婚禮、節日與招待賓客時必定出現，反映了當地以稻米和棕櫚果為主的飲食傳統。",
     "wiki": "Palm nut soup",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Palm_nut_soup_close_up_02.jpg/960px-Palm_nut_soup_close_up_02.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Palm_nut_soup_close_up_02.jpg",
@@ -69,8 +69,8 @@
    {
     "name": "花生燉肉",
     "localName": "Caldo de mancarra",
-    "description": "以花生醬燉煮的雞肉或魚，配米飯。",
-    "history": "西非常見的花生燉肉料理。",
+    "description": "以花生醬與番茄、洋蔥燉煮雞肉或魚，醬汁濃稠香醇，配米飯食用。",
+    "history": "「mancarra」是克里奧爾語的花生。花生原產南美，16 世紀由葡萄牙人引進西非，殖民時期在幾內亞比索作為經濟作物種植出口。這道花生燉菜與西非各地的花生燉肉相似，是幾內亞比索家庭常見的日常料理。",
     "wiki": "Maafe",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Mafe.malien.jpg/960px-Mafe.malien.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Mafe.malien.jpg",
@@ -79,8 +79,8 @@
    {
     "name": "番茄肉飯",
     "localName": "Arroz jollof",
-    "description": "以番茄、洋蔥與肉一起煮成的米飯。",
-    "history": "屬於西非廣泛流傳的「喬洛夫飯」家族。",
+    "description": "以番茄、洋蔥與油一起炊煮的紅色米飯，常與雞肉、魚或蔬菜同煮。",
+    "history": "幾內亞比索沿海的巴蘭塔人擅長在紅樹林沼澤中築堤種稻，發展出歷史悠久的水稻耕作技術，稻米因此是全國最重要的主食。這道米飯源自塞內甘比亞沃洛夫人的喬洛夫飯，隨區域貿易傳入，常在節慶與聚會中製作。",
     "wiki": "Jollof rice",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Jollof_Rice_with_Stew.jpg/960px-Jollof_Rice_with_Stew.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Jollof_Rice_with_Stew.jpg",
@@ -89,8 +89,8 @@
    {
     "name": "檸檬洋蔥燉雞",
     "localName": "Yassa",
-    "description": "以檸檬與洋蔥燉煮的雞肉或魚。",
-    "history": "源自鄰近塞內加爾卡薩芒斯地區的料理。",
+    "description": "將雞肉或魚以大量洋蔥與檸檬汁醃製後燉煮，酸香濃郁，配白飯食用。",
+    "history": "檸檬洋蔥燉雞源自北鄰塞內加爾的卡薩芒斯地區，而卡薩芒斯在 19 世紀末以前曾屬葡萄牙勢力範圍，與幾內亞比索有密切的族群與文化聯繫。這道菜因此在幾內亞比索非常普遍，是家庭與餐館中常見的菜色。",
     "wiki": "Yassa (food)",
     "image": "https://upload.wikimedia.org/wikipedia/commons/4/45/Poulet_Yassa_Chicken_rice_with_onion_sauce.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Poulet_Yassa_Chicken_rice_with_onion_sauce.jpg",
@@ -99,8 +99,8 @@
    {
     "name": "腰果",
     "localName": "Caju",
-    "description": "腰果果實可製果汁與果酒，腰果仁則烘烤食用。",
-    "history": "腰果是幾內亞比索最主要的出口作物，採收季的腰果酒是重要的社交飲品。",
+    "description": "腰果樹的果實，果仁烘烤後香脆，紅黃色的果梨（腰果蘋果）則可直接吃或釀成果酒。",
+    "history": "腰果樹原產巴西，16 世紀由葡萄牙人引進非洲。20 世紀後期起，腰果成為幾內亞比索最重要的出口品，佔出口總值的絕大部分，全國很大比例的家庭依靠種植與採收腰果維生。每年產季時，人們還用腰果果梨釀製果酒與蒸餾酒，腰果的價格甚至會影響國家經濟與政治穩定。",
     "wiki": "Cashew",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Cashew_apples.jpg/960px-Cashew_apples.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Cashew_apples.jpg",

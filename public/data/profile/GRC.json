@@ -7,20 +7,20 @@
    {
     "name": "希臘正教",
     "percent": 90,
-    "description": "憲法承認的主流宗教，與希臘民族認同密切相關。"
+    "description": "西元 1 世紀中葉，使徒保羅在腓立比、帖撒羅尼迦、哥林多與雅典傳教，希臘成為最早接受基督教的地區之一，之後拜占庭帝國以君士坦丁堡為中心發展出東正教。1453 年鄂圖曼帝國征服後，東正教會負責管理希臘人社群，成為保存語言與民族意識的支柱，並在 1821 年獨立戰爭中扮演重要角色。現行憲法定希臘正教為「主導宗教」，正教與希臘認同幾乎密不可分。"
    },
    {
     "name": "無宗教",
     "percent": 4,
-    "description": "未認同任何宗教的人口。"
+    "description": "由於宗教與民族認同、國定節日緊密相連，即使很少上教堂的人也多自認是正教徒，因此無宗教比例在歐洲屬於低水準。宣稱無宗教者多集中在雅典、塞薩洛尼基等城市的年輕與高學歷族群，近年隨著世俗化與 2010 年代債務危機後的社會變遷而有所增加。"
    },
    {
     "name": "伊斯蘭教",
     "percent": 2,
-    "description": "主要為色雷斯地區的穆斯林少數民族與移民。"
+    "description": "1923 年《洛桑條約》規定希臘與土耳其交換人口，但東北部西色雷斯的穆斯林獲得豁免，包括土耳其裔、波馬克人與部分羅姆人，至今受條約保障享有宗教與教育權利。1990 年代後來自阿爾巴尼亞、巴基斯坦、中東等地的移民也增加了穆斯林人數，雅典直到 2020 年才有第一座官方清真寺。"
    }
   ],
-  "background": "使徒保羅在一世紀已於希臘城市傳教，希臘語也是新約聖經的原文。拜占庭帝國時期東正教成為主流，鄂圖曼帝國統治近四百年間，正教會在保存希臘認同上扮演關鍵角色。"
+  "background": "希臘是基督教最早傳播的地區之一，新約聖經原文即以希臘語寫成，拜占庭帝國千年統治使東正教深植人心。1453 年後鄂圖曼帝國以宗教劃分族群，正教會成為希臘人的代表機構。1821 年獨立戰爭後，希臘教會於 1833 年宣布脫離君士坦丁堡牧首自主，1850 年獲承認。1923 年希土人口交換後，希臘幾乎成為單一宗教的國家，只有西色雷斯保留穆斯林少數群體。"
  },
  "language": {
   "official": "希臘語是官方語言。",
@@ -28,34 +28,34 @@
    {
     "name": "希臘語",
     "percent": 97,
-    "description": "擁有三千多年書寫歷史的印歐語言。",
+    "description": "希臘語是歐洲有最長文字紀錄的語言之一，可追溯到西元前 14–13 世紀邁錫尼文明的線形文字 B。經過荷馬史詩、古典雅典、亞歷山大帝國的通用希臘語到拜占庭時期，持續使用超過三千年。近代希臘長期存在仿古的「純正語」與口語「通俗語」之爭，1976 年政府正式以通俗語為標準語，1982 年又簡化了重音符號。",
     "greeting": "Γειά σου (Yia sou)",
     "pronunciation": "YAH-soo"
    },
    {
     "name": "阿爾巴尼亞語",
     "percent": 2,
-    "description": "阿爾巴尼亞移民社群使用。",
+    "description": "阿爾巴尼亞語使用者分為兩群：一是 14–15 世紀移居阿提卡、伯羅奔尼撒等地的阿爾瓦尼特人，他們說古老的阿爾巴尼亞方言，但多已融入希臘社會並轉用希臘語；二是 1990 年代阿爾巴尼亞共產政權垮台後大量移入的新移民，曾是希臘最大的外來移民群體。",
     "greeting": "Përshëndetje",
     "pronunciation": "pur-shun-DET-yeh"
    },
    {
     "name": "土耳其語",
     "percent": 1,
-    "description": "色雷斯地區穆斯林少數民族使用。",
+    "description": "土耳其語主要由西色雷斯的穆斯林少數群體使用。1923 年《洛桑條約》使他們免於人口交換而留在希臘，當地至今設有以土耳其語與希臘語雙語教學的少數民族學校。",
     "greeting": "Merhaba",
     "pronunciation": "MER-ha-ba"
    }
   ],
-  "history": "希臘語的文字紀錄可追溯至邁錫尼時期的線形文字B。古希臘語是哲學與科學的經典語言，希臘化時期的通用希臘語傳遍地中海東部。現代希臘曾有「純正語」與「通俗語」之爭，1976年確立以通俗語為標準。"
+  "history": "希臘語的歷史跨越三千多年，從邁錫尼的線形文字 B、古典時期的阿提卡方言，到亞歷山大大帝東征後成為地中海東部通用語的「共通希臘語」，新約聖經即以此寫成。拜占庭時期希臘語是帝國官方語言，鄂圖曼統治時期則吸收了不少土耳其語與義大利語詞彙。1830 年獨立後，語言爭論持續一百多年，直到 1976 年確立現代通俗希臘語為標準。今日希臘語是全國絕大多數人的母語。"
  },
  "food": {
   "ranking": [
    {
     "name": "慕沙卡",
     "localName": "Μουσακάς (Moussaka)",
-    "description": "以茄子、絞肉與白醬層層堆疊烘烤的料理。",
-    "history": "二十世紀初廚師采勒門德斯將其改良成現代希臘版本。",
+    "description": "將炸過或烤過的茄子片、番茄燉牛羊絞肉層層堆疊，最上面覆蓋厚厚的白醬後烘烤至金黃。",
+    "history": "名稱源自阿拉伯語，類似的茄子料理在鄂圖曼帝國與中東各地都有。今日希臘版本的關鍵——上層的法式白醬——是 1920 年代希臘名廚尼古拉斯・采列門德斯加入的，他曾在法國學藝，致力於讓希臘菜「去除東方色彩」、向西歐料理靠攏。他的食譜書影響深遠，使這個版本成為全國標準，如今慕沙卡是希臘餐館與家庭週日聚餐的經典菜色。",
     "wiki": "Moussaka",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/MussakasMeMelitsanesKePatates01.JPG/960px-MussakasMeMelitsanesKePatates01.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:MussakasMeMelitsanesKePatates01.JPG",
@@ -64,8 +64,8 @@
    {
     "name": "蘇夫拉基",
     "localName": "Σουβλάκι (Souvlaki)",
-    "description": "將小塊肉串起燒烤，常包在皮塔餅中。",
-    "history": "烤肉串在古希臘已有記載，是現代希臘最普遍的街頭小吃。",
+    "description": "將醃過的豬肉、雞肉或羊肉切塊串起炭烤，可直接吃或夾入皮塔餅，配優格黃瓜醬與洋蔥番茄。",
+    "history": "以鐵叉烤肉的做法在古希臘就已存在，荷馬史詩中描寫戰士以肉叉烤祭肉，考古也發現古代的烤肉架。現代的蘇夫拉基在 20 世紀中葉的雅典街頭成為平價速食，搭配皮塔餅和優格醬，讓人可以邊走邊吃。今天它是希臘最普遍的街頭小吃，也是深夜聚會後的經典宵夜。",
     "wiki": "Souvlaki",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/%CE%95%CE%BB%CE%BB%CE%B7%CE%BD%CE%B9%CE%BA%CF%8C_%CE%A3%CE%BF%CF%85%CE%B2%CE%BB%CE%AC%CE%BA%CE%B9_-_panoramio.jpg/960px-%CE%95%CE%BB%CE%BB%CE%B7%CE%BD%CE%B9%CE%BA%CF%8C_%CE%A3%CE%BF%CF%85%CE%B2%CE%BB%CE%AC%CE%BA%CE%B9_-_panoramio.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:%CE%95%CE%BB%CE%BB%CE%B7%CE%BD%CE%B9%CE%BA%CF%8C_%CE%A3%CE%BF%CF%85%CE%B2%CE%BB%CE%AC%CE%BA%CE%B9_-_panoramio.jpg",
@@ -74,8 +74,8 @@
    {
     "name": "希臘沙拉",
     "localName": "Χωριάτικη (Horiatiki)",
-    "description": "以番茄、黃瓜、洋蔥、橄欖與菲達起司做成的沙拉。",
-    "history": "名稱意為「鄉村沙拉」，以簡單的地中海食材組合而成。",
+    "description": "以番茄、黃瓜、紫洋蔥、青椒與卡拉馬塔橄欖切大塊，上面放一整塊菲達起司，淋上橄欖油並撒上奧勒岡。",
+    "history": "希臘語名稱意為「村莊沙拉」，是夏季農家常吃的簡單料理。番茄原產美洲，19 世紀才在希臘普遍種植，因此這道沙拉的歷史比想像中短，20 世紀中葉後隨著觀光業興起而成為希臘飲食的象徵。橄欖與橄欖油自古就是希臘的重要物產，而菲達起司則在 2000 年代獲得歐盟原產地名稱保護，只有希臘特定地區生產的才能使用此名。",
     "wiki": "Greek salad",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Greece_Food_Horiatiki.JPG/960px-Greece_Food_Horiatiki.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Greece_Food_Horiatiki.JPG",
@@ -84,8 +84,8 @@
    {
     "name": "菠菜派",
     "localName": "Σπανακόπιτα (Spanakopita)",
-    "description": "以酥皮包裹菠菜與菲達起司烘烤的派。",
-    "history": "希臘常見的家常點心。",
+    "description": "以多層薄如紙的菲洛酥皮包入菠菜、菲達起司、洋蔥與香草，烘烤至酥脆金黃。",
+    "history": "以薄麵皮層疊製作的派在拜占庭與鄂圖曼時期都很流行，希臘西北部伊庇魯斯地區尤以各式「pita」聞名，當地牧民以野菜、起司與自製麵皮做派。在正教大齋期間，人們會改做不加起司與蛋的素食版本。今天菠菜派是希臘麵包店與家庭中常見的早餐與點心，也是野餐與聚會的必備食物。",
     "wiki": "Spanakopita",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Spanakopita.jpg/960px-Spanakopita.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Spanakopita.jpg",
@@ -94,8 +94,8 @@
    {
     "name": "旋轉烤肉",
     "localName": "Γύρος (Gyros)",
-    "description": "在垂直旋轉烤架上烤熟的肉片，包入皮塔餅。",
-    "history": "二十世紀由希臘與小亞細亞移民發展而成。",
+    "description": "將層層疊起的醃肉掛在直立的旋轉烤架上燒烤，削下薄片後與番茄、洋蔥、優格黃瓜醬一起捲入皮塔餅。",
+    "history": "直立旋轉烤肉源自 19 世紀鄂圖曼帝國的「旋轉烤肉」（döner），1922–1923 年希臘與土耳其戰爭後，大批小亞細亞的希臘難民來到希臘，把這種烤肉方式帶了過來。20 世紀中葉它在雅典流行起來，1970 年代起希臘人改用希臘語「gyros」（旋轉）取代土耳其語名稱。它是希臘最受歡迎的速食，也隨移民傳遍歐美。",
     "wiki": "Gyros",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Pita_giros.JPG/960px-Pita_giros.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Pita_giros.JPG",

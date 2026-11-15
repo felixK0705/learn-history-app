@@ -7,20 +7,20 @@
    {
     "name": "伊斯蘭教（遜尼派為主）",
     "percent": 91,
-    "description": "絕大多數人信仰伊斯蘭教，是國家的主要宗教。"
+    "description": "伊斯蘭教在13世紀初隨1204年巴赫蒂亞爾・卡爾吉率領的突厥穆斯林軍隊征服孟加拉而傳入，之後蘇非派聖者在東孟加拉三角洲開墾森林、建立村落，吸引大量農民改宗。1947年印巴分治時東孟加拉因穆斯林占多數而劃入巴基斯坦，1971年獨立建國為孟加拉，穆斯林約占九成。"
    },
    {
     "name": "印度教",
     "percent": 8,
-    "description": "孟加拉最大的宗教少數群體，杜爾迦節是重要節慶。"
+    "description": "印度教曾是孟加拉的主要宗教之一，但1947年印巴分治、1950年與1964年的宗教暴動，以及1971年獨立戰爭期間巴基斯坦軍隊對印度教徒的屠殺，使數百萬印度教徒逃往印度西孟加拉邦。印度教徒比例從1901年的約三成降至今日的約8%，主要分布在庫爾納、達卡與錫爾赫特等地區。"
    },
    {
     "name": "佛教",
     "percent": 1,
-    "description": "主要分布於東南部吉大港山區的少數民族。"
+    "description": "佛教在孟加拉歷史悠久，8–12世紀帕拉王朝是重要的佛教王朝，建造了帕哈爾普爾大寺（今為世界遺產）。12世紀印度教的塞納王朝與13世紀伊斯蘭征服後佛教衰落，今天佛教徒主要是東南部吉大港山區的查克瑪族、馬爾馬族等民族，約占1%。"
    }
   ],
-  "background": "伊斯蘭教自十三世紀起隨穆斯林王朝與蘇菲派傳教士傳入孟加拉，在農村地區廣泛傳播。1947年印巴分治時大量印度教徒移往印度，使穆斯林比例進一步上升。"
+  "background": "孟加拉地區在古代是佛教與印度教的重要中心，8–12世紀的帕拉王朝支持佛教，塞納王朝則推崇印度教。1204年突厥穆斯林征服孟加拉後，伊斯蘭教隨蘇非派聖者與農業開墾在東部三角洲擴張，16–18世紀蒙兀兒帝國時期東孟加拉的穆斯林人口大幅增加。1947年分治後東孟加拉成為東巴基斯坦，1971年獨立建國，1972年憲法曾以世俗主義為基本原則，1988年修憲把伊斯蘭教定為國教，但仍保障其他宗教。"
  },
  "language": {
   "official": "孟加拉語是唯一的官方語言。",
@@ -28,27 +28,27 @@
    {
     "name": "孟加拉語",
     "percent": 98,
-    "description": "全國通用的語言，也是國家認同的核心。",
+    "description": "孟加拉語源自古代印度的普拉克里特語，約10世紀前後形成，14世紀以後逐漸發展出文學傳統。1948年巴基斯坦政府宣布烏爾都語為唯一國語，引發東巴基斯坦的語言運動；1952年2月21日達卡大學學生示威遭到軍警開槍，多人犧牲。這場運動最終促成1971年孟加拉獨立，聯合國教科文組織也把2月21日定為「國際母語日」。今天約98%人口以孟加拉語為母語。",
     "greeting": "আসসালামু আলাইকুম",
     "pronunciation": "as-sa-LA-mu a-LAI-kum"
    },
    {
     "name": "其他少數民族語言（查克瑪語等）",
     "percent": 2,
-    "description": "吉大港山區等地的少數民族使用多種藏緬語與南亞語系語言。",
+    "description": "孟加拉的少數民族語言主要分布在東南部的吉大港山區與東北部，包括查克瑪語、馬爾馬語（屬緬甸語系統）以及加羅語、桑塔爾語等。這些民族長期受到孟加拉語主流文化的壓力，1970–90年代吉大港山區還發生了武裝衝突，1997年和平協議後才逐步推動母語教育。",
     "greeting": "Ju",
     "pronunciation": "joo"
    }
   ],
-  "history": "孟加拉語源自古印度的普拉克里特語，在中世紀發展出豐富的文學傳統。1952年東巴基斯坦爆發「語言運動」，爭取孟加拉語的官方地位，2月21日後來被聯合國定為「國際母語日」，也成為後來獨立運動的重要起點。"
+  "history": "孟加拉語是印度－雅利安語支的語言，約10世紀左右從東部普拉克里特語中發展出來，最早的文學作品是佛教僧侶的《恰里亞歌》。中世紀時期在伊斯蘭統治下，孟加拉語吸收了大量波斯語與阿拉伯語詞彙；19世紀的孟加拉文藝復興中，詩人泰戈爾使孟加拉語文學聞名世界，並於1913年獲得諾貝爾文學獎。1952年語言運動成為孟加拉民族主義的起點，1971年獨立後孟加拉語成為唯一官方語言。"
  },
  "food": {
   "ranking": [
    {
     "name": "芥末醬希爾薩魚",
     "localName": "শর্ষে ইলিশ (Shorshe ilish)",
-    "description": "以芥末醬烹調的希爾薩魚（鰣魚），風味辛香。",
-    "history": "希爾薩魚是孟加拉的國魚，雨季時盛產，在孟加拉文化中象徵豐收與節慶。",
+    "description": "把希爾薩魚切塊後以芥末醬、芥末油、薑黃與青辣椒蒸煮或燉煮，辛辣嗆鼻，配白米飯吃。",
+    "history": "希爾薩魚是孟加拉的國魚，每年雨季從孟加拉灣逆流進入恆河、梅克納河產卵，三角洲的漁民數百年來以捕撈希爾薩魚為生。芥末油與芥末醬是孟加拉料理的特色調味，與北印度料理明顯不同。希爾薩魚在孟加拉新年（4月14日前後）的節慶餐中不可或缺，也是孟加拉與印度西孟加拉邦共同的文化象徵。",
     "wiki": "Shorshe ilish",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/%E0%A6%90%E0%A6%A4%E0%A6%BF%E0%A6%B9%E0%A7%8D%E0%A6%AF%E0%A6%AC%E0%A6%BE%E0%A6%B9%E0%A7%80_%E0%A6%B8%E0%A6%B0%E0%A7%8D%E0%A6%B7%E0%A7%87_%E0%A6%87%E0%A6%B2%E0%A6%BF%E0%A6%B6.jpg/960px-%E0%A6%90%E0%A6%A4%E0%A6%BF%E0%A6%B9%E0%A7%8D%E0%A6%AF%E0%A6%AC%E0%A6%BE%E0%A6%B9%E0%A7%80_%E0%A6%B8%E0%A6%B0%E0%A7%8D%E0%A6%B7%E0%A7%87_%E0%A6%87%E0%A6%B2%E0%A6%BF%E0%A6%B6.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:%E0%A6%90%E0%A6%A4%E0%A6%BF%E0%A6%B9%E0%A7%8D%E0%A6%AF%E0%A6%AC%E0%A6%BE%E0%A6%B9%E0%A7%80_%E0%A6%B8%E0%A6%B0%E0%A7%8D%E0%A6%B7%E0%A7%87_%E0%A6%87%E0%A6%B2%E0%A6%BF%E0%A6%B6.jpg",
@@ -57,8 +57,8 @@
    {
     "name": "比爾亞尼飯",
     "localName": "বিরিয়ানি (Biryani)",
-    "description": "以香料、肉類與長米一同燜煮的香料飯。",
-    "history": "隨蒙兀兒帝國宮廷料理傳入孟加拉，達卡舊城的羊肉比爾亞尼尤其有名。",
+    "description": "以香米和羊肉或牛肉、馬鈴薯分層燜煮，加入番紅花、酥油與香料，米粒分明、香氣濃郁。",
+    "history": "比爾亞尼飯源自波斯的抓飯，16–18世紀隨蒙兀兒帝國宮廷傳入南亞，達卡作為蒙兀兒孟加拉的首都（1610年起）發展出自己的風格。達卡舊城的「卡奇比爾亞尼」（生醃肉與米同燜）最有名，舊城老字號餐館的版本更是當地人引以為傲的招牌。它是婚禮與開齋節、宰牲節不可或缺的節慶菜。",
     "wiki": "Biryani",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/%22Hyderabadi_Dum_Biryani%22.jpg/960px-%22Hyderabadi_Dum_Biryani%22.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:%22Hyderabadi_Dum_Biryani%22.jpg",
@@ -67,8 +67,8 @@
    {
     "name": "潘塔飯",
     "localName": "পান্তা ভাত (Panta bhat)",
-    "description": "將米飯浸泡在水中隔夜發酵，配洋蔥、辣椒與鹹魚食用。",
-    "history": "傳統農家早餐，孟加拉新年（Pohela Boishakh）時也會吃潘塔飯配炸希爾薩魚。",
+    "description": "將剩下的米飯泡在水中放一夜，讓它輕微發酵變酸，隔天配青辣椒、洋蔥、鹽與炸魚或醃菜一起吃，清涼解暑。",
+    "history": "潘塔飯是孟加拉農民的傳統早餐，在沒有冰箱的年代，泡水發酵可以讓剩飯不壞，且發酵後的米飯在炎熱天氣中清涼解暑。近年它與孟加拉新年（Pohela Boishakh）結合，城市居民在4月14日的新年早晨吃潘塔飯配炸希爾薩魚，象徵回歸鄉村傳統。",
     "wiki": "Panta bhat",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Panta_Ilish.jpg/960px-Panta_Ilish.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Panta_Ilish.jpg",
@@ -77,8 +77,8 @@
    {
     "name": "皮塔糕",
     "localName": "পিঠা (Pitha)",
-    "description": "以米粉製成的各式糕點，有蒸、煎、炸等多種做法。",
-    "history": "冬季收割新米時製作，是孟加拉鄉村節慶與家庭團聚的重要點心。",
+    "description": "以米粉為主，加入椰子、棕櫚糖或椰棗糖做成的各式蒸、煎、炸糕點，形狀與口味多達數十種。",
+    "history": "皮塔糕是孟加拉冬季的傳統點心，與稻米收成息息相關。每年秋末冬初新米收成時，農村會舉行「Nabanna」（新米節），用新米磨粉做皮塔糕慶祝。冬天採收的椰棗汁熬成的椰棗糖（khejur gur）是重要的甜味來源，因此冬季被稱為「皮塔季節」，城市也會舉辦皮塔節。",
     "wiki": "Pitha",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Pitha_for_Wedding-_Pakan%2C_Patishapta%2C_Bharandash.jpg/960px-Pitha_for_Wedding-_Pakan%2C_Patishapta%2C_Bharandash.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Pitha_for_Wedding-_Pakan,_Patishapta,_Bharandash.jpg",
@@ -87,8 +87,8 @@
    {
     "name": "甜優格",
     "localName": "মিষ্টি দই (Mishti doi)",
-    "description": "以焦糖化的牛奶發酵而成的甜味優格，常盛裝於陶罐中。",
-    "history": "孟加拉地區的傳統甜點，博格拉（Bogra）的甜優格特別有名。",
+    "description": "把牛奶加糖熬煮濃縮到略帶焦糖色後，倒入陶罐中發酵而成的甜味優格，口感濃稠，帶有淡淡焦糖與奶香。",
+    "history": "甜優格是孟加拉地區最受歡迎的甜點之一，北部城市博格拉的甜優格最為有名，據說在19世紀已開始製作，並在英國殖民時期聞名孟加拉。用陶罐盛裝可以吸收多餘水分，使優格更加濃稠。在孟加拉文化中，喜事、婚禮與節慶時都會送上甜食，甜優格是宴席最後的必備甜點。",
     "wiki": "Mishti doi",
     "image": "https://upload.wikimedia.org/wikipedia/commons/3/34/Mishti_Doi.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Mishti_Doi.jpg",

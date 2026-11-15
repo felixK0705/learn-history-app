@@ -7,20 +7,20 @@
    {
     "name": "伊斯蘭教（遜尼派）",
     "percent": 77,
-    "description": "多數居民信仰，以馬立基學派為主。"
+    "description": "伊斯蘭教在18世紀由北方的富拉尼族與曼丁哥族商人和學者傳入，1727年富塔賈隆（今幾內亞）建立伊斯蘭國後，伊斯蘭教隨貿易與聖戰向南傳播至獅子山北部。19世紀英國殖民時期，伊斯蘭教在內陸各族中持續擴張，因為它不像基督教那樣與殖民者綁在一起。今日穆斯林佔約四分之三，遍布全國，特別集中在北部的泰姆奈族與林巴族地區。"
    },
    {
     "name": "基督教",
     "percent": 22,
-    "description": "包含新教與天主教，以自由城和南部較多。"
+    "description": "基督教在1787年隨英國廢奴人士在自由城建立的「自由之地」傳入，1792年來自新斯科細亞的黑人移民帶來了衛理公會與浸信會。1827年英國聖公會差會創立的福拉灣學院是西非第一所西式大學，培養了大批非洲傳教士與知識分子。基督徒集中在自由城與南部、東部，以克里奧人與門德族為主。獅子山以穆斯林與基督徒和平共處、相互通婚聞名。"
    },
    {
     "name": "傳統信仰",
     "percent": 1,
-    "description": "常與伊斯蘭教或基督教並存。"
+    "description": "在伊斯蘭教與基督教普及前，獅子山各族都有傳統信仰，門德族的「桑德」女性祕密會社與「波羅」男性祕密會社負責成年禮與社會教育。由於伊斯蘭化與基督教化已有兩百多年歷史，純粹信仰傳統宗教的人很少，但祕密會社的傳統仍廣泛存在，許多穆斯林與基督徒同時參與。"
    }
   ],
-  "background": "伊斯蘭教自18世紀起透過富拉與曼丁卡商人及學者傳入北部。1787年後英國廢奴人士在自由城安置獲釋奴隸，帶來新教並設立西非最早的西式大學福拉灣學院。獅子山以宗教寬容著稱，跨宗教通婚常見。"
+  "background": "獅子山各族原本信仰祖靈與自然神靈，祕密會社在社會中扮演重要角色。18世紀伊斯蘭教從北方傳入，1787年英國廢奴人士在自由城建立解放奴隸的定居地，帶來基督教。1808年自由城成為英國殖民地，1896年內陸成為保護地。獨立後穆斯林與基督徒和平共處，即使在1991–2002年內戰期間，宗教也未成為衝突的主因。"
  },
  "language": {
   "official": "官方語言為英語。",
@@ -28,34 +28,34 @@
    {
     "name": "門德語",
     "percent": 31,
-    "description": "南部與東部門德人的語言。",
+    "description": "門德語屬尼日－剛果語系曼德語支，是南部與東部門德族的語言，門德族是獅子山人口最多的民族之一。門德語是南部與東部的區域通用語，1921年門德族人基西米·卡馬拉還創制了門德文字。由於與北部泰姆奈語分庭抗禮，獨立後的政治也常沿著南北族群分野進行。",
     "greeting": "Bua",
     "pronunciation": "bu-a"
    },
    {
     "name": "克里奧語（Krio）",
     "percent": 10,
-    "description": "以英語為基礎的克里奧爾語，母語者約一成，但全國九成以上能使用，是通用語。",
+    "description": "克里奧語是以英語詞彙為基礎的克里奧爾語，源自1787年後在自由城定居的解放奴隸，他們來自英國、新斯科細亞、牙買加以及被英國海軍從奴隸船上解救的非洲人。克里奧語是克里奧人的母語，也是全國各族群之間最普遍的共同語，超過九成人口能使用克里奧語。",
     "greeting": "Kushɛ",
     "pronunciation": "ku-sheh"
    },
    {
     "name": "英語",
     "percent": 1,
-    "description": "官方、教育與行政語言。",
+    "description": "英語是1808年起英國殖民統治時期的行政與教育語言，1961年獨立後繼續作為官方語言，用於政府、法律、學校教育與媒體。然而以英語為母語的人極少，多數人在日常生活中使用克里奧語或本族語言。",
     "greeting": "Hello",
     "pronunciation": "heh-loh"
    }
   ],
-  "history": "本地語言多屬尼日－剛果語系，泰姆奈語與門德語為兩大語言。自由城的獲釋奴隸來自英國、新斯科細亞、牙買加與被截獲的奴隸船，他們的語言融合發展為克里奧語，並成為全國通用語；英國殖民則確立英語的官方地位。"
+  "history": "獅子山有二十多種本土語言，主要屬曼德語支與大西洋語支。15世紀葡萄牙航海家命名「獅子山」，葡萄牙語在沿海留下了一些詞彙。1787年後自由城的解放奴隸社群發展出克里奧語，1808年英國殖民後英語成為官方語言。獨立後英語仍為官方語言，克里奧語則是實際上的全國通用語。"
  },
  "food": {
   "ranking": [
    {
     "name": "木薯葉燉菜",
     "localName": "Cassava leaves",
-    "description": "木薯葉搗碎後與棕櫚油、肉或魚燉煮，配白飯。",
-    "history": "被視為獅子山國菜，反映西非以葉菜配飯的飲食傳統。",
+    "description": "將木薯葉搗碎或切細，與棕櫚油、洋蔥、辣椒、花生醬一起燉煮，加入雞肉、牛肉或煙燻魚，口感濃郁，配白米飯食用。",
+    "history": "木薯原產南美洲，16世紀後由葡萄牙人引入西非，在獅子山成為重要作物，人們不僅吃根部，也把葉子當作主要蔬菜。棕櫚油是西非雨林的特產，19世紀是獅子山重要的出口品。木薯葉燉菜被視為獅子山的國菜，週日家庭午餐與重要聚會都少不了它。",
     "wiki": "Palaver sauce",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Palava_sauce_w-_cocoyam_leaf_%285612472154%29.jpg/960px-Palava_sauce_w-_cocoyam_leaf_%285612472154%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Palava_sauce_w-_cocoyam_leaf_(5612472154).jpg",
@@ -64,8 +64,8 @@
    {
     "name": "番茄肉飯",
     "localName": "Jollof rice",
-    "description": "以番茄、洋蔥、香料與肉一起煮成的紅色米飯。",
-    "history": "流傳全西非的節慶米飯，是聚會必備料理。",
+    "description": "將米飯與番茄、洋蔥、甜椒與香料一起燉煮，加入雞肉或牛肉，煮成紅色的米飯，常配炸芭蕉與沙拉。",
+    "history": "番茄肉飯的名稱源自14–16世紀塞內加爾的沃洛夫（喬洛夫）帝國，這種一鍋煮的米飯料理沿著西非海岸傳播。獅子山的稻米種植歷史悠久，西非本土的非洲稻在當地已種植數千年。番茄肉飯是婚禮、生日派對與節慶時最常見的宴客主食。",
     "wiki": "Jollof rice",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Jollof_Rice_with_Stew.jpg/960px-Jollof_Rice_with_Stew.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Jollof_Rice_with_Stew.jpg",
@@ -74,8 +74,8 @@
    {
     "name": "胡椒湯",
     "localName": "Pepper soup",
-    "description": "以辣椒與香料熬煮魚肉或雞肉的清辣湯。",
-    "history": "西非常見湯品，被認為有暖身、治感冒的功效。",
+    "description": "以辣椒、洋蔥、香料與魚、雞肉或山羊肉熬成的清湯，辣味強烈，香氣濃郁，常作為開胃菜或宿醉時飲用。",
+    "history": "胡椒湯是西非各地常見的湯品，所用的香料包括本地的天堂椒等，天堂椒曾是西非重要的出口香料，15世紀歐洲人甚至將鄰近今賴比瑞亞的海岸稱為「胡椒海岸」。在獅子山，胡椒湯被認為能驅寒、治療感冒，在雨季時特別受歡迎，也常在酒吧與聚會中供應。",
     "wiki": "Pepper soup",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Assorted_meat_pepper_soup_at_Lagos_Island.jpg/960px-Assorted_meat_pepper_soup_at_Lagos_Island.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Assorted_meat_pepper_soup_at_Lagos_Island.jpg",
@@ -84,8 +84,8 @@
    {
     "name": "炸豆餅",
     "localName": "Akara",
-    "description": "以黑眼豆泥加洋蔥與辣椒油炸成的小球。",
-    "history": "源自西非約魯巴人的傳統食物，隨奴隸貿易傳到美洲與加勒比海。",
+    "description": "將去皮的黑眼豆浸泡後磨成泥，加入洋蔥、辣椒與鹽，用湯匙舀成小球油炸，外酥內軟，常當早餐或點心吃。",
+    "history": "炸豆餅源自奈及利亞約魯巴族的「akara」，19世紀被英國海軍從奴隸船上解救的約魯巴人在自由城定居，把這道料理帶入獅子山，成為克里奧人飲食的一部分。在克里奧人的傳統中，炸豆餅會在嬰兒命名禮、婚禮與追悼儀式中分送給賓客。",
     "wiki": "Akara",
     "image": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Beans_Ball-Akara.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Beans_Ball-Akara.jpg",
@@ -94,8 +94,8 @@
    {
     "name": "富富",
     "localName": "Fufu",
-    "description": "以發酵木薯搗成的黏稠麵團，配湯菜食用。",
-    "history": "西非與中非普遍的主食。",
+    "description": "將木薯發酵後煮熟，搗成光滑有彈性的麵團，用手捏一小團沾湯或燉菜食用，帶有微酸的發酵風味。",
+    "history": "富富是西非與中非共有的主食，在獅子山以發酵木薯製作最為普遍。木薯是16世紀後由葡萄牙人從美洲引入，取代了部分本土作物。富富的製作需要長時間的搗打，傳統上由家中婦女合力完成，常搭配秋葵湯、花生湯或胡椒湯食用。",
     "wiki": "Fufu",
     "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Wrapped_fufu.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Wrapped_fufu.jpg",

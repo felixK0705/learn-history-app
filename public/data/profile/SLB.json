@@ -7,30 +7,30 @@
    {
     "name": "聖公會",
     "percent": 32,
-    "description": "美拉尼西亞聖公會是最大的教會。"
+    "description": "聖公會的美拉尼西亞傳教會於1849年由紐西蘭主教塞爾溫創立，招募島民到紐西蘭受訓後返鄉傳教。1871年派特森主教在聖克魯斯群島遭殺害，殉道事件反而推動了傳教熱潮。英國1893年建立保護地後，聖公會在中部與東部島嶼迅速擴張，美拉尼西亞教會在1975年成為獨立教省，至今是最大的教派。"
    },
    {
     "name": "天主教",
     "percent": 19,
-    "description": "重要的天主教社群。"
+    "description": "天主教的馬利亞會傳教士在1845年最早抵達索羅門群島，但初期因疾病與衝突而失敗。1898年後馬利亞會重新進入，在瓜達爾卡納爾與馬萊塔等地建立傳教站與學校，天主教因此成為第二大教派。"
    },
    {
     "name": "南海福音教會",
     "percent": 17,
-    "description": "源自南海福音傳道團的福音派教會。"
+    "description": "南海福音教會源自1882年在澳洲昆士蘭甘蔗園為被招募的島民勞工所成立的「昆士蘭卡納卡傳教會」，這些勞工回到故鄉後在馬萊塔島建立教會。1964年改名為南海福音教會，主要集中在馬萊塔島。"
    },
    {
     "name": "復臨安息日會",
     "percent": 12,
-    "description": "規模較大的新教教會。"
+    "description": "基督復臨安息日會於1914年傳入，在西部省的新喬治亞群島傳教，以學校與醫院吸引信徒，有些村莊集體改信。安息日會在西部省影響力特別大。"
    },
    {
     "name": "聯合教會",
     "percent": 10,
-    "description": "源自衛理宗傳統的教會。"
+    "description": "聯合教會源自1902年進入西部省的澳洲衛理公會傳教團，1968年與其他教會合併成為聯合教會。它主要集中在西部省，與安息日會並列為西部的兩大教派。"
    }
   ],
-  "background": "十九世紀中後期起，聖公會的美拉尼西亞傳道會、天主教與各新教傳道團陸續到來。二十世紀前半基督教迅速普及，至今超過九成人口為基督徒，但傳統祖靈觀念仍存在於部分社群中。"
+  "background": "索羅門群島原住民信仰祖靈與神靈，祭祀祖先頭骨的習俗曾十分普遍。1849年起聖公會、天主教等傳教團相繼進入，19世紀末至20世紀初大量島民改信基督教。各傳教團在不同島嶼活動，形成各島以特定教派為主的分布。二戰期間瓜達爾卡納爾戰役在此發生。1978年獨立後基督教佔人口九成以上，教會在社會與政治中扮演重要角色。"
  },
  "language": {
   "official": "英語是官方語言。",
@@ -38,27 +38,27 @@
    {
     "name": "索羅門群島皮欽語",
     "percent": 60,
-    "description": "以英語為基礎的皮欽語，是全國通用語。",
+    "description": "索羅門群島皮欽語是以英語詞彙為基礎的克里奧爾語，源自19世紀被招募到澳洲昆士蘭與斐濟甘蔗園工作的島民勞工之間的共同語。由於索羅門群島有七十多種語言，勞工返鄉後皮欽語成為不同島嶼居民之間的共同語，今日大多數人都能使用，霍尼亞拉等城市的年輕人更以它為母語。",
     "greeting": "Halo",
     "pronunciation": "HAH-loh"
    },
    {
     "name": "英語",
     "percent": 2,
-    "description": "官方語言，用於政府與教育。",
+    "description": "英語在1893–1978年英國保護地時期成為行政與教育語言，1978年獨立後是唯一官方語言，用於政府、法律與學校教育。然而以英語為母語的人只約2%，主要是城市中的菁英家庭，多數人在日常生活中使用皮欽語與本地語言。",
     "greeting": "Hello",
     "pronunciation": "heh-LOH"
    }
   ],
-  "history": "索羅門群島有約70種本土語言。十九世紀島民被招募至澳洲昆士蘭與斐濟的種植園工作，在當地形成皮欽語並帶回家鄉，成為不同語言群體之間的通用語。"
+  "history": "索羅門群島有七十多種語言，大多屬南島語系，少數屬巴布亞語系。19世紀傳教士以拉丁字母記錄本地語言並翻譯聖經。19世紀後期島民被招募到昆士蘭與斐濟甘蔗園工作，形成了以英語為基礎的皮欽語。1893年英國建立保護地，英語成為行政語言。1978年獨立後英語為官方語言，皮欽語則是實際上的全國通用語。"
  },
  "food": {
   "ranking": [
    {
     "name": "地爐烤",
     "localName": "Motu",
-    "description": "將芋頭、豬肉與魚包葉後放在熱石上燜烤。",
-    "history": "太平洋島嶼傳統的烹調方式，用於節慶與重要聚會。",
+    "description": "在地上挖坑放入燒熱的石頭，將芋頭、地瓜、豬肉與魚用香蕉葉包好放在石頭上，再以葉子與泥土覆蓋燜烤數小時。",
+    "history": "地爐烤是太平洋島嶼共有的傳統烹調法，數千年前隨南島語族航海者傳入。在索羅門群島，豬是財富與地位的象徵，在婚禮聘金、和解儀式與節慶中扮演重要角色。地爐烤通常在週日教會活動後、婚禮與重要的社區聚會中製作，需要全村合作準備。",
     "wiki": "Earth oven",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Samoa_umu.JPG/960px-Samoa_umu.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Samoa_umu.JPG",
@@ -67,8 +67,8 @@
    {
     "name": "芋頭",
     "localName": "Taro",
-    "description": "以煮、烤或製成布丁方式食用。",
-    "history": "太平洋島嶼的古老主食作物。",
+    "description": "將芋頭煮熟、烤熟，或搗成泥與椰奶混合，以葉子包裹烤成布丁，口感綿密帶淡淡甜味，常配魚或豬肉。",
+    "history": "芋頭是索羅門群島最重要的傳統主食之一，數千年前由南島語族帶入。在許多島嶼，芋頭田的種植與收成伴隨著傳統儀式，芋頭也是婚禮與交換禮物的重要物品。近年因進口白米與麵粉普及，芋頭的消費量下降，但在傳統聚會中仍不可或缺。",
     "wiki": "Taro",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Songe-R%C3%A9union.JPG/960px-Songe-R%C3%A9union.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Songe-R%C3%A9union.JPG",
@@ -77,8 +77,8 @@
    {
     "name": "恩加利堅果",
     "localName": "Ngali nut",
-    "description": "橄欖科樹木的堅果，可生食或加入布丁。",
-    "history": "索羅門群島重要的傳統食物與經濟作物。",
+    "description": "恩加利堅果是一種橄欖科橄欖屬（Canarium）樹木的堅果，外殼堅硬，內部果仁可生吃、烤熟，或加入芋頭布丁中，口感香脆帶油脂。",
+    "history": "恩加利堅果是索羅門群島數千年來的重要食物，考古學家在島上的遺址中發現了數千年前的堅果殼，證明古代島民已開始食用。它富含油脂與蛋白質，可以長期保存，是傳統航海時的重要糧食。近年索羅門群島嘗試將其發展為出口產品。",
     "wiki": "Canarium indicum",
     "image": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Canarium_indicum_-_Icica_icicariba_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-171.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Canarium_indicum_-_Icica_icicariba_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-171.jpg",
@@ -87,8 +87,8 @@
    {
     "name": "地瓜",
     "localName": "Kumara",
-    "description": "以煮或烤方式食用的地瓜。",
-    "history": "日常重要的主食之一。",
+    "description": "將地瓜煮熟或放在火中烤熟，口感香甜鬆軟，是家庭日常的主食之一，也常配椰奶或魚一起吃。",
+    "history": "地瓜原產美洲，約在數百年前經由太平洋的交流傳入美拉尼西亞。由於它耐旱、生長快速，特別適合在山區種植，成為索羅門群島家庭菜園中最常見的作物之一。在颶風或乾旱後，地瓜常是恢復糧食供應最快的作物，對島民的糧食安全十分重要。",
     "wiki": "Sweet potato",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Ipomoea_batatas_006.JPG/960px-Ipomoea_batatas_006.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Ipomoea_batatas_006.JPG",
@@ -97,8 +97,8 @@
    {
     "name": "木薯布丁",
     "localName": "Cassava pudding",
-    "description": "以木薯泥與椰奶包葉烤成的布丁。",
-    "history": "太平洋島嶼常見的點心，常在地爐中製作。",
+    "description": "將木薯磨成泥，與椰奶混合，用香蕉葉包裹後放入地爐中烤熟，口感軟糯、帶椰香，可切塊分食。",
+    "history": "木薯原產南美洲，20世紀才在索羅門群島廣泛種植，因為它耐貧瘠土壤、產量高。木薯布丁結合了傳統的椰奶與地爐烹調技巧，是索羅門群島節慶、教會活動與家庭聚會中常見的點心，也常在市場上販售。",
     "wiki": "Cassava",
     "image": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Manihot_esculenta_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-090.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Manihot_esculenta_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-090.jpg",

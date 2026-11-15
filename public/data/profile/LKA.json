@@ -7,30 +7,30 @@
    {
     "name": "佛教",
     "percent": 70,
-    "description": "以上座部佛教為主，主要為僧伽羅人。"
+    "description": "佛教在西元前3世紀由阿育王之子摩哂陀傳入，阿努拉德普勒王國以佛教為國教，此後兩千多年佛教與僧伽羅王權密切結合，佛牙舍利更是王權象徵。殖民時期佛教一度衰落，19世紀末佛教復興運動又使其與反殖民的僧伽羅民族主義結合；1972年憲法給予佛教首要地位。信徒主要是僧伽羅人，分布在南部、中部與西部。"
    },
    {
     "name": "印度教",
     "percent": 13,
-    "description": "主要為泰米爾人。"
+    "description": "印度教隨數千年來從南印度遷入的泰米爾人傳入，北部賈夫納半島曾是泰米爾王國的中心。19世紀英國殖民者又從南印度招募大量泰米爾人到中部山區的茶園工作，因此印度教徒主要集中在北部、東部與中部茶園區。"
    },
    {
     "name": "伊斯蘭教",
     "percent": 10,
-    "description": "主要為摩爾人與馬來人後裔。"
+    "description": "伊斯蘭教在8世紀以後隨阿拉伯商人傳入，他們與當地人通婚形成「摩爾人」（Moors）社群，主要說泰米爾語，分布在東部與西部沿海城市。此外還有馬來人與印度穆斯林等群體。2019年復活節恐攻後，穆斯林社群曾遭到報復性暴力。"
    },
    {
     "name": "天主教",
     "percent": 6,
-    "description": "葡萄牙殖民時期傳入，信徒分屬僧伽羅與泰米爾族群。"
+    "description": "16世紀葡萄牙人在斯里蘭卡沿海建立據點，並向漁民與沿海居民傳播天主教，許多改宗者採用葡萄牙姓氏。荷蘭人在17世紀取代葡萄牙人後一度壓制天主教，但信仰在沿海地區延續下來，今天天主教徒同時存在於僧伽羅人與泰米爾人之中。"
    },
    {
     "name": "其他基督教",
     "percent": 1,
-    "description": "包含荷蘭與英國時期傳入的新教。"
+    "description": "荷蘭東印度公司在17–18世紀推廣改革宗新教，19世紀英國統治時期聖公會、衛理公會與浸信會等傳教士設立學校，培養出一批西化菁英。但改信新教的人數始終有限，近年五旬節派教會的擴張則引發佛教團體的不滿。"
    }
   ],
-  "background": "西元前3世紀阿育王之子摩哂陀將佛教傳入錫蘭，此地成為上座部佛教重鎮。泰米爾人自南印度帶來印度教，阿拉伯商人帶來伊斯蘭教。16世紀起葡萄牙、荷蘭、英國相繼殖民，引入天主教與新教。"
+  "background": "西元前3世紀，印度孔雀王朝阿育王之子摩哂陀將佛教傳入斯里蘭卡，阿努拉德普勒王國隨即以佛教為國教，斯里蘭卡成為上座部佛教的重要中心，巴利文大藏經約在西元前1世紀於此寫定。印度教則隨南印度泰米爾人的遷移與入侵傳入北部與東部。伊斯蘭教在中世紀隨阿拉伯商人傳入。16世紀起葡萄牙、荷蘭、英國相繼殖民，帶來天主教與新教。1948年獨立後，佛教在1972年憲法中獲得「首要地位」，僧伽羅佛教民族主義與泰米爾人的衝突導致1983–2009年的內戰。"
  },
  "language": {
   "official": "官方語言為僧伽羅語與泰米爾語，英語為聯絡語言。",
@@ -38,27 +38,27 @@
    {
     "name": "僧伽羅語",
     "percent": 74,
-    "description": "屬印度－雅利安語支，主要為僧伽羅人使用。",
+    "description": "僧伽羅語是斯里蘭卡最大民族僧伽羅人的語言，傳說起源於西元前5世紀從北印度渡海而來的維闍耶王子。它吸收了巴利語佛經的大量詞彙，擁有獨特的圓形字母。1956年《唯僧伽羅語法》使其成為唯一官方語言，至今仍是政府與南部、中部地區的主要語言。",
     "greeting": "ආයුබෝවන්",
     "pronunciation": "aa-yu-bo-wan"
    },
    {
     "name": "泰米爾語",
     "percent": 24,
-    "description": "泰米爾人與穆斯林社群使用，屬達羅毗荼語系。",
+    "description": "泰米爾語由斯里蘭卡北部與東部的泰米爾人、中部茶園的印度泰米爾人以及大部分穆斯林使用。1956年《唯僧伽羅語法》使泰米爾人在公職與教育上處於劣勢，激化族群衝突；1987年憲法第13修正案後泰米爾語才成為官方語言，但內戰直到2009年才結束。",
     "greeting": "வணக்கம்",
     "pronunciation": "va-nak-kam"
    }
   ],
-  "history": "僧伽羅語源自西元前數世紀由北印度移入的移民，吸收了巴利語與泰米爾語影響。英國殖民時期英語成為行政語言，1956年「僅僧伽羅語法案」引發族群緊張，最終成為內戰背景之一，1987年泰米爾語亦成為官方語言。"
+  "history": "僧伽羅語屬印歐語系印度-雅利安語支，一般認為是西元前5世紀前後從北印度移入的移民所帶來的語言，並吸收了巴利語、梵語與泰米爾語的影響，文字源自古印度的婆羅米文。泰米爾語屬達羅毗荼語系，隨南印度移民長期在北部與東部使用。殖民時期英語成為菁英語言。1956年班達拉奈克政府通過《唯僧伽羅語法》，把僧伽羅語定為唯一官方語言，引發泰米爾人強烈不滿，成為後來內戰的重要原因之一。1987年憲法修正案後泰米爾語也被定為官方語言，英語則為連結語言。"
  },
  "food": {
   "ranking": [
    {
     "name": "椰奶米糕",
     "localName": "Kiribath",
-    "description": "以椰奶煮成的米飯壓成方塊，配辣椒洋蔥醬。",
-    "history": "在新年與重要節日的早晨食用，象徵吉祥。",
+    "description": "以米加入椰奶煮成的乳白色米糕，切成菱形，常配辣椰子醬（lunu miris）食用。",
+    "history": "Kiribath 意為「牛奶飯」，在僧伽羅文化中象徵吉祥與繁榮，是每年4月僧伽羅與泰米爾新年早晨的第一道食物。人們也在每月初一、婚禮、嬰兒滿月等場合製作，用來祈求好運。斯里蘭卡自古種植稻米與椰子，這兩種最重要的物產結合成為最具代表性的節慶食物。",
     "wiki": "Kiribath",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Kiribath.jpg/960px-Kiribath.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Kiribath.jpg",
@@ -67,8 +67,8 @@
    {
     "name": "科圖烤餅",
     "localName": "Kottu",
-    "description": "將羅提餅切碎後與蔬菜、蛋、肉在鐵板上剁炒。",
-    "history": "1970年代於東部拜蒂克洛一帶興起，鐵板剁切聲成為夜市招牌。",
+    "description": "把羅提麵餅切碎，在鐵板上與蔬菜、蛋、肉和咖哩醬汁一起剁炒，製作時刀子敲擊鐵板發出節奏聲。",
+    "history": "Kottu 是相當年輕的料理，一般認為1970年代起源於斯里蘭卡東部的拜蒂克洛或南部泰米爾與穆斯林社群的小吃店，用剩下的羅提餅製作。到了1980–90年代它在全國流行，傍晚時分路邊攤以兩把鐵片剁炒 kottu 的「噹噹」聲是斯里蘭卡城市的代表性街頭聲音。",
     "wiki": "Kottu",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Chicken_Kottu.jpg/960px-Chicken_Kottu.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Chicken_Kottu.jpg",
@@ -77,8 +77,8 @@
    {
     "name": "碗狀米餅",
     "localName": "Appa (Hoppers)",
-    "description": "以發酵米漿與椰奶煎成碗狀的薄餅，中央可加一顆蛋。",
-    "history": "源自南印度與斯里蘭卡的傳統早餐與晚餐。",
+    "description": "以發酵米漿與椰奶在小圓鍋中煎成的碗狀薄餅，邊緣酥脆、中間柔軟，可加蛋。常搭配椰子醬、咖哩或打一顆蛋在中間一起煎。",
+    "history": "Appa 是斯里蘭卡與南印度喀拉拉邦共同的傳統料理，以米與椰子這兩種最基本的物產製作。英文名稱 hopper 是英國殖民時期對 appa 的轉音。它常作為早餐或晚餐，在新年與節日時也會做成甜的版本，是斯里蘭卡家庭與小吃店的日常食物。",
     "wiki": "Appam",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Appam_-_%E0%AE%85%E0%AE%AA%E0%AF%8D%E0%AE%AA%E0%AE%AE%E0%AF%8D.jpg/960px-Appam_-_%E0%AE%85%E0%AE%AA%E0%AF%8D%E0%AE%AA%E0%AE%AE%E0%AF%8D.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Appam_-_%E0%AE%85%E0%AE%AA%E0%AF%8D%E0%AE%AA%E0%AE%AE%E0%AF%8D.jpg",
@@ -87,8 +87,8 @@
    {
     "name": "米線團",
     "localName": "Indiappa (String hoppers)",
-    "description": "以米粉麵團擠成細絲蒸熟的小圓餅，配咖哩。",
-    "history": "與南印度共享的傳統早餐。",
+    "description": "把米粉團擠壓成細絲狀，蒸成一個個小圓餅，配咖哩、椰子醬或扁豆湯食用。口感柔軟清淡，常作為早餐。",
+    "history": "Indiappa（string hopper）與南印度的 idiyappam 同源，可能在古代隨南印度與斯里蘭卡之間頻繁的人口與文化交流傳入。製作需要專用的模具壓出細絲，是相當費工的家常食物，常作為早餐。在斯里蘭卡各地，它是日常與節慶都會出現的傳統米食。",
     "wiki": "Idiyappam",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Idiyappam_with_Egg_Masala_Curry.jpg/960px-Idiyappam_with_Egg_Masala_Curry.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Idiyappam_with_Egg_Masala_Curry.jpg",
@@ -97,8 +97,8 @@
    {
     "name": "荷蘭裔葉包飯",
     "localName": "Lamprais",
-    "description": "米飯與多種咖哩、肉丸、炸蛋等用香蕉葉包裹烘烤。",
-    "history": "源自荷蘭殖民時期的伯格人（荷蘭裔混血）社群。",
+    "description": "把米飯與多種咖哩、肉丸、炸茄子與蝦醬等配菜一起用香蕉葉包起來烘烤。烤過後米飯吸收了香蕉葉與咖哩的香氣，風味濃郁。",
+    "history": "Lamprais 源自荷蘭語 lomprijst（一包飯），是荷蘭殖民時期（1658–1796年）留下的伯格人（Burgher，荷蘭與葡萄牙後裔）社群料理。它融合了荷蘭的肉丸、葡萄牙的影響與斯里蘭卡的咖哩，展現殖民時期多元文化交融的飲食。今天它仍是伯格人家庭的週日大餐，也在可倫坡的餐廳販售。",
     "wiki": "Lamprais",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Lamprais_%282%29.jpg/960px-Lamprais_%282%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Lamprais_(2).jpg",

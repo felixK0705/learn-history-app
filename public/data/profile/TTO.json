@@ -7,30 +7,30 @@
    {
     "name": "基督新教",
     "percent": 32,
-    "description": "包括五旬節派、聖公會、復臨安息日會、長老會等。"
+    "description": "英國在 1797 年奪取千里達、1814 年取得托巴哥，帶來聖公會、衛理公會與摩拉維亞教會等新教派。1868 年加拿大長老會傳教士開始在印度契約勞工中傳教、興辦學校，吸引部分印度裔改宗。近年五旬節派快速成長；非裔的「靈恩浸信會」曾在 1917–1951 年被殖民政府立法禁止，如今已有專屬的國定假日。"
    },
    {
     "name": "天主教",
     "percent": 22,
-    "description": "最大的單一基督教會。"
+    "description": "千里達在 1797 年以前是西班牙殖民地，1783 年西班牙頒布《人口法令》，邀請信奉天主教的法國種植園主及其奴隸移居，使天主教在島上紮根。英國接管後天主教仍是非裔克里奧人與法裔家庭的主要信仰，至今是最大的單一教派。"
    },
    {
     "name": "印度教",
     "percent": 18,
-    "description": "主要為印度裔居民。"
+    "description": "1834 年廢奴後種植園缺工，1845 年第一艘載運印度契約勞工的船「法特爾·拉扎克號」抵達，至 1917 年約有 14 萬名印度人來到千里達，多數信仰印度教。他們的後代至今約占人口三分之一以上，屠妖節（排燈節）是國定假日，每年 5 月 30 日也被定為「印度人抵達紀念日」。"
    },
    {
     "name": "伊斯蘭教",
     "percent": 5,
-    "description": "主要為印度裔居民。"
+    "description": "穆斯林主要是印度契約勞工中的穆斯林後代，此外殖民早期也有部分被運來的非洲奴隸信仰伊斯蘭教。每年伊斯蘭曆穆哈蘭月的「霍賽節」源自什葉派紀念侯賽因的儀式，在千里達發展成多族群參與的遊行。1990 年激進團體「穆斯林人民大會」曾發動未遂政變。"
    },
    {
     "name": "無宗教",
     "percent": 2,
-    "description": "未認同任何宗教的人口。"
+    "description": "千里達及托巴哥是宗教氛圍濃厚的社會，基督教、印度教與伊斯蘭教節日都是國定假日，宗教活動與社區生活緊密相連。因此表示無宗教的人很少，主要是首都西班牙港等城市中受世俗化影響的年輕人。"
    }
   ],
-  "background": "西班牙與法國殖民時期天主教傳入，英國統治後帶來聖公會等新教。1838年廢奴後，英國從印度引進大量契約勞工，帶來印度教與伊斯蘭教，使千里達成為加勒比海宗教最多元的國家之一。"
+  "background": "千里達原住民在西班牙殖民後幾乎消失，18 世紀末法國天主教種植園主與非洲奴隸大量移入，奠定天主教傳統。1797 年英國接管後帶來各種新教派，非裔則發展出融合西非信仰的靈恩浸信會與奧里沙信仰。1845–1917 年的印度契約勞工帶來印度教與伊斯蘭教。今天各宗教的節日都是國定假日，千里達及托巴哥常被視為加勒比海宗教多元的代表。"
  },
  "language": {
   "official": "英語是官方語言。",
@@ -38,27 +38,27 @@
    {
     "name": "英語（含千里達克里奧爾英語）",
     "percent": 95,
-    "description": "官方語言；日常生活使用帶有本地特色的千里達克里奧爾英語。",
+    "description": "英國在 1797 年取得千里達後，英語逐漸成為行政與教育語言，取代了殖民早期通行的西班牙語與法語克里奧爾語。日常口語則是千里達克里奧爾英語，融合了西非語言、法語、西班牙語與印度語詞彙。由於學校、媒體與政府全面使用英語，幾乎全體國民都以英語或英語克里奧爾語為母語。",
     "greeting": "Wah going on?",
     "pronunciation": "wah GO-in ON"
    },
    {
     "name": "千里達印度斯坦語",
     "percent": 1,
-    "description": "印度契約勞工後代的語言，現多為年長者使用。",
+    "description": "千里達印度斯坦語源自 1845–1917 年印度契約勞工所說的博傑普爾語與阿瓦德語。20 世紀英語教育普及後，印度裔家庭逐漸轉用英語，現在流利的使用者多是年長者，但許多詞彙保留在食物名稱、宗教儀式與「查特尼」音樂中。",
     "greeting": "नमस्ते (Namaste)",
     "pronunciation": "na-ma-STAY"
    }
   ],
-  "history": "千里達先後由西班牙、法國與英國統治，曾通行以法語為基礎的克里奧爾語，十九世紀後逐漸被以英語為基礎的克里奧爾語取代。印度移民帶來的博傑普爾語系印度斯坦語也為當地英語貢獻了許多詞彙。"
+  "history": "千里達原住民說阿拉瓦克語與加勒比語，西班牙殖民時期西班牙語是官方語言。18 世紀末大批法國種植園主移入，法語克里奧爾語在 19 世紀成為島上最通行的口語。英國統治後推行英語教育，20 世紀英語與英語克里奧爾語取代了法語克里奧爾語。印度契約勞工帶來的印度斯坦語則逐漸衰退，但留下大量借詞。"
  },
  "food": {
   "ranking": [
    {
     "name": "雙餅",
     "localName": "Doubles",
-    "description": "兩片炸餅夾咖哩鷹嘴豆與各式醬料。",
-    "history": "1930年代由印度裔小販所創，是千里達最受歡迎的早餐。",
+    "description": "兩片炸得蓬鬆的薄麵餅「巴拉」夾上咖哩鷹嘴豆，再淋上羅望子醬、芒果醬與辣椒醬，是最受歡迎的早餐街頭小吃。",
+    "history": "雙餅源自印度契約勞工的飲食傳統，一般認為是 1936 年由印度裔小販埃馬穆爾·迪恩在千里達南部的普林斯敦開始販售咖哩鷹嘴豆夾餅。據說顧客常要求把麵餅「加倍」，於是有了「雙餅」之名。今天它是千里達人最具代表性的早餐，街頭小販每天清晨大量販售，也成為千里達國民美食的象徵。",
     "wiki": "Doubles (food)",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/FOOD_Doubles_2.jpg/960px-FOOD_Doubles_2.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:FOOD_Doubles_2.jpg",
@@ -67,8 +67,8 @@
    {
     "name": "羅地",
     "localName": "Roti",
-    "description": "以薄餅包裹咖哩雞、羊肉或馬鈴薯。",
-    "history": "源自印度契約勞工的飲食，成為千里達的國民美食。",
+    "description": "以夾著黃豌豆粉的薄餅或撕成碎片的層狀麵餅，包裹或搭配咖哩雞、山羊肉、馬鈴薯與鷹嘴豆食用。",
+    "history": "羅地由 1845 年後來到千里達的印度契約勞工帶入，原本是北印度的家常麵餅。據說在 1940 年代，南部聖費爾南多的一位印度裔婦女開始把咖哩包進羅地裡販售，讓工人方便攜帶，從此成為流行的外帶食物。撕碎的層狀麵餅被戲稱為「破襯衫」，是千里達人日常與節慶都愛吃的國民美食。",
     "wiki": "Roti",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/2020-05-08_19_34_28_Chapati_being_made_in_a_pan_in_the_Franklin_Farm_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg/960px-2020-05-08_19_34_28_Chapati_being_made_in_a_pan_in_the_Franklin_Farm_section_of_Oak_Hill%2C_Fairfax_County%2C_Virginia.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:2020-05-08_19_34_28_Chapati_being_made_in_a_pan_in_the_Franklin_Farm_section_of_Oak_Hill,_Fairfax_County,_Virginia.jpg",
@@ -77,8 +77,8 @@
    {
     "name": "卡拉魯",
     "localName": "Callaloo",
-    "description": "以芋頭葉、秋葵與椰奶燉煮的濃湯。",
-    "history": "源自西非飲食傳統，是週日午餐的常見料理。",
+    "description": "以芋頭葉、秋葵、南瓜加入椰奶、洋蔥與香料燉煮後打成濃稠的綠色濃湯，有時加入螃蟹或鹹豬肉。",
+    "history": "卡拉魯源自西非奴隸的烹調傳統，秋葵與葉菜燉湯在西非十分常見，被帶到加勒比海後融合了當地物產。在千里達，它傳統上是週日午餐的固定菜色，配米飯、通心粉派與燉雞一起吃。由於它把多種食材煮成一鍋，千里達人也常以「卡拉魯」比喻自己多元融合的社會。",
     "wiki": "Callaloo",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Callaloo.jpg/960px-Callaloo.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Callaloo.jpg",
@@ -87,8 +87,8 @@
    {
     "name": "佩勞",
     "localName": "Pelau",
-    "description": "將焦糖化雞肉與米、鴿豆一同烹煮的燉飯。",
-    "history": "融合非洲與印度飲食傳統的一鍋料理。",
+    "description": "先把糖在鍋中炒成焦糖，再放入雞肉上色，加入米、樹豆與椰奶一起燜煮，口味鹹甜香濃。",
+    "history": "佩勞的名稱與做法源自中東與印度的「抓飯」，經由印度契約勞工傳入千里達；而把糖炒焦為肉上色的手法則被認為來自非洲裔的烹調傳統，兩者在千里達融合。這道一鍋到底的料理方便攜帶，是海灘野餐、河邊聚會與節慶派對中最常見的菜色之一。",
     "wiki": "Pelau",
     "image": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Trinidadian_Chicken_Pelau_%2815399269506%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Trinidadian_Chicken_Pelau_(15399269506).jpg",
@@ -97,8 +97,8 @@
    {
     "name": "鯊魚炸麵包",
     "localName": "Bake and shark",
-    "description": "以炸麵包夾炸鯊魚肉與各式醬料。",
-    "history": "千里達北部馬拉卡斯海灘的代表小吃。",
+    "description": "把鯊魚肉醃過後裹粉油炸，夾進炸得鬆軟的麵包「貝克」，再自行加上生菜、番茄、鳳梨、羅望子醬與大蒜醬等配料。",
+    "history": "這道小吃與千里達北岸的馬拉卡斯灣密不可分，20 世紀中葉起當地漁民家庭在海灘旁販售，後來成為遊客必吃的美食。炸麵包「貝克」源自殖民時期的麵食傳統，各式醬料則反映了印度、非洲與歐洲飲食的融合。近年由於鯊魚保育問題，也有店家改用其他魚類取代鯊魚。",
     "wiki": "Bake and shark",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/MISC_Bake_%26_Shark.jpg/960px-MISC_Bake_%26_Shark.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:MISC_Bake_%26_Shark.jpg",

@@ -7,20 +7,20 @@
    {
     "name": "路德宗",
     "percent": 63,
-    "description": "芬蘭福音路德教會是最大的宗教團體。"
+    "description": "12–13 世紀瑞典王國向東擴張，以十字軍名義把天主教帶入芬蘭，傳說中的亨利主教被尊為芬蘭的主保。1520 年代瑞典國王古斯塔夫・瓦薩推行宗教改革，路德宗成為國教，芬蘭宗教改革家米卡埃爾・阿格里科拉於 1548 年譯出芬蘭語新約。至今芬蘭福音路德教會仍是國家教會，可徵收教會稅，但 2003 年新《宗教自由法》讓退會變得簡便，信徒比例逐年下降。"
    },
    {
     "name": "無宗教",
     "percent": 34,
-    "description": "近年退出教會的人數持續增加。"
+    "description": "芬蘭在 20 世紀後期快速都市化與世俗化，北歐福利國家取代了教會在社會照顧上的角色。2003 年起可透過網路一鍵退出教會，每當教會在同性婚姻等議題上引發爭議，就出現退會潮；無宗教人口集中在赫爾辛基等城市與年輕世代。"
    },
    {
     "name": "東正教",
     "percent": 1,
-    "description": "芬蘭正教會是國家承認的第二個國教會。"
+    "description": "東正教源自中世紀諾夫哥羅德對卡累利阿地區的傳教，1809–1917 年芬蘭成為俄羅斯帝國的大公國後進一步擴展。芬蘭東正教會與路德教會同為國家教會。1944 年二戰後蘇聯割取卡累利阿，約四十萬名疏散居民（其中不少是東正教徒）被安置到芬蘭各地，使東正教堂分布全國。"
    }
   ],
-  "background": "中世紀瑞典統治下芬蘭接受天主教，十六世紀宗教改革後改信路德宗，主教阿格里科拉並將聖經譯為芬蘭語。東部卡累利阿地區則受俄羅斯影響保有東正教。近年世俗化使無宗教人口快速增加。"
+  "background": "芬蘭在中世紀由瑞典與諾夫哥羅德分別從西方和東方帶來天主教與東正教，形成東西兩種基督教傳統的交界。16 世紀宗教改革後路德宗成為絕大多數人的信仰，並推動了芬蘭語書面化與全民識字（路德宗要求信徒能讀聖經才可結婚）。1809 年後的俄羅斯統治提升了東正教地位。1917 年獨立後兩個教會同為國家教會，但 20 世紀後期起芬蘭社會快速世俗化，無宗教人口大幅增加。"
  },
  "language": {
   "official": "芬蘭語與瑞典語是官方語言。",
@@ -28,41 +28,41 @@
    {
     "name": "芬蘭語",
     "percent": 85,
-    "description": "屬烏拉爾語系，與多數歐洲語言不同。",
+    "description": "芬蘭語屬烏拉爾語系，與瑞典語、俄語毫無親緣關係。在瑞典統治的六百年間，瑞典語是行政與上層語言，1543 年阿格里科拉出版第一本芬蘭語識字課本。1835 年隆洛特編纂民族史詩《卡勒瓦拉》激發民族意識，1863 年俄國沙皇亞歷山大二世頒布語言法令，讓芬蘭語逐步取得與瑞典語同等的官方地位；1919 年憲法確立芬蘭語為國家語言。",
     "greeting": "Hei / Moi",
     "pronunciation": "hay / moy"
    },
    {
     "name": "瑞典語",
     "percent": 5,
-    "description": "另一官方語言，主要在沿海地區與奧蘭群島使用。",
+    "description": "瑞典人在中世紀移居芬蘭西南沿海，1809 年以前芬蘭是瑞典王國的一部分，瑞典語因此長期主導行政、教育與文化。1919 年憲法規定芬蘭語與瑞典語同為國家語言，學校至今必修第二國語；說瑞典語的少數群體集中在沿海地區與自治的奧蘭群島。",
     "greeting": "Hej",
     "pronunciation": "hay"
    },
    {
     "name": "俄語",
     "percent": 2,
-    "description": "人數最多的移民語言。",
+    "description": "1809–1917 年芬蘭是俄羅斯帝國的自治大公國，但俄語從未普及。今日的俄語使用者主要來自 1990 年後的移民，包括總統科伊維斯托開放的英格里亞芬蘭裔「回歸移民」，集中在赫爾辛基與東部邊境城市。",
     "greeting": "Здравствуйте",
     "pronunciation": "ZDRAST-vuy-tye"
    },
    {
     "name": "愛沙尼亞語",
     "percent": 1,
-    "description": "愛沙尼亞移民社群使用，與芬蘭語相近。",
+    "description": "1991 年愛沙尼亞恢復獨立、2004 年加入歐盟後，大批愛沙尼亞人跨過芬蘭灣到芬蘭工作，兩國首都間的通勤族眾多。愛沙尼亞語與芬蘭語同屬芬蘭語支，彼此相近，使愛沙尼亞人容易融入芬蘭社會。",
     "greeting": "Tere",
     "pronunciation": "TEH-reh"
    }
   ],
-  "history": "芬蘭在瑞典統治下約六百年，瑞典語長期是行政與文化語言。十九世紀俄國統治期間，隆洛特整理史詩《卡勒瓦拉》激發民族意識，1863年起芬蘭語逐步取得官方地位，成為國家認同的核心。"
+  "history": "芬蘭語的祖先數千年前便在芬蘭灣一帶使用，中世紀起瑞典統治使瑞典語成為上層語言，芬蘭語只是農民的口語。宗教改革時阿格里科拉為芬蘭語制定書寫系統，19 世紀芬蘭成為俄國大公國後，民族主義者以《卡勒瓦拉》與語言運動提升芬蘭語地位，1863 年語言法令是重要轉折。1917 年獨立後芬蘭語與瑞典語並列國家語言，北部的薩米語則在 1990 年代獲得法定地位。"
  },
  "food": {
   "ranking": [
    {
     "name": "卡累利阿派",
     "localName": "Karjalanpiirakka",
-    "description": "以黑麥薄皮包裹米粥烘烤，抹上蛋奶油食用。",
-    "history": "源自卡累利阿地區，受歐盟傳統特產保護。",
+    "description": "以薄薄的黑麥麵皮包裹米粥，捏出波浪狀邊緣後烘烤，趁熱塗上蛋奶油（雞蛋拌奶油）食用。",
+    "history": "卡累利阿派源自芬蘭東部與俄羅斯交界的卡累利阿地區，早期餡料是大麥或小米粥，19 世紀進口米普及後才改用米。1944 年二戰後蘇聯割取卡累利阿，約四十萬名居民疏散到芬蘭各地，也把這道家鄉點心帶往全國，使它從地方食物變成國民美食。今天它在超市、咖啡館與早餐中隨處可見，並獲得歐盟傳統特產保護。",
     "wiki": "Karelian pasty",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Karjalanpiirakka-20060227.jpg/960px-Karjalanpiirakka-20060227.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Karjalanpiirakka-20060227.jpg",
@@ -71,8 +71,8 @@
    {
     "name": "鮭魚湯",
     "localName": "Lohikeitto",
-    "description": "以鮭魚、馬鈴薯、蒔蘿與奶油熬煮的濃湯。",
-    "history": "芬蘭最受歡迎的家常湯品。",
+    "description": "以鮭魚塊、馬鈴薯、韭蔥與鮮奶油、蒔蘿煮成的乳白色濃湯，口味清爽溫和。",
+    "history": "芬蘭有「千湖之國」之稱，加上波羅的海漫長的海岸線，魚類一直是芬蘭人重要的蛋白質來源，鮭魚湯原本是沿海與湖區漁家的日常料理。加入鮮奶油的版本則反映了芬蘭發達的酪農業。它是學校午餐與家庭晚餐的常見菜色，也是芬蘭人在漫長寒冬中最具代表性的暖身湯品。",
     "wiki": "Lohikeitto",
     "image": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Finland_salmonsoup_01.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Finland_salmonsoup_01.jpg",
@@ -81,8 +81,8 @@
    {
     "name": "黑麥麵包",
     "localName": "Ruisleipä",
-    "description": "質地紮實、帶有酸味的黑麥麵包。",
-    "history": "2017年被票選為芬蘭國民美食，是日常餐桌的主食。",
+    "description": "以黑麥粉與酸種長時間發酵烤成的深色麵包，質地紮實、酸味明顯，有的做成中間有洞的圓餅。",
+    "history": "黑麥能在芬蘭寒冷短暫的夏季生長，數百年來都是農民的主食。西部傳統把麵包做成中間有洞的圓餅，烤好後串在天花板的長桿上風乾保存，一年只烤幾次；東部則每天烤軟麵包。2017 年芬蘭獨立一百週年時，黑麥麵包被票選為芬蘭的國民食物，可見它在芬蘭人心中的地位。",
     "wiki": "Rye bread",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Market_Bread%2C_Riga%2C_Latvia.jpg/960px-Market_Bread%2C_Riga%2C_Latvia.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Market_Bread,_Riga,_Latvia.jpg",
@@ -91,8 +91,8 @@
    {
     "name": "魚肉麵包",
     "localName": "Kalakukko",
-    "description": "以黑麥麵包包裹魚與豬肉長時間烘烤。",
-    "history": "庫奧皮奧地區的傳統料理，方便攜帶外出工作。",
+    "description": "以黑麥麵團包裹小魚（如白鮭或鱸魚）與豬五花，烘烤數小時，魚骨都會軟化，可整個切開食用。",
+    "history": "魚肉麵包源自芬蘭東部的薩沃地區，尤其以庫奧皮奧最著名，當地湖泊眾多，盛產小魚。厚實的黑麥外皮能保護內餡、方便攜帶與保存，過去是伐木工、農民外出工作時的便當。如今庫奧皮奧市集仍販售傳統的魚肉麵包，它被視為薩沃地區文化的象徵。",
     "wiki": "Kalakukko",
     "image": "https://upload.wikimedia.org/wikipedia/commons/6/61/Kalakukko_%28opened%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Kalakukko_(opened).jpg",
@@ -101,8 +101,8 @@
    {
     "name": "黑麥布丁",
     "localName": "Mämmi",
-    "description": "以黑麥粉與麥芽製成的深色甜點。",
-    "history": "芬蘭傳統的復活節食物。",
+    "description": "以黑麥粉與麥芽加水熬煮後烘烤成的深褐色布丁，帶有麥芽的甜味與微苦，配鮮奶油與糖食用。",
+    "history": "黑麥布丁是芬蘭傳統的復活節食物，源自芬蘭西南部。過去在耶穌受難日不能生火煮食，人們便事先做好可以冷吃的布丁，裝在樺樹皮編的盒子中保存。雖然它的外表常讓外國人卻步，在芬蘭卻是延續數百年的節慶傳統，每到復活節超市就會販售紙盒包裝的黑麥布丁。",
     "wiki": "Mämmi",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/M%C3%A4mmi_Kymppi.jpg/960px-M%C3%A4mmi_Kymppi.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:M%C3%A4mmi_Kymppi.jpg",

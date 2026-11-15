@@ -7,25 +7,25 @@
    {
     "name": "天主教",
     "percent": 73,
-    "description": "國教級地位，憲法明定天主教會為國家教會。"
+    "description": "基督教在4–5世紀傳入萊茵河谷，16世紀宗教改革時當地統治者維持天主教信仰，公國與鄰近的奧地利福拉爾貝格及瑞士天主教地區一樣保持天主教。1921年憲法定天主教為國教，1997年設立瓦杜茲總主教區，目前仍是國內最大宗教，不過政府正討論政教分離。"
    },
    {
     "name": "新教",
     "percent": 8,
-    "description": "包含歸正會與路德宗。"
+    "description": "列支敦斯登本身沒有經歷宗教改革，新教徒主要是19–20世紀從瑞士與德國遷入的移民及其後代，大多屬於福音派（路德宗與改革宗）教會，在瓦杜茲等地有自己的教堂。"
    },
    {
     "name": "無宗教",
     "percent": 7,
-    "description": "比例逐漸上升。"
+    "description": "二戰後列支敦斯登從農業國轉變為工業與金融中心，經濟富裕、教育程度提高，與歐洲其他國家一樣出現世俗化趨勢，退出教會或不屬任何宗教的人逐漸增加，主要集中在年輕世代。"
    },
    {
     "name": "伊斯蘭教",
     "percent": 6,
-    "description": "主要來自土耳其與巴爾幹半島移民。"
+    "description": "1960–70年代經濟快速發展時期，列支敦斯登從土耳其與前南斯拉夫地區招募外籍勞工，他們帶來了伊斯蘭教。今天穆斯林主要是土耳其、波士尼亞與科索沃移民及其後代。"
    }
   ],
-  "background": "列支敦斯登地區自中世紀起屬於天主教的庫爾教區，宗教改革未在此擴展。1719年列支敦斯登家族獲神聖羅馬帝國授予公國地位，天主教一直是國家主要宗教，1997年設立瓦都茲總教區。"
+  "background": "列支敦斯登所在的萊茵河谷在羅馬時代屬於雷蒂亞行省，4–5世紀基督教傳入，此後長期屬於瑞士庫爾主教區。16世紀宗教改革期間，當地統治者仍維持天主教，因此列支敦斯登與奧地利、瑞士天主教州一樣保持天主教信仰。1719年列支敦斯登家族將兩個領地合併成為神聖羅馬帝國的公國，1806年獨立。憲法將天主教定為國教，1997年教宗設立瓦杜茲總主教區，使其從庫爾教區分出。近年來移民與世俗化使宗教組成逐漸多元。"
  },
  "language": {
   "official": "官方語言為德語。",
@@ -33,41 +33,41 @@
    {
     "name": "德語（阿勒曼尼方言）",
     "percent": 92,
-    "description": "日常口語為阿勒曼尼方言，書面使用標準德語。",
+    "description": "列支敦斯登的居民在中世紀就已改說德語的阿勒曼尼方言，與瑞士德語和奧地利福拉爾貝格方言非常相近。1921年憲法將德語定為官方語言，學校、行政與媒體使用標準德語，日常生活則以方言為主。",
     "greeting": "Hoi / Grüezi",
     "pronunciation": "hoy / grü-et-si"
    },
    {
     "name": "義大利語",
     "percent": 1,
-    "description": "義大利裔居民使用。",
+    "description": "使用義大利語的居民主要是二戰後從義大利來的移工及其後代，他們在1950–60年代參與了列支敦斯登的工業建設與基礎設施工程。",
     "greeting": "Ciao",
     "pronunciation": "chow"
    },
    {
     "name": "葡萄牙語",
     "percent": 1,
-    "description": "葡萄牙裔居民使用。",
+    "description": "葡萄牙語使用者多是近幾十年從葡萄牙移入的勞工，主要從事建築業與服務業，這與當時瑞士與列支敦斯登大量引進葡萄牙勞工的趨勢一致。",
     "greeting": "Olá",
     "pronunciation": "o-la"
    },
    {
     "name": "土耳其語",
     "percent": 1,
-    "description": "土耳其裔居民使用。",
+    "description": "土耳其語使用者主要來自1960–70年代經濟起飛時引進的土耳其籍外籍勞工及其家庭，部分人已取得列支敦斯登國籍。",
     "greeting": "Merhaba",
     "pronunciation": "mer-ha-ba"
    }
   ],
-  "history": "此地原屬羅曼什語的分布範圍，中世紀阿勒曼尼人移入後日耳曼語逐漸取代羅曼語。至今地名中仍保留許多羅曼語痕跡，日常口語則與瑞士東部、奧地利福拉爾貝格方言相近。"
+  "history": "萊茵河谷在羅馬時代使用拉丁語，之後發展出與今天瑞士羅曼什語相近的雷蒂亞羅曼語。5–6世紀日耳曼語族的阿勒曼尼人遷入，經過數百年的語言轉移，到中世紀晚期當地居民已改說阿勒曼尼德語方言，但許多地名仍保留羅曼語起源。1921年憲法規定德語為官方語言，學校與政府使用標準德語，日常則使用阿勒曼尼方言。"
  },
  "food": {
   "ranking": [
    {
     "name": "起司麵疙瘩",
     "localName": "Käsknöpfle",
-    "description": "小麵疙瘩與在地起司層疊，鋪上炸洋蔥，常配蘋果泥。",
-    "history": "被視為國菜，源自阿爾卑斯山區的牧人料理。",
+    "description": "以麵粉、雞蛋與水攪成的麵疙瘩，拌入大量地方乳酪（Sauerkäse 等），上面鋪炸洋蔥，常配蘋果泥。",
+    "history": "Käsknöpfle 是列支敦斯登最具代表性的家常菜，源於阿爾卑斯山區的酪農生活：山區居民以牛奶製作耐存放的乳酪，搭配便宜的麵粉做成飽足的主食。這道菜與鄰近奧地利福拉爾貝格及德國南部的乳酪麵疙瘩（Käsespätzle）相似，反映列支敦斯登與周邊阿勒曼尼語區共同的飲食文化。",
     "wiki": "Käsknöpfle",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Berggasthof_Haldenhof_-_K%C3%A4skn%C3%B6pfle_%281%29.jpg/960px-Berggasthof_Haldenhof_-_K%C3%A4skn%C3%B6pfle_%281%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Berggasthof_Haldenhof_-_K%C3%A4skn%C3%B6pfle_(1).jpg",
@@ -76,8 +76,8 @@
    {
     "name": "玉米碎煎粒",
     "localName": "Ribel",
-    "description": "以玉米粗粉炒成的碎粒，配糖、果醬或咖啡奶。",
-    "history": "萊茵河谷傳統的農家早餐，種植的萊茵河谷白玉米為在地特產。",
+    "description": "以粗玉米粉加牛奶或水煮成糊狀，再在鍋中翻炒成碎粒，配蘋果泥、咖啡或乳酪食用。口感香脆，帶有淡淡的玉米甜味。",
+    "history": "玉米在16–17世紀從美洲傳入歐洲，萊茵河谷氣候溫和適合種植，一種白色玉米品種（Rheintaler Ribel）成為當地農民的主食。Ribel 在過去是窮人的早餐與晚餐，20世紀後逐漸被其他食物取代，近年在慢食運動中重新受到重視，萊茵河谷白玉米也被瑞士認證為原產地保護產品。",
     "wiki": "Polenta",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Cotechino-Servito-Polenta-Lenticchie.jpg/960px-Cotechino-Servito-Polenta-Lenticchie.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Cotechino-Servito-Polenta-Lenticchie.jpg",
@@ -86,8 +86,8 @@
    {
     "name": "瑞士薯餅",
     "localName": "Rösti",
-    "description": "將馬鈴薯絲煎成金黃酥脆的圓餅。",
-    "history": "與鄰國瑞士共享的阿爾卑斯山區料理。",
+    "description": "把馬鈴薯刨絲後在平底鍋中以奶油或油煎成金黃色的大餅，外脆內軟。可作為主菜的配菜，也可加入乳酪、培根或煎蛋。",
+    "history": "Rösti 原是瑞士伯恩州農民的早餐，18世紀後馬鈴薯在阿爾卑斯地區普及，取代了較貴的穀物。列支敦斯登與瑞士在1923年締結關稅同盟並使用瑞士法郎，兩國飲食文化十分接近，rösti 因此成為列支敦斯登餐桌上常見的配菜。",
     "wiki": "Rösti",
     "image": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Roesti.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Roesti.jpg",
@@ -96,8 +96,8 @@
    {
     "name": "起司火鍋",
     "localName": "Fondue",
-    "description": "以起司與白酒融化，用叉子沾麵包食用。",
-    "history": "阿爾卑斯山區冬季的傳統料理。",
+    "description": "把乳酪與白酒在陶鍋中加熱融化，用長叉將麵包塊沾著融化乳酪吃。口味濃郁，帶有白酒與乳酪的香氣，是冬季聚會料理。",
+    "history": "Fondue 一般認為源自瑞士阿爾卑斯山區，1699年蘇黎世的一本食譜書中已有以酒煮乳酪的記載。冬季山區農民以存放的乳酪與硬麵包製作，能有效利用剩餘食物。1930年代瑞士乳酪聯盟將 fondue 推廣為國民料理，列支敦斯登也受此影響，在冬季與節慶聚會時常吃乳酪火鍋。",
     "wiki": "Fondue",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Fondue_dish.jpg/960px-Fondue_dish.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Fondue_dish.jpg",
@@ -106,8 +106,8 @@
    {
     "name": "煎香腸",
     "localName": "Schüblig",
-    "description": "煙燻過的豬肉牛肉香腸，常煎或烤後配馬鈴薯沙拉。",
-    "history": "瑞士東部與列支敦斯登一帶的常見香腸。",
+    "description": "以豬肉與牛肉製成的燻香腸，切開後煎烤，常配馬鈴薯沙拉或洋蔥醬。口味鹹香，帶有燻製的香氣。",
+    "history": "Schüblig 是瑞士東部聖加侖一帶與列支敦斯登常見的香腸，屬於阿勒曼尼語區共同的肉製品傳統。在阿爾卑斯地區，豬肉加工品是農家冬季保存肉品的重要方法，每年秋冬宰豬後製作。今天它常出現在節慶市集、運動賽事與家庭烤肉中。",
     "wiki": "Schüblig",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Sch%C3%BCblig_ks3.JPG/960px-Sch%C3%BCblig_ks3.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Sch%C3%BCblig_ks3.JPG",
