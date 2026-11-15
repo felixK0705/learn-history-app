@@ -3,7 +3,6 @@ import Globe, { type GlobeInstance } from "globe.gl";
 import { AdditiveBlending, Color, Mesh, MeshPhongMaterial, ShaderMaterial, SphereGeometry, TextureLoader } from "three";
 import { CSS2DRenderer } from "three/examples/jsm/renderers/CSS2DRenderer.js";
 import { countries, countryByIso } from "../../data/world";
-import { buildings, type Building } from "../../data/buildings";
 
 interface GeoFeature {
   type: string;
@@ -21,10 +20,7 @@ interface Props {
   selectedIso: string | null;
   visited: string[];
   autoRotate: boolean;
-  showLandmarks: boolean;
   onSelectCountry: (iso: string) => void;
-  onHoverCountry: (name: string | null) => void;
-  onSelectBuilding: (b: Building) => void;
   onReady?: () => void;
 }
 
@@ -37,7 +33,7 @@ const defaultAlt = () => (window.innerWidth < 640 ? 3.6 : window.innerWidth < 10
 
 
 const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
-  { selectedIso, visited, autoRotate, showLandmarks, onSelectCountry, onHoverCountry, onSelectBuilding, onReady },
+  { selectedIso, visited, autoRotate, onSelectCountry, onReady },
   ref,
 ) {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -49,8 +45,8 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
   const labelVecs = useRef(new Map<HTMLDivElement, { x: number; y: number; z: number }>());
 
 
-  const cb = useRef({ onSelectCountry, onHoverCountry, onSelectBuilding, onReady });
-  cb.current = { onSelectCountry, onHoverCountry, onSelectBuilding, onReady };
+  const cb = useRef({ onSelectCountry, onReady });
+  cb.current = { onSelectCountry, onReady };
 
 
 
@@ -94,13 +90,9 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
         hoverRef.current = (f as GeoFeature) ?? null;
         el.style.cursor = f ? "pointer" : "grab";
         g.polygonCapColor(capColor);
-        const iso = f ? (f as GeoFeature).properties.iso_a3 : null;
-        cb.current.onHoverCountry(iso ? countryByIso.get(iso)?.zh ?? (f as GeoFeature).properties.name : null);
       })
       .onPolygonClick((f) => cb.current.onSelectCountry((f as GeoFeature).properties.iso_a3))
       .htmlTransitionDuration(0)
-      // 可見度由下方的逐格淡入淡出計算接管，避免標籤在球體邊緣反覆閃爍
-      .htmlElementVisibilityModifier(() => {})
       .onGlobeReady(() => cb.current.onReady?.());
 
     g.pointOfView({ lat: 15, lng: 20, altitude: defaultAlt() });
@@ -172,10 +164,7 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
         const dot = (u.x * cam.x + u.y * cam.y + u.z * cam.z) / d;
         const o = Math.min(1, Math.max(0, (dot - horizon - 0.1) / 0.15));
         const v = o.toFixed(2);
-        if (div.style.opacity !== v) {
-          div.style.opacity = v;
-          div.style.pointerEvents = o > 0.5 ? "" : "none";
-        }
+        if (div.style.opacity !== v) div.style.opacity = v;
       });
       raf = requestAnimationFrame(tick);
     };
@@ -205,58 +194,35 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // HTML 標籤（國家＋地標）
+  // 國家名稱標籤
   useEffect(() => {
     const g = globeRef.current;
     if (!g) return;
-    type Marker = { kind: "country"; iso: string; lat: number; lng: number } | { kind: "building"; b: Building; lat: number; lng: number };
-    const markers: Marker[] = countries.map((c) => ({ kind: "country", iso: c.iso, lat: c.pos[0], lng: c.pos[1] }));
-    if (showLandmarks) buildings.forEach((b) => markers.push({ kind: "building", b, lat: b.position[0], lng: b.position[1] }));
     labelEls.current.clear();
     labelVecs.current.clear();
-    g.htmlElementsData(markers)
-      .htmlLat("lat")
-      .htmlLng("lng")
-      .htmlAltitude((m) => ((m as Marker).kind === "country" ? 0.02 : 0.012))
-      .htmlElement((m) => {
-        const marker = m as Marker;
+    g.htmlElementsData(countries)
+      .htmlLat((d) => (d as (typeof countries)[number]).pos[0])
+      .htmlLng((d) => (d as (typeof countries)[number]).pos[1])
+      .htmlAltitude(0.02)
+      .htmlElement((d) => {
+        const c = d as (typeof countries)[number];
         const div = document.createElement("div");
+        div.className = "country-label";
         div.style.opacity = "0";
-        const p = g.getCoords(marker.lat, marker.lng, 0);
+        div.style.zIndex = String(2000 - c.rank);
+        const p = g.getCoords(c.pos[0], c.pos[1], 0);
         const len = Math.hypot(p.x, p.y, p.z) || 1;
         labelVecs.current.set(div, { x: p.x / len, y: p.y / len, z: p.z / len });
-        if (marker.kind === "country") {
-          const c = countryByIso.get(marker.iso)!;
-          div.className = "country-label";
-          const dot = document.createElement("span");
-          dot.className = "dot";
-          div.append(dot, c.zh);
-          div.title = c.en;
-          // globe.gl 會延遲建立元素，建立當下就套用縮放層級的顯示規則
-          div.style.zIndex = String(2000 - c.rank);
-          if (c.iso === selectedRef.current) div.classList.add("is-active");
-          div.onclick = (e) => {
-            e.stopPropagation();
-            cb.current.onSelectCountry(c.iso);
-          };
-          labelEls.current.set(c.iso, div);
-        } else {
-          // 建築標記：建築圖示＋名稱，一看就知道是可點開的 3D 建築
-          div.className = "landmark-pin";
-          div.innerHTML =
-            '<svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 22h18M6 18v-7M10 18v-7M14 18v-7M18 18v-7M12 2l8 5H4z"/></svg>';
-          div.append(marker.b.name);
-          div.title = `${marker.b.name}（點擊觀看 3D 模型）`;
-          div.setAttribute("aria-label", marker.b.name);
-          div.onclick = (e) => {
-            e.stopPropagation();
-            cb.current.onSelectBuilding(marker.b);
-          };
-        }
+        const dot = document.createElement("span");
+        dot.className = "dot";
+        div.append(dot, c.zh);
+        div.title = c.en;
+        if (c.iso === selectedRef.current) div.classList.add("is-active");
+        labelEls.current.set(c.iso, div);
         return div;
       });
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [showLandmarks]);
+  }, []);
 
   useEffect(() => {
     labelEls.current.forEach((div, iso) => {
@@ -265,7 +231,7 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
       // 選取的國家疊在最上層
       div.style.zIndex = iso === selectedIso ? "3000" : String(2000 - (countryByIso.get(iso)?.rank ?? 999));
     });
-  }, [visited, selectedIso, showLandmarks]);
+  }, [visited, selectedIso]);
 
   useEffect(() => {
     selectedRef.current = selectedIso;

@@ -1,7 +1,6 @@
 import { useRef, useState } from "react";
 import {
   AlertTriangle,
-  BookOpen,
   Castle,
   Crown,
   Factory,
@@ -87,16 +86,9 @@ export default function StoriesPage() {
   return (
     <div className="scroll-thin absolute inset-0 overflow-y-auto">
       <div ref={listRef} className="mx-auto max-w-6xl px-4 pt-8 pb-28 md:px-8 md:pt-12">
-        <p data-reveal className="flex items-center gap-2 text-[12px] font-semibold tracking-[0.18em] text-glow">
-          <BookOpen className="size-4" />
-          AI 歷史故事
-        </p>
-        <h1 data-reveal className="mt-2 text-[30px] leading-tight font-extrabold md:text-[40px]">
-          一鍵生成有聲歷史投影片
+        <h1 data-reveal className="text-[28px] leading-tight font-bold md:text-[34px]">
+          歷史故事
         </h1>
-        <p data-reveal className="mt-2 max-w-2xl text-[15px] leading-relaxed text-white/80">
-          選一個主題或輸入任何你好奇的歷史事件，AI 會寫成 3–5 幕的故事，配上維基百科的歷史圖片，並用語音為你朗讀。
-        </p>
 
         <form
           data-reveal
@@ -111,7 +103,7 @@ export default function StoriesPage() {
             value={input}
             onChange={(e) => setInput(e.target.value)}
             maxLength={80}
-            placeholder="輸入任意主題，例如：赤壁之戰、柏林圍牆倒塌…"
+            placeholder="輸入主題"
             className="min-w-0 flex-1 bg-transparent text-[15px] text-white outline-none placeholder:text-white/45"
             aria-label="故事主題"
           />

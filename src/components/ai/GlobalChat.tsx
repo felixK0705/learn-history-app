@@ -161,10 +161,7 @@ export default function GlobalChat() {
             {!messages.length && (
               <div className="py-4 text-center">
                 <Sparkles className="mx-auto size-8 text-glow" />
-                <p className="mt-3 text-[15px] font-semibold">有什麼歷史問題都可以問我</p>
-                <p className="mt-1 text-[13px] leading-relaxed text-white/65">
-                  {country ? `你正在看「${country}」，可以問它的歷史；` : ""}在國家面板反白文字，也能直接請 AI 解釋。
-                </p>
+                <p className="mt-3 text-[15px] font-semibold">問我任何歷史問題</p>
                 <div className="mt-4 flex flex-col gap-2">
                   {(country ? [`${country}歷史上最重要的轉折是什麼？`, ...SUGGESTIONS.slice(0, 2)] : SUGGESTIONS).map((s) => (
                     <button

@@ -541,11 +541,11 @@ class AsiaBuilder(Builder):
         rng = self.rng
         r = r or h * 0.2
         self.tube([(x, y, z - 0.3), (x, y, z + h * 0.9)], max(0.1, h * 0.02), 0.05, bark, seg=6)
-        n = 9
+        n = 6
         for i in range(n):
             t = i / (n - 1)
-            rr = r * (1 - 0.85 * t) * rng.uniform(0.85, 1.1)
-            self.crown(x + rng.uniform(-0.3, 0.3), y + rng.uniform(-0.3, 0.3), z + h * (0.3 + 0.64 * t), rr, h * 0.075 + rr * 0.15,
+            rr = r * (1 - 0.8 * t) * rng.uniform(0.85, 1.1)
+            self.crown(x + rng.uniform(-0.4, 0.4), y + rng.uniform(-0.4, 0.4), z + h * (0.32 + 0.6 * t), rr, h * 0.11 + rr * 0.25,
                        mats, core, min(0.5, rr * 0.4), cap=30)
 
     # ---------------------------------------------------------- 東亞曲面屋頂
@@ -685,12 +685,12 @@ def kinkakuji(path):
     grass = b.gtex("moss", gen_ground("kinkaku", (98, 116, 56), (150, 128, 96), earth_frac=0.35), tile=9.0, rough=0.95, normal=0.6)
     soil = b.ptex("soil", "gravel_floor", tile=3.0, tint="#9a8466", rough=0.95, normal=0.6)
     bank = b.color("bank", "#5d5140", rough=0.95)
-    water = b.color("water", "#8c8a63", rough=0.07)
+    water = b.color("water", "#7a7a52", rough=0.02)
     rockm = b.ptex("rock", "rock_04", tile=2.5, tint="#8b7f74", rough=0.85, normal=1.0)
     rockp = b.ptex("rock_p", "rock_04", tile=2.5, tint="#9a7c78", rough=0.85, normal=1.0)
     stone = b.ptex("stone", "gray_rocks", tile=2.0, tint="#a39f96", rough=0.85, normal=0.6)
-    gold = b.color("gold", "#f4c64e", rough=0.34, metal=0.35)
-    gold_d = b.color("gold_shade", "#d0a23a", rough=0.4, metal=0.3)
+    gold = b.color("gold", "#fbd35a", rough=0.3, metal=0.3)
+    gold_d = b.color("gold_shade", "#e2b245", rough=0.38, metal=0.3)
     wood = b.color("wood", "#3e2b20", rough=0.75)
     wood_l = b.color("wood_light", "#5b4433", rough=0.75)
     plaster = b.color("plaster", "#ece7da", rough=0.85)
@@ -995,8 +995,8 @@ def kinkakuji(path):
         occupied.append((x, y))
         z = terrain_h(x, y)
         k = rng.random()
-        if k < 0.3:
-            b.conifer(x, y, z, rng.uniform(13, 19), (lf_dark, lf_dark), core_p, bark)
+        if k < 0.15:
+            b.conifer(x, y, z, rng.uniform(12, 16), (lf_dark, lf_dark), core_p, bark)
         elif k < 0.55:
             b.pine(x, y, z, rng.uniform(8, 12), pine_m, core_p, bark_r, spread=1.0)
         elif k < 0.75:

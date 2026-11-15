@@ -20,10 +20,10 @@ if os.environ.get("TL_CAM"):  # 開發用：覆寫預覽相機
 
 def callanish(path):
     b = Builder("Callanish", seed=23)
-    gneiss = b.tex("gneiss", "rock_04", tile=1.3, tint="#6c6d66", normal=2.0, rough=0.85)
-    gneiss2 = b.tex("gneiss2", "rock_04", tile=1.0, tint="#5f615c", normal=2.0, rough=0.9)
-    lichen = b.tex("lichen", "rock_04", tile=1.2, tint="#6b6c5e", normal=1.8, rough=0.9)
-    grass = b.tex("grass", "grass_ground", tile=2.5, tint="#587230", normal=1.0, rough=0.95)
+    gneiss = b.tex("gneiss", "marble_rock_01", tile=2.2, tint="#5d5f5b", normal=1.6, rough=0.85)
+    gneiss2 = b.tex("gneiss2", "marble_rock_01", tile=1.6, tint="#4f524f", normal=1.6, rough=0.9)
+    lichen = b.tex("lichen", "rock_04", tile=1.2, tint="#62645a", normal=2.0, rough=0.9)
+    grass = b.tex("grass", "rocky_terrain_02", tile=4.0, gain=0.95, normal=0.6, rough=0.95)
     soil = b.color("soil", "#4a3c2a", rough=0.95)
     r = b.rng
 
@@ -33,7 +33,7 @@ def callanish(path):
 
     b.ground_disc(grass, 115, soil, depth=2.5, seg=96, rings=36, height_fn=gh)
 
-    def stone(x, y, h, w, t, face, lean=(0.0, 0.0), mi=None, sharp=0.3):
+    def stone(x, y, h, w, t, face, lean=(0.0, 0.0), mi=None, sharp=0.18):
         """片麻岩石板：寬 w、厚 t、高 h；face 為石面朝向角（弧度）；頂端收尖"""
         z0 = gh(x, y)
         mi = mi if mi is not None else r.choice((gneiss, gneiss, gneiss2, lichen))
@@ -50,20 +50,20 @@ def callanish(path):
             along = loc.dot(side)
             perp = loc - side * along
             along = along * shrink + top_off * w * 0.5 * k ** 2
-            if k > 0.75:  # 斜切、不規則的頂面
-                v.co.z -= (k - 0.75) * h * (0.35 * along / max(w, 0.1) * slant)
+            if k > 0.7:  # 斜切、不規則的頂面
+                v.co.z -= (k - 0.7) * h * (0.6 * along / max(w, 0.1) * slant)
             # 片麻岩的縱向節理：沿高度拉長的雜訊形成直條凹凸
             g = 1 + 0.08 * noise.noise(Vector((v.co.x * 1.5 + seed, v.co.y * 1.5, v.co.z * 0.6))) + 0.07 * noise.noise(Vector((v.co.x * 4.0 + seed, v.co.y * 4.0, v.co.z * 0.15)))
             v.co = Vector((x, y, v.co.z)) + (side * along + perp * (1 - 0.3 * k)) * g
 
     # ---- 中央巨石（4.8 m）
-    stone(0.0, 0.0, 4.8, 1.5, 0.38, math.radians(-8), mi=gneiss, sharp=0.3)
+    stone(0.0, 0.0, 4.8, 1.5, 0.38, math.radians(-8), mi=gneiss, sharp=0.18)
     # ---- 13 石圓環（略呈扁圓）
     ring_h = [3.4, 2.9, 3.6, 3.1, 3.3, 2.6, 3.0, 3.5, 2.8, 3.2, 3.6, 3.0, 2.7]
     for i, h in enumerate(ring_h):
         a = TAU * i / 13 + math.radians(6)
         x, y = 6.2 * math.cos(a), 6.8 * math.sin(a)
-        stone(x, y, h, r.uniform(0.9, 1.4), r.uniform(0.32, 0.45), a + r.uniform(-0.25, 0.25), (r.uniform(-0.05, 0.05), r.uniform(-0.05, 0.05)), sharp=r.uniform(0.1, 0.35))
+        stone(x, y, h, r.uniform(0.9, 1.4), r.uniform(0.32, 0.45), a + r.uniform(-0.25, 0.25), (r.uniform(-0.05, 0.05), r.uniform(-0.05, 0.05)), sharp=r.uniform(0.05, 0.22))
     # ---- 圓環內東側的石室墓：低矮石堆與內室石板
     cx, cy = 2.6, -0.4
     for i in range(70):
@@ -92,7 +92,7 @@ def callanish(path):
         for d, h in rows:
             off = side * (3.4 + d * 0.012) + r.uniform(-0.3, 0.3)
             x, y = fx * d + px_ * off, fy * d + py_ * off
-            stone(x, y, h, r.uniform(0.7, 1.2), r.uniform(0.3, 0.45), az + math.pi / 2 + r.uniform(-0.3, 0.3), sharp=0.3)
+            stone(x, y, h, r.uniform(0.7, 1.2), r.uniform(0.3, 0.45), az + math.pi / 2 + r.uniform(-0.3, 0.3), sharp=0.18)
     # ---- 東、南、西單列石排
     for bearing, rows in ((82, [(10, 1.7), (14, 1.4), (18, 1.6), (22, 1.2)]),
                           (190, [(10, 2.2), (14, 1.9), (18, 1.6), (22, 1.5), (26, 1.8)]),
@@ -100,5 +100,5 @@ def callanish(path):
         a = math.radians(bearing)
         for d, h in rows:
             x, y = math.sin(a) * d, math.cos(a) * d
-            stone(x, y, h, r.uniform(0.7, 1.2), r.uniform(0.3, 0.45), math.pi - a + r.uniform(-0.3, 0.3), sharp=0.3)
+            stone(x, y, h, r.uniform(0.7, 1.2), r.uniform(0.3, 0.45), math.pi - a + r.uniform(-0.3, 0.3), sharp=0.18)
     b.export(path)

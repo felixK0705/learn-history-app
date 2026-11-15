@@ -16,27 +16,28 @@ from mathutils import Matrix
 
 from lib import TAU, Builder
 
-from .hagia_sophia import arched_window, broadleaf, capture, dome, half_dome, minaret, window_row
+from .hagia_sophia import arched_window, broadleaf, capture, cypress, dome, foliage_mats, half_dome, minaret, window_row
 
-CAMERA = ((2, -2, 30), 20, -10, 118, 27)
+CAMERA = ((2, 0, 28), 7, -4, 140, 33)
 
 
 def blue_mosque(path):
     b = Builder("BlueMosque", seed=43)
     bm = b.bm
-    stone = b.tex("stone", "white_sandstone_blocks_02", tile=4.0, tint="#a3a29d", rough=0.85, normal=0.6)
-    stone_d = b.color("stone_shade", "#9a9994", rough=0.85)
+    stone = b.tex("stone", "white_sandstone_blocks_02", tile=4.0, tint="#98978f", rough=0.85, normal=0.8)
+    stone_d = b.color("stone_shade", "#8e8c86", rough=0.85)
     trim = b.color("trim", "#cfcdc6", rough=0.75)
-    lead = b.color("lead", "#848d95", rough=0.55, metal=0.15)
+    lead = b.color("lead", "#7e878f", rough=0.6, metal=0.1)
     win = b.color("window", "#2a2c30", rough=0.3)
     gold = b.color("gold", "#c9a14a", rough=0.3, metal=0.9)
     pave = b.tex("pave", "gravel_floor", tile=4.0, tint="#88837a", rough=0.95, normal=0)
     marble = b.color("court_marble", "#d9d6cf", rough=0.6)
     grass = b.tex("grass", "grass_ground", tile=8.0, tint="#5f7c3c", gain=0.92, rough=0.95, normal=0)
     soil = b.color("soil", "#6b5a45", rough=0.95)
-    leaves = [b.color("leaf_l", "#6b8f3e", rough=0.85), b.color("leaf_m", "#4c6e2c", rough=0.88), b.color("leaf_d", "#34521f", rough=0.9)]
+    leaves = foliage_mats(b)
+    cyp = b.color("cypress", "#2c4020", rough=0.9)
     trunk = b.color("trunk", "#5a4a3a", rough=0.9)
-    palm_leaf = b.color("palm_leaf", "#5b7a2f", rough=0.8)
+    palm_leaf = b.color("palm_leaf", "#56702c", rough=0.8)
     palm_trunk = b.color("palm_trunk", "#8a7254", rough=0.95)
 
     T = lambda x, y, z=0.0: Matrix.Translation((x, y, z))  # noqa: E731
@@ -44,11 +45,14 @@ def blue_mosque(path):
 
     # ---------------------------------------------------------------- 地面與外圍牆
     b.ground_disc(grass, 190, soil, depth=4, rings=20, seg=96)
-    b.box_base(pave, (150, 230, 0.1), (0, 25, 0))
+    b.box_base(pave, (150, 170, 0.1), (0, 55, 0))
+    b.box_base(pave, (150, 30, 0.1), (0, -45, 0))
+    for x0 in (-40, 0, 40):  # 公園步道
+        b.box_base(pave, (4, 55, 0.1), (x0, -87, 0))
     # 外院圍牆（低矮、帶窗）
     for (cx, cy, w, d) in ((0, -72, 150, 1.5), (-75, 25, 1.5, 195), (75, 25, 1.5, 195), (0, 122, 150, 1.5)):
-        b.box_base(stone_d, (w, d, 4.5), (cx, cy, 0))
-        b.box_base(trim, (w + 0.6, d + 0.6, 0.4), (cx, cy, 4.5))
+        b.box_base(stone_d, (w, d, 3.0), (cx, cy, 0))
+        b.box_base(trim, (w + 0.6, d + 0.6, 0.3), (cx, cy, 3.0))
 
     # ---------------------------------------------------------------- 禮拜殿本體
     HX, Y0, Y1 = 27.0, -28.0, 26.0       # 殿身 54 × 54，兩側另有拱廊（總寬約 64 m）
@@ -201,31 +205,43 @@ def blue_mosque(path):
     rng = b.rng
 
     def palm(x, y, h):
-        b.cyl(palm_trunk, 0.45, 0.3, h, (x, y, 0), seg=8)
-        for k in range(14):
-            a = TAU * k / 14 + rng.uniform(-0.1, 0.1)
-            droop = rng.uniform(0.35, 0.8)
-            L = rng.uniform(4.5, 6.0)
-            pts = []
-            for i in range(6):
-                u = i / 5
-                r = L * u
-                z = h + 1.2 * math.sin(math.pi * u * 0.6) - droop * 3.0 * u * u
-                w = 0.9 * math.sin(math.pi * min(1, u * 1.1 + 0.05))
-                pts.append((r, z, w))
-            vs_l = [bm.verts.new((x + math.cos(a) * r - math.sin(a) * w, y + math.sin(a) * r + math.cos(a) * w, z)) for r, z, w in pts]
-            vs_r = [bm.verts.new((x + math.cos(a) * r + math.sin(a) * w, y + math.sin(a) * r - math.cos(a) * w, z - 0.15)) for r, z, w in pts]
-            for i in range(5):
-                f = bm.faces.new([vs_l[i], vs_l[i + 1], vs_r[i + 1], vs_r[i]])
-                f.material_index = palm_leaf
-                f.smooth = True
+        """加那利海棗：粗幹＋球狀樹冠，三層羽狀葉（中肋 V 形折、葉尖下垂）"""
+        b.cyl(palm_trunk, 0.6, 0.45, h, (x, y, 0), seg=10)
+        b.ico(palm_trunk, 0.9, (x, y, h), subdiv=1)
+        for tier, (n, lift, dr) in enumerate(((10, 1.6, 0.25), (12, 0.7, 0.55), (12, -0.1, 0.95))):
+            for k in range(n):
+                a = TAU * (k + 0.5 * tier) / n + rng.uniform(-0.12, 0.12)
+                droop = dr + rng.uniform(-0.1, 0.15)
+                L = rng.uniform(5.0, 6.5)
+                mid, lft, rgt = [], [], []
+                for i in range(8):
+                    u = i / 7
+                    r = L * u * math.cos(droop * u)
+                    z = h + lift * (1 - u) + 1.4 * math.sin(math.pi * u * 0.5) * (1 - droop) - droop * 3.2 * u * u
+                    w = 0.75 * math.sin(math.pi * min(1.0, u * 1.05 + 0.04))
+                    cx, cy = x + math.cos(a) * r, y + math.sin(a) * r
+                    mid.append(bm.verts.new((cx, cy, z)))
+                    lft.append(bm.verts.new((cx - math.sin(a) * w, cy + math.cos(a) * w, z - 0.35 * w)))
+                    rgt.append(bm.verts.new((cx + math.sin(a) * w, cy - math.cos(a) * w, z - 0.35 * w)))
+                for i in range(7):
+                    for side in (lft, rgt):
+                        f = bm.faces.new([mid[i], mid[i + 1], side[i + 1], side[i]])
+                        f.material_index = palm_leaf
+                        f.smooth = True
 
     def in_complex(x, y):
         return -48 < x < 48 and -46 < y < 104
 
-    for x, y in b.scatter(46, 50, 185, min_dist=12, avoid=lambda x, y: in_complex(x, y) or abs(x) > 140):
+    def cam_side(x, y):  # 參考照視線前方保持開闊，只留幾棵樹與棕櫚
+        return y < -40 and -70 < x < 90
+
+    for i, (x, y) in enumerate(((36, -80), (50, -86), (-46, -84), (78, -60), (-80, -50), (22, -84))):
+        broadleaf(b, x, y, rng.uniform(11, 15), leaves, trunk)
+    for x, y in ((-68, -62), (-50, 60), (66, -48)):
+        cypress(b, x, y, rng.uniform(13, 17), cyp, trunk)
+    for x, y in b.scatter(40, 50, 185, min_dist=12, avoid=lambda x, y: in_complex(x, y) or abs(x) > 140 or cam_side(x, y)):
         broadleaf(b, x, y, rng.uniform(12, 18), leaves, trunk)
-    for x, y in ((62, -10), (60, 20), (-62, 40), (64, 60)):
+    for x, y in ((-12, -80), (-30, -82), (-62, 40), (4, -86)):
         palm(x, y, rng.uniform(8, 10))
 
     b.export(path)

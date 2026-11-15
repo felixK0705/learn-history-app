@@ -18,7 +18,7 @@ from mathutils import Matrix, Vector, noise
 from lib import TAU, Builder
 
 # 目標點、方位角（0 = 從南往北看）、仰角、距離、焦距
-CAMERA = ((6, 0, 28), 12, 5, 195, 40)
+CAMERA = ((4, 0, 27), 22, 6, 185, 40)
 
 
 # ====================================================================== 共用工具（藍色清真寺也會引用）
@@ -163,7 +163,7 @@ def leaf_blob(b, mi, loc, rx, ry, rz, lump=0.3, subdiv=2):
     r = bmesh.ops.create_icosphere(b.bm, subdivisions=subdiv, radius=1.0, matrix=Matrix.Identity(4))
     for v in r["verts"]:
         p = v.co.copy()
-        n_ = noise.noise(p * 1.4 + off) * 0.55 + noise.noise(p * 3.2 + off) * 0.3 + noise.noise(p * 7.0 + off) * 0.15
+        n_ = noise.noise(p * 1.4 + off) * 0.5 + noise.noise(p * 3.2 + off) * 0.3 + noise.noise(p * 7.5 + off) * 0.28
         k = 1 + lump * n_
         if p.z < -0.3:
             k *= 0.85 + 0.15 * (1 + p.z)  # 底部略收平
@@ -173,22 +173,42 @@ def leaf_blob(b, mi, loc, rx, ry, rz, lump=0.3, subdiv=2):
         f.smooth = True
 
 
-def broadleaf(b, x, y, h, leaves, trunk, z=0.0, spread=1.0):
-    """闊葉樹：主幹＋12–16 個大小不一的葉團分佈在橢球殼上（上亮下暗、外輪廓破碎）"""
+def foliage_mats(b, cols=("#5d7b33", "#43602a", "#2c431c"), tag=""):
+    """葉面材質：草地貼圖細密重複＋上色，遠看像成簇的葉子而非塑膠球"""
+    return [b.color(f"leaf{tag}_{k}", c, rough=0.88) for k, c in enumerate(cols)]
+
+
+def broadleaf(b, x, y, h, leaves, trunk, z=0.0, spread=1.0, blobs=None):
+    """闊葉樹：主幹＋分枝＋多個大小不一的不規則葉團（上亮下暗、外輪廓破碎）"""
     rng = b.rng
-    R = h * rng.uniform(0.34, 0.42) * spread
-    Rz_ = R * rng.uniform(0.75, 0.9)
+    R = h * rng.uniform(0.36, 0.44) * spread
+    Rz_ = R * rng.uniform(0.78, 0.92)
     cz = z + h - Rz_
-    b.cyl(trunk, h * 0.035, h * 0.022, (cz - z) * 0.9, (x, y, z), seg=6)
-    leaf_blob(b, leaves[2], (x, y, cz), R * 0.72, R * 0.72, Rz_ * 0.7, lump=0.3, subdiv=1)
-    n = rng.randint(12, 16)
+    b.cyl(trunk, h * 0.03, h * 0.02, (cz - z) * 0.95, (x, y, z), seg=6)
+    for _ in range(3):  # 主枝
+        th = rng.uniform(0, TAU)
+        L = R * 0.7
+        b.cyl(trunk, h * 0.014, h * 0.008, L, (x, y, z + (cz - z) * 0.65), seg=4,
+              rot=(math.cos(th) * 0.8, math.sin(th) * 0.8, 0))
+    leaf_blob(b, leaves[2], (x, y, cz), R * 0.75, R * 0.75, Rz_ * 0.72, lump=0.25, subdiv=2)
+    n = blobs or rng.randint(10, 13)
     for _ in range(n):
         th = rng.uniform(0, TAU)
-        ph = rng.uniform(-0.5, 1.25)
+        ph = rng.uniform(-0.35, 1.2)
         px, py, pz = math.cos(th) * math.cos(ph), math.sin(th) * math.cos(ph), math.sin(ph)
-        br = R * rng.uniform(0.28, 0.42)
-        mi = leaves[0] if pz > 0.45 else (leaves[2] if pz < -0.1 else leaves[1])
-        leaf_blob(b, mi, (x + px * R * 0.78, y + py * R * 0.78, cz + pz * Rz_ * 0.75), br, br, br * 0.85, lump=0.35, subdiv=1)
+        br = R * rng.uniform(0.28, 0.44)
+        mi = leaves[0] if pz > 0.5 else (leaves[2] if pz < 0.0 else leaves[1])
+        leaf_blob(b, mi, (x + px * R * 0.72, y + py * R * 0.72, cz + pz * Rz_ * 0.7), br, br * rng.uniform(0.85, 1.15), br * 0.8,
+                  lump=0.4, subdiv=2)
+
+
+def cypress(b, x, y, h, mi, trunk, z=0.0):
+    """地中海柏樹：細長火焰形"""
+    r = h * b.rng.uniform(0.09, 0.12)
+    b.cyl(trunk, r * 0.25, r * 0.2, h * 0.12, (x, y, z), seg=5)
+    off = b.rng.uniform(0, 9)
+    b.lathe(mi, [(0, z + h * 0.05), (r * 0.8, z + h * 0.1), (r, z + h * 0.3), (r * 0.85, z + h * 0.6), (r * 0.45, z + h * 0.85), (0, z + h)],
+            (x, y, 0), seg=10, smooth=True, radial=lambda t: 1 + 0.12 * math.sin(t * 5 + off) + 0.06 * math.sin(t * 11 + off))
 
 
 def conifer(b, x, y, h, mats, trunk, z=0.0):
@@ -209,11 +229,11 @@ def conifer(b, x, y, h, mats, trunk, z=0.0):
 def hagia_sophia(path):
     b = Builder("HagiaSophia", seed=31)
     bm = b.bm
-    plaster = b.tex("plaster", "plastered_wall_04", tile=6.0, tint="#dcab94", gain=1.0, rough=0.9, normal=0.5)
-    plaster_d = b.color("plaster_shade", "#cf9c86", rough=0.9)
+    plaster = b.tex("plaster", "plastered_wall_04", tile=6.0, tint="#e3a98c", gain=1.0, rough=0.9, normal=0.5)
+    plaster_d = b.color("plaster_shade", "#d39c82", rough=0.9)
     recess = b.color("recess", "#bf6f52", rough=0.9)
     stone = b.tex("stone", "white_sandstone_blocks_02", tile=4.0, tint="#d8d3c8", rough=0.85, normal=0.6)
-    buttress = b.tex("buttress", "plastered_wall_04", tile=8.0, tint="#cbbfb0", rough=0.9, normal=0.6)
+    buttress = b.tex("buttress", "plastered_wall_04", tile=7.0, tint="#b7aea2", rough=0.9, normal=0.9)
     brick = b.tex("brick", "brick_wall_006", tile=3.0, tint="#b0684e", rough=0.9, normal=0.6)
     lead = b.color("lead", "#a4abaf", rough=0.45, metal=0.35)
     lead_d = b.color("lead_dark", "#5d6469", rough=0.5, metal=0.3)
@@ -221,9 +241,11 @@ def hagia_sophia(path):
     gold = b.color("gold", "#c9a14a", rough=0.3, metal=0.9)
     trim = b.color("trim", "#e6ddd0", rough=0.7)
     pave = b.tex("pave", "gravel_floor", tile=4.0, tint="#9d978c", rough=0.95, normal=0)
-    grass = b.tex("grass", "grass_ground", tile=8.0, tint="#5f7c3c", gain=0.92, rough=0.95, normal=0)
+    grass = b.tex("grass", "grass_ground", tile=5.0, tint="#5a6a3a", gain=0.85, rough=0.95, normal=0)
     soil = b.color("soil", "#6b5a45", rough=0.95)
-    leaves = [b.color("leaf_l", "#6b8f3e", rough=0.85), b.color("leaf_m", "#4c6e2c", rough=0.88), b.color("leaf_d", "#34521f", rough=0.9)]
+    leaves = foliage_mats(b)
+    leaves_b = foliage_mats(b, ("#77783a", "#58672e", "#2e451c"), "b")
+    cyp = b.color("cypress", "#2c4020", rough=0.9)
     trunk = b.color("trunk", "#5a4a3a", rough=0.9)
 
     T = lambda x, y, z=0.0: Matrix.Translation((x, y, z))  # noqa: E731
@@ -237,7 +259,8 @@ def hagia_sophia(path):
     # ---------------------------------------------------------------- 主體量：側廊＋樓廊（約 76 × 71 m）
     XW, XE, YS = -36.0, 40.0, 35.5
     H_AISLE = 23.0
-    b.box_base(plaster, (XE - XW, 2 * YS, H_AISLE), ((XW + XE) / 2, 0, 0))
+    aisle = b.tex("aisle", "plastered_wall_04", tile=6.0, tint="#d6b29c", rough=0.9, normal=0.6)
+    b.box_base(aisle, (XE - XW, 2 * YS, H_AISLE), ((XW + XE) / 2, 0, 0))
     b.box_base(lead, (XE - XW + 0.8, 2 * YS + 0.8, 0.45), ((XW + XE) / 2, 0, H_AISLE))
     # 側廊屋頂（鉛覆、緩坡）
     for s in (-1, 1):
@@ -249,7 +272,7 @@ def hagia_sophia(path):
     for s in (-1, 1):
         for k in range(9):
             x = XW + 1.0 + (XE - XW - 2.0) * k / 8
-            b.box_base(plaster_d, (1.6, 0.8, H_AISLE), (x, s * (YS + 0.4), 0))
+            b.box_base(aisle, (1.6, 0.8, H_AISLE), (x, s * (YS + 0.4), 0))
         b.box_base(stone, (XE - XW + 1.2, 1.0, 2.2), ((XW + XE) / 2, s * (YS + 0.2), 0))
         b.box_base(plaster_d, (XE - XW + 0.6, 0.9, 0.6), ((XW + XE) / 2, s * (YS + 0.25), 11.0))
     # 側廊外牆兩層窗
@@ -276,8 +299,8 @@ def hagia_sophia(path):
     for sx in (-1, 1):
         for sy in (-1, 1):
             cx, cy = sx * (S + PW / 2 - 1.0), sy * (S + 4.5)
-            b.box_base(plaster, (PW, 11.0, Z_PLAT + 3.0), (cx, cy, 0))
-            b.box_base(trim, (PW + 0.5, 11.5, 0.5), (cx, cy, Z_PLAT + 3.0))
+            b.box_base(plaster, (PW, 11.0, Z_PLAT - 0.5), (cx, cy, 0))
+            b.box_base(trim, (PW + 0.5, 11.5, 0.5), (cx, cy, Z_PLAT - 0.5))
             # 圓形徽飾
             M = T(cx, cy - sy * 5.55, Z_PLAT - 1.5) @ Rz(0 if sy < 0 else math.pi) @ Matrix.Rotation(math.pi / 2, 4, "X")
             vs = capture(b, lambda: b.cyl(trim, 1.8, 1.8, 0.15, (0, 0, 0), seg=20))
@@ -379,10 +402,18 @@ def hagia_sophia(path):
             M = T(x + math.cos(a) * r * 0.93, y + math.sin(a) * r * 0.93, 2.0) @ Rz(a + math.pi / 2)
             arched_window(b, win, 1.2, 3.0, M, depth=0.1)
 
-    # ---------------------------------------------------------------- 樹木
+    # ---------------------------------------------------------------- 樹木（南側公園濃密、四周點綴）
     rng = b.rng
-    for x, y in b.scatter(60, 50, 170, min_dist=11,
-                          avoid=lambda x, y: (-66 < x < 58 and -50 < y < 50) or (-35 < x < 25 and -72 < y < -52) or abs(x + 70) < 10):
-        broadleaf(b, x, y, rng.uniform(13, 20), leaves, trunk)
+
+    def busy(x, y):
+        return (-50 < x < 52 and -46 < y < 46) or (-36 < x < 24 and -72 < y < -50) or abs(x + 70) < 8 or math.hypot(x, y) > 165
+
+    pts = b.scatter(26, 48, 95, min_dist=9, avoid=lambda x, y: busy(x, y) or y > -20)
+    pts += b.scatter(22, 60, 165, min_dist=14, avoid=lambda x, y: busy(x, y) or y < -20)
+    for i, (x, y) in enumerate(pts):
+        if i % 6 == 5:
+            cypress(b, x, y, rng.uniform(14, 19), cyp, trunk)
+        else:
+            broadleaf(b, x, y, rng.uniform(12, 19), leaves if i % 3 else leaves_b, trunk)
 
     b.export(path)

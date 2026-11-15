@@ -250,7 +250,6 @@ export default function StoryPlayer({ story, onExit }: { story: Story; onExit: (
               </button>
             </div>
           </div>
-          {slide.image === null && <p className="mt-2 text-center text-[11px] text-white/50">找不到合適的配圖，以漸層背景呈現</p>}
         </div>
       )}
 

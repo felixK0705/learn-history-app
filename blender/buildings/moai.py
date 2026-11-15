@@ -14,18 +14,28 @@ from lib import TAU, Builder
 from buildings.sphinx import lerp_table, loft
 
 # 目標點、方位角、仰角、距離、焦距（對應參考照：石台東北端前方低角度）
-CAMERA = ((27.0, 0.0, 5.5), 64.0, -3.0, 38.0, 24.0)
+CAMERA = ((30.0, 0.0, 4.5), 42.0, 3.0, 30.0, 18.0)
 if os.environ.get("TL_CAM"):  # 開發用：覆寫預覽相機
     CAMERA = ast.literal_eval(os.environ["TL_CAM"])
 
 # 摩艾外形（以總高 H 正規化）：z, 半寬, 前深, 後深
 PROFILE = [
-    (0.00, 0.265, 0.175, 0.150), (0.25, 0.262, 0.180, 0.145), (0.40, 0.250, 0.185, 0.135),
-    (0.455, 0.232, 0.150, 0.130), (0.475, 0.222, 0.135, 0.130), (0.50, 0.220, 0.210, 0.135),
-    (0.525, 0.222, 0.205, 0.137), (0.545, 0.224, 0.172, 0.138), (0.60, 0.228, 0.162, 0.142),
-    (0.78, 0.235, 0.155, 0.150), (0.815, 0.238, 0.155, 0.150), (0.835, 0.240, 0.205, 0.150),
-    (0.87, 0.237, 0.188, 0.147), (0.93, 0.230, 0.125, 0.138), (0.975, 0.208, 0.068, 0.116),
-    (1.00, 0.160, 0.020, 0.078),
+    (0.0, 0.18, 0.143, 0.123),
+    (0.25, 0.178, 0.148, 0.119),
+    (0.4, 0.17, 0.152, 0.111),
+    (0.455, 0.158, 0.123, 0.107),
+    (0.475, 0.151, 0.111, 0.107),
+    (0.5, 0.15, 0.172, 0.111),
+    (0.525, 0.151, 0.168, 0.112),
+    (0.545, 0.152, 0.141, 0.113),
+    (0.6, 0.155, 0.133, 0.116),
+    (0.78, 0.16, 0.127, 0.123),
+    (0.815, 0.162, 0.127, 0.123),
+    (0.835, 0.163, 0.168, 0.123),
+    (0.87, 0.161, 0.154, 0.121),
+    (0.93, 0.156, 0.102, 0.113),
+    (0.975, 0.141, 0.056, 0.095),
+    (1.0, 0.109, 0.016, 0.064),
 ]
 
 
@@ -60,12 +70,12 @@ def moai_statue(b, mi, x, y, H, yaw=0.0, seed=0, lean=0.0, z0=0.0):
 
     # 鼻：長而挺，鼻尖在下
     nr = []
-    for u, w, f in ((0.585, 0.055, 0.215), (0.60, 0.062, 0.232), (0.64, 0.050, 0.222), (0.72, 0.040, 0.195), (0.80, 0.032, 0.170), (0.83, 0.030, 0.160)):
+    for u, w, f in ((0.585, 0.044, 0.176), (0.60, 0.050, 0.19), (0.64, 0.040, 0.182), (0.72, 0.032, 0.16), (0.80, 0.026, 0.139), (0.83, 0.024, 0.131)):
         z = u * H
-        nr.append([P(0.13 * H, -w * H, z), P(f * H, -w * 0.45 * H, z), P(f * H, w * 0.45 * H, z), P(0.13 * H, w * H, z)])
+        nr.append([P(0.105 * H, -w * H, z), P(f * H, -w * 0.45 * H, z), P(f * H, w * 0.45 * H, z), P(0.105 * H, w * H, z)])
     loft(b, mi, nr, smooth=False)
     # 噘起的嘴唇
-    for u, w, f in ((0.565, 0.085, 0.188), (0.548, 0.080, 0.182)):
+    for u, w, f in ((0.565, 0.06, 0.154), (0.548, 0.056, 0.149)):
         z = u * H
         b.rock(mi, (0.03 * H, w * 2 * H, 0.016 * H), tuple(P(f * H - 0.012 * H, 0, z)), rot=(0, 0, yaw), rough=0.04, subdiv=1, seed=seed)
     # 長耳
@@ -91,11 +101,12 @@ def moai_statue(b, mi, x, y, H, yaw=0.0, seed=0, lean=0.0, z0=0.0):
 
 def moai(path):
     b = Builder("Moai", seed=5)
-    tuff = b.tex("tuff", "rock_04", tile=2.0, tint="#4d3f2c", normal=1.8, rough=0.9)
-    scoria = b.tex("scoria", "rock_04", tile=1.2, tint="#4a1d14", normal=1.8, rough=0.95)
-    basalt = b.tex("basalt", "gray_rocks", tile=3.0, tint="#403b35", normal=1.4, rough=0.9)
-    pave = b.tex("pave", "gray_rocks", tile=2.0, tint="#36322d", normal=1.2, rough=0.9)
-    grass = b.tex("grass", "aerial_grass_rock", tile=13.0, gain=0.72, normal=0.0, rough=0.95)
+    tuff = b.tex("tuff", "rock_04", tile=2.0, tint="#3d3426", normal=1.8, rough=0.9)
+    tuff2 = b.tex("tuff2", "rock_04", tile=2.0, tint="#4a4436", normal=1.8, rough=0.9)
+    scoria = b.tex("scoria", "rock_04", tile=1.2, tint="#3f1a12", normal=1.8, rough=0.95)
+    basalt = b.tex("basalt", "gray_rocks", tile=3.0, tint="#575046", normal=1.4, rough=0.9)
+    pave = b.tex("pave", "gray_rocks", tile=2.0, tint="#3e3830", normal=1.2, rough=0.9)
+    grass = b.tex("grass", "aerial_grass_rock", tile=9.0, gain=0.8, normal=0.0, rough=0.95)
     cobble = basalt
     r = b.rng
 
@@ -120,35 +131,37 @@ def moai(path):
     # 兩翼低矮石台
     for sgn in (-1, 1):
         b.box_base(basalt, (36, 4.0, 0.75), (sgn * (L / 2 + 18), 0.8, -0.4))
-    # 前方鋪石坡道（poro 圓石）
+    # 前方鋪石坡道（poro 圓石）：靠牆的碎石堆，往外漸疏並融入草地
     RW = 6.5
-    ramp_top = Hh * 0.35
 
-    def ramp_z(py):
-        k = (-D / 2 - py) / RW
-        return ramp_top + (-0.15 - ramp_top) * k
+    def ramp_z(px, py):
+        k = max(0.0, min(1.0, (-D / 2 - py) / 3.0))
+        return (Hh * 0.45) * (1 - k) ** 1.5 + (gh(px, py) - 0.4) * k
 
-    loft(b, pave, [[Vector((x, -D / 2 + 0.1, -0.6)), Vector((x, -D / 2 - RW - 0.5, -0.6)), Vector((x, -D / 2 - RW - 0.5, -0.2)), Vector((x, -D / 2 + 0.1, ramp_top))] for x in (-L / 2, L / 2)], smooth=False)
-    for i in range(650):
-        px, py = r.uniform(-L / 2 + 0.3, L / 2 - 0.3), -D / 2 - RW * math.sqrt(r.random())
-        s = r.uniform(0.35, 0.75)
-        b.rock(cobble, (s, s * 0.8, s * 0.45), (px, py, ramp_z(py) + 0.04), rot=(0, 0, r.uniform(0, TAU)), rough=0.08, subdiv=1, seed=i, round_=0.8)
+    loft(b, pave, [[Vector((x, -D / 2 + 0.1, -0.6)), Vector((x, -D / 2 - 3.2, -1.5)), Vector((x, -D / 2 - 3.2, -0.9)), Vector((x, -D / 2 + 0.1, Hh * 0.45))] for x in (-L / 2, L / 2)], smooth=False)
+    for i in range(900):
+        px, py = r.uniform(-L / 2 + 0.3, L / 2 - 0.3), -D / 2 - RW * r.random() ** 1.8
+        s = r.uniform(0.3, 0.75)
+        b.rock(cobble, (s, s * 0.8, s * 0.45), (px, py, ramp_z(px, py) + 0.04), rot=(0, 0, r.uniform(0, TAU)), rough=0.1, subdiv=1, seed=i, round_=0.75)
     # 草地上散落的黑色熔岩石
-    for i in range(320):
-        px, py = r.uniform(-100, 100), r.uniform(-70, -D / 2 - RW - 1)
-        s = r.uniform(0.4, 1.3)
-        b.rock(basalt, (s, s * 0.8, s * 0.3), (px, py, gh(px, py) - 0.4 + s * 0.06), rot=(0, 0, r.uniform(0, TAU)), rough=0.15, subdiv=1, seed=900 + i, round_=0.6)
+    for i in range(520):
+        px, py = r.uniform(-100, 100), -D / 2 - 2 - 60 * r.random() ** 1.6
+        s = r.uniform(0.35, 1.2)
+        b.rock(basalt, (s, s * 0.8, s * 0.3), (px, py, gh(px, py) - 0.4 + s * 0.04), rot=(0, 0, r.uniform(0, TAU)), rough=0.15, subdiv=1, seed=900 + i, round_=0.6)
 
     # ---- 15 尊摩艾（由西往東）；第 14 尊戴 pukao 頂髻
     heights = [5.6, 6.3, 5.9, 6.6, 6.1, 6.8, 6.2, 7.1, 6.5, 7.3, 6.9, 7.6, 7.0, 7.7, 8.7]
     sp = 6.2
     for k, H in enumerate(heights):
         x = (k - 7) * sp + r.uniform(-0.4, 0.4)
-        mi = tuff
-        b.box_base(basalt, (H * 0.62, H * 0.42, 0.45), (x, 0.3, Hh))  # 基座
+        mi = tuff2 if k in (3, 8, 12) else tuff
+        b.box_base(basalt, (H * 0.44, H * 0.36, 0.45), (x, 0.3, Hh))  # 基座
         moai_statue(b, mi, x, 0.3, H, yaw=r.uniform(-0.06, 0.06), seed=k, z0=Hh + 0.3)
         if k == 13:  # 紅色火山渣頂髻
             top = Hh + 0.3 + H
-            b.rock(scoria, (H * 0.46, H * 0.42, H * 0.24), (x, 0.3 + H * 0.01, top + H * 0.08), rough=0.1, subdiv=3, seed=77, round_=0.55)
+            # 頂髻：略呈鼓形的圓柱（直徑約 2 m、高約 1.6 m）
+            vs = b.lathe(scoria, [(0, -0.1), (1.1, -0.1), (1.25, 0.5), (1.2, 1.1), (1.05, 1.5), (0.0, 1.6)], (x, 0.3 + H * 0.01, top - 0.25), seg=20, smooth=True)
+            for v in vs:
+                v.co += Vector((0, 0, 1)) * 0.06 * noise.noise(v.co * 1.7) + (v.co - Vector((x, 0.3, v.co.z))) * 0.08 * noise.noise(v.co * 2.3 + Vector((3, 1, 0)))
 
     b.export(path)

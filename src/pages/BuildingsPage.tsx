@@ -202,9 +202,6 @@ export default function BuildingsPage() {
           </CtrlBtn>
         )}
       </div>
-      <p className="pointer-events-none absolute bottom-7 left-1/2 hidden -translate-x-1/2 text-xs text-white/70 [text-shadow:0_1px_4px_rgba(0,20,60,0.9)] xl:block">
-        拖曳環視・滾輪縮放
-      </p>
 
       {/* 右側：建築資訊 */}
       {infoOpen && (

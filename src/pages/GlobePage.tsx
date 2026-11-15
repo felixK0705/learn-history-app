@@ -1,13 +1,12 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import { Link, useSearchParams } from "react-router-dom";
-import { Box, Dices, Landmark, Menu, Pause, Play, RotateCcw, X } from "lucide-react";
+import { useSearchParams } from "react-router-dom";
+import { Dices, Menu, Pause, Play, RotateCcw, X } from "lucide-react";
 import HeaderSlot from "../components/HeaderSlot";
 import GlobeView, { type GlobeHandle } from "../components/globe/GlobeView";
 import CountryPanel from "../components/country/CountryPanel";
 import StarField from "../components/StarField";
 import { gsap, prefersReducedMotion, useGSAP, useReveal } from "../lib/motion";
 import { countries, countryByIso } from "../data/world";
-import type { Building } from "../data/buildings";
 import { useVisited } from "../lib/progress";
 
 export default function GlobePage() {
@@ -17,10 +16,7 @@ export default function GlobePage() {
 
   const globe = useRef<GlobeHandle>(null);
   const [ready, setReady] = useState(false);
-  const [hoverName, setHoverName] = useState<string | null>(null);
   const [autoRotate, setAutoRotate] = useState(true);
-  const [showLandmarks, setShowLandmarks] = useState(true);
-  const [building, setBuilding] = useState<Building | null>(null);
   const [notice, setNotice] = useState<string | null>(null);
   const [menuOpen, setMenuOpen] = useState(false);
   const { visited, markVisited } = useVisited();
@@ -30,7 +26,6 @@ export default function GlobePage() {
   const globeWrapRef = useRef<HTMLDivElement>(null);
   const placeholderRef = useRef<HTMLDivElement>(null);
   const menuRef = useRef<HTMLDivElement>(null);
-  const buildingRef = useRef<HTMLDivElement>(null);
   const noticeRef = useRef<HTMLDivElement>(null);
 
   // 載入中的地球呼吸效果
@@ -60,12 +55,10 @@ export default function GlobePage() {
   }, { dependencies: [!!selected] });
 
   useReveal(menuRef, [menuOpen], { stagger: ":scope > *", y: -8, each: 0.03, duration: 0.35 });
-  useReveal(buildingRef, [building?.id], { y: 24, duration: 0.5 });
   useReveal(noticeRef, [notice], { y: -16, duration: 0.4 });
 
   const select = useCallback(
     (iso: string | null) => {
-      setBuilding(null);
       if (!iso) {
         setParams({}, { replace: true });
         return;
@@ -118,13 +111,7 @@ export default function GlobePage() {
           selectedIso={selectedIso}
           visited={visited}
           autoRotate={autoRotate && !selected}
-          showLandmarks={showLandmarks}
           onSelectCountry={select}
-          onHoverCountry={setHoverName}
-          onSelectBuilding={(b) => {
-            setBuilding(b);
-            globe.current?.flyTo(b.position[0], b.position[1], 1.3);
-          }}
           onReady={() => setReady(true)}
         />
       </div>
@@ -137,12 +124,7 @@ export default function GlobePage() {
       )}
 
 
-      {/* 頂部列：探索進度文字與圓形選單（參考圖右上角） */}
-      <HeaderSlot slot="header-meta">
-        <span className="hidden sm:inline">
-          已探索 {visited.length} / {countries.length}
-        </span>
-      </HeaderSlot>
+      {/* 頂部列：圓形選單 */}
       <HeaderSlot slot="header-menu">
         <button
           onClick={() => setMenuOpen((v) => !v)}
@@ -160,7 +142,6 @@ export default function GlobePage() {
         <div ref={menuRef} className="glass absolute top-3 right-4 z-40 w-56 rounded-2xl p-1.5 shadow-2xl md:right-6">
           {[
             { icon: autoRotate ? Pause : Play, label: autoRotate ? "停止自轉" : "開始自轉", run: () => setAutoRotate((v) => !v) },
-            { icon: Landmark, label: showLandmarks ? "隱藏建築光點" : "顯示建築光點", run: () => setShowLandmarks((v) => !v) },
             { icon: Dices, label: "隨機探索一個國家", run: randomCountry },
             {
               icon: RotateCcw,
@@ -183,33 +164,6 @@ export default function GlobePage() {
               {label}
             </button>
           ))}
-        </div>
-      )}
-
-      {/* 滑過國家名稱 */}
-      {hoverName && !selected && (
-        <div className="pointer-events-none absolute bottom-6 left-1/2 z-10 -translate-x-1/2 text-[11px] font-semibold tracking-[0.3em] text-white/80 uppercase max-md:hidden">
-          {hoverName}
-        </div>
-      )}
-
-      {/* 地標資訊卡 */}
-      {building && (
-        <div ref={buildingRef} className="glass absolute bottom-20 left-1/2 z-30 w-[min(92%,360px)] -translate-x-1/2 rounded-2xl p-4 shadow-2xl md:bottom-6">
-          <button className="absolute top-3 right-3 text-mute hover:text-ink" onClick={() => setBuilding(null)} aria-label="關閉">
-            <X className="size-4" />
-          </button>
-          <p className="text-[11px] tracking-wider text-glow">
-            {building.era}・{building.location}
-          </p>
-          <h3 className="mt-1 text-lg font-semibold">{building.name}</h3>
-          <p className="mt-1.5 line-clamp-3 text-sm leading-relaxed text-mute">{building.description}</p>
-          <Link
-            to={`/buildings/${building.id}`}
-            className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-white px-3.5 py-1.5 text-sm font-semibold text-deep-800 transition hover:bg-white/90"
-          >
-            <Box className="size-4" /> 觀看 3D 模型
-          </Link>
         </div>
       )}
 

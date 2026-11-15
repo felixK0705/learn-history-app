@@ -183,7 +183,7 @@ export default function AiRelationshipGraph({ initialQuery = "" }: { initialQuer
         <input
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="輸入任何歷史人物，例如：曹操、克麗奧佩脫拉…"
+          placeholder="輸入歷史人物"
           maxLength={60}
           className="min-w-0 flex-1 bg-transparent text-[14px] text-white outline-none placeholder:text-white/45"
           aria-label="要查詢的歷史人物"
@@ -208,7 +208,6 @@ export default function AiRelationshipGraph({ initialQuery = "" }: { initialQuer
                   <UserRound className="size-7 text-glow" />
                 </span>
                 <p className="mt-4 text-lg font-bold">AI 查詢任意人物</p>
-                <p className="mx-auto mt-1.5 max-w-sm text-[13.5px] leading-relaxed text-white/70">輸入任何一位歷史人物，AI 會整理出與他最相關的 10–15 位人物與彼此的關係。</p>
                 <div ref={examplesRef} className="mt-5 flex flex-wrap justify-center gap-2">
                   {EXAMPLES.map((n) => (
                     <button key={n} onClick={() => run(n)} className="chip text-[13px]">
@@ -407,9 +406,6 @@ export default function AiRelationshipGraph({ initialQuery = "" }: { initialQuer
                 )}
                 <p data-reveal className="mt-3 text-[14px] leading-[1.8] text-white/90">
                   {graph.introduction || "（AI 沒有提供簡介）"}
-                </p>
-                <p data-reveal className="mt-4 text-[12px] leading-relaxed text-white/55">
-                  點選圖中人物查看關係；內容由 AI 生成，可能有誤。
                 </p>
               </>
             )}
