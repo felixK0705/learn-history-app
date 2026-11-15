@@ -7,25 +7,25 @@
    {
     "name": "基督新教",
     "percent": 75,
-    "description": "包括五旬節派、聖公會、復臨安息日會、衛理宗等。"
+    "description": "1763 年《巴黎條約》後英國取得聖文森，殖民者帶來聖公會，1787 年衛理公會的托馬斯·柯克開始向非洲奴隸傳教，新教逐漸成為主流。非裔居民融合西非信仰發展出靈恩浸信會（俗稱「震教徒」），1912 年被殖民政府立法禁止，直到 1965 年才解禁。近數十年五旬節派與基督復臨安息日會快速成長，新教各派合計占四分之三人口。"
    },
    {
     "name": "天主教",
     "percent": 6,
-    "description": "規模較小的天主教社群。"
+    "description": "天主教的影響一部分來自 1779–1783 年法國短暫佔領期間及法國移民，另一部分來自 1845 年後被招募來種植園工作的葡萄牙馬德拉群島契約勞工，他們多為天主教徒。由於英國統治下聖公會居於主導地位，天主教始終只是少數教派。"
    },
    {
     "name": "拉斯塔法里教",
     "percent": 2,
-    "description": "規模較小的宗教運動。"
+    "description": "拉斯塔法里運動 1930 年代起源於牙買加，奉 1930 年加冕的衣索比亞皇帝海爾·塞拉西為神聖人物，強調非洲認同與回歸非洲。1970 年代隨著雷鬼音樂在東加勒比海流行，拉斯塔法里信仰傳入聖文森，信徒長期面臨社會歧視與大麻相關的法律問題，人數不多但文化影響明顯。"
    },
    {
     "name": "無宗教",
     "percent": 1,
-    "description": "未認同任何宗教的人口。"
+    "description": "聖文森社會宗教氛圍濃厚，教會在社區、教育與家庭生活中扮演重要角色，週日上教堂仍是普遍的習慣。因此明確表示無宗教的人很少，主要是首都金斯敦等城鎮中受世俗化影響的年輕人。"
    }
   ],
-  "background": "聖文森原為加勒比原住民（卡利納哥人與加利福納人）的家園，十八世紀英國取得統治權後帶來聖公會與衛理宗。二十世紀後五旬節派與福音派教會快速成長。"
+  "background": "聖文森原住民是加勒比人與後來與逃亡非洲奴隸混血形成的加里富納人，他們長期抵抗歐洲殖民，1797 年英國在第二次加勒比戰爭後把數千名加里富納人流放到中美洲的羅阿坦島。英國殖民者帶來聖公會，衛理公會則在奴隸中傳教，非裔居民發展出靈恩浸信會等融合信仰。1979 年獨立後憲法保障宗教自由，今天新教各派是主流，拉斯塔法里教等新運動也有一定影響。"
  },
  "language": {
   "official": "英語是官方語言。",
@@ -33,27 +33,27 @@
    {
     "name": "文森克里奧爾英語",
     "percent": 90,
-    "description": "以英語為基礎的克里奧爾語，是日常生活語言。",
+    "description": "文森克里奧爾英語是 18 世紀種植園中的非洲奴隸以英語為基礎發展出的語言，融合了西非語言的語法與發音，並吸收了部分法語與加勒比原住民語詞彙。它是家庭、街頭與日常交流的語言，幾乎所有聖文森人都以它為母語。",
     "greeting": "Good mornin'",
     "pronunciation": "gud MAW-nin"
    },
    {
     "name": "英語",
     "percent": 10,
-    "description": "官方語言，用於政府、教育與正式場合。",
+    "description": "英語自 1763 年英國殖民起就是行政與教育語言，1979 年獨立後仍為唯一官方語言，用於政府、法院、學校與媒體。多數人在日常生活中說克里奧爾英語，只有在正式場合才轉用標準英語，形成兩者並用的語言環境。",
     "greeting": "Hello",
     "pronunciation": "heh-LOH"
    }
   ],
-  "history": "殖民時期非洲奴隸與英國殖民者之間形成以英語為基礎的克里奧爾語。原住民加利福納人曾在此生活，但1797年遭英國流放至中美洲，其語言因此在本島消失。"
+  "history": "聖文森原住民說加勒比語，加里富納人則發展出融合阿拉瓦克語、加勒比語與非洲語言的加里富納語，1797 年大部分加里富納人被流放後，這種語言在島上幾近消失。英國殖民時期種植園的非洲奴隸形成了以英語為基礎的克里奧爾語，法國短暫統治也留下部分詞彙。今天標準英語是官方語言，文森克里奧爾英語則是日常生活語言。"
  },
  "food": {
   "ranking": [
    {
     "name": "烤麵包果配炸鰺魚",
     "localName": "Roasted breadfruit and fried jackfish",
-    "description": "將麵包果烤熟搭配炸鰺魚。",
-    "history": "聖文森的國菜，麵包果於1793年由布萊船長自大溪地引進。",
+    "description": "把整顆麵包果放在炭火上烤到外皮焦黑，剝皮切片後搭配炸得酥脆的鰺魚與番茄洋蔥醬汁，是聖文森的國菜。",
+    "history": "1793 年英國海軍軍官威廉·布萊搭乘「普羅維登斯號」從大溪地運來麵包果苗，種在 1765 年創立的聖文森植物園中，目的是為種植園的奴隸提供廉價糧食；這座植物園也是西半球最古老的植物園之一。麵包果後來成為聖文森人的主食，與近海捕獲的鰺魚搭配成為國菜。當地舉辦的麵包果節也以這道菜為主角。",
     "wiki": "Breadfruit",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Artocarpus_altilis_%28fruit%29.jpg/960px-Artocarpus_altilis_%28fruit%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Artocarpus_altilis_(fruit).jpg",
@@ -62,8 +62,8 @@
    {
     "name": "卡拉魯",
     "localName": "Callaloo",
-    "description": "以芋頭葉、秋葵與椰奶燉煮的濃湯。",
-    "history": "源自西非飲食傳統的加勒比海湯品。",
+    "description": "以芋頭葉（達欣葉）、秋葵、洋蔥與椰奶燉煮後打成濃稠的綠色濃湯，有時加入螃蟹或鹹肉增添風味。",
+    "history": "卡拉魯源自西非奴隸的烹調傳統，秋葵與葉菜燉湯在西非十分普遍，被帶到加勒比海後與當地栽種的達欣芋頭結合。在聖文森與東加勒比海各島，它是週日家庭午餐的常見湯品。芋頭葉營養豐富又容易栽種，讓這道湯成為過去種植園時期奴隸與農民重要的營養來源。",
     "wiki": "Callaloo",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Callaloo.jpg/960px-Callaloo.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Callaloo.jpg",
@@ -72,8 +72,8 @@
    {
     "name": "佩勞",
     "localName": "Pelau",
-    "description": "將焦糖化雞肉與米、豆類一同烹煮的燉飯。",
-    "history": "加勒比海東部常見的一鍋料理。",
+    "description": "先把糖炒成焦糖為雞肉上色，再加入米、樹豆、椰奶與香草一起燜煮，口味鹹甜香濃，是一鍋到底的料理。",
+    "history": "佩勞的名稱與做法源自中東與南亞的「抓飯」，經由 19 世紀後期抵達東加勒比海的印度契約勞工傳入；把糖炒焦為肉上色的手法則被認為來自非洲裔的烹調傳統。一鍋就能餵飽許多人，因此在聖文森的家庭聚會、海灘野餐與節慶派對上非常受歡迎。",
     "wiki": "Pelau",
     "image": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Trinidadian_Chicken_Pelau_%2815399269506%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Trinidadian_Chicken_Pelau_(15399269506).jpg",
@@ -82,8 +82,8 @@
    {
     "name": "鹹魚",
     "localName": "Saltfish",
-    "description": "以鹽醃鱈魚泡水去鹽後與蔬菜炒製。",
-    "history": "殖民時期自北美輸入的重要蛋白質來源。",
+    "description": "把鹽漬乾鱈魚泡水去鹽後，與洋蔥、番茄、甜椒和辣椒一起炒香，常配烤麵包果、炸麵糰或煮香蕉當早餐。",
+    "history": "鹽漬鱈魚是 17–19 世紀「三角貿易」的產物：北美紐芬蘭與新英格蘭的漁獲被鹽漬後運往加勒比海，作為種植園奴隸便宜且耐保存的蛋白質來源，回程則運回蔗糖與糖蜜。奴隸制度廢除後，鹹魚仍留在加勒比海人的飲食中，成為聖文森最普遍的早餐配菜與炸魚餅的材料。",
     "wiki": "Salt cod",
     "image": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Bacalhau_%28Porto%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Bacalhau_(Porto).jpg",
@@ -92,8 +92,8 @@
    {
     "name": "葛粉",
     "localName": "Arrowroot",
-    "description": "由竹芋根莖製成的澱粉，用於點心與餅乾。",
-    "history": "聖文森曾是世界最大的葛粉產地，至今仍是特色產品。",
+    "description": "從竹芋根莖中提取的細白澱粉，可用來勾芡、做餅乾與嬰兒食品，也常用於製作傳統甜點與布丁。",
+    "history": "竹芋是加勒比海原住民早就利用的植物，殖民時期在聖文森大規模種植。20 世紀前期聖文森曾是全世界最大的竹芋澱粉產地，產品出口到英國與北美。隨著其他澱粉取代竹芋，產業逐漸衰退，但竹芋澱粉仍是聖文森的特產，政府也嘗試振興這項傳統產業。",
     "wiki": "Maranta arundinacea",
     "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Marant_arund_090103-5154_rwg.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Marant_arund_090103-5154_rwg.JPG",

@@ -7,30 +7,30 @@
    {
     "name": "長老會",
     "percent": 28,
-    "description": "最大教派，19世紀由蘇格蘭與加拿大傳教士傳入。"
+    "description": "1839 年倫敦傳道會傳教士約翰·威廉斯在埃羅芒阿島登陸時遇害，顯示早期傳教的艱難。1848 年來自加拿大新斯科細亞的長老會傳教士約翰·蓋迪在南部的阿內蒂溫島建立傳教站，此後長老會在南部與中部島嶼大規模傳教，並興辦學校。長老會培養了許多獨立運動與政治領袖，因此成為最大教派。"
    },
    {
     "name": "聖公會",
     "percent": 15,
-    "description": "主要分布於北部島嶼。"
+    "description": "聖公會的「美拉尼西亞傳教團」自 1849 年起由紐西蘭主教塞爾溫創立，以北部島嶼為主要傳教範圍，並培養當地傳道人。1980 年萬那杜獨立時，首任總理沃爾特·利尼正是聖公會神父，使聖公會在國家建立過程中具有重要地位，信徒主要集中在北部。"
    },
    {
     "name": "基督復臨安息日會",
     "percent": 13,
-    "description": "20世紀起快速成長。"
+    "description": "基督復臨安息日會在 20 世紀初傳入萬那杜，以興辦學校、醫療服務與提倡健康生活（如禁食豬肉、禁酒）吸引信徒。由於它要求放棄部分傳統習俗，也與當地文化產生張力，但信徒穩定成長，成為第三大教派。"
    },
    {
     "name": "天主教",
     "percent": 12,
-    "description": "法國共管時期傳入。"
+    "description": "天主教的瑪利亞會傳教士在 1887 年來到萬那杜。1906–1980 年英法兩國共同治理新赫布里底群島，法方支持天主教會興辦法語學校，因此天主教徒多與法語教育背景相連。獨立前後，法語區與英語區的政治分歧也部分與天主教和新教的區別重疊。"
    },
    {
     "name": "傳統信仰（含約翰·弗魯姆運動等）",
     "percent": 4,
-    "description": "包含塔納島的「船貨崇拜」運動與傳統習俗信仰。"
+    "description": "傳統信仰（當地稱「卡斯通」）重視祖先、土地與部落儀式，在部分島嶼仍被完整保存。塔納島的約翰·弗魯姆運動約在 1930 年代末出現，二戰時美軍帶來的大量物資使信徒相信一位名叫約翰·弗魯姆的美國人會帶來財富，同時拒絕傳教士與殖民統治；信徒至今每年 2 月 15 日舉行紀念遊行。"
    }
   ],
-  "background": "19世紀起長老會、聖公會與天主教傳教士相繼到來，英法共管時期英國系教會與法國天主教分別發展。傳統「卡斯頓」（kastom）習俗至今仍與基督教並存，塔納島則有約翰·弗魯姆等獨特運動。"
+  "background": "萬那杜各島原本信仰祖先與自然神靈，部落儀式與土地緊密相連。19 世紀中葉起長老會、聖公會等傳教士陸續來到，雖然早期傳教士屢遭殺害，基督教仍逐步普及。1906–1980 年英法共管期間，英國支持新教、法國支持天主教，宗教與語言分野重疊。二戰期間美軍駐紮催生了約翰·弗魯姆等「貨物崇拜」運動。今天萬那杜憲法以基督教原則立國，但傳統習俗仍深受重視。"
  },
  "language": {
   "official": "官方語言為比斯拉馬語、英語與法語。",
@@ -38,34 +38,34 @@
    {
     "name": "比斯拉馬語",
     "percent": 34,
-    "description": "以英語為基礎的克里奧爾語，是全國通用語。",
+    "description": "比斯拉馬語是以英語為基礎的皮欽語，形成於 19 世紀：當時萬那杜人在檀香木、海參貿易中與歐洲商人接觸，1860–1900 年代又有大量島民被招募或擄掠到澳洲昆士蘭與斐濟的甘蔗園工作，返鄉後把這種共通語帶回各島。名稱即源自法語「bêche-de-mer」（海參）。由於全國有一百多種本土語言，比斯拉馬語成為族際共通語，1980 年獨立後定為國語。",
     "greeting": "Halo / Gud moning",
     "pronunciation": "ha-lo / gud mo-ning"
    },
    {
     "name": "英語",
     "percent": 2,
-    "description": "教育與政府語言之一。",
+    "description": "英語是 1906–1980 年英法共管期間英方行政與學校使用的語言，獨立後與法語、比斯拉馬語同為官方語言。約六成學校以英語教學，英語在政府、商業與觀光業中通用，但以它為母語的人極少。",
     "greeting": "Hello",
     "pronunciation": "heh-loh"
    },
    {
     "name": "法語",
     "percent": 1,
-    "description": "教育與政府語言之一。",
+    "description": "法語是英法共管期間法方的行政與教育語言，天主教學校也以法語教學。獨立時法語區與英語區曾在政治上對立，法語區部分人士甚至支持分離運動。今天仍有約四成學校以法語教學，但以法語為母語者極少。",
     "greeting": "Bonjour",
     "pronunciation": "bon-zhoor"
    }
   ],
-  "history": "萬那杜各島長期孤立，發展出一百多種本土語言，至今仍是約六成人口的家庭語言。19世紀島民被招募到澳洲與斐濟甘蔗園工作，在當地形成比斯拉馬語並帶回家鄉。英法共管使教育分為英語與法語兩套系統，獨立後三種語言並列官方。"
+  "history": "萬那杜是全世界語言密度最高的國家之一，在約 30 萬人口中有超過 100 種南島語系語言。19 世紀的檀香木、海參貿易與澳洲、斐濟種植園的勞工招募，催生了以英語為基礎的比斯拉馬語。1906 年起英法共管，兩國各自以英語與法語辦學，形成雙軌教育體系。1980 年獨立後，比斯拉馬語成為國語，與英語、法語同為官方語言。"
  },
  "food": {
   "ranking": [
    {
     "name": "拉普拉普",
     "localName": "Laplap",
-    "description": "將山藥、芋頭或香蕉磨成泥，加椰奶與肉以葉子包裹，在熱石上烘烤，為國菜。",
-    "history": "太平洋地區傳統的地爐烹調法，是節慶與家庭聚會的核心料理。",
+    "description": "把山藥、芋頭、香蕉或木薯磨成泥糊，鋪在香蕉葉上，淋上椰奶並加入肉或魚，包好後放入地爐中烤熟。",
+    "history": "拉普拉普是萬那杜的國菜，以地爐烹煮的方式是南島民族祖先移居太平洋時帶來的傳統。山藥、芋頭與香蕉都是早期移民帶來的「獨木舟作物」，在萬那杜各島長期是主食。拉普拉普在婚禮、成年禮與部落儀式中大量製作，也是週日與家庭聚餐的常見料理，各島的做法與材料略有不同。",
     "wiki": "Laplap",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Laplap_sosor.jpg/960px-Laplap_sosor.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Laplap_sosor.jpg",
@@ -74,8 +74,8 @@
    {
     "name": "卡瓦",
     "localName": "Kava",
-    "description": "以胡椒科植物根部磨碎泡水製成的飲品，具放鬆效果。",
-    "history": "萬那杜被認為是卡瓦的發源地之一，傳統上用於儀式與社交，現在維拉港有許多卡瓦吧。",
+    "description": "把卡瓦胡椒的根部磨碎或咀嚼後與水混合過濾，成為渾濁的褐色飲料，味道苦澀，飲用後會使口舌麻木、身體放鬆。",
+    "history": "卡瓦在萬那杜已有數千年歷史，許多學者認為卡瓦植物最早就是在萬那杜被馴化的。傳統上只有男性在黃昏時聚集於村中的「納卡馬爾」（男子會所）飲用，用於和解儀式、婚禮與部落會議。今天首都維拉港有許多卡瓦吧，政府也以法律規範卡瓦品種與出口，它是萬那杜重要的經濟作物與文化象徵。",
     "wiki": "Kava",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Starr_070515-7054_Piper_methysticum.jpg/960px-Starr_070515-7054_Piper_methysticum.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Starr_070515-7054_Piper_methysticum.jpg",
@@ -84,8 +84,8 @@
    {
     "name": "椰子蟹",
     "localName": "Coconut crab",
-    "description": "大型陸生蟹，常以椰奶烹調。",
-    "history": "萬那杜北部的特色食材，因過度捕捉已受保育管制。",
+    "description": "椰子蟹是體型最大的陸生節肢動物，以椰子為食，蒸或以椰奶烹煮後肉質鮮甜，帶有濃郁的椰香。",
+    "history": "萬那杜北部的島嶼以盛產椰子蟹聞名，過去它是島民在節慶與招待貴客時的珍貴食材。隨著觀光業發展，椰子蟹成為維拉港餐廳的招牌菜，導致過度捕撈，數量明顯減少。萬那杜政府因此設定了捕撈尺寸與禁捕季節，部分島嶼也實施保育措施，希望維持這項傳統資源。",
     "wiki": "Coconut crab",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Coconut_Crab_Birgus_latro.jpg/960px-Coconut_Crab_Birgus_latro.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Coconut_Crab_Birgus_latro.jpg",
@@ -94,8 +94,8 @@
    {
     "name": "芋頭",
     "localName": "Taro",
-    "description": "煮、烤或做成拉普拉普的芋頭。",
-    "history": "芋頭是萬那杜的重要傳統作物，在交換儀式中具社會意義。",
+    "description": "芋頭是富含澱粉的塊根，可在地爐中烤熟、水煮或做成拉普拉普，口感綿密，是日常的主要澱粉來源。",
+    "history": "約三千年前拉皮塔文化的南島民族抵達萬那杜時，帶來了芋頭等作物，此後島民發展出灌溉梯田種植水芋的技術。芋頭與山藥在萬那杜傳統社會中是重要的財富象徵，在婚禮、喪禮與酋長晉升儀式中大量交換贈送。今天它仍是鄉村家庭日常飲食的基礎。",
     "wiki": "Taro",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Songe-R%C3%A9union.JPG/960px-Songe-R%C3%A9union.JPG",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Songe-R%C3%A9union.JPG",
@@ -104,8 +104,8 @@
    {
     "name": "麵包果",
     "localName": "Breadfruit",
-    "description": "烤或煮的麵包果，常配椰奶。",
-    "history": "太平洋島民的傳統澱粉來源。",
+    "description": "麵包果是大型澱粉質果實，可直接放在火上烤、水煮或以椰奶燉煮，口感介於馬鈴薯與麵包之間。",
+    "history": "麵包果是南島民族祖先以獨木舟帶到太平洋的作物之一，在萬那杜各島廣泛栽種。一棵麵包果樹可以結果數十年，在收穫季節能提供大量食物，過去島民也會把麵包果發酵埋藏以應付颶風後的糧荒。今天它仍是萬那杜家庭在季節中的重要主食，常與魚或椰奶一同烹調。",
     "wiki": "Breadfruit",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Artocarpus_altilis_%28fruit%29.jpg/960px-Artocarpus_altilis_%28fruit%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Artocarpus_altilis_(fruit).jpg",

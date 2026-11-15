@@ -61,7 +61,7 @@
    {
     "name": "花生燉肉",
     "localName": "Domoda",
-    "description": "以花生醬、番茄、洋蔥與南瓜等蔬菜燉煮雞肉或牛肉的濃稠燉菜，配白飯食用。",
+    "description": "以花生醬、番茄、洋蔥與南瓜、地瓜等蔬菜燉煮雞肉或牛肉的濃稠燉菜，口味香濃，配白飯食用。",
     "history": "花生原產南美洲，16 世紀由葡萄牙人帶入西非。19 世紀 1830 年代起，英國殖民地甘比亞開始大量出口花生，花生成為最重要的經濟作物，至今仍是甘比亞主要出口品之一。花生燉肉因此成為甘比亞的國菜，在曼丁卡語中稱為 domoda，是家家戶戶最常見的午餐。",
     "wiki": "Domoda",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Domoda_Senegal.jpg/960px-Domoda_Senegal.jpg",
@@ -71,7 +71,7 @@
    {
     "name": "貝納欽飯",
     "localName": "Benachin",
-    "description": "將米與魚或肉、番茄、洋蔥、蔬菜在同一鍋中炊煮，米飯呈紅色，味道濃郁。",
+    "description": "將米與魚或肉、番茄、洋蔥、茄子、木薯等蔬菜在同一鍋中炊煮，米飯呈紅色，吸飽了食材的鮮味。",
     "history": "名稱在沃洛夫語中意為「一鍋」，與塞內加爾的喬洛夫飯同源，可追溯到 14–16 世紀沃洛夫人建立的喬洛夫帝國。它反映了塞內甘比亞地區以稻米為主食的飲食傳統，並隨貿易與移民傳遍西非。在甘比亞，它常在宗教節日、婚禮與家庭聚會中大鍋製作。",
     "wiki": "Jollof rice",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Jollof_Rice_with_Stew.jpg/960px-Jollof_Rice_with_Stew.jpg",
@@ -81,7 +81,7 @@
    {
     "name": "檸檬洋蔥燉雞",
     "localName": "Yassa",
-    "description": "將雞肉或魚以大量洋蔥、檸檬汁與芥末醃製燒烤後，與洋蔥醬汁一起燉煮，酸香開胃。",
+    "description": "將雞肉或魚以大量洋蔥、檸檬汁與芥末醃製燒烤後，再與洋蔥醬汁一起燉煮，酸香開胃，配白飯食用。",
     "history": "檸檬洋蔥燉雞源自鄰近的塞內加爾南部卡薩芒斯地區，當地朱拉人以柑橘與洋蔥調味，而甘比亞與卡薩芒斯之間有密切的族群往來，這道菜因此成為甘比亞的家常菜。它在節日與宴客時常見，以魚製作的版本則是沿海地區的特色。",
     "wiki": "Yassa (food)",
     "image": "https://upload.wikimedia.org/wikipedia/commons/4/45/Poulet_Yassa_Chicken_rice_with_onion_sauce.jpg",
@@ -91,7 +91,7 @@
    {
     "name": "秋葵棕櫚油湯",
     "localName": "Superkanja",
-    "description": "以秋葵、棕櫚油、魚乾或燻魚與辣椒熬成的黏稠湯品，配白飯食用。",
+    "description": "以秋葵、紅棕櫚油、魚乾或燻魚與辣椒熬成的黏稠湯品，有時加入海鮮或牛肉，常淋在白飯上食用。",
     "history": "秋葵原產於非洲，棕櫚油則是西非傳統的烹調用油，兩者的結合是西非料理的古老特色。名稱中的「kanja」在沃洛夫語中就是秋葵，前半則源自「湯」（法語 soupe），反映了當地語言與殖民語言的交融。這道湯在曼丁卡與朱拉族家庭中很常見，代表了甘比亞以魚與蔬菜為主的日常飲食。",
     "wiki": "Okra soup",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Sayur_oyong.JPG/960px-Sayur_oyong.JPG",
@@ -101,7 +101,7 @@
    {
     "name": "優格小米甜點",
     "localName": "Chakery",
-    "description": "將小米蒸成小顆粒，拌入加糖的優格或酸奶，並以肉荳蔻、香草和葡萄乾調味的甜點。",
+    "description": "將小米粉蒸成小顆粒，拌入加糖的優格或酸奶，並以肉荳蔻、香草和葡萄乾調味，冰涼後食用的甜點。",
     "history": "小米是西非薩赫勒地區最古老的主糧之一，耐旱的特性使它適合當地氣候。這道甜點與塞內加爾的「thiakry」同源，傳統上在宰牲節（Tobaski）、嬰兒命名禮與婚禮等場合製作，招待前來祝賀的賓客。它是甘比亞人在炎熱天氣中最受歡迎的清涼甜點之一。",
     "wiki": "Thiakry",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Gambia_Chakery_0001.jpg/960px-Gambia_Chakery_0001.jpg",

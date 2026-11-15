@@ -7,30 +7,30 @@
    {
     "name": "天主教",
     "percent": 28,
-    "description": "最大的宗教團體。"
+    "description": "1000 年左右，匈牙利大公史蒂芬一世接受教宗授予的王冠加冕，強制推行天主教，結束了馬札爾人的異教時代，後來被尊為聖人。16 世紀宗教改革一度使大半國土改信新教，但 17 世紀哈布斯堡王朝在帕茲馬尼樞機主教等人推動下展開反宗教改革，使西部與北部重新天主教化。1949–1989 年共產政權打壓教會，敏森帝樞機主教遭監禁，加上近年世俗化，信徒比例持續下降，且 2022 年普查有大量民眾未回答宗教問題。"
    },
    {
     "name": "無宗教",
     "percent": 16,
-    "description": "未認同任何宗教的人口，另有大量受訪者未回答宗教問題。"
+    "description": "1949–1989 年共產政權推行無神論教育並限制宗教活動，使許多家庭不再傳承信仰，城市化與現代化又加速了世俗化。2022 年普查中有約四成民眾選擇不回答宗教問題，因此實際上不信教的人可能比統計數字更多。"
    },
    {
     "name": "歸正宗（喀爾文派）",
     "percent": 10,
-    "description": "主要分布於東部，德布勒森被稱為「喀爾文派的羅馬」。"
+    "description": "16 世紀宗教改革期間，喀爾文派在匈牙利東部迅速傳播，德布勒森因此被稱為「喀爾文派的羅馬」。當時大部分國土處於鄂圖曼帝國統治下，哈布斯堡無法推行反宗教改革；1568 年外西凡尼亞的《托爾達敕令》更是歐洲最早的宗教寬容法令之一。歸正宗因此在東部大平原地區根深蒂固，並被視為「匈牙利人的宗教」。"
    },
    {
     "name": "路德宗",
     "percent": 2,
-    "description": "規模較小的新教教會。"
+    "description": "路德宗在 16 世紀主要由德語城鎮居民與斯洛伐克人接受，分布在西部與北部。17 世紀反宗教改革後信徒減少，但仍延續至今，部分德裔與斯洛伐克裔社群保持路德宗傳統。"
    },
    {
     "name": "希臘禮天主教",
     "percent": 2,
-    "description": "主要分布於東北部。"
+    "description": "希臘禮天主教徒使用拜占庭禮儀，但承認羅馬教宗。他們主要是東北部的盧森尼亞人與羅馬尼亞人的後代，1646 年《烏日霍羅德聯合》使原本的東正教徒歸入天主教；1912 年成立以匈牙利語進行禮拜的哈伊杜多羅格教區。"
    }
   ],
-  "background": "西元1000年聖史蒂芬加冕為匈牙利首位國王，使匈牙利成為天主教國家。十六世紀宗教改革後喀爾文派在東部盛行，哈布斯堡王朝的反宗教改革則使天主教恢復主導。共產時期宗教受壓制，近年無宗教人口增加。"
+  "background": "匈牙利在 1000 年由史蒂芬一世建立天主教王國，16 世紀宗教改革後大量人口改信喀爾文派與路德宗，而同時期鄂圖曼帝國佔領中部長達一百五十年，使匈牙利分裂為三部分。17 世紀哈布斯堡的反宗教改革讓天主教重新成為多數，新教則在東部保持優勢。20 世紀二戰中約五十多萬名匈牙利猶太人遇害，1949 年後共產政權壓制宗教。1989 年民主化後宗教自由恢復，但社會已相當世俗化。"
  },
  "language": {
   "official": "匈牙利語是官方語言。",
@@ -38,34 +38,34 @@
    {
     "name": "匈牙利語",
     "percent": 98,
-    "description": "屬烏拉爾語系，與周邊印歐語言截然不同。",
+    "description": "匈牙利語屬烏拉爾語系烏戈爾語支，與周圍的斯拉夫語、日耳曼語完全不同。馬札爾人約在 895–896 年從東方遷入喀爾巴阡盆地，帶來這種語言。12 世紀末的《悼詞與禱文》是現存最早的匈牙利語連貫文獻。中世紀至 19 世紀拉丁語長期是官方語言，18 世紀末到 19 世紀初的「語言革新運動」創造了大量新詞，1844 年匈牙利語才成為官方語言。1920 年《特里亞農條約》使約三百萬匈牙利語使用者成為鄰國的少數民族。",
     "greeting": "Szia",
     "pronunciation": "SEE-ya"
    },
    {
     "name": "德語",
     "percent": 1,
-    "description": "德裔少數民族使用。",
+    "description": "18 世紀鄂圖曼人被逐出後，哈布斯堡王朝招募大批德意志移民到荒廢的土地上開墾，形成「多瑙河施瓦本人」社群。二戰後的 1946–1948 年，約二十萬德裔居民被驅逐到德國，留下的德語少數民族至今仍設有德語學校與文化組織。",
     "greeting": "Hallo",
     "pronunciation": "HAH-loh"
    },
    {
     "name": "羅姆語",
     "percent": 1,
-    "description": "羅姆人社群使用。",
+    "description": "羅姆人約在 15 世紀抵達匈牙利，部分人說羅姆語，部分人說源自古羅馬尼亞語的貝亞什語，但多數已以匈牙利語為母語。1993 年《少數民族法》承認羅姆人為少數民族，其語言權利受到保障，但羅姆社群至今仍面臨教育與就業上的歧視。",
     "greeting": "Sar san?",
     "pronunciation": "sar SAN"
    }
   ],
-  "history": "匈牙利語由來自烏拉爾山區的馬札爾人帶入中歐，與芬蘭語、愛沙尼亞語同屬烏拉爾語系。哈布斯堡統治時期拉丁語與德語長期是行政語言，十九世紀語言改革運動後匈牙利語才在1844年成為官方語言。"
+  "history": "匈牙利語的祖先來自烏拉爾山地區，馬札爾人在 9 世紀末定居喀爾巴阡盆地後，吸收了大量斯拉夫語、突厥語與德語借詞。中世紀匈牙利王國以拉丁語作為官方與學術語言，匈牙利語主要用於口語與宗教文學。18–19 世紀的語言革新運動與民族主義使匈牙利語在 1844 年取得官方地位。1920 年《特里亞農條約》後，匈牙利國內幾乎成為單一語言社會，而大量匈牙利語使用者則留在羅馬尼亞、斯洛伐克、塞爾維亞等鄰國。"
  },
  "food": {
   "ranking": [
    {
     "name": "匈牙利燉牛肉湯",
     "localName": "Gulyás",
-    "description": "以牛肉、馬鈴薯與大量紅椒粉燉煮的湯。",
-    "history": "源自中世紀牧牛人的料理，十九世紀成為匈牙利民族象徵。",
+    "description": "以牛肉、洋蔥、馬鈴薯、紅蘿蔔、葛縷子與大量紅椒粉熬成的濃湯，湯色紅亮，口味微辣而濃郁。",
+    "history": "名稱中的「gulyás」原指匈牙利大平原上放牧牛群的牧人，這道湯最初是牧人在戶外用大鐵鍋燉煮的食物。紅椒原產美洲，16–17 世紀經鄂圖曼帝國傳入匈牙利，18 世紀後才成為匈牙利料理的核心香料。19 世紀匈牙利民族主義興起時，人們把這道平民湯品當作對抗哈布斯堡德語文化的民族象徵，從此成為匈牙利的國菜。",
     "wiki": "Goulash",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Gulyas080.jpg/960px-Gulyas080.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Gulyas080.jpg",
@@ -74,8 +74,8 @@
    {
     "name": "蘭戈斯",
     "localName": "Lángos",
-    "description": "油炸麵餅抹上酸奶油、起司與大蒜。",
-    "history": "匈牙利最受歡迎的街頭小吃之一。",
+    "description": "將發酵麵團壓成大圓餅後下鍋油炸，趁熱抹上大蒜油，再鋪上酸奶油與起司絲，外酥內軟、香氣十足。",
+    "history": "名稱源自匈牙利語的「láng」（火焰），原本是農家烤麵包時，在烤爐火焰前先烤出來的扁平餅。後來演變成油炸的做法，在 20 世紀成為市集、泳池與巴拉頓湖畔最受歡迎的街頭小吃。共產時期它是便宜又飽足的國民點心，今天仍是匈牙利人夏天度假時必吃的食物。",
     "wiki": "Lángos",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Langos_Eger_Hungary.jpg/960px-Langos_Eger_Hungary.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Langos_Eger_Hungary.jpg",
@@ -84,8 +84,8 @@
    {
     "name": "紅椒燉雞",
     "localName": "Paprikás csirke",
-    "description": "以紅椒粉與酸奶油燉煮的雞肉，配小麵疙瘩。",
-    "history": "匈牙利經典的家常菜。",
+    "description": "將雞肉以洋蔥與紅椒粉燉煮，最後加入酸奶油使醬汁變成橘紅色的濃稠醬，配匈牙利小麵疙瘩食用。",
+    "history": "紅椒燉雞是 19 世紀匈牙利紅椒料理普及後最具代表性的菜餚之一，不僅在家庭中常見，也成為布達佩斯餐廳的經典菜色。1897 年出版的小說《德古拉》中，主角在前往外西凡尼亞的途中便吃到一道「紅椒雞」，可見它在當時已是外國旅客熟知的匈牙利料理。它至今是匈牙利家庭週日午餐的經典菜色。",
     "wiki": "Chicken paprikash",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Chicken_Paprikash_%28Csirke_Paprik%C3%A1s%29.jpg/960px-Chicken_Paprikash_%28Csirke_Paprik%C3%A1s%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Chicken_Paprikash_(Csirke_Paprik%C3%A1s).jpg",
@@ -94,8 +94,8 @@
    {
     "name": "多博斯蛋糕",
     "localName": "Dobos torta",
-    "description": "以多層海綿蛋糕夾巧克力奶油，頂層覆焦糖的蛋糕。",
-    "history": "1885年由糕點師多博斯·約瑟夫發明。",
+    "description": "以六層薄海綿蛋糕夾入巧克力奶油霜，最上層覆蓋一片堅硬的焦糖片，切塊時可見整齊的層次。",
+    "history": "多博斯蛋糕由布達佩斯甜點師多博斯・約瑟夫發明，並在 1885 年的匈牙利全國博覽會上展出，連奧匈帝國皇帝法蘭茲・約瑟夫與皇后伊莉莎白都品嘗過。頂層的焦糖片可以防止蛋糕變乾，讓它在沒有冷藏設備的年代能保存較久並運往各地。多博斯直到 1906 年才公開配方，它從此成為匈牙利咖啡館文化的代表甜點。",
     "wiki": "Dobos torte",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Dobos_cake_%28Gerbeaud_Confectionery_Budapest_Hungary%29.jpg/960px-Dobos_cake_%28Gerbeaud_Confectionery_Budapest_Hungary%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Dobos_cake_(Gerbeaud_Confectionery_Budapest_Hungary).jpg",
@@ -104,8 +104,8 @@
    {
     "name": "漁夫湯",
     "localName": "Halászlé",
-    "description": "以多種河魚與大量紅椒粉熬煮的辣味魚湯。",
-    "history": "多瑙河與蒂薩河沿岸的傳統料理，也是聖誕夜的經典菜色。",
+    "description": "以鯉魚、鯰魚等淡水魚加入大量紅椒粉與洋蔥熬成的辛辣紅色魚湯，湯色鮮紅、香氣濃郁，配麵包食用。",
+    "history": "匈牙利沒有海岸，多瑙河與蒂薩河的淡水魚自古是重要食物，漁夫湯最初是河邊漁民用大鐵鍋燉煮的料理。塞格德與包姚兩地各有不同做法，彼此常比較誰的更正宗，每年還舉辦漁夫湯節。由於天主教傳統在耶誕夜不吃肉，漁夫湯成為許多匈牙利家庭平安夜晚餐的主菜。",
     "wiki": "Fisherman's soup",
     "image": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Pot_of_Hungarian_Fisherman%27s_Soup_%28Hal%C3%A1szl%C3%A9%2C_Karpfensuppe%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Pot_of_Hungarian_Fisherman%27s_Soup_(Hal%C3%A1szl%C3%A9,_Karpfensuppe).jpg",

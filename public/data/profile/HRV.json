@@ -7,25 +7,25 @@
    {
     "name": "天主教",
     "percent": 79,
-    "description": "克羅埃西亞民族認同的重要元素。"
+    "description": "克羅埃西亞人在 7–9 世紀接受基督教，879 年教宗若望八世承認布拉尼米爾公爵的統治，克羅埃西亞從此與羅馬教廷緊密相連，並長期保留使用格拉哥里字母的斯拉夫語禮儀。16 世紀起克羅埃西亞處於對抗鄂圖曼帝國的前線，1519 年被教宗稱為「基督教世界的堡壘」。南斯拉夫共產時期教會受到壓制，1990 年代獨立戰爭中天主教更成為區別於塞爾維亞東正教的民族認同標誌，比例因此很高。"
    },
    {
     "name": "無宗教",
     "percent": 6,
-    "description": "包括無神論者與不可知論者。"
+    "description": "1945–1991 年南斯拉夫共產政權推行世俗化政策，部分家庭因此失去宗教傳承。無宗教者多集中在首都札格雷布與伊斯特拉、里耶卡等較開放的城市地區，以年輕與高學歷族群為主。"
    },
    {
     "name": "東正教",
     "percent": 3,
-    "description": "主要為塞爾維亞裔少數民族。"
+    "description": "東正教信徒主要是塞爾維亞族。16 世紀起哈布斯堡王朝在對抗鄂圖曼的「軍事邊區」安置大批塞爾維亞與瓦拉幾人邊防移民，使東正教在克羅埃西亞境內扎根。1991 年塞族約佔人口一成以上，但 1995 年「風暴行動」後約二十萬塞族人出走，東正教比例因此大幅下降。"
    },
    {
     "name": "伊斯蘭教",
     "percent": 1,
-    "description": "主要為波士尼亞裔社群。"
+    "description": "奧匈帝國於 1916 年正式承認伊斯蘭教為合法宗教。穆斯林多為 20 世紀從波士尼亞、科索沃等地移入的波士尼亞人與阿爾巴尼亞人，1987 年札格雷布清真寺落成，是當地伊斯蘭社群的中心。"
    }
   ],
-  "background": "克羅埃西亞人在七世紀定居後於九世紀前後接受羅馬教會的基督教，與西方天主教世界緊密相連。塞爾維亞裔則屬東正教，鄂圖曼帝國的擴張也帶來穆斯林社群。1990年代戰爭後，宗教與族群認同的連結更為強烈。"
+  "background": "克羅埃西亞位於天主教西歐與東正教、伊斯蘭世界的交界。中世紀克羅埃西亞王國接受羅馬天主教，1102 年與匈牙利聯合後長期屬於哈布斯堡天主教世界，鄂圖曼帝國的入侵則使宗教成為對抗外敵的象徵。軍事邊區的設立帶來東正教塞族。20 世紀南斯拉夫時期共產政權壓制宗教，1991 年獨立後天主教會地位大幅提升，戰爭導致的人口變動也使克羅埃西亞成為天主教比例極高的國家。"
  },
  "language": {
   "official": "克羅埃西亞語是官方語言。",
@@ -33,27 +33,27 @@
    {
     "name": "克羅埃西亞語",
     "percent": 96,
-    "description": "屬南斯拉夫語支，使用拉丁字母。",
+    "description": "克羅埃西亞語屬南斯拉夫語支，約 1100 年的巴什卡石碑以格拉哥里字母刻成，是最重要的早期文獻；1501 年馬魯利奇的史詩《猶滴》被視為克羅埃西亞文學之父的作品。1830 年代柳德維特・蓋伊領導的「伊利里亞運動」確立了以拉丁字母加附加符號的書寫系統。南斯拉夫時期它與塞爾維亞語被合稱為「塞爾維亞–克羅埃西亞語」，1967 年知識分子發表宣言要求承認其獨立地位，1991 年獨立後成為唯一官方語言。",
     "greeting": "Bok",
     "pronunciation": "bok"
    },
    {
     "name": "塞爾維亞語",
     "percent": 1,
-    "description": "塞爾維亞裔少數民族使用。",
+    "description": "塞爾維亞語與克羅埃西亞語高度相通，主要由塞族少數使用，傳統上以西里爾字母書寫。1995 年塞族大量出走後使用者大減；2013 年武科瓦爾設置西里爾字母雙語標誌時引發抗議，顯示戰爭記憶下的語言敏感性。",
     "greeting": "Здраво (Zdravo)",
     "pronunciation": "ZDRAH-voh"
    }
   ],
-  "history": "克羅埃西亞語早期曾使用格拉哥里字母書寫，後來改用拉丁字母。十九世紀伊利里亞運動推動語言標準化；南斯拉夫時期曾被稱為塞爾維亞—克羅埃西亞語，獨立後則強調其獨立地位。"
+  "history": "斯拉夫人在 7 世紀移入巴爾幹，克羅埃西亞人早期以格拉哥里字母書寫，形成獨特的禮儀與文學傳統。克羅埃西亞語有什托卡維、卡伊卡維、恰卡維三大方言，中世紀與文藝復興時期達爾馬提亞沿岸的文學受威尼斯影響，內陸則受匈牙利與德語影響。19 世紀民族復興運動以什托卡維方言為基礎建立標準語。20 世紀南斯拉夫時期與塞爾維亞語合併為一種標準語，1991 年獨立後克羅埃西亞語重新成為獨立的國家語言。"
  },
  "food": {
   "ranking": [
    {
     "name": "帕什蒂查達燉牛肉",
     "localName": "Pašticada",
-    "description": "以醋、紅酒與香料醃漬後慢燉的牛肉，常配麵疙瘩。",
-    "history": "達爾馬提亞地區的傳統節慶料理，製作需一至兩天。",
+    "description": "將牛肉以醋醃過夜，塞入大蒜、丁香與培根，再以紅酒、李子乾與根莖蔬菜慢燉數小時，配馬鈴薯麵疙瘩食用。",
+    "history": "帕什蒂查達是達爾馬提亞地區，特別是斯普利特的代表料理，製作過程常需兩天。達爾馬提亞沿岸長期受威尼斯共和國統治（15–18 世紀），這道菜使用的香料與葡萄酒燉肉手法反映了威尼斯與地中海的影響。它傳統上是婚禮、節慶與重要家族聚會時才準備的宴客菜，每個家庭都有自己的祕方。",
     "wiki": "Pašticada",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Pa%C5%A1ticada_-_Dalmatinska_pa%C5%A1ticada.jpg/960px-Pa%C5%A1ticada_-_Dalmatinska_pa%C5%A1ticada.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Pa%C5%A1ticada_-_Dalmatinska_pa%C5%A1ticada.jpg",
@@ -62,8 +62,8 @@
    {
     "name": "施特魯克利",
     "localName": "Štrukli",
-    "description": "以麵皮包裹鮮乳酪後水煮或烘烤的料理。",
-    "history": "源自札格瑞布與札戈列地區，列入克羅埃西亞文化遺產。",
+    "description": "以薄麵皮包入新鮮農家起司、雞蛋與酸奶油，捲起切塊後水煮，或淋上鮮奶油烘烤，口感濃郁柔軟。",
+    "history": "施特魯克利源自札格雷布北部的札戈列地區與首都一帶，是克羅埃西亞北部的傳統農家料理。19 世紀起它從鄉村食物變成札格雷布城市中產階級喜愛的菜餚，今日已被列為克羅埃西亞的非物質文化遺產並受到保護。它是札格雷布餐館與家庭週日午餐的代表菜。",
     "wiki": "Štrukli",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/%C5%A0trukli_iz_Okrugljaka.jpg/960px-%C5%A0trukli_iz_Okrugljaka.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:%C5%A0trukli_iz_Okrugljaka.jpg",
@@ -72,8 +72,8 @@
    {
     "name": "炸甜球",
     "localName": "Fritule",
-    "description": "帶有柑橘與蘭姆酒香的小炸麵團球。",
-    "history": "達爾馬提亞海岸的傳統點心，聖誕節前特別常見。",
+    "description": "將加入葡萄乾、檸檬皮與蘭姆酒的麵糊用湯匙舀入熱油炸成小球，撒上糖粉，外酥內軟、香甜可口。",
+    "history": "炸甜球源自達爾馬提亞與伊斯特拉沿岸，與威尼斯的「frittelle」同源，反映了數百年來威尼斯對亞得里亞海東岸的文化影響。傳統上在耶誕節前的將臨期與平安夜製作，也是狂歡節期間的應景點心。今天在耶誕市集上，炸甜球是最受歡迎的小吃之一。",
     "wiki": "Fritule",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Carnival_Frittelle_%28250677305%29.jpeg/960px-Carnival_Frittelle_%28250677305%29.jpeg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Carnival_Frittelle_(250677305).jpeg",
@@ -82,8 +82,8 @@
    {
     "name": "高麗菜捲",
     "localName": "Sarma",
-    "description": "以醃漬高麗菜葉包裹肉餡與米慢燉。",
-    "history": "受鄂圖曼飲食影響的料理，是冬季與節慶的家常菜。",
+    "description": "將整顆醃漬的酸高麗菜葉捲入豬牛絞肉與米飯，與燻肉、紅椒粉一起慢燉數小時，味道酸香濃郁。",
+    "history": "高麗菜捲源自鄂圖曼帝國的「dolma」（包餡料理），隨鄂圖曼勢力傳入巴爾幹，名稱也來自土耳其語中「捲」的意思。克羅埃西亞人把冬季醃製整顆酸高麗菜的傳統與它結合，成為冬季的代表料理。它在耶誕節、新年與冬季家族聚會上必定出現，常一次燉一大鍋，越熱越入味。",
     "wiki": "Sarma (food)",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Yaprak_sarma%2C_Kayseri_style.jpg/960px-Yaprak_sarma%2C_Kayseri_style.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Yaprak_sarma,_Kayseri_style.jpg",
@@ -92,8 +92,8 @@
    {
     "name": "切巴契契",
     "localName": "Ćevapi",
-    "description": "以絞肉做成的小肉條，炭烤後夾在麵包中並配洋蔥。",
-    "history": "源自鄂圖曼時期的巴爾幹地區，是前南斯拉夫各地常見的街頭美食。",
+    "description": "以牛肉或羊肉絞肉做成的小香腸狀肉條，炭烤後夾入扁麵包，配洋蔥與紅椒醬（ajvar）。",
+    "history": "切巴契契源自鄂圖曼帝國的烤肉串（kebab），名稱也來自土耳其語，在波士尼亞發展成今日的形式。南斯拉夫時期，來自波士尼亞的移民把它帶到克羅埃西亞各地，成為最受歡迎的街頭燒烤之一。今天它是克羅埃西亞人夏季烤肉與海灘假期的常見食物，展現了前南斯拉夫地區共享的飲食文化。",
     "wiki": "Ćevapi",
     "image": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Cevapi_s_kajmakom.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Cevapi_s_kajmakom.jpg",

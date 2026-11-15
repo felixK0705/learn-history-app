@@ -7,20 +7,20 @@
    {
     "name": "天主教",
     "percent": 73,
-    "description": "西班牙殖民時期傳入的主要宗教。"
+    "description": "16 世紀西班牙殖民者在委內瑞拉沿海建立城鎮，天主教隨之傳入；17–18 世紀嘉布遣會等修會深入平原與奧利諾科河流域，在原住民中建立傳教村。1652 年傳說聖母在波圖格薩向原住民酋長顯現，「科羅莫托聖母」後來被奉為委內瑞拉主保。雖然 19 世紀古斯曼·布蘭科政府曾大力削弱教會勢力，但天主教仍是社會與節慶生活的核心，至今是最大宗教。"
    },
    {
     "name": "基督新教／福音派",
     "percent": 17,
-    "description": "近數十年快速成長。"
+    "description": "19 世紀新教主要隨外國商人與移民傳入，影響有限。1970 年代以後，五旬節派與福音派教會在大城市的貧民區快速擴張，以社區互助、神醫與熱烈的敬拜吸引信徒；2010 年代經濟危機與社會動盪期間，這些教會提供的支持網絡更吸引了許多人，使比例持續上升。"
    },
    {
     "name": "無宗教",
     "percent": 7,
-    "description": "未認同任何宗教的人口。"
+    "description": "無宗教者主要集中在卡拉卡斯等大城市的年輕人與知識分子中，與都市化和教育普及有關。近年經濟崩潰使數百萬人移居國外，留在國內的人口結構也發生變化，但整體而言委內瑞拉仍是宗教氛圍濃厚的社會，無宗教比例不高。"
    }
   ],
-  "background": "西班牙殖民使天主教成為主流，並與原住民及非洲信仰融合，例如瑪麗亞·利翁薩信仰。二十世紀後期起福音派教會在各地快速成長。"
+  "background": "委內瑞拉原住民原有各自的宗教信仰，16 世紀西班牙殖民後天主教成為主流，修會在內陸建立傳教村。19 世紀獨立後政府與教會關係緊張，1870 年代古斯曼·布蘭科政府沒收教會財產並推行世俗化。20 世紀石油經濟帶來移民與都市化，1970 年代後福音派快速成長。查維斯與馬杜洛時期，天主教會也成為批評政府的重要聲音。"
  },
  "language": {
   "official": "西班牙語是官方語言，憲法也承認原住民語言在原住民地區的官方地位。",
@@ -28,27 +28,27 @@
    {
     "name": "西班牙語",
     "percent": 98,
-    "description": "全國通用語言。",
+    "description": "西班牙語隨 16 世紀初西班牙殖民傳入，委內瑞拉的西語屬加勒比海方言，發音輕快、常省略字尾的「s」。19 世紀出身卡拉卡斯的學者安德烈斯·貝略於 1847 年出版影響深遠的《西班牙語語法》，為美洲西語奠定規範。由於殖民時期原住民、非洲人與歐洲人大量混血並轉用西語，今天幾乎全體國民都以西班牙語為母語。",
     "greeting": "Hola",
     "pronunciation": "OH-la"
    },
    {
     "name": "瓦尤語",
     "percent": 1,
-    "description": "西北部瓜希拉半島瓦尤人的語言，是人數最多的原住民語言。",
+    "description": "瓦尤人是委內瑞拉人數最多的原住民族，居住在與哥倫比亞交界的瓜希拉半島及蘇利亞州，傳統上以畜牧與貿易為生，西班牙殖民時期從未被完全征服。瓦尤語屬阿拉瓦克語系，1999 年憲法承認原住民語言在其地區的官方地位，2008 年《原住民語言法》也推動雙語教育。",
     "greeting": "Jamaya pia",
     "pronunciation": "ha-MAI-ya PEE-a"
    }
   ],
-  "history": "西班牙殖民前當地有加勒比語系與阿拉瓦克語系等多種原住民語言，至今仍有數十種原住民語言在使用。西班牙語在殖民後成為主流，並吸收原住民與非洲語言的詞彙。"
+  "history": "委內瑞拉原住民語言分屬加勒比、阿拉瓦克等多個語系，殖民後許多語言消失或使用者大減。16 世紀起西班牙語成為主要語言，19 世紀卡拉卡斯出身的安德烈斯·貝略編寫的語法書影響整個拉丁美洲。20 世紀石油繁榮帶來義大利、葡萄牙與西班牙移民，也為委內瑞拉西語增添了外來詞彙。1999 年憲法首次承認原住民語言的官方地位。"
  },
  "food": {
   "ranking": [
    {
     "name": "阿瑞帕",
     "localName": "Arepa",
-    "description": "以玉米粉做成的圓餅，剖開夾入起司、肉或豆子。",
-    "history": "源自原住民的古老食物，是委內瑞拉人每日的主食。",
+    "description": "以玉米粉加水揉成圓餅，在鐵板上煎烤或油炸後剖開，夾入起司、黑豆、雞肉酪梨沙拉或手撕牛肉等各種餡料。",
+    "history": "阿瑞帕的歷史可追溯到殖民以前的原住民，他們把玉米磨碎做成圓餅，在陶盤上烤熟。過去製作阿瑞帕需要先煮玉米再費力研磨，1950 年代工程師路易斯·卡巴耶羅·梅希亞斯發明了預煮玉米粉，1960 年起以「P.A.N.」品牌上市，使阿瑞帕成為人人都能快速製作的日常主食。近年數百萬委內瑞拉人移居國外，也把阿瑞帕店開到了世界各地。",
     "wiki": "Arepa",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Arepitas_Food_Macro.jpg/960px-Arepitas_Food_Macro.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Arepitas_Food_Macro.jpg",
@@ -57,8 +57,8 @@
    {
     "name": "克里奧爾大拼盤",
     "localName": "Pabellón criollo",
-    "description": "米飯、黑豆、牛肉絲與炸大蕉組成的套餐。",
-    "history": "被視為委內瑞拉國菜，象徵多元族群的融合。",
+    "description": "一盤中同時盛著手撕燉牛肉、黑豆、白飯與炸熟香蕉片，有時再加一顆煎蛋，是委內瑞拉的國菜。",
+    "history": "這道菜在殖民時期逐漸成形，結合了西班牙人帶來的牛肉、非洲人飲食傳統中的豆類與香蕉，以及當地的米飯與調味，被許多人視為委內瑞拉多元族群融合的象徵。「pabellón」意為「旗幟」，有人認為盤中多種顏色就像國旗。今天它是委內瑞拉家庭與餐廳中最具代表性的午餐。",
     "wiki": "Pabellón criollo",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Pabell%C3%B3n_Criollo_Venezolano.jpg/960px-Pabell%C3%B3n_Criollo_Venezolano.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Pabell%C3%B3n_Criollo_Venezolano.jpg",
@@ -67,8 +67,8 @@
    {
     "name": "哈亞卡",
     "localName": "Hallaca",
-    "description": "以玉米麵團包肉、橄欖與葡萄乾，用香蕉葉包好煮熟。",
-    "history": "聖誕節的傳統料理，家人通常一起製作。",
+    "description": "以玉米麵團包入燉煮的牛肉、豬肉與雞肉，再加上葡萄乾、橄欖與酸豆，用香蕉葉包成長方形後水煮。",
+    "history": "哈亞卡是委內瑞拉聖誕節的代表性食物，一般認為源自殖民時期，融合了原住民的玉米餅、西班牙的橄欖與葡萄乾，以及非洲傳統的香蕉葉包裹技術。民間常說它源於奴隸把主人宴席剩餘的食材包進玉米麵團，但此說並無確切史料。每年 12 月，全家老少會一起分工製作數十甚至上百個哈亞卡，這種家庭聚會本身就是節慶的一部分。",
     "wiki": "Hallaca",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Hallacas_con_pan_de_jamon%2C_plato_Venezuelano.jpg/960px-Hallacas_con_pan_de_jamon%2C_plato_Venezuelano.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Hallacas_con_pan_de_jamon,_plato_Venezuelano.jpg",
@@ -77,8 +77,8 @@
    {
     "name": "玉米煎餅",
     "localName": "Cachapa",
-    "description": "以新鮮甜玉米做成的厚煎餅，夾入軟起司。",
-    "history": "委內瑞拉常見的早餐與路邊小吃。",
+    "description": "以新鮮玉米粒磨成的甜味麵糊在鐵板上煎成厚餅，常對折夾入柔軟的鮮乳酪「手捏起司」，甜鹹交融。",
+    "history": "卡恰帕的做法源自原住民以新鮮玉米製作食物的傳統，比使用乾玉米粉的阿瑞帕口感更甜、更濕潤。它與委內瑞拉平原與中部地區的畜牧業密切相關，因為搭配的「手捏起司」就是牧場自製的新鮮乳酪。今天公路旁的卡恰帕攤販是委內瑞拉旅途中的經典風景。",
     "wiki": "Cachapa",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Cooking_a_cachapa.jpg/960px-Cooking_a_cachapa.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Cooking_a_cachapa.jpg",
@@ -87,8 +87,8 @@
    {
     "name": "起司條",
     "localName": "Tequeño",
-    "description": "以麵皮捲起白起司條後油炸。",
-    "history": "起源於米蘭達州的洛斯特克斯，是派對上的必備點心。",
+    "description": "以麵皮捲住白起司條後油炸或烘烤，外皮酥脆、內裡起司柔軟拉絲，常沾酪梨醬或其他醬料食用。",
+    "history": "起司條的名稱一般認為來自首都卡拉卡斯附近的洛斯特克斯鎮，據說在 20 世紀初於當地流行，後來傳遍全國。它是委內瑞拉生日派對、婚禮與各種聚會中不可缺少的點心，甚至有「沒有起司條就不算派對」的說法。近年隨委內瑞拉移民散居世界各地，起司條也在海外打開了知名度。",
     "wiki": "Tequeño",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Teque%C3%B1os_v%C3%A9n%C3%A9zu%C3%A9liens_%C3%A0_Arepado_%28Lyon%29%2C_avril_2019_%282%29.jpg/960px-Teque%C3%B1os_v%C3%A9n%C3%A9zu%C3%A9liens_%C3%A0_Arepado_%28Lyon%29%2C_avril_2019_%282%29.jpg",
     "imagePage": "https://commons.wikimedia.org/wiki/File:Teque%C3%B1os_v%C3%A9n%C3%A9zu%C3%A9liens_%C3%A0_Arepado_(Lyon),_avril_2019_(2).jpg",

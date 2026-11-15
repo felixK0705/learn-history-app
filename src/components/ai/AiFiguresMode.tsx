@@ -22,7 +22,7 @@ export default function AiFiguresMode() {
   );
 
   const btn = (on: boolean) =>
-    `flex h-8 items-center gap-1.5 rounded-full px-3 text-[12.5px] font-semibold normal-case tracking-normal transition ${
+    `flex h-8 items-center gap-1.5 whitespace-nowrap rounded-full px-3 text-[12.5px] max-sm:px-2.5 max-sm:text-[12px] font-semibold normal-case tracking-normal transition ${
       on ? "bg-white text-deep-800 shadow-[0_4px_12px_-4px_rgba(0,20,80,0.6)]" : "text-white/75 hover:text-white"
     }`;
 
@@ -36,7 +36,7 @@ export default function AiFiguresMode() {
             <span className="max-sm:hidden">館藏人物</span>
           </button>
           <button role="tab" aria-selected={ai} onClick={() => setAi(true)} className={btn(ai)}>
-            <Sparkles className="size-3.5" />
+            <Sparkles className="size-3.5 max-sm:hidden" />
             <span className="sm:hidden">AI 查詢</span>
             <span className="max-sm:hidden">AI 查詢任意人物</span>
           </button>

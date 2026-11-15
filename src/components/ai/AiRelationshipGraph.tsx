@@ -255,6 +255,9 @@ export default function AiRelationshipGraph({ initialQuery = "" }: { initialQuer
                 const isCenter = i === 0;
                 const r = radius(n, isCenter);
                 const dim = lit && !lit.has(n.id);
+                // 主角姓名寫在圓內（太長則縮小，超過 7 字改寫在下方）
+                const inside = isCenter && n.name.length <= 7;
+                const centerSize = n.name.length <= 3 ? 21 : n.name.length <= 5 ? 16 : 13;
                 return (
                   <g
                     key={n.id}
@@ -268,14 +271,16 @@ export default function AiRelationshipGraph({ initialQuery = "" }: { initialQuer
                     <g data-node>
                       {(isCenter || picked === n.id) && <circle r={r + 8} fill="none" stroke="#a6e1ff" strokeOpacity={0.55} strokeWidth={2} />}
                       <circle r={r} fill={isCenter ? "url(#ai-center)" : "#0d43ad"} stroke="#fff" strokeOpacity={isCenter ? 1 : 0.75} strokeWidth={isCenter ? 3 : 2} />
-                      <text textAnchor="middle" dy={isCenter ? 7 : 6} fontSize={isCenter ? 20 : 15} fontWeight={800} fill={isCenter ? "#062466" : "#fff"}>
-                        {n.name.slice(0, isCenter ? 4 : 1)}
+                      <text textAnchor="middle" dy={inside ? centerSize * 0.36 : 6} fontSize={inside ? centerSize : 15} fontWeight={800} fill={isCenter ? "#062466" : "#fff"}>
+                        {inside ? n.name : n.name.slice(0, 1)}
                       </text>
-                      <text textAnchor="middle" y={r + 19} fontSize={isCenter ? 18 : 14.5} fontWeight={700} fill="#fff" stroke="#06194a" strokeWidth={4} paintOrder="stroke">
-                        {n.name}
-                      </text>
+                      {!inside && (
+                        <text textAnchor="middle" y={r + 19} fontSize={isCenter ? 17 : 14.5} fontWeight={700} fill="#fff" stroke="#06194a" strokeWidth={4} paintOrder="stroke">
+                          {n.name}
+                        </text>
+                      )}
                       {n.description && (
-                        <text textAnchor="middle" y={r + 36} fontSize={11.5} fill="rgba(255,255,255,0.75)" stroke="#06194a" strokeWidth={3} paintOrder="stroke">
+                        <text textAnchor="middle" y={inside ? r + 20 : r + 36} fontSize={11.5} fill="rgba(255,255,255,0.75)" stroke="#06194a" strokeWidth={3} paintOrder="stroke">
                           {n.description}
                         </text>
                       )}

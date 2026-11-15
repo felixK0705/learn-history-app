@@ -37,11 +37,22 @@ function useAiContext(): { label: string; context: string; country?: string } {
   }, [pathname, search]);
 }
 
+/** 桌機上避開各頁右側資訊面板，讓浮動按鈕不遮住面板內容 */
+function useFabShift() {
+  const { pathname, search } = useLocation();
+  const q = new URLSearchParams(search);
+  if (pathname === "/" && q.get("country")) return "lg:right-[472px]";
+  if (pathname.startsWith("/figures") && q.get("focus")) return "md:right-[332px]";
+  if (pathname.startsWith("/buildings")) return "lg:right-[412px]";
+  return "md:right-5";
+}
+
 const SUGGESTIONS = ["文藝復興為什麼從義大利開始？", "絲路對東西方交流有什麼影響？", "第一次世界大戰的導火線是什麼？"];
 
 export default function GlobalChat() {
   const { open, pending, messages } = useChat();
   const { label, context, country } = useAiContext();
+  const fabShift = useFabShift();
   const [input, setInput] = useState("");
   const panelRef = useRef<HTMLDivElement>(null);
   const listRef = useRef<HTMLDivElement>(null);
@@ -107,7 +118,7 @@ export default function GlobalChat() {
       <button
         ref={fabRef}
         onClick={toggleChat}
-        className={`fixed right-4 bottom-[4.5rem] z-50 grid size-13 place-items-center rounded-full border border-white/30 bg-[linear-gradient(145deg,#2d9bea,#0d43ad)] text-white shadow-[0_14px_30px_-10px_rgba(0,20,80,0.8),inset_0_1px_0_rgba(255,255,255,0.5)] transition hover:scale-105 hover:brightness-110 md:right-5 md:bottom-5 ${open ? "max-sm:hidden" : ""}`}
+        className={`fixed right-4 bottom-[4.5rem] z-50 grid size-13 place-items-center rounded-full border border-white/30 bg-[linear-gradient(145deg,#2d9bea,#0d43ad)] text-white shadow-[0_14px_30px_-10px_rgba(0,20,80,0.8),inset_0_1px_0_rgba(255,255,255,0.5)] transition hover:scale-105 hover:brightness-110 md:bottom-5 ${fabShift} ${open ? "max-sm:hidden" : ""}`}
         aria-label={open ? "關閉 AI 助理" : "開啟 AI 歷史助理"}
         title="AI 歷史助理"
       >

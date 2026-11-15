@@ -1,5 +1,6 @@
 """sphinx 吉薩獅身人面像寫實模型（公尺；長 73、寬 19、高 20，面向正東 = +X）"""
 
+import ast
 import math
 
 from mathutils import Vector, noise
@@ -9,10 +10,10 @@ from lib import TAU, Builder
 import os
 
 # 目標點、方位角、仰角、距離、焦距（對應參考照：東南側地面視角）
-CAMERA = ((0.0, 0.0, 8.5), 32.0, 1.0, 36.0, 20.0)
+CAMERA = ((5.0, 0.0, 9.0), 46.0, 1.0, 40.0, 20.0)
 
 if os.environ.get("TL_CAM"):  # 開發用：覆寫預覽相機
-    CAMERA = eval(os.environ["TL_CAM"])
+    CAMERA = ast.literal_eval(os.environ["TL_CAM"])
 
 
 # ---------------------------------------------------------------- 共用工具
@@ -85,11 +86,11 @@ def lerp_table(tab, x):
 # ---------------------------------------------------------------- 主體
 def sphinx(path):
     b = Builder("Sphinx", seed=11)
-    body_m = b.tex("body", "rock_04", tile=3.0, tint="#c98f48", normal=1.6)
+    body_m = b.tex("body", "rock_04", tile=3.0, tint="#c9944f", normal=1.6)
     groove = b.tex("groove", "rock_04", tile=3.0, tint="#9a6e3c", normal=1.6)
-    head_m = b.tex("head", "rock_04", tile=2.0, tint="#c98a4c", normal=1.2)
+    head_m = b.tex("head", "rock_04", tile=2.0, tint="#c98f52", normal=1.2)
     clad = b.tex("clad", "sandstone_blocks_05", tile=3.0, tint="#c99552", normal=1.0)
-    floor_m = b.tex("floor", "sand_01", tile=5.0, tint="#d6ab68", normal=0.8)
+    floor_m = b.tex("floor", "sand_01", tile=5.0, tint="#d8b273", normal=0.8)
     bedrock = b.tex("bedrock", "rock_04", tile=6.0, tint="#c29a62", normal=1.3)
     granite = b.tex("granite", "rock_04", tile=1.5, tint="#8a5a4c", normal=0.6)
     dark = b.color("shade", "#7d6248", rough=0.95)
@@ -99,7 +100,7 @@ def sphinx(path):
         z = v.z
         ph = z * TAU / 1.45 + 0.6 * noise.noise(Vector((v.x * 0.08, 0, z * 0.3)))
         band = max(-1.0, min(1.0, math.sin(ph) * 2.2))  # 階梯狀層理：硬層外凸、軟層內凹
-        rnd = noise.noise(Vector((v.x * 0.35, v.y * 0.35, z * 0.9))) * 0.5
+        rnd = noise.noise(Vector((v.x * 0.35, v.y * 0.35, z * 0.9))) * 0.5 + noise.noise(Vector((v.x * 0.12, v.y * 0.12 + 5, z * 0.25))) * 0.9
         d = (band * 0.7 + rnd) * amp * (1 - k_top)
         top = (noise.noise(Vector((v.x * 0.12, 7.0, 0))) * 0.9 + noise.noise(Vector((v.x * 0.5, v.y * 0.5, 3.0))) * 0.35) * max(0.0, k_top) if k_top > 0 else 0.0
         v = v + Vector((0, 0, top))

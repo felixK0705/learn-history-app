@@ -58,7 +58,7 @@ def dome(b, mi, R, rise, base, seg=64, ribs=0, rib_amp=0.006, z_skirt=0.0, n=10,
     return b.lathe(mi, prof, (x, y, z), seg=seg, smooth=True, radial=radial)
 
 
-def half_dome(b, mi, R, rise, center, facing, seg=24, n=8, ribs=0):
+def half_dome(b, mi, R, rise, center, facing, seg=24, n=8, ribs=0, flat_mi=None):
     """半圓頂（四分之一球殼外形）：facing 為開口所朝方向的角度（弧向 facing+π 方向凸出）"""
     cx, cy, cz = center
     rings = []
@@ -84,11 +84,11 @@ def half_dome(b, mi, R, rise, center, facing, seg=24, n=8, ribs=0):
         if all((p.co - q.co).length > 1e-4 for q in uniq):
             uniq.append(p)
     try:
-        mk_face(b, uniq, mi)
+        mk_face(b, uniq, mi if flat_mi is None else flat_mi)
     except ValueError:
         pass
     # 底面
-    mk_face(b, list(reversed(rings[0])), mi)
+    mk_face(b, list(reversed(rings[0])), mi if flat_mi is None else flat_mi)
 
 
 def arched_window(b, mi, w, h, M, depth=0.08, seg=8):
@@ -157,13 +157,16 @@ def minaret(b, x, y, H, R, stone, cap, gold, balcony=None, shaft=None, balconies
             (x, y, 0), seg=8, smooth=True)
 
 
-def leaf_blob(b, mi, loc, rx, ry, rz, lump=0.3):
+def leaf_blob(b, mi, loc, rx, ry, rz, lump=0.3, subdiv=2):
+    """不規則葉團：細分球體＋多層雜訊（菜花狀起伏）"""
     off = Vector((b.rng.uniform(0, 99), b.rng.uniform(0, 99), b.rng.uniform(0, 99)))
-    r = bmesh.ops.create_icosphere(b.bm, subdivisions=1, radius=1.0, matrix=Matrix.Identity(4))
+    r = bmesh.ops.create_icosphere(b.bm, subdivisions=subdiv, radius=1.0, matrix=Matrix.Identity(4))
     for v in r["verts"]:
         p = v.co.copy()
-        n_ = noise.noise(p * 1.6 + off) * 0.7 + noise.noise(p * 3.5 + off) * 0.3
+        n_ = noise.noise(p * 1.4 + off) * 0.55 + noise.noise(p * 3.2 + off) * 0.3 + noise.noise(p * 7.0 + off) * 0.15
         k = 1 + lump * n_
+        if p.z < -0.3:
+            k *= 0.85 + 0.15 * (1 + p.z)  # 底部略收平
         v.co = Vector((loc[0] + p.x * rx * k, loc[1] + p.y * ry * k, loc[2] + p.z * rz * k))
     for f in {f for v in r["verts"] for f in v.link_faces}:
         f.material_index = mi
@@ -171,25 +174,20 @@ def leaf_blob(b, mi, loc, rx, ry, rz, lump=0.3):
 
 
 def broadleaf(b, x, y, h, leaves, trunk, z=0.0, spread=1.0):
-    """闊葉樹：主幹分枝＋多個大小不一的不規則葉團（上亮下暗、外輪廓起伏）"""
+    """闊葉樹：主幹＋數個大葉團（上亮下暗、外輪廓起伏）"""
     rng = b.rng
-    R = h * rng.uniform(0.3, 0.38) * spread
-    cz = z + h - R * 0.9
-    b.cyl(trunk, h * 0.035, h * 0.022, (cz - z) * 0.85, (x, y, z), seg=6)
-    # 主枝
-    for _ in range(3):
+    R = h * rng.uniform(0.36, 0.44) * spread
+    cz = z + h - R * 0.85
+    b.cyl(trunk, h * 0.035, h * 0.022, (cz - z) * 0.9, (x, y, z), seg=6)
+    n = rng.randint(4, 6)
+    for i in range(n):
         a = rng.uniform(0, TAU)
-        b.cyl(trunk, h * 0.016, h * 0.008, R * 0.8, (x, y, z + (cz - z) * 0.6), seg=5,
-              rot=(rng.uniform(0.5, 0.9) * math.cos(a), rng.uniform(0.5, 0.9) * math.sin(a), 0))
-    n = rng.randint(14, 20)
-    for _ in range(n):
-        a = rng.uniform(0, TAU)
-        rr = R * math.sqrt(rng.uniform(0.0, 1)) * 0.78
-        dz = rng.uniform(-0.5, 0.6) * R / spread
-        br = R * rng.uniform(0.3, 0.5)
-        mi = leaves[0] if dz > 0.2 * R else (leaves[2] if dz < -0.2 * R else leaves[1])
-        leaf_blob(b, mi, (x + rr * math.cos(a), y + rr * math.sin(a), cz + dz), br * rng.uniform(0.9, 1.2), br * rng.uniform(0.9, 1.2),
-                  br * 0.8, lump=0.45)
+        rr = R * (0.0 if i == 0 else rng.uniform(0.4, 0.62))
+        dz = (0.1 * R if i == 0 else rng.uniform(-0.45, 0.2) * R)
+        br = R * (0.72 if i == 0 else rng.uniform(0.48, 0.62))
+        mi = leaves[1] if i == 0 else leaves[rng.choice((0, 1, 2, 2))]
+        leaf_blob(b, mi, (x + rr * math.cos(a), y + rr * math.sin(a), cz + dz), br * rng.uniform(0.95, 1.15), br * rng.uniform(0.95, 1.15),
+                  br * 0.85, lump=0.42)
 
 
 def conifer(b, x, y, h, mats, trunk, z=0.0):
@@ -222,7 +220,7 @@ def hagia_sophia(path):
     gold = b.color("gold", "#c9a14a", rough=0.3, metal=0.9)
     trim = b.color("trim", "#e6ddd0", rough=0.7)
     pave = b.tex("pave", "gravel_floor", tile=4.0, tint="#9d978c", rough=0.95, normal=0)
-    grass = b.tex("grass", "grass_ground", tile=5.0, tint="#5e8a3a", rough=0.95, normal=0)
+    grass = b.tex("grass", "grass_ground", tile=8.0, tint="#5f7c3c", gain=0.92, rough=0.95, normal=0)
     soil = b.color("soil", "#6b5a45", rough=0.95)
     leaves = [b.color("leaf_l", "#6b8f3e", rough=0.85), b.color("leaf_m", "#4c6e2c", rough=0.88), b.color("leaf_d", "#34521f", rough=0.9)]
     trunk = b.color("trunk", "#5a4a3a", rough=0.9)
@@ -261,8 +259,8 @@ def hagia_sophia(path):
 
     # ---------------------------------------------------------------- 中央方塔：四角墩柱上段＋南北拱窗牆
     S = 15.5             # 中央方形半邊
-    Z_ARCH_TOP = 41.0
-    Z_PLAT = 41.5
+    Z_ARCH_TOP = 38.6
+    Z_PLAT = 40.0
     PW = 8.0             # 墩柱外露寬
     for sx in (-1, 1):
         for sy in (-1, 1):
@@ -295,7 +293,7 @@ def hagia_sophia(path):
     # ---------------------------------------------------------------- 鼓座（40 窗＋扶壁肋）與主圓頂
     Z_DRUM = Z_PLAT + 0.6
     R_DOME = 16.2
-    H_DRUM = 4.6
+    H_DRUM = 5.4
     b.lathe(lead_d, [(R_DOME - 0.3, Z_DRUM), (R_DOME - 0.3, Z_DRUM + H_DRUM)], (0, 0, 0), seg=80, smooth=False)
     for k in range(40):
         a = TAU * (k + 0.5) / 40
@@ -304,7 +302,7 @@ def hagia_sophia(path):
         b.frustum(lead_d, (1.3, 1.1), (0.7, 0.9), H_DRUM + 0.4, (c * (R_DOME + 0.35), s_ * (R_DOME + 0.35), Z_DRUM), rot_z=a)
         a2 = TAU * k / 40
         M = T(math.cos(a2) * (R_DOME - 0.25), math.sin(a2) * (R_DOME - 0.25), Z_DRUM + 0.7) @ Rz(a2 + math.pi / 2)
-        arched_window(b, win, 1.15, 3.0, M, depth=0.1)
+        arched_window(b, win, 1.3, 3.8, M, depth=0.1)
     b.lathe(trim, [(R_DOME + 0.3, Z_DRUM + H_DRUM), (R_DOME + 0.45, Z_DRUM + H_DRUM + 0.35), (R_DOME - 0.2, Z_DRUM + H_DRUM + 0.35)],
             (0, 0, 0), seg=80, smooth=False)
     Z_DOME = Z_DRUM + H_DRUM + 0.35
@@ -322,7 +320,7 @@ def hagia_sophia(path):
         # 支撐半圓頂的半圓牆
         b.ering(plaster_d, (S - 0.5, S - 0.5), (S + 0.6, S + 0.6), H_AISLE, Z_HD, seg=48,
                 t0=(-math.pi / 2 if sx > 0 else math.pi / 2), t1=(math.pi / 2 if sx > 0 else 3 * math.pi / 2), center=(sx * S, 0))
-        half_dome(b, lead, S + 0.7, 9.0, (sx * S, 0, Z_HD), facing=(math.pi if sx > 0 else 0.0), seg=28, n=8, ribs=12)
+        half_dome(b, lead, S + 0.7, 9.0, (sx * S, 0, Z_HD), facing=(math.pi if sx > 0 else 0.0), seg=28, n=8, ribs=12, flat_mi=plaster_d)
         # 半圓頂底部的小窗
         for k in range(5):
             a = (-math.pi / 2 + math.pi * (k + 0.5) / 5) if sx > 0 else (math.pi / 2 + math.pi * (k + 0.5) / 5)
@@ -335,7 +333,7 @@ def hagia_sophia(path):
             dome(b, lead, 6.7, 3.6, (cx, cy, H_AISLE + 3.2), seg=24, ribs=10, n=6)
     # 東端後殿（半圓）
     b.ering(plaster, (0.01, 0.01), (9.0, 9.0), 0, H_AISLE - 2, seg=32, t0=-math.pi / 2, t1=math.pi / 2, center=(XE, 0))
-    half_dome(b, lead, 9.0, 5.0, (XE, 0, H_AISLE - 2), facing=math.pi, seg=16, n=6)
+    half_dome(b, lead, 9.0, 5.0, (XE, 0, H_AISLE - 2), facing=math.pi, seg=16, n=6, flat_mi=plaster)
     for k in range(3):
         a = -math.pi / 3 + math.pi / 3 * k
         M = T(XE + math.cos(a) * 9.05, math.sin(a) * 9.05, 10.0) @ Rz(a + math.pi / 2)
@@ -372,7 +370,7 @@ def hagia_sophia(path):
 
     # ---------------------------------------------------------------- 樹木
     rng = b.rng
-    for x, y in b.scatter(70, 52, 170, min_dist=10,
+    for x, y in b.scatter(60, 50, 170, min_dist=11,
                           avoid=lambda x, y: (-66 < x < 58 and -50 < y < 50) or (-35 < x < 25 and -72 < y < -52) or abs(x + 70) < 10):
         broadleaf(b, x, y, rng.uniform(13, 20), leaves, trunk)
 

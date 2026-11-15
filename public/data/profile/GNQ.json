@@ -52,7 +52,7 @@
    {
     "name": "胡椒湯",
     "localName": "Pepesup",
-    "description": "以魚或肉類加入大量辣椒、香料與蔬菜熬成的辛辣清湯，湯色紅亮、味道濃烈。",
+    "description": "以魚或山羊肉等肉類加入大量辣椒、當地香料與蔬菜熬成的辛辣清湯，湯色紅亮、味道濃烈，常趁熱喝。",
     "history": "胡椒湯在奈及利亞與喀麥隆十分常見，名稱來自英語的「pepper soup」。殖民時期比奧科島的可可種植園引進大批奈及利亞勞工，他們的皮欽英語與飲食也隨之傳入，胡椒湯因此在赤道幾內亞普及。它常被認為能驅寒治病，也是酒吧與夜間聚會的熱門料理。",
     "wiki": "Pepper soup",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Assorted_meat_pepper_soup_at_Lagos_Island.jpg/960px-Assorted_meat_pepper_soup_at_Lagos_Island.jpg",
@@ -62,7 +62,7 @@
    {
     "name": "富富",
     "localName": "Fufu",
-    "description": "將煮熟的木薯或大蕉搗成柔軟有彈性的糰子，配各種燉菜與湯汁食用。",
+    "description": "將煮熟的木薯或大蕉放入木臼搗成柔軟有彈性的糰子，用手捏成小塊沾各種燉菜與湯汁食用。",
     "history": "搗製澱粉糰是中非與西非的古老飲食傳統，16 世紀葡萄牙人從美洲引進木薯後，木薯成為重要原料。在赤道幾內亞，富富是芳族與其他民族的日常主食，通常用手捏取一小塊沾醬汁吃，代表了當地以根莖類搭配燉菜的飲食結構。",
     "wiki": "Fufu",
     "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Wrapped_fufu.jpg",
@@ -82,7 +82,7 @@
    {
     "name": "苦葉燉菜",
     "localName": "Ndolé",
-    "description": "以苦葉（ndolé）與花生醬一起燉煮，加入蝦、牛肉或魚，口味微苦帶堅果香。",
+    "description": "以清洗去苦的苦葉與花生醬一起燉煮，加入蝦、牛肉或燻魚，口味微苦帶濃郁堅果香，配大蕉或米飯食用。",
     "history": "苦葉燉菜源自喀麥隆沿海的杜阿拉人，被喀麥隆視為國菜。赤道幾內亞的芳族與喀麥隆南部的芳族同屬一個民族，邊境兩側往來密切，這道菜因此也成為赤道幾內亞常見的料理。苦葉需經多次清洗去除苦味，製作費時，常在週末或節日準備。",
     "wiki": "Ndolé",
     "image": "https://upload.wikimedia.org/wikipedia/commons/9/91/Ndol%C3%A8_%C3%A0_la_viande%2C_morue_et_crevettes.jpg",
@@ -92,7 +92,7 @@
    {
     "name": "炸大蕉",
     "localName": "Plátano frito",
-    "description": "將熟大蕉切片油炸，外表焦香、內部軟甜，常作為配菜。",
+    "description": "將熟大蕉切片或切段後下鍋油炸，外表焦香、內部軟甜，常作為燉菜與烤魚的配菜，也是街頭常見小吃。",
     "history": "大蕉在中非種植已有數百年歷史，是赤道幾內亞人日常的重要澱粉來源。名稱「plátano frito」是西班牙語，反映了西班牙殖民留下的語言影響。炸大蕉做法簡單，常與魚、雞肉或豆類一起吃，也是街頭攤販常見的小吃。",
     "wiki": "Fried plantain",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Vendeuses_de_bananes_plantain.jpg/960px-Vendeuses_de_bananes_plantain.jpg",
