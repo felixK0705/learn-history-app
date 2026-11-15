@@ -97,7 +97,7 @@ def gen_caihua(name, seed=5):
 
 # ====================================================================== 中式殿堂工具
 class CnBuilder(AsiaBuilder):
-    def mats_cn(self, roof_rgb=(186, 124, 36), roof_name="cn_yellow3"):
+    def mats_cn(self, roof_rgb=(170, 108, 30), roof_name="cn_yellow4"):
         m = {}
         m["tile"] = self.gtex("tile", gen_tiles(roof_name, roof_rgb, kind="kawara", n_ch=10, n_rows=10, seed=7), tile=3.2,
                               rough=0.35, normal=0.8, oriented=True)
@@ -284,7 +284,7 @@ def forbidden_city(path):
     b = CnBuilder("ForbiddenCity", seed=8)
     M = b.mats_cn()
     pave = b.gtex("pave", gen_paving("square3", (112, 101, 90), bw=8, bh=16), tile=4.0, rough=0.9, normal=0.5)
-    slab = b.gtex("slab", gen_paving("slab2", (146, 138, 126), bw=2, bh=4, seed=9), tile=4.0, rough=0.8, normal=0.4)
+    slab = b.gtex("slab", gen_paving("slab3", (128, 120, 108), bw=2, bh=4, seed=9), tile=4.0, rough=0.8, normal=0.4)
 
     # ---------------- 廣場地面（矩形；中央御路）
     SX, SY0, SY1 = 105.0, -215.0, 210.0

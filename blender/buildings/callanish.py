@@ -13,7 +13,7 @@ from mathutils import Vector, noise
 from lib import TAU, Builder
 
 # 目標點、方位角、仰角、距離、焦距（對應參考照：由南側低角度望向石圈與北石道）
-CAMERA = ((0.0, 1.0, 2.2), 15.0, 2.0, 19.0, 24.0)
+CAMERA = ((0.0, 0.5, 2.3), 15.0, 1.0, 12.5, 22.0)
 if os.environ.get("TL_CAM"):  # 開發用：覆寫預覽相機
     CAMERA = ast.literal_eval(os.environ["TL_CAM"])
 

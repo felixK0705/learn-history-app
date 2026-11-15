@@ -19,7 +19,7 @@ from lib import TAU, TEX, Builder
 
 from .hagia_sophia import broadleaf, cypress, foliage_mats
 
-CAMERA = ((-38, 0, 46), 2, 7, 420, 85)
+CAMERA = ((-34, 0, 40), 4, 11, 540, 85)
 
 GEN = os.path.join(TEX, "_gen", "florence_v1")
 
@@ -188,17 +188,19 @@ def florence_duomo(path):
     white = b.tex("white", "marble_01", tile=4.0, tint="#e9e4d8", rough=0.5, normal=0.3)
     green = b.color("green_marble", "#4a5f52", rough=0.45)
     pinkm = b.color("pink_marble", "#d29e90", rough=0.5)
-    tiles = b.tex("tiles", "grey_roof_tiles", tile=3.0, tint="#b8603d", gain=1.0, rough=0.85, normal=0.8)
+    tiles = b.tex("tiles", "grey_roof_tiles", tile=3.0, tint="#ad5b3b", gain=1.0, rough=0.85, normal=0.8)
     tiles_d = b.tex("tiles_d", "grey_roof_tiles", tile=3.0, tint="#a8573a", gain=0.95, rough=0.85, normal=0.8)
-    drum_c = b.tex("drum_stone", "white_sandstone_blocks_02", tile=4.0, tint="#cdbb9c", rough=0.8, normal=0.5)
+    drum_c = b.color("drum_stone", "#cdbb9c", rough=0.8)
     win = b.color("window", "#2b2827", rough=0.35)
     gold = b.color("gold", "#d2a640", rough=0.25, metal=1.0)
     copper = b.color("bronze", "#6b5a3f", rough=0.5, metal=0.6)
     pave = b.tex("pave", "gravel_floor", tile=3.0, tint="#a39a8d", rough=0.9, normal=0.3)
-    street = b.tex("street", "gravel_floor", tile=3.0, tint="#8c8478", rough=0.9, normal=0.3)
+    street = pave
     soil = b.color("soil", "#6b5a45", rough=0.95)
     plasters = [b.tex(f"plaster{k}", "plastered_wall_04", tile=6.0, tint=c, rough=0.9, normal=0.5)
-                for k, c in enumerate(("#e2c79a", "#d8b083", "#eadcc0", "#cf9e78"))]
+                for k, c in enumerate(("#e0c49a", "#e8dcc4"))]
+    plasters += [b.tex("plaster_c", "plastered_wall_04", tile=6.0, tint="#cfa27c", rough=0.9, normal=0.5)]
+    roof_c = b.tex("roof_c", "red_sandstone_tiles", tile=4.0, tint="#a2604a", rough=0.85, normal=0.6)
     leaves = foliage_mats(b)
     trunk = b.color("trunk", "#5a4a3a", rough=0.9)
     cyp = b.color("cypress", "#2c4020", rough=0.9)
@@ -306,7 +308,7 @@ def florence_duomo(path):
     # ---------------------------------------------------------------- 布魯內萊斯基圓頂
     Z_D = Z_DR1 + 3.0
     R_LANT = 5.6
-    prof = pointed_profile(RC + 0.2, rise_scale=0.93, r_top=R_LANT, n=16)
+    prof = pointed_profile(RC + 0.2, rise_scale=0.8, r_top=R_LANT, n=16)
     z_top_dome = prof[-1][1]
     radial = oct_radial(math.pi / 8)
     b.lathe(tiles, prof + [(0.0, z_top_dome)], (0, 0, Z_D), seg=64, smooth=True, rot_offset=0.0, radial=radial)
@@ -393,7 +395,7 @@ def florence_duomo(path):
                           kind="round")
 
     # ---------------------------------------------------------------- 喬托鐘樓
-    CX, CY = XF + 7.5, -(YA + 13.0)
+    CX, CY = XF + 5.5, -(YA + 13.0)
     W = 14.45
     H_T = 82.0
     levels = [(0, 8.0), (8.0, 16.0), (16.0, 31.0), (31.0, 45.0), (45.0, 59.0), (59.0, 78.0)]
@@ -465,30 +467,28 @@ def florence_duomo(path):
     rng = b.rng
 
     def busy(x, y):
-        if -170 < x < 62 and -52 < y < 30:
+        if -116 < x < 56 and -50 < y < 46:
             return True
-        if -66 < x < 62 and -50 < y < 50:
-            return True
-        if -120 < x < -40 and -50 < y < 34:
+        if -168 < x < -100 and -34 < y < 34:
             return True
         return False
 
     placed = []
-    for _ in range(900):
-        if len(placed) >= 95:
+    for _ in range(4000):
+        if len(placed) >= 150:
             break
         x, y = rng.uniform(-220, 220), rng.uniform(-200, 200)
         if math.hypot(x, y) > 225 or busy(x, y):
             continue
-        w, d = rng.uniform(14, 30), rng.uniform(12, 22)
-        if any(abs(x - px) < (w + pw) / 2 + 5 and abs(y - py) < (d + pd) / 2 + 5 for px, py, pw, pd in placed):
+        w, d = rng.uniform(12, 26), rng.uniform(10, 18)
+        if any(abs(x - px) < (w + pw) / 2 + 2.5 and abs(y - py) < (d + pd) / 2 + 2.5 for px, py, pw, pd in placed):
             continue
         placed.append((x, y, w, d))
-        h = rng.uniform(13, 22)
+        h = rng.uniform(10, 17)
         mi = plasters[rng.randrange(len(plasters))]
         b.box_base(mi, (w, d, h), (x, y, 0))
-        rh = min(w, d) * 0.22
-        b.frustum(tiles if rng.random() < 0.6 else tiles_d, (w + 1.0, d + 1.0), (max(0.3, w - d), max(0.3, d - w)) if w > d else
+        rh = min(w, d) * 0.17
+        b.frustum((tiles, tiles_d, roof_c)[rng.randrange(3)], (w + 1.0, d + 1.0), (max(0.3, w - d), max(0.3, d - w)) if w > d else
                   (max(0.3, w - d), max(0.3, d - w)), rh, (x, y, h))
         # 立面窗列
         for s in (-1, 1):

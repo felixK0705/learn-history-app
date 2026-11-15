@@ -1,6 +1,7 @@
 import { forwardRef, useEffect, useImperativeHandle, useRef } from "react";
 import Globe, { type GlobeInstance } from "globe.gl";
-import { AdditiveBlending, Color, Mesh, MeshPhongMaterial, ShaderMaterial, SphereGeometry, TextureLoader } from "three";
+import { geoContains } from "d3-geo";
+import { AdditiveBlending, Color, Mesh, MeshPhongMaterial, ShaderMaterial, SphereGeometry, TextureLoader, Vector3 } from "three";
 import { CSS2DRenderer } from "three/examples/jsm/renderers/CSS2DRenderer.js";
 import { countries, countryByIso } from "../../data/world";
 
@@ -38,7 +39,7 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
 ) {
   const containerRef = useRef<HTMLDivElement>(null);
   const globeRef = useRef<GlobeInstance | null>(null);
-  const hoverRef = useRef<GeoFeature | null>(null);
+  const features = useRef<GeoFeature[]>([]);
   const selectedRef = useRef<string | null>(selectedIso);
   const labelEls = useRef(new Map<string, HTMLDivElement>());
   /** 每個標籤在地球上的單位方向向量（建立時算一次，之後每格只做內積） */
@@ -66,32 +67,26 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
     if (!el) return;
     let disposed = false;
 
-    const capColor = (f: object) => {
-      const feat = f as GeoFeature;
-      if (feat.properties.iso_a3 === selectedRef.current) return "rgba(255, 255, 255, 0.36)";
-      if (feat === hoverRef.current) return "rgba(255, 255, 255, 0.22)";
-      return "rgba(0,0,0,0)";
-    };
-
     const g = new Globe(el, { rendererConfig: { antialias: true, alpha: true } })
       .backgroundColor("rgba(0,0,0,0)")
-      .globeImageUrl("/textures/earth-painted.jpg")
+      // 國界已畫進貼圖（scripts/draw_borders.py），不再為每個國家建立 3D 物件，縮放旋轉才順
+      .globeImageUrl("/textures/earth-map.jpg")
       .bumpImageUrl("/textures/earth-topology.png")
       .showAtmosphere(true)
       .atmosphereColor("#e2f8ff")
       .atmosphereAltitude(0.3)
-      .polygonAltitude((f) => ((f as GeoFeature).properties.iso_a3 === selectedRef.current ? 0.018 : 0.005))
-      .polygonCapColor(capColor)
-      .polygonSideColor(() => "rgba(255, 255, 255, 0.06)")
-      // 國界線：清楚可見的白色細線，選取的國家更亮
-      .polygonStrokeColor((f) => ((f as GeoFeature).properties.iso_a3 === selectedRef.current ? "rgba(255,255,255,0.95)" : "rgba(255,255,255,0.55)"))
+      // 只有選取的國家才建立多邊形（亮色高光）
+      .polygonAltitude(0.012)
+      .polygonCapColor(() => "rgba(255, 255, 255, 0.32)")
+      .polygonSideColor(() => "rgba(255, 255, 255, 0.08)")
+      .polygonStrokeColor(() => "rgba(255,255,255,0.95)")
       .polygonsTransitionDuration(0)
-      .onPolygonHover((f) => {
-        hoverRef.current = (f as GeoFeature) ?? null;
-        el.style.cursor = f ? "pointer" : "grab";
-        g.polygonCapColor(capColor);
-      })
       .onPolygonClick((f) => cb.current.onSelectCountry((f as GeoFeature).properties.iso_a3))
+      // 點地球任一處：用經緯度找出所在國家
+      .onGlobeClick(({ lat, lng }) => {
+        const hit = features.current.find((f) => geoContains(f as never, [lng, lat]));
+        if (hit) cb.current.onSelectCountry(hit.properties.iso_a3);
+      })
       .htmlTransitionDuration(0)
       .onGlobeReady(() => cb.current.onReady?.());
 
@@ -155,14 +150,45 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
 
     // 每格一次：雲層緩慢轉動＋標籤依與視線的夾角平滑淡出（背面隱藏，邊緣不會忽亮忽滅）
     let raf = 0;
+    // 標籤避讓：互相重疊時只顯示人口較多的國家（放大後空間變大，就會出現更多國名）
+    // 每 10 格重算一次；已顯示的標籤有優先權，避免來回切換
+    const shown = new Set<HTMLDivElement>();
+    const widths = new Map<HTMLDivElement, number>();
+    const v3 = new Vector3();
+    let frame = 0;
+    const declutter = (cam: Vector3, horizon: number, d: number) => {
+      const w = el.clientWidth;
+      const h = el.clientHeight;
+      const R = g.getGlobeRadius() * 1.02;
+      const items: { div: HTMLDivElement; x: number; y: number; w: number; pri: number }[] = [];
+      labelVecs.current.forEach((u, div) => {
+        if ((u.x * cam.x + u.y * cam.y + u.z * cam.z) / d < horizon + 0.1) return;
+        v3.set(u.x * R, u.y * R, u.z * R).project(g.camera());
+        let bw = widths.get(div);
+        if (!bw) widths.set(div, (bw = div.offsetWidth || 60));
+        const rank = Number(div.dataset.rank);
+        const pri = div.classList.contains("is-active") ? -1e4 : rank - (shown.has(div) ? 40 : 0);
+        items.push({ div, x: (v3.x + 1) * w * 0.5, y: (1 - v3.y) * h * 0.5, w: bw, pri });
+      });
+      items.sort((a, b) => a.pri - b.pri);
+      const boxes: number[][] = [];
+      shown.clear();
+      for (const it of items) {
+        const b = [it.x - it.w / 2 - 3, it.y - 9, it.x + it.w / 2 + 3, it.y + 9];
+        if (boxes.some((o) => b[0] < o[2] && b[2] > o[0] && b[1] < o[3] && b[3] > o[1])) continue;
+        boxes.push(b);
+        shown.add(it.div);
+      }
+    };
     const tick = () => {
       if (clouds) clouds.rotation.y += 0.00025;
       const cam = g.camera().position;
       const d = cam.length();
       const horizon = g.getGlobeRadius() / d;
+      if (frame++ % 10 === 0) declutter(cam, horizon, d);
       labelVecs.current.forEach((u, div) => {
         const dot = (u.x * cam.x + u.y * cam.y + u.z * cam.z) / d;
-        const o = Math.min(1, Math.max(0, (dot - horizon - 0.1) / 0.15));
+        const o = shown.has(div) ? Math.min(1, Math.max(0, (dot - horizon - 0.1) / 0.15)) : 0;
         const v = o.toFixed(2);
         if (div.style.opacity !== v) div.style.opacity = v;
       });
@@ -170,10 +196,13 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
     };
     raf = requestAnimationFrame(tick);
 
+    const showSelected = () => g.polygonsData(features.current.filter((f) => f.properties.iso_a3 === selectedRef.current));
     fetch("/data/countries.json")
       .then((r) => r.json())
       .then((geo: { features: GeoFeature[] }) => {
-        if (!disposed) g.polygonsData(geo.features.filter((f) => f.properties.iso_a3 !== "ATA"));
+        if (disposed) return;
+        features.current = geo.features.filter((f) => f.properties.iso_a3 !== "ATA");
+        showSelected();
       })
       .catch(() => {});
 
@@ -210,6 +239,7 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
         div.className = "country-label";
         div.style.opacity = "0";
         div.style.zIndex = String(2000 - c.rank);
+        div.dataset.rank = String(c.rank);
         const p = g.getCoords(c.pos[0], c.pos[1], 0);
         const len = Math.hypot(p.x, p.y, p.z) || 1;
         labelVecs.current.set(div, { x: p.x / len, y: p.y / len, z: p.z / len });
@@ -237,9 +267,7 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
     selectedRef.current = selectedIso;
     const g = globeRef.current;
     if (!g) return;
-    g.polygonCapColor(g.polygonCapColor());
-    g.polygonStrokeColor(g.polygonStrokeColor());
-    g.polygonAltitude(g.polygonAltitude());
+    g.polygonsData(features.current.filter((f) => f.properties.iso_a3 === selectedIso));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedIso]);
 
