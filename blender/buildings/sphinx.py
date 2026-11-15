@@ -105,14 +105,25 @@ def _hash(ix, iy, iz, seed):
 
 
 def vnoise(x, y, z=None, seed=0):
-    """數值雜訊，範圍約 -1..1"""
+    """數值雜訊，範圍約 -1..1（z 省略時為 2D，較快）"""
+    x = np.asarray(x, dtype=np.float32)
+    y = np.asarray(y, dtype=np.float32)
+    ix, iy = np.floor(x), np.floor(y)
+    fx, fy = x - ix, y - iy
+    ux, uy = fx * fx * (3 - 2 * fx), fy * fy * (3 - 2 * fy)
+    ix, iy = ix.astype(np.int64), iy.astype(np.int64)
     if z is None:
-        z = np.zeros_like(x)
-    x, y, z = (np.asarray(a, dtype=np.float64) for a in (x, y, z))
-    ix, iy, iz = np.floor(x), np.floor(y), np.floor(z)
-    fx, fy, fz = x - ix, y - iy, z - iz
-    ux, uy, uz = fx * fx * (3 - 2 * fx), fy * fy * (3 - 2 * fy), fz * fz * (3 - 2 * fz)
-    ix, iy, iz = ix.astype(np.int64), iy.astype(np.int64), iz.astype(np.int64)
+        z0 = np.zeros_like(ix)
+        a = _hash(ix, iy, z0, seed)
+        b = _hash(ix + 1, iy, z0, seed)
+        c = _hash(ix, iy + 1, z0, seed)
+        d = _hash(ix + 1, iy + 1, z0, seed)
+        return ((a + (b - a) * ux) * (1 - uy) + (c + (d - c) * ux) * uy) * 2.0 - 1.0
+    z = np.asarray(z, dtype=np.float32)
+    iz = np.floor(z)
+    fz = z - iz
+    uz = fz * fz * (3 - 2 * fz)
+    iz = iz.astype(np.int64)
     out = 0.0
     for dx in (0, 1):
         wx = ux if dx else 1 - ux
@@ -134,21 +145,27 @@ def fbm(x, y, z=None, octaves=4, seed=0, lac=2.0, gain=0.5):
     return s / norm
 
 
-def worley(x, y, seed=0, jitter=0.9):
-    """2D Worley：回傳 (F1, F2)，單位為格"""
+def worley(x, y, seed=0, jitter=0.9, return_id=False, period=None):
+    """2D Worley：回傳 (F1, F2)，單位為格；return_id 時另回傳最近胞元的亂數 0..1"""
     x, y = np.asarray(x, dtype=np.float64), np.asarray(y, dtype=np.float64)
     ix, iy = np.floor(x).astype(np.int64), np.floor(y).astype(np.int64)
     f1 = np.full(x.shape, 9.0)
     f2 = np.full(x.shape, 9.0)
+    cid = np.zeros(x.shape, np.float32)
     z0 = np.zeros_like(ix)
     for dx in (-1, 0, 1):
         for dy in (-1, 0, 1):
             cx, cy = ix + dx, iy + dy
-            px = cx + 0.5 + jitter * (_hash(cx, cy, z0, seed) - 0.5)
-            py = cy + 0.5 + jitter * (_hash(cx, cy, z0 + 7, seed) - 0.5)
+            hx, hy = (cx % period, cy % period) if period else (cx, cy)
+            px = cx + 0.5 + jitter * (_hash(hx, hy, z0, seed) - 0.5)
+            py = cy + 0.5 + jitter * (_hash(hx, hy, z0 + 7, seed) - 0.5)
             d = np.sqrt((x - px) ** 2 + (y - py) ** 2)
             f2 = np.where(d < f1, f1, np.minimum(f2, d))
+            if return_id:
+                cid = np.where(d < f1, _hash(hx, hy, z0 + 13, seed), cid)
             f1 = np.minimum(f1, d)
+    if return_id:
+        return f1, f2, cid
     return f1, f2
 
 
@@ -218,6 +235,122 @@ def smax(a, b, k):
     return -smin(-a, -b, k)
 
 
+def cr_interp(x, xs, ys):
+    """Catmull-Rom 平滑內插（numpy 版 lerp_table，端點外取常數）"""
+    xs = np.asarray(xs, float)
+    ys = np.asarray(ys, float)
+    x = np.clip(x, xs[0], xs[-1])
+    i = np.clip(np.searchsorted(xs, x) - 1, 0, len(xs) - 2)
+    x0, x1 = xs[i], xs[i + 1]
+    y0, y1 = ys[i], ys[i + 1]
+    ym = ys[np.maximum(i - 1, 0)]
+    yp = ys[np.minimum(i + 2, len(xs) - 1)]
+    xm = xs[np.maximum(i - 1, 0)]
+    xp = xs[np.minimum(i + 2, len(xs) - 1)]
+    h = x1 - x0
+    m0 = (y1 - ym) / np.maximum(x1 - xm, 1e-9) * h
+    m1 = (yp - y0) / np.maximum(xp - x0, 1e-9) * h
+    t = (x - x0) / h
+    t2, t3 = t * t, t * t * t
+    return (2 * t3 - 3 * t2 + 1) * y0 + (t3 - 2 * t2 + t) * m0 + (-2 * t3 + 3 * t2) * y1 + (t3 - t2) * m1
+
+
+def g2(a, b, sa, sb):
+    """二維高斯"""
+    return np.exp(-((a / sa) ** 2 + (b / sb) ** 2))
+
+
+FACE_DEFAULT = dict(
+    # 中線輪廓（不含鼻、唇）：z → 前凸量 D（臉朝 -y，表面 y = -D）
+    prof=[(-0.08, 0.2), (0.0, 0.39), (0.05, 0.445), (0.09, 0.455), (0.14, 0.425), (0.19, 0.43), (0.25, 0.435),
+          (0.31, 0.43), (0.4, 0.408), (0.5, 0.402), (0.535, 0.412), (0.575, 0.445), (0.65, 0.435), (0.75, 0.41),
+          (0.85, 0.365), (0.95, 0.27)],
+    # 正面輪廓半寬
+    wf=[(-0.08, 0.07), (0.0, 0.115), (0.06, 0.17), (0.15, 0.245), (0.25, 0.29), (0.35, 0.315), (0.5, 0.335),
+        (0.65, 0.33), (0.8, 0.295), (0.95, 0.18)],
+    # 輪廓邊緣處的前凸量
+    side=[(-0.08, 0.12), (0.0, 0.26), (0.1, 0.22), (0.2, 0.14), (0.3, 0.05), (0.5, 0.0), (0.7, 0.02), (0.85, 0.1), (0.95, 0.15)],
+    p=3.0,
+    eye=(0.13, 0.495, 0.085, 0.08),    # x, z, 眼窩深, 眼球凸
+    brow=0.025,
+    nose=(0.09, 0.345, 0.045, 0.072, 0.078),  # 鼻尖前凸, 鼻尖 z, 鼻樑寬, 鼻頭寬, 鼻翼寬
+    mouth=(0.215, 0.11, 0.04),         # z, 半寬, 嘴縫深
+    lips=(0.03, 0.03),
+    pupil=0.022,
+    cranium=((0, 0.13, 0.6), (0.335, 0.42, 0.42)),
+    ears=True,
+    neck=((0, 0.05, 0.25), (0, 0.12, -0.45), 0.2, 0.26),
+)
+
+
+def face_depth(X, Z, P):
+    """臉部前凸量 D(x, z)（頭高 = 1 的局部單位）"""
+    ax = np.abs(X)
+    Dm = cr_interp(Z, *zip(*P["prof"]))
+    Wf = cr_interp(Z, *zip(*P["wf"]))
+    Ds = cr_interp(Z, *zip(*P["side"]))
+    u = np.clip(ax / Wf, 0, 1.6)
+    D = Dm - (Dm - Ds) * u ** P["p"]
+    ex, ez, edep, eball = P["eye"]
+    ex_ = ax - ex
+    # 眼窩：眉骨下方深凹，眼球圓凸，上眼瞼邊緣銳利、下眼瞼淺脊
+    D = D - edep * g2(ex_, Z - ez - 0.02, 0.095, 0.05)
+    em = np.exp(-(ex_ / 0.06) ** 4)
+    D = D + eball * em * np.exp(-((Z - ez) / 0.036) ** 2)
+    lid = np.clip((Z - ez - 0.006) / 0.008, 0, 1) * np.clip(1 - (Z - ez - 0.03) / 0.02, 0, 1)
+    D = D + 0.016 * lid * np.exp(-(ex_ / 0.065) ** 4)
+    D = D + 0.008 * em * np.exp(-((Z - ez + 0.034) / 0.009) ** 2)       # 下眼瞼
+    D = D - P.get("pupil", 0.0) * g2(ex_, Z - ez + 0.002, 0.014, 0.014)  # 瞳孔凹洞
+    D = D - 0.02 * g2(ax - 0.06, Z - ez, 0.022, 0.03)                    # 內眼角
+    D = D + P["brow"] * g2(ax - 0.12, Z - 0.572, 0.115, 0.028)           # 眉骨
+    D = D + 0.022 * g2(ax - 0.2, Z - 0.42, 0.075, 0.05)                  # 顴骨
+    nl, nz, bw, tw, aw = P["nose"]
+    t = np.clip((0.54 - Z) / (0.54 - nz), 0, 1)
+    nprof = np.where(Z >= nz, nl * t ** 1.05, nl * np.clip(1 - (nz - Z) / 0.04, 0, 1) ** 0.7)
+    w = bw + (tw - bw) * t ** 1.8
+    D = D + nprof * np.exp(-(X / w) ** 4)
+    D = D + 0.016 * g2(X, Z - nz - 0.012, tw * 0.75, 0.028)                 # 鼻頭
+    D = D + 0.06 * g2(ax - aw * 0.75, Z - nz + 0.002, 0.036, 0.032)          # 鼻翼
+    D = D - 0.03 * g2(ax - aw * 0.4, Z - nz + 0.032, 0.03, 0.012)            # 鼻孔下緣
+    # 法令紋：鼻翼外側 → 嘴角
+    mz, mw, mdep = P["mouth"]
+    ax0, az0, ax1, az1 = aw * 1.1, nz + 0.01, mw * 1.12, mz - 0.015
+    vx, vz = ax1 - ax0, az1 - az0
+    h = np.clip(((ax - ax0) * vx + (Z - az0) * vz) / (vx * vx + vz * vz), 0, 1)
+    dist = np.sqrt((ax - ax0 - h * vx) ** 2 + (Z - az0 - h * vz) ** 2)
+    D = D - 0.022 * np.exp(-(dist / 0.014) ** 2)
+    D = D + 0.012 * np.exp(-((dist + 0.02) / 0.03) ** 2) * (ax < ax0 + h * vx)  # 法令紋內側的上唇隆起
+    up, lo = P["lips"]
+    lm = np.clip(1 - (ax / mw) ** 2, 0, 1)
+    D = D + up * lm * np.exp(-((Z - mz - 0.026) / 0.02) ** 2)
+    D = D + lo * lm * np.exp(-((Z - mz + 0.026) / 0.019) ** 2)
+    D = D - mdep * np.clip(1 - (ax / (mw * 1.05)) ** 4, 0, 1) * np.exp(-((Z - mz) / 0.007) ** 2)
+    D = D - 0.025 * g2(ax - mw, Z - mz, 0.018, 0.018)                # 嘴角
+    D = D - 0.012 * g2(X, Z - mz - 0.06, 0.013, 0.022)               # 人中
+    D = D - 0.015 * g2(X, Z - mz + 0.075, 0.07, 0.018)               # 頦唇溝
+    return D, Wf
+
+
+def face_head(S, P):
+    """寫實頭像 SDF（頭高 = 1：下巴底 z=0、頭頂 z=1，耳朵平面 y=0，臉朝 -y）"""
+    X, Y, Z = S.X, S.Y, S.Z
+    D, Wf = face_depth(X, Z, P)
+    face = -(Y + D) * 0.7
+    face = smax(face, np.abs(X) - Wf, 0.04)
+    face = smax(face, Y - 0.16, 0.05)
+    face = smax(face, Z - 0.9, 0.1)
+    face = smax(face, -0.1 - Z, 0.03)
+    c, r = P["cranium"]
+    d = smin(S.ell(c, r), face, 0.035)
+    if P.get("ears"):
+        for sx in (-1, 1):
+            d = smin(d, S.ell((sx * 0.325, 0.04, 0.45), (0.04, 0.085, 0.13)), 0.02)
+    if P.get("neck"):
+        a, b, ra, rb = P["neck"]
+        d = smin(d, S.cap(a, b, ra, rb), 0.06)
+    return d
+
+
 def surface_nets(F, origin, step, smooth_iter=1):
     """F[i,j,k] 為格點值（<0 內部）；回傳 (頂點 Nx3, 四邊形 Mx4)"""
     F = F.astype(np.float32)
@@ -275,7 +408,7 @@ def surface_nets(F, origin, step, smooth_iter=1):
 
         q = np.stack([cc(-1, -1), cc(0, -1), cc(0, 0), cc(-1, 0)], 1)
         # 方向：負值（內部）在邊的起點時翻轉
-        flip = ng if ax != 1 else ~ng
+        flip = ~ng if ax != 1 else ng
         q[flip] = q[flip][:, ::-1]
         quads.append(q)
     Q = np.concatenate(quads, 0)
@@ -298,7 +431,7 @@ def grid3(lo, hi, step):
     xs = np.arange(lo[0], hi[0] + step * 0.5, step)
     ys = np.arange(lo[1], hi[1] + step * 0.5, step)
     zs = np.arange(lo[2], hi[2] + step * 0.5, step)
-    X, Y, Z = np.meshgrid(xs, ys, zs, indexing="ij")
+    X, Y, Z = np.meshgrid(xs.astype(np.float32), ys.astype(np.float32), zs.astype(np.float32), indexing="ij")
     return SDF(X, Y, Z), (xs[0], ys[0], zs[0])
 
 
