@@ -1016,11 +1016,14 @@ def kinkakuji(path):
     a0, a1 = math.radians(-35), math.radians(215)
     r0, r1 = 23.0, R_G - 0.6
 
-    def canopy_h(x, y, r):
+    def canopy_h(x, y, r, a):
         t = min(1.0, max(0.0, (r - r0) / (r1 - r0)))
+        fa = min(1.0, max(0.0, min(a - a0, a1 - a) / math.radians(30)))
+        fp = min(1.0, max(0.0, (-pond_d(x, y) - 1.5) / 6.0))
+        f = (3 - 2 * fa) * fa * fa * fp
         bump = 2.2 * (noise.noise(Vector((x * 0.28, y * 0.28, 1.3))) + 0.5 * noise.noise(Vector((x * 0.7, y * 0.7, 4.1))))
         bump += 1.6 * (1 - abs(noise.noise(Vector((x * 0.16, y * 0.16, 7.7)))))
-        return terrain_h(x, y) + (min(1.0, t * 4.0) ** 0.6) * (5.5 + 8.0 * t + bump)
+        return terrain_h(x, y) + f * (min(1.0, t * 4.0) ** 0.6) * (5.5 + 8.0 * t + bump) - 0.3 * (1 - f)
     grid = []
     for i in range(NA + 1):
         a = a0 + (a1 - a0) * i / NA
@@ -1028,13 +1031,13 @@ def kinkakuji(path):
         for j in range(NR + 1):
             r = r0 + (r1 - r0) * j / NR
             x, y = r * math.cos(a), r * math.sin(a)
-            row.append((x, y, canopy_h(x, y, r) if j > 0 else terrain_h(x, y) - 0.3))
+            row.append((x, y, canopy_h(x, y, r, a) if j > 0 else terrain_h(x, y) - 0.3))
         grid.append(row)
     vg = [[V(p) for p in row] for row in grid]
     for i in range(NA):
         for j in range(NR):
             ps = (grid[i][j], grid[i + 1][j], grid[i + 1][j + 1], grid[i][j + 1])
-            if any(pond_d(p[0], p[1]) > -2.0 for p in ps):
+            if any(pond_d(p[0], p[1]) > -1.5 for p in ps):
                 continue
             mi = forest if noise.noise(Vector((ps[0][0] * 0.09, ps[0][1] * 0.09, 2.0))) > -0.15 else forest_d
             face([vg[i][j], vg[i][j + 1], vg[i + 1][j + 1], vg[i + 1][j]], mi, smooth=True)

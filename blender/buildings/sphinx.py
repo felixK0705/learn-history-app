@@ -13,7 +13,7 @@ from mathutils import Vector, noise
 from lib import TAU, Builder
 
 # 目標點、方位角、仰角、距離、焦距（對應參考照：東南側地面視角，頭朝右）
-CAMERA = ((4.0, 0.0, 9.5), 33.0, 2.0, 35.0, 18.0)
+CAMERA = ((3.0, 0.0, 9.5), 31.0, 1.5, 32.0, 18.0)
 
 if os.environ.get("TL_CAM"):  # 開發用：覆寫預覽相機
     CAMERA = ast.literal_eval(os.environ["TL_CAM"])
@@ -295,11 +295,16 @@ def face_depth(X, Z, P):
     ex_ = ax - ex
     # 眼窩：眉骨下方深凹，眼球圓凸，上眼瞼邊緣銳利、下眼瞼淺脊
     D = D - edep * g2(ex_, Z - ez - 0.02, 0.095, 0.05)
-    em = np.exp(-(ex_ / 0.06) ** 4)
+    em = np.exp(-(ex_ / 0.066) ** 4)
     D = D + eball * em * np.exp(-((Z - ez) / 0.036) ** 2)
     lid = np.clip((Z - ez - 0.006) / 0.008, 0, 1) * np.clip(1 - (Z - ez - 0.03) / 0.02, 0, 1)
     D = D + 0.016 * lid * np.exp(-(ex_ / 0.065) ** 4)
     D = D + 0.008 * em * np.exp(-((Z - ez + 0.034) / 0.009) ** 2)       # 下眼瞼
+    # 上眼瞼摺痕（眼球上方的弧形深溝）與下眼瞼線
+    rho = np.sqrt((ex_ / 0.078) ** 2 + ((Z - ez + 0.004) / 0.05) ** 2)
+    D = D - P.get("crease", 0.02) * np.exp(-((rho - 1.0) / 0.13) ** 2) * (Z > ez - 0.004)
+    rho2 = np.sqrt((ex_ / 0.068) ** 2 + ((Z - ez + 0.002) / 0.036) ** 2)
+    D = D - 0.008 * np.exp(-((rho2 - 1.0) / 0.12) ** 2) * (Z < ez - 0.002)
     D = D - P.get("pupil", 0.0) * g2(ex_, Z - ez + 0.002, 0.014, 0.014)  # 瞳孔凹洞
     D = D - 0.02 * g2(ax - 0.06, Z - ez, 0.022, 0.03)                    # 內眼角
     D = D + P["brow"] * g2(ax - 0.12, Z - 0.572, 0.115, 0.028)           # 眉骨
@@ -576,8 +581,8 @@ def strata(X, Y, Z, amp=1.0):
     """水平岩層侵蝕：每層中段外凸、層界內凹（像疊起的軟墊），各層強度不同；回傳外凸量（公尺）"""
     zw = Z + 0.45 * fbm(X * 0.04, Y * 0.04, None, 3, seed=301)
     # 層厚不一：以單調扭曲讓層距在 0.6–1.8 m 之間變化
-    zq = zw + 0.55 * np.sin(zw * 0.83 + 0.4) + 0.3 * np.sin(zw * 2.1 + 1.7)
-    T = 1.15
+    zq = zw + 0.7 * np.sin(zw * 0.6 + 0.4) + 0.3 * np.sin(zw * 1.5 + 1.7)
+    T = 1.65
     i = np.floor(zq / T)
     f = zq / T - i
     hard = 0.55 + 0.45 * _hash(i.astype(np.int64), i.astype(np.int64) * 0 + 3, i.astype(np.int64) * 0, 77)
@@ -597,7 +602,7 @@ def body_sdf(S):
     W = cr_interp(X, xs, [2.5, 5.2, 6.6, 7.0, 6.8, 6.6, 6.7, 7.0, 7.1, 6.8, 5.8, 3.6])
     Hb = cr_interp(X, xs, [4.5, 7.6, 9.4, 10.0, 10.2, 10.4, 10.9, 11.6, 12.2, 12.0, 10.4, 6.0])
     hc = Hb / 2
-    p = 3.2
+    p = 4.6
     rn = (np.abs(Y / W) ** p + np.abs((Z - hc) / hc) ** p) ** (1 / p)
     d = (rn - 1.0) * np.minimum(W, hc) * 0.85
     d = smax(d, X - 17.8, 0.8)
@@ -619,7 +624,7 @@ def body_sdf(S):
     d = d - strata(X, Y, Z, 1.0) * clad * (0.3 + 0.7 * top)
     # 前爪（後世小石塊包覆，圓角長方體）
     for sy in (-1, 1):
-        paw = S.box((22.0, sy * 4.5, 1.45), (10.8, 2.25, 1.45), 1.1)
+        paw = S.box((22.0, sy * 4.5, 1.75), (10.8, 2.3, 1.75), 0.9)
         paw = smin(paw, S.ell((12.5, sy * 4.6, 3.0), (4.5, 2.6, 3.2)), 0.8)
         d = smin(d, paw, 0.6)
     d = smax(d, -Z - 0.2, 0.1)
@@ -634,7 +639,7 @@ def nemes_head_sdf(S):
     P["nose"] = (0.025, 0.36, 0.05, 0.075, 0.08)       # 鼻頭已斷
     P["mouth"] = (0.215, 0.13, 0.03)
     P["lips"] = (0.035, 0.035)
-    P["eye"] = (0.135, 0.5, 0.075, 0.07)
+    P["eye"] = (0.135, 0.5, 0.05, 0.06)
     P["brow"] = 0.015
     P["pupil"] = 0.0
     P["ears"] = False
@@ -666,7 +671,7 @@ def nemes_head_sdf(S):
     band = smax(S.ell((0, -0.04, 0.715), (0.425, 0.385, 0.035)), -(Y + 0.415), 0.01)
     nem = smin(nem, band, 0.015)
     # 條紋（側面垂片上較明顯，已嚴重風化）
-    stripes = 0.003 * np.sin(Z * TAU / 0.08) * np.clip((np.abs(X) - 0.42) / 0.08, 0, 1) * np.clip((Y - yf - 0.04) / 0.06, 0, 1)
+    stripes = 0.007 * np.tanh(2.5 * np.sin(Z * TAU / 0.075)) * np.clip((np.abs(X) - 0.42) / 0.08, 0, 1) * np.clip((Y - yf - 0.04) / 0.06, 0, 1)
     nem = nem + stripes
     # 臉的區域挖空頭巾（臉在頭巾開口中）
     hole = smax(np.abs(X) - 0.33, Z - 0.7, 0.05)
@@ -714,7 +719,7 @@ def sphinx(path):
     V, Q = surface_nets(F, o, 0.21)
     C = V[Q].mean(1)
     N = face_normals(V, Q)
-    paw_zone = (C[:, 0] > 13.5) & (np.abs(C[:, 1]) > 2.0) & (C[:, 2] < 3.4)
+    paw_zone = (C[:, 0] > 13.5) & (np.abs(C[:, 1]) > 2.0) & (C[:, 2] < 4.0)
     low = (C[:, 2] < 2.7) & (np.abs(N[:, 2]) < 0.8)
     rec = (strata(C[:, 0], C[:, 1], C[:, 2]) < -0.2)
     mi = np.where(paw_zone | low, 1, np.where(rec, 2, 0))

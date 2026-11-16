@@ -231,8 +231,8 @@ def loft(b, mi, ring0, ring1, cap=True):
 def kremlin(path):
     _gen_textures()
     b = CardBuilder("Kremlin", seed=29)
-    brick = b.ptex("brick", "brick_wall_006", tile=2.6, tint="#a8402f", rough=0.85, normal=0.7)
-    brick_sb = b.ptex("brick_sb", "brick_wall_006", tile=1.8, tint="#c4553f", rough=0.85, normal=0.5)
+    brick = b.ptex("brick", "brick_wall_006", tile=2.6, tint="#b0442f", rough=0.85, normal=0.7)
+    brick_sb = b.ptex("brick_sb", "brick_wall_006", tile=1.8, tint="#bf4d37", rough=0.85, normal=0.6)
     white = b.color("white_stone", "#ece4d6", rough=0.7)
     cream = b.color("cream", "#e6d7b4", rough=0.75)
     green = b.color("green_roof", "#3d7a55", rough=0.5, metal=0.2)

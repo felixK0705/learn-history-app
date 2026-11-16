@@ -18,7 +18,7 @@ import numpy as np
 from mathutils import Vector, noise
 
 from lib import TAU, TEX, Builder
-from buildings.sphinx import (FACE_DEFAULT, SDF, blur, face_head, fbm, surface_nets, gray_tex, grid3, img_mat, mesh_object, normal_from_height,
+from buildings.sphinx import (FACE_DEFAULT, SDF, blur, face_head, fbm, small_mat, surface_nets, gray_tex, grid3, img_mat, mesh_object, normal_from_height,
                               save_img, smax, smin, tile_sample, worley)
 
 # 目標點、方位角、仰角、距離、焦距（對應參考照：自下方觀景步道正面仰望）
@@ -43,6 +43,7 @@ def head_params(kind):
     P["cranium"] = ((0, 0.13, 0.54), (0.37, 0.42, 0.36))
     if kind == "w":
         P["cranium"] = ((0, 0.12, 0.54), (0.39, 0.43, 0.36))
+        P["crease"] = 0.026
         P["wf"] = [(z, w * 1.08) for z, w in P["wf"]]
         P["brow"] = 0.04
     elif kind == "j":
@@ -72,8 +73,11 @@ def head_sdf(S, kind):
     if kind == "w":
         # 華盛頓：高額、後梳頭髮在耳上捲成髮捲；領巾
         for sx in (-1, 1):
-            d = smin(d, e((sx * 0.35, 0.1, 0.55), (0.075, 0.15, 0.11)), 0.03)
-            d = smin(d, e((sx * 0.345, 0.14, 0.42), (0.07, 0.13, 0.095)), 0.03)
+            # 耳上方兩道向後捲的髮捲（右側較明顯）
+            k = 1.0 if sx > 0 else 0.8
+            d = smin(d, e((sx * 0.41, 0.06, 0.56), (0.07 * k, 0.17, 0.085)), 0.025)
+            d = smin(d, e((sx * 0.405, 0.1, 0.44), (0.068 * k, 0.16, 0.08)), 0.025)
+            d = smin(d, e((sx * 0.37, 0.18, 0.66), (0.06, 0.16, 0.07)), 0.03)
         d = smin(d, e((0, -0.16, -0.06), (0.22, 0.2, 0.1)), 0.06)
     elif kind == "j":
         # 傑佛遜：兩側與腦後蓬起的波浪髮
@@ -175,9 +179,9 @@ def sample_map(m, X, Z):
 
 
 # ---------------------------------------------------------------- 岩壁
-TOP = [(-112, 22), (-96, 52), (-82, 78), (-70, 85), (-58, 82), (-48, 73), (-40, 63), (-33, 60), (-20, 56), (-12, 56),
-       (-4, 54), (3, 52), (8, 48.5), (13, 48.5), (16, 55), (20, 58), (28, 58.5), (35, 61), (42, 66), (52, 69), (62, 64),
-       (75, 56), (92, 42), (112, 22)]
+TOP = [(-112, -1.5), (-104, 30), (-96, 52), (-82, 78), (-70, 85), (-58, 80), (-48, 70), (-40, 61), (-33, 57), (-26, 53), (-20, 50),
+       (-12, 48), (-4, 47), (3, 47), (8, 43), (13, 43), (16, 52), (20, 57), (28, 58), (35, 61), (42, 66), (52, 69), (62, 64),
+       (75, 56), (92, 42), (104, 28), (112, -1.5)]
 
 
 def cliff_top(x):
@@ -242,15 +246,23 @@ def rock_y(X, Z, J=None):
     pillow, big, small = joints(X, Z) if J is None else J
     rough = 1.0 * fbm(X * 0.12, Z * 0.12, None, 4, seed=9) + 0.3 * fbm(X * 0.6, Z * 0.6, None, 3, seed=10)
     y += (pillow + 1.3 * big + 0.4 * small + rough) * (1 - cm)
-    # 開鑿面：平緩起伏
+    # 開鑿面：平緩起伏＋刀削般的平面分塊（各塊前後錯開，邊界形成小台階與陰影）
     y += cm * 0.45 * fbm(X * 0.08, Z * 0.08, None, 3, seed=11)
+    q1, q2, qid = worley(X / 8.0 + 0.3 * fbm(X * 0.1, Z * 0.1, None, 2, seed=13), Z / 5.5, seed=41, return_id=True)
+    y += cm * (qid - 0.5) * 1.3 * np.clip((Z - 24) / 4, 0, 1)
     # 頭像周圍往後挖深，讓頭部側面與陰影顯露
     for kind, C, H, yaw, pitch in HEADS:
         y += 5.5 * gauss(X, Z, C[0], C[2] + 0.55 * H, 0.6 * H, 0.42 * H)
     # 碎石坡（約 34°）
     fz = foot_z(X)
-    talus = y - (fz - Z) * 1.5 + 0.35 * fbm(X * 0.4, Z * 0.4, None, 3, seed=12)
+    tw = talus_w(X)
+    talus = y - (fz - Z) * (0.35 + 1.15 * tw) + 0.35 * fbm(X * 0.4, Z * 0.4, None, 3, seed=12)
     return np.where(Z < fz, talus, y)
+
+
+def talus_w(X):
+    """碎石坡的寬度分布：集中在中央（頭像正下方）"""
+    return np.exp(-((X - 4.0) / 30.0) ** 2)
 
 
 def rushmore(path):
@@ -314,6 +326,14 @@ def rushmore(path):
         zt = top[i]
         Y[i, idx] = Ytop[i] + t * Lb + 2.0 * np.sin(t * 7 + xs[i] * 0.1)
         Zf[i, idx] = zt + 2.0 * np.sin(np.pi * np.minimum(t * 3, 1)) - (zt + 2.0) * np.clip((t - 0.25) / 0.75, 0, 1) ** 1.6
+        # 頭像後方的岩體（頭部與山體相連，從背面看不會露出光禿的後腦）
+        for kind, C, H, yaw, pitch in HEADS:
+            u = (xs[i] - C[0]) / (0.5 * H)
+            if abs(u) < 1.15:
+                crown = C[2] + H * (0.97 - 0.25 * u * u)
+                back_t = (C[1] + 0.75 * H - Ytop[i]) / Lb
+                hump = crown - (crown - zt) * np.clip((t - back_t) / 0.12, 0, 1) ** 1.5
+                Zf[i, idx] = np.maximum(Zf[i, idx], np.where(t < back_t + 0.12, hump, -1e9))
     V = np.stack([X, Y, Zf], -1).reshape(-1, 3)
     nx_, nz_ = X.shape
     I = np.arange(nx_ * nz_).reshape(nx_, nz_)
@@ -327,12 +347,12 @@ def rushmore(path):
     # ---- 正面烘焙貼圖
     diff_p, nor_p = bake_front(front, maps)
     m_front = img_mat("Rushmore_front", diff_p, nor_p, rough=0.88, nor_strength=1.0)
-    back_mi = b.tex("back", "rock_04", tile=7.0, tint="#7c766c", normal=1.4, rough=0.9)
+    back_mi = b._register("back", small_mat("Rushmore_back", "rock_04", "#6c665d", nor_strength=1.4), 12.0)
     # 山背用方塊投影 UV
     from buildings.sphinx import box_uv
-    buv = box_uv(V, Q, 7.0)
+    buv = box_uv(V, Q, 12.0)
     uv = np.where(back[:, None, None], buv, uv)
-    mesh_object("RushmoreCliff", V, Q, [m_front, b.mats[back_mi]], back.astype(int), uv, decimate=0.5)
+    mesh_object("RushmoreCliff", V, Q, [m_front, b.mats[back_mi]], back.astype(int), uv, decimate=0.4)
 
     # ---- 頭像：3D 隱函數網格（含下巴、鼻、眉骨的倒切面），以平滑最小值與岩壁融合
     for kind, C, H, yaw, pitch in HEADS:
@@ -340,7 +360,7 @@ def rushmore(path):
         corners = np.array([[x, y, z] for x in (-0.5, 0.5) for y in (-0.62, 0.5) for z in (-0.4, 1.06)]) * H
         Wc = corners @ R.T + np.asarray(C)
         lo, hi = Wc.min(0) - 1.0, Wc.max(0) + 1.0
-        step = 0.2
+        step = 0.24
         S, o = grid3(lo, hi, step)
         dh = head_sdf(S.local(C, R, H), kind) * H
         ry = rock_y(S.X[:, 0, :], S.Z[:, 0, :])[:, None, :]
@@ -355,18 +375,18 @@ def rushmore(path):
         keep = dv[Qh].min(1) < 1.6
         Qh = Qh[keep]
         uvh = np.stack([(Vh[:, 0] + 112) / 224.0, (Vh[:, 2] + 6) / 112.0], -1)[Qh]
-        mesh_object("Head_" + kind, Vh, Qh, [m_front], None, uvh, decimate=0.5)
+        mesh_object("Head_" + kind, Vh, Qh, [m_front], None, uvh, decimate=0.42)
 
     # ---- 地面
-    ground = b.tex("ground", "rocky_terrain_02", tile=8.0, tint="#5f5c46", normal=0.8, rough=0.95)
+    ground = b._register("ground", small_mat("Rushmore_ground", "rocky_terrain_02", "#5f5c46", nor_strength=0.8), 8.0)
     soil = b.color("soil", "#5b4f40", rough=0.95)
     b.ground_disc(ground, 180, soil, depth=3.0, seg=96, rings=20,
                   height_fn=lambda x, y: 1.5 * noise.noise(Vector((x * 0.012, y * 0.012, 0.4))) - 1.6)
 
     # ---- 碎石坡上的落石
-    talus_m = b.tex("talus", "gray_rocks", tile=3.0, tint="#7f7b74", normal=1.4, rough=0.9)
-    for i in range(420):
-        x = r.uniform(-70, 70)
+    talus_m = b._register("talus", small_mat("Rushmore_talus", "gray_rocks", "#7f7b74", nor_strength=1.4), 3.0)
+    for i in range(240):
+        x = r.gauss(4, 18)
         fz = float(foot_z(np.array(x)))
         z = r.uniform(-0.5, fz - 0.8)
         y = float(front(np.array([x]), np.array([z]))[0]) - 0.1
@@ -374,14 +394,14 @@ def rushmore(path):
         b.rock(talus_m, (s_, s_ * 0.8, s_ * 0.5), (x, y, z + s_ * 0.1), rot=(0.55, r.uniform(-0.3, 0.3), r.uniform(0, TAU)), rough=0.12, subdiv=1, seed=900 + i, round_=0.15)
 
     # ---- 西黃松：細高樹幹、上半部不規則的針葉團簇
-    pine = b.tex("pine", "rocky_terrain_02", tile=1.2, tint="#1c2617", normal=1.4, rough=0.9)
-    pine2 = b.tex("pine2", "rocky_terrain_02", tile=1.2, tint="#283521", normal=1.4, rough=0.9)
-    pine3 = b.tex("pine3", "rocky_terrain_02", tile=1.2, tint="#3c4a2a", normal=1.4, rough=0.9)
+    pine = b._register("pine", small_mat("Rushmore_pine", "rocky_terrain_02", "#1c2617", nor_strength=1.4), 1.2)
+    pine2 = b._register("pine2", small_mat("Rushmore_pine2", "rocky_terrain_02", "#283521", nor_strength=1.4), 1.2)
+    pine3 = b._register("pine3", small_mat("Rushmore_pine3", "rocky_terrain_02", "#3c4a2a", nor_strength=1.4), 1.2)
     bark = b.color("bark", "#4a3a2c", rough=0.9)
 
     def pine_tree(x, y, z, h):
         b.cyl(bark, 0.2 + h * 0.012, 0.08, h * 0.92, (x, y, z), seg=5)
-        n = int(10 + h * 0.5)
+        n = int(6 + h * 0.35)
         for k in range(n):
             u = k / (n - 1)
             zz = z + h * (0.3 + 0.68 * u)
@@ -393,7 +413,7 @@ def rushmore(path):
             b.rock(mi, (s_, s_ * 0.85, h * 0.06 + 0.45), (x + ox, y + oy, zz), rot=(r.uniform(-0.25, 0.25), r.uniform(-0.25, 0.25), a),
                    rough=0.9, subdiv=1, seed=r.randint(0, 9999), flat_bottom=False, round_=0.45)
 
-    for i in range(58):
+    for i in range(50):
         if r.random() < 0.72:
             x = r.choice((r.uniform(-90, -25), r.uniform(-10, 60), r.uniform(-25, -10)))
             fz = float(foot_z(np.array(x)))
@@ -437,7 +457,7 @@ def bake_front(front, maps, TW=4096, TH=2048):
     h = 2
     Xh, Zh = X[::h, ::h], Z[::h, ::h]
     cm = _up(carved_mask(Xh, Zh), h, shape)
-    talus = _up(np.clip((foot_z(Xh) - Zh) / 1.2, 0, 1), h, shape)
+    talus = _up(np.clip((foot_z(Xh) - Zh) / 1.2, 0, 1) * np.clip(talus_w(Xh) * 1.6 - 0.25, 0, 1), h, shape)
     lo = _up(fbm(Xh * 0.035, Zh * 0.035, None, 4, seed=21), h, shape)
     mid = _up(fbm(Xh * 0.15, Zh * 0.15, None, 4, seed=22), h, shape)
     streak = _up(fbm(Xh * 0.35, Zh * 0.016, None, 4, seed=23), h, shape)
@@ -465,12 +485,12 @@ def bake_front(front, maps, TW=4096, TH=2048):
 
     E = lambda a: a[..., None]  # noqa: E731
     # 開鑿面：淺灰帶暖色、粉橘色斑
-    carved = col("#a9a296") * E(0.86 + 0.25 * (grain - 0.5) + 0.16 * lo + 0.07 * mid)
+    carved = col("#aba191") * E(0.86 + 0.25 * (grain - 0.5) + 0.16 * lo + 0.07 * mid)
     carved = carved * E(1 - pinkm * 0.22) + E(pinkm * 0.22) * col("#c9a493")
     # 未開鑿：較深的褐灰，黑色地衣斑塊、黃綠地衣
-    unc = col("#857a6c") * E(0.82 + 0.35 * (grain - 0.5) + 0.15 * mid)
-    dark = np.clip(0.45 + 1.6 * darkm + 0.7 * (lich - 0.5), 0, 1)
-    unc = unc * E(1 - 0.42 * dark)
+    unc = col("#7b6f61") * E(0.82 + 0.35 * (grain - 0.5) + 0.15 * mid)
+    dark = np.clip(0.5 + 1.8 * darkm + 0.8 * (lich - 0.5), 0, 1)
+    unc = unc * E(1 - 0.5 * dark)
     yl = np.clip((ylw - 0.2) * 3, 0, 1) * np.clip((45 - Z) / 15, 0, 1) * (1 - cm)
     unc = unc * E(1 - yl * 0.55) + E(yl * 0.55) * col("#a9a85a")
     # 片岩帶（華盛頓衣領下方的深灰藍色斜向層理）
@@ -491,9 +511,47 @@ def bake_front(front, maps, TW=4096, TH=2048):
     base = base * E(1 - 0.26 * np.clip(streak * 2.5, 0, 1) * nt * (1 - 0.7 * cm))
     base = base * E(1 - 0.3 * np.clip(cav, 0, 1) - 0.15 * np.clip(cav2, 0, 1))
     base = base * E(1 + 0.06 * np.clip(-cav, 0, 1))
+    # 開鑿面上的細裂紋（隨機折線）與灰色岩脈
+    from PIL import Image, ImageDraw
+    import random as _rnd
+    rg = _rnd.Random(7)
+    crk_img = Image.new("L", (TW, TH), 0)
+    vein_img = Image.new("L", (TW, TH), 0)
+    dr, dv = ImageDraw.Draw(crk_img), ImageDraw.Draw(vein_img)
+
+    def to_px(x, z):
+        return ((x + 112) / 224 * TW, (1 - (z + 6) / 112) * TH)
+
+    for i in range(150):
+        x, z = rg.uniform(-46, 40), rg.uniform(24, 76)
+        ang = rg.uniform(0, math.pi) if rg.random() < 0.6 else rg.choice((math.pi / 2, -math.pi / 2)) + rg.uniform(-0.4, 0.4)
+        L = rg.uniform(3, 18)
+        pts = [to_px(x, z)]
+        for k in range(int(L / 0.7)):
+            ang += rg.uniform(-0.18, 0.18)
+            x += 0.7 * math.cos(ang)
+            z += 0.7 * math.sin(ang)
+            pts.append(to_px(x, z))
+        dr.line(pts, fill=rg.randint(110, 220), width=1)
+    for i in range(40):
+        x, z = rg.uniform(-46, 40), rg.uniform(20, 76)
+        ang = rg.uniform(-0.6, 0.6) + (math.pi / 2 if rg.random() < 0.5 else 0)
+        L = rg.uniform(8, 30)
+        pts = [to_px(x, z)]
+        for k in range(int(L / 1.5)):
+            ang += rg.uniform(-0.15, 0.15)
+            x += 1.5 * math.cos(ang)
+            z += 1.5 * math.sin(ang)
+            pts.append(to_px(x, z))
+        dv.line(pts, fill=rg.randint(90, 200), width=rg.randint(10, 26))
+    cm_line = np.asarray(crk_img, np.float32) / 255.0
+    cm_line = np.maximum(cm_line * 0.8, blur(cm_line, 1) * 1.2)
+    vein = blur(np.asarray(vein_img, np.float32) / 255.0, 6)
+    base = base * E(1 - 0.38 * np.clip(cm_line, 0, 1) * (0.4 + 0.6 * cm) * nt)
+    base = base * E(1 - 0.16 * vein * nt) + E(0.16 * vein * nt) * col("#7d7c7a")
     save_img(np.clip(base, 0, 1), diff_p, quality=86)
     # 法線：紋理細節＋節理裂縫
-    hgt = (grain - 0.5) * 0.6 + (crack - 0.5) * 1.2 - (1.4 * big + 0.6 * small) * (1 - 0.7 * cm) + (rubble - 0.5) * 2.0 * talus
+    hgt = (grain - 0.5) * 0.6 + (crack - 0.5) * 1.2 - (1.4 * big + 0.6 * small) * (1 - 0.7 * cm) + (rubble - 0.5) * 2.0 * talus - 0.8 * cm_line
     hgt = blur(hgt[::2, ::2], 1)
     save_img(normal_from_height(hgt, 2.0), nor_p, quality=85)
     return diff_p, nor_p

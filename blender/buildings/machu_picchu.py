@@ -22,10 +22,10 @@ from lib import TAU, TEX
 from buildings.kinkakuji import GEN, AsiaBuilder, _cloud, _save_maps, gen_canopy
 
 # (目標點, 方位角, 仰角, 距離, 焦距)：參考照自南側守衛屋上方俯瞰古城，瓦伊納比丘居中
-CAMERA = ((0.0, 330.0, 60.0), 4.0, 9.0, 640.0, 28)
+CAMERA = ((45.0, 300.0, 55.0), -4.0, 9.0, 600.0, 28)
 
 # 城區外輪廓：圓角矩形（中心、半寬、半深、圓角半徑）
-CX, CY, CA, CB, CR = 0.0, 60.0, 85.0, 138.0, 55.0
+CX, CY, CA, CB, CR = 0.0, 60.0, 120.0, 100.0, 45.0
 STEP_W, STEP_H, N_TERR = 3.2, 2.6, 15
 
 
@@ -59,6 +59,12 @@ def _ridged(x, y, s, z=0.0, oct_=3):
     return v
 
 
+def _facet(x, y, s, z=0.0):
+    """Voronoi F2-F1：格心高、格界形成銳利的溝線 → 有稜角的岩面"""
+    d, _ = noise.voronoi(Vector((x / s, y / s, z)))
+    return min(1.0, (d[1] - d[0]) / 0.55)
+
+
 def natural(x, y):
     # 山脊縱剖面：城區平、南北兩端沿梯田坡度下降；南側更遠處再升向馬丘比丘山
     yN, yS = CY + CB, CY - CB
@@ -77,16 +83,22 @@ def natural(x, y):
     h = E
     # 瓦伊納比丘：陡峭尖峰；大尺度 ridged noise 做出岩脊與溝，岩層造成斷崖帶
     px, py = 15.0, 600.0
-    r = math.hypot(x - px, (y - py) / 1.15)
-    t = 1 - r / 240.0
+    r = math.hypot((x - px) / (1.15 if x > px else 1.0), (y - py) / 1.1)
+    t = 1 - r / 255.0
     rid = _ridged(x, y, 130.0, 5.0, oct_=2)
     ang = math.atan2(y - py, x - px)
     gully = abs(math.sin(ang * 3.5 + 1.2 * _n(x, y, 140.0, 9.0)))   # 放射狀岩脊（1）與溝（0）
     w = min(1.0, max(0.0, t) * 2.0)
-    hp = 420.0 * max(t, 0.0) ** 0.95 + 520.0 * min(t, 0.0) - 75 + (30 * rid + 34 * gully) * w
+    rib = _ridged(x, y, 45.0, 13.0, oct_=2)
+    fac = _facet(x, y, 55.0, 2.0) * 0.65 + _facet(x, y, 24.0, 5.0) * 0.35
+    hp = 420.0 * max(t, 0.0) ** 0.95 + 520.0 * min(t, 0.0) - 75 + (24 * rid + 26 * gully + 10 * rib + 32 * fac) * w
     q = hp / 26.0
     hp = 26.0 * (math.floor(q) + min(1.0, (q - math.floor(q)) * 1.5)) * 0.15 + hp * 0.85
     h = max(h, hp)
+    # 峰前西南側的肩部小丘
+    r3 = math.hypot(x + 75, y - 455)
+    t3 = 1 - r3 / 95.0
+    h = max(h, 210.0 * max(t3, 0.0) ** 0.9 + 400.0 * min(t3, 0.0) - 60 + 12 * _ridged(x, y, 40.0, 17.0, oct_=2) * max(0.0, t3))
     # 東側巨大陡壁山稜（自峰頂向東南東下降，南面為近垂直岩壁）
     ax, ay, bx, by = 15.0, 600.0, 520.0, 420.0
     L2 = (bx - ax) ** 2 + (by - ay) ** 2
@@ -97,9 +109,9 @@ def natural(x, y):
     crest = 240.0 * (1 - tt) ** 0.85 - 60 + 18 * _ridged(x, y, 110.0, 2.0, oct_=2)
     h = max(h, crest - qd * (2.6 if side > 0 else 1.2))
     # 西北較低尖峰（華伊納比丘前方的小峰）
-    r2 = math.hypot(x + 175, (y - 360) * 1.1)
-    t2 = 1 - r2 / 120.0
-    hl = 215.0 * max(t2, 0.0) ** 1.0 + 420.0 * min(t2, 0.0) - 70 + 16 * _ridged(x, y, 70.0, 7.0, oct_=2) * max(0.0, min(1.0, t2 * 2))
+    r2 = math.hypot(x + 215, (y - 250) * 1.1)
+    t2 = 1 - r2 / 140.0
+    hl = 250.0 * max(t2, 0.0) ** 1.0 + 420.0 * min(t2, 0.0) - 70 + (12 * _ridged(x, y, 70.0, 7.0, oct_=2) + 26 * _facet(x, y, 38.0, 4.0)) * max(0.0, min(1.0, t2 * 2))
     h = max(h, hl)
     # 一般起伏
     h += 5 * _n(x, y, 60.0, 3.3) + 2 * _n(x, y, 20.0, 4.4)
@@ -132,29 +144,29 @@ def bake_terrain(name, Hg, step, N=2048, seed=4):
     nz = 1.0 / np.sqrt(1 + gx * gx + gy * gy)
     hi = Image.fromarray(H.astype(np.float32), mode="F")
     blur = np.asarray(hi.resize((N // 24, N // 24), Image.Resampling.BOX).resize((N, N), Image.Resampling.BICUBIC), dtype=float)
-    cav = np.clip((H - blur) / 12.0, -1, 1)          # 稜線 +、山溝 -
+    cav = np.clip((H - blur) / 10.0, -1, 1)          # 稜線 +、山溝 -
     n1 = _cloud(rng, N, 96, 1.0) + _cloud(rng, N, 24, 0.5)
-    rock = np.clip((0.43 + n1 * 0.14 - nz) * 5.0 + np.clip((H - 200) / 500, 0, 0.22) + cav * 0.35, 0, 1)
+    rock = np.clip((0.40 + n1 * 0.14 - nz) * 5.0 + np.clip((H - 200) / 500, 0, 0.18) + cav * 0.3, 0, 1)
     moss = np.clip(_cloud(rng, N, 16, 1.6) + 0.1, 0, 1) * (1 - np.clip((0.3 - nz) * 6, 0, 1))
     # 林：深綠＋樹冠斑點
-    can = Image.open(os.path.join(gen_canopy("andes_deep3", (40, 70, 32), seed=12), "diff.jpg")).convert("RGB").resize((96, 96))
-    reps = N // 96 + 1
+    can = Image.open(os.path.join(gen_canopy("andes_deep3", (40, 70, 32), seed=12), "diff.jpg")).convert("RGB").resize((72, 72))
+    reps = N // 72 + 1
     ct = np.tile(np.asarray(can, dtype=float), (reps, reps, 1))[:N, :N]
-    ct = 0.62 + 0.38 * ct / ct.reshape(-1, 3).mean(0)[None, None]
+    ct = 0.35 + 0.65 * ct / ct.reshape(-1, 3).mean(0)[None, None]
     tone = 1 + _cloud(rng, N, 128, 0.35)
-    forest = np.array((30, 56, 25), float)[None, None] * ct * tone[..., None]
+    forest = np.array((17, 36, 15), float)[None, None] * ct * tone[..., None]
     forest = forest * (1 + 0.15 * np.clip(_cloud(rng, N, 64, 1.0), 0, 1))[..., None] + np.array((10, 14, 4))[None, None] * np.clip(cav, 0, 1)[..., None] * 3
     # 岩：灰色花崗岩，帶縱向流痕與苔
     rk = Image.open(os.path.join(TEX, "rock_face_03", "diff.jpg")).convert("L").resize((160, 160))
     reps = N // 160 + 1
     rt = np.tile(np.asarray(rk, dtype=float), (reps, reps))[:N, :N]
     rt = rt / rt.mean()
-    grey = np.array((88, 89, 83), float)[None, None] * (0.75 + 0.25 * rt)[..., None] * (1 + _cloud(rng, N, 8, 0.25))[..., None]
+    grey = np.array((66, 70, 62), float)[None, None] * (0.75 + 0.25 * rt)[..., None] * (1 + _cloud(rng, N, 8, 0.25))[..., None]
     grey = grey * (1 - 0.35 * np.clip(-n1, 0, 1))[..., None]
     mossc = np.array((58, 76, 40), float)[None, None]
     rockc = grey * (1 - 0.5 * moss[..., None]) + mossc * 0.5 * moss[..., None]
     col = forest * (1 - rock[..., None]) + rockc * rock[..., None]
-    col = col * (1 + 0.45 * cav)[..., None]
+    col = col * np.clip(1 + np.where(cav > 0, 0.35, 0.9) * cav, 0.35, 1.3)[..., None]
     _save_maps(out, col, None)
     return out
 
@@ -199,14 +211,16 @@ def machu_picchu(path):
     b = AndesBuilder("MachuPicchu", seed=9)
     rng = b.rng
     grass = b.ptex("grass", "grass_ground", tile=5.0, tint="#4b6e28", rough=0.95, normal=0.6)
+    ground = b.ptex("ground", "grass_ground", tile=4.0, tint="#6a6f48", rough=0.95, normal=0.6)
     lawn = b.ptex("lawn", "grass_ground", tile=4.0, tint="#5c8e30", rough=0.95, normal=0.4)
     wall = b.ptex("wall", "stone_wall_04", tile=2.6, tint="#827f76", rough=0.9, normal=1.0)
     wall_d = b.ptex("wall_d", "stone_wall_04", tile=2.6, tint="#6f6c64", rough=0.9, normal=1.0)
     forest = b.gtex("forest", gen_canopy("andes_deep3", (40, 70, 32), seed=12), tile=22.0, rough=0.95, normal=1.0)
     rock_s = b.ptex("rock_s", "rock_04", tile=3.0, tint="#8e8b82", rough=0.9, normal=1.0)
-    hz = []
-    for k, (col, em) in enumerate((("#2c4a40", 0.0), ("#38565a", 0.03), ("#4a6670", 0.08), ("#5f7c88", 0.14))):
-        mi = b.color(f"haze{k}", col, rough=0.95)
+    hz = [b.gtex("haze0", gen_canopy("andes_hz0", (26, 46, 38), seed=31), tile=60.0, rough=0.95, normal=0.8),
+          b.gtex("haze1", gen_canopy("andes_hz1", (36, 58, 62), seed=32), tile=80.0, rough=0.95, normal=0.5)]
+    for k, (col, em) in enumerate((("#3c5a64", 0.06), ("#557380", 0.12))):
+        mi = b.color(f"haze{k + 2}", col, rough=0.95)
         bs = b.mats[mi].node_tree.nodes["Principled BSDF"]
         bs.inputs["Emission Color"].default_value = bs.inputs["Base Color"].default_value
         bs.inputs["Emission Strength"].default_value = em
@@ -235,7 +249,7 @@ def machu_picchu(path):
 
     import numpy as np
     Hg = np.array([[hv(i, j) for j in range(ny + 1)] for i in range(nx + 1)])   # [i(x), j(y)]
-    terr = b.gtex("terrain", bake_terrain("mp_terrain7", Hg, STEP), tile=1.0, rough=0.95, normal=0.0)
+    terr = b.gtex("terrain", bake_terrain("mp_terrain15", Hg, STEP), tile=1.0, rough=0.95, normal=0.0)
     b.planar[terr] = (x0, y0, x1 - x0, y1 - y0)
     for i in range(nx):
         for j in range(ny):
@@ -244,7 +258,10 @@ def machu_picchu(path):
                 continue
             if city_sdf(cx, cy) < -3:
                 continue  # 城區頂面由梯田幾何負責
-            b.face([vv(i, j), vv(i + 1, j), vv(i + 1, j + 1), vv(i, j + 1)], terr, smooth=True)
+            a_, c_, e_, f_ = hv(i, j), hv(i + 1, j), hv(i + 1, j + 1), hv(i, j + 1)
+            nz = 1.0 / math.sqrt(1 + ((c_ - a_ + e_ - f_) / (2 * STEP)) ** 2 + ((f_ - a_ + e_ - c_) / (2 * STEP)) ** 2)
+            mi = terr
+            b.face([vv(i, j), vv(i + 1, j), vv(i + 1, j + 1), vv(i, j + 1)], mi, smooth=True)
 
     # ---------------- 外環遠山（越遠越偏藍灰：霧氣層次）
     NA, NRr = 300, 26
@@ -282,40 +299,54 @@ def machu_picchu(path):
     # 城區頂台（z=0）
     b.slab(rrect(CA, CB, CR, 0.0, n_arc=8), -9.0, 0.0, wall, grass)
 
-    # ---------------- 城內：中央大廣場、西側神殿區、東側住居區、南側農業梯田
-    b.block(lawn, -20, 22, 0, 120, -0.3, 0.05)                    # 大廣場（草坪）
-    # 西側神殿區：兩層台
-    b.block(wall, -80, -24, -40, 165, -1.0, 3.0, top=grass)
-    b.block(wall, -78, -34, 15, 150, 2.0, 6.0, top=grass)
-    # 拴日石小丘（Intihuatana）：小階台堆疊
-    for k in range(6):
-        s = 16 - k * 2.4
-        b.block(wall, -52 - s, -52 + s, 172 - s * 0.8, 172 + s * 0.8, -1.0 + 3.0 * k, 3.0 + 3.0 * k, top=grass)
-    b.block(rock_s, -53.0, -51.0, 171.0, 173.0, 18.0, 19.8)
-    # 東側住居區：向東、向北逐階下降
-    for ix, (xa, xb) in enumerate(((26, 44), (44, 62), (62, 80))):
-        for iy, (ya, yb) in enumerate(((-60, -10), (-10, 40), (40, 90), (90, 140), (140, 185))):
-            zt = 5.0 - 1.4 * ix - 0.6 * iy
-            b.block(wall, xa, xb, ya, yb, -1.0, zt, top=grass)
-    # 南側城內農業梯田（向南升高）
+    # ---------------- 城內：台地分區（每格為石砌擋土牆＋頂面），查詢頂高供石屋使用
+    plats = []
+
+    def plat(xa, xb, ya, yb, z, top=None):
+        if max(city_sdf(xa, ya), city_sdf(xb, ya), city_sdf(xb, yb), city_sdf(xa, yb)) > -1.5:
+            return
+        plats.append((xa, xb, ya, yb, z))
+        b.block(wall if rng.random() < 0.7 else wall_d, xa, xb, ya, yb, -1.0, z, top=top if top is not None else ground)
+
+    def top_z(x, y):
+        z = 0.0
+        for xa, xb, ya, yb, zz in plats:
+            if xa <= x <= xb and ya <= y <= yb:
+                z = max(z, zz)
+        return z
+
+    b.block(lawn, -55, 15, 45, 115, -0.4, 0.06)                    # 中央大廣場（草坪）
+    # 西側神殿區（三條南北向台地，往西升高）
+    for (xa, xb, z) in ((-118, -98, 7.5), (-98, -79, 5.2), (-79, -60, 3.0)):
+        for ya in range(-40, 160, 14):
+            plat(xa, xb, ya, ya + 14, z + 0.3 * rng.random(), top=grass if rng.random() < 0.35 else ground)
+    # 拴日石小丘（Intihuatana）
+    for k in range(5):
+        sz = 13 - k * 2.4
+        b.block(wall, -90 - sz, -90 + sz, 120 - sz * 0.8, 120 + sz * 0.8, 6.0, 9.0 + 3.0 * k, top=grass)
+    b.block(rock_s, -91.0, -89.0, 119.0, 121.0, 21.0, 22.8)
+    # 東側住居區（往東、往北逐階下降）
+    for xa in range(22, 120, 16):
+        for ya in range(-40, 160, 13):
+            z = 6.0 - 1.1 * ((xa - 22) // 16) - 0.35 * ((ya + 40) // 13)
+            plat(xa, xa + 16, ya, ya + 13, max(0.8, z), top=grass if rng.random() < 0.25 else ground)
+    # 南側（前景）與北側台地
+    for (ya, yb, z) in ((-40, -20, 1.0), (-20, 5, 2.0), (5, 42, 2.8)):
+        for xa in range(-60, 22, 14):
+            plat(xa, xa + 14, ya, yb, z, top=grass if rng.random() < 0.5 else ground)
+    for xa in range(-58, 20, 13):
+        plat(xa, xa + 13, 118, 160, 2.2, top=ground)
 
     # ---------------- 石屋（無頂、兩端山牆三角）
-    def top_z(x, y):
-        if -80 < x < -24 and -40 < y < 165:
-            return 6.0 if (-78 < x < -34 and 15 < y < 150) else 3.0
-        if 26 < x < 80 and -60 < y < 185:
-            ix = min(2, int((x - 26) // 18))
-            iy = min(4, int((y + 60) // 50))
-            return 5.0 - 1.4 * ix - 0.6 * iy
-        return 0.0
-
     occupied = []
 
     def house(x, y, w, d, rot90=False, roof=False):
         if any(abs(x - ox) < (w + ow) / 2 + 1.0 and abs(y - oy) < (d + od) / 2 + 1.0 for ox, oy, ow, od in occupied):
             return False
-        z0 = top_z(x, y) - 0.3
-        hw = rng.uniform(2.6, 3.4)
+        hx_, hy_ = (d, w) if rot90 else (w, d)
+        zc = [top_z(x + sx * hx_ / 2, y + sy * hy_ / 2) for sx in (-1, 1) for sy in (-1, 1)]
+        z0 = min(zc) - 0.3
+        hw = rng.uniform(2.6, 3.4) + (max(zc) - min(zc))
         t = 0.6
         mi = wall if rng.random() < 0.75 else wall_d
         W, D = (d, w) if rot90 else (w, d)   # 世界座標寬（x）、深（y）
@@ -345,29 +376,29 @@ def machu_picchu(path):
         return True
 
     # 東側住居區：成排密集
-    for gy in range(-66, 186, 8):
-        for gx in range(29, 80, 10):
-            if rng.random() < 0.85:
-                house(gx + rng.uniform(-0.8, 0.8), gy + rng.uniform(-0.6, 0.6), rng.uniform(6.5, 9.0), rng.uniform(4.2, 5.4),
+    for gy in range(-36, 158, 7):
+        for gx in range(25, 118, 9):
+            if rng.random() < 0.85 and city_sdf(gx, gy) < -6:
+                house(gx + rng.uniform(-0.8, 0.8), gy + rng.uniform(-0.5, 0.5), rng.uniform(6.0, 8.5), rng.uniform(4.0, 5.2),
                       rot90=rng.random() < 0.25)
     # 西側神殿區
-    for gy in range(-62, 162, 9):
-        for gx in range(-76, -26, 11):
-            if rng.random() < 0.7 and not (-60 < gx < -40 and 160 < gy):
-                house(gx + rng.uniform(-1, 1), gy + rng.uniform(-1, 1), rng.uniform(7.0, 10.5), rng.uniform(4.5, 6.0),
+    for gy in range(-36, 156, 9):
+        for gx in range(-114, -60, 10):
+            if rng.random() < 0.75 and city_sdf(gx, gy) < -6 and not (-104 < gx < -76 and 106 < gy < 134):
+                house(gx + rng.uniform(-1, 1), gy + rng.uniform(-1, 1), rng.uniform(7.0, 10.0), rng.uniform(4.5, 6.0),
                       rot90=rng.random() < 0.3)
-    # 廣場南北兩端與南區
-    for gx in range(-16, 22, 9):
-        for gy in (-30, -18, 130, 141):
-            if rng.random() < 0.8:
+    # 前景南側與北側
+    for gx in range(-56, 20, 9):
+        for gy in (-33, -26, -13, -4, 122, 131, 141, 151):
+            if rng.random() < 0.8 and city_sdf(gx, gy) < -6:
                 house(gx + rng.uniform(-1, 1), gy + rng.uniform(-1, 1), rng.uniform(6.5, 8.5), rng.uniform(4.3, 5.2))
-    # 守衛屋與梯田上的茅頂小屋（復原屋頂）
-    house(-62.0, -66.0, 7.0, 4.8, roof=True)
-    house(58.0, -70.0, 6.5, 4.5, roof=True)
+    # 守衛屋式茅頂小屋（復原屋頂）
+    house(-20.0, -30.0, 7.0, 4.8, roof=True)
+    house(70.0, -32.0, 6.5, 4.5, roof=True)
     # 採石場散石（城中央南側）
-    for _ in range(26):
-        x, y = rng.uniform(-18, 20), rng.uniform(-14, -2)
+    for _ in range(30):
+        x, y = rng.uniform(-50, 10), rng.uniform(12, 38)
         s = rng.uniform(0.8, 2.2)
-        b.rock(rock_s, (s * 1.4, s, s * 0.7), (x, y, -0.3), rot=(0, 0, rng.uniform(0, TAU)), seed=rng.randint(0, 99), round_=0.4)
+        b.rock(rock_s, (s * 1.4, s, s * 0.7), (x, y, top_z(x, y) - 0.3), rot=(0, 0, rng.uniform(0, TAU)), seed=rng.randint(0, 99), round_=0.4)
 
     b.export_glb(path)

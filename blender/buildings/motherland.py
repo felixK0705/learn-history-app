@@ -474,7 +474,7 @@ def mesh_from_arrays(name, verts, faces):
 
 def build_figure(b, mi, target_tris=135000):
     lo = (-15.5, -14.0, -0.2)
-    hi = (26.0, 15.0, 64.5)
+    hi = (26.0, 19.0, 64.5)
     F = sample_grid(figure_sdf, lo, hi, VOX)
     verts, faces = surface_nets(F, lo, VOX)
     del F

@@ -247,9 +247,9 @@ class ThaiBuilder(AsiaBuilder):
         self.bx(door, (1.15 * k, 0.12 * k, 2.95 * k), (0, yf - 0.16 * k, z0 + 1.15 * k + 1.47 * k), M)
         zt = z0 + Hn + 0.35 * k
         # 尖拱山牆：外層金邊、內層馬賽克，略呈火焰尖頂（兩側內凹曲線）
-        for (wb, ht, y0, y1, mi) in ((W + 0.5 * k, 4.2 * k, yf - 0.05 * k, yf + 1.9 * k, frame),
-                                     (W - 0.3 * k, 3.5 * k, yf - 0.25 * k, yf - 0.05 * k, body),
-                                     (W - 1.4 * k, 2.4 * k, yf - 0.4 * k, yf - 0.25 * k, gold)):
+        for (wb, ht, y0, y1, mi) in ((W + 0.6 * k, 5.6 * k, yf - 0.05 * k, yf + 1.9 * k, frame),
+                                     (W - 0.2 * k, 4.7 * k, yf - 0.25 * k, yf - 0.05 * k, body),
+                                     (W - 1.3 * k, 3.2 * k, yf - 0.4 * k, yf - 0.25 * k, gold)):
             pts = [(-wb / 2, zt), (wb / 2, zt)]
             for i in range(1, 9):
                 t = i / 9
@@ -260,7 +260,7 @@ class ThaiBuilder(AsiaBuilder):
                 t = i / 9
                 pts.append((-wb / 2 * (1 - t) ** 1.5, zt + ht * t))
             self.slab(mi, pts, y0, y1, M)
-        self.turn(gold, [(0.0, zt + 3.8 * k), (0.16 * k, zt + 3.9 * k), (0.03 * k, zt + 5.6 * k), (0.0, zt + 5.7 * k)],
+        self.turn(gold, [(0.0, zt + 5.2 * k), (0.16 * k, zt + 5.3 * k), (0.03 * k, zt + 7.0 * k), (0.0, zt + 7.1 * k)],
                   *(M @ Vector((0, yf + 0.8 * k, 0))).xy, seg=8)
         for sx in (-1, 1):  # 山牆兩端翹起的鴟尾狀飾件
             self.turn(gold, [(0.0, zt), (0.12 * k, zt + 0.1 * k), (0.02 * k, zt + 0.9 * k), (0.0, zt + 1.0 * k)],
@@ -312,7 +312,7 @@ class ThaiBuilder(AsiaBuilder):
 
             def bell(z):
                 t = min(1.0, max(0.0, (z / k - zb - 0.45) / (22.0 - zb - 0.45)))
-                return k * (3.7 - 1.75 * t ** 0.55)
+                return k * (2.05 + 1.65 * (1 - t) ** 1.7 + 0.32 * math.sin(math.pi * t) ** 1.5 * t)
             P.curve(bell, (zb + 0.45) * k, 22.0 * k, 12, body)
             P.add(2.3 * k, 22.0 * k, band)
             P.add(2.3 * k, 22.25 * k, band)
@@ -373,7 +373,7 @@ def wat_pho(path):
     b.chedi(0.0, 0.0, "blue", M["blue"], B["blue"], gold, dark, door=door)
     b.chedi(-24.5, 6.0, "std", M["green"], B["green"], gold, dark)
     b.chedi(-15.0, 48.0, "std", M["yellow"], B["yellow"], gold, dark)
-    b.chedi(-50.0, 52.0, "std", M["white"], B["white"], gold, dark)
+    b.chedi(-34.0, 40.0, "std", M["white"], B["white"], gold, dark)
 
     # ---------------- 迴廊（白牆＋雙層橘瓦屋頂、綠邊、紅白飾帶）
     def gallery(x0, y0, x1, y1, depth=5.0, h=3.0):
