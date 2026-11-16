@@ -219,20 +219,55 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
     const margin = (dot: number, horizon: number) => (dot - horizon) / (1 - horizon);
     const priority = (it: { div: HTMLDivElement; iso: string; rank: number }) =>
       it.div.classList.contains("is-active") ? Infinity : (areaByIso.current.get(it.iso) ?? 0) - it.rank * 1e-9;
+    // 國名放不下時依序改放在國家的上、下、右、左側，都放不下才隱藏
+    const offset = new Map<HTMLDivElement, number>();
+    const seen = new Set<HTMLDivElement>();
+    const hiddenAt = new Map<HTMLDivElement, number>();
+    // 以國名寬、高的倍數表示位移：正中、上、下、右、左
+    const OFFSETS = [[0, 0], [0, -1], [0, 1], [0.5, 0], [-0.5, 0]];
+    const shift = (k: number, w: number, h: number) => [OFFSETS[k][0] * (w + 12), OFFSETS[k][1] * h];
     const declutter = (d: number, horizon: number) => {
       const cam = g.camera().position;
-      const boxes: DOMRect[] = [];
+      const boxes: number[][] = [];
       const wasHidden = new Set(hidden);
+      const now = performance.now();
       hidden.clear();
       for (const it of [...labelPos.current].sort((a, b) => priority(b) - priority(a))) {
         const u = labelVecs.current.get(it.div);
         // 已轉到地球邊緣外淡出的不算
         if (!u || margin((u.x * cam.x + u.y * cam.y + u.z * cam.z) / d, horizon) < 0.4) continue;
         const r = it.div.getBoundingClientRect();
-        // 緩衝：已顯示的國名要明顯疊進去才隱藏，已隱藏的要留出空隙才重新顯示，擦邊時不會來回閃
+        const prev = offset.get(it.div) ?? 0;
+        const [px, py] = shift(prev, r.width, r.height);
+        const bx = r.left - px;
+        const by = r.top - py;
+        // 緩衝：已顯示的國名要明顯疊進去才換位置或隱藏，已隱藏的要留出空隙才重新顯示，擦邊時不會來回閃
         const pad = wasHidden.has(it.div) ? 10 : -4;
-        if (boxes.some((o) => r.left - pad < o.right && r.right + pad > o.left && r.top - pad / 2 < o.bottom && r.bottom + pad / 2 > o.top)) hidden.add(it.div);
-        else boxes.push(r);
+        const free = (k: number) => {
+          const [ox, oy] = shift(k, r.width, r.height);
+          const b = [bx + ox, by + oy, bx + ox + r.width, by + oy + r.height];
+          const p = k === prev ? pad : 4;
+          return boxes.some((o) => b[0] - p < o[2] && b[2] + p > o[0] && b[1] - p / 2 < o[3] && b[3] + p / 2 > o[1]) ? null : b;
+        };
+        let pick = prev;
+        let box = free(prev);
+        // 只有原本隱藏的國名才換位置（淡入時直接出現在新位置）；正在顯示的國名被擋住就淡出，畫面上不會看到國名跳動
+        // 換位置前至少要先隱藏 0.8 秒（淡出完成），否則看起來像國名在跳
+        const settled = !seen.has(it.div) || (wasHidden.has(it.div) && now - (hiddenAt.get(it.div) ?? 0) > 800);
+        if (settled) for (let k = 0; !box && k < OFFSETS.length; k++) if (k !== prev && (box = free(k))) pick = k;
+        seen.add(it.div);
+        if (!box) {
+          if (!wasHidden.has(it.div)) hiddenAt.set(it.div, now);
+          hidden.add(it.div);
+          continue;
+        }
+        boxes.push(box);
+        if (pick !== prev) {
+          offset.set(it.div, pick);
+          const [ox, oy] = shift(pick, r.width, r.height);
+          it.div.style.marginLeft = `${ox}px`;
+          it.div.style.marginTop = `${oy}px`;
+        }
       }
     };
     const tick = () => {
