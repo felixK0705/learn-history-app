@@ -1,12 +1,10 @@
-"""合成首頁地球貼圖（參考圖風格：寫實衛星地貌、亮藍海洋、沿海岸流動的白色流紋）。
+"""以程式繪製風格化地球貼圖（參考圖風格：飽和的陸地、明亮的海洋與白色流紋）。
 
-陸地：NASA Blue Marble「Land shallow topo」（公有領域，Wikimedia Commons），調高飽和並加上地形陰影。
-海洋與流紋：程式產生。陸地遮罩與高程取自 three-globe 套件的 earth-water.png、earth-topology.png。
-用法：python scripts/paint_globe.py <NASA 圖檔路徑>
-輸出：public/textures/earth-painted.jpg、public/textures/clouds-painted.png
+只使用陸地遮罩與高程作為地理輸入（three-globe 套件的 earth-water.png、earth-topology.png），
+顏色、地貌、洋流紋路全部由程式產生，不使用任何現成的地球照片貼圖。
+輸出：public/textures/earth-painted.jpg
 """
 import os
-import sys
 
 import numpy as np
 from PIL import Image, ImageFilter
@@ -14,29 +12,29 @@ from PIL import Image, ImageFilter
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, "node_modules/three-globe/example/img")
 W, H = 4096, 2048
+rng = np.random.default_rng(7)
 
 
-def gray(path):
-    return np.asarray(Image.open(path).convert("L").resize((W, H), Image.LANCZOS), np.float32) / 255
+def load_gray(name):
+    return Image.open(os.path.join(SRC, name)).convert("L").resize((W, H), Image.LANCZOS)
 
 
 def blur(arr, r):
     im = Image.fromarray(np.clip(arr * 255, 0, 255).astype(np.uint8))
-    return np.asarray(im.filter(ImageFilter.GaussianBlur(r)), np.float32) / 255
+    return np.asarray(im.filter(ImageFilter.GaussianBlur(r)), dtype=np.float32) / 255
 
 
-def noise(base, seed, octaves=5, persistence=0.55, w=W, h=H):
-    """多層雜訊，左右可接續"""
+def fbm(octaves=6, base=4, persistence=0.55, seed=0):
+    """多層雜訊（以放大的隨機格點疊加），左右可接續"""
     g = np.random.default_rng(seed)
-    out = np.zeros((h, w), np.float32)
-    amp = total = 0.0
-    amp = 1.0
+    out = np.zeros((H, W), np.float32)
+    amp, total = 1.0, 0.0
     for o in range(octaves):
         n = base * 2**o
         grid = g.random((max(2, n // 2), n)).astype(np.float32)
-        grid = np.concatenate([grid, grid[:, :1]], axis=1)
-        im = Image.fromarray((grid * 255).astype(np.uint8)).resize((w + w // n, h), Image.BICUBIC)
-        out += amp * np.asarray(im, np.float32)[:, :w] / 255
+        grid = np.concatenate([grid, grid[:, :1]], axis=1)  # 水平接續
+        im = Image.fromarray((grid * 255).astype(np.uint8)).resize((W + W // n, H), Image.BICUBIC)
+        out += amp * np.asarray(im, np.float32)[:, :W] / 255
         total += amp
         amp *= persistence
     return out / total
@@ -50,54 +48,124 @@ def hexc(h):
     return np.array([int(h[i : i + 2], 16) / 255 for i in (1, 3, 5)], np.float32)
 
 
-land = 1 - gray(os.path.join(SRC, "earth-water.png"))
-elev = gray(os.path.join(SRC, "earth-topology.png"))
+water = np.asarray(load_gray("earth-water.png"), np.float32) / 255
+land = 1.0 - water
+land_soft = blur(land, 1.5)
+elev = np.asarray(load_gray("earth-topology.png"), np.float32) / 255
 
-# ---------- 陸地：NASA 衛星影像，加飽和、偏暖，並疊上地形陰影 ----------
-sat = np.asarray(Image.open(sys.argv[1]).convert("RGB").resize((W, H), Image.LANCZOS), np.float32) / 255
-lum = sat.mean(axis=2, keepdims=True)
-col = np.clip(lum + (sat - lum) * 1.3, 0, 1)
-warm = (1 - lum**3)  # 冰雪等亮白處不上色
-col = col**1.3 * (1 + warm * (np.array([1.04, 0.8, 0.7], np.float32) - 1))
-col *= 1 - 0.5 * np.clip(lum - 0.3, 0, 1) * warm  # 沙漠壓暗成紅褐色
-yellow = np.clip((col[..., 1] - col[..., 2]) * 3, 0, 1) * np.clip((col[..., 0] - 0.35) * 3, 0, 1)
-col[..., 1] *= 1 - 0.22 * yellow  # 黃色沙地轉成參考圖的紅褐色
-col[..., 0] *= 1 - 0.1 * yellow
 lat = np.linspace(90, -90, H, dtype=np.float32)[:, None] * np.ones((1, W), np.float32)
-ice = np.clip((np.abs(lat) - 58) / 8, 0, 1) * np.clip((lum[..., 0] - 0.35) * 4, 0, 1)
-col = mix(col, np.ones_like(col) * hexc("#eef4fb"), ice)  # 南極、格陵蘭冰原保持白色  # 沙漠偏紅橘、森林偏暖綠
-gy, gx = np.gradient(blur(elev, 1.0))
-shade = np.clip(1 + (-gx + gy) * 22, 0.55, 1.45)  # 光源西北
-col = np.clip(col * shade[..., None], 0, 1)
+alat = np.abs(lat)
 
-# ---------- 海洋：深藍到近岸亮藍 ----------
-near = blur(land, 40) * 0.5 + blur(land, 12) * 0.5
-ocean = mix(np.ones((H, W, 3), np.float32) * hexc("#1450a8"), np.ones((H, W, 3), np.float32) * hexc("#2a78c8"), np.clip(noise(4, 3) * 0.9, 0, 1))
-ocean = mix(ocean, np.ones_like(ocean) * hexc("#3d93dc"), np.clip(near * 1.6, 0, 1))
+# ---------- 陸地 ----------
+moisture = blur(water, 130) * 0.55 + blur(water, 40) * 0.3 + blur(water, 12) * 0.15  # 靠海越濕潤（內陸乾燥）
+n1 = fbm(seed=1)
+n2 = fbm(seed=2, base=8)
+lon = np.linspace(-180, 180, W, dtype=np.float32)[None, :] * np.ones((H, 1), np.float32)
 
-# ---------- 白色流紋：沿海岸等距線流動，經雜訊扭曲並斷續 ----------
-dist = 1 - (blur(land, 6) * 0.3 + blur(land, 25) * 0.4 + blur(land, 70) * 0.3)  # 離岸越遠越接近 1
-phase = dist * 22 + noise(3, 11) * 8 + noise(12, 12) * 2.5
-band = np.clip((np.sin(phase * np.pi) - 0.62) / 0.38, 0, 1) ** 1.3
-patch = np.clip(noise(6, 13) * 2.4 - 0.8, 0, 1) * np.clip((1.0 - dist) * 14, 0, 1)
-flow = blur(band * patch * (1 - land), 2.2) * 0.7 + blur(band * patch * (1 - land), 9) * 0.6
-ocean = mix(ocean, np.ones_like(ocean) * hexc("#e8f3ff"), np.clip(flow * 1.5, 0, 0.95))
-ocean = mix(ocean, np.ones_like(ocean) * hexc("#b8daf5"), np.clip(near * 0.35, 0, 0.3))  # 近岸淡淡的白霧
-foam = np.clip((blur(land, 5) - land) * 3, 0, 1)
-ocean = mix(ocean, np.ones_like(ocean) * hexc("#cfeaff"), foam * 0.7)
 
-out = mix(ocean, col, np.clip(blur(land, 0.8), 0, 1))
-Image.fromarray((np.clip(out, 0, 1) * 255).astype(np.uint8)).save(os.path.join(ROOT, "public/textures/earth-painted.jpg"), quality=90, optimize=True)
-print("earth ok")
+wlat = lat + (fbm(seed=21, base=4) - 0.5) * 9
+wlon = lon + (fbm(seed=22, base=4) - 0.5) * 12
 
-# ---------- 雲層：稀疏的薄雲，兩極淡出 ----------
+
+def region(lat0, lat1, lon0, lon1, soft=10.0):
+    """經緯度範圍的柔邊遮罩：座標先經雜訊扭曲，形狀較自然"""
+    a = np.clip((wlat - lat0 + soft / 2) / soft, 0, 1) * np.clip((lat1 - wlat + soft / 2) / soft, 0, 1)
+    b = np.clip((wlon - lon0 + soft / 2) / soft, 0, 1) * np.clip((lon1 - wlon + soft / 2) / soft, 0, 1)
+    return np.sqrt(a * b)
+
+
+# 依實際地理位置標出主要沙漠與草原帶
+deserts = [
+    (16, 31, -16, 33), (14, 31, 34, 58), (25, 36, 52, 72), (24, 30, 69, 75),  # 撒哈拉、阿拉伯、伊朗高原、塔爾
+    (-29, -18, 12, 24), (-31, -19, 117, 143), (-27, -17, -71, -68),  # 喀拉哈里與納米布、澳洲內陸、阿塔卡馬
+    (26, 40, -118, -106), (39, 46, 92, 112), (37, 42, 77, 90), (2, 11, 41, 51),  # 北美西南、塔克拉瑪干與戈壁、非洲之角
+    (-50, -38, -71, -64), (38, 47, 52, 68),  # 巴塔哥尼亞、中亞
+]
+savannas = [
+    (9, 16, -17, 40), (-18, 8, 26, 41), (-21, -4, -56, -40), (-21, -12, 122, 145), (17, 26, 70, 85), (-34, -28, 14, 31), (40, 50, -110, -97),
+]
+desert = np.zeros((H, W), np.float32)
+for r in deserts:
+    desert = np.maximum(desert, region(*r))
+desert = np.clip(desert * (0.9 + 0.35 * n2), 0, 1)
+savanna = np.zeros((H, W), np.float32)
+for r in savannas:
+    savanna = np.maximum(savanna, region(*r, soft=8))
+savanna = np.clip(savanna - desert * 0.8, 0, 1)
+tropic = np.clip(np.exp(-((alat / 13) ** 2)) * (0.6 + moisture), 0, 1)
+temperate = np.exp(-(((alat - 47) / 13) ** 2))
+boreal = np.exp(-(((alat - 61) / 7) ** 2))
+ice = np.clip((alat - 66) / 6, 0, 1) + np.clip((elev - 0.62) * 5, 0, 1)
+
+col = np.ones((H, W, 3), np.float32) * hexc("#56664a")
+col = mix(col, np.ones_like(col) * hexc("#3e5a40"), np.clip(tropic * (0.8 + 0.4 * n2), 0, 1))
+col = mix(col, np.ones_like(col) * hexc("#5c6a4c"), np.clip(temperate * 0.7, 0, 1))
+col = mix(col, np.ones_like(col) * hexc("#4a5446"), np.clip(boreal * 0.8, 0, 1))
+col = mix(col, np.ones_like(col) * hexc("#7f6e5c"), np.clip(savanna * 0.85, 0, 1))
+col = mix(col, np.ones_like(col) * hexc("#a08272"), desert)
+col = mix(col, np.ones_like(col) * hexc("#8c5a4c"), np.clip((desert - 0.6) * 2.0 * n2 * 1.4, 0, 1))  # 紅色砂岩
+col = mix(col, np.ones_like(col) * hexc("#9a8a86"), np.clip((elev - 0.35) * 2.2, 0, 1) * 0.7)  # 山地
+col = mix(col, np.ones_like(col) * hexc("#d6dff0"), np.clip(ice, 0, 1))
+
+# 地形陰影（光源西北）
+gy, gx = np.gradient(blur(elev, 1.2))
+shade = np.clip(1.0 + (-gx * 0.9 + gy * 0.9) * 34, 0.5, 1.6)
+col *= shade[..., None]
+col *= (0.92 + 0.16 * n1)[..., None]
+
+# ---------- 海洋 ----------
+near = blur(land, 26) * 0.6 + blur(land, 8) * 0.4  # 越近陸地越淺
+deep = hexc("#183b73")
+mid = hexc("#36589a")
+shallow = hexc("#6b98d2")
+ocean = mix(mix(np.ones((H, W, 3), np.float32) * deep, np.ones((H, W, 3), np.float32) * mid, np.clip(0.35 + fbm(seed=3) * 0.4, 0, 1)),
+            np.ones((H, W, 3), np.float32) * shallow, np.clip(near * 1.8, 0, 1))
+# 白色流紋（扭曲的緯向條紋）
+warp = fbm(seed=4, base=2) * 16 + fbm(seed=5, base=6) * 6 + fbm(seed=9, base=16) * 1.5
+phase = lat * 0.16 + np.sin(np.radians(lon) * 3 + fbm(seed=10, base=3) * 6) * 2.2 + warp
+streak = np.sin(phase * np.pi)
+streak = np.clip((streak - 0.78) / 0.22, 0, 1) ** 1.3
+patch = np.clip(fbm(seed=6, base=8) * 2.6 - 0.95, 0, 1)
+streak *= patch * (0.6 + 0.6 * np.clip(near * 3, 0, 1))
+ocean = mix(ocean, np.ones_like(ocean) * hexc("#c3d3ee"), np.clip(blur(streak, 1.4) * 0.85, 0, 1))
+# 海面明暗起伏
+ocean *= (0.9 + 0.2 * fbm(seed=12, base=6))[..., None]
+# 海岸白浪
+foam = np.clip(blur(land, 9) - land * 0.98, 0, 1)
+foam = np.clip(foam * 3.2, 0, 1)
+ocean = mix(ocean, np.ones_like(ocean) * hexc("#d3e0f4"), foam * 0.9)
+
+out = mix(ocean, col, np.clip(land_soft, 0, 1))
+out = np.clip(out, 0, 1)
+Image.fromarray((out * 255).astype(np.uint8)).save(os.path.join(ROOT, "public/textures/earth-painted.jpg"), quality=88, optimize=True)
+print("ok")
+
+# ---------- 雲層（程式產生：熱帶輻合帶與中緯度雲帶，帶有旋渦狀扭曲） ----------
 CW, CH = 2048, 1024
 clat = np.linspace(90, -90, CH, dtype=np.float32)[:, None] * np.ones((1, CW), np.float32)
-c = noise(6, 31, 7, w=CW, h=CH) * 0.6 + noise(24, 32, 4, w=CW, h=CH) * 0.4
-bands = 0.2 * np.exp(-((clat / 9) ** 2)) + 0.25 * np.exp(-(((np.abs(clat) - 52) / 14) ** 2)) + 0.6
-alpha = np.clip((c * bands - 0.36) * 4.0, 0, 1) ** 1.3 * np.clip((80 - np.abs(clat)) / 25, 0, 1)
+
+
+def fbm_small(seed, base, octaves=6, persistence=0.55):
+    g = np.random.default_rng(seed)
+    out = np.zeros((CH, CW), np.float32)
+    amp = total = 0.0
+    amp = 1.0
+    for o in range(octaves):
+        n = base * 2**o
+        grid = g.random((max(2, n // 2), n)).astype(np.float32)
+        grid = np.concatenate([grid, grid[:, :1]], axis=1)
+        im = Image.fromarray((grid * 255).astype(np.uint8)).resize((CW + CW // n, CH), Image.BICUBIC)
+        out += amp * np.asarray(im, np.float32)[:, :CW] / 255
+        total += amp
+        amp *= persistence
+    return out / total
+
+
+bands = 0.25 * np.exp(-((clat / 9) ** 2)) + 0.3 * np.exp(-(((np.abs(clat) - 52) / 14) ** 2)) + 0.62
+c = fbm_small(31, 6, 7) * 0.6 + fbm_small(32, 24, 4) * 0.4
+alpha = np.clip((c * bands - 0.33) * 4.0, 0, 1) ** 1.2
 rgba = np.zeros((CH, CW, 4), np.uint8)
 rgba[..., :3] = 255
-rgba[..., 3] = (alpha * 200).astype(np.uint8)
+rgba[..., 3] = (alpha * 235).astype(np.uint8)
 Image.fromarray(rgba, "RGBA").save(os.path.join(ROOT, "public/textures/clouds-painted.png"), optimize=True)
 print("clouds ok")
