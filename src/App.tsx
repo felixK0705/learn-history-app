@@ -87,12 +87,12 @@ export default function App() {
         ref={shellRef}
         className="stage relative flex h-full overflow-hidden"
       >
-        {/* 左側深色細條（寬約卡片 4.8%）：logo 在頂端、圓點導覽在 43% 高度 */}
-        <aside className="relative z-30 hidden w-16 shrink-0 flex-col items-center bg-[linear-gradient(90deg,#082560_0%,#0a2c72_75%,rgba(10,44,114,0.85)_100%)] md:flex">
-          <NavLink to="/" data-intro className="grid h-[62px] w-full place-items-center" aria-label="Timelore 首頁">
-            <Logo className="size-10" />
-          </NavLink>
-          <nav className="absolute top-[36%] flex flex-col items-center gap-3" aria-label="主要導覽">
+        {/* 左側浮動膠囊導覽（半透明玻璃），垂直置中、不佔整排 */}
+        <aside className="absolute top-1/2 left-4 z-40 hidden -translate-y-1/2 md:block">
+          <nav
+            className="flex flex-col items-center gap-3 rounded-full border border-white/25 bg-[linear-gradient(180deg,rgba(255,255,255,0.22),rgba(255,255,255,0.1))] p-2 shadow-[inset_0_1px_0_rgba(255,255,255,0.4),0_18px_40px_-16px_rgba(0,20,40,0.6)]"
+            aria-label="主要導覽"
+          >
             {nav.map(({ to, label, icon: Icon }) => (
               <NavLink
                 key={to}
@@ -100,18 +100,17 @@ export default function App() {
                 end={to === "/"}
                 aria-label={label}
                 className={({ isActive }) =>
-                  `group relative grid size-11 place-items-center rounded-2xl transition ${
+                  `group relative grid size-12 place-items-center rounded-full transition ${
                     isActive
-                      ? "bg-white/18 text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.45),0_6px_16px_-6px_rgba(0,20,80,0.6)]"
-                      : "text-white/60 hover:bg-white/10 hover:text-white"
+                      ? "bg-white/25 text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.55),0_6px_16px_-6px_rgba(0,20,40,0.5)]"
+                      : "text-white/75 hover:bg-white/10 hover:text-white"
                   }`
                 }
               >
                 {({ isActive }) => (
                   <>
-                    <Icon className="size-[21px]" strokeWidth={isActive ? 2.2 : 1.9} />
-                    <span className={`absolute -left-[10px] h-5 w-[3px] rounded-full bg-white transition ${isActive ? "opacity-100" : "opacity-0"}`} />
-                    <span className="pointer-events-none absolute left-14 rounded-full bg-white px-3 py-1 text-xs font-semibold whitespace-nowrap text-deep-800 opacity-0 shadow-lg transition group-hover:opacity-100 group-focus-visible:opacity-100">
+                    <Icon className="size-[22px]" strokeWidth={isActive ? 2.2 : 1.9} />
+                    <span className="pointer-events-none absolute left-16 rounded-full bg-white px-3 py-1 text-xs font-semibold whitespace-nowrap text-deep-800 opacity-0 shadow-lg transition group-hover:opacity-100 group-focus-visible:opacity-100">
                       {label}
                     </span>
                   </>
@@ -122,10 +121,10 @@ export default function App() {
         </aside>
 
         <div className="relative flex min-w-0 flex-1 flex-col">
-          {/* 頂部列（高約卡片 8%） */}
-          <header className="relative z-30 flex h-[62px] shrink-0 items-center border-b border-white/[0.1] pr-5 pl-5 md:pr-7 md:pl-2">
+          {/* 頂部列：透明疊在畫面上，地球與 3D 場景延伸到最上方 */}
+          <header className="pointer-events-none absolute inset-x-0 top-0 z-30 flex h-[62px] items-center pr-5 pl-5 md:pr-7 md:pl-6 [&>*]:pointer-events-auto">
             <NavLink to="/" data-intro className="flex items-center gap-3">
-              <Logo className="size-8 md:hidden" />
+              <Logo className="size-8" />
               <span className="font-[Montserrat,sans-serif] text-[24px] leading-none font-extrabold tracking-[0.01em] uppercase">Timelore</span>
             </NavLink>
             <div data-intro id="header-meta" className="ml-auto flex items-center gap-8 font-[Montserrat,Noto_Sans_TC,sans-serif] text-[13px] font-medium tracking-[0.04em] text-white/90 uppercase" />
@@ -158,7 +157,7 @@ export default function App() {
         </div>
 
         {/* 手機底部導覽 */}
-        <nav className="absolute inset-x-0 bottom-0 z-40 flex h-14 items-stretch border-t border-white/10 bg-[#0a3591]/80 backdrop-blur-xl md:hidden" aria-label="主要導覽">
+        <nav className="absolute inset-x-0 bottom-0 z-40 flex h-14 items-stretch border-t border-white/10 bg-[#16405f]/95 md:hidden" aria-label="主要導覽">
           {nav.map(({ to, label, icon: Icon }) => (
             <NavLink
               key={to}

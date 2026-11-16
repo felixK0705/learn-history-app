@@ -85,7 +85,7 @@ export default function StoriesPage() {
 
   return (
     <div className="scroll-thin absolute inset-0 overflow-y-auto">
-      <div ref={listRef} className="mx-auto max-w-6xl px-4 pt-8 pb-28 md:px-8 md:pt-12">
+      <div ref={listRef} className="mx-auto max-w-6xl px-4 pt-[86px] pb-28 md:px-8 md:pt-[100px]">
         <h1 data-reveal className="text-[28px] leading-tight font-bold md:text-[34px]">
           歷史故事
         </h1>

@@ -39,15 +39,15 @@ export default function CountryPanel({ country, onClose }: { country: CountryMet
       const desktop = window.matchMedia("(min-width: 1024px)").matches;
       gsap.fromTo(
         panelRef.current,
-        desktop ? { x: 48, autoAlpha: 0, scale: 0.98 } : { yPercent: 100 },
-        desktop ? { x: 0, autoAlpha: 1, scale: 1, duration: 0.8, ease: "expo.out" } : { yPercent: 0, duration: 0.7, ease: "expo.out" },
+        desktop ? { x: 40, autoAlpha: 0 } : { yPercent: 100 },
+        desktop ? { x: 0, autoAlpha: 1, duration: 0.4, ease: "power3.out" } : { yPercent: 0, duration: 0.4, ease: "power3.out" },
       );
-      gsap.fromTo(headerRef.current!.children, { y: 12, autoAlpha: 0 }, { y: 0, autoAlpha: 1, stagger: 0.06, delay: 0.15, duration: 0.6, clearProps: "all" });
+      gsap.fromTo(headerRef.current!.children, { y: 12, autoAlpha: 0 }, { y: 0, autoAlpha: 1, stagger: 0.03, delay: 0.05, duration: 0.35, clearProps: "all" });
     },
     { scope: panelRef },
   );
 
-  useReveal(contentRef, [tab, !!events, profile === undefined], { stagger: "[data-reveal]", y: 12, each: 0.035, duration: 0.5 });
+  useReveal(contentRef, [tab, !!events, profile === undefined], { stagger: "[data-reveal]", y: 10, each: 0.03, duration: 0.35 });
 
   // 分段控制的白色滑塊
   useGSAP(
@@ -74,7 +74,7 @@ export default function CountryPanel({ country, onClose }: { country: CountryMet
   return (
     <aside
       ref={panelRef}
-      className="absolute z-30 flex flex-col overflow-hidden border border-white/15 bg-[#06194a]/88 shadow-[0_30px_70px_-25px_rgba(0,10,40,0.8),inset_0_1px_0_rgba(255,255,255,0.18)] backdrop-blur-2xl max-lg:inset-x-2 max-lg:bottom-2 max-lg:h-[64%] max-lg:rounded-[28px] lg:top-4 lg:right-4 lg:bottom-4 lg:w-[440px] lg:rounded-[32px]"
+      className="absolute z-30 flex flex-col overflow-hidden border border-white/15 bg-[#06194a]/96 shadow-[0_30px_70px_-25px_rgba(0,10,40,0.8),inset_0_1px_0_rgba(255,255,255,0.18)] max-lg:inset-x-2 max-lg:bottom-2 max-lg:h-[64%] max-lg:rounded-[28px] lg:top-[74px] lg:right-4 lg:bottom-4 lg:w-[440px] lg:rounded-[32px]"
       aria-label={`${country.zh}的歷史與文化`}
     >
       <SelectionAsk country={country.zh} />

@@ -31,7 +31,8 @@ export function useReveal<T extends HTMLElement>(
     () => {
       const el = ref.current;
       if (!el || prefersReducedMotion()) return;
-      const targets = stagger ? el.querySelectorAll(stagger) : el;
+      // 只為前 8 個項目做依序淡入；長清單（例如上百則歷史事件）其餘直接顯示，不必排隊等動畫
+      const targets = stagger ? Array.from(el.querySelectorAll(stagger)).slice(0, 8) : el;
       gsap.fromTo(
         targets,
         { autoAlpha: 0, y, x, scale },

@@ -43,7 +43,7 @@ type TabKey = (typeof TABS)[number]["key"];
 
 /** 照片背景上的面板：深色半透明＋模糊，確保文字在任何背景下都清楚 */
 const PANEL =
-  "border border-white/15 bg-[#071d4f]/78 shadow-[0_24px_60px_-20px_rgba(0,10,40,0.7),inset_0_1px_0_rgba(255,255,255,0.18)] backdrop-blur-xl";
+  "border border-white/15 bg-[#071d4f]/94 shadow-[0_24px_60px_-20px_rgba(0,10,40,0.7),inset_0_1px_0_rgba(255,255,255,0.18)]";
 
 export default function BuildingsPage() {
   const { id } = useParams();
@@ -112,10 +112,10 @@ export default function BuildingsPage() {
         </Suspense>
       </div>
       {/* 上方暗角：讓標題在亮天空上也清楚 */}
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-[#041640]/70 to-transparent" />
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-56 bg-gradient-to-b from-[#041640]/70 to-transparent" />
 
       {/* 左上：標題＋建築選單 */}
-      <div className="absolute top-5 left-5 z-20 max-w-[min(520px,calc(100%-2.5rem))] md:top-7 md:left-7">
+      <div className="absolute top-[78px] left-5 z-20 max-w-[min(520px,calc(100%-2.5rem))] md:top-[84px] md:left-7">
         <div ref={titleRef}>
           <p className="text-[12px] font-medium tracking-[0.14em] text-white/80 [text-shadow:0_1px_6px_rgba(0,20,60,0.8)]">
             {current.era}・{current.location}
@@ -207,7 +207,7 @@ export default function BuildingsPage() {
       {infoOpen && (
         <aside
           ref={infoRef}
-          className={`${PANEL} absolute top-4 right-4 bottom-4 z-20 flex w-[min(380px,calc(100%-2rem))] flex-col overflow-hidden rounded-[24px]`}
+          className={`${PANEL} absolute top-[78px] right-4 bottom-4 z-20 flex w-[min(380px,calc(100%-2rem))] flex-col overflow-hidden rounded-[24px]`}
         >
           <div className="flex items-start gap-3 px-5 pt-5">
             <div className="min-w-0 flex-1" data-reveal>

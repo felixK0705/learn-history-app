@@ -1,7 +1,7 @@
 import { forwardRef, useEffect, useImperativeHandle, useRef } from "react";
 import Globe, { type GlobeInstance } from "globe.gl";
 import { geoContains } from "d3-geo";
-import { AdditiveBlending, Color, Mesh, MeshPhongMaterial, PerspectiveCamera, ShaderMaterial, SphereGeometry, SRGBColorSpace, type Texture, TextureLoader } from "three";
+import { AdditiveBlending, BufferAttribute, BufferGeometry, Color, Mesh, MeshPhongMaterial, PerspectiveCamera, Points, PointsMaterial, ShaderMaterial, SphereGeometry, SRGBColorSpace, type Texture, TextureLoader } from "three";
 import { CSS2DRenderer } from "three/examples/jsm/renderers/CSS2DRenderer.js";
 import { countries, countryByIso } from "../../data/world";
 
@@ -56,14 +56,14 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
 
 
   useImperativeHandle(ref, () => ({
-    flyTo: (lat, lng, altitude = 1.7) => globeRef.current?.pointOfView({ lat, lng, altitude }, 1400),
+    flyTo: (lat, lng, altitude = 1.7) => globeRef.current?.pointOfView({ lat, lng, altitude }, 900),
     zoom: (factor) => {
       const g = globeRef.current;
       if (!g) return;
       const pov = g.pointOfView();
       g.pointOfView({ altitude: Math.min(4.5, Math.max(0.5, pov.altitude * factor)) }, 450);
     },
-    reset: () => globeRef.current?.pointOfView({ lat: 15, lng: 20, altitude: defaultAlt() }, 1200),
+    reset: () => globeRef.current?.pointOfView({ lat: 0, lng: 20, altitude: defaultAlt() }, 1200),
   }));
 
   useEffect(() => {
@@ -92,7 +92,7 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
       })
       .htmlTransitionDuration(0);
 
-    g.pointOfView({ lat: 15, lng: 20, altitude: defaultAlt() });
+    g.pointOfView({ lat: 0, lng: 20, altitude: defaultAlt() });
     g.renderer().setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
 
     const controls = g.controls();
@@ -132,6 +132,22 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
           }`,
       }),
     );
+    // 背景星空放進 3D 場景：旋轉、拖動地球時星星跟著一起轉
+    const starPos = new Float32Array(900 * 3);
+    for (let i = 0; i < 900; i++) {
+      const u = Math.random() * 2 - 1;
+      const t = Math.random() * Math.PI * 2;
+      const r = Math.sqrt(1 - u * u) * 1800;
+      starPos.set([r * Math.cos(t), u * 1800, r * Math.sin(t)], i * 3);
+    }
+    const starGeo = new BufferGeometry();
+    starGeo.setAttribute("position", new BufferAttribute(starPos, 3));
+    const stars = new Points(starGeo, new PointsMaterial({ color: "#ffffff", size: 1.6, sizeAttenuation: false, transparent: true, opacity: 0.75, depthWrite: false }));
+    g.scene().add(stars);
+    const cam = g.camera() as PerspectiveCamera;
+    cam.far = Math.max(cam.far, 4000);
+    cam.updateProjectionMatrix();
+
     // 地球、海面反光、雲層三張貼圖都載入完成後才一起顯示，避免先出現一顆空的玻璃球
     const load = (url: string) => new Promise<Texture>((ok, fail) => loader.load(url, ok, undefined, fail));
     Promise.all(["/textures/earth-map.jpg", "/textures/earth-water.png", "/textures/clouds-painted.png"].map(load)).then(([earth, water, cloud]) => {
@@ -146,7 +162,7 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
       mat.needsUpdate = true;
       clouds = new Mesh(
         new SphereGeometry(g.getGlobeRadius() * 1.006, 96, 64),
-        new MeshPhongMaterial({ map: cloud, transparent: true, opacity: 0.72, depthWrite: false }),
+        new MeshPhongMaterial({ map: cloud, transparent: true, opacity: 0.45, depthWrite: false }),
       );
       g.scene().add(clouds, rim);
       cb.current.onReady?.();
@@ -281,8 +297,10 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
   }, [selectedIso]);
 
   useEffect(() => {
-    selectedRef.current = selectedIso;
     const g = globeRef.current;
+    // 關閉國家面板、恢復自轉時轉回正對赤道，自轉中國名只水平移動、不會上下飄
+    if (g && selectedRef.current && !selectedIso) g.pointOfView({ lat: 0, lng: g.pointOfView().lng }, 1000);
+    selectedRef.current = selectedIso;
     if (!g) return;
     g.polygonsData(features.current.filter((f) => f.properties.iso_a3 === selectedIso));
     // eslint-disable-next-line react-hooks/exhaustive-deps

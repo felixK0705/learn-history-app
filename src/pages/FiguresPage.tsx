@@ -186,7 +186,7 @@ export default function FiguresPage() {
         ref={svgRef}
         viewBox={`0 0 ${W} ${H}`}
         preserveAspectRatio="xMidYMid meet"
-        className="absolute inset-0 size-full cursor-grab touch-none select-none active:cursor-grabbing"
+        className="absolute inset-x-0 top-[62px] h-[calc(100%-62px)] w-full cursor-grab touch-none select-none active:cursor-grabbing"
         onWheel={(e) => {
           const k = Math.min(3, Math.max(0.6, view.k * (e.deltaY < 0 ? 1.1 : 0.9)));
           setView((v) => ({ ...v, k }));
@@ -324,7 +324,7 @@ export default function FiguresPage() {
       </svg>
 
       {/* 左側：搜尋、時代星座、關係類型 */}
-      <aside ref={asideRef} className="absolute top-4 left-4 z-20 w-[min(300px,calc(100%-2rem))]">
+      <aside ref={asideRef} className="absolute top-[78px] left-4 z-20 w-[min(300px,calc(100%-2rem))]">
         <div className="rounded-2xl border border-white/15 bg-[#06194a]/85 p-3 shadow-[0_20px_50px_-20px_rgba(0,10,40,0.7)] backdrop-blur-xl">
         <div className="flex items-center justify-between gap-2 px-1">
           <h1 className="text-[17px] font-semibold tracking-tight">人物關係</h1>
@@ -435,7 +435,7 @@ export default function FiguresPage() {
       {focus && (
         <aside
           ref={detailRef}
-          className="absolute top-4 right-4 bottom-4 z-20 flex w-[300px] flex-col overflow-hidden rounded-[24px] border border-white/15 bg-[#06194a]/88 shadow-[0_24px_60px_-20px_rgba(0,10,40,0.75)] backdrop-blur-xl max-md:inset-x-3 max-md:top-auto max-md:max-h-[55%] max-md:w-auto"
+          className="absolute top-[78px] right-4 bottom-4 z-20 flex w-[300px] flex-col overflow-hidden rounded-[24px] border border-white/15 bg-[#06194a]/88 shadow-[0_24px_60px_-20px_rgba(0,10,40,0.75)] backdrop-blur-xl max-md:inset-x-3 max-md:top-auto max-md:max-h-[55%] max-md:w-auto"
         >
           <button onClick={() => select(null)} className="absolute top-3 right-3 z-30 grid size-8 place-items-center rounded-full bg-[#06194a]/80 text-white/90 ring-1 ring-white/25 hover:bg-[#0a2766]" aria-label="關閉" title="關閉">
             <X className="size-4" />

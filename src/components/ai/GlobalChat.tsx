@@ -9,7 +9,7 @@ import { buildings } from "../../data/buildings";
 import Markdown from "./Markdown";
 
 const PANEL =
-  "border border-white/15 bg-[#071d4f]/90 shadow-[0_24px_60px_-20px_rgba(0,10,40,0.75),inset_0_1px_0_rgba(255,255,255,0.18)] backdrop-blur-xl";
+  "border border-white/15 bg-[#071d4f]/97 shadow-[0_24px_60px_-20px_rgba(0,10,40,0.75),inset_0_1px_0_rgba(255,255,255,0.18)]";
 
 /** 依目前網址推出「使用者在看什麼」，作為對話情境 */
 function useAiContext(): { label: string; context: string; country?: string } {
@@ -53,6 +53,7 @@ export default function GlobalChat() {
   const { open, pending, messages } = useChat();
   const { label, context, country } = useAiContext();
   const fabShift = useFabShift();
+  const { pathname, search } = useLocation();
   const [input, setInput] = useState("");
   const panelRef = useRef<HTMLDivElement>(null);
   const listRef = useRef<HTMLDivElement>(null);
@@ -118,7 +119,7 @@ export default function GlobalChat() {
       <button
         ref={fabRef}
         onClick={toggleChat}
-        className={`fixed right-4 bottom-[4.5rem] z-50 grid size-13 place-items-center rounded-full border border-white/30 bg-[linear-gradient(145deg,#2d9bea,#0d43ad)] text-white shadow-[0_14px_30px_-10px_rgba(0,20,80,0.8),inset_0_1px_0_rgba(255,255,255,0.5)] transition hover:scale-105 hover:brightness-110 md:bottom-5 ${fabShift} ${open ? "max-sm:hidden" : ""}`}
+        className={`fixed right-4 bottom-[4.5rem] z-50 grid size-13 place-items-center rounded-full border border-white/30 bg-[linear-gradient(145deg,#2d9bea,#0d43ad)] text-white shadow-[0_14px_30px_-10px_rgba(0,20,80,0.8),inset_0_1px_0_rgba(255,255,255,0.5)] transition hover:scale-105 hover:brightness-110 md:bottom-5 ${fabShift} ${open ? "max-sm:hidden" : ""} ${pathname === "/" && search.includes("country=") ? "max-lg:hidden" : ""}`}
         aria-label={open ? "關閉 AI 助理" : "開啟 AI 歷史助理"}
         title="AI 歷史助理"
       >

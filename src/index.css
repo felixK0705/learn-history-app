@@ -19,7 +19,7 @@
   html, body, #root { height: 100%; }
   body {
     @apply bg-page font-sans text-ink antialiased;
-    background: #0b3282;
+    background: #163f5f;
     font-feature-settings: "ss01", "cv11";
     letter-spacing: -0.005em;
   }
@@ -27,10 +27,11 @@
 }
 
 @layer components {
-  /* 參考圖：中心偏青藍、外圍深藍的放射漸層＋左上暗角 */
+  /* 背景：中央偏亮的藍綠色，往外漸暗成深鋼藍，底部一層淡淡的霧白 */
   .stage {
-    /* 依參考圖取樣：中央偏青亮藍 #288bd1，往外快速變暗至 #0b3282 */
-    background: radial-gradient(ellipse 62% 78% at 50% 47%, #2a8fd4 0%, #2788cf 28%, #2075c4 50%, #1858ad 70%, #11449a 86%, #0b3282 100%);
+    background:
+      linear-gradient(to top, rgb(214 224 231 / 0.78) 0%, rgb(214 224 231 / 0.28) 6%, transparent 17%),
+      radial-gradient(ellipse 58% 68% at 55% 40%, #6a9fc2 0%, #4c84ab 22%, #336d95 45%, #24557a 70%, #183f5f 100%);
   }
 
   /* 液態玻璃：多層漸層 + 背景模糊飽和 + 內外高光 */

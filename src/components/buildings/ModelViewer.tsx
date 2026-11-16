@@ -82,7 +82,7 @@ function ViewRig({ view, token, shift, controls }: { view: BuildingView; token: 
     // Blender 以水平視角為準；網頁較窄時改以垂直方向保留同樣的畫面高度
     cam.fov = MathUtils.radToDeg(2 * Math.atan(Math.tan(h / 2) / Math.max(aspect, 1.5)));
     cam.near = Math.max(0.05, dist * 0.002);
-    cam.far = dist * 14;
+    cam.far = dist * 20;
     // 往後退一些，讓建築完整入鏡
     cam.position.copy(t).add(p.clone().sub(t).multiplyScalar(1.25));
     // 桌機左側有建築清單，把畫面中心往右移，建築不會被清單遮住
@@ -100,7 +100,7 @@ function ViewRig({ view, token, shift, controls }: { view: BuildingView; token: 
     c.minDistance = dist * 0.15;
     c.maxDistance = dist * 4;
     // 遠處地景淡入天空色，縮小時不會看到地面邊緣的硬邊
-    scene.fog = new Fog("#c9d5e2", dist * 2.2, dist * 7);
+    scene.fog = new Fog("#c9d5e2", dist * 6, dist * 16);
     c.update();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [token, shift, size.width, size.height]);

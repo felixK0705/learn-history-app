@@ -4,7 +4,6 @@ import { Dices, Menu, Pause, Play, RotateCcw, X } from "lucide-react";
 import HeaderSlot from "../components/HeaderSlot";
 import GlobeView, { type GlobeHandle } from "../components/globe/GlobeView";
 import CountryPanel from "../components/country/CountryPanel";
-import StarField from "../components/StarField";
 import { gsap, prefersReducedMotion, useGSAP, useReveal } from "../lib/motion";
 import { countries, countryByIso } from "../data/world";
 import { useVisited } from "../lib/progress";
@@ -52,8 +51,8 @@ export default function GlobePage() {
     gsap.to(shiftRef.current, {
       x: selected && desktop ? -210 : 0,
       yPercent: selected && !desktop ? -22 : 0,
-      duration: 1,
-      ease: "expo.out",
+      duration: 0.7,
+      ease: "power3.out",
       overwrite: true,
     });
   }, { dependencies: [!!selected] });
@@ -99,17 +98,10 @@ export default function GlobePage() {
 
   return (
     <div className="absolute inset-0 overflow-hidden">
-      <StarField />
       <div ref={shiftRef} className="absolute inset-0">
       {/* 地球後方光暈 */}
-      <div ref={glowRef} className="invisible pointer-events-none absolute top-1/2 left-1/2 size-[64vmin] -translate-1/2 rounded-full bg-[radial-gradient(circle,rgba(170,230,255,0.55)_0%,rgba(110,200,255,0.25)_45%,transparent_70%)]" />
+      <div ref={glowRef} className="invisible pointer-events-none absolute top-1/2 left-1/2 size-[64vmin] -translate-1/2 rounded-full bg-[radial-gradient(circle,rgba(200,230,248,0.5)_0%,rgba(150,200,230,0.22)_45%,transparent_70%)]" />
       <div ref={globeWrapRef} className="invisible absolute inset-0">
-        {/* 地球右上緣的光斑（參考圖） */}
-        <div
-          className={`pointer-events-none absolute top-[calc(50%-9vmin)] left-[calc(50%+22.5vmin)] z-10 size-[7vmin] -translate-1/2 rounded-full bg-[radial-gradient(circle,rgba(255,255,255,0.95)_0%,rgba(190,235,255,0.5)_25%,transparent_65%)] mix-blend-screen transition-opacity duration-500 ${
-            selected ? "opacity-0" : ""
-          }`}
-        />
         <GlobeView
           ref={globe}
           selectedIso={selectedIso}
@@ -142,7 +134,7 @@ export default function GlobePage() {
       </HeaderSlot>
 
       {menuOpen && (
-        <div ref={menuRef} className="glass absolute top-3 right-4 z-40 w-56 rounded-2xl p-1.5 shadow-2xl md:right-6">
+        <div ref={menuRef} className="glass absolute top-[66px] right-4 z-40 w-56 rounded-2xl p-1.5 shadow-2xl md:right-6">
           {[
             { icon: autoRotate ? Pause : Play, label: autoRotate ? "停止自轉" : "開始自轉", run: () => setAutoRotate((v) => !v) },
             { icon: Dices, label: "隨機探索一個國家", run: randomCountry },

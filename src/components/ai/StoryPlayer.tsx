@@ -190,7 +190,7 @@ export default function StoryPlayer({ story, onExit }: { story: Story; onExit: (
       <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(2,12,36,0.75)_0%,rgba(2,12,36,0.1)_22%,rgba(2,12,36,0.15)_50%,rgba(2,12,36,0.92)_100%)]" />
 
       {/* 頂部：返回、標題、進度 */}
-      <div className="absolute inset-x-0 top-0 z-10 px-4 pt-4 md:px-6">
+      <div className="absolute inset-x-0 top-0 z-10 px-4 pt-[74px] md:px-6">
         <div className="flex gap-1.5" aria-label={`第 ${index + 1} 張，共 ${total} 張`}>
           {story.slides.map((_, i) => (
             <button key={i} onClick={() => go(i)} className="group h-4 flex-1 py-1.5" aria-label={`跳到第 ${i + 1} 張`}>

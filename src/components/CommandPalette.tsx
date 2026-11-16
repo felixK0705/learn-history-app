@@ -22,12 +22,13 @@ const kindMeta = {
 } as const;
 
 const allItems: Item[] = [
-  ...countries.map((c) => ({
+  ...[...countries].sort((a, b) => a.rank - b.rank).map((c) => ({
     kind: "country" as const,
     id: c.iso,
     title: c.zh,
     subtitle: `${c.en}・${c.continent}`,
-    keywords: `${c.zh} ${c.en} ${c.iso}`.toLowerCase(),
+    // 台／臺異體字都能搜到
+    keywords: `${c.zh} ${c.zh.replace(/台/g, "臺")} ${c.en} ${c.iso}`.toLowerCase(),
     to: `/?country=${c.iso}`,
   })),
   ...figures.map((f) => ({
