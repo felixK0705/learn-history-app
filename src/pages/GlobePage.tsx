@@ -36,7 +36,11 @@ export default function GlobePage() {
 
   // 地球就緒時放大淡入、光暈綻放
   useGSAP(() => {
-    if (!ready || prefersReducedMotion()) return;
+    if (!ready) return;
+    if (prefersReducedMotion()) {
+      gsap.set([globeWrapRef.current, glowRef.current], { autoAlpha: 1 });
+      return;
+    }
     const tl = gsap.timeline();
     tl.fromTo(globeWrapRef.current, { scale: 0.75, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 1.4, ease: "expo.out" })
       .fromTo(glowRef.current, { scale: 0.3, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 1.6, ease: "power2.out" }, 0);
@@ -98,8 +102,8 @@ export default function GlobePage() {
       <StarField />
       <div ref={shiftRef} className="absolute inset-0">
       {/* 地球後方光暈 */}
-      <div ref={glowRef} className="pointer-events-none absolute top-1/2 left-1/2 size-[64vmin] -translate-1/2 rounded-full bg-[radial-gradient(circle,rgba(170,230,255,0.55)_0%,rgba(110,200,255,0.25)_45%,transparent_70%)]" />
-      <div ref={globeWrapRef} className="absolute inset-0">
+      <div ref={glowRef} className="invisible pointer-events-none absolute top-1/2 left-1/2 size-[64vmin] -translate-1/2 rounded-full bg-[radial-gradient(circle,rgba(170,230,255,0.55)_0%,rgba(110,200,255,0.25)_45%,transparent_70%)]" />
+      <div ref={globeWrapRef} className="invisible absolute inset-0">
         {/* 地球右上緣的光斑（參考圖） */}
         <div
           className={`pointer-events-none absolute top-[calc(50%-9vmin)] left-[calc(50%+22.5vmin)] z-10 size-[7vmin] -translate-1/2 rounded-full bg-[radial-gradient(circle,rgba(255,255,255,0.95)_0%,rgba(190,235,255,0.5)_25%,transparent_65%)] mix-blend-screen transition-opacity duration-500 ${

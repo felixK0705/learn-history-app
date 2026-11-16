@@ -1,7 +1,7 @@
 import { forwardRef, useEffect, useImperativeHandle, useRef } from "react";
 import Globe, { type GlobeInstance } from "globe.gl";
 import { geoContains } from "d3-geo";
-import { AdditiveBlending, Color, Mesh, MeshPhongMaterial, PerspectiveCamera, ShaderMaterial, SphereGeometry, TextureLoader } from "three";
+import { AdditiveBlending, Color, Mesh, MeshPhongMaterial, PerspectiveCamera, ShaderMaterial, SphereGeometry, SRGBColorSpace, type Texture, TextureLoader } from "three";
 import { CSS2DRenderer } from "three/examples/jsm/renderers/CSS2DRenderer.js";
 import { countries, countryByIso } from "../../data/world";
 
@@ -74,7 +74,6 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
     const g = new Globe(el, { animateIn: false, rendererConfig: { antialias: true, alpha: true } })
       .backgroundColor("rgba(0,0,0,0)")
       // 國界已畫進貼圖（scripts/draw_borders.py），不再為每個國家建立 3D 物件，縮放旋轉才順
-      .globeImageUrl("/textures/earth-map.jpg")
       .bumpImageUrl("/textures/earth-topology.png")
       .showAtmosphere(true)
       .atmosphereColor("#e2f8ff")
@@ -91,8 +90,7 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
         const hit = features.current.find((f) => geoContains(f as never, [lng, lat]));
         if (hit) cb.current.onSelectCountry(hit.properties.iso_a3);
       })
-      .htmlTransitionDuration(0)
-      .onGlobeReady(() => cb.current.onReady?.());
+      .htmlTransitionDuration(0);
 
     g.pointOfView({ lat: 15, lng: 20, altitude: defaultAlt() });
     g.renderer().setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
@@ -108,21 +106,7 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
     // 海面反光（依海洋遮罩）與緩慢轉動的雲層，呈現參考圖中光滑明亮的地球
     const loader = new TextureLoader();
     const mat = g.globeMaterial() as MeshPhongMaterial;
-    loader.load("/textures/earth-water.png", (tex) => {
-      mat.specularMap = tex;
-      mat.specular = new Color("#7fa6d6");
-      mat.shininess = 18;
-      mat.needsUpdate = true;
-    });
     let clouds: Mesh | null = null;
-    loader.load("/textures/clouds-painted.png", (tex) => {
-      if (disposed) return;
-      clouds = new Mesh(
-        new SphereGeometry(g.getGlobeRadius() * 1.006, 96, 64),
-        new MeshPhongMaterial({ map: tex, transparent: true, opacity: 0.72, depthWrite: false }),
-      );
-      g.scene().add(clouds);
-    });
 
     // 玻璃珠般的邊緣反光（菲涅耳效果），重現參考圖地球亮白的外緣
     const rim = new Mesh(
@@ -148,7 +132,25 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
           }`,
       }),
     );
-    g.scene().add(rim);
+    // 地球、海面反光、雲層三張貼圖都載入完成後才一起顯示，避免先出現一顆空的玻璃球
+    const load = (url: string) => new Promise<Texture>((ok, fail) => loader.load(url, ok, undefined, fail));
+    Promise.all(["/textures/earth-map.jpg", "/textures/earth-water.png", "/textures/clouds-painted.png"].map(load)).then(([earth, water, cloud]) => {
+      if (disposed) return;
+      earth.colorSpace = cloud.colorSpace = SRGBColorSpace;
+      earth.anisotropy = g.renderer().capabilities.getMaxAnisotropy();
+      mat.map = earth;
+      mat.color = new Color("#ffffff");
+      mat.specularMap = water;
+      mat.specular = new Color("#7fa6d6");
+      mat.shininess = 18;
+      mat.needsUpdate = true;
+      clouds = new Mesh(
+        new SphereGeometry(g.getGlobeRadius() * 1.006, 96, 64),
+        new MeshPhongMaterial({ map: cloud, transparent: true, opacity: 0.72, depthWrite: false }),
+      );
+      g.scene().add(clouds, rim);
+      cb.current.onReady?.();
+    });
 
     globeRef.current = g;
 
