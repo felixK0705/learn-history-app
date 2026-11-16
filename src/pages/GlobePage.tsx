@@ -109,7 +109,6 @@ export default function GlobePage() {
         <GlobeView
           ref={globe}
           selectedIso={selectedIso}
-          visited={visited}
           autoRotate={autoRotate && !selected}
           onSelectCountry={select}
           onReady={() => setReady(true)}
