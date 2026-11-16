@@ -251,7 +251,6 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
         const p = g.getCoords(c.pos[0], c.pos[1], 0);
         const len = Math.hypot(p.x, p.y, p.z) || 1;
         labelVecs.current.set(div, { x: p.x / len, y: p.y / len, z: p.z / len });
-        if (c.rank < 25) div.classList.add("major");
         div.textContent = SHORT[c.iso] ?? c.zh;
         div.title = c.en;
         if (c.iso === selectedRef.current) div.classList.add("is-active");
