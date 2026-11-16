@@ -43,7 +43,7 @@ type TabKey = (typeof TABS)[number]["key"];
 
 /** 照片背景上的面板：深色半透明＋模糊，確保文字在任何背景下都清楚 */
 const PANEL =
-  "border border-white/15 bg-[#071d4f]/94 shadow-[0_24px_60px_-20px_rgba(0,10,40,0.7),inset_0_1px_0_rgba(255,255,255,0.18)]";
+  "border border-white/15 bg-[#113650]/94 shadow-[0_24px_60px_-20px_rgba(4,18,30,0.7),inset_0_1px_0_rgba(255,255,255,0.18)]";
 
 export default function BuildingsPage() {
   const { id } = useParams();
@@ -112,24 +112,24 @@ export default function BuildingsPage() {
         </Suspense>
       </div>
       {/* 上方暗角：讓標題在亮天空上也清楚 */}
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-56 bg-gradient-to-b from-[#041640]/70 to-transparent" />
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-56 bg-gradient-to-b from-[#0c2a40]/70 to-transparent" />
 
       {/* 左上：標題＋建築選單 */}
       <div className="absolute top-[78px] left-5 z-20 max-w-[min(520px,calc(100%-2.5rem))] md:top-[84px] md:left-7">
         <div ref={titleRef}>
-          <p className="text-[12px] font-medium tracking-[0.14em] text-white/80 [text-shadow:0_1px_6px_rgba(0,20,60,0.8)]">
+          <p className="text-[12px] font-medium tracking-[0.14em] text-white/80 [text-shadow:0_1px_6px_rgba(5,25,40,0.8)]">
             {current.era}・{current.location}
           </p>
-          <h2 className="mt-1 text-3xl font-semibold tracking-tight text-white [text-shadow:0_2px_14px_rgba(0,20,60,0.75)] md:text-[40px]">
+          <h2 className="mt-1 text-3xl font-semibold tracking-tight text-white [text-shadow:0_2px_14px_rgba(5,25,40,0.75)] md:text-[40px]">
             {current.name}
           </h2>
-          <p className="text-sm text-white/80 [text-shadow:0_1px_6px_rgba(0,20,60,0.8)]">{current.englishName}</p>
+          <p className="text-sm text-white/80 [text-shadow:0_1px_6px_rgba(5,25,40,0.8)]">{current.englishName}</p>
         </div>
 
         <div ref={pickerRef} className="relative mt-4 inline-block">
           <button
             onClick={() => setPickerOpen((v) => !v)}
-            className={`${PANEL} flex h-10 items-center gap-2 rounded-full pr-3 pl-4 text-sm text-white transition hover:bg-[#0a2766]/85`}
+            className={`${PANEL} flex h-10 items-center gap-2 rounded-full pr-3 pl-4 text-sm text-white transition hover:bg-[#174560]/85`}
             aria-expanded={pickerOpen}
           >
             <Landmark className="size-4 text-glow" />
@@ -297,7 +297,7 @@ export default function BuildingsPage() {
               <ol className="relative ml-1.5 border-l border-white/20">
                 {(detail?.history ?? []).map((e) => (
                   <li key={e.year + e.text} data-reveal className="relative pb-4 pl-5 last:pb-0">
-                    <span className="absolute top-[7px] -left-[5px] size-[9px] rounded-full border-2 border-[#071d4f] bg-glow" />
+                    <span className="absolute top-[7px] -left-[5px] size-[9px] rounded-full border-2 border-[#113650] bg-glow" />
                     <div className="text-[12.5px] font-semibold text-glow">{e.year}</div>
                     <p className="text-[13.5px] text-white/85">{e.text}</p>
                   </li>

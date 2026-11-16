@@ -7,11 +7,11 @@ export type StorySlide = { caption: string; narration: string; imageQuery: strin
 export type Story = { title: string; slides: StorySlide[] };
 
 const PANEL =
-  "border border-white/15 bg-[#071d4f]/78 shadow-[0_24px_60px_-20px_rgba(0,10,40,0.7),inset_0_1px_0_rgba(255,255,255,0.18)] backdrop-blur-xl";
+  "border border-white/15 bg-[#113650]/78 shadow-[0_24px_60px_-20px_rgba(4,18,30,0.7),inset_0_1px_0_rgba(255,255,255,0.18)] backdrop-blur-xl";
 
 /** 找不到圖片時使用的漸層背景 */
 const GRADIENTS = [
-  "radial-gradient(120% 90% at 20% 10%, #2a8fd4 0%, #11449a 45%, #041640 100%)",
+  "radial-gradient(120% 90% at 20% 10%, #2a8fd4 0%, #11449a 45%, #0c2a40 100%)",
   "radial-gradient(120% 90% at 80% 20%, #7c5cd6 0%, #23307f 50%, #050f33 100%)",
   "radial-gradient(120% 90% at 30% 80%, #c98a3a 0%, #6b3b2a 45%, #140a1f 100%)",
   "radial-gradient(120% 90% at 70% 70%, #1fa58f 0%, #0f4f6b 50%, #04142e 100%)",
@@ -176,7 +176,7 @@ export default function StoryPlayer({ story, onExit }: { story: Story; onExit: (
   const ctrl = "grid size-11 place-items-center rounded-full text-white transition hover:bg-white/15 disabled:opacity-35";
 
   return (
-    <div ref={rootRef} className="absolute inset-0 overflow-hidden bg-[#020c24] text-white">
+    <div ref={rootRef} className="absolute inset-0 overflow-hidden bg-[#071a29] text-white">
       {/* 背景圖層 */}
       {story.slides.map((s, i) => (
         <div key={i} data-layer className="invisible absolute inset-0 opacity-0">
@@ -206,11 +206,11 @@ export default function StoryPlayer({ story, onExit }: { story: Story; onExit: (
           ))}
         </div>
         <div className="mt-2 flex items-center gap-3">
-          <button onClick={onExit} className="grid size-9 shrink-0 place-items-center rounded-full bg-[#071d4f]/70 ring-1 ring-white/20 hover:bg-[#0a2766]" aria-label="返回主題列表" title="返回主題列表">
+          <button onClick={onExit} className="grid size-9 shrink-0 place-items-center rounded-full bg-[#113650]/70 ring-1 ring-white/20 hover:bg-[#174560]" aria-label="返回主題列表" title="返回主題列表">
             <ArrowLeft className="size-[18px]" />
           </button>
           <p className="min-w-0 truncate text-[15px] font-bold [text-shadow:0_2px_8px_rgba(0,0,0,0.6)]">{story.title}</p>
-          <span className="ml-auto shrink-0 rounded-full bg-[#071d4f]/70 px-2.5 py-1 text-[12px] font-semibold tabular-nums ring-1 ring-white/20">
+          <span className="ml-auto shrink-0 rounded-full bg-[#113650]/70 px-2.5 py-1 text-[12px] font-semibold tabular-nums ring-1 ring-white/20">
             {index + 1} / {total}
           </span>
         </div>
@@ -255,7 +255,7 @@ export default function StoryPlayer({ story, onExit }: { story: Story; onExit: (
 
       {/* 結束畫面 */}
       {ended && (
-        <div className="absolute inset-0 z-20 grid place-items-center bg-[#020c24]/70 p-6 backdrop-blur-sm">
+        <div className="absolute inset-0 z-20 grid place-items-center bg-[#071a29]/70 p-6 backdrop-blur-sm">
           <div ref={endRef} className="text-center">
             <p className="text-[13px] font-semibold tracking-[0.2em] text-glow">THE END</p>
             <h2 className="mt-2 text-3xl font-bold md:text-4xl">{story.title}</h2>

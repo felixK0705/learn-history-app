@@ -48,6 +48,10 @@ edge = (a[:, :1] + a[:, -1:]) / 2
 w = (1 - np.arange(k, dtype=np.float32) / k)[None, :, None]
 a[:, :k] = a[:, :k] * (1 - w) + edge * w
 a[:, -k:] = a[:, -k:] * (1 - w[:, ::-1]) + edge * w[:, ::-1]
+# 兩極附近每一列漸變成該列的平均色：貼圖在極點收成一點，不處理會出現放射狀白紋
+lat = 90 - (np.arange(H) + 0.5) / H * 180
+t = np.clip((np.abs(lat) - 72) / 14, 0, 1)[:, None, None] ** 1.5
+a = a * (1 - t) + a.mean(axis=1, keepdims=True) * t
 base = Image.fromarray(a.astype(np.uint8))
 base.save(os.path.join(ROOT, "public/textures/earth-map.jpg"), quality=88, optimize=True)
 print("ok", W, H)

@@ -84,7 +84,7 @@ export default function SelectionAsk({ country }: { country?: string }) {
               window.getSelection()?.removeAllRanges();
               setSel(null);
             }}
-            className="flex items-center gap-1.5 rounded-full border border-white/40 bg-[linear-gradient(145deg,#2d9bea,#0d43ad)] px-3.5 py-1.5 text-[13px] font-semibold whitespace-nowrap text-white shadow-[0_10px_24px_-8px_rgba(0,15,60,0.85),inset_0_1px_0_rgba(255,255,255,0.45)] hover:brightness-110"
+            className="flex items-center gap-1.5 rounded-full border border-white/40 bg-[linear-gradient(145deg,#4fa3cf,#1d5a80)] px-3.5 py-1.5 text-[13px] font-semibold whitespace-nowrap text-white shadow-[0_10px_24px_-8px_rgba(5,22,36,0.85),inset_0_1px_0_rgba(255,255,255,0.45)] hover:brightness-110"
             aria-label="請 AI 解釋選取的文字"
           >
             <Sparkles className="size-3.5" />

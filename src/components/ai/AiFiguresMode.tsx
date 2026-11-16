@@ -23,7 +23,7 @@ export default function AiFiguresMode() {
 
   const btn = (on: boolean) =>
     `flex h-8 items-center gap-1.5 whitespace-nowrap rounded-full px-3 text-[12.5px] max-sm:px-2.5 max-sm:text-[12px] font-semibold normal-case tracking-normal transition ${
-      on ? "bg-white text-deep-800 shadow-[0_4px_12px_-4px_rgba(0,20,80,0.6)]" : "text-white/75 hover:text-white"
+      on ? "bg-white text-deep-800 shadow-[0_4px_12px_-4px_rgba(5,25,40,0.6)]" : "text-white/75 hover:text-white"
     }`;
 
   return (

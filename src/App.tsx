@@ -110,7 +110,7 @@ export default function App() {
                 {({ isActive }) => (
                   <>
                     <Icon className="size-[22px]" strokeWidth={isActive ? 2.2 : 1.9} />
-                    <span className="pointer-events-none absolute left-16 rounded-full bg-white px-3 py-1 text-xs font-semibold whitespace-nowrap text-deep-800 opacity-0 shadow-lg transition group-hover:opacity-100 group-focus-visible:opacity-100">
+                    <span className="pointer-events-none absolute left-16 rounded-full border border-white/20 bg-[#113650]/95 px-3 py-1 text-xs font-semibold whitespace-nowrap text-white opacity-0 shadow-lg transition group-hover:opacity-100 group-focus-visible:opacity-100">
                       {label}
                     </span>
                   </>

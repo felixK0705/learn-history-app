@@ -96,7 +96,7 @@ export default function StoriesPage() {
             e.preventDefault();
             start(input);
           }}
-          className="mt-6 flex max-w-2xl items-center gap-2 rounded-full border border-white/15 bg-[#071d4f]/78 py-1.5 pr-1.5 pl-5 shadow-[0_24px_60px_-20px_rgba(0,10,40,0.7),inset_0_1px_0_rgba(255,255,255,0.18)] backdrop-blur-xl focus-within:border-white/35"
+          className="mt-6 flex max-w-2xl items-center gap-2 rounded-full border border-white/15 bg-[#113650]/78 py-1.5 pr-1.5 pl-5 shadow-[0_24px_60px_-20px_rgba(4,18,30,0.7),inset_0_1px_0_rgba(255,255,255,0.18)] backdrop-blur-xl focus-within:border-white/35"
         >
           <Sparkles className="size-4 shrink-0 text-glow" />
           <input
@@ -113,7 +113,7 @@ export default function StoriesPage() {
         </form>
 
         {phase.kind === "error" && (
-          <div data-reveal className="mt-5 flex max-w-2xl gap-3 rounded-2xl border border-amber-300/35 bg-[#071d4f]/85 p-4 backdrop-blur-xl">
+          <div data-reveal className="mt-5 flex max-w-2xl gap-3 rounded-2xl border border-amber-300/35 bg-[#113650]/85 p-4 backdrop-blur-xl">
             <AlertTriangle className="mt-0.5 size-5 shrink-0 text-amber-300" />
             <div className="min-w-0 flex-1">
               <p className="text-[14px] font-semibold text-amber-50">無法產生「{phase.topic}」的故事</p>
@@ -133,7 +133,7 @@ export default function StoriesPage() {
               key={title}
               data-reveal
               onClick={() => start(title)}
-              className="group flex flex-col rounded-[22px] border border-white/15 bg-[#071d4f]/70 p-5 text-left shadow-[0_18px_40px_-22px_rgba(0,10,40,0.8),inset_0_1px_0_rgba(255,255,255,0.15)] backdrop-blur-xl transition hover:-translate-y-0.5 hover:border-white/35 hover:bg-[#0a2766]/85"
+              className="group flex flex-col rounded-[22px] border border-white/15 bg-[#113650]/70 p-5 text-left shadow-[0_18px_40px_-22px_rgba(4,18,30,0.8),inset_0_1px_0_rgba(255,255,255,0.15)] backdrop-blur-xl transition hover:-translate-y-0.5 hover:border-white/35 hover:bg-[#174560]/85"
             >
               <div className="flex items-center justify-between">
                 <span className="grid size-10 place-items-center rounded-2xl bg-white/12 ring-1 ring-white/20 transition group-hover:bg-white group-hover:text-deep-800">
@@ -149,8 +149,8 @@ export default function StoriesPage() {
       </div>
 
       {phase.kind === "loading" && (
-        <div className="absolute inset-0 z-20 grid place-items-center bg-[#041640]/70 p-6 backdrop-blur-md">
-          <div ref={loadRef} className="w-full max-w-sm rounded-[26px] border border-white/15 bg-[#071d4f]/90 p-6 text-center">
+        <div className="absolute inset-0 z-20 grid place-items-center bg-[#0c2a40]/70 p-6 backdrop-blur-md">
+          <div ref={loadRef} className="w-full max-w-sm rounded-[26px] border border-white/15 bg-[#113650]/90 p-6 text-center">
             <LoaderCircle className="mx-auto size-10 animate-spin text-glow" />
             <p className="mt-4 text-[17px] font-bold">「{phase.topic}」</p>
             <ol className="mt-4 space-y-2 text-left text-[14px]">

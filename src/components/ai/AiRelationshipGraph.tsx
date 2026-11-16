@@ -21,7 +21,7 @@ const AI_REL_COLORS: Record<AiRelType, string> = {
 };
 
 const PANEL =
-  "border border-white/15 bg-[#071d4f]/78 shadow-[0_24px_60px_-20px_rgba(0,10,40,0.7),inset_0_1px_0_rgba(255,255,255,0.18)] backdrop-blur-xl";
+  "border border-white/15 bg-[#113650]/78 shadow-[0_24px_60px_-20px_rgba(4,18,30,0.7),inset_0_1px_0_rgba(255,255,255,0.18)] backdrop-blur-xl";
 
 /** 勢力／陣營配色（柔和亮色，與主題協調） */
 const GROUP_COLORS = ["#38bdf8", "#f472b6", "#fbbf24", "#34d399", "#a78bfa", "#fb923c"];
@@ -220,7 +220,7 @@ export default function AiRelationshipGraph({ initialQuery = "" }: { initialQuer
           )}
 
           {loading && (
-            <div className="absolute inset-0 z-10 grid place-items-center bg-[#071d4f]/50 backdrop-blur-[2px]">
+            <div className="absolute inset-0 z-10 grid place-items-center bg-[#113650]/50 backdrop-blur-[2px]">
               <div className="flex flex-col items-center gap-3 text-[14px] text-white/85">
                 <LoaderCircle className="size-9 animate-spin text-glow" />
                 AI 正在整理「{query}」的人物關係…
@@ -230,7 +230,7 @@ export default function AiRelationshipGraph({ initialQuery = "" }: { initialQuer
 
           {error && !loading && (
             <div className="absolute inset-0 z-10 grid place-items-center p-6">
-              <div className="max-w-sm rounded-2xl border border-amber-300/35 bg-[#071d4f]/90 p-5 text-center">
+              <div className="max-w-sm rounded-2xl border border-amber-300/35 bg-[#113650]/90 p-5 text-center">
                 <AlertTriangle className="mx-auto size-7 text-amber-300" />
                 <p className="mt-2 text-[14px] leading-relaxed text-amber-50">{error.message}</p>
                 {!error.disabled && (
@@ -316,15 +316,15 @@ export default function AiRelationshipGraph({ initialQuery = "" }: { initialQuer
                       {portraits[n.id] ? (
                         <image href={portraits[n.id]} x={-(r - 2)} y={-(r - 2)} width={(r - 2) * 2} height={(r - 2) * 2} preserveAspectRatio="xMidYMin slice" clipPath={`url(#ai-clip-${i})`} />
                       ) : (
-                        <text textAnchor="middle" dy={isCenter ? 10 : 6} fontSize={isCenter ? 28 : 17} fontWeight={700} fill="#0b3a8f">
+                        <text textAnchor="middle" dy={isCenter ? 10 : 6} fontSize={isCenter ? 28 : 17} fontWeight={700} fill="#1a4f72">
                           {n.name.slice(0, 1)}
                         </text>
                       )}
-                      <text textAnchor="middle" y={r + 18} fontSize={isCenter ? 18 : 14} fontWeight={700} fill="#fff" stroke="rgba(6,25,74,0.55)" strokeWidth={3} paintOrder="stroke">
+                      <text textAnchor="middle" y={r + 18} fontSize={isCenter ? 18 : 14} fontWeight={700} fill="#fff" stroke="rgba(13,42,64,0.55)" strokeWidth={3} paintOrder="stroke">
                         {n.name}
                       </text>
                       {n.description && (
-                        <text textAnchor="middle" y={r + (isCenter ? 36 : 33)} fontSize={11} fill="rgba(255,255,255,0.78)" stroke="rgba(6,25,74,0.5)" strokeWidth={2.5} paintOrder="stroke">
+                        <text textAnchor="middle" y={r + (isCenter ? 36 : 33)} fontSize={11} fill="rgba(255,255,255,0.78)" stroke="rgba(13,42,64,0.5)" strokeWidth={2.5} paintOrder="stroke">
                           {n.description}
                         </text>
                       )}
@@ -336,7 +336,7 @@ export default function AiRelationshipGraph({ initialQuery = "" }: { initialQuer
           )}
 
           {graph && types.length > 0 && (
-            <div className="pointer-events-none absolute bottom-3 left-3 flex max-w-[calc(100%-1.5rem)] flex-wrap items-center gap-x-3 gap-y-1 rounded-2xl bg-[#06194a]/80 px-3 py-2 text-[11.5px] text-white/85">
+            <div className="pointer-events-none absolute bottom-3 left-3 flex max-w-[calc(100%-1.5rem)] flex-wrap items-center gap-x-3 gap-y-1 rounded-2xl bg-[#0f3049]/80 px-3 py-2 text-[11.5px] text-white/85">
               {[...groupColor].map(([g, c]) => (
                 <span key={g} className="flex items-center gap-1.5">
                   <span className="size-2.5 rounded-full" style={{ background: c }} />

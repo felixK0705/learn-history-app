@@ -124,7 +124,7 @@ export default function GlobePage() {
         <button
           onClick={() => setMenuOpen((v) => !v)}
           className={`grid size-[42px] place-items-center rounded-full border transition ${
-            menuOpen ? "border-white bg-white text-deep-800" : "border-white/15 bg-[#0a2f7d]/55 text-white hover:bg-[#0a2f7d]/80"
+            menuOpen ? "border-white bg-white text-deep-800" : "border-white/15 bg-[#174a68]/55 text-white hover:bg-[#174a68]/80"
           }`}
           aria-label="地球設定"
           aria-expanded={menuOpen}

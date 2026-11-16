@@ -1,7 +1,7 @@
 import { forwardRef, useEffect, useImperativeHandle, useRef } from "react";
 import Globe, { type GlobeInstance } from "globe.gl";
 import { geoContains } from "d3-geo";
-import { AdditiveBlending, BufferAttribute, BufferGeometry, Color, Mesh, MeshPhongMaterial, PerspectiveCamera, Points, PointsMaterial, ShaderMaterial, SphereGeometry, SRGBColorSpace, type Texture, TextureLoader } from "three";
+import { AdditiveBlending, BufferAttribute, BufferGeometry, Color, Mesh, MeshPhongMaterial, PerspectiveCamera, Points, PointsMaterial, ShaderMaterial, SphereGeometry, SRGBColorSpace, type Texture, TextureLoader, Vector3 } from "three";
 import { CSS2DRenderer } from "three/examples/jsm/renderers/CSS2DRenderer.js";
 import { countries, countryByIso } from "../../data/world";
 
@@ -33,7 +33,14 @@ const SHORT: Record<string, string> = {
   BIH: "波赫", KNA: "聖克里斯多福", VCT: "聖文森", STP: "聖多美", PNG: "巴紐",
 };
 
-const defaultAlt = () => (window.innerWidth < 640 ? 3.6 : window.innerWidth < 1024 ? 2.9 : 2.45);
+// 窄視角鏡頭（15°）從遠處看：透視變形小，旋轉時國名幾乎只水平移動、不會上下飄。
+// 以下高度仍用原本 50° 視角時的數值設定，再換算成遠距離鏡頭的實際高度，畫面大小不變
+const FOV = 15;
+const K = Math.tan((25 * Math.PI) / 180) / Math.tan(((FOV / 2) * Math.PI) / 180);
+const toAlt = (a: number) => (1 + a) * K - 1;
+const fromAlt = (a: number) => (1 + a) / K - 1;
+
+const defaultAlt = () => toAlt(window.innerWidth < 640 ? 3.6 : window.innerWidth < 1024 ? 2.9 : 2.45);
 
 const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
   { selectedIso, autoRotate, onSelectCountry, onReady },
@@ -56,12 +63,12 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
 
 
   useImperativeHandle(ref, () => ({
-    flyTo: (lat, lng, altitude = 1.7) => globeRef.current?.pointOfView({ lat, lng, altitude }, 900),
+    flyTo: (lat, lng, altitude = 1.7) => globeRef.current?.pointOfView({ lat, lng, altitude: toAlt(altitude) }, 900),
     zoom: (factor) => {
       const g = globeRef.current;
       if (!g) return;
       const pov = g.pointOfView();
-      g.pointOfView({ altitude: Math.min(4.5, Math.max(0.5, pov.altitude * factor)) }, 450);
+      g.pointOfView({ altitude: toAlt(Math.min(4.5, Math.max(0.5, fromAlt(pov.altitude) * factor))) }, 450);
     },
     reset: () => globeRef.current?.pointOfView({ lat: 0, lng: 20, altitude: defaultAlt() }, 1200),
   }));
@@ -74,7 +81,6 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
     const g = new Globe(el, { animateIn: false, rendererConfig: { antialias: true, alpha: true } })
       .backgroundColor("rgba(0,0,0,0)")
       // 國界已畫進貼圖（scripts/draw_borders.py），不再為每個國家建立 3D 物件，縮放旋轉才順
-      .bumpImageUrl("/textures/earth-topology.png")
       .showAtmosphere(true)
       .atmosphereColor("#e2f8ff")
       .atmosphereAltitude(0.3)
@@ -97,10 +103,16 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
 
     const controls = g.controls();
     controls.autoRotateSpeed = 0.35;
+    // 套件依鏡頭高度調整拖曳／縮放速度；鏡頭拉遠後要換回等效高度，拖動手感才跟原本一樣
+    controls.addEventListener("change", () => {
+      const a = fromAlt(g.pointOfView().altitude);
+      controls.rotateSpeed = a * 0.3;
+      controls.zoomSpeed = Math.sqrt(a) * 0.7;
+    });
     controls.enableDamping = true;
     controls.dampingFactor = 0.08;
-    controls.minDistance = 150;
-    controls.maxDistance = 650;
+    controls.minDistance = 150 * K;
+    controls.maxDistance = 650 * K;
 
 
     // 海面反光（依海洋遮罩）與緩慢轉動的雲層，呈現參考圖中光滑明亮的地球
@@ -137,15 +149,18 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
     for (let i = 0; i < 900; i++) {
       const u = Math.random() * 2 - 1;
       const t = Math.random() * Math.PI * 2;
-      const r = Math.sqrt(1 - u * u) * 1800;
-      starPos.set([r * Math.cos(t), u * 1800, r * Math.sin(t)], i * 3);
+      const r = Math.sqrt(1 - u * u) * 12000;
+      starPos.set([r * Math.cos(t), u * 12000, r * Math.sin(t)], i * 3);
     }
     const starGeo = new BufferGeometry();
     starGeo.setAttribute("position", new BufferAttribute(starPos, 3));
     const stars = new Points(starGeo, new PointsMaterial({ color: "#ffffff", size: 1.6, sizeAttenuation: false, transparent: true, opacity: 0.75, depthWrite: false }));
     g.scene().add(stars);
     const cam = g.camera() as PerspectiveCamera;
-    cam.far = Math.max(cam.far, 4000);
+    cam.fov = FOV;
+    // 鏡頭離地球至少 150*K，近裁切面設大一點，深度精度才夠分出地球與緊貼的雲層（否則出現細線閃爍）
+    cam.near = 100;
+    cam.far = 30000;
     cam.updateProjectionMatrix();
 
     // 地球、海面反光、雲層三張貼圖都載入完成後才一起顯示，避免先出現一顆空的玻璃球
@@ -206,23 +221,48 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
         shown.add(it.div);
       }
     };
+    // 邊緣的國家被透視壓扁、在螢幕上擠在一起：每 6 格檢查一次實際螢幕位置，重疊時只保留人口較多的國名
+    // （中間的國名經上面的經緯度避讓後本來就不會重疊，所以不受影響、不會閃動）
+    const screenHidden = new Set<HTMLDivElement>();
+    const v3 = new Vector3();
+    const screenCheck = (d: number, horizon: number) => {
+      const cam = g.camera();
+      const R = g.getGlobeRadius();
+      const boxes: number[][] = [];
+      screenHidden.clear();
+      for (const it of byRank) {
+        const u = labelVecs.current.get(it.div);
+        // 只檢查會顯示的國名（已轉到地球邊緣外淡出的不算）
+        if (!u || !shown.has(it.div) || margin((u.x * cam.position.x + u.y * cam.position.y + u.z * cam.position.z) / d, horizon) < 0.4) continue;
+        v3.set(u.x * R, u.y * R, u.z * R).project(cam);
+        const x = (v3.x + 1) * el.clientWidth * 0.5;
+        const y = (1 - v3.y) * el.clientHeight * 0.5;
+        const hw = ((it.w || 60) * scale) / 2 + 3;
+        const b = [x - hw, y - 9 * scale, x + hw, y + 9 * scale];
+        if (boxes.some((o) => b[0] < o[2] && b[2] > o[0] && b[1] < o[3] && b[3] > o[1])) screenHidden.add(it.div);
+        else boxes.push(b);
+      }
+    };
+    let byRank: typeof labelPos.current = [];
     const tick = () => {
       if (clouds) clouds.rotation.y += 0.00025;
       const cam = g.camera().position;
       const d = cam.length();
       const horizon = g.getGlobeRadius() / d;
       // 放大時國名跟著變大（最多 1.35 倍），近看比較好讀
-      const s = Math.min(1.35, Math.max(1, 1 + (2.45 - (d / g.getGlobeRadius() - 1)) * 0.18));
+      const s = Math.min(1.35, Math.max(1, 1 + (2.45 - fromAlt(d / g.getGlobeRadius() - 1)) * 0.18));
       if (Math.abs(s - scale) > 0.01) el.style.setProperty("--label-scale", String((scale = s)));
       // 縮放超過 3% 才重新計算（標籤寬度還沒量到時每 10 格重試）
       if (Math.abs(d - lastD) / d > 0.03 || (!measured && frame % 10 === 0) || lastSel !== selectedRef.current) {
         lastSel = selectedRef.current;
         declutter((lastD = d));
+        byRank = [...labelPos.current].sort((a, b) => a.rank - b.rank);
       }
+      if (frame % 6 === 0) screenCheck(d, horizon);
       frame++;
       labelVecs.current.forEach((u, div) => {
         const dot = (u.x * cam.x + u.y * cam.y + u.z * cam.z) / d;
-        const o = shown.has(div) ? Math.min(1, Math.max(0, (margin(dot, horizon) - 0.4) / 0.15)) : 0;
+        const o = shown.has(div) && !screenHidden.has(div) ? Math.min(1, Math.max(0, (margin(dot, horizon) - 0.4) / 0.15)) : 0;
         const v = o.toFixed(2);
         if (div.style.opacity !== v) div.style.opacity = v;
       });

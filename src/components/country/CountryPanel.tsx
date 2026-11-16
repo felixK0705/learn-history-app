@@ -74,7 +74,7 @@ export default function CountryPanel({ country, onClose }: { country: CountryMet
   return (
     <aside
       ref={panelRef}
-      className="absolute z-30 flex flex-col overflow-hidden border border-white/15 bg-[#06194a]/96 shadow-[0_30px_70px_-25px_rgba(0,10,40,0.8),inset_0_1px_0_rgba(255,255,255,0.18)] max-lg:inset-x-2 max-lg:bottom-2 max-lg:h-[64%] max-lg:rounded-[28px] lg:top-[74px] lg:right-4 lg:bottom-4 lg:w-[440px] lg:rounded-[32px]"
+      className="absolute z-30 flex flex-col overflow-hidden border border-white/15 bg-[#0f3049]/96 shadow-[0_30px_70px_-25px_rgba(4,18,30,0.8),inset_0_1px_0_rgba(255,255,255,0.18)] max-lg:inset-x-2 max-lg:bottom-2 max-lg:h-[64%] max-lg:rounded-[28px] lg:top-[74px] lg:right-4 lg:bottom-4 lg:w-[440px] lg:rounded-[32px]"
       aria-label={`${country.zh}的歷史與文化`}
     >
       <SelectionAsk country={country.zh} />
@@ -98,7 +98,7 @@ export default function CountryPanel({ country, onClose }: { country: CountryMet
 
       <div className="shrink-0 px-4 pb-3">
         <div ref={navRef} className="glass-soft relative flex rounded-full p-1" role="tablist">
-          <span ref={pillRef} className="absolute top-1 bottom-1 left-0 w-0 rounded-full bg-white shadow-[0_2px_10px_rgba(0,30,90,0.25)]" aria-hidden="true" />
+          <span ref={pillRef} className="absolute top-1 bottom-1 left-0 w-0 rounded-full bg-white shadow-[0_2px_10px_rgba(5,30,45,0.25)]" aria-hidden="true" />
           {tabs.map(({ id, label }) => (
             <button
               key={id}
@@ -222,7 +222,7 @@ function HistoryTab({ events }: { events: HistoryEvent[] | null }) {
                       {!last && <span className="absolute top-3 bottom-0 w-[2px] rounded-full" style={{ background: `${color}55` }} />}
                       <span
                         className="relative z-[1] mt-[3px] size-[11px] rounded-full border-2"
-                        style={{ borderColor: color, background: isOpen ? color : "#06194a" }}
+                        style={{ borderColor: color, background: isOpen ? color : "#0f3049" }}
                       />
                     </div>
                     <button className="block pb-5 text-left" onClick={() => setOpen(isOpen ? null : key)} aria-expanded={isOpen}>
@@ -276,7 +276,7 @@ function Donut({ items, title }: { items: { name: string; percent: number }[]; t
               key={sl.name}
               d={arc(a0, a1)}
               fill={sl.color}
-              stroke="#06194a"
+              stroke="#0f3049"
               strokeWidth={2}
               opacity={hover === null || hover === i ? 1 : 0.4}
               onPointerEnter={() => setHover(i)}
@@ -337,7 +337,7 @@ function RankingTab({ profile, kind }: { profile: CountryProfile | null | undefi
           return (
             <li key={r.name} data-reveal className="glass-soft rounded-2xl px-4 py-3">
               <div className="flex items-baseline gap-3">
-                <span className="grid size-6 shrink-0 place-items-center rounded-full text-[12px] font-bold text-[#06194a] tabular-nums" style={{ background: PIE_COLORS[i] ?? OTHER_COLOR }}>{i + 1}</span>
+                <span className="grid size-6 shrink-0 place-items-center rounded-full text-[12px] font-bold text-[#0f3049] tabular-nums" style={{ background: PIE_COLORS[i] ?? OTHER_COLOR }}>{i + 1}</span>
                 <span className="min-w-0 flex-1 text-[14.5px] font-medium">{r.name}</span>
                 <span className="text-[15px] font-semibold tabular-nums">{r.percent}%</span>
               </div>
@@ -394,7 +394,7 @@ function FoodTab({ profile }: { profile: CountryProfile | null | undefined }) {
             <div className={`${f.image ? "hidden" : ""} absolute inset-0 grid place-items-center text-white/45`}>
               <UtensilsCrossed className="size-10" />
             </div>
-            <span className="absolute top-3 left-3 grid size-9 place-items-center rounded-full bg-[#06194a]/80 text-sm font-semibold">{i + 1}</span>
+            <span className="absolute top-3 left-3 grid size-9 place-items-center rounded-full bg-[#0f3049]/80 text-sm font-semibold">{i + 1}</span>
           </figure>
           <div className="px-4 pt-3 pb-4">
             <div className="flex items-baseline gap-2">

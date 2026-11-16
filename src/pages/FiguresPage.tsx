@@ -262,7 +262,7 @@ export default function FiguresPage() {
                     <g transform={`translate(${mid.x} ${mid.y})`}>
                       <rect x={-27} y={-14} width={54} height={28} rx={14} fill="#ffffff" />
                       <circle cx={-13} cy={0} r={4.5} fill={relationColors[r.type]} />
-                      <text x={6} y={5} textAnchor="middle" fontSize={14} fontWeight={600} fill="#0d43ad">
+                      <text x={6} y={5} textAnchor="middle" fontSize={14} fontWeight={600} fill="#1d5a80">
                         {r.type}
                       </text>
                     </g>
@@ -301,7 +301,7 @@ export default function FiguresPage() {
                 {portraits[f.id] ? (
                   <image href={portraits[f.id].src} x={-r} y={-r} width={r * 2} height={r * 2} preserveAspectRatio="xMidYMin slice" clipPath="url(#node-clip)" />
                 ) : (
-                  <text textAnchor="middle" y={r * 0.36} fontWeight={600} fill="#0d43ad" fontSize={r * 0.95}>
+                  <text textAnchor="middle" y={r * 0.36} fontWeight={600} fill="#1d5a80" fontSize={r * 0.95}>
                     {f.name[0]}
                   </text>
                 )}
@@ -325,7 +325,7 @@ export default function FiguresPage() {
 
       {/* 左側：搜尋、時代星座、關係類型 */}
       <aside ref={asideRef} className="absolute top-[78px] left-4 z-20 w-[min(300px,calc(100%-2rem))]">
-        <div className="rounded-2xl border border-white/15 bg-[#06194a]/85 p-3 shadow-[0_20px_50px_-20px_rgba(0,10,40,0.7)] backdrop-blur-xl">
+        <div className="rounded-2xl border border-white/15 bg-[#0f3049]/85 p-3 shadow-[0_20px_50px_-20px_rgba(4,18,30,0.7)] backdrop-blur-xl">
         <div className="flex items-center justify-between gap-2 px-1">
           <h1 className="text-[17px] font-semibold tracking-tight">人物關係</h1>
           <span className="text-[11.5px] text-white/60 tabular-nums">{figures.length} 人・{relations.length} 條關係</span>
@@ -435,15 +435,15 @@ export default function FiguresPage() {
       {focus && (
         <aside
           ref={detailRef}
-          className="absolute top-[78px] right-4 bottom-4 z-20 flex w-[300px] flex-col overflow-hidden rounded-[24px] border border-white/15 bg-[#06194a]/88 shadow-[0_24px_60px_-20px_rgba(0,10,40,0.75)] backdrop-blur-xl max-md:inset-x-3 max-md:top-auto max-md:max-h-[55%] max-md:w-auto"
+          className="absolute top-[78px] right-4 bottom-4 z-20 flex w-[300px] flex-col overflow-hidden rounded-[24px] border border-white/15 bg-[#0f3049]/88 shadow-[0_24px_60px_-20px_rgba(4,18,30,0.75)] backdrop-blur-xl max-md:inset-x-3 max-md:top-auto max-md:max-h-[55%] max-md:w-auto"
         >
-          <button onClick={() => select(null)} className="absolute top-3 right-3 z-30 grid size-8 place-items-center rounded-full bg-[#06194a]/80 text-white/90 ring-1 ring-white/25 hover:bg-[#0a2766]" aria-label="關閉" title="關閉">
+          <button onClick={() => select(null)} className="absolute top-3 right-3 z-30 grid size-8 place-items-center rounded-full bg-[#0f3049]/80 text-white/90 ring-1 ring-white/25 hover:bg-[#174560]" aria-label="關閉" title="關閉">
             <X className="size-4" />
           </button>
           {portraits[focus.id] && (
             <figure className="relative h-40 shrink-0 overflow-hidden">
               <img src={portraits[focus.id].src} alt={focus.name} className="size-full object-cover object-top" />
-              <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_45%,rgba(6,25,74,0.95))]" />
+              <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_45%,rgba(13,42,64,0.95))]" />
               {portraits[focus.id].credit && (
                 <a href={portraits[focus.id].page} target="_blank" rel="noreferrer" className="absolute right-3 bottom-2 max-w-[80%] truncate text-[10px] text-white/60 hover:text-white">
                   {portraits[focus.id].credit}
