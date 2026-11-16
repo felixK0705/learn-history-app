@@ -1,7 +1,7 @@
 import { forwardRef, useEffect, useImperativeHandle, useRef } from "react";
 import Globe, { type GlobeInstance } from "globe.gl";
-import { geoContains } from "d3-geo";
-import { AdditiveBlending, BufferAttribute, BufferGeometry, Color, Mesh, MeshPhongMaterial, PerspectiveCamera, Points, PointsMaterial, ShaderMaterial, SphereGeometry, SRGBColorSpace, type Texture, TextureLoader, Vector3 } from "three";
+import { geoArea, geoContains } from "d3-geo";
+import { AdditiveBlending, BufferAttribute, BufferGeometry, Color, Mesh, MeshPhongMaterial, PerspectiveCamera, Points, PointsMaterial, ShaderMaterial, SphereGeometry, SRGBColorSpace, type Texture, TextureLoader } from "three";
 import { CSS2DRenderer } from "three/examples/jsm/renderers/CSS2DRenderer.js";
 import { countries, countryByIso } from "../../data/world";
 
@@ -40,6 +40,12 @@ const K = Math.tan((25 * Math.PI) / 180) / Math.tan(((FOV / 2) * Math.PI) / 180)
 const toAlt = (a: number) => (1 + a) * K - 1;
 const fromAlt = (a: number) => (1 + a) / K - 1;
 
+// d3 依環繞方向計算面積，方向相反時會得到「地球減去該國」的面積，取較小者
+const sphereArea = (f: unknown) => {
+  const a = geoArea(f as never);
+  return Math.min(a, 4 * Math.PI - a);
+};
+
 const defaultAlt = () => toAlt(window.innerWidth < 640 ? 3.6 : window.innerWidth < 1024 ? 2.9 : 2.45);
 
 const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
@@ -53,8 +59,10 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
   const labelEls = useRef(new Map<string, HTMLDivElement>());
   /** 每個標籤在地球上的單位方向向量（建立時算一次，之後每格只做內積） */
   const labelVecs = useRef(new Map<HTMLDivElement, { x: number; y: number; z: number }>());
-  /** 標籤的經緯度、人口排名與寬度，供避讓計算 */
-  const labelPos = useRef<{ div: HTMLDivElement; lat: number; lng: number; rank: number; w: number }[]>([]);
+  /** 標籤與所屬國家、人口排名，供避讓計算 */
+  const labelPos = useRef<{ div: HTMLDivElement; iso: string; rank: number }[]>([]);
+  /** 各國面積（球面度），國名避讓時面積大的國家優先顯示 */
+  const areaByIso = useRef(new Map<string, number>());
 
 
   const cb = useRef({ onSelectCountry, onReady });
@@ -187,63 +195,31 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
 
     // 每格一次：雲層緩慢轉動＋標籤依與視線的夾角平滑淡出（背面隱藏，邊緣不會忽亮忽滅）
     let raf = 0;
-    // 標籤避讓：國名互相重疊時只顯示人口較多的國家。以地表上的經緯度距離計算，
-    // 只隨縮放改變、旋轉時完全不變，國名不會轉一轉就忽然出現或消失
-    const shown = new Set<HTMLDivElement>();
+    // 標籤避讓：每 6 格依國名在畫面上的實際位置檢查，重疊時保留面積較大的國家（選取的國家永遠優先）。
+    // 鏡頭是遠距窄視角，旋轉時地球中間的國名幾乎是整體平移、相對位置不變，所以不會閃動
+    const hidden = new Set<HTMLDivElement>();
     let frame = 0;
     let scale = 1;
-    let lastD = 0;
-    let lastSel: string | null = null;
-    let measured = false;
     // 標籤離地平線（地球邊緣）的相對距離：0 = 剛好在邊緣、1 = 正對鏡頭；放大縮小都一致
     const margin = (dot: number, horizon: number) => (dot - horizon) / (1 - horizon);
-    const declutter = (d: number) => {
-      const R = g.getGlobeRadius();
-      const cam = g.camera() as PerspectiveCamera;
-      // 地球正中央每弧度約佔多少螢幕像素
-      const pxPerRad = (R * el.clientHeight) / 2 / Math.tan((cam.fov * Math.PI) / 360) / (d - R);
-      const items = [...labelPos.current].sort((a, b) =>
-        a.div.classList.contains("is-active") ? -1 : b.div.classList.contains("is-active") ? 1 : a.rank - b.rank,
-      );
-      const placed: typeof items = [];
-      shown.clear();
-      measured = items.length > 0; // 標籤尚未建立時下次再算
-      for (const it of items) {
-        it.w ||= it.div.offsetWidth;
-        if (!it.w) measured = false;
-        const hit = placed.some((o) => {
-          const dx = Math.abs(((((it.lng - o.lng + 540) % 360) - 180) * Math.PI) / 180) * Math.cos((it.lat * Math.PI) / 180) * pxPerRad;
-          const dy = (Math.abs(it.lat - o.lat) * Math.PI * pxPerRad) / 180;
-          return dx < (((it.w || 60) + (o.w || 60)) / 2) * scale * 1.35 + 10 && dy < 30 * scale;
-        });
-        if (hit) continue;
-        placed.push(it);
-        shown.add(it.div);
-      }
-    };
-    // 邊緣的國家被透視壓扁、在螢幕上擠在一起：每 6 格檢查一次實際螢幕位置，重疊時只保留人口較多的國名
-    // （中間的國名經上面的經緯度避讓後本來就不會重疊，所以不受影響、不會閃動）
-    const screenHidden = new Set<HTMLDivElement>();
-    const v3 = new Vector3();
-    const screenCheck = (d: number, horizon: number) => {
-      const cam = g.camera();
-      const R = g.getGlobeRadius();
-      const boxes: number[][] = [];
-      screenHidden.clear();
-      for (const it of byRank) {
+    const priority = (it: { div: HTMLDivElement; iso: string; rank: number }) =>
+      it.div.classList.contains("is-active") ? Infinity : (areaByIso.current.get(it.iso) ?? 0) - it.rank * 1e-9;
+    const declutter = (d: number, horizon: number) => {
+      const cam = g.camera().position;
+      const boxes: DOMRect[] = [];
+      const wasHidden = new Set(hidden);
+      hidden.clear();
+      for (const it of [...labelPos.current].sort((a, b) => priority(b) - priority(a))) {
         const u = labelVecs.current.get(it.div);
-        // 只檢查會顯示的國名（已轉到地球邊緣外淡出的不算）
-        if (!u || !shown.has(it.div) || margin((u.x * cam.position.x + u.y * cam.position.y + u.z * cam.position.z) / d, horizon) < 0.4) continue;
-        v3.set(u.x * R, u.y * R, u.z * R).project(cam);
-        const x = (v3.x + 1) * el.clientWidth * 0.5;
-        const y = (1 - v3.y) * el.clientHeight * 0.5;
-        const hw = ((it.w || 60) * scale) / 2 + 3;
-        const b = [x - hw, y - 9 * scale, x + hw, y + 9 * scale];
-        if (boxes.some((o) => b[0] < o[2] && b[2] > o[0] && b[1] < o[3] && b[3] > o[1])) screenHidden.add(it.div);
-        else boxes.push(b);
+        // 已轉到地球邊緣外淡出的不算
+        if (!u || margin((u.x * cam.x + u.y * cam.y + u.z * cam.z) / d, horizon) < 0.4) continue;
+        const r = it.div.getBoundingClientRect();
+        // 緩衝：已顯示的國名要明顯疊進去才隱藏，已隱藏的要留出空隙才重新顯示，擦邊時不會來回閃
+        const pad = wasHidden.has(it.div) ? 10 : -4;
+        if (boxes.some((o) => r.left - pad < o.right && r.right + pad > o.left && r.top - pad / 2 < o.bottom && r.bottom + pad / 2 > o.top)) hidden.add(it.div);
+        else boxes.push(r);
       }
     };
-    let byRank: typeof labelPos.current = [];
     const tick = () => {
       if (clouds) clouds.rotation.y += 0.00025;
       const cam = g.camera().position;
@@ -252,17 +228,10 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
       // 放大時國名跟著變大（最多 1.35 倍），近看比較好讀
       const s = Math.min(1.35, Math.max(1, 1 + (2.45 - fromAlt(d / g.getGlobeRadius() - 1)) * 0.18));
       if (Math.abs(s - scale) > 0.01) el.style.setProperty("--label-scale", String((scale = s)));
-      // 縮放超過 3% 才重新計算（標籤寬度還沒量到時每 10 格重試）
-      if (Math.abs(d - lastD) / d > 0.03 || (!measured && frame % 10 === 0) || lastSel !== selectedRef.current) {
-        lastSel = selectedRef.current;
-        declutter((lastD = d));
-        byRank = [...labelPos.current].sort((a, b) => a.rank - b.rank);
-      }
-      if (frame % 6 === 0) screenCheck(d, horizon);
-      frame++;
+      if (frame++ % 6 === 0) declutter(d, horizon);
       labelVecs.current.forEach((u, div) => {
         const dot = (u.x * cam.x + u.y * cam.y + u.z * cam.z) / d;
-        const o = shown.has(div) && !screenHidden.has(div) ? Math.min(1, Math.max(0, (margin(dot, horizon) - 0.4) / 0.15)) : 0;
+        const o = hidden.has(div) ? 0 : Math.min(1, Math.max(0, (margin(dot, horizon) - 0.4) / 0.15));
         const v = o.toFixed(2);
         if (div.style.opacity !== v) div.style.opacity = v;
       });
@@ -276,6 +245,7 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
       .then((geo: { features: GeoFeature[] }) => {
         if (disposed) return;
         features.current = geo.features.filter((f) => f.properties.iso_a3 !== "ATA");
+        for (const f of features.current) areaByIso.current.set(f.properties.iso_a3, (areaByIso.current.get(f.properties.iso_a3) ?? 0) + sphereArea(f));
         showSelected();
       })
       .catch(() => {});
@@ -318,7 +288,7 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
         const p = g.getCoords(c.pos[0], c.pos[1], 0);
         const len = Math.hypot(p.x, p.y, p.z) || 1;
         labelVecs.current.set(div, { x: p.x / len, y: p.y / len, z: p.z / len });
-        labelPos.current.push({ div, lat: c.pos[0], lng: c.pos[1], rank: c.rank, w: 0 });
+        labelPos.current.push({ div, iso: c.iso, rank: c.rank });
         div.textContent = SHORT[c.iso] ?? c.zh;
         div.title = c.en;
         if (c.iso === selectedRef.current) div.classList.add("is-active");
