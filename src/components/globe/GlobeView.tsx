@@ -140,8 +140,8 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
         fragmentShader: `
           uniform vec3 tint; varying vec3 vN; varying vec3 vV;
           void main() {
-            float f = pow(1.0 - max(dot(vN, vV), 0.0), 3.2);
-            gl_FragColor = vec4(tint * f * 1.25, f);
+            float f = pow(1.0 - max(dot(vN, vV), 0.0), 2.6);
+            gl_FragColor = vec4(tint * f * 1.7, f);
           }`,
       }),
     );
