@@ -56,6 +56,7 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
   const globeRef = useRef<GlobeInstance | null>(null);
   const features = useRef<GeoFeature[]>([]);
   const selectedRef = useRef<string | null>(selectedIso);
+  const autoRotateRef = useRef(autoRotate);
   const labelEls = useRef(new Map<string, HTMLDivElement>());
   /** 每個標籤在地球上的單位方向向量（建立時算一次，之後每格只做內積） */
   const labelVecs = useRef(new Map<HTMLDivElement, { x: number; y: number; z: number }>());
@@ -112,6 +113,20 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
     const controls = g.controls();
     controls.autoRotateSpeed = 0.35;
     // 套件依鏡頭高度調整拖曳／縮放速度；鏡頭拉遠後要換回等效高度，拖動手感才跟原本一樣
+    // 自轉中若被拖斜（例如去看北極），放開 3 秒後慢慢轉回正對赤道：自轉時國名才只水平移動、不會上下飄
+    let levelTimer = 0;
+    controls.addEventListener("start", () => clearTimeout(levelTimer));
+    controls.addEventListener("end", () => {
+      clearTimeout(levelTimer);
+      levelTimer = window.setTimeout(() => {
+        const pov = g.pointOfView();
+        if (!controls.autoRotate || Math.abs(pov.lat) <= 1) return;
+        // 轉回期間先暫停自轉，避免與轉回動畫互相拉扯
+        controls.autoRotate = false;
+        g.pointOfView({ lat: 0, lng: pov.lng, altitude: pov.altitude }, 1500);
+        levelTimer = window.setTimeout(() => (controls.autoRotate = autoRotateRef.current), 1600);
+      }, 3000);
+    });
     controls.addEventListener("change", () => {
       const a = fromAlt(g.pointOfView().altitude);
       controls.rotateSpeed = a * 0.3;
@@ -258,6 +273,7 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
 
     return () => {
       disposed = true;
+      clearTimeout(levelTimer);
       cancelAnimationFrame(raf);
       ro.disconnect();
       g._destructor?.();
@@ -318,6 +334,7 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
 
   useEffect(() => {
     const g = globeRef.current;
+    autoRotateRef.current = autoRotate;
     if (g) g.controls().autoRotate = autoRotate;
   }, [autoRotate]);
 
