@@ -1,0 +1,99 @@
+{
+ "iso": "PAN",
+ "capital": "Panama City",
+ "summary": "Panama lies on the isthmus connecting Central and South America and is known for the Panama Canal, opened to navigation in 1914; it is an important international shipping and financial center.",
+ "religion": {
+  "ranking": [
+   {
+    "name": "Catholicism",
+    "percent": 63,
+    "description": "In 1510 the Spanish founded Santa María la Antigua del Darién on the Isthmus of Panama, and in 1513 Balboa crossed the isthmus and saw the Pacific; Panama became the transshipment point for Peruvian silver for Spain, and Catholicism came with colonial rule. Panama City, founded in 1519, was one of the earliest cathedral seats on the Pacific coast of the Americas. After independence Catholicism remained the mainstream; in 2019 Panama hosted World Youth Day and Pope Francis visited, but in recent years the share has gradually declined."
+   },
+   {
+    "name": "Evangelical / Protestant",
+    "percent": 25,
+    "description": "Protestantism was first brought in the 19th century by Black laborers from British Caribbean areas such as Jamaica and Barbados, who came in large numbers to build the Panama Railroad in the 1850s and the Panama Canal in 1904-1914, bringing Anglicanism, Methodism and the Baptist church. During the American administration of the Canal Zone from 1904 to 1999, American churches were also active there. In the late 20th century large Pentecostal and evangelical churches expanded rapidly, raising the Protestant share to a quarter."
+   },
+   {
+    "name": "No religion",
+    "percent": 7,
+    "description": "The non-religious population is mostly found among educated young people in cities such as Panama City, reflecting the recent secularizing trend in Latin America. As an international shipping and financial center, Panama is highly urbanized with frequent international exchange, which has also led some young people away from the traditional church."
+   }
+  ],
+  "background": "The indigenous people of Panama believed in ancestral spirits and nature spirits, and peoples such as the Guna still preserve traditional rituals. After the Spanish conquest in the 16th century Catholicism became the mainstream, and Panama City had one of the earliest dioceses on the American continent. In the 19th-20th centuries, when the railroad and the canal were built, large numbers of Black Caribbean laborers brought Protestantism. The American administration of the Canal Zone from 1904 to 1999 brought the influence of American churches. Today Catholicism is still the largest religion, but evangelicals are growing rapidly."
+ },
+ "language": {
+  "official": "Spanish is the official language.",
+  "ranking": [
+   {
+    "name": "Spanish",
+    "percent": 93,
+    "description": "Spanish arrived with Spanish colonization in the 1510s; as a transit route of the Spanish Empire, Panama saw Spanish become the language of administration, religion and commerce, and the indigenous languages were squeezed into remote areas. After separation from Spain in 1821 Panama joined Gran Colombia and became independent in 1903, and Spanish has always been the official language and the mother tongue of the great majority.",
+    "greeting": "Hola",
+    "pronunciation": "OH-la"
+   },
+   {
+    "name": "English",
+    "percent": 3,
+    "description": "English was brought by the Black British Caribbean laborers who came to build the Panama Railroad in the 1850s and the canal in 1904-1914, forming a West Indian community speaking English Creole, concentrated in Colón and Bocas del Toro. The American administration of the Canal Zone from 1904 to 1999 made English very important in canal-related industries. Today English is an important foreign language for business and tourism, but native speakers are only about 3%.",
+    "greeting": "Hello",
+    "pronunciation": "heh-LOH"
+   }
+  ],
+  "history": "Before the Spanish conquest Panama had indigenous languages such as Guna, Ngäbere and Emberá, which are still used in the autonomous territories (comarcas). From the 16th century Spanish became the mainstream language. In the 19th-20th centuries, when the railroad and canal were built, Caribbean laborers brought English Creole, and American administration of the Canal Zone also strengthened the position of English. After the canal was handed over to Panama in 1999, Spanish remained the sole official language, while English is an important business language."
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "Sancocho",
+    "localName": "Sancocho",
+    "description": "A clear soup simmered with chicken, yam (ñame), corn, onion and the culantro particular to Panama, often eaten with white rice; the flavor is light.",
+    "history": "Sancocho derives from the stews of Spain's Canary Islands and came with colonists to the Caribbean and South America, with different versions in each country. The Panamanian version is based on chicken and yam and uses \"culantro,\" a native American herb with leaves broader and a flavor stronger than cilantro. It is regarded as Panama's national soup, and folk belief holds that it cures hangovers and colds, so it is often eaten after festivals or late-night parties.",
+    "wiki": "Sancocho",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Sancocho_de_espinazo_de_cerdo.jpg/960px-Sancocho_de_espinazo_de_cerdo.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Sancocho_de_espinazo_de_cerdo.jpg",
+    "imageCredit": "Daguerreroa・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "Arroz con pollo",
+    "localName": "Arroz con pollo",
+    "description": "Chicken is stewed with rice, tomato sauce, sweet pepper, peas and olives, colored yellow with annatto or saffron, so that the rice soaks up the chicken juices.",
+    "history": "Arroz con pollo originated in Spain, with common roots with paella, and came to Latin America with Spanish colonists after the 16th century. Annatto is a native American coloring spice that replaced the expensive saffron. In Panama arroz con pollo is the most common dish at birthday parties, weddings and family gatherings, often cooked in big pots to entertain many guests.",
+    "wiki": "Arroz con pollo",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Arroz-con-Pollo.jpg/960px-Arroz-con-Pollo.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Arroz-con-Pollo.jpg",
+    "imageCredit": "Kobako・CC BY-SA 2.5・Wikimedia Commons"
+   },
+   {
+    "name": "Carimañola",
+    "localName": "Carimañola",
+    "description": "Boiled cassava is mashed and wrapped around a ground beef filling seasoned with tomato and onion, shaped into a torpedo with pointed ends and deep-fried; crisp outside and soft inside.",
+    "history": "Cassava is a crop grown by the indigenous peoples of the Americas for thousands of years, while the meat filling and frying came from the Spanish colonists, so the carimañola is a blend of two food cultures. It is common on the Caribbean coasts of Panama and Colombia and is the most common snack at Panamanian breakfasts and street stalls, often eaten with coffee.",
+    "wiki": "Carimañola",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Barranquilla_-_Carima%C3%B1olas.jpg/960px-Barranquilla_-_Carima%C3%B1olas.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Barranquilla_-_Carima%C3%B1olas.jpg",
+    "imageCredit": "Jdvillalobos・CC BY 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "Patacones (fried plantain)",
+    "localName": "Patacones",
+    "description": "Green, unripe plantains are cut into thick slices, fried until soft, flattened with a board or the bottom of a cup, and fried again until crisp, sprinkled with salt and eaten as a side dish or snack.",
+    "history": "The plantain originated in Southeast Asia and was introduced to the Caribbean and Central America by the Portuguese and Spanish via Africa in the 16th century, and the African slaves' methods of cooking plantain influenced local food. Twice-fried plantain is widely popular in the Caribbean, and in Panama it is almost the standard side dish at every meal, often eaten together with fried fish and ceviche.",
+    "wiki": "Tostones",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Tostones.JPG/960px-Tostones.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Tostones.JPG",
+    "imageCredit": "AMartiniouk・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "Ceviche",
+    "localName": "Ceviche",
+    "description": "White fish, shrimp or octopus is cut into small pieces and marinated in lime juice with chopped onion, chili and coriander added; the acid makes the seafood seem cooked, and the texture is refreshing.",
+    "history": "Ceviche originated in Peru, where the indigenous people had long marinated fish in acidic juices, and after the Spanish brought limes and onions it developed into its present form. Panama lies between two oceans and has abundant seafood, and ceviche is especially famous at the stalls around the Mercado de Mariscos in Panama City, often sold in small cups and eaten with crackers or fried plantain.",
+    "wiki": "Ceviche",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Cebiche_de_corvina.JPG/960px-Cebiche_de_corvina.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Cebiche_de_corvina.JPG",
+    "imageCredit": "Picanteria karol・CC BY-SA 4.0・Wikimedia Commons"
+   }
+  ]
+ }
+}

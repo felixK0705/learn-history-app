@@ -1,0 +1,101 @@
+{
+ "iso": "MWI",
+ "capital": "Lilongwe",
+ "summary": "Malawi lies in the interior of southeastern Africa; Lake Malawi occupies about one fifth of its territory, and the country is known as the \"Warm Heart of Africa.\" It became independent from Britain in 1964.",
+ "religion": {
+  "ranking": [
+   {
+    "name": "Protestantism",
+    "percent": 60,
+    "description": "After Livingstone reached Lake Malawi in 1859, he called for \"Christianity and commerce\" to end the East African slave trade, and the Scottish Presbyterians soon established the Livingstonia mission station in 1875 and the Blantyre mission station in 1876. Mission schools trained the first generation of educated Malawians, and after Britain established the protectorate in 1891 Protestant influence continued to grow. Today the Church of Central Africa Presbyterian is the largest denomination, and together with Seventh-day Adventists, Pentecostals and others, Protestants are the country's largest religious group."
+   },
+   {
+    "name": "Catholicism",
+    "percent": 17,
+    "description": "The Catholic White Fathers and the Montfort Missionaries arrived in Malawi around 1889, later than the Scottish Presbyterians, but built many schools and hospitals in the center and south. In 1992 the Catholic bishops issued a pastoral letter criticizing President Banda's dictatorial rule, which became a key force driving the 1993 multiparty referendum, giving the Church very high prestige in society."
+   },
+   {
+    "name": "Islam",
+    "percent": 14,
+    "description": "Islam was brought in the 19th century by Swahili and Arab slave traders from the East African coast, and the Yao chiefs at the southern end of the lake converted to Islam in order to ally with the traders. Muslims are therefore concentrated in Mangochi, Machinga and the lakeshore area in the south, mainly among the Yao; during the colonial period Muslims were less likely to enter mission schools, which also affected their later education and social standing."
+   },
+   {
+    "name": "No religion",
+    "percent": 2,
+    "description": "Malawi is a highly religious society; since the colonial period churches have dominated education and health care, and since many people retain traditional beliefs while classifying themselves as belonging to a church, people who belong to no religion at all are very few, found mainly among the urban, highly educated population."
+   }
+  ],
+  "background": "Malawians traditionally believed in a supreme god and ancestral spirits, and the Chewa \"Gule Wamkulu\" masked-dance secret society still exists today. In the 19th century Swahili traders brought Islam to the southern lakeshore, and after Livingstone's visit in 1859 Scottish Presbyterian and Catholic missionaries successively established mission stations and schools. The intellectuals trained by the Christian churches became the backbone of the anti-colonial movement, and in 1915 the Reverend John Chilembwe led an uprising against British rule. Today Christians are the vast majority, but traditional beliefs and Christianity are often blended together."
+ },
+ "language": {
+  "official": "English is the official language, and Chichewa is the national language.",
+  "ranking": [
+   {
+    "name": "Chichewa",
+    "percent": 57,
+    "description": "Chichewa belongs to the Bantu languages and was originally the language of the Chewa of the center; it is mutually intelligible with Nyanja. In 1968 President Banda declared it the national language and promoted it vigorously in schools, broadcasting and government, turning it from a regional language into a nationwide common language; today more than half the population has it as a mother tongue, and most people can use it. After democratization in 1994 the government relaxed restrictions on other ethnic languages.",
+    "greeting": "Moni",
+    "pronunciation": "MOH-nee"
+   },
+   {
+    "name": "Tumbuka",
+    "percent": 9,
+    "description": "Tumbuka is the language of the Tumbuka people of the north; in the 19th century the Scottish Presbyterian mission station at Livingstonia in the north ran schools and translated the Bible in Tumbuka, making it the common language of the north. After the Banda government elevated Chichewa alone in 1968, Tumbuka was excluded from broadcasting and education, and it was restored only after democratization in 1994.",
+    "greeting": "Monire",
+    "pronunciation": "moh-NEE-reh"
+   }
+  ],
+  "history": "The indigenous peoples of Malawi spoke many Bantu languages, and from the 16th century the Maravi Empire founded by the Chewa (from which the country's name comes) made the Chewa language widely current in the center. In the 19th century Scottish missionaries translated the Bible into Chichewa and Tumbuka and ran schools, and in the British protectorate period English became the administrative language. After independence in 1964 English was the official language, and in 1968 President Banda made Chichewa the sole national language. After democratization in 1994 the government recognized the rights of other ethnic languages to education and broadcasting."
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "Nsima",
+    "localName": "Nsima",
+    "description": "White maize meal is poured into boiling water and stirred with a wooden paddle as it cooks, until it is thick enough to be shaped into a ball; a small lump is pinched off with the right hand and dipped in stew, greens or fish.",
+    "history": "Maize originated in the Americas and was introduced to Africa by the Portuguese after the 16th century; in the 19th and 20th centuries it gradually replaced sorghum and millet as Malawi's staple. Nsima is extremely important to Malawians, and a common local saying is that \"a meal without nsima is not a meal.\" Because the country depends so heavily on maize, maize crop failures in 2002 and 2005 caused severe famine, and the government therefore introduced a fertilizer subsidy program.",
+    "wiki": "Nsima",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/48/Ugali_%26_Sukuma_Wiki.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Ugali_%26_Sukuma_Wiki.jpg",
+    "imageCredit": "Paresh Jai from Nairobi, Kenya・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "Chambo",
+    "localName": "Chambo",
+    "description": "Chambo, a specialty of Lake Malawi (a mouthbrooding tilapia-type cichlid), is rubbed whole with salt and fried or grilled over charcoal; the flesh is fresh and sweet, and it is often eaten with nsima or chips.",
+    "history": "Chambo is a fish species unique to Lake Malawi, which has the most diverse cichlid fauna in the world; Lake Malawi National Park was established at the southern end of the lake in 1980. Chambo is regarded as a representative national food, but overfishing has caused its catch to fall sharply since the 1990s, so the government and conservation organizations have promoted closed seasons and aquaculture.",
+    "wiki": "Chambo"
+   },
+   {
+    "name": "Mandasi",
+    "localName": "Mandasi",
+    "description": "Flour, sugar, yeast and coconut milk or milk are kneaded into a dough, cut into pieces or shaped into balls and deep-fried; the texture is fluffy and slightly sweet, and it is often eaten for breakfast with milk tea.",
+    "history": "Mandasi derives from the \"mandazi\" of the Swahili coast of East Africa and was brought to Malawi by Swahili traders who went inland in the 19th century and by later immigrants. It is the most common breakfast snack at street stalls and markets; cheap and easy to carry, students and office workers often buy one or two by the roadside to eat with sweet tea, and it is also a simple snack for entertaining guests.",
+    "wiki": "Mandazi",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/69/Bowl_of_mandazi.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Bowl_of_mandazi.jpg",
+    "imageCredit": "The original uploader was ChildofMidnight at English Wikiped・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "Kachumbari (tomato and onion salad)",
+    "localName": "Kachumbari",
+    "description": "Tomato and onion are diced and tossed with green chili, coriander and lemon juice or vinegar; tangy, spicy and refreshing, it is often a side dish for grilled meat or nsima.",
+    "history": "The word \"kachumbari\" comes from Swahili, and this salad is popular throughout East Africa, possibly influenced by the Indian immigrants' \"kachumber.\" Tomatoes and chilies are both American crops that became widespread only in the colonial period. In Malawi it is an indispensable side dish at family barbecues and wedding banquets, used to balance the richness of grilled meat and fried fish.",
+    "wiki": "Kachumbari",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Kachumbari.jpg/960px-Kachumbari.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Kachumbari.jpg",
+    "imageCredit": "Charles Haynes・CC BY-SA 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "Thobwa",
+    "localName": "Thobwa",
+    "description": "Maize flour or millet flour is cooked with water into a thin porridge, and malted grain flour is added to let it ferment for a day or two, producing a slightly sour, grain-scented non-alcoholic drink.",
+    "history": "Thobwa is a traditional fermented drink of Malawi; the method is similar to that of the local traditional beer brewed from maize and millet, but the fermentation time is short and it contains no alcohol. Against a background in which Christianity and Islam discourage drinking, it has become a common drink for entertaining guests at weddings, festivals and busy farming seasons, and it is also often taken as a nutritional supplement; in recent years factories have begun selling it in bottles.",
+    "wiki": "Thobwa",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Cup_of_thobwa%2C_Malawi.JPG/960px-Cup_of_thobwa%2C_Malawi.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Cup_of_thobwa,_Malawi.JPG",
+    "imageCredit": "David Atherton・CC BY-SA 4.0・Wikimedia Commons"
+   }
+  ]
+ }
+}

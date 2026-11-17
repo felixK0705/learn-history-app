@@ -1,0 +1,108 @@
+{
+ "iso": "OMN",
+ "capital": "Muscat",
+ "summary": "Oman lies at the southeastern tip of the Arabian Peninsula, commands the Strait of Hormuz, and was historically a maritime trading power of the Indian Ocean that once controlled Zanzibar in East Africa.",
+ "religion": {
+  "ranking": [
+   {
+    "name": "Islam",
+    "percent": 86,
+    "description": "Islam reached Oman in the 7th century, while the Prophet Muhammad was still alive, and according to tradition the local rulers accepted Islam around 630. From the 8th century Oman became a center of Ibadism, a branch of Islam that is neither Sunni nor Shia and is known for moderation and tolerance; Oman's successive imams and today's Al Said royal family are all Ibadi. Among Omani citizens today Ibadis and Sunnis each make up about half, Shia are a minority, and Islam is the state religion."
+   },
+   {
+    "name": "Christianity",
+    "percent": 6,
+    "description": "Oman's Christians are almost all foreign workers, mainly from Kerala in India, the Philippines, Europe and America, who came in large numbers after Sultan Qaboos took the throne in 1970 and the oil economy took off. The sultan's government allocated land so that they could build churches in places such as Muscat, while among citizens there are almost no Christians."
+   },
+   {
+    "name": "Hinduism",
+    "percent": 5,
+    "description": "Hinduism has a long history in Oman: from the 16th century Indian merchants from areas such as Gujarat and Sindh did business in Muscat, and the Hindu temples in Muscat are more than a hundred years old. Today's Hindus are mainly Indian foreign workers who poured in after the 1970s, and they make up a certain share of the population."
+   },
+   {
+    "name": "Buddhism",
+    "percent": 1,
+    "description": "Buddhists are mainly foreign workers from Sri Lanka, Thailand, Nepal and elsewhere; they are few in number and carry out religious activities in private places."
+   }
+  ],
+  "background": "Oman accepted Islam in the 7th century and from the 8th century became a center of Ibadism, and Ibadi imams led the interior for a long time. In the 17th-19th centuries Oman built a maritime empire stretching from Zanzibar in East Africa to the Persian Gulf, with close contacts with merchants all around the Indian Ocean, forming a tolerant religious tradition. After Sultan Qaboos took the throne in 1970 he promoted modernization, and oil revenue attracted large numbers of foreign workers from South and Southeast Asia, bringing Christianity, Hinduism and Buddhism."
+ },
+ "language": {
+  "official": "Arabic is the official language.",
+  "ranking": [
+   {
+    "name": "Arabic",
+    "percent": 60,
+    "description": "Arabic was already the main language of Oman before the arrival of Islam, and after the 7th century it became the language of religion and government with Islam. Omani citizens almost all have Arabic as their mother tongue, but because the foreign population makes up about forty percent, the share of Arabic speakers is about sixty percent. The southern province of Dhofar has also preserved ancient South Arabian languages such as Mehri and Jibbali.",
+    "greeting": "مرحبا",
+    "pronunciation": "MAR-ha-ba"
+   },
+   {
+    "name": "Malayalam",
+    "percent": 8,
+    "description": "Malayalam is the language of the state of Kerala in southern India; after the oil economy took off in the 1970s, large numbers of Keralites came to Oman to work in construction, retail and services, making Malayalam one of the languages of Oman's largest foreign communities.",
+    "greeting": "നമസ്കാരം",
+    "pronunciation": "na-mas-KAA-ram"
+   },
+   {
+    "name": "Urdu",
+    "percent": 6,
+    "description": "Urdu is used mainly by Pakistani foreign workers. In addition, Oman's Baloch community has a long history: from 1784 to 1958 Oman ruled the port of Gwadar in Pakistani Balochistan, and many Baloch joined the Omani army and settled, so South Asian languages have a deep foundation in Oman.",
+    "greeting": "السلام علیکم",
+    "pronunciation": "as-sa-LAA-mu a-LAI-kum"
+   }
+  ],
+  "history": "Oman has been an Arabic-speaking region since ancient times, while the southern Dhofar has preserved pre-Islamic South Arabian languages such as Mehri and Jibbali. In the 17th-19th centuries Oman's maritime empire extended to East Africa, and Swahili is still used today in some Omani families that returned from Zanzibar. After 1970 the oil economy attracted large numbers of South Asian workers, and English and the languages of India and Pakistan are very common in business."
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "Shuwa (slow-roasted lamb)",
+    "localName": "شواء (Shuwa)",
+    "description": "Lamb or goat meat is marinated with chili, cumin, turmeric, garlic and vinegar, wrapped in banana leaves or palm leaves, buried in a pit together with heated charcoal, and slow-roasted for a day or two until the meat is tender.",
+    "history": "Shuwa is Oman's most important festive dish, traditionally made at Eid al-Fitr and Eid al-Adha, when a village shares one large pit and each household puts its wrapped meat in to be roasted together. Eid al-Adha commemorates the story of the Prophet Ibrahim's sacrifice, and families slaughter a sheep and share it with relatives, friends and the poor. This method of slow-roasting in a pit comes from ancient Arab nomadic tradition and embodies the spirit of communal sharing.",
+    "wiki": "Shuwa"
+   },
+   {
+    "name": "Harees",
+    "localName": "هريس (Harees)",
+    "description": "Wheat grains are stewed for a long time with chicken or lamb, then beaten repeatedly with a wooden paddle into a thick porridge-like consistency and seasoned with butter and cinnamon; the texture is creamy.",
+    "history": "Harees is a long-established dish of the Arabian Peninsula, already recorded in the cookbooks of 10th-century Baghdad. In Oman it is closely tied to Islamic religious festivals and is most common at the iftar meals of Ramadan and at Eid al-Fitr and weddings. Making it takes hours of constant stirring, often done jointly by the women of the family, symbolizing reunion and sharing.",
+    "wiki": "Harees",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Armenian_Harisa.JPG/960px-Armenian_Harisa.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Armenian_Harisa.JPG",
+    "imageCredit": "Ketone16・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "Majboos",
+    "localName": "مجبوس (Majboos)",
+    "description": "Rice is cooked together with lamb or chicken stewed with spices such as cardamom, cinnamon, dried black limes and saffron, so that the rice absorbs the juices and the aroma of the spices.",
+    "history": "The methods and spices of spiced rice mostly came from the Indian Ocean trade; Oman was long a maritime trade hub among India, Persia and East Africa, and the influence of Indian biryani is evident. Dried black limes are limes that have been sun-dried, a spice characteristic of Oman and the Gulf region. It is the most common staple of the Omani family lunch and an essential dish for entertaining guests.",
+    "wiki": "Kabsa",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Machboos_%28cropped%29.JPG/960px-Machboos_%28cropped%29.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Machboos_(cropped).JPG",
+    "imageCredit": "Miansari66・CC0・Wikimedia Commons"
+   },
+   {
+    "name": "Omani halwa",
+    "localName": "حلوى عمانية (Omani halwa)",
+    "description": "Sugar, cornstarch, ghee, rose water, saffron, cardamom and nuts are cooked for several hours in a large copper pot to make a brown, elastic, chewy sweet.",
+    "history": "Making Omani halwa requires long, constant stirring, and traditionally male craftsmen cook it over wood fires in large pots, with long-established shops handed down through generations in various places. Saffron and rose water came from Persian and Gulf trade respectively, reflecting Oman's maritime trading history. When entertaining guests, the host offers halwa first and then coffee, and it is also an indispensable sweet at weddings and festivals.",
+    "wiki": "Halva",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Orient_sweets_%28special_halva%29_Samarkand%2C_Siyab.jpg/960px-Orient_sweets_%28special_halva%29_Samarkand%2C_Siyab.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Orient_sweets_(special_halva)_Samarkand,_Siyab.jpg",
+    "imageCredit": "Shuhrenataxmedov・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "Arabic coffee (qahwa)",
+    "localName": "قهوة (Qahwa)",
+    "description": "Lightly roasted coffee beans are ground and boiled with cardamom, sometimes with saffron or rose water added, and served to guests in small handleless cups, often with dates.",
+    "history": "Coffee came to the Arabian Peninsula from Yemen in the 15th century and became central to hospitality etiquette in Oman. The host pours the coffee from the pot with the right hand, and a guest who does not want another cup gently shakes the cup to signal this. In 2015 UNESCO inscribed Arabic coffee as an intangible cultural heritage of humanity shared by Oman, Saudi Arabia, the UAE and Qatar.",
+    "wiki": "Arabic coffee",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/49/A_dallah_a_traditional_Arabic_coffee_pot_with_cups_and_coffee_beans.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:A_dallah_a_traditional_Arabic_coffee_pot_with_cups_and_coffee_beans.jpg",
+    "imageCredit": "Canbel・CC BY-SA 4.0・Wikimedia Commons"
+   }
+  ]
+ }
+}

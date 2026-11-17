@@ -1,0 +1,106 @@
+{
+ "iso": "NIC",
+ "capital": "Managua",
+ "summary": "Nicaragua is the largest country in Central America, with Lake Nicaragua and numerous volcanoes, and has experienced long periods of civil war and political turmoil.",
+ "religion": {
+  "ranking": [
+   {
+    "name": "Catholicism",
+    "percent": 50,
+    "description": "After the Spanish conquistador Córdoba founded the cities of Granada and León in 1524, Catholicism came with colonial rule to the indigenous societies of the Pacific coast, and the Church dominated education and social life for three hundred years. After independence Catholicism remained the mainstream; liberation theology arose in the 1970s, some priests took part in the Sandinista Revolution, and after 1979 priests even served as government ministers. In recent years relations between the Ortega government and the Church have deteriorated, bishops were arrested and clergy expelled after 2018, and the Catholic share has gradually declined."
+   },
+   {
+    "name": "Evangelical",
+    "percent": 33,
+    "description": "Evangelicalism was first introduced in 1849 by the German Moravian Brethren to the Miskito and Creole communities of the Caribbean coast, so the east has long been a Protestant region. In the second half of the 20th century, especially after the 1972 Managua earthquake and the civil war of the 1980s, Pentecostal and evangelical churches arose in great numbers in the west, offering community support and spiritual comfort, and their share grew from single digits to over thirty percent."
+   },
+   {
+    "name": "No religion",
+    "percent": 14,
+    "description": "The non-religious population has gradually increased since the 1990s, mainly educated young people in cities. The socialist ideas of the Sandinista government in the 1980s, the social upheaval caused by the civil war, and the fierce conflict between the government and the Catholic Church in recent years have all caused some people to lose trust in religious institutions."
+   }
+  ],
+  "background": "The Spanish conquered Nicaragua in the 1520s, Catholicism became the state religion of the colony, and the indigenous people of the Pacific coast were forced to convert. The Caribbean coast was under British influence in the 17th-19th centuries, and after 1849 the Moravian Church preached there, creating a distribution of Protestantism in the east and Catholicism in the west. Liberation theology played an important role in the Sandinista Revolution of 1979. From the end of the 20th century evangelicals grew rapidly, and after 2018 conflict between the government and the Catholic Church intensified."
+ },
+ "language": {
+  "official": "Spanish is the official language, and the indigenous languages and Creole English of the Caribbean Coast autonomous regions also have official status.",
+  "ranking": [
+   {
+    "name": "Spanish",
+    "percent": 95,
+    "description": "Spanish became the colony's language of administration and religion after the Spanish conquest in the 16th century, and indigenous languages gradually disappeared along the Pacific coast, such as the Nahuat dialects and Chorotega that were once spoken. After independence in 1821 Spanish became the sole official language of the country, used throughout education and the media, so almost the entire population has it as a mother tongue.",
+    "greeting": "Hola",
+    "pronunciation": "OH-la"
+   },
+   {
+    "name": "Miskito",
+    "percent": 2,
+    "description": "Miskito is the language of the Miskito people of the Caribbean coast and belongs to the Misumalpan family. In the 17th-19th centuries Britain established the \"Mosquito Coast\" protectorate there, and the Miskito allied with Britain and were not assimilated by the Spanish, so their language was preserved. The Autonomy Statute of 1987 recognized the official status of the indigenous languages of the Caribbean coast in the autonomous regions and promoted bilingual education.",
+    "greeting": "Naksa",
+    "pronunciation": "NAK-sa"
+   },
+   {
+    "name": "Creole English",
+    "percent": 1,
+    "description": "Creole English developed from African slaves brought to the Caribbean coast after the 17th century and immigrants from British Caribbean areas such as Jamaica, and is concentrated in Bluefields and the Corn Islands. Because Britain long controlled the area, which was formally incorporated into Nicaragua only in 1894, the local residents preserved English-language culture.",
+    "greeting": "Hello",
+    "pronunciation": "heh-LOH"
+   }
+  ],
+  "history": "Before the Spanish conquest, Nicaragua had indigenous languages such as Nahuat and Chorotega. From the 16th century Spanish became the mainstream, and the indigenous languages of the Pacific coast gradually disappeared during the colonial period. The Caribbean coast, under British influence, has kept Miskito and Creole English to the present. In 1894 the Zelaya government incorporated the Caribbean coast into the nation and promoted Hispanicization. The Autonomy Statute of 1987 recognized the official status of the indigenous languages and Creole English in the autonomous regions."
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "Gallo pinto",
+    "localName": "Gallo pinto",
+    "description": "Rice cooked the day before is stir-fried with red beans, onion, sweet pepper and garlic until the rice takes on the color of the beans, and is often served for breakfast with fried plantain, eggs and country cheese.",
+    "history": "Rice was introduced by the Spanish colonists, while beans have been the staple of Central America's indigenous peoples for thousands of years; the two combined to become gallo pinto, whose name means \"spotted rooster,\" describing the speckled look of the mixed rice and beans. Nicaragua and Costa Rica have long argued over the origin of this dish. The Nicaraguan version uses small red beans and is a national dish eaten for breakfast in almost every household every day.",
+    "wiki": "Gallo pinto",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Gallo_Pinto.jpg/960px-Gallo_Pinto.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Gallo_Pinto.jpg",
+    "imageCredit": "Gmasmcal・CC BY 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "Nacatamal",
+    "localName": "Nacatamal",
+    "description": "Masa dough enriched with lard is wrapped around marinated pork, rice, potato, tomato, onion and mint, wrapped in banana leaf and steamed for several hours.",
+    "history": "The corn tamale originated with the indigenous peoples of pre-Columbian Central America, and the name comes from the Nahuatl \"nacatl tamalli\" (meat tamale). After the Spanish brought pork and rice, the fillings became richer. In Nicaragua nacatamal is traditionally eaten on weekend mornings with coffee, and it is also a dish the whole family makes together at Christmas and important festivals.",
+    "wiki": "Nacatamal",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Nicaraguan_Nacatamal.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Nicaraguan_Nacatamal.jpg",
+    "imageCredit": "MiguelRamirez77・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "Indio viejo",
+    "localName": "Indio viejo",
+    "description": "Corn dough or crumbled tortillas are stewed with shredded boiled beef, onion, sweet pepper and tomato, with sour orange juice and broth, into a thick, slightly sour paste.",
+    "history": "\"Indio viejo\" means \"old Indian,\" and according to folk tales the indigenous people served this dish to the conquerors when the Spanish arrived, or the name is linked to a story of indigenous people hiding meat; accounts differ. The dish combines indigenous corn cookery with the beef and citrus brought by the Spanish, and is regarded as a representative dish reflecting the blending of colonial cultures; it often appears at family lunches.",
+    "wiki": "Indio viejo",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Indio-viejo-nicaraguense.jpg/960px-Indio-viejo-nicaraguense.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Indio-viejo-nicaraguense.jpg",
+    "imageCredit": "MiguelRamirez77・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "Vigorón",
+    "localName": "Vigorón",
+    "description": "Boiled cassava and fried pork rinds are laid on a banana leaf and topped with a salad of cabbage, tomato and vinegar, and eaten directly with the hands.",
+    "history": "Vigorón originated in the city of Granada; the usual account is that it became popular around 1914 when a local woman sold it in the central park, and the name is said to have been taken from an advertisement for a tonic of that time. Cassava is a traditional indigenous crop, while pork came from the Spanish colonists. Today there are still many vigorón stalls around Granada's central park, and it is also a representative snack at festivals and markets across the country.",
+    "wiki": "Vigorón",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/VIGORON.JPG/960px-VIGORON.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:VIGORON.JPG",
+    "imageCredit": "Nicaraguan food・Public domain・Wikimedia Commons"
+   },
+   {
+    "name": "Chicha de maíz",
+    "localName": "Chicha de maíz",
+    "description": "Corn is soaked and ground, boiled with water and sugar, and then left to ferment naturally; sometimes pomegranate juice or food coloring is added to turn it pink, and the taste is slightly sour and sweet.",
+    "history": "Chicha is a traditional drink brewed from corn by the indigenous peoples of the Americas for thousands of years, playing an important role in religious rituals and agricultural ceremonies; after the Spanish arrived, the Church saw it as associated with pagan rites and at one time restricted it. In Nicaragua the modern chicha is mostly a sweet drink low in or free of alcohol, often sold in markets and homes, and is also a drink offered to everyone at festivals and religious processions.",
+    "wiki": "Chicha",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/17/Chicha_with_Pipe%C3%B1o.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Chicha_with_Pipe%C3%B1o.jpg",
+    "imageCredit": "simenon simenon・CC BY-SA 2.0・Wikimedia Commons"
+   }
+  ]
+ }
+}

@@ -25,7 +25,7 @@ export default postHandler(async (body) => {
 - imageQuery 必須是英文、具體且容易在維基百科找到對應條目的名稱（例如 "Great Pyramid of Giza"、"Battle of Actium"），不要用抽象詞。
 - 只回傳 JSON。`;
 
-  const text = await generate({ contents: [{ role: "user", parts: [{ text: prompt }] }], json: true, temperature: 0.7 });
+  const text = await generate({ contents: [{ role: "user", parts: [{ text: prompt }] }], json: true, temperature: 0.7, lang: body.lang });
   const data = (parseJson(text) ?? {}) as { title?: unknown; slides?: unknown };
 
   const slides = (Array.isArray(data.slides) ? data.slides : [])

@@ -3,38 +3,43 @@ import { useLocation } from "react-router-dom";
 import { AlertTriangle, ArrowUp, Bot, Eraser, MapPin, Quote, Sparkles, X } from "lucide-react";
 import { gsap, prefersReducedMotion, useGSAP } from "../../lib/motion";
 import { clearChat, closeChat, sendChat, setChatContext, toggleChat, useChat } from "../../lib/ai";
-import { countryByIso } from "../../data/world";
-import { figures } from "../../data/figures";
-import { buildings } from "../../data/buildings";
+import { countryByIso, countryName } from "../../data/world";
+import { useBuildings, useFigures } from "../../data/localized";
+import { useLang, useT } from "../../lib/i18n";
 import Markdown from "./Markdown";
 
 const PANEL =
   "border border-white/15 bg-[#113650]/97 shadow-[0_24px_60px_-20px_rgba(4,18,30,0.75),inset_0_1px_0_rgba(255,255,255,0.18)]";
 
-/** 依目前網址推出「使用者在看什麼」，作為對話情境 */
+/** 依目前網址推出「使用者在看什麼」，作為對話情境（情境給模型看用中文，標籤依介面語言） */
 function useAiContext(): { label: string; context: string; country?: string } {
   const { pathname, search } = useLocation();
+  const lang = useLang();
+  const t = useT();
+  const { figures } = useFigures();
+  const buildings = useBuildings();
   return useMemo(() => {
     const q = new URLSearchParams(search);
     if (pathname.startsWith("/figures")) {
       const f = figures.find((x) => x.id === q.get("focus"));
       return f
         ? { label: f.name, context: `人物關係頁，正在查看歷史人物「${f.name}」（${f.role}）` }
-        : { label: "人物關係", context: "人物關係頁" };
+        : { label: t({ "zh-TW": "人物關係", en: "Figures", ja: "人物相関" }), context: "人物關係頁" };
     }
     if (pathname.startsWith("/buildings")) {
       const id = pathname.split("/")[2];
       const b = buildings.find((x) => x.id === id);
       return b
         ? { label: b.name, context: `建築 3D 頁，正在查看「${b.name}」（${b.location}，${b.era}）` }
-        : { label: "建築 3D", context: "建築 3D 頁" };
+        : { label: t({ "zh-TW": "建築 3D", en: "3D Buildings", ja: "3D 建築" }), context: "建築 3D 頁" };
     }
-    if (pathname.startsWith("/stories")) return { label: "歷史故事", context: "歷史故事頁" };
+    if (pathname.startsWith("/stories")) return { label: t({ "zh-TW": "歷史故事", en: "Stories", ja: "歴史物語" }), context: "歷史故事頁" };
     const c = countryByIso.get(q.get("country") ?? "");
     return c
-      ? { label: c.zh, context: `地球頁，正在查看「${c.zh}」（${c.en}）的歷史與文化`, country: c.zh }
-      : { label: "地球", context: "地球首頁（世界地圖）" };
-  }, [pathname, search]);
+      ? { label: countryName(c, lang), context: `地球頁，正在查看「${c.zh}」（${c.en}）的歷史與文化`, country: countryName(c, lang) }
+      : { label: t({ "zh-TW": "地球", en: "Globe", ja: "地球" }), context: "地球首頁（世界地圖）" };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pathname, search, lang, figures, buildings]);
 }
 
 /** 桌機上避開各頁右側資訊面板，讓浮動按鈕不遮住面板內容 */
@@ -47,11 +52,17 @@ function useFabShift() {
   return "md:right-5";
 }
 
-const SUGGESTIONS = ["文藝復興為什麼從義大利開始？", "絲路對東西方交流有什麼影響？", "第一次世界大戰的導火線是什麼？"];
+const SUGGESTIONS = {
+  "zh-TW": ["文藝復興為什麼從義大利開始？", "絲路對東西方交流有什麼影響？", "第一次世界大戰的導火線是什麼？"],
+  en: ["Why did the Renaissance begin in Italy?", "How did the Silk Road shape East–West exchange?", "What sparked the First World War?"],
+  ja: ["ルネサンスはなぜイタリアで始まったのか？", "シルクロードは東西交流にどんな影響を与えたか？", "第一次世界大戦の引き金は何だったのか？"],
+};
 
 export default function GlobalChat() {
   const { open, pending, messages } = useChat();
   const { label, context, country } = useAiContext();
+  const lang = useLang();
+  const t = useT();
   const fabShift = useFabShift();
   const { pathname, search } = useLocation();
   const [input, setInput] = useState("");
@@ -120,8 +131,8 @@ export default function GlobalChat() {
         ref={fabRef}
         onClick={toggleChat}
         className={`fixed right-4 bottom-[4.5rem] z-50 grid size-13 place-items-center rounded-full border border-white/30 bg-[linear-gradient(145deg,#4fa3cf,#1d5a80)] text-white shadow-[0_14px_30px_-10px_rgba(5,25,40,0.8),inset_0_1px_0_rgba(255,255,255,0.5)] transition hover:scale-105 hover:brightness-110 md:bottom-5 ${fabShift} ${open ? "max-sm:hidden" : ""} ${pathname === "/" && search.includes("country=") ? "max-lg:hidden" : ""}`}
-        aria-label={open ? "關閉 AI 助理" : "開啟 AI 歷史助理"}
-        title="AI 歷史助理"
+        aria-label={open ? t({ "zh-TW": "關閉 AI 助理", en: "Close AI assistant", ja: "AI アシスタントを閉じる" }) : t({ "zh-TW": "開啟 AI 歷史助理", en: "Open AI history assistant", ja: "AI 歴史アシスタントを開く" })}
+        title={t({ "zh-TW": "AI 歷史助理", en: "AI history assistant", ja: "AI 歴史アシスタント" })}
       >
         {open ? <X className="size-6" /> : <Sparkles className="size-6" strokeWidth={2} />}
       </button>
@@ -130,7 +141,7 @@ export default function GlobalChat() {
         <div
           ref={panelRef}
           role="dialog"
-          aria-label="AI 歷史助理"
+          aria-label={t({ "zh-TW": "AI 歷史助理", en: "AI history assistant", ja: "AI 歴史アシスタント" })}
           className={`${PANEL} fixed z-50 flex flex-col overflow-hidden rounded-[26px] text-white max-sm:inset-2 max-sm:bottom-[4.25rem] sm:right-5 sm:bottom-[5.5rem] sm:h-[min(620px,calc(100dvh-8rem))] sm:w-[400px] md:bottom-20`}
         >
           <header className="flex shrink-0 items-center gap-3 border-b border-white/10 px-4 py-3">
@@ -138,22 +149,23 @@ export default function GlobalChat() {
               <Bot className="size-5" />
             </span>
             <div className="min-w-0 flex-1">
-              <p className="text-[15px] leading-tight font-bold">AI 歷史助理</p>
+              <p className="text-[15px] leading-tight font-bold">{t({ "zh-TW": "AI 歷史助理", en: "AI history assistant", ja: "AI 歴史アシスタント" })}</p>
               <p className="mt-0.5 flex items-center gap-1 truncate text-[11.5px] text-white/65">
                 <MapPin className="size-3 shrink-0" />
-                目前位置：{label}
+                {t({ "zh-TW": "目前位置：", en: "Viewing: ", ja: "現在地：" })}
+                {label}
               </p>
             </div>
             <button
               onClick={clearChat}
               disabled={!messages.length}
               className="grid size-8 place-items-center rounded-full text-white/75 transition hover:bg-white/10 hover:text-white disabled:opacity-35"
-              aria-label="清除對話"
-              title="清除對話"
+              aria-label={t({ "zh-TW": "清除對話", en: "Clear chat", ja: "会話を消去" })}
+              title={t({ "zh-TW": "清除對話", en: "Clear chat", ja: "会話を消去" })}
             >
               <Eraser className="size-4" />
             </button>
-            <button onClick={closeChat} className="grid size-8 place-items-center rounded-full text-white/75 transition hover:bg-white/10 hover:text-white" aria-label="關閉對話視窗" title="關閉">
+            <button onClick={closeChat} className="grid size-8 place-items-center rounded-full text-white/75 transition hover:bg-white/10 hover:text-white" aria-label={t({ "zh-TW": "關閉對話視窗", en: "Close chat", ja: "チャットを閉じる" })} title={t({ "zh-TW": "關閉", en: "Close", ja: "閉じる" })}>
               <X className="size-[18px]" />
             </button>
           </header>
@@ -162,9 +174,12 @@ export default function GlobalChat() {
             {!messages.length && (
               <div className="py-4 text-center">
                 <Sparkles className="mx-auto size-8 text-glow" />
-                <p className="mt-3 text-[15px] font-semibold">問我任何歷史問題</p>
+                <p className="mt-3 text-[15px] font-semibold">{t({ "zh-TW": "問我任何歷史問題", en: "Ask me anything about history", ja: "歴史について何でも聞いてください" })}</p>
                 <div className="mt-4 flex flex-col gap-2">
-                  {(country ? [`${country}歷史上最重要的轉折是什麼？`, ...SUGGESTIONS.slice(0, 2)] : SUGGESTIONS).map((s) => (
+                  {(country
+                    ? [t({ "zh-TW": `${country}歷史上最重要的轉折是什麼？`, en: `What were the key turning points in the history of ${country}?`, ja: `${country}の歴史で最も重要な転換点は何か？` }), ...SUGGESTIONS[lang].slice(0, 2)]
+                    : SUGGESTIONS[lang]
+                  ).map((s) => (
                     <button
                       key={s}
                       onClick={() => submit(s)}
@@ -184,7 +199,7 @@ export default function GlobalChat() {
                     <div className="max-w-[88%] rounded-2xl rounded-br-md bg-white/92 px-3.5 py-2.5 text-[13.5px] leading-relaxed text-deep-950">
                       <p className="mb-1 flex items-center gap-1 text-[11.5px] font-semibold text-deep-700">
                         <Quote className="size-3" />
-                        請解釋這段文字
+                        {t({ "zh-TW": "請解釋這段文字", en: "Explain this passage", ja: "この文章を解説して" })}
                       </p>
                       <p className="line-clamp-5 border-l-2 border-deep-600/40 pl-2 text-deep-900">{m.content}</p>
                     </div>
@@ -211,7 +226,7 @@ export default function GlobalChat() {
                   <span className="size-1.5 rounded-full bg-white" />
                   <span className="size-1.5 rounded-full bg-white" />
                 </div>
-                AI 思考中…
+                {t({ "zh-TW": "AI 思考中…", en: "Thinking…", ja: "AI が考え中…" })}
               </div>
             )}
           </div>
@@ -236,21 +251,21 @@ export default function GlobalChat() {
                 }}
                 rows={1}
                 maxLength={2000}
-                placeholder={messages.length ? "繼續追問…" : "輸入你的歷史問題…"}
+                placeholder={messages.length ? t({ "zh-TW": "繼續追問…", en: "Ask a follow-up…", ja: "続けて質問…" }) : t({ "zh-TW": "輸入你的歷史問題…", en: "Type a history question…", ja: "歴史の質問を入力…" })}
                 className="max-h-28 min-h-[36px] flex-1 resize-none bg-transparent py-1.5 text-[14px] leading-relaxed text-white outline-none placeholder:text-white/45"
-                aria-label="輸入問題"
+                aria-label={t({ "zh-TW": "輸入問題", en: "Your question", ja: "質問を入力" })}
               />
               <button
                 type="submit"
                 disabled={!input.trim() || pending}
                 className="grid size-9 shrink-0 place-items-center rounded-full bg-white text-deep-800 transition hover:bg-glow disabled:bg-white/20 disabled:text-white/50"
-                aria-label="送出"
-                title="送出（Enter）"
+                aria-label={t({ "zh-TW": "送出", en: "Send", ja: "送信" })}
+                title={t({ "zh-TW": "送出（Enter）", en: "Send (Enter)", ja: "送信（Enter）" })}
               >
                 <ArrowUp className="size-[18px]" strokeWidth={2.6} />
               </button>
             </div>
-            <p className="mt-1.5 text-center text-[10.5px] text-white/45">AI 回答可能有誤，重要史實請再查證</p>
+            <p className="mt-1.5 text-center text-[10.5px] text-white/45">{t({ "zh-TW": "AI 回答可能有誤，重要史實請再查證", en: "AI answers can be wrong — double-check important facts", ja: "AI の回答には誤りが含まれることがあります。重要な史実は確認してください" })}</p>
           </form>
         </div>
       )}

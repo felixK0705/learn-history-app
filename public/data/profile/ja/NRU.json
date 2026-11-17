@@ -1,0 +1,109 @@
+{
+ "iso": "NRU",
+ "capital": "ヤレン（政府所在地、法律上の首都はない）",
+ "summary": "南太平洋に位置する島国で、面積は約21平方キロメートル、世界最小の共和国であり、かつてリン鉱石の採掘で富を築き、1968年に独立した。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "ナウル会衆派教会",
+    "percent": 36,
+    "description": "1888年にドイツがナウルを併合した後、1899年にアメリカ人デラポルト率いる会衆派の宣教師が到着し、彼は聖書をナウル語に翻訳し、学校を設立した。ナウル会衆派教会はこの伝統を受け継ぎ、1968年の独立時に国家と密接な関係を築き、今も最大の教会であり、教会は西部と南部の村落に集中している。"
+   },
+   {
+    "name": "カトリック",
+    "percent": 33,
+    "description": "カトリックの聖心宣教会は1902年に到着し、東部に伝道所と学校を設立して、会衆派と二大教派が長く競合する局面を作った。第二次世界大戦中、日本が島を占領して多数のナウル人をトラック島に移住させた際、カトリックの司祭と信者も同じく苦難を受け、この経験がコミュニティにおけるカトリックの地位を深めた。"
+   },
+   {
+    "name": "神の教会（アッセンブリーズ・オブ・ゴッド、ペンテコステ派）",
+    "percent": 13,
+    "description": "アッセンブリーズ・オブ・ゴッドは、20世紀後期にオーストラリアや太平洋の他の島々から伝わったペンテコステ派の教会で、熱烈な礼拝と音楽で若者を引きつけ、1990年代以降急速に成長した。"
+   },
+   {
+    "name": "ナウル独立教会",
+    "percent": 10,
+    "description": "ナウル独立教会はプロテスタントの伝統に属し、ナウル人自身が指導する地元の教会で、外国の宣教団には属していない。その存在は、人口わずか1万数千人の小国では、教会と家族・地域社会との関係が非常に密接で、信者の多くは家族の伝統に従って異なる教会に属していることを反映している。"
+   },
+   {
+    "name": "無宗教",
+    "percent": 2,
+    "description": "ナウル社会は教会が生活の中心であり、ほぼすべての人がいずれかの教会に属しているため、無宗教と自認する人は非常に少なく、主に少数の若者と外国人居住者である。"
+   }
+  ],
+  "background": "ナウルの先住民は祖先と、「エイジェボン」と呼ばれる女神などの精霊を信仰していた。1888年にドイツがナウルを併合し、1899年に会衆派の宣教師が到来し、1902年にカトリックが伝わり、二大教派はたちまち島民をキリスト教に改宗させた。第一次世界大戦後、ナウルはオーストラリアの委任統治となり、第二次世界大戦では日本に占領され、多くの住民が離島に移住させられた。1968年の独立後もキリスト教は社会の中核であり、各教会は島内の各地区に分布している。"
+ },
+ "language": {
+  "official": "公用語はナウル語と英語である。",
+  "ranking": [
+   {
+    "name": "ナウル語",
+    "percent": 93,
+    "description": "ナウル語はオーストロネシア語族ミクロネシア語派に属し、ナウルの先住民の言語である。島の人口は約1万数千人にすぎず、比較的孤立しているため、ナウル語は日常生活と家庭で一貫して主要な言語であり続けている。1899年に宣教師デラポルトが聖書を翻訳し辞書を編纂して、ナウル語の書記体系を確立した。",
+    "greeting": "Ekamawir omo",
+    "pronunciation": "e-ka-ma-wir o-mo"
+   },
+   {
+    "name": "英語",
+    "percent": 5,
+    "description": "英語は1920年代からのオーストラリアの委任統治期に導入された行政と教育の言語で、1968年の独立後もナウル語とともに公用語とされている。中等教育以上の教育は多くが英語で行われ、政府や商業の文書にも英語が使われるが、英語を家庭言語とする人口は約5％にすぎない。",
+    "greeting": "Hello",
+    "pronunciation": "heh-loh"
+   }
+  ],
+  "history": "ナウル語は島の先住民の話し言葉で、19世紀以前には文字がなかった。1899年のドイツ統治時代に、会衆派の宣教師デラポルトがナウル語をラテン文字で記録し、聖書を翻訳した。第一次世界大戦後はオーストラリア、イギリス、ニュージーランドの共同委任統治となり、英語が行政と学校の言語となった。第二次世界大戦中の日本占領下では、一部の住民が日本語も学んだ。1968年の独立後、ナウル語と英語が並んで公用語とされた。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "ココナッツ・フィッシュ",
+    "localName": "Coconut fish",
+    "description": "新鮮な魚の身を切り分け、ココナッツミルクとライム汁に漬けて生で食べるか、ココナッツミルクとともに煮込む。味はさっぱりしてココナッツの香りがあり、ご飯やパンノキの実とともに食べることが多い。",
+    "history": "ナウルは四方を海に囲まれ、漁業は島民の主要な生業であり続け、ココナッツは島で大量に育つ数少ない作物の一つであり、両者が組み合わさって伝統料理となった。かつてナウル人は環礁のラグーンでミルクフィッシュを養殖し、安定した魚の供給源としていた。今では輸入食品が一般的だが、ココナッツ・フィッシュは家族の集まりや祝祭の代表的な料理であり続けている。",
+    "wiki": "Coconut milk",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Cononut_milk.JPG/960px-Cononut_milk.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Cononut_milk.JPG",
+    "imageCredit": "S Sepp・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "パンダナス（タコノキ）の実",
+    "localName": "Pandanus",
+    "description": "パンダナスの実は多くのくさび形の果弁からなり、果肉の繊維を直接かじって食べるか、煮てつぶして果肉のペーストにし、乾燥させて保存する。",
+    "history": "パンダナスは塩害と干ばつに強く、ナウルのやせたサンゴ質の土壌でも育つため、島で伝統的に最も重要な食べ物の一つである。リン鉱石の採掘以前は、パンダナスのペーストは長く保存でき、干ばつや食料不足の際によく食べられた。20世紀のリン鉱石の採掘によって島の中央部の約8割の土地が破壊され、伝統的な作物が大幅に減ったため、パンダナスはいっそう貴重になった。",
+    "wiki": "Pandanus tectorius",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Pandanus_tectorius.jpg/960px-Pandanus_tectorius.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Pandanus_tectorius.jpg",
+    "imageCredit": "No machine-readable author provided. Marshman~commonswiki as・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "刺身",
+    "localName": "Sashimi",
+    "description": "獲れたてのマグロを薄く切り、醤油とワサビをつけて生で食べる。味は新鮮で甘く、家族の集まりや宴席によく登場する。",
+    "history": "刺身は、1942〜1945年の日本占領期にナウルに伝わった食習慣と一般に考えられており、日本人は島に飛行場や防御施設を建設し、日本料理も持ち込んだ。戦後もナウル人はこの食べ方を保ち、周辺海域にマグロが豊富なため、刺身は島でかなり一般的な料理となり、集まりでよく見られる。",
+    "wiki": "Sashimi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/241109_Shigaraki_ware_Koga_Shiga_pref_Japan01s3.jpg/960px-241109_Shigaraki_ware_Koga_Shiga_pref_Japan01s3.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:241109_Shigaraki_ware_Koga_Shiga_pref_Japan01s3.jpg",
+    "imageCredit": "663highland・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "パンノキの実",
+    "localName": "Breadfruit",
+    "description": "パンノキの実を丸ごと焼くか、切り分けて茹でる。果肉はジャガイモとパンに似た食感でほのかな甘みがあり、魚やココナッツミルクとともに食べる。",
+    "history": "パンノキは太平洋の島々の伝統的な主食で、数千年前にオーストロネシア語族の航海者によって島々の間に広められた。ナウルでは、パンノキとパンダナスはリン鉱石の採掘以前の主な炭水化物源であった。20世紀にリン鉱石がもたらした富によって、輸入米や加工食品が伝統的な作物に取って代わり、深刻な肥満と糖尿病の問題を引き起こしたため、近年政府は伝統作物の栽培の復活を奨励している。",
+    "wiki": "Breadfruit",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Artocarpus_altilis_%28fruit%29.jpg/960px-Artocarpus_altilis_%28fruit%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Artocarpus_altilis_(fruit).jpg",
+    "imageCredit": "Hans Hillewaert・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "炒飯",
+    "localName": "Fried rice",
+    "description": "ご飯を卵、肉類、野菜とともに強火で炒め、醤油で味付けする。量が多く値段が安く、島で最も一般的な外食である。",
+    "history": "20世紀にリン鉱石会社が中国南部や香港から労働者を募集してナウルで働かせ、一部の華人が残って飲食店や商店を営んだ。炒飯はこうしてナウルで最も一般的な外食の一つとなり、島の多くの小さな食堂は華人が経営している。耕作可能な土地が極めて少なく食料の多くを輸入に頼るため、輸入米を中心とする炒飯はナウル人の日常の食事の重要な一部となった。",
+    "wiki": "Fried rice",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Koh_Mak%2C_Thailand%2C_Fried_rice_with_seafood%2C_Thai_fried_rice.jpg/960px-Koh_Mak%2C_Thailand%2C_Fried_rice_with_seafood%2C_Thai_fried_rice.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Koh_Mak,_Thailand,_Fried_rice_with_seafood,_Thai_fried_rice.jpg",
+    "imageCredit": "Vyacheslav Argenberg・CC BY 4.0・Wikimedia Commons"
+   }
+  ]
+ }
+}

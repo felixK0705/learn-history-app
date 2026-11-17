@@ -1,0 +1,127 @@
+{
+ "iso": "NPL",
+ "capital": "Kathmandu",
+ "summary": "A landlocked country on the southern slopes of the Himalayas, with the world's highest peaks including Mount Everest; it is the site of Lumbini, the birthplace of the Buddha, and abolished the monarchy in 2008 to become a federal republic.",
+ "religion": {
+  "ranking": [
+   {
+    "name": "Hinduism",
+    "percent": 81,
+    "description": "Hinduism reached the Kathmandu Valley around the beginning of the Common Era with migrants and dynasties from South Asia, and the Licchavi dynasty of the 4th-9th centuries had already built Shiva temples such as Pashupatinath. In 1768 Prithvi Narayan Shah of the Gorkha dynasty unified Nepal and founded the state on Hindu kingship, and the Muluki Ain (Civil Code) of 1854 regulated society by the caste system, embedding Hindu values among all peoples. Until the monarchy was abolished in 2008 Nepal was the world's only Hindu kingdom; the 2015 constitution made it a secular state, but Hindus still make up more than eighty percent."
+   },
+   {
+    "name": "Buddhism",
+    "percent": 8,
+    "description": "Shakyamuni was born around the 6th-5th century BCE at Lumbini in what is now southern Nepal, and the Newars of the Kathmandu Valley have since ancient times followed a Mahayana Buddhism blended with Tantra. In the northern mountain regions the Sherpa, Tamang, Gurung and other peoples came under Tibetan influence after the 7th century and follow Tibetan Buddhism, and after 1959 Tibetan refugees also moved in. Because the dynasty long had Hinduism as the state religion, and some Buddhists registered as Hindus in the census, the share of Buddhists is only about one tenth."
+   },
+   {
+    "name": "Islam",
+    "percent": 5,
+    "description": "Islam was brought mainly by Kashmiri merchants from northern India from the 15th century, and by Muslim farmers in the southern Terai plains bordering India. Muslims are concentrated in the Terai and have close kinship ties with the Muslims of Bihar and Uttar Pradesh in India, so their share is related to the population structure of the area."
+   },
+   {
+    "name": "Kirat religion",
+    "percent": 3,
+    "description": "The Kirat religion is the traditional religion of the Kirat peoples of the eastern hills, such as the Rai and Limbu, who worship ancestors and nature and transmit their rituals through the scripture Mundhum. These peoples were long assimilated under Hindu kingship, and the ethnic movements after democratization in 1990 led many to re-register as followers of the Kirat religion, to emphasize a cultural identity distinct from Hinduism."
+   },
+   {
+    "name": "Christianity",
+    "percent": 2,
+    "description": "Before 1951 Nepal was closed to the outside world, missionary work was forbidden, and converting to another religion was at one time illegal. After democratization opened the country in 1990, Christianity, especially Pentecostal churches, grew rapidly, with believers mostly from low castes and the minority peoples of the hills, because the churches offered a new identity free of caste discrimination. The 2017 criminal code still prohibits persuading people to convert, so the Christian share, though growing, remains low."
+   }
+  ],
+  "background": "Nepal is the birthplace of the Buddha, and in ancient times Hinduism and Buddhism coexisted for a long time in the Kathmandu Valley. In 1768 the Gorkha dynasty unified Nepal and made Hinduism the state religion, and the Muluki Ain of 1854 regulated all the country's peoples by the caste system. Before 1951 Nepal was closed to the outside world and missionary work by foreign religions was forbidden. After the monarchy was abolished in 2008, the 2015 constitution declared Nepal a secular state, while still protecting Hindu traditions, for example by making the cow the national animal."
+ },
+ "language": {
+  "official": "The official language is Nepali, and each province may designate additional official languages.",
+  "ranking": [
+   {
+    "name": "Nepali",
+    "percent": 45,
+    "description": "Nepali belongs to the Indo-Aryan branch and derives from the language of the Khas people of the west, originally called \"Khas Kura\" or \"Gorkhali.\" After the Gorkha dynasty unified Nepal in 1768 it became the administrative language of the kingdom, and the 20th-century policy of \"one nation, one language\" made it the sole language of education, so Nepali expanded from the mother tongue of about half the population to the common language of the whole country.",
+    "greeting": "नमस्ते",
+    "pronunciation": "na-ma-ste"
+   },
+   {
+    "name": "Maithili",
+    "percent": 11,
+    "description": "Maithili is the language of the eastern Terai plains in the south, historically part of the Mithila kingdom, and is the same as the Maithili of Bihar State in India. In the 14th century the poet Vidyapati wrote in it, giving it a long literary tradition. After the 2015 constitution it became one of the official languages of Madhesh Province, and its share reflects the dense population of the eastern Terai.",
+    "greeting": "प्रणाम",
+    "pronunciation": "pra-naam"
+   },
+   {
+    "name": "Bhojpuri",
+    "percent": 6,
+    "description": "Bhojpuri is spoken in the central and western Terai plains in the south, adjoining Uttar Pradesh and Bihar in India, and its speakers have close kinship and marriage ties with the Bhojpuri-speaking communities of India. Because the Terai was long on the political margin of Nepal, the language had no formal status until it gained recognition at the provincial level after federalism in 2015.",
+    "greeting": "प्रणाम",
+    "pronunciation": "pra-naam"
+   },
+   {
+    "name": "Tamang",
+    "percent": 5,
+    "description": "Tamang belongs to the Tibeto-Burman branch of the Sino-Tibetan family and is the language of the Tamang of the hills around the Kathmandu Valley. The Tamang historically followed Tibetan Buddhism and long supplied labor and porters to the dynasty. After 1990 the ethnic movement promoted the use of Tamang in schools and broadcasting, but many young people have switched to Nepali.",
+    "greeting": "Fyafulla",
+    "pronunciation": "fya-ful-la"
+   },
+   {
+    "name": "Newar",
+    "percent": 3,
+    "description": "Newar (also called Nepal Bhasa) is the language of the Newars, the indigenous people of the Kathmandu Valley; by the 14th century there was already a large body of documents, and it was the court language of the Malla dynasty. After the Gorkha conquest of the valley in 1768 Newar was suppressed, and in the early 20th century the Rana regime further restricted its official use and publication, so the number of speakers gradually shrank; today it is preserved mainly in the old town districts within the valley.",
+    "greeting": "ज्वजलपा",
+    "pronunciation": "jwa-ja-la-pa"
+   }
+  ],
+  "history": "Nepal has more than a hundred languages belonging to the two major families of Indo-Aryan and Tibeto-Burman. Newar of the Kathmandu Valley was once the cultural language of the Malla dynasty and left a large body of ancient texts. After the Gorkha dynasty's unification in 1768 Nepali became the official language, and a single-language policy was pursued. After democratization in 1990 minorities demanded language rights, and the 2015 constitution recognized all mother tongues as national languages and allowed each province to choose its own official languages."
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "Dal bhat (lentil soup and rice)",
+    "localName": "दाल भात (Dal bhat)",
+    "description": "Rice is served with dal (lentil soup), along with vegetable curry (tarkari), pickles (achar) and greens; refills are offered, and it is mixed and eaten with the right hand.",
+    "history": "Dal bhat is a food shared across South Asia and has continued in Nepal for hundreds of years, the standard meal for most households twice a day. Because refills are unlimited, a saying circulates among mountain porters, \"Dal bhat power, 24 hour,\" describing the stamina it provides. In high mountain areas rice was an expensive crop, and being able to eat rice every day was regarded as a sign of a prosperous life.",
+    "wiki": "Dal bhat"
+   },
+   {
+    "name": "Momo (Nepali dumplings)",
+    "localName": "म:म: (Momo)",
+    "description": "Dough wrappers are filled with water buffalo meat, chicken or vegetables, pinched into half-moon shapes or round pleated shapes and steamed, then eaten with a tomato-sesame chili sauce; there are also fried and soup versions.",
+    "history": "Momo came from Tibet and is generally thought to have been introduced by the Newar merchants of the Kathmandu Valley during their long trade with Lhasa. The Newars added water buffalo meat and spices, developing the Nepali flavor. After 1959 the large influx of Tibetan refugees made momo even more widespread, and today it is Nepal's most popular street snack, with momo shops found everywhere in the cities.",
+    "wiki": "Momo (food)",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Momo_nepal.jpg/960px-Momo_nepal.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Momo_nepal.jpg",
+    "imageCredit": "Kushal Goyal・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "Sel roti (ring-shaped sweet rice bread)",
+    "localName": "सेल रोटी (Sel roti)",
+    "description": "Rice is soaked and ground into a batter, mixed with sugar, ghee and spices, squeezed by hand into a ring shape and fried in oil until golden; the texture is crisp outside, soft inside and slightly sweet.",
+    "history": "Sel roti is a traditional food of Nepali Hindu festivals, especially Dashain and Tihar in the autumn, when every household makes large quantities and shares them with relatives and friends. It also often appears at weddings and rituals as an offering to the gods. Because rice was once quite precious in the hills, sel roti was in the past eaten only at important festivals.",
+    "wiki": "Sel roti",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Sel_Roti.jpg/960px-Sel_Roti.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Sel_Roti.jpg",
+    "imageCredit": "Swapnil Acharya・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "Dhindo",
+    "localName": "ढिंडो (Dhindo)",
+    "description": "Buckwheat, millet or maize flour is sprinkled little by little into boiling water and stirred constantly with a wooden paddle into a thick paste, eaten with lentil soup, greens or pickles.",
+    "history": "Dhindo is a traditional staple of the mountains of central and western Nepal; in high-altitude areas unsuited to growing rice, people lived on cold-hardy buckwheat and millet. After rice became widespread in the 20th century, dhindo was for a time seen as a symbol of poverty. In recent years, with the healthy-eating trend and a renewed appreciation of ethnic culture, restaurants in Kathmandu have also begun to serve it, and it has become a dish representing mountain culture.",
+    "wiki": "Dhindo",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Dhindo_by_Ganesh.jpeg/960px-Dhindo_by_Ganesh.jpeg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Dhindo_by_Ganesh.jpeg",
+    "imageCredit": "User:Ganesh Paudel・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "Yomari (steamed sweet dumpling)",
+    "localName": "योमरी (Yomari)",
+    "description": "Rice-flour dough is shaped like a fish or a pointed cone and filled with a sweet filling of molasses (chaku) and sesame, or a sesame-milk filling, and steamed.",
+    "history": "Yomari is a traditional sweet of the Newars of the Kathmandu Valley, made at the \"Yomari Punhi\" festival at the full moon in December each year to celebrate the rice harvest. The Newars believe it brings a bountiful harvest and offer yomari to the granary deity. In the Newar language the name means \"beloved bread,\" and it is a festive food unique to Newar culture.",
+    "wiki": "Yomari",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Yomari_double.jpg/960px-Yomari_double.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Yomari_double.jpg",
+    "imageCredit": "Raunak Maskay・CC BY-SA 4.0・Wikimedia Commons"
+   }
+  ]
+ }
+}

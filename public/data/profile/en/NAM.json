@@ -1,0 +1,127 @@
+{
+ "iso": "NAM",
+ "capital": "Windhoek",
+ "summary": "A country in southwestern Africa with the Namib Desert and the Skeleton Coast. It was a German colony and was later ruled by South Africa, becoming independent in 1990.",
+ "religion": {
+  "ranking": [
+   {
+    "name": "Lutheranism",
+    "percent": 48,
+    "description": "In 1870 missionaries of the Finnish Missionary Society arrived in Ovamboland in the north, translating the Bible into Oshiwambo and opening schools, which rooted Lutheranism deeply among the Ovambo, the most numerous people; in the south the German Rhenish Mission had been active since 1842. After 1884 German colonial rule also strengthened the position of Lutheranism. In the 1970s the Lutheran churches openly opposed South African apartheid rule and were closely tied to the independence movement, and so Lutheranism is today the largest religion."
+   },
+   {
+    "name": "Catholicism",
+    "percent": 20,
+    "description": "Catholic missionaries entered German South West Africa around 1896, and orders such as the Oblates of Mary Immaculate established mission stations and schools in the Kavango River area and the center. Because large areas of the north had already been cultivated by the Lutheran missions, Catholicism is concentrated mainly in the northeastern Kavango and Zambezi regions and in cities such as Windhoek."
+   },
+   {
+    "name": "Other Christianity (Anglican, Dutch Reformed, Pentecostal, etc.)",
+    "percent": 20,
+    "description": "The Anglican Church preaches mainly in places such as Ongwediva in the north, while the Dutch Reformed Church came with white South Africans and Afrikaans-speaking groups and expanded after South Africa replaced German rule in 1915. Pentecostal and charismatic churches grew rapidly after independence in 1990, attracting urban youth."
+   },
+   {
+    "name": "Traditional beliefs",
+    "percent": 5,
+    "description": "Before the arrival of Christianity, the peoples of Namibia believed in ancestors and a supreme god; for example, the Herero communicate with ancestors before the family's \"sacred fire,\" which is still kept in some families today, and the San also maintain traditional hunting beliefs. Because missionary activity has a history of more than a hundred and fifty years, people who follow purely traditional religion are now few, and most people keep traditional ideas alongside Christianity."
+   },
+   {
+    "name": "No religion",
+    "percent": 3,
+    "description": "In Namibia the church was at the heart of society during colonization and the independence struggle, so very few people identify with no religion at all, mainly young highly educated people in cities such as Windhoek and some white residents."
+   }
+  ],
+  "background": "The peoples of Namibia originally believed in ancestors and a supreme god, the Herero's worship of the sacred fire being one example. In the 19th century the German Rhenish Mission and the Finnish mission entered successively, and Lutheranism took root in the south and among the Ovambo in the north. Germany colonized the land in 1884 and in 1904-1908 carried out a massacre of the Herero and Nama; after 1915 it came under South African rule with apartheid. The churches played an important role in the anti-apartheid struggle and the independence movement of 1990, so that Christians make up more than ninety percent of the population."
+ },
+ "language": {
+  "official": "The official language is English.",
+  "ranking": [
+   {
+    "name": "Oshiwambo",
+    "percent": 49,
+    "description": "Oshiwambo is the language of the Ovambo of the north and belongs to the Bantu languages; the Ovambo make up about half the national population, so it is the language with the most native speakers. From the 1870s Finnish missionaries translated the Bible and wrote teaching materials in the Ndonga dialect of Oshiwambo, laying the foundation for the written language. After independence in 1990 it was listed as a nationally recognized language and is used for instruction in the lower grades of schools in the north.",
+    "greeting": "Wa lele po（早安）",
+    "pronunciation": "wa le-le po"
+   },
+   {
+    "name": "Khoekhoe (Nama-Damara)",
+    "percent": 11,
+    "description": "Khoekhoe (also called Nama-Damara) belongs to the Khoisan languages and is known for its distinctive click sounds; it is spoken by the Nama and the Damara in the center and south. In the 19th century missionaries of the Rhenish Mission created a writing system for it. The genocide by German troops in 1904-1908 greatly reduced the Nama population, which affected the share of speakers of this language.",
+    "greeting": "!Gâi tses（日安）",
+    "pronunciation": "gai tses"
+   },
+   {
+    "name": "Afrikaans",
+    "percent": 10,
+    "description": "Afrikaans derives from Dutch and was brought in the 19th century by the Orlam, the Rehoboth Basters and white farmers who moved north from the Cape Colony. During South African rule from 1915 to 1990, Afrikaans became the language of administration, education and common use, so it remains a shared language among many groups to this day, most widespread in the south, the center and around Windhoek.",
+    "greeting": "Hallo",
+    "pronunciation": "ha-lo"
+   },
+   {
+    "name": "Otjiherero",
+    "percent": 9,
+    "description": "Otjiherero belongs to the Bantu languages and is the language of the Herero of the center and east; the Himba of the north also speak a closely related dialect. The massacre of the Herero by the German colonial army in 1904-1908 killed about eighty percent of the population, and survivors fled to Botswana; this tragedy greatly reduced the number of Otjiherero speakers, but after the war the people gradually recovered and the language continues today.",
+    "greeting": "Moro",
+    "pronunciation": "mo-ro"
+   },
+   {
+    "name": "English",
+    "percent": 3,
+    "description": "English was chosen as the sole official language at independence in 1990 because it is a neutral international language without the association with South African apartheid rule (Afrikaans was regarded as the language of the oppressor). English is the language of government, higher education and the media, and schools mostly teach in English from grade four, but native English speakers make up only about 3%.",
+    "greeting": "Hello",
+    "pronunciation": "heh-loh"
+   }
+  ],
+  "history": "The oldest languages of Namibia are the Khoisan languages used by the San and the Khoekhoe, and Bantu-speaking groups moved in from the north some hundreds of years ago. In the 19th century missionaries created writing systems for Oshiwambo, Otjiherero and Nama. During German colonial rule from 1884 to 1915 German was the official language, and a small number of people of German descent still use it. After 1915 South African rule made Afrikaans and English the official languages. After independence in 1990 English was chosen as the sole official language to symbolize national unity and to escape colonial rule."
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "Biltong",
+    "localName": "Biltong",
+    "description": "Beef or game such as antelope and kudu is cut into long strips, marinated in vinegar, salt, coriander seed and pepper, and hung up to air-dry; the texture is chewy and savory.",
+    "history": "Biltong originated with Dutch colonists in 17th-century South Africa, who learned from the Khoekhoe the method of preserving meat with salt and drying, and took it as provisions on long migrations; the word \"biltong\" comes from the Dutch words for \"rump\" and \"strip.\" Boers and Orlam who moved north in the 19th century brought it to Namibia, where the dry climate is ideal for making it, and today it is a national snack available in every household and at every gas station.",
+    "wiki": "Biltong",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Sliced_Biltong.jpg/960px-Sliced_Biltong.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Sliced_Biltong.jpg",
+    "imageCredit": "Delia du Plessis・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "Kapana",
+    "localName": "Kapana",
+    "description": "Small pieces of beef are grilled directly over a charcoal rack on the street, then dipped in a powder mixed from chili, salt and spices and eaten with the hands, often with a tomato and onion relish.",
+    "history": "Kapana originated in Katutura in Windhoek, a residential area into which the apartheid government forced Black people to move after 1959. Residents there made a living by selling small pieces of grilled meat at the market at low cost, gradually forming a distinctive street food culture; \"kapana\" is said to mean \"cut into small pieces\" in the local language. Today it is Windhoek's most representative popular food and has also become a must-try experience for tourists.",
+    "wiki": "Kapana"
+   },
+   {
+    "name": "Potjiekos",
+    "localName": "Potjiekos",
+    "description": "Meat, potatoes, carrots and other vegetables are layered in a three-legged cast-iron pot, with spices and a small amount of liquid added, and slowly stewed over low heat for several hours without stirring.",
+    "history": "Potjiekos originated with the Dutch settlers of the Cape Colony in 17th-century South Africa; the three-legged pot can be set directly over a campfire and suited pioneers cooking on their migrations; \"potjie\" means \"small pot.\" During South African rule it spread in Namibia along with Afrikaans-speaking groups, and today it is a social dish at weekend family gatherings and camping, where everyone chats around the pot waiting for the stew to be done.",
+    "wiki": "Potjiekos",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Beef_Potjie_Kos.jpg/960px-Beef_Potjie_Kos.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Beef_Potjie_Kos.jpg",
+    "imageCredit": "EKK Events・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "Vetkoek",
+    "localName": "Vetkoek",
+    "description": "Flour, yeast, sugar and salt are kneaded into a dough, which after proofing is shaped into balls and deep-fried until golden, crisp outside and soft inside; it can be filled with curried mince or spread with jam and syrup.",
+    "history": "The name vetkoek comes from Afrikaans and means \"fat cake\"; it originated in the fried-dough pastries brought from the Netherlands to the Cape Colony in the 17th century. It came to Namibia with the Boers and South African rule, and because the ingredients are simple and cheap, it became a breakfast and snack that all groups make at home, and also a common snack at schools and markets.",
+    "wiki": "Vetkoek",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Vetkoek_with_mince-001.jpg/960px-Vetkoek_with_mince-001.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Vetkoek_with_mince-001.jpg",
+    "imageCredit": "NJR ZA・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "Mopane worm",
+    "localName": "Mopane worm",
+    "description": "The larvae of the emperor moth, collected from mopane trees, are squeezed to remove the innards, boiled and dried for storage; when eaten they are stewed with tomato and onion or simply fried, crisp in texture and high in protein.",
+    "history": "The mopane worm has been a traditional food in Ovamboland in the north and in the northeastern region for hundreds of years; at a specific time each year after the rainy season, residents go in groups to the mopane woodlands to collect them. It is an important source of protein in times of drought and can be dried and kept for several months. Today it is not only a home dish but also an important seasonal source of income, sold through markets to cities and neighboring countries.",
+    "wiki": "Mopane worm",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Colophospermum_mopane_50D_0486.jpg/960px-Colophospermum_mopane_50D_0486.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Colophospermum_mopane_50D_0486.jpg",
+    "imageCredit": "SAplants・CC BY-SA 4.0・Wikimedia Commons"
+   }
+  ]
+ }
+}

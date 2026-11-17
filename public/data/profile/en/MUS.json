@@ -1,0 +1,116 @@
+{
+ "iso": "MUS",
+ "capital": "Port Louis",
+ "summary": "An island nation in the southwestern Indian Ocean, originally uninhabited; after colonization by the Dutch, French and British it became independent in 1968. It is known for its diverse ethnic groups, sugarcane and tourism, and is also the home of the dodo.",
+ "religion": {
+  "ranking": [
+   {
+    "name": "Hinduism",
+    "percent": 48,
+    "description": "After Britain abolished slavery in 1834, the colonial authorities recruited large numbers of indentured laborers from India to work on the sugarcane plantations; between 1834 and 1920 about 450,000 arrived, most of them from places such as Bihar and Hindus by faith. Their descendants became the largest group in Mauritius, which is why Hinduism is the largest religion. Every year at Maha Shivaratri, hundreds of thousands of devotees walk on pilgrimage to the sacred lake of Grand Bassin."
+   },
+   {
+    "name": "Catholicism",
+    "percent": 26,
+    "description": "During the period of French rule in the 18th century, French colonists and the slaves brought from Africa and Madagascar were mostly baptized as Catholics, and Catholicism thereby became the main faith of the Creoles and the French-descended residents. When Britain took over in 1810, it retained French religion and law under the terms of surrender, so the Catholic Church was able to continue. Father Jacques-Désiré Laval, who died in 1864, is venerated as the \"Apostle of Mauritius\" for his care of freed slaves, and his tomb is an important pilgrimage site."
+   },
+   {
+    "name": "Islam",
+    "percent": 17,
+    "description": "Islam was brought mainly by indentured laborers and merchants who came in the 19th century from northern India and Gujarat; most are Sunni, with a small number of Shia. Muslims are a minority among those of Indian descent, concentrated in cities such as Port Louis, and are influential in commerce and politics."
+   },
+   {
+    "name": "Other Christianity",
+    "percent": 6,
+    "description": "Other Christians include the Anglican and Presbyterian churches introduced during British rule, as well as the Pentecostal and evangelical churches that have grown rapidly since the 1970s; the followers are mainly Creoles and Chinese."
+   },
+   {
+    "name": "Buddhism",
+    "percent": 1,
+    "description": "Buddhism was brought mainly by Hakka Chinese who migrated from the 19th century from places such as Meixian in Guangdong, and it is often combined with folk beliefs such as ancestor worship and the veneration of Guan Di. Because the Chinese make up only about 3% of the population and many have converted to Catholicism, the proportion of Buddhists is very low."
+   }
+  ],
+  "background": "Before the 17th century Mauritius had no settled population, and its religions were all brought by immigrants. In the 18th century French colonists and slaves from Africa and Madagascar laid the foundations of Catholicism. After Britain took over in 1810, slavery was abolished in 1834 and large numbers of Indian indentured laborers were brought in, bringing Hinduism and Islam, while Chinese immigrants brought Buddhism and folk beliefs. Today many religions coexist, and the festivals of all the major religions are public holidays."
+ },
+ "language": {
+  "official": "English is used in parliament, and French and Mauritian Creole are widely used.",
+  "ranking": [
+   {
+    "name": "Mauritian Creole",
+    "percent": 87,
+    "description": "Mauritian Creole formed in the 18th century during French colonial rule, a language that developed on the basis of French vocabulary when African and Malagasy slaves communicated with French colonists. Indian laborers and other immigrants who arrived in the 19th century also gradually learned it, making it a shared mother tongue across ethnic groups that almost the whole country can use. Since 2012 it has been included as an optional subject in primary schools, and its status is gradually rising.",
+    "greeting": "Bonzour",
+    "pronunciation": "bon-zur"
+   },
+   {
+    "name": "Bhojpuri",
+    "percent": 5,
+    "description": "Bhojpuri is the language brought in the 19th century by Indian indentured laborers from Bihar and eastern Uttar Pradesh, and it was once the main spoken language of the Indo-Mauritian community on the sugar estates. As Creole became the everyday common language, younger generations switched to Creole and the number of Bhojpuri speakers fell sharply; it is now concentrated in rural areas and among the elderly.",
+    "greeting": "प्रणाम",
+    "pronunciation": "pra-naam"
+   },
+   {
+    "name": "French",
+    "percent": 4,
+    "description": "French became the language of the upper classes during French rule from 1715 to 1810; after Britain took over in 1810 it did not force a change, so French has remained the main language of the media, newspapers and culture. Those who use French as the main language at home are mostly of French descent and part of the middle class, but most people can read and write French.",
+    "greeting": "Bonjour",
+    "pronunciation": "bon-zhoor"
+   }
+  ],
+  "history": "Mauritius had no indigenous people; the Dutch first landed in 1598, and in 1715 the French took possession and brought the French language and slaves, at which time Creole formed. After Britain took over in 1810 English became the administrative language, but French remained dominant in society and culture. After 1834 Indian immigrants brought languages such as Bhojpuri and Tamil, and the Chinese brought Hakka. Today a distinctive pattern has formed in which English is used in government, French in the media and Creole in daily life."
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "Dholl puri",
+    "localName": "Dholl puri",
+    "description": "A thin flatbread made with flour, with ground cooked yellow split peas layered inside, rolled up with bean curry, tomato stew and pickles; the texture is soft.",
+    "history": "Dholl puri derives from the north Indian \"dal puri\" brought by Indian indentured laborers in the 19th century, which in Mauritius evolved into a thinner, softer version. It is the most popular street snack; vendors in places such as Port Louis make thousands of them every day, and many regard it as Mauritius's national snack, symbolizing the profound influence of Indian immigrants on the local food culture.",
+    "wiki": "Dal puri",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/A_flicker_of_Bengali_tradition.jpg/960px-A_flicker_of_Bengali_tradition.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:A_flicker_of_Bengali_tradition.jpg",
+    "imageCredit": "Muntaha Maryum・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "Rougaille (tomato stew)",
+    "localName": "Rougaille",
+    "description": "A sauce made by simmering tomato, onion, garlic, ginger, thyme and chili is used to stew salted fish, sausage, fish or chicken; sweet, sour and mildly spicy, it is eaten with white rice.",
+    "history": "Rougaille is a Creole dish that developed on the Indian Ocean islands in the French colonial period, blending French stewing techniques with African and Indian uses of spices; similar versions exist in Réunion and the Seychelles. The tomato originated in the Americas and was brought to the Indian Ocean by Europeans. This dish is the most common home dish in Mauritian Creole households, and nearly every family has its own recipe.",
+    "wiki": "Rougaille",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Rougail_saucisse.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Rougail_saucisse.jpg",
+    "imageCredit": "The original uploader was Kikitoul at French Wikipedia.・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "Gâteau piment (chili cake)",
+    "localName": "Gâteau piment",
+    "description": "Soaked yellow split peas are ground to a paste, mixed with green chili, spring onion and coriander, shaped into small round cakes and deep-fried, crisp outside and soft inside, with a spicy kick.",
+    "history": "Gâteau piment derives from the fried lentil fritter (vada) brought by Indian immigrants, yet its name is the French \"gâteau piment\" (chili cake), reflecting the blending of Mauritius's diverse cultures. It is the most common cheap snack at street stalls and school gates, often tucked into French bread for breakfast, and it ranks alongside dholl puri as the most representative street snack.",
+    "wiki": "Vada (food)",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Medu_Vadas.JPG/960px-Medu_Vadas.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Medu_Vadas.JPG",
+    "imageCredit": "Mdsmds0・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "Briani (spiced rice)",
+    "localName": "Briani",
+    "description": "Chicken or mutton marinated in yogurt and spices is layered in a pot with fried potatoes and rice and slow-cooked; richly fragrant, it is often served with pickles and yogurt sauce.",
+    "history": "Briani derives from the biryani of the Mughal imperial court and was brought by Muslim immigrants who came from northern India to Mauritius in the 19th century. It is an essential banquet dish at weddings, Eid al-Fitr and other important occasions in Mauritian Muslim households, and today people of all ethnic groups also order large pots of briani for gatherings, making it a festive dish shared by the whole country.",
+    "wiki": "Biryani",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/%22Hyderabadi_Dum_Biryani%22.jpg/960px-%22Hyderabadi_Dum_Biryani%22.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:%22Hyderabadi_Dum_Biryani%22.jpg",
+    "imageCredit": "Mahi Tatavarty・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "Alouda",
+    "localName": "Alouda",
+    "description": "Milk sweetened and flavored with vanilla is combined with strips of agar jelly and soaked basil seeds (or psyllium), and drunk chilled; the texture is smooth.",
+    "history": "Alouda derives from falooda, the sweet cold drink of India and Persia, and came to Mauritius with Indian immigrants. The alouda stalls in Port Louis's central market have a history of several decades and are a must-visit for tourists and locals alike. In the hot tropical climate it is the most popular drink for cooling off, and it also symbolizes the deep influence of Indian culture in Mauritian food.",
+    "wiki": "Falooda",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Faluda.JPG/960px-Faluda.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Faluda.JPG",
+    "imageCredit": "Randhirreddy at English Wikipedia・CC BY-SA 3.0・Wikimedia Commons"
+   }
+  ]
+ }
+}

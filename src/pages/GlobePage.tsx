@@ -6,9 +6,11 @@ import GlobeView, { type GlobeHandle } from "../components/globe/GlobeView";
 import CountryPanel from "../components/country/CountryPanel";
 import { gsap, prefersReducedMotion, useGSAP, useReveal } from "../lib/motion";
 import { countries, countryByIso } from "../data/world";
+import { pick, useT } from "../lib/i18n";
 import { useVisited } from "../lib/progress";
 
 export default function GlobePage() {
+  const t = useT();
   const [params, setParams] = useSearchParams();
   const selectedIso = params.get("country");
   const selected = selectedIso ? countryByIso.get(selectedIso) ?? null : null;
@@ -67,7 +69,7 @@ export default function GlobePage() {
         return;
       }
       if (!countryByIso.has(iso)) {
-        setNotice("這個地區目前沒有收錄歷史資料");
+        setNotice(pick({ "zh-TW": "這個地區目前沒有收錄歷史資料", en: "No history is available for this area yet", ja: "この地域の歴史データはまだありません" }));
         return;
       }
       setParams({ country: iso });
@@ -126,7 +128,7 @@ export default function GlobePage() {
           className={`grid size-[42px] place-items-center rounded-full border transition ${
             menuOpen ? "border-white bg-white text-deep-800" : "border-white/15 bg-[#174a68]/55 text-white hover:bg-[#174a68]/80"
           }`}
-          aria-label="地球設定"
+          aria-label={t({ "zh-TW": "地球設定", en: "Globe settings", ja: "地球の設定" })}
           aria-expanded={menuOpen}
         >
           {menuOpen ? <X className="size-4" /> : <Menu className="size-4" />}
@@ -136,11 +138,11 @@ export default function GlobePage() {
       {menuOpen && (
         <div ref={menuRef} className="glass absolute top-[66px] right-4 z-40 w-56 rounded-2xl p-1.5 shadow-2xl md:right-6">
           {[
-            { icon: autoRotate ? Pause : Play, label: autoRotate ? "停止自轉" : "開始自轉", run: () => setAutoRotate((v) => !v) },
-            { icon: Dices, label: "隨機探索一個國家", run: randomCountry },
+            { icon: autoRotate ? Pause : Play, label: autoRotate ? t({ "zh-TW": "停止自轉", en: "Stop rotation", ja: "自転を止める" }) : t({ "zh-TW": "開始自轉", en: "Start rotation", ja: "自転を開始" }), run: () => setAutoRotate((v) => !v) },
+            { icon: Dices, label: t({ "zh-TW": "隨機探索一個國家", en: "Explore a random country", ja: "ランダムに国を探索" }), run: randomCountry },
             {
               icon: RotateCcw,
-              label: "重設視角",
+              label: t({ "zh-TW": "重設視角", en: "Reset view", ja: "視点をリセット" }),
               run: () => {
                 select(null);
                 globe.current?.reset();

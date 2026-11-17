@@ -1,0 +1,109 @@
+{
+ "iso": "MNG",
+ "capital": "Ulaanbaatar",
+ "summary": "Mongolia lies in inland East Asia and is the homeland of the Mongol Empire founded by Genghis Khan. It has vast grasslands and the Gobi Desert, and it still preserves its nomadic culture.",
+ "religion": {
+  "ranking": [
+   {
+    "name": "Buddhism (Tibetan Buddhism)",
+    "percent": 52,
+    "description": "The Mongols already came into contact with Tibetan Buddhism in the 13th century under the Yuan dynasty, when Kublai Khan appointed Phagspa as imperial preceptor. Its real spread, however, came after 1578, when Altan Khan of the Tümed met Sonam Gyatso and bestowed on him the title \"Dalai Lama\"; the Gelug school then spread across the steppe. By the early 20th century about one third of Mongolian men were monks, and monasteries were centers of the economy and education. The Great Purge of the 1930s destroyed monasteries and killed monks, but after democratization in 1990 Buddhism revived rapidly, with Gandan Monastery in Ulaanbaatar at its core."
+   },
+   {
+    "name": "No religion",
+    "percent": 40,
+    "description": "After the Mongolian People's Republic was founded in 1924, atheism was promoted under Soviet influence. The Great Purge of 1937-1939, led by Choibalsan, destroyed the great majority of monasteries and killed tens of thousands of lamas, and religious activity was banned for a long time. Decades of socialist education left many families without a transmitted faith, so even after religious freedom was restored in 1990, a considerable share of the younger urban generation still identifies with no religion."
+   },
+   {
+    "name": "Islam",
+    "percent": 3,
+    "description": "Almost all of Mongolia's Muslims are Kazakhs, concentrated in Bayan-Ölgii Province in the west. Their ancestors migrated in the 19th century from the other side of the Altai Mountains in search of pastureland, bringing Sunni Islam with them. Because the community is small and lives in a remote border region, Islam has always remained a minority faith in Mongolia."
+   },
+   {
+    "name": "Shamanism",
+    "percent": 3,
+    "description": "Shamanism, which worships \"Eternal Blue Sky\" (Tengri) and the spirits of mountains and rivers, is the oldest religion of the Mongols; in the time of Genghis Khan, sacrifice to Heaven was a matter of state. After the arrival of Buddhism shamanism was suppressed, and during the socialist period it was banned, but customs such as worship at the ovoo (sacred cairns) continued among the people. Since 1990 the number of people who identify as full-time shamans has increased markedly, and the Tsaatan of Khövsgöl Province in the north still preserve their traditions."
+   },
+   {
+    "name": "Christianity",
+    "percent": 1,
+    "description": "Christianity has long-standing roots in Mongolia: in the 13th century there were already adherents of the Church of the East (Nestorians) at the Mongol court. The modern churches were established after the opening of 1990 by missionaries from South Korea, the United States and elsewhere; they are mainly Protestant evangelical, and most believers are urban residents and young people in Ulaanbaatar. The number of Christians has grown but remains a minority."
+   }
+  ],
+  "background": "The ancient Mongols practiced shamanism, revering the \"Eternal Blue Sky,\" and after Genghis Khan founded his empire he adopted a policy of tolerance toward the various religions. In 1578 Altan Khan invited Sonam Gyatso and bestowed on him the title \"Dalai Lama,\" and from then on the Gelug school of Tibetan Buddhism became Mongolia's mainstream faith, with monasteries everywhere. In the 1930s the socialist regime, backed by the Soviet Union, destroyed monasteries and executed monks on a large scale, and religion went underground. After democratization in 1990 Buddhism and shamanism gradually revived, and Christianity also arrived with missionaries."
+ },
+ "language": {
+  "official": "Mongolian is the official language.",
+  "ranking": [
+   {
+    "name": "Mongolian (Khalkha dialect)",
+    "percent": 95,
+    "description": "Mongolian belongs to the Mongolic branch of the Altaic family. The Khalkha dialect is spoken by the Khalkha, the most numerous group in Mongolia, and was made the standard language in the 20th century. Beginning in 1941, under Soviet influence, the Cyrillic alphabet was adopted, and schools and media teach entirely in it, so almost the entire population uses Mongolian as a mother tongue or common language. In 2015 parliament passed the Law on Mongolian Script, and the government plans that from 2025 official documents must use both the traditional Mongolian script and Cyrillic.",
+    "greeting": "Сайн байна уу",
+    "pronunciation": "sain BAIN-oo"
+   },
+   {
+    "name": "Kazakh",
+    "percent": 4,
+    "description": "Kazakh belongs to the Turkic family and is the language of the Kazakh herders who migrated into the Altai region in the west in the 19th century. It is concentrated in Bayan-Ölgii Province, where local schools may teach in Kazakh. After the collapse of the Soviet Union in the 1990s, many Kazakhs moved to Kazakhstan, which reduced the share of this language community.",
+    "greeting": "Сәлем",
+    "pronunciation": "sa-LEM"
+   }
+  ],
+  "history": "In the time of Genghis Khan the Mongols borrowed the Uyghur script to create the vertically written Uyghur-style Mongolian script, and in 1269 Kublai Khan commissioned Phagspa to create the Phags-pa script, but the latter was abandoned with the fall of the Yuan dynasty. In the 17th century Zaya Pandita created the Todo script for the Oirat Mongols. In the 1940s, under Soviet influence, the Cyrillic alphabet was adopted, while the traditional Mongolian script is still used in Inner Mongolia. In recent years the Mongolian government has promoted the restoration of the traditional script, planning to use both scripts side by side."
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "Buuz",
+    "localName": "Бууз (Buuz)",
+    "description": "Minced mutton or beef seasoned with onion and garlic is wrapped in dough, pinched into a dumpling with a small opening at the top, and steamed; when you bite into it, the juices flow out.",
+    "history": "Buuz is generally thought to have entered Mongolia through contact with northern China, and the name \"buuz\" is borrowed from the Chinese \"baozi.\" The Mongols add plenty of mutton and mutton fat, which makes it suited to the cold climate of the steppe. During the Lunar New Year festival \"Tsagaan Sar\" (White Moon), each household prepares hundreds or even a thousand in advance and freezes them outdoors to serve relatives and friends who come to pay New Year visits.",
+    "wiki": "Buuz",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Buuz.jpg/960px-Buuz.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Buuz.jpg",
+    "imageCredit": "Mizu_Basyo・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "Khuushuur",
+    "localName": "Хуушуур (Khuushuur)",
+    "description": "Mutton or beef filling is wrapped in dough and folded into a half-moon shape; the edges are pressed tight and the pastry is fried in oil until golden and crisp. It is savory and juicy and is often eaten hot with milk tea.",
+    "history": "The name and method of khuushuur are thought to be related to the filled pies of northern China, and after its introduction it became one of Mongolia's most representative snacks. At the Naadam festival held around July 11 each year, the venues for wrestling, horse racing and archery are surrounded by stalls frying fresh khuushuur, so it is regarded as Naadam's \"festival food,\" and it is also a convenient dry provision for long journeys.",
+    "wiki": "Khuushuur",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/MongoliaLastDay_153.JPG/960px-MongoliaLastDay_153.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:MongoliaLastDay_153.JPG",
+    "imageCredit": "Sivserver・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "Stone-cooked meat (khorkhog)",
+    "localName": "Хорхог (Khorkhog)",
+    "description": "Chunks of mutton, potatoes, carrots and red-hot river stones are layered in a sealed metal pot or milk churn, and the food is cooked through by the heat of the stones and the steam.",
+    "history": "Khorkhog is a cooking method developed by nomads on the steppe, where ovens are lacking; only a fire, stones and a sealed container are needed to cook the meat of a whole sheep. Traditionally it is served to honored guests or at family gatherings. Before eating, everyone takes turns tossing the warm, grease-covered stones from hand to hand; the Mongols believe this relieves fatigue and benefits the body, and the custom is still very common today.",
+    "wiki": "Khorkhog",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Khorkhog.JPG/960px-Khorkhog.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Khorkhog.JPG",
+    "imageCredit": "Vidor・Public domain・Wikimedia Commons"
+   },
+   {
+    "name": "Tsuivan (stir-fried noodles)",
+    "localName": "Цуйван (Tsuivan)",
+    "description": "Hand-rolled noodles are cut into thin strips, first stir-fried with slices of mutton or beef, carrots and cabbage, then steamed with a little water until done; the noodles have a toasty aroma and are infused with the meat juices.",
+    "history": "The name and method of tsuivan come from the braised noodles of northern China. As more Mongols settled in cities in the 20th century and flour and vegetables became easy to obtain, it became one of the most common home dinners. Traditional Mongolian food centered on meat and dairy with very few vegetables, and the cabbage and carrots added to tsuivan reflect the change in diet after agriculture and urbanization were promoted in the socialist period.",
+    "wiki": "Tsuivan",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Cujwan.JPG/960px-Cujwan.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Cujwan.JPG",
+    "imageCredit": "Marcin Konsek・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "Boodog (roast whole goat or marmot)",
+    "localName": "Боодог (Boodog)",
+    "description": "A goat or marmot is boned and hollowed out through the neck, stuffed with heated stones and seasoning, and tied shut; the outside is then singed with a blowtorch or flame to remove the fur and heat the carcass, so that the meat cooks from the inside out.",
+    "history": "This is one of the oldest cooking methods of the Mongolian nomads, requiring not even a vessel, since the animal's own skin serves as the pot. The marmot version is traditionally made in late summer and early autumn when marmots are fattest, but marmots can carry the plague bacillus and Mongolia has suffered several plague outbreaks from eating marmot, so the government has set hunting-season restrictions; today goat is mostly used instead, and it is made only at festivals or when entertaining guests.",
+    "wiki": "Boodog",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Boodog_made_from_a_marmot.JPG/960px-Boodog_made_from_a_marmot.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Boodog_made_from_a_marmot.JPG",
+    "imageCredit": "Bogomolov.PL・Public domain・Wikimedia Commons"
+   }
+  ]
+ }
+}

@@ -1,9 +1,9 @@
 import { Component, Suspense, useEffect, useRef, useState, type ReactNode } from "react";
-import { Canvas } from "@react-three/fiber";
+import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { Environment, OrbitControls, useGLTF, useProgress } from "@react-three/drei";
-import { useThree } from "@react-three/fiber";
-import { Box3, DirectionalLight, Fog, MathUtils, PerspectiveCamera, Sphere, Vector3 } from "three";
+import { Box3, DirectionalLight, Fog, MathUtils, PerspectiveCamera, Raycaster, Sphere, Vector3 } from "three";
 import type { OrbitControls as OrbitControlsImpl } from "three-stdlib";
+import { useT } from "../../lib/i18n";
 
 /** 依模型實際大小設定太陽光與陰影範圍（模型從百公尺到兩公里不等） */
 function Model({ url }: { url: string }) {
@@ -83,8 +83,15 @@ function ViewRig({ view, token, shift, controls }: { view: BuildingView; token: 
     cam.fov = MathUtils.radToDeg(2 * Math.atan(Math.tan(h / 2) / Math.max(aspect, 1.5)));
     cam.near = Math.max(0.05, dist * 0.002);
     cam.far = dist * 20;
-    // 往後退一些，讓建築完整入鏡
-    cam.position.copy(t).add(p.clone().sub(t).multiplyScalar(1.25));
+    // 往後退一些，讓建築完整入鏡；仰角至少 15°，一律從斜上方看，不從下往上看
+    const dir = p.clone().sub(t).normalize();
+    const minY = Math.sin(MathUtils.degToRad(15));
+    if (dir.y < minY) {
+      const flat = Math.hypot(dir.x, dir.z) || 1;
+      const k = Math.cos(Math.asin(minY)) / flat;
+      dir.set(dir.x * k, minY, dir.z * k);
+    }
+    cam.position.copy(t).addScaledVector(dir, dist * 1.25);
     // 桌機左側有建築清單，把畫面中心往右移，建築不會被清單遮住
     if (shift) cam.setViewOffset(shiftW, size.height, shift > 0 ? 0 : -shift * 2, 0, size.width, size.height);
     else cam.clearViewOffset();
@@ -96,7 +103,7 @@ function ViewRig({ view, token, shift, controls }: { view: BuildingView; token: 
     c.minAzimuthAngle = -Infinity;
     c.maxAzimuthAngle = Infinity;
     c.minPolarAngle = 0.05;
-    c.maxPolarAngle = Math.PI / 2 - 0.03;
+    c.maxPolarAngle = MathUtils.degToRad(78);
     c.minDistance = dist * 0.15;
     c.maxDistance = dist * 4;
     // 遠處地景淡入天空色，縮小時不會看到地面邊緣的硬邊
@@ -107,13 +114,42 @@ function ViewRig({ view, token, shift, controls }: { view: BuildingView; token: 
   return null;
 }
 
+/** 相機移動後往下打射線找地形高度，相機一律保持在地面（含山坡、建築）上方，不會鑽進地底 */
+function GroundClamp({ token }: { token: string }) {
+  const { camera, scene, controls } = useThree();
+  const last = useRef(new Vector3(Infinity, 0, 0));
+  const ray = useRef(new Raycaster());
+  const down = useRef(new Vector3(0, -1, 0));
+  useFrame(() => {
+    const c = controls as unknown as OrbitControlsImpl | null;
+    if (!c || camera.position.distanceToSquared(last.current) < 1e-6) return;
+    const dist = camera.position.distanceTo(c.target);
+    const from = camera.position.clone();
+    from.y += dist * 4;
+    ray.current.set(from, down.current);
+    ray.current.far = dist * 8;
+    const hit = ray.current.intersectObjects(scene.children, true).find((h) => (h.object as { isMesh?: boolean }).isMesh);
+    const minY = hit ? hit.point.y + Math.max(dist * 0.06, 1) : -Infinity;
+    if (camera.position.y < minY) {
+      camera.position.y = minY;
+      camera.lookAt(c.target);
+    }
+    last.current.copy(camera.position);
+  });
+  useEffect(() => {
+    last.current.set(Infinity, 0, 0);
+  }, [token]);
+  return null;
+}
+
 /** Canvas 外的 DOM 載入進度與錯誤提示 */
 function Overlay({ failed }: { failed: boolean }) {
   const { active, progress } = useProgress();
+  const t = useT();
   if (failed)
     return (
       <div className="pointer-events-none absolute inset-0 grid place-items-center">
-        <p className="w-60 text-center text-sm text-mute">模型載入失敗，請檢查網路連線後重新整理。</p>
+        <p className="w-60 text-center text-sm text-mute">{t({ "zh-TW": "模型載入失敗，請檢查網路連線後重新整理。", en: "Failed to load the model. Check your connection and reload.", ja: "モデルを読み込めませんでした。ネットワークを確認して再読み込みしてください。" })}</p>
       </div>
     );
   if (!active) return null;
@@ -123,7 +159,7 @@ function Overlay({ failed }: { failed: boolean }) {
         <div className="h-1 w-full overflow-hidden rounded-full bg-white/15">
           <div className="h-full bg-glow transition-[width]" style={{ width: `${progress}%` }} />
         </div>
-        <span className="text-xs">模型載入中 {progress.toFixed(0)}%</span>
+        <span className="text-xs">{t({ "zh-TW": "模型載入中", en: "Loading model", ja: "モデルを読み込み中" })} {progress.toFixed(0)}%</span>
       </div>
     </div>
   );
@@ -156,6 +192,7 @@ export default function ModelViewer({
       <Suspense fallback={null}>
         <Model key={url} url={url} />
         <ViewRig view={view} shift={shift} token={`${url}#${resetToken}`} controls={controls} />
+        <GroundClamp token={`${url}#${resetToken}`} />
       </Suspense>
       </ModelErrorBoundary>
 

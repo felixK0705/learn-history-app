@@ -1,0 +1,113 @@
+{
+ "iso": "MOZ",
+ "capital": "Maputo",
+ "summary": "A country on the Indian Ocean coast of southeastern Africa. A former Portuguese colony, it went through a long civil war after independence in 1975, and it has a long coastline and abundant natural gas.",
+ "religion": {
+  "ranking": [
+   {
+    "name": "Catholicism",
+    "percent": 27,
+    "description": "The Portuguese gradually established colonial rule after Vasco da Gama reached the Mozambican coast in 1498, and Catholicism arrived with the colonial government and mission societies; after Portugal and the Holy See signed a concordat in 1940, the Church gained the privilege of running schools. Because mission schools were the main avenue of education for Black Africans in the colonial period, Catholicism became the largest religion in the cities of the south and center. After independence in 1975 the Marxist government restricted the Church, and religious activity resumed after the civil war ended in the 1990s."
+   },
+   {
+    "name": "Islam",
+    "percent": 19,
+    "description": "Long before the Portuguese arrived, Arab and Swahili merchants brought Islam to the northern coast of Mozambique along the Indian Ocean trade routes from the 9th century onward, and ports such as Mozambique Island and Angoche were once Muslim sultanates. Muslims are therefore concentrated in the northern provinces of Nampula, Niassa and Cabo Delgado, mainly among the Makua and the coastal Swahili, and are fewer in the interior and the south."
+   },
+   {
+    "name": "Zionist Christianity",
+    "percent": 15,
+    "description": "Zionist churches are African independent churches that came from South Africa in the early 20th century, brought back by Mozambican migrant laborers who worked in South African mines. These churches combine Christianity with African traditional beliefs, emphasizing faith healing, prophecy and ancestor veneration, and they are especially popular in rural areas of the south and center because they are closer to local culture than the colonizers' churches."
+   },
+   {
+    "name": "Evangelical and Pentecostal",
+    "percent": 15,
+    "description": "Evangelical and Pentecostal churches expanded rapidly after the civil war ended in the 1990s and the government opened up religious freedom, introduced by churches from Brazil, the United States and South Africa; among them, Brazil's Universal Church of the Kingdom of God is especially active because it also uses Portuguese. With fervent worship, healing and prosperity theology, they attract urban youth and are the fastest-growing religious group in recent years."
+   },
+   {
+    "name": "No religion",
+    "percent": 13,
+    "description": "After independence in 1975, the ruling Mozambique Liberation Front (FRELIMO) followed Marxism-Leninism and at one point confiscated church property and promoted atheism. In addition, many people also retain traditional ancestor beliefs without identifying with any particular religion, so the share who describe themselves as having no religion in the census is not small, and it is especially noticeable in some rural areas."
+   }
+  ],
+  "background": "Mozambicans traditionally believed in ancestors and nature spirits, and from the 9th century Arab and Swahili merchants brought Islam to the northern coast. After 1498 the Portuguese gradually colonized the country, and Catholicism spread with them in the south and center. After independence in 1975 the socialist government suppressed religion; religious freedom was restored after the civil war ended in 1992, and churches such as the Zionist and Pentecostal churches grew quickly. Today the pattern is Islam in the north, Christianity in the center and south, and a widespread mixing with traditional beliefs."
+ },
+ "language": {
+  "official": "The official language is Portuguese.",
+  "ranking": [
+   {
+    "name": "Makua",
+    "percent": 26,
+    "description": "Makua belongs to the Bantu languages and is the mother tongue of the Makua, the most numerous people in the north, spoken in Nampula, Niassa, Cabo Delgado and Zambezia provinces. Because the Makua are Mozambique's largest ethnic group, Makua is the language with the most native speakers, but it has no official status, and education and administration are still conducted mainly in Portuguese.",
+    "greeting": "Salama",
+    "pronunciation": "sa-la-ma"
+   },
+   {
+    "name": "Portuguese",
+    "percent": 17,
+    "description": "Portuguese is the legacy of nearly five hundred years of colonial rule; at independence in 1975 FRELIMO chose to keep it as the official language, as a neutral language to unite dozens of different peoples. It is the language of schools, government and the media. Native speakers of Portuguese are concentrated in cities such as Maputo, but the share of the population able to speak Portuguese is already more than half and continues to grow.",
+    "greeting": "Olá",
+    "pronunciation": "o-la"
+   },
+   {
+    "name": "Tsonga (Shangaan)",
+    "percent": 8,
+    "description": "Tsonga belongs to the Bantu languages and is spoken mainly in Gaza and Inhambane provinces in the south and around the capital Maputo, and it is also spoken across the borders with South Africa and Zimbabwe. The founding of the Gaza Kingdom in the 19th century and the long-standing labor migration of southerners to South African mines both made Tsonga an important regional lingua franca in the south.",
+    "greeting": "Avuxeni（早安）",
+    "pronunciation": "a-vu-she-ni"
+   }
+  ],
+  "history": "Most indigenous Mozambicans speak Bantu languages, and along the northern coast Swahili has also been spoken since the Middle Ages. After 1498 the Portuguese gradually colonized the country, and after the borders were drawn in the late 19th century Portuguese became the language of administration and education, but only a small number of assimilated people could use it. After independence in 1975 the government chose Portuguese as the official language to promote national unity. From the 1990s some primary schools began to introduce bilingual education in Bantu languages and Portuguese."
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "Matapa (cassava leaf and peanut stew)",
+    "localName": "Matapa",
+    "description": "Young cassava leaves are pounded and stewed for a long time with ground peanuts, coconut milk and garlic, often with shrimp or crab added; the texture is creamy with a nutty aroma, and it is eaten with rice or maize porridge.",
+    "history": "Cassava originated in South America and was brought to Africa by the Portuguese through Atlantic trade in the 16th century; peanuts likewise come from the Americas, while the coconut had long been a common crop along the Indian Ocean coast. Matapa thus combines American crops brought by colonial trade with the East African coastal tradition of cooking with coconut milk. It is most common in the south around Maputo and Inhambane and is a representative dish for family gatherings and festivals.",
+    "wiki": "Matapa",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Matapa.jpg/960px-Matapa.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Matapa.jpg",
+    "imageCredit": "PrestigiousSwazi・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "Piri-piri chicken",
+    "localName": "Frango à piri-piri",
+    "description": "Chicken is marinated in piri-piri chilies, garlic, lemon juice and oil and then grilled over charcoal; the skin is charred and fragrant, and the heat is pronounced.",
+    "history": "The ancestor of the piri-piri chili came from the Americas; after the Portuguese brought it to Africa it took root in colonies such as Mozambique and Angola, and the name \"piri-piri\" comes from the Swahili word for \"pepper.\" This grilled chicken took shape in the Portuguese colonial period and was then taken back to Portugal by the Portuguese; the restaurant chain Nando's, founded in South Africa in 1987, took the Mozambican-style spicy chicken to the whole world.",
+    "wiki": "Piri piri",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/African_red_devil_peppers.jpg/960px-African_red_devil_peppers.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:African_red_devil_peppers.jpg",
+    "imageCredit": "Bovineone at English Wikipedia・Public domain・Wikimedia Commons"
+   },
+   {
+    "name": "Xima (maize porridge)",
+    "localName": "Xima",
+    "description": "White maize meal is poured into boiling water and stirred constantly until it becomes a thick paste that can be picked up by hand; it has no flavor of its own and is served with stews, fish or greens.",
+    "history": "Maize originated in the Americas and was introduced to Africa by the Portuguese after the 16th century; because of its high yield and drought tolerance, it gradually replaced sorghum and millet as the staple of southern Africa. Maize porridge has different names in the countries of southern Africa, such as pap in South Africa and nsima in Malawi; in Mozambique it is called xima. It is the daily staple of most families, and in the colonial period the mines also issued large rations of maize porridge to their workers.",
+    "wiki": "Ugali",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/48/Ugali_%26_Sukuma_Wiki.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Ugali_%26_Sukuma_Wiki.jpg",
+    "imageCredit": "Paresh Jai from Nairobi, Kenya・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "Rissóis (Portuguese fried turnovers)",
+    "localName": "Rissóis",
+    "description": "Dough is filled with a white-sauce mixture of shrimp or chicken, folded into a half-moon shape, coated in egg and breadcrumbs and deep-fried; crisp outside and soft inside, it is a common party snack.",
+    "history": "Rissóis are a traditional Portuguese snack that came to Mozambique with colonial rule and are very common in the cafes and bakeries of the capital Maputo (formerly Lourenço Marques). Mozambique is rich in prawns, so the local version especially often uses shrimp as the filling. This snack is a trace of Portuguese colonial culture left in Mozambican food, and it now often appears at weddings, birthday parties and similar occasions.",
+    "wiki": "Rissole",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Risole1.JPG/960px-Risole1.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Risole1.JPG",
+    "imageCredit": "PD-self・Public domain・Wikimedia Commons"
+   },
+   {
+    "name": "Bolo polana (cassava and cashew cake)",
+    "localName": "Bolo polana",
+    "description": "Mashed potato or cassava is mixed with ground cashews, butter, sugar and eggs and baked; the texture is moist and rich, with a nutty fragrance, and it is often cut into small pieces and served with tea.",
+    "history": "Cashews originated in Brazil and were introduced to Mozambique by the Portuguese in the 16th century; in the mid-20th century Mozambique was one of the world's largest cashew producers. This cake is thought to have originated in Portuguese-descended households of the colonial period, and accounts of the origin of its name differ. It combines the methods of Portuguese-style desserts with the locally abundant cashew, and it often appears at festivals and weddings.",
+    "wiki": "Bolo polana"
+   }
+  ]
+ }
+}

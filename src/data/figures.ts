@@ -1,3 +1,5 @@
+import type { Tr } from "../lib/i18n";
+
 export type RelationType = "師徒" | "親屬" | "盟友" | "敵對" | "君臣" | "影響" | "戀人";
 
 export interface Figure {
@@ -28,6 +30,17 @@ export const relationColors: Record<RelationType, string> = {
   君臣: "#c084fc",
   影響: "#94a3b8",
   戀人: "#f472b6",
+};
+
+/** 關係類型的三語名稱 */
+export const REL_TYPE: Record<RelationType, Tr> = {
+  師徒: { "zh-TW": "師徒", en: "Mentor", ja: "師弟" },
+  親屬: { "zh-TW": "親屬", en: "Family", ja: "親族" },
+  盟友: { "zh-TW": "盟友", en: "Ally", ja: "同盟" },
+  敵對: { "zh-TW": "敵對", en: "Rival", ja: "敵対" },
+  君臣: { "zh-TW": "君臣", en: "Ruler", ja: "君臣" },
+  影響: { "zh-TW": "影響", en: "Influence", ja: "影響" },
+  戀人: { "zh-TW": "戀人", en: "Lovers", ja: "恋人" },
 };
 
 export const groups: { id: string; name: string; color: string }[] = [

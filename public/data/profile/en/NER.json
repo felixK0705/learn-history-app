@@ -1,0 +1,106 @@
+{
+ "iso": "NER",
+ "capital": "Niamey",
+ "summary": "A landlocked country on the southern edge of the Sahara in West Africa, most of whose territory is desert; the Niger River flows through the southwest. It became independent from France in 1960, and uranium is an important export.",
+ "religion": {
+  "ranking": [
+   {
+    "name": "Islam (Sunni)",
+    "percent": 99,
+    "description": "Islam arrived around the 11th century through trans-Saharan caravans and Berber merchants from North Africa, at first practiced mainly by the rulers and merchants of kingdoms such as the Songhai Empire and Kanem-Bornu. In the early 19th century the Fulani scholar Usman dan Fodio launched a jihad and established the Sokoto Caliphate, making Islam widespread among commoners in the southern Hausa region. Today almost the entire country is Sunni Muslim of the Maliki school, and Sufi orders such as the Tijaniyya are deeply influential."
+   },
+   {
+    "name": "Christianity",
+    "percent": 1,
+    "description": "Christianity arrived with French colonization after the 1890s, but French rule relied mainly on indirect administration, and missionaries were active only in a few areas of the south; the followers are mainly residents of the southern cities of Niamey and Maradi and immigrants from neighboring countries such as Benin and Nigeria. In recent years jihadist activity in the north has increased, and some Christians have come under attack."
+   },
+   {
+    "name": "Traditional beliefs",
+    "percent": 1,
+    "description": "Before the spread of Islam, the Hausa believed in spirit-possession worship called \"Bori,\" which still exists in some rural areas and often coexists with Islamic belief. Because Islamization has a history of several hundred years, people who follow purely traditional religion are extremely few."
+   }
+  ],
+  "background": "Niger came into contact with Islam around the 11th century through trans-Saharan trade, at first as the court religion of kingdoms such as Songhai and Kanem-Bornu. In the 19th century Usman dan Fodio's jihad set off a wave of Islamization in the Hausa region, bringing Islam deep among the people. From the 1890s French colonization brought a small number of Christian missionaries. After independence in 1960 Niger was a secular state, but social life is deeply influenced by Islam, and in recent years the influence of jihadist groups and conservative movements in the north has been growing."
+ },
+ "language": {
+  "official": "In 2025 the transitional charter made Hausa a national language and made French and English working languages.",
+  "ranking": [
+   {
+    "name": "Hausa",
+    "percent": 53,
+    "description": "Hausa belongs to the Chadic branch of the Afroasiatic family and is the mother tongue of the Hausa of the southern Maradi and Zinder area. Because the Hausa are Niger's largest people and Hausa is an important trade language in West Africa, carried by merchants along the caravan routes to many places, more than half the population has it as a mother tongue and still more use it as a second language. The transitional charter promulgated by the military government in 2025 made it a national language.",
+    "greeting": "Sannu",
+    "pronunciation": "san-nu"
+   },
+   {
+    "name": "Zarma-Songhai",
+    "percent": 21,
+    "description": "Zarma-Songhai belongs to the Nilo-Saharan family and derives from the Songhai Empire that dominated West Africa in the 15th-16th centuries; it is spoken along the Niger River in the west and around the capital Niamey. In the colonial period France made Niamey the capital, which gave the Zarma an advantage in education and government, and Zarma also became the main common language of the capital.",
+    "greeting": "Fofo",
+    "pronunciation": "fo-fo"
+   },
+   {
+    "name": "Fula",
+    "percent": 6,
+    "description": "Fula is the language of the nomadic Fulani, who are scattered across Niger grazing their herds, so Fula is widely distributed but its share is not high. The Sokoto jihad led by the Fulani in the 19th century gave them political and religious influence.",
+    "greeting": "Jam waali",
+    "pronunciation": "jam waa-li"
+   }
+  ],
+  "history": "Niger has long been a multilingual region, with Hausa, Songhai, Kanuri, Tuareg and others each having their own spheres of influence, and after Islamization Hausa was also written in an adapted Arabic script called \"Ajami.\" From the 1890s French colonization made French the language of administration and education. After independence in 1960 French remained the sole official language, and ten ethnic languages including Hausa were designated national languages. After the coup of 2023 the military government promoted de-Francization, and in 2025 the transitional charter made Hausa a national language and made French and English working languages."
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "Kilishi (dried beef jerky)",
+    "localName": "Kilishi",
+    "description": "Beef is cut into extremely thin large sheets and dried, then brushed with a paste of peanut butter, chili, ginger and spices, dried again and grilled; the texture is spicy, fragrant and crisp.",
+    "history": "Kilishi is a traditional dried meat of the Hausa; in the Sahel on the southern edge of the Sahara, the hot, dry climate is suited to preserving meat by sun-drying. Peanuts originated in the Americas, spread to West Africa after the 16th century and became an important crop, and in the colonial period southern Niger grew large quantities of peanuts for export. Kilishi keeps for several months, serving as provisions for long journeys and caravans, and is also often given as a gift to relatives and friends far away.",
+    "wiki": "Kilishi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/%22Kilishi%22.JPG/960px-%22Kilishi%22.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:%22Kilishi%22.JPG",
+    "imageCredit": "Abubakar M. Ahmad・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "Tuwo shinkafa (rice balls)",
+    "localName": "Tuwo shinkafa",
+    "description": "Soft rice is cooked until very tender and pounded into soft, sticky balls, which are eaten by pinching off a small piece with the hand and dipping it in a sauce stewed from okra, spinach or peanuts.",
+    "history": "\"Tuwo\" in Hausa means a ball-shaped staple; traditionally it was made from millet or sorghum and was the most basic daily food in the Hausa region. As rice cultivation increased along the Niger River and in irrigated areas in the 20th century, tuwo made from rice became common. It often appears at weddings and festivals, and the kinds of sauce served with it vary with season and region.",
+    "wiki": "Tuwo shinkafa",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Tuwo_Shinkafa_with_garden_egg_Soup.jpg/960px-Tuwo_Shinkafa_with_garden_egg_Soup.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Tuwo_Shinkafa_with_garden_egg_Soup.jpg",
+    "imageCredit": "Bukky658・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "Fura da nono (millet and yogurt drink)",
+    "localName": "Fura da nono",
+    "description": "Balls of cooked millet dough are crumbled into fermented milk or yogurt, sweetened and drunk cold; the texture is thick and sweet-sour, and it serves both to quench thirst and to fill the stomach.",
+    "history": "\"Fura\" means millet balls, and \"nono\" in Fula and Hausa means fermented milk. This drink combines the millet grown by Hausa farmers with the dairy products of the nomadic Fulani, reflecting the long-standing exchange between farming and herding peoples in the Sahel. Fulani women often sell it in markets carrying calabashes on their heads, and in the hot dry season it is a daily drink that both quenches thirst and staves off hunger.",
+    "wiki": "Fura (food)",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Fura_da_nono.jpg/960px-Fura_da_nono.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Fura_da_nono.jpg",
+    "imageCredit": "Umaruyusuf・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "Suya (grilled skewers)",
+    "localName": "Suya",
+    "description": "Thin slices of beef or mutton are skewered, coated with \"yaji\" powder mixed from peanut flour, chili and spices, and grilled over charcoal, then sprinkled with sliced onion and tomato.",
+    "history": "Suya is a traditional grilled meat of the Hausa, who are known for herding and trade, and grill stalls are found in markets across northern Nigeria and southern Niger. The grillers (mai suya) are mostly Hausa men, and the craft is often passed down through generations in families. It is the most popular evening street snack and has spread across West Africa along the trade networks of Hausa merchants.",
+    "wiki": "Suya",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/SuyavarietiesTX.JPG/960px-SuyavarietiesTX.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:SuyavarietiesTX.JPG",
+    "imageCredit": "WhisperToMe・CC0・Wikimedia Commons"
+   },
+   {
+    "name": "Riz au gras (tomato and meat rice)",
+    "localName": "Riz au gras",
+    "description": "Rice is stewed together with tomato, onion, oil and beef or chicken, so that the grains soak up the red oily sauce; the flavor is savory and mildly spicy.",
+    "history": "Riz au gras is the name used in the French-speaking region for West African jollof rice; \"riz au gras\" means \"fatty rice\" in French, reflecting the language left by French colonial rule. The method originated with the Wolof of Senegal and reached Niger through exchanges across West Africa. Because rice and meat were relatively expensive in the past, it is the staple of banquets at important occasions such as weddings, naming ceremonies and Eid al-Fitr.",
+    "wiki": "Jollof rice",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Jollof_Rice_with_Stew.jpg/960px-Jollof_Rice_with_Stew.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Jollof_Rice_with_Stew.jpg",
+    "imageCredit": "Noahalorwu・CC BY-SA 4.0・Wikimedia Commons"
+   }
+  ]
+ }
+}

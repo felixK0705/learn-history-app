@@ -3,7 +3,8 @@ import Globe, { type GlobeInstance } from "globe.gl";
 import { geoArea, geoContains } from "d3-geo";
 import { AdditiveBlending, BufferAttribute, BufferGeometry, Color, Mesh, MeshPhongMaterial, PerspectiveCamera, Points, PointsMaterial, ShaderMaterial, SphereGeometry, SRGBColorSpace, type Texture, TextureLoader } from "three";
 import { CSS2DRenderer } from "three/examples/jsm/renderers/CSS2DRenderer.js";
-import { countries, countryByIso } from "../../data/world";
+import { countries, countryByIso, countryName } from "../../data/world";
+import { getLang, useLang, type Lang } from "../../lib/i18n";
 
 interface GeoFeature {
   type: string;
@@ -28,10 +29,23 @@ interface Props {
 Object.defineProperty(CSS2DRenderer.prototype, "sortObjects", { get: () => false, set: () => {}, configurable: true });
 
 /** 地球上空間有限，長國名用常見簡稱 */
-const SHORT: Record<string, string> = {
-  ARE: "阿聯", ATG: "安地卡", TTO: "千里達", COD: "剛果（金）", CAF: "中非",
-  BIH: "波赫", KNA: "聖克里斯多福", VCT: "聖文森", STP: "聖多美", PNG: "巴紐",
+const SHORT: Record<Lang, Record<string, string>> = {
+  "zh-TW": {
+    ARE: "阿聯", ATG: "安地卡", TTO: "千里達", COD: "剛果（金）", CAF: "中非",
+    BIH: "波赫", KNA: "聖克里斯多福", VCT: "聖文森", STP: "聖多美", PNG: "巴紐",
+  },
+  en: {
+    COD: "DR Congo", COG: "Congo", DOM: "Dominican Rep.", PNG: "Papua New Guinea", ARE: "UAE", BIH: "Bosnia",
+    CAF: "C. African Rep.", TTO: "Trinidad", GNQ: "Eq. Guinea", STP: "São Tomé", ATG: "Antigua",
+    KNA: "St. Kitts", VCT: "St. Vincent", FSM: "Micronesia", USA: "United States",
+  },
+  ja: {
+    COD: "コンゴ民主", COG: "コンゴ", ARE: "UAE", BIH: "ボスニア", CAF: "中央アフリカ", TTO: "トリニダード",
+    STP: "サントメ", ATG: "アンティグア", KNA: "セントクリストファー", VCT: "セントビンセント", FSM: "ミクロネシア",
+    PNG: "パプアニューギニア", PSE: "パレスチナ",
+  },
 };
+const labelText = (c: (typeof countries)[number], lang: Lang) => SHORT[lang][c.iso] ?? countryName(c, lang);
 
 // 窄視角鏡頭（15°）從遠處看：透視變形小，旋轉時國名幾乎只水平移動、不會上下飄。
 // 以下高度仍用原本 50° 視角時的數值設定，再換算成遠距離鏡頭的實際高度，畫面大小不變
@@ -52,6 +66,7 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
   { selectedIso, autoRotate, onSelectCountry, onReady },
   ref,
 ) {
+  const lang = useLang();
   const containerRef = useRef<HTMLDivElement>(null);
   const globeRef = useRef<GlobeInstance | null>(null);
   const features = useRef<GeoFeature[]>([]);
@@ -242,11 +257,11 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
         const bx = r.left - px;
         const by = r.top - py;
         // 緩衝：已顯示的國名要明顯疊進去才換位置或隱藏，已隱藏的要留出空隙才重新顯示，擦邊時不會來回閃
-        const pad = wasHidden.has(it.div) ? 10 : -4;
+        const pad = wasHidden.has(it.div) ? 12 : 2;
         const free = (k: number) => {
           const [ox, oy] = shift(k, r.width, r.height);
           const b = [bx + ox, by + oy, bx + ox + r.width, by + oy + r.height];
-          const p = k === prev ? pad : 4;
+          const p = k === prev ? pad : 6;
           return boxes.some((o) => b[0] - p < o[2] && b[2] + p > o[0] && b[1] - p / 2 < o[3] && b[3] + p / 2 > o[1]) ? null : b;
         };
         let pick = prev;
@@ -340,7 +355,7 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
         const len = Math.hypot(p.x, p.y, p.z) || 1;
         labelVecs.current.set(div, { x: p.x / len, y: p.y / len, z: p.z / len });
         labelPos.current.push({ div, iso: c.iso, rank: c.rank });
-        div.textContent = SHORT[c.iso] ?? c.zh;
+        div.textContent = labelText(c, getLang());
         div.title = c.en;
         if (c.iso === selectedRef.current) div.classList.add("is-active");
         labelEls.current.set(c.iso, div);
@@ -348,6 +363,14 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
       });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  // 切換語言時更新國名文字；寬度改變後由避讓重新判斷
+  useEffect(() => {
+    labelEls.current.forEach((div, iso) => {
+      const c = countryByIso.get(iso);
+      if (c) div.textContent = labelText(c, lang);
+    });
+  }, [lang]);
 
   useEffect(() => {
     labelEls.current.forEach((div, iso) => {

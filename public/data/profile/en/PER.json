@@ -1,0 +1,111 @@
+{
+ "iso": "PER",
+ "capital": "Lima",
+ "summary": "A country on the west coast of South America, the center of the Inca Empire, with ruins such as Machu Picchu and the Nazca Lines; its terrain spans desert, the Andes and the Amazon rainforest.",
+ "religion": {
+  "ranking": [
+   {
+    "name": "Catholicism",
+    "percent": 76,
+    "description": "In 1532 Pizarro led the Spanish in capturing the Inca emperor Atahualpa at Cajamarca and then conquered the Inca Empire, and Dominican, Franciscan and Jesuit missionaries began mass conversion. In 1570 the Inquisition was established in Lima, and from the early 17th century to the 1660s the \"extirpation of idolatry\" campaign destroyed Andean temples and sacred objects. Catholicism thus became the mainstream, but many Andean beliefs were absorbed into Catholic festivals, such as the Qoyllur Rit'i (Snow Star) pilgrimage and Holy Week processions in Cusco."
+   },
+   {
+    "name": "Protestantism (evangelical)",
+    "percent": 14,
+    "description": "Protestantism came in the 19th century with British and American merchants and missionaries, but until 1915 the Peruvian constitution prohibited public worship of any religion other than Catholicism. In the second half of the 20th century, especially during the clashes between the Shining Path guerrillas and government forces in the 1980s-1990s, evangelical and Pentecostal churches grew rapidly in the Andean highlands and in migrant settlements in Lima, offering mutual-aid networks and lifestyle rules such as abstinence from alcohol that attracted many poor families."
+   },
+   {
+    "name": "No religion",
+    "percent": 5,
+    "description": "The non-religious population is found mainly among educated young people in cities such as Lima. Peru as a whole is less secularized than its neighbors Chile and Uruguay, but with urbanization, the spread of the internet, and the exposure of sexual abuse scandals in the Catholic Church (such as the Sodalitium Christianae Vitae case of the 2010s), some young people have drifted away from the Church."
+   },
+   {
+    "name": "Other",
+    "percent": 5,
+    "description": "Other religions include Jehovah's Witnesses and Mormons, as well as small numbers of Buddhists, Jews and Muslims; the Buddhists are mostly descendants of Japanese and Chinese who immigrated from the late 19th century. In addition, the Andean indigenous veneration of the earth mother Pachamama and the mountain spirits (apus) remains widespread and often runs in parallel with Catholicism."
+   }
+  ],
+  "background": "The Inca Empire worshipped the sun god Inti and the earth mother Pachamama, and the emperor was regarded as the son of the sun. After the Spanish conquest of 1532 Catholicism became the state religion, and missionaries suppressed Andean beliefs through forced conversion and the \"extirpation of idolatry\" campaign, but many traditions were absorbed into Catholic festivals. After independence in 1821 Catholicism remained the state religion until the 1979 constitution established the separation of church and state. In the late 20th century evangelicals grew rapidly, and Andean traditional beliefs still coexist blended with Catholicism."
+ },
+ "language": {
+  "official": "The official language is Spanish, and indigenous languages such as Quechua and Aymara are also official in the areas where they predominate.",
+  "ranking": [
+   {
+    "name": "Spanish",
+    "percent": 83,
+    "description": "Spanish arrived after the Spanish conquest of 1532 and became the colony's language of administration, religion and education; Lima, as the capital of the Viceroyalty of Peru, was the center of Spanish rule in South America. In the 19th-20th centuries large numbers of people from the Andean highlands moved to Lima and the coastal cities, switching to Spanish for employment and education, so that native Spanish speakers rose from a minority to over eighty percent of the population.",
+    "greeting": "Hola",
+    "pronunciation": "o-la"
+   },
+   {
+    "name": "Quechua",
+    "percent": 14,
+    "description": "Quechua was the official language of the Inca Empire, which spread it throughout the Andes when it expanded in the 15th century. In the early colonial period missionaries preached in Quechua, but after the Tupac Amaru II uprising of 1780 the Spanish authorities banned the use of Quechua. In 1975 the Velasco military government made Quechua an official language, but it was long regarded as a symbol of poverty and the countryside; its speakers are concentrated in the southern highlands of Cusco, Ayacucho and Apurimac.",
+    "greeting": "Allillanchu",
+    "pronunciation": "a-yi-yan-chu"
+   },
+   {
+    "name": "Aymara",
+    "percent": 2,
+    "description": "Aymara is the language of the Aymara around Lake Titicaca in the south; it predates the Inca Empire and is the same as the Aymara of western Bolivia. The Aymara kept their own language and customs under both Inca and Spanish rule and are concentrated in the area of Puno Region.",
+    "greeting": "Kamisaki",
+    "pronunciation": "ka-mi-sa-ki"
+   }
+  ],
+  "history": "Before the Spanish conquest Peru had many languages including Quechua, Aymara and Mochica, and the Inca Empire used Quechua as its common language. After 1532 Spanish became the language of rule, and after the Tupac Amaru II uprising of the 1780s indigenous languages were suppressed. In 1975 Quechua became an official language, and the 1993 constitution gives indigenous languages official status in the areas where they predominate. Since 2003 intercultural bilingual education has been promoted, but Spanish remains dominant."
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "Ceviche",
+    "localName": "Ceviche",
+    "description": "Fresh white fish is cut into pieces and marinated for a few minutes in lime juice, salt, red onion and aji chili; the acidic juice turns the surface of the fish white, and it is eaten with boiled sweet potato and large-kernel corn.",
+    "history": "The Moche culture on the northern coast of Peru marinated fish in the acidic juice of the banana passionfruit about two thousand years ago, and after the Spanish brought limes and onions it took its present form. In the late 19th century Japanese immigrants added the technique of shortening the marinating time and emphasizing freshness. In 2004 Peru designated ceviche part of its national cultural heritage, June 28 each year is National Ceviche Day, and in 2023 UNESCO inscribed it on the list of intangible cultural heritage of humanity.",
+    "wiki": "Ceviche",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Cebiche_de_corvina.JPG/960px-Cebiche_de_corvina.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Cebiche_de_corvina.JPG",
+    "imageCredit": "Picanteria karol・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "Lomo saltado",
+    "localName": "Lomo saltado",
+    "description": "Strips of beef tenderloin are stir-fried over high heat with red onion, tomato and yellow chili in soy sauce and vinegar, with the smoky flavor of the wok, and eaten with french fries and white rice.",
+    "history": "Lomo saltado is representative of Peru's \"Chinese-Peruvian cuisine\" (chifa); from the mid-19th century about a hundred thousand Chinese laborers came to Peru as indentured workers to the sugarcane plantations and the guano mines, and later opened Chinese restaurants in Lima, bringing stir-frying and soy sauce into Peruvian cooking. It uses both Andean potatoes and Chinese wok technique and is a miniature on the table of Peru's diverse immigrant history; by the late 19th century it already appeared in Lima's restaurants.",
+    "wiki": "Lomo saltado",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Lomo_Saltado_-_Lima%2C_Peru_Miraflores_%28Tiendecita_Blanca%29.jpg/960px-Lomo_Saltado_-_Lima%2C_Peru_Miraflores_%28Tiendecita_Blanca%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Lomo_Saltado_-_Lima,_Peru_Miraflores_(Tiendecita_Blanca).jpg",
+    "imageCredit": "Chasqui (Luis Tamayo)・CC BY-SA 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "Ají de gallina (chicken in yellow chili cream sauce)",
+    "localName": "Ají de gallina",
+    "description": "Boiled chicken is shredded and stewed in a yellow cream sauce made from yellow chili, onion, garlic, bread soaked in milk, walnuts and Parmesan cheese, served with white rice, boiled egg and olives.",
+    "history": "The forerunner of ají de gallina is thought to be the \"manjar blanco\" brought from Spain in the colonial period (a white sauce dish made with chicken, almonds and milk), to which Peru's native yellow chili was later added, evolving into today's flavor. Yellow chili is the most important spice in Peruvian cooking, and this dish reflects the blending of Spanish and Andean food, a common family lunch in Peru.",
+    "wiki": "Ají de gallina",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Aj%C3%AD_de_gallina.jpg/960px-Aj%C3%AD_de_gallina.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Aj%C3%AD_de_gallina.jpg",
+    "imageCredit": "Feralbt・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "Anticucho (grilled beef heart skewers)",
+    "localName": "Anticucho",
+    "description": "Beef heart is cut into pieces, marinated in vinegar, cumin, garlic and red chili paste, skewered and grilled over charcoal, often eaten with boiled potato and corn and sold by street vendors.",
+    "history": "The method of grilled skewers originated in the Inca-period skewers made with llama meat, and the name comes from Quechua. During the Spanish colonial period the masters kept the better cuts for themselves and African slaves could obtain only offal such as beef heart, so they marinated beef heart in vinegar and spices and grilled it over charcoal, developing today's anticucho. It is the most popular snack on Lima's streets at night and during the October religious procession of the Lord of Miracles.",
+    "wiki": "Anticucho",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Anticuchos_-_Grilled_Beef_Heart_skewers.jpg/960px-Anticuchos_-_Grilled_Beef_Heart_skewers.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Anticuchos_-_Grilled_Beef_Heart_skewers.jpg",
+    "imageCredit": "Carly & Art・CC BY-SA 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "Pachamanca (earth-oven feast)",
+    "localName": "Pachamanca",
+    "description": "A pit is dug in the ground and heated stones placed in it; lamb, pork and chicken marinated with herbs are layered in together with potatoes, sweet potatoes, fava beans and corn, and covered with leaves and earth to cook for several hours.",
+    "history": "\"Pachamanca\" in Quechua means \"earth pot,\" and this cooking method can be traced to the Inca period or even earlier, a ritual dish of the Andes offered to the earth mother Pachamama. Before opening the pit people often express gratitude to the earth. It is a traditional dish at festivals, harvests and community gatherings in the Andean region, requiring the whole village to divide the work of preparing it, and it is still very common today in highland provinces such as Junín and Ayacucho.",
+    "wiki": "Pachamanca",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/57/PachaComer.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:PachaComer.jpg",
+    "imageCredit": "Håkan Svensson. Uploaded by Xauxa・CC BY-SA 3.0・Wikimedia Commons"
+   }
+  ]
+ }
+}

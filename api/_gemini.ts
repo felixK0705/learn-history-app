@@ -33,14 +33,27 @@ export type GeminiContent = { role: "user" | "model"; parts: { text: string }[] 
 
 type GenerateOptions = {
   system?: string;
+  /** 網站介面語言（zh-TW／en／ja），決定回答語言 */
+  lang?: unknown;
   contents: GeminiContent[];
   json?: boolean;
   temperature?: number;
   maxOutputTokens?: number;
 };
 
+const LANG_RULE: Record<string, string> = {
+  en: "OUTPUT LANGUAGE OVERRIDE: The user is reading the site in English. Write every word of your answer in natural English (for JSON, every text value in English), regardless of any earlier instruction to use Chinese.",
+  ja: "出力言語の指定：ユーザーはサイトを日本語で閲覧しています。それ以前の「繁體中文で回答」という指示に関係なく、回答はすべて自然な日本語で書くこと（JSON の場合は全テキスト値を日本語に）。",
+};
+
 /** 呼叫 Gemini generateContent，回傳純文字 */
-export async function generate({ system = SYSTEM_PROMPT, contents, json = false, temperature = 0.7, maxOutputTokens = 4096 }: GenerateOptions): Promise<string> {
+export async function generate({ system = SYSTEM_PROMPT, lang, contents, json = false, temperature = 0.7, maxOutputTokens = 4096 }: GenerateOptions): Promise<string> {
+  const rule = typeof lang === "string" ? LANG_RULE[lang] : undefined;
+  if (rule) {
+    system = `${system}\n\n${rule}`;
+    const last = contents[contents.length - 1];
+    if (last?.role === "user") contents = [...contents.slice(0, -1), { role: "user", parts: [{ text: `${last.parts[0].text}\n\n(${rule})` }] }];
+  }
   const key = process.env.GEMINI_API_KEY;
   if (!key) throw new HttpError(503, DISABLED_MESSAGE);
 

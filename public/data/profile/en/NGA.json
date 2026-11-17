@@ -1,0 +1,125 @@
+{
+ "iso": "NGA",
+ "capital": "Abuja",
+ "summary": "A country on the Gulf of Guinea in West Africa with the largest population in Africa and more than 250 ethnic groups. It is rich in oil, became independent from Britain in 1960, and is known for its film industry (Nollywood) and music.",
+ "religion": {
+  "ranking": [
+   {
+    "name": "Islam",
+    "percent": 50,
+    "description": "Islam reached the Kanem-Bornu Empire in the northeast around the 11th century via trans-Saharan trade, and spread to the Hausa city-states such as Kano and Katsina in the 14th-15th centuries. In 1804 the Fulani scholar Usman dan Fodio launched a jihad and established the Sokoto Caliphate, making Islam universal in the north. British colonial rule was indirect, preserving the power of the northern emirs and restricting missionaries from entering the north, so Muslims are concentrated in the north, and from 2000 twelve northern states even introduced Islamic criminal law. There are also many Muslims among the Yoruba of the southwest."
+   },
+   {
+    "name": "Protestant and other Christianity",
+    "percent": 36,
+    "description": "Protestantism was introduced in the 1840s by Anglican, Methodist and Baptist missionaries from the coastal towns of Badagry and Abeokuta, with returning freed slaves also playing an important role; in 1864 the Yoruba Samuel Ajayi Crowther became the first African Anglican bishop. During British colonial rule mission schools were concentrated in the south, so most residents of the south and center became Christians. Independent churches such as the Aladura that arose in the 20th century, and the large Pentecostal churches that burst forth after the 1970s, have kept the Christian share growing."
+   },
+   {
+    "name": "Catholicism",
+    "percent": 12,
+    "description": "Catholicism was briefly introduced in the 15th century when the Portuguese reached the Kingdom of Benin, but it truly took root only after 1885, when orders such as the Holy Ghost Fathers entered the Igbo region in the southeast. Missionaries relied on schools as their main means, and the Igbo eagerly embraced Western education, making the southeast the core region of Catholicism; today Nigeria is one of the African countries with the most Catholics."
+   },
+   {
+    "name": "Traditional beliefs",
+    "percent": 2,
+    "description": "The Orisha faith of the Yoruba and the ancestor and earth-goddess beliefs of the Igbo are Nigeria's traditional religions. As Islam and Christianity expanded in the 19th-20th centuries, the population following purely traditional religion fell sharply, but many customs are preserved in festivals, such as the annual Osun-Osogbo festival in Osun State. The Yoruba Orisha faith also spread with the slave trade to Brazil and Cuba."
+   }
+  ],
+  "background": "Traditional beliefs of all peoples originally prevailed in Nigeria. From the 11th century Islam came to the north through trans-Saharan trade and became universal there after the Sokoto jihad of 1804. In the mid-19th century Christian missionaries entered from the southern coast, and during British colonial rule mission schools were concentrated in the south, creating a distribution of Muslims in the north and Christians in the south. This north-south difference still affects politics today; after 2000 many northern states adopted Islamic law, and religious and ethnic conflicts occur from time to time."
+ },
+ "language": {
+  "official": "The official language is English.",
+  "ranking": [
+   {
+    "name": "Hausa",
+    "percent": 25,
+    "description": "Hausa belongs to the Chadic branch of the Afroasiatic family and is the mother tongue of the Hausa of the north. After the Sokoto Caliphate unified the north in the 19th century, Hausa became a language of administration and commerce, and the British also used it as the administrative language of the north during the colonial period, so many other peoples of the north use it as a second language; it is the most widely spoken language in Nigeria.",
+    "greeting": "Sannu",
+    "pronunciation": "san-nu"
+   },
+   {
+    "name": "Yoruba",
+    "percent": 21,
+    "description": "Yoruba belongs to the Niger-Congo family and is the language of the Yoruba of the southwest, spoken in Lagos, Ibadan and Abeokuta. In the 19th century Bishop Crowther, a freed Yoruba, led the translation of the Bible and established a standard Yoruba written in the Latin alphabet. Yoruba also spread with the slave trade to Brazil and Cuba, influencing local religious vocabulary.",
+    "greeting": "Ẹ n lẹ / Bawo ni",
+    "pronunciation": "eh-n-leh / ba-wo ni"
+   },
+   {
+    "name": "Igbo",
+    "percent": 18,
+    "description": "Igbo is the language of the Igbo of the southeast and has many dialects. In the Biafran War of the 1960s (1967-1970) the Igbo declared independence, and the war caused enormous loss of life, deeply affecting the historical memory of the Igbo-speaking community. Today Igbo speakers are concentrated mainly in southeastern states such as Enugu and Anambra.",
+    "greeting": "Ndewo",
+    "pronunciation": "n-de-wo"
+   },
+   {
+    "name": "Fula",
+    "percent": 6,
+    "description": "Fula is the language of the nomadic Fulani, who are spread across the north; after the Fulani led the Sokoto jihad in the 19th century and took power, many urban Fulani aristocrats instead switched to speaking Hausa, so Fula is preserved mainly among rural and nomadic Fulani.",
+    "greeting": "Jam waali",
+    "pronunciation": "jam waa-li"
+   },
+   {
+    "name": "Nigerian Pidgin",
+    "percent": 5,
+    "description": "Nigerian Pidgin derives from the trade language of Portuguese and British merchants and coastal residents from the 15th century onward, built on English vocabulary and blended with local grammar. It became widespread in the port cities during the colonial period and is today a common language among the different peoples of the south, used especially in cities such as Lagos and Port Harcourt and widely in music, broadcasting and comedy; the number of second-language speakers runs to tens of millions.",
+    "greeting": "How far?",
+    "pronunciation": "how far"
+   }
+  ],
+  "history": "Nigeria has more than five hundred languages, and in the north Hausa was written in the Arabic-based \"Ajami\" script as early as the Islamization. In the 19th century missionaries created Latin-alphabet writing for Yoruba, Igbo and others, and after Britain merged northern and southern Nigeria in 1914, English became the language of administration and education. After independence in 1960 English served as a neutral official language to avoid favoring any one large ethnic group, and the 1999 constitution also allows Hausa, Yoruba and Igbo to be used in the National Assembly."
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "Jollof rice",
+    "localName": "Jollof rice",
+    "description": "Rice is stewed with tomato, red bell pepper, onion, chili puree, curry powder and bay leaves into a red rice with a smoky aroma, often served with fried chicken, fried plantain and salad.",
+    "history": "The name jollof rice comes from the Wolof (Jolof) Empire of Senegal in the 14th-16th centuries, and this one-pot rice dish spread with trade and migration across West Africa. Tomatoes and chilies are American crops that became widespread only in the colonial period. In Nigeria jollof rice is a must at parties and weddings, and Nigeria and Ghana have long argued online over whose jollof rice tastes better, in what is called the \"Jollof Wars.\"",
+    "wiki": "Jollof rice",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Jollof_Rice_with_Stew.jpg/960px-Jollof_Rice_with_Stew.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Jollof_Rice_with_Stew.jpg",
+    "imageCredit": "Noahalorwu・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "Suya",
+    "localName": "Suya",
+    "description": "Thin slices of beef are skewered, coated with \"yaji\" powder mixed from roasted peanut flour, chili, ginger and spices, and grilled over charcoal, then eaten with raw onion and tomato.",
+    "history": "Suya originated among the Hausa and Fulani of the north, who are known for herding and cattle trading, and grill stalls are an important sight in northern markets. As Hausa merchants moved to southern cities, suya spread to places such as Lagos after the 1970s and became the most popular evening street snack across the country. The grillers are mostly Hausa men, and the craft is often passed down in families.",
+    "wiki": "Suya",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/SuyavarietiesTX.JPG/960px-SuyavarietiesTX.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:SuyavarietiesTX.JPG",
+    "imageCredit": "WhisperToMe・CC0・Wikimedia Commons"
+   },
+   {
+    "name": "Egusi soup",
+    "localName": "Egusi soup",
+    "description": "Ground melon seeds are stewed with palm oil, chili, leafy greens such as bitter leaf or spinach, beef and dried fish; the broth is thick with a nutty aroma, and it is eaten with pounded yam or cassava balls.",
+    "history": "Melon seed (egusi) is a native crop of West Africa and has been grown for hundreds of years among the Yoruba and Igbo of the south. Palm oil is a specialty of the West African rainforest, and after Britain abolished the slave trade in the 19th century, palm oil exports became the most important trade of the Nigerian coast, which was known as the \"Oil Rivers.\" Egusi soup is the most common soup in the country and appears at weddings, funerals and family gatherings.",
+    "wiki": "Egusi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/EGUSI.JPG/960px-EGUSI.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:EGUSI.JPG",
+    "imageCredit": "Zz411 at English Wikipedia・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "Pounded yam",
+    "localName": "Pounded yam",
+    "description": "Yam is boiled and then pounded repeatedly with a pestle in a wooden mortar into a smooth, elastic dough, and a small lump is pinched off by hand and dipped in soup.",
+    "history": "Yam is one of the oldest crops of West Africa, and Nigeria is the world's largest yam producer, accounting for the majority of global output. Among the Igbo and Yoruba, yam has an important cultural standing; the Igbo hold the annual \"New Yam Festival\" to celebrate the harvest, and successfully growing large quantities of yam is a symbol of a man's wealth and status, as vividly described in the novel Things Fall Apart by the Nigerian writer Achebe.",
+    "wiki": "Pounded yam",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Pounded_yam_%28Iy%C3%A0n%29.jpg/960px-Pounded_yam_%28Iy%C3%A0n%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Pounded_yam_(Iy%C3%A0n).jpg",
+    "imageCredit": "Taoheedah・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "Moi moi",
+    "localName": "Moi moi",
+    "description": "Peeled black-eyed peas are ground into a puree, mixed with red pepper, onion, palm oil and seasonings, sometimes with boiled egg or fish added, and steamed in leaves or tins to become a delicate pudding-like bean cake.",
+    "history": "Moi moi is a traditional dish of the Yoruba; the cowpea originated in West Africa and has been an important source of protein for thousands of years. Traditionally it is wrapped in a large leaf called \"ewe eran\" for steaming, and the leaf imparts a distinctive aroma, while modern households often use plastic bags or tins. It is an indispensable side dish at parties and festivals and is often served together with jollof rice.",
+    "wiki": "Moi moi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Moin-Moin-good.jpg/960px-Moin-Moin-good.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Moin-Moin-good.jpg",
+    "imageCredit": "ProVeg International・CC0・Wikimedia Commons"
+   }
+  ]
+ }
+}

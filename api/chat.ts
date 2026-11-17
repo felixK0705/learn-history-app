@@ -17,6 +17,6 @@ export default postHandler(async (body) => {
 
   const context = str(body.context, 1500);
   const system = context ? `${SYSTEM_PROMPT}\n\n目前情境（使用者在網站上的位置）：${context}。若問題與此情境相關，請結合它回答。` : SYSTEM_PROMPT;
-  const answer = await generate({ system, contents });
+  const answer = await generate({ system, contents, lang: body.lang });
   return { answer };
 });

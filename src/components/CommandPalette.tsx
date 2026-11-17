@@ -1,10 +1,10 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Globe2, Landmark, Search, User } from "lucide-react";
-import { countries } from "../data/world";
+import { CONTINENT, countries, countryName } from "../data/world";
 import { useReveal } from "../lib/motion";
-import { figures } from "../data/figures";
-import { buildings } from "../data/buildings";
+import { useBuildings, useFigures } from "../data/localized";
+import { useLang, useT, type Tr } from "../lib/i18n";
 
 interface Item {
   kind: "country" | "figure" | "building";
@@ -15,39 +15,12 @@ interface Item {
   to: string;
 }
 
-const kindMeta = {
-  country: { label: "國家", icon: Globe2 },
-  figure: { label: "人物", icon: User },
-  building: { label: "建築", icon: Landmark },
-} as const;
-
-const allItems: Item[] = [
-  ...[...countries].sort((a, b) => a.rank - b.rank).map((c) => ({
-    kind: "country" as const,
-    id: c.iso,
-    title: c.zh,
-    subtitle: `${c.en}・${c.continent}`,
-    // 台／臺異體字都能搜到
-    keywords: `${c.zh} ${c.zh.replace(/台/g, "臺")} ${c.en} ${c.iso}`.toLowerCase(),
-    to: `/?country=${c.iso}`,
-  })),
-  ...figures.map((f) => ({
-    kind: "figure" as const,
-    id: f.id,
-    title: f.name,
-    subtitle: `${f.englishName}・${f.role}`,
-    keywords: `${f.name} ${f.englishName} ${f.role}`.toLowerCase(),
-    to: `/figures?focus=${f.id}`,
-  })),
-  ...buildings.map((b) => ({
-    kind: "building" as const,
-    id: b.id,
-    title: b.name,
-    subtitle: `${b.englishName}・${b.location}`,
-    keywords: `${b.name} ${b.englishName} ${b.location}`.toLowerCase(),
-    to: `/buildings/${b.id}`,
-  })),
-];
+const kindMeta: Record<Item["kind"], { label: Tr; icon: typeof Globe2 }> = {
+  country: { label: { "zh-TW": "國家", en: "Country", ja: "国" }, icon: Globe2 },
+  figure: { label: { "zh-TW": "人物", en: "Person", ja: "人物" }, icon: User },
+  building: { label: { "zh-TW": "建築", en: "Building", ja: "建築" }, icon: Landmark },
+};
+const byRank = [...countries].sort((a, b) => a.rank - b.rank);
 
 export default function CommandPalette({ open, onClose }: { open: boolean; onClose: () => void }) {
   const [q, setQ] = useState("");
@@ -58,12 +31,51 @@ export default function CommandPalette({ open, onClose }: { open: boolean; onClo
   useReveal(backdropRef, [open], { y: 0, duration: 0.25 });
   useReveal(dialogRef, [open], { y: -12, scale: 0.97, duration: 0.4 });
   const navigate = useNavigate();
+  const lang = useLang();
+  const t = useT();
+  const { figures } = useFigures();
+  const buildings = useBuildings();
+
+  // 中文、英文與目前語言的名稱都能搜到；台／臺異體字也能搜到
+  const allItems = useMemo<Item[]>(
+    () => [
+      ...byRank.map((c) => {
+        const name = countryName(c, lang);
+        return {
+          kind: "country" as const,
+          id: c.iso,
+          title: name,
+          subtitle: lang === "en" ? t(CONTINENT[c.continent]) : `${c.en}・${t(CONTINENT[c.continent])}`,
+          keywords: `${name} ${c.zh} ${c.zh.replace(/台/g, "臺")} ${c.en} ${c.iso}`.toLowerCase(),
+          to: `/?country=${c.iso}`,
+        };
+      }),
+      ...figures.map((f) => ({
+        kind: "figure" as const,
+        id: f.id,
+        title: f.name,
+        subtitle: lang === "en" ? f.role : `${f.englishName}・${f.role}`,
+        keywords: `${f.name} ${f.englishName} ${f.role}`.toLowerCase(),
+        to: `/figures?focus=${f.id}`,
+      })),
+      ...buildings.map((b) => ({
+        kind: "building" as const,
+        id: b.id,
+        title: b.name,
+        subtitle: lang === "en" ? b.location : `${b.englishName}・${b.location}`,
+        keywords: `${b.name} ${b.englishName} ${b.location}`.toLowerCase(),
+        to: `/buildings/${b.id}`,
+      })),
+    ],
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [lang, figures, buildings],
+  );
 
   const results = useMemo(() => {
     const s = q.trim().toLowerCase();
     const list = s ? allItems.filter((i) => i.keywords.includes(s)) : allItems.filter((i) => i.kind === "country");
     return list.slice(0, 40);
-  }, [q]);
+  }, [q, allItems]);
 
   useEffect(() => {
     if (open) {
@@ -87,7 +99,7 @@ export default function CommandPalette({ open, onClose }: { open: boolean; onClo
       <div
         ref={dialogRef}
         role="dialog"
-        aria-label="搜尋"
+        aria-label={t({ "zh-TW": "搜尋", en: "Search", ja: "検索" })}
         className="glass w-full max-w-xl overflow-hidden rounded-2xl shadow-2xl"
         onClick={(e) => e.stopPropagation()}
       >
@@ -109,13 +121,13 @@ export default function CommandPalette({ open, onClose }: { open: boolean; onClo
               }
               if (e.key === "Enter" && results[active]) go(results[active]);
             }}
-            placeholder="輸入國家、歷史人物或建築名稱…"
+            placeholder={t({ "zh-TW": "輸入國家、歷史人物或建築名稱…", en: "Search countries, historical figures or buildings…", ja: "国・歴史上の人物・建築を検索…" })}
             className="h-14 flex-1 bg-transparent text-base text-ink outline-none placeholder:text-mute/70"
           />
           <kbd className="rounded border border-white/15 px-1.5 text-[10px] text-mute">Esc</kbd>
         </div>
         <ul className="scroll-thin max-h-[50vh] overflow-y-auto p-2">
-          {results.length === 0 && <li className="px-3 py-8 text-center text-sm text-mute">找不到「{q}」相關結果</li>}
+          {results.length === 0 && <li className="px-3 py-8 text-center text-sm text-mute">{t({ "zh-TW": `找不到「${q}」相關結果`, en: `No results for "${q}"`, ja: `「${q}」に一致する結果はありません` })}</li>}
           {results.map((item, i) => {
             const Icon = kindMeta[item.kind].icon;
             return (
@@ -132,7 +144,7 @@ export default function CommandPalette({ open, onClose }: { open: boolean; onClo
                     <span className="block truncate text-sm text-ink">{item.title}</span>
                     <span className="block truncate text-xs text-mute">{item.subtitle}</span>
                   </span>
-                  <span className="text-[10px] text-mute">{kindMeta[item.kind].label}</span>
+                  <span className="text-[10px] text-mute">{t(kindMeta[item.kind].label)}</span>
                 </button>
               </li>
             );

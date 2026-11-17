@@ -1,0 +1,106 @@
+{
+ "iso": "MRT",
+ "capital": "ヌアクショット",
+ "summary": "北西アフリカの大西洋岸に位置する国。国土の大部分はサハラ砂漠で、北アフリカのアラブ世界と西アフリカをつなぐ架け橋であり、1960年にフランスから独立した。",
+ "religion": {
+  "ranking": [
+   {
+    "name": "イスラム教（スンナ派）",
+    "percent": 99,
+    "description": "イスラム教は8〜9世紀にサハラ縦断の隊商を通じて伝わり、11世紀に現在のモーリタニア一帯で興ったムラービト運動が厳格なマーリク派スンナ派の教義をもって北西アフリカを征服し、イスラム教が現地に根づいた。その後、カーディリー教団やティジャーニー教団などのスーフィー教団が遊牧社会に浸透し、シンゲッティなどの古都はイスラム学術の中心となった。1960年の独立後、国号は「モーリタニア・イスラム共和国」と定められ、憲法はイスラム教を国教と規定しており、国民はほぼすべてがスンナ派ムスリムである。"
+   },
+   {
+    "name": "キリスト教",
+    "percent": 1,
+    "description": "キリスト教は20世紀のフランス植民地支配とともに伝わったが、フランスの現地統治は間接統治が中心で、宣教活動は限られていた。今日の信者は主に外国人とセネガルやマリなど近隣諸国からの移民で、首都ヌアクショットとヌアディブに集中している。法律はムスリムへの布教を禁じているため、その割合は極めて低い。"
+   },
+   {
+    "name": "無宗教およびその他",
+    "percent": 1,
+    "description": "モーリタニア憲法はイスラム教を国教とし、イスラム法では背教に重い刑が科されうるため、無宗教であることや他の宗教を信仰することを公然と表明するのは社会的にも法的にも危険を伴う。そのためこうした人口は統計上ごくわずかで、多くは外国人居住者である。"
+   }
+  ],
+  "background": "モーリタニアのベルベル系遊牧民は、8〜9世紀にサハラ縦断交易を通じてイスラム教に触れた。11世紀にはこの砂漠からムラービト朝が興り、マーリク派スンナ派イスラム教を北西アフリカ全域とイベリア半島に広めた。その後アラブ系のハッサーン族が移住し、スーフィー教団やシンゲッティ、ワダンなどの学術古都によってイスラム教は社会に深く根づいた。1960年の独立後に国号をイスラム共和国と定め、イスラム法は重要な法源となっている。"
+ },
+ "language": {
+  "official": "公用語はアラビア語である。",
+  "ranking": [
+   {
+    "name": "ハッサーニーヤ・アラビア語",
+    "percent": 80,
+    "description": "ハッサーニーヤ・アラビア語は、15〜17世紀に東方から移住してきたアラブ系のベニ・ハッサーン族に由来する。彼らは1644〜1674年のシャール・ババ戦争でベルベル人を破って政治的主導権を握り、その言語は次第に現地のベルベル語に取って代わった。今日ではムーア人（白ムーア人と黒ムーア人のハラティンを含む）の母語であり、全国の共通語でもある。公式の標準アラビア語は宗教、政府、正式な文書に用いられる。",
+    "greeting": "السلام عليكم",
+    "pronunciation": "as-sa-lām ʿa-lay-kum"
+   },
+   {
+    "name": "プラール語（フラ語）",
+    "percent": 9,
+    "description": "プラール語はフラニ人（モーリタニアではハールプラール人と呼ばれる）の言語で、主に南部のセネガル川沿いに分布している。1966年から政府がアラビア語化教育を進めたため南部の黒人諸民族の抗議を招き、1989年のセネガルとの衝突では多数のフラニ人が追放された。言語権は今なお敏感な民族問題である。",
+    "greeting": "Jam waali",
+    "pronunciation": "jam waa-li"
+   },
+   {
+    "name": "ウォロフ語",
+    "percent": 1,
+    "description": "ウォロフ語はセネガルの主要言語であり、モーリタニアでは南部の河岸と首都にいる少数のウォロフ人だけが用いている。プラール語、ソニンケ語とともに国語に指定されているが、使用人口は少なく、割合は約1%である。",
+    "greeting": "Nanga def",
+    "pronunciation": "nan-ga def"
+   }
+  ],
+  "history": "モーリタニアではもともとベルベル語族のゼナガ語が通用していた。15世紀からアラブ系のベニ・ハッサーン族が南下し、17世紀のシャール・ババ戦争の後、彼らのハッサーニーヤ・アラビア語が次第に主流となり、ゼナガ語は今ではほぼ消滅している。1903年からフランスの植民地となり、フランス語が行政言語となった。1960年の独立後、アラビア語化が次第に進められ、1991年の憲法はアラビア語を唯一の公用語とし、プラール語、ソニンケ語、ウォロフ語を国語と定めたが、フランス語は今も商業や高等教育で広く用いられている。"
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "チェブジェン（魚の炊き込みご飯）",
+    "localName": "Thieboudienne",
+    "description": "魚の切り身をキャッサバ、ニンジン、ナス、キャベツなどの野菜とともにトマトソースで煮込み、その魚の煮汁で米を炊く。米が魚のうまみとトマトの香りをたっぷり吸い込む。",
+    "history": "この料理は隣国セネガルのサン＝ルイ一帯に由来し、19世紀に現地の料理人が考案したと伝えられる。モーリタニア南部はセネガル川に沿ってウォロフ人やフラニ人の文化とつながっており、大西洋沿岸には豊かな漁場もあるため、チェブジェンは国境を越えてモーリタニアの家庭料理となった。フランス植民地時代にインドシナから導入された砕き米によって、この料理は普及した。",
+    "wiki": "Thieboudienne",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Thieboudienne.JPG/960px-Thieboudienne.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Thieboudienne.JPG",
+    "imageCredit": "KVDP・Public domain・Wikimedia Commons"
+   },
+   {
+    "name": "メシュイ（羊の丸焼き）",
+    "localName": "Méchoui",
+    "description": "羊を丸ごと一頭、塩と香辛料をすり込み、地面の穴や炭火の上で数時間じっくり焼き、皮がパリッとして肉が柔らかくなるまで焼いて、手で直接ちぎって食べる。",
+    "history": "メシュイはマグリブとサハラの遊牧民に共通する宴席の伝統であり、モーリタニアのムーア人社会では、羊を屠って客をもてなすことが主人の寛大さと地位を表す。結婚式、貴賓の歓迎、そして預言者イブラーヒームの犠牲を記念するイスラム教の犠牲祭の際によく登場し、犠牲祭には各家庭が羊を屠って親戚や友人、貧しい人々に分け与える。",
+    "wiki": "Mechoui",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Mechoui.jpg/960px-Mechoui.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Mechoui.jpg",
+    "imageCredit": "Andre Piquet・CC BY 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "クスクス",
+    "localName": "Couscous / Lekhsel",
+    "description": "粗挽きの小麦またはキビの粉をこすり合わせて小さな粒にして蒸し、皿の底に敷いて、羊肉、ラクダ肉、野菜の煮込みの汁をかける。",
+    "history": "クスクスは北アフリカのベルベル人の古くからの主食であり、11〜13世紀頃のマグリブ地域に起源があると一般に考えられている。モーリタニアはサハラ南縁に位置するため、北方の小麦のクスクスを取り入れる一方、現地のキビで作る版もあり、現地では「レクセル」と呼ばれる。家族全員が輪になって大皿を分け合い、右手で食べるのは、遊牧社会の重要な食事作法である。",
+    "wiki": "Couscous",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Moroccan_cuscus%2C_from_Casablanca%2C_September_2018.jpg/960px-Moroccan_cuscus%2C_from_Casablanca%2C_September_2018.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Moroccan_cuscus,_from_Casablanca,_September_2018.jpg",
+    "imageCredit": "Lmmima・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "モーリタニア式ミントティー",
+    "localName": "Atay",
+    "description": "中国産の緑茶に新鮮なミントとたっぷりの砂糖を加えて何度も煮出し、高い位置から小さなグラスに注いで泡を立てる。慣習として続けて3杯飲む。",
+    "history": "緑茶は18〜19世紀にイギリス商人によってモロッコへ輸入され、さらに隊商路に沿ってサハラへ伝わり、遊牧民の日常の飲み物となった。お茶を淹れるのはもてなしの儀式であり、家の男性が取り仕切ることが多く、1時間以上続くこともある。現地には3杯の茶を「1杯目は人生のように苦く、2杯目は愛のように甘く、3杯目は死のようにやわらかい」と形容する諺があり、お茶を断ることは失礼とされる。",
+    "wiki": "Maghrebi mint tea",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Tunisian_Tea_with_pine_nuts.jpg/960px-Tunisian_Tea_with_pine_nuts.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Tunisian_Tea_with_pine_nuts.jpg",
+    "imageCredit": "sky#walker・CC BY-SA 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "ラクダの乳",
+    "localName": "Camel milk",
+    "description": "搾りたてのラクダの乳をそのまま飲むか、自然発酵させて少し酸味のあるヨーグルトにする。栄養が豊富で、脂肪分は牛乳より少ない。",
+    "history": "ラクダは紀元前後の数百年の間にサハラへ導入され、現地の遊牧生活と砂漠縦断交易を根本から変えた。モーリタニアの遊牧民にとって、ラクダの乳は水の乏しい砂漠で重要な水分と栄養の源であり、長期間それだけで生き延びることもできる。1989年にヌアクショットに設立されたティヴィスキ乳業は、アフリカで最も早くラクダの乳を工業生産した工場の一つである。",
+    "wiki": "Camel milk",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/74/Fresh_camel_milk_%28Dubai%29_%28cropped%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Fresh_camel_milk_(Dubai)_(cropped).jpg",
+    "imageCredit": "krebsmaus07 from Flickr・CC BY 2.0・Wikimedia Commons"
+   }
+  ]
+ }
+}

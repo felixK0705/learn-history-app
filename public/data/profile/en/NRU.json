@@ -1,0 +1,109 @@
+{
+ "iso": "NRU",
+ "capital": "Yaren (seat of government; no de jure capital)",
+ "summary": "An island nation in the South Pacific with an area of about 21 square kilometers, the world's smallest republic; it grew rich from phosphate mining and became independent in 1968.",
+ "religion": {
+  "ranking": [
+   {
+    "name": "Nauru Congregational Church",
+    "percent": 36,
+    "description": "After Germany annexed Nauru in 1888, Congregational missionaries led by the American Philip Delaporte arrived in 1899; he translated the Bible into Nauruan and founded schools. The Nauru Congregational Church inherited this tradition, established a close relationship with the state at independence in 1968, and is still the largest church, with its churches concentrated in villages in the west and south."
+   },
+   {
+    "name": "Catholicism",
+    "percent": 33,
+    "description": "The Missionaries of the Sacred Heart arrived in 1902 and set up mission stations and schools in the east, creating a long rivalry between the two great denominations with the Congregationalists. During the Second World War the Japanese occupied the island and deported large numbers of Nauruans to Truk, and Catholic priests and believers suffered alike, an experience that deepened Catholicism's standing in the community."
+   },
+   {
+    "name": "Assemblies of God (Pentecostal)",
+    "percent": 13,
+    "description": "The Assemblies of God is a Pentecostal church that came in the late 20th century from Australia and other Pacific islands, attracting young people with fervent worship and music, and it has grown rapidly since the 1990s."
+   },
+   {
+    "name": "Nauru Independent Church",
+    "percent": 10,
+    "description": "The Nauru Independent Church is a local church in the Protestant tradition, led by Nauruans themselves and not affiliated with a foreign mission. Its existence reflects how, in a small country of only about ten thousand people, churches are very closely tied to family and community, and believers mostly belong to different churches according to family tradition."
+   },
+   {
+    "name": "No religion",
+    "percent": 2,
+    "description": "Nauruan society centers on the church and almost everyone belongs to some church, so very few identify as non-religious, mainly a small number of young people and foreign residents."
+   }
+  ],
+  "background": "The indigenous people of Nauru believed in ancestors and spirits such as the goddess called \"Eijebong.\" Germany annexed Nauru in 1888, Congregational missionaries arrived in 1899 and Catholicism came in 1902, and the two denominations quickly converted the islanders to Christianity. After the First World War Nauru was administered as a mandate by Australia, and in the Second World War it was occupied by Japan and many residents were deported to outer islands. After independence in 1968 Christianity remained the core of society, with the churches distributed across the districts of the island."
+ },
+ "language": {
+  "official": "The official languages are Nauruan and English.",
+  "ranking": [
+   {
+    "name": "Nauruan",
+    "percent": 93,
+    "description": "Nauruan belongs to the Micronesian branch of the Austronesian family and is the language of the indigenous Nauruans. Because the island has a population of only about ten thousand and is relatively isolated, Nauruan has remained the main language of daily life and the home. In 1899 the missionary Delaporte translated the Bible and compiled a dictionary, establishing a writing system for Nauruan.",
+    "greeting": "Ekamawir omo",
+    "pronunciation": "e-ka-ma-wir o-mo"
+   },
+   {
+    "name": "English",
+    "percent": 5,
+    "description": "English is the language of administration and education introduced during the Australian mandate period from the 1920s, and after independence in 1968 it remained an official language alongside Nauruan. Education from secondary school upward is mostly in English, and government and business documents also use English, but the population that speaks English as a home language is only about 5%.",
+    "greeting": "Hello",
+    "pronunciation": "heh-loh"
+   }
+  ],
+  "history": "Nauruan was the spoken language of the island's indigenous people and had no writing before the 19th century. During German rule in 1899, the Congregational missionary Delaporte recorded Nauruan in the Latin alphabet and translated the Bible. After the First World War it was administered jointly as a mandate by Australia, Britain and New Zealand, and English became the language of administration and schools. During the Japanese occupation in the Second World War some residents also learned Japanese. After independence in 1968, Nauruan and English were made official languages side by side."
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "Coconut fish",
+    "localName": "Coconut fish",
+    "description": "Fresh fish is cut into pieces and marinated in coconut milk and lime juice and eaten raw, or stewed with coconut milk; the flavor is refreshing with a coconut aroma, and it is often eaten with rice or breadfruit.",
+    "history": "Nauru is surrounded by sea, and fishing has always been the islanders' main livelihood, while the coconut is one of the few crops that can grow in quantity on the island; the two combine into a traditional dish. In the past the Nauruans raised milkfish in the lagoon of the atoll as a steady source of fish. Although imported food is now common, coconut fish remains a representative dish at family gatherings and celebrations.",
+    "wiki": "Coconut milk",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Cononut_milk.JPG/960px-Cononut_milk.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Cononut_milk.JPG",
+    "imageCredit": "S Sepp・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "Pandanus",
+    "localName": "Pandanus",
+    "description": "The fruit of the pandanus consists of many wedge-shaped segments; the fibrous flesh can be chewed directly, or cooked and pressed into a pulp and dried into a paste for preservation.",
+    "history": "The pandanus is salt-tolerant and drought-tolerant and can grow in Nauru's poor coral soil, traditionally one of the island's most important foods. Before phosphate mining, pandanus paste kept for a long time and was often eaten in times of drought and food shortage. Phosphate mining in the 20th century devastated about eighty percent of the land in the center of the island and traditional crops decreased greatly, making pandanus all the more precious.",
+    "wiki": "Pandanus tectorius",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Pandanus_tectorius.jpg/960px-Pandanus_tectorius.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Pandanus_tectorius.jpg",
+    "imageCredit": "No machine-readable author provided. Marshman~commonswiki as・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "Sashimi",
+    "localName": "Sashimi",
+    "description": "Freshly caught tuna is cut into thin slices and eaten raw with soy sauce and wasabi; the taste is fresh and sweet, and it often appears at family gatherings and banquets.",
+    "history": "Sashimi is generally thought to be an eating habit introduced to Nauru during the Japanese occupation of 1942-1945, when the Japanese built an airfield and defensive works on the island and also brought Japanese cuisine. After the war the Nauruans kept this way of eating, and because the surrounding waters are rich in tuna, sashimi has become quite a common dish on the island, often seen at gatherings.",
+    "wiki": "Sashimi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/241109_Shigaraki_ware_Koga_Shiga_pref_Japan01s3.jpg/960px-241109_Shigaraki_ware_Koga_Shiga_pref_Japan01s3.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:241109_Shigaraki_ware_Koga_Shiga_pref_Japan01s3.jpg",
+    "imageCredit": "663highland・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "Breadfruit",
+    "localName": "Breadfruit",
+    "description": "Breadfruit is roasted whole or cut into pieces and boiled; the flesh has a texture like potato and bread with a faint sweetness, and it can be eaten with fish and coconut milk.",
+    "history": "Breadfruit is a traditional staple of the Pacific islands, spread among the islands thousands of years ago by Austronesian-speaking seafarers. In Nauru, breadfruit and pandanus were the main sources of starch before phosphate mining. The wealth that phosphate brought in the 20th century led imported rice and processed food to replace traditional crops, causing serious problems of obesity and diabetes, and in recent years the government has encouraged restoring the cultivation of traditional crops.",
+    "wiki": "Breadfruit",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Artocarpus_altilis_%28fruit%29.jpg/960px-Artocarpus_altilis_%28fruit%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Artocarpus_altilis_(fruit).jpg",
+    "imageCredit": "Hans Hillewaert・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "Fried rice",
+    "localName": "Fried rice",
+    "description": "Rice is stir-fried over high heat with egg, meat and vegetables and seasoned with soy sauce; the portions are large and the price cheap, and it is the most common meal eaten out on the island.",
+    "history": "In the 20th century the phosphate company recruited laborers from southern China and Hong Kong to work in Nauru, and some Chinese stayed to run restaurants and shops. Fried rice thus became one of Nauru's most common meals eaten out, and many small restaurants on the island are run by Chinese. Because there is very little arable land and food is mostly imported, fried rice based on imported rice has become an important part of the daily diet of Nauruans.",
+    "wiki": "Fried rice",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Koh_Mak%2C_Thailand%2C_Fried_rice_with_seafood%2C_Thai_fried_rice.jpg/960px-Koh_Mak%2C_Thailand%2C_Fried_rice_with_seafood%2C_Thai_fried_rice.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Koh_Mak,_Thailand,_Fried_rice_with_seafood,_Thai_fried_rice.jpg",
+    "imageCredit": "Vyacheslav Argenberg・CC BY 4.0・Wikimedia Commons"
+   }
+  ]
+ }
+}

@@ -1,0 +1,118 @@
+{
+ "iso": "PAK",
+ "capital": "Islamabad",
+ "summary": "Pakistan lies in northwestern South Asia and was founded at the partition of India in 1947; it has one of the world's largest populations, and its territory contains sites of the Indus Valley Civilization and the Karakoram Range.",
+ "religion": {
+  "ranking": [
+   {
+    "name": "Islam (Sunni)",
+    "percent": 84,
+    "description": "Islam arrived in 711, when the Arab general Muhammad bin Qasim conquered Sindh; from the 11th century the rule of the Ghaznavid dynasty, the Delhi Sultanate and the Mughal Empire, and the preaching of Sufi saints such as Data Ganj Bakhsh of Lahore, made Islam widespread in Punjab and Sindh. At the partition of 1947 Pakistan was founded as a \"homeland for the Muslims of South Asia\"; millions of Hindus and Sikhs moved to India and Muslims moved in, raising the Muslim share above ninety percent, the majority of whom are Sunni of the Hanafi school."
+   },
+   {
+    "name": "Islam (Shia)",
+    "percent": 12,
+    "description": "Shia Islam came to South Asia with the early spread of Islam, and from the 16th century Persian nobles at the Mughal court and the Shia dynasties of the Deccan widened its influence. Pakistan's founder Jinnah himself came from a Shia Ismaili family. Shia are found throughout the country, especially concentrated in Gilgit-Baltistan in the north; after Zia-ul-Haq's Sunni Islamization policies of the 1980s, sectarian conflict and violence against Shia have occurred from time to time."
+   },
+   {
+    "name": "Hinduism",
+    "percent": 2,
+    "description": "Before the partition of 1947, more than twenty percent of the population of what is now Pakistan were Hindus and Sikhs, and the mass migration and violence at partition drove the great majority to India. The Hindus who remain today are concentrated in Sindh Province in the south, especially in areas bordering India such as Tharparkar, and are mostly low-caste and tribal peoples."
+   },
+   {
+    "name": "Christianity",
+    "percent": 1,
+    "description": "Christianity was spread mainly by missionaries in Punjab during British colonial rule in the 19th century, and the converts were mostly low-caste Chuhras, because the churches offered opportunities and education free of caste discrimination. Today Christians are concentrated in Punjab cities such as Lahore and Faisalabad and often face legal and social pressure from the blasphemy laws."
+   }
+  ],
+  "background": "The Indus Valley where Pakistan lies was the birthplace of the ancient Indus Valley Civilization and of Gandharan Buddhist art. After the Arabs conquered Sindh in 711, Islam gradually came in and became widespread through the Delhi Sultanate and the Mughal Empire. In 1947 the country became independent through partition from British India under the banner of a Muslim state, and the mass exchange of populations raised the Muslim share above ninety percent. In 1956 it was named an Islamic Republic, in the 1980s Zia-ul-Haq carried out Islamization, and the role of religion in politics has continued to expand."
+ },
+ "language": {
+  "official": "Urdu and English are the official languages.",
+  "ranking": [
+   {
+    "name": "Punjabi",
+    "percent": 37,
+    "description": "Punjabi belongs to the Indo-Aryan branch and is the language of the Punjab plains; Punjab Province is Pakistan's most populous province, so it is the language with the most native speakers. In Pakistan it is written in the Perso-Arabic \"Shahmukhi\" script, unlike Indian Punjab, which uses Gurmukhi. Although it has the most speakers, government and schools mainly use Urdu and English, and Punjabi is used mostly in the home, music and film.",
+    "greeting": "سلام (Salaam)",
+    "pronunciation": "sa-LAAM"
+   },
+   {
+    "name": "Pashto",
+    "percent": 18,
+    "description": "Pashto belongs to the Iranian branch and is the language of the Pashtuns of Khyber Pakhtunkhwa in the northwest and northern Balochistan; it is also one of the main languages of Afghanistan. In 1893 Britain drew the Durand Line, dividing the Pashtuns between British India and Afghanistan, so the Pashto-speaking community spans two countries. Karachi, because of internal migration, has also become one of the cities with the most Pashtuns.",
+    "greeting": "ستړي مه شې",
+    "pronunciation": "STUH-ray ma SHAY"
+   },
+   {
+    "name": "Sindhi",
+    "percent": 14,
+    "description": "Sindhi is the language of the southern province of Sindh and has a long history; after the arrival of Islam it developed a literary tradition written in the Arabic script. In 1972 Sindh Province made Sindhi the provincial official language, which set off language riots with the Urdu-speaking immigrant community, reflecting the conflict between regional identity and national language policy.",
+    "greeting": "ڀلي ڪري آيا",
+    "pronunciation": "BHA-lee ka-REE AA-ya"
+   },
+   {
+    "name": "Urdu",
+    "percent": 9,
+    "description": "Urdu derives from the language of the Delhi area in the Mughal era, combining Hindi grammar with Persian and Arabic vocabulary. In the 19th century Britain used it as an administrative language of northern India, and it became a symbol of identity for Indian Muslims. After partition in 1947, the \"Muhajir\" community that moved from India had it as a mother tongue, and the government made it the national language, so that it became the common language of the whole country, but native speakers are only about one tenth, concentrated in Karachi.",
+    "greeting": "السلام علیکم",
+    "pronunciation": "as-sa-LAA-mu a-LAI-kum"
+   }
+  ],
+  "history": "The Pakistan region has been Indo-Aryan-speaking since ancient times; in the Mughal period Persian was the court language, and Urdu formed at that time. Colonization by Britain in the 19th century introduced English as the administrative language. After independence in 1947 the government made Urdu the national language, which provoked protests in East Pakistan (now Bangladesh), and the Bengali Language Movement of 1952 eventually became one of the triggers of Bangladesh's independence in 1971. Today Urdu and English are the official languages, while regional languages such as Punjabi, Pashto and Sindhi are used in the provinces."
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "Biryani",
+    "localName": "بریانی (Biryani)",
+    "description": "Chicken or lamb marinated in yogurt and spices is layered in a pot with half-cooked long-grain rice, with saffron, fried onion and herbs added, and the pot is sealed and cooked slowly; the grains are separate and richly fragrant.",
+    "history": "Biryani originated in the court of the Mughal Empire, blending Persian pilaf with Indian spice cooking, and the word \"biryani\" derives from the Persian meaning \"fried, roasted.\" After partition in 1947, Muslims who moved from northern India to Karachi brought various methods and developed the \"Sindhi biryani\" with potatoes and chili heat. It is the most important banquet staple at weddings and festivals in Pakistan.",
+    "wiki": "Biryani",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/%22Hyderabadi_Dum_Biryani%22.jpg/960px-%22Hyderabadi_Dum_Biryani%22.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:%22Hyderabadi_Dum_Biryani%22.jpg",
+    "imageCredit": "Mahi Tatavarty・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "Nihari",
+    "localName": "نہاری (Nihari)",
+    "description": "Beef shank or leg of lamb is slow-cooked overnight in a thick broth of spices, bone marrow and flour; the meat is tender and the broth rich, and it is eaten with shredded ginger, green chili and naan.",
+    "history": "Nihari originated in Delhi in the late Mughal Empire of the 18th century, and the name comes from the Arabic \"nahar\" (morning), because it was traditionally eaten as breakfast after the morning prayer, giving workers strength for the day. After the partition of 1947 large numbers of Delhi Muslims moved to Karachi and Lahore and brought nihari to Pakistan, and today it is regarded as one of Pakistan's representative dishes.",
+    "wiki": "Nihari",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Nalli_Nihari_India.jpg/960px-Nalli_Nihari_India.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Nalli_Nihari_India.jpg",
+    "imageCredit": "Nilanjan Sasmal・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "Haleem",
+    "localName": "حلیم (Haleem)",
+    "description": "Wheat, barley, various lentils and beef or lamb are stewed together for several hours and beaten into a thick paste, seasoned with fried onion, shredded ginger, lemon and coriander.",
+    "history": "Haleem derives from the Arab harees porridge and came to South Asia through Persia and Central Asia; in the Mughal period a version with spices and lentils developed in India. In Pakistan it is especially associated with the Islamic month of Muharram: around Ashura, which commemorates the martyrdom of Imam Husayn, Shia believers make large quantities and distribute them to everyone, and it is also a common dish for breaking the fast in Ramadan.",
+    "wiki": "Haleem",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Pakistani_Haleem_served_with_garnish.jpg/960px-Pakistani_Haleem_served_with_garnish.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Pakistani_Haleem_served_with_garnish.jpg",
+    "imageCredit": "Halt123halt・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "Chapli kebab",
+    "localName": "چپلی کباب (Chapli kebab)",
+    "description": "Ground beef is mixed with tomato, onion, pomegranate seeds, coriander seeds and chili, pressed into a large flat patty and fried in animal fat; crisp outside and tender inside.",
+    "history": "Chapli kebab originated with the Pashtuns of the northwest, especially around Peshawar; \"chapli\" in Pashto means \"flat,\" and the shape is like the sandals worn by the Pashtuns. Peshawar lies near the Khyber Pass and was an important city on the ancient Silk Road and in Central Asian trade, and the Pashtuns' meat cooking was influenced by Central Asia and Afghanistan. Today it is popular throughout the country.",
+    "wiki": "Chapli kebab",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Chapli_Kebab.jpg/960px-Chapli_Kebab.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Chapli_Kebab.jpg",
+    "imageCredit": "Murcotipton・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "Karahi",
+    "localName": "کڑاہی (Karahi)",
+    "description": "Chicken or lamb is cooked in a round-bottomed two-handled iron pan (karahi), stir-fried quickly over high heat with tomato, ginger, garlic and green chili, with little or no water added, and the sauce is rich.",
+    "history": "The name karahi comes from the deep two-handled iron pan used for cooking, and this dish developed in the roadside restaurants (dhaba) of Khyber Pakhtunkhwa in the northwest and of Punjab, famous for being cooked to order. Along the main highway connecting Islamabad and Peshawar there are many long-established shops famous for karahi, and it is one of the dishes most often ordered in Pakistani family dinners and eating out.",
+    "wiki": "Karahi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Wok-and-karahi-2.jpg/960px-Wok-and-karahi-2.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Wok-and-karahi-2.jpg",
+    "imageCredit": "FiveRings at en.wikipedia・CC BY-SA 3.0・Wikimedia Commons"
+   }
+  ]
+ }
+}

@@ -1,0 +1,123 @@
+{
+ "iso": "PHL",
+ "capital": "Manila",
+ "summary": "A Southeast Asian archipelagic country made up of more than seven thousand islands, ruled by Spain for more than three hundred years and by the United States for nearly half a century; it is the country with the most Catholics in Asia.",
+ "religion": {
+  "ranking": [
+   {
+    "name": "Catholicism",
+    "percent": 79,
+    "description": "In 1521 Magellan baptized the chieftain Humabon in Cebu, and in 1565 Legazpi established Spanish colonial rule; the Augustinians, Franciscans, Jesuits, Dominicans and other orders carried out conversion across the islands, so that Catholicism penetrated deep into society over 333 years of colonial rule. American rule after 1898 brought the separation of church and state, but Catholicism remained the mainstream. In 1986 the \"People Power Revolution,\" supported by the Catholic Church, overthrew Marcos, demonstrating the Church's social influence; the Philippines is also Asia's largest Catholic country."
+   },
+   {
+    "name": "Islam",
+    "percent": 6,
+    "description": "Islam came in the 14th century via Arab and Malay merchants to the Sulu Archipelago, and in the 15th century the Sultanate of Sulu and the Sultanate of Maguindanao were founded. When the Spanish arrived in the 16th century, Islam had already reached Manila, but the Spanish drove Muslim power out of the north, while the Moros of the south resisted colonization for more than three hundred years. Muslims are therefore concentrated in western Mindanao and the Sulu Archipelago, and the Bangsamoro Autonomous Region was established in 2019."
+   },
+   {
+    "name": "Protestantism (evangelical, etc.)",
+    "percent": 5,
+    "description": "Protestantism was introduced after American rule began in 1898 by American missionaries of the Presbyterian, Methodist and Baptist churches, spreading through schools and hospitals. After the 1970s Pentecostal and charismatic churches grew rapidly, such as the \"Jesus Is Lord\" church founded in 1978. Because Catholicism's roots are deep, the Protestant share, though growing, is still only about 5%."
+   },
+   {
+    "name": "Iglesia ni Cristo",
+    "percent": 3,
+    "description": "The Iglesia ni Cristo was founded in Manila in 1914 by the Filipino Felix Manalo, claiming to be the true church restoring original Christianity and rejecting the Trinity. The church is strictly disciplined and tightly organized, and its members vote collectively as the church directs, so it has influence in elections, and it has built a large number of distinctive spired churches across the country."
+   },
+   {
+    "name": "Philippine Independent Church",
+    "percent": 1,
+    "description": "The Philippine Independent Church (Aglipayan Church) was founded in 1902 by Gregorio Aglipay and the labor leader Isabelo de los Reyes, arising from resentment during the Philippine Revolution at the Spanish clergy's monopoly of the Church. It retains Catholic liturgy but does not obey the pope, and is concentrated mainly in northern areas such as the Ilocos region."
+   }
+  ],
+  "background": "The indigenous people of the Philippines believed in ancestral spirits and nature spirits (anito). In the 14th century Islam came to the south and the Sultanates of Sulu and Maguindanao were established. From 1565 Spain colonized the country for more than three hundred years, and Catholicism became the faith of the great majority. During the Philippine Revolution at the end of the 19th century the native Philippine Independent Church appeared, American rule after 1898 brought Protestantism and the separation of church and state, and the Iglesia ni Cristo was founded in 1914. Today Catholics make up about eighty percent, and the south has a Muslim autonomous region."
+ },
+ "language": {
+  "official": "The official languages are Filipino (based on Tagalog) and English.",
+  "ranking": [
+   {
+    "name": "Tagalog",
+    "percent": 40,
+    "description": "Tagalog is the language of the Tagalog of Manila and central and southern Luzon; Manila was the capital under both Spanish and American rule, which made it the language of the political and economic center. In 1937 President Quezon chose Tagalog as the basis of the national language, and the 1987 constitution calls it \"Filipino.\" Promotion through television, film and schools has made it the common language of the whole country; about forty percent have it as a mother tongue, and most citizens can use it.",
+    "greeting": "Kumusta",
+    "pronunciation": "ku-mus-ta"
+   },
+   {
+    "name": "Cebuano (Visayan)",
+    "percent": 21,
+    "description": "Cebuano is the largest language of the Visayas and Mindanao, centered on Cebu. Because large numbers of Visayans migrated to Mindanao in the 20th century to open up land, Cebuano has also become a main language of Mindanao. When the national language was chosen in 1937, the Visayan-language population was actually larger than the Tagalog, so many Visayans are still dissatisfied that Tagalog became the basis of the national language.",
+    "greeting": "Maayong buntag（早安）",
+    "pronunciation": "ma-a-yong bun-tag"
+   },
+   {
+    "name": "Ilocano",
+    "percent": 8,
+    "description": "Ilocano is the language of the Ilocos region in northwestern Luzon; the Ilocano are known for thrift and for migration, and from the 19th century moved in large numbers to central Luzon and the Cagayan Valley, and in the early 20th century many went to work on farms in Hawaii and California. Ilocano has therefore become a regional common language of northern Luzon.",
+    "greeting": "Naimbag nga aldaw（日安）",
+    "pronunciation": "na-im-bag nga al-dau"
+   },
+   {
+    "name": "Hiligaynon",
+    "percent": 7,
+    "description": "Hiligaynon (Ilonggo) is the language of Panay and western Negros, centered on Iloilo and Bacolod. With the rise of the sugar industry on Negros in the 19th century, large numbers of residents of Panay moved in, so that Hiligaynon expanded across the western Visayas.",
+    "greeting": "Maayong aga（早安）",
+    "pronunciation": "ma-a-yong a-ga"
+   }
+  ],
+  "history": "The Philippines has more than a hundred and seventy Austronesian languages, and before the Spanish arrived the Tagalog and others used an ancient script called \"baybayin.\" After 1565 Spanish became the language of rule, but only a small elite could use it. After American rule in 1898, English public education was promoted and English spread rapidly. In 1937 the government chose Tagalog as the basis of the national language, the 1987 constitution made Filipino and English the official languages, and from 2009 multilingual education based on the mother tongue has been promoted."
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "Adobo",
+    "localName": "Adobo",
+    "description": "Chicken or pork is stewed in vinegar, soy sauce, garlic, bay leaves and black pepper until it is flavorful and the sauce reduced; the taste is sour and salty with a garlic aroma, and it is eaten with white rice.",
+    "history": "Before the Spanish arrived, Filipinos stewed meat in vinegar, using the acidity of vinegar to preserve food in the tropical climate. After 1565 the Spanish saw this dish and called it by the Spanish word \"adobo\" (marinade), and the name has stayed. Soy sauce came from long trade with Chinese merchants. Adobo has no standard recipe, nearly every family has its own version, and it is widely regarded as the Philippine national dish.",
+    "wiki": "Philippine adobo",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Adobo_DSCF4391.jpg/960px-Adobo_DSCF4391.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Adobo_DSCF4391.jpg",
+    "imageCredit": "Joy D. Ganaden・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "Sinigang (sour soup)",
+    "localName": "Sinigang",
+    "description": "Sourness from tamarind, unripe tomato or calamansi is used to cook pork, shrimp or fish, with water spinach, radish, long beans and okra added; the broth is sour and appetizing.",
+    "history": "Sinigang is a native Philippine dish that was seasoned with local sour fruits even before colonization, while tamarind arrived through ancient trade with South and Southeast Asia. Sourness helps stimulate the appetite in a hot and humid climate. It is one of the most common soups in Philippine households and is especially popular in the rainy season, and it often ranks near the top in international food rankings.",
+    "wiki": "Sinigang",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/The_Best_Sinigang_Cuisine.jpg/960px-The_Best_Sinigang_Cuisine.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:The_Best_Sinigang_Cuisine.jpg",
+    "imageCredit": "Jessartcam・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "Lechon",
+    "localName": "Lechon",
+    "description": "A whole pig is rubbed with salt and spices, its belly stuffed with lemongrass and garlic, and slow-roasted for hours on a bamboo pole over charcoal; the skin is crisp and the meat juicy.",
+    "history": "The name lechon comes from the Spanish \"lechón\" (suckling pig), which became common at festivals during the Spanish colonial period. Cebu is regarded as the best place for it, and in 2009 the American chef Anthony Bourdain praised Cebu lechon as the best pig he had ever eaten. In the Philippines lechon is the essential main dish at Christmas, weddings, birthdays and town patron saint fiestas, symbolizing celebration and abundance.",
+    "wiki": "Lechon",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Cochinillos-Mercado_de_la_Cebada.jpg/960px-Cochinillos-Mercado_de_la_Cebada.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Cochinillos-Mercado_de_la_Cebada.jpg",
+    "imageCredit": "Tamorlan・CC BY 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "Sisig",
+    "localName": "Sisig",
+    "description": "Pig's head meat and ears are boiled, then grilled and chopped into small pieces, and stir-fried on a hot sizzling plate with onion, chili, calamansi and chicken liver, often with an egg cracked on top.",
+    "history": "Sisig originated in Pampanga Province in central Luzon, and is generally thought to come from dishes the locals made from pig's heads and other parts discarded by the American Clark Air Base. Around 1974 Lucia Cunanan (known as \"Aling Lucing\") of Angeles City, Pampanga, refined it into a version served on a sizzling plate, which became widely popular. Today it is one of the most common dishes to accompany drinks in the Philippines.",
+    "wiki": "Sisig",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Authentic_Kapampangan_Sisig.jpg/960px-Authentic_Kapampangan_Sisig.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Authentic_Kapampangan_Sisig.jpg",
+    "imageCredit": "Joy L. Cruz・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "Halo-halo",
+    "localName": "Halo-halo",
+    "description": "Shaved ice is topped with sweet red beans, white beans, banana, jackfruit, nata de coco, ube (purple yam) jam, leche flan and condensed milk, and finally a scoop of ube ice cream; everything is stirred and mixed together before eating.",
+    "history": "\"Halo-halo\" in Tagalog means \"mix-mix.\" It is generally thought to derive from the red bean ice (mitsumame) sold by Japanese immigrants in Manila before the Second World War, to which Filipinos added more local ingredients to evolve into today's form. Ice-making technology and condensed milk introduced during American rule were also key. It is the most representative iced dessert of the Philippine summer and is sold from roadside stalls to fast-food chains.",
+    "wiki": "Halo-halo",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Halo-Halo.jpg/960px-Halo-Halo.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Halo-Halo.jpg",
+    "imageCredit": "Herbertkikoy・CC BY-SA 4.0・Wikimedia Commons"
+   }
+  ]
+ }
+}

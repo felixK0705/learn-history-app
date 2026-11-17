@@ -2,6 +2,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { ArrowLeft, Pause, Play, RotateCcw, SkipBack, SkipForward, Volume2, VolumeX, LayoutGrid } from "lucide-react";
 import { gsap, prefersReducedMotion, useGSAP } from "../../lib/motion";
 import { canSpeak } from "../../lib/speech";
+import { getLang, useT, type Lang } from "../../lib/i18n";
 
 export type StorySlide = { caption: string; narration: string; imageQuery: string; image?: string | null };
 export type Story = { title: string; slides: StorySlide[] };
@@ -19,8 +20,9 @@ const GRADIENTS = [
 ];
 
 // ───────── 語音朗讀 ─────────
-function zhVoice() {
+function pickVoice(lang: Lang) {
   const voices = window.speechSynthesis.getVoices();
+  if (lang !== "zh-TW") return voices.find((v) => v.lang.toLowerCase().startsWith(lang));
   return voices.find((v) => v.lang === "zh-TW") ?? voices.find((v) => /zh[-_](TW|Hant)/i.test(v.lang)) ?? voices.find((v) => v.lang.toLowerCase().startsWith("zh"));
 }
 
@@ -29,11 +31,12 @@ function speakAll(text: string, onDone: (failed: boolean) => void, keep: SpeechS
   const synth = window.speechSynthesis;
   synth.cancel();
   const parts = text.match(/[^。！？!?；;]+[。！？!?；;]?/g)?.map((s) => s.trim()).filter(Boolean) ?? [text];
-  const voice = zhVoice();
+  const lang = getLang();
+  const voice = pickVoice(lang);
   keep.length = 0;
   parts.forEach((part, i) => {
     const u = new SpeechSynthesisUtterance(part);
-    u.lang = "zh-TW";
+    u.lang = lang === "en" ? "en-US" : lang === "ja" ? "ja-JP" : "zh-TW";
     u.rate = 0.9;
     if (voice) u.voice = voice;
     if (i === parts.length - 1) u.onend = () => onDone(false);
@@ -45,10 +48,13 @@ function speakAll(text: string, onDone: (failed: boolean) => void, keep: SpeechS
   });
 }
 
-const speakSeconds = (t: string) => t.length / 4.2 + 1;
-const readSeconds = (t: string) => Math.max(6, t.length / 6 + 2);
+// 每秒朗讀／閱讀字數：中文約 4／6 字，日文較多，英文以字母計
+const RATE: Record<Lang, [number, number]> = { "zh-TW": [4.2, 6], ja: [7, 9], en: [14, 18] };
+const speakSeconds = (t: string) => t.length / RATE[getLang()][0] + 1;
+const readSeconds = (t: string) => Math.max(6, t.length / RATE[getLang()][1] + 2);
 
 export default function StoryPlayer({ story, onExit }: { story: Story; onExit: () => void }) {
+  const t = useT();
   const total = story.slides.length;
   const [index, setIndex] = useState(0);
   const [playing, setPlaying] = useState(true);
@@ -191,9 +197,9 @@ export default function StoryPlayer({ story, onExit }: { story: Story; onExit: (
 
       {/* 頂部：返回、標題、進度 */}
       <div className="absolute inset-x-0 top-0 z-10 px-4 pt-[74px] md:px-6">
-        <div className="flex gap-1.5" aria-label={`第 ${index + 1} 張，共 ${total} 張`}>
+        <div className="flex gap-1.5" aria-label={t({ "zh-TW": `第 ${index + 1} 張，共 ${total} 張`, en: `Slide ${index + 1} of ${total}`, ja: `${total} 枚中 ${index + 1} 枚目` })}>
           {story.slides.map((_, i) => (
-            <button key={i} onClick={() => go(i)} className="group h-4 flex-1 py-1.5" aria-label={`跳到第 ${i + 1} 張`}>
+            <button key={i} onClick={() => go(i)} className="group h-4 flex-1 py-1.5" aria-label={t({ "zh-TW": `跳到第 ${i + 1} 張`, en: `Go to slide ${i + 1}`, ja: `${i + 1} 枚目へ` })}>
               <span className="block h-1 overflow-hidden rounded-full bg-white/25 group-hover:bg-white/40">
                 <span
                   ref={(el) => {
@@ -206,7 +212,7 @@ export default function StoryPlayer({ story, onExit }: { story: Story; onExit: (
           ))}
         </div>
         <div className="mt-2 flex items-center gap-3">
-          <button onClick={onExit} className="grid size-9 shrink-0 place-items-center rounded-full bg-[#113650]/70 ring-1 ring-white/20 hover:bg-[#174560]" aria-label="返回主題列表" title="返回主題列表">
+          <button onClick={onExit} className="grid size-9 shrink-0 place-items-center rounded-full bg-[#113650]/70 ring-1 ring-white/20 hover:bg-[#174560]" aria-label={t({ "zh-TW": "返回主題列表", en: "Back to topics", ja: "テーマ一覧に戻る" })} title={t({ "zh-TW": "返回主題列表", en: "Back to topics", ja: "テーマ一覧に戻る" })}>
             <ArrowLeft className="size-[18px]" />
           </button>
           <p className="min-w-0 truncate text-[15px] font-bold [text-shadow:0_2px_8px_rgba(0,0,0,0.6)]">{story.title}</p>
@@ -221,7 +227,7 @@ export default function StoryPlayer({ story, onExit }: { story: Story; onExit: (
         <div className="absolute inset-x-0 bottom-0 z-10 px-4 pb-4 md:px-8 md:pb-6">
           <div ref={textRef} className={`${PANEL} mx-auto max-w-3xl rounded-[26px] px-5 pt-4 pb-3 md:px-7 md:pt-5`}>
             <p data-t className="text-[12px] font-semibold tracking-[0.14em] text-glow">
-              第 {index + 1} 幕
+              {t({ "zh-TW": `第 ${index + 1} 幕`, en: `Scene ${index + 1}`, ja: `第 ${index + 1} 幕` })}
             </p>
             <h2 data-t className="mt-1 text-[22px] leading-tight font-bold md:text-[28px]">
               {slide.caption}
@@ -230,21 +236,27 @@ export default function StoryPlayer({ story, onExit }: { story: Story; onExit: (
               {slide.narration}
             </p>
             <div className="mt-3 flex items-center justify-center gap-1 border-t border-white/10 pt-2.5">
-              <button onClick={() => go(index - 1)} disabled={index === 0} className={ctrl} aria-label="上一張" title="上一張（←）">
+              <button onClick={() => go(index - 1)} disabled={index === 0} className={ctrl} aria-label={t({ "zh-TW": "上一張", en: "Previous", ja: "前へ" })} title={t({ "zh-TW": "上一張（←）", en: "Previous (←)", ja: "前へ（←）" })}>
                 <SkipBack className="size-5" />
               </button>
-              <button onClick={() => setPlaying((p) => !p)} className="grid size-12 place-items-center rounded-full bg-white text-deep-800 transition hover:bg-glow" aria-label={playing ? "暫停" : "播放"} title={playing ? "暫停（空白鍵）" : "播放（空白鍵）"}>
+              <button onClick={() => setPlaying((p) => !p)} className="grid size-12 place-items-center rounded-full bg-white text-deep-800 transition hover:bg-glow" aria-label={playing ? t({ "zh-TW": "暫停", en: "Pause", ja: "一時停止" }) : t({ "zh-TW": "播放", en: "Play", ja: "再生" })} title={playing ? t({ "zh-TW": "暫停（空白鍵）", en: "Pause (Space)", ja: "一時停止（スペース）" }) : t({ "zh-TW": "播放（空白鍵）", en: "Play (Space)", ja: "再生（スペース）" })}>
                 {playing ? <Pause className="size-5" fill="currentColor" /> : <Play className="size-5 translate-x-px" fill="currentColor" />}
               </button>
-              <button onClick={() => go(index + 1)} className={ctrl} aria-label="下一張" title="下一張（→）">
+              <button onClick={() => go(index + 1)} className={ctrl} aria-label={t({ "zh-TW": "下一張", en: "Next", ja: "次へ" })} title={t({ "zh-TW": "下一張（→）", en: "Next (→)", ja: "次へ（→）" })}>
                 <SkipForward className="size-5" />
               </button>
               <button
                 onClick={() => setMuted((m) => !m)}
                 disabled={!canSpeak()}
                 className={`${ctrl} ml-2`}
-                aria-label={muted ? "開啟語音朗讀" : "靜音"}
-                title={canSpeak() ? (muted ? "開啟語音朗讀" : "靜音") : "此瀏覽器不支援語音朗讀"}
+                aria-label={muted ? t({ "zh-TW": "開啟語音朗讀", en: "Turn on narration", ja: "読み上げをオン" }) : t({ "zh-TW": "靜音", en: "Mute", ja: "ミュート" })}
+                title={
+                  canSpeak()
+                    ? muted
+                      ? t({ "zh-TW": "開啟語音朗讀", en: "Turn on narration", ja: "読み上げをオン" })
+                      : t({ "zh-TW": "靜音", en: "Mute", ja: "ミュート" })
+                    : t({ "zh-TW": "此瀏覽器不支援語音朗讀", en: "This browser does not support narration", ja: "このブラウザは読み上げに対応していません" })
+                }
               >
                 {muted ? <VolumeX className="size-5" /> : <Volume2 className="size-5" />}
               </button>
@@ -259,15 +271,15 @@ export default function StoryPlayer({ story, onExit }: { story: Story; onExit: (
           <div ref={endRef} className="text-center">
             <p className="text-[13px] font-semibold tracking-[0.2em] text-glow">THE END</p>
             <h2 className="mt-2 text-3xl font-bold md:text-4xl">{story.title}</h2>
-            <p className="mt-2 text-[15px] text-white/75">故事結束，共 {total} 幕</p>
+            <p className="mt-2 text-[15px] text-white/75">{t({ "zh-TW": `故事結束，共 ${total} 幕`, en: `The end · ${total} scenes`, ja: `物語の終わり（全 ${total} 幕）` })}</p>
             <div className="mt-6 flex flex-wrap justify-center gap-3">
               <button onClick={replay} className="flex items-center gap-2 rounded-full bg-white px-5 py-2.5 text-[14px] font-semibold text-deep-800 hover:bg-glow">
                 <RotateCcw className="size-4" />
-                重新播放
+                {t({ "zh-TW": "重新播放", en: "Replay", ja: "もう一度再生" })}
               </button>
               <button onClick={onExit} className="flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-5 py-2.5 text-[14px] font-semibold hover:bg-white/20">
                 <LayoutGrid className="size-4" />
-                選擇其他主題
+                {t({ "zh-TW": "選擇其他主題", en: "Choose another topic", ja: "別のテーマを選ぶ" })}
               </button>
             </div>
           </div>

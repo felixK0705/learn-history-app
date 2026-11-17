@@ -1,0 +1,111 @@
+{
+ "iso": "NOR",
+ "capital": "Oslo",
+ "summary": "Norway lies in the west of the Scandinavian Peninsula and is known for its fjords, aurora and Arctic scenery; on the strength of its oil wealth it has built one of the world's largest sovereign wealth funds.",
+ "religion": {
+  "ranking": [
+   {
+    "name": "Lutheranism (Church of Norway)",
+    "percent": 62,
+    "description": "Norway carried out the Reformation in 1537 along with Denmark under King Christian III, Lutheranism became the state religion, and the Catholic bishops were deposed. For nearly five hundred years afterward Lutheranism was the state church with the king as its head, and until 1851 Jews were even forbidden to enter the country. After a constitutional amendment in 2012, the Church of Norway was formally separated from the state in 2017, but the tradition of becoming a member by baptism at birth means most people are still registered as members of the Church of Norway, even though in practice most do not attend church."
+   },
+   {
+    "name": "No religion",
+    "percent": 25,
+    "description": "After the Second World War, the welfare state, the spread of education and urbanization quickly secularized Norwegian society, and from the 1980s more and more people left the state church. After the separation of church and state in 2017 the number leaving rose, and many chose to join the \"Human-Etisk Forbund\" (Norwegian Humanist Association), which holds non-religious coming-of-age ceremonies and weddings. Currently less than a tenth of the population attends church weekly, and the share of non-religious is highest among the younger generation and in cities such as Oslo."
+   },
+   {
+    "name": "Other Christian denominations",
+    "percent": 6,
+    "description": "Other Christian denominations include Catholicism, Pentecostalism and various free churches. In the 19th century the Haugean movement and Pietism gave rise to many free churches along the west coast. After the EU's eastward enlargement in 2004, large numbers of Polish and Lithuanian migrant workers poured in, making Catholicism Norway's second-largest Christian denomination, with believers mainly immigrants."
+   },
+   {
+    "name": "Islam",
+    "percent": 4,
+    "description": "Islam came mainly with guest workers from Pakistan, Turkey and Morocco from the late 1960s, and later with refugees from Somalia, Iraq and elsewhere. Muslims are concentrated in Oslo, especially the east side, and are Norway's largest non-Christian religious group."
+   }
+  ],
+  "background": "In the Viking Age Norwegians worshipped the Norse gods; in the 11th century Olaf II promoted Christianization, and after he fell at the Battle of Stiklestad in 1030 he was canonized as a saint. In 1537, under Danish rule, the Reformation was carried out and Lutheranism became the state religion. In the 19th century the Haugean movement drove a lay revival. Postwar secularization greatly reduced church attendance, in 2017 the Church of Norway was separated from the state, and immigrants brought growth in Catholicism and Islam."
+ },
+ "language": {
+  "official": "Norwegian is the official language, and Sami also has official status in parts of the north.",
+  "ranking": [
+   {
+    "name": "Norwegian",
+    "percent": 92,
+    "description": "Norwegian evolved from Old Norse; during Danish rule from 1380 to 1814 Danish was the written language, while Norwegians spoke their local dialects. After 1814 two written standards developed: \"Bokmål,\" based on Danish, and \"Nynorsk,\" compiled by Ivar Aasen from rural dialects. Both are official standards; about eighty to ninety percent of the population uses Bokmål, while Nynorsk is concentrated in the western fjord region.",
+    "greeting": "Hei",
+    "pronunciation": "hai"
+   },
+   {
+    "name": "Polish",
+    "percent": 2,
+    "description": "Polish is the language brought by large numbers of migrant workers after Poland joined the EU in 2004; Poles work mainly in construction, fishing and agriculture and quickly became Norway's largest immigrant group. They are spread across the country, so Polish has become one of the most widely used foreign languages in Norway.",
+    "greeting": "Cześć",
+    "pronunciation": "cheshch"
+   },
+   {
+    "name": "Northern Sami",
+    "percent": 1,
+    "description": "Northern Sami is the main language of the Sami, the indigenous people of the Arctic region, concentrated in Kautokeino and Karasjok in Finnmark County. From the 19th to the mid-20th century the Norwegian government pursued a policy of \"Norwegianization,\" forbidding the use of Sami in schools, so that many Sami lost their mother tongue. After the Alta dam struggle of the 1980s the government changed its policy; the Sami Parliament was established in 1989, and the Sami Language Act of 1992 established its official status in the administrative districts of the north.",
+    "greeting": "Bures",
+    "pronunciation": "BOO-res"
+   }
+  ],
+  "history": "Norwegian derives from the Old Norse of the Viking Age, which left a large body of saga literature in the Middle Ages. From 1380 Norway was united with Denmark, and Danish gradually became the written language. After separation from Denmark in 1814, nationalists argued for a written language of Norway's own, producing two standards, Bokmål, a modified form of Danish, and Nynorsk, based on dialects, which run in parallel to this day. Sami in the north, after long suppression, gained official recognition at the end of the 20th century."
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "Fårikål (mutton and cabbage stew)",
+    "localName": "Fårikål",
+    "description": "Bone-in mutton and cabbage are layered in a pot, sprinkled with whole black peppercorns and salt, and stewed over low heat for several hours with a little water, until the mutton is tender and the broth clear and sweet.",
+    "history": "Fårikål is a traditional Norwegian country dish; autumn is the season when sheep come down from the mountain pastures to be slaughtered and cabbage is also in harvest, so the dish has become a symbol of autumn. In the 1970s a Norwegian radio program voted it the national dish, and a vote in 2014 was again won by it; a promotion group has also set the last Thursday of September each year as \"Fårikål Day.\"",
+    "wiki": "Fårikål",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/F%C3%A5r_i_k%C3%A5l.jpg/960px-F%C3%A5r_i_k%C3%A5l.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:F%C3%A5r_i_k%C3%A5l.jpg",
+    "imageCredit": "Jarvin・CC BY 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "Brunost (brown cheese)",
+    "localName": "Brunost",
+    "description": "Whey is boiled for a long time together with milk and cream so that the lactose caramelizes to a brown color, then cooled into blocks; the flavor is sweet and salty with a caramel aroma, and it is often sliced thin onto bread.",
+    "history": "Brunost originated on farms in the Norwegian mountains, where farmers boiled down the whey left over from cheese making to avoid wasting it. In 1863 Anne Hov, a milkmaid in the Gudbrandsdalen valley, added cream to the whey to make a richer version, which became very popular and boosted the local economy. It is still the most common food in Norwegians' breakfasts and lunch boxes, and it is sliced with the cheese slicer invented by a Norwegian.",
+    "wiki": "Brunost",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Brunost.jpg/960px-Brunost.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Brunost.jpg",
+    "imageCredit": "CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "Lutefisk",
+    "localName": "Lutefisk",
+    "description": "Dried cod is soaked in lye for several days to make it swell, then soaked in fresh water to remove the lye and cooked; the texture is translucent and jelly-like, and it is eaten with bacon, pea puree and potatoes.",
+    "history": "The Lofoten Islands in northern Norway have been famous for drying cod since the Viking Age, and dried cod was Norway's most important export in the Middle Ages. Lutefisk is one of the ways of reconstituting dried cod, already recorded in documents of the 16th century. Today it is eaten mainly around Christmas; although many young people find its smell and texture hard to accept, it remains an important festive tradition among Norwegians and among the descendants of Norwegian immigrants in the American Midwest.",
+    "wiki": "Lutefisk",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/ForkLutefisk.jpg/960px-ForkLutefisk.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:ForkLutefisk.jpg",
+    "imageCredit": "Jonathunder・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "Gravlaks (cured salmon)",
+    "localName": "Gravlaks",
+    "description": "Slices of raw salmon are cured for several days with salt, sugar, dill and pepper under a weight, then sliced thin and eaten with mustard-dill sauce and bread.",
+    "history": "\"Gravlaks\" means \"buried salmon,\" from the medieval Scandinavian fishermen's method of rubbing salmon with salt and burying it in sand to ferment and preserve it. Later, as salt and sugar became common, it developed into today's cure that requires no fermentation. Norway is the world's largest exporter of farmed salmon, and gravlaks is a classic dish on the Christmas and Easter buffet table.",
+    "wiki": "Gravlax",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Laxr%C3%A4tter.jpg/960px-Laxr%C3%A4tter.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Laxr%C3%A4tter.jpg",
+    "imageCredit": "Esquilo・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "Krumkake",
+    "localName": "Krumkake",
+    "description": "A batter of flour, butter, sugar, eggs and cardamom is baked into a thin wafer in a patterned iron, rolled into a cone while hot, and can be filled with whipped cream and berries.",
+    "history": "Krumkake is one of the most traditional Norwegian Christmas sweets and one of the \"seven kinds of cookies\" that Norwegians must prepare at Christmas. The early patterned irons were used on wood stoves and were often passed down as heirlooms through generations. It also came to the United States with the Norwegians who emigrated in large numbers to the American Midwest in the 19th century, and it remains a festive tradition in Norwegian-American communities there today.",
+    "wiki": "Krumkake",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/1krumkake.jpg/960px-1krumkake.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:1krumkake.jpg",
+    "imageCredit": "Jonathunder・GFDL 1.2・Wikimedia Commons"
+   }
+  ]
+ }
+}

@@ -1,0 +1,111 @@
+{
+ "iso": "NLD",
+ "capital": "Amsterdam",
+ "summary": "The Netherlands lies on the North Sea coast of Western Europe; about a quarter of its land is below sea level, and it is known for windmills, tulips, canals and an open social climate. The seat of government is The Hague.",
+ "religion": {
+  "ranking": [
+   {
+    "name": "No religion",
+    "percent": 57,
+    "description": "In the early 20th century the Netherlands was still a highly devout country, and society was divided by a \"pillarized\" system of Catholic, Protestant, socialist and other pillars, each with its own schools, political parties and newspapers. From the 1960s, postwar prosperity, the spread of education and the sexual revolution caused this system to collapse rapidly, church attendance fell sharply, and most people chose to leave the church outright. By the 2010s the non-religious population had exceeded half, making the Netherlands one of the most secularized countries in Europe."
+   },
+   {
+    "name": "Catholicism",
+    "percent": 17,
+    "description": "Catholicism was suppressed in the Dutch Republic after the Reformation and could only meet in inconspicuous \"hidden churches,\" with believers concentrated in North Brabant and Limburg in the south. In 1853 the Holy See restored the Dutch episcopal hierarchy, and by the late 19th century Catholicism had gained a position equal to that of Protestantism in the pillarized system. In the mid-20th century Catholicism was for a time the largest denomination, but secularization after the 1960s caused a large loss of believers, and today it is still concentrated in the south."
+   },
+   {
+    "name": "Protestantism",
+    "percent": 13,
+    "description": "Calvinism arrived with the Reformation in the 16th century; in the Eighty Years' War, from 1568, the north rallied under the banner of Protestantism to resist Spanish Catholic rule, and after independence in 1648 the Dutch Reformed Church became the public church of the Republic. Protestants are concentrated in the north and center, where the conservative Calvinist region extending from Zeeland to Overijssel is known as the \"Bible Belt.\" In 2004 several major Protestant churches merged into the Protestant Church in the Netherlands, but the number of believers has continued to fall."
+   },
+   {
+    "name": "Islam",
+    "percent": 5,
+    "description": "Islam came mainly with the Turkish and Moroccan guest workers recruited by the Netherlands in the 1960s and 1970s, who originally intended to work for a short time but whose families later joined them and settled. Around the time of Suriname's independence in 1975 there were also Muslim immigrants. Muslims are concentrated in large cities such as Amsterdam, Rotterdam, The Hague and Utrecht, and issues relating to Islam have been a focus of political debate since the 2000s."
+   }
+  ],
+  "background": "In the Middle Ages the Netherlands was a Catholic region, and in the 16th century the Calvinist Reformation arose and became the spiritual pillar of the Eighty Years' War against Spanish rule; after independence in 1648 the Reformed Church became the dominant church while Catholicism was restricted. In the 19th-20th centuries society formed a \"pillarized\" system along religious and ideological lines. After the 1960s rapid secularization caused the churches to lose many believers. Postwar immigrants brought Islam and Hinduism, making the Netherlands a religiously plural society in which the non-religious predominate."
+ },
+ "language": {
+  "official": "Dutch is the official language, and Frisian also has official status in the province of Friesland.",
+  "ranking": [
+   {
+    "name": "Dutch",
+    "percent": 95,
+    "description": "Dutch belongs to the West Germanic branch of the Germanic family and developed from the Frankish dialects of the medieval Low Countries. The rise of the Dutch Republic in the 16th-17th centuries and the Statenvertaling Bible completed in 1637 laid the foundation of standard Dutch. Education, the media and government all use Dutch, so almost all residents have it as a mother tongue or use it fluently.",
+    "greeting": "Hallo",
+    "pronunciation": "HAH-loh"
+   },
+   {
+    "name": "West Frisian",
+    "percent": 2,
+    "description": "West Frisian is one of the languages most closely related to English and was once spoken along the North Sea coast in the Middle Ages. As Dutch became the dominant language of politics and culture, Frisian was squeezed into the northern province of Friesland. A movement to protect Frisian arose from the 19th century; after the \"Kneppelfreed\" (Knife Friday) protest incident of 1951 the government gradually recognized its place in the courts and schools, and a 2014 law formally established it as the official language of the province of Friesland.",
+    "greeting": "Goeie",
+    "pronunciation": "GOO-yeh"
+   },
+   {
+    "name": "Turkish",
+    "percent": 1,
+    "description": "Turkish came with the Turkish guest workers recruited by the Netherlands in the 1960s and 1970s and their families; today there are more than four hundred thousand people of Turkish descent, concentrated in large cities. Second- and third-generation immigrants mostly use Dutch as their main language but still keep Turkish in the family and the community.",
+    "greeting": "Merhaba",
+    "pronunciation": "MER-ha-ba"
+   }
+  ],
+  "history": "Dutch derives from the medieval Low Franconian dialects, and written documents already appeared in the 12th century. From the 16th century the Dutch Republic became a trading power, and in 1637 the Statenvertaling Bible unified the written language. In the 17th century Dutch spread with colonization to South Africa (where it evolved into Afrikaans), Suriname and Indonesia. In 1980 the Netherlands and Belgium established the Dutch Language Union to regulate spelling jointly. Today the Netherlands is also one of the non-English-speaking countries with the best English proficiency in the world."
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "Stamppot (mashed potato dish)",
+    "localName": "Stamppot",
+    "description": "Potatoes are boiled and mashed together with kale, sauerkraut, or carrot and onion; a well is made in the middle and filled with gravy, and it is eaten with smoked sausage.",
+    "history": "Potatoes came to the Netherlands from the Americas in the 17th century and did not become a staple until the end of the 18th century. Legend has it that when the Spanish army withdrew from the siege of Leiden in 1574 it left behind a pot of carrot and onion stew, the origin of \"hutspot,\" and the people of Leiden still eat this dish every year on October 3, Liberation Day. Stamppot is the most typical home dish of the Dutch winter, cheap and warming.",
+    "wiki": "Stamppot",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Boerenkool_stamppot.jpg/960px-Boerenkool_stamppot.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Boerenkool_stamppot.jpg",
+    "imageCredit": "M.Minderhoud・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "Stroopwafel",
+    "localName": "Stroopwafel",
+    "description": "Two thin, crisp waffles baked in an iron are sandwiched with caramel syrup, which is soft when warm, and it is often placed on top of a cup of hot coffee or tea to warm up before eating.",
+    "history": "The stroopwafel is said to have originated in Gouda in the late 18th or early 19th century, made by bakers from leftover breadcrumbs and syrup, as a snack of the poor. From the 19th century Gouda had several bakeries specializing in it. It is the Netherlands' most representative sweet and souvenir, with stalls selling it freshly baked often found at markets, and Gouda is therefore called the city of the stroopwafel.",
+    "wiki": "Stroopwafel",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Stroopwafels_01.jpg/960px-Stroopwafels_01.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Stroopwafels_01.jpg",
+    "imageCredit": "Takeaway・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "Hollandse Nieuwe (raw salted herring)",
+    "localName": "Hollandse Nieuwe",
+    "description": "Herring caught each year in early summer is gutted and lightly cured in salt, then chilled and eaten raw, often with chopped onion and pickles; the texture is soft and oily.",
+    "history": "Since the Middle Ages the herring trade has been a pillar of the Dutch economy, and the \"gibbing\" method said to have been invented by Willem Beukelszoon in the 14th century allowed herring to be preserved on board ship, so Dutch fishing boats could sail far into the North Sea. When the new-season herring arrives in June each year, the Netherlands celebrates with \"Vlaggetjesdag\" (Flag Day), and the first barrel of herring is traditionally auctioned for charity. The Dutch are accustomed to holding the fish by the tail and eating the whole fish with the head tilted back.",
+    "wiki": "Soused herring",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Haring_04.jpg/960px-Haring_04.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Haring_04.jpg",
+    "imageCredit": "Takeaway・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "Bitterballen",
+    "localName": "Bitterballen",
+    "description": "A thick meat ragout (made from beef stock and flour) is cooled, rolled into small balls, coated in breadcrumbs and deep-fried; crisp outside and soft inside, it is eaten with mustard.",
+    "history": "Bitterballen evolved from the French croquette and were originally a household dish made from meat and broth left over from a stew. In the 20th century they became a bar snack to go with beer and genever; the \"bitter\" in the name refers to the bitter herbal liqueur that the Dutch often drink with them. Today they are the most common snack with drinks in Dutch pubs, at birthday parties and at gatherings.",
+    "wiki": "Bitterballen",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Bitterballen_mosterd_mayo.jpg/960px-Bitterballen_mosterd_mayo.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Bitterballen_mosterd_mayo.jpg",
+    "imageCredit": "Takeaway・CC BY-SA 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "Poffertjes",
+    "localName": "Poffertjes",
+    "description": "A batter of buckwheat flour, wheat flour and yeast is poured into a cast-iron pan with many small hollows and cooked into miniature fluffy pancakes, served hot with butter and powdered sugar.",
+    "history": "The method for making poffertjes has hundreds of years of history in the Netherlands; traditionally buckwheat flour was used, because buckwheat was easier to grow than wheat on the poor sandy soil of the eastern Netherlands and was a grain the common people could afford. It is closely associated with Christmas markets and fairgrounds, and poffertjes stalls are still common today at winter markets and summer fairs, making it one of the favorite sweets of Dutch children.",
+    "wiki": "Poffertjes",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Poffertjes-Melkhuis_%28cropped%29.jpg/960px-Poffertjes-Melkhuis_%28cropped%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Poffertjes-Melkhuis_(cropped).jpg",
+    "imageCredit": "Illustratedjc・CC BY-SA 4.0・Wikimedia Commons"
+   }
+  ]
+ }
+}

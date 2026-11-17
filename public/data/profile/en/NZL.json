@@ -1,0 +1,128 @@
+{
+ "iso": "NZL",
+ "capital": "Wellington",
+ "summary": "An island nation in the southwestern Pacific, made up mainly of the North Island and the South Island. It was first settled by the Maori around the 13th century and became a British colony after the signing of the Treaty of Waitangi in 1840; it is known for its natural scenery and livestock farming.",
+ "religion": {
+  "ranking": [
+   {
+    "name": "No religion",
+    "percent": 52,
+    "description": "New Zealand's non-religious population rose from about one fifth in 1991 to 48% in the 2018 census, and passed half in the 2023 census. The reasons include the spread of education and urbanization after the war, social liberalization from the 1960s, and the fact that since the Education Act of 1877 New Zealand has required public primary schools to be \"free, compulsory and secular,\" while the state has never established a state religion. Secularization is especially marked among the younger generation and in areas outside Auckland and Wellington."
+   },
+   {
+    "name": "Other Christianity (Presbyterian, Methodist, Pentecostal, etc.)",
+    "percent": 16,
+    "description": "Presbyterianism was brought by immigrants from Scotland in the mid-19th century, and in 1848 members of the Free Church of Scotland founded Dunedin, making Otago in the South Island the stronghold of Presbyterianism. Methodist missionaries arrived in 1822 and preached among the Maori. From the late 20th century Pentecostal and charismatic churches and the churches of Pacific Islander immigrants have grown, partly offsetting the decline of the traditional denominations."
+   },
+   {
+    "name": "Catholicism",
+    "percent": 10,
+    "description": "Catholicism arrived in 1838 with the French bishop Pompallier at Hokianga in the North Island, preaching among the Maori. In the 19th century large numbers of Irish immigrants came to New Zealand and became the mainstay of Catholicism; in the late 20th century immigrants from Samoa, Tonga and the Philippines also brought many Catholics. Catholicism is also the only traditional denomination that has roughly maintained its numbers in recent years."
+   },
+   {
+    "name": "Anglicanism",
+    "percent": 6,
+    "description": "The Anglican Church Missionary Society arrived at the Bay of Islands in 1814 under the Reverend Samuel Marsden, the earliest Christian group to preach in New Zealand. When the Treaty of Waitangi was signed in 1840, Anglican missionaries helped with translation, and English immigrants in the 19th century made Anglicanism the largest denomination for a long time. But postwar secularization caused a large loss of believers, and its share fell from about forty percent in the early 20th century to around 6% today."
+   },
+   {
+    "name": "Hinduism",
+    "percent": 3,
+    "description": "Hinduism has increased mainly with Indian and Fijian-Indian immigrants after the 1987 immigration reform, before which New Zealand's immigration policy favored British and European people. Hindus are concentrated in Auckland, and the number of temples has increased markedly in recent years."
+   },
+   {
+    "name": "Islam",
+    "percent": 2,
+    "description": "Islam had a small number of adherents in the 19th century, but it has increased mainly with immigrants and refugees from the Middle East, South Asia, Somalia and Fiji after the 1990s. The terrorist attacks on two mosques in Christchurch in 2019, which killed 51 people, prompted New Zealand to revise its gun laws and also made society pay more attention to the Muslim community."
+   }
+  ],
+  "background": "The Maori believed in ancestral spirits and nature deities and valued sacredness (tapu) and spiritual power (mana). After British Anglican missionaries arrived in 1814, Christianity spread rapidly among the Maori, and in the 19th century the Maori even developed indigenous churches such as Ringatu and Ratana. During British colonial rule, the Anglican, Presbyterian and Catholic distribution in each region followed the origin of the immigrants. After the 1960s secularization accelerated, and with Asian and Pacific immigrants bringing religious diversity, the non-religious population now exceeds half."
+ },
+ "language": {
+  "official": "The official languages are Maori and New Zealand Sign Language, and English is the de facto main language.",
+  "ranking": [
+   {
+    "name": "English",
+    "percent": 90,
+    "description": "English became the mainstream language with British colonization after the Treaty of Waitangi in 1840 and the large numbers of English, Scottish and Irish immigrants. From the late 19th to the mid-20th century, schools promoted English education and punished students for speaking Maori, making English the mother tongue or common language of almost the entire population. Although New Zealand English is not designated an official language by law, it is the de facto main language of government, education and the media.",
+    "greeting": "Hello / Kia ora",
+    "pronunciation": "heh-loh / kee-a o-ra"
+   },
+   {
+    "name": "Maori",
+    "percent": 4,
+    "description": "Maori belongs to the Polynesian branch of the Austronesian family and arrived in New Zealand around the 13th-14th centuries with the voyaging ancestors of the Maori. English-language education policies from the late 19th century and the large-scale migration of Maori to cities in the mid-20th century caused the number of Maori speakers to fall sharply, and by the 1970s few people could use it fluently. The \"language nest\" (Kohanga Reo) movement of Maori preschools from 1982 and the Maori Language Act of 1987, which made it an official language, have driven a language revival that continues today.",
+    "greeting": "Kia ora",
+    "pronunciation": "kee-a o-ra"
+   },
+   {
+    "name": "Samoan",
+    "percent": 2,
+    "description": "Samoan was brought mainly by the Samoan immigrants whom New Zealand brought in during the 1950s-1970s because of labor demand; Samoa was governed by New Zealand from 1914 to 1962, and relations between the two are close. People of Samoan descent are concentrated in south Auckland, and the churches have played an important role in preserving Samoan, making it one of the largest languages in New Zealand.",
+    "greeting": "Talofa",
+    "pronunciation": "ta-lo-fa"
+   },
+   {
+    "name": "Chinese",
+    "percent": 2,
+    "description": "Chinese was brought by the large numbers of immigrants from mainland China, Taiwan and Hong Kong after the 1987 immigration reform. Chinese had come to New Zealand as early as the Otago gold rush of the 1860s, but were then restricted by anti-Chinese policies such as the poll tax and were few in number; in 2002 the New Zealand government formally apologized for the poll tax. Today the Chinese are concentrated in Auckland, and both Mandarin and Cantonese are common.",
+    "greeting": "你好",
+    "pronunciation": "nǐ hǎo"
+   }
+  ],
+  "history": "The ancestors of the Maori sailed to New Zealand from eastern Polynesia around the 13th-14th centuries; the Maori language originally had no writing, and in the 19th century missionaries recorded it in the Latin alphabet and translated the Bible. The Treaty of Waitangi of 1840 was signed in two versions, English and Maori. After British colonization English became mainstream, and Maori was close to disappearing in the 20th century. The Maori cultural revival from the 1970s led to the Maori Language Act of 1987, and in 2006 New Zealand Sign Language also became an official language."
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "Hangi (earth-oven feast)",
+    "localName": "Hāngī",
+    "description": "A pit is dug in the ground and stones heated in it; meat, potatoes, kumara sweet potatoes and pumpkin, wrapped in leaves or cloth, are placed on the stones and covered with damp cloths and earth, and cooked by steam for several hours, with a smoky, earthy aroma.",
+    "history": "The hangi is a traditional cooking method that the Maori brought from Polynesia, and their ancestors brought crops such as the kumara sweet potato when they sailed to New Zealand around the 13th-14th centuries. In geothermal areas such as Rotorua, the Maori also used natural geothermal heat to cook. Today the hangi is the traditional dish at weddings, funerals and important gatherings at the Maori meeting house (marae), and requires the cooperation of the whole community to prepare.",
+    "wiki": "Hāngī",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Hangi_prepare.jpg/960px-Hangi_prepare.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Hangi_prepare.jpg",
+    "imageCredit": "Einalem・CC BY-SA 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "Pavlova",
+    "localName": "Pavlova",
+    "description": "Egg whites and sugar are whipped and baked at a low temperature into a meringue cake with a crisp shell and a soft marshmallow-like interior, topped with whipped cream and fruit such as kiwifruit, strawberries and passion fruit.",
+    "history": "Pavlova is named after the Russian ballerina Anna Pavlova, who toured New Zealand and Australia in the 1920s, said to describe a lightness like her tutu. New Zealand and Australia have long argued over who invented the dessert, and researchers have found that New Zealand had a recipe with this name by the end of the 1920s. It is the most classic dessert at Christmas and summer family gatherings, since Christmas in New Zealand falls in high summer.",
+    "wiki": "Pavlova",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Pavlova_dessert.JPG/960px-Pavlova_dessert.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Pavlova_dessert.JPG",
+    "imageCredit": "Hazel Fowler・Public domain・Wikimedia Commons"
+   },
+   {
+    "name": "Meat pie",
+    "localName": "Meat pie",
+    "description": "Pastry or shortcrust is filled with minced beef and thick gravy and baked into a hand-sized pie, with many flavors such as steak and cheese, curry, and chicken and mushroom.",
+    "history": "The meat pie came to New Zealand with British immigrants in the 19th century, at first as a convenient lunch for miners and farm workers. New Zealanders eat tens of millions of meat pies a year on average, and they are available at gas stations, bakeries and sports grounds. The national \"Bakels Supreme Pie Award\" held each year since the 1990s draws thousands of entries, and the meat pie is regarded as New Zealand's national fast food.",
+    "wiki": "Meat pie (Australia and New Zealand)",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Meat_pie.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Meat_pie.jpg",
+    "imageCredit": "fir0002  flagstaffotos [at] gmail.com\n\t\tCanon 20D + Canon 17・GFDL 1.2・Wikimedia Commons"
+   },
+   {
+    "name": "Hokey pokey",
+    "localName": "Hokey pokey",
+    "description": "Small pieces of honeycomb toffee are mixed into vanilla ice cream; the toffee is made by heating sugar, syrup and baking soda until it bubbles and then sets, with a crisp texture and caramel aroma.",
+    "history": "The term \"hokey pokey\" was originally the street cry of British ice cream vendors in the 19th century, and in New Zealand it came to refer to honeycomb toffee. In the mid-20th century Auckland ice cream makers began adding toffee pieces to vanilla ice cream, which quickly became the most popular flavor in the country. It is regarded as a symbol of New Zealand childhood memories and is also often treated abroad as a representative New Zealand sweet.",
+    "wiki": "Hokey pokey (ice cream)",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Honeycomb_ice_cream_and_hot_toffee_sauce_%285725734559%29.jpg/960px-Honeycomb_ice_cream_and_hot_toffee_sauce_%285725734559%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Honeycomb_ice_cream_and_hot_toffee_sauce_(5725734559).jpg",
+    "imageCredit": "Ben Sutherland from Crystal Palace, London, UK・CC BY 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "Fish and chips",
+    "localName": "Fish and chips",
+    "description": "White fish such as cod-type fish or blue cod is coated in batter and deep-fried, served with thick chips, traditionally wrapped in newspaper to take away, with lemon or tomato sauce.",
+    "history": "Fish and chips originated in Britain in the mid-19th century and came to New Zealand with British immigrants. New Zealand is surrounded by sea and has a well-developed fishing industry, with a greater variety of fish than Britain. In the 20th century many fish and chip shops were run by Greek, Chinese and later Indian immigrants, and taking fish and chips on Friday evening to the beach or home is a tradition in many New Zealand families.",
+    "wiki": "Fish and chips",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Fish_and_chips_blackpool.jpg/960px-Fish_and_chips_blackpool.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Fish_and_chips_blackpool.jpg",
+    "imageCredit": "Matthias Meckel・CC BY-SA 4.0・Wikimedia Commons"
+   }
+  ]
+ }
+}

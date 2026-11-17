@@ -14,31 +14,29 @@ import {
   RotateCcw,
   Search,
 } from "lucide-react";
-import { buildings } from "../data/buildings";
-import { buildingDetails } from "../data/buildingDetails";
-import { countryByIso } from "../data/world";
+import { useBuildings } from "../data/localized";
+import { countryByIso, countryName } from "../data/world";
+import { useLang, useT, type Tr } from "../lib/i18n";
 import Flag from "../components/ui/Flag";
 import views from "../data/buildingViews.json";
 import type { BuildingView } from "../components/buildings/ModelViewer";
 
 const ModelViewer = lazy(() => import("../components/buildings/ModelViewer"));
 
-const sorted = [...buildings].sort((a, b) => a.sortYear - b.sortYear);
-
-function eraLabel(y: number) {
-  if (y < -500) return "上古";
-  if (y < 500) return "古典時代";
-  if (y < 1500) return "中世紀";
-  if (y < 1800) return "近世";
-  return "近現代";
+function eraLabel(y: number): Tr {
+  if (y < -500) return { "zh-TW": "上古", en: "Ancient", ja: "古代" };
+  if (y < 500) return { "zh-TW": "古典時代", en: "Classical", ja: "古典古代" };
+  if (y < 1500) return { "zh-TW": "中世紀", en: "Medieval", ja: "中世" };
+  if (y < 1800) return { "zh-TW": "近世", en: "Early Modern", ja: "近世" };
+  return { "zh-TW": "近現代", en: "Modern", ja: "近現代" };
 }
 
 const TABS = [
-  { key: "overview", label: "概覽" },
-  { key: "parts", label: "建築特色" },
-  { key: "history", label: "歷史" },
-  { key: "stats", label: "數據" },
-] as const;
+  { key: "overview", label: { "zh-TW": "概覽", en: "Overview", ja: "概要" } },
+  { key: "parts", label: { "zh-TW": "建築特色", en: "Features", ja: "見どころ" } },
+  { key: "history", label: { "zh-TW": "歷史", en: "History", ja: "歴史" } },
+  { key: "stats", label: { "zh-TW": "數據", en: "Facts", ja: "データ" } },
+] as const satisfies readonly { key: string; label: Tr }[];
 type TabKey = (typeof TABS)[number]["key"];
 
 /** 照片背景上的面板：深色半透明＋模糊，確保文字在任何背景下都清楚 */
@@ -48,10 +46,15 @@ const PANEL =
 export default function BuildingsPage() {
   const { id } = useParams();
   const navigate = useNavigate();
+  const lang = useLang();
+  const t = useT();
+  const all = useBuildings();
+  const sorted = useMemo(() => [...all].sort((a, b) => a.sortYear - b.sortYear), [all]);
   const current = sorted.find((b) => b.id === id) ?? sorted[0];
   const idx = sorted.indexOf(current);
-  const detail = buildingDetails[current.id];
+  const detail = current.detail;
   const country = countryByIso.get(current.iso);
+  const cName = country ? countryName(country, lang) : "";
 
   const [q, setQ] = useState("");
   const [pickerOpen, setPickerOpen] = useState(false);
@@ -91,7 +94,7 @@ export default function BuildingsPage() {
   const list = useMemo(() => {
     const s = q.trim().toLowerCase();
     return s ? sorted.filter((b) => `${b.name}${b.englishName}${b.location}${b.style}`.toLowerCase().includes(s)) : sorted;
-  }, [q]);
+  }, [q, sorted]);
 
   const go = (offset: number) => navigate(`/buildings/${sorted[(idx + offset + sorted.length) % sorted.length].id}`);
   // 右側資訊面板打開時，把建築往左移到可見區域中央
@@ -115,7 +118,7 @@ export default function BuildingsPage() {
       <div className="pointer-events-none absolute inset-x-0 top-0 h-56 bg-gradient-to-b from-[#0c2a40]/70 to-transparent" />
 
       {/* 左上：標題＋建築選單 */}
-      <div className="absolute top-[78px] left-5 z-20 max-w-[min(520px,calc(100%-2.5rem))] md:top-[84px] md:left-7">
+      <div className="absolute top-[78px] left-5 z-20 max-w-[min(520px,calc(100%-2.5rem))] md:top-[84px] md:left-[104px]">
         <div ref={titleRef}>
           <p className="text-[12px] font-medium tracking-[0.14em] text-white/80 [text-shadow:0_1px_6px_rgba(5,25,40,0.8)]">
             {current.era}・{current.location}
@@ -123,7 +126,7 @@ export default function BuildingsPage() {
           <h2 className="mt-1 text-3xl font-semibold tracking-tight text-white [text-shadow:0_2px_14px_rgba(5,25,40,0.75)] md:text-[40px]">
             {current.name}
           </h2>
-          <p className="text-sm text-white/80 [text-shadow:0_1px_6px_rgba(5,25,40,0.8)]">{current.englishName}</p>
+          {lang !== "en" && <p className="text-sm text-white/80 [text-shadow:0_1px_6px_rgba(5,25,40,0.8)]">{current.englishName}</p>}
         </div>
 
         <div ref={pickerRef} className="relative mt-4 inline-block">
@@ -133,7 +136,7 @@ export default function BuildingsPage() {
             aria-expanded={pickerOpen}
           >
             <Landmark className="size-4 text-glow" />
-            全部建築
+            {t({ "zh-TW": "全部建築", en: "All buildings", ja: "すべての建築" })}
             <span className="text-white/55">{sorted.length}</span>
             <ChevronDown className={`size-4 text-white/70 transition ${pickerOpen ? "rotate-180" : ""}`} />
           </button>
@@ -146,17 +149,17 @@ export default function BuildingsPage() {
                   autoFocus
                   value={q}
                   onChange={(e) => setQ(e.target.value)}
-                  placeholder="搜尋建築或地點…"
+                  placeholder={t({ "zh-TW": "搜尋建築或地點…", en: "Search buildings or places…", ja: "建築・場所を検索…" })}
                   className="min-w-0 flex-1 bg-transparent text-sm text-white outline-none placeholder:text-white/45"
                 />
               </label>
               <ul className="scroll-thin min-h-0 flex-1 overflow-y-auto px-2 pb-2">
                 {list.map((b, i) => {
-                  const showEra = !q && (i === 0 || eraLabel(list[i - 1].sortYear) !== eraLabel(b.sortYear));
+                  const showEra = !q && (i === 0 || t(eraLabel(list[i - 1].sortYear)) !== t(eraLabel(b.sortYear)));
                   const active = b.id === current.id;
                   return (
                     <li key={b.id}>
-                      {showEra && <div className="px-2 pt-3 pb-1 text-[11px] font-medium tracking-[0.16em] text-white/50">{eraLabel(b.sortYear)}</div>}
+                      {showEra && <div className="px-2 pt-3 pb-1 text-[11px] font-medium tracking-[0.16em] text-white/50">{t(eraLabel(b.sortYear))}</div>}
                       <Link
                         to={`/buildings/${b.id}`}
                         onClick={() => setPickerOpen(false)}
@@ -171,7 +174,7 @@ export default function BuildingsPage() {
                     </li>
                   );
                 })}
-                {list.length === 0 && <li className="py-8 text-center text-sm text-white/60">找不到符合的建築</li>}
+                {list.length === 0 && <li className="py-8 text-center text-sm text-white/60">{t({ "zh-TW": "找不到符合的建築", en: "No matching buildings", ja: "該当する建築はありません" })}</li>}
               </ul>
             </div>
           )}
@@ -179,25 +182,25 @@ export default function BuildingsPage() {
       </div>
 
       {/* 左下：檢視控制 */}
-      <div className={`${PANEL} absolute bottom-5 left-5 z-10 flex items-center gap-1 rounded-full p-1.5 md:bottom-7 md:left-7`}>
-        <CtrlBtn label="上一個建築" onClick={() => go(-1)}>
+      <div className={`${PANEL} absolute bottom-5 left-5 z-10 flex items-center gap-1 rounded-full p-1.5 md:bottom-7 md:left-[104px]`}>
+        <CtrlBtn label={t({ "zh-TW": "上一個建築", en: "Previous building", ja: "前の建築" })} onClick={() => go(-1)}>
           <ChevronLeft className="size-4" />
         </CtrlBtn>
         <span className="min-w-12 text-center font-mono text-xs text-white/75">
           {idx + 1} / {sorted.length}
         </span>
-        <CtrlBtn label="下一個建築" onClick={() => go(1)}>
+        <CtrlBtn label={t({ "zh-TW": "下一個建築", en: "Next building", ja: "次の建築" })} onClick={() => go(1)}>
           <ChevronRight className="size-4" />
         </CtrlBtn>
         <span className="mx-1 h-5 w-px bg-white/20" />
-        <CtrlBtn label={autoRotate ? "停止環繞" : "自動環繞"} onClick={() => setAutoRotate((v) => !v)}>
+        <CtrlBtn label={autoRotate ? t({ "zh-TW": "停止環繞", en: "Stop orbit", ja: "周回を停止" }) : t({ "zh-TW": "自動環繞", en: "Auto orbit", ja: "自動周回" })} onClick={() => setAutoRotate((v) => !v)}>
           {autoRotate ? <Pause className="size-4" /> : <Play className="size-4" />}
         </CtrlBtn>
-        <CtrlBtn label="重設視角" onClick={() => setResetToken((t) => t + 1)}>
+        <CtrlBtn label={t({ "zh-TW": "重設視角", en: "Reset view", ja: "視点をリセット" })} onClick={() => setResetToken((n) => n + 1)}>
           <RotateCcw className="size-4" />
         </CtrlBtn>
         {!infoOpen && (
-          <CtrlBtn label="顯示建築資訊" onClick={() => setInfoOpen(true)}>
+          <CtrlBtn label={t({ "zh-TW": "顯示建築資訊", en: "Show building info", ja: "建築情報を表示" })} onClick={() => setInfoOpen(true)}>
             <PanelRightOpen className="size-4" />
           </CtrlBtn>
         )}
@@ -213,15 +216,15 @@ export default function BuildingsPage() {
             <div className="min-w-0 flex-1" data-reveal>
               <div className="flex items-center gap-2 text-[12px] text-white/65">
                 <Flag iso2={country?.iso2} className="text-[13px]" />
-                {country?.zh}・{current.style}
+                {cName}・{current.style}
               </div>
               <h3 className="mt-1 truncate text-xl font-semibold text-white">{current.name}</h3>
             </div>
             <button
               onClick={() => setInfoOpen(false)}
               className="grid size-9 shrink-0 place-items-center rounded-full text-white/75 transition hover:bg-white/10 hover:text-white"
-              aria-label="收合建築資訊"
-              title="收合建築資訊"
+              aria-label={t({ "zh-TW": "收合建築資訊", en: "Hide building info", ja: "建築情報を閉じる" })}
+              title={t({ "zh-TW": "收合建築資訊", en: "Hide building info", ja: "建築情報を閉じる" })}
             >
               <PanelRightClose className="size-4" />
             </button>
@@ -229,17 +232,17 @@ export default function BuildingsPage() {
 
           {/* 分頁 */}
           <div className="mx-5 mt-4 grid grid-cols-4 rounded-full border border-white/12 bg-white/6 p-1" role="tablist">
-            {TABS.map((t) => (
+            {TABS.map((tb) => (
               <button
-                key={t.key}
+                key={tb.key}
                 role="tab"
-                aria-selected={tab === t.key}
-                onClick={() => setTab(t.key)}
-                className={`rounded-full py-1.5 text-[12.5px] font-medium transition ${
-                  tab === t.key ? "bg-white text-deep-800 shadow" : "text-white/75 hover:text-white"
+                aria-selected={tab === tb.key}
+                onClick={() => setTab(tb.key)}
+                className={`truncate rounded-full px-1 py-1.5 text-[12.5px] font-medium transition ${
+                  tab === tb.key ? "bg-white text-deep-800 shadow" : "text-white/75 hover:text-white"
                 }`}
               >
-                {t.label}
+                {t(tb.label)}
               </button>
             ))}
           </div>
@@ -250,12 +253,12 @@ export default function BuildingsPage() {
                 <p data-reveal>{detail?.overview ?? current.description}</p>
                 {detail?.architecture && (
                   <section data-reveal className="mt-5">
-                    <h4 className="mb-1.5 text-[12px] font-semibold tracking-[0.14em] text-glow">建築工法</h4>
+                    <h4 className="mb-1.5 text-[12px] font-semibold tracking-[0.14em] text-glow">{t({ "zh-TW": "建築工法", en: "Construction", ja: "建築技法" })}</h4>
                     <p className="text-white/85">{detail.architecture}</p>
                   </section>
                 )}
                 <section data-reveal className="mt-5">
-                  <h4 className="mb-2 text-[12px] font-semibold tracking-[0.14em] text-glow">重點</h4>
+                  <h4 className="mb-2 text-[12px] font-semibold tracking-[0.14em] text-glow">{t({ "zh-TW": "重點", en: "Highlights", ja: "ポイント" })}</h4>
                   <ul className="space-y-2">
                     {current.facts.map((f) => (
                       <li key={f} className="flex gap-2.5 text-white/85">
@@ -267,13 +270,13 @@ export default function BuildingsPage() {
                 </section>
                 {detail?.visit && (
                   <section data-reveal className="mt-5 rounded-2xl border border-white/12 bg-white/6 p-3.5">
-                    <h4 className="mb-1 text-[12px] font-semibold tracking-[0.14em] text-white/70">今日現況</h4>
+                    <h4 className="mb-1 text-[12px] font-semibold tracking-[0.14em] text-white/70">{t({ "zh-TW": "今日現況", en: "Today", ja: "現在" })}</h4>
                     <p className="text-[13.5px] text-white/85">{detail.visit}</p>
                   </section>
                 )}
                 {country && (
                   <Link data-reveal to={`/?country=${current.iso}`} className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-glow hover:underline">
-                    <Globe2 className="size-4" /> 探索{country.zh}的歷史
+                    <Globe2 className="size-4" /> {t({ "zh-TW": `探索${cName}的歷史`, en: `Explore the history of ${cName}`, ja: `${cName}の歴史を見る` })}
                   </Link>
                 )}
               </>

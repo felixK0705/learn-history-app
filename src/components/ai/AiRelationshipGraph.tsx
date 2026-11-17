@@ -2,6 +2,8 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { AlertTriangle, LoaderCircle, Search, Sparkles, UserRound, X } from "lucide-react";
 import { gsap, prefersReducedMotion, useGSAP, useReveal } from "../../lib/motion";
 import { AiError, postAi } from "../../lib/ai";
+import { REL_TYPE } from "../../data/figures";
+import { pick, useLang, useT, type Lang } from "../../lib/i18n";
 import { findPortrait, findPortraits } from "../../lib/wikiImage";
 
 export type AiRelType = "敵對" | "盟友" | "師徒" | "親屬" | "君臣" | "影響" | "戀人";
@@ -26,7 +28,11 @@ const PANEL =
 /** 勢力／陣營配色（柔和亮色，與主題協調） */
 const GROUP_COLORS = ["#38bdf8", "#f472b6", "#fbbf24", "#34d399", "#a78bfa", "#fb923c"];
 
-const EXAMPLES = ["諸葛亮", "凱撒", "拿破崙", "武則天", "織田信長", "伊莉莎白一世"];
+const EXAMPLES: Record<Lang, string[]> = {
+  "zh-TW": ["諸葛亮", "凱撒", "拿破崙", "武則天", "織田信長", "伊莉莎白一世"],
+  en: ["Zhuge Liang", "Julius Caesar", "Napoleon", "Wu Zetian", "Oda Nobunaga", "Elizabeth I"],
+  ja: ["諸葛亮", "カエサル", "ナポレオン", "武則天", "織田信長", "エリザベス1世"],
+};
 
 const W = 1000;
 const H = 720;
@@ -74,6 +80,8 @@ function path(a: Pt, b: Pt, bend: number) {
 const radius = (n: AiNode, isCenter: boolean) => (isCenter ? 52 : 22 + Math.min(10, Math.max(1, n.val)) * 1.2);
 
 export default function AiRelationshipGraph({ initialQuery = "" }: { initialQuery?: string }) {
+  const lang = useLang();
+  const t = useT();
   const [query, setQuery] = useState(initialQuery);
   const [graph, setGraph] = useState<AiGraph | null>(null);
   const [loading, setLoading] = useState(false);
@@ -98,11 +106,11 @@ export default function AiRelationshipGraph({ initialQuery = "" }: { initialQuer
     try {
       const g = await postAi<AiGraph>("relationships", { name: q }, c.signal);
       if (c.signal.aborted) return;
-      if (!g.nodes?.length) throw new AiError(`找不到「${q}」的人物關係資料`);
+      if (!g.nodes?.length) throw new AiError(pick({ "zh-TW": `找不到「${q}」的人物關係資料`, en: `No relationship data found for "${q}"`, ja: `「${q}」の人物関係データが見つかりません` }));
       setGraph(g);
     } catch (e) {
       if (c.signal.aborted) return;
-      setError(e instanceof AiError ? e : new AiError("查詢失敗，請稍後再試。"));
+      setError(e instanceof AiError ? e : new AiError(pick({ "zh-TW": "查詢失敗，請稍後再試。", en: "Search failed. Please try again later.", ja: "検索に失敗しました。しばらくしてから再試行してください。" })));
     } finally {
       if (ctl.current === c) setLoading(false);
     }
@@ -183,10 +191,10 @@ export default function AiRelationshipGraph({ initialQuery = "" }: { initialQuer
         <input
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="輸入歷史人物"
+          placeholder={t({ "zh-TW": "輸入歷史人物", en: "Enter a historical figure", ja: "歴史上の人物を入力" })}
           maxLength={60}
           className="min-w-0 flex-1 bg-transparent text-[14px] text-white outline-none placeholder:text-white/45"
-          aria-label="要查詢的歷史人物"
+          aria-label={t({ "zh-TW": "要查詢的歷史人物", en: "Historical figure to look up", ja: "検索する歴史上の人物" })}
         />
         <button
           type="submit"
@@ -194,7 +202,7 @@ export default function AiRelationshipGraph({ initialQuery = "" }: { initialQuer
           className="flex h-9 shrink-0 items-center gap-1.5 rounded-full bg-white px-4 text-[13px] font-semibold text-deep-800 transition hover:bg-glow disabled:bg-white/25 disabled:text-white/60"
         >
           {loading ? <LoaderCircle className="size-4 animate-spin" /> : <Search className="size-4" />}
-          {loading ? "生成中" : "AI 查詢"}
+          {loading ? t({ "zh-TW": "生成中", en: "Generating", ja: "生成中" }) : t({ "zh-TW": "AI 查詢", en: "Ask AI", ja: "AI 検索" })}
         </button>
       </form>
 
@@ -207,9 +215,9 @@ export default function AiRelationshipGraph({ initialQuery = "" }: { initialQuer
                 <span className="mx-auto grid size-14 place-items-center rounded-full bg-white/10 ring-1 ring-white/20">
                   <UserRound className="size-7 text-glow" />
                 </span>
-                <p className="mt-4 text-lg font-bold">AI 查詢任意人物</p>
+                <p className="mt-4 text-lg font-bold">{t({ "zh-TW": "AI 查詢任意人物", en: "Ask AI about anyone", ja: "AI で任意の人物を検索" })}</p>
                 <div ref={examplesRef} className="mt-5 flex flex-wrap justify-center gap-2">
-                  {EXAMPLES.map((n) => (
+                  {EXAMPLES[lang].map((n) => (
                     <button key={n} onClick={() => run(n)} className="chip text-[13px]">
                       {n}
                     </button>
@@ -223,7 +231,7 @@ export default function AiRelationshipGraph({ initialQuery = "" }: { initialQuer
             <div className="absolute inset-0 z-10 grid place-items-center bg-[#113650]/50 backdrop-blur-[2px]">
               <div className="flex flex-col items-center gap-3 text-[14px] text-white/85">
                 <LoaderCircle className="size-9 animate-spin text-glow" />
-                AI 正在整理「{query}」的人物關係…
+                {t({ "zh-TW": `AI 正在整理「${query}」的人物關係…`, en: `AI is mapping the relationships of "${query}"…`, ja: `AI が「${query}」の人物関係を整理中…` })}
               </div>
             </div>
           )}
@@ -235,7 +243,7 @@ export default function AiRelationshipGraph({ initialQuery = "" }: { initialQuer
                 <p className="mt-2 text-[14px] leading-relaxed text-amber-50">{error.message}</p>
                 {!error.disabled && (
                   <button onClick={() => run(query)} className="mt-3 rounded-full bg-white px-4 py-1.5 text-[13px] font-semibold text-deep-800 hover:bg-glow">
-                    再試一次
+                    {t({ "zh-TW": "再試一次", en: "Try again", ja: "再試行" })}
                   </button>
                 )}
               </div>
@@ -344,10 +352,10 @@ export default function AiRelationshipGraph({ initialQuery = "" }: { initialQuer
                 </span>
               ))}
               <span className="h-3 w-px bg-white/25" />
-              {types.map((t) => (
-                <span key={t} className="flex items-center gap-1.5">
-                  <span className="h-[3px] w-4 rounded-full" style={{ background: AI_REL_COLORS[t] }} />
-                  {t}
+              {types.map((rt) => (
+                <span key={rt} className="flex items-center gap-1.5">
+                  <span className="h-[3px] w-4 rounded-full" style={{ background: AI_REL_COLORS[rt] }} />
+                  {REL_TYPE[rt] ? t(REL_TYPE[rt]) : rt}
                 </span>
               ))}
             </div>
@@ -368,7 +376,7 @@ export default function AiRelationshipGraph({ initialQuery = "" }: { initialQuer
                     <h3 className="mt-1 text-xl font-bold">{pickedNode.name}</h3>
                     {pickedNode.description && <p className="mt-0.5 text-[13px] text-white/70">{pickedNode.description}</p>}
                   </div>
-                  <button onClick={() => setPicked(null)} className="grid size-8 shrink-0 place-items-center rounded-full text-white/70 hover:bg-white/10 hover:text-white" aria-label="返回簡介" title="返回簡介">
+                  <button onClick={() => setPicked(null)} className="grid size-8 shrink-0 place-items-center rounded-full text-white/70 hover:bg-white/10 hover:text-white" aria-label={t({ "zh-TW": "返回簡介", en: "Back to summary", ja: "概要に戻る" })} title={t({ "zh-TW": "返回簡介", en: "Back to summary", ja: "概要に戻る" })}>
                     <X className="size-4" />
                   </button>
                 </div>
@@ -387,14 +395,14 @@ export default function AiRelationshipGraph({ initialQuery = "" }: { initialQuer
                 {pickedNode.id !== center.id && (
                   <button data-reveal onClick={() => run(pickedNode.name)} className="mt-4 flex items-center justify-center gap-1.5 rounded-full bg-white px-4 py-2 text-[13px] font-semibold text-deep-800 hover:bg-glow">
                     <Sparkles className="size-4" />
-                    以「{pickedNode.name}」為中心查詢
+                    {t({ "zh-TW": `以「${pickedNode.name}」為中心查詢`, en: `Center on ${pickedNode.name}`, ja: `「${pickedNode.name}」を中心に検索` })}
                   </button>
                 )}
               </>
             ) : (
               <>
                 <p data-reveal className="text-[11px] font-semibold tracking-[0.12em] text-glow uppercase">
-                  AI 人物簡介
+                  {t({ "zh-TW": "AI 人物簡介", en: "AI profile", ja: "AI による人物紹介" })}
                 </p>
                 <h3 data-reveal className="mt-1 text-xl font-bold">
                   {center.name}
@@ -405,7 +413,7 @@ export default function AiRelationshipGraph({ initialQuery = "" }: { initialQuer
                   </p>
                 )}
                 <p data-reveal className="mt-3 text-[14px] leading-[1.8] text-white/90">
-                  {graph.introduction || "（AI 沒有提供簡介）"}
+                  {graph.introduction || t({ "zh-TW": "（AI 沒有提供簡介）", en: "(No summary provided by AI)", ja: "（AI による紹介はありません）" })}
                 </p>
               </>
             )}

@@ -1,0 +1,116 @@
+{
+ "iso": "MYS",
+ "capital": "Kuala Lumpur",
+ "summary": "Malaysia lies in Southeast Asia and consists of the Malay Peninsula and Sabah and Sarawak in northern Borneo; Malays, Chinese, Indians and indigenous peoples coexist there. The administrative center is Putrajaya.",
+ "religion": {
+  "ranking": [
+   {
+    "name": "Islam",
+    "percent": 63,
+    "description": "Islam reached the Malay Peninsula in the 13th-15th centuries through Arab, Indian and Persian Muslim merchants; in the early 15th century the ruler of the Melaka Sultanate converted to Islam, and as Melaka became the largest port in Southeast Asia, Islam spread rapidly among the Malay sultanates. The 1957 independence constitution makes Islam the religion of the Federation and includes \"professing the religion of Islam\" in the legal definition of a Malay, so the Malays, who make up about 70% of the population, are almost all Muslims, and together with some of the indigenous peoples of Sabah and Sarawak they form over 60% of the population."
+   },
+   {
+    "name": "Buddhism",
+    "percent": 19,
+    "description": "The great majority of Buddhists are Chinese, mainly descendants of the laborers and merchants who migrated from Fujian and Guangdong during British colonial rule from the 19th to the early 20th century to mine tin and plant rubber. Chinese temples often blend Mahayana Buddhism with Taoism and folk beliefs; in addition, in Kedah and Kelantan in the north there are small Thai Theravada Buddhist communities. Buddhists are concentrated in Chinese-populated cities such as Penang, Kuala Lumpur and Ipoh."
+   },
+   {
+    "name": "Christianity",
+    "percent": 9,
+    "description": "Christianity arrived after the Portuguese captured Melaka in 1511, and Protestantism followed during Dutch and British rule. From the 19th century missionaries carried out large-scale evangelization among the indigenous peoples of Sabah and Sarawak (such as the Kadazan-Dusun and the Iban), so the proportion of Christians in East Malaysia is far higher than in Peninsular Malaysia; in Peninsular Malaysia the followers are mainly Chinese and Indians."
+   },
+   {
+    "name": "Hinduism",
+    "percent": 6,
+    "description": "Hinduism was brought mainly by the Tamil laborers recruited by Britain from southern India in the late 19th and early 20th centuries to work on rubber estates and railways. People of Indian descent make up about 7% of the population, and most are Hindus, concentrated in Selangor, Perak and Negeri Sembilan. Every year at Thaipusam, hundreds of thousands of devotees make a pilgrimage to the Batu Caves near Kuala Lumpur."
+   },
+   {
+    "name": "Chinese folk religion / Taoism",
+    "percent": 1,
+    "description": "Chinese folk religion and Taoism were brought by Chinese immigrants, who worship deities such as Mazu, Guan Di and Tua Pek Kong; from the 19th century, dialect clan associations in many places were often centered on temples. Because many Chinese register themselves as Buddhists in the census, the number who report folk religion or Taoism separately is relatively small."
+   }
+  ],
+  "background": "From the 1st century the Malay Peninsula was influenced by Indian culture and followed Hinduism and Buddhism, and from the 7th to the 13th century it was within the sphere of the Buddhist Srivijaya. After the Melaka Sultanate converted to Islam in the 15th century, Islam became the core identity of the Malays. The Portuguese, Dutch and British successively colonized the land, and in the 19th century Britain brought in large numbers of Chinese and Indian laborers, bringing Buddhism, Taoism and Hinduism, while many of the indigenous peoples of East Malaysia converted to Christianity. After independence in 1957 Islam became the religion of the Federation, but the constitution guarantees freedom of religion for others."
+ },
+ "language": {
+  "official": "Malay is the national language and the official language.",
+  "ranking": [
+   {
+    "name": "Malay",
+    "percent": 60,
+    "description": "Malay is an ancient language of the Malay Peninsula and Sumatra, and in the 15th century, in the time of the Melaka Sultanate, it became the lingua franca of maritime trade throughout Southeast Asia. After independence in 1957 it was designated the national language, the National Language Act of 1967 made it the sole official language, and from the 1970s national schools gradually switched to teaching in Malay. As a result, besides being the mother tongue of the Malays, Malay must be learned by all ethnic groups in schools and in public service.",
+    "greeting": "Apa khabar",
+    "pronunciation": "AH-pa KAH-bar"
+   },
+   {
+    "name": "Chinese and Chinese dialects",
+    "percent": 23,
+    "description": "Chinese and Chinese dialects originate with the Chinese who migrated from Fujian, Guangdong, Hainan and elsewhere from the 19th to the early 20th century, so different dialects are current in different places: Hokkien predominates in Penang, Cantonese in Kuala Lumpur and Ipoh, and Hakka in Kuching. The Chinese community has run its own Chinese-language schools since the 19th century and has taught in Chinese (Mandarin) since the 1950s; this complete system of Chinese-language education from primary school to independent secondary schools is among the most complete outside China.",
+    "greeting": "你好",
+    "pronunciation": "nee HOW"
+   },
+   {
+    "name": "Tamil",
+    "percent": 6,
+    "description": "Tamil was brought by the rubber estate and railway laborers recruited by Britain from southern India from the late 19th century, and it is the principal language of Malaysia's Indians. During the colonial period Tamil-language schools were set up within the estates, and after independence the national-type Tamil primary schools have been retained to this day, allowing Tamil to be passed on within the Indian community.",
+    "greeting": "வணக்கம்",
+    "pronunciation": "va-NAK-kam"
+   }
+  ],
+  "history": "Old Malay first appears in inscriptions of the 7th-century Srivijaya period, written at that time in the Pallava script derived from India. After the arrival of Islam it switched to the Jawi script based on the Arabic alphabet, and the Melaka Sultanate made Malay a language of regional trade. During British colonial rule Roman-letter spelling was introduced, and Chinese and Indian immigrants also brought their own languages. After independence in 1957 Malay was made the national language, in 1972 the spelling was unified with Indonesia's, and English is still widely used in business and higher education."
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "Nasi lemak",
+    "localName": "Nasi lemak",
+    "description": "Rice cooked in coconut milk and pandan leaves until richly fragrant is served with sambal chili paste, fried anchovies (ikan bilis), roasted peanuts, cucumber slices and a boiled egg, traditionally wrapped in banana leaf.",
+    "history": "Nasi lemak was originally the breakfast of fishermen and farmers on the west coast of the Malay Peninsula, since coconut and dried anchovies were everyday local coastal products. It is already recorded in documents from the British colonial period. Today it is found from roadside stalls to high-end restaurants, often with curry chicken or rendang added, and is widely regarded as Malaysia's national dish, eaten by all ethnic groups; the Chinese versions sometimes come with different side dishes.",
+    "wiki": "Nasi lemak",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Nasi_Lemak_dengan_Chili_Nasi_Lemak_dan_Sotong_Pedas%2C_di_Penang_Summer_Restaurant.jpg/960px-Nasi_Lemak_dengan_Chili_Nasi_Lemak_dan_Sotong_Pedas%2C_di_Penang_Summer_Restaurant.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Nasi_Lemak_dengan_Chili_Nasi_Lemak_dan_Sotong_Pedas,_di_Penang_Summer_Restaurant.jpg",
+    "imageCredit": "Meandkancil2020・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "Satay",
+    "localName": "Satay",
+    "description": "Chicken, beef or mutton marinated in spices such as turmeric and lemongrass is skewered on bamboo sticks and grilled over charcoal, then dipped in peanut sauce and eaten with cucumber, onion and rice cakes.",
+    "history": "Satay's method is generally thought to have been inspired by the Middle Eastern kebab, brought to Java around the 19th century by Indian and Arab Muslim merchants and then spread to the Malay Peninsula; accounts of the origin of the name vary, with some suggesting Tamil or the Hokkien \"three pieces of meat.\" Kajang in Selangor is famous for satay and is called the \"Satay Town,\" and satay is also a common food at festivals such as Hari Raya Aidilfitri.",
+    "wiki": "Satay",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Sate_Udang.JPG/960px-Sate_Udang.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Sate_Udang.JPG",
+    "imageCredit": "Gunawan Kartapranata・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "Roti canai",
+    "localName": "Roti canai",
+    "description": "Dough is flung into an extremely thin sheet, then folded and griddled into a flatbread of soft, flaky layers, eaten with curry or dhal sauce and often with a glass of teh tarik.",
+    "history": "Roti canai derives from the paratha of southern India and was brought by Muslim immigrants (called \"mamak\") from southern India in the 19th and 20th centuries; the name \"canai\" is said to be related to Chennai in India or to the action of kneading dough. Mamak stalls (Indian Muslim restaurants) are open 24 hours and are where people of all ethnic groups gather late at night and watch football matches; roti canai with teh tarik has become Malaysia's most representative breakfast and late-night snack.",
+    "wiki": "Roti canai",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/YosriRotiCanai.jpg/960px-YosriRotiCanai.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:YosriRotiCanai.jpg",
+    "imageCredit": "Yosri at ms.wikipedia・GFDL・Wikimedia Commons"
+   },
+   {
+    "name": "Rendang",
+    "localName": "Rendang",
+    "description": "Beef is slowly stewed for several hours with coconut milk, chili, lemongrass, galangal and many spices until the liquid has cooked away and the spices cling tightly to the meat; the flavor is rich and mildly spicy.",
+    "history": "Rendang originates with the Minangkabau of Sumatra, Indonesia, and the method of long stewing and reducing lets the meat keep for days in a hot climate. In the 18th-19th centuries the Minangkabau migrated to the Malay Peninsula and established communities in what is now Negeri Sembilan, bringing rendang to Malaysia. Today it is an essential festive dish at Hari Raya Aidilfitri and Hari Raya Haji, and every household prepares a large pot before the festival.",
+    "wiki": "Rendang",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Rendang_daging_sapi_asli_Padang.JPG/960px-Rendang_daging_sapi_asli_Padang.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Rendang_daging_sapi_asli_Padang.JPG",
+    "imageCredit": "Midori・CC BY 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "Nasi kandar",
+    "localName": "Nasi kandar",
+    "description": "White rice is served with a choice of side dishes such as fried chicken, fish curry, okra and egg, and then topped with several kinds of curry sauce mixed together, called \"banjir\" (flooding).",
+    "history": "Nasi kandar originated in Penang in the late 19th century, when Indian Muslim hawkers carried two baskets full of rice and curry on a pole (kandar) and sold them along the streets, hence the name. Later the hawkers opened fixed shops, and some long-established ones have been passed down for generations. Nasi kandar is one of Penang's most representative foods, reflecting the important influence of Indian immigrants on the food culture of northern Malaysia.",
+    "wiki": "Nasi kandar",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/A_plate_of_Nasi_Kandar.jpg/960px-A_plate_of_Nasi_Kandar.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:A_plate_of_Nasi_Kandar.jpg",
+    "imageCredit": "Kutubkhanah・CC BY-SA 4.0・Wikimedia Commons"
+   }
+  ]
+ }
+}

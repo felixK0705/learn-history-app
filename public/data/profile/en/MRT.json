@@ -1,0 +1,106 @@
+{
+ "iso": "MRT",
+ "capital": "Nouakchott",
+ "summary": "A country on the Atlantic coast of northwest Africa, most of whose territory is the Sahara Desert; it is a bridge between the Arab world of North Africa and West Africa, and became independent from France in 1960.",
+ "religion": {
+  "ranking": [
+   {
+    "name": "Islam (Sunni)",
+    "percent": 99,
+    "description": "Islam arrived in the 8th-9th centuries via trans-Saharan caravans, and in the 11th century the Almoravid movement, which arose in what is now Mauritania, conquered northwest Africa under strict Maliki Sunni doctrine, rooting Islam firmly in the region. Afterward Sufi orders such as the Qadiriyya and the Tijaniyya penetrated nomadic society, and old towns such as Chinguetti became centers of Islamic learning. After independence in 1960 the country was named the \"Islamic Republic of Mauritania,\" the constitution makes Islam the state religion, and citizens are almost entirely Sunni Muslims."
+   },
+   {
+    "name": "Christianity",
+    "percent": 1,
+    "description": "Christianity arrived with French colonization in the 20th century, but French rule there relied mainly on indirect administration and missionary activity was limited. Today its followers are mainly expatriates and immigrants from neighboring countries such as Senegal and Mali, concentrated in the capital Nouakchott and in Nouadhibou; the law prohibits proselytizing among Muslims, so the share is extremely low."
+   },
+   {
+    "name": "No religion and others",
+    "percent": 1,
+    "description": "The Mauritanian constitution makes Islam the state religion, and under Islamic law apostasy can be punished severely, so openly declaring no religion or belonging to another religion carries social and legal risks; this population is therefore extremely small in the statistics and mostly consists of foreign residents."
+   }
+  ],
+  "background": "The Berber nomads of Mauritania came into contact with Islam through trans-Saharan trade in the 8th-9th centuries. In the 11th century the Almoravid dynasty rose from this desert and spread Maliki Sunni Islam across all of northwest Africa and the Iberian Peninsula. Later the Arab Hassan tribes moved in, and Sufi orders and old centers of learning such as Chinguetti and Ouadane embedded Islam deeply in society. After independence in 1960 the country was named an Islamic republic, and Islamic law is an important source of law."
+ },
+ "language": {
+  "official": "The official language is Arabic.",
+  "ranking": [
+   {
+    "name": "Hassaniya Arabic",
+    "percent": 80,
+    "description": "Hassaniya Arabic derives from the Arab Beni Hassan tribes who migrated from the east in the 15th-17th centuries; in the Char Bouba War of 1644-1674 they defeated the Berbers and gained political dominance, and their language gradually replaced the local Berber languages. Today it is the mother tongue of the Moors (both the White Moors and the Haratin, or Black Moors) and the common language of the whole country. The official Modern Standard Arabic is used for religion, government and formal writing.",
+    "greeting": "السلام عليكم",
+    "pronunciation": "as-sa-lām ʿa-lay-kum"
+   },
+   {
+    "name": "Pulaar (Fula)",
+    "percent": 9,
+    "description": "Pulaar is the language of the Fulani (called the Haalpulaar in Mauritania) and is spoken mainly along the Senegal River in the south. From 1966 the government promoted Arabization in education, provoking protests from Black ethnic groups in the south, and the 1989 conflict with Senegal led to the expulsion of large numbers of Fulani; language rights remain a sensitive ethnic issue today.",
+    "greeting": "Jam waali",
+    "pronunciation": "jam waa-li"
+   },
+   {
+    "name": "Wolof",
+    "percent": 1,
+    "description": "Wolof is the main language of Senegal, and in Mauritania it is used only by a small Wolof minority along the southern riverbank and in the capital. Together with Pulaar and Soninke it is designated a national language, but it has few speakers, about 1%.",
+    "greeting": "Nanga def",
+    "pronunciation": "nan-ga def"
+   }
+  ],
+  "history": "In Mauritania the Zenaga language of the Berber family was originally spoken. From the 15th century the Arab Beni Hassan tribes moved south, and after the Char Bouba War of the 17th century their Hassaniya Arabic gradually became dominant, so that Zenaga has now nearly disappeared. With French colonization from 1903, French became the administrative language. After independence in 1960 Arabization was gradually carried out, and the 1991 constitution made Arabic the sole official language, with Pulaar, Soninke and Wolof as national languages, while French is still widely used in business and higher education."
+ },
+ "food": {
+  "ranking": [
+   {
+    "name": "Thieboudienne (fish and rice)",
+    "localName": "Thieboudienne",
+    "description": "Pieces of fish are stewed in tomato sauce with vegetables such as cassava, carrots, eggplant and cabbage, and rice is then cooked in the fish-stewing broth, so that the rice absorbs the savor of the fish and the aroma of the tomato.",
+    "history": "This dish originates around Saint-Louis in neighboring Senegal and is said to have been invented by a local cook in the 19th century. Southern Mauritania is linked by Wolof and Fulani culture along the Senegal River, and the Atlantic coast has rich fishing grounds, so thieboudienne crossed the border to become a Mauritanian home dish. The broken rice introduced from Indochina during the French colonial period allowed the dish to become widespread.",
+    "wiki": "Thieboudienne",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Thieboudienne.JPG/960px-Thieboudienne.JPG",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Thieboudienne.JPG",
+    "imageCredit": "KVDP・Public domain・Wikimedia Commons"
+   },
+   {
+    "name": "Méchoui (roast whole lamb)",
+    "localName": "Méchoui",
+    "description": "A whole sheep is rubbed with salt and spices and slow-roasted for several hours in a pit or over charcoal until the skin is crisp and the meat tender, and it is eaten by tearing it off with the hands.",
+    "history": "Méchoui is a banquet tradition shared by the nomads of the Maghreb and the Sahara; in Moorish society in Mauritania, slaughtering a sheep to receive guests represents the host's generosity and status. It often appears at weddings, in welcoming honored guests, and at the Islamic festival of Eid al-Adha, which commemorates the Prophet Ibrahim's sacrifice, when every household slaughters a sheep and shares it with relatives, friends and the poor.",
+    "wiki": "Mechoui",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Mechoui.jpg/960px-Mechoui.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Mechoui.jpg",
+    "imageCredit": "Andre Piquet・CC BY 3.0・Wikimedia Commons"
+   },
+   {
+    "name": "Couscous",
+    "localName": "Couscous / Lekhsel",
+    "description": "Coarse wheat or millet flour is rolled into small granules and steamed, then spread on the bottom of a dish and topped with the broth from a stew of mutton, camel meat or vegetables.",
+    "history": "Couscous is an ancient staple of the Berbers of North Africa and is generally thought to have originated in the Maghreb around the 11th-13th centuries. Mauritania lies on the southern edge of the Sahara, so it both took in the wheat couscous of the north and has a version made from local millet, called \"lekhsel.\" The whole family sitting around to share one large dish and eating with the right hand is an important dining etiquette of nomadic society.",
+    "wiki": "Couscous",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Moroccan_cuscus%2C_from_Casablanca%2C_September_2018.jpg/960px-Moroccan_cuscus%2C_from_Casablanca%2C_September_2018.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Moroccan_cuscus,_from_Casablanca,_September_2018.jpg",
+    "imageCredit": "Lmmima・CC BY-SA 4.0・Wikimedia Commons"
+   },
+   {
+    "name": "Mauritanian mint tea",
+    "localName": "Atay",
+    "description": "Chinese green tea is repeatedly brewed with fresh mint and a large amount of sugar, and poured from a height into small glasses to raise a foam; by custom, three glasses are drunk in a row.",
+    "history": "Green tea was imported into Morocco by British merchants in the 18th-19th centuries and then spread along the caravan routes into the Sahara, becoming the daily drink of the nomads. Making tea is a ritual of hospitality, often presided over by a man of the household, and it can last more than an hour. A local saying describes the three glasses: \"The first is bitter as life, the second sweet as love, the third gentle as death\"; refusing tea is regarded as impolite.",
+    "wiki": "Maghrebi mint tea",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Tunisian_Tea_with_pine_nuts.jpg/960px-Tunisian_Tea_with_pine_nuts.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Tunisian_Tea_with_pine_nuts.jpg",
+    "imageCredit": "sky#walker・CC BY-SA 2.0・Wikimedia Commons"
+   },
+   {
+    "name": "Camel milk",
+    "localName": "Camel milk",
+    "description": "Freshly milked camel milk is drunk directly or left to ferment naturally into a slightly sour yogurt; it is nutritious and lower in fat than cow's milk.",
+    "history": "Camels were introduced into the Sahara within a few centuries around the beginning of the Common Era, completely transforming local nomadic life and trans-desert trade. For the nomads of Mauritania, camel milk is an important source of fluid and nutrition in the water-scarce desert, and they can live on it alone for long periods. The Tiviski dairy, founded in Nouakchott in 1989, was one of the first plants in Africa to produce camel milk industrially.",
+    "wiki": "Camel milk",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/74/Fresh_camel_milk_%28Dubai%29_%28cropped%29.jpg",
+    "imagePage": "https://commons.wikimedia.org/wiki/File:Fresh_camel_milk_(Dubai)_(cropped).jpg",
+    "imageCredit": "krebsmaus07 from Flickr・CC BY 2.0・Wikimedia Commons"
+   }
+  ]
+ }
+}

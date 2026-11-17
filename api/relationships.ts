@@ -45,9 +45,10 @@ export default postHandler(async (body) => {
 - 每個其他人物至少要有一條連線；大多數連線應與「${name}」相連，也可加入其他人物彼此之間的重要關係。
 - links 的 source、target 必須使用 nodes 中存在的 id。
 - 只能是真實存在的歷史人物，不要捏造。若「${name}」不是可辨識的歷史人物，回傳 {"introduction": "", "nodes": [], "links": []}。
-- 所有文字必須是繁體中文。只回傳 JSON。`;
+- 所有文字必須是繁體中文。只回傳 JSON。
+- type 欄位一律填上述七個中文值之一（即使被要求以其他語言輸出也不翻譯 type）。`;
 
-  const text = await generate({ contents: [{ role: "user", parts: [{ text: prompt }] }], json: true, temperature: 0.4, maxOutputTokens: 6144 });
+  const text = await generate({ contents: [{ role: "user", parts: [{ text: prompt }] }], json: true, temperature: 0.4, maxOutputTokens: 6144, lang: body.lang });
   const data = (parseJson(text) ?? {}) as { introduction?: unknown; nodes?: unknown; links?: unknown };
 
   // ── 清理節點：去除重複 id 與重複姓名 ──

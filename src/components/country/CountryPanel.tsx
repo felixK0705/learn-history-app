@@ -2,17 +2,19 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { Search, UtensilsCrossed, Volume2, X } from "lucide-react";
 import { gsap, prefersReducedMotion, useGSAP, useReveal } from "../../lib/motion";
 import Flag from "../ui/Flag";
-import { loadHistory, loadProfile, type CountryMeta, type CountryProfile, type HistoryEvent } from "../../data/world";
+import { CONTINENT, ERA, countryName, loadHistory, loadProfile, type CountryMeta, type CountryProfile, type HistoryEvent } from "../../data/world";
+import { useLang, useT, type Tr } from "../../lib/i18n";
 import { canSpeak, langCodeFor, speak } from "../../lib/speech";
 import SelectionAsk from "../ai/SelectionAsk";
 
 const tabs = [
-  { id: "history", label: "歷史" },
-  { id: "religion", label: "宗教" },
-  { id: "language", label: "語言" },
-  { id: "food", label: "美食" },
-] as const;
+  { id: "history", label: { "zh-TW": "歷史", en: "History", ja: "歴史" } },
+  { id: "religion", label: { "zh-TW": "宗教", en: "Religion", ja: "宗教" } },
+  { id: "language", label: { "zh-TW": "語言", en: "Language", ja: "言語" } },
+  { id: "food", label: { "zh-TW": "美食", en: "Food", ja: "料理" } },
+] as const satisfies readonly { id: string; label: Tr }[];
 type TabId = (typeof tabs)[number]["id"];
+const LOADING: Tr = { "zh-TW": "資料整理中。", en: "Content coming soon.", ja: "データを準備中です。" };
 
 export default function CountryPanel({ country, onClose }: { country: CountryMeta; onClose: () => void }) {
   const [tab, setTab] = useState<TabId>("history");
@@ -23,15 +25,23 @@ export default function CountryPanel({ country, onClose }: { country: CountryMet
   const contentRef = useRef<HTMLDivElement>(null);
   const navRef = useRef<HTMLDivElement>(null);
   const pillRef = useRef<HTMLSpanElement>(null);
+  const lang = useLang();
+  const t = useT();
+  const name = countryName(country, lang);
+  // 朗讀問候語要用中文語言名稱判斷語音代碼，非中文介面另外載入中文版
+  const [zhProfile, setZhProfile] = useState<CountryProfile | null>(null);
 
   useEffect(() => {
     let alive = true;
-    loadHistory(country.iso).then((d) => alive && setEvents(d.events)).catch(() => alive && setEvents([]));
-    loadProfile(country.iso).then((d) => alive && setProfile(d)).catch(() => alive && setProfile(null));
+    setEvents(null);
+    setProfile(undefined);
+    loadHistory(country.iso, lang).then((d) => alive && setEvents(d.events)).catch(() => alive && setEvents([]));
+    loadProfile(country.iso, lang).then((d) => alive && setProfile(d)).catch(() => alive && setProfile(null));
+    loadProfile(country.iso, "zh-TW").then((d) => alive && setZhProfile(d)).catch(() => {});
     return () => {
       alive = false;
     };
-  }, [country.iso]);
+  }, [country.iso, lang]);
 
   useGSAP(
     () => {
@@ -75,24 +85,24 @@ export default function CountryPanel({ country, onClose }: { country: CountryMet
     <aside
       ref={panelRef}
       className="absolute z-30 flex flex-col overflow-hidden border border-white/15 bg-[#0f3049]/96 shadow-[0_30px_70px_-25px_rgba(4,18,30,0.8),inset_0_1px_0_rgba(255,255,255,0.18)] max-lg:inset-x-2 max-lg:bottom-2 max-lg:h-[64%] max-lg:rounded-[28px] lg:top-[74px] lg:right-4 lg:bottom-4 lg:w-[440px] lg:rounded-[32px]"
-      aria-label={`${country.zh}的歷史與文化`}
+      aria-label={t({ "zh-TW": `${name}的歷史與文化`, en: `History and culture of ${name}`, ja: `${name}の歴史と文化` })}
     >
-      <SelectionAsk country={country.zh} />
+      <SelectionAsk country={name} />
       <header ref={headerRef} className="shrink-0 px-6 pt-6 pb-4">
         <div className="flex items-start justify-between gap-3">
           <p className="eyebrow pt-1">
-            {country.continent}
+            {t(CONTINENT[country.continent])}
             {profile?.capital ? ` · ${profile.capital}` : ""}
           </p>
-          <button onClick={close} className="glass-soft -mt-1 -mr-1 grid size-9 place-items-center rounded-full text-white/80 transition hover:bg-white/20 hover:text-white" aria-label="關閉">
+          <button onClick={close} className="glass-soft -mt-1 -mr-1 grid size-9 place-items-center rounded-full text-white/80 transition hover:bg-white/20 hover:text-white" aria-label={t({ "zh-TW": "關閉", en: "Close", ja: "閉じる" })}>
             <X className="size-4" />
           </button>
         </div>
         <div className="mt-1 flex items-center gap-3">
-          <h2 className="text-[30px] leading-tight font-semibold tracking-tight">{country.zh}</h2>
+          <h2 className="text-[30px] leading-tight font-semibold tracking-tight">{name}</h2>
           <Flag iso2={country.iso2} className="text-[22px]" />
         </div>
-        <p className="text-[13px] text-white/55">{country.en}</p>
+        {lang !== "en" && <p className="text-[13px] text-white/55">{country.en}</p>}
         {profile?.summary && <p className="mt-3 text-[13.5px] leading-relaxed text-white/85">{profile.summary}</p>}
       </header>
 
@@ -110,7 +120,7 @@ export default function CountryPanel({ country, onClose }: { country: CountryMet
                 tab === id ? "text-deep-800" : "text-white/70 hover:text-white"
               }`}
             >
-              {label}
+              {t(label)}
             </button>
           ))}
         </div>
@@ -119,7 +129,7 @@ export default function CountryPanel({ country, onClose }: { country: CountryMet
       <div ref={contentRef} className="scroll-thin min-h-0 flex-1 overflow-y-auto px-6 pt-1 pb-6">
         {tab === "history" && <HistoryTab events={events} />}
         {tab === "religion" && <RankingTab profile={profile} kind="religion" />}
-        {tab === "language" && <RankingTab profile={profile} kind="language" />}
+        {tab === "language" && <RankingTab profile={profile} kind="language" zh={zhProfile} />}
         {tab === "food" && <FoodTab profile={profile} />}
       </div>
     </aside>
@@ -127,8 +137,9 @@ export default function CountryPanel({ country, onClose }: { country: CountryMet
 }
 
 function Skeleton({ rows = 5 }: { rows?: number }) {
+  const t = useT();
   return (
-    <div className="space-y-3" aria-label="載入中">
+    <div className="space-y-3" aria-label={t({ "zh-TW": "載入中", en: "Loading", ja: "読み込み中" })}>
       {Array.from({ length: rows }, (_, i) => (
         <div key={i} className="h-16 animate-pulse rounded-2xl bg-white/10" />
       ))}
@@ -148,6 +159,7 @@ function HistoryTab({ events }: { events: HistoryEvent[] | null }) {
   const [era, setEra] = useState<string | null>(null);
   const [q, setQ] = useState("");
   const [open, setOpen] = useState<string | null>(null);
+  const t = useT();
 
   const counts = useMemo(() => {
     const m = new Map<string, number>();
@@ -157,13 +169,13 @@ function HistoryTab({ events }: { events: HistoryEvent[] | null }) {
   const total = counts.reduce((s, c) => s + c.n, 0) || 1;
 
   const groups = useMemo(() => {
-    const s = q.trim();
-    const list = (events ?? []).filter((e) => (!era || e.era === era) && (!s || e.title.includes(s) || e.description.includes(s) || e.year.includes(s)));
+    const s = q.trim().toLowerCase();
+    const list = (events ?? []).filter((e) => (!era || e.era === era) && (!s || `${e.title} ${e.description} ${e.year}`.toLowerCase().includes(s)));
     return ERA_ORDER.map((name) => ({ name, items: list.filter((e) => e.era === name) })).filter((g) => g.items.length);
   }, [events, era, q]);
 
   if (!events) return <Skeleton />;
-  if (!events.length) return <Empty text="這個國家的歷史資料整理中。" />;
+  if (!events.length) return <Empty text={t({ "zh-TW": "這個國家的歷史資料整理中。", en: "History for this country is coming soon.", ja: "この国の歴史データは準備中です。" })} />;
   return (
     <div>
       {/* 時代總覽：依事件數比例分段、各時代不同顏色，點擊篩選 */}
@@ -180,9 +192,9 @@ function HistoryTab({ events }: { events: HistoryEvent[] | null }) {
             >
               <span className="block h-2 rounded-full" style={{ background: ERA_COLOR[c.era] }} />
               <span className="mt-1.5 block truncate text-[11.5px] font-semibold" style={{ color: ERA_COLOR[c.era] }}>
-                {c.era}
+                {t(ERA[c.era])}
               </span>
-              <span className="block text-[10.5px] text-white/55 tabular-nums">{c.n} 則</span>
+              <span className="block text-[10.5px] text-white/55 tabular-nums">{t({ "zh-TW": `${c.n} 則`, en: `${c.n}`, ja: `${c.n} 件` })}</span>
             </button>
           );
         })}
@@ -193,12 +205,12 @@ function HistoryTab({ events }: { events: HistoryEvent[] | null }) {
         <input
           value={q}
           onChange={(e) => setQ(e.target.value)}
-          placeholder={`搜尋 ${events.length} 則事件`}
+          placeholder={t({ "zh-TW": `搜尋 ${events.length} 則事件`, en: `Search ${events.length} events`, ja: `${events.length} 件の出来事を検索` })}
           className="min-w-0 flex-1 bg-transparent text-[13px] text-white outline-none placeholder:text-white/45"
         />
         {(q || era) && (
           <button onClick={() => { setQ(""); setEra(null); }} className="text-[11px] text-white/70 hover:text-white">
-            清除
+            {t({ "zh-TW": "清除", en: "Clear", ja: "クリア" })}
           </button>
         )}
       </div>
@@ -236,7 +248,7 @@ function HistoryTab({ events }: { events: HistoryEvent[] | null }) {
           </section>
         );
       })}
-      {!groups.length && <Empty text="找不到符合的事件" />}
+      {!groups.length && <Empty text={t({ "zh-TW": "找不到符合的事件", en: "No matching events", ja: "該当する出来事はありません" })} />}
     </div>
   );
 }
@@ -247,10 +259,11 @@ const OTHER_COLOR = "#7c8db5";
 
 function Donut({ items, title }: { items: { name: string; percent: number }[]; title: string }) {
   const [hover, setHover] = useState<number | null>(null);
+  const t = useT();
   const top = items.slice(0, 6).map((it, i) => ({ ...it, color: PIE_COLORS[i] }));
   const used = top.reduce((s, it) => s + it.percent, 0);
   const rest = Math.max(0, 100 - used);
-  const slices = rest >= 0.5 ? [...top, { name: "其他／未統計", percent: rest, color: OTHER_COLOR }] : top;
+  const slices = rest >= 0.5 ? [...top, { name: t({ "zh-TW": "其他／未統計", en: "Other / unrecorded", ja: "その他・不明" }), percent: rest, color: OTHER_COLOR }] : top;
   const sum = slices.reduce((s, it) => s + it.percent, 0) || 1;
   const R = 62, r = 40, C = 80;
   let acc = 0;
@@ -263,7 +276,7 @@ function Donut({ items, title }: { items: { name: string; percent: number }[]; t
   const shown = hover !== null ? slices[hover] : slices[0];
   return (
     <div data-reveal className="mb-4 flex items-center gap-4 rounded-2xl border border-white/12 bg-white/6 p-4">
-      <svg viewBox="0 0 160 160" className="size-[150px] shrink-0" role="img" aria-label={`${title}比例圓餅圖`}>
+      <svg viewBox="0 0 160 160" className="size-[150px] shrink-0" role="img" aria-label={t({ "zh-TW": `${title}比例圓餅圖`, en: `${title} share chart`, ja: `${title}の割合グラフ` })}>
         {slices.map((sl, i) => {
           const a0 = (acc / sum) * Math.PI * 2;
           acc += sl.percent;
@@ -288,7 +301,7 @@ function Donut({ items, title }: { items: { name: string; percent: number }[]; t
         })}
         <text x={C} y={C - 2} textAnchor="middle" className="fill-white text-[22px] font-bold">{shown.percent}%</text>
         <text x={C} y={C + 16} textAnchor="middle" className="fill-white/70 text-[10px]">
-          {shown.name.length > 7 ? shown.name.slice(0, 7) + "…" : shown.name}
+          {shown.name.length > 12 ? shown.name.slice(0, 11) + "…" : shown.name}
         </text>
       </svg>
       <ul className="min-w-0 flex-1 space-y-1.5">
@@ -309,31 +322,35 @@ function Donut({ items, title }: { items: { name: string; percent: number }[]; t
   );
 }
 
-function RankingTab({ profile, kind }: { profile: CountryProfile | null | undefined; kind: "religion" | "language" }) {
+function RankingTab({ profile, kind, zh }: { profile: CountryProfile | null | undefined; kind: "religion" | "language"; zh?: CountryProfile | null }) {
   const speechOk = canSpeak();
+  const t = useT();
   if (profile === undefined) return <Skeleton rows={4} />;
-  if (!profile) return <Empty text="資料整理中。" />;
+  if (!profile) return <Empty text={t(LOADING)} />;
+  const rel = kind === "religion";
   const data = kind === "religion" ? profile.religion : profile.language;
   const ranking = data.ranking;
   const max = Math.max(...ranking.map((r) => r.percent), 1);
   const note = kind === "religion" ? profile.religion.background : profile.language.history;
   return (
     <div>
-      <h3 data-reveal className="mb-3 text-[17px] font-semibold text-white">{kind === "religion" ? "宗教信仰分布" : "語言分布"}</h3>
-      <Donut items={ranking} title={kind === "religion" ? "宗教" : "語言"} />
+      <h3 data-reveal className="mb-3 text-[17px] font-semibold text-white">{rel ? t({ "zh-TW": "宗教信仰分布", en: "Religious composition", ja: "宗教の分布" }) : t({ "zh-TW": "語言分布", en: "Languages spoken", ja: "言語の分布" })}</h3>
+      <Donut items={ranking} title={rel ? t({ "zh-TW": "宗教", en: "Religion", ja: "宗教" }) : t({ "zh-TW": "語言", en: "Language", ja: "言語" })} />
       {kind === "language" && (
         <section data-reveal className="mb-5">
-          <h4 className="mb-1.5 text-[14px] font-semibold text-glow">官方語言</h4>
+          <h4 className="mb-1.5 text-[14px] font-semibold text-glow">{t({ "zh-TW": "官方語言", en: "Official languages", ja: "公用語" })}</h4>
           <p className="text-[13.5px] leading-relaxed text-white/85">{profile.language.official}</p>
         </section>
       )}
       <h4 data-reveal className="mb-2 text-[14px] font-semibold text-glow">
-        {kind === "religion" ? "信仰排名與成因" : "語言排名與成因"}
+        {rel
+          ? t({ "zh-TW": "信仰排名與成因", en: "Ranking and origins", ja: "信者の多い順と成り立ち" })
+          : t({ "zh-TW": "語言排名與成因", en: "Ranking and origins", ja: "話者の多い順と成り立ち" })}
       </h4>
       <ol className="space-y-2">
         {ranking.map((r, i) => {
           const greet = kind === "language" ? (r as CountryProfile["language"]["ranking"][number]) : null;
-          const code = greet ? langCodeFor(r.name) : null;
+          const code = greet ? langCodeFor(zh?.language.ranking[i]?.name ?? r.name) : null;
           return (
             <li key={r.name} data-reveal className="glass-soft rounded-2xl px-4 py-3">
               <div className="flex items-baseline gap-3">
@@ -350,7 +367,7 @@ function RankingTab({ profile, kind }: { profile: CountryProfile | null | undefi
                   <span className="text-[15px]">{greet.greeting}</span>
                   {greet.pronunciation && <span className="text-xs text-white/55 italic">{greet.pronunciation}</span>}
                   {speechOk && code && (
-                    <button onClick={() => speak(greet.greeting!, code)} className="ml-auto grid size-7 place-items-center rounded-full bg-white/10 text-white/80 hover:bg-white/20" aria-label={`朗讀 ${greet.greeting}`}>
+                    <button onClick={() => speak(greet.greeting!, code)} className="ml-auto grid size-7 place-items-center rounded-full bg-white/10 text-white/80 hover:bg-white/20" aria-label={t({ "zh-TW": `朗讀 ${greet.greeting}`, en: `Read aloud: ${greet.greeting}`, ja: `読み上げ：${greet.greeting}` })}>
                       <Volume2 className="size-3.5" />
                     </button>
                   )}
@@ -361,7 +378,7 @@ function RankingTab({ profile, kind }: { profile: CountryProfile | null | undefi
         })}
       </ol>
       <div data-reveal className="mt-5">
-        <h4 className="mb-1.5 text-[14px] font-semibold text-glow">{kind === "religion" ? "信仰的歷史背景" : "語言的歷史背景"}</h4>
+        <h4 className="mb-1.5 text-[14px] font-semibold text-glow">{rel ? t({ "zh-TW": "信仰的歷史背景", en: "Historical background", ja: "信仰の歴史的背景" }) : t({ "zh-TW": "語言的歷史背景", en: "Historical background", ja: "言語の歴史的背景" })}</h4>
         <p className="text-[13.5px] leading-relaxed text-white/85">{note}</p>
       </div>
     </div>
@@ -369,11 +386,12 @@ function RankingTab({ profile, kind }: { profile: CountryProfile | null | undefi
 }
 
 function FoodTab({ profile }: { profile: CountryProfile | null | undefined }) {
+  const t = useT();
   if (profile === undefined) return <Skeleton rows={3} />;
-  if (!profile) return <Empty text="資料整理中。" />;
+  if (!profile) return <Empty text={t(LOADING)} />;
   return (
     <>
-    <h3 data-reveal className="mb-3 text-[17px] font-semibold text-white">傳統美食</h3>
+    <h3 data-reveal className="mb-3 text-[17px] font-semibold text-white">{t({ "zh-TW": "傳統美食", en: "Traditional dishes", ja: "伝統料理" })}</h3>
     <ol className="space-y-4">
       {profile.food.ranking.map((f, i) => (
         <li key={f.name} data-reveal className="glass-soft overflow-hidden rounded-3xl">
@@ -404,13 +422,13 @@ function FoodTab({ profile }: { profile: CountryProfile | null | undefined }) {
             <p className="mt-1.5 text-[13px] leading-relaxed text-white/80">{f.description}</p>
             {f.history && (
               <div className="mt-3 rounded-xl border border-white/10 bg-white/5 p-3">
-                <p className="mb-1 text-[12px] font-semibold text-glow">歷史與文化</p>
+                <p className="mb-1 text-[12px] font-semibold text-glow">{t({ "zh-TW": "歷史與文化", en: "History and culture", ja: "歴史と文化" })}</p>
                 <p className="text-[13px] leading-relaxed text-white/80">{f.history}</p>
               </div>
             )}
             {f.imageCredit && (
               <p className="mt-2 text-[10.5px] text-white/40">
-                圖片：
+                {t({ "zh-TW": "圖片：", en: "Photo: ", ja: "写真：" })}
                 {f.imagePage ? (
                   <a href={f.imagePage} target="_blank" rel="noreferrer" className="underline-offset-2 hover:underline">
                     {f.imageCredit}

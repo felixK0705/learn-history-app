@@ -15,6 +15,6 @@ export default postHandler(async (body) => {
       : "請依序說明：1. 這段文字在講什麼；2. 歷史背景與前因；3. 重要性與後續影響；4. 值得一提的相關細節或人物。\n") +
     "篇幅約 250–400 字。";
 
-  const answer = await generate({ contents: [{ role: "user", parts: [{ text: prompt }] }] });
+  const answer = await generate({ contents: [{ role: "user", parts: [{ text: prompt }] }], lang: body.lang });
   return { answer };
 });

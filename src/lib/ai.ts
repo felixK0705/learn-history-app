@@ -1,7 +1,13 @@
 import { useSyncExternalStore } from "react";
+import { getLang, pick } from "./i18n";
 
 /** 後端沒有設定 GEMINI_API_KEY 時顯示的訊息 */
-export const AI_DISABLED_MESSAGE = "AI 功能尚未啟用（網站管理者需在 Vercel 設定 GEMINI_API_KEY）";
+export const aiDisabledMessage = () =>
+  pick({
+    "zh-TW": "AI 功能尚未啟用（網站管理者需在 Vercel 設定 GEMINI_API_KEY）",
+    en: "AI features are not enabled yet (the site owner needs to set GEMINI_API_KEY on Vercel)",
+    ja: "AI 機能はまだ有効になっていません（サイト管理者が Vercel で GEMINI_API_KEY を設定する必要があります）",
+  });
 
 export class AiError extends Error {
   status: number;
@@ -21,22 +27,23 @@ export async function postAi<T>(path: "chat" | "explain" | "relationships" | "st
     res = await fetch(`/api/${path}`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(body),
+      // 附上介面語言，AI 依此語言回答
+      body: JSON.stringify({ ...(body as object), lang: getLang() }),
       signal,
     });
   } catch (err) {
     if ((err as Error).name === "AbortError") throw err;
-    throw new AiError("無法連線到 AI 服務，請檢查網路後再試。");
+    throw new AiError(pick({ "zh-TW": "無法連線到 AI 服務，請檢查網路後再試。", en: "Could not reach the AI service. Check your connection and try again.", ja: "AI サービスに接続できません。ネットワークを確認して再試行してください。" }));
   }
 
   const type = res.headers.get("content-type") ?? "";
   const data = type.includes("application/json") ? ((await res.json().catch(() => null)) as (T & { error?: string }) | null) : null;
 
-  if (res.status === 503) throw new AiError(AI_DISABLED_MESSAGE, 503, true);
+  if (res.status === 503) throw new AiError(aiDisabledMessage(), 503, true);
   // 找不到端點（例如本機 vite preview 沒有 /api）或回傳的不是 JSON
   if (!data) {
-    if (res.status === 404 || res.status === 405 || res.ok) throw new AiError(`${AI_DISABLED_MESSAGE}。目前環境找不到 AI 服務。`, res.status, true);
-    throw new AiError(`AI 服務暫時無法使用（${res.status}），請稍後再試。`, res.status);
+    if (res.status === 404 || res.status === 405 || res.ok) throw new AiError(aiDisabledMessage(), res.status, true);
+    throw new AiError(pick({ "zh-TW": `AI 服務暫時無法使用（${res.status}），請稍後再試。`, en: `The AI service is temporarily unavailable (${res.status}). Please try again later.`, ja: `AI サービスが一時的に利用できません（${res.status}）。しばらくしてから再試行してください。` }), res.status);
   }
   if (!res.ok) throw new AiError(data.error || `AI 服務發生錯誤（${res.status}）`, res.status);
   return data;
@@ -108,7 +115,7 @@ async function run(call: (signal: AbortSignal) => Promise<{ answer: string }>) {
     push({ role: "assistant", content: answer });
   } catch (err) {
     if (ctl.signal.aborted) return;
-    const e = err instanceof AiError ? err : new AiError("發生未知錯誤，請稍後再試。");
+    const e = err instanceof AiError ? err : new AiError(pick({ "zh-TW": "發生未知錯誤，請稍後再試。", en: "Something went wrong. Please try again later.", ja: "不明なエラーが発生しました。しばらくしてから再試行してください。" }));
     push({ role: "assistant", content: e.message, kind: "error", disabled: e.disabled });
   } finally {
     if (controller === ctl) {

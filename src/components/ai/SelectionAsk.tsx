@@ -3,6 +3,7 @@ import { createPortal } from "react-dom";
 import { Sparkles } from "lucide-react";
 import { gsap, prefersReducedMotion, useGSAP } from "../../lib/motion";
 import { askExplain } from "../../lib/ai";
+import { useT } from "../../lib/i18n";
 
 /**
  * 選取文字問 AI：放在任何容器內（作為子元素），
@@ -10,6 +11,7 @@ import { askExplain } from "../../lib/ai";
  * 本元件只渲染一個隱藏的定位點，以其父元素作為偵測範圍，不影響容器版面。
  */
 export default function SelectionAsk({ country }: { country?: string }) {
+  const t = useT();
   const markerRef = useRef<HTMLSpanElement>(null);
   const btnRef = useRef<HTMLButtonElement>(null);
   const [sel, setSel] = useState<{ text: string; x: number; y: number; below: boolean } | null>(null);
@@ -85,10 +87,10 @@ export default function SelectionAsk({ country }: { country?: string }) {
               setSel(null);
             }}
             className="flex items-center gap-1.5 rounded-full border border-white/40 bg-[linear-gradient(145deg,#4fa3cf,#1d5a80)] px-3.5 py-1.5 text-[13px] font-semibold whitespace-nowrap text-white shadow-[0_10px_24px_-8px_rgba(5,22,36,0.85),inset_0_1px_0_rgba(255,255,255,0.45)] hover:brightness-110"
-            aria-label="請 AI 解釋選取的文字"
+            aria-label={t({ "zh-TW": "請 AI 解釋選取的文字", en: "Ask AI to explain the selection", ja: "選択した文章を AI に解説してもらう" })}
           >
             <Sparkles className="size-3.5" />
-            問 AI
+            {t({ "zh-TW": "問 AI", en: "Ask AI", ja: "AI に聞く" })}
           </button>
           </div>,
           document.body,
