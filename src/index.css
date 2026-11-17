@@ -93,6 +93,11 @@
   /* 深藍描邊：在淺色沙漠、雪地上也看得清楚 */
   text-shadow: 0 0 1px rgb(8 32 50), 0 0 2px rgb(8 32 50), 0 0 5px rgb(8 32 50 / 0.7);
 }
+/* 小國的引線：從國名框邊緣連回國家位置 */
+.label-leader {
+  @apply absolute hidden h-px origin-left bg-white/80;
+  box-shadow: 0 0 2px rgb(8 32 50);
+}
 .country-label.is-active {
   @apply rounded-full bg-white px-2.5 py-0.5 font-semibold text-deep-800;
   text-shadow: none;

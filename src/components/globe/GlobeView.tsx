@@ -79,6 +79,8 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
   const labelPos = useRef<{ div: HTMLDivElement; iso: string; rank: number }[]>([]);
   /** 各國面積（球面度），國名避讓時面積大的國家優先顯示 */
   const areaByIso = useRef(new Map<string, number>());
+  /** 可以用細線把國名拉到旁邊的小國：沒有國界形狀的島國、微型國家，以及面積很小的國家 */
+  const leaderOk = useRef(new Set(countries.filter((c) => !c.shape).map((c) => c.iso)));
 
 
   const cb = useRef({ onSelectCountry, onReady });
@@ -240,10 +242,62 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
     const hiddenAt = new Map<HTMLDivElement, number>();
     // 以國名寬、高的倍數表示位移：正中、上、下、右、左
     const OFFSETS = [[0, 0], [0, -1], [0, 1], [0.5, 0], [-0.5, 0]];
-    const shift = (k: number, w: number, h: number) => [OFFSETS[k][0] * (w + 12), OFFSETS[k][1] * h];
+    // 小島國、微型國家：上面都放不下時，把國名拉到旁邊空白處並以細線連回國家位置（8 個方向 × 2 種距離）
+    const D = Math.SQRT1_2;
+    const LEADERS = [26, 52, 84].flatMap((gap) => [[1, 0], [-1, 0], [D, -D], [D, D], [-D, -D], [-D, D], [0, -1], [0, 1]].map(([x, y]) => [x, y, gap]));
+    const shift = (k: number, w: number, h: number) => {
+      if (k < OFFSETS.length) return [OFFSETS[k][0] * (w + 12), OFFSETS[k][1] * h];
+      const [ux, uy, gap] = LEADERS[k - OFFSETS.length];
+      return [ux * (gap + w / 2), uy * (gap + h / 2)];
+    };
+    // 引線線段：國名框邊緣上最靠近國家位置的點 → 國家位置
+    const leaderSeg = (b: number[], ax: number, ay: number) => [Math.min(Math.max(ax, b[0]), b[2]), Math.min(Math.max(ay, b[1]), b[3]), ax, ay];
+    const crosses = (a: number[], b: number[]) => {
+      const o = (px: number, py: number, qx: number, qy: number, rx: number, ry: number) => Math.sign((qx - px) * (ry - py) - (qy - py) * (rx - px));
+      return o(a[0], a[1], a[2], a[3], b[0], b[1]) * o(a[0], a[1], a[2], a[3], b[2], b[3]) < 0 && o(b[0], b[1], b[2], b[3], a[0], a[1]) * o(b[0], b[1], b[2], b[3], a[2], a[3]) < 0;
+    };
+    const place = (div: HTMLDivElement, k: number, w: number, h: number) => {
+      const [ox, oy] = shift(k, w, h);
+      div.style.marginLeft = `${ox}px`;
+      div.style.marginTop = `${oy}px`;
+      const line = div.querySelector<HTMLElement>(".label-leader");
+      if (!line) return;
+      if (k < OFFSETS.length) {
+        line.style.display = "none";
+        return;
+      }
+      // 從國名框邊緣畫到國家位置（國名框內的座標）
+      const ax = w / 2 - ox;
+      const ay = h / 2 - oy;
+      const ex = Math.min(Math.max(ax, 0), w);
+      const ey = Math.min(Math.max(ay, 0), h);
+      line.style.display = "block";
+      line.style.left = `${ex}px`;
+      line.style.top = `${ey}px`;
+      line.style.width = `${Math.max(0, Math.hypot(ax - ex, ay - ey) - 1)}px`;
+      line.style.transform = `rotate(${Math.atan2(ay - ey, ax - ex)}rad)`;
+    };
     const declutter = (d: number, horizon: number) => {
       const cam = g.camera().position;
       const boxes: number[][] = [];
+      // 已畫出的引線（畫面座標線段），新的引線不能與它們交叉、也不能穿過其他國名
+      const lines: number[][] = [];
+      // 地球在畫面上的圓：拉線的國名只能放在地球範圍內，不會飄到太空
+      const rect = el.getBoundingClientRect();
+      const gcx = rect.left + rect.width / 2;
+      const gcy = rect.top + rect.height / 2;
+      const gr = ((rect.height / 2) * (horizon / Math.sqrt(1 - horizon * horizon))) / Math.tan(((FOV / 2) * Math.PI) / 180) - 8;
+      const inDisk = (x: number, y: number) => (x - gcx) ** 2 + (y - gcy) ** 2 < gr * gr;
+      // 小國的實際位置（畫面座標）：任何國名都不能蓋住，否則看不出引線指向哪個島
+      const anchors = new Map<HTMLDivElement, number[]>();
+      for (const it of labelPos.current) {
+        if (!leaderOk.current.has(it.iso)) continue;
+        const u = labelVecs.current.get(it.div);
+        if (!u || (u.x * cam.x + u.y * cam.y + u.z * cam.z) / d < horizon) continue;
+        const r = it.div.getBoundingClientRect();
+        const [px, py] = shift(offset.get(it.div) ?? 0, r.width, r.height);
+        anchors.set(it.div, [r.left - px + r.width / 2, r.top - py + r.height / 2]);
+      }
       const wasHidden = new Set(hidden);
       const now = performance.now();
       hidden.clear();
@@ -262,14 +316,27 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
           const [ox, oy] = shift(k, r.width, r.height);
           const b = [bx + ox, by + oy, bx + ox + r.width, by + oy + r.height];
           const p = k === prev ? pad : 6;
-          return boxes.some((o) => b[0] - p < o[2] && b[2] + p > o[0] && b[1] - p / 2 < o[3] && b[3] + p / 2 > o[1]) ? null : b;
+          if (boxes.some((o) => b[0] - p < o[2] && b[2] + p > o[0] && b[1] - p / 2 < o[3] && b[3] + p / 2 > o[1])) return null;
+          for (const [div, [x, y]] of anchors) if (div !== it.div && x > b[0] - 4 && x < b[2] + 4 && y > b[1] - 3 && y < b[3] + 3) return null;
+          if (k >= OFFSETS.length) {
+            if (!inDisk(b[0], b[1]) || !inDisk(b[2], b[1]) || !inDisk(b[0], b[3]) || !inDisk(b[2], b[3])) return null;
+            const seg = leaderSeg(b, bx + r.width / 2, by + r.height / 2);
+            if (lines.some((l) => crosses(l, seg))) return null;
+            for (let i = 1; i < 8; i++) {
+              const x = seg[0] + ((seg[2] - seg[0]) * i) / 8;
+              const y = seg[1] + ((seg[3] - seg[1]) * i) / 8;
+              if (boxes.some((o) => x > o[0] - 5 && x < o[2] + 5 && y > o[1] - 4 && y < o[3] + 4)) return null;
+            }
+          }
+          return b;
         };
         let pick = prev;
         let box = free(prev);
         // 只有原本隱藏的國名才換位置（淡入時直接出現在新位置）；正在顯示的國名被擋住就淡出，畫面上不會看到國名跳動
         // 換位置前至少要先隱藏 0.8 秒（淡出完成），否則看起來像國名在跳
         const settled = !seen.has(it.div) || (wasHidden.has(it.div) && now - (hiddenAt.get(it.div) ?? 0) > 800);
-        if (settled) for (let k = 0; !box && k < OFFSETS.length; k++) if (k !== prev && (box = free(k))) pick = k;
+        const tries = OFFSETS.length + (leaderOk.current.has(it.iso) ? LEADERS.length : 0);
+        if (settled) for (let k = 0; !box && k < tries; k++) if (k !== prev && (box = free(k))) pick = k;
         seen.add(it.div);
         if (!box) {
           if (!wasHidden.has(it.div)) hiddenAt.set(it.div, now);
@@ -277,11 +344,11 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
           continue;
         }
         boxes.push(box);
-        if (pick !== prev) {
+        if (pick >= OFFSETS.length) lines.push(leaderSeg(box, bx + r.width / 2, by + r.height / 2));
+        // 拉線的國名每次都重算（放大時字變大，線要跟著接到框邊）
+        if (pick !== prev || pick >= OFFSETS.length) {
           offset.set(it.div, pick);
-          const [ox, oy] = shift(pick, r.width, r.height);
-          it.div.style.marginLeft = `${ox}px`;
-          it.div.style.marginTop = `${oy}px`;
+          place(it.div, pick, r.width, r.height);
         }
       }
     };
@@ -311,6 +378,8 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
         if (disposed) return;
         features.current = geo.features.filter((f) => f.properties.iso_a3 !== "ATA");
         for (const f of features.current) areaByIso.current.set(f.properties.iso_a3, (areaByIso.current.get(f.properties.iso_a3) ?? 0) + sphereArea(f));
+        // 約 1.2 萬平方公里以下（如千里達、黎巴嫩、盧森堡）
+        areaByIso.current.forEach((a, iso) => a < 1.2e4 * ((4 * Math.PI) / 510e6) && leaderOk.current.add(iso));
         showSelected();
       })
       .catch(() => {});
@@ -348,6 +417,11 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
         const c = d as (typeof countries)[number];
         const div = document.createElement("div");
         div.className = "country-label";
+        // 文字與引線分開，換語言只改文字
+        const text = document.createElement("span");
+        const line = document.createElement("span");
+        line.className = "label-leader";
+        div.append(text, line);
         div.style.opacity = "0";
         div.style.zIndex = String(2000 - c.rank);
         div.dataset.rank = String(c.rank);
@@ -355,7 +429,7 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
         const len = Math.hypot(p.x, p.y, p.z) || 1;
         labelVecs.current.set(div, { x: p.x / len, y: p.y / len, z: p.z / len });
         labelPos.current.push({ div, iso: c.iso, rank: c.rank });
-        div.textContent = labelText(c, getLang());
+        text.textContent = labelText(c, getLang());
         div.title = c.en;
         if (c.iso === selectedRef.current) div.classList.add("is-active");
         labelEls.current.set(c.iso, div);
@@ -368,7 +442,7 @@ const GlobeView = forwardRef<GlobeHandle, Props>(function GlobeView(
   useEffect(() => {
     labelEls.current.forEach((div, iso) => {
       const c = countryByIso.get(iso);
-      if (c) div.textContent = labelText(c, lang);
+      if (c) div.firstChild!.textContent = labelText(c, lang);
     });
   }, [lang]);
 
